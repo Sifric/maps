@@ -12,6 +12,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-24.04
+    permissions:
+      contents: write
 
     steps:
       - uses: actions/checkout@v4
@@ -48,8 +50,55 @@ jobs:
       - name: Show tile info
         run: pmtiles show build/places.pmtiles
 
-      - name: Upload build artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: build
-          path: build/
+      - name: Create prerelease
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="places-${GITHUB_SHA::8}"
+          echo "## Places Tiles Build" > /tmp/release-notes.md
+          echo "" >> /tmp/release-notes.md
+          echo "- **Commit:** \`${GITHUB_SHA}\`" >> /tmp/release-notes.md
+          echo "- **Branch:** \`${GITHUB_REF_NAME}\`" >> /tmp/release-notes.md
+          echo "- **Run:** [#${GITHUB_RUN_NUMBER}](${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID})" >> /tmp/release-notes.md
+          if gh release view "$tag" --repo "$GITHUB_REPOSITORY" > /dev/null 2>&1; then
+            echo "Release $tag already exists, uploading with --clobber"
+            gh release upload "$tag" \
+              --repo "$GITHUB_REPOSITORY" \
+              --clobber \
+              build/places.pmtiles \
+              build/manifest.json \
+              places.sha256
+          else
+            gh release create "$tag" \
+              --repo "$GITHUB_REPOSITORY" \
+              --prerelease \
+              --title "Places tiles ${tag}" \
+              --notes-file /tmp/release-notes.md \
+              build/places.pmtiles \
+              build/manifest.json \
+              places.sha256
+          fi
+
+      - name: Cleanup old prereleases
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tags=$(gh release list \
+            --repo "$GITHUB_REPOSITORY" \
+            --json tagName,isPrerelease \
+            --jq '[.[] | select(.isPrerelease and (.tagName | startswith("places-"))) | .tagName] | sort | reverse')
+          count=$(echo "$tags" | jq 'length')
+          echo "Found $count places-* prereleases"
+          if [ "$count" -lt 4 ]; then
+            echo "Fewer than 4 prereleases, nothing to clean up"
+            exit 0
+          fi
+          echo "$tags" | jq -r '.[3:][]' | while read -r old_tag; do
+            echo "Deleting old prerelease: $old_tag"
+            gh release delete "$old_tag" \
+              --repo "$GITHUB_REPOSITORY" \
+              --cleanup-tag \
+              -y
+          done
