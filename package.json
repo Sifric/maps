@@ -1,0 +1,8 @@
+{
+  "name": "lkmaps",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "tiles": "python3 scripts/build_places_tiles.py"
+  }
+}

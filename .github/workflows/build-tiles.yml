@@ -1,0 +1,47 @@
+name: Build Places Tiles
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - feature/places-tiles
+    paths:
+      - 'data/places/**'
+      - 'scripts/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install tippecanoe
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq build-essential libsqlite3-dev zlib1g-dev
+          git clone --depth 1 https://github.com/felt/tippecanoe.git /tmp/tippecanoe
+          cd /tmp/tippecanoe && make -j"$(nproc)" && sudo make install
+
+      - name: Install pmtiles CLI
+        run: |
+          curl -sL https://github.com/protomaps/go-pmtiles/releases/latest/download/go-pmtiles_Linux_x86_64.tar.gz \
+            | tar xz -C /usr/local/bin pmtiles
+          chmod +x /usr/local/bin/pmtiles
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Build tiles
+        run: python3 scripts/build_places_tiles.py
+
+      - name: Show tile info
+        run: pmtiles show build/places.pmtiles
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: build
+          path: build/
