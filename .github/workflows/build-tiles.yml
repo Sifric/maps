@@ -1,4 +1,4 @@
-name: Build Places Tiles
+name: Build Sri Lanka Tiles
 
 on:
   workflow_dispatch:
@@ -8,6 +8,7 @@ on:
     paths:
       - 'data/places/**'
       - 'scripts/**'
+      - '.github/workflows/build-tiles.yml'
 
 jobs:
   build:
@@ -17,6 +18,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+
+      - name: Set up Java 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
 
       - name: Install tippecanoe
         run: |
@@ -39,43 +46,67 @@ jobs:
           sudo tar xz -C /usr/local/bin -f /tmp/pmtiles.tar.gz pmtiles
           pmtiles version
 
+      - name: Cache Geofabrik PBF and Planetiler JAR
+        uses: actions/cache@v4
+        with:
+          path: .cache/
+          key: basemap-cache-${{ hashFiles('scripts/build_basemap.sh') }}
+          restore-keys: |
+            basemap-cache-
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
-      - name: Build tiles
+      - name: Build basemap
+        run: bash scripts/build_basemap.sh
+
+      - name: Build places tiles
         run: python3 scripts/build_places_tiles.py
 
+      - name: Merge tiles
+        run: bash scripts/merge_tiles.sh
+
       - name: Show tile info
-        run: pmtiles show build/places.pmtiles
+        run: |
+          echo "=== places.pmtiles ==="
+          pmtiles show build/places.pmtiles
+          echo ""
+          echo "=== basemap.pmtiles ==="
+          pmtiles show build/basemap.pmtiles
+          echo ""
+          echo "=== sri-lanka.pmtiles ==="
+          pmtiles show build/sri-lanka.pmtiles
 
       - name: Create prerelease
         if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          tag="places-${GITHUB_SHA::8}"
-          echo "## Places Tiles Build" > /tmp/release-notes.md
+          tag="lkmaps-${GITHUB_SHA::8}"
+          echo "## Sri Lanka Map Tiles Build" > /tmp/release-notes.md
           echo "" >> /tmp/release-notes.md
           echo "- **Commit:** \`${GITHUB_SHA}\`" >> /tmp/release-notes.md
           echo "- **Branch:** \`${GITHUB_REF_NAME}\`" >> /tmp/release-notes.md
           echo "- **Run:** [#${GITHUB_RUN_NUMBER}](${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID})" >> /tmp/release-notes.md
+          echo "" >> /tmp/release-notes.md
+          echo "© OpenStreetMap contributors" >> /tmp/release-notes.md
           if gh release view "$tag" --repo "$GITHUB_REPOSITORY" > /dev/null 2>&1; then
             echo "Release $tag already exists, uploading with --clobber"
             gh release upload "$tag" \
               --repo "$GITHUB_REPOSITORY" \
               --clobber \
-              build/places.pmtiles \
+              build/sri-lanka.pmtiles \
               build/manifest.json \
               places.sha256
           else
             gh release create "$tag" \
               --repo "$GITHUB_REPOSITORY" \
               --prerelease \
-              --title "Places tiles ${tag}" \
+              --title "Sri Lanka tiles ${tag}" \
               --notes-file /tmp/release-notes.md \
-              build/places.pmtiles \
+              build/sri-lanka.pmtiles \
               build/manifest.json \
               places.sha256
           fi
@@ -88,9 +119,9 @@ jobs:
           tags=$(gh release list \
             --repo "$GITHUB_REPOSITORY" \
             --json tagName,isPrerelease \
-            --jq '[.[] | select(.isPrerelease and (.tagName | startswith("places-"))) | .tagName] | sort | reverse')
+            --jq '[.[] | select(.isPrerelease and (.tagName | startswith("lkmaps-"))) | .tagName] | sort | reverse')
           count=$(echo "$tags" | jq 'length')
-          echo "Found $count places-* prereleases"
+          echo "Found $count lkmaps-* prereleases"
           if [ "$count" -lt 4 ]; then
             echo "Fewer than 4 prereleases, nothing to clean up"
             exit 0
