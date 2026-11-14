@@ -16,6 +16,14 @@ export default {
     if (!["GET", "HEAD"].includes(request.method)) {
       return new Response("Method Not Allowed", { status: 405, headers: cors });
     }
+    if (url.pathname === "/favicon.ico") {
+      const asset = await env.ASSETS.fetch(request);
+      if (asset.status === 404) return asset;
+      const response = new Response(asset.body, asset);
+      response.headers.set("Content-Type", "image/x-icon");
+      response.headers.set("Cache-Control", "public, max-age=86400");
+      return response;
+    }
     if (url.pathname === "/style.json") {
       const style = structuredClone(basemapStyle);
       delete style.sources.openmaptiles.tiles;
