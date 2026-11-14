@@ -76,6 +76,38 @@ GROUPS: list[tuple[int, int, list[str]]] = [
     # Everything else falls through → priority 5, min_zoom 13
 ]
 
+# Use only existing GROUPS keywords; preserve their order for classification.
+CATEGORY_RANK_WEIGHT = {
+    **{keyword: 100 for _, _, keywords in GROUPS for keyword in keywords},
+    **dict.fromkeys([
+        "airport", "government", "embassy", "military", "parliament", "ministry",
+        "bus station", "train station", "railway station", "courthouse", "court house",
+        "museum", "zoo", "stadium", "park", "police", "fire station",
+    ], 400),
+    **dict.fromkeys([
+        "hospital", "university", "educational institution", "school", "college",
+        "academy", "institute", "place of worship", "temple", "mosque", "church",
+        "kovil", "cathedral", "synagogue", "hindu temple", "buddhist temple",
+        "clinic", "medical center", "medical centre", "pharmacy", "doctor", "dentist",
+    ], 300),
+    **dict.fromkeys([
+        "restaurant", "supermarket", "shopping mall", "shopping center", "shopping centre",
+        "market", "store", "shop", "bakery", "cafe", "café", "coffee",
+    ], 200),
+}
+
+
+def rank_score(category: str, name: str) -> int:
+    """Score existing category keywords, with a small mixed-language name bonus."""
+    low = category.lower()
+    score = max((CATEGORY_RANK_WEIGHT[keyword]
+                 for _, _, keywords in GROUPS for keyword in keywords if keyword in low),
+                default=100)
+    english = any("a" <= character.lower() <= "z" for character in name)
+    local = any("\u0b80" <= character <= "\u0bff" or
+                "\u0d80" <= character <= "\u0dff" for character in name)
+    return score + int(english and local)
+
 
 def classify(category: str) -> tuple[int, int]:
     """Return ``(priority, min_zoom)`` for a *real* category string."""
@@ -101,6 +133,7 @@ def main() -> None:
     print(f"Found {len(files)} place files")
 
     features: list[dict] = []
+    ranking: list[tuple[int, str, int]] = []
     code_warnings: list[str] = []
     ignored_codes: dict[str, int] = {}
     dropped: list[dict] = []
@@ -168,6 +201,16 @@ def main() -> None:
                 "minzoom": mz,
             },
         })
+        ranking.append((-rank_score(primary, name), str(rid), len(features) - 1))
+
+    # Quantile assignment is stable across input ordering: category, language, id.
+    for position, (_, _, index) in enumerate(sorted(ranking)):
+        rank = 1 + position * 6 // len(features)
+        features[index]["properties"]["rank"] = rank
+        features[index]["properties"]["min_zoom"] = rank + 6
+        features[index]["tippecanoe"]["minzoom"] = rank + 6
+    print("Rank counts:", {rank: sum(f["properties"]["rank"] == rank for f in features)
+                           for rank in range(1, 7)})
 
     # ── write GeoJSON ─────────────────────────────────────────────────
     geojson_path = BUILD_DIR / "places.geojson"
@@ -199,6 +242,8 @@ def main() -> None:
         "--no-feature-limit",
         "--no-tile-size-limit",
         "--force",
+        "--drop-densest-as-needed",
+        "--maximum-zoom=14",
         str(geojson_path),
     ]
     print(f"\nRunning: {' '.join(cmd)}")
