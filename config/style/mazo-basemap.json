@@ -6265,6 +6265,145 @@
         "text-halo-color": "#fff",
         "text-halo-width": 1
       }
+    },
+    {
+      "id": "mazo-places-dot",
+      "type": "circle",
+      "source": "openmaptiles",
+      "source-layer": "places",
+      "minzoom": 10,
+      "paint": {
+        "circle-radius": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          2.5,
+          14,
+          4.5
+        ],
+        "circle-color": "#000",
+        "circle-stroke-color": "#fff",
+        "circle-stroke-width": 1
+      }
+    },
+    {
+      "id": "mazo-places-p1",
+      "type": "symbol",
+      "source": "openmaptiles",
+      "source-layer": "places",
+      "minzoom": 7,
+      "filter": [
+        "==",
+        [
+          "get",
+          "priority"
+        ],
+        1
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-font": [
+          "Mazo Maps Sans Regular"
+        ],
+        "text-size": 12,
+        "text-anchor": "top",
+        "text-offset": [
+          0,
+          0.6
+        ],
+        "text-optional": true,
+        "text-allow-overlap": false,
+        "symbol-sort-key": 1
+      },
+      "paint": {
+        "text-color": "#000",
+        "text-halo-color": "#fff",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "mazo-places-p2",
+      "type": "symbol",
+      "source": "openmaptiles",
+      "source-layer": "places",
+      "minzoom": 9,
+      "filter": [
+        "==",
+        [
+          "get",
+          "priority"
+        ],
+        2
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-font": [
+          "Mazo Maps Sans Regular"
+        ],
+        "text-size": 12,
+        "text-anchor": "top",
+        "text-offset": [
+          0,
+          0.6
+        ],
+        "text-optional": true,
+        "text-allow-overlap": false,
+        "symbol-sort-key": 2
+      },
+      "paint": {
+        "text-color": "#000",
+        "text-halo-color": "#fff",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "mazo-places-p3",
+      "type": "symbol",
+      "source": "openmaptiles",
+      "source-layer": "places",
+      "minzoom": 11,
+      "filter": [
+        "==",
+        [
+          "get",
+          "priority"
+        ],
+        3
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-font": [
+          "Mazo Maps Sans Regular"
+        ],
+        "text-size": 12,
+        "text-anchor": "top",
+        "text-offset": [
+          0,
+          0.6
+        ],
+        "text-optional": true,
+        "text-allow-overlap": false,
+        "symbol-sort-key": 3
+      },
+      "paint": {
+        "text-color": "#000",
+        "text-halo-color": "#fff",
+        "text-halo-width": 1
+      }
     }
   ],
   "name": "Mazo Maps Sri Lanka",
