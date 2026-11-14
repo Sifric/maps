@@ -7,9 +7,10 @@ REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 BUILD_DIR="${REPO_ROOT}/build"
 BASEMAP="${BUILD_DIR}/basemap.pmtiles"
 PLACES="${BUILD_DIR}/places.pmtiles"
+COUNTRY_LAND="${BUILD_DIR}/country_land.pmtiles"
 OUTPUT="${BUILD_DIR}/sri-lanka.pmtiles"
 
-for f in "${BASEMAP}" "${PLACES}"; do
+for f in "${BASEMAP}" "${PLACES}" "${COUNTRY_LAND}"; do
     if [ ! -f "$f" ]; then
         echo "::error::Missing input: $f"
         exit 1
@@ -24,7 +25,8 @@ tile-join \
     --attribution='© OpenStreetMap contributors' \
     --name='Sri Lanka Map' \
     "${BASEMAP}" \
-    "${PLACES}"
+    "${PLACES}" \
+    "${COUNTRY_LAND}"
 
 # Publish a manifest identifying the merged archive, retaining places statistics.
 python3 - "${BUILD_DIR}" <<'PY'
