@@ -128,8 +128,8 @@ jobs:
             tags=$(gh release list \
               --repo "$GITHUB_REPOSITORY" \
               --limit 100000 \
-              --json tagName,isPrerelease,createdAt \
-              --jq "[.[] | select(.isPrerelease and (.tagName | startswith(\"$prefix\")))] | sort_by(.createdAt) | reverse | map(.tagName)")
+              --json tagName,isPrerelease,publishedAt \
+              --jq "[.[] | select(.isPrerelease and (.tagName | startswith(\"$prefix\")))] | sort_by(.publishedAt, .tagName) | reverse | map(.tagName)")
             count=$(echo "$tags" | jq 'length')
             echo "Found $count ${prefix}* prereleases; retaining the newest 3"
             echo "$tags" | jq -r '.[3:][]' | while read -r old_tag; do
