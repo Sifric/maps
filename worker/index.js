@@ -5,22 +5,25 @@ const cors = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Methods": "GET, HEAD, OPTIONS",
   "Access-Control-Allow-Headers": "Range",
-  "Access-Control-Expose-Headers": "Content-Range, Content-Length, Accept-Ranges, ETag",
+  "Access-Control-Expose-Headers": "Content-Range, Content-Length, Accept-Ranges",
+  "Access-Control-Max-Age": "86400",
 };
 
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
-    if (request.method === "OPTIONS") return new Response(null, { headers: cors });
+    if (request.method === "OPTIONS") return new Response(null, { status: 204, headers: cors });
     if (!["GET", "HEAD"].includes(request.method)) {
       return new Response("Method Not Allowed", { status: 405, headers: cors });
     }
     if (url.pathname === "/style.json") {
       const style = structuredClone(basemapStyle);
       delete style.sources.openmaptiles.tiles;
-      style.sources.openmaptiles.url = "pmtiles:///tiles/sri-lanka.pmtiles";
+      style.sources.openmaptiles.url = `pmtiles://${url.origin}/tiles/sri-lanka.pmtiles`;
+      style.sprite = `${url.origin}/api/v1/basemap/sprite`;
+      style.glyphs = `${url.origin}/api/v1/fonts/{fontstack}/{range}.pbf`;
       return new Response(request.method === "HEAD" ? null : JSON.stringify(style), {
-        headers: { ...cors, "Content-Type": "application/json", "Cache-Control": "no-cache" },
+        headers: { ...cors, "Content-Type": "application/json; charset=utf-8", "Cache-Control": "no-cache" },
       });
     }
     if (url.pathname === "/tiles/sri-lanka.pmtiles") {
@@ -43,7 +46,7 @@ export default {
     if (url.pathname.startsWith("/api/") || url.pathname.startsWith("/tiles/")) {
       return new Response("Not Found", { status: 404, headers: cors });
     }
-    return env.ASSETS.fetch(request);
+    return assetResponse(await env.ASSETS.fetch(request), url.pathname);
   },
 };
 
@@ -98,7 +101,18 @@ async function serveAsset(request, env, pathname) {
   assetUrl.pathname = pathname;
   assetUrl.search = "";
   const asset = await env.ASSETS.fetch(new Request(assetUrl, request));
+  return assetResponse(asset, pathname);
+}
+
+function assetResponse(asset, pathname) {
   const response = new Response(asset.body, asset);
+  if (pathname.endsWith(".pbf")) response.headers.set("Content-Type", "application/x-protobuf");
+  else if (pathname.endsWith(".json")) response.headers.set("Content-Type", "application/json");
+  else if (pathname.endsWith(".png")) response.headers.set("Content-Type", "image/png");
+  else if (!response.headers.has("Content-Type")) {
+    response.headers.set("Content-Type", pathname.endsWith(".html") || pathname.endsWith("/")
+      ? "text/html; charset=utf-8" : "application/octet-stream");
+  }
   for (const [key, value] of Object.entries(cors)) response.headers.set(key, value);
   return response;
 }
