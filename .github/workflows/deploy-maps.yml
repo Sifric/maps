@@ -22,7 +22,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: feature/places-tiles
 
       - name: Install Wrangler
         run: npm install -g wrangler
