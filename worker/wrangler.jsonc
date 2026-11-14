@@ -13,5 +13,8 @@
       "binding": "TILES_BUCKET",
       "bucket_name": "mazo-maps"
     }
+  ],
+  "migrations": [
+    { "tag": "v2-delete-live-data-registry", "deleted_classes": ["LiveDataRegistry"] }
   ]
 }
