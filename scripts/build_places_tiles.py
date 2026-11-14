@@ -203,14 +203,19 @@ def main() -> None:
         })
         ranking.append((-rank_score(primary, name), str(rid), len(features) - 1))
 
-    # Quantile assignment is stable across input ordering: category, language, id.
-    for position, (_, _, index) in enumerate(sorted(ranking)):
-        rank = 1 + position * 6 // len(features)
+    # Keep score/language/id ordering, but assign ranks from the base category score.
+    for _, _, index in sorted(ranking):
+        properties = features[index]["properties"]
+        base_score = rank_score(properties["category"], "")
+        rank = {400: 1, 300: 2, 200: 3, 100: 4}[base_score]
         features[index]["properties"]["rank"] = rank
         features[index]["properties"]["min_zoom"] = rank + 6
         features[index]["tippecanoe"]["minzoom"] = rank + 6
-    print("Rank counts:", {rank: sum(f["properties"]["rank"] == rank for f in features)
-                           for rank in range(1, 7)})
+    rank_counts = {rank: sum(f["properties"]["rank"] == rank for f in features)
+                   for rank in range(1, 5)}
+    print("Rank counts:", rank_counts)
+    if any(count == 0 for count in rank_counts.values()):
+        raise ValueError("A score-based rank has zero features")
 
     # ── write GeoJSON ─────────────────────────────────────────────────
     geojson_path = BUILD_DIR / "places.geojson"
@@ -244,6 +249,7 @@ def main() -> None:
         "--force",
         "--drop-densest-as-needed",
         "--maximum-zoom=14",
+        "--drop-rate=2",
         str(geojson_path),
     ]
     print(f"\nRunning: {' '.join(cmd)}")
