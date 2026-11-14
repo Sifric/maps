@@ -102,3 +102,11 @@ async function serveAsset(request, env, pathname) {
   for (const [key, value] of Object.entries(cors)) response.headers.set(key, value);
   return response;
 }
+
+// Temporary: keeps the legacy Durable Object class exported so deploy is not blocked.
+// Remove only after a delete-class migration is applied with the correct remote tag.
+export class LiveDataRegistry {
+  async fetch() {
+    return new Response("Gone", { status: 410 });
+  }
+}
