@@ -236,23 +236,53 @@ def main() -> None:
           f"{len(dropped) - skipped_name} bad-coords, "
           f"{len(dropped)} total dropped")
 
-    # ── tippecanoe → PMTiles ──────────────────────────────────────────
+    # ── tippecanoe → separate tier archives → one places layer ─────────
+    tier_dir = BUILD_DIR / "tiers"
+    tier_dir.mkdir(exist_ok=True)
+    tier_archives = []
+    for tier, rank, minimum_zoom in (("a", 1, 0), ("b", 2, 9),
+                                     ("c", 3, 11), ("d", 4, 13)):
+        tier_features = [feature for feature in features
+                         if feature["properties"]["rank"] == rank]
+        print(f"Tier {tier.upper()}: {len(tier_features)} features; zooms {minimum_zoom}–14")
+        if not tier_features:
+            raise ValueError(f"Tier {tier.upper()} has no features")
+        # Tier archive flags are the sole zoom control. Keep ordinary properties
+        # (including min_zoom), but remove reserved Tippecanoe zoom metadata.
+        tier_features = [
+            {
+                **{key: value for key, value in feature.items()
+                   if key not in ("tippecanoe", "minzoom", "maxzoom", "properties")},
+                "properties": {key: value for key, value in feature["properties"].items()
+                               if key not in ("tippecanoe", "minzoom", "maxzoom")},
+            }
+            for feature in tier_features
+        ]
+        tier_geojson = tier_dir / f"tier_{tier}.geojson"
+        with tier_geojson.open("w") as output:
+            json.dump({"type": "FeatureCollection", "features": tier_features}, output)
+        tier_archive = tier_dir / f"tier_{tier}.pmtiles"
+        cmd = [
+            "tippecanoe",
+            "-o", str(tier_archive),
+            "-z", "14",
+            "-Z", str(minimum_zoom),
+            "-l", "places",
+            "--no-feature-limit",
+            "--no-tile-size-limit",
+            "--force",
+            "--drop-densest-as-needed",
+            "--maximum-zoom=14",
+            str(tier_geojson),
+        ]
+        print(f"\nRunning: {' '.join(cmd)}", flush=True)
+        subprocess.run(cmd, check=True)
+        tier_archives.append(tier_archive)
+
     pmtiles_path = BUILD_DIR / "places.pmtiles"
-    cmd = [
-        "tippecanoe",
-        "-o", str(pmtiles_path),
-        "-z", "14",
-        "-Z", "0",
-        "-l", "places",
-        "--no-feature-limit",
-        "--no-tile-size-limit",
-        "--force",
-        "--drop-densest-as-needed",
-        "--maximum-zoom=14",
-        "--drop-rate=2",
-        str(geojson_path),
-    ]
-    print(f"\nRunning: {' '.join(cmd)}")
+    cmd = ["tile-join", "-o", str(pmtiles_path), "--force",
+           *(str(path) for path in tier_archives)]
+    print(f"\nRunning: {' '.join(cmd)}", flush=True)
     subprocess.run(cmd, check=True)
     print(f"✓ Created {pmtiles_path}")
 
