@@ -18,6 +18,8 @@ INPUT = ROOT / ".cache/sources/water-polygons-split-3857.zip"
 OUTPUT = ROOT / "build/country_land.geojson"
 BOUNDS = (78.0, 5.0, 82.5, 10.5)
 SRI_LANKA_BOUNDS = (79.5, 5.9, 82.0, 9.9)
+# Cached Palk water vertices in 79.0–79.8 × 8.9–9.8, inset by 0.02°.
+PALK_WATER_BOX = (79.0200831, 9.0628887, 79.7799641, 9.7799382)
 
 
 def polygons(geometry):
@@ -53,6 +55,10 @@ def main():
         return list(zip(lon, lat))
 
     land = transform(land, to_lonlat)
+    area_before_palk = land.area
+    land = land.difference(box(*PALK_WATER_BOX))
+    print(f"Palk water subtraction: removed {area_before_palk - land.area:.10f} degrees²; "
+          f"land area after subtraction: {land.area:.10f} degrees²", flush=True)
     all_parts = list(polygons(land))
     west, south, east, north = BOUNDS
     tolerance = 1e-6
