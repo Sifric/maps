@@ -1,0 +1,76 @@
+name: Deploy Maps
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: Basemap prerelease tag to deploy
+        type: string
+        required: true
+        default: lkmaps-bac4f256
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    environment: production
+    runs-on: ubuntu-24.04
+    concurrency:
+      group: deploy-maps-production
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feature/places-tiles
+
+      - name: Install Wrangler
+        run: npm install -g wrangler
+
+      - name: Install PMTiles CLI
+        env:
+          PMTILES_VERSION: '1.31.2'
+        run: |
+          curl -fsSL -o /tmp/pmtiles.tar.gz "https://github.com/protomaps/go-pmtiles/releases/download/v${PMTILES_VERSION}/go-pmtiles_${PMTILES_VERSION}_Linux_x86_64.tar.gz"
+          gzip -t /tmp/pmtiles.tar.gz
+          sudo tar xz -C /usr/local/bin -f /tmp/pmtiles.tar.gz pmtiles
+          pmtiles version
+
+      - name: Download release archive
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ inputs.release_tag }}
+        run: |
+          gh release download "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --pattern sri-lanka.pmtiles --dir build/deploy --clobber
+
+      - name: Verify basemap
+        run: |
+          pmtiles show build/deploy/sri-lanka.pmtiles
+          pmtiles show build/deploy/sri-lanka.pmtiles --header-json > build/deploy/header.json
+          pmtiles show build/deploy/sri-lanka.pmtiles --metadata > build/deploy/metadata.json
+          python3 - <<'PY'
+          import json
+          header = json.load(open('build/deploy/header.json'))
+          metadata = json.load(open('build/deploy/metadata.json'))
+          if header['minzoom'] != 0 or header['maxzoom'] != 14:
+              raise SystemExit('Expected basemap zoom range 0–14')
+          if 'country_land' not in {layer['id'] for layer in metadata['vector_layers']}:
+              raise SystemExit('Missing country_land layer')
+          print('Verified zooms 0–14 and country_land layer')
+          PY
+
+      - name: Upload basemap to R2
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: wrangler r2 object put mazo-maps/lkmaps/sri-lanka.pmtiles --file build/deploy/sri-lanka.pmtiles --remote
+
+      - name: Prepare worker style
+        run: cp config/style/mazo-basemap.json worker/style.json
+
+      - name: Deploy worker
+        working-directory: worker
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: wrangler deploy
