@@ -16,7 +16,8 @@ from shapely.ops import unary_union
 ROOT = Path(__file__).resolve().parents[1]
 INPUT = ROOT / ".cache/sources/water-polygons-split-3857.zip"
 OUTPUT = ROOT / "build/country_land.geojson"
-BOUNDS = (79.5, 5.9, 82.0, 9.9)
+BOUNDS = (78.0, 5.0, 82.5, 10.5)
+SRI_LANKA_BOUNDS = (79.5, 5.9, 82.0, 9.9)
 
 
 def polygons(geometry):
@@ -41,7 +42,7 @@ def main():
     # Read WKB directly without requiring geopandas.
     _, _, geometries, _ = read(source, bbox=bounds, columns=[])
     if geometries is None or len(geometries) == 0:
-        raise ValueError("No water polygons intersect the Sri Lanka bbox")
+        raise ValueError("No water polygons intersect the full bbox")
     water = from_wkb(geometries)
     if any(g is None or g.is_empty or not g.is_valid for g in water):
         raise ValueError("Water polygons contain missing, empty, or invalid geometry")
@@ -54,13 +55,17 @@ def main():
     land = transform(land, to_lonlat)
     parts = [part for part in polygons(land) if part.area >= 1e-9]
     land = unary_union(parts)
-    area = land.area
-    print(f"Land area: {area:.8f} degrees²; polygon count: {len(parts)}", flush=True)
+    sri_lanka_box = box(*SRI_LANKA_BOUNDS)
+    area = land.intersection(sri_lanka_box).area
+    print(f"Full-bbox land area: {land.area:.8f} degrees²; "
+          f"Sri Lanka-box land area: {area:.8f} degrees²; "
+          f"polygon count: {len(parts)}", flush=True)
     if land.is_empty or not land.is_valid or not 4.8 <= area <= 6.6:
-        raise ValueError(f"Invalid land geometry or area {area:.8f}; expected 4.8–6.6 degrees²")
+        raise ValueError(f"Invalid land geometry or Sri Lanka-box area {area:.8f}; expected 4.8–6.6 degrees²")
     land = land.simplify(0.00008, preserve_topology=True)
-    if land.is_empty or not land.is_valid or not 4.8 <= land.area <= 6.6:
-        raise ValueError("Simplified land geometry is invalid or outside the area range")
+    simplified_area = land.intersection(sri_lanka_box).area
+    if land.is_empty or not land.is_valid or not 4.8 <= simplified_area <= 6.6:
+        raise ValueError("Simplified land geometry is invalid or Sri Lanka-box area is outside 4.8–6.6 degrees²")
     collection = {"type": "FeatureCollection", "features": [{
         "type": "Feature", "properties": {"name": "Sri Lanka"},
         "geometry": mapping(land),
@@ -68,7 +73,8 @@ def main():
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(json.dumps(collection) + "\n")
     print(f"Wrote {OUTPUT}: 1 feature; {len(list(polygons(land)))} polygons; "
-          f"simplified area: {land.area:.8f} degrees²")
+          f"simplified full-bbox area: {land.area:.8f} degrees²; "
+          f"simplified Sri Lanka-box area: {simplified_area:.8f} degrees²")
     print(f"Runtime: {time.perf_counter() - started:.2f} seconds")
 
 
