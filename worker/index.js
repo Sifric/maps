@@ -43,13 +43,28 @@ export default {
     }
     const glyph = url.pathname.match(/^\/api\/v1\/fonts\/([^/]+)\/(\d+-\d+\.pbf)$/);
     if (glyph) {
+      const [start, end] = glyph[2].slice(0, -4).split("-").map(Number);
+      if (!Number.isSafeInteger(start) || !Number.isSafeInteger(end) || end - start !== 255) {
+        return new Response("Not Found", { status: 404, headers: cors });
+      }
       let stack;
       try { stack = decodeURIComponent(glyph[1]); }
       catch { return new Response("Not Found", { status: 404, headers: cors }); }
       if (stack.includes("/") || stack.includes("\\") || stack === "." || stack === "..") {
         return new Response("Not Found", { status: 404, headers: cors });
       }
-      return serveAsset(request, env, `/assets/fonts/${encodeURIComponent(stack)}/${glyph[2]}`);
+      const asset = await serveAsset(request, env, `/assets/fonts/${encodeURIComponent(stack)}/${glyph[2]}`);
+      if (asset.status === 404) {
+        return new Response(new Uint8Array(0), {
+          status: 200,
+          headers: {
+            "Content-Type": "application/x-protobuf",
+            "Cache-Control": "public, max-age=86400",
+            "Access-Control-Allow-Origin": "*"
+          }
+        });
+      }
+      return asset;
     }
     if (url.pathname.startsWith("/api/") || url.pathname.startsWith("/tiles/")) {
       return new Response("Not Found", { status: 404, headers: cors });
