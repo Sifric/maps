@@ -53,10 +53,27 @@ def main():
         return list(zip(lon, lat))
 
     land = transform(land, to_lonlat)
-    parts = [part for part in polygons(land) if part.area >= 1e-9]
+    all_parts = list(polygons(land))
+    west, south, east, north = BOUNDS
+    tolerance = 1e-6
+    retained = []
+    for part in all_parts:
+        min_lon, min_lat, max_lon, max_lat = part.bounds
+        touches_edge = (
+            abs(min_lon - west) <= tolerance
+            or abs(max_lon - east) <= tolerance
+            or abs(min_lat - south) <= tolerance
+            or abs(max_lat - north) <= tolerance
+        )
+        if not touches_edge:
+            retained.append(part)
+    print(f"BBox-edge filter: polygons before={len(all_parts)}; "
+          f"after={len(retained)}; removed={len(all_parts) - len(retained)}", flush=True)
+    parts = [part for part in retained if part.area >= 1e-9]
     land = unary_union(parts)
     sri_lanka_box = box(*SRI_LANKA_BOUNDS)
     area = land.intersection(sri_lanka_box).area
+    print(f"Sri Lanka-box area after edge filtering: {area:.8f} degrees²", flush=True)
     print(f"Full-bbox land area: {land.area:.8f} degrees²; "
           f"Sri Lanka-box land area: {area:.8f} degrees²; "
           f"polygon count: {len(parts)}", flush=True)
