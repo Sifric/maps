@@ -21,7 +21,6 @@ jobs:
       cancel-in-progress: false
     steps:
       - uses: actions/checkout@v4
-        with:
 
       - name: Install Wrangler
         run: npm install -g wrangler
