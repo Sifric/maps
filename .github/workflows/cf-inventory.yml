@@ -1,0 +1,25 @@
+name: Cloudflare Inventory
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inventory:
+    environment: production
+    runs-on: ubuntu-24.04
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Wrangler
+        run: npm install -g wrangler
+      - name: Inspect Cloudflare resources
+        run: |
+          wrangler whoami | sed -E 's/[0-9a-f]{32}/<redacted>/g'
+          wrangler deployments list --name maps 2>&1 | head -20 || echo "worker maps: not found or no access"
+          wrangler r2 bucket list 2>&1 | grep -E "name|creation" || true
+          wrangler deployments list --name lkmaps-tiles 2>&1 | head -5 || echo "lkmaps-tiles: not found"
