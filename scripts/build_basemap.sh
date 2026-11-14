@@ -62,8 +62,6 @@ java -Xmx3g -jar "${PLANETILER_JAR}" \
     --maxzoom=14 \
     --minzoom=0 \
     --bounds=78.0,5.0,82.5,10.5 \
-    --simplify_tolerance=0.05 \
-    --simplify_tolerance_at_max_zoom=0.03125 \
     --force \
     --nodemap-type=sortedtable \
     --nodemap-storage=mmap \
