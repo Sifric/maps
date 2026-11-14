@@ -45,7 +45,7 @@
       "id": "background",
       "type": "background",
       "paint": {
-        "background-color": "#f8f4f0"
+        "background-color": "rgb(158,189,255)"
       }
     },
     {
@@ -6264,47 +6264,6 @@
         "text-halo-blur": 1,
         "text-halo-color": "#fff",
         "text-halo-width": 1
-      }
-    },
-    {
-      "id": "mazo-country-label",
-      "type": "symbol",
-      "source": "mazo-country-label",
-      "minzoom": 5.5,
-      "maxzoom": 9,
-      "layout": {
-        "text-field": [
-          "get",
-          "name"
-        ],
-        "text-font": [
-          "Mazo Maps Sans Regular"
-        ],
-        "text-size": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          5.5,
-          15,
-          7,
-          18,
-          9,
-          21
-        ],
-        "text-letter-spacing": 0.02,
-        "text-anchor": "center",
-        "text-allow-overlap": true,
-        "text-ignore-placement": true,
-        "symbol-sort-key": -100
-      },
-      "paint": {
-        "text-color": "#344751",
-        "text-halo-color": "#f7f5ef",
-        "text-halo-width": 2.4
       }
     }
   ],

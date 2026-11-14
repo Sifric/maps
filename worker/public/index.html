@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sri Lanka local map preview</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@6.16.0/dist/maplibre-gl.css">
+<style>html,body,#map{margin:0;width:100%;height:100%}#error{position:absolute;top:10px;left:10px;background:white;color:#900;padding:10px;z-index:2;display:none}</style>
+<script src="https://cdn.jsdelivr.net/npm/pmtiles@4.5.0/dist/pmtiles.js"></script>
+</head>
+<body><div id="map"></div><div id="error"></div>
+<script type="module">
+import * as maplibregl from "https://cdn.jsdelivr.net/npm/maplibre-gl@6.16.0/dist/maplibre-gl.mjs";
+(async () => {
+  const protocol = new pmtiles.Protocol();
+  maplibregl.addProtocol('pmtiles', (params, controller) => {
+    const url = params.url.replace(/^pmtiles:\/\/\//, `pmtiles://${location.origin}/`);
+    return protocol.tile({...params, url}, controller);
+  });
+  const response = await fetch('/style.json');
+  if (!response.ok) throw new Error(`Style fetch failed: ${response.status}`);
+  const style = await response.json();
+  window.map = new maplibregl.Map({container:'map', style, center:[80.7,7.9], zoom:7});
+  window.map.addControl(new maplibregl.NavigationControl());
+})().catch(error => {
+  console.error(error);
+  const element = document.getElementById('error');
+  element.textContent = error.message;
+  element.style.display = 'block';
+});
+</script></body></html>
