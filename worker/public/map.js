@@ -115,7 +115,12 @@ function markerImage(kind) {
   c.fill();
   c.stroke();
   c.shadowColor = "transparent";
-  drawIcon(c, icons[kind] || "place", 18, 15, 28, "#fff");
+  if (kind === "other") {
+    c.fillStyle = "#fff";
+    c.beginPath();
+    c.arc(32, 29, 7, 0, Math.PI * 2);
+    c.fill();
+  } else drawIcon(c, icons[kind] || "place", 18, 15, 28, "#fff");
   return { width: 128, height: 144, data: c.getImageData(0, 0, 128, 144).data };
 }
 function stylePlaces(style) {
@@ -128,24 +133,64 @@ function stylePlaces(style) {
     if (layers[id])
       layers[id].layout = { ...(layers[id].layout || {}), visibility: "none" };
   const dot = layers["mazo-places-dot"];
-  dot.maxzoom = 12;
-  dot.paint["circle-color"] = [
-    "match",
-    ["get", "kind"],
-    ...Object.entries(colours)
-      .filter(([k]) => k !== "other")
-      .flat(),
-    colours.other,
+  delete dot.maxzoom;
+  const progress = ["number", ["feature-state", "placeExpansion"], 0];
+  const unselected = (opacity) => [
+    "case",
+    ["boolean", ["feature-state", "selectedPlace"], false],
+    0,
+    opacity,
   ];
-  dot.paint["circle-radius"] = [
+  const radius = (small, large) => [
     "interpolate",
     ["linear"],
-    ["zoom"],
-    7,
-    1.5,
-    11,
-    2.5,
+    progress,
+    0,
+    small,
+    0.55,
+    large,
+    1,
+    large,
   ];
+  dot.paint = {
+    "circle-color": [
+      "match",
+      ["get", "kind"],
+      ...Object.entries(colours)
+        .filter(([k]) => k !== "other")
+        .flat(),
+      colours.other,
+    ],
+    "circle-radius": [
+      "interpolate",
+      ["linear"],
+      ["zoom"],
+      7,
+      radius(1.5, 5),
+      11,
+      radius(2.5, 7),
+      12,
+      radius(3, 8.05),
+      14,
+      radius(3, 9.43),
+      16,
+      radius(3, 10.35),
+    ],
+    "circle-opacity": unselected([
+      "interpolate",
+      ["linear"],
+      progress,
+      0,
+      1,
+      0.45,
+      1,
+      0.85,
+      0.3,
+      1,
+      0,
+    ]),
+    "circle-stroke-width": 0,
+  };
   const pin = layers["mazo-places-icon"];
   pin.minzoom = 12;
   delete pin.filter;
@@ -162,7 +207,8 @@ function stylePlaces(style) {
       16,
       0.9,
     ],
-    "icon-anchor": "bottom",
+    "icon-anchor": "center",
+    "icon-offset": [0, 3],
     "icon-allow-overlap": false,
     "icon-padding": 8,
     "icon-optional": false,
@@ -170,8 +216,8 @@ function stylePlaces(style) {
     "text-font": ["Mazo Maps Sans Regular"],
     "text-size": ["interpolate", ["linear"], ["zoom"], 12, 12, 16, 13],
     "text-anchor": "left",
-    "text-offset": [1, -1.45],
-    "text-optional": true,
+    "text-offset": [1.1, 0],
+    "text-optional": false,
     "text-allow-overlap": false,
     "text-padding": 6,
     "text-max-width": 10,
@@ -200,6 +246,20 @@ function stylePlaces(style) {
     ],
   };
   pin.paint = {
+    "icon-opacity": unselected([
+      "interpolate",
+      ["linear"],
+      progress,
+      0,
+      0,
+      0.35,
+      0,
+      0.75,
+      1,
+      1,
+      1,
+    ]),
+    "text-opacity": ["interpolate", ["linear"], progress, 0, 0, 0.55, 0, 1, 1],
     "text-color": [
       "match",
       ["get", "kind"],
@@ -214,6 +274,58 @@ function stylePlaces(style) {
   };
   return style;
 }
+// Placement chooses complete icon/name pairs. Animate only those accepted pairs;
+// colliding names keep their ordinary dots, rather than leaving nameless pins.
+function animatePlaceExpansion(map) {
+  const places = new Map();
+  const motion = matchMedia("(prefers-reduced-motion: reduce)");
+  map.on("style.load", () => places.clear());
+  map.on("render", () => {
+    if (!map.isStyleLoaded() || !map.getLayer("mazo-places-icon")) return;
+    const accepted = new Set(
+      map
+        .queryRenderedFeatures(undefined, {
+          layers: ["mazo-places-icon"],
+        })
+        .map((f) => f.id)
+        .filter((id) => id !== undefined),
+    );
+    const now = performance.now();
+    for (const id of accepted) {
+      if (!places.has(id))
+        places.set(id, { value: 0, from: 0, target: 1, start: now });
+    }
+    let animating = false;
+    for (const [id, state] of places) {
+      const target = accepted.has(id) ? 1 : 0;
+      if (state.target !== target) {
+        state.from = state.value;
+        state.target = target;
+        state.start = now;
+      }
+      const t = motion.matches ? 1 : Math.min(1, (now - state.start) / 220);
+      const value = state.from + (target - state.from) * (1 - (1 - t) ** 3);
+      if (value !== state.value || t === 0) {
+        state.value = value;
+        map.setFeatureState(
+          { source: "openmaptiles", sourceLayer: "places", id },
+          { placeExpansion: value },
+        );
+      }
+      if (t < 1) animating = true;
+      else if (target === 0) {
+        map.removeFeatureState(
+          { source: "openmaptiles", sourceLayer: "places", id },
+          "placeExpansion",
+        );
+        places.delete(id);
+      }
+    }
+    if (animating) map.triggerRepaint();
+  });
+  map.on("remove", () => places.clear());
+}
+
 async function searchIndex() {
   if (!indexPromise)
     indexPromise = fetch("/assets/places-search.json").then((r) => {
@@ -229,7 +341,15 @@ function panel(title) {
   content.replaceChildren(element("h1", title));
   return content;
 }
+function selectionState(row, active) {
+  if (!row || !map?.getSource("openmaptiles")) return;
+  const feature = { source: "openmaptiles", sourceLayer: "places", id: row[0] };
+  if (active) map.setFeatureState(feature, { selectedPlace: true });
+  else map.removeFeatureState(feature, "selectedPlace");
+}
 function closePanel() {
+  selectionState(selected, false);
+  selected = null;
   $("panel").hidden = true;
   if (highlight) {
     highlight.remove();
@@ -241,7 +361,9 @@ function saveRecent(row) {
   writeStored("lk-recents", [row, ...recents].slice(0, 15));
 }
 function showPlace(row, fly = true) {
+  selectionState(selected, false);
   selected = row;
+  selectionState(row, true);
   saveRecent(row);
   $("search").value = row[1];
   $("clear-search").hidden = false;
@@ -594,6 +716,7 @@ document.addEventListener("keydown", (e) => {
     renderWorldCopies: false,
   });
   window.map = map;
+  animatePlaceExpansion(map);
   map.on("styleimagemissing", (e) => {
     if (e.id.startsWith("lk-pin-") && !map.hasImage(e.id))
       map.addImage(e.id, markerImage(e.id.slice(7)), { pixelRatio: 4 });
@@ -631,36 +754,36 @@ document.addEventListener("keydown", (e) => {
     $("locate").removeAttribute("aria-busy");
     status("Location permission was denied or the location is unavailable");
   });
-  map.on("click", "mazo-places-icon", (e) => {
-    const f = e.features[0],
-      p = f.properties;
-    showPlace([
-      f.id,
-      p.name,
-      ...f.geometry.coordinates,
-      p.kind,
-      p.subtitle || "",
-    ]);
-  });
-  map.on(
-    "mouseenter",
-    "mazo-places-icon",
-    () => (map.getCanvas().style.cursor = "pointer"),
-  );
-  map.on(
-    "mouseleave",
-    "mazo-places-icon",
-    () => (map.getCanvas().style.cursor = ""),
-  );
+  for (const layer of ["mazo-places-icon", "mazo-places-dot"]) {
+    map.on("click", layer, (e) => {
+      const f = e.features[0],
+        p = f.properties;
+      showPlace([
+        f.id,
+        p.name,
+        ...f.geometry.coordinates,
+        p.kind,
+        p.subtitle || "",
+      ]);
+    });
+    map.on(
+      "mouseenter",
+      layer,
+      () => (map.getCanvas().style.cursor = "pointer"),
+    );
+    map.on("mouseleave", layer, () => (map.getCanvas().style.cursor = ""));
+  }
   map.on("click", (e) => {
     if (
-      !map.queryRenderedFeatures(e.point, { layers: ["mazo-places-icon"] })
-        .length
+      !map.queryRenderedFeatures(e.point, {
+        layers: ["mazo-places-icon", "mazo-places-dot"],
+      }).length
     )
       $("suggestions").hidden = true;
   });
   map.once("load", async () => {
     mapOptions = createMapOptions(map, { baseStyle: style, status });
+    selectionState(selected, true);
     const id = new URL(location.href).searchParams.get("place");
     if (id) {
       const row = (await searchIndex()).find((r) => String(r[0]) === id);
