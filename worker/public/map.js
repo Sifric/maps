@@ -243,6 +243,13 @@ function stylePlaces(style) {
     "text-halo-blur": 0.5,
   };
   dot.layout["symbol-sort-key"] = pin.layout["symbol-sort-key"];
+  // Geographic names keep placement priority over businesses at overview zooms.
+  const base = style.layers.filter((layer) => layer !== dot && layer !== pin);
+  const geographicNames = base.findIndex(
+    (layer) => layer["source-layer"] === "place",
+  );
+  base.splice(geographicNames < 0 ? base.length : geographicNames, 0, dot, pin);
+  style.layers = base;
   return style;
 }
 async function searchIndex() {
