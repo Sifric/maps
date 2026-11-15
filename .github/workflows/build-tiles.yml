@@ -55,16 +55,17 @@ jobs:
           gh release download lkmaps-dd9aa3e8 --repo "$GITHUB_REPOSITORY" --pattern sri-lanka.pmtiles --dir build/reference
           echo "bc804addb463eeb086dad58622a41514adadb4069525d31b5702186e61444bde  build/reference/sri-lanka.pmtiles" | sha256sum -c -
 
-      - name: Verify place data checksums
-        run: sha256sum -c places.sha256 > build/place-checksums.log
+      - name: Verify place layout and checksums
+        run: |
+          python3 scripts/numbered_shards.py
+          sha256sum -c places.sha256 > build/place-checksums.log
 
       - name: Build places tiles
         run: python3 scripts/build_places_tiles.py
 
       - name: Verify search matches tile inputs
         run: |
-          python3 scripts/build_search_index.py build/places.geojson build/places-search.json
-          cmp build/places-search.json worker/public/assets/places-search.json
+          python3 scripts/build_search_index.py build/places.geojson build/places-search.json --check worker/public/assets/places-search.json
 
       - name: Replace places and verify all other layers are unchanged
         run: python3 scripts/replace_places_layer.py build/reference/sri-lanka.pmtiles build/places.pmtiles build/sri-lanka.pmtiles
