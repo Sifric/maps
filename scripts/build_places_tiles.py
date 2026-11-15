@@ -14,10 +14,13 @@ Pipeline
 from __future__ import annotations
 
 import glob
+from collections import defaultdict, deque
 import hashlib
 import json
 import math
 import os
+import re
+import unicodedata
 import subprocess
 import sys
 from datetime import datetime, timezone
@@ -129,6 +132,31 @@ def place_kind(categories: list[str]) -> tuple[str, str]:
     return "other", ""
 
 
+def display_label(name: str, record: dict) -> str:
+    """Use an existing Latin-language label without changing the stored name.
+
+    Do not translate or guess names. Mixed-script brands remain intact unless
+    an explicit alias, delimiter-separated name, or full Latin phrase exists.
+    """
+    def latin(value):
+        letters = [c for c in value if c.isalpha()]
+        return bool(letters) and all(unicodedata.name(c, "").startswith("LATIN") for c in letters)
+
+    aliases = [name, record.get("name_en", ""), *record.get("source", {}).get("names", [])]
+    for alias in aliases:
+        if isinstance(alias, str) and alias.strip() and latin(alias):
+            return alias.strip()
+    parts = re.split(r"[|/\n]", name)
+    candidates = [part.strip() for part in parts
+                  if latin(part) and sum(c.isalpha() for c in part) >= 3]
+    if candidates:
+        return max(candidates, key=lambda part: sum(c.isalpha() for c in part))
+    phrases = re.findall(r"[A-Za-z][A-Za-z0-9 &'’.,()\-]*", name)
+    phrases = [part.strip(" -/,()") for part in phrases
+               if len(re.findall(r"[A-Za-z]+", part)) >= 2]
+    return phrases[0] if len(phrases) == 1 else name
+
+
 def rank_score(category: str, name: str) -> int:
     """Score existing category keywords, with a small mixed-language name bonus."""
     low = category.lower()
@@ -165,12 +193,35 @@ def select_by_zoom(features: list[dict], params: dict) -> dict[int, int]:
             if feature["id"] in assigned:
                 key = cell(feature)
                 occupancy[key] = occupancy.get(key, 0) + 1
+        # Give each occupied cell a mix of useful categories. The old single
+        # score queue could fill every slot with offices before any food/shop
+        # feature was considered. Keep the existing score/id order within each
+        # category, and retain all earlier choices for monotonic membership.
+        buckets = defaultdict(lambda: defaultdict(deque))
+        kind_counts = defaultdict(lambda: defaultdict(int))
+        kind_order = {kind: i for i, kind in enumerate((
+            "food", "leisure", "culture", "shopping", "transport", "health",
+            "finance", "worship", "government", "landmark", "other",
+        ))}
         for feature in ordered:
-            if feature["id"] not in assigned:
-                key = cell(feature)
-                if occupancy.get(key, 0) < caps[zoom]:
-                    assigned[feature["id"]] = zoom
-                    occupancy[key] = occupancy.get(key, 0) + 1
+            key = cell(feature)
+            kind = feature["properties"].get("kind", "other")
+            if feature["id"] in assigned:
+                kind_counts[key][kind] += 1
+            else:
+                buckets[key][kind].append(feature)
+        for key in sorted(buckets):
+            available = buckets[key]
+            while available and occupancy.get(key, 0) < caps[zoom]:
+                kind = min(available, key=lambda k: (
+                    kind_counts[key][k], kind_order.get(k, len(kind_order)), k,
+                ))
+                feature = available[kind].popleft()
+                assigned[feature["id"]] = zoom
+                occupancy[key] = occupancy.get(key, 0) + 1
+                kind_counts[key][kind] += 1
+                if not available[kind]:
+                    del available[kind]
     for feature in ordered:
         assigned.setdefault(feature["id"], 14)
     return assigned
@@ -252,6 +303,7 @@ def main() -> None:
         primary = real_cats[0] if real_cats else "Other"
         pri, mz = classify(primary)
         kind, subtitle = place_kind(real_cats)
+        label = display_label(name, rec)
 
         features.append({
             "type": "Feature",
@@ -263,6 +315,7 @@ def main() -> None:
             },
             "properties": {
                 "name": name,
+                **({"label": label} if label != name else {}),
                 "category": primary,
                 "min_zoom": mz,
                 "priority": pri,

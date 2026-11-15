@@ -86,6 +86,18 @@ function element(tag, text, className) {
 function actionLabel(button, text, glyph) {
   button.replaceChildren(icon(glyph), element("span", text));
 }
+function dotImage(kind) {
+  const canvas = document.createElement("canvas");
+  canvas.width = 128;
+  canvas.height = 144;
+  const c = canvas.getContext("2d");
+  c.scale(2, 2);
+  c.fillStyle = colours[kind] || colours.other;
+  c.beginPath();
+  c.arc(32, 68, 5, 0, Math.PI * 2);
+  c.fill();
+  return { width: 128, height: 144, data: c.getImageData(0, 0, 128, 144).data };
+}
 function markerImage(kind) {
   const canvas = document.createElement("canvas");
   // 4× bitmap density keeps the circular outline smooth on high-DPI screens.
@@ -128,26 +140,31 @@ function stylePlaces(style) {
     if (layers[id])
       layers[id].layout = { ...(layers[id].layout || {}), visibility: "none" };
   const dot = layers["mazo-places-dot"];
-  dot.maxzoom = 12;
-  dot.paint["circle-color"] = [
-    "match",
-    ["get", "kind"],
-    ...Object.entries(colours)
-      .filter(([k]) => k !== "other")
-      .flat(),
-    colours.other,
-  ];
-  dot.paint["circle-radius"] = [
-    "interpolate",
-    ["linear"],
-    ["zoom"],
-    7,
-    1.5,
-    11,
-    2.5,
-  ];
+  // Fallback dots share the pin collision footprint, so they yield to named
+  // pins and to each other instead of drawing an unrestricted cloud of points.
+  dot.type = "symbol";
+  delete dot.maxzoom;
+  dot.layout = {
+    "icon-image": ["concat", "lk-dot-", ["get", "kind"]],
+    "icon-size": [
+      "interpolate",
+      ["linear"],
+      ["zoom"],
+      7,
+      0.65,
+      12,
+      0.8,
+      16,
+      0.9,
+    ],
+    "icon-anchor": "bottom",
+    "icon-allow-overlap": false,
+    "icon-ignore-placement": false,
+    "icon-padding": 8,
+  };
+  dot.paint = {};
   const pin = layers["mazo-places-icon"];
-  pin.minzoom = 12;
+  pin.minzoom = 7;
   delete pin.filter;
   pin.layout = {
     "icon-image": ["concat", "lk-pin-", ["get", "kind"]],
@@ -155,10 +172,12 @@ function stylePlaces(style) {
       "interpolate",
       ["linear"],
       ["zoom"],
+      7,
+      0.65,
       12,
-      0.7,
+      0.8,
       14,
-      0.82,
+      0.85,
       16,
       0.9,
     ],
@@ -166,12 +185,23 @@ function stylePlaces(style) {
     "icon-allow-overlap": false,
     "icon-padding": 8,
     "icon-optional": false,
-    "text-field": ["get", "name"],
+    "text-field": /^en(?:-|$)/i.test(navigator.language)
+      ? ["coalesce", ["get", "label"], ["get", "name"]]
+      : ["get", "name"],
     "text-font": ["Mazo Maps Sans Regular"],
     "text-size": ["interpolate", ["linear"], ["zoom"], 12, 12, 16, 13],
-    "text-anchor": "left",
-    "text-offset": [1, -1.45],
-    "text-optional": true,
+    "text-variable-anchor-offset": [
+      "left",
+      [1.1, -1.35],
+      "right",
+      [-1.1, -1.35],
+      "bottom",
+      [0, -2.3],
+      "top",
+      [0, 0.3],
+    ],
+    "text-justify": "auto",
+    "text-optional": false,
     "text-allow-overlap": false,
     "text-padding": 6,
     "text-max-width": 10,
@@ -212,6 +242,7 @@ function stylePlaces(style) {
     "text-halo-width": 1.5,
     "text-halo-blur": 0.5,
   };
+  dot.layout["symbol-sort-key"] = pin.layout["symbol-sort-key"];
   return style;
 }
 async function searchIndex() {
@@ -235,6 +266,7 @@ function closePanel() {
     highlight.remove();
     highlight = null;
   }
+  applyPlaceFilters();
 }
 function saveRecent(row) {
   const recents = readStored("lk-recents").filter((r) => r[0] !== row[0]);
@@ -310,6 +342,7 @@ function showPlace(row, fly = true) {
   highlight = new maplibregl.Marker({ element: selectedPin, anchor: "bottom" })
     .setLngLat([row[2], row[3]])
     .addTo(map);
+  applyPlaceFilters();
   if (fly)
     map.flyTo({
       center: [row[2], row[3]],
@@ -365,7 +398,10 @@ async function searchPlaces() {
     if ($("search").value.trim().toLocaleLowerCase() !== q) return;
     const words = q.split(/\s+/);
     const found = rows
-      .filter((r) => words.every((w) => r[1].toLocaleLowerCase().includes(w)))
+      .filter((r) => {
+        const names = `${r[1]} ${r[6] || ""}`.toLocaleLowerCase();
+        return words.every((w) => names.includes(w));
+      })
       .sort(
         (a, b) =>
           Number(!a[1].toLocaleLowerCase().startsWith(q)) -
@@ -387,14 +423,20 @@ async function searchPlaces() {
     box.replaceChildren(element("div", e.message, "empty"));
   }
 }
+function applyPlaceFilters() {
+  const filters = [];
+  if (category) filters.push(["==", ["get", "kind"], category]);
+  if (selected && highlight) filters.push(["!=", ["id"], selected[0]]);
+  for (const id of ["mazo-places-dot", "mazo-places-icon"])
+    if (map?.getLayer(id))
+      map.setFilter(id, filters.length ? ["all", ...filters] : null);
+}
 function filterCategory(kind) {
   category = category === kind ? null : kind;
   for (const b of $("categories").querySelectorAll("[data-kind]"))
     b.classList.toggle("active", b.dataset.kind === category);
   $("reset-category").hidden = !category;
-  for (const id of ["mazo-places-dot", "mazo-places-icon"]) {
-    map.setFilter(id, category ? ["==", ["get", "kind"], category] : null);
-  }
+  applyPlaceFilters();
   status(
     category
       ? `Showing ${categoryNames[category].toLowerCase()} places`
@@ -597,12 +639,14 @@ document.addEventListener("keydown", (e) => {
   map.on("styleimagemissing", (e) => {
     if (e.id.startsWith("lk-pin-") && !map.hasImage(e.id))
       map.addImage(e.id, markerImage(e.id.slice(7)), { pixelRatio: 4 });
+    if (e.id.startsWith("lk-dot-") && !map.hasImage(e.id))
+      map.addImage(e.id, dotImage(e.id.slice(7)), { pixelRatio: 4 });
   });
   map.on("error", (e) => {
     if (!mapOptions?.handleError(e)) showError(e.error);
   });
   map.addControl(
-    new maplibregl.ScaleControl({ maxWidth: 120, unit: "metric" }),
+    new maplibregl.ScaleControl({ maxWidth: 80, unit: "metric" }),
     "bottom-right",
   );
   // One-shot requests only: retain the location dot without background tracking.
@@ -631,31 +675,30 @@ document.addEventListener("keydown", (e) => {
     $("locate").removeAttribute("aria-busy");
     status("Location permission was denied or the location is unavailable");
   });
-  map.on("click", "mazo-places-icon", (e) => {
-    const f = e.features[0],
-      p = f.properties;
-    showPlace([
-      f.id,
-      p.name,
-      ...f.geometry.coordinates,
-      p.kind,
-      p.subtitle || "",
-    ]);
-  });
-  map.on(
-    "mouseenter",
-    "mazo-places-icon",
-    () => (map.getCanvas().style.cursor = "pointer"),
-  );
-  map.on(
-    "mouseleave",
-    "mazo-places-icon",
-    () => (map.getCanvas().style.cursor = ""),
-  );
+  for (const layer of ["mazo-places-icon", "mazo-places-dot"]) {
+    map.on("click", layer, (e) => {
+      const f = e.features[0],
+        p = f.properties;
+      showPlace([
+        f.id,
+        p.name,
+        ...f.geometry.coordinates,
+        p.kind,
+        p.subtitle || "",
+      ]);
+    });
+    map.on(
+      "mouseenter",
+      layer,
+      () => (map.getCanvas().style.cursor = "pointer"),
+    );
+    map.on("mouseleave", layer, () => (map.getCanvas().style.cursor = ""));
+  }
   map.on("click", (e) => {
     if (
-      !map.queryRenderedFeatures(e.point, { layers: ["mazo-places-icon"] })
-        .length
+      !map.queryRenderedFeatures(e.point, {
+        layers: ["mazo-places-icon", "mazo-places-dot"],
+      }).length
     )
       $("suggestions").hidden = true;
   });
