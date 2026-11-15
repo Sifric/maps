@@ -6282,11 +6282,13 @@
             "zoom"
           ],
           7,
-          6,
+          4,
+          10,
+          5,
           12,
-          9,
+          6,
           14,
-          11
+          7
         ],
         "circle-color": "#ffffff",
         "circle-stroke-color": [
@@ -6317,7 +6319,7 @@
           "#C5221F",
           "#9AA0A6"
         ],
-        "circle-stroke-width": 2.5
+        "circle-stroke-width": 2
       }
     },
     {
@@ -6364,9 +6366,11 @@
             "zoom"
           ],
           7,
-          0.5,
+          0.35,
+          12,
+          0.45,
           14,
-          0.7
+          0.55
         ],
         "icon-anchor": "center",
         "icon-allow-overlap": false,
@@ -6389,36 +6393,7 @@
           5
         ]
       },
-      "paint": {
-        "icon-color": [
-          "match",
-          [
-            "get",
-            "kind"
-          ],
-          "food",
-          "#E8590C",
-          "shopping",
-          "#1A73E8",
-          "health",
-          "#E53935",
-          "finance",
-          "#0B3D91",
-          "leisure",
-          "#34A853",
-          "culture",
-          "#9334E6",
-          "worship",
-          "#5F6368",
-          "transport",
-          "#3C4043",
-          "government",
-          "#80868B",
-          "landmark",
-          "#C5221F",
-          "#9AA0A6"
-        ]
-      }
+      "paint": {}
     },
     {
       "id": "mazo-places-label",
@@ -6450,7 +6425,7 @@
         "text-anchor": "top",
         "text-offset": [
           0,
-          1.2
+          0.9
         ],
         "text-optional": true,
         "text-allow-overlap": false,
@@ -6500,7 +6475,7 @@
         "text-anchor": "top",
         "text-offset": [
           0,
-          2.4
+          2.0
         ],
         "text-optional": true,
         "text-allow-overlap": false
