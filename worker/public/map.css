@@ -1051,3 +1051,28 @@ button:hover {
     width: 86px;
   }
 }
+
+/* Keep the existing location button; MapLibre manages the dot and accuracy. */
+.maplibregl-ctrl-group:has(> .maplibregl-ctrl-geolocate) {
+  display: none;
+}
+.maplibregl-user-location-dot,
+.maplibregl-user-location-dot::before {
+  background-color: #4285f4;
+}
+.maplibregl-user-location-accuracy-circle {
+  background-color: rgb(66 133 244 / 14%);
+  border: 1px solid rgb(66 133 244 / 25%);
+}
+#locate[data-location="ready"] {
+  color: var(--ui-blue);
+}
+.map-controls button:disabled {
+  cursor: progress;
+  opacity: 0.65;
+}
+@media (prefers-reduced-motion: reduce) {
+  .maplibregl-user-location-dot::before {
+    animation: none;
+  }
+}

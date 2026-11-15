@@ -47,7 +47,8 @@ let map,
   searchTimer,
   statusTimer,
   highlight,
-  mapOptions;
+  mapOptions,
+  geolocateControl;
 function status(text) {
   $("map-status").textContent = text;
   $("map-status").classList.add("visible");
@@ -494,12 +495,18 @@ $("locate").onclick = () => {
     status("Geolocation is unavailable");
     return;
   }
-  navigator.geolocation.getCurrentPosition(
-    (p) =>
-      map.flyTo({ center: [p.coords.longitude, p.coords.latitude], zoom: 15 }),
-    () =>
-      status("Location permission was denied or the location is unavailable"),
-  );
+  if (!geolocateControl) {
+    status("The map is still loading. Try again in a moment.");
+    return;
+  }
+  const button = $("locate");
+  button.disabled = true;
+  button.setAttribute("aria-busy", "true");
+  if (!geolocateControl.trigger()) {
+    button.disabled = false;
+    button.removeAttribute("aria-busy");
+    status("Location is unavailable. Check your browser location permission.");
+  }
 };
 $("menu").onclick = () => {
   const c = panel("LK Maps");
@@ -600,6 +607,32 @@ document.addEventListener("keydown", (e) => {
     new maplibregl.ScaleControl({ maxWidth: 120, unit: "metric" }),
     "bottom-right",
   );
+  // One-shot requests only: retain the location dot without background tracking.
+  geolocateControl = new maplibregl.GeolocateControl({
+    positionOptions: {
+      enableHighAccuracy: true,
+      timeout: 10000,
+      maximumAge: 30000,
+    },
+    trackUserLocation: false,
+    showUserLocation: true,
+    showAccuracyCircle: true,
+    fitBoundsOptions: { maxZoom: 15, duration: 1000 },
+  });
+  map.addControl(geolocateControl, "top-right");
+  geolocateControl.on("geolocate", () => {
+    const button = $("locate");
+    button.disabled = false;
+    button.removeAttribute("aria-busy");
+    button.dataset.location = "ready";
+    button.setAttribute("aria-label", "Recenter on your location");
+    button.title = "Recenter on your location";
+  });
+  geolocateControl.on("error", () => {
+    $("locate").disabled = false;
+    $("locate").removeAttribute("aria-busy");
+    status("Location permission was denied or the location is unavailable");
+  });
   map.on("click", "mazo-places-icon", (e) => {
     const f = e.features[0],
       p = f.properties;
