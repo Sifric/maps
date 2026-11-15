@@ -1,3 +1,4 @@
+import { createMapOptions, initialMapStyle } from "./map-options.js";
 import { icon, drawIcon } from "./icons.js";
 import * as maplibregl from "https://cdn.jsdelivr.net/npm/maplibre-gl@6.16.0/dist/maplibre-gl.mjs";
 const $ = (id) => document.getElementById(id);
@@ -45,7 +46,8 @@ let map,
   selected = null,
   searchTimer,
   statusTimer,
-  highlight;
+  highlight,
+  mapOptions;
 function status(text) {
   $("map-status").textContent = text;
   $("map-status").classList.add("visible");
@@ -483,26 +485,6 @@ $("zoom-in").onclick = () => map.zoomIn({ duration: 250 });
 $("zoom-out").onclick = () => map.zoomOut({ duration: 250 });
 $("compass").onclick = () =>
   map.easeTo({ bearing: 0, pitch: 0, duration: 400 });
-$("layers").onclick = () => {
-  $("layer-panel").hidden = !$("layer-panel").hidden;
-};
-$("show-places").onchange = (e) => {
-  for (const id of ["mazo-places-dot", "mazo-places-icon"])
-    map.setLayoutProperty(
-      id,
-      "visibility",
-      e.target.checked ? "visible" : "none",
-    );
-};
-$("show-buildings").onchange = (e) => {
-  for (const l of map.getStyle().layers)
-    if (l["source-layer"] === "building" && l.type === "fill")
-      map.setLayoutProperty(
-        l.id,
-        "visibility",
-        e.target.checked ? "visible" : "none",
-      );
-};
 $("locate").onclick = () => {
   if (!navigator.geolocation) {
     status("Geolocation is unavailable");
@@ -596,7 +578,7 @@ document.addEventListener("keydown", (e) => {
       : { center, zoom };
   map = new maplibregl.Map({
     container: "map",
-    style,
+    style: initialMapStyle(style),
     ...initialCamera,
     maxZoom: 20,
     attributionControl: true,
@@ -607,7 +589,9 @@ document.addEventListener("keydown", (e) => {
     if (e.id.startsWith("lk-pin-") && !map.hasImage(e.id))
       map.addImage(e.id, markerImage(e.id.slice(7)), { pixelRatio: 2 });
   });
-  map.on("error", (e) => showError(e.error));
+  map.on("error", (e) => {
+    if (!mapOptions?.handleError(e)) showError(e.error);
+  });
   map.addControl(
     new maplibregl.ScaleControl({ maxWidth: 120, unit: "metric" }),
     "bottom-right",
@@ -641,6 +625,7 @@ document.addEventListener("keydown", (e) => {
       $("suggestions").hidden = true;
   });
   map.once("load", async () => {
+    mapOptions = createMapOptions(map, { baseStyle: style, status });
     const id = new URL(location.href).searchParams.get("place");
     if (id) {
       const row = (await searchIndex()).find((r) => String(r[0]) === id);

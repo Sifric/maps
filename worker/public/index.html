@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="theme-color" content="#ffffff" />
     <title>LK Maps · Sri Lanka</title>
+    <script>
+      try {
+        const theme = JSON.parse(
+          localStorage.getItem("lk-map-settings") || "{}",
+        ).theme;
+        document.documentElement.dataset.theme =
+          theme === "dark" ||
+          (theme !== "light" &&
+            matchMedia("(prefers-color-scheme: dark)").matches)
+            ? "dark"
+            : "light";
+      } catch {}
+    </script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link
       rel="stylesheet"
@@ -88,12 +101,85 @@
       <span class="mini-map"></span
       ><span class="layers-label"><span data-icon="layers"></span> Layers</span>
     </button>
-    <section id="layer-panel" class="layer-panel" hidden>
-      <strong>Map details</strong
-      ><label><input id="show-places" type="checkbox" checked /> Places</label
-      ><label
-        ><input id="show-buildings" type="checkbox" checked /> Buildings</label
-      >
+    <section
+      id="layer-panel"
+      class="layer-panel"
+      aria-label="Map appearance and layers"
+      hidden
+    >
+      <header class="options-header">
+        <h2>Layers &amp; appearance</h2>
+        <button id="close-layers" aria-label="Close layers">
+          <span data-icon="close"></span>
+        </button>
+      </header>
+      <h3>Appearance</h3>
+      <div class="theme-options" role="radiogroup" aria-label="Colour theme">
+        <button data-theme-choice="light" role="radio" aria-checked="false">
+          <span data-icon="sun"></span>Light
+        </button>
+        <button data-theme-choice="dark" role="radio" aria-checked="false">
+          <span data-icon="moon"></span>Dark
+        </button>
+        <button data-theme-choice="system" role="radio" aria-checked="true">
+          <span data-icon="monitor"></span>System
+        </button>
+      </div>
+      <h3>Map type</h3>
+      <div class="map-types" role="radiogroup" aria-label="Map type">
+        <button data-map-type="default" role="radio" aria-checked="true">
+          <span class="type-preview type-default"
+            ><span data-icon="map_default"></span></span
+          ><span>Default</span>
+        </button>
+        <button data-map-type="satellite" role="radio" aria-checked="false">
+          <span class="type-preview type-satellite"
+            ><span data-icon="satellite"></span></span
+          ><span>Satellite</span>
+        </button>
+        <button data-map-type="terrain" role="radio" aria-checked="false">
+          <span class="type-preview type-terrain"
+            ><span data-icon="terrain"></span></span
+          ><span>Terrain</span>
+        </button>
+      </div>
+      <p id="map-type-note" class="option-note"></p>
+      <h3>Map details</h3>
+      <div class="map-detail-options">
+        <button data-map-detail="transit" aria-pressed="false">
+          <span data-icon="bus"></span
+          ><span
+            ><strong>Public transit</strong><small id="transit-note"></small
+          ></span>
+        </button>
+        <button data-map-detail="traffic" aria-pressed="false" disabled>
+          <span data-icon="traffic"></span
+          ><span
+            ><strong>Traffic</strong
+            ><small id="traffic-note">Live feed not connected</small></span
+          >
+        </button>
+        <button data-map-detail="bicycling" aria-pressed="false">
+          <span data-icon="bicycle"></span
+          ><span
+            ><strong>Bicycling</strong><small id="bicycling-note"></small
+          ></span>
+        </button>
+        <button data-map-detail="buildings" aria-pressed="false">
+          <span data-icon="buildings"></span
+          ><span
+            ><strong>Raised buildings</strong><small id="buildings-note"></small
+          ></span>
+        </button>
+      </div>
+      <div class="additional-options">
+        <label><input id="show-places" type="checkbox" checked /> Places</label
+        ><label id="satellite-label-option" hidden
+          ><input id="satellite-labels" type="checkbox" checked /> Labels on
+          satellite</label
+        >
+      </div>
+      <p id="map-provider-note" class="option-note"></p>
     </section>
     <div class="map-controls">
       <button

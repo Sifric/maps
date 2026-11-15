@@ -1,5 +1,27 @@
 // Original 24px SVG icons. Shared by interface controls and canvas map markers.
 export const iconPaths = {
+  sun: [
+    "M12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8",
+    "M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M5 19l1.5-1.5M17.5 6.5 19 5",
+  ],
+  moon: ["M20 15A9 9 0 0 1 9 3a9 9 0 1 0 11 12Z"],
+  monitor: ["M3 4h18v13H3V4ZM8 21h8M12 17v4"],
+  map_default: ["m3 5 6-2 6 2 6-2v16l-6 2-6-2-6 2V5ZM9 3v16M15 5v16"],
+  satellite: [
+    "m5 3 4 4-4 4-4-4 4-4ZM19 13l4 4-4 4-4-4 4-4ZM9 7l8 8M9 11l4-4 4 4-4 4-4-4ZM3 16a5 5 0 0 1 5 5M3 12a9 9 0 0 1 9 9",
+  ],
+  terrain: ["m2 20 7-15 5 9 3-6 5 12H2ZM6 12l3 2 3-2"],
+  bicycle: [
+    "M9 16a4 4 0 1 1-8 0 4 4 0 0 1 8 0M23 16a4 4 0 1 1-8 0 4 4 0 0 1 8 0",
+    "m5 16 5-9 5 9H5ZM10 7h7l2 9M8 4h4M16 4h3",
+  ],
+  traffic: [
+    "M7 2h10v20H7V2ZM14 6a2 2 0 1 1-4 0 2 2 0 0 1 4 0M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0M14 18a2 2 0 1 1-4 0 2 2 0 0 1 4 0",
+  ],
+  buildings: [
+    "m3 8 7-4 7 4v12l-7 3-7-3V8ZM3 8l7 4 7-4M10 12v11M17 9l4-2v12l-4 1M6 13v4M13 14v4",
+  ],
+
   menu: ["M4 6h16M4 12h16M4 18h16"],
   search: ["M20 20l-5-5", "M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0"],
   close: ["M6 6l12 12M18 6 6 18"],
