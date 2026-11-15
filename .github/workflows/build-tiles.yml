@@ -19,12 +19,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Java 21
-        uses: actions/setup-java@v4
-        with:
-          distribution: temurin
-          java-version: '21'
-
       - name: Install tippecanoe
         run: |
           sudo apt-get update -qq
@@ -46,43 +40,39 @@ jobs:
           sudo tar xz -C /usr/local/bin -f /tmp/pmtiles.tar.gz pmtiles
           pmtiles version
 
-      - name: Cache Geofabrik PBF and Planetiler JAR
-        uses: actions/cache@v4
-        with:
-          path: .cache/
-          key: basemap-cache-${{ hashFiles('scripts/build_basemap.sh') }}
-          restore-keys: |
-            basemap-cache-
-
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
-      - name: Build basemap
-        run: bash scripts/build_basemap.sh
+      - name: Install archive dependency
+        run: python3 -m pip install 'pmtiles==3.8.1'
+
+      - name: Download unchanged basemap reference
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release download lkmaps-dd9aa3e8 --repo "$GITHUB_REPOSITORY" --pattern sri-lanka.pmtiles --dir build/reference
+          echo "bc804addb463eeb086dad58622a41514adadb4069525d31b5702186e61444bde  build/reference/sri-lanka.pmtiles" | sha256sum -c -
+
+      - name: Verify place data checksums
+        run: sha256sum -c places.sha256 > build/place-checksums.log
 
       - name: Build places tiles
         run: python3 scripts/build_places_tiles.py
 
-      - name: Install land geometry dependencies
-        run: python3 -m pip install pyogrio pyproj 'shapely>=2,<3'
-
-      - name: Build country land tiles
+      - name: Verify search matches tile inputs
         run: |
-          python3 scripts/build_country_land.py
-          tippecanoe -o build/country_land.pmtiles -Z0 -z14 -l country_land --force build/country_land.geojson
+          python3 scripts/build_search_index.py build/places.geojson build/places-search.json
+          cmp build/places-search.json worker/public/assets/places-search.json
 
-      - name: Merge tiles
-        run: bash scripts/merge_tiles.sh
+      - name: Replace places and verify all other layers are unchanged
+        run: python3 scripts/replace_places_layer.py build/reference/sri-lanka.pmtiles build/places.pmtiles build/sri-lanka.pmtiles
 
       - name: Show tile info
         run: |
           echo "=== places.pmtiles ==="
           pmtiles show build/places.pmtiles
-          echo ""
-          echo "=== basemap.pmtiles ==="
-          pmtiles show build/basemap.pmtiles
           echo ""
           echo "=== sri-lanka.pmtiles ==="
           pmtiles show build/sri-lanka.pmtiles
@@ -118,25 +108,3 @@ jobs:
               build/manifest.json \
               places.sha256
           fi
-
-      - name: Cleanup old prereleases
-        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          for prefix in places- lkmaps-; do
-            tags=$(gh release list \
-              --repo "$GITHUB_REPOSITORY" \
-              --limit 100000 \
-              --json tagName,isPrerelease,publishedAt \
-              --jq "[.[] | select(.isPrerelease and (.tagName | startswith(\"$prefix\")))] | sort_by(.publishedAt, .tagName) | reverse | map(.tagName)")
-            count=$(echo "$tags" | jq 'length')
-            echo "Found $count ${prefix}* prereleases; retaining the newest 3"
-            echo "$tags" | jq -r '.[3:][]' | while read -r old_tag; do
-              echo "Deleting old prerelease: $old_tag"
-              gh release delete "$old_tag" \
-                --repo "$GITHUB_REPOSITORY" \
-                --cleanup-tag \
-                -y
-            done
-          done

@@ -176,9 +176,9 @@ export function createMapOptions(map, { baseStyle, status }) {
         id: "lk-detail-transit-stops",
         type: "circle",
         source: "openmaptiles",
-        "source-layer": "poi",
+        "source-layer": "places",
         minzoom: 12,
-        filter: ["in", ["get", "class"], ["literal", ["bus", "rail"]]],
+        filter: ["in", ["get", "category"], ["literal", ["Bus stop", "Bus station", "Train station", "Railway station", "Ferry terminal"]]],
         layout: { visibility: "none" },
         paint: {
           "circle-color": "#3385ed",
