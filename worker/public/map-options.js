@@ -173,6 +173,24 @@ export function createMapOptions(map, { baseStyle, status }) {
     );
     map.addLayer(
       {
+        id: "lk-detail-transit-stops",
+        type: "circle",
+        source: "openmaptiles",
+        "source-layer": "places",
+        minzoom: 12,
+        filter: ["in", ["get", "category"], ["literal", ["Bus stop", "Bus station", "Train station", "Railway station", "Ferry terminal"]]],
+        layout: { visibility: "none" },
+        paint: {
+          "circle-color": "#3385ed",
+          "circle-radius": 4,
+          "circle-stroke-color": "#ffffff",
+          "circle-stroke-width": 1.5,
+        },
+      },
+      before,
+    );
+    map.addLayer(
+      {
         id: "lk-detail-cycling",
         type: "line",
         source: "openmaptiles",
@@ -411,7 +429,7 @@ export function createMapOptions(map, { baseStyle, status }) {
       settings.details[name] &&
       detailAvailability(name, settings.type, map.getZoom()).available;
     visibility("lk-detail-transit", effective("transit"));
-    // Stops use the unified places dot/pin layers, not a second circle overlay.
+    visibility("lk-detail-transit-stops", effective("transit"));
     visibility("lk-detail-cycling", effective("bicycling"));
     raised = effective("buildings");
     visibility("lk-detail-buildings", raised);
