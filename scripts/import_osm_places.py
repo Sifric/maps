@@ -15,6 +15,8 @@ import re
 import subprocess
 import unicodedata
 
+from numbered_shards import ShardAllocator, validate, verify_manifest_paths
+
 ROOT = Path(__file__).resolve().parent.parent
 
 
@@ -64,6 +66,11 @@ def main():
     parser.add_argument("archive", type=Path)
     parser.add_argument("--apply", action="store_true")
     args = parser.parse_args()
+    initial_shards = validate(ROOT / "data/places")
+    verify_manifest_paths(ROOT / "data/places", ROOT / "places.sha256")
+    checksum_before = (ROOT / "places.sha256").read_bytes()
+    allocator = ShardAllocator(initial_shards)
+    record_ids = set()
     digest = hashlib.file_digest(args.archive.open("rb"), "sha256").hexdigest()
     decoded = json.loads(subprocess.check_output([
         "tippecanoe-decode", "--layer=poi", "--minimum-zoom=14", "--maximum-zoom=14",
@@ -77,6 +84,7 @@ def main():
         grid[cell(xy)].append((xy, aliases_for(aliases)))
     for path in sorted((ROOT / "data/places").glob("????/*.json")):
         rec = json.loads(path.read_text())
+        record_ids.add(str(rec.get("id", path.name)))
         co = rec.get("coordinates", {})
         xy = (co.get("longitude"), co.get("latitude"))
         if all(isinstance(v, (int, float)) and math.isfinite(v) for v in xy):
@@ -136,8 +144,11 @@ def main():
             decisions.append({"vector_feature_id": fid, "reason": reason})
             continue
         rid = "osm-poi-" + fid
-        shard = hashlib.sha256(rid.encode()).hexdigest()[:4]
-        path = ROOT / "data/places" / shard / (rid + ".json")
+        if rid in record_ids:
+            counts["already_imported"] += 1
+            continue
+        path = ROOT / "data/places" / allocator.allocate(rid + ".json")
+        record_ids.add(rid)
         if path.exists():
             raise ValueError(f"Refusing to overwrite {path.relative_to(ROOT)}")
         record = {"id": rid, "name": names[0],
@@ -152,12 +163,17 @@ def main():
         counts["new_places"] += 1
     # Validate everything before creating any records. Never alter an existing one.
     if args.apply:
+        if ((ROOT / "places.sha256").read_bytes() != checksum_before
+                or validate(ROOT / "data/places") != initial_shards):
+            raise ValueError("Shard layout changed while planning import")
         with (ROOT / "places.sha256").open("a") as checksums:
             for path, data in writes:
                 path.parent.mkdir(parents=True, exist_ok=True)
                 with path.open("xb") as output:
                     output.write(data)
                 checksums.write(f"{hashlib.sha256(data).hexdigest()}  {path.relative_to(ROOT)}\n")
+        validate(ROOT / "data/places")
+        verify_manifest_paths(ROOT / "data/places", ROOT / "places.sha256")
     report = {"unique_vector_pois": len(unique), "applied": args.apply,
               "counts": dict(counts), "skipped_duplicates": decisions, "archive_sha256": digest}
     (ROOT / "build").mkdir(exist_ok=True)
