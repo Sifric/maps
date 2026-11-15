@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="theme-color" content="#ffffff" />
     <title>LK Maps · Sri Lanka</title>
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/maplibre-gl@6.16.0/dist/maplibre-gl.css"
@@ -15,12 +15,16 @@
   </head>
   <body>
     <nav class="rail" aria-label="Navigation">
-      <button id="menu" aria-label="Open menu">☰</button
-      ><button id="saved" aria-label="Saved places">
-        <span>▱</span><small>Saved</small></button
-      ><button id="recent" aria-label="Recent searches">
-        <span>◷</span><small>Recents</small></button
-      ><a class="brand" href="/" aria-label="LK Maps home"
+      <button id="menu" aria-label="Open menu">
+        <span data-icon="menu"></span>
+      </button>
+      <button id="saved" aria-label="Saved places">
+        <span data-icon="bookmark"></span><small>Saved</small>
+      </button>
+      <button id="recent" aria-label="Recent searches">
+        <span data-icon="history"></span><small>Recents</small>
+      </button>
+      <a class="brand" href="/" aria-label="LK Maps home"
         >LK<small>Maps</small></a
       >
     </nav>
@@ -32,49 +36,57 @@
           type="search"
           aria-label="Search Sri Lanka"
           placeholder="Search LK Maps"
-        /><button
+        />
+        <button
           id="clear-search"
           type="button"
           aria-label="Clear search"
           hidden
         >
-          ×</button
-        ><button type="submit" aria-label="Search">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <circle cx="10" cy="10" r="6" />
-            <path d="m15 15 5 5" />
-          </svg></button
-        ><span class="divider"></span
-        ><button id="directions" type="button" aria-label="Open directions">
-          ➤
+          <span data-icon="close"></span>
+        </button>
+        <button type="submit" aria-label="Search">
+          <span data-icon="search"></span>
+        </button>
+        <span class="divider"></span>
+        <button id="directions" type="button" aria-label="Open directions">
+          <span data-icon="directions"></span>
         </button>
       </form>
       <div id="suggestions" role="listbox" hidden></div>
     </section>
     <nav id="categories" aria-label="Place categories">
       <button data-kind="food">
-        <span aria-hidden="true"
-          ><svg viewBox="0 0 24 24">
-            <path
-              d="M5 3v6m3-6v6m3-6v6M5 9h6M8 9v12M18 3c-3 4-4 8 0 8v10M18 3v8"
-            /></svg
-        ></span>
-        Restaurants</button
-      ><button data-kind="shopping"><span>▱</span> Shopping</button
-      ><button data-kind="leisure"><span>♧</span> Things to do</button
-      ><button data-kind="culture"><span>▥</span> Museums</button
-      ><button data-kind="transport"><span>▣</span> Transit</button
-      ><button data-kind="health"><span>✚</span> Health</button
-      ><button id="reset-category" aria-label="Clear category filter" hidden>
-        ×
+        <span data-icon="restaurant"></span> Restaurants
+      </button>
+      <button data-kind="shopping">
+        <span data-icon="shop"></span> Shopping
+      </button>
+      <button data-kind="leisure">
+        <span data-icon="playground"></span> Things to do
+      </button>
+      <button data-kind="culture">
+        <span data-icon="museum"></span> Museums
+      </button>
+      <button data-kind="transport">
+        <span data-icon="bus"></span> Transit
+      </button>
+      <button data-kind="health">
+        <span data-icon="hospital"></span> Health
+      </button>
+      <button id="reset-category" aria-label="Clear category filter" hidden>
+        <span data-icon="close"></span>
       </button>
     </nav>
     <aside id="panel" aria-label="Place information" hidden>
-      <button id="close-panel" class="close" aria-label="Close panel">×</button>
+      <button id="close-panel" class="close" aria-label="Close panel">
+        <span data-icon="close"></span>
+      </button>
       <div id="panel-content"></div>
     </aside>
     <button id="layers" class="layers" aria-label="Map details">
-      <span class="mini-map"></span><span>▱ &nbsp; Layers</span>
+      <span class="mini-map"></span
+      ><span class="layers-label"><span data-icon="layers"></span> Layers</span>
     </button>
     <section id="layer-panel" class="layer-panel" hidden>
       <strong>Map details</strong
@@ -89,18 +101,21 @@
         aria-label="Show your location"
         title="Show your location"
       >
-        ⊙
+        <span data-icon="locate"></span>
       </button>
       <div class="zoom-controls">
-        <button id="zoom-in" aria-label="Zoom in">+</button
-        ><button id="zoom-out" aria-label="Zoom out">−</button>
+        <button id="zoom-in" aria-label="Zoom in">
+          <span data-icon="plus"></span></button
+        ><button id="zoom-out" aria-label="Zoom out">
+          <span data-icon="minus"></span>
+        </button>
       </div>
       <button
         id="compass"
         aria-label="Reset bearing to north"
         title="Reset bearing to north"
       >
-        ▲
+        <span data-icon="compass"></span>
       </button>
     </div>
     <div
@@ -110,6 +125,7 @@
       aria-live="polite"
     ></div>
     <div id="error" role="alert" hidden></div>
+    <script type="module" src="/icons.js"></script>
     <script type="module" src="/map.js"></script>
   </body>
 </html>

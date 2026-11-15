@@ -500,10 +500,11 @@ button:hover {
   }
 }
 
-button svg {
+.icon {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
+  flex: 0 0 auto;
   fill: none;
   stroke: currentColor;
   stroke-width: 1.8;
@@ -511,11 +512,105 @@ button svg {
   stroke-linejoin: round;
   vertical-align: middle;
 }
-#categories button span {
+[data-icon] {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
 }
-#categories button span svg {
+.rail button > [data-icon] {
+  display: flex;
+  height: 30px;
+}
+.rail .icon {
+  width: 24px;
+  height: 24px;
+}
+#search-form .icon {
+  width: 22px;
+  height: 22px;
+}
+#categories button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+#categories button > span {
+  padding: 0;
+}
+#categories .icon {
   width: 18px;
   height: 18px;
+}
+#categories #reset-category {
+  padding: 7px 9px;
+}
+.close {
+  display: grid;
+  place-items: center;
+}
+.close .icon {
+  width: 20px;
+  height: 20px;
+}
+.layers-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.layers-label .icon {
+  width: 15px;
+  height: 15px;
+}
+.map-controls .icon {
+  width: 23px;
+  height: 23px;
+}
+#compass .icon {
+  width: 25px;
+  height: 25px;
+}
+.result-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+#panel .detail-actions {
+  gap: 8px;
+}
+#panel .detail-actions button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 11px;
+}
+#panel .detail-actions .icon {
+  width: 18px;
+  height: 18px;
+}
+.menu-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.route-launch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.selected-marker {
+  width: 36px;
+  height: 42px;
+  filter: drop-shadow(0 2px 2px #0004);
+}
+.selected-marker .icon {
+  width: 36px;
+  height: 42px;
+  fill: var(--marker-colour);
+  stroke: #ffffff;
+  stroke-width: 1.5;
+}
+.selected-marker .icon path + path {
+  fill: #ffffff;
 }
