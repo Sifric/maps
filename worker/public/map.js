@@ -87,27 +87,35 @@ function actionLabel(button, text, glyph) {
 }
 function markerImage(kind) {
   const canvas = document.createElement("canvas");
-  canvas.width = 64;
-  canvas.height = 80;
+  // 4× bitmap density keeps the circular outline smooth on high-DPI screens.
+  canvas.width = 128;
+  canvas.height = 144;
   const c = canvas.getContext("2d");
+  c.scale(2, 2);
   const colour = colours[kind] || colours.other;
-  c.shadowColor = "#0005";
-  c.shadowBlur = 4;
+  c.shadowColor = "#0003";
+  c.shadowBlur = 8;
   c.shadowOffsetY = 2;
   c.fillStyle = colour;
   c.strokeStyle = "#fff";
-  c.lineWidth = 3;
+  c.lineWidth = 2.8;
+  c.lineJoin = "round";
+  c.lineCap = "round";
   c.beginPath();
-  c.moveTo(32, 69);
-  c.bezierCurveTo(27, 62, 9, 45, 9, 29);
-  c.arc(32, 29, 23, Math.PI, 0);
-  c.bezierCurveTo(55, 45, 37, 62, 32, 69);
+  c.moveTo(32, 7);
+  c.bezierCurveTo(44.7, 7, 55, 17.3, 55, 30);
+  c.bezierCurveTo(55, 41, 47.8, 50, 38, 52.4);
+  c.bezierCurveTo(36, 52.8, 34.8, 57, 33, 58);
+  c.quadraticCurveTo(32, 59, 31, 58);
+  c.bezierCurveTo(29.2, 57, 28, 52.8, 26, 52.4);
+  c.bezierCurveTo(16.2, 50, 9, 41, 9, 30);
+  c.bezierCurveTo(9, 17.3, 19.3, 7, 32, 7);
   c.closePath();
   c.fill();
   c.stroke();
   c.shadowColor = "transparent";
   drawIcon(c, icons[kind] || "place", 18, 15, 28, "#fff");
-  return { width: 64, height: 80, data: c.getImageData(0, 0, 64, 80).data };
+  return { width: 128, height: 144, data: c.getImageData(0, 0, 128, 144).data };
 }
 function stylePlaces(style) {
   const layers = Object.fromEntries(style.layers.map((l) => [l.id, l]));
@@ -297,11 +305,7 @@ function showPlace(row, fly = true) {
   );
   if (highlight) highlight.remove();
   const selectedPin = element("div", undefined, "selected-marker");
-  selectedPin.style.setProperty(
-    "--marker-colour",
-    colours[row[4]] || colours.other,
-  );
-  selectedPin.append(icon("place"));
+  selectedPin.append(icon("selected_place"));
   highlight = new maplibregl.Marker({ element: selectedPin, anchor: "bottom" })
     .setLngLat([row[2], row[3]])
     .addTo(map);
@@ -587,7 +591,7 @@ document.addEventListener("keydown", (e) => {
   window.map = map;
   map.on("styleimagemissing", (e) => {
     if (e.id.startsWith("lk-pin-") && !map.hasImage(e.id))
-      map.addImage(e.id, markerImage(e.id.slice(7)), { pixelRatio: 2 });
+      map.addImage(e.id, markerImage(e.id.slice(7)), { pixelRatio: 4 });
   });
   map.on("error", (e) => {
     if (!mapOptions?.handleError(e)) showError(e.error);

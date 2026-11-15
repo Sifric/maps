@@ -611,12 +611,13 @@ button:hover {
 .selected-marker .icon {
   width: 36px;
   height: 42px;
-  fill: var(--marker-colour);
-  stroke: #ffffff;
-  stroke-width: 1.5;
+  fill: #ea4335;
+  stroke: #ea4335;
+  stroke-width: 0.5;
 }
 .selected-marker .icon path + path {
-  fill: #ffffff;
+  fill: #b3261e;
+  stroke: #b3261e;
 }
 
 :root {

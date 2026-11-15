@@ -1,5 +1,9 @@
 // Original 24px SVG icons. Shared by interface controls and canvas map markers.
 export const iconPaths = {
+  selected_place: [
+    "M12 2a8 8 0 0 0-8 8c0 5.7 8 13 8 13s8-7.3 8-13a8 8 0 0 0-8-8Z",
+    "M15 10a3 3 0 1 1-6 0 3 3 0 0 1 6 0",
+  ],
   sun: [
     "M12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8",
     "M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M5 19l1.5-1.5M17.5 6.5 19 5",
@@ -47,7 +51,7 @@ export const iconPaths = {
   ],
   home: ["m3 11 9-8 9 8", "M5 10v11h5v-7h4v7h5V10"],
   place: [
-    "M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z",
+    "M12 3a8 8 0 0 1 8 8c0 4-2.8 7.2-6.5 7.9l-.9 2.1q-.6.7-1.2 0l-.9-2.1A8 8 0 0 1 12 3Z",
     "M15 10a3 3 0 1 1-6 0 3 3 0 0 1 6 0",
   ],
   restaurant: [
