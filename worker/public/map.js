@@ -148,7 +148,7 @@ function stylePlaces(style) {
   ];
   const pin = layers["mazo-places-icon"];
   pin.minzoom = 12;
-  pin.filter = ["!=", ["get", "kind"], "other"];
+  delete pin.filter;
   pin.layout = {
     "icon-image": ["concat", "lk-pin-", ["get", "kind"]],
     "icon-size": [
@@ -171,7 +171,7 @@ function stylePlaces(style) {
     "text-size": ["interpolate", ["linear"], ["zoom"], 12, 12, 16, 13],
     "text-anchor": "left",
     "text-offset": [1, -1.45],
-    "text-optional": false,
+    "text-optional": true,
     "text-allow-overlap": false,
     "text-padding": 6,
     "text-max-width": 10,
@@ -393,9 +393,7 @@ function filterCategory(kind) {
     b.classList.toggle("active", b.dataset.kind === category);
   $("reset-category").hidden = !category;
   for (const id of ["mazo-places-dot", "mazo-places-icon"]) {
-    const base =
-      id === "mazo-places-icon" ? ["!=", ["get", "kind"], "other"] : null;
-    map.setFilter(id, category ? ["==", ["get", "kind"], category] : base);
+    map.setFilter(id, category ? ["==", ["get", "kind"], category] : null);
   }
   status(
     category
