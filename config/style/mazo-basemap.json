@@ -6267,39 +6267,165 @@
       }
     },
     {
-      "id": "mazo-places-r1-dot",
+      "id": "mazo-places-pin",
       "type": "circle",
       "source": "openmaptiles",
       "source-layer": "places",
       "minzoom": 7,
-      "filter": [
-        "==",
-        [
-          "get",
-          "rank"
-        ],
-        1
-      ],
       "paint": {
-        "circle-radius": 3,
-        "circle-color": "#000",
-        "circle-stroke-color": "#fff"
+        "circle-radius": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          7,
+          6,
+          12,
+          9,
+          14,
+          11
+        ],
+        "circle-color": "#ffffff",
+        "circle-stroke-color": [
+          "match",
+          [
+            "get",
+            "kind"
+          ],
+          "food",
+          "#E8590C",
+          "shopping",
+          "#1A73E8",
+          "health",
+          "#E53935",
+          "finance",
+          "#0B3D91",
+          "leisure",
+          "#34A853",
+          "culture",
+          "#9334E6",
+          "worship",
+          "#5F6368",
+          "transport",
+          "#3C4043",
+          "government",
+          "#80868B",
+          "landmark",
+          "#C5221F",
+          "#9AA0A6"
+        ],
+        "circle-stroke-width": 2.5
       }
     },
     {
-      "id": "mazo-places-r1",
+      "id": "mazo-places-icon",
       "type": "symbol",
       "source": "openmaptiles",
       "source-layer": "places",
       "minzoom": 7,
-      "filter": [
-        "==",
-        [
-          "get",
-          "rank"
+      "layout": {
+        "icon-image": [
+          "match",
+          [
+            "get",
+            "kind"
+          ],
+          "food",
+          "restaurant",
+          "shopping",
+          "shop",
+          "health",
+          "hospital",
+          "finance",
+          "bank",
+          "leisure",
+          "playground",
+          "culture",
+          "museum",
+          "worship",
+          "place_of_worship",
+          "transport",
+          "bus",
+          "government",
+          "town_hall",
+          "landmark",
+          "monument",
+          ""
         ],
-        1
-      ],
+        "icon-size": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          7,
+          0.5,
+          14,
+          0.7
+        ],
+        "icon-anchor": "center",
+        "icon-allow-overlap": false,
+        "icon-optional": true,
+        "icon-padding": 2,
+        "symbol-sort-key": [
+          "match",
+          [
+            "get",
+            "rank"
+          ],
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          4,
+          4,
+          5
+        ]
+      },
+      "paint": {
+        "icon-color": [
+          "match",
+          [
+            "get",
+            "kind"
+          ],
+          "food",
+          "#E8590C",
+          "shopping",
+          "#1A73E8",
+          "health",
+          "#E53935",
+          "finance",
+          "#0B3D91",
+          "leisure",
+          "#34A853",
+          "culture",
+          "#9334E6",
+          "worship",
+          "#5F6368",
+          "transport",
+          "#3C4043",
+          "government",
+          "#80868B",
+          "landmark",
+          "#C5221F",
+          "#9AA0A6"
+        ]
+      }
+    },
+    {
+      "id": "mazo-places-label",
+      "type": "symbol",
+      "source": "openmaptiles",
+      "source-layer": "places",
+      "minzoom": 7,
       "layout": {
         "text-field": [
           "get",
@@ -6308,22 +6434,42 @@
         "text-font": [
           "Mazo Maps Sans Regular"
         ],
-        "text-size": 12,
+        "text-size": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          9,
+          11,
+          14,
+          13
+        ],
         "text-anchor": "top",
         "text-offset": [
           0,
-          0.6
+          1.2
         ],
         "text-optional": true,
         "text-allow-overlap": false,
-        "text-padding": 4,
+        "text-padding": 3,
         "symbol-sort-key": [
-          "-",
-          7,
+          "match",
           [
             "get",
             "rank"
-          ]
+          ],
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          4,
+          4,
+          5
         ]
       },
       "paint": {
@@ -6333,241 +6479,19 @@
       }
     },
     {
-      "id": "mazo-places-r2-dot",
-      "type": "circle",
-      "source": "openmaptiles",
-      "source-layer": "places",
-      "minzoom": 8,
-      "filter": [
-        "==",
-        [
-          "get",
-          "rank"
-        ],
-        2
-      ],
-      "paint": {
-        "circle-radius": 3,
-        "circle-color": "#000",
-        "circle-stroke-color": "#fff"
-      }
-    },
-    {
-      "id": "mazo-places-r2",
+      "id": "mazo-places-subtitle",
       "type": "symbol",
       "source": "openmaptiles",
       "source-layer": "places",
-      "minzoom": 8,
+      "minzoom": 14,
       "filter": [
-        "==",
-        [
-          "get",
-          "rank"
-        ],
-        2
+        "has",
+        "subtitle"
       ],
       "layout": {
         "text-field": [
           "get",
-          "name"
-        ],
-        "text-font": [
-          "Mazo Maps Sans Regular"
-        ],
-        "text-size": 12,
-        "text-anchor": "top",
-        "text-offset": [
-          0,
-          0.6
-        ],
-        "text-optional": true,
-        "text-allow-overlap": false,
-        "text-padding": 4,
-        "symbol-sort-key": [
-          "-",
-          7,
-          [
-            "get",
-            "rank"
-          ]
-        ]
-      },
-      "paint": {
-        "text-color": "#000",
-        "text-halo-color": "#fff",
-        "text-halo-width": 1
-      }
-    },
-    {
-      "id": "mazo-places-r3-dot",
-      "type": "circle",
-      "source": "openmaptiles",
-      "source-layer": "places",
-      "minzoom": 9,
-      "filter": [
-        "==",
-        [
-          "get",
-          "rank"
-        ],
-        3
-      ],
-      "paint": {
-        "circle-radius": 2.5,
-        "circle-color": "#000",
-        "circle-stroke-color": "#fff"
-      }
-    },
-    {
-      "id": "mazo-places-r3",
-      "type": "symbol",
-      "source": "openmaptiles",
-      "source-layer": "places",
-      "minzoom": 9,
-      "filter": [
-        "==",
-        [
-          "get",
-          "rank"
-        ],
-        3
-      ],
-      "layout": {
-        "text-field": [
-          "get",
-          "name"
-        ],
-        "text-font": [
-          "Mazo Maps Sans Regular"
-        ],
-        "text-size": 11,
-        "text-anchor": "top",
-        "text-offset": [
-          0,
-          0.6
-        ],
-        "text-optional": true,
-        "text-allow-overlap": false,
-        "text-padding": 4,
-        "symbol-sort-key": [
-          "-",
-          7,
-          [
-            "get",
-            "rank"
-          ]
-        ]
-      },
-      "paint": {
-        "text-color": "#000",
-        "text-halo-color": "#fff",
-        "text-halo-width": 1
-      }
-    },
-    {
-      "id": "mazo-places-r4-dot",
-      "type": "circle",
-      "source": "openmaptiles",
-      "source-layer": "places",
-      "minzoom": 10,
-      "filter": [
-        "==",
-        [
-          "get",
-          "rank"
-        ],
-        4
-      ],
-      "paint": {
-        "circle-radius": 2.5,
-        "circle-color": "#000",
-        "circle-stroke-color": "#fff"
-      }
-    },
-    {
-      "id": "mazo-places-r4",
-      "type": "symbol",
-      "source": "openmaptiles",
-      "source-layer": "places",
-      "minzoom": 10,
-      "filter": [
-        "==",
-        [
-          "get",
-          "rank"
-        ],
-        4
-      ],
-      "layout": {
-        "text-field": [
-          "get",
-          "name"
-        ],
-        "text-font": [
-          "Mazo Maps Sans Regular"
-        ],
-        "text-size": 11,
-        "text-anchor": "top",
-        "text-offset": [
-          0,
-          0.6
-        ],
-        "text-optional": true,
-        "text-allow-overlap": false,
-        "text-padding": 4,
-        "symbol-sort-key": [
-          "-",
-          7,
-          [
-            "get",
-            "rank"
-          ]
-        ]
-      },
-      "paint": {
-        "text-color": "#000",
-        "text-halo-color": "#fff",
-        "text-halo-width": 1
-      }
-    },
-    {
-      "id": "mazo-places-r5-dot",
-      "type": "circle",
-      "source": "openmaptiles",
-      "source-layer": "places",
-      "minzoom": 11,
-      "filter": [
-        "==",
-        [
-          "get",
-          "rank"
-        ],
-        5
-      ],
-      "paint": {
-        "circle-radius": 2.5,
-        "circle-color": "#000",
-        "circle-stroke-color": "#fff"
-      }
-    },
-    {
-      "id": "mazo-places-r5",
-      "type": "symbol",
-      "source": "openmaptiles",
-      "source-layer": "places",
-      "minzoom": 11,
-      "filter": [
-        "==",
-        [
-          "get",
-          "rank"
-        ],
-        5
-      ],
-      "layout": {
-        "text-field": [
-          "get",
-          "name"
+          "subtitle"
         ],
         "text-font": [
           "Mazo Maps Sans Regular"
@@ -6576,90 +6500,16 @@
         "text-anchor": "top",
         "text-offset": [
           0,
-          0.6
+          2.4
         ],
         "text-optional": true,
-        "text-allow-overlap": false,
-        "text-padding": 4,
-        "symbol-sort-key": [
-          "-",
-          7,
-          [
-            "get",
-            "rank"
-          ]
-        ]
+        "text-allow-overlap": false
       },
       "paint": {
         "text-color": "#000",
         "text-halo-color": "#fff",
-        "text-halo-width": 1
-      }
-    },
-    {
-      "id": "mazo-places-r6-dot",
-      "type": "circle",
-      "source": "openmaptiles",
-      "source-layer": "places",
-      "minzoom": 12,
-      "filter": [
-        "==",
-        [
-          "get",
-          "rank"
-        ],
-        6
-      ],
-      "paint": {
-        "circle-radius": 2.5,
-        "circle-color": "#000",
-        "circle-stroke-color": "#fff"
-      }
-    },
-    {
-      "id": "mazo-places-r6",
-      "type": "symbol",
-      "source": "openmaptiles",
-      "source-layer": "places",
-      "minzoom": 12,
-      "filter": [
-        "==",
-        [
-          "get",
-          "rank"
-        ],
-        6
-      ],
-      "layout": {
-        "text-field": [
-          "get",
-          "name"
-        ],
-        "text-font": [
-          "Mazo Maps Sans Regular"
-        ],
-        "text-size": 10,
-        "text-anchor": "top",
-        "text-offset": [
-          0,
-          0.6
-        ],
-        "text-optional": true,
-        "text-allow-overlap": false,
-        "text-padding": 4,
-        "symbol-sort-key": [
-          "-",
-          7,
-          [
-            "get",
-            "rank"
-          ]
-        ]
-      },
-      "paint": {
-        "text-color": "#000",
-        "text-halo-color": "#fff",
-        "text-halo-width": 1
+        "text-halo-width": 1,
+        "text-opacity": 0.7
       }
     }
   ],
