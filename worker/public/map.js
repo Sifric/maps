@@ -1,3 +1,4 @@
+import { icon, drawIcon } from "./icons.js";
 import * as maplibregl from "https://cdn.jsdelivr.net/npm/maplibre-gl@6.16.0/dist/maplibre-gl.mjs";
 const $ = (id) => document.getElementById(id);
 const colours = {
@@ -79,6 +80,9 @@ function element(tag, text, className) {
   if (className) e.className = className;
   return e;
 }
+function actionLabel(button, text, glyph) {
+  button.replaceChildren(icon(glyph), element("span", text));
+}
 function markerImage(kind) {
   const canvas = document.createElement("canvas");
   canvas.width = 64;
@@ -100,73 +104,7 @@ function markerImage(kind) {
   c.fill();
   c.stroke();
   c.shadowColor = "transparent";
-  c.strokeStyle = "#fff";
-  c.fillStyle = "#fff";
-  c.lineWidth = 3;
-  c.lineCap = "round";
-  c.lineJoin = "round";
-  const line = (...p) => {
-    c.beginPath();
-    c.moveTo(p[0], p[1]);
-    for (let i = 2; i < p.length; i += 2) c.lineTo(p[i], p[i + 1]);
-    c.stroke();
-  };
-  if (kind === "food") {
-    line(23, 18, 23, 39);
-    line(18, 18, 18, 26, 28, 26, 28, 18);
-    line(38, 18, 34, 28, 41, 28, 41, 39);
-  } else if (kind === "shopping") {
-    c.strokeRect(20, 24, 24, 18);
-    c.beginPath();
-    c.arc(32, 24, 7, Math.PI, 0);
-    c.stroke();
-  } else if (kind === "health") {
-    c.fillRect(28, 17, 8, 25);
-    c.fillRect(19, 25, 26, 8);
-  } else if (
-    kind === "finance" ||
-    kind === "culture" ||
-    kind === "government"
-  ) {
-    line(18, 24, 32, 16, 46, 24, 18, 24);
-    for (const x of [23, 32, 41]) line(x, 28, x, 39);
-    line(18, 42, 46, 42);
-  } else if (kind === "leisure") {
-    c.beginPath();
-    c.moveTo(32, 16);
-    c.lineTo(20, 32);
-    c.lineTo(44, 32);
-    c.closePath();
-    c.fill();
-    c.fillRect(29, 30, 6, 13);
-  } else if (kind === "worship") {
-    c.beginPath();
-    c.arc(32, 27, 10, Math.PI, 0);
-    c.stroke();
-    c.strokeRect(22, 27, 20, 15);
-    line(32, 17, 32, 12);
-    c.strokeRect(29, 33, 6, 9);
-  } else if (kind === "transport") {
-    c.strokeRect(21, 18, 22, 23);
-    line(22, 31, 42, 31);
-    c.fillRect(25, 34, 3, 3);
-    c.fillRect(36, 34, 3, 3);
-    line(24, 41, 24, 44);
-    line(40, 41, 40, 44);
-  } else if (kind === "landmark") {
-    c.beginPath();
-    for (let i = 0; i < 10; i++) {
-      const a = -Math.PI / 2 + (i * Math.PI) / 5,
-        r = i % 2 ? 6 : 13;
-      c[i ? "lineTo" : "moveTo"](32 + Math.cos(a) * r, 29 + Math.sin(a) * r);
-    }
-    c.closePath();
-    c.fill();
-  } else {
-    c.beginPath();
-    c.arc(32, 29, 6, 0, 2 * Math.PI);
-    c.fill();
-  }
+  drawIcon(c, icons[kind] || "place", 18, 15, 28, "#fff");
   return { width: 64, height: 80, data: c.getImageData(0, 0, 64, 80).data };
 }
 function stylePlaces(style) {
@@ -302,10 +240,16 @@ function showPlace(row, fly = true) {
   );
   const actions = element("div", undefined, "detail-actions");
   const route = element("button", "Directions");
+  actionLabel(route, "Directions", "directions");
   route.onclick = () => showDirections(row);
   const save = element(
     "button",
     readStored("lk-saved").some((r) => r[0] === row[0]) ? "Saved" : "Save",
+  );
+  actionLabel(
+    save,
+    save.textContent,
+    save.textContent === "Saved" ? "bookmark_check" : "bookmark",
   );
   save.onclick = () => {
     const all = readStored("lk-saved"),
@@ -314,10 +258,15 @@ function showPlace(row, fly = true) {
       "lk-saved",
       found ? all.filter((r) => r[0] !== row[0]) : [row, ...all],
     );
-    save.textContent = found ? "Save" : "Saved";
+    actionLabel(
+      save,
+      found ? "Save" : "Saved",
+      found ? "bookmark" : "bookmark_check",
+    );
     status(found ? "Removed from saved places" : "Place saved");
   };
   const share = element("button", "Share");
+  actionLabel(share, "Share", "share");
   share.onclick = async () => {
     const u = new URL(location.href);
     u.searchParams.set("place", row[0]);
@@ -345,7 +294,13 @@ function showPlace(row, fly = true) {
     ),
   );
   if (highlight) highlight.remove();
-  highlight = new maplibregl.Marker({ color: colours[row[4]] || colours.other })
+  const selectedPin = element("div", undefined, "selected-marker");
+  selectedPin.style.setProperty(
+    "--marker-colour",
+    colours[row[4]] || colours.other,
+  );
+  selectedPin.append(icon("place"));
+  highlight = new maplibregl.Marker({ element: selectedPin, anchor: "bottom" })
     .setLngLat([row[2], row[3]])
     .addTo(map);
   if (fly)
@@ -374,7 +329,8 @@ function showList(title, rows) {
 function resultRow(row) {
   const b = element("button", undefined, "result");
   b.type = "button";
-  const icon = element("span", "⌖", "result-icon");
+  const glyph = element("span", undefined, "result-icon");
+  glyph.append(icon(icons[row[4]] || "place"));
   const text = element("span");
   text.append(
     element("strong", row[1]),
@@ -383,7 +339,7 @@ function resultRow(row) {
       `${row[5] || categoryNames[row[4]] || "Place"} · Sri Lanka`,
     ),
   );
-  b.append(icon, text);
+  b.append(glyph, text);
   return b;
 }
 async function searchPlaces() {
@@ -452,6 +408,7 @@ function showDirections(row) {
   end.setAttribute("aria-label", "Destination");
   end.value = row?.[1] || "";
   const go = element("button", "Open route in Google Maps", "route-launch");
+  go.prepend(icon("directions"));
   go.onclick = () => {
     const u = new URL("https://www.google.com/maps/dir/");
     u.searchParams.set("api", "1");
@@ -576,6 +533,15 @@ $("menu").onclick = () => {
   ];
   for (const [name, fn] of items) {
     const b = element("button", name, "menu-option");
+    b.prepend(
+      icon(
+        name === "Explore Sri Lanka"
+          ? "home"
+          : name === "Saved places"
+            ? "bookmark"
+            : "history",
+      ),
+    );
     b.onclick = fn;
     c.append(b);
   }
