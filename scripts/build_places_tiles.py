@@ -16,6 +16,7 @@ from __future__ import annotations
 import glob
 import hashlib
 import json
+import math
 import os
 import subprocess
 import sys
@@ -96,6 +97,37 @@ CATEGORY_RANK_WEIGHT = {
     ], 200),
 }
 
+KEYWORD_KIND = {
+    **dict.fromkeys(["restaurant", "bakery", "cafe", "café", "coffee"], "food"),
+    **dict.fromkeys(["supermarket", "shopping mall", "shopping center", "shopping centre",
+                     "market", "store", "shop", "florist", "pet"], "shopping"),
+    **dict.fromkeys(["hospital", "pharmacy", "clinic", "medical center", "medical centre",
+                     "dentist", "doctor"], "health"),
+    **dict.fromkeys(["bank", "atm"], "finance"),
+    **dict.fromkeys(["stadium", "park", "zoo", "cinema", "gym", "fitness", "spa"], "leisure"),
+    **dict.fromkeys(["museum", "library", "theater", "theatre"], "culture"),
+    **dict.fromkeys(["place of worship", "temple", "mosque", "church", "kovil", "cathedral",
+                     "synagogue", "hindu temple", "buddhist temple"], "worship"),
+    **dict.fromkeys(["airport", "bus station", "train station", "railway station",
+                     "gas station", "fuel", "petrol"], "transport"),
+    **dict.fromkeys(["government", "embassy", "military", "parliament", "ministry",
+                     "police", "fire station", "courthouse", "court house", "post office",
+                     "office"], "government"),
+}
+CELL_AT_7 = 1.5
+CAP_BY_ZOOM = {7: 16, 8: 10, 9: 4, 10: 6, 11: 2, 12: 1, 13: 20}
+
+
+def place_kind(categories: list[str]) -> tuple[str, str]:
+    """Use the first existing GROUPS keyword match; do not invent categories."""
+    for category in categories:
+        low = category.lower()
+        for _, _, keywords in GROUPS:
+            for keyword in keywords:
+                if keyword in low:
+                    return KEYWORD_KIND.get(keyword, "other"), category.strip()[:32]
+    return "other", ""
+
 
 def rank_score(category: str, name: str) -> int:
     """Score existing category keywords, with a small mixed-language name bonus."""
@@ -107,6 +139,41 @@ def rank_score(category: str, name: str) -> int:
     local = any("\u0b80" <= character <= "\u0bff" or
                 "\u0d80" <= character <= "\u0dff" for character in name)
     return score + int(english and local)
+
+
+def select_by_zoom(features: list[dict], params: dict) -> dict[int, int]:
+    """Assign persistent zoom bands using category order and per-cell budgets."""
+    cell_at_7 = params.get("cell_at_7", CELL_AT_7)
+    caps = params.get("cap_by_zoom", CAP_BY_ZOOM)
+    place_ids = params.get("place_ids", {})
+    if cell_at_7 <= 0 or any(caps[z] < 1 for z in range(7, 14)):
+        raise ValueError("Cell size and zoom caps must be positive")
+    ordered = sorted(features, key=lambda feature: (
+        -rank_score(feature["properties"]["category"], feature["properties"]["name"]),
+        str(place_ids.get(feature["id"], feature["id"])),
+    ))
+    assigned: dict[int, int] = {}
+    for zoom in range(7, 14):
+        cell_size = cell_at_7 / 2 ** (zoom - 7)
+        occupancy: dict[tuple[int, int], int] = {}
+        def cell(feature):
+            lon, lat = feature["geometry"]["coordinates"]
+            return math.floor(lon / cell_size), math.floor(lat / cell_size)
+        # Earlier selections consume the current grid's capacity too. They are
+        # never evicted, even when inherited occupancy exceeds the current cap.
+        for feature in ordered:
+            if feature["id"] in assigned:
+                key = cell(feature)
+                occupancy[key] = occupancy.get(key, 0) + 1
+        for feature in ordered:
+            if feature["id"] not in assigned:
+                key = cell(feature)
+                if occupancy.get(key, 0) < caps[zoom]:
+                    assigned[feature["id"]] = zoom
+                    occupancy[key] = occupancy.get(key, 0) + 1
+    for feature in ordered:
+        assigned.setdefault(feature["id"], 14)
+    return assigned
 
 
 def classify(category: str) -> tuple[int, int]:
@@ -184,9 +251,12 @@ def main() -> None:
 
         primary = real_cats[0] if real_cats else "Other"
         pri, mz = classify(primary)
+        kind, subtitle = place_kind(real_cats)
 
         features.append({
             "type": "Feature",
+            # Stable feature metadata allows exact deduplication across tile buffers.
+            "id": int.from_bytes(hashlib.sha256(str(rid).encode()).digest()[:6], "big"),
             "geometry": {
                 "type": "Point",
                 "coordinates": [lon, lat],
@@ -196,6 +266,8 @@ def main() -> None:
                 "category": primary,
                 "min_zoom": mz,
                 "priority": pri,
+                "kind": kind,
+                **({"subtitle": subtitle} if subtitle else {}),
             },
             "tippecanoe": {
                 "minzoom": mz,
@@ -216,6 +288,10 @@ def main() -> None:
     print("Rank counts:", rank_counts)
     if any(count == 0 for count in rank_counts.values()):
         raise ValueError("A score-based rank has zero features")
+    if len({feature["id"] for feature in features}) != len(features):
+        raise ValueError("Place feature IDs are not unique")
+    print("Kind counts:", {kind: sum(f["properties"]["kind"] == kind for f in features)
+                           for kind in sorted({f["properties"]["kind"] for f in features})})
 
     # ── write GeoJSON ─────────────────────────────────────────────────
     geojson_path = BUILD_DIR / "places.geojson"
@@ -236,17 +312,19 @@ def main() -> None:
           f"{len(dropped) - skipped_name} bad-coords, "
           f"{len(dropped)} total dropped")
 
-    # ── tippecanoe → separate tier archives → one places layer ─────────
+    # ── budgeted zoom bands → one places layer ────────────────────────
+    place_ids = {features[index]["id"]: place_id for _, place_id, index in ranking}
+    assigned_zooms = select_by_zoom(features, {"place_ids": place_ids})
+    print("Selection constants:", CELL_AT_7, CAP_BY_ZOOM)
+    print("Zoom bands:", {zoom: sum(z == zoom for z in assigned_zooms.values())
+                          for zoom in range(7, 15)})
     tier_dir = BUILD_DIR / "tiers"
     tier_dir.mkdir(exist_ok=True)
     tier_archives = []
-    for tier, rank, minimum_zoom in (("a", 1, 0), ("b", 2, 9),
-                                     ("c", 3, 11), ("d", 4, 13)):
+    for minimum_zoom in range(7, 15):
         tier_features = [feature for feature in features
-                         if feature["properties"]["rank"] == rank]
-        print(f"Tier {tier.upper()}: {len(tier_features)} features; zooms {minimum_zoom}–14")
-        if not tier_features:
-            raise ValueError(f"Tier {tier.upper()} has no features")
+                         if assigned_zooms[feature["id"]] == minimum_zoom]
+        print(f"Band {minimum_zoom}: {len(tier_features)} features")
         # Tier archive flags are the sole zoom control. Keep ordinary properties
         # (including min_zoom), but remove reserved Tippecanoe zoom metadata.
         tier_features = [
@@ -258,10 +336,10 @@ def main() -> None:
             }
             for feature in tier_features
         ]
-        tier_geojson = tier_dir / f"tier_{tier}.geojson"
+        tier_geojson = tier_dir / f"band_{minimum_zoom}.geojson"
         with tier_geojson.open("w") as output:
             json.dump({"type": "FeatureCollection", "features": tier_features}, output)
-        tier_archive = tier_dir / f"tier_{tier}.pmtiles"
+        tier_archive = tier_dir / f"band_{minimum_zoom}.pmtiles"
         cmd = [
             "tippecanoe",
             "-o", str(tier_archive),
@@ -270,8 +348,8 @@ def main() -> None:
             "-l", "places",
             "--no-feature-limit",
             "--no-tile-size-limit",
+            "--drop-rate=1",
             "--force",
-            "--drop-densest-as-needed",
             "--maximum-zoom=14",
             str(tier_geojson),
         ]
