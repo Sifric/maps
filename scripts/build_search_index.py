@@ -16,7 +16,8 @@ def main():
         props = feature["properties"]
         lon, lat = feature["geometry"]["coordinates"]
         rows.append([feature["id"], props["name"], lon, lat,
-                     props.get("kind", "other"), props.get("subtitle", "")])
+                     props.get("kind", "other"), props.get("subtitle", "")] +
+                    ([props["label"]] if props.get("label") else []))
     if len({row[0] for row in rows}) != len(rows):
         raise ValueError("Duplicate search IDs")
     args.output.parent.mkdir(parents=True, exist_ok=True)
