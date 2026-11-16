@@ -6,7 +6,11 @@
     "longitude": 81.342527
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Tourism: Hotel",
+    "Travel and Transportation > Lodging > Resort",
+    "Dining and Drinking > Bar > Hotel Bar",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +21,17 @@
     "subclass": "hotel",
     "names": [
       "Hotel Sunflower"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Katharagama UP",
+    "Katharagama UP, Detagamuwa, Katharagama, Monaragala, Uva, Sri Lanka",
+    "Kataragama, Uva Province, Sri Lanka",
+    "Depot Rd, Katharagama, 91400, Sri Lanka"
+  ]
 }

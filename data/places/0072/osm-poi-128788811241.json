@@ -6,7 +6,8 @@
     "longitude": 80.088481
   },
   "categories": [
-    "Supermarket"
+    "Supermarket",
+    "Retail > Market"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,16 @@
     "class": "grocery",
     "subclass": "supermarket",
     "names": [
-      "sampath food city"
+      "sampath food city",
+      "Sampath Food City"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Arukwatta North, Padukka, Colombo, Western, Sri Lanka"
+  ]
 }

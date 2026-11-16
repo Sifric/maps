@@ -6,7 +6,10 @@
     "longitude": 81.801791
   },
   "categories": [
-    "Hindu"
+    "Hindu",
+    "Hindu temple",
+    "Amenity: Place Of Worship",
+    "Place Of Worship"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "hindu",
     "names": [
       "Uchimakaali Amman Temple"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Thuraineelavanai, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Chenaikudiyiruppu 01A, Kalmunai, Ampara, Eastern, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

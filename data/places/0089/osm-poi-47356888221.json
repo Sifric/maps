@@ -6,7 +6,10 @@
     "longitude": 80.636183
   },
   "categories": [
-    "Guest house"
+    "Guest house",
+    "Travel and Transportation > Lodging > Inn",
+    "Overture Maps",
+    "Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,18 @@
     "class": "lodging",
     "subclass": "guest_house",
     "names": [
-      "Sayare Inn"
+      "Sayare Inn",
+      "Sayare inn"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Ibbankatuwa Wewa Road, Pohoranwewa, Dambulla, Matale, Central, Sri Lanka",
+    "No. 545, Lake Road, Dambulla, Střední provincie, Sri Lanka",
+    "No. 545, Lake Road, Dambulla, Matale District, 2, 21100, Sri Lanka"
+  ]
 }

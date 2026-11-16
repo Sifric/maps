@@ -6,7 +6,10 @@
     "longitude": 79.871217
   },
   "categories": [
-    "Company"
+    "Company",
+    "Business and Professional Services > Office",
+    "Overture Maps",
+    "Print Media"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,17 @@
     "class": "office",
     "subclass": "company",
     "names": [
-      "Liberty publishers"
+      "Liberty publishers",
+      "Liberty Publishers"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "91, Colombo, Western Province, 00700, Sri Lanka",
+    "No:91 Wijerama Mawatha, Colombo, 00700, Sri Lanka"
+  ]
 }

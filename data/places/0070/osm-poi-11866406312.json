@@ -6,7 +6,10 @@
     "longitude": 79.909353
   },
   "categories": [
-    "Clinic"
+    "Clinic",
+    "Medical Center",
+    "Amenity: Clinic",
+    "Healthcare: Clinic"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,17 @@
     "class": "hospital",
     "subclass": "clinic",
     "names": [
-      "Medihelp- Panadura"
+      "Medihelp- Panadura",
+      "Medihelp - Panadura"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "16 Sri Vihara Road, Panadura 12500, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Uyankele, Panadura, Kalutara, Western, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

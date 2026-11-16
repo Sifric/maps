@@ -6,7 +6,10 @@
     "longitude": 80.430286
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Dining and Drinking > Restaurant > Austrian Restaurant",
+    "Overture Maps",
+    "Cafe"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,18 @@
     "class": "restaurant",
     "subclass": "restaurant",
     "names": [
-      "Moochie’s"
+      "Moochie’s",
+      "Moochie's"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Pelena South, Weligama, Matara, Southern, Sri Lanka",
+    "Southern Province, Sri Lanka",
+    "32 Samaraweera Pl, Paranakade, W1H 7EH, Sri Lanka"
+  ]
 }

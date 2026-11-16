@@ -6,7 +6,10 @@
     "longitude": 80.219507
   },
   "categories": [
-    "Gift"
+    "Gift",
+    "Retail > Miscellaneous Store",
+    "Retail > Fashion Retail > Jewelry Store",
+    "Retail > Antique Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "gift",
     "names": [
       "Orchid House"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Osanagoda, Galle 4 Gravets, Galle, Southern, Sri Lanka",
+    "28A, Hospital Road, Galle Fort, Galle, Sri Lanka"
+  ]
 }

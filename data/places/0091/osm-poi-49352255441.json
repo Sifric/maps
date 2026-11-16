@@ -6,7 +6,10 @@
     "longitude": 79.953137
   },
   "categories": [
-    "Fast food restaurant"
+    "Fast food restaurant",
+    "Fast Food",
+    "Dining and Drinking > Restaurant > Fast Food Restaurant",
+    "Dining and Drinking > Restaurant > Burger Joint"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,14 @@
     "subclass": "fast_food",
     "names": [
       "Burger King"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "New Kandy Road, Malabe, Thalangama North B, Kaduwela, Colombo, Western, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Malabe, Western Province, Sri Lanka"
+  ]
 }

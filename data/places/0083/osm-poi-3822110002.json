@@ -6,7 +6,9 @@
     "longitude": 80.028003
   },
   "categories": [
-    "Pharmacy"
+    "Pharmacy",
+    "Amenity: Pharmacy",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,18 @@
     "class": "pharmacy",
     "subclass": "pharmacy",
     "names": [
-      "Jayamini pharmacy"
+      "Jayamini pharmacy",
+      "Jayamini Pharmacy"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "New Kandy Road Weliweriya, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Weliweriya West, Gampaha, Western, Sri Lanka",
+    "New Kandy Road Gampaha District, 1, U, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

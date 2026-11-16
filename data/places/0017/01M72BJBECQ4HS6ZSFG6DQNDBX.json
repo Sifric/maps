@@ -6,7 +6,9 @@
   },
   "address": "Polgahawela-Kegalle Hwy",
   "categories": [
-    "Public library"
+    "Public library",
+    "Amenity: Library",
+    "Library"
   ],
   "hours": [
     {
@@ -53,5 +55,15 @@
     }
   ],
   "business_status": "OPEN",
-  "id": "01M72BJBECQ4HS6ZSFG6DQNDBX"
+  "id": "01M72BJBECQ4HS6ZSFG6DQNDBX",
+  "alternate_addresses": [
+    "Polgahawela - Kegalle Road, Imbulgasdeniya",
+    "Polgahawela - Kegalle Road, Imbulgasdeniya, Rambukkana, Kegalle, Sabaragamuwa, Sri Lanka"
+  ],
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  }
 }

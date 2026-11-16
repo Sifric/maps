@@ -6,7 +6,10 @@
     "longitude": 79.865053
   },
   "categories": [
-    "Government"
+    "Government",
+    "Wikidata physical place",
+    "Overture Maps",
+    "Library"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,14 @@
     "subclass": "government",
     "names": [
       "Department of National Archives"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Philip Gunewardena Mawatha, Colombo, 00700, Sri Lanka"
+  ]
 }

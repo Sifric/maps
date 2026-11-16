@@ -6,7 +6,9 @@
     "longitude": 80.649492
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Travel and Transportation > Lodging > Bed and Breakfast",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,16 @@
     "subclass": "hotel",
     "names": [
       "Empire Valley Hotel"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Rajapihilla Mawatha, Kandy, Ampitiya Udagama South, Gangawata Korale, Central, Sri Lanka",
+    "221E, Kandy, Central Provoince, 20000, Sri Lanka",
+    "221-E Rajapihilla Mawatha, Ampitiya South, 20000, Sri Lanka"
+  ]
 }

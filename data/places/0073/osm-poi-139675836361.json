@@ -6,7 +6,9 @@
     "longitude": 80.3945
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Overture Maps",
+    "Lodging"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,17 @@
     "class": "lodging",
     "subclass": "hotel",
     "names": [
-      "Amagla – Deduru Oya Estate"
+      "Amagla – Deduru Oya Estate",
+      "Amagla - Deduru Oya Estate"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "\"Peddawa\", Kanawa Road, Kurunegala, Peddawa, Ibbagamuwa, North Western, Sri Lanka",
+    "\"Peddawa\", Kanawa Road, Kurunegala, Sri Lanka"
+  ]
 }

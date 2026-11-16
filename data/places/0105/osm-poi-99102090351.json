@@ -6,7 +6,8 @@
     "longitude": 80.025648
   },
   "categories": [
-    "Fuel station"
+    "Fuel station",
+    "Fuel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,14 @@
     "subclass": "fuel",
     "names": [
       "Mrs Kamaladevi Kathiresampillai"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Jaffna - Kankesanthurai Road, Inuvil North East, Valikamam South (Uduvil), Jaffna, Northern, Sri Lanka"
+  ]
 }

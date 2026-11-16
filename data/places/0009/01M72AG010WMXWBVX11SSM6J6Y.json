@@ -6,7 +6,10 @@
   },
   "address": "8, 207 Srimath Anagarika Dharmapala Mawatha, Colombo 00700",
   "categories": [
-    "Dental clinic"
+    "Dental clinic",
+    "Amenity: Dentist",
+    "Healthcare: Dentist",
+    "Dentist"
   ],
   "phone": "0112692562",
   "hours": [
@@ -43,16 +46,26 @@
     {
       "day": "Saturday",
       "times": [
-        "8:30 AM–1 PM"
+        "8:30 AM–5 PM"
       ]
     },
     {
       "day": "Sunday",
       "times": [
-        "Closed"
+        "8:30 AM–5 PM"
       ]
     }
   ],
-  "business_status": "OPEN",
-  "id": "01M72AG010WMXWBVX11SSM6J6Y"
+  "business_status": "OPERATIONAL",
+  "id": "01M72AG010WMXWBVX11SSM6J6Y",
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  },
+  "alternate_addresses": [
+    "207/14, Srimath Anagarika Dharmapala Mawatha",
+    "Srimath Anagarika Dharmapala Mawatha, Ibbanwala, Colombo, Western, Sri Lanka"
+  ]
 }

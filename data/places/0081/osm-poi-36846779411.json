@@ -6,7 +6,10 @@
     "longitude": 81.048015
   },
   "categories": [
-    "Guest house"
+    "Guest house",
+    "Travel and Transportation > Lodging > Bed and Breakfast",
+    "Overture Maps",
+    "Bed And Breakfast"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,17 @@
     "class": "lodging",
     "subclass": "guest_house",
     "names": [
-      "The rock face"
+      "The rock face",
+      "The Rock Face"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Rawanaella, Ella, Badulla, Uva, Sri Lanka",
+    "Main Road, Ella, Sri Lanka"
+  ]
 }

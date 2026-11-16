@@ -6,7 +6,9 @@
     "longitude": 81.832454
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Travel and Transportation > Lodging > Resort",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "hotel",
     "names": [
       "Bay Vista"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Pasarichchenai, Pottuvil, Ampara, Eastern, Sri Lanka",
+    "Ulla, No. 227 Main Street, Sarvodayapuram, 32500, Sri Lanka"
+  ]
 }

@@ -6,7 +6,9 @@
     "longitude": 81.241069
   },
   "categories": [
-    "Hospital"
+    "Hospital",
+    "Amenity: Hospital",
+    "Healthcare: Hospital"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,23 @@
     "subclass": "hospital",
     "names": [
       "MOH Office - Badalkumbura"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Maligathenna, Badalkumbura, Monaragala, 91000",
+    "Maligathenna, Badalkumbura, Monaragala, Maligathenna, Badalkumbura, Uva, Sri Lanka"
+  ],
+  "hours": [
+    {
+      "day": "Hours (OSM format)",
+      "times": [
+        "8.00 a.m. - 4.00 p.m."
+      ]
+    }
+  ]
 }

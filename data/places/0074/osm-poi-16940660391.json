@@ -6,7 +6,11 @@
     "longitude": 79.899284
   },
   "categories": [
-    "Hifi"
+    "Hifi",
+    "Business and Professional Services > Office",
+    "Retail > Computers and Electronics Retail > Camera Store",
+    "Retail > Computers and Electronics Retail > Electronics Store",
+    "Business and Professional Services > Office > Tech Startup"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +21,14 @@
     "subclass": "hifi",
     "names": [
       "Metropolitan"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Delkanda, Gangodavila East, Sri Jayawardanapura Kotte, Colombo, Western, Sri Lanka"
+  ]
 }

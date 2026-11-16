@@ -6,7 +6,8 @@
     "longitude": 79.972524
   },
   "categories": [
-    "Public building"
+    "Public building",
+    "Amenity: Public Building"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,11 @@
     "subclass": "public_building",
     "names": [
       "Agrarian Services Centre"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Moronthuduwa North, Kalutara, Western, Sri Lanka",
+  "business_status": "OPERATIONAL"
 }

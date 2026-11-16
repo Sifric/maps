@@ -6,7 +6,10 @@
     "longitude": 79.881281
   },
   "categories": [
-    "Furniture"
+    "Furniture",
+    "Shop: Furniture",
+    "Overture Maps",
+    "Furniture Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,16 @@
     "subclass": "furniture",
     "names": [
       "State Timber Corporation Furniture Showroom"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Galle Road",
+  "alternate_addresses": [
+    "Galle Road, Thelawala South, Moratuwa, Colombo, Western, Sri Lanka",
+    "A2, Dehiwala-Mount Lavinia, 10390, Sri Lanka",
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

@@ -6,7 +6,9 @@
     "longitude": 80.262213
   },
   "categories": [
-    "Fuel station"
+    "Fuel station",
+    "Yes",
+    "Fuel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,11 @@
     "subclass": "fuel",
     "names": [
       "Lanka IOC"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Kendangamuwa Ihalagama, Eheliyagoda, Ratnapura, Sabaragamuwa, Sri Lanka",
+  "business_status": "OPERATIONAL"
 }

@@ -6,7 +6,10 @@
     "longitude": 79.862151
   },
   "categories": [
-    "Pharmacy"
+    "Pharmacy",
+    "Amenity: Pharmacy",
+    "Healthcare: Pharmacy",
+    "Retail > Pharmacy"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,16 @@
     "subclass": "pharmacy",
     "names": [
       "Kotahena Chemist"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "01300 Kotahena St, Colombo 01300, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Masangasweediya, Colombo, Western, Sri Lanka",
+    "No. 58, Kotahena, 01300, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

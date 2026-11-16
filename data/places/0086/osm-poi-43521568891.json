@@ -6,7 +6,8 @@
     "longitude": 80.091507
   },
   "categories": [
-    "Post office"
+    "Post office",
+    "Amenity: Post Office"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,15 @@
     "subclass": "post_office",
     "names": [
       "Radawana Post Office"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Weliweriya - Kirindiwela Rd, Radawana 11725, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Kithulakanda, Dompe, Gampaha, Western, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

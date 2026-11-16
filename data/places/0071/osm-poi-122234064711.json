@@ -6,7 +6,9 @@
     "longitude": 79.859008
   },
   "categories": [
-    "Diplomatic"
+    "Diplomatic",
+    "Corporate office",
+    "Office: Diplomatic"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,14 @@
     "subclass": "diplomatic",
     "names": [
       "India House"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "3 Thurstan Rd Colombo 00700 Thurstan Rd, Colombo 00700, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

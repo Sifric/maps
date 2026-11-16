@@ -6,7 +6,9 @@
     "longitude": 79.862993
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Dining and Drinking > Restaurant > Sandwich Spot",
+    "Dining and Drinking > Restaurant"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "restaurant",
     "names": [
       "RnR"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "CLOSED",
+  "alternate_addresses": [
+    "Colombo 07, Kurunduwatta, Thimbirigasyaya, Colombo, Western, Sri Lanka",
+    "Colombo Racecourse, Reid Avenue, Colombo 07, Colombo 07, Western Province, 00700, Sri Lanka"
+  ]
 }

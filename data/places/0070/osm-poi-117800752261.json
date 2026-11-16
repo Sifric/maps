@@ -6,7 +6,10 @@
     "longitude": 79.879532
   },
   "categories": [
-    "Company"
+    "Company",
+    "Business and Professional Services > Office",
+    "Business and Professional Services > Office > Coworking Space",
+    "Business and Professional Services > Technology Business > IT Service"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,14 @@
     "subclass": "company",
     "names": [
       "Virtusa"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "752, Dr Danister De Silva Mawatha, Colombo, WP, 00900, Sri Lanka"
+  ]
 }

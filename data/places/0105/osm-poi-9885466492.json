@@ -6,7 +6,8 @@
     "longitude": 80.128849
   },
   "categories": [
-    "Post office"
+    "Post office",
+    "Amenity: Post Office"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,53 @@
     "subclass": "post_office",
     "names": [
       "Dodanduwa Post Office"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Galle Rd, Dodanduwa, Sri Lanka",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–4 PM"
+      ]
+    }
+  ],
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Colombo-Galle Road, Dodanduwa, Katudampe, Hikkaduwa, Galle, Southern, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

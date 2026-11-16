@@ -6,7 +6,9 @@
     "longitude": 80.960189
   },
   "categories": [
-    "Pharmacy"
+    "Pharmacy",
+    "Amenity: Pharmacy",
+    "Healthcare: Pharmacy"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,12 @@
     "class": "pharmacy",
     "subclass": "pharmacy",
     "names": [
-      "City Pharmacy"
+      "City Pharmacy",
+      "City pharmacy"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "no 5 Dambetenna Road, Haputale, Sri Lanka"
 }

@@ -6,7 +6,8 @@
     "longitude": 80.746309
   },
   "categories": [
-    "Hindu"
+    "Hindu",
+    "Place Of Worship"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,16 @@
     "class": "place_of_worship",
     "subclass": "hindu",
     "names": [
-      "KUNDAANKOVIL MUNUSAMY"
+      "KUNDAANKOVIL MUNUSAMY",
+      "Kundaankovil Munusamy"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "*=DAYAGAMA WEST 2ND DIVISION DAYAGAMA, Weverly, Thalawakele, Nuwara Eliya, Central, Sri Lanka"
+  ]
 }

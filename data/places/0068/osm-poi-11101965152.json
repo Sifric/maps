@@ -6,7 +6,8 @@
     "longitude": 81.136356
   },
   "categories": [
-    "Buddhist"
+    "Buddhist",
+    "Place Of Worship"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,16 @@
     "class": "place_of_worship",
     "subclass": "buddhist",
     "names": [
-      "udagama tempel"
+      "udagama tempel",
+      "Udagama Tempel"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Pelgahathenna, Passara, Badulla, Uva, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ]
 }

@@ -6,7 +6,10 @@
     "longitude": 80.348843
   },
   "categories": [
-    "Padel"
+    "Padel",
+    "Leisure: Pitch",
+    "Overture Maps",
+    "Tennis Court"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,17 @@
     "class": "pitch",
     "subclass": "padel",
     "names": [
-      "GOOD STORY Club"
+      "GOOD STORY Club",
+      "Good Story Club"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "GOOD STORY Club, Kabalana Road, Kabalana, Ahangama, 80650",
+  "alternate_addresses": [
+    "Good Story Club, Kabalana Rd, Welhengoda, 80650, Sri Lanka",
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

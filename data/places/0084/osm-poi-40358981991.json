@@ -6,7 +6,10 @@
     "longitude": 80.646606
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Tourism: Hotel",
+    "Travel and Transportation > Lodging > Hotel",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,17 @@
     "subclass": "hotel",
     "names": [
       "The Kandyan"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "No 197, Rajapihilla Mawatha, Kandy 20000, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Rajapihilla Mawatha, Kandy, Thalwatta, Gangawata Korale, Central, Sri Lanka",
+    "Kandy, Centrale provincie, Sri Lanka",
+    "Ampitiya South, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

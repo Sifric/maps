@@ -6,7 +6,13 @@
     "longitude": 79.878464
   },
   "categories": [
-    "Convenience"
+    "Convenience",
+    "Business and Professional Services > Distribution Center",
+    "Retail > Computers and Electronics Retail > Camera Store",
+    "Business and Professional Services > Photography Service > Photography Lab",
+    "Business and Professional Services > Design Studio",
+    "Overture Maps",
+    "Event Photography Service"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +23,16 @@
     "subclass": "convenience",
     "names": [
       "Ninehearts"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Baseline Road, Orugodawatta, Kolonnawa, Colombo, Western, Sri Lanka",
+    "Baseline Rd., Colombo, Western Province, Sri Lanka",
+    "758/1 Dr Danister De Silva Mawatha, Colombo, 00900, Sri Lanka"
+  ]
 }

@@ -6,7 +6,22 @@
     "longitude": 79.890078
   },
   "categories": [
-    "Bank"
+    "Bank",
+    "Supermarket",
+    "Convenience",
+    "Place",
+    "Retail > Food and Beverage Retail > Grocery Store",
+    "Retail > Food and Beverage Retail > Fruit and Vegetable Store",
+    "Retail > Food and Beverage Retail > Health Food Store",
+    "Retail",
+    "Retail > Shopping Mall",
+    "Retail > Food and Beverage Retail",
+    "Retail > Department Store",
+    "Retail > Food and Beverage Retail > Supermarket",
+    "Retail > Convenience Store",
+    "Retail > Market",
+    "Overture Maps",
+    "Grocery Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +32,14 @@
     "subclass": "bank",
     "names": [
       "Food City"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Nugegoda, Dutugemunu, Dehiwala, Colombo, Western, Sri Lanka"
+  ]
 }

@@ -6,7 +6,10 @@
     "longitude": 80.455129
   },
   "categories": [
-    "Guest house"
+    "Guest house",
+    "Travel and Transportation > Lodging > Bed and Breakfast",
+    "Overture Maps",
+    "Bed And Breakfast"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,14 @@
     "subclass": "guest_house",
     "names": [
       "Mirissa Golden Resort"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "No:41 Sunanda Road, Mirissa Udupila, 81740, Sri Lanka"
+  ]
 }

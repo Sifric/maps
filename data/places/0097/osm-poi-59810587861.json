@@ -6,7 +6,11 @@
     "longitude": 80.314844
   },
   "categories": [
-    "Cafe"
+    "Cafe",
+    "Banquet hall",
+    "Amenity: Cafe",
+    "Overture Maps",
+    "Music Venue"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +20,62 @@
     "class": "cafe",
     "subclass": "cafe",
     "names": [
-      "The Factory Ambanpitiya"
+      "The Factory Ambanpitiya",
+      "The Factory - Ambanpitiya"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Ambanpitiya Estate Pvt, 73rd Km post - Colombo- Kandy Hwy, Galigamuwa Town 71350, Sri Lanka",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7 AM–7 PM"
+      ]
+    }
+  ],
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Colombo-Kandy Road, Uraulla, Kegalle, Sabaragamuwa, Sri Lanka",
+    "Ambanpitiya Estate Pvt, Galigamuwa, 71350, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

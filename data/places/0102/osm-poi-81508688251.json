@@ -6,7 +6,11 @@
     "longitude": 80.162441
   },
   "categories": [
-    "Fast food restaurant"
+    "Fast food restaurant",
+    "Business and Professional Services > Health and Beauty Service > Hair Salon",
+    "Fast Food",
+    "Overture Maps",
+    "Beauty Salon"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +20,18 @@
     "class": "fast_food",
     "subclass": "fast_food",
     "names": [
-      "SALON ISHARA"
+      "SALON ISHARA",
+      "SALON Ishara",
+      "Salon Ishara"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Batuwanhena, Elpitiya, Galle, Southern, Sri Lanka",
+    "NO 73, ALUTHGAMA, Elpitiya Rd, Igala East, 80400, Sri Lanka"
+  ]
 }

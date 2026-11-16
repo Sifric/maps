@@ -6,7 +6,8 @@
   },
   "address": "41/2 Wasala Rd, Dehiwala-Mount Lavinia",
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Amenity: Restaurant"
   ],
   "phone": "0770207733",
   "website": "http://www.barracuda.lk/",
@@ -55,5 +56,15 @@
     }
   ],
   "business_status": "OPEN",
-  "id": "01M72AQ01PQGWXXFXVEPF2AQBD"
+  "id": "01M72AQ01PQGWXXFXVEPF2AQBD",
+  "alternate_addresses": [
+    "41/2, Wasala Road, Dehiwala",
+    "Wasala Road, Dehiwala, Dehiwala West, Colombo, Western, Sri Lanka"
+  ],
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  }
 }

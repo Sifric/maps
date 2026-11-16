@@ -6,7 +6,8 @@
     "longitude": 79.860746
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,15 @@
     "subclass": "hotel",
     "names": [
       "Supun Arcade Residency"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Galle Road, Wellawatta North, Thimbirigasyaya, Colombo, Western, Sri Lanka",
+    "M1, Supun Arcade Building, 56 Galle Rd, Colombo, 00600, Sri Lanka"
+  ]
 }

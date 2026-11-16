@@ -6,7 +6,11 @@
     "longitude": 79.941909
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Tourism: Hotel",
+    "Star Class Hotels",
+    "Travel and Transportation > Lodging > Resort",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +21,18 @@
     "subclass": "hotel",
     "names": [
       "Citrus Waskaduwa"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "427 Samanthara Rd, Waskaduwa 12580, Sri Lanka",
+  "alternate_addresses": [
+    "427, Samanthara Rd, Waskaduwa 12580, Waskaduwa",
+    "Samanthara Rd, Waskaduwa 12580, Waskaduwa, Nugagoda, Kalutara, Western, Sri Lanka",
+    "Samanthara Road, Waskaduwa, Molligoda South, Kalutara, Western, Sri Lanka",
+    "No. 427, Kawduduwa, Western, Sri Lanka",
+    "427 Samanthara Rd, Kuda Waskaduwa West, 12580, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

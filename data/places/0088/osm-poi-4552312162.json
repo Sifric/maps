@@ -6,7 +6,9 @@
     "longitude": 80.535241
   },
   "categories": [
-    "Government"
+    "Government",
+    "Government office",
+    "Office: Government"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,16 @@
     "class": "office",
     "subclass": "government",
     "names": [
-      "Urban Council, Nawalapitiya"
+      "Urban Council, Nawalapitiya",
+      "Urban Council Nawalapitiya"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Nawalapitiya, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

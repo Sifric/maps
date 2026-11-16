@@ -6,7 +6,10 @@
     "longitude": 80.101699
   },
   "categories": [
-    "Clothes"
+    "Clothes",
+    "Gift",
+    "Retail > Boutique",
+    "Landmarks and Outdoors > Surf Spot"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "clothes",
     "names": [
       "Maya"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Wavulagoda East, Hikkaduwa, Galle, Southern, Sri Lanka",
+    "Hikkaduwa, Southern Province, Sri Lanka"
+  ]
 }

@@ -6,7 +6,9 @@
     "longitude": 79.89179
   },
   "categories": [
-    "Hospital"
+    "Hospital",
+    "Amenity: Hospital",
+    "Healthcare: Hospital"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "hospital",
     "names": [
       "Nightingale Hospital"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Wattala, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Thelangapatha Road, Wattala, Peliyagodawatta, Kelaniya, Gampaha, Western, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

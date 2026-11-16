@@ -6,7 +6,12 @@
     "longitude": 79.945246
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Sports and Recreation > Water Sports > Swimming > Swimming Pool",
+    "Dining and Drinking > Restaurant > Indian Restaurant",
+    "Travel and Transportation > Lodging > Bed and Breakfast",
+    "Travel and Transportation > Lodging > Boarding House",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +22,15 @@
     "subclass": "hotel",
     "names": [
       "Prince Hotel"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Honnanthara North, Kesbewa, Colombo, Western, Sri Lanka",
+    "No: 192/7 Dawatagahawatta, Kesbewa East, 10300, Sri Lanka"
+  ]
 }

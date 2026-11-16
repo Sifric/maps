@@ -6,7 +6,10 @@
     "longitude": 80.623298
   },
   "categories": [
-    "Supermarket"
+    "Supermarket",
+    "Retail > Convenience Store",
+    "Overture Maps",
+    "Convenience Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -18,6 +21,16 @@
     "names": [
       "The Nihals",
       "Nihals Super"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "George De Silva Mawatha, Bogambara, Gangawata Korale, Kandy, Central, Sri Lanka",
+    "Kandy, Sri Lanka",
+    "27B George E De Silva Mawatha, Kandy, 20000, Sri Lanka"
+  ]
 }

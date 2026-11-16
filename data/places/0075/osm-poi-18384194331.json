@@ -6,7 +6,12 @@
     "longitude": 79.8564
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Fast food restaurant",
+    "Dining and Drinking > Restaurant > Comfort Food Restaurant",
+    "Dining and Drinking > Restaurant > Burger Joint",
+    "Overture Maps",
+    "Burger Restaurant"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +21,18 @@
     "class": "restaurant",
     "subclass": "restaurant",
     "names": [
-      "burger hut"
+      "burger hut",
+      "Burger Hut"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Kinross Avenue, Wellawatta North, Thimbirigasyaya, Colombo, Western, Sri Lanka",
+    "Kinross avenue, Colombo, Western Province, 00600, Sri Lanka",
+    "No. 32 Kinross Avenue, Marine Dr, Colombo, 00400, Sri Lanka"
+  ]
 }

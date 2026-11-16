@@ -6,7 +6,10 @@
     "longitude": 80.458551
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Dining and Drinking > Restaurant > Burger Joint",
+    "Overture Maps",
+    "Fast Food Restaurant"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "restaurant",
     "names": [
       "The Original Rocket Burger"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Beach Rd, Mirissa, Southern Province, Sri Lanka",
+    "220/5 Galle Rd, Mirissa Udupila, 81740, Sri Lanka"
+  ]
 }

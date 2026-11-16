@@ -6,7 +6,10 @@
     "longitude": 79.892659
   },
   "categories": [
-    "Marketplace"
+    "Marketplace",
+    "GeoNames",
+    "Feature class A",
+    "ADM4"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,11 @@
     "subclass": "marketplace",
     "names": [
       "Wattala"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "36, 12, 1218, 1218180, Sri Lanka",
+  "business_status": "OPERATIONAL"
 }

@@ -6,7 +6,9 @@
     "longitude": 79.861583
   },
   "categories": [
-    "Car repair"
+    "Car repair",
+    "Business and Professional Services > Automotive Service > Automotive Repair Shop",
+    "Place"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "car_repair",
     "names": [
       "Mag City"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Ibbanwala, Colombo, Western, Sri Lanka",
+    "D.R. Wijewardhana Mawatha, Maradana, Colombo 10, 010000, Sri Lanka"
+  ]
 }

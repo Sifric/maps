@@ -6,7 +6,9 @@
     "longitude": 80.213698
   },
   "categories": [
-    "Car repair"
+    "Car repair",
+    "Overture Maps",
+    "Fabric Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,14 @@
     "subclass": "car_repair",
     "names": [
       "Pitigala Cushion Works"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Galle - Baddegama Rd, Southern Province, 3, 80170, Sri Lanka"
+  ]
 }

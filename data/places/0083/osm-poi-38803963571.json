@@ -6,7 +6,10 @@
     "longitude": 80.765541
   },
   "categories": [
-    "Hospital"
+    "Hospital",
+    "Amenity: Hospital",
+    "Healthcare: Hospital",
+    "Health and Medicine > Hospital"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,17 @@
     "class": "hospital",
     "subclass": "hospital",
     "names": [
-      "Co-operative Hospital"
+      "Co-operative Hospital",
+      "Co - operative Hospital"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Keena Rd, Nuwara Eliya 22200, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Nuwaraeliya, Nuwara Eliya, Central, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

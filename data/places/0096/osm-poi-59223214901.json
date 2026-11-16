@@ -6,7 +6,10 @@
     "longitude": 81.048927
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Overture Maps",
+    "Hotel",
+    "Dining and Drinking > Bar > Pub"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "restaurant",
     "names": [
       "Spice Ella"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Ella Town, Wellawaya-Ella-Kumbalwela Hwy, Ella 90090, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Uva, Sri Lanka"
+  ]
 }

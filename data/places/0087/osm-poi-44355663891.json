@@ -6,7 +6,11 @@
     "longitude": 80.534093
   },
   "categories": [
-    "Bus stop"
+    "Bus stop",
+    "Area",
+    "Travel and Transportation > Transport Hub > Bus Station",
+    "Overture Maps",
+    "Bus Station"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +20,17 @@
     "class": "bus",
     "subclass": "bus_stop",
     "names": [
-      "Nupe junction"
+      "Nupe junction",
+      "Nupe Junction"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Matara, Sri Lanka",
+  "alternate_addresses": [
+    "Nupe, Matara, Southern Province, Sri Lanka",
+    "Nupe, Matara, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

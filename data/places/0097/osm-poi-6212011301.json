@@ -6,7 +6,8 @@
     "longitude": 79.890813
   },
   "categories": [
-    "Supermarket"
+    "Supermarket",
+    "Retail > Fashion Retail > Clothing Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,16 @@
     "class": "grocery",
     "subclass": "supermarket",
     "names": [
-      "ODEL"
+      "ODEL",
+      "Odel"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Colombo-Negombo Road, Hendala South, Wattala, Gampaha, Western, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Wattala, Western Province, Sri Lanka"
+  ]
 }

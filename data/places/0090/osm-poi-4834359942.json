@@ -6,7 +6,10 @@
     "longitude": 80.203055
   },
   "categories": [
-    "Christian"
+    "Christian",
+    "Wikidata physical place",
+    "Place Of Worship",
+    "Community and Government > Spiritual Center > Church"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,17 @@
     "class": "place_of_worship",
     "subclass": "christian",
     "names": [
-      "Shrine Of Our Lady Of Madhu"
+      "Shrine Of Our Lady Of Madhu",
+      "Shrine of Our Lady of Madhu"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Madhu, Mannar, Northern, Sri Lanka",
+    "Madhu Road, Madhu, Mannar, Sri Lanka"
+  ]
 }

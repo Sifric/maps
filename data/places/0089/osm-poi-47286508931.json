@@ -6,7 +6,10 @@
     "longitude": 80.017092
   },
   "categories": [
-    "Travel agency"
+    "Travel agency",
+    "Air taxi",
+    "Shop: Travel Agency",
+    "Travel and Transportation"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "travel_agency",
     "names": [
       "Helitours"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "266/1 Stanley Rd, Jaffna, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Jaffna Town West, Jaffna, Northern, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

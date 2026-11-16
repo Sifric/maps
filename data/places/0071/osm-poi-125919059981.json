@@ -6,7 +6,10 @@
     "longitude": 79.868175
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Dining and Drinking > Restaurant > Asian Restaurant > Thai Restaurant",
+    "Overture Maps",
+    "Thai Restaurant"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,18 @@
     "class": "restaurant",
     "subclass": "restaurant",
     "names": [
-      "Mays Table"
+      "Mays Table",
+      "MAYs TABLE"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Kurunduwatta, Thimbirigasyaya, Colombo, Western, Sri Lanka",
+    "Arcade Clock Tower Building, No 7, 1st Floor, Colombo, Western Province, Sri Lanka",
+    "Arcade Clock Tower Building, 1st Floor, Ground Floor Independence Square, Colombo, 00700, Sri Lanka"
+  ]
 }

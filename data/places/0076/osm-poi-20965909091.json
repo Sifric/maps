@@ -6,7 +6,10 @@
     "longitude": 80.10465
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Tourism: Hotel",
+    "Guest Houses",
+    "Travel and Transportation > Lodging > Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "hotel",
     "names": [
       "Blue Ocean Villa"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "420, Galle Road, Hikkaduwa",
+  "alternate_addresses": [
+    "Galle Road, Hikkaduwa, Wavulagoda East, Galle, Southern, Sri Lanka",
+    "420 Galle Road, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

@@ -6,7 +6,8 @@
     "longitude": 80.420201
   },
   "categories": [
-    "Reservoir"
+    "Reservoir",
+    "Nature preserve"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,16 @@
     "class": "reservoir",
     "subclass": "reservoir",
     "names": [
-      "Kira wewa"
+      "Kira wewa",
+      "Kira Wewa"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Ratnapura, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

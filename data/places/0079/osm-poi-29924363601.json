@@ -6,7 +6,10 @@
     "longitude": 79.846605
   },
   "categories": [
-    "Guest house"
+    "Guest house",
+    "Tourism: Guest House",
+    "Overture Maps",
+    "Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,16 @@
     "subclass": "guest_house",
     "names": [
       "Green Island Hotel"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Waikkala",
+    "Waikkala, Bolawatta, Wennappuwa, Puttalam, North Western, Sri Lanka",
+    "green island hotel, kammala north, waikkal, Nainamadama West, 64354, Sri Lanka"
+  ]
 }

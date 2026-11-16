@@ -5,12 +5,15 @@
     "longitude": 80.5976541
   },
   "categories": [
-    "Government hospital"
+    "Government hospital",
+    "Wikidata physical place",
+    "Overture Maps",
+    "Hospital"
   ],
   "address": "7H8X+G36, Kandy 20400",
   "phone": "0812388001",
   "website": "https://www.peradeniya-hospital.health.gov.lk/?fbclid=IwZXh0bgNhZW0CMTAAAR29ELKZhrxC_KaPYXDj0ke7BnNQamhCc6qF-1imPWQoH62jLtp5Fye1Usw_aem_Aedvb-Y5MqixWUTgbznSUbEEiGnQ-BpLUgB2o9FwUrTw2pJZ45-0-yHKCNHyRSpBhUGJA4Dz_0ACbEMmrTZZS7bn",
-  "business_status": "OPEN",
+  "business_status": "OPERATIONAL",
   "hours": [
     {
       "day": "Monday",
@@ -55,5 +58,17 @@
       ]
     }
   ],
-  "id": "01M6Q6S99A6Y8HGTT0JJ9KX03T"
+  "id": "01M6Q6S99A6Y8HGTT0JJ9KX03T",
+  "source": {
+    "names": [
+      "Teaching Hospital, Peradeniya"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  },
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Teaching Hospital Peradeniya, Peradeniya, Kandy, 20400, Sri Lanka"
+  ]
 }

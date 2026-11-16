@@ -6,7 +6,10 @@
     "longitude": 79.860059
   },
   "categories": [
-    "Estate agent"
+    "Estate agent",
+    "Community and Government > Residential Building > Apartment or Condo",
+    "Overture Maps",
+    "Historic Site"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "estate_agent",
     "names": [
       "Hyde Park Residencies"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Hyde Park Corner, Colombo, Western, 00700, Sri Lanka",
+    "79 Hyde Park Residencies, Colombo, 00200, Sri Lanka"
+  ]
 }

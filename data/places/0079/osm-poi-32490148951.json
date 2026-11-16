@@ -6,7 +6,10 @@
     "longitude": 80.102901
   },
   "categories": [
-    "Cafe"
+    "Cafe",
+    "Dining and Drinking > Cafe, Coffee, and Tea House > Coffee Shop",
+    "Overture Maps",
+    "Coffee Shop"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,18 @@
     "class": "cafe",
     "subclass": "cafe",
     "names": [
-      "Barista Lavazza"
+      "Barista Lavazza",
+      "Barista LavAzza"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Hikkaduwa, Wavulagoda East, Galle, Southern, Sri Lanka",
+    "No. 360, Hikkaduwa, Sri Lanka",
+    "361 A2, Pannamgoda, 80244, Sri Lanka"
+  ]
 }

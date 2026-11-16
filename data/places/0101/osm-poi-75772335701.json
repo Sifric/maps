@@ -6,7 +6,11 @@
     "longitude": 80.63643
   },
   "categories": [
-    "Buddhist"
+    "Buddhist",
+    "Buddhist temple",
+    "Amenity: Place Of Worship",
+    "Place Of Worship",
+    "Community and Government > Spiritual Center > Buddhist Temple"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +20,18 @@
     "class": "place_of_worship",
     "subclass": "buddhist",
     "names": [
-      "Sandagiri Maha Viharaya"
+      "Sandagiri Maha Viharaya",
+      "Sandagiri Maha Viharaya | සඳගිරි මහා විහාරය"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Hantana - Uduwela Rd, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Hantana Road, Kandy, Heeressagala, Gangawata Korale, Central, Sri Lanka",
+    "Sandagiri Maha Viharaya | සඳගිරි මහා විහාරය, Central Province, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

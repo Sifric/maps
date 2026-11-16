@@ -6,7 +6,9 @@
   },
   "address": "RVM8+3GF, Station Rd, Dehiwala-Mount Lavinia",
   "categories": [
-    "Post office"
+    "Post office",
+    "Amenity: Post Office",
+    "Overture Maps"
   ],
   "phone": "0112715276",
   "website": "http://www.slpost.gov.lk/",
@@ -55,5 +57,16 @@
     }
   ],
   "business_status": "OPEN",
-  "id": "01M72AR322FW3CMNNN1EWZ0GPV"
+  "id": "01M72AR322FW3CMNNN1EWZ0GPV",
+  "alternate_addresses": [
+    "Station Road, Mount Lavinia",
+    "Station Road, Mount Lavinia, Kawdana East, Dehiwala, Colombo, Western, Sri Lanka",
+    "Station Rd, Dehiwala-Mount Lavinia, 10370, Sri Lanka"
+  ],
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  }
 }

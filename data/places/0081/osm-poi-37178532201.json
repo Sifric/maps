@@ -6,7 +6,10 @@
     "longitude": 79.840506
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "GeoNames",
+    "Feature class S",
+    "HTL"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "hotel",
     "names": [
       "Golden Star Beach Hotel"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Wellaweediya, Negombo, Gampaha, Western, Sri Lanka",
+    "36, 12, 1203, 1203065, Sri Lanka"
+  ]
 }

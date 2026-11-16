@@ -6,7 +6,8 @@
     "longitude": 80.52426
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,15 @@
     "subclass": "hotel",
     "names": [
       "Residence Riviera"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Beach Road, Welegoda West, Matara Four Gravets, Matara, Southern, Sri Lanka",
+    "67 Beach Rd, Matara, 81000, Sri Lanka"
+  ]
 }

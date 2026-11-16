@@ -6,7 +6,8 @@
     "longitude": 79.904509
   },
   "categories": [
-    "University"
+    "University",
+    "Amenity: University"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,14 @@
     "subclass": "university",
     "names": [
       "Universal College Lanka (UCL)"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "503, Sri Jayawardenapura Mawatha, Jayawardenapura Kotte",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

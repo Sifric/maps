@@ -6,7 +6,9 @@
     "longitude": 80.514786
   },
   "categories": [
-    "Supermarket"
+    "Supermarket",
+    "Overture Maps",
+    "Grocery Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "supermarket",
     "names": [
       "Vasika Super Mart"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Kamburugamuwa South, Weligama, Matara, Southern, Sri Lanka",
+    "N 80°30, 5°56'36.9, 53 2nd Lane, Matara, Sri Lanka"
+  ]
 }

@@ -6,7 +6,10 @@
     "longitude": 79.891183
   },
   "categories": [
-    "Car repair"
+    "Car repair",
+    "Car parts",
+    "Business and Professional Services > Automotive Service > Automotive Repair Shop",
+    "Travel and Transportation > Fuel Station"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "car_repair",
     "names": [
       "Mazna Motors"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Rattanapitiya, Kesbewa, Colombo, Western, Sri Lanka",
+    "249, Attidiya, Western, Sri Lanka"
+  ]
 }

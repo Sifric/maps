@@ -5,9 +5,21 @@
     "longitude": 81.61382309999999
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Hotel"
   ],
   "address": "QJ97+JGG, Trincomalee-Batticaloa Road, Eravur",
-  "business_status": "OPEN",
-  "id": "01M5Z17GC75PDB0MRNFK5PN6ZE"
+  "business_status": "OPERATIONAL",
+  "id": "01M5Z17GC75PDB0MRNFK5PN6ZE",
+  "source": {
+    "names": [
+      "Amma hotel"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  },
+  "alternate_addresses": [
+    "Eravur 02B, Eravur Town, Batticaloa, Eastern, Sri Lanka"
+  ]
 }

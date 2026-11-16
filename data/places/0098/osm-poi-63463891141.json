@@ -6,7 +6,9 @@
     "longitude": 79.90711
   },
   "categories": [
-    "Cafe"
+    "Cafe",
+    "Overture Maps",
+    "Dessert Shop"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "cafe",
     "names": [
       "Simply Strawberries"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Ethulkotte, Sri Jayawardanapura Kotte, Colombo, Western, Sri Lanka",
+    "610 Sri Jayawardenepura Mawatha, Sri Jayewardenepura Kotte, 10100, Sri Lanka"
+  ]
 }

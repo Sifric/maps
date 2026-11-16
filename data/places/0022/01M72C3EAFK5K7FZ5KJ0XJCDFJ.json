@@ -6,9 +6,32 @@
   },
   "address": "Post Office Rd, Trincomalee",
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Tourism: Hotel",
+    "Community and Government > Residential Building > Apartment or Condo",
+    "Overture Maps"
   ],
   "phone": "0718750500",
   "business_status": "OPEN",
-  "id": "01M72C3EAFK5K7FZ5KJ0XJCDFJ"
+  "id": "01M72C3EAFK5K7FZ5KJ0XJCDFJ",
+  "alternate_addresses": [
+    "Post Office Road, Trincomalee, 31000",
+    "Post Office Road, Trincomalee, Sonagavadi, Town & Gravets, Eastern, Sri Lanka",
+    "Post Office Road, Trincomalee, Sri Lanka",
+    "Post Office Rd, Trincomalee, 32100, Sri Lanka"
+  ],
+  "hours": [
+    {
+      "day": "Hours (OSM format)",
+      "times": [
+        "15:00+"
+      ]
+    }
+  ],
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  }
 }

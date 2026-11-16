@@ -6,7 +6,8 @@
     "longitude": 80.581799
   },
   "categories": [
-    "Fast food restaurant"
+    "Fast food restaurant",
+    "Fast Food"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,14 @@
     "subclass": "fast_food",
     "names": [
       "Juicebar"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Weladura, Kahawattha, Ratnapura, Sabaragamuwa, Sri Lanka"
+  ]
 }

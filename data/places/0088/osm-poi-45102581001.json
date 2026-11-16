@@ -6,7 +6,10 @@
     "longitude": 80.026018
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Star Class Hotels",
+    "Travel and Transportation > Lodging > Hotel",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "hotel",
     "names": [
       "The Thinnai"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "86, Palaly Road Thirunelveli, Jaffna 40000, Sri Lanka",
+  "alternate_addresses": [
+    "86, Palali (Palaly) Road, Thirunelveli, Jaffna, Sri Lanka",
+    "Pallaly Road Thirunelveli, 86 Palaly Rd, Jaffna District, 4, 40000, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

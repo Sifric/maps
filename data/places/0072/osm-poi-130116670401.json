@@ -6,7 +6,8 @@
     "longitude": 79.849802
   },
   "categories": [
-    "Office"
+    "Office",
+    "Information"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,16 @@
     "class": "information",
     "subclass": "office",
     "names": [
-      "tourists information office"
+      "tourists information office",
+      "Tourists Information Office"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Masangasweediya, Colombo, Western, Sri Lanka"
+  ]
 }

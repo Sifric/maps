@@ -6,7 +6,10 @@
     "longitude": 80.00772
   },
   "categories": [
-    "Guest house"
+    "Guest house",
+    "Motel",
+    "Overture Maps",
+    "Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "guest_house",
     "names": [
       "Lotus Inn"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Navanthurai North, Jaffna, Northern, Sri Lanka",
+    "181, Manipay Road, Jaffna-Manipay-Karainagar Rd, Northern Province, 4, 40000, Sri Lanka"
+  ]
 }

@@ -6,7 +6,11 @@
     "longitude": 79.919878
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Guest Houses",
+    "Travel and Transportation > Lodging > Bed and Breakfast",
+    "Overture Maps",
+    "Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +20,19 @@
     "class": "restaurant",
     "subclass": "restaurant",
     "names": [
-      "Euro Star Hotel"
+      "Euro Star Hotel",
+      "EURO STAR HOTEL"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Yatiyana, B208, Minuwangoda 11550, Sri Lanka",
+  "alternate_addresses": [
+    "KATUNAYAKA ROAD, PEELLAWATTA, MINUWANGODA",
+    "Yatiyana Central, Minuwangoda, Gampaha, Western, Sri Lanka",
+    ", Sri Lanka",
+    "Yatiyana, B208, Gampaha District, 1, 11550, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

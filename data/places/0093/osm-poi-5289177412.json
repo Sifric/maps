@@ -6,7 +6,10 @@
     "longitude": 79.856722
   },
   "categories": [
-    "Swimming pool"
+    "Swimming pool",
+    "Arts and Entertainment > Water Park",
+    "Overture Maps",
+    "Water Park"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,17 @@
     "class": "swimming_pool",
     "subclass": "swimming_pool",
     "names": [
-      "Ladies' College Swimming Pool"
+      "Ladies' College Swimming Pool",
+      "Ladies College Swimming Pool"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Colombo, Western Province, Sri Lanka",
+    "27th Ln, Colombo, 0007, Sri Lanka"
+  ]
 }

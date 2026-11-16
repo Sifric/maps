@@ -6,7 +6,9 @@
     "longitude": 80.488291
   },
   "categories": [
-    "Public building"
+    "Public building",
+    "Wedding venue",
+    "Amenity: Public Building"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,12 @@
     "class": "town_hall",
     "subclass": "public_building",
     "names": [
-      "Wedding Hall"
+      "Wedding Hall",
+      "Wedding hall"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Weeding Hall, Kali Kovil, Kovil Rd, Vavuniya, Sri Lanka"
 }

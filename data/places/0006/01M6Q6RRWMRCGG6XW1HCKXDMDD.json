@@ -5,7 +5,9 @@
     "longitude": 79.8615384
   },
   "categories": [
-    "Market"
+    "Market",
+    "Overture Maps",
+    "Grocery Store"
   ],
   "address": "Wellawatta Public Market and Vehicle Park, Manning Pl, Colombo 00600",
   "business_status": "OPEN",
@@ -53,5 +55,16 @@
       ]
     }
   ],
-  "id": "01M6Q6RRWMRCGG6XW1HCKXDMDD"
+  "id": "01M6Q6RRWMRCGG6XW1HCKXDMDD",
+  "alternate_addresses": [
+    "Wellawatta Public Market and Vehicle Park, Manning Pl, Colombo, 00600, Sri Lanka"
+  ],
+  "source": {
+    "names": [
+      "Wellawatta Public Market"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  }
 }

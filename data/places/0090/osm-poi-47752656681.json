@@ -6,7 +6,9 @@
     "longitude": 80.767166
   },
   "categories": [
-    "Government"
+    "Government",
+    "District government office",
+    "Office: Government"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,14 @@
     "subclass": "government",
     "names": [
       "Central Bank Regional Office"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "PBC Hwy, Nuwara Eliya 22200, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

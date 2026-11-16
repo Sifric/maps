@@ -6,7 +6,9 @@
     "longitude": 79.93809
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Overture Maps",
+    "Bar And Grill Restaurant"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,17 @@
     "class": "restaurant",
     "subclass": "restaurant",
     "names": [
-      "Amigos Grill&Chill"
+      "Amigos Grill&Chill",
+      "Amigos Grill & Chill"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Depanama, Maharagama, Colombo, Western, Sri Lanka",
+    "236, High Level Road, Maharagama, Maharagama South, 10230, Sri Lanka"
+  ]
 }

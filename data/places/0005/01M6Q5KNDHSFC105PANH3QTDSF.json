@@ -5,11 +5,12 @@
     "longitude": 81.8327178
   },
   "categories": [
-    "Gas station"
+    "Gas station",
+    "Travel and Transportation > Fuel Station"
   ],
   "address": "B374, Pottuvil",
   "phone": "0632248601",
-  "business_status": "OPEN",
+  "business_status": "OPERATIONAL",
   "hours": [
     {
       "day": "Monday",
@@ -54,5 +55,14 @@
       ]
     }
   ],
-  "id": "01M6Q5KNDHSFC105PANH3QTDSF"
+  "id": "01M6Q5KNDHSFC105PANH3QTDSF",
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  },
+  "alternate_addresses": [
+    "Pottuvil, Sri Lanka"
+  ]
 }

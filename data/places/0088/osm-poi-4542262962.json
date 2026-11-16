@@ -6,7 +6,8 @@
     "longitude": 81.54108
   },
   "categories": [
-    "Hindu"
+    "Hindu",
+    "Place Of Worship"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,16 @@
     "class": "place_of_worship",
     "subclass": "hindu",
     "names": [
-      "Sri Muneeswarar Sivan Kovil ,Kumpurumulai"
+      "Sri Muneeswarar Sivan Kovil ,Kumpurumulai",
+      "Sri Muneeswarar Sivan Kovil, Kumpurumulai"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Kiran East, Koralai Pattu South, Batticaloa, Eastern, Sri Lanka"
+  ]
 }

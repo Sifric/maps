@@ -6,7 +6,10 @@
     "longitude": 79.9219
   },
   "categories": [
-    "Supermarket"
+    "Supermarket",
+    "Retail > Department Store",
+    "Overture Maps",
+    "Department Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "supermarket",
     "names": [
       "Sathosa"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Dehiwala Road, Maharagama, Katuwawala North, Kesbewa, Colombo, Western, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Godigamuwa, Maharagama, Sri Lanka",
+    "Godigamuwa, Godigamuwa North, Sri Lanka"
+  ]
 }

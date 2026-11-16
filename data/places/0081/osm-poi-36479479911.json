@@ -6,7 +6,8 @@
     "longitude": 79.869704
   },
   "categories": [
-    "Hostel"
+    "Hostel",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,15 @@
     "subclass": "hostel",
     "names": [
       "Ananda College Hostel"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Wanathamulla, Thimbirigasyaya, Colombo, Western, Sri Lanka",
+    "P De S Kularatne Mawatha, Colombo, 00100, Sri Lanka"
+  ]
 }

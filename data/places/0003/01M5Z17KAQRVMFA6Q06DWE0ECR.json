@@ -5,11 +5,13 @@
     "longitude": 81.7039104
   },
   "categories": [
-    "Private hospital"
+    "Private hospital",
+    "Hospital",
+    "Overture Maps"
   ],
   "address": "PPC3+JHF, New Kalmunai Road, Batticaloa 30000",
   "phone": "0652223076",
-  "business_status": "OPEN",
+  "business_status": "OPERATIONAL",
   "hours": [
     {
       "day": "Monday",
@@ -54,5 +56,15 @@
       ]
     }
   ],
-  "id": "01M5Z17KAQRVMFA6Q06DWE0ECR"
+  "id": "01M5Z17KAQRVMFA6Q06DWE0ECR",
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  },
+  "alternate_addresses": [
+    "Thamaraikerny, Manmunai North, Batticaloa, Eastern, Sri Lanka",
+    "35, 35/2, NEW ROAD, Batticaloa, 30000, Sri Lanka"
+  ]
 }

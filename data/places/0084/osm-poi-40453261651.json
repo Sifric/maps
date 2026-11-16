@@ -6,7 +6,9 @@
     "longitude": 80.583247
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Guest house",
+    "Tourism: Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "hotel",
     "names": [
       "The Cottage Rakwana"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Kalawana-Depedene-Rakwana Rd, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Kalawana - Depdene - Rakwana Road, Rakwana, Rakwana South, Godakawela, Ratnapura, Sabaragamuwa, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

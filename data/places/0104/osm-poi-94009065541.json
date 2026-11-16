@@ -6,7 +6,10 @@
     "longitude": 80.243449
   },
   "categories": [
-    "Fuel station"
+    "Fuel station",
+    "Petrol Pump",
+    "Amenity: Fuel",
+    "Fuel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "fuel",
     "names": [
       "Sevana Lanka Filling Station"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Anuradhapura road, Ambanpola 60650, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Amunugama, Ambanpola, Kurunegala, North Western, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

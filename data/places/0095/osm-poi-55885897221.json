@@ -6,7 +6,11 @@
     "longitude": 80.651037
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Amenity: Restaurant",
+    "Dining and Drinking > Bakery",
+    "Overture Maps",
+    "Bakery"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +21,15 @@
     "subclass": "restaurant",
     "names": [
       "Benthota Bake House"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Dambulugama, Dambulla, Matale, Central, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Kandy Rd., Dambulla, Central Province, Sri Lanka",
+    "596 Anuradhapura Road, Dambulla, 21100, Sri Lanka"
+  ]
 }

@@ -6,7 +6,8 @@
     "longitude": 81.542131
   },
   "categories": [
-    "Hospital"
+    "Hospital",
+    "Amenity: Hospital"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,15 @@
     "subclass": "hospital",
     "names": [
       "Inginiyagala Divisional Hospital"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Dam Road, Inginiyagala, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Polwaga Janapadaya, Ampara, Eastern, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

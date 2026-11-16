@@ -6,7 +6,8 @@
     "longitude": 79.900271
   },
   "categories": [
-    "Taxi"
+    "Taxi",
+    "Taxi service"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,15 @@
     "subclass": "taxi",
     "names": [
       "අනුර කැබ් රථ"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Wedha Mawatha, Panadura 12500, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Gorakana, Panadura, Kalutara, Western, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

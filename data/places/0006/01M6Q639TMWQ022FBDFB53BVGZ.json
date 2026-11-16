@@ -5,12 +5,14 @@
     "longitude": 80.76504229999999
   },
   "categories": [
-    "Thai restaurant"
+    "Thai restaurant",
+    "Restaurant",
+    "Overture Maps"
   ],
   "address": "Grand Hotel Road, Nuwara Eliya 22200",
   "phone": "0522222881",
   "website": "https://thegrandhotelnuwaraeliya.com/",
-  "business_status": "OPEN",
+  "business_status": "OPERATIONAL",
   "hours": [
     {
       "day": "Monday",
@@ -62,5 +64,15 @@
       ]
     }
   ],
-  "id": "01M6Q639TMWQ022FBDFB53BVGZ"
+  "id": "01M6Q639TMWQ022FBDFB53BVGZ",
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  },
+  "alternate_addresses": [
+    "Nuwaraeliya, Nuwara Eliya, Central, Sri Lanka",
+    "Grand Hotel Rd, Nuwara Eliya, 22200, Sri Lanka"
+  ]
 }

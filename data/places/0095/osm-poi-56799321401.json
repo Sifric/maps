@@ -6,7 +6,9 @@
     "longitude": 80.549194
   },
   "categories": [
-    "Telecommunication"
+    "Telecommunication",
+    "Telecommunications service provider",
+    "Office: Telecommunication"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,47 @@
     "subclass": "telecommunication",
     "names": [
       "Mobitel"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Beach Rd, Matara, Sri Lanka",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9:30 AM–4 PM",
+        "9:30 AM–1 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9:30 AM–4 PM",
+        "9:30 AM–1 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9:30 AM–4 PM",
+        "9:30 AM–1 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9:30 AM–4 PM",
+        "9:30 AM–1 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9:30 AM–4 PM",
+        "9:30 AM–1 PM"
+      ]
+    }
+  ]
 }

@@ -6,7 +6,11 @@
     "longitude": 80.595891
   },
   "categories": [
-    "Bus stop"
+    "Bus stop",
+    "Travel and Transportation > Road",
+    "Landmarks and Outdoors > Other Great Outdoors",
+    "Overture Maps",
+    "Historic Site"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +20,16 @@
     "class": "bus",
     "subclass": "bus_stop",
     "names": [
-      "Galaha Junction"
+      "Galaha Junction",
+      "Galaha Junction - ගලහ හංදිය/கலஹ சந்தி"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Hilda Obesekara Hostel, B364, Kandy, Sri Lanka"
+  ]
 }

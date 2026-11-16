@@ -6,7 +6,8 @@
     "longitude": 80.332085
   },
   "categories": [
-    "Educational institution"
+    "Educational institution",
+    "Office: Educational Institution"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,46 @@
     "subclass": "educational_institution",
     "names": [
       "Chethiyagiri Pirivena"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Pussella, Parakaduwa, 70550",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "1 PM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "1 PM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "1 PM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "1 PM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "1 PM–5:30 PM"
+      ]
+    }
+  ],
+  "alternate_addresses": [
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

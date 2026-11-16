@@ -6,7 +6,13 @@
     "longitude": 79.85455
   },
   "categories": [
-    "Educational institution"
+    "Educational institution",
+    "Office: Educational Institution",
+    "Community and Government > Education > College and University",
+    "Community and Government > Education > College and University > College Academic Building",
+    "Community and Government > Education > College and University > Student Center",
+    "Overture Maps",
+    "Campus Building"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +23,16 @@
     "subclass": "educational_institution",
     "names": [
       "SLIIT Computing"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "371, R. A. de Mel Mawatha (Duplication Road), Colombo 3",
+  "alternate_addresses": [
+    "Duplication Road, Colombo 03, Kollupitiya, Western, Sri Lanka",
+    ", Sri Lanka",
+    "Colombo, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

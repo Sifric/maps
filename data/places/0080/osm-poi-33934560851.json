@@ -6,7 +6,10 @@
     "longitude": 80.773582
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Tourism: Hotel",
+    "Travel and Transportation > Lodging > Hotel",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,17 @@
     "subclass": "hotel",
     "names": [
       "Kingsbury Lake Resort"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Kingsbury Lake Resort, No:26/9, Race Course Road, Nuwara Eliy, Nuwara Eliya, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Nuwara Eliya, Nuwaraeliya, Central, Sri Lanka",
+    "Nuwara Eliya, Sri Lanka",
+    "No: 26/9, Race Course Road, Nuwara Eliya, 22200, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

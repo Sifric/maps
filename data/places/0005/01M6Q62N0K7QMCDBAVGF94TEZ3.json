@@ -6,7 +6,9 @@
   },
   "categories": [
     "Lounge bar",
-    "Bar"
+    "Bar",
+    "Amenity: Bar",
+    "Dining and Drinking > Cafe, Coffee, and Tea House > Tea Room"
   ],
   "address": "2, 1 Colombo - Galle - Hambantota - Wellawaya Hwy, Colombo 00200",
   "phone": "0117888288",
@@ -56,5 +58,16 @@
       ]
     }
   ],
-  "id": "01M6Q62N0K7QMCDBAVGF94TEZ3"
+  "id": "01M6Q62N0K7QMCDBAVGF94TEZ3",
+  "alternate_addresses": [
+    "1, Galle Road",
+    "Galle Road, Fort, Colombo, Western, Sri Lanka",
+    "Shangri-La Hotel, Colombo, Western Province, Sri Lanka"
+  ],
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  }
 }

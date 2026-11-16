@@ -6,7 +6,8 @@
     "longitude": 81.734633
   },
   "categories": [
-    "Fuel station"
+    "Fuel station",
+    "Fuel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,16 @@
     "class": "fuel",
     "subclass": "fuel",
     "names": [
-      "Co-op Petrol Station"
+      "Co-op Petrol Station",
+      "Co - op Petrol Station"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Arayampathy_3, Manmunai Pattu, Batticaloa, Eastern, Sri Lanka"
+  ]
 }

@@ -6,7 +6,8 @@
     "longitude": 80.244956
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,15 @@
     "subclass": "restaurant",
     "names": [
       "Fish Hunter Restaurant"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Dewata, Galle 4 Gravets, Galle, Southern, Sri Lanka",
+    "Unawatuna North, Unawatuna, Unawatuna West, 80615, Sri Lanka"
+  ]
 }

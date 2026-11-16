@@ -6,7 +6,10 @@
     "longitude": 80.626983
   },
   "categories": [
-    "Guest house"
+    "Guest house",
+    "Travel and Transportation > Lodging > Hotel",
+    "Overture Maps",
+    "Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,18 @@
     "class": "lodging",
     "subclass": "guest_house",
     "names": [
-      "St. Bridget's Country Bungalow"
+      "St. Bridget's Country Bungalow",
+      "St Bridget's Country Bungalow"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Sri Sumangala Mawatha, Kandy, Narangaskumbura, Harispattuwa, Central, Sri Lanka",
+    "Asgiriya, Kandy, Sri Lanka",
+    "125 Wariyapola Sri Sumangala Mawatha, Kandy, 20000, Sri Lanka"
+  ]
 }

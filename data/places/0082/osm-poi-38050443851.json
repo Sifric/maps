@@ -6,7 +6,8 @@
     "longitude": 80.714198
   },
   "categories": [
-    "Post office"
+    "Post office",
+    "Amenity: Post Office"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,14 @@
     "subclass": "post_office",
     "names": [
       "Mahamedagama Sub Post office"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Bolepa, Pathahewaheta, Kandy, Central, Sri Lanka"
+  ]
 }

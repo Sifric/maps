@@ -6,7 +6,10 @@
     "longitude": 81.853589
   },
   "categories": [
-    "Christian"
+    "Christian",
+    "Christian church",
+    "Amenity: Place Of Worship",
+    "Place Of Worship"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "christian",
     "names": [
       "University Chapel"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Eastern University, South, Oluvil, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Ninthavur 10, Nintavur, Ampara, Eastern, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

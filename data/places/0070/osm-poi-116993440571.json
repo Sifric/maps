@@ -6,7 +6,10 @@
     "longitude": 80.456094
   },
   "categories": [
-    "Educational institution"
+    "Educational institution",
+    "Amenity: School",
+    "Office: Educational Institution",
+    "School"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,17 @@
     "class": "office",
     "subclass": "educational_institution",
     "names": [
-      "Dippitiya muslim maha vidyalaya"
+      "Dippitiya muslim maha vidyalaya",
+      "Dippitiya Muslim Maha Vidyalaya"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Wilpola Road, Dippitiya, Aranayake, Wilpola - Dippitiya Road",
+  "alternate_addresses": [
+    "Duldeniya, Aranayake, Kegalle, Sabaragamuwa, Sri Lanka",
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

@@ -6,7 +6,10 @@
     "longitude": 79.85882
   },
   "categories": [
-    "Fuel station"
+    "Fuel station",
+    "Shop: Car Repair",
+    "Fuel",
+    "Car Repair"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "fuel",
     "names": [
       "Autodrome"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Union Place, Colombo 2, Ibbanwala, Colombo, Western, Sri Lanka",
+    "Ibbanwala, Colombo, Western, Sri Lanka"
+  ]
 }

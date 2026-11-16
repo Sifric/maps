@@ -5,11 +5,12 @@
     "longitude": 80.0152282
   },
   "categories": [
-    "Pharmacy"
+    "Pharmacy",
+    "Overture Maps"
   ],
   "address": "1st Cross St, Jaffna",
   "phone": "0212213323",
-  "business_status": "OPEN",
+  "business_status": "OPERATIONAL",
   "hours": [
     {
       "day": "Monday",
@@ -54,5 +55,16 @@
       ]
     }
   ],
-  "id": "01M6Q6S4YY1YCJST5KWN0HW2NV"
+  "id": "01M6Q6S4YY1YCJST5KWN0HW2NV",
+  "source": {
+    "names": [
+      "Ammuchee Pharmacy and Baby Needs"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  },
+  "alternate_addresses": [
+    "1st Cross St, Jaffna, 7, Sri Lanka"
+  ]
 }

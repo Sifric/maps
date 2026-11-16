@@ -6,7 +6,8 @@
     "longitude": 80.522205
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,17 @@
     "class": "lodging",
     "subclass": "hotel",
     "names": [
-      "Losu Polhena"
+      "Losu Polhena",
+      "LoSu Polhena"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "samson Dias Mawatha, Polhena, Welegoda West, Matara Four Gravets, Matara, Southern, Sri Lanka",
+    "Samson Dias Mawatha, Matara, 81000, Sri Lanka"
+  ]
 }

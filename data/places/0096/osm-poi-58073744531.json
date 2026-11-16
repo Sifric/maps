@@ -6,7 +6,9 @@
     "longitude": 80.52456
   },
   "categories": [
-    "Hospital"
+    "Hospital",
+    "Amenity: Hospital",
+    "Healthcare: Hospital"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,18 @@
     "class": "hospital",
     "subclass": "hospital",
     "names": [
-      "District Hospital-Galagedara"
+      "District Hospital-Galagedara",
+      "District Hospital Galagedara",
+      "District Hospital - Galagedara"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Galagedara-Rambukkana Road, Galagedara",
+  "alternate_addresses": [
+    "Galagedara-Rambukkana Road, Galagedara, Nikathenna, Tumpane, Kandy, Central, Sri Lanka",
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

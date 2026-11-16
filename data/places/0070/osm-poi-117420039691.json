@@ -6,7 +6,8 @@
     "longitude": 80.452221
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,16 @@
     "class": "lodging",
     "subclass": "hotel",
     "names": [
-      "mimoza mirissa"
+      "mimoza mirissa",
+      "Mimoza Mirissa"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Godalla Pita Watta, Harbour Road, Mirissa South II, 81740, Sri Lanka"
+  ]
 }

@@ -6,7 +6,8 @@
     "longitude": 79.891859
   },
   "categories": [
-    "Company"
+    "Company",
+    "BPO Company"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,17 @@
     "class": "office",
     "subclass": "company",
     "names": [
-      "Global System Solutions International (pvt) Ltd."
+      "Global System Solutions International (pvt) Ltd.",
+      "Global System Solutions International (Pvt) Ltd",
+      "Global System Solutions International (pvt) Ltd"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "No 104 Stanley Tilakaratne Mawatha, Nugegoda, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

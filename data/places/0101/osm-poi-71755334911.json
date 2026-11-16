@@ -6,7 +6,10 @@
     "longitude": 79.924572
   },
   "categories": [
-    "Clothes"
+    "Clothes",
+    "Retail > Fashion Retail > Clothing Store",
+    "Overture Maps",
+    "Clothing Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "clothes",
     "names": [
       "Opal"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Pathiragoda, Maharagama, Colombo, Western, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "High Level Road, Maharagama, Sri Lanka",
+    "Colombo - Batticaloa Hwy, Godigamuwa North, 10280, Sri Lanka"
+  ]
 }

@@ -6,7 +6,8 @@
     "longitude": 81.673146
   },
   "categories": [
-    "Bus station"
+    "Bus station",
+    "Travel and Transportation > Transport Hub > Bus Station"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,14 @@
     "subclass": "bus_station",
     "names": [
       "Ampara Bus Station"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Samapura, Ampara, Eastern, Sri Lanka"
+  ]
 }

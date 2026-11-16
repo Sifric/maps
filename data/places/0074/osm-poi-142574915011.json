@@ -6,7 +6,9 @@
     "longitude": 79.85316
   },
   "categories": [
-    "Attraction"
+    "Attraction",
+    "Overture Maps",
+    "Historic Site"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "attraction",
     "names": [
       "Kayman's Gate Bell Tower"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Main Street, Masangasweediya, Colombo, Western, Sri Lanka",
+    "254 Main St, Colombo, 01300, Sri Lanka"
+  ]
 }

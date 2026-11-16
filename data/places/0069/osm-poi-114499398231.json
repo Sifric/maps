@@ -6,7 +6,9 @@
     "longitude": 80.565029
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Overture Maps",
+    "Coffee Shop"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "restaurant",
     "names": [
       "Cafe Nosh On"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Polkumbura, Udapalatha, Kandy, Central, Sri Lanka",
+    "No. 37, 2nd lane, Nawalaptiya road, Gampola West, 20500, Sri Lanka"
+  ]
 }

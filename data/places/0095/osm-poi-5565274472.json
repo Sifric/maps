@@ -6,7 +6,9 @@
     "longitude": 80.02708
   },
   "categories": [
-    "Ice cream"
+    "Ice cream",
+    "Overture Maps",
+    "Ice Cream Shop"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "ice_cream",
     "names": [
       "Rio Ice Cream"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Point Pedro Road, Jaffna Town West, Jaffna, Northern, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Jaffna Town West, Jaffna, Northern, Sri Lanka",
+    "448A, AB20, Nallur South, 40000, Sri Lanka"
+  ]
 }

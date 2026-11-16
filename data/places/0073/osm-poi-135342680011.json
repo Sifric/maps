@@ -6,7 +6,11 @@
     "longitude": 80.637256
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Tourism: Guest House",
+    "Guest House",
+    "Overture Maps",
+    "Lodging"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +21,17 @@
     "subclass": "hotel",
     "names": [
       "Shani Residence Kandy"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "No.12, Reservoir Road, kandy, 20000",
+    "Reservoir Road, Bogambara, Gangawata Korale, Kandy, Central, Sri Lanka",
+    "Reservoir Road, kandy, Bogambara, Gangawata Korale, Kandy, Central, Sri Lanka",
+    "No.12 Reservoir Rd, Kandy, 20000, Sri Lanka"
+  ]
 }

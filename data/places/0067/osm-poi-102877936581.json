@@ -6,7 +6,8 @@
     "longitude": 79.845017
   },
   "categories": [
-    "Clothes"
+    "Clothes",
+    "Retail > Fashion Retail > Clothing Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,18 @@
     "class": "clothing_store",
     "subclass": "clothes",
     "names": [
-      "F.O.A"
+      "F.O.A",
+      "F.o.a",
+      "F • O • A"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Galle Road, Fort, Colombo, Western, Sri Lanka",
+    "Colombo, Western Province, Sri Lanka"
+  ]
 }

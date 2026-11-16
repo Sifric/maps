@@ -6,7 +6,8 @@
     "longitude": 79.972127
   },
   "categories": [
-    "Post office"
+    "Post office",
+    "Amenity: Post Office"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,17 @@
     "class": "post",
     "subclass": "post_office",
     "names": [
-      "Mattegoda post office"
+      "Mattegoda post office",
+      "Mattegoda Post Office"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Salgaha Approach Road, Polgasowita, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Mattegoda West, Homagama, Colombo, Western, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

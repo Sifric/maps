@@ -6,7 +6,9 @@
   },
   "address": "Main Street, Kattankudy 01, Kattankudy 30100",
   "categories": [
-    "Government school"
+    "Government school",
+    "School",
+    "C&C"
   ],
   "hours": [
     {
@@ -55,5 +57,17 @@
   "business_status": "OPEN",
   "school_census_no": 14137,
   "name_source": "https://dmb.moe.gov.lk/2024/01/01_PDF/Tbl20240106.pdf",
-  "id": "01M5W5PQN33J2GAW0G159SK3WQ"
+  "id": "01M5W5PQN33J2GAW0G159SK3WQ",
+  "alternate_addresses": [
+    "Kaththankudy, Batticaloa, 5.Eastern, Sri Lanka"
+  ],
+  "source": {
+    "names": [
+      "BT/BC/AN - Nassar Vidyalaya",
+      "BT/BC/An - Nassar Vidyalaya"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  }
 }

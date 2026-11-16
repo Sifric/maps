@@ -6,7 +6,13 @@
     "longitude": 79.870525
   },
   "categories": [
-    "Cafe"
+    "Cafe",
+    "Amenity: Cafe",
+    "Dining and Drinking > Cafe, Coffee, and Tea House > Tea Room",
+    "Dining and Drinking > Breakfast Spot",
+    "Dining and Drinking > Cafe, Coffee, and Tea House > Café",
+    "Overture Maps",
+    "Tea Room"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +23,16 @@
     "subclass": "cafe",
     "names": [
       "Tea Avenue"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "55, Wijerama Mawatha",
+    "Wijerama Mawatha, Kurunduwatta, Thimbirigasyaya, Colombo, Western, Sri Lanka",
+    "55, Barnes Place, Colombo, 00700, Sri Lanka"
+  ]
 }

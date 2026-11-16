@@ -6,7 +6,8 @@
     "longitude": 79.952155
   },
   "categories": [
-    "Pharmacy"
+    "Pharmacy",
+    "Retail > Pharmacy"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,14 @@
     "subclass": "pharmacy",
     "names": [
       "Gagana Pharmacy"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "High Level Road, Moraketiya Junction, Kottawa South, Maharagama, Colombo, Western, Sri Lanka"
+  ]
 }

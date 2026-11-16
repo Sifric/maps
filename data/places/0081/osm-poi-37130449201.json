@@ -6,7 +6,12 @@
     "longitude": 79.848107
   },
   "categories": [
-    "Company"
+    "Company",
+    "Business and Professional Services > Office",
+    "Landmarks and Outdoors > Structure",
+    "Business and Professional Services > Office > Coworking Space",
+    "Overture Maps",
+    "Accountant"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +22,15 @@
     "subclass": "company",
     "names": [
       "KPMG Sri Lanka"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "32 A, Sir Mohamed Macan Marker Mw, Colombo, Sri Lanka",
+    "32A Sir Mohomad Macan Markar Mawatha, Colombo, 00300, Sri Lanka"
+  ]
 }

@@ -6,7 +6,9 @@
     "longitude": 79.856572
   },
   "categories": [
-    "Cafe"
+    "Cafe",
+    "Overture Maps",
+    "Restaurant"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,17 @@
     "class": "cafe",
     "subclass": "cafe",
     "names": [
-      "Nuga"
+      "Nuga",
+      "NUGA"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Ibbanwala, Colombo, Western, Sri Lanka",
+    "111, Colombo, Sri Lanka"
+  ]
 }

@@ -6,7 +6,10 @@
     "longitude": 79.930065
   },
   "categories": [
-    "Hospital"
+    "Hospital",
+    "Retail > Pharmacy",
+    "Overture Maps",
+    "Pharmacy"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "hospital",
     "names": [
       "Lanka Pharmacy"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Kiribathgoda, Kelaniya, Gampaha, Western, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Kiribathgoda, Western Province, Sri Lanka",
+    "A1, 170 Kandy Rd, Kiribathgoda, 11600, Sri Lanka"
+  ]
 }

@@ -6,7 +6,9 @@
     "longitude": 79.857543
   },
   "categories": [
-    "Dentist"
+    "Dentist",
+    "Overture Maps",
+    "Dental Clinic"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "dentist",
     "names": [
       "Kinross Dental Care"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Kinross Avenue, Colombo 4, Wellawatta North, Thimbirigasyaya, Colombo, Western, Sri Lanka",
+    "27 Kinross Ave, Colombo, 00400, Sri Lanka"
+  ]
 }

@@ -6,7 +6,10 @@
     "longitude": 80.815585
   },
   "categories": [
-    "Post office"
+    "Post office",
+    "GeoNames",
+    "Feature class A",
+    "ADM4"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,14 @@
     "subclass": "post_office",
     "names": [
       "Medamahanuwara"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "29, 21, 2124, 2124390, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ]
 }

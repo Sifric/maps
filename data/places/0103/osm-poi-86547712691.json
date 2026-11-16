@@ -6,7 +6,9 @@
     "longitude": 79.856202
   },
   "categories": [
-    "Company"
+    "Company",
+    "Business to business service",
+    "Office: Company"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,14 @@
     "subclass": "company",
     "names": [
       "Micronet Group"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "No. 141/ 7A Vauxhall St, Colombo, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

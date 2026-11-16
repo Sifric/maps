@@ -6,7 +6,9 @@
     "longitude": 80.562385
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Overture Maps",
+    "Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,17 @@
     "class": "restaurant",
     "subclass": "restaurant",
     "names": [
-      "Golden Pearl Reception hall"
+      "Golden Pearl Reception hall",
+      "Golden Pearl Reception Hall"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Polkumbura, Udapalatha, Kandy, Central, Sri Lanka",
+    "26/A Nidahas Mawatha, Kandy District, 2, 20500, Sri Lanka"
+  ]
 }

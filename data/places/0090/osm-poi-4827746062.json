@@ -6,7 +6,10 @@
     "longitude": 81.048363
   },
   "categories": [
-    "Guest house"
+    "Guest house",
+    "Travel and Transportation > Lodging > Bed and Breakfast",
+    "Hotel",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "guest_house",
     "names": [
       "Hill Top Guesthouse"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Rawanaella, Ella, Badulla, Uva, Sri Lanka",
+    "Hilltop, Ella, 90090, Sri Lanka"
+  ]
 }

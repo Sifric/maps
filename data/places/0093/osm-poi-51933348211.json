@@ -6,7 +6,10 @@
     "longitude": 79.857929
   },
   "categories": [
-    "Toys"
+    "Toys",
+    "Retail > Fashion Retail > Children's Clothing Store",
+    "Retail > Toy Store",
+    "Retail > Baby Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,17 @@
     "class": "shop",
     "subclass": "toys",
     "names": [
-      "Cool kidz"
+      "Cool kidz",
+      "Cool Kidz"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Galle Road, Wellawatta North, Thimbirigasyaya, Colombo, Western, Sri Lanka",
+    "248A Galle Road, Colombo, Western Province, 00400, Sri Lanka"
+  ]
 }

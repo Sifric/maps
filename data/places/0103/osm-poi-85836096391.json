@@ -6,7 +6,13 @@
     "longitude": 79.866695
   },
   "categories": [
-    "Cafe"
+    "Cafe",
+    "Restaurant",
+    "Dining and Drinking > Restaurant > Burger Joint",
+    "Dining and Drinking > Bakery",
+    "Dining and Drinking > Restaurant",
+    "Dining and Drinking > Snack Place",
+    "Dining and Drinking > Food Court"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +22,16 @@
     "class": "cafe",
     "subclass": "cafe",
     "names": [
-      "P&S"
+      "P&S",
+      "P&s"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "De Saram Place, Colombo 10, Wanathamulla, Thimbirigasyaya, Colombo, Western, Sri Lanka"
+  ]
 }

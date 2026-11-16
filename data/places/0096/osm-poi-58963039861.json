@@ -6,7 +6,10 @@
     "longitude": 80.755166
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Travel and Transportation > Lodging > Resort",
+    "Overture Maps",
+    "Resort"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,18 @@
     "class": "lodging",
     "subclass": "hotel",
     "names": [
-      "Green garden resort"
+      "Green garden resort",
+      "Green Garden Resort"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Habarana, Palugaswewa, Anuradhapura, North Central, Sri Lanka",
+    "Habarana, North Central Province, Sri Lanka",
+    "old fair road, Kashyapagama, 50150, Sri Lanka"
+  ]
 }

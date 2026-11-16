@@ -6,7 +6,9 @@
     "longitude": 79.900496
   },
   "categories": [
-    "Post office"
+    "Post office",
+    "Amenity: Post Office",
+    "Community and Government > Government Building > Post Office"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,16 @@
     "subclass": "post_office",
     "names": [
       "Raddolugama Post Office"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Katunayake, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Ganepola, Katana, Gampaha, Western, Sri Lanka",
+    "Raddolugama Post Office, Raddolugama, 11400, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

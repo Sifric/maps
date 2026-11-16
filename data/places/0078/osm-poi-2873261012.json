@@ -6,7 +6,9 @@
     "longitude": 81.157556
   },
   "categories": [
-    "School"
+    "School",
+    "Overture Maps",
+    "Public School"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,17 @@
     "class": "school",
     "subclass": "school",
     "names": [
-      "Passara central college"
+      "Passara central college",
+      "Passara Central College"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Paramahankada, Passara, Badulla, Uva, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Peradeniya-Badulla-Chenkaladi Hwy, Uva Province, 8, 90500, Sri Lanka",
+    "Sri Lanka"
+  ]
 }

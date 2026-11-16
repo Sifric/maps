@@ -6,7 +6,9 @@
     "longitude": 80.921817
   },
   "categories": [
-    "Hostel"
+    "Hostel",
+    "Overture Maps",
+    "Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,17 @@
     "class": "lodging",
     "subclass": "hostel",
     "names": [
-      "Janahitha Guest house"
+      "Janahitha Guest house",
+      "Janahitha Guest House"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Dayaraba Watta, Welimada, Badulla, Uva, Sri Lanka",
+    "Bandarawela - Welimada Rd, Uva Province, 8, 90200, Sri Lanka"
+  ]
 }

@@ -6,7 +6,9 @@
     "longitude": 79.85639
   },
   "categories": [
-    "Cafe"
+    "Cafe",
+    "Overture Maps",
+    "Restaurant"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "cafe",
     "names": [
       "The Cricket Club Cafe"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Flower Terrace, Ibbanwala, Colombo, Western, Sri Lanka",
+    "12 Flower Rd, Colombo, 00700, Sri Lanka"
+  ]
 }

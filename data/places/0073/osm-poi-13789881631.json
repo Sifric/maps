@@ -6,7 +6,11 @@
     "longitude": 79.867199
   },
   "categories": [
-    "Hospital"
+    "Hospital",
+    "Government hospital",
+    "Amenity: Hospital",
+    "Healthcare: Hospital",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +21,16 @@
     "subclass": "hospital",
     "names": [
       "Accident Ward"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "EW Perera Mawatha, Colombo 00700, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Wanathamulla, Thimbirigasyaya, Colombo, Western, Sri Lanka",
+    "Accident Ward, EW Perera Mawatha, Colombo, 800, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

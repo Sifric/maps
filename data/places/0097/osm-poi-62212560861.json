@@ -6,7 +6,10 @@
     "longitude": 80.513762
   },
   "categories": [
-    "Hostel"
+    "Hostel",
+    "Travel and Transportation > Lodging > Hostel",
+    "Travel and Transportation > Lodging > Bed and Breakfast",
+    "Travel and Transportation > Lodging > Vacation Rental"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,14 @@
     "subclass": "hostel",
     "names": [
       "Surfhouse Sri Lanka"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Southern Province, Sri Lanka"
+  ]
 }

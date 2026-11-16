@@ -6,7 +6,8 @@
     "longitude": 80.121478
   },
   "categories": [
-    "Chalet"
+    "Chalet",
+    "Tourism: Chalet"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,17 @@
     "class": "lodging",
     "subclass": "chalet",
     "names": [
-      "Coco-Mari Beach Villa"
+      "Coco-Mari Beach Villa",
+      "Coco - Mari Beach Villa"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "1044, Dodanduwa - Gonapinuwala Rd, Hikkaduwa 80240, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Colombo-Galle Road, Hikkaduwa, Katukoliha, Galle, Southern, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

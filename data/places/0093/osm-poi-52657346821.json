@@ -6,7 +6,10 @@
     "longitude": 80.597811
   },
   "categories": [
-    "Buddhist"
+    "Buddhist",
+    "Buddhist temple",
+    "Amenity: Place Of Worship",
+    "Community and Government > Spiritual Center > Temple"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,14 @@
     "subclass": "buddhist",
     "names": [
       "Ellakanda Aranya Senasanaya"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Yatiyana Road, Sri Lanka",
+  "alternate_addresses": [
+    "Kekanandura, Aparekka, Matara, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

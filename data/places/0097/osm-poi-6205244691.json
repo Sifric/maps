@@ -6,7 +6,12 @@
     "longitude": 79.887149
   },
   "categories": [
-    "Bakery"
+    "Bakery",
+    "Cafe",
+    "Dining and Drinking > Bakery",
+    "Dining and Drinking > Restaurant",
+    "Overture Maps",
+    "Restaurant"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +22,16 @@
     "subclass": "bakery",
     "names": [
       "The Fab"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Welikada North, Sri Jayawardanapura Kotte, Colombo, Western, Sri Lanka",
+    "182, Castle Street, Colombo, Western Province, 00800, Sri Lanka",
+    "196 Castle St, Colombo, 00800, Sri Lanka"
+  ]
 }

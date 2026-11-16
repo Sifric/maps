@@ -6,7 +6,9 @@
     "longitude": 81.866298
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Dining and Drinking > Restaurant",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "restaurant",
     "names": [
       "River Garden"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Oluvil 06, Addalaichenai, Ampara, Eastern, Sri Lanka",
+    "Leader Ashraff Road, Oluvil-4 Leader Ashraff road, 4, Eastern Province, 5, 409, Sri Lanka"
+  ]
 }

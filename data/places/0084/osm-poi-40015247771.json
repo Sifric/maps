@@ -6,7 +6,12 @@
     "longitude": 81.186647
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Tourism: Hotel",
+    "GeoNames",
+    "Feature class S",
+    "HTL",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +22,17 @@
     "subclass": "hotel",
     "names": [
       "Anilana Nilaveli"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Nilaveli",
+    "Nilaveli, Vallaiyoothu, Kuchchaweli, Trincomalee, Eastern, Sri Lanka",
+    "37, 53, 5306, 5306120, Sri Lanka",
+    "1508 Ward4, Irakkakandi, Valaiyoothu, 31010, Sri Lanka"
+  ]
 }

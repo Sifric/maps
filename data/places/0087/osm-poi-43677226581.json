@@ -6,7 +6,10 @@
     "longitude": 80.651901
   },
   "categories": [
-    "Guest house"
+    "Guest house",
+    "Travel and Transportation > Lodging > Boarding House",
+    "Overture Maps",
+    "Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,18 @@
     "class": "lodging",
     "subclass": "guest_house",
     "names": [
-      "Cloud INN Kandy"
+      "Cloud INN Kandy",
+      "Cloud Inn Kandy"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Amitiya Road, Kandy, Thalwatta, Gangawata Korale, Central, Sri Lanka",
+    "Ampitiya Road 69/25, Kandy, Central, 20000, Sri Lanka",
+    "69/25, Ampitiya Road, Ampitiya Udagama South, 20000, Sri Lanka"
+  ]
 }

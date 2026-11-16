@@ -6,7 +6,9 @@
     "longitude": 79.858654
   },
   "categories": [
-    "Bank"
+    "Bank",
+    "Overture Maps",
+    "Bank Or Credit Union"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,14 @@
     "subclass": "bank",
     "names": [
       "Nations Trust Bank"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Srimath Ramanadan Road, Colombo, Masangasweediya, Western, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Setmill, 256 Srimath Ramanathan Mawatha, Colombo, 01300, Sri Lanka"
+  ]
 }

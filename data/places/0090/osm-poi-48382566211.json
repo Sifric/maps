@@ -6,7 +6,10 @@
     "longitude": 79.869254
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Tourism: Hotel",
+    "Guest House",
+    "Travel and Transportation > Lodging > Bed and Breakfast"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,18 @@
     "class": "lodging",
     "subclass": "hotel",
     "names": [
-      "Black Cat B&B"
+      "Black Cat B&B",
+      "Black Cat B & B"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Wijerama Mawatha, Colombo 7, Wanathamulla, Thimbirigasyaya, Colombo, Western, Sri Lanka",
+    "Wanathamulla, Thimbirigasyaya, Colombo, Western, Sri Lanka",
+    "No. 11 Wijerama Mawatha, Colombo, Sri Lanka"
+  ]
 }

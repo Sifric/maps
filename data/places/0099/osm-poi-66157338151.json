@@ -6,7 +6,9 @@
     "longitude": 79.904391
   },
   "categories": [
-    "General"
+    "General",
+    "Overture Maps",
+    "Furniture Assembly"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,17 @@
     "class": "shop",
     "subclass": "general",
     "names": [
-      "umar cushion works"
+      "umar cushion works",
+      "Umar Cushion Works"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Katukurunda South, Moratuwa, Colombo, Western, Sri Lanka",
+    "90 Diggala Rd, Western Province, 1, 12500, Sri Lanka"
+  ]
 }

@@ -6,7 +6,11 @@
     "longitude": 80.762944
   },
   "categories": [
-    "Guest house"
+    "Guest house",
+    "Tourism: Guest House",
+    "Travel and Transportation > Lodging > Bed and Breakfast",
+    "Overture Maps",
+    "Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +20,19 @@
     "class": "lodging",
     "subclass": "guest_house",
     "names": [
-      "shady mango villa"
+      "shady mango villa",
+      "Shady Mango Villa"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Sigiriya",
+    "Sigiriya, Mailattawa, Dambulla, Matale, Central, Sri Lanka",
+    "Central Province, Sri Lanka",
+    "116/A kalapuraya, Matale District, 2, 21121, Sri Lanka"
+  ]
 }

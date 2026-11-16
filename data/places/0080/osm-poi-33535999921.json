@@ -6,7 +6,10 @@
     "longitude": 80.275222
   },
   "categories": [
-    "Buddhist"
+    "Buddhist",
+    "Buddhist temple",
+    "Amenity: Place Of Worship",
+    "Place Of Worship"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,17 @@
     "class": "place_of_worship",
     "subclass": "buddhist",
     "names": [
-      "Malmaduwa Temple"
+      "Malmaduwa Temple",
+      "Malmaduwa temple"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Malmaduwa, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Malmaduwa, Warakapola, Kegalle, Sabaragamuwa, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

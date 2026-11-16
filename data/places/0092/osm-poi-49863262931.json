@@ -6,7 +6,9 @@
     "longitude": 79.854711
   },
   "categories": [
-    "Cosmetics"
+    "Cosmetics",
+    "Boutique",
+    "Shop: Cosmetics"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,24 @@
     "class": "shop",
     "subclass": "cosmetics",
     "names": [
-      "Spa Ceylon"
+      "Spa Ceylon",
+      "SPA Ceylon"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "734 Colombo Rd, Colombo, Sri Lanka",
+  "hours": [
+    {
+      "day": "Hours (OSM format)",
+      "times": [
+        "10:00-23:00"
+      ]
+    }
+  ],
+  "alternate_addresses": [
+    "Galle Road, Ibbanwala, Thimbirigasyaya, Colombo, Western, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

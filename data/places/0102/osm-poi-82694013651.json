@@ -6,7 +6,9 @@
     "longitude": 80.036886
   },
   "categories": [
-    "Chalet"
+    "Chalet",
+    "Overture Maps",
+    "Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "chalet",
     "names": [
       "Villa Thuya"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Brahmanawatta North, Balapitiya, Galle, Southern, Sri Lanka",
+    "520/3 Galle - Colombo Rd, Walagedara, 80550, Sri Lanka"
+  ]
 }

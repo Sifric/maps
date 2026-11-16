@@ -6,7 +6,10 @@
     "longitude": 79.854335
   },
   "categories": [
-    "Clothes"
+    "Clothes",
+    "Retail > Boutique",
+    "Overture Maps",
+    "Fashion Boutique"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "clothes",
     "names": [
       "Ko Lanka"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Kurunduwatta, Thimbirigasyaya, Colombo, Western, Sri Lanka",
+    "702 Galle Rd, Colombo, 00300, Sri Lanka"
+  ]
 }

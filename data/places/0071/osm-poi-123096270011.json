@@ -6,7 +6,8 @@
     "longitude": 79.889113
   },
   "categories": [
-    "Supermarket"
+    "Supermarket",
+    "Retail > Food and Beverage Retail > Supermarket"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,16 @@
     "class": "grocery",
     "subclass": "supermarket",
     "names": [
-      "Spar"
+      "Spar",
+      "SPAR"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Colombo - Negombo Road, Hendala South, Wattala, Gampaha, Western, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Wattala, Western Province, Sri Lanka"
+  ]
 }

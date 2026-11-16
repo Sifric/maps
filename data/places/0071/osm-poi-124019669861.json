@@ -6,7 +6,10 @@
     "longitude": 79.864002
   },
   "categories": [
-    "School"
+    "School",
+    "Amenity: School",
+    "Overture Maps",
+    "Religious School"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,18 @@
     "class": "school",
     "subclass": "school",
     "names": [
-      "Holy Family Convent"
+      "Holy Family Convent",
+      "HOLY Family Convent"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Dehiwala",
+  "alternate_addresses": [
+    "Dehiwala, Colombo, 1.Western, Sri Lanka",
+    "Dehiwala, Dehiwala West, Colombo, Western, Sri Lanka",
+    "100 Galle Rd, Dehiwala-Mount Lavinia, 10350, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

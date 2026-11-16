@@ -6,7 +6,10 @@
     "longitude": 80.315149
   },
   "categories": [
-    "School"
+    "School",
+    "Amenity: School",
+    "C&C",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,17 @@
     "class": "school",
     "subclass": "school",
     "names": [
-      "Angulugaha Maha Vidyalaya"
+      "Angulugaha Maha Vidyalaya",
+      "Angulugaha MAHA Vidyalaya"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Habaraduwa, Galle, 3.Southern, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Angulugaha, Imaduwa, Galle, Southern, Sri Lanka",
+    "A17, Galle District, 3, 80130, Sri Lanka"
+  ]
 }

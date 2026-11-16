@@ -6,7 +6,10 @@
     "longitude": 79.888898
   },
   "categories": [
-    "Ice cream"
+    "Ice cream",
+    "Dining and Drinking > Juice Bar",
+    "Retail > Food and Beverage Retail",
+    "Dining and Drinking > Dessert Shop"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,14 @@
     "subclass": "ice_cream",
     "names": [
       "Roots"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Nawala Road, Nugegoda, Nawala East, Sri Jayawardanapura Kotte, Colombo, Western, Sri Lanka",
+  "business_status": "CLOSED",
+  "alternate_addresses": [
+    "162 Nawala Rd., Colombo, Western Province, 10250, Sri Lanka"
+  ]
 }

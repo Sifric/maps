@@ -6,7 +6,11 @@
     "longitude": 79.860322
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Dining and Drinking > Restaurant > Indian Restaurant",
+    "Dining and Drinking > Restaurant > Vegan and Vegetarian Restaurant",
+    "Overture Maps",
+    "Vegetarian Restaurant"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +21,16 @@
     "subclass": "restaurant",
     "names": [
       "Shanmugas"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Ramakrishna Road, Wellawatte, Dehiwala West, Dehiwala, Colombo, Western, Sri Lanka",
+    "Ramakrishna Road, Colombo 6, Western Province, 00600, Sri Lanka",
+    "53/3 Ramakrishna Rd, Colombo, 00600, Sri Lanka"
+  ]
 }

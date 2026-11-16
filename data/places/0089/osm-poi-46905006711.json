@@ -6,7 +6,9 @@
     "longitude": 80.405341
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Overture Maps",
+    "Thai Restaurant"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,13 @@
     "class": "restaurant",
     "subclass": "restaurant",
     "names": [
-      "Royal Palace"
+      "Royal Palace",
+      "Royal palace"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Senanayake Mawatha, Ratnapura, 70000, Sri Lanka",
+  "business_status": "OPERATIONAL"
 }

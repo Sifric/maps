@@ -6,7 +6,9 @@
     "longitude": 79.863063
   },
   "categories": [
-    "Bus stop"
+    "Bus stop",
+    "Overture Maps",
+    "Town Hall"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,13 @@
     "class": "bus",
     "subclass": "bus_stop",
     "names": [
-      "Town hall"
+      "Town hall",
+      "Town Hall"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "C W W Kannangara Mawatha, Colombo, Sri Lanka",
+  "business_status": "OPERATIONAL"
 }

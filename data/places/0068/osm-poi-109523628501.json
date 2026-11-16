@@ -6,7 +6,10 @@
     "longitude": 79.834744
   },
   "categories": [
-    "Christian"
+    "Christian",
+    "Amenity: Place Of Worship",
+    "Place Of Worship",
+    "Community and Government > Spiritual Center > Church"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,16 @@
     "subclass": "christian",
     "names": [
       "Voice of Heaven Church"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Veedi Road, Marawila, 61210",
+  "alternate_addresses": [
+    "Veedi Road, Marawila, Horagolla North, Mahawewa, Puttalam, North Western, Sri Lanka",
+    "Marawila, North Western Province, 61210, Sri Lanka",
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

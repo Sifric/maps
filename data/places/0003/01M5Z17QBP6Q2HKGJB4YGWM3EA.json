@@ -5,7 +5,9 @@
     "longitude": 81.7306423
   },
   "categories": [
-    "General education school"
+    "General education school",
+    "Amenity: School",
+    "School"
   ],
   "address": "MPHJ+67J, Colombo - Batticaloa Hwy, Kattankudy",
   "phone": "0652246584",
@@ -54,5 +56,15 @@
       ]
     }
   ],
-  "id": "01M5Z17QBP6Q2HKGJB4YGWM3EA"
+  "id": "01M5Z17QBP6Q2HKGJB4YGWM3EA",
+  "alternate_addresses": [
+    "New Kalmunai Road, 30100",
+    "New Kalmunai Road, Arayampathy_3, Manmunai Pattu, Batticaloa, Eastern, Sri Lanka"
+  ],
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  }
 }

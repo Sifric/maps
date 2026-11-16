@@ -6,7 +6,9 @@
     "longitude": 80.796365
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Travel and Transportation > Lodging > Resort",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,18 @@
     "class": "lodging",
     "subclass": "hotel",
     "names": [
-      "Villa tangalle Lagoon"
+      "Villa tangalle Lagoon",
+      "Villa Tangalle Lagoon"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Polommaruwa South, Tangalle, Hambantota, Southern, Sri Lanka",
+    "Medaketiya Rd, Ashoka Mawatha, 18/2, Tangalle, Sri Lanka",
+    "Medaketiya Rd, Ashoka Mawatha, 18/2, Medaketiya, 82200, Sri Lanka"
+  ]
 }

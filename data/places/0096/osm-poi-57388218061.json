@@ -6,7 +6,11 @@
     "longitude": 80.764736
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Travel and Transportation > Lodging > Resort",
+    "Business and Professional Services > Health and Beauty Service > Spa",
+    "Overture Maps",
+    "Resort"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +21,16 @@
     "subclass": "hotel",
     "names": [
       "Serendib Signature Resort"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Victoria Golf Club Road, Digana, Maberiyathenna, Medadumbara, Kandy, Central, Sri Lanka",
+    "Kandy, Central Province, Sri Lanka",
+    "1/2/1 Pondawelkatiya, Nithulemada, Rajawella, Maberiyathenna, 20900, Sri Lanka"
+  ]
 }

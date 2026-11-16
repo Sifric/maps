@@ -6,7 +6,17 @@
     "longitude": 80.031683
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Travel and Transportation > Lodging > Hotel",
+    "Travel and Transportation > Lodging > Resort",
+    "Amenity: Restaurant",
+    "Restaurant",
+    "GeoNames",
+    "Feature class S",
+    "HTL",
+    "Wikidata physical place",
+    "Overture Maps",
+    "Resort"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +27,19 @@
     "subclass": "hotel",
     "names": [
       "Heritance Ahungalla"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Galle Rd, Ahungalla, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Colombo-Galle Road, Ahungalla",
+    "Colombo-Galle Road, Ahungalla, Wathuregama, Balapitiya, Galle, Southern, Sri Lanka",
+    "Uragaha Rd, Ahungalla, Kudagodagama, Balapitiya, Galle, Southern, Sri Lanka",
+    "34, 31, 3106, 3106075, Sri Lanka",
+    "Sri Lanka",
+    "Galle Rd, Ahungalla, 80562, Sri Lanka"
+  ]
 }

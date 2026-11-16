@@ -6,7 +6,10 @@
     "longitude": 79.885637
   },
   "categories": [
-    "Hospital"
+    "Hospital",
+    "Amenity: Hospital",
+    "Healthcare: Hospital",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,16 @@
     "subclass": "hospital",
     "names": [
       "Western Hospital"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Cotta Road, colombo 08",
+  "alternate_addresses": [
+    "Cotta Road, colombo 08, Welikada North, Sri Jayawardanapura Kotte, Colombo, Western, Sri Lanka",
+    "Sri Lanka",
+    "218 Dr NM Perera Mawatha Rd, Colombo, 00800, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

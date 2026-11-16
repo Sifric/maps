@@ -6,7 +6,9 @@
     "longitude": 79.877536
   },
   "categories": [
-    "Bank"
+    "Bank",
+    "Overture Maps",
+    "Financial Service"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "bank",
     "names": [
       "Sarvodaya Development Finance"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Wanathamulla, Thimbirigasyaya, Colombo, Western, Sri Lanka",
+    "155 Dr Danister De Silva Mawatha, Colombo, 00800, Sri Lanka"
+  ]
 }

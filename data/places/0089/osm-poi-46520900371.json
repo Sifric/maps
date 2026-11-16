@@ -6,7 +6,9 @@
     "longitude": 79.851176
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Overture Maps",
+    "Middle Eastern Restaurant"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,17 @@
     "class": "restaurant",
     "subclass": "restaurant",
     "names": [
-      "HAZARI'S"
+      "HAZARI'S",
+      "Hazari's"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Marine Drive, Colombo 03, Ibbanwala, Thimbirigasyaya, Colombo, Western, Sri Lanka",
+    "556/2, Colombo, Sri Lanka"
+  ]
 }

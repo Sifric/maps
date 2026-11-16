@@ -6,7 +6,8 @@
     "longitude": 79.875321
   },
   "categories": [
-    "Diplomatic"
+    "Diplomatic",
+    "Community and Government > Government Building > Embassy or Consulate"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,16 @@
     "class": "office",
     "subclass": "diplomatic",
     "names": [
-      "Embassy of The Russian Federation"
+      "Embassy of The Russian Federation",
+      "Embassy Of The Russian Federation"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Colombo, Western Province, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ]
 }

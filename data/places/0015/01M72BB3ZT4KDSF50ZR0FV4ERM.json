@@ -6,7 +6,8 @@
   },
   "address": "Weligama - Imaduwa Rd",
   "categories": [
-    "Post office"
+    "Post office",
+    "Amenity: Post Office"
   ],
   "website": "https://slpost.gov.lk/",
   "hours": [
@@ -53,6 +54,17 @@
       ]
     }
   ],
-  "business_status": "OPEN",
-  "id": "01M72BB3ZT4KDSF50ZR0FV4ERM"
+  "business_status": "OPERATIONAL",
+  "id": "01M72BB3ZT4KDSF50ZR0FV4ERM",
+  "source": {
+    "names": [
+      "Horadugoda sub post office"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  },
+  "alternate_addresses": [
+    "Ellalagoda, Imaduwa, Galle, Southern, Sri Lanka"
+  ]
 }

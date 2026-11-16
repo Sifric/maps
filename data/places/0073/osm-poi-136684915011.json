@@ -6,7 +6,10 @@
     "longitude": 80.655908
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Tourism: Hotel",
+    "Travel and Transportation > Lodging > Hotel",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,17 @@
     "subclass": "hotel",
     "names": [
       "Serenity Hill Oasis"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Kandy - Hewaheta Road",
+    "Kandy - Hewaheta Road, Thalwatta, Gangawata Korale, Kandy, Central, Sri Lanka",
+    "229, 11 Royal way, Kandy, Sri Lanka, Kandy, Central Province, Sri Lanka",
+    "229, 11 Royal way, Kandy, 2000, Sri Lanka"
+  ]
 }

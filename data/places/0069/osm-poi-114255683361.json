@@ -6,7 +6,11 @@
     "longitude": 80.797797
   },
   "categories": [
-    "Guest house"
+    "Guest house",
+    "Travel and Transportation > Lodging > Bed and Breakfast",
+    "Travel and Transportation > Lodging > Hotel",
+    "Overture Maps",
+    "Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +20,18 @@
     "class": "lodging",
     "subclass": "guest_house",
     "names": [
-      "Luaya beach"
+      "Luaya beach",
+      "Luaya Beach"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Godawanagoda, Tangalle, Hambantota, Southern, Sri Lanka",
+    "Tangalle, Southern Province, Sri Lanka",
+    "10 Modara Rd, Medaketiya, 82200, Sri Lanka"
+  ]
 }

@@ -6,7 +6,9 @@
   },
   "address": "Mohotti hospital, Matara",
   "categories": [
-    "Private hospital"
+    "Private hospital",
+    "Overture Maps",
+    "Hospital"
   ],
   "phone": "0412222737",
   "hours": [
@@ -53,6 +55,17 @@
       ]
     }
   ],
-  "business_status": "OPEN",
-  "id": "01M72B9J4FYW9HRAJEHGBWK5M6"
+  "business_status": "OPERATIONAL",
+  "id": "01M72B9J4FYW9HRAJEHGBWK5M6",
+  "source": {
+    "names": [
+      "Mohotti Pvt Hospital"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  },
+  "alternate_addresses": [
+    "Mohotti hospital, Matara, 81000, Sri Lanka"
+  ]
 }

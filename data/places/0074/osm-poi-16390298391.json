@@ -6,7 +6,15 @@
     "longitude": 81.288523
   },
   "categories": [
-    "Supermarket"
+    "Supermarket",
+    "Convenience",
+    "Retail > Market",
+    "Retail > Miscellaneous Store",
+    "Retail > Food and Beverage Retail > Grocery Store",
+    "Retail > Convenience Store",
+    "Retail > Food and Beverage Retail > Fruit and Vegetable Store",
+    "Retail > Food and Beverage Retail",
+    "Retail > Food and Beverage Retail > Supermarket"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +25,14 @@
     "subclass": "supermarket",
     "names": [
       "Lanka Sathosa"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Sandungama, Thissamaharama, Hambantota, Southern, Sri Lanka"
+  ]
 }

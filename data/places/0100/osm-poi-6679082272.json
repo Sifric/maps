@@ -6,7 +6,9 @@
     "longitude": 81.003839
   },
   "categories": [
-    "Guest house"
+    "Guest house",
+    "Overture Maps",
+    "Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "guest_house",
     "names": [
       "Priyanna Guest"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Kalahagala, Thamankaduwa, Polonnaruwa, North Central, Sri Lanka",
+    "1st Cannal Road NO 18, Polonnaruwa, 51000, Sri Lanka"
+  ]
 }

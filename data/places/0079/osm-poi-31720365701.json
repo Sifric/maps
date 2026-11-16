@@ -6,7 +6,10 @@
     "longitude": 79.850591
   },
   "categories": [
-    "Supermarket"
+    "Supermarket",
+    "Retail > Food and Beverage Retail > Supermarket",
+    "Overture Maps",
+    "Grocery Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,16 @@
     "class": "grocery",
     "subclass": "supermarket",
     "names": [
-      "Keells super"
+      "Keells super",
+      "Keells Super"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Nicholas Marcus Mawatha, Negombo, Western Province, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Nicholas Marcus Mawatha, Negombo, Sri Lanka"
+  ]
 }

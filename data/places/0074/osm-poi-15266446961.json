@@ -6,7 +6,10 @@
     "longitude": 79.8865
   },
   "categories": [
-    "Fast food restaurant"
+    "Fast food restaurant",
+    "Dining and Drinking > Restaurant > Fast Food Restaurant",
+    "Overture Maps",
+    "Fast Food"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,17 @@
     "subclass": "fast_food",
     "names": [
       "McDonald's"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Nugegoda WP, Dutugemunu, Dehiwala, Colombo, Western, Sri Lanka",
+    "High Level Rd., Nugegoda, Western Province, Sri Lanka",
+    "Pita Kotte, Western Province, Sri Lanka",
+    "Dehiwala-Mount Lavinia, Sri Lanka"
+  ]
 }

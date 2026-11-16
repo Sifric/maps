@@ -6,7 +6,9 @@
     "longitude": 79.84271
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Travel and Transportation > Lodging > Hotel",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "hotel",
     "names": [
       "Hotel Honors Club"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Kochchikade, Palangathure, Negombo, Gampaha, Western, Sri Lanka",
+    "No.351, Poruthota, Kochikade, Negombo, Sri Lanka., Negombo, 11500, Sri Lanka"
+  ]
 }

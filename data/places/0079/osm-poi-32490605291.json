@@ -6,7 +6,9 @@
     "longitude": 80.101495
   },
   "categories": [
-    "Jewelry"
+    "Jewelry",
+    "Overture Maps",
+    "Jewelry Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,17 @@
     "class": "shop",
     "subclass": "jewelry",
     "names": [
-      "Galle Gem & Exchange"
+      "Galle Gem & Exchange",
+      "Galle Gem Exchange"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Hikkaduwa, Wavulagoda East, Galle, Southern, Sri Lanka",
+    "325a, Pannamgoda, Sri Lanka"
+  ]
 }

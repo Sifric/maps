@@ -6,7 +6,8 @@
     "longitude": 79.90585
   },
   "categories": [
-    "Antiques"
+    "Antiques",
+    "Shop: Antiques"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,59 @@
     "subclass": "antiques",
     "names": [
       "Country Life Sri Lanka"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "829/1, Kotte Road, Sri Jayawardenepura Kotte",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "9 AM–7 PM"
+      ]
+    }
+  ],
+  "alternate_addresses": [
+    "Kotte Road, Sri Jayawardenepura Kotte, Ethulkotte, Sri Jayawardanapura Kotte, Colombo, Western, Sri Lanka",
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

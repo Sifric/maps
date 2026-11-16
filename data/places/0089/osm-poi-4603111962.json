@@ -6,7 +6,10 @@
     "longitude": 80.112487
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Tourism: Hotel",
+    "Travel and Transportation > Lodging > Bed and Breakfast",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,19 @@
     "class": "lodging",
     "subclass": "hotel",
     "names": [
-      "Anilau Villa Sisira"
+      "Anilau Villa Sisira",
+      "Anilau Villa \"Sisira\""
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "\"Sisira\", Kuruduwatta, Narigama, Hikkaduwa, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Wavulagoda East, Hikkaduwa, Galle, Southern, Sri Lanka",
+    "\"Sisira\", Kuruduwatta, Narigama, Hikkaduwa, Southern, Sri Lanka",
+    "Sisira, Kuruduwatta, Narigama, Thiranagama, LKA WZ8.VG4, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

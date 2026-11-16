@@ -6,7 +6,10 @@
     "longitude": 81.825147
   },
   "categories": [
-    "Community centre"
+    "Community centre",
+    "Townhall",
+    "Community and Government > Government Building > Capitol Building",
+    "Community and Government > Government Building > City Hall"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,14 @@
     "subclass": "community_centre",
     "names": [
       "Municipal Council"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Kalmunai, Natpiddimunai Td 03, Ampara, Eastern, Sri Lanka"
+  ]
 }

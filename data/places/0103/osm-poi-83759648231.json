@@ -6,7 +6,10 @@
     "longitude": 79.854249
   },
   "categories": [
-    "Department store"
+    "Department store",
+    "Retail > Miscellaneous Store",
+    "Overture Maps",
+    "Discount Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "department_store",
     "names": [
       "Miniso"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Wellawatta North, Thimbirigasyaya, Colombo, Western, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "457 Galle Rd., Colombo, Western Province, 00300, Sri Lanka",
+    "457 Galle - Colombo Rd, Colombo, 00300, Sri Lanka"
+  ]
 }

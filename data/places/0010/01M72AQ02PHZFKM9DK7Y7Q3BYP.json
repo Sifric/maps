@@ -6,7 +6,8 @@
   },
   "address": "358 Galle Rd, Colombo",
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Amenity: Restaurant"
   ],
   "phone": "0112360462",
   "hours": [
@@ -54,5 +55,15 @@
     }
   ],
   "business_status": "OPEN",
-  "id": "01M72AQ02PHZFKM9DK7Y7Q3BYP"
+  "id": "01M72AQ02PHZFKM9DK7Y7Q3BYP",
+  "alternate_addresses": [
+    "358, Galle Road, Wellawatte",
+    "Galle Road, Wellawatte, Dehiwala West, Dehiwala, Colombo, Western, Sri Lanka"
+  ],
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  }
 }

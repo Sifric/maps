@@ -6,7 +6,9 @@
     "longitude": 79.882702
   },
   "categories": [
-    "Attraction"
+    "Attraction",
+    "Overture Maps",
+    "Christian Place Of Worship"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,14 @@
     "subclass": "attraction",
     "names": [
       "Methodist Church Wattala"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Wattala, Sri Lanka"
+  ]
 }

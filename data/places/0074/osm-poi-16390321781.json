@@ -6,7 +6,11 @@
     "longitude": 81.290497
   },
   "categories": [
-    "Police"
+    "Police",
+    "Landmarks and Outdoors > States and Municipalities > Town",
+    "Railway Station",
+    "JUNCP",
+    "Public Service Center"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +21,11 @@
     "subclass": "police",
     "names": [
       "Tissamaharama"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL"
 }

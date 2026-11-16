@@ -6,7 +6,9 @@
     "longitude": 81.690205
   },
   "categories": [
-    "Government"
+    "Government",
+    "Government office",
+    "Office: Government"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,16 @@
     "class": "office",
     "subclass": "government",
     "names": [
-      "Department of Rural Development"
+      "Department of Rural Development",
+      "Department Of Rural Development"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Batticaloa, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

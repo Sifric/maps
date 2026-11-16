@@ -6,7 +6,8 @@
     "longitude": 80.59735
   },
   "categories": [
-    "Post office"
+    "Post office",
+    "Amenity: Post Office"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,15 @@
     "subclass": "post_office",
     "names": [
       "Post Office - Gelioya"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Gelioya",
+  "alternate_addresses": [
+    "Gelioya, Udunuwara, Kandy, Central, Sri Lanka",
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

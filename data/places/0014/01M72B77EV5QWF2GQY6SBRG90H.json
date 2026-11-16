@@ -6,7 +6,9 @@
   },
   "address": "Galle Rd, Hikkaduwa 80250",
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Amenity: Restaurant",
+    "Casual Dining"
   ],
   "phone": "0777835525",
   "website": "https://m.facebook.com/A2restaurant",
@@ -55,5 +57,15 @@
     }
   ],
   "business_status": "OPEN",
-  "id": "01M72B77EV5QWF2GQY6SBRG90H"
+  "id": "01M72B77EV5QWF2GQY6SBRG90H",
+  "alternate_addresses": [
+    "Colombo-Galle Road, Hikkaduwa, 80240",
+    "Colombo-Galle Road, Hikkaduwa, Katukoliha, Galle, Southern, Sri Lanka"
+  ],
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  }
 }

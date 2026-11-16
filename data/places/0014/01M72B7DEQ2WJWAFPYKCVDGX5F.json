@@ -6,7 +6,9 @@
   },
   "address": "446F+8X6, A2, Hikkaduwa",
   "categories": [
-    "Pharmacy"
+    "Pharmacy",
+    "Amenity: Pharmacy",
+    "Healthcare: Pharmacy"
   ],
   "phone": "0915677702",
   "hours": [
@@ -53,6 +55,16 @@
       ]
     }
   ],
-  "business_status": "OPEN",
-  "id": "01M72B7DEQ2WJWAFPYKCVDGX5F"
+  "business_status": "OPERATIONAL",
+  "id": "01M72B7DEQ2WJWAFPYKCVDGX5F",
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  },
+  "alternate_addresses": [
+    "Colombo-Galle Road, Hikkaduwa, 80250",
+    "Colombo-Galle Road, Hikkaduwa, Katukoliha, Galle, Southern, Sri Lanka"
+  ]
 }

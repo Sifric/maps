@@ -6,7 +6,9 @@
     "longitude": 79.872928
   },
   "categories": [
-    "Guest house"
+    "Guest house",
+    "Overture Maps",
+    "Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "guest_house",
     "names": [
       "Selahn Inn Hotel"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Temple Road, Katunayake, Mookalangamuwa East, Katana, Gampaha, Western, Sri Lanka",
+    "130 vincent villa temple road 18 post mile katunayaka, Katunayake, 11450, Sri Lanka"
+  ]
 }

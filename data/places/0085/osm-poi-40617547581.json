@@ -6,7 +6,12 @@
     "longitude": 79.866947
   },
   "categories": [
-    "Government"
+    "Government",
+    "Government office",
+    "Office: Government",
+    "Business and Professional Services > Office",
+    "Wikidata physical place",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +22,15 @@
     "subclass": "government",
     "names": [
       "University Grants Commission"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "7, 20 Ward Pl, Colombo 00700, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "7, 20 Ward Pl, Colombo, 800, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

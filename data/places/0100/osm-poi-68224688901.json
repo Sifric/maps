@@ -6,7 +6,9 @@
     "longitude": 79.880927
   },
   "categories": [
-    "Car repair"
+    "Car repair",
+    "Car service",
+    "Shop: Car Repair"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,59 @@
     "subclass": "car_repair",
     "names": [
       "Renault Service Center"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "128 Narahenpita - Nawala Rd, Narahenpita 11222, Sri Lanka",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7:30 AM–5 PM"
+      ]
+    }
+  ],
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Nawala Road, Nawala East, Sri Jayawardanapura Kotte, Colombo, Western, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

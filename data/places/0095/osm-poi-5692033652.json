@@ -6,7 +6,10 @@
     "longitude": 80.019366
   },
   "categories": [
-    "Dentist"
+    "Dentist",
+    "Dental clinic",
+    "Place",
+    "Health and Medicine > Dentist"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,14 @@
     "subclass": "dentist",
     "names": [
       "International Dental Care"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "84 Stanley Rd, Jaffna, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

@@ -6,7 +6,10 @@
     "longitude": 80.813177
   },
   "categories": [
-    "Christian"
+    "Christian",
+    "Church",
+    "Amenity: Place Of Worship",
+    "Place Of Worship"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "christian",
     "names": [
       "Mount Zion House of Prayer"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Kovilkudiyiruppu, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Mullativu, Vannankulam, Maritimepattu, Mullaitivu, Northern, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

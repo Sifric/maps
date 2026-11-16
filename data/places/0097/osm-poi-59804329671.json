@@ -6,7 +6,12 @@
     "longitude": 79.9612
   },
   "categories": [
-    "Buddhist"
+    "Buddhist",
+    "Buddhist temple",
+    "Amenity: Place Of Worship",
+    "Place Of Worship",
+    "Overture Maps",
+    "Buddhist Place Of Worship"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +22,16 @@
     "subclass": "buddhist",
     "names": [
       "Sri Maha Chethiyaramaya"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "B216, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Palagama, Homagama, Colombo, Western, Sri Lanka",
+    "B216, Western Province, 1, 12404, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

@@ -6,7 +6,9 @@
     "longitude": 80.083841
   },
   "categories": [
-    "Government"
+    "Government",
+    "Government office",
+    "Office: Government"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,14 @@
     "subclass": "government",
     "names": [
       "Seethawaka Divisional Educational Office"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "B146, Hanwella, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

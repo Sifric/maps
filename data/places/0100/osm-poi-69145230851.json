@@ -6,7 +6,12 @@
     "longitude": 80.643473
   },
   "categories": [
-    "Guest house"
+    "Guest house",
+    "Travel and Transportation > Lodging > Bed and Breakfast",
+    "Dining and Drinking > Bar > Hookah Bar",
+    "Dining and Drinking > Bar > Cocktail Bar",
+    "Overture Maps",
+    "Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +22,16 @@
     "subclass": "guest_house",
     "names": [
       "The Old House Villa"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Matara road, Pathegama junction, The Old House Villa, 81180, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Kottegoda, Южная провинция, Sri Lanka",
+    "New Tangalle Road, Pathegama Junction, Kottegoda, 81180, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

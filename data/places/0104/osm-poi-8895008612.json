@@ -6,7 +6,9 @@
     "longitude": 80.038399
   },
   "categories": [
-    "Hospital"
+    "Hospital",
+    "Government hospital",
+    "Health and Medicine > Hospital"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,18 @@
     "class": "hospital",
     "subclass": "hospital",
     "names": [
-      "Base Hospital Balapitiya"
+      "Base Hospital Balapitiya",
+      "Base Hospital - Balapitiya"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Colombo - Galle Main Rd, Balapitiya, Sri Lanka",
+  "alternate_addresses": [
+    "Colombo-Galle Road, Balapitiya, Heppumulla, Galle, Southern, Sri Lanka",
+    "Balapitiya, Southern Province, Sri Lanka",
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

@@ -6,7 +6,8 @@
     "longitude": 81.10057
   },
   "categories": [
-    "Post office"
+    "Post office",
+    "Amenity: Post Office"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,17 @@
     "class": "post",
     "subclass": "post_office",
     "names": [
-      "Ritigaha Arawa Sub Post Office"
+      "Ritigaha Arawa Sub Post Office",
+      "Ritigaha - Arawa Sub Post Office"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Ritigaha-Arawa, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Ritigahaarawa, Rideemaliyadda, Badulla, Uva, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

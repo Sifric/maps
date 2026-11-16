@@ -6,7 +6,9 @@
     "longitude": 80.058333
   },
   "categories": [
-    "Railway station"
+    "Railway station",
+    "Train station",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "station",
     "names": [
       "Veyangoda"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Veyangoda 11100, Sri Lanka",
+  "alternate_addresses": [
+    "Gampaha District, 1, 11550, Sri Lanka",
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

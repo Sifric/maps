@@ -6,7 +6,11 @@
     "longitude": 80.6003
   },
   "categories": [
-    "Hospital"
+    "Hospital",
+    "Health and Medicine > Hospital",
+    "GeoNames",
+    "Feature class S",
+    "HSP"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +21,15 @@
     "subclass": "hospital",
     "names": [
       "Dickoya Base Hospital"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Newvalleygama, Norwood, Nuwara Eliya, Central, Sri Lanka",
+    "29, 23, 2315, 2315245, Sri Lanka"
+  ]
 }

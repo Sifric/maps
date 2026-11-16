@@ -6,7 +6,10 @@
     "longitude": 79.929636
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "GeoNames",
+    "Feature class S",
+    "HTL"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,14 @@
     "subclass": "hotel",
     "names": [
       "Siddhalepa Ayurveda Health Resort"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Wadduwa, Molligoda South, Panadura, Kalutara, Western, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "36, 13, 1303, 1303350, Sri Lanka"
+  ]
 }

@@ -6,7 +6,10 @@
     "longitude": 80.270614
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Tourism: Hotel",
+    "Travel and Transportation > Lodging > Hotel",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,17 @@
     "subclass": "hotel",
     "names": [
       "Sielen Diva"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "776/1, Colombo—Matara Road, Galle",
+    "Colombo—Matara Road, Galle, Wellethota, Habaraduwa, Southern, Sri Lanka",
+    "776/1 Galle-Matara Coastal Road, Mihiripenne, Talpe, Southern Province, 80615, Sri Lanka",
+    "776/1 Galle-Matara Coastal Road, Mihiripenne, Heenatigala South, 80615, Sri Lanka"
+  ]
 }

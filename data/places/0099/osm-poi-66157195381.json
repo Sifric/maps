@@ -6,7 +6,10 @@
     "longitude": 79.85867
   },
   "categories": [
-    "Government"
+    "Government",
+    "Government office",
+    "Office: Government",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "government",
     "names": [
       "Ceylon Fishery Harbours Corporation"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "No_15, Rock House Ln, Colombo, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "No_15, Rock House Ln, Colombo, 1, 01500, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

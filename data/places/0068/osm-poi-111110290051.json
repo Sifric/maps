@@ -6,7 +6,8 @@
     "longitude": 80.003015
   },
   "categories": [
-    "Government"
+    "Government",
+    "Medical certificate service"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,14 @@
     "subclass": "government",
     "names": [
       "National Transport Medical Institute Gampaha Branch"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Gampaha, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

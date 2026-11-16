@@ -6,7 +6,10 @@
     "longitude": 80.514105
   },
   "categories": [
-    "Bakery"
+    "Bakery",
+    "Dining and Drinking > Bakery",
+    "Dining and Drinking > Cafe, Coffee, and Tea House > Café",
+    "Dining and Drinking > Restaurant > Burger Joint"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,17 @@
     "class": "bakery",
     "subclass": "bakery",
     "names": [
-      "Bake N’ Take"
+      "Bake N’ Take",
+      "Bake n Take"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Kamburugamuwa South, Weligama, Matara, Southern, Sri Lanka",
+    "Galle Road, Walgama, Matara, 81000, Sri Lanka"
+  ]
 }

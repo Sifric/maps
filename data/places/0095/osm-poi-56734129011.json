@@ -6,7 +6,10 @@
     "longitude": 79.808266
   },
   "categories": [
-    "Park"
+    "Park",
+    "Arts and Entertainment > Amusement Park",
+    "Landmarks and Outdoors > Park",
+    "Place"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,13 @@
     "class": "park",
     "subclass": "park",
     "names": [
-      "park"
+      "park",
+      "Park"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL"
 }

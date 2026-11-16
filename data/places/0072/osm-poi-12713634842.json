@@ -6,7 +6,9 @@
     "longitude": 80.517983
   },
   "categories": [
-    "School"
+    "School",
+    "Amenity: School",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,19 @@
     "class": "school",
     "subclass": "school",
     "names": [
-      "Pothupitiya maha vidyalaya`"
+      "Pothupitiya maha vidyalaya`",
+      "Pothupitiya Maha vidyalaya",
+      "Pothupitiya MAHA Vidyalaya",
+      "Pothupitiya Maha Vidyalaya"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Kalawana, Ratnapura, 9.Sabaragamuwa, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Pothupitiya North, Kalawana, Ratnapura, Sabaragamuwa, Sri Lanka",
+    "B181, Sabaragamuwa Province, 9, Sri Lanka"
+  ]
 }

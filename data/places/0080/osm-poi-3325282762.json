@@ -6,7 +6,10 @@
     "longitude": 79.962026
   },
   "categories": [
-    "Bank"
+    "Bank",
+    "Supermarket",
+    "Overture Maps",
+    "Grocery Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "bank",
     "names": [
       "Cargills Food City Ganemulla"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Ganemulla South, Gampaha, Western, Sri Lanka",
+    "Kadawatha - Ganemulla Rd, Gampaha District, 1, 11856, Sri Lanka"
+  ]
 }

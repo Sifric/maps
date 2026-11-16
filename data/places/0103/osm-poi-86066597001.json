@@ -6,7 +6,11 @@
     "longitude": 79.85662
   },
   "categories": [
-    "Company"
+    "Company",
+    "Office: Company",
+    "Business and Professional Services > Office",
+    "Overture Maps",
+    "Software Development"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +20,19 @@
     "class": "office",
     "subclass": "company",
     "names": [
-      "John Keells IT"
+      "John Keells IT",
+      "John Keells It",
+      "John Keells - It"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Vauxhall Street, Colombo 2",
+    "148, Colombo 02, Western Province, Sri Lanka",
+    "148 Vauxhall Street, Colombo, 00200, Sri Lanka"
+  ]
 }

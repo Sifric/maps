@@ -6,7 +6,10 @@
     "longitude": 79.862972
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Dining and Drinking > Restaurant",
+    "Dining and Drinking > Bar",
+    "Dining and Drinking > Bar > Beach Bar"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,14 @@
     "subclass": "restaurant",
     "names": [
       "La Voile Blanche"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "CLOSED",
+  "alternate_addresses": [
+    "26/11, de Saram Road, Mount Lavinia, Sri Lanka"
+  ]
 }

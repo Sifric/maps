@@ -6,7 +6,11 @@
     "longitude": 80.027359
   },
   "categories": [
-    "School"
+    "School",
+    "Playground",
+    "Cricket",
+    "Pitch",
+    "Park"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +20,16 @@
     "class": "school",
     "subclass": "school",
     "names": [
-      "SCHOOL  GROUND"
+      "SCHOOL  GROUND",
+      "School Ground"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Kondavil Centre West, Nallur, Jaffna, Northern, Sri Lanka"
+  ]
 }

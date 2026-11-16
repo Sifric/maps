@@ -6,7 +6,11 @@
     "longitude": 80.663161
   },
   "categories": [
-    "Taxi"
+    "Taxi",
+    "Travel and Transportation",
+    "Travel and Transportation > Moving Target",
+    "Travel and Transportation > Transportation Service",
+    "Travel and Transportation > Transportation Service > Taxi"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +21,14 @@
     "subclass": "taxi",
     "names": [
       "Tuk Tuk"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Perawatta West, Deltota, Kandy, Central, Sri Lanka"
+  ]
 }

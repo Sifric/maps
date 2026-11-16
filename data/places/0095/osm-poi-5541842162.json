@@ -6,7 +6,10 @@
     "longitude": 80.431289
   },
   "categories": [
-    "Buddhist"
+    "Buddhist",
+    "Place Of Worship",
+    "Overture Maps",
+    "Buddhist Place Of Worship"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,17 @@
     "class": "place_of_worship",
     "subclass": "buddhist",
     "names": [
-      "RATHANAGARA BAUDDA MADYASTANAYA"
+      "RATHANAGARA BAUDDA MADYASTANAYA",
+      "Rathanagara Baudda Madyastanaya"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Wannithammennawa, Nuwaragam Palatha East, Anuradhapura, North Central, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "AA013, Sri Lanka",
+    "Sri Lanka"
+  ]
 }

@@ -6,7 +6,10 @@
     "longitude": 80.624918
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Guest Houses",
+    "Travel and Transportation > Lodging > Hotel",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,19 @@
     "class": "lodging",
     "subclass": "hotel",
     "names": [
-      "Talalla Bay Beach"
+      "Talalla Bay Beach",
+      "Talalla BAY BEACH"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "MUHANDIRAMWATTE, TALALLA SOUTH, KOTTEGODA.",
+    "Thalalla East, Devinuwara, Matara, Southern, Sri Lanka",
+    "Southern Province, Sri Lanka",
+    "Tangalle Rd, Thalalla South, 81180, Sri Lanka"
+  ]
 }

@@ -6,7 +6,9 @@
   },
   "categories": [
     "Italian restaurant",
-    "Restaurant"
+    "Restaurant",
+    "Amenity: Restaurant",
+    "Overture Maps"
   ],
   "address": "5 Skelton Road, Colombo 50000",
   "phone": "0112559900",
@@ -55,5 +57,16 @@
       ]
     }
   ],
-  "id": "01M6Q62N2KVXWCGTM8WK52VX2Z"
+  "id": "01M6Q62N2KVXWCGTM8WK52VX2Z",
+  "alternate_addresses": [
+    "5, Skelton Road",
+    "Skelton Road, Wellawatta North, Thimbirigasyaya, Colombo, Western, Sri Lanka",
+    "5 Skelton Rd, Colombo, 50000, Sri Lanka"
+  ],
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  }
 }

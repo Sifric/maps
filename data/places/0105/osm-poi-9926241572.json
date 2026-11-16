@@ -6,7 +6,9 @@
     "longitude": 80.131756
   },
   "categories": [
-    "Chalet"
+    "Chalet",
+    "Overture Maps",
+    "Lodging"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "chalet",
     "names": [
       "Paradise Lagoon Bungalow"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Agathuduwa Road, Hikkaduwa, Katudampe, Rathgama, Galle, Southern, Sri Lanka",
+    "6.111130, 80.131564, Agathuduwa Rd, Modara Patuwatha, 80250, Sri Lanka"
+  ]
 }

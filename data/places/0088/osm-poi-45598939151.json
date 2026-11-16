@@ -6,7 +6,11 @@
     "longitude": 80.111221
   },
   "categories": [
-    "Travel agency"
+    "Travel agency",
+    "Amenity: Bureau De Change",
+    "Shop: Travel Agency",
+    "Travel and Transportation > Travel Agency",
+    "Business and Professional Services > Financial Service > Currency Exchange"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +21,14 @@
     "subclass": "travel_agency",
     "names": [
       "Angel Tours"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Хиккадува, Южная провинция, Sri Lanka"
+  ]
 }

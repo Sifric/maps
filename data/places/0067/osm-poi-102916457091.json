@@ -6,7 +6,8 @@
     "longitude": 79.842308
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,17 @@
     "class": "lodging",
     "subclass": "hotel",
     "names": [
-      "Centella  Rooms"
+      "Centella  Rooms",
+      "Centella Rooms"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Poruthota Road, Negombo, Palangathure, Gampaha, Western, Sri Lanka",
+    "Palagathura, 192 Porutota Rd, Negombo, 11450, Sri Lanka"
+  ]
 }

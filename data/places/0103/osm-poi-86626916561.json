@@ -6,7 +6,9 @@
     "longitude": 79.858208
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Overture Maps",
+    "Thai Restaurant"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,18 @@
     "class": "restaurant",
     "subclass": "restaurant",
     "names": [
-      "SAWADEE THAI RESTAURANT"
+      "SAWADEE THAI RESTAURANT",
+      "Sawadee THAI Restaurant",
+      "Sawadee Thai Restaurant"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Marine Drive, Wellawatte, Wellawatta North, Thimbirigasyaya, Colombo, Western, Sri Lanka",
+    "No. 31, Hammers avenue, Colombo, 00600, Sri Lanka"
+  ]
 }

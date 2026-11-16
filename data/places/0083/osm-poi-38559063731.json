@@ -6,7 +6,11 @@
     "longitude": 80.632664
   },
   "categories": [
-    "Bus stop"
+    "Bus stop",
+    "Wikidata physical place",
+    "GeoNames",
+    "Feature class A",
+    "ADM4"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +21,14 @@
     "subclass": "bus_stop",
     "names": [
       "Malgamandeniya"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "29, 21, 2109, 2109065, Sri Lanka"
+  ]
 }

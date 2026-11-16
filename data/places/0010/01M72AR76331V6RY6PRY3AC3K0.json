@@ -6,10 +6,37 @@
   },
   "address": "57/10, Marine Drive, Station Road, Dehiwala-Mount Lavinia 10350",
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Amenity: Restaurant",
+    "Guest Houses",
+    "Restaurant",
+    "Overture Maps"
   ],
   "phone": "0774745333",
   "website": "https://gihansbeach.com/",
   "business_status": "OPEN",
-  "id": "01M72AR76331V6RY6PRY3AC3K0"
+  "id": "01M72AR76331V6RY6PRY3AC3K0",
+  "alternate_addresses": [
+    "57, Marine Drive, Dehiwala",
+    "NO.57/10, 57/08, FAIRLINE ROAD, DEHIWALA.",
+    "Marine Drive, Dehiwala, Dehiwala West, Colombo, Western, Sri Lanka",
+    "57/10, Marine Drive, Station Road, Dehiwala-Mount Lavinia, 10350, Sri Lanka"
+  ],
+  "hours": [
+    {
+      "day": "Hours (OSM format)",
+      "times": [
+        "11:00-23:00"
+      ]
+    }
+  ],
+  "source": {
+    "names": [
+      "Gihans beach Resort",
+      "Gihans BEACH Resort"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  }
 }

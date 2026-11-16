@@ -6,7 +6,10 @@
     "longitude": 79.876764
   },
   "categories": [
-    "Police"
+    "Police",
+    "Place",
+    "Overture Maps",
+    "Police Station"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,17 @@
     "class": "police",
     "subclass": "police",
     "names": [
-      "Narahenpita Police Station"
+      "Narahenpita Police Station",
+      "Narahenpita police station"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Narahenpita junction, Colombo, Sri Lanka",
+    "Elvitigala Mawatha, Colombo, 00500, Sri Lanka"
+  ]
 }

@@ -6,7 +6,8 @@
     "longitude": 80.417669
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,17 @@
     "class": "restaurant",
     "subclass": "restaurant",
     "names": [
-      "avasta restaurant and bar"
+      "avasta restaurant and bar",
+      "Avasta Restaurant And Bar",
+      "Avasta restaurant and bar"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Avasta Resort & Spa 92 Niwaththaka Chetiya Road Anuradhapura, Anuradhapura, 5000, Sri Lanka"
+  ]
 }

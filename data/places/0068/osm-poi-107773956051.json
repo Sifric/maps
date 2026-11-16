@@ -6,7 +6,10 @@
     "longitude": 80.704848
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Hotel",
+    "Travel and Transportation > Lodging > Hostel",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,18 @@
     "class": "restaurant",
     "subclass": "restaurant",
     "names": [
-      "MOND"
+      "MOND",
+      "Mond"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Galaboda Hena, Hiriketiya Rd, Dikwella 81200, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Southern Province, Sri Lanka",
+    "Galboda Hena, Hiriketiya Rd, Dickwella East, 81200, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

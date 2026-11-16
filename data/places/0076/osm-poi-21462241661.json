@@ -6,7 +6,8 @@
     "longitude": 80.362351
   },
   "categories": [
-    "Post office"
+    "Post office",
+    "Amenity: Post Office"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,23 @@
     "subclass": "post_office",
     "names": [
       "Kuruwita Post Office"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Colombo-Ratnapura Road, Kuruwita",
+  "hours": [
+    {
+      "day": "Hours (OSM format)",
+      "times": [
+        "Kuruwita"
+      ]
+    }
+  ],
+  "alternate_addresses": [
+    "Colombo-Ratnapura Road, Kuruwita, Delgamuwa, Kuruvita, Ratnapura, Sabaragamuwa, Sri Lanka",
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

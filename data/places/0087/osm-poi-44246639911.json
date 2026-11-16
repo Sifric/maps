@@ -6,7 +6,9 @@
     "longitude": 81.530351
   },
   "categories": [
-    "Atm"
+    "Atm",
+    "Amenity: Bank",
+    "Bank"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,14 @@
     "subclass": "atm",
     "names": [
       "Commercial Bank of Ceylon"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Valaichchenai-Navaladi Road",
+  "alternate_addresses": [
+    "Valaichchenai-Navaladi Road, Valachchenai Tamil, Koralai Pattu, Batticaloa, Eastern, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

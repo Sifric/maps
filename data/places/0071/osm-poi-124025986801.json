@@ -6,7 +6,10 @@
     "longitude": 79.865021
   },
   "categories": [
-    "Bus stop"
+    "Bus stop",
+    "Public transport: Platform",
+    "Public transport: Bus Stop",
+    "Travel and Transportation > Transport Hub > Bus Station"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "bus_stop",
     "names": [
       "Dehiwala Bus Stop"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Dehiwala-Mount Lavinia, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Quarry Rd., Nugegoda, Western Province, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

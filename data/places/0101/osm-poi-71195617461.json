@@ -6,7 +6,9 @@
     "longitude": 79.856744
   },
   "categories": [
-    "Diplomatic"
+    "Diplomatic",
+    "Overture Maps",
+    "Embassy"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,14 @@
     "subclass": "diplomatic",
     "names": [
       "Embassy of the United Arab Emirates"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Sir Ernest de Silva Mawatha, Colombo, 00700, Sri Lanka"
+  ]
 }

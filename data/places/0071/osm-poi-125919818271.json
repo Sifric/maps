@@ -6,7 +6,12 @@
     "longitude": 79.853391
   },
   "categories": [
-    "Cafe"
+    "Cafe",
+    "Dining and Drinking > Cafe, Coffee, and Tea House > Bubble Tea Shop",
+    "Dining and Drinking > Cafe, Coffee, and Tea House > Coffee Shop",
+    "Dining and Drinking > Cafe, Coffee, and Tea House > Tea Room",
+    "Overture Maps",
+    "Bubble Tea Shop"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +21,18 @@
     "class": "cafe",
     "subclass": "cafe",
     "names": [
-      "Bobo&Tea"
+      "Bobo&Tea",
+      "Bobo Tea"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Kurunduwatta, Thimbirigasyaya, Colombo, Western, Sri Lanka",
+    "Shop 7, Astoria Building, 418, Colombo, Western Province, Sri Lanka",
+    "Ra de Mel Mawatha 5, Colombo, 03, Sri Lanka"
+  ]
 }

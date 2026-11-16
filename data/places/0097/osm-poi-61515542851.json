@@ -6,7 +6,10 @@
     "longitude": 80.621817
   },
   "categories": [
-    "Cafe"
+    "Cafe",
+    "Restaurant",
+    "Dining and Drinking > Cafe, Coffee, and Tea House > Café",
+    "Dining and Drinking > Cafe, Coffee, and Tea House > Coffee Shop"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,16 @@
     "class": "cafe",
     "subclass": "cafe",
     "names": [
-      "Cafe M"
+      "Cafe M",
+      "CaFe M"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Peradeniya Road, Kandy, Sri Lanka"
+  ]
 }

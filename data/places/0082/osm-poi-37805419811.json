@@ -6,7 +6,8 @@
     "longitude": 79.876726
   },
   "categories": [
-    "School"
+    "School",
+    "Amenity: School"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,11 @@
     "class": "school",
     "subclass": "school",
     "names": [
-      "C.W.W. Kannangara Vidyalaya"
+      "C.W.W. Kannangara Vidyalaya",
+      "C.W.W Kannangara Vidyalaya"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
   }
 }

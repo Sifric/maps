@@ -6,7 +6,10 @@
     "longitude": 80.631634
   },
   "categories": [
-    "Supermarket"
+    "Supermarket",
+    "Retail > Department Store",
+    "Overture Maps",
+    "Department Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,14 @@
     "subclass": "supermarket",
     "names": [
       "Cargills Food City"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Katugastota Road, kandy, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "271 A Katugastota Rd, Kandy, 20000, Sri Lanka"
+  ]
 }

@@ -6,7 +6,10 @@
     "longitude": 79.869361
   },
   "categories": [
-    "School"
+    "School",
+    "Amenity: School",
+    "Community and Government > Education",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,17 @@
     "subclass": "school",
     "names": [
       "Amal International School"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Udyana Pura Road, Havelock Town",
+  "alternate_addresses": [
+    "Udyana Pura Road, Havelock Town, Wellawatta North, Thimbirigasyaya, Colombo, Western, Sri Lanka",
+    "Colombo, Western Province, 00060, Sri Lanka",
+    "Sri Lanka",
+    "152 Dharmarama Road Off Havelock Road, Colombo-6, Colombo, 00500, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

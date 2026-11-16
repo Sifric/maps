@@ -6,7 +6,11 @@
     "longitude": 79.877311
   },
   "categories": [
-    "Company"
+    "Company",
+    "Business and Professional Services > Office",
+    "Office: Company",
+    "Overture Maps",
+    "Computer Hardware Company"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +21,23 @@
     "subclass": "company",
     "names": [
       "TechCERT"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "1st Floor, Dutugemunu Street, Dehiwala, 10350",
+    "1st Floor, Bernards Business Park, 106 Dutugemunu St, Dehiwala-Mount Lavinia, 10350, Sri Lanka"
+  ],
+  "hours": [
+    {
+      "day": "Hours (OSM format)",
+      "times": [
+        "Mo-Fr_08:30-17:30"
+      ]
+    }
+  ]
 }

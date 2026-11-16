@@ -6,7 +6,10 @@
     "longitude": 80.399204
   },
   "categories": [
-    "School"
+    "School",
+    "Community and Government > Education",
+    "Overture Maps",
+    "High School"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,19 @@
     "class": "school",
     "subclass": "school",
     "names": [
-      "Ferguson High School"
+      "Ferguson High School",
+      "Ferguson HIGH School"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Ratnapura 1, Ratnapura, 9.Sabaragamuwa, Sri Lanka",
+    "Mihindugama, Ratnapura, Sabaragamuwa, Sri Lanka",
+    "Colombo - Batticaloa Highway, Ratnapura, Sri Lanka",
+    "Ferguson High School, Ratnapura, 70000, Sri Lanka"
+  ]
 }

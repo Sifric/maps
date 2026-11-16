@@ -6,7 +6,8 @@
     "longitude": 80.741996
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,17 @@
     "class": "restaurant",
     "subclass": "restaurant",
     "names": [
-      "Homie pizza"
+      "Homie pizza",
+      "Homie Pizza"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Thalkote, Dambulla, Matale, Central, Sri Lanka",
+    "No:- 252, Sigiriya, 21120, Sri Lanka"
+  ]
 }

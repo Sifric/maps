@@ -6,7 +6,9 @@
     "longitude": 79.978414
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Travel and Transportation > Lodging > Resort",
+    "Travel and Transportation > Lodging > Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "hotel",
     "names": [
       "Cinnamon Bey"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Pahurumulla, Beruwala, Galle, Western, Sri Lanka",
+    "Moragolla, Beruwala, Sri Lanka, Beruwala, Western Province, 12070, Sri Lanka"
+  ]
 }

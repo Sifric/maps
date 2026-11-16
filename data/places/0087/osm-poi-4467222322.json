@@ -6,7 +6,9 @@
     "longitude": 80.224078
   },
   "categories": [
-    "Hospital"
+    "Hospital",
+    "Government hospital",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,19 @@
     "class": "hospital",
     "subclass": "hospital",
     "names": [
-      "Base Hospital Point pedro"
+      "Base Hospital Point pedro",
+      "Base Hospital, Point Pedro பருத்திதுறை வைத்தியசாலை",
+      "Base Hospital Point Pedro"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Jaffna-Point Pedro Rd, Point Pedro 40000, Sri Lanka",
+  "alternate_addresses": [
+    "Thunnalai North, Vadamaradchi North (Point Pedro), Jaffna, Northern, Sri Lanka",
+    "Jaffna-Point Pedro Rd, Jaffna District, 4, 40000, Sri Lanka",
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

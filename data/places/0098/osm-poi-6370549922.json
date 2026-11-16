@@ -6,7 +6,12 @@
     "longitude": 80.243411
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Landmarks and Outdoors > Beach",
+    "Travel and Transportation > Lodging > Hotel",
+    "Dining and Drinking > Bar > Beach Bar",
+    "Overture Maps",
+    "Beach"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +21,19 @@
     "class": "restaurant",
     "subclass": "restaurant",
     "names": [
-      "WAVE BEACH RESORT"
+      "WAVE BEACH RESORT",
+      "WAVE BEACH Resort",
+      "Wave Beach Resort"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Yaddehimulla Road, unawatuna, Dewata, Akmeemana, Galle, Southern, Sri Lanka",
+    "Unawatuna, Província do Sul, Sri Lanka",
+    "Yaddehimulla, Sri Lanka"
+  ]
 }

@@ -6,7 +6,9 @@
     "longitude": 79.879349
   },
   "categories": [
-    "Hospital"
+    "Hospital",
+    "Health and Medicine > Hospital",
+    "Health and Medicine > Medical Center"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "hospital",
     "names": [
       "Kings Hospital"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Evergreen Park Road, Colombo, Nawala East, Sri Jayawardanapura Kotte, Western, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "18/A Evergreen Park Road, Colombo, Western Province, 00500, Sri Lanka",
+    "Sri Lanka"
+  ]
 }

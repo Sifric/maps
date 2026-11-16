@@ -6,7 +6,10 @@
     "longitude": 80.192031
   },
   "categories": [
-    "Fuel station"
+    "Fuel station",
+    "Petrol Pump",
+    "Amenity: Fuel",
+    "Fuel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "fuel",
     "names": [
       "Lanka Filling Station - Baddegama Interchange"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Nayapamulla - Unanwitiya - Nagoda, Baddegama, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Kotagoda, Baddegama, Galle, Southern, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

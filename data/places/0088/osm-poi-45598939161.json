@@ -6,7 +6,8 @@
     "longitude": 80.111393
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Dining and Drinking > Restaurant > Asian Restaurant"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,17 @@
     "class": "restaurant",
     "subclass": "restaurant",
     "names": [
-      "Full Moon Wok"
+      "Full Moon Wok",
+      "Full Moon WOK"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Colombo-Galle Road, Katukoliha, Hikkaduwa, Galle, Southern, Sri Lanka",
+    "Hikkaduwa, Southern Province, Sri Lanka"
+  ]
 }

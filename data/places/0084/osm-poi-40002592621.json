@@ -6,7 +6,10 @@
     "longitude": 81.850532
   },
   "categories": [
-    "Motel"
+    "Motel",
+    "Guest house",
+    "Overture Maps",
+    "Lodging"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,16 @@
     "subclass": "motel",
     "names": [
       "Akkaraipattu Guest House"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "237 Colombo - Batticaloa Hwy, Akkaraipattu, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Town Division 01, Akkaraipattu, Ampara, Eastern, Sri Lanka",
+    "237 Colombo - Batticaloa Hwy, Eastern Province, 5, 32400, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

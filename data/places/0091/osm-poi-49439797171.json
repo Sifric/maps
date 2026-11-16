@@ -6,7 +6,9 @@
     "longitude": 80.606781
   },
   "categories": [
-    "Hardware"
+    "Hardware",
+    "Overture Maps",
+    "Hardware Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "hardware",
     "names": [
       "Sevana Hardware"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Palapathwela - Galewela Rd, Pallepola, Paldeniya, Matale, Central, Sri Lanka",
+    "Matale District, 2, 21000, Sri Lanka"
+  ]
 }

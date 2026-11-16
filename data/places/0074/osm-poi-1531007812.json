@@ -6,7 +6,9 @@
     "longitude": 80.637546
   },
   "categories": [
-    "Park"
+    "Park",
+    "Landmarks and Outdoors > Park",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "park",
     "names": [
       "Royal Palace Park"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Rajapihilla Mw, Kandy, Central Province, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Rajapihilla Mw, Kandy, Sri Lanka",
+    "Sri Lanka"
+  ]
 }

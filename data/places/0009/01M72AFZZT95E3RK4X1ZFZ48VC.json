@@ -11,7 +11,8 @@
     "Doctor",
     "Hospital",
     "Medical Center",
-    "Private hospital"
+    "Private hospital",
+    "Health and Medicine > Hospital"
   ],
   "phone": "0117888888",
   "website": "http://www.hemashospitals.com/",
@@ -59,6 +60,17 @@
       ]
     }
   ],
-  "business_status": "OPEN",
-  "id": "01M72AFZZT95E3RK4X1ZFZ48VC"
+  "business_status": "OPERATIONAL",
+  "id": "01M72AFZZT95E3RK4X1ZFZ48VC",
+  "source": {
+    "names": [
+      "Hemas Hospital, Wattala"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  },
+  "alternate_addresses": [
+    "389, Negombo Road, Wattala, Western, 11350, Sri Lanka"
+  ]
 }

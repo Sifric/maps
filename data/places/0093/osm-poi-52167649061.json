@@ -6,7 +6,9 @@
     "longitude": 79.928294
   },
   "categories": [
-    "Fabric"
+    "Fabric",
+    "Overture Maps",
+    "Fabric Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "fabric",
     "names": [
       "V&A Fabric Company"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Pamunuwa Road, Maharagama, Pathiragoda, Colombo, Western, Sri Lanka",
+    "46B, Pamunuwa, Maharagama East, 10280, Sri Lanka"
+  ]
 }

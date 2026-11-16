@@ -6,7 +6,10 @@
     "longitude": 81.280444
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Tourism: Hotel",
+    "Travel and Transportation > Lodging > Boarding House",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,16 @@
     "subclass": "hotel",
     "names": [
       "Nature Resort"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Aluthgoda Road, Tissa, Yala., Tissamaharama 82600, Sri Lanka",
+  "alternate_addresses": [
+    "Thissamaharama, Sandungama, Hambantota, Southern, Sri Lanka",
+    "Aluthgoda Road, Tissa, Yala, 82600, Sri Lanka",
+    "Aluthgoda Road, Tissa, Yala., Thissamaharama, 82600, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

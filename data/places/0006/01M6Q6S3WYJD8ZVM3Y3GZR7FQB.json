@@ -5,11 +5,12 @@
     "longitude": 80.2153739
   },
   "categories": [
-    "Shopping mall"
+    "Shopping mall",
+    "Retail > Shopping Mall"
   ],
   "address": "26M8+84Q, Gamini Mawatha, Galle 80000",
   "phone": "0777906092",
-  "business_status": "OPEN",
+  "business_status": "OPERATIONAL",
   "hours": [
     {
       "day": "Monday",
@@ -54,5 +55,16 @@
       ]
     }
   ],
-  "id": "01M6Q6S3WYJD8ZVM3Y3GZR7FQB"
+  "id": "01M6Q6S3WYJD8ZVM3Y3GZR7FQB",
+  "source": {
+    "names": [
+      "P&J City"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  },
+  "alternate_addresses": [
+    "Gamini Mawatha, Galle, Sri Lanka"
+  ]
 }

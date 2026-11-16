@@ -6,7 +6,9 @@
   },
   "categories": [
     "Seafood restaurant",
-    "Crab house"
+    "Crab house",
+    "Amenity: Restaurant",
+    "Restaurant"
   ],
   "address": "Old Dutch Hospital Complex, 04 Hospital St, Colombo 00100",
   "phone": "0770024823",
@@ -56,5 +58,17 @@
       ]
     }
   ],
-  "id": "01M6Q62KD1M4620Y26EYYKA1EB"
+  "id": "01M6Q62KD1M4620Y26EYYKA1EB",
+  "alternate_addresses": [
+    "Dutch Hospital, Colombo 01",
+    "Dutch Hospital, Colombo 01, Fort, Colombo, Western, Sri Lanka"
+  ],
+  "source": {
+    "names": [
+      "Ministry of Crab"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  }
 }

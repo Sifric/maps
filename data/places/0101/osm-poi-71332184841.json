@@ -6,7 +6,10 @@
     "longitude": 79.885599
   },
   "categories": [
-    "Supermarket"
+    "Supermarket",
+    "Retail > Food and Beverage Retail > Supermarket",
+    "Overture Maps",
+    "Grocery Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,14 @@
     "subclass": "supermarket",
     "names": [
       "Keells"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Dehiwala-Mount Lavinia, Western Province, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "208 Bellanthara Rd, Dehiwala-Mount Lavinia, 10290, Sri Lanka"
+  ]
 }

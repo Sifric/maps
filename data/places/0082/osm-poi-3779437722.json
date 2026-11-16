@@ -6,7 +6,10 @@
     "longitude": 79.892793
   },
   "categories": [
-    "Clinic"
+    "Clinic",
+    "Veterinary",
+    "Amenity: Clinic",
+    "Healthcare: Clinic"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,14 @@
     "subclass": "clinic",
     "names": [
       "Animal Hospital"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Weligampitiya North, Ja Ela, Gampaha, Western, Sri Lanka"
+  ]
 }

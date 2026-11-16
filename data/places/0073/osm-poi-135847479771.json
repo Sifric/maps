@@ -6,7 +6,9 @@
     "longitude": 80.806096
   },
   "categories": [
-    "Guest house"
+    "Guest house",
+    "Overture Maps",
+    "Lodging"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,17 @@
     "class": "lodging",
     "subclass": "guest_house",
     "names": [
-      "Sun Beach guesthouse"
+      "Sun Beach guesthouse",
+      "Sun Beach Guesthouse"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Polommaruwa South, Tangalle, Hambantota, Southern, Sri Lanka",
+    "Madilla Road, Medilla, 82300, Sri Lanka"
+  ]
 }

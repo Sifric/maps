@@ -6,7 +6,9 @@
     "longitude": 80.15515
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Tourism: Hotel",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,17 @@
     "subclass": "hotel",
     "names": [
       "Hotel Na Sevana"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "No.74, Kandy Road, Weweldeniya 11894, Sri Lanka",
+  "alternate_addresses": [
+    "74, Kandy Road, Weweldeniya",
+    "Kandy Road, Weweldeniya, Weweldeniya Pahalagama, Mirigama, Gampaha, Western, Sri Lanka",
+    "74 Kandy Rd, Gampaha District, 1, 11894, Sri Lanka",
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

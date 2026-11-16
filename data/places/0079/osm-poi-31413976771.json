@@ -6,7 +6,12 @@
     "longitude": 79.870327
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Wikidata physical place",
+    "Tourism: Hotel",
+    "Travel and Transportation > Lodging > Resort",
+    "Overture Maps",
+    "Holiday Rental Home"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +22,17 @@
     "subclass": "hotel",
     "names": [
       "Villa Shade"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Thimbirigaskatuwa",
+    "Thimbirigaskatuwa, Welihena South, Katana, Gampaha, Western, Sri Lanka",
+    "Aruna Mawatha, Thimbirigaskatwma, Negombo, Sri Lanka",
+    "Aruna Mawatha, Katana Rd, Western Province, 1, 22100, Sri Lanka"
+  ]
 }

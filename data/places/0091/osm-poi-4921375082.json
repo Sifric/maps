@@ -6,7 +6,10 @@
     "longitude": 80.51734
   },
   "categories": [
-    "Guest house"
+    "Guest house",
+    "Tourism: Guest House",
+    "Travel and Transportation > Lodging > Resort",
+    "Travel and Transportation > Lodging > Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,16 @@
     "subclass": "guest_house",
     "names": [
       "Beach Inns"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Beach Road Madiha, 81000, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Welegoda West, Matara Four Gravets, Matara, Southern, Sri Lanka",
+    "Matara, Southern Province, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

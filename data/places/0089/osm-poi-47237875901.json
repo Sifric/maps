@@ -6,7 +6,8 @@
     "longitude": 79.923359
   },
   "categories": [
-    "Attraction"
+    "Attraction",
+    "Artwork"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,13 @@
     "class": "attraction",
     "subclass": "attraction",
     "names": [
-      "Baobab Tree"
+      "Baobab Tree",
+      "Baobab tree"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Periyakadai, Mannar Town, Mannar, Northern, Sri Lanka",
+  "business_status": "OPERATIONAL"
 }

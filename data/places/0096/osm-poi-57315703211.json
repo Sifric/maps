@@ -6,7 +6,9 @@
     "longitude": 80.248239
   },
   "categories": [
-    "Massage"
+    "Massage",
+    "Shop: Massage",
+    "Business and Professional Services > Health and Beauty Service > Massage Clinic"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,60 @@
     "class": "shop",
     "subclass": "massage",
     "names": [
-      "dream spa"
+      "dream spa",
+      "Dream Spa"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "9 AM–7 PM"
+      ]
+    }
+  ],
+  "address": "Thalpegoda, Akmeemana, Galle, Southern, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ]
 }

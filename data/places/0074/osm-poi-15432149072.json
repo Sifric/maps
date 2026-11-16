@@ -6,7 +6,8 @@
     "longitude": 81.571936
   },
   "categories": [
-    "Hindu"
+    "Hindu",
+    "Place Of Worship"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,16 @@
     "class": "place_of_worship",
     "subclass": "hindu",
     "names": [
-      "Irunooruvil ,Veerapaththirar temple"
+      "Irunooruvil ,Veerapaththirar temple",
+      "Irunooruvil, Veerapaththirar temple"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Ganthinagar, Manmunai West, Batticaloa, Eastern, Sri Lanka"
+  ]
 }

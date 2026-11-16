@@ -6,7 +6,8 @@
     "longitude": 80.477552
   },
   "categories": [
-    "Atm"
+    "Atm",
+    "Amenity: Atm"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,14 @@
     "subclass": "atm",
     "names": [
       "Commercial Bank"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Galle - Deniyaya - Madampe Road, Akuressa",
+  "alternate_addresses": [
+    "Galle - Deniyaya - Madampe Road, Akuressa, Thibbotuwawa North, Athuraliya, Matara, Southern, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

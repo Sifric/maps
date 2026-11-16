@@ -6,8 +6,23 @@
   },
   "address": "12 New Bazaar Rd, Nuwara Eliya 22200",
   "categories": [
-    "Pharmacy"
+    "Pharmacy",
+    "Amenity: Pharmacy",
+    "Healthcare: Pharmacy"
   ],
   "business_status": "OPEN",
-  "id": "01M72B4HGQPZMV7TGWW52B1YRV"
+  "id": "01M72B4HGQPZMV7TGWW52B1YRV",
+  "alternate_addresses": [
+    "12 New Bazaar Rd, Nuwara Eliya 22200, Sri Lanka",
+    "Nuwara Eliya",
+    "Nuwara Eliya, Nuwaraeliya, Central, Sri Lanka"
+  ],
+  "source": {
+    "names": [
+      "Selvas pharmacy"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  }
 }

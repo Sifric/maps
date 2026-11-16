@@ -6,7 +6,10 @@
     "longitude": 79.926921
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Place",
+    "Cosmetics",
+    "Dining and Drinking > Restaurant"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -18,6 +21,15 @@
     "names": [
       "Blue Sky",
       "Salon miss & mrs maharagama"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "High Level Road, Maharagama, Pathiragoda, Colombo, Western, Sri Lanka",
+    "Maharagama, Western Province, Sri Lanka"
+  ]
 }

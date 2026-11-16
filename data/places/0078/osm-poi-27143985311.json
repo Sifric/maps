@@ -6,7 +6,14 @@
     "longitude": 80.526175
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Guest house",
+    "Restaurant",
+    "Clothes",
+    "Hostel",
+    "Community and Government > Residential Building > Apartment or Condo",
+    "Travel and Transportation > Lodging > Resort",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +24,16 @@
     "subclass": "hotel",
     "names": [
       "White House"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Seethagangula, Norwood, Nuwara Eliya, Central, Sri Lanka",
+    "Adamspeak, Delhouse, Sri Lanka",
+    "Adams peak, Seethagangula, 22070, Sri Lanka"
+  ]
 }

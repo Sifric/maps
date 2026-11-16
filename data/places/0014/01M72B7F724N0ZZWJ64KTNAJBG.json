@@ -6,7 +6,10 @@
   },
   "address": "Wawulagoda 1st Cross Rd, Hikkaduwa 80240",
   "categories": [
-    "Public sector bank"
+    "Public sector bank",
+    "Bank",
+    "GeoNames",
+    "Feature class S"
   ],
   "phone": "0912277984",
   "hours": [
@@ -53,6 +56,18 @@
       ]
     }
   ],
-  "business_status": "OPEN",
-  "id": "01M72B7F724N0ZZWJ64KTNAJBG"
+  "business_status": "OPERATIONAL",
+  "id": "01M72B7F724N0ZZWJ64KTNAJBG",
+  "source": {
+    "names": [
+      "People’s Bank"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  },
+  "alternate_addresses": [
+    "Hikkaduwa, Wavulagoda East, Galle, Southern, Sri Lanka",
+    "34, 31, 3136, 3136205, Sri Lanka"
+  ]
 }

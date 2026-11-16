@@ -6,7 +6,11 @@
     "longitude": 79.846669
   },
   "categories": [
-    "Cinema"
+    "Cinema",
+    "Movie theater",
+    "Office: Company",
+    "Arts and Entertainment > Movie Theater > Indie Movie Theater",
+    "Arts and Entertainment > Movie Theater"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +20,17 @@
     "class": "cinema",
     "subclass": "cinema",
     "names": [
-      "Regal Cinema"
+      "Regal Cinema",
+      "Regal cinema"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "No. 08, Sir Chittampalam A Gardiner MW, 02000, Sri Lanka",
+  "alternate_addresses": [
+    "Chittampalam Gardiner Mawatha, Colombo",
+    "Sir Chittampalam A. Gardiner Mawatha Colombo, Western Province, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

@@ -6,7 +6,9 @@
     "longitude": 81.045939
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Nightclub",
+    "Dining and Drinking > Restaurant"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "restaurant",
     "names": [
       "The White Rabbit"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Near Tunnel, Ella, Rawanaella, Badulla, Uva, Sri Lanka",
+    "Ella, Uva Province, Sri Lanka"
+  ]
 }

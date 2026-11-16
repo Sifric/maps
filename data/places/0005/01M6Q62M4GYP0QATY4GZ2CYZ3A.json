@@ -5,7 +5,11 @@
     "longitude": 79.8445696
   },
   "categories": [
-    "Chinese restaurant"
+    "Chinese restaurant",
+    "Amenity: Restaurant",
+    "Fine Dining",
+    "Restaurant",
+    "Dining and Drinking > Restaurant > Asian Restaurant > Chinese Restaurant"
   ],
   "address": "Colombo",
   "phone": "0117888288",
@@ -54,5 +58,16 @@
       ]
     }
   ],
-  "id": "01M6Q62M4GYP0QATY4GZ2CYZ3A"
+  "id": "01M6Q62M4GYP0QATY4GZ2CYZ3A",
+  "alternate_addresses": [
+    "1, Galle Road",
+    "Galle Road, Fort, Colombo, Western, Sri Lanka",
+    "1, Galle Face Centre Road, Colombo 02, Western Province, Sri Lanka"
+  ],
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  }
 }

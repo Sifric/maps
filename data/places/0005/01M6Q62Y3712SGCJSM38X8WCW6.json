@@ -5,11 +5,13 @@
     "longitude": 80.40563949999999
   },
   "categories": [
-    "Family restaurant"
+    "Family restaurant",
+    "Restaurant",
+    "Overture Maps"
   ],
   "address": "364 Agbo 16th, Anuradhapura",
   "phone": "0773494750",
-  "business_status": "OPEN",
+  "business_status": "OPERATIONAL",
   "hours": [
     {
       "day": "Monday",
@@ -54,5 +56,17 @@
       ]
     }
   ],
-  "id": "01M6Q62Y3712SGCJSM38X8WCW6"
+  "id": "01M6Q62Y3712SGCJSM38X8WCW6",
+  "alternate_addresses": [
+    "Step 2 Part 4, Nuwaragam Palatha East, Anuradhapura, North Central, Sri Lanka",
+    "364 Agbo 16th, Anuradhapura, 50000, Sri Lanka"
+  ],
+  "source": {
+    "names": [
+      "Bro restaurant"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  }
 }

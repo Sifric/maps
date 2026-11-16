@@ -6,7 +6,8 @@
     "longitude": 80.024151
   },
   "categories": [
-    "Supermarket"
+    "Supermarket",
+    "Shop: Supermarket"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,16 @@
     "class": "grocery",
     "subclass": "supermarket",
     "names": [
-      "Market Place, Pitipana."
+      "Market Place, Pitipana.",
+      "Market Place, Pitipana"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Pitipana Town, Homagama, Colombo, Western, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ]
 }

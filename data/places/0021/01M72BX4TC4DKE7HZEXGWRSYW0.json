@@ -6,7 +6,10 @@
   },
   "address": "Main Street, Mannar",
   "categories": [
-    "Government school"
+    "Government school",
+    "School",
+    "1AB",
+    "Overture Maps"
   ],
   "phone": "0232222129",
   "hours": [
@@ -53,6 +56,18 @@
       ]
     }
   ],
-  "business_status": "OPEN",
-  "id": "01M72BX4TC4DKE7HZEXGWRSYW0"
+  "business_status": "OPERATIONAL",
+  "id": "01M72BX4TC4DKE7HZEXGWRSYW0",
+  "alternate_addresses": [
+    "Mannar, Mannar, 4.Nothern, Sri Lanka",
+    "Main Street, Mannar, 41000, Sri Lanka"
+  ],
+  "source": {
+    "names": [
+      "St.xavier's BOYS College"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  }
 }

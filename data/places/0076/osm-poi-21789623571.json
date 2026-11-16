@@ -6,7 +6,10 @@
     "longitude": 80.727239
   },
   "categories": [
-    "Guest house"
+    "Guest house",
+    "Hotel",
+    "Travel and Transportation > Lodging > Hostel",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,18 @@
     "class": "lodging",
     "subclass": "guest_house",
     "names": [
-      "Kumbura eco lodge"
+      "Kumbura eco lodge",
+      "Kumbura Eco Lodge"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Palutawa, Dambulla, Matale, Central, Sri Lanka",
+    "Palutawa Road, Sigiriya, Sri Lanka",
+    "Palutawa road, kimbissa, Pothana, 21121, Sri Lanka"
+  ]
 }

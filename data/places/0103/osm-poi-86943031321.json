@@ -6,7 +6,10 @@
     "longitude": 80.65771
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Amenity: Restaurant",
+    "Overture Maps",
+    "Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,18 @@
     "class": "restaurant",
     "subclass": "restaurant",
     "names": [
-      "ÀNI - Sri Lanka"
+      "ÀNI - Sri Lanka",
+      "ÀNI Sri Lanka"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Kalukatiya Watta, Dickwella, Maaliyadda 81200, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Kalukatiya Watta Road, Dickwella, Bambarenda Central, Dikwella, Matara, Southern, Sri Lanka",
+    "Maaliyadda, 3, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

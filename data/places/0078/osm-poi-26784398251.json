@@ -6,7 +6,8 @@
     "longitude": 80.027424
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,17 @@
     "class": "lodging",
     "subclass": "hotel",
     "names": [
-      "White House Hotel Kosgoda"
+      "White House Hotel Kosgoda",
+      "White House Hotel - Kosgoda"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Doowemodara, Balapitiya, Galle, Southern, Sri Lanka",
+    "White House Hotel, Kosgoda, 80570, Sri Lanka"
+  ]
 }

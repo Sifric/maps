@@ -6,7 +6,10 @@
     "longitude": 80.433767
   },
   "categories": [
-    "Cafe"
+    "Cafe",
+    "Hotel",
+    "Surf School",
+    "Landmarks and Outdoors > Surf Spot"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,19 @@
     "class": "cafe",
     "subclass": "cafe",
     "names": [
-      "Surf's Up"
+      "Surf's Up",
+      "Surf’s Up"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Pelena South, Weligama, Matara, Southern, Sri Lanka",
+    "Walana, Weligama, Matara, Southern, Sri Lanka",
+    "Mirissa South 2, Weligama, Matara, Southern, Sri Lanka",
+    "Weligama, Southern Province, Sri Lanka"
+  ]
 }

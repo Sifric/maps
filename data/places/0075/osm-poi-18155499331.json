@@ -6,7 +6,9 @@
     "longitude": 79.929212
   },
   "categories": [
-    "Police"
+    "Police",
+    "Overture Maps",
+    "Government Office"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "police",
     "names": [
       "Mulleriyawa Police Station"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Himbutana East, Kolonnawa, Colombo, Western, Sri Lanka",
+    "Chon Gama Rd, Mulleriyawa South, 10620, Sri Lanka"
+  ]
 }

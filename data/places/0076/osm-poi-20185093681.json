@@ -6,7 +6,10 @@
     "longitude": 81.330526
   },
   "categories": [
-    "Guest house"
+    "Guest house",
+    "Overture Maps",
+    "Hostel",
+    "Travel and Transportation > Lodging > Hostel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,17 @@
     "class": "lodging",
     "subclass": "guest_house",
     "names": [
-      "Bank of Ceylon Rest"
+      "Bank of Ceylon Rest",
+      "BANK OF CEYLON Rest"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Katharagama UP, Kandasurindugama, Katharagama, Monaragala, Uva, Sri Lanka",
+    "Kataragama, Sri Lanka"
+  ]
 }

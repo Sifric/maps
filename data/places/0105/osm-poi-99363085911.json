@@ -6,7 +6,10 @@
     "longitude": 79.866818
   },
   "categories": [
-    "Supermarket"
+    "Supermarket",
+    "Retail > Food and Beverage Retail > Supermarket",
+    "Overture Maps",
+    "Grocery Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,18 @@
     "class": "grocery",
     "subclass": "supermarket",
     "names": [
-      "Softlogic GLOMARK"
+      "Softlogic GLOMARK",
+      "Softlogic Glomark"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Vihara, Dehiwala, Colombo, Western, Sri Lanka",
+    "Dehiwala-Mount Lavinia, Western Province, Sri Lanka",
+    "282 Galle Rd, Dehiwala-Mount Lavinia, 10370, Sri Lanka"
+  ]
 }

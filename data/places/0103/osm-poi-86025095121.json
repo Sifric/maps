@@ -6,7 +6,9 @@
     "longitude": 79.861169
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Travel and Transportation > Lodging > Hotel",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "hotel",
     "names": [
       "Chapelton House"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "2nd Chapel Lane, Wellawatte, Wellawatta North, Thimbirigasyaya, Colombo, Western, Sri Lanka",
+    "5B 1st Chapel Lane, Colombo, 00600, Sri Lanka"
+  ]
 }

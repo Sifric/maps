@@ -6,7 +6,9 @@
     "longitude": 79.89893
   },
   "categories": [
-    "Clinic"
+    "Clinic",
+    "Overture Maps",
+    "Hospital"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "clinic",
     "names": [
       "Sarva Medical and Wound Care Clinic"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Dehiwela-Maharagama Road, Boralesgamuwa, Rattanapitiya, Kesbewa, Colombo, Western, Sri Lanka",
+    "93 Dehiwala Rd, Boralesgamuwa West A, 10290, Sri Lanka"
+  ]
 }

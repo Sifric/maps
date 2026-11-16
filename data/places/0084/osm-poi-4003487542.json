@@ -6,7 +6,10 @@
     "longitude": 80.020482
   },
   "categories": [
-    "Halt"
+    "Halt",
+    "Train station",
+    "Overture Maps",
+    "Travel Service"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,14 @@
     "subclass": "halt",
     "names": [
       "Bemmulla"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Aluthgama-Wigoda Rd, Bemmulla, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

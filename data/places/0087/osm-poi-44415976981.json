@@ -6,7 +6,9 @@
     "longitude": 81.046341
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Travel and Transportation > Lodging > Resort",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,18 @@
     "class": "lodging",
     "subclass": "hotel",
     "names": [
-      "Ella Eco Lodge"
+      "Ella Eco Lodge",
+      "Ella eco lodge"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Ella - Wellawaya Road, Ella, Rawanaella, Badulla, Uva, Sri Lanka",
+    "Waterfall road, Ella, Uva, Sri Lanka",
+    "Waterfall Road, Kirimetithenna, 90090, Sri Lanka"
+  ]
 }

@@ -6,7 +6,10 @@
     "longitude": 79.840651
   },
   "categories": [
-    "Cinema"
+    "Cinema",
+    "Amenity: Cinema",
+    "Shop: Shoes",
+    "Amenity: Pharmacy"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,11 @@
     "subclass": "cinema",
     "names": [
       "Royal"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Muttakkarai East, Negombo, Gampaha, Western, Sri Lanka",
+  "business_status": "OPERATIONAL"
 }

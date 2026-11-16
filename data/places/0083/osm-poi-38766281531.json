@@ -6,7 +6,10 @@
     "longitude": 80.010842
   },
   "categories": [
-    "Shoes"
+    "Shoes",
+    "Beauty",
+    "Retail > Fashion Retail > Shoe Store",
+    "Dining and Drinking > Restaurant > African Restaurant"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,14 @@
     "subclass": "shoes",
     "names": [
       "Bata"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Jaffna Town West, Jaffna, Northern, Sri Lanka"
+  ]
 }

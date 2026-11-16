@@ -5,11 +5,12 @@
     "longitude": 81.7028449
   },
   "categories": [
-    "Grocery store"
+    "Grocery store",
+    "General"
   ],
   "address": "PPC3+H45, Batticaloa",
   "phone": "0652225559",
-  "business_status": "OPEN",
+  "business_status": "OPERATIONAL",
   "hours": [
     {
       "day": "Monday",
@@ -54,5 +55,14 @@
       ]
     }
   ],
-  "id": "01M5Z17HMNYFCBHFXJ3KKGZ6ZT"
+  "id": "01M5Z17HMNYFCBHFXJ3KKGZ6ZT",
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  },
+  "alternate_addresses": [
+    "Thamaraikerny, Manmunai North, Batticaloa, Eastern, Sri Lanka"
+  ]
 }

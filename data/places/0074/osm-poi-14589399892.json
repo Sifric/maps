@@ -6,7 +6,8 @@
     "longitude": 80.672157
   },
   "categories": [
-    "Bus station"
+    "Bus station",
+    "Transportation service"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,15 @@
     "subclass": "bus_station",
     "names": [
       "Radampola Bus Stand"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Radampola, Radampola New Market, Hunnadeniya - Rathmale - Radampola - Walasgala Rd, Sri Lanka",
+  "alternate_addresses": [
+    "Rannawala, Dikwella, Matara, Southern, Sri Lanka",
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

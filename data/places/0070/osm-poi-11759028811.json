@@ -6,7 +6,15 @@
     "longitude": 80.520751
   },
   "categories": [
-    "Railway station"
+    "Railway station",
+    "Place",
+    "Landmarks and Outdoors > States and Municipalities > City",
+    "Landmark",
+    "Miscellaneous point",
+    "Amenity: Post Office",
+    "Post Office",
+    "Overture Maps",
+    "Train Station"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +25,16 @@
     "subclass": "station",
     "names": [
       "Kadugannawa"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Kadugannawa",
+    "Kadugannawa, Kadawathgama, Yatinuwara, Kandy, Central, Sri Lanka",
+    "Kandy Road, Kadugannawa, 20300, Sri Lanka"
+  ]
 }

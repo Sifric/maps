@@ -6,7 +6,10 @@
     "longitude": 80.567653
   },
   "categories": [
-    "Hospital"
+    "Hospital",
+    "Medical Center",
+    "Amenity: Hospital",
+    "Healthcare: Hospital"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "hospital",
     "names": [
       "Lahiru Medical Center"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "No. 149 Ambagamuwa Road, Gampola, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Polkumbura, Udapalatha, Kandy, Central, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

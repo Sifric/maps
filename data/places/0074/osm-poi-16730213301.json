@@ -6,7 +6,16 @@
     "longitude": 79.89106
   },
   "categories": [
-    "Hifi"
+    "Hifi",
+    "Department store",
+    "Electronics",
+    "Furniture",
+    "Convenience",
+    "Retail > Computers and Electronics Retail > Electronics Store",
+    "Business and Professional Services > Business Service",
+    "Retail > Shopping Mall",
+    "Overture Maps",
+    "Electronics Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +26,16 @@
     "subclass": "hifi",
     "names": [
       "Singer Mega"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Nugegoda, Dutugemunu, Dehiwala, Colombo, Western, Sri Lanka",
+    "Nawala Road, Nugegoda, Western Province, Sri Lanka",
+    "4 D Nawala Rd, Sri Jayewardenepura Kotte, 11222, Sri Lanka"
+  ]
 }

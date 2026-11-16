@@ -6,7 +6,12 @@
     "longitude": 79.931797
   },
   "categories": [
-    "Supermarket"
+    "Supermarket",
+    "Retail > Food and Beverage Retail > Supermarket",
+    "Retail > Market",
+    "Retail > Convenience Store",
+    "Retail > Food and Beverage Retail > Grocery Store",
+    "Retail > Food and Beverage Retail"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +22,14 @@
     "subclass": "supermarket",
     "names": [
       "Cargills Food City Express"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Piliyandala-Maharagama Road, Maharagama, Maharagama Town, Colombo, Western, Sri Lanka"
+  ]
 }

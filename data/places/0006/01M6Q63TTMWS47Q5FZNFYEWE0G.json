@@ -8,7 +8,8 @@
     "Restaurant",
     "Coffee shop",
     "Ice cream shop",
-    "Cafe"
+    "Cafe",
+    "Amenity: Cafe"
   ],
   "address": "No. 130/4/5, Main street, Kegalle",
   "phone": "0701747070",
@@ -57,5 +58,19 @@
       ]
     }
   ],
-  "id": "01M6Q63TTMWS47Q5FZNFYEWE0G"
+  "id": "01M6Q63TTMWS47Q5FZNFYEWE0G",
+  "alternate_addresses": [
+    "Colombo-Kandy Road, Kegalle",
+    "Colombo-Kandy Road",
+    "Colombo-Kandy Road, Kegalle, Olagankanda, Sabaragamuwa, Sri Lanka",
+    "Colombo-Kandy Road, Olagankanda, Kegalle, Sabaragamuwa, Sri Lanka"
+  ],
+  "source": {
+    "names": [
+      "Iceberg cafe"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  }
 }

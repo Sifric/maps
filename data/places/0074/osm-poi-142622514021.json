@@ -6,7 +6,9 @@
     "longitude": 79.869189
   },
   "categories": [
-    "Gallery"
+    "Gallery",
+    "Tourism: Gallery",
+    "Arts and Entertainment > Art Gallery"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,48 @@
     "subclass": "gallery",
     "names": [
       "JDA Perera Gallery"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "46, Horton Place, 00700",
+    "Horton Place, Kurunduwatta, Thimbirigasyaya, Colombo, Western, Sri Lanka",
+    "46, Colombo 7, Sri Lanka"
+  ],
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–4 PM"
+      ]
+    }
+  ]
 }

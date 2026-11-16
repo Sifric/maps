@@ -6,7 +6,9 @@
     "longitude": 79.909412
   },
   "categories": [
-    "Government"
+    "Government",
+    "Overture Maps",
+    "Government Office"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,11 @@
     "subclass": "government",
     "names": [
       "Department of Motor Traffic"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Department of Motor Traffic Rd, Katuwawala North, 00290, Sri Lanka",
+  "business_status": "OPERATIONAL"
 }

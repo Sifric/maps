@@ -6,7 +6,9 @@
     "longitude": 80.364904
   },
   "categories": [
-    "Bank"
+    "Bank",
+    "Overture Maps",
+    "Bank Or Credit Union"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,17 @@
     "class": "bank",
     "subclass": "bank",
     "names": [
-      "Sampath Bank - Ahangama"
+      "Sampath Bank - Ahangama",
+      "Sampath Bank Ahangama"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Colombo -Matara Road, Ahangama, Welhengoda, Habaraduwa, Galle, Southern, Sri Lanka",
+    "71A Matara Rd, Piyadigama West, 80650, Sri Lanka"
+  ]
 }

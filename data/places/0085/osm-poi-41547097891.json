@@ -6,7 +6,9 @@
     "longitude": 80.219679
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Dining and Drinking > Restaurant",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,19 @@
     "class": "restaurant",
     "subclass": "restaurant",
     "names": [
-      "A minute by tuk tuk"
+      "A minute by tuk tuk",
+      "a minute by TUK TUK",
+      "A Minute by Tuk Tuk"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Milidduwa, Galle 4 Gravets, Galle, Southern, Sri Lanka",
+    "Galle, Southern Province, Sri Lanka",
+    "Shop # U-12, Old Dutch Hospita, Hospital St, Galle, 80000, Sri Lanka"
+  ]
 }

@@ -6,7 +6,9 @@
     "longitude": 80.054932
   },
   "categories": [
-    "Railway station"
+    "Railway station",
+    "Overture Maps",
+    "Train Station"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,11 @@
     "subclass": "station",
     "names": [
       "Ambalangoda"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "A2, Vilegoda, 80300, Sri Lanka",
+  "business_status": "OPERATIONAL"
 }

@@ -6,7 +6,9 @@
     "longitude": 80.530949
   },
   "categories": [
-    "Buddhist"
+    "Buddhist",
+    "Amenity: Place Of Worship",
+    "Place Of Worship"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "buddhist",
     "names": [
       "Atigala Mudalindaramaya Dodangaslanda"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Melsiripura Road, Dodangaslanda, 60530",
+  "alternate_addresses": [
+    "Melsiripura Road, Dodangaslanda, Minirangama, Rideegama, Kurunegala, North Western, Sri Lanka",
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

@@ -6,7 +6,8 @@
     "longitude": 79.909213
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,15 @@
     "subclass": "restaurant",
     "names": [
       "Ajith Family Restaurant"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Ethulkotte, Sri Jayawardanapura Kotte, Colombo, Western, Sri Lanka",
+    "155 Thalawathugoda Road, Sri Jayewardenepura Kotte, Sri Lanka"
+  ]
 }

@@ -6,7 +6,8 @@
     "longitude": 79.95605
   },
   "categories": [
-    "School"
+    "School",
+    "Amenity: School"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,15 @@
     "subclass": "school",
     "names": [
       "J - Vaddu Central College"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Vedducoddai South West (North)",
+  "alternate_addresses": [
+    "Vedducoddai South West (North), Arali North, Valikamam West (Chankanai), Jaffna, Northern, Sri Lanka",
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

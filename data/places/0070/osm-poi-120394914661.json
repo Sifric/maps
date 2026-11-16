@@ -6,7 +6,8 @@
     "longitude": 81.211254
   },
   "categories": [
-    "University"
+    "University",
+    "Amenity: University"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,16 @@
     "class": "college",
     "subclass": "university",
     "names": [
-      "Faculty of Communication business studies- Trincomalee Campus, Eastern University ,Srilanka"
+      "Faculty of Communication business studies- Trincomalee Campus, Eastern University ,Srilanka",
+      "Faculty of Communication business studies - Trincomalee Campus, Eastern University, Srilanka"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Periyakulam, Kuchchaweli, Trincomalee, Eastern, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ]
 }

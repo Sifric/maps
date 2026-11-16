@@ -6,7 +6,12 @@
     "longitude": 80.422856
   },
   "categories": [
-    "Coworking"
+    "Coworking",
+    "Restaurant",
+    "Motorcycle Rental",
+    "Business and Professional Services > Office > Coworking Space",
+    "Dining and Drinking > Restaurant",
+    "Sports and Recreation > Gym and Studio > Yoga Studio"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +22,16 @@
     "subclass": "coworking",
     "names": [
       "Pasijou"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Main street, Weligama, Pelena South, Matara, Southern, Sri Lanka",
+    "Main street, Weligama, Walana, Matara, Southern, Sri Lanka",
+    "15 Matara Rd, Weligama, Sri Lanka, Southern Province, Sri Lanka"
+  ]
 }

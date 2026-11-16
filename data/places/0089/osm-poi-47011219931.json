@@ -6,7 +6,14 @@
     "longitude": 79.757985
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Tourism: Hotel",
+    "Amenity: Restaurant",
+    "Restaurant",
+    "Travel and Transportation > Lodging > Resort",
+    "Dining and Drinking > Restaurant",
+    "Overture Maps",
+    "Resort"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +23,63 @@
     "class": "lodging",
     "subclass": "hotel",
     "names": [
-      "Valampuri Kite resort"
+      "Valampuri Kite resort",
+      "Valampuri Kite Resort"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "muhathuvaram road thuraiadiya, Kalpitiya 61360, Sri Lanka",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "9 AM–9 PM"
+      ]
+    }
+  ],
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Pudukudirippuwa, Kalpitiya, Puttalam, North Western, Sri Lanka",
+    "85, Kalpitiya, North Western Province, 61360, Sri Lanka",
+    "Thuraiadiya, 85 Muhathuvaram road, Anawasala, 61360, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

@@ -6,7 +6,8 @@
     "longitude": 80.493152
   },
   "categories": [
-    "Fuel station"
+    "Fuel station",
+    "Fuel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,16 @@
     "class": "fuel",
     "subclass": "fuel",
     "names": [
-      "Masthan Petrol Only Station (8am-6pm)"
+      "Masthan Petrol Only Station (8am-6pm)",
+      "Masthan Petrol Only Station (8am - 6pm)"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Pattanichchoor Puliyankulam, Vavuniya, Northern, Sri Lanka"
+  ]
 }

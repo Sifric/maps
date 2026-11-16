@@ -6,7 +6,9 @@
     "longitude": 80.361144
   },
   "categories": [
-    "Motel"
+    "Motel",
+    "Overture Maps",
+    "Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "motel",
     "names": [
       "Sinharaja Cottage"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Mavita East, Neluwa, Galle, Southern, Sri Lanka",
+    "Kosmulla Lankagama Road, Neluwa, Sri Lanka"
+  ]
 }

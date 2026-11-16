@@ -6,7 +6,10 @@
     "longitude": 80.682929
   },
   "categories": [
-    "Car repair"
+    "Car repair",
+    "Shop: Car Repair",
+    "Overture Maps",
+    "Automotive Repair"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,17 @@
     "subclass": "car_repair",
     "names": [
       "Duminda Auto Electronics"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Kundasale New Town",
+    "Kundasale New Town, Kundasale South, Kundasale, Kandy, Central, Sri Lanka",
+    "Kundasale South, Kundasale, Kandy, Central, Sri Lanka",
+    "New Town, Galmaduwa, 20168, Sri Lanka"
+  ]
 }

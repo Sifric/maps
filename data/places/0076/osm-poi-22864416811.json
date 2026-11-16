@@ -6,7 +6,12 @@
     "longitude": 80.923061
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Tourism: Hotel",
+    "Travel and Transportation > Lodging > Resort",
+    "GeoNames",
+    "Feature class S",
+    "HTL"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +22,16 @@
     "subclass": "hotel",
     "names": [
       "Giritale Hotel"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Giritale, Polonnaruwa, Giritale 51000, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Agbopura, Higurakgoda, Polonnaruwa, North Central, Sri Lanka",
+    "30, 72, 7203, 7203175, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

@@ -6,7 +6,8 @@
     "longitude": 80.121188
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,16 @@
     "subclass": "hotel",
     "names": [
       "Haritha Villas"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Pinkanda Road, Thiranagama, Katukoliha, Hikkaduwa, Galle, Southern, Sri Lanka",
+    "Thiranagama, 79, 28 Pinkanda Rd, Thiranagama, 80244, Sri Lanka",
+    "Thiranagama, 79, 28 Pinkanda Rd, Narigama Wellabada, 80244, Sri Lanka"
+  ]
 }

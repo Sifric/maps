@@ -6,7 +6,9 @@
     "longitude": 80.525923
   },
   "categories": [
-    "Clothes"
+    "Clothes",
+    "Overture Maps",
+    "Clothing Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "clothes",
     "names": [
       "FLAME"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "5TH LANE, AMBAGAMUWA ROAD, NAWALAPITIYA, Dandubediruppa, Pasbagekorale, Kandy, Central, Sri Lanka",
+    "222/28, 5th Lane, Ambagamuwa Rd, Central Province, 2, 20650, Sri Lanka"
+  ]
 }
