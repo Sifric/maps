@@ -86,8 +86,8 @@ export default {
 };
 
 async function routeRequest(request, env) {
-  if (!env.ROUTING && !env.ROUTING_URL)
-    return jsonResponse({ error: "Self-hosted routing is not configured." }, 503, routeCors);
+  if (!env.ROUTING)
+    return jsonResponse({ error: "The OSRM routing service is not configured." }, 503, routeCors);
 
   let body;
   try {
@@ -110,36 +110,35 @@ async function routeRequest(request, env) {
 
   let endpoint;
   try {
-    const directRoutingUrl = Boolean(env.ROUTING_URL);
-    endpoint = new URL(env.ROUTING_URL || "https://lkmaps-router");
-    if (!/^https?:$/.test(endpoint.protocol) || endpoint.username || endpoint.password)
-      throw new Error("invalid routing URL");
-    if (directRoutingUrl) endpoint.port = profile === "walking" ? "5001" : "5000";
-    const osrmProfile = directRoutingUrl
-      ? profile === "walking" ? "foot" : "car"
-      : profile;
+    endpoint = new URL("https://lkmaps-router");
     const coordinates = [body.origin, body.destination]
       .map(([longitude, latitude]) => `${longitude},${latitude}`)
       .join(";");
-    endpoint.pathname = `${endpoint.pathname.replace(/\/$/, "")}/route/v1/${osrmProfile}/${coordinates}`;
+    endpoint.pathname = `/route/v1/${profile}/${coordinates}`;
     endpoint.search = "";
     endpoint.searchParams.set("steps", "true");
     endpoint.searchParams.set("overview", "full");
     endpoint.searchParams.set("geometries", "geojson");
   } catch {
-    return jsonResponse({ error: "Self-hosted routing URL is invalid." }, 500, routeCors);
+    return jsonResponse({ error: "Could not build the OSRM routing request." }, 500, routeCors);
   }
 
   try {
     const upstreamRequest = new Request(endpoint, {
       headers: { Accept: "application/json" },
-      signal: AbortSignal.timeout(20000),
+      signal: AbortSignal.timeout(30000),
     });
-    const upstream = env.ROUTING && !env.ROUTING_URL
-      ? await env.ROUTING.fetch(upstreamRequest)
-      : await fetch(upstreamRequest);
+    const upstream = await env.ROUTING.fetch(upstreamRequest);
     const result = await upstream.json();
     if (!upstream.ok || result.code !== "Ok") {
+      if (upstream.status === 429) {
+        const retryAfter = upstream.headers.get("Retry-After") || "5";
+        return jsonResponse(
+          { error: result.message || "Routing is busy. Retry shortly." },
+          429,
+          { ...routeCors, "Retry-After": retryAfter },
+        );
+      }
       const warming = upstream.status === 503;
       return jsonResponse(
         { error: warming ? result.message || "The routing engine is starting. Retry shortly." : upstream.status >= 500 ? "The routing service is unavailable." : result.message || "The routing service could not find a route." },
