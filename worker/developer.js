@@ -19,7 +19,7 @@ async function oauthStart(r,env,provider){
  const config=oauthConfig(env,provider);if(!config)return json({error:"Provider not configured"},503);
  const state=random(32),verifier=random(32),redirect=new URL("/auth/callback/"+provider,r.url).href;
  const params=new URLSearchParams({client_id:config.id,redirect_uri:redirect,response_type:"code",scope:provider==="github"?"read:user user:email":"openid email profile",state});
- if(provider==="google"){const challenge=await crypto.subtle.digest("SHA-256",enc.encode(verifier));params.set("code_challenge",btoa(String.fromCharCode(...new Uint8Array(challenge))).replace(/\\+/g,"-").replace(/\\//g,"_").replace(/=+$/,""));params.set("code_challenge_method","S256")}
+ if(provider==="google"){const challenge=await crypto.subtle.digest("SHA-256",enc.encode(verifier));params.set("code_challenge",btoa(String.fromCharCode(...new Uint8Array(challenge))).replace(/\\+/g,"-").replace(/\//g,"_").replace(/=+$/,""));params.set("code_challenge_method","S256")}
  await env.DB.prepare("INSERT INTO oauth_states(state_hash,provider,verifier,expires_at) VALUES(?,?,?,?)").bind(await digest(state),provider,verifier,Date.now()+600000).run();
  return Response.redirect(config.authorize+"?"+params,302)
 }
@@ -75,7 +75,7 @@ export async function handleDeveloper(request,env){
  const db=env.DB;
  if(path==="/api/developer/register"&&method==="POST"){
   const b=await parse(request);const email=String(b.email||"").trim().toLowerCase(),password=b.password;
-  if(!/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email)||email.length>254||typeof password!=="string"||password.length<12||password.length>128)return json({error:"Valid email and password of 12–128 characters required"},400);
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)||email.length>254||typeof password!=="string"||password.length<12||password.length>128)return json({error:"Valid email and password of 12–128 characters required"},400);
   const salt=random(16),hash=await hashPassword(password,salt),id=crypto.randomUUID();
   try{await db.prepare("INSERT INTO users(id,email,password_salt,password_hash,created_at) VALUES(?,?,?,?,?)").bind(id,email,salt,hash,Date.now()).run()}catch{return json({error:"Account already exists"},409)}
   return json({ok:true},201,{"Set-Cookie":await createSession(db,id)});
@@ -109,7 +109,7 @@ export async function handleDeveloper(request,env){
   await db.prepare("INSERT INTO api_keys(id,user_id,name,prefix,key_hash,created_at,expires_at) VALUES(?,?,?,?,?,?,?)").bind(id,user.id,name,secret.slice(0,11),await digest(secret),now,expires).run();
   return json({id,key:secret,expires_at:expires},201);
  }
- const match=path.match(/^\\/api\\/developer\\/keys\\/([a-f0-9-]{36})$/);
+ const match=path.match(/^\/api\/developer\/keys\/([a-f0-9-]{36})$/);
  if(match&&method==="DELETE"){
   const result=await db.prepare("UPDATE api_keys SET revoked_at=? WHERE id=? AND user_id=? AND revoked_at IS NULL").bind(Date.now(),match[1],user.id).run();
   return json({revoked:result.meta.changes>0});
@@ -128,8 +128,9 @@ export async function authenticateApiKey(request,env){
  if(!key)return {error:json({error:"Invalid or expired API key"},401)};
  const day=new Date().toISOString().slice(0,10);
  // Atomic quota reservation: a single statement handles concurrent requests.
- await env.DB.prepare("INSERT INTO api_usage(key_id,day,requests) VALUES(?,?,1) ON CONFLICT(key_id,day) DO UPDATE SET requests=requests+1 WHERE requests<10000").bind(key.id,day).run();
+ const reservation=await env.DB.prepare("INSERT INTO api_usage(key_id,day,requests) VALUES(?,?,1) ON CONFLICT(key_id,day) DO UPDATE SET requests=requests+1 WHERE requests<10000").bind(key.id,day).run();
+ if(reservation.meta.changes!==1)return {error:json({error:"Daily API quota reached"},429)};
  const count=await env.DB.prepare("SELECT requests FROM api_usage WHERE key_id=? AND day=?").bind(key.id,day).first();
- if(count?.requests>=10000)return {error:json({error:"Daily API quota reached"},429)};
+ 
  return {key};
 }
