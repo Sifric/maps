@@ -839,8 +839,6 @@ $("categories")
   .querySelectorAll("[data-kind]")
   .forEach((b) => (b.onclick = () => filterCategory(b.dataset.kind)));
 $("reset-category").onclick = () => filterCategory(category);
-$("zoom-in").onclick = () => map.zoomIn({ duration: 250 });
-$("zoom-out").onclick = () => map.zoomOut({ duration: 250 });
 $("compass").onclick = () =>
   map.easeTo({ bearing: 0, pitch: 0, duration: 400 });
 $("locate").onclick = () => {
@@ -958,10 +956,21 @@ document.addEventListener("keydown", (e) => {
   map.on("error", (e) => {
     if (!mapOptions?.handleError(e)) showError(e.error);
   });
-  map.addControl(
-    new maplibregl.ScaleControl({ maxWidth: 80, unit: "metric" }),
-    "bottom-right",
-  );
+  const scaleControl = new maplibregl.ScaleControl({ maxWidth: 110, unit: "metric" });
+  map.addControl(scaleControl, "bottom-right");
+  const scaleElement = scaleControl.getContainer();
+  let scaleHideTimer;
+  const revealScale = () => {
+    scaleElement.classList.remove("scale-idle");
+    clearTimeout(scaleHideTimer);
+    scaleHideTimer = setTimeout(() => scaleElement.classList.add("scale-idle"), 3000);
+  };
+  // Only map interaction changes scale visibility; other controls remain accessible.
+  for (const eventName of ["movestart", "move", "zoomstart", "zoom", "touchstart", "mousedown"]) {
+    map.on(eventName, revealScale);
+  }
+  map.on("moveend", revealScale);
+  revealScale();
   // One-shot requests only: retain the location dot without background tracking.
   geolocateControl = new maplibregl.GeolocateControl({
     positionOptions: {
