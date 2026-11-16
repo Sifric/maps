@@ -6,7 +6,9 @@
     "longitude": 79.892004
   },
   "categories": [
-    "College"
+    "College",
+    "Training centre",
+    "Amenity: College"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "college",
     "names": [
       "Centre for Banking Studies"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Janadhipathi Vidyala Mawatha, Sri Jayawardenepura Kotte, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Castle Street, Rajagiriya, Welikada North, Sri Jayawardanapura Kotte, Colombo, Western, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

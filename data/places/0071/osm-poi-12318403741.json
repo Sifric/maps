@@ -6,7 +6,13 @@
     "longitude": 80.519577
   },
   "categories": [
-    "Bus stop"
+    "Bus stop",
+    "Travel and Transportation > Transport Hub > Bus Station",
+    "Travel and Transportation > Road",
+    "Overture Maps",
+    "Bus Station",
+    "Railway Station",
+    "JUNCP"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +23,11 @@
     "subclass": "bus_stop",
     "names": [
       "Nagoda Junction"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL"
 }

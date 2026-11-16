@@ -6,7 +6,10 @@
     "longitude": 80.193066
   },
   "categories": [
-    "Guest house"
+    "Guest house",
+    "Travel and Transportation > Lodging > Lodge",
+    "Overture Maps",
+    "Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,16 @@
     "subclass": "guest_house",
     "names": [
       "Ginganga Lodge"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Piyadigama, Galle 4 Gravets, Galle, Southern, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Sri Piyarathana Mawatha, Galle, Southern Province, 80000, Sri Lanka",
+    "No. Ginganga Lodge, Sri Piyarathana Mawatha, Galle, 3, 80000, Sri Lanka",
+    "Sri Lanka"
+  ]
 }

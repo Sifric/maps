@@ -6,7 +6,10 @@
     "longitude": 79.914685
   },
   "categories": [
-    "Car repair"
+    "Car repair",
+    "Travel and Transportation > Fuel Station",
+    "Overture Maps",
+    "Automotive Repair"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,18 @@
     "class": "car",
     "subclass": "car_repair",
     "names": [
-      "R.D.S. Motor Engineers"
+      "R.D.S. Motor Engineers",
+      "R D S Motor Engineers"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Madiwela, Maharagama, Colombo, Western, Sri Lanka",
+    "No 56/2, Pita Kotte, 10100, Sri Lanka",
+    "No 56/2, Sri Jayewardenepura Kotte, +94, Sri Lanka"
+  ]
 }

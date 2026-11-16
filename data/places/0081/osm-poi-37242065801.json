@@ -6,7 +6,9 @@
     "longitude": 80.125013
   },
   "categories": [
-    "Marketplace"
+    "Marketplace",
+    "Landmarks and Outdoors > States and Municipalities > Town",
+    "Bus stop"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,14 @@
     "subclass": "marketplace",
     "names": [
       "Pasyala"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Colombo-Kandy Road, Pasyala East, Mirigama, Gampaha, Western, Sri Lanka"
+  ]
 }

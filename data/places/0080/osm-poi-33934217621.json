@@ -6,7 +6,10 @@
     "longitude": 80.8066
   },
   "categories": [
-    "Camp site"
+    "Camp site",
+    "Landmarks and Outdoors > Campground",
+    "Overture Maps",
+    "Educational Camp"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "camp_site",
     "names": [
       "Pedro Scout Camp"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Nuwara Eliya, Sandathenna, Central, Sri Lanka",
+    "The Pedro National Scout Activity Centre, Nuwara Eliya, Sri Lanka"
+  ]
 }

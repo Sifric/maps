@@ -6,7 +6,11 @@
     "longitude": 80.200512
   },
   "categories": [
-    "Supermarket"
+    "Supermarket",
+    "Retail > Food and Beverage Retail > Grocery Store",
+    "Retail > Department Store",
+    "Overture Maps",
+    "Grocery Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +21,15 @@
     "subclass": "supermarket",
     "names": [
       "Cargills Food City"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Colombo-Kandy Road, Ambepussa, Warakapola, Kegalle, Sabaragamuwa, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Ground Floor, Nile City Center, Warakapola, Warakapola, Sabaragamuwa, Sri Lanka",
+    "97 Kandy Rd, Sabaragamuwa Province, 9, 71600, Sri Lanka"
+  ]
 }

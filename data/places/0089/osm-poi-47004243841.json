@@ -6,7 +6,10 @@
     "longitude": 80.775754
   },
   "categories": [
-    "Doctors"
+    "Doctors",
+    "Clinic",
+    "Health and Medicine > Medical Center",
+    "Government"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,14 @@
     "subclass": "doctors",
     "names": [
       "MOH"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Mankulam-Mullaitivu Road, Mulliyawalai, Mulliyawalai West, Maritimepattu, Mullaitivu, Northern, Sri Lanka"
+  ]
 }

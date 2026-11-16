@@ -6,7 +6,9 @@
     "longitude": 80.583773
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Travel and Transportation > Lodging > Hotel",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,17 @@
     "subclass": "hotel",
     "names": [
       "Elegant Hotel"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Handessa, Udunuwara, Kandy, Central, Sri Lanka",
+    "Sunflower Garden, Handessa, Udunuwara, Kandy, Central, Sri Lanka",
+    "200/3 Sunflower Garden, Kandy, Meewaladeniya Handesa, Sri Lanka",
+    "Meewaladeniya Rd, Davulagala, 20620, Sri Lanka"
+  ]
 }

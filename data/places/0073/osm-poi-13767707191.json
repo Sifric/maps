@@ -6,7 +6,9 @@
     "longitude": 79.856089
   },
   "categories": [
-    "Car"
+    "Car",
+    "Shop: Car",
+    "Business and Professional Services > Automotive Service > Automotive Repair Shop"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,46 @@
     "subclass": "car",
     "names": [
       "Indra Traders"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9 AM–5 PM"
+      ]
+    }
+  ],
+  "address": "Ibbanwala, Colombo, Western, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Colombo, Sri Lanka"
+  ]
 }

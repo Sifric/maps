@@ -6,7 +6,11 @@
     "longitude": 80.731133
   },
   "categories": [
-    "Greengrocer"
+    "Greengrocer",
+    "Place",
+    "Landmarks and Outdoors > Farm",
+    "Overture Maps",
+    "Farm"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +21,11 @@
     "subclass": "greengrocer",
     "names": [
       "Strawberry Farm"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL"
 }

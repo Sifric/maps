@@ -6,7 +6,11 @@
     "longitude": 80.333887
   },
   "categories": [
-    "Fast food restaurant"
+    "Fast food restaurant",
+    "Fast Food",
+    "Dining and Drinking > Restaurant > Pizzeria",
+    "Overture Maps",
+    "Pizza Restaurant"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +21,15 @@
     "subclass": "fast_food",
     "names": [
       "Pizza Hut"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Colombo-Kandy Road, Ranwala, Paranagampola, Kegalle, Sabaragamuwa, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Kegalle, Sabaragamuwa, Sri Lanka",
+    "No. 311 Kandy - Colombo Rd, Ranwala, 71050, Sri Lanka"
+  ]
 }

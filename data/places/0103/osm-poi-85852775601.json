@@ -6,7 +6,11 @@
     "longitude": 79.911343
   },
   "categories": [
-    "Company"
+    "Company",
+    "Taxi service",
+    "Office: Company",
+    "Travel and Transportation > Transport Hub > Rental Car Location",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +20,17 @@
     "class": "office",
     "subclass": "company",
     "names": [
-      "Kangaroo cabs"
+      "Kangaroo cabs",
+      "Kangaroo Cabs"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "485 7/A, Nugegoda 10250, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "485 7/A, Navinna, 10250, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

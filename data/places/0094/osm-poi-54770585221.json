@@ -6,7 +6,12 @@
     "longitude": 80.250111
   },
   "categories": [
-    "Fast food restaurant"
+    "Fast food restaurant",
+    "Fast Food",
+    "Amenity: Fast Food",
+    "Dining and Drinking > Restaurant > Pizzeria",
+    "Overture Maps",
+    "Pizza Restaurant"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +22,17 @@
     "subclass": "fast_food",
     "names": [
       "La Boheme"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "268/1 Matara Road, Godagewatta, Pellagoda, Unawatuna 80600, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Unawatuna, Thalpegoda, Akmeemana, Galle, Southern, Sri Lanka",
+    "Унаватуна, Южная провинция, Sri Lanka",
+    "268/1 Matara Road, Godagewatta, Pellagoda, Unawatuna Central, 80600, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

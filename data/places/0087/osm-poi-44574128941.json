@@ -6,7 +6,8 @@
     "longitude": 79.899176
   },
   "categories": [
-    "Bakery"
+    "Bakery",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,16 @@
     "class": "bakery",
     "subclass": "bakery",
     "names": [
-      "BreadTalk"
+      "BreadTalk",
+      "Breadtalk"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Jayawardenapura Mawatha, Rajagiriya, Welikada North, Sri Jayawardanapura Kotte, Colombo, Western, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "226 Welikada Terrace, Sri Jayewardenepura Kotte, 10107, Sri Lanka"
+  ]
 }

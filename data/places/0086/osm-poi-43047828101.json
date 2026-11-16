@@ -6,7 +6,9 @@
     "longitude": 79.864522
   },
   "categories": [
-    "Christian"
+    "Christian",
+    "Place Of Worship",
+    "Attraction"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,14 @@
     "subclass": "christian",
     "names": [
       "St. Lucia Church"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "St Benadicts Street, Kotahena, Masangasweediya, Colombo, Western, Sri Lanka"
+  ]
 }

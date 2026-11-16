@@ -6,7 +6,9 @@
     "longitude": 80.011861
   },
   "categories": [
-    "School"
+    "School",
+    "Overture Maps",
+    "College University"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,17 @@
     "class": "school",
     "subclass": "school",
     "names": [
-      "Dharga Town National College Of Education"
+      "Dharga Town National College Of Education",
+      "Dharga Town National College of Education"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Mihiripenna Rd, Dharga Town, Kadiyawatta, Beruwala, Kalutara, Western, Sri Lanka",
+    "Mashoor Mawatha Road Dharga Town East, 12090, Sri Lanka"
+  ]
 }

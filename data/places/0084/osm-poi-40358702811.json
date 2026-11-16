@@ -6,7 +6,8 @@
     "longitude": 80.637723
   },
   "categories": [
-    "Bus stop"
+    "Bus stop",
+    "Landmarks and Outdoors > Hiking Trail"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,17 @@
     "class": "bus",
     "subclass": "bus_stop",
     "names": [
-      "lake round"
+      "lake round",
+      "Lake Round",
+      "Lake Round - වැව රවුම"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Kandy, Sri Lanka"
+  ]
 }

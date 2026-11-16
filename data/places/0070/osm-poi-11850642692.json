@@ -6,7 +6,10 @@
     "longitude": 80.120539
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Tourism: Hotel",
+    "Travel and Transportation > Lodging > Resort",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,17 @@
     "subclass": "hotel",
     "names": [
       "Navinka Nature Resort"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Poruwadanda, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Rathmalgoda West, Ingiriya, Kalutara, Western, Sri Lanka",
+    "Poruwadanda, Western Province, Sri Lanka",
+    "Western Province, 1, 10500, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

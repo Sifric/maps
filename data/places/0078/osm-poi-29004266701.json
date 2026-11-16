@@ -6,7 +6,8 @@
     "longitude": 80.054331
   },
   "categories": [
-    "Bank"
+    "Bank",
+    "Business and Professional Services > Financial Service > Banking and Finance > Bank"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,16 @@
     "class": "bank",
     "subclass": "bank",
     "names": [
-      "Peoples Bank"
+      "Peoples Bank",
+      "Peoples' Bank"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Colombo-Galle Road, Ambalangoda, Heppumulla, Galle, Southern, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Ambalangoda, Southern, Sri Lanka"
+  ]
 }

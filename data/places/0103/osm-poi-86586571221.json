@@ -6,7 +6,8 @@
     "longitude": 79.907368
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Amenity: Restaurant"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,15 @@
     "subclass": "restaurant",
     "names": [
       "Hotel Aubrona"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "No: 81, New road Hunnupitiya, Wattala 11300, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Kiribathgoda-Hunupitiya Road, Hunupitiya, Dippitigoda, Kelaniya, Gampaha, Western, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

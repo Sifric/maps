@@ -6,7 +6,9 @@
     "longitude": 81.022131
   },
   "categories": [
-    "Buddhist"
+    "Buddhist",
+    "Archaeological Site",
+    "Amenity: Place Of Worship"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,10 @@
     "subclass": "buddhist",
     "names": [
       "Rangiri Viharaya"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Hambanthota"
 }

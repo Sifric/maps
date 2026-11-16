@@ -6,7 +6,8 @@
     "longitude": 80.528868
   },
   "categories": [
-    "Shoes"
+    "Shoes",
+    "Shop: Shoes"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,16 @@
     "class": "shop",
     "subclass": "shoes",
     "names": [
-      "DSI- Kalawewa"
+      "DSI- Kalawewa",
+      "DSI - Kalawewa"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Walawwegama, Ipalogama, Anuradhapura, North Central, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ]
 }

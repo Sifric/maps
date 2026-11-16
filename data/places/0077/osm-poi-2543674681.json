@@ -6,7 +6,11 @@
     "longitude": 80.059492
   },
   "categories": [
-    "Fuel station"
+    "Fuel station",
+    "Travel and Transportation > Fuel Station",
+    "Business and Professional Services > Automotive Service > Car Wash and Detail",
+    "Fuel",
+    "No"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +21,14 @@
     "subclass": "fuel",
     "names": [
       "Lanka Filling Station"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Sri Somananda mawatha, Horana, Horana South, Kalutara, Western, Sri Lanka"
+  ]
 }

@@ -6,7 +6,8 @@
     "longitude": 81.216307
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Dining and Drinking > Restaurant > Seafood Restaurant"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,17 @@
     "class": "restaurant",
     "subclass": "restaurant",
     "names": [
-      "Ceylon Seafood Cafe -CSC"
+      "Ceylon Seafood Cafe -CSC",
+      "Ceylon Seafood Cafe - CSC"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Alles Garden, Uppaveli, Tricomalle, Abayapura, Town & Gravets, Trincomalee, Eastern, Sri Lanka",
+    "12 Ales Garden, Trincomalee, Sri Lanka"
+  ]
 }

@@ -9,7 +9,12 @@
     "Bar",
     "Indian restaurant",
     "Thai restaurant",
-    "Western restaurant"
+    "Western restaurant",
+    "Dining and Drinking > Restaurant > Gastropub",
+    "Dining and Drinking > Bar > Pub",
+    "Dining and Drinking > Restaurant > Asian Restaurant",
+    "Overture Maps",
+    "Restaurant"
   ],
   "address": "475/C Sri Jayawardenepura Mawatha, Sri Jayawardenepura Kotte 10100",
   "phone": "0112888686",
@@ -59,5 +64,15 @@
       ]
     }
   ],
-  "id": "01M6Q62N6NP2NBKWBN8V6MZHVC"
+  "id": "01M6Q62N6NP2NBKWBN8V6MZHVC",
+  "alternate_addresses": [
+    "475, Sri Jayewardenepura Kotte, Western Province, Sri Lanka",
+    "475/C Sri Jayawardenepura Mawatha, Sri Jayewardenepura Kotte, 10100, Sri Lanka"
+  ],
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  }
 }

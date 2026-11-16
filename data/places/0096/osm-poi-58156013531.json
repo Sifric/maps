@@ -6,7 +6,9 @@
     "longitude": 81.051802
   },
   "categories": [
-    "Massage"
+    "Massage",
+    "Overture Maps",
+    "Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,16 @@
     "class": "shop",
     "subclass": "massage",
     "names": [
-      "nilara resort"
+      "nilara resort",
+      "Nilara Resort"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "No 25, Grand View, Passara Road, Ella, Ella, 2143, Sri Lanka"
+  ]
 }

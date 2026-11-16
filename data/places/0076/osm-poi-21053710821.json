@@ -6,7 +6,9 @@
     "longitude": 79.865161
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Travel and Transportation > Lodging > Hotel",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,16 @@
     "subclass": "hotel",
     "names": [
       "Shalimar Hotel"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Wanathamulla, Thimbirigasyaya, Colombo, Western, Sri Lanka",
+    "46 Panchikawatte Road, Colombo, 00100, Sri Lanka",
+    "Maradana 46, Panchikawatta Rd, Colombo, 00100, Sri Lanka"
+  ]
 }

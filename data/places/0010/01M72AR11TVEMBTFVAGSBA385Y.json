@@ -7,7 +7,10 @@
   "address": "149/2, Galle Rd, Colombo",
   "categories": [
     "Public sector bank",
-    "ATM"
+    "ATM",
+    "Amenity: Bank",
+    "Bank",
+    "Business and Professional Services > Financial Service > Banking and Finance > Bank"
   ],
   "phone": "0112588941",
   "hours": [
@@ -55,5 +58,18 @@
     }
   ],
   "business_status": "OPEN",
-  "id": "01M72AR11TVEMBTFVAGSBA385Y"
+  "id": "01M72AR11TVEMBTFVAGSBA385Y",
+  "alternate_addresses": [
+    "Galle Road",
+    "Galle Road, Wellawatta North, Thimbirigasyaya, Colombo, Western, Sri Lanka",
+    "Wellawatta, Western Province, Sri Lanka"
+  ],
+  "source": {
+    "names": [
+      "Bank of Ceylon"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  }
 }

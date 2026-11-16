@@ -6,7 +6,9 @@
     "longitude": 80.101469
   },
   "categories": [
-    "Cafe"
+    "Cafe",
+    "Coffee",
+    "Dining and Drinking > Cafe, Coffee, and Tea House > Café"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,17 @@
     "class": "cafe",
     "subclass": "cafe",
     "names": [
-      "MM's Crepes"
+      "MM's Crepes",
+      "Mm's Crepes"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Wavulagoda East, Hikkaduwa, Galle, Southern, Sri Lanka",
+    "Hikkaduwa, Southern Province, Sri Lanka"
+  ]
 }

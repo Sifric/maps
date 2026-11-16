@@ -6,7 +6,8 @@
     "longitude": 79.935949
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Amenity: Restaurant"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,19 @@
     "subclass": "restaurant",
     "names": [
       "Niro"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "hours": [
+    {
+      "day": "Hours (OSM format)",
+      "times": [
+        "06:00-22:30"
+      ]
+    }
+  ],
+  "address": "Batapotha, Kaduwela, Colombo, Western, Sri Lanka",
+  "business_status": "OPERATIONAL"
 }

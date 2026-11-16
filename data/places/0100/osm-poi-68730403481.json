@@ -6,7 +6,9 @@
     "longitude": 79.896559
   },
   "categories": [
-    "Car"
+    "Car",
+    "Overture Maps",
+    "Auto Dealer"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,17 @@
     "class": "car",
     "subclass": "car",
     "names": [
-      "Automac Motors"
+      "Automac Motors",
+      "Automac motors"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Pagoda Road, Nawala East, Sri Jayawardanapura Kotte, Colombo, Western, Sri Lanka",
+    "No62 Pagoda Rd, Sri Jayewardenepura Kotte, 101000, Sri Lanka"
+  ]
 }

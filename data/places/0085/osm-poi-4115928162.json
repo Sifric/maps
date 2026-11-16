@@ -6,7 +6,9 @@
     "longitude": 80.008503
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Banquet hall",
+    "Business and Professional Services > Convention Center"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,18 @@
     "class": "lodging",
     "subclass": "hotel",
     "names": [
-      "Pabavee reception hall"
+      "Pabavee reception hall",
+      "Pabavee Reception Hall"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Gampaha, Sri Lanka",
+  "alternate_addresses": [
+    "Mudungoda North, Gampaha, Western, Sri Lanka",
+    "Gampaha, Western, Sri Lanka",
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

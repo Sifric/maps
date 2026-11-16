@@ -5,7 +5,10 @@
     "longitude": 80.7847367
   },
   "categories": [
-    "Dessert restaurant"
+    "Dessert restaurant",
+    "Amenity: Restaurant",
+    "Restaurant",
+    "Overture Maps"
   ],
   "address": "XQ2M+RVX, Peradeniya-Badulla-Chenkaladi Hwy, Nuwara Eliya 22200",
   "phone": "0773757787",
@@ -54,5 +57,16 @@
       ]
     }
   ],
-  "id": "01M6Q63861YGS2K3Q5F60ZVNXE"
+  "id": "01M6Q63861YGS2K3Q5F60ZVNXE",
+  "alternate_addresses": [
+    "Nuwara Eliya",
+    "Nuwara Eliya, Magasthota, Central, Sri Lanka",
+    "Peradeniya-Badulla-Chenkaladi Hwy, Nuwara Eliya, 22200, Sri Lanka"
+  ],
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  }
 }

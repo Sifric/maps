@@ -6,7 +6,9 @@
     "longitude": 79.935815
   },
   "categories": [
-    "Supermarket"
+    "Supermarket",
+    "Overture Maps",
+    "Grocery Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "supermarket",
     "names": [
       "Upeka Super"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Paligedara, Kesbewa, Colombo, Western, Sri Lanka",
+    "No.140, Mampe North, 10300, Sri Lanka"
+  ]
 }

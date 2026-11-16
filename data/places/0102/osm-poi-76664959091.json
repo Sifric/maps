@@ -6,7 +6,9 @@
     "longitude": 80.99863
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Hotel",
+    "Place"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,16 @@
     "subclass": "restaurant",
     "names": [
       "Lake Front Rest"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "A6, Kantale, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Kantale Town, Kantale, Trincomalee, Eastern, Sri Lanka",
+    "Kandy Road, Kanthale, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

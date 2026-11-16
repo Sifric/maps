@@ -6,7 +6,10 @@
   },
   "categories": [
     "Indian restaurant",
-    "Restaurant"
+    "Restaurant",
+    "Amenity: Restaurant",
+    "Fine Dining",
+    "Overture Maps"
   ],
   "address": "Grand Hotel Road, Nuwara 22200",
   "phone": "0522222881",
@@ -63,5 +66,16 @@
       ]
     }
   ],
-  "id": "01M6Q638CA3F8E7W5QBP01FMXW"
+  "id": "01M6Q638CA3F8E7W5QBP01FMXW",
+  "alternate_addresses": [
+    "Nuwara Eliya",
+    "Nuwara Eliya, Nuwaraeliya, Central, Sri Lanka",
+    "Grand Hotel Rd, Nuwara Eliya, 22200, Sri Lanka"
+  ],
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  }
 }

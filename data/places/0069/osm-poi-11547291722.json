@@ -6,7 +6,8 @@
     "longitude": 80.125474
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,15 @@
     "subclass": "hotel",
     "names": [
       "Bachmann Villa"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Dodanduwa, Katukoliha, Rathgama, Galle, Southern, Sri Lanka",
+    "No. 5/4 Custom Road, Dodanduwa, 80250, Sri Lanka"
+  ]
 }

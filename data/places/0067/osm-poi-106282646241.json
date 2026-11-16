@@ -6,7 +6,9 @@
     "longitude": 81.048728
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Tourism: Guest House",
+    "Guest Houses"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,14 @@
     "subclass": "restaurant",
     "names": [
       "Dream Cafe"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "ELLA",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

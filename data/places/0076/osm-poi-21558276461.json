@@ -6,7 +6,9 @@
     "longitude": 80.358462
   },
   "categories": [
-    "School"
+    "School",
+    "LC",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "school",
     "names": [
       "Neluwa National School"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Tawalama, Galle, 3.Southern, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Mavita East, Neluwa, Galle, Southern, Sri Lanka",
+    "B411, Neluwa, Sri Lanka"
+  ]
 }

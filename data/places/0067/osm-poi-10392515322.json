@@ -6,7 +6,8 @@
     "longitude": 80.696152
   },
   "categories": [
-    "School"
+    "School",
+    "Amenity: School"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,16 @@
     "class": "school",
     "subclass": "school",
     "names": [
-      "sri subramaniyam vidyalayam"
+      "sri subramaniyam vidyalayam",
+      "Sri Subramaniyam Vidyalayam"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Puthukudiyiruppu West, Puthukkudiyiruppu, Mullaitivu, Northern, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ]
 }

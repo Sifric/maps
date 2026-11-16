@@ -6,7 +6,10 @@
     "longitude": 80.216723
   },
   "categories": [
-    "Ice cream"
+    "Ice cream",
+    "Dining and Drinking > Dessert Shop > Ice Cream Parlor",
+    "Overture Maps",
+    "Ice Cream Shop"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,16 @@
     "subclass": "ice_cream",
     "names": [
       "Pedlar's Inn Gelato"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Osanagoda, Galle 4 Gravets, Galle, Southern, Sri Lanka",
+    "92 Pedlar Street, Galle Fort, Galle, Southern Province, 80000, Sri Lanka",
+    "63 Pedlar St, Galle, 80000, Sri Lanka"
+  ]
 }

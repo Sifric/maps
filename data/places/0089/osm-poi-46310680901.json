@@ -6,7 +6,9 @@
     "longitude": 79.857565
   },
   "categories": [
-    "Electronics"
+    "Electronics",
+    "Office equipment supplier",
+    "Shop: Electronics"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,62 @@
     "class": "shop",
     "subclass": "electronics",
     "names": [
-      "Business Machines co. (PVT) Ltd."
+      "Business Machines co. (PVT) Ltd.",
+      "Business Machines Co. (Pvt) Ltd",
+      "Business Machines co. (PVT) Ltd"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "1 Lake Dr, Colombo 00200, Sri Lanka",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8:30 AM–4:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8:30 AM–4:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8:30 AM–4:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8:30 AM–4:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8:30 AM–4:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8:30 AM–4:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8:30 AM–4:30 PM"
+      ]
+    }
+  ],
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Lake Crescent, Ibbanwala, Colombo, Western, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

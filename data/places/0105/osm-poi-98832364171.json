@@ -6,7 +6,9 @@
     "longitude": 80.053859
   },
   "categories": [
-    "Fast food restaurant"
+    "Fast food restaurant",
+    "Fast Food",
+    "Dining and Drinking > Restaurant"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,17 @@
     "class": "fast_food",
     "subclass": "fast_food",
     "names": [
-      "sisara"
+      "sisara",
+      "Sisara"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Pattalagedara, Attanagalla, Gampaha, Western, Sri Lanka",
+    "Veyangoda, Western Province, 11100, Sri Lanka"
+  ]
 }

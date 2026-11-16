@@ -11,7 +11,11 @@
     "Brunch restaurant",
     "Coffee shop",
     "Lunch restaurant",
-    "Surf shop"
+    "Surf shop",
+    "Amenity: Cafe",
+    "Restaurant",
+    "Dining and Drinking > Cafe, Coffee, and Tea House > Café",
+    "Overture Maps"
   ],
   "phone": "0777792647",
   "website": "http://www.saltyswamis.com/",
@@ -59,6 +63,19 @@
       ]
     }
   ],
-  "business_status": "OPEN",
-  "id": "01M72B77EHRQR87PJ6VSK3WM0V"
+  "business_status": "OPERATIONAL",
+  "id": "01M72B77EHRQR87PJ6VSK3WM0V",
+  "alternate_addresses": [
+    "542, Galle Road",
+    "Galle Road, Wavulagoda East, Hikkaduwa, Galle, Southern, Sri Lanka",
+    "Colombo-Galle Road, Wavulagoda East, Hikkaduwa, Galle, Southern, Sri Lanka",
+    "Hikkaduwa, Southern Province, Sri Lanka",
+    "Wawela, 542 Galle Rd, Wewala, 80244, Sri Lanka"
+  ],
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  }
 }

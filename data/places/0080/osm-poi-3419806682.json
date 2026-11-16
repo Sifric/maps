@@ -6,7 +6,10 @@
     "longitude": 79.842287
   },
   "categories": [
-    "Bank"
+    "Bank",
+    "Business and Professional Services > Financial Service > Banking and Finance > Bank",
+    "Overture Maps",
+    "Bank Or Credit Union"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,16 @@
     "class": "bank",
     "subclass": "bank",
     "names": [
-      "Central Bank of Sri lanka"
+      "Central Bank of Sri lanka",
+      "Central Bank of Sri Lanka"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Colombo 01, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Janadhipathi Mawatha 30, Colombo, 01, Sri Lanka"
+  ]
 }

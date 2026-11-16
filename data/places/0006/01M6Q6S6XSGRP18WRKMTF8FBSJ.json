@@ -5,7 +5,9 @@
     "longitude": 80.3604108
   },
   "categories": [
-    "Pharmacy"
+    "Pharmacy",
+    "Amenity: Pharmacy",
+    "Retail > Pharmacy"
   ],
   "address": "No. 05 Bauddhaloka Mawatha, Kurunegala",
   "phone": "0372223103",
@@ -54,5 +56,17 @@
       ]
     }
   ],
-  "id": "01M6Q6S6XSGRP18WRKMTF8FBSJ"
+  "id": "01M6Q6S6XSGRP18WRKMTF8FBSJ",
+  "alternate_addresses": [
+    "Kurunegala, Sri Lanka",
+    "Bauddhaloka Mawatha, Kurunegala",
+    "Bauddhaloka Mawatha, Kurunegala, Kurunegala Town - West, North Western, Sri Lanka",
+    "Nawinna Junction, Kurunegala, North Western, Sri Lanka"
+  ],
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  }
 }

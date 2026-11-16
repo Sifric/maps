@@ -5,12 +5,14 @@
     "longitude": 79.8585277
   },
   "categories": [
-    "Southeast Asian restaurant"
+    "Southeast Asian restaurant",
+    "Restaurant",
+    "Overture Maps"
   ],
   "address": "50 Park St, Colombo 00200",
   "phone": "0763067882",
   "website": "http://www.monsooncolombo.com/",
-  "business_status": "OPEN",
+  "business_status": "OPERATIONAL",
   "hours": [
     {
       "day": "Monday",
@@ -55,5 +57,15 @@
       ]
     }
   ],
-  "id": "01M6Q62M8J8D2ZNAV0YA12G58Z"
+  "id": "01M6Q62M8J8D2ZNAV0YA12G58Z",
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  },
+  "alternate_addresses": [
+    "Park Street, Ibbanwala, Colombo, Western, Sri Lanka",
+    "50 Park St, Colombo, 00200, Sri Lanka"
+  ]
 }

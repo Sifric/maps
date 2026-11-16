@@ -10,7 +10,8 @@
     "Catering food and drink supplier",
     "Caterer",
     "Fast food restaurant",
-    "Restaurant"
+    "Restaurant",
+    "Amenity: Restaurant"
   ],
   "address": "yosuf building, No. 52 New Bazar Street, Nuwara Eliya 22200",
   "phone": "0773748936",
@@ -59,5 +60,17 @@
       ]
     }
   ],
-  "id": "01M6Q638RSHJBA8QW4XT6GJ7P5"
+  "id": "01M6Q638RSHJBA8QW4XT6GJ7P5",
+  "alternate_addresses": [
+    "52, New Bazaar Rd, Nuwara Eliya",
+    "New Bazaar Rd, Nuwara Eliya, Nuwaraeliya, Central, Sri Lanka"
+  ],
+  "source": {
+    "names": [
+      "Ambaal's pure vegetarian Hotel & Restaurant"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  }
 }

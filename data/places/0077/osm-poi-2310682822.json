@@ -6,7 +6,12 @@
     "longitude": 79.861073
   },
   "categories": [
-    "Theme park"
+    "Theme park",
+    "Amenity: Cinema",
+    "Cinema",
+    "Arts and Entertainment > Arcade",
+    "Overture Maps",
+    "Bowling Alley"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +22,18 @@
     "subclass": "theme_park",
     "names": [
       "Excel World"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "No.338, T.B. Jaya Mawatha",
+  "alternate_addresses": [
+    "T.B. Jaya Mawatha, Colombo 10, Ibbanwala, Colombo, Western, Sri Lanka",
+    "T.B. Jaya Mawatha, Ibbanwala, Colombo, Western, Sri Lanka",
+    "338, T.B Jayah Mw., Colombo, Western Province, 01000, Sri Lanka",
+    "Excel World, Colombo, Sri Lanka",
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

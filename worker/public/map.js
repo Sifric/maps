@@ -254,9 +254,12 @@ function stylePlaces(style) {
 }
 async function searchIndex() {
   if (!indexPromise)
-    indexPromise = fetch("/assets/places-search.json").then((r) => {
+    indexPromise = fetch("/assets/places-search.json.gz").then(async (r) => {
       if (!r.ok) throw Error("Place search could not be loaded");
-      return r.json();
+      if (typeof DecompressionStream === "undefined")
+        throw Error("This browser cannot decompress the place search index");
+      const stream = r.body.pipeThrough(new DecompressionStream("gzip"));
+      return new Response(stream).json();
     });
   return indexPromise;
 }

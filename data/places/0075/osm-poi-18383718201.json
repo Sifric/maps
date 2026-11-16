@@ -6,7 +6,11 @@
     "longitude": 79.883802
   },
   "categories": [
-    "Bank"
+    "Bank",
+    "Amenity: Bank",
+    "Business and Professional Services > Financial Service > Banking and Finance > Bank",
+    "Overture Maps",
+    "Bank Or Credit Union"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +21,16 @@
     "subclass": "bank",
     "names": [
       "HNB"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Kohuwala",
+  "alternate_addresses": [
+    "Kohuwala, Dutugemunu, Dehiwala, Colombo, Western, Sri Lanka",
+    "Pietersz Pl., Nugegoda, Western Province, 10250, Sri Lanka",
+    "Pietersz Pl., Dehiwala-Mount Lavinia, 10250, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

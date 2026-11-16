@@ -6,7 +6,12 @@
     "longitude": 79.703788
   },
   "categories": [
-    "Convenience"
+    "Convenience",
+    "Greengrocer",
+    "Supermarket",
+    "Post office",
+    "Marketplace",
+    "Retail > Market"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +22,11 @@
     "subclass": "convenience",
     "names": [
       "Market"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL"
 }

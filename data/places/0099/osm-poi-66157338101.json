@@ -6,7 +6,9 @@
     "longitude": 79.900174
   },
   "categories": [
-    "Aquarium"
+    "Aquarium",
+    "Overture Maps",
+    "Aquatic Pet Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,17 @@
     "class": "aquarium",
     "subclass": "aquarium",
     "names": [
-      "AQUA ZONE"
+      "AQUA ZONE",
+      "Aqua Zone"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Katukurunda South, Moratuwa, Colombo, Western, Sri Lanka",
+    "NO.62 Gall rd, Pallimulla, 12550, Sri Lanka"
+  ]
 }

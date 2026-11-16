@@ -5,7 +5,12 @@
     "longitude": 79.8451669
   },
   "categories": [
-    "Buffet restaurant"
+    "Buffet restaurant",
+    "Amenity: Restaurant",
+    "Fine Dining",
+    "Restaurant",
+    "Dining and Drinking > Restaurant > Buffet",
+    "Overture Maps"
   ],
   "address": "Lobby Level, Colombo 00200",
   "phone": "0112492492",
@@ -55,5 +60,17 @@
       ]
     }
   ],
-  "id": "01M6Q62K95HF15W6ECFCVAVWWD"
+  "id": "01M6Q62K95HF15W6ECFCVAVWWD",
+  "alternate_addresses": [
+    "2, Sir Chittampalam A Gardiner Mawatha",
+    "Sir Chittampalam A Gardiner Mawatha, Fort, Colombo, Western, Sri Lanka",
+    "Colombo, Western Province, 00100, Sri Lanka",
+    "Lobby Level, Colombo, 00200, Sri Lanka"
+  ],
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  }
 }

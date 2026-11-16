@@ -6,7 +6,9 @@
     "longitude": 79.86721
   },
   "categories": [
-    "Atm"
+    "Atm",
+    "Business and Professional Services > Financial Service > Banking and Finance > ATM",
+    "Bank"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,14 @@
     "subclass": "atm",
     "names": [
       "Sampath ATM"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Wanathamulla, Thimbirigasyaya, Colombo, Western, Sri Lanka"
+  ]
 }

@@ -6,7 +6,14 @@
     "longitude": 79.865359
   },
   "categories": [
-    "Department store"
+    "Department store",
+    "Supermarket",
+    "Clothes",
+    "Retail > Fashion Retail > Men's Store",
+    "Retail > Fashion Retail > Clothing Store",
+    "Retail > Shopping Mall",
+    "Retail > Department Store",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +23,19 @@
     "class": "grocery",
     "subclass": "department_store",
     "names": [
-      "ODEL"
+      "ODEL",
+      "Odel"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Alexandra Place, Colombo 07, Ibbanwala, Colombo, Western, Sri Lanka",
+    "Ibbanwala, Colombo, Western, Sri Lanka",
+    "No. 5, Alexandra Place, Colombo, Western Province, 00700, Sri Lanka",
+    "05 Alexandra Pl, Colombo, 00700, Sri Lanka"
+  ]
 }

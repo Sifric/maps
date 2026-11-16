@@ -6,7 +6,11 @@
     "longitude": 79.858316
   },
   "categories": [
-    "School"
+    "School",
+    "Amenity: School",
+    "Community and Government > Education > College and University",
+    "Overture Maps",
+    "College University"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +20,18 @@
     "class": "school",
     "subclass": "school",
     "names": [
-      "Al - Hikma College"
+      "Al - Hikma College",
+      "Al Hikma College"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Masangasweediya, Colombo, Western, Sri Lanka",
+    "65, St. Sebestian Street, Colombo, Sri Lanka, Colombo, Western Province, 11120, Sri Lanka",
+    "65 St Sebastian St, Colombo, 0013, Sri Lanka"
+  ]
 }

@@ -6,7 +6,10 @@
     "longitude": 79.993118
   },
   "categories": [
-    "Cinema"
+    "Cinema",
+    "Arts and Entertainment > Movie Theater",
+    "Overture Maps",
+    "Movie Theater"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,19 @@
     "class": "cinema",
     "subclass": "cinema",
     "names": [
-      "PUBLIC HALL"
+      "PUBLIC HALL",
+      "Public HALL",
+      "Public Hall"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Medagama II, Gampaha, Western, Sri Lanka",
+    "Eriyawetiya Public Cemetery Rd., Gampaha, Western Province, Sri Lanka",
+    "Eriyawetiya Public Cemetery Rd., Medagama II, Sri Lanka"
+  ]
 }

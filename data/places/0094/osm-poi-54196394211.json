@@ -6,7 +6,9 @@
     "longitude": 80.169634
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Tourism: Hotel",
+    "Travel and Transportation > Lodging > Bed and Breakfast"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,16 @@
     "subclass": "hotel",
     "names": [
       "Bara Beach Home"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "A2, Boossa, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "97, Galle Road, Pitiwella, 80000 Galle, Kadurupe, Rathgama, Galle, Southern, Sri Lanka",
+    "97, Galle Road, Pitiwella, Galle, Galle, 80000, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

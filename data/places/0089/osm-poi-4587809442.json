@@ -6,7 +6,8 @@
     "longitude": 80.065371
   },
   "categories": [
-    "School"
+    "School",
+    "Amenity: School"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,16 @@
     "class": "school",
     "subclass": "school",
     "names": [
-      "J - Kopay Christian College"
+      "J - Kopay Christian College",
+      "J/Kopay Christian College"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Kopai Centre, Valikamam East (Kopay), Jaffna, Northern, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ]
 }

@@ -5,7 +5,9 @@
     "longitude": 79.8546195
   },
   "categories": [
-    "Supermarket"
+    "Supermarket",
+    "Retail > Food and Beverage Retail > Grocery Store",
+    "Retail > Bookstore"
   ],
   "address": "Majestic City, 10 Station Road, Colombo 00400",
   "phone": "0112501022",
@@ -55,5 +57,14 @@
       ]
     }
   ],
-  "id": "01M6Q6RR5NS0C6KG4XJG9Y22RG"
+  "id": "01M6Q6RR5NS0C6KG4XJG9Y22RG",
+  "alternate_addresses": [
+    "Majestic City, Colombo, Western Province, 00400, Sri Lanka"
+  ],
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  }
 }

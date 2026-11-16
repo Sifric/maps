@@ -6,7 +6,8 @@
     "longitude": 80.105304
   },
   "categories": [
-    "Cafe"
+    "Cafe",
+    "Dining and Drinking > Bar > Beach Bar"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,17 @@
     "class": "cafe",
     "subclass": "cafe",
     "names": [
-      "spunky monkey"
+      "spunky monkey",
+      "Spunky Monkey"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Wavulagoda East, Hikkaduwa, Galle, Southern, Sri Lanka",
+    "Hikkaduwa, Southern Province, Sri Lanka"
+  ]
 }

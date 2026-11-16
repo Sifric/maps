@@ -6,9 +6,22 @@
   },
   "categories": [
     "Hospital",
-    "Clinic"
+    "Clinic",
+    "Amenity: Hospital",
+    "Healthcare: Hospital"
   ],
   "address": "Thasim chest clinic,Wakwella road,Galle",
   "phone": "912234196",
-  "id": "01M72DVHNEYS9E696JRF4TD6VQ"
+  "id": "01M72DVHNEYS9E696JRF4TD6VQ",
+  "alternate_addresses": [
+    "Thasim chest clinic, Wakwella road, Galle",
+    "Osanagoda, Galle 4 Gravets, Galle, Southern, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL",
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  }
 }

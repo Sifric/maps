@@ -6,7 +6,10 @@
     "longitude": 79.897406
   },
   "categories": [
-    "Car"
+    "Car",
+    "Shop: Car",
+    "Overture Maps",
+    "Auto Dealer"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,16 @@
     "subclass": "car",
     "names": [
       "Gimsara Motors"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "172, Stanley Thilakarathne Mawatha, Nugegoda",
+    "Stanley Thilakarathne Mawatha, Nugegoda, Gangodavila East, Sri Jayawardanapura Kotte, Colombo, Western, Sri Lanka",
+    "172 Stanley Tilakaratne Mawatha, Sri Jayewardenepura Kotte, 10250, Sri Lanka"
+  ]
 }

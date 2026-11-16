@@ -6,7 +6,10 @@
     "longitude": 80.549129
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Travel and Transportation > Lodging > Resort",
+    "Overture Maps",
+    "Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "restaurant",
     "names": [
       "Urban Castle"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Colombo-Kandy Road, Pilimathalawa, Ilukwatta, Yatinuwara, Kandy, Central, Sri Lanka",
+    "RDT Center Road, Central Province, 2, 20450, Sri Lanka"
+  ]
 }

@@ -6,7 +6,9 @@
     "longitude": 80.02671
   },
   "categories": [
-    "School"
+    "School",
+    "Overture Maps",
+    "College University"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,17 @@
     "class": "school",
     "subclass": "school",
     "names": [
-      "St.John's College Jaffna"
+      "St.John's College Jaffna",
+      "St John's College Jaffna"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Jaffna Town West, Jaffna, Northern, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Main Street, Jaffna, 40000, Sri Lanka",
+    "Sri Lanka"
+  ]
 }

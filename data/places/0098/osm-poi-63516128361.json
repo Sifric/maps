@@ -6,7 +6,9 @@
     "longitude": 80.241206
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Tourism: Hotel",
+    "Travel and Transportation > Lodging > Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,16 @@
     "subclass": "hotel",
     "names": [
       "Agnus Luxury Villa"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Bonavista Rd, Unawatuna 80600, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Dewata, Galle 4 Gravets, Galle, Southern, Sri Lanka",
+    "Unawatuna, Southern Province, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

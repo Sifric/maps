@@ -6,7 +6,10 @@
     "longitude": 80.385032
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Tourism: Hotel",
+    "Travel and Transportation > Lodging > Hotel",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,16 @@
     "subclass": "hotel",
     "names": [
       "Hotel Elephant Bay"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Kegalle-Rambukkana Road, Rambukkana 71100, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Karandupana-Rambukkana Road, Pinnawela, Kotagama, Rambukkana, Kegalle, Sabaragamuwa, Sri Lanka",
+    "Yodhagama, 71100, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

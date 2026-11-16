@@ -6,7 +6,9 @@
     "longitude": 79.843065
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Overture Maps",
+    "Bed And Breakfast"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "hotel",
     "names": [
       "Binnacle Negombo"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "22A, Porutota By Road, Ettukala, Negombo 11500, Wellaweediya, Negombo, Gampaha, Western, Sri Lanka",
+    "22A Porutota By Road, Negombo, 11500, Sri Lanka"
+  ]
 }

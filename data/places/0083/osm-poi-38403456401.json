@@ -6,7 +6,9 @@
     "longitude": 80.523509
   },
   "categories": [
-    "Government"
+    "Government",
+    "Overture Maps",
+    "Government Office"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,17 @@
     "class": "office",
     "subclass": "government",
     "names": [
-      "Magistrate Court-Galagedara"
+      "Magistrate Court-Galagedara",
+      "Magistrate Court Galagedara",
+      "Magistrate Court - Galagedara"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Galagedara West, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ]
 }

@@ -6,7 +6,13 @@
     "longitude": 79.865837
   },
   "categories": [
-    "Fuel station"
+    "Fuel station",
+    "Supermarket",
+    "Wholesale",
+    "Retail > Food and Beverage Retail > Grocery Store",
+    "Fuel",
+    "Retail > Food and Beverage Retail > Supermarket",
+    "Travel and Transportation > Fuel Station"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +23,15 @@
     "subclass": "fuel",
     "names": [
       "Laugfs"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Sri Sambuddhathva Jayanthi Mawatha, Havelock Town, Wellawatta North, Thimbirigasyaya, Colombo, Western, Sri Lanka",
+    "Sri Sambuddhathva Jayanthi Mawatha, Colombo, Western Province, Sri Lanka"
+  ]
 }

@@ -6,7 +6,10 @@
     "longitude": 81.058947
   },
   "categories": [
-    "Bank"
+    "Bank",
+    "Business and Professional Services > Financial Service > Banking and Finance > Bank",
+    "Overture Maps",
+    "Bank Or Credit Union"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "bank",
     "names": [
       "Union Bank"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Badulla, Hingurugamuwa, Uva, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "No 81, Badulla, UVA, 90000, Sri Lanka",
+    "81 Bank Road, Badulla, 9000, Sri Lanka"
+  ]
 }

@@ -6,7 +6,11 @@
     "longitude": 80.796617
   },
   "categories": [
-    "Guest house"
+    "Guest house",
+    "Tourism: Guest House",
+    "Travel and Transportation > Lodging > Bed and Breakfast",
+    "Overture Maps",
+    "Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +21,18 @@
     "subclass": "guest_house",
     "names": [
       "Sanorich Villa"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "No : 46, Parakrama Rd, Tangalle 82200, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Palathuduwa, Tangalle, Hambantota, Southern, Sri Lanka",
+    "Polommaruwa South, Tangalle, Hambantota, Southern, Sri Lanka",
+    "Tangalle, Southern, Sri Lanka",
+    "Parakrama Road 46, Medaketiya, 82200, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

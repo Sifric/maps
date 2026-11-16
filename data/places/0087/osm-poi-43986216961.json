@@ -6,7 +6,8 @@
     "longitude": 80.389146
   },
   "categories": [
-    "Bus stop"
+    "Bus stop",
+    "School"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,14 @@
     "subclass": "bus_stop",
     "names": [
       "Pinnawala National School"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Karandupana-Rambukkana Road, pinnawala, Koorempola, Rambukkana, Kegalle, Sabaragamuwa, Sri Lanka"
+  ]
 }

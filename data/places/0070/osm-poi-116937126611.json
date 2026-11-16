@@ -6,7 +6,8 @@
     "longitude": 81.52555
   },
   "categories": [
-    "Furniture"
+    "Furniture",
+    "Shop: Furniture"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,22 @@
     "subclass": "furniture",
     "names": [
       "Mazahiraz Furniture Show Room"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "hours": [
+    {
+      "day": "Hours (OSM format)",
+      "times": [
+        "08:30-20:00"
+      ]
+    }
+  ],
+  "address": "Oddamavadi 01 North, Koralai Pattu West, Batticaloa, Eastern, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ]
 }

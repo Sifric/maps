@@ -6,7 +6,9 @@
     "longitude": 79.864587
   },
   "categories": [
-    "Cafe"
+    "Cafe",
+    "Dining and Drinking > Restaurant > Fast Food Restaurant",
+    "Dining and Drinking > Cafeteria"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,14 @@
     "subclass": "cafe",
     "names": [
       "The Chariot"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Dehiwala, Dehiwala West, Colombo, Western, Sri Lanka"
+  ]
 }

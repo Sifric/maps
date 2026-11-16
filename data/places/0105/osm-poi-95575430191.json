@@ -6,7 +6,10 @@
     "longitude": 81.263981
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Tourism: Hotel",
+    "Travel and Transportation > Lodging > Hotel",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,17 @@
     "subclass": "hotel",
     "names": [
       "Hotel River Front"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "553/3A Gangasiripura, Debarawewa, Tissamaharama Yala, 82600, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Gangasiripura, Polgahawelena, Thissamaharama, Hambantota, Southern, Sri Lanka",
+    "553/3 A Gangasiripura, Debarawewa, Tissa, Sri Lanka",
+    "553/3A Gangasiripura, Debarawewa, Tissamaharama Yala, Hambantota District, 3, 82600, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

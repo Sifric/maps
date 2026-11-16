@@ -6,7 +6,8 @@
     "longitude": 80.072254
   },
   "categories": [
-    "Post office"
+    "Post office",
+    "Amenity: Post Office"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,22 @@
     "subclass": "post_office",
     "names": [
       "Kuleegoda Sub Post Office"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "hours": [
+    {
+      "day": "Hours (OSM format)",
+      "times": [
+        "8 AM-12 PM, 1-5 PM Tuesday 8 AM-12 PM, 1-5 PM Wednesday 8 AM-12 PM, 1-5 PM Thursday 8 AM-12 PM, 1-5 PM Friday 8 AM-12 PM, 1-5 PM Saturday 8 AM-12 PM, 1-5 PM Suggest new hours"
+      ]
+    }
+  ],
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Aluthwala Road, Kuleegoda, Ambalangoda, Galagoda East, Madampagama, Galle, Southern, Sri Lanka"
+  ]
 }

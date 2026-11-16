@@ -6,7 +6,9 @@
     "longitude": 80.638849
   },
   "categories": [
-    "Diplomatic"
+    "Diplomatic",
+    "Government office",
+    "Office: Diplomatic"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "diplomatic",
     "names": [
       "Office of Assistant High Commissioner of India"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "31 Rajapihilla Mawatha, Kandy 20000, Sri Lanka",
+  "alternate_addresses": [
+    "Rajapihilla Mawatha, Kandy",
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

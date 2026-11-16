@@ -6,7 +6,13 @@
     "longitude": 80.249489
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Dining and Drinking > Restaurant > Bistro",
+    "Travel and Transportation > Lodging > Resort",
+    "Travel and Transportation > Lodging > Hotel > Hotel Pool",
+    "GeoNames",
+    "Feature class S",
+    "HTL"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +23,15 @@
     "subclass": "hotel",
     "names": [
       "Unawatuna Beach Resort"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Unawatuna, 80600, Sri Lanka",
+    "34, 31, 3154, 3154035, Sri Lanka"
+  ]
 }

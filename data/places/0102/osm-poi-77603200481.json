@@ -6,7 +6,8 @@
     "longitude": 80.091351
   },
   "categories": [
-    "Computer"
+    "Computer",
+    "Shop: Computer"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,59 @@
     "subclass": "computer",
     "names": [
       "ZenTech Computers"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "164, High Level Road, Meepe, 10500",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8:30 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8:30 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8:30 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8:30 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8:30 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8:30 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8:30 AM–7:30 PM"
+      ]
+    }
+  ],
+  "alternate_addresses": [
+    "High Level Road, Meepe, Mawathagama West, Seethawaka, Colombo, Western, Sri Lanka",
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

@@ -6,7 +6,9 @@
     "longitude": 79.963394
   },
   "categories": [
-    "Travel agency"
+    "Travel agency",
+    "Overture Maps",
+    "Travel Service"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,16 @@
     "class": "shop",
     "subclass": "travel_agency",
     "names": [
-      "SANJU TOURS"
+      "SANJU TOURS",
+      "Sanju Tours"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "61/1, Kalawana Minuwangoda, Gampaha District, 1, 11550, Sri Lanka"
+  ]
 }

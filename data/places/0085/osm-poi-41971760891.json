@@ -6,7 +6,8 @@
     "longitude": 79.912974
   },
   "categories": [
-    "Car parts"
+    "Car parts",
+    "Retail > Automotive Retail > Car Dealership"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,17 @@
     "class": "car",
     "subclass": "car_parts",
     "names": [
-      "G S Auto Spares"
+      "G S Auto Spares",
+      "G.s Auto Spares"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Dippitigoda, Kelaniya, Gampaha, Western, Sri Lanka",
+    "Colombo-Kandy Highway, Kelaniya, 11160, Sri Lanka"
+  ]
 }

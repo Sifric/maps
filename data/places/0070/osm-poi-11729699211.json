@@ -6,7 +6,14 @@
     "longitude": 81.226199
   },
   "categories": [
-    "Railway station"
+    "Railway station",
+    "Travel and Transportation",
+    "Overture Maps",
+    "Print Media",
+    "Port",
+    "Fishing Harbor",
+    "Public Weather Station",
+    "Public Service Center"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +24,11 @@
     "subclass": "station",
     "names": [
       "Trincomalee"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL"
 }

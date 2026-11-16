@@ -6,7 +6,9 @@
     "longitude": 81.254743
   },
   "categories": [
-    "Park"
+    "Park",
+    "Landmarks and Outdoors > States and Municipalities > Town",
+    "Landmarks and Outdoors > States and Municipalities > City"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,11 @@
     "subclass": "park",
     "names": [
       "Muthur"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL"
 }

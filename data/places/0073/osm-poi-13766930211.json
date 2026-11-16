@@ -6,7 +6,9 @@
     "longitude": 79.856653
   },
   "categories": [
-    "Bank"
+    "Bank",
+    "Overture Maps",
+    "Bank Or Credit Union"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,11 @@
     "subclass": "bank",
     "names": [
       "People's Bank"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "People's Tower, No. 374, Colvin R. De Silva Mawatha, Colombo, 00200, Sri Lanka",
+  "business_status": "OPERATIONAL"
 }

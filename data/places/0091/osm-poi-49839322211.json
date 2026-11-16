@@ -6,7 +6,11 @@
     "longitude": 80.031452
   },
   "categories": [
-    "Fast food restaurant"
+    "Fast food restaurant",
+    "Restaurant",
+    "Travel and Transportation > Lodging > Bed and Breakfast",
+    "Overture Maps",
+    "Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +20,13 @@
     "class": "fast_food",
     "subclass": "fast_food",
     "names": [
-      "palpatha"
+      "palpatha",
+      "Palpatha"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL"
 }

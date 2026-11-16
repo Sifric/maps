@@ -6,7 +6,9 @@
     "longitude": 80.016764
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Overture Maps",
+    "Bakery"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "restaurant",
     "names": [
       "Malwana Bake House"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Malwana Dekatana Road, Malwana, Walgama East, Biyagama, Gampaha, Western, Sri Lanka",
+    "133 Mosque Lane, Western Province, 1, 11672, Sri Lanka"
+  ]
 }

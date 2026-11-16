@@ -6,7 +6,8 @@
     "longitude": 79.855065
   },
   "categories": [
-    "School"
+    "School",
+    "Amenity: School"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,16 @@
     "class": "school",
     "subclass": "school",
     "names": [
-      "St. Anthony 's Balika Vidyalaya"
+      "St. Anthony 's Balika Vidyalaya",
+      "St. Anthony's Balika Vidyalaya"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Ibbanwala, Colombo, Western, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ]
 }

@@ -6,7 +6,10 @@
     "longitude": 79.854367
   },
   "categories": [
-    "Fast food restaurant"
+    "Fast food restaurant",
+    "Amenity: Fast Food",
+    "Fast Food",
+    "Dining and Drinking > Restaurant > Burger Joint"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,29 @@
     "subclass": "fast_food",
     "names": [
       "Street Burger"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "34, Ramya Road, Colombo, 00040",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "11 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "11 AM–12 PM"
+      ]
+    }
+  ],
+  "alternate_addresses": [
+    "Ramya Road, Colombo, Ibbanwala, Thimbirigasyaya, Western, Sri Lanka",
+    "Colombo, Western Province, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

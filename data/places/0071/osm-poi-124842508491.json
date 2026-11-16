@@ -6,7 +6,10 @@
     "longitude": 81.705778
   },
   "categories": [
-    "Ruins"
+    "Ruins",
+    "GeoNames",
+    "Feature class S",
+    "TRIG"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,14 @@
     "subclass": "ruins",
     "names": [
       "Budubawa"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "37, 52, 5251, 5251060, Sri Lanka"
+  ]
 }

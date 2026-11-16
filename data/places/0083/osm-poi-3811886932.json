@@ -6,7 +6,8 @@
     "longitude": 80.225462
   },
   "categories": [
-    "Nursing home"
+    "Nursing home",
+    "Amenity: Nursing Home"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,11 @@
     "subclass": "nursing_home",
     "names": [
       "Thanipolgaha nursing home"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL"
 }

@@ -6,7 +6,8 @@
     "longitude": 80.172386
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,15 @@
     "subclass": "restaurant",
     "names": [
       "La Olives Hotel"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Colombo-Kandy Road, Danovita, Mirigama, Gampaha, Western, Sri Lanka",
+    "35 Kandy Rd, Gampaha District, 1, 71600, Sri Lanka"
+  ]
 }

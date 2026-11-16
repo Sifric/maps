@@ -6,7 +6,8 @@
     "longitude": 80.065924
   },
   "categories": [
-    "Bank"
+    "Bank",
+    "Amenity: Bank"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,11 @@
     "class": "bank",
     "subclass": "bank",
     "names": [
-      "Regional Development Bank"
+      "Regional Development Bank",
+      "Regional development Bank"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
   }
 }

@@ -6,7 +6,10 @@
     "longitude": 80.523278
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Travel and Transportation > Lodging > Hotel",
+    "Travel and Transportation > Lodging > Hostel",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,16 @@
     "subclass": "hotel",
     "names": [
       "Green View Guest Inn"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Hatton - Maskeliya - Dalhousie Road, Nallathanniya, Seethagangula, Norwood, Nuwara Eliya, Central, Sri Lanka",
+    "Střední provincie, Sri Lanka",
+    "Adam's Peak, Seethagangula, 22070, Sri Lanka"
+  ]
 }

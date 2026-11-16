@@ -6,7 +6,10 @@
     "longitude": 79.846299
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Tourism: Hotel",
+    "Overture Maps",
+    "Lodging"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,17 @@
     "class": "lodging",
     "subclass": "hotel",
     "names": [
-      "Regent Residencies -Colombo"
+      "Regent Residencies -Colombo",
+      "Regent Residencies - Colombo"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Fort, Colombo, Western, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "New Regent Building, 16 1/3 3rd Floor, Colombo, Sri Lanka",
+    "Sri Lanka"
+  ]
 }

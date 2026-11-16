@@ -6,7 +6,8 @@
     "longitude": 79.824429
   },
   "categories": [
-    "Kindergarten"
+    "Kindergarten",
+    "Amenity: Kindergarten"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,16 @@
     "class": "school",
     "subclass": "kindergarten",
     "names": [
-      "Thondar Thirunavukkarasu Pre-School"
+      "Thondar Thirunavukkarasu Pre-School",
+      "Thondar Thirunavukkarasu Pre - School"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Pungudutivu Centre West, Islands South (Velanai), Jaffna, Northern, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ]
 }

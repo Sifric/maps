@@ -6,7 +6,9 @@
     "longitude": 80.705711
   },
   "categories": [
-    "Guest house"
+    "Guest house",
+    "Overture Maps",
+    "Resort"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,17 @@
     "class": "lodging",
     "subclass": "guest_house",
     "names": [
-      "Serene Villa Hiriketiya"
+      "Serene Villa Hiriketiya",
+      "Serene Villa - Hiriketiya"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Pehebiya Road, Dikwella, Dodampahala South, Matara, Southern, Sri Lanka",
+    "Pehembiya Rd, Hiriketiya Rd, Dodampahala South, 81200, Sri Lanka"
+  ]
 }

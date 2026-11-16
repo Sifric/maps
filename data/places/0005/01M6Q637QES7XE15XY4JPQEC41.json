@@ -5,7 +5,8 @@
     "longitude": 80.7674766
   },
   "categories": [
-    "Fast food restaurant"
+    "Fast food restaurant",
+    "Amenity: Cafe"
   ],
   "address": "XQF8+CXW, Kanchcheri, Park Road, Nuwara Eliya 22200",
   "phone": "0522222360",
@@ -54,5 +55,16 @@
       ]
     }
   ],
-  "id": "01M6Q637QES7XE15XY4JPQEC41"
+  "id": "01M6Q637QES7XE15XY4JPQEC41",
+  "alternate_addresses": [
+    "Park Road, Nuwara Eliya"
+  ],
+  "source": {
+    "names": [
+      "Coffee Center and Restaurant Nuwara Eliya"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  }
 }

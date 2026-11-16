@@ -6,7 +6,11 @@
     "longitude": 81.10116
   },
   "categories": [
-    "Hairdresser"
+    "Hairdresser",
+    "Beauty Parlour",
+    "Shop: Hairdresser",
+    "Overture Maps",
+    "Beauty Salon"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +21,16 @@
     "subclass": "hairdresser",
     "names": [
       "Salon Vevo"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "25 Colombo - Batticaloa Hwy, Wellawaya, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Wellawaya, Monaragala, Uva, Sri Lanka",
+    "25 Colombo - Batticaloa Hwy, Wellawaya, 91200, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

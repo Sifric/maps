@@ -6,7 +6,10 @@
     "longitude": 79.968249
   },
   "categories": [
-    "University"
+    "University",
+    "Amenity: University",
+    "Overture Maps",
+    "College University"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,53 @@
     "subclass": "university",
     "names": [
       "Faculty of Engineering, University of Sri Jayewardenepura"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6 AM–5:30 PM"
+      ]
+    }
+  ],
+  "address": "Hiripitiya, Homagama, Colombo, Western, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Temple Bus Stop, Polgasowita Rd, Colombo District, 1, 1280, Sri Lanka",
+    "Sri Lanka"
+  ]
 }

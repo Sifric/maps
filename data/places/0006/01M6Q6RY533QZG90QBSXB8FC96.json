@@ -6,11 +6,12 @@
   },
   "categories": [
     "Pharmacy",
-    "Pharmaceutical company"
+    "Pharmaceutical company",
+    "Retail > Pharmacy"
   ],
   "address": "No. 46 Peradeniya Road, Kandy 20000",
   "phone": "0772346023",
-  "business_status": "OPEN",
+  "business_status": "OPERATIONAL",
   "hours": [
     {
       "day": "Monday",
@@ -55,5 +56,16 @@
       ]
     }
   ],
-  "id": "01M6Q6RY533QZG90QBSXB8FC96"
+  "id": "01M6Q6RY533QZG90QBSXB8FC96",
+  "source": {
+    "names": [
+      "Raj Medical Pvt Ltd"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  },
+  "alternate_addresses": [
+    "Kandy, Central Province, 20000, Sri Lanka"
+  ]
 }

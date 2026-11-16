@@ -6,7 +6,10 @@
     "longitude": 80.158251
   },
   "categories": [
-    "Fuel station"
+    "Fuel station",
+    "Petrol Pump",
+    "Amenity: Fuel",
+    "Fuel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "fuel",
     "names": [
       "USG Filling & Service Station"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "No 117, Ambalangoda Rd, Elpitiya, Sri Lanka",
+  "alternate_addresses": [
+    "Igala Thalawa East, Elpitiya, Galle, Southern, Sri Lanka",
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

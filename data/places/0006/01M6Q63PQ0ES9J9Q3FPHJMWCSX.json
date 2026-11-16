@@ -5,11 +5,13 @@
     "longitude": 81.1267635
   },
   "categories": [
-    "Eclectic restaurant"
+    "Eclectic restaurant",
+    "Overture Maps",
+    "Restaurant"
   ],
   "address": "No. 108 Siribopura, Hambantota 82000",
   "phone": "0774093985",
-  "business_status": "OPEN",
+  "business_status": "OPERATIONAL",
   "hours": [
     {
       "day": "Monday",
@@ -54,5 +56,14 @@
       ]
     }
   ],
-  "id": "01M6Q63PQ0ES9J9Q3FPHJMWCSX"
+  "id": "01M6Q63PQ0ES9J9Q3FPHJMWCSX",
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  },
+  "alternate_addresses": [
+    "No108 Siribopura, Hambantota, 82000, Sri Lanka"
+  ]
 }

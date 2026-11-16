@@ -6,7 +6,10 @@
     "longitude": 79.871775
   },
   "categories": [
-    "Government"
+    "Government",
+    "Community and Government > Government Building > Capitol Building",
+    "Overture Maps",
+    "Government Office"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,16 @@
     "class": "office",
     "subclass": "government",
     "names": [
-      "colombo municipal council"
+      "colombo municipal council",
+      "Colombo Municipal Council"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Galle - Colombo Road, Colombo, 01500, Sri Lanka"
+  ]
 }

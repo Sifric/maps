@@ -6,7 +6,9 @@
     "longitude": 80.374995
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Guest house",
+    "Tourism: Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "hotel",
     "names": [
       "Puhulyaya Holiday Bungalow"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "137th Kilo Meter Post, Ahangama, A2, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Ahangama, Kalapuwa, Habaraduwa, Galle, Southern, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

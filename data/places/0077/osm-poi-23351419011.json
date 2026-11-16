@@ -6,7 +6,12 @@
     "longitude": 80.733853
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Tourism: Hotel",
+    "Travel and Transportation > Lodging > Resort",
+    "Travel and Transportation > Lodging > Hotel",
+    "Travel and Transportation > Lodging > Hotel > Hotel Pool",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +22,16 @@
     "subclass": "hotel",
     "names": [
       "Digana Village Resort"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Rajawella North, Kundasale, Kandy, Central, Sri Lanka",
+    "Kandy-Mahiyangana Road, Digana, Kandy, Sri Lanka",
+    "Digana Sri Lanka, Rajawella North, Sri Lanka"
+  ]
 }

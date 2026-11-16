@@ -5,11 +5,14 @@
     "longitude": 81.6910271
   },
   "categories": [
-    "Fast food restaurant"
+    "Fast food restaurant",
+    "Amenity: Restaurant",
+    "Restaurant",
+    "Overture Maps"
   ],
   "address": "487 Trincomalee-Batticaloa Road, Batticaloa",
   "phone": "0652052711",
-  "business_status": "OPEN",
+  "business_status": "OPERATIONAL",
   "hours": [
     {
       "day": "Monday",
@@ -54,5 +57,17 @@
       ]
     }
   ],
-  "id": "01M5Z17EN723KT37YAVKG6HKVC"
+  "id": "01M5Z17EN723KT37YAVKG6HKVC",
+  "source": {
+    "names": [
+      "Seven star restaurant"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  },
+  "alternate_addresses": [
+    "Thamaraikerny, Manmunai North, Batticaloa, Eastern, Sri Lanka",
+    "487 Trincomalee-Batticaloa Rd, Batticaloa, 094, Sri Lanka"
+  ]
 }

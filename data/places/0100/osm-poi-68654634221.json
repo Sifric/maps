@@ -6,7 +6,9 @@
     "longitude": 80.898567
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Overture Maps",
+    "Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "restaurant",
     "names": [
       "Villa Modara"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Kahandamodara Road, Ranna, Wella Odaya, Tangalle, Hambantota, Southern, Sri Lanka",
+    "Thillanwala, Kahandamodara, Kahandamodara, 82126, Sri Lanka"
+  ]
 }

@@ -6,7 +6,10 @@
     "longitude": 81.052065
   },
   "categories": [
-    "Guest house"
+    "Guest house",
+    "Travel and Transportation > Lodging > Hotel",
+    "Overture Maps",
+    "Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,17 @@
     "class": "lodging",
     "subclass": "guest_house",
     "names": [
-      "Green Lantern inn"
+      "Green Lantern inn",
+      "Green Lantern Inn"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Uva, Sri Lanka",
+    "Sapumaltenna, Passara road.Ella., Ella, 90090, Sri Lanka"
+  ]
 }

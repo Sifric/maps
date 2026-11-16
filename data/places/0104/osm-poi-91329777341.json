@@ -6,7 +6,9 @@
     "longitude": 79.920532
   },
   "categories": [
-    "Insurance"
+    "Insurance",
+    "Insurance company",
+    "Office: Insurance"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,14 @@
     "subclass": "insurance",
     "names": [
       "Celinco VIP Piliyandala"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Piliyandala, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

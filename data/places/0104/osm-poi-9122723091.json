@@ -6,7 +6,10 @@
     "longitude": 81.28737
   },
   "categories": [
-    "Bank"
+    "Bank",
+    "Place of worship",
+    "Business and Professional Services > Office",
+    "Government"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,14 @@
     "subclass": "bank",
     "names": [
       "Bank"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Sandungama, Thissamaharama, Hambantota, Southern, Sri Lanka"
+  ]
 }

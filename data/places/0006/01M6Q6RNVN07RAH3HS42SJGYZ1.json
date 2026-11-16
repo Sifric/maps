@@ -5,11 +5,12 @@
     "longitude": 79.89390209999999
   },
   "categories": [
-    "Pharmacy"
+    "Pharmacy",
+    "Retail > Pharmacy"
   ],
   "address": "565 Nawala Road, Sri Jayawardenepura Kotte 11222",
   "phone": "0112865259",
-  "business_status": "OPEN",
+  "business_status": "OPERATIONAL",
   "hours": [
     {
       "day": "Monday",
@@ -54,5 +55,14 @@
       ]
     }
   ],
-  "id": "01M6Q6RNVN07RAH3HS42SJGYZ1"
+  "id": "01M6Q6RNVN07RAH3HS42SJGYZ1",
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  },
+  "alternate_addresses": [
+    ", Sri Lanka"
+  ]
 }

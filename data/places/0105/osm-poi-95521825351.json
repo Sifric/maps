@@ -6,7 +6,10 @@
     "longitude": 81.047489
   },
   "categories": [
-    "Railway station"
+    "Railway station",
+    "Train station",
+    "Travel and Transportation > Transport Hub > Rail Station",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,16 @@
     "subclass": "station",
     "names": [
       "Ella Railway Station"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Wellawaya-Ella-Kumbalwela Highway, Ella, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Ella Station Rd, Ella, Uva, Sri Lanka",
+    "Ella, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

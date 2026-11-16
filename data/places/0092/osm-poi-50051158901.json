@@ -6,7 +6,9 @@
     "longitude": 79.917936
   },
   "categories": [
-    "Government"
+    "Government",
+    "Overture Maps",
+    "Government Office"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,14 @@
     "subclass": "government",
     "names": [
       "Ministry of Megapolis and Western Development"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "17th and 18th Floors, Suhurupaya Sri Subuthi Road, Battaramulla, 10120, Sri Lanka"
+  ]
 }

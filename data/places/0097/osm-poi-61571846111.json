@@ -6,7 +6,10 @@
     "longitude": 79.8695
   },
   "categories": [
-    "Chocolate"
+    "Chocolate",
+    "Shop: Chocolate",
+    "Overture Maps",
+    "Chocolatier"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,60 @@
     "subclass": "chocolate",
     "names": [
       "Chocoholics"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "506, Havelock Road, Colombo",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "11 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "11 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "11 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "11 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "2 PM–11:45 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "11 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "11 AM–12 PM"
+      ]
+    }
+  ],
+  "alternate_addresses": [
+    "Havelock Road, Colombo, Wellawatta North, Thimbirigasyaya, Western, Sri Lanka",
+    "506 Havelock Rd, Colombo, 00500, Sri Lanka",
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

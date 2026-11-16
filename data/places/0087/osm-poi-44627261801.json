@@ -6,7 +6,10 @@
     "longitude": 80.781194
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Holiday apartment",
+    "Tourism: Hotel",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,16 @@
     "subclass": "hotel",
     "names": [
       "Nagrak Holiday Bungalow"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "World's End Trail, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Non-Pareil Estate Road, Non-Pareil Estate, Kumburutheniwela, Imbulpe, Ratnapura, Sabaragamuwa, Sri Lanka",
+    "Nonperial Road, Balangoda, 70100, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

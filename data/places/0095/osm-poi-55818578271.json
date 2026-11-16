@@ -6,7 +6,9 @@
     "longitude": 79.894311
   },
   "categories": [
-    "Cosmetics"
+    "Cosmetics",
+    "Overture Maps",
+    "Beauty Salon"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,16 @@
     "class": "shop",
     "subclass": "cosmetics",
     "names": [
-      "Salon nisuki rajagiriya"
+      "Salon nisuki rajagiriya",
+      "Salon Nisuki - Rajagiriya"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "First Floor, 347/1, B62, Sri Jayewardenepura Kotte, 10107, Sri Lanka"
+  ]
 }

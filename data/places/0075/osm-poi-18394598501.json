@@ -6,7 +6,10 @@
     "longitude": 79.855617
   },
   "categories": [
-    "Car"
+    "Car",
+    "Company",
+    "Car repair",
+    "Business and Professional Services > Automotive Service > Automotive Repair Shop"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "car",
     "names": [
       "AMW"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Ibbanwala, Colombo, Western, Sri Lanka",
+    "Union Place, Colombo 2., Colombo, Western Province, 00200, Sri Lanka"
+  ]
 }

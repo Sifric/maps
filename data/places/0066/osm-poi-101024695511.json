@@ -6,7 +6,8 @@
     "longitude": 79.865429
   },
   "categories": [
-    "Pharmacy"
+    "Pharmacy",
+    "Convenience"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,14 @@
     "subclass": "pharmacy",
     "names": [
       "Raj Super"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "W. A. Silva Mawatha, Colombo, Wellawatta North, Thimbirigasyaya, Western, Sri Lanka"
+  ]
 }

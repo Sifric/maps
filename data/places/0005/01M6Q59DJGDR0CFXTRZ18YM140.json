@@ -5,11 +5,12 @@
     "longitude": 81.1921436
   },
   "categories": [
-    "Seafood restaurant"
+    "Seafood restaurant",
+    "Restaurant"
   ],
   "address": "Nilaveli",
   "phone": "0764042813",
-  "business_status": "OPEN",
+  "business_status": "OPERATIONAL",
   "hours": [
     {
       "day": "Monday",
@@ -54,5 +55,14 @@
       ]
     }
   ],
-  "id": "01M6Q59DJGDR0CFXTRZ18YM140"
+  "id": "01M6Q59DJGDR0CFXTRZ18YM140",
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  },
+  "alternate_addresses": [
+    "Veloor, Kuchchaweli, Trincomalee, Eastern, Sri Lanka"
+  ]
 }

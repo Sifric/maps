@@ -6,7 +6,10 @@
     "longitude": 81.84447
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Guest Houses",
+    "Overture Maps",
+    "Resort"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,18 @@
     "class": "lodging",
     "subclass": "hotel",
     "names": [
-      "Kottukal Beach House"
+      "Kottukal Beach House",
+      "Kottukal BEACH HOUSE"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "P20, KOTTUKAL BEACH ROAD, HIDAYAPURAM, POTTUVIL",
+  "alternate_addresses": [
+    "Pottuvil, Rasak Moulana Nagar, Ampara, Eastern, Sri Lanka",
+    "Kottukal Beach Road, Ampara District, 5, 32500, Sri Lanka",
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

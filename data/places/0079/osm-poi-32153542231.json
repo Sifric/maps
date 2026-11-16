@@ -6,7 +6,9 @@
     "longitude": 80.535251
   },
   "categories": [
-    "Hospital"
+    "Hospital",
+    "Amenity: Hospital",
+    "Health and Medicine > Hospital"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "hospital",
     "names": [
       "District General Hospital"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Nawalapitiya - Dimbula Road, Nawalapitiya",
+  "alternate_addresses": [
+    "Nawalapitiya - Dimbula Road, Nawalapitiya, Imbulpitiya, Pasbagekorale, Kandy, Central, Sri Lanka",
+    "Dekinda Road, nawalapitiya, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

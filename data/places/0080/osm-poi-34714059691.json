@@ -6,7 +6,9 @@
     "longitude": 80.541592
   },
   "categories": [
-    "Alcohol"
+    "Alcohol",
+    "Overture Maps",
+    "Liquor Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "alcohol",
     "names": [
       "Matara Wine Stores"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Walpala, Matara Four Gravets, Matara, Southern, Sri Lanka",
+    "145 B535, Matara, 80100, Sri Lanka"
+  ]
 }

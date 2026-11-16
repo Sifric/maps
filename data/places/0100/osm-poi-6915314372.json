@@ -6,7 +6,9 @@
     "longitude": 79.843606
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Travel and Transportation > Lodging > Resort",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,16 @@
     "subclass": "hotel",
     "names": [
       "Leighton Resort"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Park Lane, Palangathure, Negombo, Gampaha, Western, Sri Lanka",
+    "Westelijke provincie, Sri Lanka",
+    "Park Lane, Beach Road, Negombo, 11500, Sri Lanka"
+  ]
 }

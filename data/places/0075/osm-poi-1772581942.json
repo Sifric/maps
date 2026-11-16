@@ -6,7 +6,9 @@
     "longitude": 79.866024
   },
   "categories": [
-    "Cricket"
+    "Cricket",
+    "Overture Maps",
+    "Cricket Ground"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,14 @@
     "subclass": "cricket",
     "names": [
       "BRC Ground"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "149 Havelock Rd, Colombo, 00500, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ]
 }

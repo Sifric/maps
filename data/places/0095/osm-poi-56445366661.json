@@ -6,7 +6,11 @@
     "longitude": 79.953813
   },
   "categories": [
-    "Fast food restaurant"
+    "Fast food restaurant",
+    "Fast Food",
+    "Dining and Drinking > Restaurant > Fried Chicken Joint",
+    "Dining and Drinking > Restaurant > Fast Food Restaurant",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +21,15 @@
     "subclass": "fast_food",
     "names": [
       "KFC"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Udawatte Road Malabe, Thalangama North B, Kaduwela, Colombo, Western, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Malabe, Western Province, Sri Lanka",
+    "Udawatte Road Thalangama North B, 10115, Sri Lanka"
+  ]
 }

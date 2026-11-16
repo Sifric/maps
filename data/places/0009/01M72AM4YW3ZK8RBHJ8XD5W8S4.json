@@ -11,7 +11,10 @@
     "Restaurant",
     "Coffee shop",
     "Coworking space",
-    "Pub"
+    "Pub",
+    "Amenity: Restaurant",
+    "Dining and Drinking > Bar",
+    "Dining and Drinking > Cafe, Coffee, and Tea House > Café"
   ],
   "phone": "0112121030",
   "website": "http://www.oldfortcafe.lk/",
@@ -60,5 +63,15 @@
     }
   ],
   "business_status": "OPEN",
-  "id": "01M72AM4YW3ZK8RBHJ8XD5W8S4"
+  "id": "01M72AM4YW3ZK8RBHJ8XD5W8S4",
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  },
+  "alternate_addresses": [
+    "Fort, Colombo, Western, Sri Lanka",
+    "44/A/1, Colombo, Western Province, Sri Lanka"
+  ]
 }

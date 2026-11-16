@@ -6,7 +6,9 @@
     "longitude": 79.794366
   },
   "categories": [
-    "Bar"
+    "Bar",
+    "Wine",
+    "Retail > Food and Beverage Retail > Liquor Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,14 @@
     "subclass": "bar",
     "names": [
       "Beer shop"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Bazzaar Street, Chilaw, Pitipana South, Puttalam, North Western, Sri Lanka"
+  ]
 }

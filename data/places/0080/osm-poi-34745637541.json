@@ -6,7 +6,9 @@
     "longitude": 80.002361
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Dining and Drinking > Bakery",
+    "Dining and Drinking > Breakfast Spot"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "restaurant",
     "names": [
       "Kandila"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Yatihena, Biyagama, Gampaha, Western, Sri Lanka",
+    "711, New Kandy Road, Yatihena, Malwana, Sri Lanka"
+  ]
 }

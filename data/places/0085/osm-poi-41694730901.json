@@ -6,7 +6,9 @@
     "longitude": 80.461721
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Travel and Transportation > Lodging > Bed and Breakfast",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,17 @@
     "class": "lodging",
     "subclass": "hotel",
     "names": [
-      "celestial inn"
+      "celestial inn",
+      "Celestial Inn"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Udupila Road, Mirissa Udumulla, Weligama, Matara, Southern, Sri Lanka",
+    "Merenchigoda Rd, Mirissa Udupila, 81740, Sri Lanka"
+  ]
 }

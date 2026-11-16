@@ -6,7 +6,11 @@
     "longitude": 80.119718
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Tourism: Hotel",
+    "Travel and Transportation > Lodging > Hotel",
+    "Travel and Transportation > Lodging > Resort",
+    "Dining and Drinking > Restaurant > Asian Restaurant"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +20,18 @@
     "class": "lodging",
     "subclass": "hotel",
     "names": [
-      "Lavanga Resort & Spa"
+      "Lavanga Resort & Spa",
+      "Lavanga Resort&Spa"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Galle Rd, Hikkaduwa 80240, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Katukoliha, Hikkaduwa, Galle, Southern, Sri Lanka",
+    "Galle Road, Patuwatha, Hikkaduwa, Southern Province, 80240, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

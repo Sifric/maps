@@ -6,7 +6,11 @@
     "longitude": 79.888254
   },
   "categories": [
-    "Clothes"
+    "Clothes",
+    "Retail > Fashion Retail > Clothing Store",
+    "Retail > Cosmetics Store",
+    "Overture Maps",
+    "Clothing Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +20,19 @@
     "class": "clothing_store",
     "subclass": "clothes",
     "names": [
-      "OPAL"
+      "OPAL",
+      "Opal"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "S. De S. Jayasinghe Road, Nugegoda WP, Dutugemunu, Dehiwala, Colombo, Western, Sri Lanka",
+    "Nugegoda, Sri Lanka",
+    "152/D, Nugegoda, Western Province, Sri Lanka",
+    "S. De S. Jayasinghe Mawatha, Dehiwala-Mount Lavinia, 20200, Sri Lanka"
+  ]
 }

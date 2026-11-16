@@ -6,7 +6,11 @@
     "longitude": 80.551946
   },
   "categories": [
-    "School"
+    "School",
+    "Wikidata physical place",
+    "Overture Maps",
+    "College University",
+    "High School"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +20,17 @@
     "class": "school",
     "subclass": "school",
     "names": [
-      "St. Servatius' College"
+      "St. Servatius' College",
+      "St. Servatius College"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Eliyakanda South, Matara Four Gravets, Matara, Southern, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "31 St Servatius Rd, Matara, 81000, Sri Lanka"
+  ]
 }

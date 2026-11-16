@@ -6,7 +6,9 @@
     "longitude": 80.900783
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Overture Maps",
+    "Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "restaurant",
     "names": [
       "Surrey Bird Sanctuary & Holiday Resort"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Welimada Watta, Welimada, Badulla, Uva, Sri Lanka",
+    "Dhammika Estate, Nugathalawa, Welimada Town, 90200, Sri Lanka"
+  ]
 }

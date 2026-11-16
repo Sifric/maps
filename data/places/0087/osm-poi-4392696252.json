@@ -6,7 +6,9 @@
     "longitude": 80.216675
   },
   "categories": [
-    "School"
+    "School",
+    "LC",
+    "Wikidata physical place"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,14 @@
     "subclass": "school",
     "names": [
       "Vidyaloka College"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Galle, Galle, 3.Southern, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ]
 }

@@ -6,7 +6,9 @@
     "longitude": 79.858423
   },
   "categories": [
-    "School"
+    "School",
+    "Overture Maps",
+    "High School"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "school",
     "names": [
       "St. Paul's Girls' School"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Wellawatta North, Thimbirigasyaya, Colombo, Western, Sri Lanka",
+    "St. Paul's Girls School, Dr Lester James Peries Mawatha, Colombo, 00500, Sri Lanka"
+  ]
 }

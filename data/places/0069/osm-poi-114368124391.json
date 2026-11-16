@@ -6,7 +6,9 @@
     "longitude": 81.387808
   },
   "categories": [
-    "Christian"
+    "Christian",
+    "Church",
+    "Place Of Worship"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,17 @@
     "class": "place_of_worship",
     "subclass": "christian",
     "names": [
-      "methodist church kallady"
+      "methodist church kallady",
+      "Methodist Church Kallady"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Verugal Mugathuvaram, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Echchalampattu, Verugal, Trincomalee, Eastern, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

@@ -6,7 +6,9 @@
     "longitude": 80.216889
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Dining and Drinking > Restaurant > Salad Restaurant",
+    "Dining and Drinking > Restaurant > Sandwich Spot"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "restaurant",
     "names": [
       "Calorie Counter"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Osanagoda, Galle 4 Gravets, Galle, Southern, Sri Lanka",
+    "Light House Street 56a, Galle, Southern, Sri Lanka"
+  ]
 }

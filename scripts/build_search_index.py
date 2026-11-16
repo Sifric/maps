@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Build search from exactly the validated features used for places tiles."""
 import argparse
+import gzip
 import json
 from pathlib import Path
 
@@ -22,9 +23,16 @@ def main():
     if len({row[0] for row in rows}) != len(rows):
         raise ValueError("Duplicate search IDs")
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps(rows, ensure_ascii=False, separators=(",", ":")) + "\n")
+    serialized = json.dumps(rows, ensure_ascii=False, separators=(",", ":")) + "\n"
+    if args.output.suffix == ".gz":
+        args.output.write_bytes(gzip.compress(serialized.encode("utf-8"), mtime=0))
+    else:
+        args.output.write_text(serialized)
     if args.check:
-        existing = json.loads(args.check.read_text())
+        content = args.check.read_bytes()
+        if args.check.suffix == ".gz":
+            content = gzip.decompress(content)
+        existing = json.loads(content)
         indexed = {row[0]: row for row in existing}
         if len(indexed) != len(existing) or indexed != {row[0]: row for row in rows}:
             raise ValueError("Committed search data differs from validated places")

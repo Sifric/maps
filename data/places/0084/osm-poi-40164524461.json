@@ -6,7 +6,9 @@
     "longitude": 81.192994
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Travel and Transportation > Lodging > Resort",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,18 @@
     "class": "lodging",
     "subclass": "hotel",
     "names": [
-      "Seaway Hotel"
+      "Seaway Hotel",
+      "Seaway hotel"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Nilaveli, Vallaiyoothu, Kuchchaweli, Trincomalee, Eastern, Sri Lanka",
+    "10th Mile post Nilaveli, Trincomalee, Nilaveli, Eastern Province, Sri Lanka",
+    "10th mile post, Gopalapuram, 31010, Sri Lanka"
+  ]
 }

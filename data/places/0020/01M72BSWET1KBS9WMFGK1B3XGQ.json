@@ -7,7 +7,9 @@
   "address": "438/B, Kandy Road, Dambulla",
   "categories": [
     "Public sector bank",
-    "ATM"
+    "ATM",
+    "Amenity: Bank",
+    "Bank"
   ],
   "phone": "0662285270",
   "website": "http://www.boc.lk/",
@@ -56,5 +58,17 @@
     }
   ],
   "business_status": "OPEN",
-  "id": "01M72BSWET1KBS9WMFGK1B3XGQ"
+  "id": "01M72BSWET1KBS9WMFGK1B3XGQ",
+  "alternate_addresses": [
+    "Kandy - Jaffna Road, Dambulla",
+    "Kandy - Jaffna Road, Dambulla, Pahala Wewa, Matale, Central, Sri Lanka"
+  ],
+  "source": {
+    "names": [
+      "Bank of Ceylon"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  }
 }

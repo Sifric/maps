@@ -6,7 +6,9 @@
     "longitude": 79.863063
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Overture Maps",
+    "Bar"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "restaurant",
     "names": [
       "La Langousterie"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Mount Avenue, Mount Lavinia, Kawdana East, Dehiwala, Colombo, Western, Sri Lanka",
+    "50, 12 De Saram Rd, Dehiwala-Mount Lavinia, 10370, Sri Lanka"
+  ]
 }

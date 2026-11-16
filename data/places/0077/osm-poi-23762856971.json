@@ -6,7 +6,9 @@
     "longitude": 79.865708
   },
   "categories": [
-    "Library"
+    "Library",
+    "Wikidata physical place",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "library",
     "names": [
       "National Library and Documentation Services Board"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Independance Avenue, Colombo 07, Kurunduwatta, Thimbirigasyaya, Colombo, Western, Sri Lanka",
+    "14 Independence Ave, Colombo, 00700, Sri Lanka"
+  ]
 }

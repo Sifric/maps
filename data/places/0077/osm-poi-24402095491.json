@@ -6,7 +6,10 @@
     "longitude": 79.9721
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Dining and Drinking > Bakery",
+    "Dining and Drinking > Cafe, Coffee, and Tea House > Café",
+    "Dining and Drinking > Restaurant > Fast Food Restaurant"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,11 @@
     "subclass": "restaurant",
     "names": [
       "Perera & Sons"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "162/13, New Kandy Road, Pittugala, Sri Lanka",
+  "business_status": "OPERATIONAL"
 }

@@ -6,7 +6,11 @@
     "longitude": 80.119268
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Tourism: Hotel",
+    "Travel and Transportation > Lodging > Bed and Breakfast",
+    "Travel and Transportation > Lodging > Hotel",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +21,17 @@
     "subclass": "hotel",
     "names": [
       "Villa 46"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "972, Galle Road, Midigahawatta, Patuwatha, Hikkaduwa, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Colombo-Galle Road, Hikkaduwa, Katukoliha, Galle, Southern, Sri Lanka",
+    "Hikkaduwa, Südprovinz (Sri Lanka), Sri Lanka",
+    "972, Galle Road, Midigahawatta, Patuwatha, 80244, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

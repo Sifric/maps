@@ -6,7 +6,9 @@
     "longitude": 80.03827
   },
   "categories": [
-    "Library"
+    "Library",
+    "Community center",
+    "Amenity: Library"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "library",
     "names": [
       "Ariyalai Community Centre"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Pungankulam Road Jaffna, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Passaiyoor East, Jaffna, Northern, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

@@ -6,7 +6,9 @@
     "longitude": 79.890695
   },
   "categories": [
-    "Railway station"
+    "Railway station",
+    "Landmarks and Outdoors > States and Municipalities > City",
+    "Bus stop"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,16 @@
     "class": "railway",
     "subclass": "station",
     "names": [
-      "Nugegoda"
+      "Nugegoda",
+      "Nugegoda | නුගේගොඩ | நுகேகொடை"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Nugegoda, Western Province, 10250, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ]
 }

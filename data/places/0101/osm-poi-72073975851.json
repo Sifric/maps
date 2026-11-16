@@ -6,7 +6,8 @@
     "longitude": 80.70805
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,17 @@
     "class": "lodging",
     "subclass": "hotel",
     "names": [
-      "House on the Bend"
+      "House on the Bend",
+      "House On The Bend"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Nilwella rd, Dodampahala South, Dikwella, Matara, Southern, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Wewagawa, Hiriketiya, Nilwella Road, Dodampahala, Southern Province, 3, 81200, Sri Lanka",
+    "Sri Lanka"
+  ]
 }

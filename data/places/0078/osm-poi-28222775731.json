@@ -6,7 +6,9 @@
     "longitude": 81.001441
   },
   "categories": [
-    "Bus stop"
+    "Bus stop",
+    "Overture Maps",
+    "Media Service"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,13 @@
     "class": "bus",
     "subclass": "bus_stop",
     "names": [
-      "Polonnaruwa"
+      "Polonnaruwa",
+      "Polonnaruwa - පොළොන්නරුව"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "No.309, Suhadha Mawatha, Palugasdhamana, Polonnaruwa, Polonnaruwa, 51046, Sri Lanka",
+  "business_status": "OPERATIONAL"
 }

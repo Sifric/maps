@@ -5,11 +5,13 @@
     "longitude": 81.3551009
   },
   "categories": [
-    "Buddhist temple"
+    "Buddhist temple",
+    "Amenity: Place Of Worship",
+    "Place Of Worship"
   ],
   "address": "G9H4+X2Q, A5, Maha Oya",
   "phone": "0632244012",
-  "business_status": "OPEN",
+  "business_status": "OPERATIONAL",
   "hours": [
     {
       "day": "Monday",
@@ -54,5 +56,15 @@
       ]
     }
   ],
-  "id": "01M6Q5KQFQK09BZZ760YHGV162"
+  "id": "01M6Q5KQFQK09BZZ760YHGV162",
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  },
+  "alternate_addresses": [
+    "Mahaoya",
+    "Mahaoya, Ampara, Eastern, Sri Lanka"
+  ]
 }

@@ -6,7 +6,8 @@
     "longitude": 81.234257
   },
   "categories": [
-    "Bank"
+    "Bank",
+    "Business and Professional Services > Financial Service > Banking and Finance > Bank"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,14 @@
     "subclass": "bank",
     "names": [
       "NSB"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Main Street, Trincomalee, Sonagavadi, Town & Gravets, Eastern, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Iyanar keni, Trincomalee, 31000, Sri Lanka"
+  ]
 }

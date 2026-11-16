@@ -6,7 +6,9 @@
     "longitude": 80.534152
   },
   "categories": [
-    "School"
+    "School",
+    "Amenity: School",
+    "C&C"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,17 @@
     "class": "school",
     "subclass": "school",
     "names": [
-      "Kathiresan Hindu Ladies College"
+      "Kathiresan Hindu Ladies College",
+      "Kathiresan HINDU Ladies College"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "nawalapitiya",
+  "alternate_addresses": [
+    "Pasbage Korale, Kandy, 2.Central, Sri Lanka",
+    "nawalapitiya, Imbulpitiya, Pasbagekorale, Kandy, Central, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

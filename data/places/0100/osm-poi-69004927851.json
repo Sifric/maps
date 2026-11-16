@@ -6,7 +6,9 @@
     "longitude": 79.856937
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Overture Maps",
+    "Asian Restaurant"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "restaurant",
     "names": [
       "HoocH"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Edward Lane, Colombo, Kurunduwatta, Thimbirigasyaya, Western, Sri Lanka",
+    "50A, Edward Lane, Colombo, 00300, Sri Lanka"
+  ]
 }

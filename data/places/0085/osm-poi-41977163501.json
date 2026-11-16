@@ -6,7 +6,8 @@
     "longitude": 79.940338
   },
   "categories": [
-    "Railway station"
+    "Railway station",
+    "Travel and Transportation > Transport Hub > Rail Station"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,16 @@
     "class": "railway",
     "subclass": "station",
     "names": [
-      "Train Halt No. 1"
+      "Train Halt No. 1",
+      "Train Halt No 1"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Station Road, Wadduwa, Western Province, Sri Lanka"
+  ]
 }

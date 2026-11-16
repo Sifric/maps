@@ -6,7 +6,8 @@
     "longitude": 80.988384
   },
   "categories": [
-    "Government"
+    "Government",
+    "Wikidata physical place"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,13 @@
     "class": "office",
     "subclass": "government",
     "names": [
-      "BANDARAWELA DIVISIONAL SECRETARIAT"
+      "BANDARAWELA DIVISIONAL SECRETARIAT",
+      "Bandarawela Divisional Secretariat"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL"
 }

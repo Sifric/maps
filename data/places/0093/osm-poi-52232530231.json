@@ -6,7 +6,9 @@
     "longitude": 79.983859
   },
   "categories": [
-    "Mall"
+    "Mall",
+    "Overture Maps",
+    "Shopping Mall"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,18 @@
     "class": "shop",
     "subclass": "mall",
     "names": [
-      "NISACO MALL"
+      "NISACO MALL",
+      "Nisaco MALL",
+      "Nisaco Mall"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Athurugiriya, Thaldiyawala, Kaduwela, Colombo, Western, Sri Lanka",
+    "311 Borella Road, Thaldiyawala, 10118, Sri Lanka"
+  ]
 }

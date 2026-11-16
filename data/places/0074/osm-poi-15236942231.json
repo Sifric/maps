@@ -6,7 +6,9 @@
     "longitude": 79.927216
   },
   "categories": [
-    "Townhall"
+    "Townhall",
+    "Overture Maps",
+    "Government Office"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,17 @@
     "class": "town_hall",
     "subclass": "townhall",
     "names": [
-      "Urban Council Maharagama"
+      "Urban Council Maharagama",
+      "Urban Council Maharagama | මහරගම නගර සභාව"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Maharagama, Pathiragoda, Colombo, Western, Sri Lanka",
+    "Dehiwala Rd, Maharagama South, 28009, Sri Lanka"
+  ]
 }

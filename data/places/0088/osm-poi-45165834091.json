@@ -6,7 +6,12 @@
     "longitude": 79.880632
   },
   "categories": [
-    "Clothes"
+    "Clothes",
+    "Retail > Fashion Retail > Women's Store",
+    "Retail > Fashion Retail > Fashion Accessories Store",
+    "Retail > Fashion Retail > Men's Store",
+    "Overture Maps",
+    "Clothing Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +21,17 @@
     "class": "clothing_store",
     "subclass": "clothes",
     "names": [
-      "ODEL"
+      "ODEL",
+      "Odel"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Dutugamunu Street, Kohuwala, Dutugemunu, Dehiwala, Colombo, Western, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "135 Dutugemunu Street, Colombo, Sri Lanka",
+    "135 Dutugemunu St, Dehiwala-Mount Lavinia, 20200, Sri Lanka"
+  ]
 }

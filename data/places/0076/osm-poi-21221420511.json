@@ -6,7 +6,9 @@
     "longitude": 79.899375
   },
   "categories": [
-    "Car repair"
+    "Car repair",
+    "Motor vehicle dealer",
+    "Shop: Car Repair"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,17 @@
     "class": "car",
     "subclass": "car_repair",
     "names": [
-      "Eranga Motors"
+      "Eranga Motors",
+      "Eranga motors"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "56 Old Kesbewa Rd, Nugegoda, Sri Lanka",
+  "alternate_addresses": [
+    "Rattanapitiya, Kesbewa, Colombo, Western, Sri Lanka",
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

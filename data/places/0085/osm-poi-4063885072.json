@@ -6,7 +6,9 @@
     "longitude": 79.89195
   },
   "categories": [
-    "Railway station"
+    "Railway station",
+    "Travel and Transportation",
+    "Landmarks and Outdoors > States and Municipalities > City"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,13 @@
     "class": "railway",
     "subclass": "station",
     "names": [
-      "Ja-Ela"
+      "Ja-Ela",
+      "Ja - Ela"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Western, Sri Lanka",
+  "business_status": "OPERATIONAL"
 }

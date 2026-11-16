@@ -6,7 +6,11 @@
     "longitude": 80.056466
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Wedding venue",
+    "Travel and Transportation > Lodging > Hotel",
+    "Overture Maps",
+    "Party And Event Planning"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +21,17 @@
     "subclass": "hotel",
     "names": [
       "The Glasgow"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Kalagedihena, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Kandy Road, Kalagedihena, Aluthgama Bogamuwa North, Gampaha, Western, Sri Lanka",
+    "Western Province, Sri Lanka",
+    "Western Province, 1, 11875, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

@@ -6,7 +6,9 @@
     "longitude": 80.576466
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Overture Maps",
+    "Travel and Transportation > Lodging > Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,17 @@
     "class": "lodging",
     "subclass": "hotel",
     "names": [
-      "Hotel Tree of Life"
+      "Hotel Tree of Life",
+      "Hotel Tree Of Life"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Yahalathenna West, Harispattuwa, Kandy, Central, Sri Lanka",
+    "Hotel Tree of Life Rd., Kandy, Central Province, Sri Lanka"
+  ]
 }

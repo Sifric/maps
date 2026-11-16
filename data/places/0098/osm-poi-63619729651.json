@@ -6,7 +6,8 @@
     "longitude": 80.370451
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Amenity: Restaurant"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,60 @@
     "subclass": "restaurant",
     "names": [
       "Ermelo Villa"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Bogamuwa Rd, Boyagane 60000, Sri Lanka",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Open 24 hours"
+      ]
+    }
+  ],
+  "alternate_addresses": [
+    "Bogamuwa, Boyagane, Kurunegala, 60000",
+    "Boyagane, Kurunegala, Bogamuwa, Mallawapitiya, North Western, Sri Lanka",
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

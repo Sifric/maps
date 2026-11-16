@@ -6,7 +6,11 @@
     "longitude": 79.90909
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Resort",
+    "Tourism: Hotel",
+    "Travel and Transportation > Lodging > Resort",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +21,16 @@
     "subclass": "hotel",
     "names": [
       "Sun Resort"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "39/5, Piliyandala, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Dampe, Delthara East, Kesbewa, Colombo, Western, Sri Lanka",
+    "39/5, Western Province, 1, 10400, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

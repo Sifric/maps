@@ -6,7 +6,9 @@
     "longitude": 80.652587
   },
   "categories": [
-    "Hostel"
+    "Hostel",
+    "Travel and Transportation > Lodging > Hostel",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,16 @@
     "subclass": "hostel",
     "names": [
       "Hostel 107"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Kandy-Ampitiya-Thalatuoya Road, Kandy, Ampitiya Udagama South, Gangawata Korale, Central, Sri Lanka",
+    "No: 107, Kandy, Central, 20000, Sri Lanka",
+    "No: 107, Ampitiya Udagama South, 20000, Sri Lanka"
+  ]
 }

@@ -6,7 +6,9 @@
     "longitude": 81.832379
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Bar",
+    "Dining and Drinking > Restaurant > Sri Lankan Restaurant"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "restaurant",
     "names": [
       "Spice Trail"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Potuvil - Panama Road, Arugam Bay, Pasarichchenai, Pottuvil, Ampara, Eastern, Sri Lanka",
+    "Pasarichchenai, Pottuvil, Ampara, Eastern, Sri Lanka"
+  ]
 }

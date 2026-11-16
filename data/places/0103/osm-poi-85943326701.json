@@ -6,7 +6,9 @@
     "longitude": 79.95488
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Overture Maps",
+    "Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "restaurant",
     "names": [
       "Royal Oshin Hotel"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Sea Beach Road, Waskaduwa, Mahawaskaduwa South, Kalutara, Western, Sri Lanka",
+    "120 Sea Beach Rd, Kalutara North, 12000, Sri Lanka"
+  ]
 }

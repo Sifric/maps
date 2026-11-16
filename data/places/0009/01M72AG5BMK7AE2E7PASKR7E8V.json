@@ -6,7 +6,10 @@
   },
   "address": "8A Alfred House Rd, Colombo 00300",
   "categories": [
-    "Library"
+    "Library",
+    "Amenity: Library",
+    "Community and Government > Library",
+    "Arts and Entertainment > Performing Arts Venue"
   ],
   "phone": "0740688622",
   "website": "http://lakmahal.lk/",
@@ -54,6 +57,15 @@
       ]
     }
   ],
-  "business_status": "OPEN",
-  "id": "01M72AG5BMK7AE2E7PASKR7E8V"
+  "business_status": "OPERATIONAL",
+  "id": "01M72AG5BMK7AE2E7PASKR7E8V",
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  },
+  "alternate_addresses": [
+    "8A, Colombo, Western Province, Sri Lanka"
+  ]
 }

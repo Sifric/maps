@@ -6,7 +6,8 @@
     "longitude": 79.85294
   },
   "categories": [
-    "Bus stop"
+    "Bus stop",
+    "Travel and Transportation > Transport Hub > Bus Station"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,16 @@
     "class": "bus",
     "subclass": "bus_stop",
     "names": [
-      "Nawaloka Bus stop"
+      "Nawaloka Bus stop",
+      "Nawaloka Bus Stop"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Colombo 02, Western Province, Sri Lanka"
+  ]
 }

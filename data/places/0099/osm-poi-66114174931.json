@@ -6,7 +6,10 @@
     "longitude": 80.645335
   },
   "categories": [
-    "Guest house"
+    "Guest house",
+    "Travel and Transportation",
+    "Overture Maps",
+    "Social Or Community Service"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "guest_house",
     "names": [
       "The Kandy Club"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Thalwatta, Gangawata Korale, Kandy, Central, Sri Lanka",
+    "20 Anagarika Dharmapala Mawatha, Kandy, 20000, Sri Lanka"
+  ]
 }

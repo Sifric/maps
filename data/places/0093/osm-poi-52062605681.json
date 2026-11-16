@@ -6,7 +6,10 @@
     "longitude": 79.861926
   },
   "categories": [
-    "Cinema"
+    "Cinema",
+    "Movie theater",
+    "Amenity: Cinema",
+    "Arts and Entertainment > Movie Theater"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,16 @@
     "subclass": "cinema",
     "names": [
       "Cine World"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Jampettah St, Colombo 01300, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Masangasweediya, Colombo, Western, Sri Lanka",
+    "K. B. Christie Perera Mawatha, Colombo, Western Province, 01300, Sri Lanka"
+  ],
+  "business_status": "CLOSED"
 }

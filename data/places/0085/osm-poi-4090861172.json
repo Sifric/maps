@@ -6,7 +6,9 @@
     "longitude": 80.407718
   },
   "categories": [
-    "Post office"
+    "Post office",
+    "Overture Maps",
+    "Government Office"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "post_office",
     "names": [
       "Kilinochchi Post Office"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Kanakapuram, Karachchi, Kilinochchi, Northern, Sri Lanka",
+    "A-9 road, Kilinochchi, Sri Lanka"
+  ]
 }

@@ -6,7 +6,10 @@
     "longitude": 79.85926
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Dining and Drinking > Restaurant > Sri Lankan Restaurant",
+    "Overture Maps",
+    "Sri Lankan Restaurant"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,19 @@
     "class": "restaurant",
     "subclass": "restaurant",
     "names": [
-      "Taste Of Asia"
+      "Taste Of Asia",
+      "Taste of asia",
+      "Taste of Asia"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Galle Road, Wellawatte, Wellawatta North, Thimbirigasyaya, Colombo, Western, Sri Lanka",
+    "Galle road, Colombo, Western Province, 4, Sri Lanka",
+    "324 Galle Rd, Colombo, 00400, Sri Lanka"
+  ]
 }

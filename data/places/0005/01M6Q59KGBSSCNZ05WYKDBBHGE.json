@@ -5,11 +5,12 @@
     "longitude": 81.2394451
   },
   "categories": [
-    "Hospital"
+    "Hospital",
+    "Overture Maps"
   ],
   "address": "H67Q+WQW, Hospital Ln, Trincomalee",
   "phone": "0262222261",
-  "business_status": "OPEN",
+  "business_status": "OPERATIONAL",
   "hours": [
     {
       "day": "Monday",
@@ -54,5 +55,14 @@
       ]
     }
   ],
-  "id": "01M6Q59KGBSSCNZ05WYKDBBHGE"
+  "id": "01M6Q59KGBSSCNZ05WYKDBBHGE",
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  },
+  "alternate_addresses": [
+    "Hospital Ln, Trincomalee, 32100, Sri Lanka"
+  ]
 }

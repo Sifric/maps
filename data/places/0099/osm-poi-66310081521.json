@@ -6,7 +6,11 @@
     "longitude": 79.895003
   },
   "categories": [
-    "Car"
+    "Car",
+    "Car dealer",
+    "Shop: Car",
+    "Overture Maps",
+    "Auto Dealer"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +21,16 @@
     "subclass": "car",
     "names": [
       "Ravindu Motor Dealers"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "55/A Pagoda Rd, Nugegoda 11222, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Pagoda Road, Sri Jayawardenepura Kotte, Nawala East, Sri Jayawardanapura Kotte, Colombo, Western, Sri Lanka",
+    "55/A Pagoda Rd, Sri Jayewardenepura Kotte, 11222, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

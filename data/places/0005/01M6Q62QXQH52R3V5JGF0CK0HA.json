@@ -6,7 +6,10 @@
   },
   "categories": [
     "Vegetarian restaurant",
-    "Cafe"
+    "Cafe",
+    "Amenity: Cafe",
+    "Overture Maps",
+    "Restaurant"
   ],
   "address": "129/8b Anagarika Dharmapala Mawatha, Kandy 20000",
   "phone": "0775882041",
@@ -56,5 +59,16 @@
       ]
     }
   ],
-  "id": "01M6Q62QXQH52R3V5JGF0CK0HA"
+  "id": "01M6Q62QXQH52R3V5JGF0CK0HA",
+  "alternate_addresses": [
+    "129, Anagarika Dharmapala Mawatha, Kandy, 20000",
+    "Anagarika Dharmapala Mawatha, Kandy, Thalwatta, Gangawata Korale, Central, Sri Lanka",
+    "129/8B, Anagarika Dharmapala Mawatha, Kandy, 20000, Sri Lanka"
+  ],
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  }
 }

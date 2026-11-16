@@ -6,7 +6,9 @@
     "longitude": 80.29764
   },
   "categories": [
-    "Guest house"
+    "Guest house",
+    "Overture Maps",
+    "Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,17 @@
     "class": "lodging",
     "subclass": "guest_house",
     "names": [
-      "Haus am Meer \"Wilde Ananas\""
+      "Haus am Meer \"Wilde Ananas\"",
+      "Haus am Meer Wilde Ananas"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Kogalla Beach, Koggala, Lanumodara, Habaraduwa, Galle, Southern, Sri Lanka",
+    "Hediwatha Matara Road, Wilde Ananas, Uragasgoda, 80630, Sri Lanka"
+  ]
 }

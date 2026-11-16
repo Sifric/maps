@@ -6,7 +6,10 @@
     "longitude": 80.449786
   },
   "categories": [
-    "Hospital"
+    "Hospital",
+    "Private hospital",
+    "Amenity: Hospital",
+    "Health and Medicine > Hospital"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,17 @@
     "class": "hospital",
     "subclass": "hospital",
     "names": [
-      "OSRO Hospital"
+      "OSRO Hospital",
+      "Osro Hospital"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Kandy Road, Mawanella 71500, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Mawanella, Rankothdiwala, Kegalle, Sabaragamuwa, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

@@ -6,7 +6,8 @@
     "longitude": 80.368879
   },
   "categories": [
-    "Bakery"
+    "Bakery",
+    "Restaurant"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,15 @@
     "subclass": "bakery",
     "names": [
       "P and S"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Kurunegala Town - North East, Kurunegala, North Western, Sri Lanka",
+    "Dam bulla road, Kuru seals, Kurunegala Town - North East, Kurunegala, North Western, Sri Lanka"
+  ]
 }

@@ -6,7 +6,10 @@
     "longitude": 79.93021
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Travel and Transportation > Lodging > Resort",
+    "Overture Maps",
+    "Resort"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,16 @@
     "subclass": "hotel",
     "names": [
       "Vinrich Lake Resort"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Duwawatta Rd, Piliyandala 10300, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Duwawatta Road, Madapatha, Regidel Watta, Kesbewa, Colombo, Western, Sri Lanka",
+    "No.18/3 Duwawatta Road, Colombo District, 1, 10300, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

@@ -6,7 +6,10 @@
     "longitude": 80.101104
   },
   "categories": [
-    "Doctors"
+    "Doctors",
+    "Doctor",
+    "Amenity: Doctors",
+    "Healthcare: Doctor"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "doctors",
     "names": [
       "Galboda Ayurvedic Center"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "urapola road, galboda, Wathurugama, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Ruwanpura, Attanagalla, Gampaha, Western, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

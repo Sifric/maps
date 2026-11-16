@@ -6,7 +6,10 @@
     "longitude": 79.900276
   },
   "categories": [
-    "Bus station"
+    "Bus station",
+    "Travel and Transportation > Transportation Service > Public Transportation > Bus Line",
+    "Overture Maps",
+    "Travel And Transportation"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,18 @@
     "class": "bus",
     "subclass": "bus_station",
     "names": [
-      "Raddolugama Bus stand"
+      "Raddolugama Bus stand",
+      "Raddolugama Bus Stand"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Ganepola, Katana, Gampaha, Western, Sri Lanka",
+    "Raddolugama, Western Province, Sri Lanka",
+    "Raddolugama, Raddoluwa, Sri Lanka"
+  ]
 }

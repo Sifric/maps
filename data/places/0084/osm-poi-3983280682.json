@@ -6,7 +6,10 @@
     "longitude": 80.642309
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Travel and Transportation > Lodging > Bed and Breakfast",
+    "Travel and Transportation > Lodging > Motel",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "hotel",
     "names": [
       "Freedom Lodge"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Saranankara Road, Kandy, Bogambara, Gangawata Korale, Central, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "30 Saranankara Road, Kandy, Central Province, 20000, Sri Lanka",
+    "Kandy, Sri Lanka"
+  ]
 }

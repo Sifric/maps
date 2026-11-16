@@ -6,7 +6,9 @@
     "longitude": 79.891012
   },
   "categories": [
-    "Buddhist"
+    "Buddhist",
+    "Amenity: Place Of Worship",
+    "Place Of Worship"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,16 @@
     "subclass": "buddhist",
     "names": [
       "Pepiliyana Sunethra Devi Pirivena"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Pepiliyana Road, Pepiliyana",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Rattanapitiya, Kesbewa, Colombo, Western, Sri Lanka",
+    "Pepiliyana Road, Pepiliyana, Rattanapitiya, Kesbewa, Colombo, Western, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

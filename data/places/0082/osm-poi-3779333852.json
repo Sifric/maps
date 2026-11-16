@@ -6,7 +6,8 @@
     "longitude": 79.990704
   },
   "categories": [
-    "Buddhist"
+    "Buddhist",
+    "Place Of Worship"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,13 @@
     "class": "place_of_worship",
     "subclass": "buddhist",
     "names": [
-      "Shayilabimbarama temple"
+      "Shayilabimbarama temple",
+      "Shayilabimbarama Temple"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Ihala Yagoda North, Gampaha, Western, Sri Lanka",
+  "business_status": "OPERATIONAL"
 }

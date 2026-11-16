@@ -6,7 +6,9 @@
     "longitude": 80.007361
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Tourism: Hotel",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,19 @@
     "class": "lodging",
     "subclass": "hotel",
     "names": [
-      "Shangri-lanka Villa"
+      "Shangri-lanka Villa",
+      "Shangri - Lanka Villa",
+      "Shangri - lanka Villa"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "23 De Alwis Road, Bentota 80500, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "De Alwis Road Bentota, Dope, Galle, Southern, Sri Lanka",
+    "23 De Alwis Rd, Southern Province, 3, 80500, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

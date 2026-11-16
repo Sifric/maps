@@ -6,7 +6,9 @@
     "longitude": 80.394511
   },
   "categories": [
-    "Buddhist"
+    "Buddhist",
+    "Amenity: Place Of Worship",
+    "Place Of Worship"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "buddhist",
     "names": [
       "Abayagiriya Raja Maha Viharaya"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Wata wandana Rd.",
+    "Wata wandana Rd., Katukeliyawa, Nuwaragam Palatha Central, Anuradhapura, North Central, Sri Lanka"
+  ]
 }

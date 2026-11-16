@@ -8,10 +8,31 @@
   "categories": [
     "Pub",
     "Bar",
-    "Continental restaurant"
+    "Continental restaurant",
+    "Amenity: Pub",
+    "Dining and Drinking > Bar > Pub",
+    "Dining and Drinking > Restaurant"
   ],
   "phone": "0112174700",
   "website": "https://monarchimperial.lk/capital-tavern/",
   "business_status": "OPEN",
-  "id": "01M72ATZGZ1RZW8NXRTR9N42H3"
+  "id": "01M72ATZGZ1RZW8NXRTR9N42H3",
+  "hours": [
+    {
+      "day": "Hours (OSM format)",
+      "times": [
+        "Mo-Su, PH 15:00-24:00"
+      ]
+    }
+  ],
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  },
+  "alternate_addresses": [
+    "Madiwela, Maharagama, Colombo, Western, Sri Lanka",
+    "31A, New Hospital Road, Sri Jayawardenapura, Kotte, Western Province, 10100, Sri Lanka"
+  ]
 }

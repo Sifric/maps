@@ -6,7 +6,9 @@
     "longitude": 79.917415
   },
   "categories": [
-    "Bank"
+    "Bank",
+    "Overture Maps",
+    "Bank Or Credit Union"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,14 @@
     "subclass": "bank",
     "names": [
       "Commercial Bank"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Bokundara, Thumbovila North, Kesbewa, Colombo, Western, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "No 348 Colombo - Horana Rd, Bokundara, 10400, Sri Lanka"
+  ]
 }

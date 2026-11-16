@@ -6,7 +6,9 @@
     "longitude": 80.599582
   },
   "categories": [
-    "Townhall"
+    "Townhall",
+    "City government office",
+    "Amenity: Townhall"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,17 @@
     "class": "town_hall",
     "subclass": "townhall",
     "names": [
-      "hatton dickoya urban council"
+      "hatton dickoya urban council",
+      "Hatton Dickoya Urban Council"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Hatton Dickoya Urban Council, Hatton, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Hatton East, Norwood, Nuwara Eliya, Central, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

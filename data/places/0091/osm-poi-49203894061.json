@@ -6,7 +6,8 @@
     "longitude": 81.308023
   },
   "categories": [
-    "Post office"
+    "Post office",
+    "Amenity: Post Office"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,15 @@
     "subclass": "post_office",
     "names": [
       "Okkampitiya Post Office"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Okkampitiya-Maligawila Rd, Okkampitiya, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Okkampitiya, Buttala, Monaragala, Uva, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

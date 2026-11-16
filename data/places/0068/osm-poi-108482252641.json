@@ -6,7 +6,13 @@
     "longitude": 80.903009
   },
   "categories": [
-    "Park"
+    "Park",
+    "School",
+    "Playground",
+    "Multi",
+    "Stadium",
+    "Hospital",
+    "Prison"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +22,13 @@
     "class": "park",
     "subclass": "park",
     "names": [
-      "ground"
+      "ground",
+      "Ground"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL"
 }

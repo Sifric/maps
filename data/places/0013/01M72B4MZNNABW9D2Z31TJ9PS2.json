@@ -8,7 +8,9 @@
   "categories": [
     "Bank",
     "ATM",
-    "Currency exchange service"
+    "Currency exchange service",
+    "Amenity: Bank",
+    "Business and Professional Services > Financial Service > Banking and Finance > Bank"
   ],
   "phone": "0522222390",
   "website": "http://www.boc.lk/",
@@ -57,5 +59,19 @@
     }
   ],
   "business_status": "OPEN",
-  "id": "01M72B4MZNNABW9D2Z31TJ9PS2"
+  "id": "01M72B4MZNNABW9D2Z31TJ9PS2",
+  "alternate_addresses": [
+    "Lawson Street, Nuwara Eliya",
+    "Lawson Street, Nuwara Eliya, Nuwaraeliya, Central, Sri Lanka",
+    "Nuwara Eliya, Sri Lanka",
+    "XQF8+HHC, 43, Lawson street, Lawson Rd, Nuwara Eliya"
+  ],
+  "source": {
+    "names": [
+      "Bank of Ceylon"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  }
 }

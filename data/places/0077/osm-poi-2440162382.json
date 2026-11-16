@@ -6,7 +6,9 @@
     "longitude": 80.979179
   },
   "categories": [
-    "School"
+    "School",
+    "Overture Maps",
+    "Religious School"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,17 @@
     "class": "school",
     "subclass": "school",
     "names": [
-      "St Thomas College Bandarawela"
+      "St Thomas College Bandarawela",
+      "St. Thomas' College, Bandarawela"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Wewathenna, Bandarawela, Badulla, Uva, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "S. Thomas' College, Uva Province, 8, 90100, Sri Lanka",
+    "Sri Lanka"
+  ]
 }

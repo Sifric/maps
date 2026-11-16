@@ -6,7 +6,10 @@
     "longitude": 80.219523
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Dining and Drinking > Cafe, Coffee, and Tea House > Café",
+    "Arts and Entertainment > Art Gallery",
+    "Retail > Bookstore"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "restaurant",
     "names": [
       "Serendipity Arts Cafe"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Osanagoda, Galle 4 Gravets, Galle, Southern, Sri Lanka",
+    "Galle Fort, Galle, Sri Lanka"
+  ]
 }

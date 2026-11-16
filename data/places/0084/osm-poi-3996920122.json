@@ -6,7 +6,14 @@
     "longitude": 79.853021
   },
   "categories": [
-    "Office"
+    "Office",
+    "GeoNames",
+    "Feature class S",
+    "BLDG",
+    "Tourism: Information",
+    "Information",
+    "Overture Maps",
+    "Boat Tour"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +24,15 @@
     "subclass": "office",
     "names": [
       "Muthurajawela Visitor Centre"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Pamunugama, Wattala, Gampaha, Western, Sri Lanka",
+    "Muthurajawela Visitor Centre, Bopitiya, 94, Sri Lanka"
+  ]
 }

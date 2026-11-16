@@ -6,7 +6,8 @@
     "longitude": 80.063451
   },
   "categories": [
-    "Food court"
+    "Food court",
+    "Amenity: Food Court"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,14 @@
     "subclass": "food_court",
     "names": [
       "People's bakers"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Horana South, Horana, Kalutara, Western, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ]
 }

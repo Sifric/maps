@@ -6,7 +6,10 @@
     "longitude": 79.8695
   },
   "categories": [
-    "Pharmacy"
+    "Pharmacy",
+    "Amenity: Pharmacy",
+    "Healthcare: Pharmacy",
+    "Retail > Pharmacy"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,17 @@
     "class": "pharmacy",
     "subclass": "pharmacy",
     "names": [
-      "New pettah pharmacy"
+      "New pettah pharmacy",
+      "New Pettah Pharmacy"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "634/2c, Havelock Road, Colombo -06, Colombo, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Wellawatta North, Thimbirigasyaya, Colombo, Western, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

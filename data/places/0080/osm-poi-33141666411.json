@@ -6,7 +6,8 @@
     "longitude": 81.861003
   },
   "categories": [
-    "School"
+    "School",
+    "Amenity: School"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,15 @@
     "subclass": "school",
     "names": [
       "Al Hicama Vidyalaya"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Palamunai",
+  "alternate_addresses": [
+    "Palamunai, Addalachchenai 08, Addalaichenai, Ampara, Eastern, Sri Lanka",
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

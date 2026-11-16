@@ -6,7 +6,9 @@
     "longitude": 79.901542
   },
   "categories": [
-    "Supermarket"
+    "Supermarket",
+    "Retail > Food and Beverage Retail > Supermarket",
+    "Retail > Convenience Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,11 @@
     "subclass": "supermarket",
     "names": [
       "Cargills Food City"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Pita Kotte, Sri Jayawardenepura Kotte, Western Province, Sri Lanka",
+  "business_status": "OPERATIONAL"
 }

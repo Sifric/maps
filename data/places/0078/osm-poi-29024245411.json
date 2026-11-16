@@ -6,7 +6,8 @@
     "longitude": 80.549312
   },
   "categories": [
-    "Buddhist"
+    "Buddhist",
+    "Place Of Worship"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,16 @@
     "class": "place_of_worship",
     "subclass": "buddhist",
     "names": [
-      "Suvisuddaramaya- Makandura"
+      "Suvisuddaramaya- Makandura",
+      "Suvisuddaramaya - Makandura"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Akuressa-Makandura Road, Makadura, Makandura West, Mulatiyana, Matara, Southern, Sri Lanka"
+  ]
 }

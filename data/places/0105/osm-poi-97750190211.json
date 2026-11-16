@@ -6,7 +6,8 @@
     "longitude": 80.521288
   },
   "categories": [
-    "School"
+    "School",
+    "Amenity: School"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,16 @@
     "class": "school",
     "subclass": "school",
     "names": [
-      "vidulipura sinhala maha vidyalaya"
+      "vidulipura sinhala maha vidyalaya",
+      "Vidulipura Sinhala Maha Vidyalaya"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Vidulipura South, Ambagamuwa Korale, Nuwara Eliya, Central, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ]
 }

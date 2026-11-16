@@ -6,7 +6,10 @@
     "longitude": 79.926224
   },
   "categories": [
-    "Fast food restaurant"
+    "Fast food restaurant",
+    "Fast Food",
+    "Dining and Drinking > Restaurant > Fried Chicken Joint",
+    "Dining and Drinking > Restaurant > Fast Food Restaurant"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,14 @@
     "subclass": "fast_food",
     "names": [
       "KFC"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Maharagama-Dehiwala Road, Maharagama, Pathiragoda, Colombo, Western, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Dehiwala-Maharagama Rd., Maharagama, Western Province, 10280, Sri Lanka"
+  ]
 }

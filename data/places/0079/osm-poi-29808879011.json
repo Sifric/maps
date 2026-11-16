@@ -6,7 +6,8 @@
     "longitude": 80.843346
   },
   "categories": [
-    "Hospital"
+    "Hospital",
+    "Pharmacy"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,17 @@
     "class": "hospital",
     "subclass": "hospital",
     "names": [
-      "Indika Pharmacy"
+      "Indika Pharmacy",
+      "Indika Pharmacy/ඉන්දික ඹෟෂධාලය"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Hospital Rd, Embilipitiya, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Hospital Road, Embilipitiya, Embilipitiya New Town, Ratnapura, Sabaragamuwa, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

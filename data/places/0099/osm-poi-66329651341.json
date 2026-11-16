@@ -6,7 +6,11 @@
     "longitude": 79.900249
   },
   "categories": [
-    "Massage"
+    "Massage",
+    "Place",
+    "Shop: Massage",
+    "Overture Maps",
+    "Spa"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +21,16 @@
     "subclass": "massage",
     "names": [
       "Zen Island"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "67 B 389, Rathmalana-Mirihana Road, Nugegoda",
+    "Rathmalana-Mirihana Road, Nugegoda, Gangodavila East, Sri Jayawardanapura Kotte, Colombo, Western, Sri Lanka",
+    "67 B389, Sri Jayewardenepura Kotte, 10250, Sri Lanka"
+  ]
 }

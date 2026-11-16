@@ -6,7 +6,9 @@
     "longitude": 80.045185
   },
   "categories": [
-    "Company"
+    "Company",
+    "Overture Maps",
+    "Auto Dealer"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,14 @@
     "subclass": "company",
     "names": [
       "Ape Riya Pola Ranala"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "332/A, Avissawella Road, Jalthara, Colombo District, 1, 10640, Sri Lanka"
+  ]
 }

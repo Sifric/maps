@@ -6,7 +6,9 @@
     "longitude": 80.767155
   },
   "categories": [
-    "Atm"
+    "Atm",
+    "Amenity: Bank",
+    "Bank"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,14 @@
     "subclass": "atm",
     "names": [
       "Hatton National Bank"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Nuwara Eliya",
+  "alternate_addresses": [
+    "Nuwara Eliya, Nuwaraeliya, Central, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

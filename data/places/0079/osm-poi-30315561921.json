@@ -6,7 +6,9 @@
     "longitude": 80.599426
   },
   "categories": [
-    "College"
+    "College",
+    "Community and Government > Education > College and University > Medical School",
+    "Community and Government > Education > College and University > University"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,16 @@
     "class": "college",
     "subclass": "college",
     "names": [
-      "Faculty Of Medicine"
+      "Faculty Of Medicine",
+      "Faculty of Medicine"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Uda Peradeniya, Gangawata Korale, Kandy, Central, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "University of Peradeniya, Kandy, Central Province, 20400, Sri Lanka"
+  ]
 }

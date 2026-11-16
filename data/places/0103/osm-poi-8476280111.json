@@ -6,7 +6,8 @@
     "longitude": 79.914063
   },
   "categories": [
-    "Fuel station"
+    "Fuel station",
+    "Fuel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,14 @@
     "subclass": "fuel",
     "names": [
       "Petrogas Lanka"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Nawinna, Pathiragoda, Maharagama, Colombo, Western, Sri Lanka"
+  ]
 }

@@ -6,7 +6,10 @@
     "longitude": 79.859587
   },
   "categories": [
-    "Fast food restaurant"
+    "Fast food restaurant",
+    "Dining and Drinking > Restaurant > Fried Chicken Joint",
+    "Dining and Drinking > Restaurant > Fast Food Restaurant",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,14 @@
     "subclass": "fast_food",
     "names": [
       "KFC"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "George R. de Silva Mawatha, Colombo, Western Province, 01300, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "George R. De Silva Mawatha, Colombo, 01300, Sri Lanka"
+  ]
 }

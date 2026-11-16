@@ -6,7 +6,8 @@
     "longitude": 80.662538
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,15 @@
     "subclass": "hotel",
     "names": [
       "Hotel Lihini Village"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Kandalama Road, Dambulla, Pahala Wewa, Matale, Central, Sri Lanka",
+    "Kandalama Road, No. 247/4, Central Province, 2, 21000, Sri Lanka"
+  ]
 }

@@ -6,7 +6,8 @@
     "longitude": 81.291109
   },
   "categories": [
-    "School"
+    "School",
+    "Amenity: School"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,15 @@
     "subclass": "school",
     "names": [
       "Tissamaharama Central College"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Tissamaharama",
+  "alternate_addresses": [
+    "Tissamaharama, Gotabhayapura, Thissamaharama, Hambantota, Southern, Sri Lanka",
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

@@ -5,9 +5,20 @@
     "longitude": 81.45955479999999
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Amenity: Restaurant"
   ],
   "address": "road, 123 Km post, Batticaloa",
   "business_status": "OPEN",
-  "id": "01M5Z17FVDTKG763V2W8BS0PH8"
+  "id": "01M5Z17FVDTKG763V2W8BS0PH8",
+  "alternate_addresses": [
+    "Habarana-Polonnaruwa-Batticaloa Road",
+    "Habarana-Polonnaruwa-Batticaloa Road, Vahaneri, Koralai Pattu South, Batticaloa, Eastern, Sri Lanka"
+  ],
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  }
 }

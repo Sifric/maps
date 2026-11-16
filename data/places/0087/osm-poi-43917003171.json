@@ -6,7 +6,9 @@
     "longitude": 80.216632
   },
   "categories": [
-    "Clothes"
+    "Clothes",
+    "Overture Maps",
+    "Souvenir Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "clothes",
     "names": [
       "Abracadabra"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Osanagoda, Galle 4 Gravets, Galle, Southern, Sri Lanka",
+    "80 Pedlar St, Galle, 80000, Sri Lanka"
+  ]
 }

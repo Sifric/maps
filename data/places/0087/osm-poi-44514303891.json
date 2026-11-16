@@ -6,7 +6,8 @@
     "longitude": 81.788508
   },
   "categories": [
-    "Post office"
+    "Post office",
+    "Methodist church"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,16 @@
     "class": "post",
     "subclass": "post_office",
     "names": [
-      "Methodist Church, Kaluthavalai"
+      "Methodist Church, Kaluthavalai",
+      "Methodist Church Kaluthavalai"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Church Rd, Kaluwanchikudy, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

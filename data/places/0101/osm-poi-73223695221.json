@@ -6,7 +6,8 @@
     "longitude": 80.066718
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Travel and Transportation > Lodging > Bed and Breakfast"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,17 @@
     "class": "lodging",
     "subclass": "hotel",
     "names": [
-      "Villa 96 Boutique Hotel"
+      "Villa 96 Boutique Hotel",
+      "Villa 96 boutique Hotel"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Kahawa, Madampagama, Galle, Southern, Sri Lanka",
+    "Villa 96 Cabanas, Akurala Kahawa, Hikkaduwa, Sri Lanka"
+  ]
 }

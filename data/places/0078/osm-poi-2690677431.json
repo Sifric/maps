@@ -6,7 +6,8 @@
     "longitude": 79.861481
   },
   "categories": [
-    "Supermarket"
+    "Supermarket",
+    "Business and Professional Services > Financial Service > Banking and Finance > Credit Union"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,17 @@
     "class": "grocery",
     "subclass": "supermarket",
     "names": [
-      "P & A"
+      "P & A",
+      "P&a"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Wellawatta North, Thimbirigasyaya, Colombo, Western, Sri Lanka",
+    "Colombo, Western Province, Sri Lanka"
+  ]
 }

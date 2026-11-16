@@ -13,7 +13,10 @@
     "Takeout restaurant",
     "Pub",
     "Sri Lankan restaurant",
-    "Western restaurant"
+    "Western restaurant",
+    "Amenity: Restaurant",
+    "Restaurant",
+    "Dining and Drinking > Restaurant > Asian Restaurant"
   ],
   "address": "252/4 Kandy Road, Yakkala",
   "phone": "0722229800",
@@ -63,5 +66,16 @@
       ]
     }
   ],
-  "id": "01M6Q63E589HPC267JQW2GQXVB"
+  "id": "01M6Q63E589HPC267JQW2GQXVB",
+  "alternate_addresses": [
+    "Kandy road",
+    "Kandy road, Yakkala West, Gampaha, Western, Sri Lanka",
+    "Yakkala, Western Province, 11870, Sri Lanka"
+  ],
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  }
 }

@@ -6,7 +6,10 @@
     "longitude": 80.483555
   },
   "categories": [
-    "Zoo"
+    "Zoo",
+    "Landmarks and Outdoors > Farm",
+    "Overture Maps",
+    "Farm"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,14 @@
     "subclass": "zoo",
     "names": [
       "Snake farm"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Horagoda South, Malimbada, Matara, Southern, Sri Lanka"
+  ]
 }

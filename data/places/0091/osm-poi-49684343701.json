@@ -6,7 +6,10 @@
     "longitude": 79.885551
   },
   "categories": [
-    "Food court"
+    "Food court",
+    "Amenity: Food Court",
+    "Overture Maps",
+    "Restaurant"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "food_court",
     "names": [
       "Royal Boat House"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Peliyagodawatta, Kelaniya, Gampaha, Western, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "493 Negombo - Colombo Main Rd, Galwetiya, 11300, Sri Lanka",
+    "Sri Lanka"
+  ]
 }

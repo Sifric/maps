@@ -6,7 +6,9 @@
     "longitude": 80.733166
   },
   "categories": [
-    "Place of worship"
+    "Place of worship",
+    "Archaeological Site",
+    "Amenity: Place Of Worship"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": null,
     "names": [
       "Pasgama Natha Devalaya"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Kandy",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Elikewela, Pathahewaheta, Kandy, Central, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

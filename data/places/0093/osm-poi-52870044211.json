@@ -6,7 +6,8 @@
     "longitude": 80.459812
   },
   "categories": [
-    "Hostel"
+    "Hostel",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,16 @@
     "class": "lodging",
     "subclass": "hostel",
     "names": [
-      "Space garden hostel"
+      "Space garden hostel",
+      "Space Garden Hostel"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "udupila junction, Mirissa Udupila, 81740, Sri Lanka"
+  ]
 }

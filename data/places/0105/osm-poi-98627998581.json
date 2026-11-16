@@ -6,7 +6,8 @@
     "longitude": 80.527285
   },
   "categories": [
-    "Supermarket"
+    "Supermarket",
+    "Shop: Supermarket"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,14 @@
     "subclass": "supermarket",
     "names": [
       "SmartZone Foodcity"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Walawwegama, Ipalogama, Anuradhapura, North Central, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ]
 }

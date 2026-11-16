@@ -10,12 +10,13 @@
     "Brunch restaurant",
     "Cafe",
     "Pub",
-    "Sri Lankan restaurant"
+    "Sri Lankan restaurant",
+    "Overture Maps"
   ],
   "address": "Upper Lake Road, Nuwara Eliya 22200",
   "phone": "0720222263",
   "website": "https://themparadu.com/",
-  "business_status": "OPEN",
+  "business_status": "OPERATIONAL",
   "hours": [
     {
       "day": "Monday",
@@ -60,5 +61,15 @@
       ]
     }
   ],
-  "id": "01M6Q638A8KF9SCVDK0XNGA2RD"
+  "id": "01M6Q638A8KF9SCVDK0XNGA2RD",
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  },
+  "alternate_addresses": [
+    "Upper Lake Rd, Nuwara Eliya, Nuwaraeliya, Central, Sri Lanka",
+    "Upper Lake Rd, Nuwara Eliya, 22200, Sri Lanka"
+  ]
 }

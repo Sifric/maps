@@ -6,7 +6,10 @@
     "longitude": 79.862838
   },
   "categories": [
-    "Railway station"
+    "Railway station",
+    "Bus stop",
+    "Overture Maps",
+    "Train Station"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,14 @@
     "subclass": "station",
     "names": [
       "Mount Lavinia"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Station Rd, Dehiwala-Mount Lavinia, 10370, Sri Lanka"
+  ]
 }

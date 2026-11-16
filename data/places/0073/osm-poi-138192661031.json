@@ -6,7 +6,9 @@
     "longitude": 79.9286
   },
   "categories": [
-    "Paint"
+    "Paint",
+    "Overture Maps",
+    "Hardware Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "paint",
     "names": [
       "Opelco Paints"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Kiribathgoda, Kelaniya, Gampaha, Western, Sri Lanka",
+    "No: 3M/A, National Housing Scheme Kiribathgoda, Kiribathgoda, 11600, Sri Lanka"
+  ]
 }

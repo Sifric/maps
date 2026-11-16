@@ -6,7 +6,10 @@
     "longitude": 79.928166
   },
   "categories": [
-    "Department store"
+    "Department store",
+    "Clothes",
+    "Retail > Fashion Retail > Clothing Store",
+    "Retail > Department Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "department_store",
     "names": [
       "Cool Planet"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Pannipitiya Road, Pelawatte, Batapotha, Kaduwela, Colombo, Western, Sri Lanka",
+    "Pannipitiya Rd, Sri Jayawardenepura Kotte, Western Province, Sri Lanka"
+  ]
 }

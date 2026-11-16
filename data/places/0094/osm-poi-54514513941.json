@@ -6,7 +6,9 @@
     "longitude": 80.76318
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Overture Maps",
+    "Beach"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,16 @@
     "class": "restaurant",
     "subclass": "restaurant",
     "names": [
-      "Ran Lakshmi Beach Paradise"
+      "Ran Lakshmi Beach Paradise",
+      "Ran lakshmi Beach Paradise"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Walatha Hena, Bodhi mawatha, Unakuruwa, Tangalle, Unakooruwa West, 82200, Sri Lanka"
+  ]
 }

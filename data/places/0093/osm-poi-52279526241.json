@@ -6,7 +6,9 @@
     "longitude": 79.868626
   },
   "categories": [
-    "Cafe"
+    "Cafe",
+    "Dining and Drinking > Restaurant > Seafood Restaurant",
+    "Dining and Drinking > Restaurant > Cajun and Creole Restaurant"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,17 @@
     "class": "cafe",
     "subclass": "cafe",
     "names": [
-      "Cajun on Wheels"
+      "Cajun on Wheels",
+      "Cajun On Wheels"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Bullers Lane, Colombo 07, Kurunduwatta, Thimbirigasyaya, Colombo, Western, Sri Lanka",
+    "4, Colombo, Western Province, Sri Lanka"
+  ]
 }

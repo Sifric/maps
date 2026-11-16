@@ -6,7 +6,8 @@
     "longitude": 81.836643
   },
   "categories": [
-    "Muslim"
+    "Muslim",
+    "Place Of Worship"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,16 @@
     "class": "place_of_worship",
     "subclass": "muslim",
     "names": [
-      "fathima musjith"
+      "fathima musjith",
+      "Fathima Musjith"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "[unknown], Kalmunai, Ampara, Eastern, Sri Lanka"
+  ]
 }

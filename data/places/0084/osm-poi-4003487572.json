@@ -6,7 +6,9 @@
     "longitude": 80.047116
   },
   "categories": [
-    "Halt"
+    "Halt",
+    "Public transport: Station",
+    "Railway station: Station"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,13 @@
     "class": "railway",
     "subclass": "halt",
     "names": [
-      "Heendeniya-Pattigoda"
+      "Heendeniya-Pattigoda",
+      "Heendeniya - Pattigoda"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL"
 }

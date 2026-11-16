@@ -6,7 +6,8 @@
     "longitude": 79.850972
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Travel and Transportation > Lodging > Bed and Breakfast"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,15 @@
     "subclass": "hotel",
     "names": [
       "The Capsule Hotel"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Wellawatta North, Thimbirigasyaya, Colombo, Western, Sri Lanka",
+    "380, Galle Road, Colombo 3, Sri Lanka, Colombo, Western Province, 00300, Sri Lanka"
+  ]
 }

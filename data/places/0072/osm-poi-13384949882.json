@@ -6,7 +6,12 @@
     "longitude": 79.850044
   },
   "categories": [
-    "Christian"
+    "Christian",
+    "Place of Worship",
+    "Church",
+    "Community and Government > Spiritual Center > Church",
+    "Overture Maps",
+    "Roman Catholic Place Of Worship"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +21,18 @@
     "class": "place_of_worship",
     "subclass": "christian",
     "names": [
-      "St. Francis De Sales Church"
+      "St. Francis De Sales Church",
+      "St Francis De Sales Church"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Wellaweediya, Negombo, Gampaha, Western, Sri Lanka",
+    "Colombo Road, Negombo, Sri Lanka",
+    "St Francis De Sales Church, Negombo, 11500, Sri Lanka"
+  ]
 }

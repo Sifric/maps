@@ -6,7 +6,10 @@
     "longitude": 79.863181
   },
   "categories": [
-    "Supermarket"
+    "Supermarket",
+    "Retail > Convenience Store",
+    "Overture Maps",
+    "Convenience Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,14 @@
     "subclass": "supermarket",
     "names": [
       "Cargills Food City Express"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "297/1, Meerigama Rd, Mahahunupitiya, Negombo, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "297/1, Meerigama Road Mahahunupitiya, Negombo, 11500, Sri Lanka"
+  ]
 }

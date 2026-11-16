@@ -6,7 +6,10 @@
     "longitude": 80.288783
   },
   "categories": [
-    "Guest house"
+    "Guest house",
+    "Hotel",
+    "Overture Maps",
+    "Resort"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,14 @@
     "subclass": "guest_house",
     "names": [
       "WB Villa"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Uyana Bandarawatta, A2, Unawatuna, Sri Lanka",
+  "alternate_addresses": [
+    "Uyana Bandarawatta, A2, උණවටුන, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

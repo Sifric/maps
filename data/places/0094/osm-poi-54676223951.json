@@ -6,7 +6,9 @@
     "longitude": 80.426965
   },
   "categories": [
-    "Guest house"
+    "Guest house",
+    "Tourism: Guest House",
+    "Travel and Transportation > Lodging > Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,16 @@
     "subclass": "guest_house",
     "names": [
       "Villa 2B1"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "248/91 1st Lane Paranakade, Weligama 81700, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Mirissa South 2, Weligama, Matara, Southern, Sri Lanka",
+    "Weligama, Southern Province, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

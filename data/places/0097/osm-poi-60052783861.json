@@ -6,7 +6,9 @@
     "longitude": 80.108142
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Cafe",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,18 @@
     "class": "restaurant",
     "subclass": "restaurant",
     "names": [
-      "munchies shack"
+      "munchies shack",
+      "Munchies shack",
+      "Munchies Shack"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Wavulagoda East, Hikkaduwa, Galle, Southern, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Galle road, Wewala, Sri Lanka"
+  ]
 }

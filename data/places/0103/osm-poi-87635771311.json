@@ -6,7 +6,9 @@
     "longitude": 79.875664
   },
   "categories": [
-    "Religion"
+    "Religion",
+    "Non-governmental organization",
+    "Office: Religion"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,14 @@
     "subclass": "religion",
     "names": [
       "Caritas Sri Lanka"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Kynsey Rd, Colombo 00800, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

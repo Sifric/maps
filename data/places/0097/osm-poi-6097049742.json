@@ -6,7 +6,11 @@
     "longitude": 79.931186
   },
   "categories": [
-    "Railway station"
+    "Railway station",
+    "Train station",
+    "Travel and Transportation > Road",
+    "Landmarks and Outdoors > States and Municipalities > Neighborhood",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +21,15 @@
     "subclass": "station",
     "names": [
       "Walpola"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Ragama, Sri Lanka",
+  "alternate_addresses": [
+    ", Sri Lanka",
+    "Batuwatta West, 11010, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

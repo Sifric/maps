@@ -6,7 +6,11 @@
     "longitude": 81.576431
   },
   "categories": [
-    "Library"
+    "Library",
+    "Community and Government > Library",
+    "Community and Government > Education > College and University > College Library",
+    "Bus stop",
+    "Government"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +21,11 @@
     "subclass": "library",
     "names": [
       "Library"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL"
 }

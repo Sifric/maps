@@ -6,7 +6,10 @@
     "longitude": 80.243116
   },
   "categories": [
-    "Guest house"
+    "Guest house",
+    "Tourism: Guest House",
+    "Overture Maps",
+    "Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "guest_house",
     "names": [
       "Jungle Beach Inn"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Dewata, Galle 4 Gravets, Galle, Southern, Sri Lanka",
+    "14, Roomassala Road, Unawatuna, Galle, A2, Bonavistawa, 80060, Sri Lanka"
+  ]
 }

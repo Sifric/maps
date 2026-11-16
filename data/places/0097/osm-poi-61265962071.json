@@ -6,7 +6,10 @@
     "longitude": 81.18389
   },
   "categories": [
-    "Guest house"
+    "Guest house",
+    "Tourism: Guest House",
+    "Overture Maps",
+    "Cottage"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,18 @@
     "class": "lodging",
     "subclass": "guest_house",
     "names": [
-      "Bundala Flamingo Cottages"
+      "Bundala Flamingo Cottages",
+      "Bundala flamingo cottages"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "166, Tissamaharam Road, Palle Malala, Weligatta, 82004",
+    "Tissamaharam Road, Palle Malala, Weligatta, Pallemalala, Hambantota, Southern, Sri Lanka",
+    "no:166, lake road, pallemalala, weligatta, Hambantota, 82004, Sri Lanka"
+  ]
 }

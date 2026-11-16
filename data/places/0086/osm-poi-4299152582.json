@@ -6,7 +6,10 @@
     "longitude": 79.895963
   },
   "categories": [
-    "Supermarket"
+    "Supermarket",
+    "Retail > Shopping Mall",
+    "Overture Maps",
+    "Shopping Mall"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,18 @@
     "class": "grocery",
     "subclass": "supermarket",
     "names": [
-      "K Zone"
+      "K Zone",
+      "K - Zone"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Batagama North, Ja Ela, Gampaha, Western, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Colombo Rd, Ja-Ela, Ja-Ela, Western Province, Sri Lanka",
+    "Galle Road, Kanuwatta, 80110, Sri Lanka",
+    "Sri Lanka"
+  ]
 }

@@ -6,7 +6,9 @@
     "longitude": 79.903189
   },
   "categories": [
-    "Fast food restaurant"
+    "Fast food restaurant",
+    "Fast Food",
+    "Dining and Drinking > Restaurant > Pizzeria"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,14 @@
     "subclass": "fast_food",
     "names": [
       "Domino's Pizza"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Rattanapitiya, Kesbewa, Colombo, Western, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "No 95 Kesbewa road, Boraleagamuwa, Sri Lanka"
+  ]
 }

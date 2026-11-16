@@ -6,7 +6,10 @@
     "longitude": 79.876496
   },
   "categories": [
-    "Car repair"
+    "Car repair",
+    "Car Service Station",
+    "Shop: Car Repair",
+    "Local business"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,59 @@
     "subclass": "car_repair",
     "names": [
       "New Smart Service Center"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "190 Mattakkuliya Centre Rd, Colombo, Sri Lanka",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7:30 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7:30 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7:30 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7:30 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7:30 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7:30 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7:30 AM–6 PM"
+      ]
+    }
+  ],
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Peliyagodawatta, Kelaniya, Gampaha, Western, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

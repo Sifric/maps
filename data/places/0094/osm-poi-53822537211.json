@@ -6,7 +6,8 @@
     "longitude": 79.999925
   },
   "categories": [
-    "Cafe"
+    "Cafe",
+    "Dining and Drinking > Dessert Shop > Ice Cream Parlor"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,16 @@
     "class": "cafe",
     "subclass": "cafe",
     "names": [
-      "HAPPY ICE CREAM"
+      "HAPPY ICE CREAM",
+      "Happy Ice Cream"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Aluthgama, Western Province, Sri Lanka"
+  ]
 }

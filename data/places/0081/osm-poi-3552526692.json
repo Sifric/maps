@@ -6,7 +6,9 @@
     "longitude": 79.868363
   },
   "categories": [
-    "Hospital"
+    "Hospital",
+    "Wikidata physical place",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,60 @@
     "subclass": "hospital",
     "names": [
       "National Hospital of Sri Lanka"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "WV99+FHX, Colombo 00700, Sri Lanka",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12 AM–11:59 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12 AM–11:59 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12 AM–11:59 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12 AM–11:59 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12 AM–11:59 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "12 AM–11:59 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12 AM–11:59 PM"
+      ]
+    }
+  ],
+  "alternate_addresses": [
+    "Wanathamulla, Thimbirigasyaya, Colombo, Western, Sri Lanka",
+    "Sri Lanka",
+    "Kynsey Pl, Colombo, 800, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

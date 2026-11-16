@@ -6,7 +6,10 @@
     "longitude": 79.861695
   },
   "categories": [
-    "Pharmacy"
+    "Pharmacy",
+    "Amenity: Pharmacy",
+    "Healthcare: Pharmacy",
+    "Retail > Pharmacy"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,16 @@
     "subclass": "pharmacy",
     "names": [
       "United Pharmacy"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "228, Galle Road, Wellawatte, 00600",
+    "Galle Road, Wellawatte, Wellawatta North, Thimbirigasyaya, Colombo, Western, Sri Lanka",
+    "228, Wellawatta, Sri Lanka"
+  ]
 }

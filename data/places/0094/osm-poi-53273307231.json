@@ -6,7 +6,11 @@
     "longitude": 80.434728
   },
   "categories": [
-    "Guest house"
+    "Guest house",
+    "Travel and Transportation > Lodging > Hotel",
+    "Travel and Transportation > Lodging > Hostel",
+    "Overture Maps",
+    "Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +21,15 @@
     "subclass": "guest_house",
     "names": [
       "Happy Go Island"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "540 Bypass Road, Pelena, Weligama, Southern Province, Sri Lanka",
+    "540 By Pass Road, Pelena West, 81700, Sri Lanka"
+  ]
 }

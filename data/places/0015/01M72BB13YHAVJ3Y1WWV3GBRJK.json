@@ -9,7 +9,9 @@
     "Medical Center",
     "Doctor",
     "Home health care service",
-    "Medical clinic"
+    "Medical clinic",
+    "Overture Maps",
+    "Outpatient Care Facility"
   ],
   "phone": "0412250484",
   "hours": [
@@ -57,5 +59,16 @@
     }
   ],
   "business_status": "OPEN",
-  "id": "01M72BB13YHAVJ3Y1WWV3GBRJK"
+  "id": "01M72BB13YHAVJ3Y1WWV3GBRJK",
+  "alternate_addresses": [
+    "441E Matara Rd, Pelena West, W1H 7EH, Sri Lanka"
+  ],
+  "source": {
+    "names": [
+      "Weligama Medical Centre Pvt Ltd"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  }
 }

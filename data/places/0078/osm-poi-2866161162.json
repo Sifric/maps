@@ -6,7 +6,10 @@
     "longitude": 80.766265
   },
   "categories": [
-    "Post office"
+    "Post office",
+    "Community and Government > Government Building > Post Office",
+    "Wikidata physical place",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,17 @@
     "class": "post",
     "subclass": "post_office",
     "names": [
-      "Nuwara Eliya Post Office"
+      "Nuwara Eliya Post Office",
+      "Nuwara Eliya Post office"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Queen Elizabeth Drive, Nuwara Eliya, Nuwaraeliya, Central, Sri Lanka",
+    "Nuwara Eliya, Sri Lanka"
+  ]
 }

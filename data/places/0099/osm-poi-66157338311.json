@@ -6,7 +6,10 @@
     "longitude": 79.89879
   },
   "categories": [
-    "Muslim"
+    "Muslim",
+    "Mosque",
+    "Amenity: Place Of Worship",
+    "Place Of Worship"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -18,6 +21,15 @@
     "names": [
       "Dheeniya masjid مسجد",
       "Dheeniya masjid msjd"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Podu Sewa Mawatha, Panadura, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Katukurunda South, Moratuwa, Colombo, Western, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

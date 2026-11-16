@@ -6,7 +6,9 @@
     "longitude": 79.908017
   },
   "categories": [
-    "Energy supplier"
+    "Energy supplier",
+    "Electric utility company",
+    "Office: Energy Supplier"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,16 @@
     "class": "office",
     "subclass": "energy_supplier",
     "names": [
-      "C.E>B Consumer Service Center"
+      "C.E>B Consumer Service Center",
+      "C.E.B Consumer Service Center"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Susantha Mawatha, Panadura, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

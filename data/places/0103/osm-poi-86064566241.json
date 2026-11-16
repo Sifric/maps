@@ -6,7 +6,10 @@
     "longitude": 79.893646
   },
   "categories": [
-    "Company"
+    "Company",
+    "Retail > Hardware Store",
+    "Overture Maps",
+    "Hardware Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "company",
     "names": [
       "Three Sinha Industries"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Western Province, Sri Lanka",
+    "448, Nawala Road, Koswatta, Rajagiriya, Sri Jayewardenepura Kotte, 10107, Sri Lanka"
+  ]
 }

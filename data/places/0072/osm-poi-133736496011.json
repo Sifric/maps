@@ -6,7 +6,9 @@
     "longitude": 79.924073
   },
   "categories": [
-    "Travel agency"
+    "Travel agency",
+    "Overture Maps",
+    "Travel Service"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "travel_agency",
     "names": [
       "Backpacking with CJ"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Dampe Road, Dampe, Kesbewa, Colombo, Western, Sri Lanka",
+    "Bolgoda View, 39/55 Dampe Road, Madapatha, 1, 10306, Sri Lanka"
+  ]
 }

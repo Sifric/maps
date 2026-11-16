@@ -6,7 +6,9 @@
     "longitude": 80.75861
   },
   "categories": [
-    "Guest house"
+    "Guest house",
+    "Overture Maps",
+    "Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "guest_house",
     "names": [
       "Jungle Nature Villa"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Sigiriya, Dambulla, Matale, Central, Sri Lanka",
+    "283/2 Kalapuraya, Sigiriya, Sigiriya, 21120, Sri Lanka"
+  ]
 }

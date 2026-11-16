@@ -6,7 +6,12 @@
     "longitude": 79.852238
   },
   "categories": [
-    "Cafe"
+    "Cafe",
+    "Travel and Transportation > Lodging > Hotel",
+    "Dining and Drinking > Bar > Hotel Bar",
+    "Travel and Transportation > Lodging > Bed and Breakfast",
+    "Overture Maps",
+    "Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +22,17 @@
     "subclass": "cafe",
     "names": [
       "Hotel Nippon"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Kumaran Ratnam Mawatha, Colombo02, Ibbanwala, Colombo, Western, Sri Lanka",
+    "Kumaran Ratnam Rd., Colombo, Western Province, 00200, Sri Lanka",
+    "Colombo 02, Western Province, Sri Lanka",
+    "123 Kumaran Ratnam Rd, Colombo, 00200, Sri Lanka"
+  ]
 }

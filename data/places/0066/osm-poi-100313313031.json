@@ -6,7 +6,11 @@
     "longitude": 79.866732
   },
   "categories": [
-    "Government"
+    "Government",
+    "Government office",
+    "Office: Government",
+    "Overture Maps",
+    "Community and Government > Government Building"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +21,14 @@
     "subclass": "government",
     "names": [
       "Ministry of Higher Education"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "18 Ward Pl, Colombo 00700, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ]
 }

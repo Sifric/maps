@@ -6,7 +6,11 @@
     "longitude": 80.385032
   },
   "categories": [
-    "College"
+    "College",
+    "School",
+    "Wikidata physical place",
+    "Overture Maps",
+    "High School"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +21,16 @@
     "subclass": "college",
     "names": [
       "Sivali Central College"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Ratnapura 1, Ratnapura, 9.Sabaragamuwa, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Colombo-Ratnapura Road, Ratnapura, New Town, Sabaragamuwa, Sri Lanka",
+    "Sri Lanka",
+    "Zoological and Botanical Labs and AL Arts Building, Sivali Central Collage, 70000 A4, New Town, 70000, Sri Lanka"
+  ]
 }

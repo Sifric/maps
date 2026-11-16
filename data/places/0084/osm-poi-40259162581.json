@@ -6,7 +6,9 @@
     "longitude": 80.619124
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Guest Houses",
+    "Travel and Transportation > Lodging > Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,18 @@
     "class": "lodging",
     "subclass": "hotel",
     "names": [
-      "Villa Shenandoah"
+      "Villa Shenandoah",
+      "VILLA Shenandoah"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "#515, HEERASSAGALA ROAD, KANDY",
+    "Heerassagala Road, Heeressagala, Gangawata Korale, Kandy, Central, Sri Lanka",
+    "515, Heerassagala Road, Kandy, Sri Lanka"
+  ]
 }

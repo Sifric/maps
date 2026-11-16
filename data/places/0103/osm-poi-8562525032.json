@@ -6,7 +6,9 @@
     "longitude": 79.935322
   },
   "categories": [
-    "Hospital"
+    "Hospital",
+    "Health and Medicine > Hospital",
+    "Health and Medicine > Medical Lab"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "hospital",
     "names": [
       "Hemas Hospital"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Pannipitiya Road, Thalawathugoda, Madiwela, Maharagama, Colombo, Western, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "647, Pannipitiya Road, Talawatugoda, Sri Lanka",
+    "Sri Lanka"
+  ]
 }

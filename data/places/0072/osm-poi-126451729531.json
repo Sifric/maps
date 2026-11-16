@@ -6,7 +6,8 @@
     "longitude": 80.462655
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,15 @@
     "subclass": "hotel",
     "names": [
       "Coastal Villa Mirissa"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Mirissa Udumulla, Weligama, Matara, Southern, Sri Lanka",
+    "Udupila, Mirissa Udupila, Sri Lanka"
+  ]
 }

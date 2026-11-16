@@ -6,7 +6,10 @@
     "longitude": 80.589325
   },
   "categories": [
-    "Supermarket"
+    "Supermarket",
+    "Retail > Food and Beverage Retail > Grocery Store",
+    "Overture Maps",
+    "Grocery Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "supermarket",
     "names": [
       "Cargills Food City Express"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Kendakaduwa, Yatinuwara, Kandy, Central, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Kandy Road, Peradeniya, Sri Lanka",
+    "Colombo Road, Uda Eriyagama West, 20400, Sri Lanka"
+  ]
 }

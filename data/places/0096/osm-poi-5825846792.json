@@ -6,7 +6,10 @@
     "longitude": 80.638806
   },
   "categories": [
-    "Buddhist"
+    "Buddhist",
+    "Buddhist temple",
+    "Amenity: Place Of Worship",
+    "Place Of Worship"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "buddhist",
     "names": [
       "Rama Viharaya"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Lady Gordon's Rd, Kandy, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Lady Gordon's Rd, Kandy, Watapuluwa West, Gangawata Korale, Central, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

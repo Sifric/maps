@@ -6,7 +6,11 @@
     "longitude": 79.903371
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Banquet hall",
+    "Tourism: Hotel",
+    "Travel and Transportation > Lodging > Hotel",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +21,17 @@
     "subclass": "hotel",
     "names": [
       "Solis Hotel"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "536 Kotte Rd, Colombo 10100, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Ethulkotte, Sri Jayawardanapura Kotte, Colombo, Western, Sri Lanka",
+    "Kotte Rd., Sri Jayawardenepura Kotte, Western Province, Sri Lanka",
+    "536 Kotte Rd, Sri Jayewardenepura Kotte, 10100, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

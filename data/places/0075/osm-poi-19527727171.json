@@ -6,7 +6,10 @@
     "longitude": 80.248132
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Travel and Transportation > Lodging > Bed and Breakfast",
+    "Hotel",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,16 @@
     "subclass": "restaurant",
     "names": [
       "Silva Rest"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Thalpegoda, Galle 4 Gravets, Galle, Southern, Sri Lanka",
+    "Dewata, Akmeemana, Galle, Southern, Sri Lanka",
+    "Unawatuna Central, Sri Lanka"
+  ]
 }

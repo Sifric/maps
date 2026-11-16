@@ -6,7 +6,8 @@
     "longitude": 79.699781
   },
   "categories": [
-    "Park"
+    "Park",
+    "Garden"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,16 @@
     "class": "park",
     "subclass": "park",
     "names": [
-      "Thalimannar Beach Gardens"
+      "Thalimannar Beach Gardens",
+      "Thalimannar beach gardens"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "ThalaimMannar Mannar Island, Talaimannar, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

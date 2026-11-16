@@ -6,7 +6,9 @@
     "longitude": 81.323826
   },
   "categories": [
-    "Hotel"
+    "Hotel",
+    "Travel and Transportation > Lodging > Resort",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,17 @@
     "subclass": "hotel",
     "names": [
       "Jayasinghe Holiday Resort"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "32A, Detagamuwa, Tissa Rd, Kataragama 91400, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Katharagama UP, Kandasurindugama, Katharagama, Monaragala, Uva, Sri Lanka",
+    "Katharagama, Sri Lanka",
+    "Katharagama, 91400, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

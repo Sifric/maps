@@ -6,7 +6,8 @@
     "longitude": 79.840382
   },
   "categories": [
-    "School"
+    "School",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,16 @@
     "class": "school",
     "subclass": "school",
     "names": [
-      "St.Peter's College"
+      "St.Peter's College",
+      "St. Peter's College"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Negombo, Muttakkarai East, Gampaha, Western, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Chilaw Rd, Negombo, 11500, Sri Lanka"
+  ]
 }

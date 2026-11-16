@@ -6,7 +6,10 @@
     "longitude": 79.85765
   },
   "categories": [
-    "Car repair"
+    "Car repair",
+    "Painter",
+    "Shop: Car Repair",
+    "Business and Professional Services > Automotive Service > Automotive Repair Shop"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,53 @@
     "subclass": "car_repair",
     "names": [
       "Mr Paint"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "02, 175 Vauxhall St, Colombo, Sri Lanka",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–6 PM"
+      ]
+    }
+  ],
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Vauxhall Street, Ibbanwala, Colombo, Western, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

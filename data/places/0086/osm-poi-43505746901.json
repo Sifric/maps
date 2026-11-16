@@ -6,7 +6,10 @@
     "longitude": 80.249902
   },
   "categories": [
-    "Cafe"
+    "Cafe",
+    "Dining and Drinking > Restaurant > Soup Spot",
+    "Travel and Transportation > Lodging > Hotel > Hotel Pool",
+    "Dining and Drinking > Restaurant > Gastropub"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,17 @@
     "class": "cafe",
     "subclass": "cafe",
     "names": [
-      "Black & white"
+      "Black & white",
+      "Black&White"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Thalpegoda, Galle 4 Gravets, Galle, Southern, Sri Lanka",
+    "Unawatuna, Sri Lanka"
+  ]
 }

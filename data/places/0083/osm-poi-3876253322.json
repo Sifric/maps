@@ -6,7 +6,9 @@
     "longitude": 80.064256
   },
   "categories": [
-    "Reservoir"
+    "Reservoir",
+    "Overture Maps",
+    "Lake"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,11 @@
     "subclass": "reservoir",
     "names": [
       "Remuna Lake"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Remuna Lake, Kalutara District, 1, 12400, Sri Lanka",
+  "business_status": "OPERATIONAL"
 }

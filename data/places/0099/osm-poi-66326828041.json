@@ -6,7 +6,8 @@
     "longitude": 80.780749
   },
   "categories": [
-    "Camp site"
+    "Camp site",
+    "Tourism: Camp Site"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +17,16 @@
     "class": "campsite",
     "subclass": "camp_site",
     "names": [
-      "Mahoora Tented Safari Camp – Knuckles"
+      "Mahoora Tented Safari Camp – Knuckles",
+      "Mahoora Tented Safari Camp - Knuckles"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Etanwala, Laggala, Matale, Central, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ]
 }

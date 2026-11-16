@@ -49,11 +49,24 @@
       ]
     }
   ],
-  "business_status": "OPEN",
+  "business_status": "OPERATIONAL",
   "phone": "0774545960",
   "categories": [
     "Cafe",
-    "Dessert shop"
+    "Dessert shop",
+    "Amenity: Cafe",
+    "Overture Maps"
   ],
-  "id": "01M72A8VE8ABHMEDS974B1JPXJ"
+  "id": "01M72A8VE8ABHMEDS974B1JPXJ",
+  "alternate_addresses": [
+    "Thimbirigasyaya Road, Jawatte",
+    "Thimbirigasyaya Road, Jawatte, Wellawatta North, Thimbirigasyaya, Colombo, Western, Sri Lanka",
+    "61 Thimbirigasyaya Rd, Colombo, 00500, Sri Lanka"
+  ],
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  }
 }

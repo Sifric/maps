@@ -6,7 +6,9 @@
     "longitude": 79.859292
   },
   "categories": [
-    "Company"
+    "Company",
+    "Retail > Baby Store",
+    "Retail > Fashion Retail > Children's Clothing Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,16 @@
     "class": "office",
     "subclass": "company",
     "names": [
-      "mothercare"
+      "mothercare",
+      "Mothercare"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "R. A. de Mel Mawatha Colombo 04, Western Province, Sri Lanka"
+  ]
 }

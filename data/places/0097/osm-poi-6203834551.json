@@ -6,7 +6,11 @@
     "longitude": 79.854738
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Fast food restaurant",
+    "Dining and Drinking > Restaurant > Pizzeria",
+    "Dining and Drinking > Restaurant > Latin American Restaurant > Arepa Restaurant",
+    "Dining and Drinking > Restaurant > Fast Food Restaurant"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +21,15 @@
     "subclass": "restaurant",
     "names": [
       "Pizza Hut"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Station Road, Bambalapitiya, Kurunduwatta, Thimbirigasyaya, Colombo, Western, Sri Lanka",
+    "Bambalapitiya Station Road Colombo, Western Province, 00400, Sri Lanka"
+  ]
 }

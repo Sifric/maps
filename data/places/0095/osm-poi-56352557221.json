@@ -6,7 +6,11 @@
     "longitude": 81.215529
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Dining and Drinking > Restaurant > Pizzeria",
+    "Dining and Drinking > Restaurant > Italian Restaurant",
+    "Overture Maps",
+    "Italian Restaurant"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +21,16 @@
     "subclass": "restaurant",
     "names": [
       "Nero Kitchen"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Varodayanagar, Town & Gravets, Trincomalee, Eastern, Sri Lanka",
+    "Nilaveli Road, Alles Garden, Trincomalee District, Sri Lanka",
+    "190/5 Nilaveli Road, Uppuveli, 31000, Sri Lanka"
+  ]
 }

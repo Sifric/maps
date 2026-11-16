@@ -5,7 +5,9 @@
     "longitude": 80.97375699999999
   },
   "categories": [
-    "Sri Lankan restaurant"
+    "Sri Lankan restaurant",
+    "Amenity: Restaurant",
+    "Restaurant"
   ],
   "address": "XXGF+3G2, Polonnaruwa",
   "phone": "0776628361",
@@ -54,5 +56,15 @@
       ]
     }
   ],
-  "id": "01M6Q63MFBABQ8708BKQ1YTDD0"
+  "id": "01M6Q63MFBABQ8708BKQ1YTDD0",
+  "alternate_addresses": [
+    "23, Habarana-Polonnaruwa-Batticaloa Road",
+    "Habarana-Polonnaruwa-Batticaloa Road, Chethiyagirigama, Higurakgoda, Polonnaruwa, North Central, Sri Lanka"
+  ],
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  }
 }

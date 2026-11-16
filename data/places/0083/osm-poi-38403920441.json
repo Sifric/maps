@@ -6,7 +6,10 @@
     "longitude": 79.850768
   },
   "categories": [
-    "Fast food restaurant"
+    "Fast food restaurant",
+    "Fast Food",
+    "Dining and Drinking > Restaurant > Burger Joint",
+    "Dining and Drinking > Restaurant > Fast Food Restaurant"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "fast_food",
     "names": [
       "Burger's King"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "CLOSED",
+  "alternate_addresses": [
+    "Ibbanwala, Colombo, Western, Sri Lanka",
+    "Malay St., Colombo, Western Province, 00200, Sri Lanka"
+  ]
 }

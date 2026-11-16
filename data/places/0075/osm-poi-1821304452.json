@@ -6,7 +6,10 @@
     "longitude": 79.877424
   },
   "categories": [
-    "Cricket"
+    "Cricket",
+    "GeoNames",
+    "Feature class A",
+    "ADM4"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,14 @@
     "subclass": "cricket",
     "names": [
       "Nawagampura"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "36, 11, 1103, 1103085, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Sri Lanka"
+  ]
 }

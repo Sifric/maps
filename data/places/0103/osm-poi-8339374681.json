@@ -6,7 +6,11 @@
     "longitude": 79.920618
   },
   "categories": [
-    "Cafe"
+    "Cafe",
+    "Bakery",
+    "Dining and Drinking > Restaurant",
+    "Dining and Drinking > Bakery",
+    "Dining and Drinking > Restaurant > Diner"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +20,18 @@
     "class": "cafe",
     "subclass": "cafe",
     "names": [
-      "Sen-Saal"
+      "Sen-Saal",
+      "Sen - Saal",
+      "Sen Saal"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Batapotha, Kaduwela, Colombo, Western, Sri Lanka",
+    "Kaduwela Road, Battaramulla, Western Province, 10120, Sri Lanka"
+  ]
 }

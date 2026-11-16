@@ -6,7 +6,10 @@
     "longitude": 79.846278
   },
   "categories": [
-    "Telecommunication"
+    "Telecommunication",
+    "Office: Telecommunication",
+    "Mast",
+    "Business and Professional Services > Office"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "telecommunication",
     "names": [
       "Sri Lanka Telecom"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Lotus Road, Colombo 01",
+  "alternate_addresses": [
+    "Fort, Colombo, Western, Sri Lanka",
+    "Lotus Road, Colombo 01, Colombo, Western Province, 00100, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

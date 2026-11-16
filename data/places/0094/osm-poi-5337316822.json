@@ -6,7 +6,10 @@
     "longitude": 80.053951
   },
   "categories": [
-    "Cinema"
+    "Cinema",
+    "Movie theater",
+    "Amenity: Cinema",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,59 @@
     "subclass": "cinema",
     "names": [
       "Regal Cinema"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "A2, Ambalangoda, Sri Lanka",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "10:30 AM–5:45 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "10:30 AM–5:45 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "10:30 AM–5:45 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "10:30 AM–5:45 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "10:30 AM–5:45 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "10:30 AM–5:45 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "10:30 AM–5:45 PM"
+      ]
+    }
+  ],
+  "alternate_addresses": [
+    "Main Street, Ambalangoda, Deldoowa, Madampagama, Galle, Southern, Sri Lanka",
+    "A2, Vilegoda, 80300, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

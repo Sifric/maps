@@ -6,7 +6,9 @@
     "longitude": 80.100675
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Overture Maps",
+    "Pizza Restaurant"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "restaurant",
     "names": [
       "Sea View Pizza House"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Hikkaduwa, Wavulagoda East, Galle, Southern, Sri Lanka",
+    "348 AH43, Wavulagoda West, 80240, Sri Lanka"
+  ]
 }

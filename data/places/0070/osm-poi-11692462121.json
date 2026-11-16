@@ -6,7 +6,11 @@
     "longitude": 80.865818
   },
   "categories": [
-    "Railway station"
+    "Railway station",
+    "Public transport: Station",
+    "Railway station: Station",
+    "Overture Maps",
+    "Train Station"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +21,14 @@
     "subclass": "station",
     "names": [
       "Galoya Junction Railway Station"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Kadawathabendimulla, Sri Lanka"
+  ]
 }

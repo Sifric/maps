@@ -6,7 +6,9 @@
     "longitude": 80.623936
   },
   "categories": [
-    "Cafe"
+    "Cafe",
+    "Overture Maps",
+    "Smoothie Juice Bar"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "cafe",
     "names": [
       "Frutah"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Colombo-Kandy Road, Kandy, Bogambara, Gangawata Korale, Central, Sri Lanka",
+    "416 Peradeniya Rd, Kandy, 20000, Sri Lanka"
+  ]
 }

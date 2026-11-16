@@ -6,7 +6,12 @@
     "longitude": 79.851626
   },
   "categories": [
-    "Company"
+    "Company",
+    "Theater company",
+    "Office: Company",
+    "Arts and Entertainment > Movie Theater > Indie Movie Theater",
+    "Overture Maps",
+    "Movie Theater"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +22,15 @@
     "subclass": "company",
     "names": [
       "Rio Cinema"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Kumaran Ratnam Rd, Colombo, Sri Lanka",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Kumaran Ratnam Rd, Colombo, 00200, Sri Lanka"
+  ],
+  "business_status": "OPERATIONAL"
 }

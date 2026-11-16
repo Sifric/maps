@@ -6,7 +6,11 @@
     "longitude": 79.851975
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Night club",
+    "Amenity: Restaurant",
+    "Overture Maps",
+    "Dance Club"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +21,15 @@
     "subclass": "restaurant",
     "names": [
       "Cleopatra Nightclub"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "R. A. De Mel Mawatha, Liberty Plaza - Basement, Colombo 00700, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "R. A. De Mel Mawatha, Colombo 03, Ibbanwala, Colombo, Western, Sri Lanka"
+  ]
 }

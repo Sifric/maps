@@ -6,7 +6,8 @@
     "longitude": 81.061431
   },
   "categories": [
-    "Am: 6h15, 6h30, 9h20, 11h50, 12h40, pm: 1h15, 2h40, 3h30, 5h30, 7h15"
+    "Am: 6h15, 6h30, 9h20, 11h50, 12h40, pm: 1h15, 2h40, 3h30, 5h30, 7h15",
+    "Information"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +18,14 @@
     "subclass": "AM: 6h15, 6h30, 9h20, 11h50, 12h40, PM: 1h15, 2h40, 3h30, 5h30, 7h15",
     "names": [
       "Train Time Table"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Newberg, Ella, Badulla, Uva, Sri Lanka"
+  ]
 }

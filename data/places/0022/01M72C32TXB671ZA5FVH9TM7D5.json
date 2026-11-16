@@ -6,9 +6,72 @@
   },
   "address": "300 Nilaveli Rd, Trincomalee",
   "categories": [
-    "Hospital"
+    "Hospital",
+    "Amenity: Doctors",
+    "Healthcare: Alternative",
+    "Doctors"
   ],
   "phone": "0262061001",
   "business_status": "CLOSED_TEMPORARILY",
-  "id": "01M72C32TXB671ZA5FVH9TM7D5"
+  "id": "01M72C32TXB671ZA5FVH9TM7D5",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9 AM–1 PM",
+        "4:30 PM–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9 AM–1 PM",
+        "4:30 PM–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9 AM–1 PM",
+        "4:30 PM–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9 AM–1 PM",
+        "4:30 PM–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9 AM–1 PM",
+        "4:30 PM–9 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9 AM–1 PM",
+        "4:30 PM–9 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "9 AM–1 PM",
+        "4:30 PM–9 PM"
+      ]
+    }
+  ],
+  "source": {
+    "names": [],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
+    ]
+  },
+  "alternate_addresses": [
+    "Eluppaikulam, Town & Gravets, Trincomalee, Eastern, Sri Lanka"
+  ]
 }

@@ -6,7 +6,9 @@
     "longitude": 79.862307
   },
   "categories": [
-    "Electronics"
+    "Electronics",
+    "Overture Maps",
+    "Electronics Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,15 @@
     "subclass": "electronics",
     "names": [
       "Datamacx"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Galle Road, Wellawatte, Wellawatta North, Thimbirigasyaya, Colombo, Western, Sri Lanka",
+    "389 Galle Rd, Colombo, 00600, Sri Lanka"
+  ]
 }

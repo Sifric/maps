@@ -6,7 +6,10 @@
     "longitude": 80.756373
   },
   "categories": [
-    "Guest house"
+    "Guest house",
+    "Tourism: Guest House",
+    "Overture Maps",
+    "Hotel"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,17 @@
     "class": "lodging",
     "subclass": "guest_house",
     "names": [
-      "Wish Prabha Lake View Lodge"
+      "Wish Prabha Lake View Lodge",
+      "Wish Prabha Lake view lodge"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "No 284/4, Kahatagahayaya Kalapuraya, Sigiriya 21120, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Sri Lanka",
+    "Kahatagahayaya Kalapuraya, Sigiriya, Dambulla, Matale, Central, Sri Lanka"
+  ]
 }

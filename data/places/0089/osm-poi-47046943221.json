@@ -6,7 +6,10 @@
     "longitude": 79.853075
   },
   "categories": [
-    "Hospital"
+    "Hospital",
+    "Retail > Eyecare Store",
+    "Overture Maps",
+    "Eyewear Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +20,15 @@
     "subclass": "hospital",
     "names": [
       "Vasan Eye Care"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Galle Road, Wellawatta North, Thimbirigasyaya, Colombo, Western, Sri Lanka",
+    "Galle Road, Kollupitiya, Sri Lanka"
+  ]
 }

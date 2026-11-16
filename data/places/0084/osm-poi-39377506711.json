@@ -6,7 +6,9 @@
     "longitude": 79.891967
   },
   "categories": [
-    "Bus station"
+    "Bus station",
+    "Travel and Transportation > Transport Hub > Bus Station",
+    "Overture Maps"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,16 @@
     "subclass": "bus_station",
     "names": [
       "Nugegoda Bus Stand"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Gangodavila East, Sri Jayawardanapura Kotte, Colombo, Western, Sri Lanka",
+    "S S Mary & John Church, B120, Nugegoda, Nugegoda, Western Province, Sri Lanka",
+    "Nugegoda Supermarket Complex, Etul Kotte-Mirihana-Kohuwela Rd, Sri Jayewardenepura Kotte, 10250, Sri Lanka"
+  ]
 }

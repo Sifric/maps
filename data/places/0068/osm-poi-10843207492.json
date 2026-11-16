@@ -6,7 +6,9 @@
     "longitude": 79.867103
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Overture Maps",
+    "Burger Restaurant"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -17,6 +19,14 @@
     "subclass": "restaurant",
     "names": [
       "Street Burger"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Galle Road, Mount Lavinia, Dehiwala West, Dehiwala, Colombo, Western, Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "293 Galle Rd, Dehiwala-Mount Lavinia, 10350, Sri Lanka"
+  ]
 }

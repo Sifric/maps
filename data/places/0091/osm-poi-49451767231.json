@@ -6,7 +6,9 @@
     "longitude": 79.886924
   },
   "categories": [
-    "Furniture"
+    "Furniture",
+    "Overture Maps",
+    "Furniture Store"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +18,17 @@
     "class": "shop",
     "subclass": "furniture",
     "names": [
-      "T Suriyaarachchi and Sons"
+      "T Suriyaarachchi and Sons",
+      "T. Suriyaarachchi and Sons"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Peliyagodawatta, Kelaniya, Gampaha, Western, Sri Lanka",
+    "5 Negombo - Colombo Main Rd, Galwetiya, 11300, Sri Lanka"
+  ]
 }

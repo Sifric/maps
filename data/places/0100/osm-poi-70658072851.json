@@ -6,7 +6,10 @@
     "longitude": 80.250621
   },
   "categories": [
-    "Restaurant"
+    "Restaurant",
+    "Dining and Drinking > Cafe, Coffee, and Tea House > Café",
+    "Overture Maps",
+    "Cafe"
   ],
   "source": {
     "provider": "OpenStreetMap",
@@ -16,7 +19,17 @@
     "class": "restaurant",
     "subclass": "restaurant",
     "names": [
-      "The Social Unawatuna"
+      "The Social Unawatuna",
+      "The Social, Unawatuna"
+    ],
+    "archive_updates": [
+      "d85487e3728479bdb1ee34b3e049fced9bc7296b183c3512f3defd58d4bbaf0c"
     ]
-  }
+  },
+  "address": "Sri Lanka",
+  "business_status": "OPERATIONAL",
+  "alternate_addresses": [
+    "Unawatuna, Южная провинция, Sri Lanka",
+    "The Social, 126 Yaddehimulla Road, Yaddehimulla, 80600, Sri Lanka"
+  ]
 }
