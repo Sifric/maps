@@ -961,6 +961,16 @@ document.addEventListener("keydown", (e) => {
   map.addControl(new maplibregl.ScaleControl({ maxWidth: 110, unit: "imperial" }), "bottom-right");
   map.addControl(new maplibregl.ScaleControl({ maxWidth: 110, unit: "metric" }), "bottom-right");
   const scaleElements = [...map.getContainer().querySelectorAll(".maplibregl-ctrl-scale")];
+  // Combine MapLibre's two live-updating scales into one compact visual unit.
+  // Controls remain responsible for accurate distances as zoom/latitude change.
+  const scaleDock = document.createElement("div");
+  scaleDock.className = "dual-scale";
+  const scaleParent = scaleElements[0]?.parentElement;
+  if (scaleParent && scaleElements.length === 2) {
+    scaleParent.insertBefore(scaleDock, scaleElements[0]);
+    // The first control is imperial; the second is metric.
+    scaleDock.append(scaleElements[0], scaleElements[1]);
+  }
   let scaleHideTimer;
   const revealScale = () => {
     for (const element of scaleElements) element.classList.remove("scale-idle");
