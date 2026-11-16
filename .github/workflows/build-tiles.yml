@@ -65,7 +65,7 @@ jobs:
 
       - name: Verify search matches tile inputs
         run: |
-          python3 scripts/build_search_index.py build/places.geojson build/places-search.json --check worker/public/assets/places-search.json
+          python3 scripts/build_search_index.py build/places.geojson build/places-search.json.gz --check worker/public/assets/places-search.json.gz
 
       - name: Replace places and verify all other layers are unchanged
         run: python3 scripts/replace_places_layer.py build/reference/sri-lanka.pmtiles build/places.pmtiles build/sri-lanka.pmtiles
