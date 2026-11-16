@@ -1,4 +1,3 @@
-import { handleDeveloper, authenticateApiKey } from "./developer.js";
 import basemapStyle from "./style.json";
 
 const TILE_KEY = "lkmaps/sri-lanka.pmtiles";
@@ -22,27 +21,15 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
 
-    // Developer endpoints are separate from the existing public map and routing.
+    // Standalone UI-only developer demo; no authentication or API keys are enforced.
     if (url.pathname === "/dashboard" || url.pathname === "/dashboard/") {
-      if (!["GET","HEAD"].includes(request.method)) return new Response("Method Not Allowed",{status:405});
-      const asset = await env.ASSETS.fetch(new Request(new URL("/developers.html",request.url),request));
+      if (!["GET", "HEAD"].includes(request.method)) return new Response("Method Not Allowed", { status: 405 });
+      const asset = await env.ASSETS.fetch(new Request(new URL("/developers.html", request.url), request));
       const headers = new Headers(asset.headers);
-      headers.set("Cache-Control","no-store");
-      headers.set("X-Content-Type-Options","nosniff");
-      headers.set("Content-Security-Policy","default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'self'; form-action 'self'; base-uri 'none'; frame-ancestors 'none'");
-      return new Response(asset.body,{status:asset.status,headers});
-    }
-    if (url.pathname.startsWith("/api/developer/") || url.pathname === "/auth/google" || url.pathname === "/auth/github" || url.pathname.startsWith("/auth/callback/")) {
-      try { return await handleDeveloper(request,env); }
-      catch (error) { console.error("Developer error",error?.name); return jsonResponse({error:"Developer service unavailable"},503,{}); }
-    }
-    if (url.pathname === "/api/managed/v1/status") {
-      if (request.method !== "GET") return jsonResponse({error:"Method not allowed"},405,{});
-      try {
-        const auth = await authenticateApiKey(request,env);
-        if (auth.error) return auth.error;
-        return jsonResponse({status:"ok",service:"sifric-maps"},200,{});
-      } catch { return jsonResponse({error:"Managed API unavailable"},503,{}); }
+      headers.set("Cache-Control", "no-store");
+      headers.set("X-Content-Type-Options", "nosniff");
+      headers.set("Content-Security-Policy", "default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'none'; img-src 'self' data:; form-action 'none'; base-uri 'none'; frame-ancestors 'none'");
+      return new Response(request.method === "HEAD" ? null : asset.body, { status: asset.status, headers });
     }
     if (url.pathname === "/api/v1/route") {
       if (request.method === "OPTIONS")
