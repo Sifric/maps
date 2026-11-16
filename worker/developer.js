@@ -19,7 +19,7 @@ async function oauthStart(r,env,provider){
  const config=oauthConfig(env,provider);if(!config)return json({error:"Provider not configured"},503);
  const state=random(32),verifier=random(32),redirect=new URL("/auth/callback/"+provider,r.url).href;
  const params=new URLSearchParams({client_id:config.id,redirect_uri:redirect,response_type:"code",scope:provider==="github"?"read:user user:email":"openid email profile",state});
- if(provider==="google"){const challenge=await crypto.subtle.digest("SHA-256",enc.encode(verifier));params.set("code_challenge",btoa(String.fromCharCode(...new Uint8Array(challenge))).replace(/\\+/g,"-").replace(/\//g,"_").replace(/=+$/,""));params.set("code_challenge_method","S256")}
+ if(provider==="google"){const challenge=await crypto.subtle.digest("SHA-256",enc.encode(verifier));params.set("code_challenge",btoa(String.fromCharCode(...new Uint8Array(challenge))).replaceAll("+","-").replaceAll("/","_").replace(/=+$/,""));params.set("code_challenge_method","S256")}
  await env.DB.prepare("INSERT INTO oauth_states(state_hash,provider,verifier,expires_at) VALUES(?,?,?,?)").bind(await digest(state),provider,verifier,Date.now()+600000).run();
  return Response.redirect(config.authorize+"?"+params,302)
 }
