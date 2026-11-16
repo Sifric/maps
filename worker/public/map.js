@@ -47,6 +47,7 @@ let map,
   searchTimer,
   statusTimer,
   highlight,
+  routeCard,
   mapOptions,
   geolocateControl;
 function status(text) {
@@ -284,6 +285,9 @@ function panel(title) {
 }
 function closePanel() {
   $("panel").hidden = true;
+  document.body.classList.remove("routing-open");
+  routeCard?.remove();
+  routeCard = null;
   if (highlight) {
     highlight.remove();
     highlight = null;
@@ -473,39 +477,292 @@ function filterCategory(kind) {
   );
 }
 function showDirections(row) {
-  const c = panel("Directions");
-  const start = element("input");
-  start.className = "route-input";
-  start.placeholder = "Starting point";
-  start.setAttribute("aria-label", "Starting point");
-  const end = element("input");
-  end.className = "route-input";
-  end.placeholder = "Destination";
-  end.setAttribute("aria-label", "Destination");
-  end.value = row?.[1] || "";
-  const go = element("button", "Open route in Google Maps", "route-launch");
-  go.prepend(icon("directions"));
-  go.onclick = () => {
-    const u = new URL("https://www.google.com/maps/dir/");
-    u.searchParams.set("api", "1");
-    if (start.value.trim()) u.searchParams.set("origin", start.value.trim());
-    u.searchParams.set(
-      "destination",
-      row ? `${row[3]},${row[2]}` : end.value.trim(),
-    );
-    u.searchParams.set("travelmode", "driving");
-    window.open(u.href, "_blank", "noopener,noreferrer");
+  const c = panel("Drive");
+  c.classList.add("route-panel");
+  document.body.classList.add("routing-open");
+  routeCard?.remove();
+  routeCard = element("section", undefined, "route-card");
+  routeCard.setAttribute("aria-label", "Route locations");
+
+  const makeField = (label, kind) => {
+    const wrap = element("div", undefined, `route-field-wrap route-${kind}`);
+    const mark = element("span", undefined, "route-point-mark");
+    mark.setAttribute("aria-hidden", "true");
+    const input = element("input");
+    input.className = "route-input";
+    input.placeholder = label;
+    input.setAttribute("aria-label", label);
+    input.autocomplete = "off";
+    input.setAttribute("role", "combobox");
+    input.setAttribute("aria-autocomplete", "list");
+    input.setAttribute("aria-expanded", "false");
+    const suggestions = element("div", undefined, "route-suggestions");
+    suggestions.setAttribute("role", "listbox");
+    wrap.append(mark, input, suggestions);
+    bindRouteSearch(input, suggestions);
+    return { wrap, input, suggestions };
   };
-  c.append(
-    start,
-    end,
-    go,
-    element(
-      "p",
-      "Routes open in Google Maps. No route engine or live traffic is available in LK Maps.",
-      "panel-note",
-    ),
-  );
+  const origin = makeField("Starting point", "origin");
+  const destination = makeField("Destination", "destination");
+  if (row) {
+    destination.input.value = row[1] || "";
+    setRoutePointData(destination.input, Number(row[2]), Number(row[3]), row[1]);
+  }
+
+  const line = element("span", undefined, "route-waypoint-line");
+  const swap = element("button", "↕", "route-swap");
+  swap.type = "button";
+  swap.title = "Swap starting point and destination";
+  swap.setAttribute("aria-label", swap.title);
+  swap.onclick = () => {
+    const a = routePointData(origin.input), b = routePointData(destination.input);
+    [origin.input.value, destination.input.value] = [destination.input.value, origin.input.value];
+    setRoutePointData(origin.input, b?.lng, b?.lat, b?.label);
+    setRoutePointData(destination.input, a?.lng, a?.lat, a?.label);
+    origin.suggestions.hidden = destination.suggestions.hidden = true;
+  };
+  const routeFields = element("div", undefined, "route-fields");
+  routeFields.append(origin.wrap, destination.wrap, line, swap);
+  const useLocation = element("button", "Use current location", "route-location");
+  useLocation.type = "button";
+  useLocation.prepend(icon("locate"));
+  useLocation.onclick = () => {
+    if (!navigator.geolocation) {
+      setRouteMessage("Location is not available in this browser.", true, summary);
+      return;
+    }
+    useLocation.disabled = true;
+    navigator.geolocation.getCurrentPosition(
+      ({ coords }) => {
+        const label = `${coords.latitude.toFixed(6)}, ${coords.longitude.toFixed(6)}`;
+        origin.input.value = label;
+        setRoutePointData(origin.input, coords.longitude, coords.latitude, label);
+        useLocation.disabled = false;
+      },
+      () => {
+        useLocation.disabled = false;
+        setRouteMessage("Could not get your location. Check location permission.", true, summary);
+      },
+      { enableHighAccuracy: true, timeout: 10000, maximumAge: 30000 },
+    );
+  };
+  const go = element("button", undefined, "route-launch");
+  go.type = "button";
+  go.setAttribute("aria-label", "Find route");
+  go.title = "Find route";
+  go.prepend(icon("directions"));
+  routeCard.append(routeFields, useLocation, go);
+  document.body.append(routeCard);
+
+  const summary = element("p", "Choose both locations to see a route.", "route-summary");
+  const steps = element("ol", undefined, "route-steps");
+  const tabs = element("nav", undefined, "route-mode-tabs");
+  tabs.setAttribute("aria-label", "Travel mode");
+  let activeMode = "drive", routeRequested = false;
+  const modes = [
+    ["drive", "Drive", "directions"],
+    ["twoWheeler", "Two-wheeler", "bicycle"],
+    ["walk", "Walk", "locate"],
+  ];
+  for (const [value, label, glyph] of modes) {
+    const tab = element("button", undefined, "route-mode-tab");
+    tab.type = "button";
+    tab.dataset.mode = value;
+    tab.setAttribute("aria-pressed", String(value === activeMode));
+    tab.append(icon(glyph), element("span", label), element("small", "—", "route-mode-time"));
+    tab.onclick = () => {
+      activeMode = value;
+      for (const item of tabs.querySelectorAll("button")) {
+        const selected = item.dataset.mode === activeMode;
+        item.classList.toggle("active", selected);
+        item.setAttribute("aria-pressed", String(selected));
+      }
+      c.querySelector("h1").textContent = label;
+      if (routeRequested) calculate();
+    };
+    tabs.append(tab);
+  }
+  c.append(tabs, summary, element("p", "Route estimates from OpenStreetMap road data", "route-note"), steps);
+  const calculate = () => {
+    routeRequested = true;
+    findRoute(origin.input.value, destination.input.value, row, activeMode, go, summary, steps, origin.input, destination.input, tabs);
+  };
+  go.onclick = calculate;
+  for (const input of [origin.input, destination.input])
+    input.addEventListener("keydown", (event) => {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        const first = input.parentElement.querySelector(".route-suggestions button");
+        if (first && !input.parentElement.querySelector(".route-suggestions").hidden) first.click();
+        else calculate();
+      }
+    });
+}
+
+function setRoutePointData(input, lng, lat, label) {
+  if (Number.isFinite(lng) && Number.isFinite(lat)) {
+    input.dataset.routeLng = String(lng);
+    input.dataset.routeLat = String(lat);
+    input.dataset.routeLabel = label || input.value;
+  } else {
+    delete input.dataset.routeLng;
+    delete input.dataset.routeLat;
+    delete input.dataset.routeLabel;
+  }
+}
+
+function routePointData(input) {
+  if (input.dataset.routeLng === undefined || input.dataset.routeLat === undefined) return null;
+  return { lng: Number(input.dataset.routeLng), lat: Number(input.dataset.routeLat), label: input.dataset.routeLabel };
+}
+
+function bindRouteSearch(input, list) {
+  input.addEventListener("input", () => {
+    setRoutePointData(input, NaN, NaN);
+    showRouteSuggestions(input, list);
+  });
+  input.addEventListener("focus", () => showRouteSuggestions(input, list));
+  input.addEventListener("blur", () => setTimeout(() => {
+    list.hidden = true;
+    input.setAttribute("aria-expanded", "false");
+  }, 150));
+}
+
+async function showRouteSuggestions(input, list) {
+  const query = input.value.trim().toLocaleLowerCase();
+  list.replaceChildren();
+  if (query.length < 2) {
+    list.hidden = true;
+    input.setAttribute("aria-expanded", "false");
+    return;
+  }
+  list.hidden = false;
+  input.setAttribute("aria-expanded", "true");
+  list.append(element("div", "Searching places…", "route-suggestion-empty"));
+  try {
+    const rows = await searchIndex();
+    if (input.value.trim().toLocaleLowerCase() !== query) return;
+    const words = query.split(/\s+/);
+    const matches = rows.filter((r) => {
+      const names = `${r[1] || ""} ${r[6] || ""}`.toLocaleLowerCase();
+      return words.every((word) => names.includes(word));
+    }).sort((a, b) => Number(!String(a[1]).toLocaleLowerCase().startsWith(query)) - Number(!String(b[1]).toLocaleLowerCase().startsWith(query))).slice(0, 7);
+    list.replaceChildren();
+    if (!matches.length) list.append(element("div", "No matching places", "route-suggestion-empty"));
+    for (const row of matches) {
+      const option = element("button", undefined, "route-option");
+      option.type = "button";
+      option.setAttribute("role", "option");
+      option.append(element("strong", row[1]), element("small", row[5] || "Sri Lanka"));
+      option.addEventListener("pointerdown", (event) => event.preventDefault());
+      option.onclick = () => {
+        input.value = row[1];
+        setRoutePointData(input, Number(row[2]), Number(row[3]), row[1]);
+        list.hidden = true;
+        input.setAttribute("aria-expanded", "false");
+      };
+      list.append(option);
+    }
+  } catch {
+    list.replaceChildren(element("div", "Place suggestions are unavailable", "route-suggestion-empty"));
+  }
+}
+
+function setRouteMessage(text, isError = false, summary) {
+  if (!summary?.isConnected) return;
+  summary.textContent = text;
+  summary.classList.toggle("route-error", isError);
+  summary.hidden = false;
+}
+
+async function resolveRoutePoint(query, preferredRow, input) {
+  const value = query.trim();
+  const picked = input && routePointData(input);
+  if (picked && picked.label.toLocaleLowerCase() === value.toLocaleLowerCase())
+    return { label: picked.label, coordinates: [picked.lng, picked.lat] };
+  if (preferredRow && value.toLocaleLowerCase() === String(preferredRow[1]).toLocaleLowerCase())
+    return { label: preferredRow[1], coordinates: [Number(preferredRow[2]), Number(preferredRow[3])] };
+  const coordinate = value.match(/^(-?\d{1,2}(?:\.\d+)?)\s*,\s*(-?\d{1,3}(?:\.\d+)?)$/);
+  if (coordinate) {
+    const lat = Number(coordinate[1]), lng = Number(coordinate[2]);
+    if (lat < 5 || lat > 10.5 || lng < 78 || lng > 82.5)
+      throw Error("Enter a location inside Sri Lanka.");
+    return { label: `${lat.toFixed(5)}, ${lng.toFixed(5)}`, coordinates: [lng, lat] };
+  }
+  if (!value) throw Error("Enter both a starting point and a destination.");
+  const rows = await searchIndex(), normalized = value.toLocaleLowerCase();
+  const match = rows.find((r) => String(r[1]).toLocaleLowerCase() === normalized) ||
+    rows.find((r) => String(r[1]).toLocaleLowerCase().startsWith(normalized)) ||
+    rows.find((r) => String(r[1]).toLocaleLowerCase().includes(normalized));
+  if (!match) throw Error(`Couldn't find “${value}” in the Sri Lanka places index.`);
+  return { label: match[1], coordinates: [Number(match[2]), Number(match[3])] };
+}
+
+async function findRoute(originText, destinationText, destinationRow, mode, button, summary, steps, originInput, destinationInput, tabs) {
+  button.disabled = true;
+  button.setAttribute("aria-busy", "true");
+  const modeNames = { drive: "Driving", twoWheeler: "Two-wheeler", walk: "Walking" };
+  setRouteMessage(`Finding a ${modeNames[mode].toLowerCase()} route…`, false, summary);
+  try {
+    const [origin, destination] = await Promise.all([
+      resolveRoutePoint(originText, null, originInput),
+      resolveRoutePoint(destinationText, destinationRow, destinationInput),
+    ]);
+    const response = await fetch("/api/v1/route", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ origin: origin.coordinates, destination: destination.coordinates, mode }),
+    });
+    const result = await response.json();
+    if (!response.ok) throw Error(result.error || "The route could not be calculated.");
+    if (!result.geometry?.coordinates?.length) throw Error("The routing service returned no route geometry.");
+    if (!map.getSource("lk-route")) {
+      map.addSource("lk-route", {
+        type: "geojson",
+        data: { type: "Feature", properties: {}, geometry: result.geometry },
+      });
+      const before = map.getStyle().layers.find((layer) => layer.type === "symbol")?.id;
+      map.addLayer({
+        id: "lk-route-casing", type: "line", source: "lk-route",
+        layout: { "line-cap": "round", "line-join": "round" },
+        paint: { "line-color": "#ffffff", "line-width": ["interpolate", ["linear"], ["zoom"], 7, 5, 16, 10] },
+      }, before);
+      map.addLayer({
+        id: "lk-route-line", type: "line", source: "lk-route",
+        layout: { "line-cap": "round", "line-join": "round" },
+        paint: { "line-color": "#1a73e8", "line-width": ["interpolate", ["linear"], ["zoom"], 7, 3, 16, 6] },
+      }, before);
+    } else {
+      map.getSource("lk-route").setData({ type: "Feature", properties: {}, geometry: result.geometry });
+    }
+    const bounds = new maplibregl.LngLatBounds();
+    for (const point of result.geometry.coordinates) bounds.extend(point);
+    map.fitBounds(bounds, {
+      padding: { top: 110, bottom: innerWidth < 600 ? 300 : 60, left: innerWidth > 900 ? 430 : 40, right: 40 },
+      maxZoom: 15,
+      duration: 700,
+    });
+    const distance = result.distance >= 1000
+      ? `${(result.distance / 1000).toFixed(1)} km`
+      : `${Math.round(result.distance)} m`;
+    const minutes = Math.round(result.duration / 60);
+    const duration = minutes >= 60 ? `${Math.floor(minutes / 60)} hr ${minutes % 60} min` : `${minutes} min`;
+    setRouteMessage(`${origin.label} → ${destination.label} · ${modeNames[mode]} · ${distance} · ${duration}`, false, summary);
+    const time = tabs?.querySelector(`[data-mode="${mode}"] .route-mode-time`);
+    if (time) time.textContent = duration;
+    steps.replaceChildren(...(result.steps || []).slice(0, 10).map((step) => {
+      const distance = step.distance >= 1000
+        ? `${(step.distance / 1000).toFixed(1)} km`
+        : `${Math.round(step.distance)} m`;
+      return element("li", `${step.text || "Continue"} · ${distance}`);
+    }));
+  } catch (error) {
+    steps.replaceChildren();
+    setRouteMessage(error.message || "The route could not be calculated.", true, summary);
+  } finally {
+    button.disabled = false;
+    button.removeAttribute("aria-busy");
+  }
 }
 $("search").addEventListener("input", () => {
   clearTimeout(searchTimer);

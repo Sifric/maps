@@ -8,10 +8,22 @@ const cors = {
   "Access-Control-Expose-Headers": "Content-Range, Content-Length, Accept-Ranges",
   "Access-Control-Max-Age": "86400",
 };
+const routeCors = {
+  ...cors,
+  "Access-Control-Allow-Methods": "POST, OPTIONS",
+  "Access-Control-Allow-Headers": "Content-Type",
+};
 
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+    if (url.pathname === "/api/v1/route") {
+      if (request.method === "OPTIONS")
+        return new Response(null, { status: 204, headers: routeCors });
+      if (request.method !== "POST")
+        return jsonResponse({ error: "Method Not Allowed" }, 405, routeCors);
+      return routeRequest(request, env);
+    }
     if (request.method === "OPTIONS") return new Response(null, { status: 204, headers: cors });
     if (!["GET", "HEAD"].includes(request.method)) {
       return new Response("Method Not Allowed", { status: 405, headers: cors });
@@ -72,6 +84,119 @@ export default {
     return assetResponse(await env.ASSETS.fetch(request), url.pathname);
   },
 };
+
+async function routeRequest(request, env) {
+  if (!env.ROUTING && !env.ROUTING_URL)
+    return jsonResponse({ error: "Self-hosted routing is not configured." }, 503, routeCors);
+
+  let body;
+  try {
+    body = await request.json();
+  } catch {
+    return jsonResponse({ error: "Expected a JSON route request." }, 400, routeCors);
+  }
+  if (!body || typeof body !== "object" || Array.isArray(body))
+    return jsonResponse({ error: "Expected a JSON route request." }, 400, routeCors);
+  const modes = { drive: "driving", twoWheeler: "driving", walk: "walking" };
+  const profile = modes[body.mode];
+  const validPoint = (point) =>
+    Array.isArray(point) && point.length === 2 &&
+    point.every((value) => typeof value === "number" && Number.isFinite(value)) &&
+    point[0] >= 78 && point[0] <= 82.5 && point[1] >= 5 && point[1] <= 10.5;
+  if (!profile)
+    return jsonResponse({ error: "Choose Drive, Two-wheeler, or Walk." }, 400, routeCors);
+  if (!validPoint(body.origin) || !validPoint(body.destination))
+    return jsonResponse({ error: "Origin and destination must be coordinates in Sri Lanka." }, 400, routeCors);
+
+  let endpoint;
+  try {
+    const directRoutingUrl = Boolean(env.ROUTING_URL);
+    endpoint = new URL(env.ROUTING_URL || "https://lkmaps-router");
+    if (!/^https?:$/.test(endpoint.protocol) || endpoint.username || endpoint.password)
+      throw new Error("invalid routing URL");
+    if (directRoutingUrl) endpoint.port = profile === "walking" ? "5001" : "5000";
+    const osrmProfile = directRoutingUrl
+      ? profile === "walking" ? "foot" : "car"
+      : profile;
+    const coordinates = [body.origin, body.destination]
+      .map(([longitude, latitude]) => `${longitude},${latitude}`)
+      .join(";");
+    endpoint.pathname = `${endpoint.pathname.replace(/\/$/, "")}/route/v1/${osrmProfile}/${coordinates}`;
+    endpoint.search = "";
+    endpoint.searchParams.set("steps", "true");
+    endpoint.searchParams.set("overview", "full");
+    endpoint.searchParams.set("geometries", "geojson");
+  } catch {
+    return jsonResponse({ error: "Self-hosted routing URL is invalid." }, 500, routeCors);
+  }
+
+  try {
+    const upstreamRequest = new Request(endpoint, {
+      headers: { Accept: "application/json" },
+      signal: AbortSignal.timeout(20000),
+    });
+    const upstream = env.ROUTING && !env.ROUTING_URL
+      ? await env.ROUTING.fetch(upstreamRequest)
+      : await fetch(upstreamRequest);
+    const result = await upstream.json();
+    if (!upstream.ok || result.code !== "Ok") {
+      const warming = upstream.status === 503;
+      return jsonResponse(
+        { error: warming ? result.message || "The routing engine is starting. Retry shortly." : upstream.status >= 500 ? "The routing service is unavailable." : result.message || "The routing service could not find a route." },
+        warming ? 503 : upstream.status >= 500 ? 502 : 422,
+        routeCors,
+      );
+    }
+    const route = result.routes?.[0];
+    if (!route?.geometry?.coordinates?.length)
+      return jsonResponse({ error: result.message || "No route was found." }, 422, routeCors);
+    return jsonResponse({
+      geometry: route.geometry,
+      distance: route.distance,
+      duration: route.duration,
+      steps: (route.legs || []).flatMap((leg) => leg.steps || []).map(osrmStep),
+    }, 200, routeCors);
+  } catch (error) {
+    const timedOut = error?.name === "TimeoutError";
+    return jsonResponse(
+      { error: timedOut ? "The routing request timed out." : "Could not reach the routing service." },
+      timedOut ? 504 : 502,
+      routeCors,
+    );
+  }
+}
+
+function osrmStep(step) {
+  const maneuver = step.maneuver || {};
+  const modifier = maneuver.modifier ? ` ${maneuver.modifier}` : "";
+  const actions = {
+    depart: "Start",
+    arrive: "Arrive at your destination",
+    turn: `Turn${modifier}`,
+    continue: `Continue${modifier}`,
+    merge: `Merge${modifier}`,
+    fork: `Keep${modifier}`,
+    on_ramp: "Take the ramp",
+    off_ramp: "Take the exit",
+    roundabout: "Enter the roundabout",
+    rotary: "Enter the rotary",
+    end_of_road: `At the end of the road, turn${modifier}`,
+    new_name: "Continue",
+    notification: "Continue",
+  };
+  const action = actions[maneuver.type] || "Continue";
+  return {
+    text: step.name ? `${action} onto ${step.name}` : action,
+    distance: step.distance || 0,
+  };
+}
+
+function jsonResponse(value, status, headers) {
+  return new Response(JSON.stringify(value), {
+    status,
+    headers: { ...headers, "Content-Type": "application/json; charset=utf-8", "Cache-Control": "no-store" },
+  });
+}
 
 async function serveTile(request, env) {
   const metadata = await env.TILES_BUCKET.head(TILE_KEY);
