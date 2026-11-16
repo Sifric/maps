@@ -13,6 +13,9 @@ const routeCors = {
   "Access-Control-Allow-Methods": "POST, OPTIONS",
   "Access-Control-Allow-Headers": "Content-Type",
 };
+const OSRM_ORIGIN = "https://router.project-osrm.org";
+let lastOsrmRequestAt = 0;
+let osrmRequestQueue = Promise.resolve();
 
 export default {
   async fetch(request, env) {
@@ -22,7 +25,7 @@ export default {
         return new Response(null, { status: 204, headers: routeCors });
       if (request.method !== "POST")
         return jsonResponse({ error: "Method Not Allowed" }, 405, routeCors);
-      return routeRequest(request, env);
+      return routeRequest(request);
     }
     if (request.method === "OPTIONS") return new Response(null, { status: 204, headers: cors });
     if (!["GET", "HEAD"].includes(request.method)) {
@@ -85,10 +88,7 @@ export default {
   },
 };
 
-async function routeRequest(request, env) {
-  if (!env.ROUTING)
-    return jsonResponse({ error: "The OSRM routing service is not configured." }, 503, routeCors);
-
+async function routeRequest(request) {
   let body;
   try {
     body = await request.json();
@@ -110,7 +110,7 @@ async function routeRequest(request, env) {
 
   let endpoint;
   try {
-    endpoint = new URL("https://lkmaps-router");
+    endpoint = new URL(OSRM_ORIGIN);
     const coordinates = [body.origin, body.destination]
       .map(([longitude, latitude]) => `${longitude},${latitude}`)
       .join(";");
@@ -128,7 +128,7 @@ async function routeRequest(request, env) {
       headers: { Accept: "application/json" },
       signal: AbortSignal.timeout(30000),
     });
-    const upstream = await env.ROUTING.fetch(upstreamRequest);
+    const upstream = await fetchPublicOsrm(upstreamRequest);
     const result = await upstream.json();
     if (!upstream.ok || result.code !== "Ok") {
       if (upstream.status === 429) {
@@ -163,6 +163,18 @@ async function routeRequest(request, env) {
       routeCors,
     );
   }
+}
+
+function fetchPublicOsrm(request) {
+  const send = async () => {
+    const delay = 1000 - (Date.now() - lastOsrmRequestAt);
+    if (delay > 0) await new Promise((resolve) => setTimeout(resolve, delay));
+    lastOsrmRequestAt = Date.now();
+    return fetch(request);
+  };
+  const pending = osrmRequestQueue.then(send, send);
+  osrmRequestQueue = pending.then(() => undefined, () => undefined);
+  return pending;
 }
 
 function osrmStep(step) {
