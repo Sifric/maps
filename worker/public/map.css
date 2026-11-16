@@ -505,6 +505,8 @@ button:hover {
     left: 12px;
     top: 76px;
     right: 0;
+    padding-right: calc(16px + env(safe-area-inset-right));
+    scroll-padding-right: 16px;
   }
   #panel {
     left: 0;
