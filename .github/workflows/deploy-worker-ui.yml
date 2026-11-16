@@ -1,0 +1,63 @@
+name: Deploy Maps Worker UI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/deploy-worker-ui.yml"
+      - "worker/index.js"
+      - "worker/public/**"
+      - "worker/wrangler.jsonc"
+      - "config/style/mazo-basemap.json"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    name: Deploy Worker code and static assets (no R2 writes)
+    runs-on: ubuntu-24.04
+    environment: production
+    concurrency:
+      group: deploy-maps-production
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Wrangler
+        run: npm install -g wrangler
+      - name: Prepare Worker style from source
+        run: cp config/style/mazo-basemap.json worker/style.json
+      - name: Validate map style and demo UI
+        run: |
+          python3 -m json.tool worker/style.json >/dev/null
+          test -s worker/public/index.html
+          test -s worker/public/developers.html
+          grep -q '"/dashboard"' worker/index.js
+          node --check worker/index.js
+      - name: Verify Worker build without deploying
+        working-directory: worker
+        run: wrangler deploy --dry-run
+      - name: Publish Worker with static assets
+        working-directory: worker
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: wrangler deploy
+      - name: Validate public map and dashboard
+        env:
+          WORKER_BASE: https://maps.sifric.workers.dev
+        run: |
+          set -euo pipefail
+          for path in / /dashboard /style.json; do
+            for attempt in 1 2 3 4 5; do
+              status="$(curl -L -sS -o /tmp/maps-response -w '%{http_code}' "${WORKER_BASE}${path}")" || status="000"
+              if [ "$status" = "200" ]; then break; fi
+              sleep 3
+            done
+            test "$status" = "200" || { echo "Failed: $path returned $status"; exit 1; }
+            if [ "$path" = "/dashboard" ]; then
+              grep -q "Sifric Maps" /tmp/maps-response
+            fi
+            echo "PASS $path: HTTP $status"
+          done
