@@ -242,6 +242,17 @@ function stylePlaces(style) {
     "text-halo-width": 1.5,
     "text-halo-blur": 0.5,
   };
+  const selectedLabel = structuredClone(pin);
+  selectedLabel.id = "mazo-places-selected-label";
+  selectedLabel.layout = Object.fromEntries(
+    Object.entries(pin.layout).filter(
+      ([key]) => key.startsWith("text-") || key === "symbol-sort-key",
+    ),
+  );
+  selectedLabel.layout["text-allow-overlap"] = true;
+  selectedLabel.layout["text-ignore-placement"] = true;
+  selectedLabel.filter = ["==", ["id"], "__no_selected_place__"];
+  selectedLabel.paint = { ...pin.paint };
   dot.layout["symbol-sort-key"] = pin.layout["symbol-sort-key"];
   // Geographic names keep placement priority over businesses at overview zooms.
   const base = style.layers.filter((layer) => layer !== dot && layer !== pin);
@@ -249,6 +260,7 @@ function stylePlaces(style) {
     (layer) => layer["source-layer"] === "place",
   );
   base.splice(geographicNames < 0 ? base.length : geographicNames, 0, dot, pin);
+  base.push(selectedLabel);
   style.layers = base;
   return style;
 }
@@ -440,6 +452,13 @@ function applyPlaceFilters() {
   for (const id of ["mazo-places-dot", "mazo-places-icon"])
     if (map?.getLayer(id))
       map.setFilter(id, filters.length ? ["all", ...filters] : null);
+  if (map?.getLayer("mazo-places-selected-label"))
+    map.setFilter(
+      "mazo-places-selected-label",
+      selected && highlight
+        ? ["==", ["id"], selected[0]]
+        : ["==", ["id"], "__no_selected_place__"],
+    );
 }
 function filterCategory(kind) {
   category = category === kind ? null : kind;
