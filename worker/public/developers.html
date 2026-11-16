@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><title>Sifric Maps · Developers</title>
+<style>
+:root{font-family:system-ui,-apple-system,sans-serif;color-scheme:light dark}body{max-width:850px;margin:3rem auto;padding:0 1rem;line-height:1.5}header{display:flex;justify-content:space-between;align-items:center}a{color:inherit}main{margin-top:2rem}section{border:1px solid #8885;border-radius:14px;padding:1.4rem;margin:1rem 0}input,button{font:inherit;padding:.7rem;margin:.25rem;border-radius:8px;border:1px solid #8888}input{max-width:95%;width:260px}button{cursor:pointer}pre{white-space:pre-wrap;overflow-wrap:anywhere}li{padding:.5rem}small{opacity:.75}.error{color:#d34a4a}#secret{overflow-wrap:anywhere}
+</style></head><body><header><strong>Sifric Maps · Developers</strong><a href="/">Back to map</a></header>
+<main><p>Manage your developer account and API credentials. The public map remains available without signing in.</p>
+<p id="message" role="status"></p>
+<section id="login"><h2>Sign in</h2><form id="loginForm"><input name="email" type="email" autocomplete="email" placeholder="Email" required><input name="password" type="password" autocomplete="current-password" placeholder="Password" required><button>Sign in</button></form>
+<h3>Create an account</h3><form id="registerForm"><input name="email" type="email" autocomplete="email" placeholder="Email" required><input name="password" type="password" autocomplete="new-password" minlength="12" placeholder="Password (12+ characters)" required><button>Register</button></form>
+<p><a href="/auth/google">Continue with Google</a> · <a href="/auth/github">Continue with GitHub</a></p></section>
+<section id="account" hidden><h2>Your account</h2><p id="email"></p><button id="logout">Sign out</button><h3>API keys</h3><p><small>Keys expire after 90 days. Copy new keys immediately: they are shown only once. Never put secret keys in public browser code.</small></p>
+<form id="keyForm"><input name="name" maxlength="80" placeholder="Key name" required><button>Create API key</button></form><pre id="secret"></pre><ul id="keys"></ul>
+<h3>Daily usage</h3><pre id="usage"></pre></section></main>
+<script>
+const $=id=>document.getElementById(id);
+const msg=t=>{$("message").textContent=t};
+async function api(path,method="GET",body){const r=await fetch("/api/developer/"+path,{method,credentials:"same-origin",headers:body?{"Content-Type":"application/json"}:{},body:body?JSON.stringify(body):undefined});const data=await r.json();if(!r.ok)throw Error(data.error||"Request failed");return data}
+async function refresh(){try{const {user}=await api("me");$("login").hidden=true;$("account").hidden=false;$("email").textContent=user.email;const {keys}=await api("keys");$("keys").replaceChildren(...keys.map(k=>{const li=document.createElement("li");li.textContent=k.name+" ("+k.prefix+"…) · "+(k.revoked_at?"Revoked":"Expires "+new Date(k.expires_at).toLocaleDateString())+" ";if(!k.revoked_at){const b=document.createElement("button");b.textContent="Revoke";b.onclick=async()=>{if(confirm("Revoke this key?")){try{await api("keys/"+k.id,"DELETE");await refresh()}catch(e){msg(e.message)}}};li.append(b)}return li}));const {usage}=await api("usage");$("usage").textContent=usage.length?usage.map(x=>x.day+": "+x.requests+" requests ("+x.key_id.slice(0,8)+")").join("\n"):"No recorded API usage yet."}catch{$("login").hidden=false;$("account").hidden=true}}
+for(const [form,path] of [["loginForm","login"],["registerForm","register"]])$(form).onsubmit=async e=>{e.preventDefault();const f=new FormData(e.target);try{await api(path,"POST",{email:f.get("email"),password:f.get("password")});e.target.reset();msg("");await refresh()}catch(err){msg(err.message)}};
+$("keyForm").onsubmit=async e=>{e.preventDefault();try{const f=new FormData(e.target);const k=await api("keys","POST",{name:f.get("name")});$("secret").textContent="Copy now — this key will not be shown again:\n"+k.key;e.target.reset();await refresh()}catch(err){msg(err.message)}};
+$("logout").onclick=async()=>{try{await api("logout","POST");$("secret").textContent="";await refresh()}catch(e){msg(e.message)}};
+refresh();
+</script></body></html>
