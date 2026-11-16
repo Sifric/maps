@@ -9,21 +9,6 @@
       "enabled": true
     }
   },
-  "containers": [
-    {
-      "name": "osrm",
-      "class_name": "OsrmFallbackContainer",
-      "scheduling_policy": "durable_object",
-      "images": {
-        "base": {
-          "dockerfile": "./Dockerfile"
-        }
-      },
-      "observability": {
-        "enabled": true
-      }
-    }
-  ],
   "durable_objects": {
     "bindings": [
       {
@@ -35,8 +20,7 @@
   "exports": {
     "OsrmFallbackContainer": {
       "type": "durable-object",
-      "storage": "sqlite",
-      "container": "osrm"
+      "storage": "sqlite"
     }
   }
 }

@@ -1,42 +1,29 @@
-# OSRM routing fallback
+# OSRM REST routing
 
-The maps Worker calls the public OSRM REST API first. The dedicated `lkmaps-router`
-Worker allows at most one request per second to the public demo endpoint across all
-requests. When that endpoint is throttled, unavailable, or cannot calculate the selected
-profile, the router falls back to OSRM running in a Cloudflare Container managed by a
-Durable Object. Requests stay behind the maps Worker's `/api/v1/route` endpoint.
+The maps Worker sends route requests through the internal `lkmaps-router` service binding.
+The router calls public OSRM REST services and does not deploy or run a routing container.
 
-The public OSRM demo is shared community infrastructure, has no uptime guarantee, and
-is subject to its usage policy. It should not be treated as a production SLA. The
-request cap is enforced in Durable Object storage; excess requests immediately use the
-self-hosted fallback instead of sending more traffic to the public service.
+## Profiles and providers
 
-## Fallback behavior
+- Drive and two-wheeler use OSRM's driving profile. The router tries `router.project-osrm.org`
+  first, then FOSSGIS's `routed-car` endpoint if the first service is unavailable.
+- Walk uses FOSSGIS's dedicated `routed-foot` endpoint. The Project OSRM demo's walking URL
+  returned the same driving result in a live check, so it is not used as a walking fallback.
+- Walking currently has one verified public foot backend; if it is down, the router returns a
+  retryable error rather than substituting a driving route.
+- The router serializes calls per provider hostname and enforces the public services' one-request-
+  per-second limits. Identical routing requests are not cached.
 
-The container starts only when the public service cannot serve a request. On first
-start it downloads the Sri Lanka OpenStreetMap PBF from Geofabrik, verifies the
-published MD5, then prepares OSRM Multi-Level Dijkstra data for `car.lua` and
-`foot.lua`. A healthy graph is snapshotted so subsequent container starts can restore
-the prepared data. The first fallback request can return HTTP 503 while the container
-downloads and preprocesses the extract; retry after `Retry-After`.
+These are shared community services, not an SLA-backed production routing service. Their operators
+may throttle or deny requests, and route requests can be recorded by the provider. The router returns
+a retryable error when a provider is unavailable or too many requests are queued. Do not use the
+public demos for heavy or commercial traffic.
 
-Drive and two-wheeler requests use OSRM's `driving` service/profile; two-wheeler is a
-driving-profile approximation. Walk uses `walking`. The public OSRM demo typically
-serves driving only, so walk requests use the self-hosted fallback.
+## Free-tier deployment
 
-Cloudflare Container fallback requires a Workers plan with Containers enabled and a
-`standard-2` instance (1 vCPU, 6 GiB memory, 12 GB disk) for graph preparation and serving.
-The deploy workflow deploys
-`lkmaps-router` before `maps`. No API token or public routing hostname is needed by
-the route code; the deploy workflow supplies its existing Cloudflare secrets.
+`lkmaps-router` uses a Worker and a SQLite-backed Durable Object only; it has no Container binding
+and requires no container-capable or paid Workers plan. Cloudflare's free Worker and Durable Object
+quotas still apply. The deploy workflow publishes `lkmaps-router` before `maps`.
 
-## Local fallback
-
-The included Compose setup can run the same OSRM fallback locally. It uses the same
-first-start download and preprocessing behavior and exposes the driving and walking
-engines on localhost ports 5000 and 5001. To route the maps Worker directly to a local
-OSRM server, set `ROUTING_URL` in the ignored `worker/.dev.vars` file to the local
-server URL. The production maps Worker uses the internal service binding instead.
-
-Routing uses OpenStreetMap road data. Attribute the data to © OpenStreetMap
-contributors and observe the ODbL.
+Routing uses OpenStreetMap road data. Attribute the data to © OpenStreetMap contributors and observe
+the ODbL.

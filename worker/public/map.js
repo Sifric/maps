@@ -582,7 +582,14 @@ function showDirections(row) {
     };
     tabs.append(tab);
   }
-  c.append(tabs, summary, element("p", "Route estimates from OpenStreetMap road data", "route-note"), steps);
+  const routeNote = element("p", undefined, "route-note");
+  routeNote.append("Routing: OSRM · © OpenStreetMap contributors. Providers may log route requests. ");
+  const fixMapLink = element("a", "Fix the map");
+  fixMapLink.href = "https://www.openstreetmap.org/fixthemap";
+  fixMapLink.target = "_blank";
+  fixMapLink.rel = "noopener noreferrer";
+  routeNote.append(fixMapLink);
+  c.append(tabs, summary, routeNote, steps);
   const calculate = () => {
     routeRequested = true;
     findRoute(origin.input.value, destination.input.value, row, activeMode, go, summary, steps, origin.input, destination.input, tabs);
