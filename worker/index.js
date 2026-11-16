@@ -28,7 +28,7 @@ export default {
       const headers = new Headers(asset.headers);
       headers.set("Cache-Control", "no-store");
       headers.set("X-Content-Type-Options", "nosniff");
-      headers.set("Content-Security-Policy", "default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'none'; img-src 'self' data: https://github.com https://avatars.githubusercontent.com; form-action 'none'; base-uri 'none'; frame-ancestors 'none'");
+      headers.set("Content-Security-Policy", "default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'none'; font-src https://sifric.github.io; img-src 'self' data: https://github.com https://avatars.githubusercontent.com; form-action 'none'; base-uri 'none'; frame-ancestors 'none'");
       return new Response(request.method === "HEAD" ? null : asset.body, { status: asset.status, headers });
     }
     if (url.pathname === "/api/v1/route") {
