@@ -15,14 +15,27 @@ import math
 import os
 from pathlib import Path
 import re
+import secrets
 import subprocess
 import tempfile
+import time
 import unicodedata
 import zipfile
 
 from numbered_shards import ShardAllocator, validate, verify_manifest_paths
 
 ROOT = Path(__file__).resolve().parent.parent
+_ULID_ALPHABET = "0123456789ABCDEFGHJKMNPQRSTVWXYZ"
+
+
+def new_ulid() -> str:
+    """Return a standard, time-sortable 26-character ULID for a new place."""
+    value = (int(time.time() * 1000) << 80) | secrets.randbits(80)
+    chars = []
+    for _ in range(26):
+        chars.append(_ULID_ALPHABET[value & 31])
+        value >>= 5
+    return "".join(reversed(chars))
 DATA = ROOT / "data" / "places"
 MANIFEST = ROOT / "places.sha256"
 MIN_LAT, MAX_LAT = 5.9, 9.9
@@ -117,8 +130,7 @@ def make_record(source: dict, index: int, point, archive_hash: str):
                   if isinstance(item, str) and item.strip()] if isinstance(categories, list) else []
     if not categories:
         categories = ["Other"]
-    stable_key = "\0".join((normalize(name), format(point[1], ".6f"), format(point[0], ".6f")))
-    record_id = "catalog-place-" + hashlib.sha256(stable_key.encode("utf-8")).hexdigest()[:32]
+    record_id = new_ulid()
     record = {
         "id": record_id,
         "name": name,
