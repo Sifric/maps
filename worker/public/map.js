@@ -956,16 +956,20 @@ document.addEventListener("keydown", (e) => {
   map.on("error", (e) => {
     if (!mapOptions?.handleError(e)) showError(e.error);
   });
-  const scaleControl = new maplibregl.ScaleControl({ maxWidth: 110, unit: "metric" });
-  map.addControl(scaleControl, "bottom-right");
-  const scaleElement = scaleControl.getContainer();
+  // MapLibre ScaleControl exposes onAdd(), not getContainer().
+  // Add both units independently so each is calculated from the actual map zoom.
+  map.addControl(new maplibregl.ScaleControl({ maxWidth: 110, unit: "imperial" }), "bottom-right");
+  map.addControl(new maplibregl.ScaleControl({ maxWidth: 110, unit: "metric" }), "bottom-right");
+  const scaleElements = [...map.getContainer().querySelectorAll(".maplibregl-ctrl-scale")];
   let scaleHideTimer;
   const revealScale = () => {
-    scaleElement.classList.remove("scale-idle");
+    for (const element of scaleElements) element.classList.remove("scale-idle");
     clearTimeout(scaleHideTimer);
-    scaleHideTimer = setTimeout(() => scaleElement.classList.add("scale-idle"), 3000);
+    scaleHideTimer = setTimeout(() => {
+      for (const element of scaleElements) element.classList.add("scale-idle");
+    }, 3000);
   };
-  // Only map interaction changes scale visibility; other controls remain accessible.
+  // Keep both units visible while interacting, then fade them out together.
   for (const eventName of ["movestart", "move", "zoomstart", "zoom", "touchstart", "mousedown"]) {
     map.on(eventName, revealScale);
   }
