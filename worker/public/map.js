@@ -134,6 +134,7 @@ function stylePlaces(style) {
   const layers = Object.fromEntries(style.layers.map((l) => [l.id, l]));
   for (const id of [
     "mazo-places-pin",
+    "mazo-places-label",
     "mazo-places-subtitle",
   ])
     if (layers[id])
@@ -163,7 +164,6 @@ function stylePlaces(style) {
   };
   dot.paint = {};
   const pin = layers["mazo-places-icon"];
-  const label = layers["mazo-places-label"];
   pin.minzoom = 7;
   delete pin.filter;
   pin.layout = {
@@ -185,25 +185,6 @@ function stylePlaces(style) {
     "icon-allow-overlap": false,
     "icon-padding": 8,
     "icon-optional": false,
-    "symbol-sort-key": [
-      "match",
-      ["get", "kind"],
-      "food", 1,
-      "leisure", 2,
-      "culture", 3,
-      "shopping", 4,
-      "transport", 5,
-      "health", 6,
-      "finance", 7,
-      "worship", 8,
-      "government", 9,
-      10,
-    ],
-  };
-  pin.paint = {};
-  label.minzoom = 7;
-  delete label.filter;
-  label.layout = {
     "text-field": /^en(?:-|$)/i.test(navigator.language)
       ? ["coalesce", ["get", "label"], ["get", "name"]]
       : ["get", "name"],
@@ -224,10 +205,31 @@ function stylePlaces(style) {
     "text-allow-overlap": false,
     "text-padding": 6,
     "text-max-width": 10,
-    "symbol-sort-key": pin.layout["symbol-sort-key"],
-    visibility: "visible",
+    "symbol-sort-key": [
+      "match",
+      ["get", "kind"],
+      "food",
+      1,
+      "leisure",
+      2,
+      "culture",
+      3,
+      "shopping",
+      4,
+      "transport",
+      5,
+      "health",
+      6,
+      "finance",
+      7,
+      "worship",
+      8,
+      "government",
+      9,
+      10,
+    ],
   };
-  label.paint = {
+  pin.paint = {
     "text-color": [
       "match",
       ["get", "kind"],
@@ -241,29 +243,12 @@ function stylePlaces(style) {
     "text-halo-blur": 0.5,
   };
   dot.layout["symbol-sort-key"] = pin.layout["symbol-sort-key"];
-  const selectedLabel = structuredClone(label);
-  selectedLabel.id = "mazo-places-selected-label";
-  selectedLabel.layout = {
-    ...selectedLabel.layout,
-    "text-allow-overlap": true,
-    "text-ignore-placement": true,
-  };
-  selectedLabel.filter = ["==", ["id"], "__no_selected_place__"];
   // Geographic names keep placement priority over businesses at overview zooms.
-  const base = style.layers.filter(
-    (layer) => layer !== dot && layer !== pin && layer !== label,
-  );
+  const base = style.layers.filter((layer) => layer !== dot && layer !== pin);
   const geographicNames = base.findIndex(
     (layer) => layer["source-layer"] === "place",
   );
-  base.splice(
-    geographicNames < 0 ? base.length : geographicNames,
-    0,
-    dot,
-    pin,
-    label,
-    selectedLabel,
-  );
+  base.splice(geographicNames < 0 ? base.length : geographicNames, 0, dot, pin);
   style.layers = base;
   return style;
 }
@@ -449,26 +434,12 @@ async function searchPlaces() {
   }
 }
 function applyPlaceFilters() {
-  const categoryFilters = [];
-  if (category) categoryFilters.push(["==", ["get", "kind"], category]);
-  const pinFilters = [...categoryFilters];
-  if (selected && highlight) pinFilters.push(["!=", ["id"], selected[0]]);
+  const filters = [];
+  if (category) filters.push(["==", ["get", "kind"], category]);
+  if (selected && highlight) filters.push(["!=", ["id"], selected[0]]);
   for (const id of ["mazo-places-dot", "mazo-places-icon"])
     if (map?.getLayer(id))
-      map.setFilter(id, pinFilters.length ? ["all", ...pinFilters] : null);
-  if (map?.getLayer("mazo-places-label")) {
-    const labelFilters = [...categoryFilters];
-    if (selected && highlight) labelFilters.push(["!=", ["id"], selected[0]]);
-    map.setFilter(
-      "mazo-places-label",
-      labelFilters.length ? ["all", ...labelFilters] : null,
-    );
-  }
-  if (map?.getLayer("mazo-places-selected-label")) {
-    const selectedFilters = [...categoryFilters];
-    selectedFilters.push(["==", ["id"], selected && highlight ? selected[0] : "__no_selected_place__"]);
-    map.setFilter("mazo-places-selected-label", ["all", ...selectedFilters]);
-  }
+      map.setFilter(id, filters.length ? ["all", ...filters] : null);
 }
 function filterCategory(kind) {
   category = category === kind ? null : kind;
