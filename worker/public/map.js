@@ -862,7 +862,7 @@ $("locate").onclick = () => {
   }
 };
 $("menu").onclick = () => {
-  const c = panel("LK Maps");
+  const c = panel("Sifric Maps");
   const items = [
     [
       "Explore Sri Lanka",
