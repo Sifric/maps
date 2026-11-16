@@ -66,6 +66,13 @@ jobs:
       - name: Prepare worker style
         run: cp config/style/mazo-basemap.json worker/style.json
 
+      - name: Deploy OSRM fallback container
+        working-directory: routing
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: wrangler deploy
+
       - name: Deploy worker
         working-directory: worker
         env:

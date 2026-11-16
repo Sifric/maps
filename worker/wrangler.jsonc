@@ -13,5 +13,11 @@
       "binding": "TILES_BUCKET",
       "bucket_name": "mazo-maps"
     }
+  ],
+  "services": [
+    {
+      "binding": "ROUTING",
+      "service": "lkmaps-router"
+    }
   ]
 }
