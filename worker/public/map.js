@@ -49,7 +49,8 @@ let map,
   highlight,
   routeCard,
   mapOptions,
-  geolocateControl;
+  geolocateControl,
+  routeRequestVersion = 0;
 function status(text) {
   $("map-status").textContent = text;
   $("map-status").classList.add("visible");
@@ -276,7 +277,23 @@ async function searchIndex() {
     });
   return indexPromise;
 }
+function stopRouteSession() {
+  routeRequestVersion++;
+  if (!map?.getStyle?.()) return;
+  for (const id of ["lk-route-line", "lk-route-casing"])
+    if (map.getLayer(id)) map.removeLayer(id);
+  if (map.getSource("lk-route")) map.removeSource("lk-route");
+}
 function panel(title) {
+  if (
+    document.body.classList.contains("routing-open") &&
+    !["Drive", "Two-wheeler", "Walk"].includes(title)
+  ) {
+    stopRouteSession();
+    routeCard?.remove();
+    routeCard = null;
+    document.body.classList.remove("routing-open");
+  }
   $("suggestions").hidden = true;
   $("panel").hidden = false;
   const content = $("panel-content");
@@ -284,6 +301,7 @@ function panel(title) {
   return content;
 }
 function closePanel() {
+  stopRouteSession();
   $("panel").hidden = true;
   document.body.classList.remove("routing-open");
   routeCard?.remove();
@@ -706,6 +724,7 @@ async function resolveRoutePoint(query, preferredRow, input) {
 }
 
 async function findRoute(originText, destinationText, destinationRow, mode, button, summary, steps, originInput, destinationInput, tabs) {
+  const requestVersion = ++routeRequestVersion;
   button.disabled = true;
   button.setAttribute("aria-busy", "true");
   const modeNames = { drive: "Driving", twoWheeler: "Two-wheeler", walk: "Walking" };
@@ -723,6 +742,7 @@ async function findRoute(originText, destinationText, destinationRow, mode, butt
     const result = await response.json();
     if (!response.ok) throw Error(result.error || "The route could not be calculated.");
     if (!result.geometry?.coordinates?.length) throw Error("The routing service returned no route geometry.");
+    if (requestVersion !== routeRequestVersion || !document.body.classList.contains("routing-open")) return;
     if (!map.getSource("lk-route")) {
       map.addSource("lk-route", {
         type: "geojson",
