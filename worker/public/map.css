@@ -1417,39 +1417,53 @@ body.routing-open #categories {
   }
 }
 
-/* Compact dual-unit scale: miles above kilometres, right-aligned.
-   MapLibre calculates each line's width independently from the map zoom. */
-.maplibregl-ctrl-bottom-right .maplibregl-ctrl-scale {
-  box-sizing: border-box;
-  display: block;
+/* Combined two-unit scale, modelled on the compact scale in the reference video.
+   Each MapLibre control keeps its own correct inline width. */
+.maplibregl-ctrl-bottom-right .dual-scale {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   float: right;
   clear: both;
+  margin: 0 64px 0 0;
+  pointer-events: none;
+}
+.maplibregl-ctrl-bottom-right .dual-scale .maplibregl-ctrl-scale {
+  box-sizing: border-box;
+  display: block;
+  float: none;
+  clear: none;
+  flex: 0 0 auto;
   background: transparent !important;
   color: #fff !important;
   border: 0 !important;
-  border-bottom: 2px solid #fff !important;
-  border-left: 2px solid #fff !important;
   border-radius: 0;
-  padding: 0 3px 2px;
+  padding: 0 2px;
+  margin: 0 !important;
   min-height: 0;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-  margin-right: 64px !important;
-  text-align: right;
+  height: 17px;
   font-size: 11px;
   line-height: 15px;
-  text-shadow: 0 1px 3px #000, 0 0 3px #000;
+  text-align: right;
+  text-shadow: 0 1px 2px #000, 0 0 3px #000;
   box-shadow: none;
   opacity: 1;
   transition: opacity 220ms ease;
   pointer-events: none;
 }
-@media (min-width: 601px) {
-  .maplibregl-ctrl-bottom-right .maplibregl-ctrl-scale {
-    margin-right: 80px !important;
-  }
+/* Miles on top, kilometres below, with closely stacked horizontal rules. */
+.dual-scale .maplibregl-ctrl-scale:first-child {
+  border-bottom: 2px solid #fff !important;
+  border-right: 2px solid #fff !important;
 }
-.maplibregl-ctrl-scale.scale-idle { opacity: 0; }
+.dual-scale .maplibregl-ctrl-scale:last-child {
+  border-bottom: 2px solid #fff !important;
+  border-left: 2px solid #fff !important;
+}
+@media (min-width: 601px) {
+  .maplibregl-ctrl-bottom-right .dual-scale { margin-right: 80px; }
+}
+.dual-scale .maplibregl-ctrl-scale.scale-idle { opacity: 0; }
 @media (prefers-reduced-motion: reduce) {
-  .maplibregl-ctrl-scale { transition: none; }
+  .dual-scale .maplibregl-ctrl-scale { transition: none; }
 }
