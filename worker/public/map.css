@@ -1630,3 +1630,10 @@ body.routing-open #categories {
 #layers.layers-fab .layers-icon-dark { display: none; }
 :root[data-theme="dark"] #layers.layers-fab .layers-icon-light { display: none; }
 :root[data-theme="dark"] #layers.layers-fab .layers-icon-dark { display: block; }
+
+/* Theme-specific current-location artwork, matching the supplied SVGs. */
+#locate .location-icon-pair { display: flex; width: 25px; height: 25px; align-items: center; justify-content: center; }
+#locate .location-state-svg { display: block; width: 25px; height: 25px; }
+#locate .location-state-dark { display: none; }
+:root[data-theme="dark"] #locate .location-state-light { display: none; }
+:root[data-theme="dark"] #locate .location-state-dark { display: block; }
