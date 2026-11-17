@@ -238,34 +238,64 @@ export function createMapOptions(map, { baseStyle, status }) {
       before,
     );
   }
-  // OpenMapTiles may already contain oneway=1/-1. These symbol layers
-  // are inert if the existing tiles do not expose that property.
-  function addRoadDirectionSymbols() {
+  // Render road markings from existing transportation vector tiles only.
+  // A centerline is a cartographic guide, not a claim of a physical median.
+  function addRoadMarkings() {
     const before = baseLayers.find((l) => l.type === "symbol")?.id;
+    const roadClasses = ["motorway", "trunk", "primary", "secondary", "tertiary", "minor"];
+    const roadFilter = [
+      "all",
+      ["in", ["get", "class"], ["literal", roadClasses]],
+      ["!=", ["get", "ramp"], 1],
+      ["!", ["in", ["get", "brunnel"], ["literal", ["bridge", "tunnel"]]]],
+    ];
+    if (!map.getLayer("sifric-road-centerline")) {
+      map.addLayer({
+        id: "sifric-road-centerline",
+        type: "line",
+        source: "openmaptiles",
+        "source-layer": "transportation",
+        minzoom: 12,
+        filter: roadFilter,
+        layout: { "line-cap": "butt", "line-join": "round" },
+        paint: {
+          "line-color": "#e4e8ec",
+          "line-opacity": ["interpolate", ["linear"], ["zoom"], 12, 0, 13, 0.42, 16, 0.75, 19, 0.9],
+          "line-width": ["interpolate", ["linear"], ["zoom"], 12, 0.4, 15, 0.8, 18, 1.4, 20, 1.8],
+          "line-dasharray": [3, 3],
+        },
+      }, before);
+    }
+    // The arrows must only appear when the existing tiles encode one-way
+    // direction. Never infer a one-way road from its geometry alone.
     for (const [id, direction, rotation] of [
-      ["sifric-oneway-forward", 1, 90],
-      ["sifric-oneway-reverse", -1, 270],
+      ["sifric-oneway-forward", 1, 0],
+      ["sifric-oneway-reverse", -1, 180],
     ]) {
       if (map.getLayer(id)) continue;
+      const oneWay = direction === 1
+        ? ["in", ["to-string", ["get", "oneway"]], ["literal", ["1", "yes", "true"]]]
+        : ["in", ["to-string", ["get", "oneway"]], ["literal", ["-1", "reverse"]]];
       map.addLayer({
         id,
         type: "symbol",
         source: "openmaptiles",
         "source-layer": "transportation",
-        minzoom: 15,
-        filter: ["==", ["to-number", ["get", "oneway"], 0], direction],
+        minzoom: 14,
+        filter: ["all", ["in", ["get", "class"], ["literal", [...roadClasses, "service"]]], oneWay],
         layout: {
           "symbol-placement": "line",
-          "symbol-spacing": ["interpolate", ["linear"], ["zoom"], 15, 160, 17, 190, 20, 230],
+          "symbol-spacing": ["interpolate", ["linear"], ["zoom"], 14, 100, 17, 130, 20, 170],
           "icon-image": "sifric-oneway-arrow",
-          "icon-size": ["interpolate", ["linear"], ["zoom"], 15, 0.42, 17, 0.53, 19, 0.62, 20, 0.68],
+          "icon-size": ["interpolate", ["linear"], ["zoom"], 14, 0.6, 17, 0.8, 20, 1],
           "icon-rotation-alignment": "map",
           "icon-rotate": rotation,
           "icon-keep-upright": false,
-          "icon-allow-overlap": false,
-          "icon-padding": ["interpolate", ["linear"], ["zoom"], 15, 5, 18, 7, 20, 9],
+          "icon-allow-overlap": true,
+          "icon-ignore-placement": true,
+          "icon-padding": 1,
         },
-        paint: { "icon-opacity": 0.78 },
+        paint: { "icon-opacity": 0.95 },
       }, before);
     }
   }
@@ -471,7 +501,7 @@ export function createMapOptions(map, { baseStyle, status }) {
     applyDetails();
   }
   addOverlays();
-  addRoadDirectionSymbols();
+  addRoadMarkings();
   for (const button of document.querySelectorAll("[data-theme-choice]"))
     button.onclick = () => {
       settings.theme = button.dataset.themeChoice;
