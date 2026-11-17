@@ -618,7 +618,16 @@ function showDirections(row) {
   fixMapLink.target = "_blank";
   fixMapLink.rel = "noopener noreferrer";
   routeNote.append(fixMapLink);
-  c.append(tabs, summary, routeNote, steps);
+  const startNavigation = element("button", undefined, "route-start-navigation");
+  startNavigation.type = "button";
+  startNavigation.disabled = true;
+  startNavigation.setAttribute("aria-label", "Start navigation (coming soon)");
+  startNavigation.title = "Live navigation is not available yet";
+  startNavigation.append(icon("directions"), element("span", "Start"));
+  const navigationHint = element("p", "Live navigation coming soon", "route-navigation-hint");
+  const navigationActions = element("div", undefined, "route-navigation-actions");
+  navigationActions.append(startNavigation, navigationHint);
+  c.append(tabs, summary, navigationActions, routeNote, steps);
   const calculate = () => {
     routeRequested = true;
     findRoute(origin.input.value, destination.input.value, row, activeMode, go, summary, steps, origin.input, destination.input, tabs);
@@ -809,7 +818,7 @@ async function findRoute(originText, destinationText, destinationRow, mode, butt
     setRouteMessage(`${origin.label} → ${destination.label} · ${modeNames[mode]} · ${distance} · ${duration}`, false, summary);
     const time = tabs?.querySelector(`[data-mode="${mode}"] .route-mode-time`);
     if (time) time.textContent = duration;
-    steps.replaceChildren(...(result.steps || []).slice(0, 10).map((step) => {
+    // Visual placeholder only. Keep Start disabled until navigation is implemented.\n    steps.replaceChildren(...(result.steps || []).slice(0, 10).map((step) => {
       const distance = step.distance >= 1000
         ? `${(step.distance / 1000).toFixed(1)} km`
         : `${Math.round(step.distance)} m`;
