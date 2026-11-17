@@ -1417,53 +1417,65 @@ body.routing-open #categories {
   }
 }
 
-/* Combined two-unit scale, modelled on the compact scale in the reference video.
-   Each MapLibre control keeps its own correct inline width. */
+/* One shared Google-style scale rule: mi above, km below. */
+.maplibregl-ctrl-bottom-right .scale-measure-source {
+  position: absolute !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  box-sizing: border-box;
+}
 .maplibregl-ctrl-bottom-right .dual-scale {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  position: relative;
   float: right;
   clear: both;
+  height: 35px;
+  min-width: 1px;
   margin: 0 64px 0 0;
+  color: #fff;
   pointer-events: none;
-}
-.maplibregl-ctrl-bottom-right .dual-scale .maplibregl-ctrl-scale {
-  box-sizing: border-box;
-  display: block;
-  float: none;
-  clear: none;
-  flex: 0 0 auto;
-  background: transparent !important;
-  color: #fff !important;
-  border: 0 !important;
-  border-radius: 0;
-  padding: 0 2px;
-  margin: 0 !important;
-  min-height: 0;
-  height: 17px;
-  font-size: 11px;
-  line-height: 15px;
-  text-align: right;
-  text-shadow: 0 1px 2px #000, 0 0 3px #000;
-  box-shadow: none;
   opacity: 1;
   transition: opacity 220ms ease;
-  pointer-events: none;
+  font-size: 11px;
+  line-height: 14px;
+  text-shadow: 0 1px 2px #000, 0 0 3px #000;
 }
-/* Miles on top, kilometres below, with closely stacked horizontal rules. */
-.dual-scale .maplibregl-ctrl-scale:first-child {
-  border-bottom: 2px solid #fff !important;
-  border-right: 2px solid #fff !important;
+.dual-scale-rule {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  right: 0;
+  border-top: 2px solid #fff;
+  box-shadow: 0 1px 2px #0008;
 }
-.dual-scale .maplibregl-ctrl-scale:last-child {
-  border-bottom: 2px solid #fff !important;
-  border-left: 2px solid #fff !important;
+.dual-scale-mile-tick, .dual-scale-km-tick {
+  position: absolute;
+  border-left: 2px solid #fff;
+  width: 0;
 }
+.dual-scale-mile-tick {
+  top: 0;
+  height: 17px;
+  left: var(--mile-left, 0px);
+}
+.dual-scale-km-tick {
+  top: 16px;
+  height: 16px;
+  left: var(--km-left, 0px);
+}
+.dual-scale-mile-label, .dual-scale-km-label {
+  position: absolute;
+  right: 1px;
+  white-space: nowrap;
+}
+.dual-scale-mile-label { top: 0; }
+.dual-scale-km-label { top: 19px; }
+.dual-scale.scale-idle { opacity: 0; }
 @media (min-width: 601px) {
   .maplibregl-ctrl-bottom-right .dual-scale { margin-right: 80px; }
 }
-.dual-scale .maplibregl-ctrl-scale.scale-idle { opacity: 0; }
 @media (prefers-reduced-motion: reduce) {
-  .dual-scale .maplibregl-ctrl-scale { transition: none; }
+  .dual-scale { transition: none; }
 }
