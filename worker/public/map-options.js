@@ -256,16 +256,16 @@ export function createMapOptions(map, { baseStyle, status }) {
         filter: ["==", ["to-number", ["get", "oneway"], 0], direction],
         layout: {
           "symbol-placement": "line",
-          "symbol-spacing": 120,
+          "symbol-spacing": ["interpolate", ["linear"], ["zoom"], 15, 160, 17, 190, 20, 230],
           "icon-image": "sifric-oneway-arrow",
-          "icon-size": ["interpolate", ["linear"], ["zoom"], 15, 0.55, 18, 0.85, 20, 1],
+          "icon-size": ["interpolate", ["linear"], ["zoom"], 15, 0.42, 17, 0.53, 19, 0.62, 20, 0.68],
           "icon-rotation-alignment": "map",
           "icon-rotate": rotation,
           "icon-keep-upright": false,
           "icon-allow-overlap": false,
-          "icon-padding": 4,
+          "icon-padding": ["interpolate", ["linear"], ["zoom"], 15, 5, 18, 7, 20, 9],
         },
-        paint: { "icon-opacity": 0.85 },
+        paint: { "icon-opacity": 0.78 },
       }, before);
     }
   }
