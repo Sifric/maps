@@ -6,11 +6,22 @@ let previousFocus=null,mode="add";
 const categorySelect=$("contribution-category"),categoryButton=$("contribution-category-button"),categoryList=$("contribution-category-list"),categoryLabel=$("contribution-category-label");
 function closeCategory(){categoryList.hidden=true;categoryButton.setAttribute("aria-expanded","false");}
 function syncCategory(){const option=categorySelect.selectedOptions[0];categoryLabel.textContent=categorySelect.value?option.textContent:"Choose a category";categoryButton.classList.toggle("has-value",!!categorySelect.value);categoryList.querySelectorAll("[data-value]").forEach(item=>item.setAttribute("aria-selected",String(item.dataset.value===categorySelect.value)));}
-categoryButton.addEventListener("click",()=>{const open=categoryList.hidden;categoryList.hidden=!open;categoryButton.setAttribute("aria-expanded",String(open));});
+function openCategory(){
+ const scroll=categoryButton.closest(".contribution-scroll");
+ const viewport=scroll?.getBoundingClientRect();
+ const rect=categoryButton.getBoundingClientRect();
+ const bottomSpace=Math.max(0,(viewport?.bottom||innerHeight)-rect.bottom-12);
+ const topSpace=Math.max(0,rect.top-(viewport?.top||0)-12);
+ const upward=bottomSpace<240&&topSpace>bottomSpace;
+ categoryList.classList.toggle("opens-up",upward);
+ categoryList.style.maxHeight=Math.max(100,Math.min(320,upward?topSpace:bottomSpace))+"px";
+ categoryList.hidden=false;categoryButton.setAttribute("aria-expanded","true");
+}
+categoryButton.addEventListener("click",()=>{if(categoryList.hidden)openCategory();else closeCategory();});
 categoryList.addEventListener("click",e=>{const item=e.target.closest("[data-value]");if(!item)return;categorySelect.value=item.dataset.value;categorySelect.dispatchEvent(new Event("change",{bubbles:true}));categoryButton.classList.remove("category-invalid");categoryButton.removeAttribute("aria-invalid");closeCategory();categoryButton.focus();});
 categorySelect.addEventListener("change",syncCategory);
 document.addEventListener("pointerdown",e=>{if(!e.target.closest(".contribution-category-control"))closeCategory();});
-categoryButton.addEventListener("keydown",e=>{if(e.key==="ArrowDown"||e.key==="Enter"||e.key===" "){e.preventDefault();categoryList.hidden=false;categoryButton.setAttribute("aria-expanded","true");(categoryList.querySelector('[aria-selected="true"]')||categoryList.querySelector("[data-value]"))?.focus();}});
+categoryButton.addEventListener("keydown",e=>{if(e.key==="ArrowDown"||e.key==="Enter"||e.key===" "){e.preventDefault();openCategory();(categoryList.querySelector('[aria-selected="true"]')||categoryList.querySelector("[data-value]"))?.focus();}});
 categoryList.addEventListener("keydown",e=>{const items=[...categoryList.querySelectorAll("[data-value]")];const i=items.indexOf(document.activeElement);if(e.key==="Escape"){e.preventDefault();closeCategory();categoryButton.focus();}else if(e.key==="ArrowDown"||e.key==="ArrowUp"){e.preventDefault();items[(i+(e.key==="ArrowDown"?1:items.length-1))%items.length]?.focus();}else if(e.key==="Home"||e.key==="End"){e.preventDefault();items[e.key==="Home"?0:items.length-1]?.focus();}});
 syncCategory();
 
@@ -195,6 +206,6 @@ document.querySelectorAll("[data-hours-preset]").forEach(b=>b.addEventListener("
 $("hours-edit-save").addEventListener("click",()=>{const status=$("hours-closed").checked?"closed":$("hours-24").checked?"24":"times";const intervals=editingIntervals.map(p=>[...p]);if(status==="times"&&(!intervals.length||intervals.some(([a,b])=>!a||!b||a===b))){$("hours-error").textContent="Enter a valid opening and closing time for each range.";return;}for(const i of editingDays)weeklyHours[i]={status,intervals:status==="times"?intervals.map(p=>[...p]):[]};closeHoursDialog();renderHours();});
 document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!hoursBackdrop.hidden){e.preventDefault();closeHoursDialog();}});
 
-form.addEventListener("submit",e=>{e.preventDefault();if(!categorySelect.value){categoryButton.focus();categoryButton.setAttribute("aria-invalid","true");categoryButton.classList.add("category-invalid");categoryList.hidden=false;categoryButton.setAttribute("aria-expanded","true");return;}if(!form.reportValidity())return;const fields=[["Type",config[mode][0]],["Place",form.elements.name.value],["Category",form.elements.category.value],["Address",form.elements.address.value],["Coordinates",form.elements.coordinates.value],["Located within",form.elements.within.value],["Hours",form.elements.hours.value?weeklyHours.map((entry,i)=>weekDays[i]+": "+dayText(entry)).join("\n"):""],["Phone",form.elements.phone.value],["Website",form.elements.website.value],["Details",form.elements.details.value]];const dl=$("contribution-preview-details");dl.replaceChildren();for(const [name,value] of fields){if(!value)continue;const dt=document.createElement("dt"),dd=document.createElement("dd");dt.textContent=name;dd.textContent=value;dl.append(dt,dd)}form.hidden=true;preview.hidden=false;sheet.querySelector(".contribution-scroll").scrollTop=0;});
+form.addEventListener("submit",e=>{e.preventDefault();if(!categorySelect.value){categoryButton.focus();categoryButton.setAttribute("aria-invalid","true");categoryButton.classList.add("category-invalid");openCategory();return;}if(!form.reportValidity())return;const fields=[["Type",config[mode][0]],["Place",form.elements.name.value],["Category",form.elements.category.value],["Address",form.elements.address.value],["Coordinates",form.elements.coordinates.value],["Located within",form.elements.within.value],["Hours",form.elements.hours.value?weeklyHours.map((entry,i)=>weekDays[i]+": "+dayText(entry)).join("\n"):""],["Phone",form.elements.phone.value],["Website",form.elements.website.value],["Details",form.elements.details.value]];const dl=$("contribution-preview-details");dl.replaceChildren();for(const [name,value] of fields){if(!value)continue;const dt=document.createElement("dt"),dd=document.createElement("dd");dt.textContent=name;dd.textContent=value;dl.append(dt,dd)}form.hidden=true;preview.hidden=false;sheet.querySelector(".contribution-scroll").scrollTop=0;});
 $("contribution-back").addEventListener("click",()=>{preview.hidden=true;form.hidden=false;});
 })();
