@@ -119,11 +119,38 @@ function scaleWidth(value, factor) {
 }
 
 function roadWidthAtZoom(width) {
-  // Slightly wider streets at neighborhood zooms, without exaggerated z19-20 widths.
-  const multiplier = ["interpolate", ["linear"], ["zoom"],
-    9, 1.0, 13, 1.15, 16, 1.32, 18, 1.18, 20, 1.0];
-  return ["*", width, multiplier];
+  // MapLibre allows only one zoom expression in a paint expression.
+  // Scale the existing zoom stops instead of nesting interpolations.
+  const factor = zoom => zoom <= 9 ? 1 :
+    zoom <= 13 ? 1 + (zoom - 9) * 0.15 / 4 :
+    zoom <= 16 ? 1.15 + (zoom - 13) * 0.17 / 3 :
+    zoom <= 18 ? 1.32 - (zoom - 16) * 0.14 / 2 :
+    zoom <= 20 ? 1.18 - (zoom - 18) * 0.18 / 2 : 1;
+  if (typeof width === "number") return width;
+  if (!Array.isArray(width)) return width;
+  if (width[0] === "interpolate" && Array.isArray(width[2]) &&
+      width[2][0] === "zoom") {
+    const result = structuredClone(width);
+    for (let i = 3; i + 1 < result.length; i += 2) {
+      const zoom = result[i], value = result[i + 1];
+      if (typeof zoom === "number" && typeof value === "number")
+        result[i + 1] = value * factor(zoom);
+    }
+    return result;
+  }
+  if (width[0] === "step" && Array.isArray(width[1]) &&
+      width[1][0] === "zoom") {
+    const result = structuredClone(width);
+    if (typeof result[2] === "number") result[2] *= factor(0);
+    for (let i = 3; i + 1 < result.length; i += 2) {
+      if (typeof result[i] === "number" && typeof result[i + 1] === "number")
+        result[i + 1] *= factor(result[i]);
+    }
+    return result;
+  }
+  return width;
 }
+
 export function initialMapStyle(style) {
   const settings = restore();
   const isDark =
