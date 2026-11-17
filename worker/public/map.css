@@ -1485,7 +1485,7 @@ body.routing-open #categories {
 /* Floating layers action: compact top-right icon below the category chips. */
 #layers.layers {
   position: absolute;
-  top: 154px;
+  top: 190px;
   right: 20px;
   bottom: auto;
   left: auto;
@@ -1504,7 +1504,7 @@ body.routing-open #categories {
 }
 #layers.layers > .icon { width: 23px; height: 23px; }
 #layer-panel.layer-panel {
-  top: 206px;
+  top: 242px;
   right: 20px;
   bottom: auto;
   left: auto;
@@ -1512,9 +1512,9 @@ body.routing-open #categories {
   overflow-y: auto;
 }
 @media (max-width: 600px) {
-  #layers.layers { top: 154px; right: 16px; width: 44px; height: 44px; }
+  #layers.layers { top: 190px; right: 16px; width: 44px; height: 44px; }
   #layer-panel.layer-panel {
-    top: 206px;
+    top: 242px;
     right: 12px;
     left: auto;
     bottom: auto;
