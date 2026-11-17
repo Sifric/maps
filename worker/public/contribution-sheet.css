@@ -224,3 +224,15 @@ html[data-theme=dark] .hours-states .check-outline{stroke:#8a98a9}
 html[data-theme=dark] .hours-states input:checked+.custom-check .check-outline{stroke:#7593ff}
 html[data-theme=dark] .hours-states .check-core{fill:#7593ff}
 @media(max-width:390px){.hours-dialog{padding:20px 16px 16px}.hours-states label{font-size:12px;gap:6px}.hours-states .custom-check{width:23px;height:23px}}
+
+/* Keep hour status options together, and make the entire time field a picker target */
+.hours-dialog .hours-states{justify-content:center;gap:24px;flex-wrap:wrap;margin:20px 0}
+.hours-dialog .hours-states label{flex:0 0 auto}
+.hours-dialog .hours-time-label{min-width:0}
+.hours-dialog .hours-time-field{position:relative;display:flex;align-items:center;justify-content:space-between;gap:4px;min-height:46px;width:100%;padding:0 11px;border:1px solid #8a97a6;border-radius:10px;cursor:pointer}
+.hours-dialog .hours-time-display{font-size:13px;font-weight:600;color:inherit;white-space:nowrap}
+.hours-dialog .hours-time-clock{display:grid;place-items:center;flex-shrink:0;color:#91a0af}
+.hours-dialog .hours-time-field input[type=time]{position:absolute;inset:0;width:100%;height:100%;opacity:0;pointer-events:none;border:0;padding:0}
+.hours-dialog .hours-time-field:focus-within{outline:2px solid #315ce8;outline-offset:2px}
+html[data-theme=dark] .hours-dialog .hours-time-field{border-color:#748292}
+@media(max-width:390px){.hours-dialog .hours-states{gap:16px}.hours-dialog .hours-time-field{padding:0 7px}.hours-dialog .hours-time-display{font-size:12px}}
