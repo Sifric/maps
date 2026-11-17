@@ -16,7 +16,7 @@ syncCategory();
 
 const advancedToggle=$("contribution-advanced-toggle"),advanced=$("contribution-additional");
 advancedToggle.addEventListener("click",()=>{const expanded=advancedToggle.getAttribute("aria-expanded")==="true";advancedToggle.setAttribute("aria-expanded",String(!expanded));advanced.hidden=expanded;});
-const config={add:["Add a place","Add a missing place to help keep the map useful and accurate.","Place name"],edit:["Suggest an edit","Describe the information that should be corrected.","Existing place name"],report:["Report an issue","Flag a closed, duplicated, or incorrectly mapped place.","Place or issue"]};
+const config={add:["Add a place","Add a missing place to help keep the map useful and accurate.","Place name"],edit:["Update a place","Describe the information that should be corrected.","Existing place name"],report:["Report an issue","Flag a closed, duplicated, or incorrectly mapped place.","Place or issue"]};
 function open(){previousFocus=document.activeElement;sheet.hidden=false;backdrop.hidden=false;fab.setAttribute("aria-expanded","true");document.body.classList.add("contribution-open");if(mode==="add")requestAnimationFrame(()=>void ensurePreviewMap());$("contribution-close").focus();}
 function close(){if(picking)stopPicking(false);sheet.hidden=true;backdrop.hidden=true;fab.setAttribute("aria-expanded","false");document.body.classList.remove("contribution-open");(previousFocus?.isConnected?previousFocus:fab).focus();}
 fab.addEventListener("click",open);$("contribution-close").addEventListener("click",close);$("contribution-cancel").addEventListener("click",close);backdrop.addEventListener("click",close);
