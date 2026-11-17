@@ -24,7 +24,7 @@
       href="https://cdn.jsdelivr.net/npm/maplibre-gl@6.16.0/dist/maplibre-gl.css"
     />
     <link rel="stylesheet" href="/map.css?v=contribution-sheet-13" />
-    <link rel="stylesheet" href="/contribution-sheet.css?v=8" />
+    <link rel="stylesheet" href="/contribution-sheet.css?v=9" />
     <script src="https://cdn.jsdelivr.net/npm/pmtiles@4.5.0/dist/pmtiles.js"></script>
   </head>
   <body>
@@ -212,7 +212,7 @@
         <div id="contribution-preview-map" class="contribution-preview-map" aria-label="Selected map location preview"><div class="contribution-preview-pin" aria-hidden="true"><svg viewBox="0 0 24 36" width="26" height="39" fill="none"><path d="M12 2C6 2 2 6.5 2 12c0 8 10 19 10 19s10-11 10-19C22 6.5 18 2 12 2Z" fill="#e5483b" stroke="white" stroke-width="1.5"/><circle cx="12" cy="12" r="4" fill="#a51f18"/></svg></div></div>
         <button type="button" id="contribution-use-center" class="contribution-edit-map"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9M16 4l4 4-11 11-5 1 1-5L16 4Z"/></svg>Edit map location</button>
       </div>
-      <label for="contribution-coordinates">Coordinates <span>*</span></label><input id="contribution-coordinates" name="coordinates" required readonly placeholder="Select a location on the map">
+      <input id="contribution-coordinates" name="coordinates" type="hidden">
       <button type="button" id="contribution-advanced-toggle" class="contribution-advanced-toggle" aria-expanded="false" aria-controls="contribution-additional"><span class="advanced-label"><strong>Advanced options</strong><small>Optional details</small></span><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
       <div id="contribution-additional" hidden>
         <label for="contribution-within">Located within <small>Optional</small></label><input id="contribution-within" name="within" maxlength="160" placeholder="Building or complex">
@@ -227,7 +227,7 @@
     <div id="contribution-preview" class="contribution-preview" hidden><h3>Draft preview</h3><dl id="contribution-preview-details"></dl><p>Submission is not available yet. Your draft has not been sent.</p><button type="button" id="contribution-back">Back to editing</button></div>
   </div>
 </section>
-<script defer src="/contribution-sheet.js?v=6"></script>
+<script defer src="/contribution-sheet.js?v=7"></script>
     <div
       id="map-status"
       class="map-status"
