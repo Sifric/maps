@@ -791,13 +791,62 @@ async function findRoute(originText, destinationText, destinationRow, mode, butt
     button.removeAttribute("aria-busy");
   }
 }
+const SpeechRecognitionAPI = window.SpeechRecognition || window.webkitSpeechRecognition;
+let voiceRecognition = null;
+let voiceListening = false;
 function syncSearchAction() {
   const hasText = $("search").value.length > 0;
   const action = $("search-action");
-  action.type = hasText ? "button" : "submit";
-  action.setAttribute("aria-label", hasText ? "Clear search" : "Search");
-  action.setAttribute("title", hasText ? "Clear search" : "Search");
-  action.replaceChildren(icon(hasText ? "close" : "search"));
+  action.type = "button";
+  action.setAttribute("aria-label", hasText ? "Clear search" : voiceListening ? "Stop voice search" : "Search by voice");
+  action.setAttribute("title", hasText ? "Clear search" : voiceListening ? "Stop listening" : "Search by voice");
+  action.setAttribute("aria-pressed", String(voiceListening && !hasText));
+  action.replaceChildren(icon(hasText ? "close" : "mic"));
+}
+function startVoiceSearch() {
+  if (!SpeechRecognitionAPI) {
+    alert("Voice search is not supported in this browser. Try Chrome or use the keyboard.");
+    return;
+  }
+  if (voiceListening) {
+    voiceRecognition?.stop();
+    return;
+  }
+  const recognition = new SpeechRecognitionAPI();
+  voiceRecognition = recognition;
+  recognition.lang = navigator.language || "en-LK";
+  recognition.interimResults = false;
+  recognition.maxAlternatives = 1;
+  recognition.onstart = () => {
+    voiceListening = true;
+    syncSearchAction();
+  };
+  recognition.onresult = (event) => {
+    const transcript = event.results?.[0]?.[0]?.transcript?.trim();
+    if (!transcript) return;
+    $("search").value = transcript;
+    syncSearchAction();
+    clearTimeout(searchTimer);
+    searchPlaces();
+  };
+  recognition.onerror = (event) => {
+    if (event.error !== "aborted" && event.error !== "no-speech") {
+      alert(event.error === "not-allowed"
+        ? "Microphone permission is required for voice search."
+        : "Voice search failed. Please try again or type your search.");
+    }
+  };
+  recognition.onend = () => {
+    voiceListening = false;
+    if (voiceRecognition === recognition) voiceRecognition = null;
+    syncSearchAction();
+  };
+  try { recognition.start(); }
+  catch {
+    voiceListening = false;
+    syncSearchAction();
+    alert("Unable to start voice search. Please try again.");
+  }
 }
 syncSearchAction();
 $("search").addEventListener("input", () => {
@@ -834,7 +883,11 @@ $("search-form").onsubmit = (e) => {
   else searchPlaces();
 };
 $("search-action").onclick = (event) => {
-  if (!$("search").value.length) return;
+  if (!$("search").value.length) {
+    event.preventDefault();
+    startVoiceSearch();
+    return;
+  }
   event.preventDefault();
   $("search").value = "";
   syncSearchAction();
