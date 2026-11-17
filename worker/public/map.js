@@ -1061,6 +1061,17 @@ let focusOnNextLocation = false;
 let lastRawFix = null;
 let lastSnappedFix = null;
 let lastSnappedAt = 0;
+let followRoadsEnabled = false;
+try {
+  followRoadsEnabled = JSON.parse(localStorage.getItem("lk-map-settings") || "{}").followRoads === true;
+} catch { /* Default to raw device GPS. */ }
+window.addEventListener("sifric-follow-roads-change", (event) => {
+  followRoadsEnabled = event.detail?.enabled === true;
+  lastSnappedFix = null;
+  lastSnappedAt = 0;
+  // Immediately return to the real device fix when disabling matching.
+  if (!followRoadsEnabled && liveLocationCoords) showLiveLocation(coordinateFix(liveLocationCoords));
+});
 const ROAD_SNAP_MAX_METERS = 18;
 const ROAD_SNAP_MIN_SPEED_MPS = 1.4;
 function gpsDistanceMeters(a, b) {
@@ -1268,10 +1279,15 @@ function onLiveLocation(position) {
   const inferredSpeed = lastRawFix && elapsed >= 1 ? movement / elapsed : 0;
   const speed = Number.isFinite(coords.speed) && coords.speed >= 0
     ? coords.speed : inferredSpeed;
-  const moving = speed >= ROAD_SNAP_MIN_SPEED_MPS &&
-    movement >= 3 && coords.accuracy <= 45;
-  lastRawFix = { coords: { latitude: coords.latitude, longitude: coords.longitude }, time: now };
-  const matchedLocation = moving ? snapMovingDotToRoad(coords, speed) : null;
+  const accurate = Number.isFinite(coords.accuracy) && coords.accuracy <= 30;
+  const moving = speed >= 0.8 || (movement >= 4 && elapsed >= 1);
+  lastRawFix = { coords: coordinateFix(coords), time: now };
+  // Follow Roads is explicitly opt-in. Require movement and a reasonable fix;
+  // nearby open grounds must not be forcibly mapped to a road.
+  let matchedLocation = null;
+  if (followRoadsEnabled && accurate && moving) {
+    matchedLocation = snapMovingDotToRoad(coords, speed);
+  }
   let shownLocation = matchedLocation || coordinateFix(coords);
   if (!liveLocationMarker) {
     const dot = document.createElement("div");
@@ -1279,19 +1295,18 @@ function onLiveLocation(position) {
     dot.setAttribute("role", "img");
     dot.setAttribute("aria-label", "Your current location");
     liveLocationMarker = new maplibregl.Marker({ element: dot, anchor: "center" })
-       .setLngLat([shownLocation.longitude, shownLocation.latitude]).addTo(map);
+      .setLngLat([shownLocation.longitude, shownLocation.latitude]).addTo(map);
   } else {
-    // Keep a recent matched position during brief GPS drift around bends.
-    // Never keep it if it diverges from the current fix or becomes stale.
-    const recentMatch = lastSnappedFix && Date.now() - lastSnappedAt < 5000 &&
-      gpsDistanceMeters(lastSnappedFix, coordinateFix(coords)) <= 22;
-    if (moving && matchedLocation) shownLocation = matchedLocation;
-    else if (moving && recentMatch) shownLocation = lastSnappedFix;
+    // Preserve a very recent, close match while cycling slowly; never retain
+    // an old road position if the raw GPS has moved away from it.
+    const recentMatch = followRoadsEnabled && accurate && moving &&
+      lastSnappedFix && Date.now() - lastSnappedAt < 3500 &&
+      gpsDistanceMeters(lastSnappedFix, coordinateFix(coords)) <= 14;
+    if (!matchedLocation && recentMatch) shownLocation = lastSnappedFix;
     showLiveLocation(shownLocation);
   }
   updateLiveLocationAccuracy();
-  // When stopped, display real GPS; do not pretend to be on a road.
-  if (!moving) {
+  if (!followRoadsEnabled || !accurate || !moving) {
     lastSnappedFix = null;
     lastSnappedAt = 0;
   }
