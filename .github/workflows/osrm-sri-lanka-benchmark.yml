@@ -1,0 +1,50 @@
+name: Experimental Sri Lanka OSRM memory benchmark
+
+on:
+  push:
+    branches: [experiment/osrm-sri-lanka-memory]
+    paths: [".github/workflows/osrm-sri-lanka-benchmark.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  benchmark:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install OSRM and benchmark dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y osrm-backend python3-requests time
+      - name: Download complete Sri Lanka extract
+        run: |
+          mkdir -p /tmp/osrm-sri-lanka
+          curl -fL --retry 4 --retry-delay 5 https://download.geofabrik.de/asia/sri-lanka-latest.osm.pbf -o /tmp/osrm-sri-lanka/sri-lanka.osm.pbf
+          ls -lh /tmp/osrm-sri-lanka/sri-lanka.osm.pbf
+      - name: Preprocess with MLD and capture peak memory
+        run: |
+          set -euo pipefail
+          cd /tmp/osrm-sri-lanka
+          /usr/bin/time -v -o "$GITHUB_WORKSPACE/extract-memory.txt" osrm-extract -p /usr/share/osrm/profiles/car.lua sri-lanka.osm.pbf
+          /usr/bin/time -v -o "$GITHUB_WORKSPACE/partition-memory.txt" osrm-partition sri-lanka.osrm
+          /usr/bin/time -v -o "$GITHUB_WORKSPACE/customize-memory.txt" osrm-customize sri-lanka.osrm
+          du -ch sri-lanka.osrm* | tail -1
+      - name: Run real OSRM server and concurrent requests
+        run: |
+          set -euo pipefail
+          osrm-routed --algorithm mld --mmap --threads 2 --port 5000 /tmp/osrm-sri-lanka/sri-lanka.osrm >osrm-server.log 2>&1 &
+          echo $! > osrm.pid
+          python3 scripts/benchmark-osrm.py
+      - name: Upload logs and benchmark results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sri-lanka-osrm-memory-results
+          path: |
+            *-memory.txt
+            osrm-server.log
+            osrm-results.json
+          if-no-files-found: warn
