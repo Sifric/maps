@@ -1692,3 +1692,19 @@ body.routing-open #categories {
 @media (min-width: 601px) {
   #map > .dual-scale { margin: 0 !important; }
 }
+
+/* Supplied angular checkbox SVGs, theme-aware and keyboard accessible. */
+.additional-options label { display: inline-flex; align-items: center; gap: 9px; cursor: pointer; }
+.additional-options label > input[type="checkbox"] {
+  position: absolute;
+  width: 1px; height: 1px; padding: 0; margin: 0;
+  opacity: 0; pointer-events: none;
+}
+.additional-options .custom-check { width: 26px; height: 26px; flex: none; color: #1F2937; }
+:root[data-theme="dark"] .additional-options .custom-check { color: #F3F4F6; }
+.additional-options .check-outline { stroke: currentColor; }
+.additional-options .check-core { fill: currentColor; opacity: 0; transition: opacity 140ms ease; }
+.additional-options input[type="checkbox"]:checked + .custom-check .check-core { opacity: 1; }
+.additional-options input[type="checkbox"]:focus-visible + .custom-check { outline: 2px solid var(--ui-blue); outline-offset: 3px; border-radius: 4px; }
+.additional-options input[type="checkbox"]:disabled + .custom-check { opacity: .45; }
+@media (prefers-reduced-motion: reduce) { .additional-options .check-core { transition: none; } }
