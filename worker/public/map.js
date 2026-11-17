@@ -1172,18 +1172,6 @@ document.addEventListener("keydown", (e) => {
     renderWorldCopies: false,
   });
   window.map = map;
-  // Keep provider attributions accessible; offer a dedicated full-screen credits page.
-  const creditsLink = document.createElement("a");
-  creditsLink.href = "/credits.html";
-  creditsLink.textContent = "Full credits";
-  creditsLink.className = "sifric-full-credits-link";
-  creditsLink.setAttribute("aria-label", "View full Sifric Maps credits");
-  const mountCreditsLink = () => {
-    const inner = document.querySelector(".maplibregl-ctrl-attrib-inner");
-    if (inner && !inner.contains(creditsLink)) inner.append(" | ", creditsLink);
-  };
-  mountCreditsLink();
-  map.on("styledata", mountCreditsLink);
   map.on("styleimagemissing", (e) => {
     if (e.id.startsWith("lk-pin-") && !map.hasImage(e.id))
       map.addImage(e.id, markerImage(e.id.slice(7)), { pixelRatio: 4 });
