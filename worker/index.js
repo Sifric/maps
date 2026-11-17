@@ -1,3 +1,4 @@
+import { routeAStar } from "./astar.js";
 import basemapStyle from "./style.json";
 
 const TILE_KEY = "lkmaps/sri-lanka.pmtiles";
@@ -120,6 +121,16 @@ async function routeRequest(request, env) {
     return jsonResponse({ error: "Choose Drive, Two-wheeler, or Walk." }, 400, routeCors);
   if (!validPoint(body.origin) || !validPoint(body.destination))
     return jsonResponse({ error: "Origin and destination must be coordinates in Sri Lanka." }, 400, routeCors);
+
+  if (env.ROUTING_ENGINE === "astar") {
+    try {
+      const result = await routeAStar(body, env);
+      const { status = 200, ...payload } = result;
+      return jsonResponse(payload, status, routeCors);
+    } catch {
+      return jsonResponse({ error: "Internal A* routing error." }, 500, routeCors);
+    }
+  }
 
   let endpoint;
   try {
