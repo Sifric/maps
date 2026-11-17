@@ -296,7 +296,6 @@ function panel(title) {
   }
   $("suggestions").hidden = true;
   $("panel").hidden = false;
-  $("panel").classList.remove("route-panel");
   const content = $("panel-content");
   content.replaceChildren(element("h1", title));
   return content;
@@ -304,7 +303,6 @@ function panel(title) {
 function closePanel() {
   stopRouteSession();
   $("panel").hidden = true;
-  $("panel").classList.remove("route-panel");
   document.body.classList.remove("routing-open");
   routeCard?.remove();
   routeCard = null;
@@ -502,7 +500,6 @@ function showDirections(row) {
   const c = panel("Drive");
   c.classList.add("route-screen");
   c.classList.add("route-panel");
-  $("panel").classList.add("route-panel");
   document.body.classList.add("routing-open");
   routeCard?.remove();
   routeCard = element("section", undefined, "route-card");
