@@ -1664,3 +1664,15 @@ body.routing-open #categories {
 
 /* Squircle location button, retaining the larger touch target. */
 .map-controls #locate { border-radius: 19px; }
+
+/* Use the site's Map Sans consistently across map overlays and native MapLibre UI. */
+:root, body, button, input, select, textarea,
+.maplibregl-map, .maplibregl-control-container,
+.maplibregl-ctrl, .maplibregl-ctrl-attrib,
+.maplibregl-ctrl-attrib a, .maplibregl-ctrl-attrib-inner,
+.maplibregl-ctrl-scale, .maplibregl-popup,
+.maplibregl-popup-content, .maplibregl-popup-tip,
+.dual-scale, .dual-scale-mile-label, .dual-scale-km-label,
+.map-status, #error {
+  font-family: "Map Sans", Arial, sans-serif;
+}
