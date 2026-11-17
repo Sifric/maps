@@ -1096,8 +1096,8 @@ function snapMovingDotToRoad(coords, speed) {
   // measure. Use pixels only to find candidates; validate in geographic meters.
   const metersPerPixel = 156543.03392 * Math.cos(coords.latitude * Math.PI / 180) /
     Math.pow(2, map.getZoom());
-  const maxDistance = Math.min(35, Math.max(ROAD_SNAP_MAX_METERS,
-    Number.isFinite(coords.accuracy) ? coords.accuracy * 1.2 : ROAD_SNAP_MAX_METERS));
+  // Conservative road proximity: do not snap a rider across an open ground.
+  const maxDistance = lastSnappedFix ? 14 : 10;
   const radius = Math.min(250, Math.max(35, maxDistance /
     Math.max(0.01, metersPerPixel) * 2.5));
   const style = map.getStyle();
@@ -1279,7 +1279,7 @@ function onLiveLocation(position) {
   const inferredSpeed = lastRawFix && elapsed >= 1 ? movement / elapsed : 0;
   const speed = Number.isFinite(coords.speed) && coords.speed >= 0
     ? coords.speed : inferredSpeed;
-  const accurate = Number.isFinite(coords.accuracy) && coords.accuracy <= 30;
+  const accurate = Number.isFinite(coords.accuracy) && coords.accuracy <= (lastSnappedFix ? 30 : 20);
   const moving = speed >= 0.8 || (movement >= 4 && elapsed >= 1);
   lastRawFix = { coords: coordinateFix(coords), time: now };
   // Follow Roads is explicitly opt-in. Require movement and a reasonable fix;
