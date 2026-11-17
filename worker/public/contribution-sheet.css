@@ -240,3 +240,25 @@ html[data-theme=dark] .hours-dialog .hours-time-field{border-color:#748292}
 /* Selected hours must read as values, not muted placeholders */
 html[data-theme="dark"] .hours-dialog .hours-time-field .hours-time-display{color:#fff!important;opacity:1}
 html:not([data-theme="dark"]) .hours-dialog .hours-time-field .hours-time-display{color:#17212f!important;opacity:1}
+
+/* Native-looking Sifric category dropdown, without OS select popup */
+#contribution-form-sheet .contribution-category-control{position:relative;margin-bottom:4px}
+#contribution-form-sheet #contribution-category{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+#contribution-form-sheet .contribution-category-button{width:100%;min-height:54px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 16px;border:1px solid #344151;border-radius:12px;background:transparent;color:#9ba6b5;font:inherit;text-align:left}
+#contribution-form-sheet .contribution-category-button.has-value{color:inherit}
+#contribution-form-sheet .contribution-category-button svg{transition:transform .16s ease;flex:none}
+#contribution-form-sheet .contribution-category-button[aria-expanded=true] svg{transform:rotate(180deg)}
+#contribution-form-sheet .contribution-category-button:focus-visible{outline:2px solid #315ce8;outline-offset:2px}
+#contribution-form-sheet .contribution-category-list[hidden]{display:none!important}
+#contribution-form-sheet .contribution-category-list{position:absolute;top:calc(100% + 6px);left:0;right:0;z-index:30;max-height:min(320px,45dvh);overflow-y:auto;overscroll-behavior:contain;padding:6px;border:1px solid #394756;border-radius:14px;background:#202b37;box-shadow:0 16px 38px #0006}
+#contribution-form-sheet .contribution-category-option{width:100%;display:flex;align-items:center;justify-content:space-between;padding:12px 13px;border:0;border-radius:9px;background:transparent;color:#e7edf6;text-align:left;font:inherit;font-size:14px}
+#contribution-form-sheet .contribution-category-option svg{opacity:0;color:#8ea8ff}
+#contribution-form-sheet .contribution-category-option[aria-selected=true]{background:#304269;color:#aabfff}
+#contribution-form-sheet .contribution-category-option[aria-selected=true] svg{opacity:1}
+#contribution-form-sheet .contribution-category-option:hover,#contribution-form-sheet .contribution-category-option:focus-visible{background:#334153;outline:0}
+html:not([data-theme=dark]) #contribution-form-sheet .contribution-category-button{border-color:#dce2e9;color:#7b8591}
+html:not([data-theme=dark]) #contribution-form-sheet .contribution-category-button.has-value{color:#17212f}
+html:not([data-theme=dark]) #contribution-form-sheet .contribution-category-list{background:#fff;border-color:#e1e6ed;box-shadow:0 16px 38px #0002}
+html:not([data-theme=dark]) #contribution-form-sheet .contribution-category-option{color:#202b37}
+html:not([data-theme=dark]) #contribution-form-sheet .contribution-category-option[aria-selected=true]{background:#e8efff;color:#315ce8}
+html:not([data-theme=dark]) #contribution-form-sheet .contribution-category-option:hover{background:#eef2f7}
