@@ -64,3 +64,23 @@ html[data-theme=dark] .picker-top small,html[data-theme=dark] .picker-bottom out
 html[data-theme=dark] .contribution-advanced-toggle{background:#26313e;color:#f0f4f8;border-color:#344151}
 html[data-theme=dark] .contribution-advanced-toggle small{color:#a0acb9}
 @media(prefers-reduced-motion:reduce){.contribution-advanced-toggle svg{transition:none}}
+
+/* Fix advanced disclosure: explicit layout and theme, independent of global button rules. */
+#contribution-form-sheet #contribution-advanced-toggle{display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:space-between!important;gap:12px!important;box-sizing:border-box;width:100%!important;min-height:66px!important;padding:13px 16px!important;margin:0 0 20px!important;border:1px solid #dce2e9!important;border-radius:12px!important;background:#f6f8fb!important;color:#263342!important;text-align:left!important;white-space:normal!important}
+#contribution-form-sheet #contribution-advanced-toggle[hidden]{display:none!important}
+#contribution-advanced-toggle .advanced-label{display:flex!important;flex:1;flex-direction:column!important;align-items:flex-start!important;gap:4px!important;min-width:0}
+#contribution-advanced-toggle .advanced-label strong{font-size:13px;font-weight:700;line-height:1.4}
+#contribution-advanced-toggle .advanced-label small{font-size:11px;line-height:1.4;color:#758291}
+#contribution-advanced-toggle svg{display:block!important;width:20px!important;height:20px!important;flex:0 0 20px!important}
+html[data-theme=dark] #contribution-form-sheet #contribution-advanced-toggle{background:#26313e!important;color:#f0f4f8!important;border-color:#344151!important}
+html[data-theme=dark] #contribution-advanced-toggle .advanced-label small{color:#a0acb9}
+
+/* Location selection takes over the entire viewport while keeping the real map interactive. */
+body.contribution-picking #map{position:fixed!important;inset:0!important;width:100vw!important;height:100dvh!important;z-index:0!important}
+body.contribution-picking #contribution-picker{position:fixed!important;inset:0!important;width:100vw!important;height:100dvh!important;z-index:1000!important;display:block!important;background:transparent!important;pointer-events:none!important}
+body.contribution-picking #contribution-picker[hidden]{display:none!important}
+body.contribution-picking .picker-crosshair{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);z-index:2;pointer-events:none}
+body.contribution-picking .picker-top{top:calc(14px + env(safe-area-inset-top));z-index:3}
+body.contribution-picking .picker-bottom{bottom:calc(18px + env(safe-area-inset-bottom));z-index:3}
+body.contribution-picking .picker-bottom button{width:100%;min-height:50px;background:#315ce8;color:white}
+body.contribution-picking .maplibregl-control-container{visibility:hidden!important}
