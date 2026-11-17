@@ -283,6 +283,7 @@ function stopRouteSession() {
   for (const id of ["lk-route-line", "lk-route-casing"])
     if (map.getLayer(id)) map.removeLayer(id);
   if (map.getSource("lk-route")) map.removeSource("lk-route");
+  applyPlaceFilters();
 }
 function panel(title) {
   if (
@@ -471,9 +472,18 @@ function applyPlaceFilters() {
   const filters = [];
   if (category) filters.push(["==", ["get", "kind"], category]);
   if (selected && highlight) filters.push(["!=", ["id"], selected[0]]);
-  for (const id of ["mazo-places-dot", "mazo-places-icon"])
-    if (map?.getLayer(id))
-      map.setFilter(id, filters.length ? ["all", ...filters] : null);
+  const routing = document.body.classList.contains("routing-open");
+  for (const id of ["mazo-places-dot", "mazo-places-icon"]) {
+    if (!map?.getLayer(id)) continue;
+    const layerFilters = [...filters];
+    // While navigating, remove minor POIs and background dots; keep useful
+    // landmarks such as hospitals, transport, and public facilities visible.
+    if (routing) {
+      if (id === "mazo-places-dot") layerFilters.push(["==", ["get", "kind"], "__hidden_during_routing__"]);
+      else layerFilters.push(["!", ["in", ["get", "kind"], ["literal", ["food", "shopping", "other", "leisure"]]]]);
+    }
+    map.setFilter(id, layerFilters.length ? ["all", ...layerFilters] : null);
+  }
   if (map?.getLayer("mazo-places-selected-label"))
     map.setFilter(
       "mazo-places-selected-label",
@@ -498,6 +508,7 @@ function showDirections(row) {
   const c = panel("Drive");
   c.classList.add("route-panel");
   document.body.classList.add("routing-open");
+  applyPlaceFilters();
   routeCard?.remove();
   routeCard = element("section", undefined, "route-card");
   routeCard.setAttribute("aria-label", "Route locations");
@@ -773,12 +784,12 @@ async function findRoute(originText, destinationText, destinationRow, mode, butt
       map.addLayer({
         id: "lk-route-casing", type: "line", source: "lk-route",
         layout: { "line-cap": "round", "line-join": "round" },
-        paint: { "line-color": "#ffffff", "line-width": ["interpolate", ["linear"], ["zoom"], 7, 5, 16, 10] },
+        paint: { "line-color": "#ffffff", "line-width": ["interpolate", ["linear"], ["zoom"], 7, 2.5, 10, 3.5, 13, 5, 15, 7, 18, 10, 20, 13] },
       }, before);
       map.addLayer({
         id: "lk-route-line", type: "line", source: "lk-route",
         layout: { "line-cap": "round", "line-join": "round" },
-        paint: { "line-color": "#1a73e8", "line-width": ["interpolate", ["linear"], ["zoom"], 7, 3, 16, 6] },
+        paint: { "line-color": "#1a73e8", "line-width": ["interpolate", ["linear"], ["zoom"], 7, 1.5, 10, 2.5, 13, 3.5, 15, 5, 18, 7.5, 20, 10] },
       }, before);
     } else {
       map.getSource("lk-route").setData({ type: "Feature", properties: {}, geometry: result.geometry });
