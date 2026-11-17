@@ -173,3 +173,11 @@ html[data-theme=dark] .hours-day-chip{color:#f0f4f8;border-color:#344151}
 html[data-theme=dark] .hours-day-chip[aria-pressed=true]{background:#253b60;border-color:#6484f1}
 html[data-theme=dark] .hours-dialog footer button:last-child{background:#315ce8;color:#fff}
 @media(max-width:390px){.hours-dialog{padding:17px}.hours-states{gap:5px;font-size:12px}.hours-day-buttons{gap:3px}}
+
+/* Current location shortcut for full-screen contribution picker */
+body.contribution-picking .picker-live-location{position:absolute;z-index:4;right:20px;bottom:calc(154px + env(safe-area-inset-bottom));width:48px;height:48px;display:grid;place-items:center;border:0;border-radius:50%;background:#fff;color:#315ce8;box-shadow:0 3px 14px #0004;pointer-events:auto}
+body.contribution-picking .picker-live-location:disabled{opacity:.65;cursor:wait}
+body.contribution-picking .picker-live-location[aria-busy=true] svg{animation:picker-location-pulse 1s ease-in-out infinite}
+@keyframes picker-location-pulse{50%{opacity:.35}}
+html[data-theme=dark] body.contribution-picking .picker-live-location{background:#1a222c;color:#a5b8ff}
+body.contribution-picking:has(.picker-map-types:not([hidden])) .picker-live-location{visibility:hidden}
