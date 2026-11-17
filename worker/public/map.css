@@ -1725,3 +1725,81 @@ body.routing-open #categories {
 .map-controls #contribute-fab:focus-visible{outline:2px solid #315ce8;outline-offset:3px}
 html[data-theme="dark"] .map-controls #contribute-fab,body.dark .map-controls #contribute-fab{background:#202a35;color:#f3f4f6}
 html[data-theme="dark"] .map-controls #contribute-fab:hover,body.dark .map-controls #contribute-fab:hover{background:#303e4c}
+
+/* Full-screen directions selection, retaining the existing OSRM route workflow. */
+body.routing-open #panel.route-panel {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100dvh;
+  max-height: 100dvh;
+  transform: none;
+  border-radius: 0;
+  padding: calc(212px + env(safe-area-inset-top)) 20px calc(22px + env(safe-area-inset-bottom));
+  overflow-y: auto;
+  z-index: 20;
+  box-shadow: none;
+  background: var(--ui-bg);
+}
+body.routing-open #panel.route-panel::before,
+body.routing-open #panel.route-panel > .close,
+body.routing-open #panel.route-panel h1 { display: none; }
+body.routing-open .route-card {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: none;
+  width: 100vw;
+  max-width: none;
+  min-height: calc(212px + env(safe-area-inset-top));
+  border-radius: 0;
+  padding: calc(14px + env(safe-area-inset-top)) 16px 12px 64px;
+  z-index: 21;
+  box-shadow: none;
+  border-bottom: 1px solid var(--ui-border);
+}
+body.routing-open .route-back {
+  position: absolute;
+  left: 12px;
+  top: calc(18px + env(safe-area-inset-top));
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 0;
+  border-radius: 50%;
+  color: var(--ui-text);
+  background: transparent;
+  font-size: 22px;
+}
+body.routing-open .route-back .icon {width:24px;height:24px}
+body.routing-open .route-mode-tabs {
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  margin: 0 0 16px;
+  padding: 0 0 8px;
+}
+body.routing-open .route-recent-title {
+  margin: 22px 0 10px;
+  font-size: 17px;
+  color: var(--ui-text);
+}
+body.routing-open .route-recent-list {display:grid}
+body.routing-open .route-recent-item {
+  display:flex;
+  align-items:center;
+  gap:16px;
+  min-height:64px;
+  width:100%;
+  padding:12px 6px;
+  text-align:left;
+  border-bottom:1px solid var(--ui-border);
+  color:var(--ui-text);
+  background:transparent;
+}
+body.routing-open .route-recent-item .icon {width:22px;height:22px;flex-shrink:0;color:var(--ui-muted)}
+body.routing-open .route-recent-item span {overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+body.routing-open #panel.route-panel .route-steps {max-height:none}
+@media(max-width:600px){
+  body.routing-open #panel.route-panel {width:100vw;max-height:100dvh}
+  body.routing-open .route-card {width:100vw}
+}
