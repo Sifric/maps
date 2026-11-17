@@ -1676,3 +1676,19 @@ body.routing-open #categories {
 .map-status, #error {
   font-family: "Map Sans", Arial, sans-serif;
 }
+
+/* Anchor mi/km to the map viewport, not the attribution control's changing height. */
+#map > .dual-scale {
+  position: absolute;
+  bottom: 108px;
+  right: 124px;
+  left: auto;
+  margin: 0 !important;
+  float: none;
+  clear: none;
+  z-index: 4;
+  padding-right: 0;
+}
+@media (min-width: 601px) {
+  #map > .dual-scale { margin: 0 !important; }
+}
