@@ -1753,3 +1753,30 @@ html[data-theme="dark"] .map-controls #contribute-fab:hover,body.dark .map-contr
   width: 23px;
   height: 23px;
 }
+
+/* Compass-driven location beam, centered on MapLibre's live GPS dot.
+   The beam is decorative and does not claim a precision beyond device sensors. */
+.maplibregl-user-location-dot.sifric-heading-active {
+  isolation: isolate;
+}
+.maplibregl-user-location-dot.sifric-heading-active::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  width: 150px;
+  height: 150px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(var(--sifric-heading, 0deg));
+  border-radius: 50%;
+  background: conic-gradient(from -33deg,
+    rgba(66,133,244,.0) 0deg,
+    rgba(66,133,244,.36) 20deg,
+    rgba(66,133,244,.24) 45deg,
+    rgba(66,133,244,0) 68deg,
+    transparent 69deg 360deg);
+  -webkit-mask-image: radial-gradient(circle, transparent 0 9px, #000 17px, transparent 76px);
+  mask-image: radial-gradient(circle, transparent 0 9px, #000 17px, transparent 76px);
+  transition: transform 130ms linear;
+}
