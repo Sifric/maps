@@ -1,0 +1,72 @@
+name: OSRM WebAssembly port feasibility (experimental)
+
+# This is NOT a deployment workflow. It attempts to compile the actual
+# upstream OSRM C++ engine to WebAssembly, never substitutes another router.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-osrm-wasm:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: Project-OSRM/osrm-backend
+          ref: v5.26.0
+          path: upstream-osrm
+          submodules: recursive
+      - uses: mymindstorm/setup-emsdk@v14
+        with:
+          version: 3.1.74
+      - name: Record toolchain
+        run: |
+          emcc --version
+          cmake --version
+      - name: Attempt real upstream OSRM C++ WebAssembly configuration
+        id: configure
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          mkdir -p build-osrm-wasm
+          emcmake cmake -S upstream-osrm -B build-osrm-wasm \
+            -DCMAKE_BUILD_TYPE=Release \
+            -DBUILD_SHARED_LIBS=OFF \
+            -DENABLE_LTO=OFF \
+            2>&1 | tee osrm-wasm-configure.log
+      - name: Attempt WebAssembly build if configuration succeeded
+        if: steps.configure.outcome == 'success'
+        id: build
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          emmake cmake --build build-osrm-wasm --parallel 2 \
+            2>&1 | tee osrm-wasm-build.log
+      - name: Summarize actual result
+        if: always()
+        run: |
+          {
+            echo '## OSRM upstream WebAssembly port'
+            echo ''
+            echo 'This attempts the actual OSRM v5.26.0 C++ source, not a substitute routing engine.'
+            echo ''
+            echo "CMake configuration: ${{ steps.configure.outcome }}"
+            echo "Build: ${{ steps.build.outcome }}"
+            echo ''
+            echo 'A successful compile alone is **not** a Workers-ready OSRM router.'
+            echo 'Further porting is needed for file-backed graph access, Worker APIs,'
+            echo '128 MB isolate memory, and 10 ms free-tier CPU limits.'
+            echo 'No deployment or production configuration is changed.'
+          } >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: osrm-wasm-port-logs
+          path: |
+            osrm-wasm-configure.log
+            osrm-wasm-build.log
+          if-no-files-found: warn
