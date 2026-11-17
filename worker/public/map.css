@@ -1655,3 +1655,9 @@ body.routing-open #categories {
   width: 36px;
   height: 36px;
 }
+
+/* Explicit mutually exclusive theme variants for every location state. */
+#locate .location-icon-pair .location-state-light { display: block; }
+#locate .location-icon-pair .location-state-dark { display: none; }
+:root[data-theme="dark"] #locate .location-icon-pair .location-state-light { display: none; }
+:root[data-theme="dark"] #locate .location-icon-pair .location-state-dark { display: block; }
