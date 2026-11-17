@@ -1481,3 +1481,44 @@ body.routing-open #categories {
 @media (prefers-reduced-motion: reduce) {
   .dual-scale { transition: none; }
 }
+
+/* Floating layers action: compact top-right icon below the category chips. */
+#layers.layers {
+  position: absolute;
+  top: 154px;
+  right: 20px;
+  bottom: auto;
+  left: auto;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: var(--ui-bg, #fff);
+  color: var(--ui-text, #202124);
+  box-shadow: 0 2px 6px #0003;
+  overflow: visible;
+  z-index: 7;
+}
+#layers.layers > .icon { width: 23px; height: 23px; }
+#layer-panel.layer-panel {
+  top: 206px;
+  right: 20px;
+  bottom: auto;
+  left: auto;
+  max-height: min(65dvh, 540px);
+  overflow-y: auto;
+}
+@media (max-width: 600px) {
+  #layers.layers { top: 154px; right: 16px; width: 44px; height: 44px; }
+  #layer-panel.layer-panel {
+    top: 206px;
+    right: 12px;
+    left: auto;
+    bottom: auto;
+    width: min(330px, calc(100vw - 24px));
+    max-height: min(65dvh, 540px);
+  }
+}
