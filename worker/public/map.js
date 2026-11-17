@@ -797,19 +797,34 @@ let voiceListening = false;
 // Custom microphone artwork supplied for Sifric Maps voice search.
 function createVoiceMicIcon() {
   const template = document.createElement("template");
-  template.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" class="icon voice-mic-icon" width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true" focusable="false">
-    <defs><linearGradient id="sifric-voice-mic-grad" x1="24" y1="6" x2="40" y2="36" gradientUnits="userSpaceOnUse">
+  template.innerHTML = `<span class="voice-mic-pair" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon voice-mic-icon voice-mic-light" width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true" focusable="false">
+    <defs><linearGradient id="sifric-voice-mic-grad-light" x1="24" y1="6" x2="40" y2="36" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#8B5CF6"/><stop offset="1" stop-color="#3B82F6"/>
     </linearGradient></defs>
-    <rect x="24" y="6" width="16" height="30" rx="8" fill="url(#sifric-voice-mic-grad)"/>
+    <rect x="24" y="6" width="16" height="30" rx="8" fill="url(#sifric-voice-mic-grad-light)"/>
     <g stroke="#fff" stroke-opacity=".55" stroke-width="2" stroke-linecap="round">
       <line x1="29" y1="15" x2="35" y2="15"/><line x1="29" y1="21" x2="35" y2="21"/><line x1="29" y1="27" x2="35" y2="27"/>
     </g>
-    <g stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <g stroke="#1F2937" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
       <path d="M15 29v3a17 17 0 0 0 34 0v-3"/>
       <line x1="32" y1="49" x2="32" y2="57"/><line x1="24" y1="57" x2="40" y2="57"/>
     </g>
-  </svg>`;
+  </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon voice-mic-icon voice-mic-dark" width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true" focusable="false">
+    <defs><linearGradient id="sifric-voice-mic-grad-dark" x1="24" y1="6" x2="40" y2="36" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8B5CF6"/><stop offset="1" stop-color="#3B82F6"/>
+    </linearGradient></defs>
+    <rect x="24" y="6" width="16" height="30" rx="8" fill="url(#sifric-voice-mic-grad-dark)"/>
+    <g stroke="#fff" stroke-opacity=".55" stroke-width="2" stroke-linecap="round">
+      <line x1="29" y1="15" x2="35" y2="15"/><line x1="29" y1="21" x2="35" y2="21"/><line x1="29" y1="27" x2="35" y2="27"/>
+    </g>
+    <g stroke="#F3F4F6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M15 29v3a17 17 0 0 0 34 0v-3"/>
+      <line x1="32" y1="49" x2="32" y2="57"/><line x1="24" y1="57" x2="40" y2="57"/>
+    </g>
+  </svg>
+  </span>`;
   return template.content.firstElementChild;
 }
 function syncSearchAction() {
