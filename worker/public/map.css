@@ -1708,3 +1708,21 @@ body.routing-open #categories {
 .additional-options input[type="checkbox"]:focus-visible + .custom-check { outline: 2px solid var(--ui-blue); outline-offset: 3px; border-radius: 4px; }
 .additional-options input[type="checkbox"]:disabled + .custom-check { opacity: .45; }
 @media (prefers-reduced-motion: reduce) { .additional-options .check-core { transition: none; } }
+
+/* Distance labels sit beside, never on top of, the scale rule. */
+#map > .dual-scale {
+  right: 150px;
+  box-sizing: content-box;
+  overflow: visible;
+}
+#map > .dual-scale .dual-scale-mile-label,
+#map > .dual-scale .dual-scale-km-label {
+  left: calc(100% + 10px);
+  right: auto;
+  min-width: 44px;
+  white-space: nowrap;
+  text-align: left;
+  line-height: 12px;
+}
+#map > .dual-scale .dual-scale-mile-label { top: 0; }
+#map > .dual-scale .dual-scale-km-label { top: 15px; }
