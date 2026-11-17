@@ -14,6 +14,7 @@ const routeCors = {
   "Access-Control-Allow-Headers": "Content-Type",
 };
 const DEFAULT_OSRM_ORIGIN = "https://router.project-osrm.org";
+const FALLBACK_OSRM_ORIGINS = { drive: "https://routing.openstreetmap.de/routed-car", twoWheeler: "https://routing.openstreetmap.de/routed-car", walk: "https://routing.openstreetmap.de/routed-foot" };
 let lastOsrmRequestAt = 0;
 let osrmRequestQueue = Promise.resolve();
 
@@ -138,40 +139,53 @@ async function routeRequest(request, env) {
   }
 
   try {
-    const upstreamRequest = new Request(endpoint, {
-      headers: { Accept: "application/json" },
-      signal: AbortSignal.timeout(30000),
-    });
-    const upstream = (env.OSRM_BASE_URL || (body.mode === "walk" && env.OSRM_WALK_URL)) ? await fetch(upstreamRequest) : await fetchPublicOsrm(upstreamRequest);
-    const raw = await upstream.text();
-    let result;
-    try { result = JSON.parse(raw); }
-    catch { return jsonResponse({ error: "OSRM returned an invalid response. Check the routing server URL and availability." }, 502, routeCors); }
-    if (!upstream.ok || result.code !== "Ok") {
-      if (upstream.status === 429) {
-        const retryAfter = upstream.headers.get("Retry-After") || "5";
-        return jsonResponse(
-          { error: result.message || "Routing is busy. Retry shortly." },
-          429,
-          { ...routeCors, "Retry-After": retryAfter },
-        );
-      }
-      const warming = upstream.status === 503;
-      return jsonResponse(
-        { error: warming ? result.message || "The routing engine is starting. Retry shortly." : upstream.status >= 500 ? "The routing service is unavailable." : result.message || "The routing service could not find a route." },
-        warming ? 503 : upstream.status >= 500 ? 502 : 422,
-        routeCors,
-      );
+    const configured = Boolean((body.mode === "walk" && env.OSRM_WALK_URL) || env.OSRM_BASE_URL);
+    const candidates = [endpoint];
+    // The public OSRM demo may return an HTML denial/rate-limit page to Worker traffic.
+    // Only use the alternative public instance when no dedicated server was configured.
+    if (!configured) {
+      const fallback = new URL(FALLBACK_OSRM_ORIGINS[body.mode]);
+      fallback.pathname = fallback.pathname.replace(/\\/$/, "") + endpoint.pathname;
+      fallback.search = endpoint.search;
+      candidates.push(fallback);
     }
-    const route = result.routes?.[0];
-    if (!route?.geometry?.coordinates?.length)
-      return jsonResponse({ error: result.message || "No route was found." }, 422, routeCors);
-    return jsonResponse({
-      geometry: route.geometry,
-      distance: route.distance,
-      duration: route.duration,
-      steps: (route.legs || []).flatMap((leg) => leg.steps || []).map(osrmStep),
-    }, 200, routeCors);
+    let failure = "The routing service is unavailable.";
+    for (const [index, candidate] of candidates.entries()) {
+      const upstreamRequest = new Request(candidate.toString(), {
+        headers: { Accept: "application/json" },
+        signal: AbortSignal.timeout(30000),
+      });
+      const upstream = configured ? await fetch(upstreamRequest) : await fetchPublicOsrm(upstreamRequest);
+      const raw = await upstream.text();
+      let result;
+      try { result = JSON.parse(raw); }
+      catch {
+        failure = `Routing server returned a non-JSON response (HTTP ${upstream.status}).`;
+        if (index + 1 < candidates.length) continue;
+        return jsonResponse({ error: failure }, 502, routeCors);
+      }
+      if (!upstream.ok || result.code !== "Ok") {
+        if (upstream.status === 429) {
+          failure = result.message || "Routing is busy. Retry shortly.";
+          if (index + 1 < candidates.length) continue;
+          return jsonResponse({ error: failure }, 429, { ...routeCors, "Retry-After": upstream.headers.get("Retry-After") || "5" });
+        }
+        const warming = upstream.status === 503;
+        failure = result.message || (warming ? "The routing engine is starting. Retry shortly." : "The routing service could not find a route.");
+        if (upstream.status >= 500 && index + 1 < candidates.length) continue;
+        return jsonResponse({ error: failure }, warming ? 503 : upstream.status >= 500 ? 502 : 422, routeCors);
+      }
+      const route = result.routes?.[0];
+      if (!route?.geometry?.coordinates?.length)
+        return jsonResponse({ error: result.message || "No route was found." }, 422, routeCors);
+      return jsonResponse({
+        geometry: route.geometry,
+        distance: route.distance,
+        duration: route.duration,
+        steps: (route.legs || []).flatMap((leg) => leg.steps || []).map(osrmStep),
+      }, 200, routeCors);
+    }
+    return jsonResponse({ error: failure }, 502, routeCors);
   } catch (error) {
     const timedOut = error?.name === "TimeoutError" || error?.name === "AbortError";
     return jsonResponse(
