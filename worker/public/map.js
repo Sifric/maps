@@ -975,13 +975,36 @@ async function initLocationPermission() {
   } catch { updateLocationIcon(); }
 }
 initLocationPermission();
-function locationErrorMessage(error) {
-  if (error?.code === 1) {
-    return "Location access is blocked. Open your browser's site settings, allow Location for this site, then try again.";
+async function handleLocationFailure(error) {
+  let permission = locationPermission;
+  try {
+    if (navigator.permissions?.query) {
+      permission = (await navigator.permissions.query({ name: "geolocation" })).state;
+    }
+  } catch {}
+  locationPermission = permission;
+  // Android Chrome may report PERMISSION_DENIED while device-wide Location is OFF,
+  // even though this site's permission is still granted.
+  if (permission === "granted") {
+    locationDeviceUnavailable = true;
+    updateLocationIcon();
+    status("Device Location may be off. Turn on Location in Android Quick Settings or Settings → Location, then tap this button again.");
+    return;
   }
-  if (error?.code === 2) return "Your location is unavailable. Turn on device Location and try again.";
-  if (error?.code === 3) return "Location timed out. Check your device Location setting and try again.";
-  return "Could not get your location. Please try again.";
+  if (permission === "denied") {
+    locationDeviceUnavailable = false;
+    updateLocationIcon();
+    status("Location is blocked for this site. Allow Location in Chrome Site settings, then try again.");
+    return;
+  }
+  if (error?.code === 2 || error?.code === 3) {
+    locationDeviceUnavailable = true;
+    updateLocationIcon();
+    status("Location unavailable. Turn on Android Location and try again.");
+    return;
+  }
+  updateLocationIcon();
+  status("Chrome could not access your location. Check device Location and site permission, then try again.");
 }
 $("locate").onclick = () => {
   if (!navigator.geolocation) {
@@ -1016,10 +1039,7 @@ $("locate").onclick = () => {
     (error) => {
       button.disabled = false;
       button.removeAttribute("aria-busy");
-      if (error.code === 1) locationPermission = "denied";
-      else if (error.code === 2 || error.code === 3) locationDeviceUnavailable = true;
-      updateLocationIcon();
-      status(locationErrorMessage(error));
+      void handleLocationFailure(error);
     },
     { enableHighAccuracy: true, timeout: 12000, maximumAge: 30000 },
   );
@@ -1212,12 +1232,9 @@ document.addEventListener("keydown", (e) => {
     button.title = "Recenter on your location";
   });
   geolocateControl.on("error", (error) => {
-    if (error?.code === 1) locationPermission = "denied";
-    else if (error?.code === 2 || error?.code === 3) locationDeviceUnavailable = true;
-    updateLocationIcon();
+    void handleLocationFailure(error);
     $("locate").disabled = false;
     $("locate").removeAttribute("aria-busy");
-    status(locationErrorMessage(error));
   });
   for (const layer of ["mazo-places-icon", "mazo-places-dot"]) {
     map.on("click", layer, (e) => {
