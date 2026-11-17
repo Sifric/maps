@@ -1059,6 +1059,30 @@ let liveLocationMarker = null;
 let liveLocationCoords = null;
 let focusOnNextLocation = false;
 let lastRawFix = null;
+let lastAcceptedGps = null;
+let lastAcceptedGpsTime = 0;
+function validatedDeviceFix(position) {
+  const { coords, timestamp } = position;
+  if (!Number.isFinite(coords.latitude) || !Number.isFinite(coords.longitude) ||
+      !Number.isFinite(coords.accuracy) || coords.accuracy <= 0 ||
+      coords.latitude < -90 || coords.latitude > 90 ||
+      coords.longitude < -180 || coords.longitude > 180) return null;
+  const time = Number.isFinite(timestamp) ? timestamp : Date.now();
+  // Ignore old, out-of-order browser geolocation callbacks.
+  if (time <= lastAcceptedGpsTime || Date.now() - time > 15000) return null;
+  const point = coordinateFix(coords);
+  if (lastAcceptedGps) {
+    const distance = gpsDistanceMeters(lastAcceptedGps, point);
+    const seconds = Math.max(0.1, (time - lastAcceptedGpsTime) / 1000);
+    // Only reject extreme jumps when both fixes report good accuracy.
+    if (coords.accuracy <= 15 && lastAcceptedGps.accuracy <= 15 &&
+        distance > Math.max(80, seconds * 25)) return null;
+  }
+  lastAcceptedGps = { ...point, accuracy: coords.accuracy };
+  lastAcceptedGpsTime = time;
+  return coords;
+}
+
 let lastSnappedFix = null;
 let lastSnappedAt = 0;
 let followRoadsEnabled = false;
@@ -1097,6 +1121,8 @@ function snapMovingDotToRoad(coords, speed) {
   const metersPerPixel = 156543.03392 * Math.cos(coords.latitude * Math.PI / 180) /
     Math.pow(2, map.getZoom());
   // Conservative road proximity: do not snap a rider across an open ground.
+  // Snap only when enabled; retain a conservative distance to avoid mapping
+  // an open-ground cyclist onto a nearby street.
   const maxDistance = lastSnappedFix ? 14 : 10;
   const radius = Math.min(250, Math.max(35, maxDistance /
     Math.max(0.01, metersPerPixel) * 2.5));
@@ -1270,7 +1296,8 @@ function updateLiveLocationAccuracy() {
   liveLocationMarker.getElement().style.setProperty("--sifric-accuracy-radius", `${radius}px`);
 }
 function onLiveLocation(position) {
-  const { coords } = position;
+  const coords = validatedDeviceFix(position);
+  if (!coords) return;
   liveLocationCoords = coords;
   const now = position.timestamp || Date.now();
   const movement = lastRawFix
@@ -1313,7 +1340,7 @@ function onLiveLocation(position) {
   updateTravelBeam(shownLocation, moving, coords, now);
   if (focusOnNextLocation) {
     focusOnNextLocation = false;
-    map.flyTo({ center: [coords.longitude, coords.latitude], zoom: Math.max(map.getZoom(), 19), duration: 850 });
+    map.flyTo({ center: [shownLocation.longitude, shownLocation.latitude], zoom: Math.max(map.getZoom(), 19), duration: 850 });
   }
   const button = $("locate");
   button.disabled = false;
