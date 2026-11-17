@@ -13,7 +13,7 @@ const routeCors = {
   "Access-Control-Allow-Methods": "POST, OPTIONS",
   "Access-Control-Allow-Headers": "Content-Type",
 };
-const OSRM_ORIGIN = "https://router.project-osrm.org";
+const DEFAULT_OSRM_ORIGIN = "https://router.project-osrm.org";
 let lastOsrmRequestAt = 0;
 let osrmRequestQueue = Promise.resolve();
 
@@ -36,7 +36,7 @@ export default {
         return new Response(null, { status: 204, headers: routeCors });
       if (request.method !== "POST")
         return jsonResponse({ error: "Method Not Allowed" }, 405, routeCors);
-      return routeRequest(request);
+      return routeRequest(request, env);
     }
     if (request.method === "OPTIONS") return new Response(null, { status: 204, headers: cors });
     if (!["GET", "HEAD"].includes(request.method)) {
@@ -99,7 +99,7 @@ export default {
   },
 };
 
-async function routeRequest(request) {
+async function routeRequest(request, env) {
   let body;
   try {
     body = await request.json();
@@ -121,7 +121,9 @@ async function routeRequest(request) {
 
   let endpoint;
   try {
-    endpoint = new URL(OSRM_ORIGIN);
+    const origin = env.OSRM_BASE_URL || DEFAULT_OSRM_ORIGIN;
+    endpoint = new URL(origin);
+    if (!["https:", "http:"].includes(endpoint.protocol)) throw new Error("Invalid OSRM URL");
     const coordinates = [body.origin, body.destination]
       .map(([longitude, latitude]) => `${longitude},${latitude}`)
       .join(";");
@@ -139,8 +141,11 @@ async function routeRequest(request) {
       headers: { Accept: "application/json" },
       signal: AbortSignal.timeout(30000),
     });
-    const upstream = await fetchPublicOsrm(upstreamRequest);
-    const result = await upstream.json();
+    const upstream = env.OSRM_BASE_URL ? await fetch(upstreamRequest) : await fetchPublicOsrm(upstreamRequest);
+    const raw = await upstream.text();
+    let result;
+    try { result = JSON.parse(raw); }
+    catch { return jsonResponse({ error: "OSRM returned an invalid response. Check the routing server URL and availability." }, 502, routeCors); }
     if (!upstream.ok || result.code !== "Ok") {
       if (upstream.status === 429) {
         const retryAfter = upstream.headers.get("Retry-After") || "5";
@@ -167,7 +172,7 @@ async function routeRequest(request) {
       steps: (route.legs || []).flatMap((leg) => leg.steps || []).map(osrmStep),
     }, 200, routeCors);
   } catch (error) {
-    const timedOut = error?.name === "TimeoutError";
+    const timedOut = error?.name === "TimeoutError" || error?.name === "AbortError";
     return jsonResponse(
       { error: timedOut ? "The routing request timed out." : "Could not reach the routing service." },
       timedOut ? 504 : 502,
