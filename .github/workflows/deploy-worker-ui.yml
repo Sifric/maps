@@ -44,7 +44,8 @@ jobs:
           test -s worker/public/index.html
           test -s worker/public/developers.html
           grep -q '"/dashboard"' worker/index.js
-          node --check worker/index.js\n          node --check worker/public/map.js
+          node --check worker/index.js
+          node --check worker/public/map.js
       - name: Verify Worker build without deploying
         working-directory: worker
         run: wrangler deploy --dry-run
