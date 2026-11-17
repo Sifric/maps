@@ -145,3 +145,31 @@ html[data-theme=dark] #contribution-form-sheet .contribution-actions{background:
 #contribution-form-sheet .contribution-edit-map{z-index:3}
 .contribution-nearby-marker{width:23px;height:33px;pointer-events:none;filter:drop-shadow(0 1px 2px #0006)}
 .contribution-nearby-marker svg{display:block}
+
+/* Weekly hours editor */
+.hours-open-button{display:flex;align-items:center;justify-content:space-between;width:100%;padding:14px 16px;margin:0 0 22px;background:transparent;border:1px solid #dce2e9;border-radius:12px;color:inherit;text-align:left}
+.hours-open-button span{display:grid;gap:5px}.hours-open-button small{color:#8491a0;font-size:12px}
+.hours-overlay[hidden],.hours-dialog-backdrop[hidden]{display:none!important}
+.hours-overlay{position:fixed;inset:0;z-index:100;background:#fff;color:#1f2937;font:14px "Map Sans",Arial,sans-serif}
+.hours-panel{height:100%;display:flex;flex-direction:column;max-width:760px;margin:auto}
+.hours-header{display:flex;justify-content:space-between;align-items:center;padding:26px 24px 16px}.hours-header h2{font-size:26px;margin:0}.hours-header button{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#f0f2f5;color:inherit}
+.hours-list{flex:1;overflow:auto;padding:12px 24px}.hours-day-row{display:flex;align-items:center;width:100%;gap:14px;padding:19px 4px;min-height:68px;text-align:left;color:inherit;background:transparent;border-bottom:1px solid #e8edf1;font-size:15px}.hours-day-row>span:first-child{flex:1}.hours-day-value{font-size:13px;color:#697685;text-align:right;max-width:55%}.hours-day-row svg{color:#788493;flex-shrink:0}
+.hours-presets{display:flex;gap:9px;overflow-x:auto;padding:14px 24px}.hours-presets button{white-space:nowrap;border:1px solid #dce2e9;border-radius:30px;padding:11px 15px;color:#315ce8;background:transparent;font-weight:600}
+.hours-footer{padding:12px 24px calc(22px + env(safe-area-inset-bottom));border-top:1px solid #e8edf1;display:flex;justify-content:flex-end}.hours-footer button,.hours-dialog footer button:last-child{border-radius:25px;background:#315ce8;color:#fff;padding:12px 25px;font-weight:700}
+.hours-dialog-backdrop{position:fixed;inset:0;z-index:2;display:flex;align-items:center;justify-content:center;background:#0009;padding:20px}
+.hours-dialog{width:min(100%,450px);max-height:min(82dvh,700px);overflow:auto;background:#fff;border-radius:20px;padding:22px;color:#1f2937;box-shadow:0 10px 40px #0003}
+.hours-dialog h3{text-align:center;font-size:19px;margin:2px 0 23px}
+.hours-day-buttons{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:5px}
+.hours-day-chip{aspect-ratio:1;border-radius:50%;background:transparent;border:1px solid #dce2e9;color:inherit;font-size:14px}
+.hours-day-chip[aria-pressed=true]{background:#d6efff;border-color:#b9dfff;color:#164f72}
+.hours-states{display:flex;justify-content:space-around;gap:12px;margin:25px 0}.hours-states label{display:flex;align-items:center;gap:8px;white-space:nowrap}.hours-states input{accent-color:#315ce8;width:18px;height:18px}
+.hours-intervals{max-height:36dvh;overflow-y:auto}.hours-interval-row{display:grid;grid-template-columns:1fr 1fr 28px;gap:8px;margin-bottom:12px;align-items:end}.hours-interval-row label{display:grid;gap:5px;color:#697685;font-size:12px;min-width:0}.hours-interval-row input{width:100%;min-width:0;padding:10px 4px;border:1px solid #bfc8d2;border-radius:9px;background:transparent;color:inherit;font:inherit}.hours-interval-row button{font-size:24px;background:transparent;color:inherit;height:42px}
+.hours-add-interval{padding:13px 5px;color:#315ce8;background:transparent;font-weight:700}.hours-error{color:#c53b42;min-height:18px;font-size:12px}
+.hours-dialog footer{display:flex;justify-content:flex-end;gap:10px;margin-top:22px}.hours-dialog footer button{padding:12px 20px;border-radius:25px;background:transparent;border:1px solid #dce2e9;color:inherit}
+html[data-theme=dark] .hours-overlay,html[data-theme=dark] .hours-dialog{background:#1a222c;color:#f0f4f8}
+html[data-theme=dark] .hours-header button{background:#26313e}
+html[data-theme=dark] .hours-day-row,html[data-theme=dark] .hours-footer,html[data-theme=dark] .hours-open-button,html[data-theme=dark] .hours-presets button,html[data-theme=dark] .hours-dialog footer button{border-color:#344151}
+html[data-theme=dark] .hours-day-chip{color:#f0f4f8;border-color:#344151}
+html[data-theme=dark] .hours-day-chip[aria-pressed=true]{background:#253b60;border-color:#6484f1}
+html[data-theme=dark] .hours-dialog footer button:last-child{background:#315ce8;color:#fff}
+@media(max-width:390px){.hours-dialog{padding:17px}.hours-states{gap:5px;font-size:12px}.hours-day-buttons{gap:3px}}
