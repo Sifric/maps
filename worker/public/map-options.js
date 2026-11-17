@@ -4,6 +4,7 @@ const DEFAULTS = {
   places: true,
   placesPreferenceVersion: 2,
   labels: true,
+  followRoads: false,
   details: {
     transit: false,
     bicycling: false,
@@ -28,6 +29,7 @@ function restore() {
       result.theme = value.theme;
     if (["default", "satellite", "terrain"].includes(value.type))
       result.type = value.type;
+    if (typeof value.followRoads === "boolean") result.followRoads = value.followRoads;
     for (const key of ["places", "labels"])
       if (typeof value[key] === "boolean" &&
           (key !== "places" || value.placesPreferenceVersion === 2))
@@ -116,6 +118,12 @@ function scaleWidth(value, factor) {
     : ["*", factor, value];
 }
 
+function roadWidthAtZoom(width) {
+  // Slightly wider streets at neighborhood zooms, without exaggerated z19-20 widths.
+  const multiplier = ["interpolate", ["linear"], ["zoom"],
+    9, 1.0, 13, 1.15, 16, 1.32, 18, 1.18, 20, 1.0];
+  return ["*", width, multiplier];
+}
 export function initialMapStyle(style) {
   const settings = restore();
   const isDark =
@@ -321,8 +329,8 @@ export function createMapOptions(map, { baseStyle, status }) {
           width === undefined ? width :
             settings.type === "satellite" ? scaleWidth(width, 0.45) :
             layer["source-layer"] === "transportation" &&
-              !/(rail|path|foot|cycle|casing)/i.test(layer.id)
-              ? scaleWidth(width, 1.55) : width,
+              !/(rail|path|foot|cycle)/i.test(layer.id)
+              ? roadWidthAtZoom(width) : width,
         );
         map.setPaintProperty(
           layer.id,
@@ -474,6 +482,16 @@ export function createMapOptions(map, { baseStyle, status }) {
       if (name === "buildings")
         map.easeTo({ pitch: raised ? 45 : 0, duration: 400 });
     };
+  const followRoadsToggle = $("follow-roads");
+  if (followRoadsToggle) {
+    followRoadsToggle.checked = settings.followRoads;
+    followRoadsToggle.onchange = (event) => {
+      settings.followRoads = event.target.checked;
+      persist();
+      window.dispatchEvent(new CustomEvent("sifric-follow-roads-change",
+        { detail: { enabled: settings.followRoads } }));
+    };
+  }
   $("show-places").onchange = (e) => {
     settings.places = e.target.checked;
     persist();
