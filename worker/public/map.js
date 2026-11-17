@@ -794,6 +794,24 @@ async function findRoute(originText, destinationText, destinationRow, mode, butt
 const SpeechRecognitionAPI = window.SpeechRecognition || window.webkitSpeechRecognition;
 let voiceRecognition = null;
 let voiceListening = false;
+// Custom microphone artwork supplied for Sifric Maps voice search.
+function createVoiceMicIcon() {
+  const template = document.createElement("template");
+  template.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" class="icon voice-mic-icon" width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true" focusable="false">
+    <defs><linearGradient id="sifric-voice-mic-grad" x1="24" y1="6" x2="40" y2="36" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8B5CF6"/><stop offset="1" stop-color="#3B82F6"/>
+    </linearGradient></defs>
+    <rect x="24" y="6" width="16" height="30" rx="8" fill="url(#sifric-voice-mic-grad)"/>
+    <g stroke="#fff" stroke-opacity=".55" stroke-width="2" stroke-linecap="round">
+      <line x1="29" y1="15" x2="35" y2="15"/><line x1="29" y1="21" x2="35" y2="21"/><line x1="29" y1="27" x2="35" y2="27"/>
+    </g>
+    <g stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M15 29v3a17 17 0 0 0 34 0v-3"/>
+      <line x1="32" y1="49" x2="32" y2="57"/><line x1="24" y1="57" x2="40" y2="57"/>
+    </g>
+  </svg>`;
+  return template.content.firstElementChild;
+}
 function syncSearchAction() {
   const hasText = $("search").value.length > 0;
   const action = $("search-action");
@@ -801,7 +819,7 @@ function syncSearchAction() {
   action.setAttribute("aria-label", hasText ? "Clear search" : voiceListening ? "Stop voice search" : "Search by voice");
   action.setAttribute("title", hasText ? "Clear search" : voiceListening ? "Stop listening" : "Search by voice");
   action.setAttribute("aria-pressed", String(voiceListening && !hasText));
-  action.replaceChildren(icon(hasText ? "close" : "mic"));
+  action.replaceChildren(hasText ? icon("close") : createVoiceMicIcon());
 }
 function startVoiceSearch() {
   if (!SpeechRecognitionAPI) {
