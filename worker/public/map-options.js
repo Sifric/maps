@@ -238,6 +238,37 @@ export function createMapOptions(map, { baseStyle, status }) {
       before,
     );
   }
+  // OpenMapTiles may already contain oneway=1/-1. These symbol layers
+  // are inert if the existing tiles do not expose that property.
+  function addRoadDirectionSymbols() {
+    const before = baseLayers.find((l) => l.type === "symbol")?.id;
+    for (const [id, direction, rotation] of [
+      ["sifric-oneway-forward", 1, 90],
+      ["sifric-oneway-reverse", -1, 270],
+    ]) {
+      if (map.getLayer(id)) continue;
+      map.addLayer({
+        id,
+        type: "symbol",
+        source: "openmaptiles",
+        "source-layer": "transportation",
+        minzoom: 15,
+        filter: ["==", ["to-number", ["get", "oneway"], 0], direction],
+        layout: {
+          "symbol-placement": "line",
+          "symbol-spacing": 120,
+          "icon-image": "sifric-oneway-arrow",
+          "icon-size": ["interpolate", ["linear"], ["zoom"], 15, 0.55, 18, 0.85, 20, 1],
+          "icon-rotation-alignment": "map",
+          "icon-rotate": rotation,
+          "icon-keep-upright": false,
+          "icon-allow-overlap": false,
+          "icon-padding": 4,
+        },
+        paint: { "icon-opacity": 0.85 },
+      }, before);
+    }
+  }
   function ensureProvider() {
     if (settings.type === "satellite" && !map.getSource("lk-satellite")) {
       map.addSource("lk-satellite", {
@@ -440,6 +471,7 @@ export function createMapOptions(map, { baseStyle, status }) {
     applyDetails();
   }
   addOverlays();
+  addRoadDirectionSymbols();
   for (const button of document.querySelectorAll("[data-theme-choice]"))
     button.onclick = () => {
       settings.theme = button.dataset.themeChoice;
