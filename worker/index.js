@@ -108,6 +108,7 @@ async function routeRequest(request, env) {
   }
   if (!body || typeof body !== "object" || Array.isArray(body))
     return jsonResponse({ error: "Expected a JSON route request." }, 400, routeCors);
+  // OSRM profiles are selected when the graph is built; a URL segment alone does not switch graphs.
   const modes = { drive: "driving", twoWheeler: "driving", walk: "walking" };
   const profile = modes[body.mode];
   const validPoint = (point) =>
@@ -121,7 +122,7 @@ async function routeRequest(request, env) {
 
   let endpoint;
   try {
-    const origin = env.OSRM_BASE_URL || DEFAULT_OSRM_ORIGIN;
+    const origin = (body.mode === "walk" && env.OSRM_WALK_URL) || env.OSRM_BASE_URL || DEFAULT_OSRM_ORIGIN;
     endpoint = new URL(origin);
     if (!["https:", "http:"].includes(endpoint.protocol)) throw new Error("Invalid OSRM URL");
     const coordinates = [body.origin, body.destination]
@@ -141,7 +142,7 @@ async function routeRequest(request, env) {
       headers: { Accept: "application/json" },
       signal: AbortSignal.timeout(30000),
     });
-    const upstream = env.OSRM_BASE_URL ? await fetch(upstreamRequest) : await fetchPublicOsrm(upstreamRequest);
+    const upstream = (env.OSRM_BASE_URL || (body.mode === "walk" && env.OSRM_WALK_URL)) ? await fetch(upstreamRequest) : await fetchPublicOsrm(upstreamRequest);
     const raw = await upstream.text();
     let result;
     try { result = JSON.parse(raw); }
