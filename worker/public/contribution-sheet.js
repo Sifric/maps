@@ -3,6 +3,17 @@ const $=id=>document.getElementById(id);
 const fab=$("contribute-fab"),sheet=$("contribution-sheet"),backdrop=$("contribution-backdrop"),form=$("contribution-form-sheet"),preview=$("contribution-preview");
 if(!fab||!sheet||!form)return;
 let previousFocus=null,mode="add";
+const categorySelect=$("contribution-category"),categoryButton=$("contribution-category-button"),categoryList=$("contribution-category-list"),categoryLabel=$("contribution-category-label");
+function closeCategory(){categoryList.hidden=true;categoryButton.setAttribute("aria-expanded","false");}
+function syncCategory(){const option=categorySelect.selectedOptions[0];categoryLabel.textContent=categorySelect.value?option.textContent:"Choose a category";categoryButton.classList.toggle("has-value",!!categorySelect.value);categoryList.querySelectorAll("[data-value]").forEach(item=>item.setAttribute("aria-selected",String(item.dataset.value===categorySelect.value)));}
+categoryButton.addEventListener("click",()=>{const open=categoryList.hidden;categoryList.hidden=!open;categoryButton.setAttribute("aria-expanded",String(open));});
+categoryList.addEventListener("click",e=>{const item=e.target.closest("[data-value]");if(!item)return;categorySelect.value=item.dataset.value;categorySelect.dispatchEvent(new Event("change",{bubbles:true}));categoryButton.classList.remove("category-invalid");categoryButton.removeAttribute("aria-invalid");closeCategory();categoryButton.focus();});
+categorySelect.addEventListener("change",syncCategory);
+document.addEventListener("pointerdown",e=>{if(!e.target.closest(".contribution-category-control"))closeCategory();});
+categoryButton.addEventListener("keydown",e=>{if(e.key==="ArrowDown"||e.key==="Enter"||e.key===" "){e.preventDefault();categoryList.hidden=false;categoryButton.setAttribute("aria-expanded","true");(categoryList.querySelector('[aria-selected="true"]')||categoryList.querySelector("[data-value]"))?.focus();}});
+categoryList.addEventListener("keydown",e=>{const items=[...categoryList.querySelectorAll("[data-value]")];const i=items.indexOf(document.activeElement);if(e.key==="Escape"){e.preventDefault();closeCategory();categoryButton.focus();}else if(e.key==="ArrowDown"||e.key==="ArrowUp"){e.preventDefault();items[(i+(e.key==="ArrowDown"?1:items.length-1))%items.length]?.focus();}else if(e.key==="Home"||e.key==="End"){e.preventDefault();items[e.key==="Home"?0:items.length-1]?.focus();}});
+syncCategory();
+
 const advancedToggle=$("contribution-advanced-toggle"),advanced=$("contribution-additional");
 advancedToggle.addEventListener("click",()=>{const expanded=advancedToggle.getAttribute("aria-expanded")==="true";advancedToggle.setAttribute("aria-expanded",String(!expanded));advanced.hidden=expanded;});
 const config={add:["Add a place","Add a missing place to help keep the map useful and accurate.","Place name"],edit:["Suggest an edit","Describe the information that should be corrected.","Existing place name"],report:["Report an issue","Flag a closed, duplicated, or incorrectly mapped place.","Place or issue"]};
