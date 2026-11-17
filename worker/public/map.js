@@ -306,6 +306,8 @@ function closePanel() {
   document.body.classList.remove("routing-open");
   routeCard?.remove();
   routeCard = null;
+  document.querySelector(".route-location-picker")?.remove();
+  document.body.classList.remove("route-picking-location");
   if (highlight) {
     highlight.remove();
     highlight = null;
@@ -527,6 +529,112 @@ function showDirections(row) {
     setRoutePointData(destination.input, Number(row[2]), Number(row[3]), row[1]);
   }
 
+  // A focused location search view, separate from the route overview.
+  const picker = element("section", undefined, "route-location-picker");
+  picker.hidden = true;
+  picker.setAttribute("aria-label", "Choose route location");
+  const pickerTop = element("div", undefined, "route-picker-top");
+  const pickerBack = element("button", undefined, "route-picker-back");
+  pickerBack.type = "button";
+  pickerBack.setAttribute("aria-label", "Back to directions");
+  pickerBack.append(icon("arrow_left"));
+  const pickerInput = element("input");
+  pickerInput.type = "search";
+  pickerInput.className = "route-picker-input";
+  pickerInput.autocomplete = "off";
+  pickerInput.placeholder = "Choose start location";
+  pickerInput.setAttribute("aria-label", "Search for a location");
+  const pickerList = element("div", undefined, "route-picker-suggestions");
+  const pickerMap = element("button", undefined, "route-picker-map");
+  pickerMap.type = "button";
+  pickerMap.append(icon("selected_place"), element("span", "Choose on map"));
+  const pickerRecentTitle = element("h2", "Recent", "route-picker-recent-heading");
+  const pickerRecent = element("div", undefined, "route-picker-recents");
+  let pickerTarget = null;
+  const dismissPicker = () => {
+    picker.hidden = true;
+    document.body.classList.remove("route-picking-location");
+    pickerTarget = null;
+  };
+  pickerBack.onclick = dismissPicker;
+  const choosePoint = (row) => {
+    if (!pickerTarget) return;
+    pickerTarget.value = row[1] || "";
+    setRoutePointData(pickerTarget, Number(row[2]), Number(row[3]), row[1]);
+    dismissPicker();
+  };
+  const openPicker = (target) => {
+    pickerTarget = target;
+    pickerInput.value = target.value || "";
+    pickerInput.placeholder = target === origin.input ? "Choose start location" : "Choose destination";
+    pickerList.replaceChildren();
+    pickerRecent.replaceChildren();
+    const saved = readStored("lk-recents").slice(0, 12);
+    for (const row of saved) {
+      const item = element("button", undefined, "route-picker-recent-item");
+      item.type = "button";
+      item.append(icon("history"), element("span", row[1] || "Place"));
+      item.onclick = () => choosePoint(row);
+      pickerRecent.append(item);
+    }
+    if (!saved.length) pickerRecent.append(element("p", "No recent places yet."));
+    picker.hidden = false;
+    document.body.classList.add("route-picking-location");
+    pickerInput.focus();
+    if (pickerInput.value.trim().length >= 2) void searchPicker();
+  };
+  let pickerSearchVersion = 0;
+  const searchPicker = async () => {
+    const version = ++pickerSearchVersion;
+    const query = pickerInput.value.trim().toLocaleLowerCase();
+    pickerList.replaceChildren();
+    if (query.length < 2) return;
+    pickerList.append(element("p", "Searching places…"));
+    try {
+      const rows = await searchIndex();
+      if (version !== pickerSearchVersion || picker.hidden) return;
+      const words = query.split(/\\s+/);
+      const matches = rows.filter(row => words.every(word => String(row[1] || "").toLocaleLowerCase().includes(word))).slice(0, 10);
+      pickerList.replaceChildren();
+      if (!matches.length) pickerList.append(element("p", "No matching places"));
+      for (const row of matches) {
+        const item = element("button", undefined, "route-picker-recent-item");
+        item.type = "button";
+        item.append(icon("selected_place"), element("span", row[1]));
+        item.onclick = () => choosePoint(row);
+        pickerList.append(item);
+      }
+    } catch {
+      if (version === pickerSearchVersion) pickerList.replaceChildren(element("p", "Search unavailable"));
+    }
+  };
+  pickerInput.addEventListener("input", searchPicker);
+  pickerInput.addEventListener("keydown", event => {
+    if (event.key !== "Enter") return;
+    const first = pickerList.querySelector("button");
+    if (first) { event.preventDefault(); first.click(); return; }
+    const match = pickerInput.value.trim().match(/^(-?\\d+(?:\\.\\d+)?)\\s*,\\s*(-?\\d+(?:\\.\\d+)?)$/);
+    if (match && pickerTarget) {
+      const lat = Number(match[1]), lng = Number(match[2]);
+      if (lat >= -90 && lat <= 90 && lng >= -180 && lng <= 180) {
+        pickerTarget.value = pickerInput.value.trim();
+        setRoutePointData(pickerTarget, lng, lat, pickerTarget.value);
+        dismissPicker();
+      }
+    }
+  });
+  pickerMap.onclick = () => {
+    // Map picking is not yet supported in this route-specific view.
+    pickerMap.title = "Map selection is not available yet; search for a place or enter coordinates.";
+    pickerInput.focus();
+  };
+  pickerTop.append(pickerBack, pickerInput);
+  picker.append(pickerTop, pickerMap, pickerList, pickerRecentTitle, pickerRecent);
+  document.body.append(picker);
+  for (const input of [origin.input, destination.input]) {
+    input.readOnly = true;
+    input.addEventListener("click", () => openPicker(input));
+  }
   const line = element("span", undefined, "route-waypoint-line");
   const swap = element("button", "↕", "route-swap");
   swap.type = "button";
@@ -573,7 +681,7 @@ function showDirections(row) {
   back.type = "button";
   back.setAttribute("aria-label", "Close directions");
   back.append(icon("arrow_left"));
-  back.onclick = closePanel;
+  back.onclick = () => { picker.remove(); closePanel(); };
   routeCard.prepend(back);
   routeCard.append(routeFields, useLocation, go);
   document.body.append(routeCard);
