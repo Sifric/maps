@@ -1049,6 +1049,11 @@ async function handleLocationFailure(error) {
 // Start continuous high-accuracy positioning on demand; no background tracking before consent.
 let orientationListening = false;
 let lastCompassHeading = null;
+let travelHeading = null;
+let displayedBeamHeading = null;
+let lastTravelPosition = null;
+let lastTravelTime = 0;
+let movementHeadingActive = false;
 let liveLocationWatchId = null;
 let liveLocationMarker = null;
 let liveLocationCoords = null;
@@ -1130,14 +1135,64 @@ function snapMovingDotToRoad(coords, speed) {
   return best.candidate;
 }
 
+function normalizeHeading(heading) {
+  return ((heading % 360) + 360) % 360;
+}
+function gpsTravelBearing(from, to) {
+  const rad = Math.PI / 180;
+  const lat1 = from.latitude * rad, lat2 = to.latitude * rad;
+  const dLon = (to.longitude - from.longitude) * rad;
+  const y = Math.sin(dLon) * Math.cos(lat2);
+  const x = Math.cos(lat1) * Math.sin(lat2) -
+    Math.sin(lat1) * Math.cos(lat2) * Math.cos(dLon);
+  return normalizeHeading(Math.atan2(y, x) / rad);
+}
 function setLocationBeam(heading) {
   if (!Number.isFinite(heading)) return;
-  lastCompassHeading = ((heading % 360) + 360) % 360;
-  const marker = document.querySelector(".maplibregl-user-location-dot");
+  const target = normalizeHeading(heading);
+  // Circular interpolation avoids a full spin when crossing 359° to 0°.
+  if (displayedBeamHeading === null) displayedBeamHeading = target;
+  else {
+    const delta = ((target - displayedBeamHeading + 540) % 360) - 180;
+    displayedBeamHeading = normalizeHeading(displayedBeamHeading + delta * 0.55);
+  }
+  const marker = liveLocationMarker?.getElement();
   if (!marker) return;
-  marker.style.setProperty("--sifric-heading", `${lastCompassHeading - (map?.getBearing() || 0)}deg`);
+  marker.style.setProperty("--sifric-heading",
+    `${displayedBeamHeading - (map?.getBearing() || 0)}deg`);
   marker.classList.add("sifric-heading-active");
 }
+function updateTravelBeam(point, moving, coords, time) {
+  if (!moving) {
+    movementHeadingActive = false;
+    lastTravelPosition = null;
+    travelHeading = null;
+    if (lastCompassHeading !== null) setLocationBeam(lastCompassHeading);
+    return;
+  }
+  const distance = lastTravelPosition
+    ? gpsDistanceMeters(lastTravelPosition, point) : 0;
+  // Prefer real displacement along the snapped road to compass orientation.
+  // GPS course is a fallback when displacement is too small to be reliable.
+  let heading = null;
+  if (lastTravelPosition && distance >= 3 && time > lastTravelTime) {
+    heading = gpsTravelBearing(lastTravelPosition, point);
+  } else if (Number.isFinite(coords.heading) && coords.heading >= 0) {
+    heading = coords.heading;
+  }
+  if (heading !== null) {
+    travelHeading = normalizeHeading(heading);
+    movementHeadingActive = true;
+    setLocationBeam(travelHeading);
+  } else if (travelHeading !== null) {
+    setLocationBeam(travelHeading);
+  }
+  if (!lastTravelPosition || distance >= 3) {
+    lastTravelPosition = { ...point };
+    lastTravelTime = time;
+  }
+}
+
 function handleDeviceOrientation(event) {
   // Android Chrome: absolute alpha is measured clockwise from device north reference.
   // webkitCompassHeading is used on browsers that expose a calibrated compass.
@@ -1145,7 +1200,10 @@ function handleDeviceOrientation(event) {
     ? event.webkitCompassHeading
     : event.absolute && Number.isFinite(event.alpha)
       ? (360 - event.alpha) % 360 : null;
-  if (heading !== null) setLocationBeam(heading);
+  if (heading !== null) {
+    lastCompassHeading = normalizeHeading(heading);
+    if (!movementHeadingActive) setLocationBeam(lastCompassHeading);
+  }
 }
 async function enableCompass() {
   if (orientationListening || !("DeviceOrientationEvent" in window)) return;
@@ -1185,6 +1243,7 @@ function onLiveLocation(position) {
     movement >= 4 && coords.accuracy <= 30;
   lastRawFix = { coords: { latitude: coords.latitude, longitude: coords.longitude }, time: now };
   const matchedLocation = moving ? snapMovingDotToRoad(coords, speed) : null;
+  let shownLocation = coordinateFix(coords);
   if (!liveLocationMarker) {
     const dot = document.createElement("div");
     dot.className = "maplibregl-user-location-dot sifric-live-location";
@@ -1197,9 +1256,9 @@ function onLiveLocation(position) {
     // Never keep it if it diverges from the current fix or becomes stale.
     const recentMatch = lastSnappedFix && Date.now() - lastSnappedAt < 5000 &&
       gpsDistanceMeters(lastSnappedFix, coordinateFix(coords)) <= 22;
-    if (moving && matchedLocation) showLiveLocation(matchedLocation);
-    else if (moving && recentMatch) showLiveLocation(lastSnappedFix);
-    else showLiveLocation(coordinateFix(coords));
+    if (moving && matchedLocation) shownLocation = matchedLocation;
+    else if (moving && recentMatch) shownLocation = lastSnappedFix;
+    showLiveLocation(shownLocation);
   }
   updateLiveLocationAccuracy();
   // When stopped, display real GPS; do not pretend to be on a road.
@@ -1207,8 +1266,7 @@ function onLiveLocation(position) {
     lastSnappedFix = null;
     lastSnappedAt = 0;
   }
-  if (lastCompassHeading !== null) setLocationBeam(lastCompassHeading);
-  else if (Number.isFinite(coords.heading)) setLocationBeam(coords.heading);
+  updateTravelBeam(shownLocation, moving, coords, now);
   if (focusOnNextLocation) {
     focusOnNextLocation = false;
     map.flyTo({ center: [coords.longitude, coords.latitude], zoom: Math.max(map.getZoom(), 17), duration: 850 });
@@ -1423,7 +1481,11 @@ document.addEventListener("keydown", (e) => {
   // Keep the camera independent of GPS updates. Recenter only on explicit button presses.
   map.on("zoom", updateLiveLocationAccuracy);
   map.on("rotate", () => {
-    if (lastCompassHeading !== null) setLocationBeam(lastCompassHeading);
+    if (movementHeadingActive && travelHeading !== null) {
+      setLocationBeam(travelHeading);
+    } else if (lastCompassHeading !== null) {
+      setLocationBeam(lastCompassHeading);
+    }
   });
   for (const layer of ["mazo-places-icon", "mazo-places-dot"]) {
     map.on("click", layer, (e) => {
