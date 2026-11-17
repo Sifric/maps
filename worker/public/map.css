@@ -1677,22 +1677,6 @@ body.routing-open #categories {
   font-family: "Map Sans", Arial, sans-serif;
 }
 
-/* Anchor mi/km to the map viewport, not the attribution control's changing height. */
-#map > .dual-scale {
-  position: absolute;
-  bottom: 108px;
-  right: 124px;
-  left: auto;
-  margin: 0 !important;
-  float: none;
-  clear: none;
-  z-index: 4;
-  padding-right: 0;
-}
-@media (min-width: 601px) {
-  #map > .dual-scale { margin: 0 !important; }
-}
-
 /* Supplied angular checkbox SVGs, theme-aware and keyboard accessible. */
 .additional-options label { display: inline-flex; align-items: center; gap: 9px; cursor: pointer; }
 .additional-options label > input[type="checkbox"] {
@@ -1708,25 +1692,6 @@ body.routing-open #categories {
 .additional-options input[type="checkbox"]:focus-visible + .custom-check { outline: 2px solid var(--ui-blue); outline-offset: 3px; border-radius: 4px; }
 .additional-options input[type="checkbox"]:disabled + .custom-check { opacity: .45; }
 @media (prefers-reduced-motion: reduce) { .additional-options .check-core { transition: none; } }
-
-/* Compact distance scale beside the location button, independent of attribution. */
-#map > .dual-scale {
-  right: 108px;
-  bottom: 108px;
-  box-sizing: content-box;
-  overflow: visible;
-}
-#map > .dual-scale .dual-scale-mile-label,
-#map > .dual-scale .dual-scale-km-label {
-  left: calc(100% + 5px);
-  right: auto;
-  min-width: 0;
-  white-space: nowrap;
-  text-align: left;
-  line-height: 12px;
-}
-#map > .dual-scale .dual-scale-mile-label { top: 0; }
-#map > .dual-scale .dual-scale-km-label { top: 15px; }
 
 /* Keep each SVG checkbox and its text together; override inherited panel label layout. */
 .layer-panel .additional-options {
