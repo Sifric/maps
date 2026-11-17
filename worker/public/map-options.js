@@ -118,6 +118,20 @@ function scaleWidth(value, factor) {
     : ["*", factor, value];
 }
 
+// Keep existing low-zoom road widths, but avoid oversized road polygons at
+// street-level overzoom (vector tiles stop at z14). No tile regeneration.
+function streetLevelRoadWidth(value) {
+  if (!Array.isArray(value) || value[0] !== "interpolate" ||
+      !Array.isArray(value[2]) || value[2][0] !== "zoom") return value;
+  const result = structuredClone(value);
+  for (let i = 3; i + 1 < result.length; i += 2) {
+    const zoom = result[i];
+    if (typeof zoom === "number" && zoom >= 17 && typeof result[i + 1] === "number")
+      result[i + 1] = Math.round(result[i + 1] * 0.82 * 100) / 100;
+  }
+  return result;
+}
+
 export function initialMapStyle(style) {
   const settings = restore();
   const isDark =
@@ -383,7 +397,8 @@ export function createMapOptions(map, { baseStyle, status }) {
           "line-width",
           width === undefined ? width :
             settings.type === "satellite" ? scaleWidth(width, 0.45) :
-            width,
+            layer["source-layer"] === "transportation" && /^road_/.test(layer.id)
+              ? streetLevelRoadWidth(width) : width,
         );
         map.setPaintProperty(
           layer.id,
