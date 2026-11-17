@@ -739,8 +739,29 @@ async function findRoute(originText, destinationText, destinationRow, mode, butt
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ origin: origin.coordinates, destination: destination.coordinates, mode }),
     });
-    const result = await response.json();
-    if (!response.ok) throw Error(result.error || "The route could not be calculated.");
+    let result = await response.json();
+    if (!response.ok) {
+      // Public OSRM endpoints sometimes reject Cloudflare Worker egress (HTTP 403).
+      // Retry from the user's browser, where the demo may allow the request.
+      if (response.status !== 502 || !/HTTP 403|non-JSON response/i.test(result.error || ""))
+        throw Error(result.error || "The route could not be calculated.");
+      const base = mode === "walk"
+        ? "https://routing.openstreetmap.de/routed-foot"
+        : "https://router.project-osrm.org";
+      const coordinates = [origin.coordinates, destination.coordinates].map(p => p.join(",")).join(";");
+      const url = base + "/route/v1/" + (mode === "walk" ? "walking" : "driving") + "/" + coordinates +
+        "?steps=true&overview=full&geometries=geojson";
+      const directResponse = await fetch(url, { headers: { Accept: "application/json" } });
+      if (!directResponse.ok) throw Error("Routing providers are unavailable (HTTP " + directResponse.status + "). Configure a dedicated OSRM server.");
+      const direct = await directResponse.json();
+      if (direct.code !== "Ok" || !direct.routes?.[0]) throw Error(direct.message || "No route was found.");
+      const route = direct.routes[0];
+      result = { geometry: route.geometry, distance: route.distance, duration: route.duration,
+        steps: (route.legs || []).flatMap(leg => leg.steps || []).map(step => ({
+          distance: step.distance,
+          text: [step.maneuver?.type, step.name].filter(Boolean).join(" · ") || "Continue",
+        })) };
+    }
     if (!result.geometry?.coordinates?.length) throw Error("The routing service returned no route geometry.");
     if (requestVersion !== routeRequestVersion || !document.body.classList.contains("routing-open")) return;
     if (!map.getSource("lk-route")) {
