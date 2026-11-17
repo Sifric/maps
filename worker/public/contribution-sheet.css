@@ -38,3 +38,18 @@ html[data-theme=dark] .contribution-choices button,html[data-theme=dark] #contri
 html[data-theme=dark] .contribution-choices button[aria-pressed=true]{background:#253353;color:#a5b8ff;border-color:#91aaff}
 html[data-theme=dark] .contribution-actions button[type=submit]{background:#315ce8;color:#fff;border-color:#315ce8}
 @media(max-width:600px){.contribution-sheet{height:83dvh;max-height:calc(100dvh - 18px);border-radius:22px 22px 0 0}.contribution-header{padding:12px 18px 17px}.contribution-scroll{padding:18px 18px 26px}.contribution-choices button{flex-direction:column;gap:5px;font-size:11px;min-height:65px}.contribution-actions{bottom:-26px}}
+
+/* Full-map place location picker. The pin stays centered while the map pans. */
+.contribution-picker{position:fixed;inset:0;z-index:32;pointer-events:none;font:14px "Map Sans",Arial,sans-serif;color:#1f2937}
+.contribution-picker[hidden]{display:none!important}
+.picker-crosshair{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 3px 4px #0005)}
+.picker-top{position:absolute;top:max(20px,env(safe-area-inset-top));left:50%;transform:translateX(-50%);width:min(450px,calc(100% - 28px));display:flex;align-items:center;gap:13px;background:#fff;border-radius:16px;padding:13px;box-shadow:0 4px 22px #0003;pointer-events:auto}
+.picker-top button{width:39px;height:39px;flex-shrink:0;border-radius:10px;background:#f1f4f8;font-size:23px;color:#1f2937}
+.picker-top div{display:flex;flex-direction:column;gap:5px}.picker-top strong{font-size:14px}.picker-top small{color:#687684;font-size:11px}
+.picker-bottom{position:absolute;bottom:max(25px,env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);width:min(450px,calc(100% - 28px));background:#fff;border-radius:16px;padding:14px;display:grid;gap:12px;box-shadow:0 4px 22px #0003;pointer-events:auto}
+.picker-bottom output{text-align:center;color:#566474;font-size:13px;font-variant-numeric:tabular-nums}
+.picker-bottom button{border-radius:10px;background:#315ce8;color:#fff;font-weight:700;padding:14px}
+body.contribution-picking .search-shell,body.contribution-picking #categories,body.contribution-picking .rail,body.contribution-picking .layers-fab,body.contribution-picking .map-controls,body.contribution-picking #panel,body.contribution-picking .layer-panel{visibility:hidden!important;pointer-events:none!important}
+html[data-theme=dark] .picker-top,html[data-theme=dark] .picker-bottom{background:#1a222c;color:#f0f4f8}
+html[data-theme=dark] .picker-top button{background:#303c49;color:#f0f4f8}
+html[data-theme=dark] .picker-top small,html[data-theme=dark] .picker-bottom output{color:#a0acb9}
