@@ -618,16 +618,7 @@ function showDirections(row) {
   fixMapLink.target = "_blank";
   fixMapLink.rel = "noopener noreferrer";
   routeNote.append(fixMapLink);
-  const startNavigation = element("button", undefined, "route-start-navigation");
-  startNavigation.type = "button";
-  startNavigation.disabled = true;
-  startNavigation.setAttribute("aria-label", "Start navigation (coming soon)");
-  startNavigation.title = "Live navigation is not available yet";
-  startNavigation.append(icon("directions"), element("span", "Start"));
-  const navigationHint = element("p", "Live navigation coming soon", "route-navigation-hint");
-  const navigationActions = element("div", undefined, "route-navigation-actions");
-  navigationActions.append(startNavigation, navigationHint);
-  c.append(tabs, summary, navigationActions, routeNote, steps);
+  c.append(tabs, summary, routeNote, steps);
   const calculate = () => {
     routeRequested = true;
     findRoute(origin.input.value, destination.input.value, row, activeMode, go, summary, steps, origin.input, destination.input, tabs);
