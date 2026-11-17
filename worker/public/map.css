@@ -1780,3 +1780,29 @@ html[data-theme="dark"] .map-controls #contribute-fab:hover,body.dark .map-contr
   mask-image: radial-gradient(circle, transparent 0 9px, #000 17px, transparent 76px);
   transition: transform 130ms linear;
 }
+
+/* Standalone live GPS marker: updates independently of the map camera. */
+.sifric-live-location.maplibregl-user-location-dot {
+  width: 18px;
+  height: 18px;
+  background: #1769f5;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 1px 9px #0005;
+  overflow: visible;
+}
+.sifric-live-location.maplibregl-user-location-dot::before {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  z-index: -2;
+  left: 50%;
+  top: 50%;
+  width: calc(2 * var(--sifric-accuracy-radius, 24px));
+  height: calc(2 * var(--sifric-accuracy-radius, 24px));
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(39,111,241,.23);
+  border-radius: 50%;
+  background: rgba(48,120,247,.12);
+  animation: none;
+}
