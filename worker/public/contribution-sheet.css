@@ -198,3 +198,29 @@ body.contribution-picking:has(.picker-map-types:not([hidden])) .picker-live-loca
 .hours-dialog-backdrop{position:fixed!important;inset:0!important;z-index:110!important}
 html:not([data-theme=dark]) #contribution-form-sheet .hours-inline-toggle{border-color:#dce2e9}
 html:not([data-theme=dark]) #contribution-form-sheet .hours-inline-content .hours-day-row{border-color:#e8edf1}
+
+/* Compact modern hours dialog; checkbox art matches the layers sheet */
+.hours-dialog{width:min(100%,420px);padding:24px 20px 18px;border-radius:22px;display:flex;flex-direction:column;gap:0}
+.hours-dialog h3{font-size:18px;font-weight:650;letter-spacing:-.02em;margin:0 0 22px}
+.hours-day-buttons{gap:6px}
+.hours-day-chip{border-radius:50%;font-size:13px;font-weight:600;transition:background .15s,border-color .15s}
+.hours-states{justify-content:space-between;gap:12px;margin:22px 0 20px}
+.hours-states label{display:flex;align-items:center;gap:9px;cursor:pointer;font-size:13px;font-weight:500;position:relative}
+.hours-states input{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+.hours-states .custom-check{width:25px;height:25px;flex:none;overflow:visible}
+.hours-states .check-outline{stroke:#8795a6;fill:none}
+.hours-states .check-core{fill:#315ce8;opacity:0}
+.hours-states input:checked+.custom-check .check-outline{stroke:#315ce8}
+.hours-states input:checked+.custom-check .check-core{opacity:1}
+.hours-states input:focus-visible+.custom-check{outline:2px solid #315ce8;outline-offset:3px;border-radius:4px}
+.hours-interval-row{grid-template-columns:minmax(0,1fr) minmax(0,1fr) 30px;gap:9px}
+.hours-interval-row label{font-size:12px;gap:7px}
+.hours-interval-row input{min-height:46px;padding:8px;border-radius:10px;font-size:13px}
+.hours-interval-row button{font-size:22px;align-self:end}
+.hours-add-interval{padding:12px 2px;font-size:13px}
+.hours-dialog footer{margin-top:18px;gap:9px}
+.hours-dialog footer button{min-height:43px;font-weight:600}
+html[data-theme=dark] .hours-states .check-outline{stroke:#8a98a9}
+html[data-theme=dark] .hours-states input:checked+.custom-check .check-outline{stroke:#7593ff}
+html[data-theme=dark] .hours-states .check-core{fill:#7593ff}
+@media(max-width:390px){.hours-dialog{padding:20px 16px 16px}.hours-states label{font-size:12px;gap:6px}.hours-states .custom-check{width:23px;height:23px}}
