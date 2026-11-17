@@ -1863,26 +1863,36 @@ html[data-theme="dark"] .map-controls #contribute-fab:hover,body.dark .map-contr
   line-height: 1.4;
   color: var(--ui-muted, #9aa0a6);
 }
-#layer-panel.layer-panel .follow-roads-option input[type="checkbox"] {
-  -webkit-appearance: auto;
-  appearance: auto;
-  display: block;
-  order: 2;
-  flex: 0 0 22px;
-  width: 22px;
-  height: 22px;
-  min-width: 22px;
-  margin: 0;
-  padding: 0;
-  border-radius: 3px;
-  accent-color: var(--ui-blue, #4285f4);
-  opacity: 1;
-  visibility: visible;
-  position: static;
-  transform: none;
-  cursor: pointer;
+/* Same SVG checkbox used by Places; no hover/tap background. */
+#layer-panel.layer-panel .follow-roads-option {
+  justify-content: flex-start;
+  gap: 10px;
+  background: transparent !important;
+  -webkit-tap-highlight-color: transparent;
 }
-#layer-panel.layer-panel .follow-roads-option input[type="checkbox"]::after {
-  content: none;
-  display: none;
+#layer-panel.layer-panel .follow-roads-option:hover,
+#layer-panel.layer-panel .follow-roads-option:active,
+#layer-panel.layer-panel .follow-roads-option:focus-within,
+#layer-panel.layer-panel .follow-roads-option:has(input:focus-visible) {
+  background: transparent !important;
+}
+#layer-panel.layer-panel .follow-roads-option input[type="checkbox"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+#layer-panel.layer-panel .follow-roads-option > .custom-check {
+  display: block;
+  order: 0;
+  width: 26px;
+  height: 26px;
+  flex: 0 0 26px;
+}
+#layer-panel.layer-panel .follow-roads-option > span {
+  order: 1;
+  flex: 1 1 auto;
 }
