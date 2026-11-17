@@ -1089,22 +1089,44 @@ function snapMovingDotToRoad(coords, speed) {
     Number.isFinite(coords.accuracy) ? coords.accuracy * 1.2 : ROAD_SNAP_MAX_METERS));
   const radius = Math.min(250, Math.max(35, maxDistance /
     Math.max(0.01, metersPerPixel) * 2.5));
-  const styleLayers = map.getStyle()?.layers || [];
-  const roadLayers = styleLayers.filter(layer => {
-    const id = (layer.id || "").toLowerCase();
-    const sourceLayer = (layer["source-layer"] || "").toLowerCase();
-    return layer.type === "line" &&
-      /(road|street|transportation|highway|motorway|trunk|primary|secondary|tertiary|residential)/.test(id + " " + sourceLayer) &&
-      !/(rail|water|boundary|ferry|contour|footway|cycleway|path|pedestrian|building)/.test(id + " " + sourceLayer);
-  }).map(layer => layer.id);
-  let features;
+  const style = map.getStyle();
+  const styleLayers = style?.layers || [];
+  const isRoad = value =>
+    /(road|street|transportation|highway|motorway|trunk|primary|secondary|tertiary|residential)/.test(value) &&
+    !/(rail|water|boundary|ferry|contour|footway|cycleway|path|pedestrian|building)/.test(value);
+  const roadLayers = styleLayers.filter(layer =>
+    layer.type === "line" && isRoad(
+      ((layer.id || "") + " " + (layer["source-layer"] || "")).toLowerCase()));
+  let features = [];
   try {
-    // Query visible road lines only; never mistake building edges for roads.
-    if (!roadLayers.length) return null;
-    features = map.queryRenderedFeatures(
-      [[center.x - radius, center.y - radius],
-       [center.x + radius, center.y + radius]], { layers: roadLayers });
-  } catch { return null; }
+    if (roadLayers.length) {
+      features = map.queryRenderedFeatures(
+        [[center.x - radius, center.y - radius],
+         [center.x + radius, center.y + radius]],
+        { layers: roadLayers.map(layer => layer.id) });
+    }
+    // Rendered road lines may be absent in satellite/terrain styles.
+    // Inspect locally loaded vector source tiles as well, without API requests.
+    const sourceLayers = new Set();
+    for (const layer of styleLayers) {
+      if (layer.source && layer["source-layer"] && isRoad(
+        (layer["source-layer"] + " " + (layer.id || "")).toLowerCase())) {
+        sourceLayers.add(layer.source + "|" + layer["source-layer"]);
+      }
+    }
+    for (const entry of sourceLayers) {
+      const [source, sourceLayer] = entry.split("|");
+      if (style.sources?.[source]?.type !== "vector") continue;
+      const candidates = map.querySourceFeatures(source, { sourceLayer });
+      for (const feature of candidates) {
+        const bounds = feature.geometry?.coordinates;
+        if (bounds) features.push(feature);
+      }
+    }
+  } catch (error) {
+    console.warn("Local road snapping query failed", error);
+  }
+  if (!features.length) return null;
   const raw = coordinateFix(coords);
   let best = null;
   for (const feature of features) {
@@ -1256,14 +1278,14 @@ function onLiveLocation(position) {
     movement >= 3 && coords.accuracy <= 45;
   lastRawFix = { coords: { latitude: coords.latitude, longitude: coords.longitude }, time: now };
   const matchedLocation = moving ? snapMovingDotToRoad(coords, speed) : null;
-  let shownLocation = coordinateFix(coords);
+  let shownLocation = matchedLocation || coordinateFix(coords);
   if (!liveLocationMarker) {
     const dot = document.createElement("div");
     dot.className = "maplibregl-user-location-dot sifric-live-location";
     dot.setAttribute("role", "img");
     dot.setAttribute("aria-label", "Your current location");
     liveLocationMarker = new maplibregl.Marker({ element: dot, anchor: "center" })
-      .setLngLat([coords.longitude, coords.latitude]).addTo(map);
+       .setLngLat([shownLocation.longitude, shownLocation.latitude]).addTo(map);
   } else {
     // Keep a recent matched position during brief GPS drift around bends.
     // Never keep it if it diverges from the current fix or becomes stale.
@@ -1282,7 +1304,7 @@ function onLiveLocation(position) {
   updateTravelBeam(shownLocation, moving, coords, now);
   if (focusOnNextLocation) {
     focusOnNextLocation = false;
-    map.flyTo({ center: [coords.longitude, coords.latitude], zoom: Math.max(map.getZoom(), 17), duration: 850 });
+    map.flyTo({ center: [coords.longitude, coords.latitude], zoom: Math.max(map.getZoom(), 19), duration: 850 });
   }
   const button = $("locate");
   button.disabled = false;
@@ -1310,7 +1332,7 @@ $("locate").onclick = () => {
   void enableCompass();
   if (liveLocationCoords) {
     // Explicit button press is the only action allowed to move the camera.
-    map.flyTo({ center: [liveLocationCoords.longitude, liveLocationCoords.latitude], zoom: Math.max(map.getZoom(), 17), duration: 850 });
+    map.flyTo({ center: [liveLocationCoords.longitude, liveLocationCoords.latitude], zoom: Math.max(map.getZoom(), 19), duration: 850 });
     return;
   }
   focusOnNextLocation = true;
