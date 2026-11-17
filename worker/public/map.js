@@ -1,6 +1,6 @@
 import { createMapOptions, initialMapStyle } from "./map-options.js";
 import { icon, drawIcon } from "./icons.js";
-import * as maplibregl from "https://cdn.jsdelivr.net/npm/maplibre-gl@6.16.0/dist/maplibre-gl.mjs";
+const maplibregl = window.maplibregl;
 const $ = (id) => document.getElementById(id);
 const colours = {
   food: "#ff8126",
