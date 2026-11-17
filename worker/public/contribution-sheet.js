@@ -21,7 +21,7 @@ document.querySelectorAll("[data-picker-type]").forEach(button=>button.addEventL
 
 const mapInstance=()=>window.map||window.sifricMap;
 
-let previewMap=null,previewLoading=null,previewStyleWait=false;
+let previewMap=null,previewLoading=null,previewStyleWait=false,nearbyMarkers=[];
 const PREVIEW_ZOOM=16;
 function chosenLocation(){
  const raw=$("contribution-coordinates").value.trim();
@@ -42,8 +42,9 @@ async function ensurePreviewMap(){
   try{
    const lib=await import("https://cdn.jsdelivr.net/npm/maplibre-gl@6.16.0/dist/maplibre-gl.mjs");
    if(sheet.hidden)return;
-   const style=main.getStyle();
-   for(const layer of style.layers||[]){if(/^mazo-places-(icon|dot|pin|label|subtitle)$/.test(layer.id)){layer.layout={...(layer.layout||{}),visibility:"visible"};}}
+   const style=structuredClone(main.getStyle());
+   const placesLayer=(style.layers||[]).find(layer=>layer.id==="mazo-places-icon");
+   for(const layer of style.layers||[]){if(layer.id.startsWith("mazo-places-"))layer.layout={...(layer.layout||{}),visibility:"none"};}
    previewMap=new lib.Map({
     container,style,center:previewCenter(),zoom:PREVIEW_ZOOM,
     interactive:false,attributionControl:false,renderWorldCopies:false,
@@ -55,6 +56,7 @@ async function ensurePreviewMap(){
     if(image)previewMap.addImage(e.id,image,{pixelRatio:4});
    });
    previewMap.on("load",()=>{requestAnimationFrame(()=>{previewMap.resize();updatePreviewLocation();});});
+   previewMap.on("idle",()=>showNearbyPlaces(placesLayer,lib));
    const observer=new IntersectionObserver(entries=>{if(entries.some(entry=>entry.isIntersecting))requestAnimationFrame(()=>previewMap?.resize());},{threshold:0.01});
    observer.observe(container);
    previewMap.on("error",e=>console.warn("Contribution preview map error",e.error||e));
@@ -63,8 +65,38 @@ async function ensurePreviewMap(){
  })();
  return previewLoading;
 }
+function showNearbyPlaces(layer,lib){
+ if(!previewMap||!layer)return;
+ const source=previewMap.getSource(layer.source);
+ if(!source)return;
+ const options=layer["source-layer"]?{sourceLayer:layer["source-layer"]}:{};
+ let features=[];
+ try{features=previewMap.querySourceFeatures(layer.source,options)}catch{return;}
+ const center=previewMap.getCenter(),unique=new Set();
+ const nearby=features.filter(f=>{
+  const coords=f.geometry?.type==="Point"?f.geometry.coordinates:null;
+  if(!coords||!Number.isFinite(coords[0])||!Number.isFinite(coords[1]))return false;
+  const key=String(f.id??f.properties?.id??coords.join(","));
+  if(unique.has(key))return false;unique.add(key);return true;
+ }).map(f=>({feature:f,distance:Math.hypot((f.geometry.coordinates[0]-center.lng)*Math.cos(center.lat*Math.PI/180),f.geometry.coordinates[1]-center.lat)}))
+ .sort((a,b)=>a.distance-b.distance).slice(0,3);
+ const key=nearby.map(x=>x.feature.id??x.feature.geometry.coordinates.join(",")).join("|");
+ if(previewMap._contributionNearbyKey===key)return;
+ previewMap._contributionNearbyKey=key;
+ nearbyMarkers.forEach(m=>m.remove());nearbyMarkers=[];
+ const colors={food:"#ff8126",shopping:"#0095f6",health:"#ef5261",finance:"#547bc4",leisure:"#18a879",culture:"#b44df0",worship:"#7b969f",transport:"#567a9a",government:"#78909c",landmark:"#b44df0",other:"#82969d"};
+ for(const {feature} of nearby){
+  const el=document.createElement("div");
+  el.className="contribution-nearby-marker";
+  el.title=feature.properties?.name||feature.properties?.label||"Nearby place";
+  const color=colors[feature.properties?.kind]||colors.other;
+  el.innerHTML='<svg viewBox="0 0 24 34" width="23" height="33" aria-hidden="true"><path d="M12 1C5.9 1 1 5.8 1 12c0 8.5 11 21 11 21s11-12.5 11-21C23 5.8 18.1 1 12 1Z" fill="'+color+'" stroke="#fff" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="#fff"/></svg>';
+  nearbyMarkers.push(new lib.Marker({element:el,anchor:"bottom"}).setLngLat(feature.geometry.coordinates).addTo(previewMap));
+ }
+}
 function updatePreviewLocation(){
  if(!previewMap){void ensurePreviewMap();return;}
+ previewMap._contributionNearbyKey=null;
  previewMap.jumpTo({center:previewCenter(),zoom:PREVIEW_ZOOM});
  requestAnimationFrame(()=>previewMap?.resize());
 }
