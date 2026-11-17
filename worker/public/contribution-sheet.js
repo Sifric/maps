@@ -24,7 +24,8 @@ const mapInstance=()=>window.map||window.sifricMap;
 let previewMap=null,previewLoading=null;
 async function ensurePreviewMap(){
  const main=mapInstance(),container=$("contribution-preview-map");
- if(!main?.getStyle||!main.isStyleLoaded?.()||!container||sheet.hidden)return;
+ if(!main?.getStyle||!container||sheet.hidden)return;
+ if(!main.isStyleLoaded?.()){main.once("style.load",()=>{if(!sheet.hidden)void ensurePreviewMap();});return;}
  if(previewMap){requestAnimationFrame(()=>previewMap.resize());return;}
  if(previewLoading)return previewLoading;
  previewLoading=(async()=>{
@@ -36,6 +37,7 @@ async function ensurePreviewMap(){
    const valid=raw!==""&&coords.length===2&&coords.every(Number.isFinite);
    const center=valid?[coords[1],coords[0]]:main.getCenter().toArray();
    previewMap=new module.Map({container,style:main.getStyle(),center,zoom:Math.max(13,main.getZoom()),interactive:false,attributionControl:false,renderWorldCopies:false});
+   previewMap.on("load",()=>{if($("contribution-coordinates").value)updatePreviewLocation();});
   }catch(error){console.warn("Map preview unavailable",error)}
   finally{previewLoading=null}
  })();
