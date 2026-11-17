@@ -266,3 +266,28 @@ html:not([data-theme=dark]) #contribution-form-sheet .contribution-category-opti
 /* Flip category dropdown above its trigger when the sticky footer is nearby */
 #contribution-form-sheet .contribution-category-list.opens-up{top:auto;bottom:calc(100% + 6px)}
 #contribution-form-sheet .contribution-category-list{box-sizing:border-box}
+
+/* Contribution home and dedicated editors */
+.contribution-landing[hidden],.contribution-editor[hidden],.contribution-special-fields[hidden]{display:none!important}
+.contribution-landing-intro{margin:2px 0 18px;color:#9daaba;font-size:14px;line-height:1.55}
+.contribution-landing-options{display:grid;gap:10px}
+.contribution-landing-option{display:flex;align-items:center;gap:14px;width:100%;padding:16px 14px;border:1px solid #334354;border-radius:15px;background:#25313e;color:inherit;text-align:left;font:inherit}
+.contribution-option-icon{width:43px;height:43px;flex:none;display:grid;place-items:center;border-radius:12px;background:#344666;color:#9bb3ff}
+.contribution-option-icon svg{width:22px;height:22px}
+.contribution-option-copy{display:grid;gap:5px;flex:1;min-width:0}
+.contribution-option-copy strong{font-size:15px;font-weight:650}
+.contribution-option-copy small{font-size:12px;line-height:1.4;color:#a5b0bd}
+.contribution-option-chevron{width:18px;height:18px;flex:none;color:#9ba8b9}
+.contribution-landing-note{font-size:12px;line-height:1.5;color:#9aa6b4;margin:18px 0 6px}
+.contribution-editor-back{display:inline-flex;align-items:center;gap:7px;border:0;background:none;color:#8fa9ff;font:inherit;font-weight:600;padding:5px 0 12px}
+.contribution-editor .contribution-explainer{margin:4px 0 20px}
+.contribution-special-fields{display:flex;flex-direction:column;gap:10px}
+.contribution-special-fields label{font-size:13px;font-weight:650}
+.contribution-special-fields input,.contribution-special-fields select,.contribution-special-fields textarea{width:100%;box-sizing:border-box;border:1px solid #344151;border-radius:12px;padding:14px;background:transparent;color:inherit;font:inherit;margin-bottom:12px}
+.contribution-special-fields select option{background:#202b37;color:#fff}
+.contribution-special-fields .contribution-actions{margin-top:6px}
+html:not([data-theme=dark]) .contribution-landing-option{background:#f8fafc;border-color:#e1e6ed;color:#1f2937}
+html:not([data-theme=dark]) .contribution-option-icon{background:#e9efff;color:#315ce8}
+html:not([data-theme=dark]) .contribution-option-copy small,html:not([data-theme=dark]) .contribution-landing-intro,html:not([data-theme=dark]) .contribution-landing-note{color:#697685}
+html:not([data-theme=dark]) .contribution-special-fields input,html:not([data-theme=dark]) .contribution-special-fields select,html:not([data-theme=dark]) .contribution-special-fields textarea{border-color:#dce2e9}
+html:not([data-theme=dark]) .contribution-special-fields select option{background:#fff;color:#1f2937}
