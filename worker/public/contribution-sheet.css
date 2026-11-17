@@ -109,3 +109,16 @@ body.contribution-picking:has(.picker-map-types:not([hidden])) .picker-bottom{vi
 html[data-theme=dark] body.contribution-picking .picker-tools button,html[data-theme=dark] body.contribution-picking .picker-top button,html[data-theme=dark] body.contribution-picking .picker-map-types{background:#1a222c;color:#f0f4f8}
 html[data-theme=dark] .picker-map-header button,html[data-theme=dark] .picker-type-options button{background:#26313e;color:#f0f4f8;border-color:#344151}
 html[data-theme=dark] .picker-type-options button[aria-checked=true]{background:#253353;color:#a5b8ff;border-color:#91aaff}
+
+/* Match the main Layers & appearance visual map type selector. */
+body.contribution-picking .picker-map-types{padding:12px 22px calc(30px + env(safe-area-inset-bottom));border-radius:24px 24px 0 0}
+body.contribution-picking .picker-map-header{margin:0 0 20px;font-size:20px;font-weight:700}
+body.contribution-picking .picker-type-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+body.contribution-picking .picker-type-options button{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:12px;min-width:0;padding:0;border:0;background:transparent;color:inherit;font-size:13px;font-weight:500}
+body.contribution-picking .picker-type-options button[aria-checked=true]{border:0;background:transparent;color:#315ce8;font-weight:700}
+body.contribution-picking .picker-type-options .type-preview{display:grid;place-items:center;width:100%;max-width:160px;aspect-ratio:1.65;border-radius:13px;overflow:hidden;border:2px solid transparent}
+body.contribution-picking .picker-type-options button[aria-checked=true] .type-preview{border-color:#4773ed;box-shadow:0 0 0 2px #4773ed30}
+body.contribution-picking .picker-type-options .type-preview .icon{width:36px;height:36px}
+html[data-theme=dark] body.contribution-picking .picker-type-options button{background:transparent;color:#e1e7ef;border:0}
+html[data-theme=dark] body.contribution-picking .picker-type-options button[aria-checked=true]{background:transparent;color:#a5b8ff}
+@media(max-width:390px){body.contribution-picking .picker-type-options{gap:10px}}
