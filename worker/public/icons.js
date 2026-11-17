@@ -1,5 +1,6 @@
 // Original 24px SVG icons. Shared by interface controls and canvas map markers.
 export const iconPaths = {
+  mic: ["M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z", "M5 10v2a7 7 0 0 0 14 0v-2", "M12 19v3M8 22h8"],
   selected_place: [
     "M12 2a8 8 0 0 0-8 8c0 5.7 8 13 8 13s8-7.3 8-13a8 8 0 0 0-8-8Z",
     "M15 10a3 3 0 1 1-6 0 3 3 0 0 1 6 0",
