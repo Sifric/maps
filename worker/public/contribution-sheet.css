@@ -1,0 +1,40 @@
+/* Sifric Maps contribution bottom sheet */
+.contribution-backdrop{position:fixed;inset:0;background:#07111b85;z-index:30}
+.contribution-sheet{position:fixed;z-index:31;bottom:0;left:50%;transform:translateX(-50%);width:min(620px,100%);height:min(88dvh,920px);display:flex;flex-direction:column;background:#fff;color:#1f2937;border-radius:23px 23px 0 0;box-shadow:0 -15px 55px #0003;font:14px "Map Sans",Arial,sans-serif;overflow:hidden}
+.contribution-sheet[hidden],.contribution-backdrop[hidden]{display:none!important}
+.contribution-handle{height:5px;width:40px;border-radius:10px;background:#c6cbd3;align-self:center;margin:11px 0 7px;flex-shrink:0;touch-action:none}
+.contribution-header{display:flex;align-items:center;justify-content:space-between;padding:13px 24px 18px;border-bottom:1px solid #e5e9ef;flex-shrink:0;gap:15px}
+.contribution-kicker{font-size:10px;letter-spacing:1.3px;font-weight:700;color:#526de2}
+.contribution-header h2{font-size:22px;letter-spacing:-.5px;margin:8px 0 0}
+.contribution-close{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#f2f4f7;color:#374151;flex-shrink:0}
+.contribution-scroll{overflow-y:auto;overscroll-behavior:contain;padding:20px 24px 28px;min-height:0}
+.contribution-choices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.contribution-choices button{display:flex;align-items:center;justify-content:center;gap:7px;padding:12px 8px;border:1px solid #e2e6ed;border-radius:12px;background:#fff;color:#344253;font-size:12px}
+.contribution-choices button[aria-pressed=true]{border-color:#4766e5;background:#eef2ff;color:#3155cb;font-weight:700}
+.contribution-choices svg{width:19px;height:19px;flex-shrink:0}
+.contribution-explainer{font-size:12px;color:#697685;line-height:1.6;margin:18px 0 20px}
+#contribution-form-sheet{display:flex;flex-direction:column;gap:0}
+#contribution-form-sheet label{font-size:12px;font-weight:700;margin:0 0 8px}
+#contribution-form-sheet label span{color:#d94f53}
+#contribution-form-sheet label small{font-size:11px;font-weight:400;color:#7b8794;margin-left:5px}
+#contribution-form-sheet input,#contribution-form-sheet select,#contribution-form-sheet textarea{width:100%;min-height:50px;border:1px solid #dce2e9;border-radius:11px;background:#fff;color:#1f2937;padding:13px 14px;margin:0 0 20px;font:inherit;outline:none}
+#contribution-form-sheet textarea{resize:vertical;min-height:85px}
+#contribution-form-sheet input:focus,#contribution-form-sheet select:focus,#contribution-form-sheet textarea:focus{border-color:#4766e5;box-shadow:0 0 0 3px #4766e520}
+#contribution-form-sheet input::placeholder,#contribution-form-sheet textarea::placeholder{color:#929ba6}
+#contribution-form-sheet h3{font-size:15px;margin:12px 0 17px}
+.contribution-map-location{display:flex;align-items:center;gap:12px;background:#f6f8fb;border:1px solid #e2e6ed;border-radius:12px;padding:13px;margin:-2px 0 22px}
+.contribution-map-location>svg{color:#4e67dd;flex-shrink:0}.contribution-map-location>div{display:flex;flex-direction:column;gap:4px;min-width:0;flex:1}
+.contribution-map-location strong{font-size:12px}.contribution-map-location small{color:#7b8794;font-size:11px}
+.contribution-map-location button{background:#fff;border:1px solid #dce2e9;border-radius:9px;padding:10px;color:#3155cb;font-size:11px;white-space:nowrap}
+.contribution-notice{font-size:11px;color:#788391;line-height:1.5;margin:0 0 15px}
+.contribution-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:sticky;bottom:-28px;background:#fff;padding:13px 0 20px;border-top:1px solid #e5e9ef}
+.contribution-actions button,#contribution-back{padding:13px;border-radius:11px;border:1px solid #e2e6ed;background:#fff;color:#344253;font-weight:700}
+.contribution-actions button[type=submit]{background:#315ce8;border-color:#315ce8;color:#fff}
+.contribution-preview h3{font-size:18px}.contribution-preview dl{display:grid;grid-template-columns:105px minmax(0,1fr);gap:13px;overflow-wrap:anywhere}.contribution-preview dt{color:#697685}.contribution-preview dd{margin:0;white-space:pre-wrap}.contribution-preview p{font-size:12px;color:#697685}
+html[data-theme=dark] .contribution-sheet{background:#1a222c;color:#f0f4f8}
+html[data-theme=dark] .contribution-header,html[data-theme=dark] .contribution-actions{border-color:#303c49}
+html[data-theme=dark] .contribution-close,html[data-theme=dark] .contribution-map-location{background:#26313e;color:#f0f4f8;border-color:#344151}
+html[data-theme=dark] .contribution-choices button,html[data-theme=dark] #contribution-form-sheet input,html[data-theme=dark] #contribution-form-sheet select,html[data-theme=dark] #contribution-form-sheet textarea,html[data-theme=dark] .contribution-map-location button,html[data-theme=dark] .contribution-actions,html[data-theme=dark] .contribution-actions button:first-child,html[data-theme=dark] #contribution-back{background:#1a222c;color:#f0f4f8;border-color:#344151}
+html[data-theme=dark] .contribution-choices button[aria-pressed=true]{background:#253353;color:#a5b8ff;border-color:#91aaff}
+html[data-theme=dark] .contribution-actions button[type=submit]{background:#315ce8;color:#fff;border-color:#315ce8}
+@media(max-width:600px){.contribution-sheet{height:83dvh;max-height:calc(100dvh - 18px);border-radius:22px 22px 0 0}.contribution-header{padding:12px 18px 17px}.contribution-scroll{padding:18px 18px 26px}.contribution-choices button{flex-direction:column;gap:5px;font-size:11px;min-height:65px}.contribution-actions{bottom:-26px}}
