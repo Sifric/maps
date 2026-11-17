@@ -84,3 +84,10 @@ body.contribution-picking .picker-top{top:calc(14px + env(safe-area-inset-top));
 body.contribution-picking .picker-bottom{bottom:calc(18px + env(safe-area-inset-bottom));z-index:3}
 body.contribution-picking .picker-bottom button{width:100%;min-height:50px;background:#315ce8;color:white}
 body.contribution-picking .maplibregl-control-container{visibility:hidden!important}
+
+/* Compact, icon-only location picker navigation. */
+body.contribution-picking .picker-top{top:calc(14px + env(safe-area-inset-top));left:14px;transform:none;width:auto;min-width:0;padding:0;border-radius:50%;background:transparent;box-shadow:none}
+body.contribution-picking .picker-top button{width:46px;height:46px;display:grid;place-items:center;border-radius:50%;background:#fff;color:#263342;box-shadow:0 2px 12px #0003;padding:0}
+body.contribution-picking .picker-top button svg{display:block;width:22px;height:22px}
+body.contribution-picking .picker-crosshair svg{width:26px;height:39px}
+html[data-theme=dark] body.contribution-picking .picker-top button{background:#1a222c;color:#f0f4f8}
