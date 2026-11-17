@@ -945,7 +945,7 @@ const locationSvgShapes = {
   locked: `<defs><mask id="loc-gap-THEME" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><rect width="64" height="64" fill="#fff"/><rect x="32" y="25" width="32" height="38" rx="11" fill="#000"/></mask></defs><g mask="url(#loc-gap-THEME)"><path d="M27 54C27 54 10 39 10 26a17 17 0 0 1 34 0c0 13-17 28-17 28z" stroke="STROKE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><circle fill="STROKE" cx="27" cy="26" r="5.5"/></g><rect fill="STROKE" x="38" y="40" width="20" height="16" rx="4"/><path d="M42 40v-5a6 6 0 0 1 12 0v5" stroke="STROKE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>`
 };
 let locationPermission = "prompt";
-let locationDeviceUnavailable = false;
+let locationDeviceUnavailable = !("geolocation" in navigator);
 function updateLocationIcon() {
   const state = locationPermission === "denied" ? "locked"
     : locationDeviceUnavailable ? "off" : locationPermission === "granted" ? "on" : "locked";
@@ -977,6 +977,8 @@ async function initLocationPermission() {
 initLocationPermission();
 $("locate").onclick = () => {
   if (!navigator.geolocation) {
+    locationDeviceUnavailable = true;
+    updateLocationIcon();
     status("Geolocation is unavailable");
     return;
   }
@@ -1184,7 +1186,7 @@ document.addEventListener("keydown", (e) => {
   });
   geolocateControl.on("error", (error) => {
     if (error?.code === 1) locationPermission = "denied";
-    else if (error?.code === 2) locationDeviceUnavailable = true;
+    else if (error?.code === 2 || error?.code === 3) locationDeviceUnavailable = true;
     updateLocationIcon();
     $("locate").disabled = false;
     $("locate").removeAttribute("aria-busy");
