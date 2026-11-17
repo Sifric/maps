@@ -1171,7 +1171,7 @@ document.addEventListener("keydown", (e) => {
       map.addImage(e.id, dotImage(e.id.slice(7)), { pixelRatio: 4 });
   });
   map.on("error", (e) => {
-    if (!mapOptions?.handleError(e)) showError(e.error);
+    if (!mapOptions?.handleError(e)) showError(e.error || new Error("Map renderer reported an error"));
   });
   // MapLibre supplies the actual distance labels and pixel widths for both units.
   // Render one shared horizontal rule, with an upward mile tick and downward km tick.
