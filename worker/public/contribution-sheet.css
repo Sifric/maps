@@ -236,3 +236,7 @@ html[data-theme=dark] .hours-states .check-core{fill:#7593ff}
 .hours-dialog .hours-time-field:focus-within{outline:2px solid #315ce8;outline-offset:2px}
 html[data-theme=dark] .hours-dialog .hours-time-field{border-color:#748292}
 @media(max-width:390px){.hours-dialog .hours-states{gap:16px}.hours-dialog .hours-time-field{padding:0 7px}.hours-dialog .hours-time-display{font-size:12px}}
+
+/* Selected hours must read as values, not muted placeholders */
+html[data-theme="dark"] .hours-dialog .hours-time-field .hours-time-display{color:#fff!important;opacity:1}
+html:not([data-theme="dark"]) .hours-dialog .hours-time-field .hours-time-display{color:#17212f!important;opacity:1}
