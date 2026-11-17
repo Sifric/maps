@@ -31,7 +31,7 @@ function chosenLocation(){
 function previewCenter(){return chosenLocation()||mapInstance()?.getCenter()?.toArray()||[80.7,7.9];}
 async function ensurePreviewMap(){
  const main=mapInstance(),container=$("contribution-preview-map");
- if(!main?.getStyle||!container||sheet.hidden)return;
+ if(!main?.getStyle||!container||(sheet.hidden&&!picking))return;
  if(previewMap){
   const selected=document.querySelector('[data-map-type][aria-checked="true"]')?.dataset.mapType||"default";
   if(previewMap._selectedMapType!==selected&&main.isStyleLoaded?.()){
@@ -45,14 +45,14 @@ async function ensurePreviewMap(){
   requestAnimationFrame(()=>previewMap.resize());return;
  }
  if(!main.isStyleLoaded?.()){
-  if(!previewStyleWait){previewStyleWait=true;main.once("style.load",()=>{previewStyleWait=false;if(!sheet.hidden)void ensurePreviewMap();});}
+  if(!previewStyleWait){previewStyleWait=true;main.once("style.load",()=>{previewStyleWait=false;if(!sheet.hidden||picking)void ensurePreviewMap();});}
   return;
  }
  if(previewLoading)return previewLoading;
  previewLoading=(async()=>{
   try{
    const lib=await import("https://cdn.jsdelivr.net/npm/maplibre-gl@6.16.0/dist/maplibre-gl.mjs");
-   if(sheet.hidden)return;
+   if(sheet.hidden&&!picking)return;
    const style=structuredClone(main.getStyle());
    const placesLayer=(style.layers||[]).find(layer=>layer.id==="mazo-places-icon");
    for(const layer of style.layers||[]){if(layer.id.startsWith("mazo-places-"))layer.layout={...(layer.layout||{}),visibility:"none"};}
@@ -113,8 +113,8 @@ function updatePreviewLocation(){
  requestAnimationFrame(()=>previewMap?.resize());
 }
 function updateCoordinates(){const map=mapInstance();if(!map?.getCenter)return;const c=map.getCenter();$("picker-coordinates").textContent=c.lat.toFixed(6)+", "+c.lng.toFixed(6);}
-function startPicking(){const map=mapInstance();if(!map?.getCenter){$("contribution-address").focus();return;}picking=true;syncTypes();closeTypes();sheet.hidden=true;backdrop.hidden=true;picker.hidden=false;document.body.classList.add("contribution-picking");map.on("move",updateCoordinates);requestAnimationFrame(()=>{map.resize();updateCoordinates();});$("picker-confirm").focus();}
-function stopPicking(confirm){if(!picking)return;closeTypes();const map=mapInstance();if(confirm&&map?.getCenter){const c=map.getCenter();$("contribution-coordinates").value=c.lat.toFixed(6)+", "+c.lng.toFixed(6);$("contribution-coordinates").dispatchEvent(new Event("input",{bubbles:true}));}map?.off("move",updateCoordinates);picking=false;picker.hidden=true;sheet.hidden=false;backdrop.hidden=false;document.body.classList.remove("contribution-picking");if(map?.resize)requestAnimationFrame(()=>map.resize());if(confirm)updatePreviewLocation();$("contribution-use-center").focus();}
+function startPicking(){const map=mapInstance();if(!map?.getCenter){$("contribution-address").focus();return;}picking=true;void ensurePreviewMap();syncTypes();closeTypes();sheet.hidden=true;backdrop.hidden=true;picker.hidden=false;document.body.classList.add("contribution-picking");map.on("move",updateCoordinates);requestAnimationFrame(()=>{map.resize();updateCoordinates();});$("picker-confirm").focus();}
+function stopPicking(confirm){if(!picking)return;closeTypes();const map=mapInstance();if(confirm&&map?.getCenter){const c=map.getCenter();$("contribution-coordinates").value=c.lat.toFixed(6)+", "+c.lng.toFixed(6);$("contribution-coordinates").dispatchEvent(new Event("input",{bubbles:true}));}map?.off("move",updateCoordinates);picking=false;picker.hidden=true;sheet.hidden=false;backdrop.hidden=false;document.body.classList.remove("contribution-picking");if(map?.resize)requestAnimationFrame(()=>map.resize());if(confirm)updatePreviewLocation();requestAnimationFrame(()=>{previewMap?.resize();});$("contribution-use-center").focus();}
 $("contribution-use-center").addEventListener("click",startPicking);
 $("picker-cancel").addEventListener("click",()=>stopPicking(false));
 $("picker-confirm").addEventListener("click",()=>stopPicking(true));
