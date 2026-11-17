@@ -24,7 +24,7 @@
       href="https://cdn.jsdelivr.net/npm/maplibre-gl@6.16.0/dist/maplibre-gl.css"
     />
     <link rel="stylesheet" href="/map.css?v=contribution-sheet-13" />
-    <link rel="stylesheet" href="/contribution-sheet.css?v=14" />
+    <link rel="stylesheet" href="/contribution-sheet.css?v=15" />
     <script src="https://cdn.jsdelivr.net/npm/pmtiles@4.5.0/dist/pmtiles.js"></script>
   </head>
   <body>
@@ -240,7 +240,7 @@
   <div id="hours-dialog-backdrop" class="hours-dialog-backdrop" hidden>
  <section class="hours-dialog" role="dialog" aria-modal="true" aria-labelledby="hours-dialog-title">
  <h3 id="hours-dialog-title">Select days &amp; time</h3><div id="hours-day-buttons" class="hours-day-buttons"></div>
- <div class="hours-states"><label><input id="hours-24" type="checkbox"> Open 24 hours</label><label><input id="hours-closed" type="checkbox"> Closed</label></div>
+ <div class="hours-states"><label><input id="hours-24" type="checkbox"><svg class="custom-check" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true"><defs><mask id="check-cut-hours-24" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><rect width="64" height="64" fill="#fff"/><path d="M23 32.5 30 39.5 41.5 25" stroke="#000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></mask></defs><path class="check-outline" d="M18 8H56V46L46 56H8V18Z" stroke-width="4" stroke-linejoin="round"/><path class="check-core" mask="url(#check-cut-hours-24)" d="M22 17H47V40L40 47H17V24Z"/></svg><span>Open 24 hours</span></label><label><input id="hours-closed" type="checkbox"><svg class="custom-check" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true"><defs><mask id="check-cut-hours-closed" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><rect width="64" height="64" fill="#fff"/><path d="M23 32.5 30 39.5 41.5 25" stroke="#000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></mask></defs><path class="check-outline" d="M18 8H56V46L46 56H8V18Z" stroke-width="4" stroke-linejoin="round"/><path class="check-core" mask="url(#check-cut-hours-closed)" d="M22 17H47V40L40 47H17V24Z"/></svg><span>Closed</span></label></div>
  <div id="hours-intervals" class="hours-intervals"></div><button type="button" id="hours-add-interval" class="hours-add-interval">+ Add hours</button>
  <div id="hours-error" class="hours-error" role="alert"></div>
  <footer><button type="button" id="hours-edit-cancel">Cancel</button><button type="button" id="hours-edit-save">Save</button></footer>
