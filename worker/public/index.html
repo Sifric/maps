@@ -26,8 +26,45 @@
     <link rel="stylesheet" href="/map.css?v=contribution-sheet-13" />
     <link rel="stylesheet" href="/contribution-sheet.css?v=20" />
     <script src="/vendor/maplibre-gl.js"></script>\n    <script src="/vendor/pmtiles.js"></script>
+    <style>
+      #map-error-toast { position:fixed; z-index:2147483647; left:16px; right:16px; bottom:calc(24px + env(safe-area-inset-bottom, 0px)); max-width:520px; margin:auto; padding:14px 44px 14px 16px; background:#24272d; color:#fff; border:1px solid #f29a9a; border-radius:14px; box-shadow:0 6px 28px #0005; font:14px/1.45 system-ui,sans-serif; overflow-wrap:anywhere; }
+      #map-error-toast[hidden] { display:none !important; }
+      #map-error-toast strong { display:block; margin-bottom:3px; }
+      #map-error-toast button { position:absolute; right:8px; top:8px; background:transparent; color:inherit; border:0; font-size:23px; padding:4px 10px; cursor:pointer; }
+    </style>
+    <script>
+      (() => {
+        let last = "", lastAt = 0;
+        window.showMapErrorToast = (message) => {
+          const detail = String(message || "Unknown error").slice(0, 280);
+          const now = Date.now();
+          if (detail === last && now - lastAt < 10000) return;
+          last = detail; lastAt = now;
+          const toast = document.getElementById("map-error-toast");
+          if (!toast) return;
+          toast.querySelector("[data-error-detail]").textContent = detail;
+          toast.hidden = false;
+        };
+        window.addEventListener("error", (event) => {
+          window.showMapErrorToast("JavaScript: " + (event.message || "A script or resource failed"));
+        });
+        window.addEventListener("unhandledrejection", (event) => {
+          window.showMapErrorToast("Startup: " + (event.reason?.message || String(event.reason || "Unhandled promise rejection")));
+        });
+        document.addEventListener("DOMContentLoaded", () => {
+          const toast = document.getElementById("map-error-toast");
+          toast?.querySelector("button")?.addEventListener("click", () => { toast.hidden = true; });
+          setTimeout(() => {
+            if (!document.querySelector("#map .maplibregl-canvas") && !window.maplibregl)
+              window.showMapErrorToast("MapLibre runtime missing. Check /vendor/maplibre-gl.js");
+            else if (!document.querySelector("#map .maplibregl-canvas"))
+              window.showMapErrorToast("Map canvas was not initialized. Check JavaScript startup errors.");
+          }, 9000);
+        });
+      })();
+    </script>
   </head>
-  <body>
+  <body>\n    <div id="map-error-toast" role="alert" aria-live="assertive" hidden><strong>Sifric Maps error</strong><span data-error-detail></span><button type="button" aria-label="Dismiss error">×</button></div>
     <nav class="rail" aria-label="Navigation">
       <button id="menu" aria-label="Open menu">
         <span data-icon="menu"></span>
