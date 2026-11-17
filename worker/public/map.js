@@ -941,6 +941,42 @@ $("categories")
 $("reset-category").onclick = () => filterCategory(category);
 $("compass").onclick = () =>
   map.easeTo({ bearing: 0, pitch: 0, duration: 400 });
+const locationSvgShapes = {
+  off: `<defs><mask id="loc-gap-THEME" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><rect width="64" height="64" fill="#fff"/><line x1="9" y1="9" x2="55" y2="55" stroke="#000" stroke-width="11" stroke-linecap="round"/></mask></defs><g stroke="STROKE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><g mask="url(#loc-gap-THEME)"><path d="M32 57C32 57 13 40 13 26a19 19 0 0 1 38 0c0 14-19 31-19 31z"/><circle cx="32" cy="26" r="6"/></g><line x1="9" y1="9" x2="55" y2="55"/></g>`,
+  on: `<g stroke="STROKE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M32 57C32 57 13 40 13 26a19 19 0 0 1 38 0c0 14-19 31-19 31z"/></g><circle fill="STROKE" cx="32" cy="26" r="7"/>`,
+  locked: `<defs><mask id="loc-gap-THEME" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><rect width="64" height="64" fill="#fff"/><rect x="32" y="25" width="32" height="38" rx="11" fill="#000"/></mask></defs><g mask="url(#loc-gap-THEME)"><path d="M27 54C27 54 10 39 10 26a17 17 0 0 1 34 0c0 13-17 28-17 28z" stroke="STROKE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><circle fill="STROKE" cx="27" cy="26" r="5.5"/></g><rect fill="STROKE" x="38" y="40" width="20" height="16" rx="4"/><path d="M42 40v-5a6 6 0 0 1 12 0v5" stroke="STROKE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>`
+};
+let locationPermission = "prompt";
+let locationDeviceUnavailable = false;
+function updateLocationIcon() {
+  const state = locationPermission === "denied" ? "locked"
+    : locationDeviceUnavailable ? "off" : locationPermission === "granted" ? "on" : "locked";
+  const holder = $("location-icon");
+  if (!holder) return;
+  holder.innerHTML = ["light", "dark"].map(theme => {
+    const stroke = theme === "dark" ? "#F3F4F6" : "#1F2937";
+    const paths = locationSvgShapes[state].replaceAll("THEME", theme).replaceAll("STROKE", stroke);
+    return `<svg class="location-state-svg location-state-${theme}" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true" focusable="false">${paths}</svg>`;
+  }).join("");
+  const label = state === "on" ? "Show your current location"
+    : state === "off" ? "Enable device location and try again" : "Allow location access";
+  $("locate").setAttribute("aria-label", label);
+  $("locate").title = label;
+}
+async function initLocationPermission() {
+  if (!navigator.permissions?.query) { updateLocationIcon(); return; }
+  try {
+    const permission = await navigator.permissions.query({ name: "geolocation" });
+    const sync = () => {
+      locationPermission = permission.state;
+      if (locationPermission !== "granted") locationDeviceUnavailable = false;
+      updateLocationIcon();
+    };
+    permission.addEventListener?.("change", sync);
+    sync();
+  } catch { updateLocationIcon(); }
+}
+initLocationPermission();
 $("locate").onclick = () => {
   if (!navigator.geolocation) {
     status("Geolocation is unavailable");
@@ -950,6 +986,8 @@ $("locate").onclick = () => {
     status("The map is still loading. Try again in a moment.");
     return;
   }
+  locationDeviceUnavailable = false;
+  updateLocationIcon();
   const button = $("locate");
   button.disabled = true;
   button.setAttribute("aria-busy", "true");
@@ -1139,11 +1177,17 @@ document.addEventListener("keydown", (e) => {
     const button = $("locate");
     button.disabled = false;
     button.removeAttribute("aria-busy");
+    locationPermission = "granted";
+    locationDeviceUnavailable = false;
+    updateLocationIcon();
     button.dataset.location = "ready";
     button.setAttribute("aria-label", "Recenter on your location");
     button.title = "Recenter on your location";
   });
-  geolocateControl.on("error", () => {
+  geolocateControl.on("error", (error) => {
+    if (error?.code === 1) locationPermission = "denied";
+    else if (error?.code === 2) locationDeviceUnavailable = true;
+    updateLocationIcon();
     $("locate").disabled = false;
     $("locate").removeAttribute("aria-busy");
     status("Location permission was denied or the location is unavailable");
