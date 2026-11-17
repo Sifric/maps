@@ -318,9 +318,11 @@ export function createMapOptions(map, { baseStyle, status }) {
         map.setPaintProperty(
           layer.id,
           "line-width",
-          settings.type === "satellite" && width !== undefined
-            ? scaleWidth(width, 0.45)
-            : width,
+          width === undefined ? width :
+            settings.type === "satellite" ? scaleWidth(width, 0.45) :
+            layer["source-layer"] === "transportation" &&
+              !/(rail|path|foot|cycle|casing)/i.test(layer.id)
+              ? scaleWidth(width, 1.55) : width,
         );
         map.setPaintProperty(
           layer.id,
