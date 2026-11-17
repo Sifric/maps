@@ -1623,3 +1623,10 @@ body.routing-open #categories {
 .voice-mic-pair .voice-mic-dark { display: none; }
 :root[data-theme="dark"] .voice-mic-pair .voice-mic-light { display: none; }
 :root[data-theme="dark"] .voice-mic-pair .voice-mic-dark { display: block; }
+
+/* User-supplied layers artwork, with explicit theme-specific stroke colors. */
+#layers.layers-fab .layers-icon-pair { display: flex; align-items: center; justify-content: center; width: 25px; height: 25px; }
+#layers.layers-fab .layers-icon { display: block; width: 25px; height: 25px; flex: none; }
+#layers.layers-fab .layers-icon-dark { display: none; }
+:root[data-theme="dark"] #layers.layers-fab .layers-icon-light { display: none; }
+:root[data-theme="dark"] #layers.layers-fab .layers-icon-dark { display: block; }
