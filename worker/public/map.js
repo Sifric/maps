@@ -1080,26 +1080,32 @@ function showLiveLocation(coords) {
 // Use already-loaded MapLibre vector road geometry. No OSRM nearest requests.
 function snapMovingDotToRoad(coords, speed) {
   if (!map || !map.isStyleLoaded()) return null;
-  const latitude = coords.latitude;
-  const center = map.project([coords.longitude, latitude]);
-  const metersPerPixel = 156543.03392 * Math.cos(latitude * Math.PI / 180) /
+  const center = map.project([coords.longitude, coords.latitude]);
+  // Pitch and 3D buildings make pixel-distance an unreliable ground-distance
+  // measure. Use pixels only to find candidates; validate in geographic meters.
+  const metersPerPixel = 156543.03392 * Math.cos(coords.latitude * Math.PI / 180) /
     Math.pow(2, map.getZoom());
-  const radius = Math.min(140, ROAD_SNAP_MAX_METERS / Math.max(0.01, metersPerPixel));
-  const roadLayers = (map.getStyle()?.layers || []).filter(layer => {
+  const maxDistance = Math.min(35, Math.max(ROAD_SNAP_MAX_METERS,
+    Number.isFinite(coords.accuracy) ? coords.accuracy * 1.2 : ROAD_SNAP_MAX_METERS));
+  const radius = Math.min(250, Math.max(35, maxDistance /
+    Math.max(0.01, metersPerPixel) * 2.5));
+  const styleLayers = map.getStyle()?.layers || [];
+  const roadLayers = styleLayers.filter(layer => {
     const id = (layer.id || "").toLowerCase();
     const sourceLayer = (layer["source-layer"] || "").toLowerCase();
     return layer.type === "line" &&
-      (/(road|street|transportation|highway)/.test(id) ||
-        /(road|street|transportation|highway)/.test(sourceLayer)) &&
-      !/(rail|water|boundary|ferry|contour|path|footway|cycleway)/.test(id + " " + sourceLayer);
+      /(road|street|transportation|highway|motorway|trunk|primary|secondary|tertiary|residential)/.test(id + " " + sourceLayer) &&
+      !/(rail|water|boundary|ferry|contour|footway|cycleway|path|pedestrian|building)/.test(id + " " + sourceLayer);
   }).map(layer => layer.id);
-  if (!roadLayers.length) return null;
   let features;
   try {
+    // Query visible road lines only; never mistake building edges for roads.
+    if (!roadLayers.length) return null;
     features = map.queryRenderedFeatures(
       [[center.x - radius, center.y - radius],
        [center.x + radius, center.y + radius]], { layers: roadLayers });
   } catch { return null; }
+  const raw = coordinateFix(coords);
   let best = null;
   for (const feature of features) {
     const geometry = feature.geometry;
@@ -1107,24 +1113,31 @@ function snapMovingDotToRoad(coords, speed) {
     const lines = geometry.type === "LineString" ? [geometry.coordinates] : geometry.coordinates;
     for (const line of lines) {
       for (let i = 1; i < line.length; i++) {
-        const a = map.project(line[i - 1]), b = map.project(line[i]);
-        const dx = b.x - a.x, dy = b.y - a.y;
-        const len2 = dx * dx + dy * dy;
-        if (len2 < 0.001) continue;
-        const t = Math.max(0, Math.min(1,
-          ((center.x - a.x) * dx + (center.y - a.y) * dy) / len2));
-        const projected = { x: a.x + dx * t, y: a.y + dy * t };
-        const meters = Math.hypot(center.x - projected.x, center.y - projected.y) * metersPerPixel;
-        if (meters > ROAD_SNAP_MAX_METERS) continue;
-        const point = map.unproject([projected.x, projected.y]);
-        const candidate = { latitude: point.lat, longitude: point.lng };
+        // Project each vector segment onto a local ground plane in meters.
+        // Unlike screen-space projection this works with tilted/3D maps.
+        const cosLat = Math.max(0.01, Math.cos(raw.latitude * Math.PI / 180));
+        const scaleX = 111320 * cosLat, scaleY = 110574;
+        const ax = (line[i - 1][0] - raw.longitude) * scaleX;
+        const ay = (line[i - 1][1] - raw.latitude) * scaleY;
+        const bx = (line[i][0] - raw.longitude) * scaleX;
+        const by = (line[i][1] - raw.latitude) * scaleY;
+        const dx = bx - ax, dy = by - ay;
+        const length2 = dx * dx + dy * dy;
+        if (length2 < 0.0001) continue;
+        const t = Math.max(0, Math.min(1, -(ax * dx + ay * dy) / length2));
+        const x = ax + t * dx, y = ay + t * dy;
+        const distance = Math.hypot(x, y);
+        if (distance > maxDistance) continue;
+        const candidate = {
+          longitude: raw.longitude + x / scaleX,
+          latitude: raw.latitude + y / scaleY
+        };
         const jump = lastSnappedFix ? gpsDistanceMeters(lastSnappedFix, candidate) : 0;
         const age = Date.now() - lastSnappedAt;
-        // Continuity preference discourages jumping onto crossing roads at bends.
         const implausible = lastSnappedFix && age < 10000 &&
-          jump > Math.max(20, speed * age / 1000 * 2 + 12);
+          jump > Math.max(25, speed * age / 1000 * 2.5 + 15);
         if (implausible) continue;
-        const score = meters + (lastSnappedFix ? Math.min(jump, 35) * 0.22 : 0);
+        const score = distance + (lastSnappedFix ? Math.min(jump, 40) * 0.18 : 0);
         if (!best || score < best.score) best = { candidate, score };
       }
     }
@@ -1240,7 +1253,7 @@ function onLiveLocation(position) {
   const speed = Number.isFinite(coords.speed) && coords.speed >= 0
     ? coords.speed : inferredSpeed;
   const moving = speed >= ROAD_SNAP_MIN_SPEED_MPS &&
-    movement >= 4 && coords.accuracy <= 30;
+    movement >= 3 && coords.accuracy <= 45;
   lastRawFix = { coords: { latitude: coords.latitude, longitude: coords.longitude }, time: now };
   const matchedLocation = moving ? snapMovingDotToRoad(coords, speed) : null;
   let shownLocation = coordinateFix(coords);
