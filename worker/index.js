@@ -129,7 +129,8 @@ async function routeRequest(request, env) {
     const coordinates = [body.origin, body.destination]
       .map(([longitude, latitude]) => `${longitude},${latitude}`)
       .join(";");
-    endpoint.pathname = `/route/v1/${profile}/${coordinates}`;
+    // Preserve a configured OSRM base path (e.g. /routed-car).
+    endpoint.pathname = `${endpoint.pathname.replace(/\/$/, "")}/route/v1/${profile}/${coordinates}`;
     endpoint.search = "";
     endpoint.searchParams.set("steps", "true");
     endpoint.searchParams.set("overview", "full");
@@ -145,7 +146,7 @@ async function routeRequest(request, env) {
     // Only use the alternative public instance when no dedicated server was configured.
     if (!configured) {
       const fallback = new URL(FALLBACK_OSRM_ORIGINS[body.mode]);
-      fallback.pathname = (fallback.pathname.endsWith("/") ? fallback.pathname.slice(0, -1) : fallback.pathname) + endpoint.pathname;
+      fallback.pathname = (fallback.pathname.endsWith("/") ? fallback.pathname.slice(0, -1) : fallback.pathname) + `/route/v1/${profile}/${[body.origin, body.destination].map(([lon, lat]) => `${lon},${lat}`).join(";")}`;
       fallback.search = endpoint.search;
       candidates.push(fallback);
     }
@@ -162,9 +163,12 @@ async function routeRequest(request, env) {
       catch {
         failure = `Routing server returned a non-JSON response (HTTP ${upstream.status}).`;
         if (index + 1 < candidates.length) continue;
+        if (upstream.status === 403) failure = "Public OSRM servers denied requests from this Worker (HTTP 403). Configure a dedicated OSRM_BASE_URL for reliable routing.";
         return jsonResponse({ error: failure }, 502, routeCors);
       }
       if (!upstream.ok || result.code !== "Ok") {
+        if (upstream.status === 403 && index + 1 < candidates.length) continue;
+        if (upstream.status === 403) return jsonResponse({ error: "OSRM server denied this Worker (HTTP 403). Configure a dedicated OSRM_BASE_URL." }, 502, routeCors);
         if (upstream.status === 429) {
           failure = result.message || "Routing is busy. Retry shortly.";
           if (index + 1 < candidates.length) continue;
