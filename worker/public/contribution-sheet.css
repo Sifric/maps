@@ -262,3 +262,7 @@ html:not([data-theme=dark]) #contribution-form-sheet .contribution-category-list
 html:not([data-theme=dark]) #contribution-form-sheet .contribution-category-option{color:#202b37}
 html:not([data-theme=dark]) #contribution-form-sheet .contribution-category-option[aria-selected=true]{background:#e8efff;color:#315ce8}
 html:not([data-theme=dark]) #contribution-form-sheet .contribution-category-option:hover{background:#eef2f7}
+
+/* Flip category dropdown above its trigger when the sticky footer is nearby */
+#contribution-form-sheet .contribution-category-list.opens-up{top:auto;bottom:calc(100% + 6px)}
+#contribution-form-sheet .contribution-category-list{box-sizing:border-box}
