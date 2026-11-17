@@ -809,7 +809,7 @@ async function findRoute(originText, destinationText, destinationRow, mode, butt
     setRouteMessage(`${origin.label} → ${destination.label} · ${modeNames[mode]} · ${distance} · ${duration}`, false, summary);
     const time = tabs?.querySelector(`[data-mode="${mode}"] .route-mode-time`);
     if (time) time.textContent = duration;
-    // Visual placeholder only. Keep Start disabled until navigation is implemented.\n    steps.replaceChildren(...(result.steps || []).slice(0, 10).map((step) => {
+    steps.replaceChildren(...(result.steps || []).slice(0, 10).map((step) => {
       const distance = step.distance >= 1000
         ? `${(step.distance / 1000).toFixed(1)} km`
         : `${Math.round(step.distance)} m`;
