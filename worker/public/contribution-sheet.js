@@ -32,7 +32,7 @@ function previewCenter(){return chosenLocation()||mapInstance()?.getCenter()?.to
 async function ensurePreviewMap(){
  const main=mapInstance(),container=$("contribution-preview-map");
  if(!main?.getStyle||!container||sheet.hidden)return;
- if(previewMap){previewMap.resize();return;}
+ if(previewMap){requestAnimationFrame(()=>previewMap.resize());return;}
  if(!main.isStyleLoaded?.()){
   if(!previewStyleWait){previewStyleWait=true;main.once("style.load",()=>{previewStyleWait=false;if(!sheet.hidden)void ensurePreviewMap();});}
   return;
@@ -54,7 +54,9 @@ async function ensurePreviewMap(){
     const image=main.hasImage(e.id)?main.getImage(e.id):null;
     if(image)previewMap.addImage(e.id,image,{pixelRatio:4});
    });
-   previewMap.on("load",()=>{previewMap.resize();updatePreviewLocation();});
+   previewMap.on("load",()=>{requestAnimationFrame(()=>{previewMap.resize();updatePreviewLocation();});});
+   const observer=new IntersectionObserver(entries=>{if(entries.some(entry=>entry.isIntersecting))requestAnimationFrame(()=>previewMap?.resize());},{threshold:0.01});
+   observer.observe(container);
    previewMap.on("error",e=>console.warn("Contribution preview map error",e.error||e));
   }catch(error){previewMap=null;console.warn("Map preview unavailable",error)}
   finally{previewLoading=null}
