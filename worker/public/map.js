@@ -958,8 +958,8 @@ document.addEventListener("keydown", (e) => {
   });
   // MapLibre supplies the actual distance labels and pixel widths for both units.
   // Render one shared horizontal rule, with an upward mile tick and downward km tick.
-  map.addControl(new maplibregl.ScaleControl({ maxWidth: 80, unit: "imperial" }), "bottom-right");
-  map.addControl(new maplibregl.ScaleControl({ maxWidth: 80, unit: "metric" }), "bottom-right");
+  map.addControl(new maplibregl.ScaleControl({ maxWidth: 68, unit: "imperial" }), "bottom-right");
+  map.addControl(new maplibregl.ScaleControl({ maxWidth: 68, unit: "metric" }), "bottom-right");
   const [mileSource, kmSource] = map.getContainer().querySelectorAll(".maplibregl-ctrl-scale");
   const scaleParent = mileSource?.parentElement;
   if (scaleParent && kmSource) {
