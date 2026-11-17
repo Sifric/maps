@@ -956,35 +956,64 @@ document.addEventListener("keydown", (e) => {
   map.on("error", (e) => {
     if (!mapOptions?.handleError(e)) showError(e.error);
   });
-  // MapLibre ScaleControl exposes onAdd(), not getContainer().
-  // Add both units independently so each is calculated from the actual map zoom.
+  // MapLibre supplies the actual distance labels and pixel widths for both units.
+  // Render one shared horizontal rule, with an upward mile tick and downward km tick.
   map.addControl(new maplibregl.ScaleControl({ maxWidth: 110, unit: "imperial" }), "bottom-right");
   map.addControl(new maplibregl.ScaleControl({ maxWidth: 110, unit: "metric" }), "bottom-right");
-  const scaleElements = [...map.getContainer().querySelectorAll(".maplibregl-ctrl-scale")];
-  // Combine MapLibre's two live-updating scales into one compact visual unit.
-  // Controls remain responsible for accurate distances as zoom/latitude change.
-  const scaleDock = document.createElement("div");
-  scaleDock.className = "dual-scale";
-  const scaleParent = scaleElements[0]?.parentElement;
-  if (scaleParent && scaleElements.length === 2) {
-    scaleParent.insertBefore(scaleDock, scaleElements[0]);
-    // The first control is imperial; the second is metric.
-    scaleDock.append(scaleElements[0], scaleElements[1]);
+  const [mileSource, kmSource] = map.getContainer().querySelectorAll(".maplibregl-ctrl-scale");
+  const scaleParent = mileSource?.parentElement;
+  if (scaleParent && kmSource) {
+    mileSource.classList.add("scale-measure-source");
+    kmSource.classList.add("scale-measure-source");
+    const scaleDock = document.createElement("div");
+    scaleDock.className = "dual-scale";
+    scaleDock.setAttribute("role", "img");
+    scaleDock.setAttribute("aria-label", "Map distance scale");
+    scaleDock.innerHTML = `
+      <span class="dual-scale-rule"></span>
+      <span class="dual-scale-mile-tick"></span>
+      <span class="dual-scale-km-tick"></span>
+      <span class="dual-scale-mile-label"></span>
+      <span class="dual-scale-km-label"></span>`;
+    scaleParent.insertBefore(scaleDock, mileSource);
+    const mileLabel = scaleDock.querySelector(".dual-scale-mile-label");
+    const kmLabel = scaleDock.querySelector(".dual-scale-km-label");
+    const updateScale = () => {
+      const mileWidth = mileSource.getBoundingClientRect().width;
+      const kmWidth = kmSource.getBoundingClientRect().width;
+      if (!mileWidth || !kmWidth) return;
+      const width = Math.max(mileWidth, kmWidth);
+      scaleDock.style.width = `${width}px`;
+      scaleDock.style.setProperty("--mile-left", `${width - mileWidth}px`);
+      scaleDock.style.setProperty("--km-left", `${width - kmWidth}px`);
+      mileLabel.textContent = mileSource.textContent;
+      kmLabel.textContent = kmSource.textContent;
+      scaleDock.setAttribute("aria-label", `${mileSource.textContent}, ${kmSource.textContent}`);
+    };
+    let framePending = false;
+    const scheduleScaleUpdate = () => {
+      if (framePending) return;
+      framePending = true;
+      requestAnimationFrame(() => {
+        framePending = false;
+        updateScale();
+      });
+    };
+    map.on("render", scheduleScaleUpdate);
+    map.on("moveend", scheduleScaleUpdate);
+    map.once("load", scheduleScaleUpdate);
+    let scaleHideTimer;
+    const revealScale = () => {
+      scaleDock.classList.remove("scale-idle");
+      clearTimeout(scaleHideTimer);
+      scaleHideTimer = setTimeout(() => scaleDock.classList.add("scale-idle"), 3000);
+      scheduleScaleUpdate();
+    };
+    for (const eventName of ["movestart", "move", "zoomstart", "zoom", "touchstart", "mousedown"]) {
+      map.on(eventName, revealScale);
+    }
+    revealScale();
   }
-  let scaleHideTimer;
-  const revealScale = () => {
-    for (const element of scaleElements) element.classList.remove("scale-idle");
-    clearTimeout(scaleHideTimer);
-    scaleHideTimer = setTimeout(() => {
-      for (const element of scaleElements) element.classList.add("scale-idle");
-    }, 3000);
-  };
-  // Keep both units visible while interacting, then fade them out together.
-  for (const eventName of ["movestart", "move", "zoomstart", "zoom", "touchstart", "mousedown"]) {
-    map.on(eventName, revealScale);
-  }
-  map.on("moveend", revealScale);
-  revealScale();
   // One-shot requests only: retain the location dot without background tracking.
   geolocateControl = new maplibregl.GeolocateControl({
     positionOptions: {
