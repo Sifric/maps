@@ -23,7 +23,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/maplibre-gl@6.16.0/dist/maplibre-gl.css"
     />
-    <link rel="stylesheet" href="/map.css?v=contribute-fab-12" />
+    <link rel="stylesheet" href="/map.css?v=contribution-sheet-13" />
     <script src="https://cdn.jsdelivr.net/npm/pmtiles@4.5.0/dist/pmtiles.js"></script>
   </head>
   <body>
@@ -177,10 +177,40 @@
       >
         <span id="location-icon" class="location-icon-pair" aria-hidden="true"></span>
       </button>
-      <a id="contribute-fab" href="/contribute/" aria-label="Contribute to Sifric Maps" title="Contribute to Sifric Maps">
+      <button id="contribute-fab" type="button" aria-controls="contribution-sheet" aria-expanded="false" aria-label="Contribute to Sifric Maps" title="Contribute to Sifric Maps">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
-      </a>
+      </button>
     </div>
+<div id="contribution-backdrop" class="contribution-backdrop" hidden></div>
+<section id="contribution-sheet" class="contribution-sheet" role="dialog" aria-modal="true" aria-labelledby="contribution-title" hidden>
+  <div class="contribution-handle" aria-hidden="true"></div>
+  <header class="contribution-header"><div><span class="contribution-kicker">SIFRIC MAPS · COMMUNITY</span><h2 id="contribution-title">Contribute to Maps</h2></div><button type="button" id="contribution-close" class="contribution-close" aria-label="Close contribution sheet"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button></header>
+  <div class="contribution-scroll">
+    <div class="contribution-choices" role="group" aria-label="Contribution type">
+      <button type="button" data-contribution-mode="add" aria-pressed="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg><span>Add place</span></button>
+      <button type="button" data-contribution-mode="edit" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m16 5 3 3M4 20l4.5-1 11-11a2 2 0 0 0-3-3l-11 11L4 20Z"/></svg><span>Suggest edit</span></button>
+      <button type="button" data-contribution-mode="report" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 22V4m0 1c4-3 8 3 12 0v12c-4 3-8-3-12 0"/></svg><span>Report issue</span></button>
+    </div>
+    <p class="contribution-explainer" id="contribution-explainer">Add a missing place to help keep the map useful and accurate.</p>
+    <form id="contribution-form-sheet">
+      <label for="contribution-name" id="contribution-name-label">Place name <span>*</span></label><input id="contribution-name" name="name" required maxlength="120" placeholder="Enter place name">
+      <label for="contribution-category">Category <span>*</span></label><select id="contribution-category" name="category" required><option value="">Choose a category</option><option value="food">Restaurant & food</option><option value="shopping">Shopping</option><option value="health">Health</option><option value="finance">Finance</option><option value="leisure">Things to do</option><option value="culture">Culture</option><option value="worship">Place of worship</option><option value="transport">Transport</option><option value="government">Government</option><option value="other">Other</option></select>
+      <label for="contribution-address">Address or coordinates <span>*</span></label><input id="contribution-address" name="address" required maxlength="400" placeholder="Address or latitude, longitude">
+      <div class="contribution-map-location"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><div><strong>Map location</strong><small>Use the map center to fill coordinates.</small></div><button type="button" id="contribution-use-center">Use center</button></div>
+      <div id="contribution-additional">
+        <label for="contribution-within">Located within <small>Optional</small></label><input id="contribution-within" name="within" maxlength="160" placeholder="Building or complex">
+        <h3>Hours</h3><label for="contribution-hours">Opening hours <small>Optional</small></label><input id="contribution-hours" name="hours" maxlength="160" placeholder="e.g. Mon–Sat, 9 AM–6 PM">
+        <h3>Contact</h3><label for="contribution-phone">Phone number <small>Optional</small></label><input id="contribution-phone" name="phone" type="tel" maxlength="40" placeholder="Phone number">
+        <label for="contribution-website">Website <small>Optional</small></label><input id="contribution-website" name="website" type="url" maxlength="300" placeholder="https://example.com">
+      </div>
+      <label for="contribution-details">Additional details <small>Optional</small></label><textarea id="contribution-details" name="details" rows="3" maxlength="1000" placeholder="What else should we know?"></textarea>
+      <p class="contribution-notice">Preview only. No changes are submitted or published yet.</p>
+      <div class="contribution-actions"><button type="button" id="contribution-cancel">Cancel</button><button type="submit">Preview draft</button></div>
+    </form>
+    <div id="contribution-preview" class="contribution-preview" hidden><h3>Draft preview</h3><dl id="contribution-preview-details"></dl><p>Submission is not available yet. Your draft has not been sent.</p><button type="button" id="contribution-back">Back to editing</button></div>
+  </div>
+</section>
+<script defer src="/contribution-sheet.js?v=1"></script>
     <div
       id="map-status"
       class="map-status"
