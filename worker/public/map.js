@@ -1272,7 +1272,8 @@ document.addEventListener("keydown", (e) => {
       timeout: 10000,
       maximumAge: 30000,
     },
-    trackUserLocation: true,\n    showUserHeading: true,
+    trackUserLocation: true,
+    showUserHeading: true,
     showUserLocation: true,
     showAccuracyCircle: true,
     fitBoundsOptions: { maxZoom: 15, duration: 1000 },
@@ -1281,7 +1282,9 @@ document.addEventListener("keydown", (e) => {
   map.on("rotate", () => {
     if (lastCompassHeading !== null) setLocationBeam(lastCompassHeading);
   });
-  geolocateControl.on("geolocate", ({ coords }) => {\n    if (lastCompassHeading !== null) setLocationBeam(lastCompassHeading);\n    else if (Number.isFinite(coords?.heading)) setLocationBeam(coords.heading);
+  geolocateControl.on("geolocate", ({ coords }) => {
+    if (lastCompassHeading !== null) setLocationBeam(lastCompassHeading);
+    else if (Number.isFinite(coords?.heading)) setLocationBeam(coords.heading);
     const button = $("locate");
     button.disabled = false;
     button.removeAttribute("aria-busy");
