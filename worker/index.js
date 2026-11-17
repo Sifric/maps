@@ -145,7 +145,7 @@ async function routeRequest(request, env) {
     // Only use the alternative public instance when no dedicated server was configured.
     if (!configured) {
       const fallback = new URL(FALLBACK_OSRM_ORIGINS[body.mode]);
-      fallback.pathname = fallback.pathname.replace(/\\/$/, "") + endpoint.pathname;
+      fallback.pathname = (fallback.pathname.endsWith("/") ? fallback.pathname.slice(0, -1) : fallback.pathname) + endpoint.pathname;
       fallback.search = endpoint.search;
       candidates.push(fallback);
     }
