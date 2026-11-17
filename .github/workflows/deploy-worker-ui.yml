@@ -26,6 +26,16 @@ jobs:
       - uses: actions/checkout@v4
       - name: Install Wrangler
         run: npm install -g wrangler
+      - name: Vendor map runtime libraries locally
+        run: |
+          set -euo pipefail
+          mkdir -p worker/public/vendor
+          npm install --no-save --no-audit --no-fund maplibre-gl@5 pmtiles@4
+          cp node_modules/maplibre-gl/dist/maplibre-gl.js worker/public/vendor/maplibre-gl.js
+          cp node_modules/maplibre-gl/dist/maplibre-gl.css worker/public/vendor/maplibre-gl.css
+          cp node_modules/pmtiles/dist/pmtiles.js worker/public/vendor/pmtiles.js
+          test -s worker/public/vendor/maplibre-gl.js
+          test -s worker/public/vendor/pmtiles.js
       - name: Prepare Worker style from source
         run: cp config/style/mazo-basemap.json worker/style.json
       - name: Validate map style and demo UI
@@ -34,7 +44,7 @@ jobs:
           test -s worker/public/index.html
           test -s worker/public/developers.html
           grep -q '"/dashboard"' worker/index.js
-          node --check worker/index.js
+          node --check worker/index.js\n          node --check worker/public/map.js
       - name: Verify Worker build without deploying
         working-directory: worker
         run: wrangler deploy --dry-run
@@ -49,7 +59,7 @@ jobs:
           WORKER_BASE: https://maps.sifric.workers.dev
         run: |
           set -euo pipefail
-          for path in / /dashboard /style.json; do
+          for path in / /dashboard /style.json /vendor/maplibre-gl.js /vendor/pmtiles.js /vendor/maplibre-gl.css; do
             for attempt in 1 2 3 4 5; do
               status="$(curl -L -sS -o /tmp/maps-response -w '%{http_code}' "${WORKER_BASE}${path}")" || status="000"
               if [ "$status" = "200" ]; then break; fi
