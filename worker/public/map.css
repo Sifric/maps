@@ -1608,3 +1608,11 @@ body.routing-open #categories {
     border-radius: 24px 24px 0 0;
   }
 }
+
+/* Search suggestions must overlay floating map controls while results are open. */
+.search-shell:has(#suggestions:not([hidden])) {
+  z-index: 20;
+}
+#layers.layers-fab {
+  z-index: 6;
+}
