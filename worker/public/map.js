@@ -498,11 +498,13 @@ function filterCategory(kind) {
 }
 function showDirections(row) {
   const c = panel("Drive");
+  c.classList.add("route-screen");
   c.classList.add("route-panel");
   document.body.classList.add("routing-open");
   routeCard?.remove();
   routeCard = element("section", undefined, "route-card");
   routeCard.setAttribute("aria-label", "Route locations");
+  routeCard.classList.add("route-screen-header");
 
   const makeField = (label, kind) => {
     const wrap = element("div", undefined, `route-field-wrap route-${kind}`);
@@ -522,8 +524,8 @@ function showDirections(row) {
     bindRouteSearch(input, suggestions);
     return { wrap, input, suggestions };
   };
-  const origin = makeField("Starting point", "origin");
-  const destination = makeField("Destination", "destination");
+  const origin = makeField("Your location", "origin");
+  const destination = makeField("Choose destination", "destination");
   if (row) {
     destination.input.value = row[1] || "";
     setRoutePointData(destination.input, Number(row[2]), Number(row[3]), row[1]);
@@ -629,7 +631,11 @@ function showDirections(row) {
     pickerInput.focus();
   };
   pickerTop.append(pickerBack, pickerInput);
-  picker.append(pickerTop, pickerMap, pickerList, pickerRecentTitle, pickerRecent);
+  const pickerShortcuts = element("nav", undefined, "route-picker-shortcuts");
+  for (const [glyph,label] of [["home","Home"],["shop","Work"],["more_horizontal","More"]]) {
+    const button=element("button",undefined,"route-picker-shortcut");button.type="button";button.append(icon(glyph),element("span",label));button.onclick=()=>pickerInput.focus();pickerShortcuts.append(button);
+  }
+  picker.append(pickerTop, pickerMap, pickerShortcuts, pickerList, pickerRecentTitle, pickerRecent);
   document.body.append(picker);
   for (const input of [origin.input, destination.input]) {
     input.readOnly = true;
@@ -709,7 +715,7 @@ function showDirections(row) {
         item.classList.toggle("active", selected);
         item.setAttribute("aria-pressed", String(selected));
       }
-      c.querySelector("h1").textContent = label;
+      const heading = c.querySelector("h1"); if (heading) heading.textContent = label;
       if (routeRequested) calculate();
     };
     tabs.append(tab);
@@ -721,7 +727,7 @@ function showDirections(row) {
   fixMapLink.target = "_blank";
   fixMapLink.rel = "noopener noreferrer";
   routeNote.append(fixMapLink);
-  const recentHeading = element("h2", "Recent places", "route-recent-title");
+  const recentHeading = element("h2", "Recent", "route-recent-title");
   const recentList = element("div", undefined, "route-recent-list");
   const recentRows = readStored("lk-recents").slice(0, 8);
   if (!recentRows.length) recentList.append(element("p", "Search for a place or enter coordinates to get started."));
@@ -736,7 +742,14 @@ function showDirections(row) {
     };
     recentList.append(item);
   }
-  c.append(tabs, recentHeading, recentList, summary, routeNote, steps);
+  const shortcuts = element("nav", undefined, "route-shortcuts");
+  for (const [glyph,label] of [["home","Home"],["shop","Work"],["more_horizontal","More"]]) {
+    const button = element("button",undefined,"route-shortcut");button.type="button";button.append(icon(glyph),element("span",label));
+    button.onclick=()=>openPicker(destination.input);shortcuts.append(button);
+  }
+  c.append(shortcuts, recentHeading, recentList, summary, routeNote, steps);
+  routeCard.append(tabs);
+  c.querySelector("h1")?.remove();
   const calculate = () => {
     routeRequested = true;
     recentHeading.hidden = true;
