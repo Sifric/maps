@@ -106,6 +106,24 @@ function stopPicking(confirm){if(!picking)return;closeTypes();const map=mapInsta
 $("contribution-use-center").addEventListener("click",startPicking);
 $("picker-cancel").addEventListener("click",()=>stopPicking(false));
 $("picker-confirm").addEventListener("click",()=>stopPicking(true));
+const pickerLocationButton=$("picker-live-location");
+pickerLocationButton.addEventListener("click",()=>{
+ if(!picking||pickerLocationButton.disabled)return;
+ if(!navigator.geolocation){alert("Location is not supported by this browser.");return;}
+ pickerLocationButton.disabled=true;
+ pickerLocationButton.setAttribute("aria-busy","true");
+ navigator.geolocation.getCurrentPosition(position=>{
+  pickerLocationButton.disabled=false;pickerLocationButton.removeAttribute("aria-busy");
+  if(!picking)return;
+  const map=mapInstance();
+  map?.flyTo({center:[position.coords.longitude,position.coords.latitude],zoom:Math.max(16,map.getZoom()),essential:true});
+ },error=>{
+  pickerLocationButton.disabled=false;pickerLocationButton.removeAttribute("aria-busy");
+  if(!picking)return;
+  const message=error.code===1?"Location permission was denied. Enable location access in your browser settings.":error.code===3?"Location request timed out. Please try again.":"Unable to get your current location.";
+  alert(message);
+ },{enableHighAccuracy:true,timeout:12000,maximumAge:30000});
+});
 document.addEventListener("keydown",e=>{if(picking&&e.key==="Escape"){e.preventDefault();stopPicking(false)}});
 
 const weekDays=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
