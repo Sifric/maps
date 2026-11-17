@@ -24,7 +24,7 @@
       href="https://cdn.jsdelivr.net/npm/maplibre-gl@6.16.0/dist/maplibre-gl.css"
     />
     <link rel="stylesheet" href="/map.css?v=contribution-sheet-13" />
-    <link rel="stylesheet" href="/contribution-sheet.css?v=1" />
+    <link rel="stylesheet" href="/contribution-sheet.css?v=2" />
     <script src="https://cdn.jsdelivr.net/npm/pmtiles@4.5.0/dist/pmtiles.js"></script>
   </head>
   <body>
@@ -182,6 +182,11 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
       </button>
     </div>
+<section id="contribution-picker" class="contribution-picker" aria-label="Choose place location" hidden>
+  <div class="picker-crosshair" aria-hidden="true"><svg viewBox="0 0 24 36" width="40" height="60" fill="none"><path d="M12 2C6 2 2 6.5 2 12c0 8 10 19 10 19s10-11 10-19C22 6.5 18 2 12 2Z" fill="#315ce8" stroke="white" stroke-width="1.5"/><circle cx="12" cy="12" r="4" fill="white"/></svg></div>
+  <div class="picker-top"><button type="button" id="picker-cancel" aria-label="Cancel location selection">←</button><div><strong>Choose place location</strong><small>Move the map to position the pin</small></div></div>
+  <div class="picker-bottom"><output id="picker-coordinates">Move the map to select a location</output><button type="button" id="picker-confirm">Confirm location</button></div>
+</section>
 <div id="contribution-backdrop" class="contribution-backdrop" hidden></div>
 <section id="contribution-sheet" class="contribution-sheet" role="dialog" aria-modal="true" aria-labelledby="contribution-title" hidden>
   <div class="contribution-handle" aria-hidden="true"></div>
@@ -197,7 +202,7 @@
       <label for="contribution-name" id="contribution-name-label">Place name <span>*</span></label><input id="contribution-name" name="name" required maxlength="120" placeholder="Enter place name">
       <label for="contribution-category">Category <span>*</span></label><select id="contribution-category" name="category" required><option value="">Choose a category</option><option value="food">Restaurant & food</option><option value="shopping">Shopping</option><option value="health">Health</option><option value="finance">Finance</option><option value="leisure">Things to do</option><option value="culture">Culture</option><option value="worship">Place of worship</option><option value="transport">Transport</option><option value="government">Government</option><option value="other">Other</option></select>
       <label for="contribution-address">Address or coordinates <span>*</span></label><input id="contribution-address" name="address" required maxlength="400" placeholder="Address or latitude, longitude">
-      <div class="contribution-map-location"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><div><strong>Map location</strong><small>Use the map center to fill coordinates.</small></div><button type="button" id="contribution-use-center">Use center</button></div>
+      <div class="contribution-map-location"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><div><strong>Map location</strong><small>Use the map center to fill coordinates.</small></div><button type="button" id="contribution-use-center">Pick on map</button></div>
       <div id="contribution-additional">
         <label for="contribution-within">Located within <small>Optional</small></label><input id="contribution-within" name="within" maxlength="160" placeholder="Building or complex">
         <h3>Hours</h3><label for="contribution-hours">Opening hours <small>Optional</small></label><input id="contribution-hours" name="hours" maxlength="160" placeholder="e.g. Mon–Sat, 9 AM–6 PM">
@@ -211,7 +216,7 @@
     <div id="contribution-preview" class="contribution-preview" hidden><h3>Draft preview</h3><dl id="contribution-preview-details"></dl><p>Submission is not available yet. Your draft has not been sent.</p><button type="button" id="contribution-back">Back to editing</button></div>
   </div>
 </section>
-<script defer src="/contribution-sheet.js?v=1"></script>
+<script defer src="/contribution-sheet.js?v=2"></script>
     <div
       id="map-status"
       class="map-status"
