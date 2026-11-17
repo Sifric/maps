@@ -44,6 +44,33 @@ jobs:
           done
           test "$(cat osrm.pid)" -gt 1
           python3 scripts/benchmark-osrm.py
+      - name: Test OSRM under Workers-equivalent 128 MiB container memory cap
+        if: always()
+        run: |
+          set -uo pipefail
+          docker rm -f osrm-sri-lanka-bench >/dev/null 2>&1 || true
+          docker run -d --name osrm-sri-lanka-128m --network host \
+            --memory 128m --memory-swap 128m --memory-swappiness 0 \
+            -v /tmp/osrm-sri-lanka:/data:ro osrm/osrm-backend:latest \
+            osrm-routed --algorithm mld --mmap --threads 2 --port 5000 /data/sri-lanka.osrm >128m-container-id.txt
+          status=0
+          for attempt in $(seq 1 60); do
+            if ! test "$(docker inspect -f '{{.State.Running}}' osrm-sri-lanka-128m)" = true; then status=1; break; fi
+            if curl -fsS 'http://127.0.0.1:5000/nearest/v1/driving/81.7245,7.6803' >/dev/null 2>&1; then break; fi
+            sleep 1
+          done
+          if [ "$status" -eq 0 ] && curl -fsS 'http://127.0.0.1:5000/nearest/v1/driving/81.7245,7.6803' >/dev/null 2>&1; then
+            docker inspect -f '{{.State.Pid}}' osrm-sri-lanka-128m > osrm.pid
+            timeout 180 python3 scripts/benchmark-osrm.py > 128m-benchmark.log 2>&1 || status=$?
+          else
+            echo "OSRM did not start within the 128 MiB cap" > 128m-benchmark.log
+          fi
+          docker stats --no-stream --format '{{.MemUsage}}' osrm-sri-lanka-128m > 128m-docker-memory.txt 2>&1 || true
+          docker inspect -f 'ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}} Running={{.State.Running}}' osrm-sri-lanka-128m > 128m-container-status.txt
+          docker logs osrm-sri-lanka-128m >128m-server.log 2>&1 || true
+          echo "Benchmark exit status: $status" >>128m-container-status.txt
+          docker rm -f osrm-sri-lanka-128m >/dev/null 2>&1 || true
+          echo "128 MiB test completed; see uploaded logs for OOM and request results"
       - name: Upload logs and benchmark results
         if: always()
         uses: actions/upload-artifact@v4
@@ -53,4 +80,5 @@ jobs:
             *-memory.txt
             osrm-server.log
             osrm-results.json
+            128m-*
           if-no-files-found: warn
