@@ -1563,3 +1563,48 @@ body.routing-open #categories {
   stroke: currentColor;
   stroke-width: 1.8;
 }
+
+/* Layers launcher directly below the category pills. */
+#layers.layers-fab {
+  top: 168px;
+  right: 16px;
+}
+/* Layers & appearance is a viewport-anchored bottom sheet, not a popover. */
+#layer-panel.layer-panel {
+  position: fixed;
+  z-index: 30;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  min-width: 0;
+  max-width: none;
+  box-sizing: border-box;
+  max-height: min(82dvh, 780px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 16px 20px calc(20px + env(safe-area-inset-bottom));
+  border-radius: 24px 24px 0 0;
+  background: var(--ui-bg, #fff);
+  color: var(--ui-text, #202124);
+  box-shadow: 0 -8px 36px #0005;
+}
+#layer-panel.layer-panel::before {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 4px;
+  margin: 0 auto 12px;
+  border-radius: 4px;
+  background: var(--ui-muted, #9aa0a6);
+}
+@media (min-width: 700px) {
+  #layer-panel.layer-panel {
+    left: 50%;
+    right: auto;
+    width: min(100%, 540px);
+    transform: translateX(-50%);
+    border-radius: 24px 24px 0 0;
+  }
+}
