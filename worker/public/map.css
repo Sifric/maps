@@ -1725,14 +1725,3 @@ body.routing-open #categories {
 .map-controls #contribute-fab:focus-visible{outline:2px solid #315ce8;outline-offset:3px}
 html[data-theme="dark"] .map-controls #contribute-fab,body.dark .map-controls #contribute-fab{background:#202a35;color:#f3f4f6}
 html[data-theme="dark"] .map-controls #contribute-fab:hover,body.dark .map-controls #contribute-fab:hover{background:#303e4c}
-
-/* Future live navigation entry point in the directions bottom sheet. */
-.route-navigation-actions { display:flex; flex-direction:column; gap:7px; margin:14px 0 12px; }
-.route-start-navigation {
-  display:flex; align-items:center; justify-content:center; gap:9px;
-  width:100%; min-height:48px; border:0; border-radius:14px;
-  background:#1a73e8; color:#fff; font:600 15px "Map Sans",Arial,sans-serif;
-}
-.route-start-navigation .icon { width:20px; height:20px; }
-.route-start-navigation:disabled { opacity:.56; cursor:not-allowed; }
-.route-navigation-hint { margin:0; text-align:center; font-size:12px; color:var(--ui-muted,#6b7280); }
