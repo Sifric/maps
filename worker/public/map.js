@@ -1046,44 +1046,61 @@ async function handleLocationFailure(error) {
   updateLocationIcon();
   status("Chrome could not access your location. Check device Location and site permission, then try again.");
 }
+// Start continuous high-accuracy positioning on demand; no background tracking before consent.
+let orientationListening = false;
+let lastCompassHeading = null;
+function setLocationBeam(heading) {
+  if (!Number.isFinite(heading)) return;
+  lastCompassHeading = ((heading % 360) + 360) % 360;
+  const marker = document.querySelector(".maplibregl-user-location-dot");
+  if (!marker) return;
+  marker.style.setProperty("--sifric-heading", `${lastCompassHeading - (map?.getBearing() || 0)}deg`);
+  marker.classList.add("sifric-heading-active");
+}
+function handleDeviceOrientation(event) {
+  // Android Chrome: absolute alpha is measured clockwise from device north reference.
+  // webkitCompassHeading is used on browsers that expose a calibrated compass.
+  const heading = Number.isFinite(event.webkitCompassHeading)
+    ? event.webkitCompassHeading
+    : event.absolute && Number.isFinite(event.alpha)
+      ? (360 - event.alpha) % 360 : null;
+  if (heading !== null) setLocationBeam(heading);
+}
+async function enableCompass() {
+  if (orientationListening || !("DeviceOrientationEvent" in window)) return;
+  try {
+    if (typeof DeviceOrientationEvent.requestPermission === "function") {
+      if (await DeviceOrientationEvent.requestPermission() !== "granted") {
+        status("Compass permission unavailable; location tracking still works.");
+        return;
+      }
+    }
+    window.addEventListener("deviceorientationabsolute", handleDeviceOrientation, { passive: true });
+    window.addEventListener("deviceorientation", handleDeviceOrientation, { passive: true });
+    orientationListening = true;
+  } catch (error) {
+    console.warn("Compass unavailable", error);
+    status("Compass unavailable on this device or browser.");
+  }
+}
 $("locate").onclick = () => {
-  if (!navigator.geolocation) {
-    locationDeviceUnavailable = true;
-    updateLocationIcon();
-    status("Location is not supported by this browser.");
+  if (!navigator.geolocation || !window.isSecureContext) {
+    status("Live location requires device GPS and HTTPS.");
     return;
   }
-  if (!window.isSecureContext) {
-    status("Location requires HTTPS. Open the secure Sifric Maps website.");
-    return;
-  }
-  const button = $("locate");
   if (locationPermission === "denied") {
-    status("Location is blocked. Allow Location in your browser's site settings, then try again.");
+    status("Allow Location in your browser site settings.");
     return;
   }
-  button.disabled = true;
-  button.setAttribute("aria-busy", "true");
-  // A direct user-initiated request lets the browser display its native permission prompt.
-  navigator.geolocation.getCurrentPosition(
-    ({ coords }) => {
-      button.disabled = false;
-      button.removeAttribute("aria-busy");
-      locationPermission = "granted";
-      locationDeviceUnavailable = false;
-      updateLocationIcon();
-      map?.flyTo({ center: [coords.longitude, coords.latitude], zoom: Math.max(map.getZoom(), 15) });
-      // Preserve MapLibre's existing location marker and accuracy circle.
-      if (geolocateControl) geolocateControl.trigger();
-    },
-    (error) => {
-      button.disabled = false;
-      button.removeAttribute("aria-busy");
-      void handleLocationFailure(error);
-    },
-    { enableHighAccuracy: true, timeout: 12000, maximumAge: 30000 },
-  );
+  if (!geolocateControl) {
+    status("Map location control is not ready yet.");
+    return;
+  }
+  // Request orientation from the user gesture where supported.
+  void enableCompass();
+  geolocateControl.trigger();
 };
+
 $("menu").onclick = () => {
   const c = panel("Sifric Maps");
   const items = [
@@ -1248,20 +1265,23 @@ document.addEventListener("keydown", (e) => {
     }
     revealScale();
   }
-  // One-shot requests only: retain the location dot without background tracking.
+  // High-accuracy location tracking starts only when the user taps My Location.
   geolocateControl = new maplibregl.GeolocateControl({
     positionOptions: {
       enableHighAccuracy: true,
       timeout: 10000,
       maximumAge: 30000,
     },
-    trackUserLocation: false,
+    trackUserLocation: true,\n    showUserHeading: true,
     showUserLocation: true,
     showAccuracyCircle: true,
     fitBoundsOptions: { maxZoom: 15, duration: 1000 },
   });
   map.addControl(geolocateControl, "top-right");
-  geolocateControl.on("geolocate", () => {
+  map.on("rotate", () => {
+    if (lastCompassHeading !== null) setLocationBeam(lastCompassHeading);
+  });
+  geolocateControl.on("geolocate", ({ coords }) => {\n    if (lastCompassHeading !== null) setLocationBeam(lastCompassHeading);\n    else if (Number.isFinite(coords?.heading)) setLocationBeam(coords.heading);
     const button = $("locate");
     button.disabled = false;
     button.removeAttribute("aria-busy");
