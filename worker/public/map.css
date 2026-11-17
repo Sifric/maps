@@ -1637,3 +1637,21 @@ body.routing-open #categories {
 #locate .location-state-dark { display: none; }
 :root[data-theme="dark"] #locate .location-state-light { display: none; }
 :root[data-theme="dark"] #locate .location-state-dark { display: block; }
+
+/* Larger, single current-location control. */
+.map-controls #locate {
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  min-height: 56px;
+  border-radius: 50%;
+  padding: 0;
+}
+#locate .location-icon-pair {
+  width: 36px;
+  height: 36px;
+}
+#locate .location-state-svg {
+  width: 36px;
+  height: 36px;
+}
