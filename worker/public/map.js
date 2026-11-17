@@ -100,6 +100,28 @@ function dotImage(kind) {
   c.fill();
   return { width: 128, height: 144, data: c.getImageData(0, 0, 128, 144).data };
 }
+function roadDirectionImage() {
+  const canvas = document.createElement("canvas");
+  canvas.width = 64;
+  canvas.height = 64;
+  const ctx = canvas.getContext("2d");
+  // Neutral white/charcoal arrow works on existing light and dark road paint.
+  ctx.lineCap = "round";
+  ctx.lineJoin = "round";
+  ctx.strokeStyle = "rgba(0,0,0,0.55)";
+  ctx.lineWidth = 11;
+  ctx.beginPath();
+  ctx.moveTo(32, 48);
+  ctx.lineTo(32, 16);
+  ctx.moveTo(20, 29);
+  ctx.lineTo(32, 16);
+  ctx.lineTo(44, 29);
+  ctx.stroke();
+  ctx.strokeStyle = "#f4f6f8";
+  ctx.lineWidth = 6;
+  ctx.stroke();
+  return { width: 64, height: 64, data: ctx.getImageData(0, 0, 64, 64).data };
+}
 function markerImage(kind) {
   const canvas = document.createElement("canvas");
   // 4× bitmap density keeps the circular outline smooth on high-DPI screens.
@@ -1474,6 +1496,8 @@ document.addEventListener("keydown", (e) => {
   });
   window.map = map;
   map.on("styleimagemissing", (e) => {
+    if (e.id === "sifric-oneway-arrow" && !map.hasImage(e.id))
+      map.addImage(e.id, roadDirectionImage(), { pixelRatio: 2 });
     if (e.id.startsWith("lk-pin-") && !map.hasImage(e.id))
       map.addImage(e.id, markerImage(e.id.slice(7)), { pixelRatio: 4 });
     if (e.id.startsWith("lk-dot-") && !map.hasImage(e.id))
