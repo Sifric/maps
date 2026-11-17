@@ -291,3 +291,8 @@ html:not([data-theme=dark]) .contribution-option-icon{background:#e9efff;color:#
 html:not([data-theme=dark]) .contribution-option-copy small,html:not([data-theme=dark]) .contribution-landing-intro,html:not([data-theme=dark]) .contribution-landing-note{color:#697685}
 html:not([data-theme=dark]) .contribution-special-fields input,html:not([data-theme=dark]) .contribution-special-fields select,html:not([data-theme=dark]) .contribution-special-fields textarea{border-color:#dce2e9}
 html:not([data-theme=dark]) .contribution-special-fields select option{background:#fff;color:#1f2937}
+
+/* Compact option-only entry sheet, taller editor sheet after selection */
+.contribution-sheet:has(.contribution-landing:not([hidden])){height:auto;max-height:min(88dvh,920px)}
+.contribution-sheet:has(.contribution-landing:not([hidden])) .contribution-scroll{overflow-y:auto}
+.contribution-sheet:has(.contribution-editor:not([hidden])){height:min(88dvh,920px)}
