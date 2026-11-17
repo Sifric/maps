@@ -1709,17 +1709,18 @@ body.routing-open #categories {
 .additional-options input[type="checkbox"]:disabled + .custom-check { opacity: .45; }
 @media (prefers-reduced-motion: reduce) { .additional-options .check-core { transition: none; } }
 
-/* Distance labels sit beside, never on top of, the scale rule. */
+/* Compact distance scale beside the location button, independent of attribution. */
 #map > .dual-scale {
-  right: 150px;
+  right: 108px;
+  bottom: 108px;
   box-sizing: content-box;
   overflow: visible;
 }
 #map > .dual-scale .dual-scale-mile-label,
 #map > .dual-scale .dual-scale-km-label {
-  left: calc(100% + 10px);
+  left: calc(100% + 5px);
   right: auto;
-  min-width: 44px;
+  min-width: 0;
   white-space: nowrap;
   text-align: left;
   line-height: 12px;
