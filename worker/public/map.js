@@ -975,27 +975,54 @@ async function initLocationPermission() {
   } catch { updateLocationIcon(); }
 }
 initLocationPermission();
+function locationErrorMessage(error) {
+  if (error?.code === 1) {
+    return "Location access is blocked. Open your browser's site settings, allow Location for this site, then try again.";
+  }
+  if (error?.code === 2) return "Your location is unavailable. Turn on device Location and try again.";
+  if (error?.code === 3) return "Location timed out. Check your device Location setting and try again.";
+  return "Could not get your location. Please try again.";
+}
 $("locate").onclick = () => {
   if (!navigator.geolocation) {
     locationDeviceUnavailable = true;
     updateLocationIcon();
-    status("Geolocation is unavailable");
+    status("Location is not supported by this browser.");
     return;
   }
-  if (!geolocateControl) {
-    status("The map is still loading. Try again in a moment.");
+  if (!window.isSecureContext) {
+    status("Location requires HTTPS. Open the secure Sifric Maps website.");
     return;
   }
-  locationDeviceUnavailable = false;
-  updateLocationIcon();
   const button = $("locate");
+  if (locationPermission === "denied") {
+    status("Location is blocked. Allow Location in your browser's site settings, then try again.");
+    return;
+  }
   button.disabled = true;
   button.setAttribute("aria-busy", "true");
-  if (!geolocateControl.trigger()) {
-    button.disabled = false;
-    button.removeAttribute("aria-busy");
-    status("Location is unavailable. Check your browser location permission.");
-  }
+  // A direct user-initiated request lets the browser display its native permission prompt.
+  navigator.geolocation.getCurrentPosition(
+    ({ coords }) => {
+      button.disabled = false;
+      button.removeAttribute("aria-busy");
+      locationPermission = "granted";
+      locationDeviceUnavailable = false;
+      updateLocationIcon();
+      map?.flyTo({ center: [coords.longitude, coords.latitude], zoom: Math.max(map.getZoom(), 15) });
+      // Preserve MapLibre's existing location marker and accuracy circle.
+      if (geolocateControl) geolocateControl.trigger();
+    },
+    (error) => {
+      button.disabled = false;
+      button.removeAttribute("aria-busy");
+      if (error.code === 1) locationPermission = "denied";
+      else if (error.code === 2 || error.code === 3) locationDeviceUnavailable = true;
+      updateLocationIcon();
+      status(locationErrorMessage(error));
+    },
+    { enableHighAccuracy: true, timeout: 12000, maximumAge: 30000 },
+  );
 };
 $("menu").onclick = () => {
   const c = panel("Sifric Maps");
@@ -1190,7 +1217,7 @@ document.addEventListener("keydown", (e) => {
     updateLocationIcon();
     $("locate").disabled = false;
     $("locate").removeAttribute("aria-busy");
-    status("Location permission was denied or the location is unavailable");
+    status(locationErrorMessage(error));
   });
   for (const layer of ["mazo-places-icon", "mazo-places-dot"]) {
     map.on("click", layer, (e) => {
