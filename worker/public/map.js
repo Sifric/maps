@@ -569,6 +569,12 @@ function showDirections(row) {
   go.setAttribute("aria-label", "Find route");
   go.title = "Find route";
   go.prepend(icon("directions"));
+  const back = element("button", undefined, "route-back");
+  back.type = "button";
+  back.setAttribute("aria-label", "Close directions");
+  back.append(icon("arrow_left"));
+  back.onclick = closePanel;
+  routeCard.prepend(back);
   routeCard.append(routeFields, useLocation, go);
   document.body.append(routeCard);
 
@@ -607,9 +613,26 @@ function showDirections(row) {
   fixMapLink.target = "_blank";
   fixMapLink.rel = "noopener noreferrer";
   routeNote.append(fixMapLink);
-  c.append(tabs, summary, routeNote, steps);
+  const recentHeading = element("h2", "Recent places", "route-recent-title");
+  const recentList = element("div", undefined, "route-recent-list");
+  const recentRows = readStored("lk-recents").slice(0, 8);
+  if (!recentRows.length) recentList.append(element("p", "Search for a place or enter coordinates to get started."));
+  for (const recent of recentRows) {
+    const item = element("button", undefined, "route-recent-item");
+    item.type = "button";
+    item.append(icon("history"), element("span", recent[1] || "Saved location"));
+    item.onclick = () => {
+      destination.input.value = recent[1] || "";
+      setRoutePointData(destination.input, Number(recent[2]), Number(recent[3]), recent[1]);
+      destination.input.focus();
+    };
+    recentList.append(item);
+  }
+  c.append(tabs, recentHeading, recentList, summary, routeNote, steps);
   const calculate = () => {
     routeRequested = true;
+    recentHeading.hidden = true;
+    recentList.hidden = true;
     findRoute(origin.input.value, destination.input.value, row, activeMode, go, summary, steps, origin.input, destination.input, tabs);
   };
   go.onclick = calculate;
