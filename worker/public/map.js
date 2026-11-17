@@ -939,8 +939,6 @@ $("categories")
   .querySelectorAll("[data-kind]")
   .forEach((b) => (b.onclick = () => filterCategory(b.dataset.kind)));
 $("reset-category").onclick = () => filterCategory(category);
-$("compass").onclick = () =>
-  map.easeTo({ bearing: 0, pitch: 0, duration: 400 });
 const locationSvgShapes = {
   off: `<defs><mask id="loc-gap-THEME" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><rect width="64" height="64" fill="#fff"/><line x1="9" y1="9" x2="55" y2="55" stroke="#000" stroke-width="11" stroke-linecap="round"/></mask></defs><g stroke="STROKE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><g mask="url(#loc-gap-THEME)"><path d="M32 57C32 57 13 40 13 26a19 19 0 0 1 38 0c0 14-19 31-19 31z"/><circle cx="32" cy="26" r="6"/></g><line x1="9" y1="9" x2="55" y2="55"/></g>`,
   on: `<g stroke="STROKE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M32 57C32 57 13 40 13 26a19 19 0 0 1 38 0c0 14-19 31-19 31z"/></g><circle fill="STROKE" cx="32" cy="26" r="7"/>`,
