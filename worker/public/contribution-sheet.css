@@ -299,3 +299,16 @@ html:not([data-theme=dark]) .contribution-special-fields select option{backgroun
 
 /* Hidden states must override editor and form display rules */
 #contribution-form-sheet[hidden],#contribution-preview[hidden],#contribution-special-fields[hidden],#contribution-landing[hidden],#contribution-editor[hidden]{display:none!important}
+
+/* Keep contribution text inside its own scroll area on narrow screens. */
+.contribution-sheet{min-height:0;box-sizing:border-box}
+.contribution-sheet .contribution-header{position:relative;z-index:2;background:inherit;min-width:0}
+.contribution-sheet .contribution-header>div{min-width:0;flex:1}
+.contribution-sheet .contribution-header h2{overflow-wrap:break-word;line-height:1.2}
+.contribution-sheet .contribution-scroll{flex:1 1 auto;min-height:0;min-width:0;overflow-y:auto;overflow-x:hidden;box-sizing:border-box;overscroll-behavior:contain}
+.contribution-sheet .contribution-landing-intro{display:block;position:static;max-width:100%;white-space:normal;overflow-wrap:break-word;line-height:1.55;margin:2px 0 18px}
+.contribution-sheet .contribution-landing-option{min-width:0;box-sizing:border-box}
+.contribution-sheet .contribution-option-copy{min-width:0;overflow-wrap:break-word;white-space:normal}
+.contribution-sheet .contribution-option-copy strong,.contribution-sheet .contribution-option-copy small{display:block;max-width:100%;white-space:normal;overflow-wrap:break-word}
+.contribution-sheet .contribution-landing-note{overflow-wrap:break-word;white-space:normal}
+@media(max-width:600px){.contribution-sheet:has(.contribution-landing:not([hidden])){height:min(83dvh,920px);max-height:calc(100dvh - 18px)}.contribution-sheet .contribution-header{padding-bottom:18px}.contribution-sheet .contribution-scroll{padding-top:18px}}
