@@ -320,7 +320,7 @@ function showPlace(row, fly = true) {
   selected = row;
   saveRecent(row);
   $("search").value = row[1];
-  $("clear-search").hidden = false;
+  syncSearchAction();
   const c = panel(row[1]);
   c.append(
     element("p", row[5] || categoryNames[row[4]] || "Place", "detail-kind"),
@@ -428,7 +428,7 @@ function resultRow(row) {
 }
 async function searchPlaces() {
   const q = $("search").value.trim().toLocaleLowerCase();
-  $("clear-search").hidden = !q;
+  syncSearchAction();
   const box = $("suggestions");
   box.replaceChildren();
   if (q.length < 2) {
@@ -791,7 +791,17 @@ async function findRoute(originText, destinationText, destinationRow, mode, butt
     button.removeAttribute("aria-busy");
   }
 }
+function syncSearchAction() {
+  const hasText = $("search").value.length > 0;
+  const action = $("search-action");
+  action.type = hasText ? "button" : "submit";
+  action.setAttribute("aria-label", hasText ? "Clear search" : "Search");
+  action.setAttribute("title", hasText ? "Clear search" : "Search");
+  action.replaceChildren(icon(hasText ? "close" : "search"));
+}
+syncSearchAction();
 $("search").addEventListener("input", () => {
+  syncSearchAction();
   clearTimeout(searchTimer);
   searchTimer = setTimeout(searchPlaces, 150);
 });
@@ -823,10 +833,14 @@ $("search-form").onsubmit = (e) => {
   if (first) first.click();
   else searchPlaces();
 };
-$("clear-search").onclick = () => {
+$("search-action").onclick = (event) => {
+  if (!$("search").value.length) return;
+  event.preventDefault();
   $("search").value = "";
-  $("clear-search").hidden = true;
+  syncSearchAction();
   $("suggestions").hidden = true;
+  $("suggestions").replaceChildren();
+  clearTimeout(searchTimer);
   closePanel();
   $("search").focus();
 };
