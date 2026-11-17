@@ -43,6 +43,7 @@ async function ensurePreviewMap(){
    const lib=await import("https://cdn.jsdelivr.net/npm/maplibre-gl@6.16.0/dist/maplibre-gl.mjs");
    if(sheet.hidden)return;
    const style=main.getStyle();
+   for(const layer of style.layers||[]){if(/^mazo-places-(icon|dot|pin|label|subtitle)$/.test(layer.id)){layer.layout={...(layer.layout||{}),visibility:"visible"};}}
    previewMap=new lib.Map({
     container,style,center:previewCenter(),zoom:PREVIEW_ZOOM,
     interactive:false,attributionControl:false,renderWorldCopies:false,
