@@ -105,20 +105,20 @@ function roadDirectionImage() {
   canvas.width = 64;
   canvas.height = 64;
   const ctx = canvas.getContext("2d");
-  // Neutral white/charcoal arrow works on existing light and dark road paint.
+  // Muted grey arrow with a subtle darker outline for both map themes.
   ctx.lineCap = "round";
   ctx.lineJoin = "round";
-  ctx.strokeStyle = "rgba(0,0,0,0.55)";
-  ctx.lineWidth = 11;
   ctx.beginPath();
-  ctx.moveTo(32, 48);
-  ctx.lineTo(32, 16);
-  ctx.moveTo(20, 29);
-  ctx.lineTo(32, 16);
-  ctx.lineTo(44, 29);
+  ctx.moveTo(32, 47);
+  ctx.lineTo(32, 17);
+  ctx.moveTo(21, 29);
+  ctx.lineTo(32, 17);
+  ctx.lineTo(43, 29);
+  ctx.strokeStyle = "rgba(31, 41, 55, 0.6)";
+  ctx.lineWidth = 9;
   ctx.stroke();
-  ctx.strokeStyle = "#f4f6f8";
-  ctx.lineWidth = 6;
+  ctx.strokeStyle = "#cbd2da";
+  ctx.lineWidth = 5.5;
   ctx.stroke();
   return { width: 64, height: 64, data: ctx.getImageData(0, 0, 64, 64).data };
 }
