@@ -1,0 +1,16 @@
+import assert from "node:assert/strict";
+import { routeAStar } from "../worker/astar.js";
+const points={"1":[81.70,7.70],"2":[81.701,7.70],"3":[81.702,7.70]};
+const shard={version:2,nodes:points,edges:[["1","2",111,7],["2","1",111,7],["2","3",111,7],["3","2",111,7]]};
+const files=new Map([["routing/astar-v2/manifest.json",{version:2,shards:[{id:"77_817"}]}],["routing/astar-v2/77_817.json",shard]]);
+const env={TILES_BUCKET:{async get(k){const data=files.get(k);return data?{size:JSON.stringify(data).length,async json(){return data}}:null}}};
+const req={mode:"drive",origin:points["1"],destination:points["3"]};
+const result=await routeAStar(req,env);
+assert.equal(result.engine,"sifric-astar",JSON.stringify(result));
+assert.equal(result.geometry.coordinates.length,3);
+assert.equal(result.distance,222);
+const reverse=await routeAStar({...req,origin:points["3"],destination:points["1"]},env);
+assert.equal(reverse.engine,"sifric-astar");
+const absent=await routeAStar(req,{TILES_BUCKET:{async get(){return null}}});
+assert.equal(absent.status,503);
+console.log("A-star fixture checks passed");
