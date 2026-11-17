@@ -296,3 +296,6 @@ html:not([data-theme=dark]) .contribution-special-fields select option{backgroun
 .contribution-sheet:has(.contribution-landing:not([hidden])){height:auto;max-height:min(88dvh,920px)}
 .contribution-sheet:has(.contribution-landing:not([hidden])) .contribution-scroll{overflow-y:auto}
 .contribution-sheet:has(.contribution-editor:not([hidden])){height:min(88dvh,920px)}
+
+/* Hidden states must override editor and form display rules */
+#contribution-form-sheet[hidden],#contribution-preview[hidden],#contribution-special-fields[hidden],#contribution-landing[hidden],#contribution-editor[hidden]{display:none!important}
