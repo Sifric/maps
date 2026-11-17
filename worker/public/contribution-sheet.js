@@ -148,7 +148,31 @@ function dayText(entry){if(entry.status==="unset")return"Not set";if(entry.statu
 function syncHours(){const data=weeklyHours.map((v,i)=>({day:weekDays[i],...v}));$("contribution-hours").value=weeklyHours.some(v=>v.status!=="unset")?JSON.stringify(data):"";const count=weeklyHours.filter(v=>v.status!=="unset").length;$("contribution-hours-summary").textContent=count?count+" of 7 days configured":"Add opening hours (optional)";}
 function renderHours(){const list=$("hours-list");list.replaceChildren();weeklyHours.forEach((entry,i)=>{const button=document.createElement("button");button.type="button";button.className="hours-day-row";button.innerHTML='<span>'+weekDays[i]+'</span><span class="hours-day-value"></span><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9M16 4l4 4-11 11-5 1 1-5L16 4Z"/></svg>';button.querySelector(".hours-day-value").textContent=dayText(entry);button.addEventListener("click",()=>openHoursDialog([i]));list.append(button);});syncHours();}
 function toggleHours(){const opening=hoursContent.hidden;hoursContent.hidden=!opening;hoursToggle.setAttribute("aria-expanded",String(opening));if(opening)renderHours();}
-function renderIntervals(){const target=$("hours-intervals");target.replaceChildren();const disabled=$("hours-closed").checked||$("hours-24").checked;target.hidden=disabled;$("hours-add-interval").hidden=disabled;if(disabled)return;editingIntervals.forEach((pair,i)=>{const row=document.createElement("div");row.className="hours-interval-row";for(let n=0;n<2;n++){const label=document.createElement("label");label.textContent=n?"Close time":"Open time";const input=document.createElement("input");input.type="time";input.value=pair[n];input.addEventListener("change",()=>editingIntervals[i][n]=input.value);label.append(input);row.append(label);}const remove=document.createElement("button");remove.type="button";remove.textContent="×";remove.setAttribute("aria-label","Remove time range");remove.addEventListener("click",()=>{editingIntervals.splice(i,1);renderIntervals();});row.append(remove);target.append(row);});}
+function renderIntervals(){
+ const target=$("hours-intervals");target.replaceChildren();
+ const disabled=$("hours-closed").checked||$("hours-24").checked;
+ target.hidden=disabled;$("hours-add-interval").hidden=disabled;if(disabled)return;
+ editingIntervals.forEach((pair,i)=>{
+  const row=document.createElement("div");row.className="hours-interval-row";
+  for(let n=0;n<2;n++){
+   const label=document.createElement("label");label.className="hours-time-label";
+   label.textContent=n?"Close time":"Open time";
+   const field=document.createElement("div");field.className="hours-time-field";
+   const display=document.createElement("span");display.className="hours-time-display";
+   display.textContent=pair[n]?timeText(pair[n]):"Select time";
+   const input=document.createElement("input");input.type="time";input.value=pair[n]||"";
+   input.setAttribute("aria-label",(n?"Close":"Open")+" time");
+   input.addEventListener("input",()=>{editingIntervals[i][n]=input.value;display.textContent=input.value?timeText(input.value):"Select time";});
+   input.addEventListener("change",()=>{editingIntervals[i][n]=input.value;display.textContent=input.value?timeText(input.value):"Select time";});
+   const clock=document.createElement("span");clock.className="hours-time-clock";
+   clock.innerHTML='<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>';
+   field.append(display,clock,input);
+   field.addEventListener("click",()=>{try{input.showPicker();}catch{input.focus();input.click();}});
+   label.append(field);row.append(label);
+  }
+  const remove=document.createElement("button");remove.type="button";remove.textContent="×";remove.setAttribute("aria-label","Remove time range");remove.addEventListener("click",()=>{editingIntervals.splice(i,1);renderIntervals();});row.append(remove);target.append(row);
+ });
+}
 function openHoursDialog(days){editingDays=[...days];const first=weeklyHours[days[0]];editingIntervals=first.intervals.length?first.intervals.map(p=>[...p]):[["09:00","17:00"]];$("hours-closed").checked=first.status==="closed";$("hours-24").checked=first.status==="24";$("hours-error").textContent="";const buttons=$("hours-day-buttons");buttons.replaceChildren();shortDays.forEach((name,i)=>{const b=document.createElement("button");b.type="button";b.textContent=name;b.className="hours-day-chip";b.setAttribute("aria-pressed",String(editingDays.includes(i)));b.setAttribute("aria-label",weekDays[i]);b.addEventListener("click",()=>{if(editingDays.includes(i)){if(editingDays.length>1)editingDays=editingDays.filter(d=>d!==i);}else editingDays.push(i);b.setAttribute("aria-pressed",String(editingDays.includes(i)));});buttons.append(b);});renderIntervals();hoursBackdrop.hidden=false;$("hours-edit-save").focus();}
 function closeHoursDialog(){hoursBackdrop.hidden=true;$("hours-error").textContent="";}
 hoursToggle.addEventListener("click",toggleHours);
