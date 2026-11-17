@@ -2,7 +2,7 @@ const DEFAULTS = {
   theme: "system",
   type: "default",
   places: true,
-  placesPreferenceVersion: 1,
+  placesPreferenceVersion: 2,
   labels: true,
   details: {
     transit: false,
@@ -30,7 +30,7 @@ function restore() {
       result.type = value.type;
     for (const key of ["places", "labels"])
       if (typeof value[key] === "boolean" &&
-          (key !== "places" || value.placesPreferenceVersion === 1))
+          (key !== "places" || value.placesPreferenceVersion === 2))
         result[key] = value[key];
     for (const key of ["transit", "bicycling", "buildings"])
       if (typeof value.details?.[key] === "boolean")
