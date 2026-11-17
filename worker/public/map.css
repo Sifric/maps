@@ -1661,3 +1661,6 @@ body.routing-open #categories {
 #locate .location-icon-pair .location-state-dark { display: none; }
 :root[data-theme="dark"] #locate .location-icon-pair .location-state-light { display: none; }
 :root[data-theme="dark"] #locate .location-icon-pair .location-state-dark { display: block; }
+
+/* Squircle location button, retaining the larger touch target. */
+.map-controls #locate { border-radius: 19px; }
