@@ -1616,3 +1616,10 @@ body.routing-open #categories {
 #layers.layers-fab {
   z-index: 6;
 }
+
+/* Explicit light/dark SVG variants; no embedded SVG style rules. */
+.voice-mic-pair { display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; }
+.voice-mic-pair .voice-mic-icon { width: 24px; height: 24px; flex: none; }
+.voice-mic-pair .voice-mic-dark { display: none; }
+:root[data-theme="dark"] .voice-mic-pair .voice-mic-light { display: none; }
+:root[data-theme="dark"] .voice-mic-pair .voice-mic-dark { display: block; }
