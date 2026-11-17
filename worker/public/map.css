@@ -1522,3 +1522,44 @@ body.routing-open #categories {
     max-height: min(65dvh, 540px);
   }
 }
+
+/* Isolated floating layers button: avoid legacy .layers thumbnail/label rules. */
+#layers.layers-fab {
+  position: absolute;
+  top: 190px;
+  right: 16px;
+  bottom: auto;
+  left: auto;
+  box-sizing: border-box;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 50%;
+  background: var(--ui-bg, #fff);
+  color: var(--ui-text, #202124);
+  box-shadow: 0 2px 6px #0003;
+  overflow: hidden;
+  z-index: 7;
+}
+#layers.layers-fab > span[data-icon="layers"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: static;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  background: transparent;
+}
+#layers.layers-fab .icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+}
