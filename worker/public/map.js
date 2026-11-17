@@ -575,7 +575,9 @@ function showDirections(row) {
     for (const row of saved) {
       const item = element("button", undefined, "route-picker-recent-item");
       item.type = "button";
-      item.append(icon("history"), element("span", row[1] || "Place"));
+      const detail=element("span",undefined,"route-recent-copy");detail.append(element("strong",row[1] || "Place"));
+      if(typeof row[4]==="string" && row[4]) detail.append(element("small",row[4]));
+      item.append(icon("history"),detail);
       item.onclick = () => choosePoint(row);
       pickerRecent.append(item);
     }
@@ -729,16 +731,20 @@ function showDirections(row) {
   routeNote.append(fixMapLink);
   const recentHeading = element("h2", "Recent", "route-recent-title");
   const recentList = element("div", undefined, "route-recent-list");
-  const recentRows = readStored("lk-recents").slice(0, 8);
+  const recentRows = readStored("lk-recents").slice(0, 12);
   if (!recentRows.length) recentList.append(element("p", "Search for a place or enter coordinates to get started."));
   for (const recent of recentRows) {
     const item = element("button", undefined, "route-recent-item");
     item.type = "button";
-    item.append(icon("history"), element("span", recent[1] || "Saved location"));
+    const detail = element("span",undefined,"route-recent-copy");
+    detail.append(element("strong",recent[1] || "Saved location"));
+    const description = typeof recent[4] === "string" ? recent[4] : "";
+    if (description) detail.append(element("small",description));
+    item.append(icon("history"), detail);
     item.onclick = () => {
       destination.input.value = recent[1] || "";
       setRoutePointData(destination.input, Number(recent[2]), Number(recent[3]), recent[1]);
-      destination.input.focus();
+      openPicker(destination.input);
     };
     recentList.append(item);
   }
