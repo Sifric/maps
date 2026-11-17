@@ -269,8 +269,8 @@ export function createMapOptions(map, { baseStyle, status }) {
     // The arrows must only appear when the existing tiles encode one-way
     // direction. Never infer a one-way road from its geometry alone.
     for (const [id, direction, rotation] of [
-      ["sifric-oneway-forward", 1, 0],
-      ["sifric-oneway-reverse", -1, 180],
+      ["sifric-oneway-forward", 1, 90],
+      ["sifric-oneway-reverse", -1, 270],
     ]) {
       if (map.getLayer(id)) continue;
       const oneWay = direction === 1
