@@ -1054,11 +1054,8 @@ let liveLocationMarker = null;
 let liveLocationCoords = null;
 let focusOnNextLocation = false;
 let lastRawFix = null;
-let nearestRoadRequestAt = 0;
-let nearestRoadSequence = 0;
 let lastSnappedFix = null;
 let lastSnappedAt = 0;
-let roadSnapPending = false;
 const ROAD_SNAP_MAX_METERS = 18;
 const ROAD_SNAP_MIN_SPEED_MPS = 1.4;
 function gpsDistanceMeters(a, b) {
@@ -1075,54 +1072,62 @@ function coordinateFix(coords) {
 function showLiveLocation(coords) {
   liveLocationMarker?.setLngLat([coords.longitude, coords.latitude]);
 }
-async function snapMovingDotToRoad(coords, fixSequence, speed) {
-  const now = Date.now();
-  if (roadSnapPending || now - nearestRoadRequestAt < 1500) return;
-  nearestRoadRequestAt = now;
-  roadSnapPending = true;
+// Use already-loaded MapLibre vector road geometry. No OSRM nearest requests.
+function snapMovingDotToRoad(coords, speed) {
+  if (!map || !map.isStyleLoaded()) return null;
+  const latitude = coords.latitude;
+  const center = map.project([coords.longitude, latitude]);
+  const metersPerPixel = 156543.03392 * Math.cos(latitude * Math.PI / 180) /
+    Math.pow(2, map.getZoom());
+  const radius = Math.min(140, ROAD_SNAP_MAX_METERS / Math.max(0.01, metersPerPixel));
+  const roadLayers = (map.getStyle()?.layers || []).filter(layer => {
+    const id = (layer.id || "").toLowerCase();
+    const sourceLayer = (layer["source-layer"] || "").toLowerCase();
+    return layer.type === "line" &&
+      (/(road|street|transportation|highway)/.test(id) ||
+        /(road|street|transportation|highway)/.test(sourceLayer)) &&
+      !/(rail|water|boundary|ferry|contour|path|footway|cycleway)/.test(id + " " + sourceLayer);
+  }).map(layer => layer.id);
+  if (!roadLayers.length) return null;
+  let features;
   try {
-    const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 3500);
-    let response;
-    try {
-      const url = "https://router.project-osrm.org/nearest/v1/driving/" +
-        encodeURIComponent(coords.longitude + "," + coords.latitude) + "?number=3";
-      response = await fetch(url, { signal: controller.signal });
-    } finally {
-      clearTimeout(timeout);
+    features = map.queryRenderedFeatures(
+      [[center.x - radius, center.y - radius],
+       [center.x + radius, center.y + radius]], { layers: roadLayers });
+  } catch { return null; }
+  let best = null;
+  for (const feature of features) {
+    const geometry = feature.geometry;
+    if (!geometry || !["LineString", "MultiLineString"].includes(geometry.type)) continue;
+    const lines = geometry.type === "LineString" ? [geometry.coordinates] : geometry.coordinates;
+    for (const line of lines) {
+      for (let i = 1; i < line.length; i++) {
+        const a = map.project(line[i - 1]), b = map.project(line[i]);
+        const dx = b.x - a.x, dy = b.y - a.y;
+        const len2 = dx * dx + dy * dy;
+        if (len2 < 0.001) continue;
+        const t = Math.max(0, Math.min(1,
+          ((center.x - a.x) * dx + (center.y - a.y) * dy) / len2));
+        const projected = { x: a.x + dx * t, y: a.y + dy * t };
+        const meters = Math.hypot(center.x - projected.x, center.y - projected.y) * metersPerPixel;
+        if (meters > ROAD_SNAP_MAX_METERS) continue;
+        const point = map.unproject([projected.x, projected.y]);
+        const candidate = { latitude: point.lat, longitude: point.lng };
+        const jump = lastSnappedFix ? gpsDistanceMeters(lastSnappedFix, candidate) : 0;
+        const age = Date.now() - lastSnappedAt;
+        // Continuity preference discourages jumping onto crossing roads at bends.
+        const implausible = lastSnappedFix && age < 10000 &&
+          jump > Math.max(20, speed * age / 1000 * 2 + 12);
+        if (implausible) continue;
+        const score = meters + (lastSnappedFix ? Math.min(jump, 35) * 0.22 : 0);
+        if (!best || score < best.score) best = { candidate, score };
+      }
     }
-    if (!response.ok) return;
-    const data = await response.json();
-    if (data.code !== "Ok" || !Array.isArray(data.waypoints)) return;
-    // Reject responses for a fix superseded by newer GPS data.
-    if (fixSequence !== nearestRoadSequence) return;
-    const candidates = data.waypoints.filter(w =>
-      Array.isArray(w.location) && w.location.length === 2 &&
-      w.location.every(Number.isFinite) &&
-      Number.isFinite(w.distance) && w.distance <= ROAD_SNAP_MAX_METERS);
-    if (!candidates.length) return;
-    // Favor the previous road at bends/junctions, but permit a genuine turn.
-    const previous = lastSnappedFix;
-    const elapsed = previous ? Math.max(0, (now - lastSnappedAt) / 1000) : 0;
-    const maxTravel = Math.max(12, speed * elapsed * 1.8 + 12);
-    const ranked = candidates.map(w => {
-      const candidate = { longitude: w.location[0], latitude: w.location[1] };
-      const jump = previous ? gpsDistanceMeters(previous, candidate) : 0;
-      const implausible = previous && elapsed < 20 && jump > maxTravel;
-      const score = w.distance + (previous ? Math.min(jump, 35) * 0.22 : 0) +
-        (implausible ? 1000 : 0);
-      return { candidate, score, implausible };
-    }).sort((x, y) => x.score - y.score);
-    const chosen = ranked[0];
-    if (chosen.implausible) return;
-    lastSnappedFix = chosen.candidate;
-    lastSnappedAt = now;
-    showLiveLocation(chosen.candidate);
-  } catch {
-    // Keep the latest GPS position if OSRM is unavailable.
-  } finally {
-    roadSnapPending = false;
   }
+  if (!best) return null;
+  lastSnappedFix = best.candidate;
+  lastSnappedAt = Date.now();
+  return best.candidate;
 }
 
 function setLocationBeam(heading) {
@@ -1179,7 +1184,7 @@ function onLiveLocation(position) {
   const moving = speed >= ROAD_SNAP_MIN_SPEED_MPS &&
     movement >= 4 && coords.accuracy <= 30;
   lastRawFix = { coords: { latitude: coords.latitude, longitude: coords.longitude }, time: now };
-  const fixSequence = ++nearestRoadSequence;
+  const matchedLocation = moving ? snapMovingDotToRoad(coords, speed) : null;
   if (!liveLocationMarker) {
     const dot = document.createElement("div");
     dot.className = "maplibregl-user-location-dot sifric-live-location";
@@ -1192,13 +1197,13 @@ function onLiveLocation(position) {
     // Never keep it if it diverges from the current fix or becomes stale.
     const recentMatch = lastSnappedFix && Date.now() - lastSnappedAt < 5000 &&
       gpsDistanceMeters(lastSnappedFix, coordinateFix(coords)) <= 22;
-    if (moving && recentMatch) showLiveLocation(lastSnappedFix);
+    if (moving && matchedLocation) showLiveLocation(matchedLocation);
+    else if (moving && recentMatch) showLiveLocation(lastSnappedFix);
     else showLiveLocation(coordinateFix(coords));
   }
   updateLiveLocationAccuracy();
   // When stopped, display real GPS; do not pretend to be on a road.
-  if (moving) void snapMovingDotToRoad(coords, fixSequence, speed);
-  else {
+  if (!moving) {
     lastSnappedFix = null;
     lastSnappedAt = 0;
   }
