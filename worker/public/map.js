@@ -1182,64 +1182,58 @@ function gpsTravelBearing(from, to) {
     Math.sin(lat1) * Math.cos(lat2) * Math.cos(dLon);
   return normalizeHeading(Math.atan2(y, x) / rad);
 }
-function setLocationBeam(heading) {
-  if (!Number.isFinite(heading)) return;
-  const target = normalizeHeading(heading);
-  // Circular interpolation avoids a full spin when crossing 359° to 0°.
-  if (displayedBeamHeading === null) displayedBeamHeading = target;
-  else {
-    const delta = ((target - displayedBeamHeading + 540) % 360) - 180;
-    displayedBeamHeading = normalizeHeading(displayedBeamHeading + delta * 0.55);
-  }
-  const marker = liveLocationMarker?.getElement();
-  if (!marker) return;
+let beamTargetHeading = null;
+let beamAnimationFrame = null;
+function animateLocationBeam() {
+  beamAnimationFrame = null;
+  if (beamTargetHeading === null || !liveLocationMarker) return;
+  if (displayedBeamHeading === null) displayedBeamHeading = beamTargetHeading;
+  const delta = ((beamTargetHeading - displayedBeamHeading + 540) % 360) - 180;
+  displayedBeamHeading += delta * 0.24;
+  const marker = liveLocationMarker.getElement();
   marker.style.setProperty("--sifric-heading",
     `${displayedBeamHeading - (map?.getBearing() || 0)}deg`);
   marker.classList.add("sifric-heading-active");
+  if (Math.abs(delta) > 0.15) {
+    beamAnimationFrame = requestAnimationFrame(animateLocationBeam);
+  }
+}
+function setLocationBeam(heading) {
+  if (!Number.isFinite(heading)) return;
+  beamTargetHeading = normalizeHeading(heading);
+  if (beamAnimationFrame === null) beamAnimationFrame = requestAnimationFrame(animateLocationBeam);
 }
 function updateTravelBeam(point, moving, coords, time) {
-  if (!moving) {
-    movementHeadingActive = false;
-    lastTravelPosition = null;
-    travelHeading = null;
-    if (lastCompassHeading !== null) setLocationBeam(lastCompassHeading);
+  // Phone orientation always wins. GPS course is only a sensor fallback.
+  if (lastCompassHeading !== null) {
+    setLocationBeam(lastCompassHeading);
     return;
   }
   const distance = lastTravelPosition
     ? gpsDistanceMeters(lastTravelPosition, point) : 0;
-  // Prefer real displacement along the snapped road to compass orientation.
-  // GPS course is a fallback when displacement is too small to be reliable.
-  let heading = null;
-  if (lastTravelPosition && distance >= 3 && time > lastTravelTime) {
-    heading = gpsTravelBearing(lastTravelPosition, point);
-  } else if (Number.isFinite(coords.heading) && coords.heading >= 0) {
-    heading = coords.heading;
+  if (moving && lastTravelPosition && distance >= 3 && time > lastTravelTime) {
+    travelHeading = gpsTravelBearing(lastTravelPosition, point);
+  } else if (moving && Number.isFinite(coords.heading) && coords.heading >= 0) {
+    travelHeading = coords.heading;
   }
-  if (heading !== null) {
-    travelHeading = normalizeHeading(heading);
-    movementHeadingActive = true;
-    setLocationBeam(travelHeading);
-  } else if (travelHeading !== null) {
-    setLocationBeam(travelHeading);
-  }
+  if (travelHeading !== null) setLocationBeam(travelHeading);
   if (!lastTravelPosition || distance >= 3) {
     lastTravelPosition = { ...point };
     lastTravelTime = time;
   }
 }
-
 function handleDeviceOrientation(event) {
-  // Android Chrome: absolute alpha is measured clockwise from device north reference.
-  // webkitCompassHeading is used on browsers that expose a calibrated compass.
+  // Use calibrated compass when available; absolute orientation otherwise.
   const heading = Number.isFinite(event.webkitCompassHeading)
     ? event.webkitCompassHeading
     : event.absolute && Number.isFinite(event.alpha)
       ? (360 - event.alpha) % 360 : null;
   if (heading !== null) {
     lastCompassHeading = normalizeHeading(heading);
-    if (!movementHeadingActive) setLocationBeam(lastCompassHeading);
+    setLocationBeam(lastCompassHeading);
   }
 }
+
 async function enableCompass() {
   if (orientationListening || !("DeviceOrientationEvent" in window)) return;
   try {
@@ -1516,10 +1510,10 @@ document.addEventListener("keydown", (e) => {
   // Keep the camera independent of GPS updates. Recenter only on explicit button presses.
   map.on("zoom", updateLiveLocationAccuracy);
   map.on("rotate", () => {
-    if (movementHeadingActive && travelHeading !== null) {
-      setLocationBeam(travelHeading);
-    } else if (lastCompassHeading !== null) {
-      setLocationBeam(lastCompassHeading);
+    if (beamTargetHeading !== null) {
+      const marker = liveLocationMarker?.getElement();
+      marker?.style.setProperty("--sifric-heading",
+        `${displayedBeamHeading - map.getBearing()}deg`);
     }
   });
   for (const layer of ["mazo-places-icon", "mazo-places-dot"]) {
