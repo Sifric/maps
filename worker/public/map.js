@@ -1049,6 +1049,10 @@ async function handleLocationFailure(error) {
 // Start continuous high-accuracy positioning on demand; no background tracking before consent.
 let orientationListening = false;
 let lastCompassHeading = null;
+let liveLocationWatchId = null;
+let liveLocationMarker = null;
+let liveLocationCoords = null;
+let focusOnNextLocation = false;
 function setLocationBeam(heading) {
   if (!Number.isFinite(heading)) return;
   lastCompassHeading = ((heading % 360) + 360) % 360;
@@ -1083,6 +1087,43 @@ async function enableCompass() {
     status("Compass unavailable on this device or browser.");
   }
 }
+function updateLiveLocationAccuracy() {
+  if (!liveLocationMarker || !liveLocationCoords || !map) return;
+  const { latitude, accuracy } = liveLocationCoords;
+  const metersPerPixel = 156543.03392 * Math.cos(latitude * Math.PI / 180) / Math.pow(2, map.getZoom());
+  const radius = Math.min(1500, Math.max(12, accuracy / Math.max(metersPerPixel, 0.01)));
+  liveLocationMarker.getElement().style.setProperty("--sifric-accuracy-radius", `${radius}px`);
+}
+function onLiveLocation(position) {
+  const { coords } = position;
+  liveLocationCoords = coords;
+  if (!liveLocationMarker) {
+    const dot = document.createElement("div");
+    dot.className = "maplibregl-user-location-dot sifric-live-location";
+    dot.setAttribute("role", "img");
+    dot.setAttribute("aria-label", "Your current location");
+    liveLocationMarker = new maplibregl.Marker({ element: dot, anchor: "center" })
+      .setLngLat([coords.longitude, coords.latitude]).addTo(map);
+  } else {
+    liveLocationMarker.setLngLat([coords.longitude, coords.latitude]);
+  }
+  updateLiveLocationAccuracy();
+  if (lastCompassHeading !== null) setLocationBeam(lastCompassHeading);
+  else if (Number.isFinite(coords.heading)) setLocationBeam(coords.heading);
+  if (focusOnNextLocation) {
+    focusOnNextLocation = false;
+    map.flyTo({ center: [coords.longitude, coords.latitude], zoom: Math.max(map.getZoom(), 17), duration: 850 });
+  }
+  const button = $("locate");
+  button.disabled = false;
+  button.removeAttribute("aria-busy");
+  locationPermission = "granted";
+  locationDeviceUnavailable = false;
+  updateLocationIcon();
+  button.dataset.location = "ready";
+  button.setAttribute("aria-label", "Recenter on your location");
+  button.title = "Recenter on your location";
+}
 $("locate").onclick = () => {
   if (!navigator.geolocation || !window.isSecureContext) {
     status("Live location requires device GPS and HTTPS.");
@@ -1092,13 +1133,28 @@ $("locate").onclick = () => {
     status("Allow Location in your browser site settings.");
     return;
   }
-  if (!geolocateControl) {
-    status("Map location control is not ready yet.");
+  if (!map) {
+    status("Map is not ready yet.");
     return;
   }
-  // Request orientation from the user gesture where supported.
   void enableCompass();
-  geolocateControl.trigger();
+  if (liveLocationCoords) {
+    // Explicit button press is the only action allowed to move the camera.
+    map.flyTo({ center: [liveLocationCoords.longitude, liveLocationCoords.latitude], zoom: Math.max(map.getZoom(), 17), duration: 850 });
+    return;
+  }
+  focusOnNextLocation = true;
+  const button = $("locate");
+  button.disabled = true;
+  button.setAttribute("aria-busy", "true");
+  if (liveLocationWatchId === null) {
+    liveLocationWatchId = navigator.geolocation.watchPosition(onLiveLocation, (error) => {
+      focusOnNextLocation = false;
+      button.disabled = false;
+      button.removeAttribute("aria-busy");
+      void handleLocationFailure(error);
+    }, { enableHighAccuracy: true, timeout: 12000, maximumAge: 0 });
+  }
 };
 
 $("menu").onclick = () => {
@@ -1265,40 +1321,10 @@ document.addEventListener("keydown", (e) => {
     }
     revealScale();
   }
-  // High-accuracy location tracking starts only when the user taps My Location.
-  geolocateControl = new maplibregl.GeolocateControl({
-    positionOptions: {
-      enableHighAccuracy: true,
-      timeout: 10000,
-      maximumAge: 30000,
-    },
-    trackUserLocation: true,
-    showUserHeading: true,
-    showUserLocation: true,
-    showAccuracyCircle: true,
-    fitBoundsOptions: { maxZoom: 15, duration: 1000 },
-  });
-  map.addControl(geolocateControl, "top-right");
+  // Keep the camera independent of GPS updates. Recenter only on explicit button presses.
+  map.on("zoom", updateLiveLocationAccuracy);
   map.on("rotate", () => {
     if (lastCompassHeading !== null) setLocationBeam(lastCompassHeading);
-  });
-  geolocateControl.on("geolocate", ({ coords }) => {
-    if (lastCompassHeading !== null) setLocationBeam(lastCompassHeading);
-    else if (Number.isFinite(coords?.heading)) setLocationBeam(coords.heading);
-    const button = $("locate");
-    button.disabled = false;
-    button.removeAttribute("aria-busy");
-    locationPermission = "granted";
-    locationDeviceUnavailable = false;
-    updateLocationIcon();
-    button.dataset.location = "ready";
-    button.setAttribute("aria-label", "Recenter on your location");
-    button.title = "Recenter on your location";
-  });
-  geolocateControl.on("error", (error) => {
-    void handleLocationFailure(error);
-    $("locate").disabled = false;
-    $("locate").removeAttribute("aria-busy");
   });
   for (const layer of ["mazo-places-icon", "mazo-places-dot"]) {
     map.on("click", layer, (e) => {
