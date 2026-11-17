@@ -1239,7 +1239,7 @@ document.addEventListener("keydown", (e) => {
   });
   for (const layer of ["mazo-places-icon", "mazo-places-dot"]) {
     map.on("click", layer, (e) => {
-      if (document.body.classList.contains("routing-open")) return;
+      if (document.body.classList.contains("routing-open") || document.body.classList.contains("contribution-picking")) return;
       const f = e.features[0],
         p = f.properties;
       showPlace([
@@ -1253,11 +1253,12 @@ document.addEventListener("keydown", (e) => {
     map.on(
       "mouseenter",
       layer,
-      () => (map.getCanvas().style.cursor = document.body.classList.contains("routing-open") ? "" : "pointer"),
+      () => (map.getCanvas().style.cursor = document.body.classList.contains("routing-open") || document.body.classList.contains("contribution-picking") ? "" : "pointer"),
     );
     map.on("mouseleave", layer, () => (map.getCanvas().style.cursor = ""));
   }
   map.on("click", (e) => {
+    if (document.body.classList.contains("contribution-picking")) return;
     if (
       !map.queryRenderedFeatures(e.point, {
         layers: ["mazo-places-icon", "mazo-places-dot"],
