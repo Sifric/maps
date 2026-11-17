@@ -32,7 +32,18 @@ function previewCenter(){return chosenLocation()||mapInstance()?.getCenter()?.to
 async function ensurePreviewMap(){
  const main=mapInstance(),container=$("contribution-preview-map");
  if(!main?.getStyle||!container||sheet.hidden)return;
- if(previewMap){requestAnimationFrame(()=>previewMap.resize());return;}
+ if(previewMap){
+  const selected=document.querySelector('[data-map-type][aria-checked="true"]')?.dataset.mapType||"default";
+  if(previewMap._selectedMapType!==selected&&main.isStyleLoaded?.()){
+   previewMap._selectedMapType=selected;
+   const style=structuredClone(main.getStyle());
+   for(const layer of style.layers||[]){if(layer.id.startsWith("mazo-places-"))layer.layout={...(layer.layout||{}),visibility:"none"};}
+   nearbyMarkers.forEach(marker=>marker.remove());nearbyMarkers=[];
+   previewMap._contributionNearbyKey=null;
+   previewMap.setStyle(style);
+  }
+  requestAnimationFrame(()=>previewMap.resize());return;
+ }
  if(!main.isStyleLoaded?.()){
   if(!previewStyleWait){previewStyleWait=true;main.once("style.load",()=>{previewStyleWait=false;if(!sheet.hidden)void ensurePreviewMap();});}
   return;
@@ -50,6 +61,7 @@ async function ensurePreviewMap(){
     interactive:false,attributionControl:false,renderWorldCopies:false,
     pitchWithRotate:false,dragRotate:false,maxZoom:20
    });
+   previewMap._selectedMapType=document.querySelector('[data-map-type][aria-checked="true"]')?.dataset.mapType||"default";
    previewMap.on("styleimagemissing",e=>{
     if(previewMap.hasImage(e.id))return;
     const image=main.hasImage(e.id)?main.getImage(e.id):null;
