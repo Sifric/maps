@@ -1806,3 +1806,25 @@ html[data-theme="dark"] .map-controls #contribute-fab:hover,body.dark .map-contr
   background: rgba(48,120,247,.12);
   animation: none;
 }
+
+/* Optional map matching, disabled by default for truthful device GPS. */
+.follow-roads-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 10px 2px;
+  cursor: pointer;
+}
+.follow-roads-option > span {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+.follow-roads-option strong { font-size: 13px; font-weight: 600; }
+.follow-roads-option small {
+  font-size: 11px;
+  line-height: 1.45;
+  color: var(--ui-muted, #80868b);
+}
