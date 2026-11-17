@@ -53,3 +53,14 @@ body.contribution-picking .search-shell,body.contribution-picking #categories,bo
 html[data-theme=dark] .picker-top,html[data-theme=dark] .picker-bottom{background:#1a222c;color:#f0f4f8}
 html[data-theme=dark] .picker-top button{background:#303c49;color:#f0f4f8}
 html[data-theme=dark] .picker-top small,html[data-theme=dark] .picker-bottom output{color:#a0acb9}
+
+/* Optional fields are tucked into a chevron disclosure. */
+.contribution-sheet #contribution-additional[hidden],.contribution-sheet #contribution-advanced-toggle[hidden]{display:none!important}
+.contribution-advanced-toggle{width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;text-align:left;padding:16px 14px;margin:0 0 19px;background:#f6f8fb;color:#263342;border:1px solid #e2e6ed;border-radius:12px}
+.contribution-advanced-toggle>span{display:flex;flex-direction:column;gap:4px;font-size:13px;font-weight:700}
+.contribution-advanced-toggle small{font-size:11px;font-weight:400;color:#758291}
+.contribution-advanced-toggle svg{flex-shrink:0;transition:transform .18s ease}
+.contribution-advanced-toggle[aria-expanded=true] svg{transform:rotate(180deg)}
+html[data-theme=dark] .contribution-advanced-toggle{background:#26313e;color:#f0f4f8;border-color:#344151}
+html[data-theme=dark] .contribution-advanced-toggle small{color:#a0acb9}
+@media(prefers-reduced-motion:reduce){.contribution-advanced-toggle svg{transition:none}}
