@@ -958,13 +958,21 @@ document.addEventListener("keydown", (e) => {
   });
   // MapLibre supplies the actual distance labels and pixel widths for both units.
   // Render one shared horizontal rule, with an upward mile tick and downward km tick.
-  map.addControl(new maplibregl.ScaleControl({ maxWidth: 110, unit: "imperial" }), "bottom-right");
-  map.addControl(new maplibregl.ScaleControl({ maxWidth: 110, unit: "metric" }), "bottom-right");
+  map.addControl(new maplibregl.ScaleControl({ maxWidth: 80, unit: "imperial" }), "bottom-right");
+  map.addControl(new maplibregl.ScaleControl({ maxWidth: 80, unit: "metric" }), "bottom-right");
   const [mileSource, kmSource] = map.getContainer().querySelectorAll(".maplibregl-ctrl-scale");
   const scaleParent = mileSource?.parentElement;
   if (scaleParent && kmSource) {
-    mileSource.classList.add("scale-measure-source");
-    kmSource.classList.add("scale-measure-source");
+    for (const source of [mileSource, kmSource]) {
+      source.classList.add("scale-measure-source");
+      // Inline hiding avoids older theme rules exposing the source controls.
+      // Keep layout measurements available (display:none would make width zero).
+      source.style.setProperty("position", "absolute", "important");
+      source.style.setProperty("visibility", "hidden", "important");
+      source.style.setProperty("opacity", "0", "important");
+      source.style.setProperty("pointer-events", "none", "important");
+      source.style.setProperty("margin", "0", "important");
+    }
     const scaleDock = document.createElement("div");
     scaleDock.className = "dual-scale";
     scaleDock.setAttribute("role", "img");
