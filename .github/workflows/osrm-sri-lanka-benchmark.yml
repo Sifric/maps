@@ -17,8 +17,9 @@ jobs:
       - uses: actions/checkout@v4
       - name: Install OSRM and benchmark dependencies
         run: |
-          sudo apt-get update
-          sudo apt-get install -y osrm-backend python3-requests time
+          docker pull ghcr.io/project-osrm/osrm-backend:latest
+          command -v docker
+          command -v /usr/bin/time
       - name: Download complete Sri Lanka extract
         run: |
           mkdir -p /tmp/osrm-sri-lanka
@@ -28,15 +29,16 @@ jobs:
         run: |
           set -euo pipefail
           cd /tmp/osrm-sri-lanka
-          /usr/bin/time -v -o "$GITHUB_WORKSPACE/extract-memory.txt" osrm-extract -p /usr/share/osrm/profiles/car.lua sri-lanka.osm.pbf
-          /usr/bin/time -v -o "$GITHUB_WORKSPACE/partition-memory.txt" osrm-partition sri-lanka.osrm
-          /usr/bin/time -v -o "$GITHUB_WORKSPACE/customize-memory.txt" osrm-customize sri-lanka.osrm
+          /usr/bin/time -v -o "$GITHUB_WORKSPACE/extract-memory.txt" docker run --rm -v "$PWD:/data" -w /data ghcr.io/project-osrm/osrm-backend:latest osrm-extract -p /opt/car.lua /data/sri-lanka.osm.pbf
+          /usr/bin/time -v -o "$GITHUB_WORKSPACE/partition-memory.txt" docker run --rm -v "$PWD:/data" -w /data ghcr.io/project-osrm/osrm-backend:latest osrm-partition /data/sri-lanka.osrm
+          /usr/bin/time -v -o "$GITHUB_WORKSPACE/customize-memory.txt" docker run --rm -v "$PWD:/data" -w /data ghcr.io/project-osrm/osrm-backend:latest osrm-customize /data/sri-lanka.osrm
           du -ch sri-lanka.osrm* | tail -1
       - name: Run real OSRM server and concurrent requests
         run: |
           set -euo pipefail
-          osrm-routed --algorithm mld --mmap --threads 2 --port 5000 /tmp/osrm-sri-lanka/sri-lanka.osrm >osrm-server.log 2>&1 &
+          docker run --rm --name osrm-sri-lanka-bench --network host -v /tmp/osrm-sri-lanka:/data:ro ghcr.io/project-osrm/osrm-backend:latest osrm-routed --algorithm mld --mmap --threads 2 --port 5000 /data/sri-lanka.osrm >osrm-server.log 2>&1 &
           echo $! > osrm.pid
+          docker inspect -f "{{.State.Pid}}" osrm-sri-lanka-bench > osrm.pid
           python3 scripts/benchmark-osrm.py
       - name: Upload logs and benchmark results
         if: always()
