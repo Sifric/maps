@@ -1,0 +1,69 @@
+name: Build Sri Lanka A-star graph and preview Worker
+on:
+  workflow_dispatch:
+    inputs:
+      publish_preview:
+        description: Upload graph to existing R2 bucket and deploy separate preview Worker
+        type: boolean
+        default: false
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install osmium
+      - name: Download Sri Lanka OSM data
+        run: |
+          mkdir -p build
+          curl -fL --retry 4 https://download.geofabrik.de/asia/sri-lanka-latest.osm.pbf -o build/sri-lanka.osm.pbf
+      - name: Generate full-country spatial graph
+        run: |
+          python scripts/build-astar-shards.py build/sri-lanka.osm.pbf --out build/astar
+          python - <<'PY'
+          import json,pathlib
+          p=pathlib.Path('build/astar')
+          m=json.loads((p/'manifest.json').read_text())
+          assert m['edges']>0 and len(m['shards'])>0
+          big=[(s['id'],s['bytes']) for s in m['shards'] if s['bytes']>4*1024*1024]
+          if big: raise SystemExit(f'Shards exceed Worker load budget: {big[:10]}')
+          print('Generated',len(m['shards']),'shards with',m['edges'],'directed edges')
+          PY
+      - name: Upload graph build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: sri-lanka-astar-graph
+          path: build/astar/
+          retention-days: 3
+      - name: Upload graph to R2 for preview
+        if: inputs.publish_preview
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          npm install -g wrangler
+          for file in build/astar/*.json; do
+            wrangler r2 object put "mazo-maps/routing/astar-v2/$(basename "$file")" --file "$file" --remote
+          done
+      - name: Deploy isolated A-star preview Worker
+        if: inputs.publish_preview
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          cp config/style/mazo-basemap.json worker/style.json
+          cd worker
+          wrangler deploy --name maps-astar-preview --var ROUTING_ENGINE:astar
+      - name: Summarize
+        if: always()
+        run: |
+          echo "Graph build only unless publish_preview was explicitly enabled." >> "$GITHUB_STEP_SUMMARY"
+          echo "Production Worker maps is never deployed by this workflow." >> "$GITHUB_STEP_SUMMARY"
