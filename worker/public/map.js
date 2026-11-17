@@ -1168,7 +1168,8 @@ document.addEventListener("keydown", (e) => {
       <span class="dual-scale-km-tick"></span>
       <span class="dual-scale-mile-label"></span>
       <span class="dual-scale-km-label"></span>`;
-    scaleParent.insertBefore(scaleDock, mileSource);
+    // Keep the distance scale independent of the expanding/collapsing attribution control.
+    map.getContainer().appendChild(scaleDock);
     const mileLabel = scaleDock.querySelector(".dual-scale-mile-label");
     const kmLabel = scaleDock.querySelector(".dual-scale-km-label");
     const updateScale = () => {
