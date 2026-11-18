@@ -280,16 +280,10 @@ function stylePlaces(style) {
   dot.layout["symbol-sort-key"] = pin.layout["symbol-sort-key"];
   // Geographic names keep placement priority over businesses at overview zooms.
   const base = style.layers.filter((layer) => layer !== dot && layer !== pin);
-  // Road names must win collision placement over business pins at street zooms.
-  // Keep existing transportation_name labels ahead of the dense POI overlay.
-  const roadNames = base.findIndex(
-    (layer) => layer["source-layer"] === "transportation_name",
-  );
   const geographicNames = base.findIndex(
     (layer) => layer["source-layer"] === "place",
   );
-  const insertAt = roadNames >= 0 ? roadNames : geographicNames;
-  base.splice(insertAt < 0 ? base.length : insertAt, 0, dot, pin);
+  base.splice(geographicNames < 0 ? base.length : geographicNames, 0, dot, pin);
   base.push(selectedLabel);
   style.layers = base;
   return style;
