@@ -6,6 +6,31 @@ const dayLength = 86400;
 const walkSpeed = 1.25;
 const horizon = 6 * 3600;
 
+async function loadSchedule(bucket) {
+  const file = await bucket?.get?.(transitKey);
+  return file && file.size <= 2_000_000 ? file.json() : null;
+}
+
+function scheduleCoverage({ days, agency }, now) {
+  const dates = Object.keys(days).sort();
+  if (!dates.length) return null;
+  let lastArrival = 0;
+  for (const day of dates.slice(-2)) {
+    const base = Date.parse(day) / 1000 - offset;
+    for (const edge of days[day]) lastArrival = Math.max(lastArrival, base + edge[1]);
+  }
+  return {
+    agency, firstServiceDate: dates[0], lastServiceDate: dates.at(-1),
+    lastArrivalTime: new Date(lastArrival * 1000).toISOString(),
+    expired: lastArrival < now,
+  };
+}
+
+export async function transitCoverage(bucket, now = Date.now() / 1000) {
+  const schedule = await loadSchedule(bucket);
+  return schedule ? scheduleCoverage(schedule, now) : null;
+}
+
 function distance(a, b) {
   return 111195 * Math.hypot((a[0] - b[0]) * Math.cos((a[1] + b[1]) * Math.PI / 360), a[1] - b[1]);
 }
@@ -22,9 +47,13 @@ export async function transitRoute(bucket, body) {
   }
   const start = raw === undefined ? Math.floor(Date.now() / 1000) : Math.floor(Date.parse(raw) / 1000);
   if (!Number.isFinite(start)) throw new RoutingError(400, 'Invalid departure time.');
-  const file = await bucket.get(transitKey);
-  if (!file || file.size > 2_000_000) throw new RoutingError(503, 'Transit schedules are not available.');
-  const { agency, source, stops, routes, days } = await file.json();
+  const schedule = await loadSchedule(bucket);
+  if (!schedule) throw new RoutingError(503, 'Transit schedules are not available.');
+  const coverage = scheduleCoverage(schedule, start);
+  if (!coverage || coverage.expired) {
+    throw new RoutingError(raw === undefined ? 503 : 404, 'The published schedules do not cover this departure date.');
+  }
+  const { agency, source, stops, routes, days } = schedule;
   const localDay = Math.floor((start + offset) / dayLength) * dayLength;
   const service = [];
   for (const delta of [-1, 0, 1]) {

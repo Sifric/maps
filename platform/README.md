@@ -247,7 +247,10 @@ destination and needs a field-tested graph before production guidance.
 
 ## Implementation boundaries
 
-The native Android/iOS SDKs, native turn-by-turn navigation SDKs, native Places UI components, panorama capture/publishing and browsing, photorealistic 3D and aerial video, live traffic/transit, crowdsourced reviews, cell/Wi-Fi positioning, and postal-grade address validation require additional implementations and/or data. The current API does not fabricate these results.
+Native SDK packages and setup are described in `native/README.md`. Panorama
+imagery, photorealistic 3D, aerial video, full live traffic and transit coverage,
+crowdsourced reviews, and postal-grade address validation require more data
+or integrations.
 
 ## Transit, mapped premises, Wi-Fi, and traffic
 
@@ -256,7 +259,8 @@ Send two `coordinates` and an optional ISO `departureTime` with a time-zone
 offset. Walking estimates between a coordinate and a stop are straight-line.
 The service respects scheduled dates, stop access, and a two-minute minimum
 same-stop transfer. A recurring dataset build imports the available published
-dates. Timetable coverage is limited to the operator's available feed.
+dates. Check `transitScheduleCoverage` in `GET /capabilities` for the first and
+last published service dates and whether the index has expired.
 
 Address validation also accepts `houseNumber` and `street`. A matching number,
 street and postal area in OpenStreetMap produces `mapped-premise` precision

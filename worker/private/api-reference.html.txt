@@ -30,9 +30,10 @@
       in <code>coordinates</code> and a travel <code>mode</code>.</li>
     <li><code>POST /optimize</code> accepts <code>vehicles</code>, <code>jobs</code>, and paired
       <code>shipments</code>. Set vehicle <code>capacity</code>, optional <code>time_window</code>,
-      and stop <code>time_windows</code>. Limits are 4 drive vehicles, 10 stops, and 6 distinct locations.</li>
+      and stop <code>time_windows</code>. Limits are 8 drive vehicles, 16 stops, and 20 distinct locations.</li>
     <li><code>POST /transit/routes</code> accepts two <code>coordinates</code> and an optional
-      <code>departureTime</code> with a time-zone offset. Returns journeys on available Lanka Metro Transit schedules.</li>
+      <code>departureTime</code> with a time-zone offset. Check <code>transitScheduleCoverage</code>
+      in <code>GET /capabilities</code> for the dates and expiry of the published Lanka Metro Transit schedule.</li>
     <li><code>POST /address/validate</code> accepts <code>addressLines</code>, <code>locality</code>,
       <code>postalCode</code>, and optional <code>countryCode: "LK"</code>. Supply <code>houseNumber</code> and <code>street</code> for an available mapped-premise match.</li>
     <li><code>POST /geolocate</code> accepts <code>cellTowers</code> with <code>radioType</code>,

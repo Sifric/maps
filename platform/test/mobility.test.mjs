@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
-import { transitRoute } from '../../worker/transit.mjs';
+import { transitCoverage, transitRoute } from '../../worker/transit.mjs';
 import { verifyPremise, validateAddress } from '../../worker/address.mjs';
 import { annotateTraffic, validateTraffic } from '../../worker/traffic.mjs';
 import { locateByWifi } from '../../worker/wifi-location.mjs';
@@ -23,6 +23,10 @@ test('transit uses active dates and permits a transfer only with enough time', a
   const result = await transitRoute(bucket(data), { coordinates: [a, c], departureTime: '2026-11-21T00:00:00+05:30' });
   assert.equal(result.legs.length, 2);
   assert.equal(result.arrivalTime, '2026-11-20T18:46:00.000Z');
+  assert.deepEqual(await transitCoverage(bucket(data), Date.parse('2026-11-22T00:00:00Z') / 1000), {
+    agency: 'Example', firstServiceDate: '2026-11-21', lastServiceDate: '2026-11-21',
+    lastArrivalTime: '2026-11-20T18:46:00.000Z', expired: true,
+  });
   await assert.rejects(transitRoute(bucket(data), { coordinates: [a, c], departureTime: '2026-11-22T00:00:00+05:30' }), { status: 404 });
 });
 

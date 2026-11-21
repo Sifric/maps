@@ -7,7 +7,7 @@ import { validateAddress, verifyPremise } from './address.mjs';
 import { sampleRelief } from './bathymetry.mjs';
 import { locateByCell } from './cell-location.mjs';
 import { locateByWifi } from './wifi-location.mjs';
-import { transitRoute, transitKey } from './transit.mjs';
+import { transitCoverage, transitRoute } from './transit.mjs';
 import { annotateTraffic, trafficSnapshot } from './traffic.mjs';
 
 const result = (body, status = 200) => Response.json(body, { status });
@@ -266,7 +266,7 @@ export function createPlatformApi(tileKey, renderStaticMap) {
       if (endpoint === '/capabilities') {
         const drivingProfiles = ['drive-no-tolls', 'drive-no-highways'];
         const [routingModes, transit, wifi, premises, traffic, availableProfiles] = await Promise.all([
-          availableRoutingModes(env.TILES_BUCKET), env.TILES_BUCKET?.head?.(transitKey),
+          availableRoutingModes(env.TILES_BUCKET), transitCoverage(env.TILES_BUCKET).catch(() => null),
           env.TILES_BUCKET?.head?.('lkmaps/geolocation/v1/wifi.json'),
           env.TILES_BUCKET?.head?.('lkmaps/address/v1/premises.json'),
           env.TILES_BUCKET?.get ? trafficSnapshot(env.TILES_BUCKET).catch(() => null) : null,
@@ -281,7 +281,8 @@ export function createPlatformApi(tileKey, renderStaticMap) {
           fleetOptimization: routingModes.includes('drive'),
           addressValidation: premises ? 'Sri Lanka postal towns and mapped premises' : 'Sri Lanka postal towns',
           elevation: 'Mapzen Terrarium', staticMap: Boolean(env.MAP_BROWSER), liveTraffic: Boolean(traffic),
-          transitSchedules: transit ? 'Lanka Metro Transit' : null, wifiPositioning: Boolean(wifi),
+          transitSchedules: transit && !transit.expired ? transit.agency : null,
+          transitScheduleCoverage: transit, wifiPositioning: Boolean(wifi),
         });
       }
       if (tile) {
