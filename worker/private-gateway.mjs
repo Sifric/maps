@@ -49,12 +49,16 @@ export function createPrivateGateway(assets) {
         ...privateHeaders, "WWW-Authenticate": 'Basic realm="Sifric Maps", charset="UTF-8"',
       } });
     }
+    const asset = assets.get(path);
     const origin = request.headers.get("Origin");
+    const documentLink = request.method === "GET" &&
+      asset?.[1].split(";")[0] === "text/html" &&
+      request.headers.get("Sec-Fetch-Mode") === "navigate" &&
+      request.headers.get("Sec-Fetch-Dest") === "document";
     if ((origin && origin !== new URL(request.url).origin) ||
-        request.headers.get("Sec-Fetch-Site") === "cross-site") {
+        (request.headers.get("Sec-Fetch-Site") === "cross-site" && !documentLink)) {
       return new Response("Cross-site requests are unavailable", { status: 403, headers: privateHeaders });
     }
-    const asset = assets.get(path);
     if (asset) {
       if (!["GET", "HEAD"].includes(request.method)) return new Response(null, { status: 405, headers: privateHeaders });
       const [body, type] = asset;

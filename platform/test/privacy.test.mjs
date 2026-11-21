@@ -46,3 +46,27 @@ test('same-host Basic opens the private portal and bearer credentials are replac
   const crossSite = req(portal, { headers: { Authorization: header, Origin: 'https://elsewhere.example' } });
   assert.equal((await gateway(crossSite, env, portal)).status, 403);
 });
+
+test('external links may open authenticated HTML documents but cannot embed or call private APIs', async () => {
+  const portal = '/developer/';
+  const crossSite = {
+    'Sec-Fetch-Site': 'cross-site',
+    'Sec-Fetch-Mode': 'navigate',
+    'Sec-Fetch-Dest': 'document',
+  };
+  const headers = { ...crossSite, Authorization: 'Bearer ' + token };
+  assert.equal((await gateway(req(portal, { headers: crossSite }), env, portal)).status, 401);
+  const page = await gateway(req(portal, { headers }), env, portal);
+  assert.equal(page.status, 200);
+  assert.match(page.headers.get('content-security-policy'), /frame-ancestors 'self'/);
+  assert.equal((await gateway(req(portal, {
+    headers: { ...headers, 'Sec-Fetch-Dest': 'iframe' },
+  }), env, portal)).status, 403);
+  assert.equal((await gateway(req(portal, {
+    method: 'POST', headers,
+  }), env, portal)).status, 403);
+  const path = '/developer/api/v1/health';
+  assert.equal((await gateway(req(path, { headers }), env, path, () => {
+    assert.fail('Cross-site navigation reached the API.');
+  })).status, 403);
+});
