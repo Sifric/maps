@@ -89,16 +89,7 @@ function actionLabel(button, text, glyph) {
   button.replaceChildren(icon(glyph), element("span", text));
 }
 function dotImage(kind) {
-  const canvas = document.createElement("canvas");
-  canvas.width = 128;
-  canvas.height = 144;
-  const c = canvas.getContext("2d");
-  c.scale(2, 2);
-  c.fillStyle = colours[kind] || colours.other;
-  c.beginPath();
-  c.arc(32, 68, 5, 0, Math.PI * 2);
-  c.fill();
-  return { width: 128, height: 144, data: c.getImageData(0, 0, 128, 144).data };
+  return markerImage(kind, undefined, 0);
 }
 function roadDirectionImage() {
   const canvas = document.createElement("canvas");
@@ -122,14 +113,28 @@ function roadDirectionImage() {
   ctx.stroke();
   return { width: 64, height: 64, data: ctx.getImageData(0, 0, 64, 64).data };
 }
-function markerImage(kind) {
-  const canvas = document.createElement("canvas");
+function markerImage(kind, canvas = document.createElement("canvas"), progress = 1) {
   // 4× bitmap density keeps the circular outline smooth on high-DPI screens.
   canvas.width = 128;
   canvas.height = 144;
   const c = canvas.getContext("2d");
   c.scale(2, 2);
   const colour = colours[kind] || colours.other;
+  if (progress < 1) {
+    c.fillStyle = colour;
+    c.strokeStyle = "#fff";
+    c.lineWidth = 2.8;
+    c.globalAlpha = 1 - progress;
+    c.beginPath();
+    c.arc(32, 65, 9, 0, Math.PI * 2);
+    c.fill();
+    c.stroke();
+    const scale = 0.36 + 0.64 * progress;
+    c.translate(32, 65);
+    c.scale(scale, scale);
+    c.translate(-32, -65);
+    c.globalAlpha = progress;
+  }
   c.shadowColor = "#0003";
   c.shadowBlur = 8;
   c.shadowOffsetY = 2;
@@ -154,6 +159,35 @@ function markerImage(kind) {
   drawIcon(c, icons[kind] || "place", 18, 15, 28, "#fff");
   return { width: 128, height: 144, data: c.getImageData(0, 0, 128, 144).data };
 }
+function transitioningPinImage(kind, shrinking = false) {
+  const canvas = document.createElement("canvas");
+  const image = markerImage(kind, canvas, shrinking ? 0 : 1);
+  let animation;
+  let started;
+  let finished = true;
+  return {
+    ...image,
+    render() {
+      const sequence = shrinking ? dotAnimation : pinAnimation;
+      if (animation !== sequence) {
+        animation = sequence;
+        started = performance.now();
+        finished = matchMedia("(prefers-reduced-motion: reduce)").matches;
+        if (finished) {
+          this.data = image.data;
+          return true;
+        }
+      }
+      if (finished) return false;
+      const elapsed = Math.min(1, (performance.now() - started) / 240);
+      finished = elapsed === 1;
+      const progress = (1 - elapsed) ** 3;
+      this.data = markerImage(kind, canvas, shrinking ? progress : 1 - progress).data;
+      if (!finished) map.triggerRepaint();
+      return true;
+    },
+  };
+}
 function stylePlaces(style) {
   const layers = Object.fromEntries(style.layers.map((l) => [l.id, l]));
   for (const id of [
@@ -164,32 +198,20 @@ function stylePlaces(style) {
     if (layers[id])
       layers[id].layout = { ...(layers[id].layout || {}), visibility: "none" };
   const dot = layers["mazo-places-dot"];
-  // Fallback dots share the pin collision footprint, so they yield to named
-  // pins and to each other instead of drawing an unrestricted cloud of points.
+  // Show only the nearby places that could not fit as pins.
   dot.type = "symbol";
   delete dot.maxzoom;
+  dot.filter = ["==", ["id"], -1];
   dot.layout = {
     "icon-image": ["concat", "lk-dot-", ["get", "kind"]],
-    "icon-size": [
-      "interpolate",
-      ["linear"],
-      ["zoom"],
-      7,
-      0.65,
-      12,
-      0.8,
-      16,
-      0.9,
-    ],
     "icon-anchor": "bottom",
-    "icon-allow-overlap": false,
-    "icon-ignore-placement": false,
-    "icon-padding": 8,
+    "icon-allow-overlap": true,
+    "icon-ignore-placement": true,
   };
   dot.paint = {};
   const pin = layers["mazo-places-icon"];
   pin.minzoom = 7;
-  delete pin.filter;
+  pin.filter = ["==", ["id"], -1];
   pin.layout = {
     "icon-image": ["concat", "lk-pin-", ["get", "kind"]],
     "icon-size": [
@@ -225,7 +247,7 @@ function stylePlaces(style) {
       [0, 0.3],
     ],
     "text-justify": "auto",
-    "text-optional": false,
+    "text-optional": true,
     "text-allow-overlap": false,
     "text-padding": 6,
     "text-max-width": 10,
@@ -266,6 +288,10 @@ function stylePlaces(style) {
     "text-halo-width": 1.5,
     "text-halo-blur": 0.5,
   };
+  // Use the same collision rules while a newly placed pin expands.
+  const promoted = structuredClone(pin);
+  promoted.id = "mazo-places-promoted";
+  promoted.layout["icon-image"] = ["concat", "lk-expand-", ["get", "kind"]];
   const selectedLabel = structuredClone(pin);
   selectedLabel.id = "mazo-places-selected-label";
   selectedLabel.layout = Object.fromEntries(
@@ -277,13 +303,12 @@ function stylePlaces(style) {
   selectedLabel.layout["text-ignore-placement"] = true;
   selectedLabel.filter = ["==", ["id"], "__no_selected_place__"];
   selectedLabel.paint = { ...pin.paint };
-  dot.layout["symbol-sort-key"] = pin.layout["symbol-sort-key"];
   // Geographic names keep placement priority over businesses at overview zooms.
   const base = style.layers.filter((layer) => layer !== dot && layer !== pin);
   const geographicNames = base.findIndex(
     (layer) => layer["source-layer"] === "place",
   );
-  base.splice(geographicNames < 0 ? base.length : geographicNames, 0, dot, pin);
+  base.splice(geographicNames < 0 ? base.length : geographicNames, 0, dot, pin, promoted);
   base.push(selectedLabel);
   style.layers = base;
   return style;
@@ -490,22 +515,142 @@ async function searchPlaces() {
     box.replaceChildren(element("div", e.message, "empty"));
   }
 }
-function applyPlaceFilters() {
+const PLACE_MARKER_LAYERS = ["mazo-places-promoted", "mazo-places-icon", "mazo-places-dot"];
+const MAX_PLACE_DOTS = 4;
+const MIN_DOT_ZOOM = 12;
+const DOT_SPACING = 44;
+const placeMinZoom = ["number", ["get", "min_zoom"], 7];
+let markerZoom;
+let settledMarkerZoom;
+let dotIds = [];
+let promotionCandidates = [];
+let promotedIds = [];
+let pinAnimation = 0;
+let dotAnimation = 0;
+let previousVisiblePins = new Set();
+let demotionCandidates = new Set();
+let pinFilterState;
+
+function updatePlaceMarkers() {
+  if (!map?.getLayer("mazo-places-promoted")) return;
+  const zoom = Math.floor(map.getZoom());
+  const routing = document.body.classList.contains("routing-open");
+  const selectedId = selected && highlight ? selected[0] : null;
+  const zoomChanged = zoom !== markerZoom;
+  const zoomingIn = zoom > markerZoom;
+  if (zoomChanged) {
+    promotionCandidates = zoomingIn
+      ? [...new Set([...promotionCandidates, ...dotIds])]
+      : [];
+    promotedIds = [];
+    markerZoom = zoom;
+  }
+
   const filters = [];
   if (category) filters.push(["==", ["get", "kind"], category]);
-  if (selected && highlight) filters.push(["!=", ["id"], selected[0]]);
-  const routing = document.body.classList.contains("routing-open");
-  for (const id of ["mazo-places-dot", "mazo-places-icon"]) {
-    if (!map?.getLayer(id)) continue;
-    const layerFilters = [...filters];
-    // While navigating, remove minor POIs and background dots; keep useful
-    // landmarks such as hospitals, transport, and public facilities visible.
-    if (routing) {
-      if (id === "mazo-places-dot") layerFilters.push(["==", ["get", "kind"], "__hidden_during_routing__"]);
-      else layerFilters.push(["!", ["in", ["get", "kind"], ["literal", ["food", "shopping", "other", "leisure"]]]]);
+  if (selectedId !== null) filters.push(["!=", ["id"], selectedId]);
+  if (routing) filters.push(["!", ["in", ["get", "kind"], ["literal", ["food", "shopping", "other", "leisure"]]]]);
+  const pinZoom = ["<=", placeMinZoom, zoom];
+  const filterState = JSON.stringify([zoom, routing, selectedId, category]);
+  const applyPinFilters = () => {
+    const promoted = ["in", ["id"], ["literal", promotedIds]];
+    map.setFilter("mazo-places-icon", ["all", ...filters, pinZoom, ["!", promoted]]);
+    map.setFilter("mazo-places-promoted", ["all", ...filters, pinZoom, promoted]);
+  };
+  const setDots = (ids) => {
+    if (ids.length === dotIds.length && ids.every((id, i) => id === dotIds[i])) return;
+    dotIds = ids;
+    map.setFilter("mazo-places-dot", ["in", ["id"], ["literal", dotIds]]);
+  };
+  if (filterState !== pinFilterState) {
+    pinFilterState = filterState;
+    if (routing || !zoomChanged) {
+      promotionCandidates = [];
+      demotionCandidates.clear();
+      previousVisiblePins.clear();
     }
-    map.setFilter(id, layerFilters.length ? ["all", ...layerFilters] : null);
+    if (routing || !zoomingIn || zoom < MIN_DOT_ZOOM) setDots([]);
+    applyPinFilters();
+    return; // Wait for MapLibre to place the updated pins before finding overflow.
   }
+  if (routing || zoom < MIN_DOT_ZOOM || map.isMoving() ||
+      map.getLayoutProperty("mazo-places-icon", "visibility") === "none") return;
+
+  const currentZoom = map.getZoom();
+  if (currentZoom > settledMarkerZoom) {
+    promotionCandidates = [...new Set([...promotionCandidates, ...dotIds])];
+    demotionCandidates.clear();
+  } else if (currentZoom < settledMarkerZoom) {
+    demotionCandidates = new Set(previousVisiblePins);
+  }
+  settledMarkerZoom = currentZoom;
+  const canvas = map.getCanvas();
+  const project = ({ geometry }) => map.project(geometry.coordinates);
+  const rendered = map.queryRenderedFeatures({ layers: PLACE_MARKER_LAYERS.slice(0, 2) });
+  const visiblePins = new Map(rendered.map((feature) => [feature.id, project(feature)]));
+  previousVisiblePins = new Set(visiblePins.keys());
+  if (promotionCandidates.length) {
+    const ready = promotionCandidates.filter((id) => visiblePins.has(id) && !promotedIds.includes(id));
+    if (ready.length) {
+      promotionCandidates = promotionCandidates.filter((id) => !ready.includes(id));
+      promotedIds = [...promotedIds, ...ready];
+      pinAnimation++;
+      setDots(dotIds.filter((id) => !ready.includes(id)));
+      applyPinFilters();
+      return;
+    }
+  }
+
+  if (!visiblePins.size) {
+    setDots([]);
+    return;
+  }
+
+  const bounds = map.getBounds();
+  const candidates = new Map();
+  for (const feature of map.querySourceFeatures("openmaptiles", {
+    sourceLayer: "places",
+    filter: ["all", ...filters, pinZoom],
+  })) {
+    const { id, properties, geometry } = feature;
+    if (id == null || visiblePins.has(id) || candidates.has(id) ||
+        !bounds.contains(geometry.coordinates)) continue;
+    const point = project(feature);
+    if (point.x < 12 || point.x > canvas.clientWidth - 12 ||
+        point.y < 12 || point.y > canvas.clientHeight - 12) continue;
+    // A dot needs its own space while staying close to the pin it yielded to.
+    let distance = Infinity;
+    for (const pin of visiblePins.values()) distance = Math.min(distance, pin.dist(point));
+    if (distance < 15 || distance > 56) continue;
+    candidates.set(id, { id, point, priority: properties.priority ?? Infinity });
+  }
+
+  const previous = new Set(dotIds);
+  const ranked = [...candidates.values()].sort((a, b) =>
+    Number(previous.has(b.id)) - Number(previous.has(a.id)) ||
+    a.priority - b.priority || a.id - b.id,
+  );
+  const spaced = [];
+  for (const candidate of ranked) {
+    if (spaced.some(({ point }) => point.dist(candidate.point) < DOT_SPACING)) continue;
+    spaced.push(candidate);
+    if (spaced.length === MAX_PLACE_DOTS) break;
+  }
+  const nextDots = spaced.map(({ id }) => id);
+  const newlyShrinking = nextDots.filter((id) => demotionCandidates.delete(id));
+  if (newlyShrinking.length) {
+    dotAnimation++;
+    map.setLayoutProperty("mazo-places-dot", "icon-image", [
+      "concat",
+      ["case", ["in", ["id"], ["literal", newlyShrinking]], "lk-shrink-", "lk-dot-"],
+      ["get", "kind"],
+    ]);
+  }
+  setDots(nextDots);
+}
+
+function applyPlaceFilters() {
+  updatePlaceMarkers();
   if (map?.getLayer("mazo-places-selected-label"))
     map.setFilter(
       "mazo-places-selected-label",
@@ -1500,6 +1645,10 @@ document.addEventListener("keydown", (e) => {
       map.addImage(e.id, roadDirectionImage(), { pixelRatio: 2 });
     if (e.id.startsWith("lk-pin-") && !map.hasImage(e.id))
       map.addImage(e.id, markerImage(e.id.slice(7)), { pixelRatio: 4 });
+    if (e.id.startsWith("lk-expand-") && !map.hasImage(e.id))
+      map.addImage(e.id, transitioningPinImage(e.id.slice(10)), { pixelRatio: 4 });
+    if (e.id.startsWith("lk-shrink-") && !map.hasImage(e.id))
+      map.addImage(e.id, transitioningPinImage(e.id.slice(10), true), { pixelRatio: 4 });
     if (e.id.startsWith("lk-dot-") && !map.hasImage(e.id))
       map.addImage(e.id, dotImage(e.id.slice(7)), { pixelRatio: 4 });
   });
@@ -1582,7 +1731,7 @@ document.addEventListener("keydown", (e) => {
         `${displayedBeamHeading - map.getBearing()}deg`);
     }
   });
-  for (const layer of ["mazo-places-icon", "mazo-places-dot"]) {
+  for (const layer of PLACE_MARKER_LAYERS) {
     map.on("click", layer, (e) => {
       if (document.body.classList.contains("routing-open") || document.body.classList.contains("contribution-picking")) return;
       const f = e.features[0],
@@ -1606,11 +1755,23 @@ document.addEventListener("keydown", (e) => {
     if (document.body.classList.contains("contribution-picking")) return;
     if (
       !map.queryRenderedFeatures(e.point, {
-        layers: ["mazo-places-icon", "mazo-places-dot"],
+        layers: PLACE_MARKER_LAYERS,
       }).length
     )
       $("suggestions").hidden = true;
   });
+  map.on("zoom", () => {
+    if (Math.floor(map.getZoom()) !== markerZoom) updatePlaceMarkers();
+  });
+  let lastMarkerPlacement = -Infinity;
+  map.on("render", () => {
+    if (map.getZoom() < MIN_DOT_ZOOM || map.isMoving() || !map.areTilesLoaded()) return;
+    const now = performance.now();
+    if (now - lastMarkerPlacement < 350) return;
+    lastMarkerPlacement = now;
+    updatePlaceMarkers();
+  });
+  map.on("idle", updatePlaceMarkers);
   map.once("load", async () => {
     mapOptions = createMapOptions(map, { baseStyle: style, status });
     const id = new URL(location.href).searchParams.get("place");
