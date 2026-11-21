@@ -96,7 +96,11 @@ Run rendering in an isolated container. Both images use the authenticated
 </iframe>
 ```
 
-Use the same link outside an iframe to share a map location.
+Use the same link outside an iframe to share a map location. The embed defaults to
+the Default map and follows the device theme. Add `type=default|satellite|terrain`
+and `theme=system|light|dark` to preselect the view and theme. Add `controls=0`
+to hide the appearance controls. Satellite imagery retains its natural colors
+in both themes.
 
 ```js
 import { createSifricMap } from "/developer/sifric-maps.js";

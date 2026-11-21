@@ -1,3 +1,4 @@
+import { createMapOptions } from "/map-options.js";
 import { selectedPlaceElement } from "/place-markers.js";
 import { createSifricMap } from "./sifric-maps.js";
 
@@ -12,19 +13,44 @@ const lat = read("lat", -85, 85);
 const zoom = read("zoom", 0, 20);
 const center = lon !== undefined && lat !== undefined ? [lon, lat] : undefined;
 
+const status = document.getElementById("status");
+const view = document.getElementById("map-view");
+const theme = document.getElementById("map-theme");
+function showStatus(message) {
+  status.hidden = false;
+  status.textContent = message;
+}
+
 try {
   const map = await createSifricMap("map", {
     ...(center ? { center } : {}),
     ...(zoom !== undefined ? { zoom } : {}),
   });
-  map.once("idle", () => { document.getElementById("map").dataset.ready = "true"; });
+  map.once("load", () => {
+    const appearance = createMapOptions(map, {
+      baseStyle: map.getStyle(),
+      status: showStatus,
+      embed: {
+        theme: query.get("theme"),
+        type: query.get("type"),
+        onChange(settings) {
+          view.value = settings.type;
+          theme.value = settings.theme;
+          for (const option of view.options) option.disabled = settings.unavailable.includes(option.value);
+        },
+      },
+    });
+    map.on("error", event => appearance.handleError(event));
+    view.addEventListener("change", () => appearance.setType(view.value));
+    theme.addEventListener("change", () => appearance.setTheme(theme.value));
+    document.getElementById("appearance").hidden = query.get("controls") === "0";
+    map.once("idle", () => { document.getElementById("map").dataset.ready = "true"; });
+  });
   map.addControl(new maplibregl.NavigationControl({ showCompass: false }));
   if (center && query.get("pin") === "1") {
     new maplibregl.Marker({ element: selectedPlaceElement(), anchor: "bottom" })
       .setLngLat(center).addTo(map);
   }
 } catch {
-  const status = document.getElementById("status");
-  status.hidden = false;
-  status.textContent = "The map could not be loaded.";
+  showStatus("The map could not be loaded.");
 }

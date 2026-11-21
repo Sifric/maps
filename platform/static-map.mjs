@@ -24,7 +24,7 @@ export function createStaticRenderer(origin, executablePath, renderToken) {
         return route.continue({ headers: { ...route.request().headers(), authorization: `Bearer ${renderToken}` } });
       });
       const url = new URL('/developer/embed/', base);
-      url.search = new URLSearchParams({ lon, lat, zoom, pin: pin ? '1' : '0' });
+      url.search = new URLSearchParams({ lon, lat, zoom, controls: 0, pin: pin ? '1' : '0' });
       const navigation = await page.goto(url.href, { waitUntil: 'domcontentloaded', timeout: 12000 });
       if (!navigation?.ok()) throw new Error('Sifric embed failed to load.');
       await page.locator('#map[data-ready="true"]').waitFor({ timeout: 20000 });

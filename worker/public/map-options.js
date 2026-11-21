@@ -13,6 +13,8 @@ const DEFAULTS = {
   },
 };
 const STORAGE = "lk-map-settings";
+const THEMES = ["light", "dark", "system"];
+const MAP_TYPES = ["default", "satellite", "terrain"];
 const $ = (id) => document.getElementById(id);
 const COPY = {
   transit: "Mapped stops & rail · no live arrivals",
@@ -25,9 +27,9 @@ function restore() {
   const result = structuredClone(DEFAULTS);
   try {
     const value = JSON.parse(localStorage.getItem(STORAGE) || "{}");
-    if (["light", "dark", "system"].includes(value.theme))
+    if (THEMES.includes(value.theme))
       result.theme = value.theme;
-    if (["default", "satellite", "terrain"].includes(value.type))
+    if (MAP_TYPES.includes(value.type))
       result.type = value.type;
     if (typeof value.followRoads === "boolean") result.followRoads = value.followRoads;
     for (const key of ["places", "labels"])
@@ -150,9 +152,11 @@ export function initialMapStyle(style) {
   return result;
 }
 
-export function createMapOptions(map, { baseStyle, status }) {
-  const settings = restore(),
+export function createMapOptions(map, { baseStyle, status, embed }) {
+  const settings = embed ? structuredClone(DEFAULTS) : restore(),
     media = matchMedia("(prefers-color-scheme: dark)");
+  if (THEMES.includes(embed?.theme)) settings.theme = embed.theme;
+  if (MAP_TYPES.includes(embed?.type)) settings.type = embed.type;
   const baseLayers = structuredClone(baseStyle.layers),
     failures = new Set();
   let lastAppearance = "",
@@ -160,6 +164,7 @@ export function createMapOptions(map, { baseStyle, status }) {
   const dark = () =>
     settings.theme === "dark" || (settings.theme === "system" && media.matches);
   function persist() {
+    if (embed) return;
     try {
       localStorage.setItem(STORAGE, JSON.stringify(settings));
     } catch {
@@ -370,9 +375,7 @@ export function createMapOptions(map, { baseStyle, status }) {
     if (current === lastAppearance) return;
     lastAppearance = current;
     document.documentElement.dataset.theme = dark() ? "dark" : "light";
-    document.querySelector('meta[name="theme-color"]').content = dark()
-      ? "#202124"
-      : "#ffffff";
+    document.querySelector('meta[name="theme-color"]')?.setAttribute("content", dark() ? "#202124" : "#ffffff");
     ensureProvider();
     for (const layer of baseLayers) {
       let show = layer.layout?.visibility !== "none";
@@ -436,13 +439,17 @@ export function createMapOptions(map, { baseStyle, status }) {
         dark() ? "#72816c" : "#ffffff",
       );
     }
-    map.setPaintProperty(
+    if (map.getLayer("lk-detail-buildings")) map.setPaintProperty(
       "lk-detail-buildings",
       "fill-extrusion-color",
       dark() ? "#586475" : "#d4dce4",
     );
   }
   function updateUI() {
+    if (embed) {
+      embed.onChange({ theme: settings.theme, type: settings.type, unavailable: [...failures] });
+      return;
+    }
     for (const b of document.querySelectorAll("[data-theme-choice]"))
       b.setAttribute(
         "aria-checked",
@@ -515,77 +522,83 @@ export function createMapOptions(map, { baseStyle, status }) {
     applyAppearance();
     applyDetails();
   }
-  addOverlays();
-  addRoadMarkings();
-  for (const button of document.querySelectorAll("[data-theme-choice]"))
-    button.onclick = () => {
-      settings.theme = button.dataset.themeChoice;
-      persist();
-      apply();
-    };
-  for (const button of document.querySelectorAll("[data-map-type]"))
-    button.onclick = () => {
-      settings.type = button.dataset.mapType;
-      persist();
-      apply();
-      if (settings.type === "satellite" && map.getPitch())
-        map.easeTo({ pitch: 0, duration: 350 });
-      else if (raised && map.getPitch() === 0)
-        map.easeTo({ pitch: 45, duration: 350 });
-    };
-  for (const button of document.querySelectorAll("[data-map-detail]"))
-    button.onclick = () => {
-      const name = button.dataset.mapDetail;
-      if (!detailAvailability(name, settings.type, map.getZoom()).available)
-        return;
-      settings.details[name] = !settings.details[name];
-      if (
-        settings.details[name] &&
-        ["transit", "bicycling", "traffic"].includes(name)
-      ) {
-        for (const other of ["transit", "bicycling", "traffic"])
-          if (other !== name) settings.details[other] = false;
-      }
-      persist();
-      applyDetails();
-      if (name === "buildings")
-        map.easeTo({ pitch: raised ? 45 : 0, duration: 400 });
-    };
-  const followRoadsToggle = $("follow-roads");
-  if (followRoadsToggle) {
-    followRoadsToggle.checked = settings.followRoads;
-    followRoadsToggle.onchange = (event) => {
-      settings.followRoads = event.target.checked;
-      persist();
-      window.dispatchEvent(new CustomEvent("sifric-follow-roads-change",
-        { detail: { enabled: settings.followRoads } }));
-    };
-  }
-  $("show-places").onchange = (e) => {
-    settings.places = e.target.checked;
-    persist();
-    applyDetails();
-  };
-  $("satellite-labels").onchange = (e) => {
-    settings.labels = e.target.checked;
+  function setTheme(theme) {
+    if (!THEMES.includes(theme)) return;
+    settings.theme = theme;
     persist();
     apply();
-  };
-  $("layers").onclick = () => {
-    $("layer-panel").hidden = !$("layer-panel").hidden;
-    $("layers").setAttribute("aria-expanded", String(!$("layer-panel").hidden));
-  };
-  $("close-layers").onclick = () => {
-    $("layer-panel").hidden = true;
-    $("layers").setAttribute("aria-expanded", "false");
-    $("layers").focus();
-  };
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") {
+  }
+  function setType(type) {
+    if (!MAP_TYPES.includes(type) || failures.has(type)) return;
+    settings.type = type;
+    persist();
+    apply();
+    if (type === "satellite" && map.getPitch())
+      map.easeTo({ pitch: 0, duration: 350 });
+    else if (raised && map.getPitch() === 0)
+      map.easeTo({ pitch: 45, duration: 350 });
+  }
+  if (!embed) {
+    addOverlays();
+    addRoadMarkings();
+    for (const button of document.querySelectorAll("[data-theme-choice]"))
+      button.onclick = () => setTheme(button.dataset.themeChoice);
+    for (const button of document.querySelectorAll("[data-map-type]"))
+      button.onclick = () => setType(button.dataset.mapType);
+    for (const button of document.querySelectorAll("[data-map-detail]"))
+      button.onclick = () => {
+        const name = button.dataset.mapDetail;
+        if (!detailAvailability(name, settings.type, map.getZoom()).available)
+          return;
+        settings.details[name] = !settings.details[name];
+        if (
+          settings.details[name] &&
+          ["transit", "bicycling", "traffic"].includes(name)
+        ) {
+          for (const other of ["transit", "bicycling", "traffic"])
+            if (other !== name) settings.details[other] = false;
+        }
+        persist();
+        applyDetails();
+        if (name === "buildings")
+          map.easeTo({ pitch: raised ? 45 : 0, duration: 400 });
+      };
+    const followRoadsToggle = $("follow-roads");
+    if (followRoadsToggle) {
+      followRoadsToggle.checked = settings.followRoads;
+      followRoadsToggle.onchange = (event) => {
+        settings.followRoads = event.target.checked;
+        persist();
+        window.dispatchEvent(new CustomEvent("sifric-follow-roads-change",
+          { detail: { enabled: settings.followRoads } }));
+      };
+    }
+    $("show-places").onchange = (e) => {
+      settings.places = e.target.checked;
+      persist();
+      applyDetails();
+    };
+    $("satellite-labels").onchange = (e) => {
+      settings.labels = e.target.checked;
+      persist();
+      apply();
+    };
+    $("layers").onclick = () => {
+      $("layer-panel").hidden = !$("layer-panel").hidden;
+      $("layers").setAttribute("aria-expanded", String(!$("layer-panel").hidden));
+    };
+    $("close-layers").onclick = () => {
       $("layer-panel").hidden = true;
       $("layers").setAttribute("aria-expanded", "false");
-    }
-  });
+      $("layers").focus();
+    };
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        $("layer-panel").hidden = true;
+        $("layers").setAttribute("aria-expanded", "false");
+      }
+    });
+  }
   media.addEventListener("change", () => {
     if (settings.theme === "system") apply();
   });
@@ -593,6 +606,8 @@ export function createMapOptions(map, { baseStyle, status }) {
   apply();
   if (raised && map.getPitch() === 0) map.jumpTo({ pitch: 45 });
   return {
+    setTheme,
+    setType,
     handleError(event) {
       const message = String(event.error?.message || "");
       const type =

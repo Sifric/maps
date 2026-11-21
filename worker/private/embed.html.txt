@@ -4,12 +4,29 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sifric Maps</title>
+  <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="/developer/embed.css">
   <link rel="stylesheet" href="/place-markers.css">
   <script type="module" src="/developer/embed.js"></script>
 </head>
 <body>
   <main id="map" aria-label="Sifric Maps"></main>
+  <div id="appearance" hidden>
+    <label>Map view
+      <select id="map-view">
+        <option value="default">Default</option>
+        <option value="satellite">Satellite</option>
+        <option value="terrain">Terrain</option>
+      </select>
+    </label>
+    <label>Theme
+      <select id="map-theme">
+        <option value="system">System</option>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+      </select>
+    </label>
+  </div>
   <p id="status" role="status" hidden></p>
 </body>
 </html>

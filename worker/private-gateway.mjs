@@ -62,8 +62,15 @@ export function createPrivateGateway(assets) {
     if (asset) {
       if (!["GET", "HEAD"].includes(request.method)) return new Response(null, { status: 405, headers: privateHeaders });
       const [body, type] = asset;
+      const headers = { ...privateHeaders, "Content-Type": type };
+      if (path === "/developer/embed/") {
+        headers["Content-Security-Policy"] = headers["Content-Security-Policy"].replace(
+          "connect-src 'self'",
+          "connect-src 'self' https://services.arcgisonline.com https://s3.amazonaws.com/elevation-tiles-prod/",
+        );
+      }
       return new Response(request.method === "HEAD" ? null : body, {
-        headers: { ...privateHeaders, "Content-Type": type },
+        headers,
       });
     }
     if (!/^\/developer\/api\/v1\/[a-z0-9./_-]+$/u.test(path)) {
