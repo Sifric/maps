@@ -62,6 +62,22 @@ Share a place search with `/developer/?q=Colombo` or open a pinned location
 with `/developer/embed/?lon=79.86&lat=6.92&zoom=15&pin=1`. Both links require
 developer access. The public map's existing place sharing uses `/?place=ID`.
 
+The Worker supports POST `/routes` and `/matrix` for `drive`, `walk`, and
+`cycle`. Pass coordinates in `[longitude, latitude]` order. Routes accept
+2–8 coordinates and return a GeoJSON path with estimated duration in seconds,
+distance in meters, and geometry-derived maneuvers. Matrices accept 2–6
+coordinates with optional `sources` and `destinations` index arrays. An
+unreachable pair is `null`. Coordinates are snapped to routing vertices
+within 500 m. The motor vehicle profile accounts for supported OSM one-way
+and node-based turn restrictions. Estimates use map data and profile speeds.
+Live traffic and conditional or via-way restrictions are not available.
+
+The `Deploy Sifric routing data` workflow builds mode-specific graphs with
+[RoutingKit](https://github.com/RoutingKit/RoutingKit) from Geofabrik's Sri
+Lanka OpenStreetMap extract and validates them before uploading to the Maps
+R2 bucket. Worker requests read the indexes from R2. Routing data is derived
+from [OpenStreetMap contributors under the ODbL](https://www.openstreetmap.org/copyright).
+
 ## Backend container
 
 Build from the Sifric Maps checkout root, then carry the image to a Sifric-operated

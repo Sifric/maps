@@ -21,9 +21,9 @@
       </label>
       <label>Travel mode
         <select name="mode">
-          <option value="drive">Drive</option><option value="van">Van</option>
-          <option value="tuk">Tuk</option><option value="walk">Walk</option>
-          <option value="cycle">Cycle</option><option value="motorcycle">Motorcycle</option>
+          <option value="drive">Drive</option>
+          <option value="walk">Walk</option>
+          <option value="cycle">Cycle</option>
         </select>
       </label>
       <div class="actions">

@@ -1,6 +1,7 @@
 import { decode } from 'fast-png';
 import { EtagMismatch, PMTiles, TileType } from 'pmtiles';
 import { nearestRoad } from './roads.mjs';
+import { availableRoutingModes, routingRequest, RoutingError } from './routing.mjs';
 
 const result = (body, status = 200) => Response.json(body, { status });
 const bounds = { west: 78, east: 82.5, south: 5, north: 10.5 };
@@ -19,6 +20,33 @@ function number(value, name, min, max) {
 function coords(query) {
   return [number(query.get('lon'), 'longitude', bounds.west, bounds.east),
     number(query.get('lat'), 'latitude', bounds.south, bounds.north)];
+}
+
+async function routePayload(request) {
+  const reader = request.body?.getReader();
+  if (!reader) throw new RoutingError(400, 'Supply a JSON object.');
+  const decoder = new TextDecoder();
+  let body = '', bytes = 0;
+  try {
+    for (;;) {
+      const { value, done } = await reader.read();
+      if (done) break;
+      bytes += value.byteLength;
+      if (bytes > 16384) {
+        await reader.cancel();
+        throw new RoutingError(413, 'Request exceeds 16 KiB.');
+      }
+      body += decoder.decode(value, { stream: true });
+    }
+    const value = JSON.parse(body + decoder.decode());
+    if (!value || typeof value !== 'object' || Array.isArray(value)) throw new Error();
+    return value;
+  } catch (error) {
+    if (error instanceof RoutingError) throw error;
+    throw new RoutingError(400, 'Supply a JSON object.');
+  } finally {
+    reader.releaseLock();
+  }
 }
 
 function place([id, name, lon, lat, kind, description, label]) {
@@ -95,6 +123,16 @@ export function createPlatformApi(tileKey, renderStaticMap) {
     const prefix = '/developer/api/v1';
     if (!path.startsWith(prefix + '/')) return null;
     const endpoint = path.slice(prefix.length);
+    if (!env.SIFRIC_PLATFORM_ORIGIN && ['/routes', '/matrix'].includes(endpoint)) {
+      if (request.method !== 'POST') return result({ error: 'Use POST.' }, 405);
+      try {
+        return result(await routingRequest(env.TILES_BUCKET, endpoint.slice(1), await routePayload(request)));
+      } catch (error) {
+        if (error instanceof RoutingError) return result({ error: error.message }, error.status);
+        console.warn('Routing request failed', { operation: endpoint, reason: error?.message?.slice(0, 120) });
+        return result({ error: 'The Sifric routing graph is unavailable.' }, 502);
+      }
+    }
     const tile = /^\/tiles\/(\d{1,2})\/(\d{1,9})\/(\d{1,9})\.pbf$/u.exec(endpoint);
     const id = /^\/places\/(\d{1,16})$/u.exec(endpoint)?.[1];
     const isNearestRoad = endpoint === '/roads/nearest' && request.method === 'GET';
@@ -104,11 +142,15 @@ export function createPlatformApi(tileKey, renderStaticMap) {
     const { origin, searchParams: query } = new URL(request.url);
     try {
       if (endpoint === '/health') return result({ status: 'ok', runtime: 'cloudflare-workers' });
-      if (endpoint === '/capabilities') return result({
-        region: 'LK', search: 'indexed places', geocoding: env.SIFRIC_PLATFORM_ORIGIN ? 'configured service' : 'indexed-place lookup',
-        routing: env.SIFRIC_PLATFORM_ORIGIN ? 'configured service' : null,
-        vectorTiles: true, nearestRoad: 'basemap centerlines', elevation: 'Mapzen Terrarium', staticMap: Boolean(env.MAP_BROWSER), liveTraffic: false,
-      });
+      if (endpoint === '/capabilities') {
+        const routingModes = await availableRoutingModes(env.TILES_BUCKET);
+        return result({
+          region: 'LK', search: 'indexed places', geocoding: env.SIFRIC_PLATFORM_ORIGIN ? 'configured service' : 'indexed-place lookup',
+          routing: env.SIFRIC_PLATFORM_ORIGIN ? 'configured service' : routingModes.length ? 'Sifric routing graph' : null,
+          routingModes, vectorTiles: true, nearestRoad: 'basemap centerlines', elevation: 'Mapzen Terrarium',
+          staticMap: Boolean(env.MAP_BROWSER), liveTraffic: false,
+        });
+      }
       if (tile) {
         const [z, x, y] = tile.slice(1).map(Number);
         if (z > 24 || x >= 2 ** z || y >= 2 ** z) return result({ error: 'Tile not found.' }, 404);
