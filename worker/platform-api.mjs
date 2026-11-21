@@ -1,5 +1,6 @@
 import { decode } from 'fast-png';
 import { EtagMismatch, PMTiles, TileType } from 'pmtiles';
+import { nearestRoad } from './roads.mjs';
 
 const result = (body, status = 200) => Response.json(body, { status });
 const bounds = { west: 78, east: 82.5, south: 5, north: 10.5 };
@@ -38,6 +39,18 @@ function distance(aLon, aLat, bLon, bLat) {
   return 12742017.6 * Math.asin(Math.sqrt(Math.min(1, a)));
 }
 
+function vectorArchive(bucket, tileKey) {
+  return new PMTiles({
+    getKey: () => tileKey,
+    async getBytes(offset, length, _signal, etag) {
+      const object = await bucket.get(tileKey, { range: { offset, length } });
+      if (!object) throw new Error('Vector archive unavailable.');
+      if (etag && etag !== object.httpEtag) throw new EtagMismatch();
+      return { data: await object.arrayBuffer(), etag: object.httpEtag };
+    },
+  });
+}
+
 export async function terrarium(lon, lat, fetchTile = fetch) {
   const zoom = 14, count = 2 ** zoom;
   const x = count * (lon + 180) / 360;
@@ -45,7 +58,7 @@ export async function terrarium(lon, lat, fetchTile = fetch) {
   const tileX = Math.floor(x), tileY = Math.floor(y);
   const response = await fetchTile(
     `https://s3.amazonaws.com/elevation-tiles-prod/terrarium/${zoom}/${tileX}/${tileY}.png`,
-    { signal: AbortSignal.timeout(6000), redirect: 'error' },
+    { signal: AbortSignal.timeout(6000), redirect: 'manual' },
   );
   if (response.status === 404) return null;
   if (!response.ok || !response.body) throw new Error('Terrain tile unavailable.');
@@ -84,8 +97,9 @@ export function createPlatformApi(tileKey, renderStaticMap) {
     const endpoint = path.slice(prefix.length);
     const tile = /^\/tiles\/(\d{1,2})\/(\d{1,9})\/(\d{1,9})\.pbf$/u.exec(endpoint);
     const id = /^\/places\/(\d{1,16})$/u.exec(endpoint)?.[1];
+    const isNearestRoad = endpoint === '/roads/nearest' && request.method === 'GET';
     const isGeocode = !env.SIFRIC_PLATFORM_ORIGIN && ['/geocode','/geocode/reverse'].includes(endpoint);
-    if (!tile && !id && !isGeocode && !['/health','/capabilities','/timezone','/elevation','/places/search','/places/nearby','/static-map'].includes(endpoint)) return null;
+    if (!tile && !id && !isGeocode && !isNearestRoad && !['/health','/capabilities','/timezone','/elevation','/places/search','/places/nearby','/static-map'].includes(endpoint)) return null;
     if (request.method !== 'GET') return result({ error: 'Use GET.' }, 405);
     const { origin, searchParams: query } = new URL(request.url);
     try {
@@ -93,20 +107,12 @@ export function createPlatformApi(tileKey, renderStaticMap) {
       if (endpoint === '/capabilities') return result({
         region: 'LK', search: 'indexed places', geocoding: env.SIFRIC_PLATFORM_ORIGIN ? 'configured service' : 'indexed-place lookup',
         routing: env.SIFRIC_PLATFORM_ORIGIN ? 'configured service' : null,
-        vectorTiles: true, elevation: 'Mapzen Terrarium', staticMap: Boolean(env.MAP_BROWSER), liveTraffic: false,
+        vectorTiles: true, nearestRoad: 'basemap centerlines', elevation: 'Mapzen Terrarium', staticMap: Boolean(env.MAP_BROWSER), liveTraffic: false,
       });
       if (tile) {
         const [z, x, y] = tile.slice(1).map(Number);
         if (z > 24 || x >= 2 ** z || y >= 2 ** z) return result({ error: 'Tile not found.' }, 404);
-        const archive = new PMTiles({
-          getKey: () => tileKey,
-          async getBytes(offset, length, _signal, etag) {
-            const object = await env.TILES_BUCKET.get(tileKey, { range: { offset, length } });
-            if (!object) throw new Error('Vector archive unavailable.');
-            if (etag && etag !== object.httpEtag) throw new EtagMismatch();
-            return { data: await object.arrayBuffer(), etag: object.httpEtag };
-          },
-        });
+        const archive = vectorArchive(env.TILES_BUCKET, tileKey);
         const info = await archive.getHeader();
         if (info.tileType !== TileType.Mvt) throw new Error('The archive does not contain vector tiles.');
         const data = await archive.getZxy(z, x, y);
@@ -140,6 +146,12 @@ export function createPlatformApi(tileKey, renderStaticMap) {
         return result({ items: primary.concat(secondary).slice(0, limit), precision: 'indexed-place' });
       }
       const [lon, lat] = coords(query);
+      if (isNearestRoad) {
+        const radius = number(query.get('radius') ?? 75, 'radius', 1, 150);
+        const nearest = await nearestRoad(vectorArchive(env.TILES_BUCKET, tileKey), lon, lat, radius);
+        return nearest ? result({ ...nearest, source: 'Sifric vector basemap' }) :
+          result({ error: 'No road centerline was found within the search radius.' }, 404);
+      }
       if (endpoint === '/static-map') {
         const zoom = number(query.get('zoom') ?? 13, 'zoom', 0, 20);
         const width = number(query.get('width') ?? 640, 'width', 128, 1280);

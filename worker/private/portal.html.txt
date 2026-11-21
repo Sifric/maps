@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sifric Maps Developer Access</title>
+  <script type="module" src="/developer/portal.js"></script>
 </head>
 <body>
   <main>
@@ -16,6 +17,8 @@
       <li><a href="/developer/sifric-places.js">Place search component</a></li>
     </ul>
     <p>Use the same Sifric credential as a bearer token in API requests. Keep it on your server.</p>
+    <h2>Place search</h2>
+    <sifric-place-search></sifric-place-search>
   </main>
 </body>
 </html>

@@ -17,7 +17,7 @@ export class SifricPlaceSearch extends HTMLElement {
     const results = document.createElement("ul");
     results.setAttribute("aria-label", "Place results");
     this.#root.append(input, status, results);
-    input.addEventListener("input", () => {
+    const scheduleSearch = () => {
       clearTimeout(this.#timer);
       this.#controller?.abort();
       results.replaceChildren();
@@ -25,15 +25,15 @@ export class SifricPlaceSearch extends HTMLElement {
       const query = input.value.trim();
       if (query.length < 2) return;
       this.#timer = setTimeout(() => this.#search(query, input, status, results), 180);
-    });
+    };
+    input.addEventListener("input", scheduleSearch);
+    input.maxLength = 120;
+    input.value = (this.getAttribute("query") ?? "").slice(0, 120);
+    scheduleSearch();
   }
 
   async #search(query, input, status, results) {
-    const api = this.getAttribute("api-base");
-    if (!api) {
-      status.textContent = "Set the API origin to search for places.";
-      return;
-    }
+    const api = this.getAttribute("api-base") ?? location.origin;
     const controller = new AbortController();
     this.#controller = controller;
     status.textContent = "Searching…";

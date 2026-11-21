@@ -37,7 +37,7 @@ test('same-host Basic opens the private portal and bearer credentials are replac
   const result = await gateway(browser, env, path, (endpoint, init) => {
     assert.equal(endpoint.href, 'https://private.example/api/v1/places/search?q=Colombo');
     assert.deepEqual(init.headers, { Authorization: 'Bearer ' + backend });
-    assert.equal(init.redirect, 'error');
+    assert.equal(init.redirect, 'manual');
     return Response.json({ items: [] }, { headers: { 'Access-Control-Allow-Origin': '*' } });
   });
   assert.equal(result.status, 200);

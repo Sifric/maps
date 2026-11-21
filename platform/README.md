@@ -47,10 +47,20 @@ Elevation samples existing Mapzen Terrarium data from AWS Open Data. The tile
 API reads vector byte ranges from the existing Sifric R2 archive. These endpoints
 use the same developer authentication as the rest of the portal.
 
+The Worker also serves GET `/roads/nearest?lon=79.86&lat=6.92`. It snaps a point
+to a road or path centerline from the Sifric basemap. An optional `radius` sets
+the maximum distance in meters (1–150; default 75). The response includes the
+snapped location, distance, and basemap class. It does not determine access
+restrictions, speed limits, or the road a trip followed.
+
 The Worker's `/static-map` uses the Cloudflare Browser Run binding to render
 the Default basemap as a PNG with attribution. Pass `lon`, `lat`, and
 optionally `width` and `height` (128–1280 px), `zoom`, `pin=1`, and
 `theme=light|dark`. Rendering is subject to the account's Browser Run quota.
+
+Share a place search with `/developer/?q=Colombo` or open a pinned location
+with `/developer/embed/?lon=79.86&lat=6.92&zoom=15&pin=1`. Both links require
+developer access. The public map's existing place sharing uses `/?place=ID`.
 
 ## Backend container
 

@@ -101,11 +101,12 @@ export function createPrivateGateway(assets, localApi) {
       const headers = { "Authorization": `Bearer ${env.SIFRIC_PLATFORM_TOKEN}` };
       if (body) headers["Content-Type"] = request.headers.get("Content-Type") ?? "application/json";
       const upstream = await send(endpoint, {
-        method: request.method, headers, body, duplex: "half", redirect: "error",
+        method: request.method, headers, body, duplex: "half", redirect: "manual",
         signal: AbortSignal.timeout(55000),
       });
       const type = upstream.headers.get("Content-Type") ?? "application/octet-stream";
-      if (!/^(application\/(json|octet-stream|vnd\.mapbox-vector-tile)|image\/png)(?:;|$)/i.test(type)) {
+      if ((upstream.status >= 300 && upstream.status < 400) ||
+          !/^(application\/(json|octet-stream|vnd\.mapbox-vector-tile)|image\/png)(?:;|$)/i.test(type)) {
         throw new Error();
       }
       return new Response(upstream.body, {

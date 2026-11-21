@@ -1,0 +1,9 @@
+const search = document.querySelector('sifric-place-search');
+const query = new URL(location.href).searchParams.get('q');
+if (query) search.setAttribute('query', query);
+search.addEventListener('sifric-place-select', ({ detail }) => {
+  const url = new URL('/developer/embed/', location.origin);
+  url.search = new URLSearchParams({ lon: detail.lon, lat: detail.lat, zoom: 15, pin: 1 });
+  location.assign(url);
+});
+await import('./sifric-places.js');
