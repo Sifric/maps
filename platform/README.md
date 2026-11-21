@@ -47,6 +47,11 @@ Elevation samples existing Mapzen Terrarium data from AWS Open Data. The tile
 API reads vector byte ranges from the existing Sifric R2 archive. These endpoints
 use the same developer authentication as the rest of the portal.
 
+The Worker's `/static-map` uses the Cloudflare Browser Run binding to render
+the Default basemap as a PNG with attribution. Pass `lon`, `lat`, and
+optionally `width` and `height` (128–1280 px), `zoom`, `pin=1`, and
+`theme=light|dark`. Rendering is subject to the account's Browser Run quota.
+
 ## Backend container
 
 Build from the Sifric Maps checkout root, then carry the image to a Sifric-operated

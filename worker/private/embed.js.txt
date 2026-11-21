@@ -46,7 +46,9 @@ try {
     document.getElementById("appearance").hidden = query.get("controls") !== "1";
     map.once("idle", () => { document.getElementById("map").dataset.ready = "true"; });
   });
-  map.addControl(new maplibregl.NavigationControl({ showCompass: false }));
+  if (query.get("static") !== "1") {
+    map.addControl(new maplibregl.NavigationControl({ showCompass: false }));
+  }
   if (center && query.get("pin") === "1") {
     new maplibregl.Marker({ element: selectedPlaceElement(), anchor: "bottom" })
       .setLngLat(center).addTo(map);

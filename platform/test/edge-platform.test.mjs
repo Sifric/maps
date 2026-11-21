@@ -64,3 +64,27 @@ test('Terrarium samples a bounded RGB tile at the configured source', async () =
   assert.equal(sample.elevationMeters, 203.5);
   assert.equal(await terrarium(80.77, 6.97, async () => new Response(null, { status: 404 })), null);
 });
+
+test('static map validates options and launches a renderer only after authentication', async () => {
+  const binding = {};
+  let renders = 0;
+  const render = createPlatformApi('sri-lanka.pmtiles', async (browser, _request, options) => {
+    renders++;
+    assert.equal(browser, binding);
+    assert.deepEqual(options, { lon: 79.86, lat: 6.92, zoom: 13, width: 320, height: 240, pin: '1', theme: 'dark' });
+    return new Uint8Array([137, 80, 78, 71]);
+  });
+  const dispatch = createPrivateGateway(new Map(), render);
+  const path = '/developer/api/v1/static-map';
+  const url = 'https://maps.test' + path + '?lon=79.86&lat=6.92&width=320&height=240&pin=1&theme=dark';
+  const configured = { ...env, MAP_BROWSER: binding };
+  const headers = { Authorization: 'Bearer ' + token };
+  assert.equal((await dispatch(new Request(url), configured, path)).status, 401);
+  assert.equal((await dispatch(new Request(url.replace('width=320', 'width=3000'), { headers }), configured, path)).status, 400);
+  assert.equal(renders, 0);
+  const image = await dispatch(new Request(url, { headers }), configured, path);
+  assert.equal(image.status, 200);
+  assert.equal(image.headers.get('Content-Type'), 'image/png');
+  assert.equal(image.headers.get('Cache-Control'), 'private, no-store');
+  assert.equal(renders, 1);
+});

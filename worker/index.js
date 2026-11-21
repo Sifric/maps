@@ -2,6 +2,7 @@ import basemapStyle from "./style.json";
 
 
 import { createPlatformApi } from "./platform-api.mjs";
+import { renderStaticMap } from "./static-map.mjs";
 import { createPrivateGateway } from "./private-gateway.mjs";
 import portal from "./private/portal.html.txt";
 import embed from "./private/embed.html.txt";
@@ -27,7 +28,7 @@ const handleDeveloper = createPrivateGateway(new Map([
   ["/developer/navigation/navigation.js", [navigationScript, "text/javascript; charset=utf-8"]],
   ["/developer/navigation/navigation.css", [navigationStyle, "text/css; charset=utf-8"]],
   ["/developer/sifric-navigation.js", [navigationSdk, "text/javascript; charset=utf-8"]],
-]), createPlatformApi(TILE_KEY));
+]), createPlatformApi(TILE_KEY, renderStaticMap));
 const cors = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Methods": "GET, HEAD, OPTIONS",

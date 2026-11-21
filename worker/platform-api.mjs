@@ -77,7 +77,7 @@ export async function terrarium(lon, lat, fetchTile = fetch) {
   return { elevationMeters: r * 256 + g + b / 256 - 32768, source: 'Mapzen Terrarium / AWS Open Data', tileZoom: zoom };
 }
 
-export function createPlatformApi(tileKey) {
+export function createPlatformApi(tileKey, renderStaticMap) {
   return async function localApi(request, env, path) {
     const prefix = '/developer/api/v1';
     if (!path.startsWith(prefix + '/')) return null;
@@ -85,7 +85,7 @@ export function createPlatformApi(tileKey) {
     const tile = /^\/tiles\/(\d{1,2})\/(\d{1,9})\/(\d{1,9})\.pbf$/u.exec(endpoint);
     const id = /^\/places\/(\d{1,16})$/u.exec(endpoint)?.[1];
     const isGeocode = !env.SIFRIC_PLATFORM_ORIGIN && ['/geocode','/geocode/reverse'].includes(endpoint);
-    if (!tile && !id && !isGeocode && !['/health','/capabilities','/timezone','/elevation','/places/search','/places/nearby'].includes(endpoint)) return null;
+    if (!tile && !id && !isGeocode && !['/health','/capabilities','/timezone','/elevation','/places/search','/places/nearby','/static-map'].includes(endpoint)) return null;
     if (request.method !== 'GET') return result({ error: 'Use GET.' }, 405);
     const { origin, searchParams: query } = new URL(request.url);
     try {
@@ -93,7 +93,7 @@ export function createPlatformApi(tileKey) {
       if (endpoint === '/capabilities') return result({
         region: 'LK', search: 'indexed places', geocoding: env.SIFRIC_PLATFORM_ORIGIN ? 'configured service' : 'indexed-place lookup',
         routing: env.SIFRIC_PLATFORM_ORIGIN ? 'configured service' : null,
-        vectorTiles: true, elevation: 'Mapzen Terrarium', liveTraffic: false,
+        vectorTiles: true, elevation: 'Mapzen Terrarium', staticMap: Boolean(env.MAP_BROWSER), liveTraffic: false,
       });
       if (tile) {
         const [z, x, y] = tile.slice(1).map(Number);
@@ -140,6 +140,18 @@ export function createPlatformApi(tileKey) {
         return result({ items: primary.concat(secondary).slice(0, limit), precision: 'indexed-place' });
       }
       const [lon, lat] = coords(query);
+      if (endpoint === '/static-map') {
+        const zoom = number(query.get('zoom') ?? 13, 'zoom', 0, 20);
+        const width = number(query.get('width') ?? 640, 'width', 128, 1280);
+        const height = number(query.get('height') ?? 480, 'height', 128, 1280);
+        const theme = query.get('theme') ?? 'light';
+        const pin = query.get('pin') ?? '0';
+        if (!Number.isInteger(width) || !Number.isInteger(height)) throw new Invalid('Use whole pixel dimensions.');
+        if (!['light', 'dark'].includes(theme) || !['0', '1'].includes(pin)) throw new Invalid('Use light or dark theme and pin=0 or pin=1.');
+        if (!env.MAP_BROWSER || !renderStaticMap) return result({ error: 'Static rendering is unavailable.' }, 503);
+        const image = await renderStaticMap(env.MAP_BROWSER, request, { lon, lat, zoom, width, height, pin, theme });
+        return new Response(image, { headers: { 'Content-Type': 'image/png' } });
+      }
       if (endpoint === '/elevation') {
         const sample = await terrarium(lon, lat);
         return sample ? result(sample) : result({ error: 'No elevation sample available.' }, 404);
@@ -173,6 +185,9 @@ export function createPlatformApi(tileKey) {
       return result({ items: items.slice(0, limit), precision: 'indexed-place' });
     } catch (error) {
       if (error instanceof Invalid) return result({ error: error.message }, 400);
+      if (endpoint === '/elevation' || endpoint === '/static-map') {
+        console.warn('Map data request failed', { endpoint, reason: error?.message?.slice(0, 200) });
+      }
       return result({ error: 'The Sifric data source is unavailable.' }, 502);
     }
   };
