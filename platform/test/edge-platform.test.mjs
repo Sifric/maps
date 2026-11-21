@@ -86,6 +86,38 @@ test('place photo catalog and native SDK packages stay behind developer access',
   assert.deepEqual([...new Uint8Array(await artifact.arrayBuffer())], [80, 75, 3, 4]);
 });
 
+test('routing sends only the validated request to the matching internal Worker', async () => {
+  const path = '/developer/api/v1/routes';
+  let dispatched = 0;
+  const configured = {
+    ...env,
+    ROUTING_WALK: {
+      async fetch(request) {
+        dispatched++;
+        assert.equal(new URL(request.url).pathname, '/routes');
+        assert.equal(request.headers.get('Authorization'), null);
+        assert.equal((await request.json()).mode, 'walk');
+        if (dispatched === 1) return new Response('Resource limit', { status: 503 });
+        return Response.json({ code: 'Ok', mode: 'walk', routes: [] });
+      },
+    },
+  };
+  function route(authenticated) {
+    return gateway(new Request('https://maps.test' + path, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', ...(authenticated && { Authorization: 'Bearer ' + token }) },
+      body: JSON.stringify({ mode: 'walk', coordinates: [[79.8, 6.9], [79.9, 6.9]] }),
+    }), configured, path);
+  }
+  assert.equal((await route(false)).status, 401);
+  assert.equal(dispatched, 0);
+  const response = await route(true);
+  assert.equal(response.status, 200);
+  assert.equal((await response.json()).mode, 'walk');
+  assert.equal(response.headers.get('Cache-Control'), 'private, no-store');
+  assert.equal(dispatched, 2);
+});
+
 test('static map validates options and launches a renderer only after authentication', async () => {
   const binding = {};
   let renders = 0;

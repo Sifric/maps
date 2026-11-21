@@ -10,6 +10,13 @@
     "binding": "ASSETS",
     "run_worker_first": true
   },
+  "services": [
+    { "binding": "ROUTING_DRIVE", "service": "maps-router-drive" },
+    { "binding": "ROUTING_WALK", "service": "maps-router-walk" },
+    { "binding": "ROUTING_CYCLE", "service": "maps-router-cycle" },
+    { "binding": "ROUTING_MOTORCYCLE", "service": "maps-router-motorcycle" },
+    { "binding": "ROUTING_TUK", "service": "maps-router-tuk" }
+  ],
   "r2_buckets": [
     {
       "binding": "TILES_BUCKET",

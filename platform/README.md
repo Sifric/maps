@@ -124,6 +124,10 @@ Lanka OpenStreetMap extract and validates them before uploading to the Maps
 R2 bucket. The compact index uses variable-width numeric columns to reduce
 Worker memory usage without changing path weights or geometry. Routing data is derived
 from [OpenStreetMap contributors under the ODbL](https://www.openstreetmap.org/copyright).
+The developer gateway sends each request to its travel profile's private
+Cloudflare Worker through a service binding. Deploy those Workers with the
+`Deploy private Sifric routing Workers` workflow before the gateway. Their
+public and preview URLs are disabled.
 
 ## Backend container
 

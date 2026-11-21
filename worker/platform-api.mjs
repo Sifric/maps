@@ -10,6 +10,10 @@ import { locateByCell } from './cell-location.mjs';
 const result = (body, status = 200) => Response.json(body, { status });
 const bounds = { west: 78, east: 82.5, south: 5, north: 10.5 };
 const normalize = value => value.normalize('NFKC').toLowerCase().trim();
+const routingBindings = new Map([
+  ['drive', 'ROUTING_DRIVE'], ['walk', 'ROUTING_WALK'], ['cycle', 'ROUTING_CYCLE'],
+  ['motorcycle', 'ROUTING_MOTORCYCLE'], ['tuk', 'ROUTING_TUK'],
+]);
 
 class Invalid extends Error {}
 
@@ -51,6 +55,34 @@ async function routePayload(request) {
   } finally {
     reader.releaseLock();
   }
+}
+
+async function dispatchRouting(env, operation, body) {
+  const mode = body.mode ?? 'drive';
+  const name = routingBindings.get(mode);
+  if (!name) throw new RoutingError(400, 'Choose drive, walk, cycle, motorcycle, or tuk.');
+  const binding = env[name];
+  if (!binding) return result(await routingRequest(env.TILES_BUCKET, operation, body));
+  const payload = JSON.stringify({ ...body, mode });
+  for (let attempt = 0; attempt < 2; attempt++) {
+    try {
+      const response = await binding.fetch(new Request('https://sifric-routing.internal/' + operation, {
+        method: 'POST', headers: { 'Content-Type': 'application/json' }, body: payload,
+      }));
+      if (response.headers.get('Content-Type')?.startsWith('application/json')) return response;
+      await response.body?.cancel();
+    } catch {
+      // The operation is read-only and can be retried after a Worker restart.
+    }
+  }
+  return result({ error: 'The Sifric routing Worker is temporarily unavailable.' }, 503);
+}
+
+async function fleetMatrix(env, operation, body) {
+  const response = await dispatchRouting(env, operation, body);
+  const matrix = await response.json();
+  if (!response.ok) throw new RoutingError(response.status, matrix.error);
+  return matrix;
 }
 
 function place([id, name, lon, lat, kind, description, label]) {
@@ -156,8 +188,11 @@ export function createPlatformApi(tileKey, renderStaticMap) {
       if (request.method !== 'POST') return result({ error: 'Use POST.' }, 405);
       try {
         const payload = await routePayload(request);
-        if (endpoint === '/optimize') return result(await optimizeFleet(env.TILES_BUCKET, payload));
-        return result(await routingRequest(env.TILES_BUCKET, endpoint.split('/').at(-1), payload));
+        if (endpoint === '/optimize') {
+          return result(await optimizeFleet(env.TILES_BUCKET, payload,
+            (_bucket, operation, matrix) => fleetMatrix(env, operation, matrix)));
+        }
+        return await dispatchRouting(env, endpoint.split('/').at(-1), payload);
       } catch (error) {
         if (error instanceof RoutingError) return result({ error: error.message }, error.status);
         console.warn('Routing request failed', { operation: endpoint, reason: error?.message?.slice(0, 120) });

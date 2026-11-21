@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sifric Maps API reference</title>
+</head>
+<body>
+<main>
+  <p><a href="/developer/">Developer portal</a></p>
+  <h1>API reference</h1>
+  <p>Use <code>https://maps.sifric.workers.dev/developer/api/v1</code> as your base URL.
+    Send <code>Authorization: Bearer &lt;token&gt;</code> from your server. POST requests
+    use <code>Content-Type: application/json</code>. Coordinates use longitude before latitude.
+    Coverage is Sri Lanka.</p>
+  <ul>
+    <li><code>GET /capabilities</code> lists currently deployed travel profiles and map features.</li>
+    <li><code>GET /places/search?q=Colombo</code>, <code>GET /places/nearby?lon=79.86&amp;lat=6.92</code>,
+      <code>GET /places/:id</code>, and <code>GET /places/:id/photos</code> provide place lookup and licensed images where available.</li>
+    <li><code>GET /geocode?q=Colombo</code> and <code>GET /geocode/reverse?lon=79.86&amp;lat=6.92</code>
+      resolve indexed places.</li>
+    <li><code>GET /static-map</code> accepts <code>lon</code>, <code>lat</code>, <code>zoom</code>,
+      <code>width</code>, <code>height</code>, <code>theme</code>, and <code>pin</code>. It returns PNG.</li>
+    <li><code>GET /tiles/:z/:x/:y.pbf</code> returns a vector tile.</li>
+    <li><code>GET /elevation</code>, <code>GET /bathymetry</code>, and <code>GET /timezone</code>
+      accept <code>lon</code> and <code>lat</code>. Time zone accepts an optional ISO timestamp.
+      Bathymetry includes depth below the EGM2008 datum for negative grid samples.</li>
+    <li><code>GET /roads/nearest</code> accepts <code>lon</code>, <code>lat</code>, and optional
+      <code>radius</code> in meters. <code>POST /roads/match</code> accepts 2–8 ordered GPS observations
+      in <code>coordinates</code> and a travel <code>mode</code>.</li>
+    <li><code>POST /optimize</code> accepts <code>vehicles</code>, <code>jobs</code>, and paired
+      <code>shipments</code>. Set vehicle <code>capacity</code>, optional <code>time_window</code>,
+      and stop <code>time_windows</code>. Limits are 4 drive vehicles, 10 stops, and 6 distinct locations.</li>
+    <li><code>POST /address/validate</code> accepts <code>addressLines</code>, <code>locality</code>,
+      <code>postalCode</code>, and optional <code>countryCode: "LK"</code>. Results verify postal towns.</li>
+    <li><code>POST /geolocate</code> accepts <code>cellTowers</code> with <code>radioType</code>,
+      <code>mobileCountryCode: 413</code>, <code>mobileNetworkCode</code>, <code>locationAreaCode</code>,
+      and <code>cellId</code> (or <code>newRadioCellId</code> for 5G). The result is an approximate
+      estimate from the OpenCellID snapshot.</li>
+  </ul>
+  <h2>Routes and matrices</h2>
+  <p>Send the following JSON to <code>POST /routes</code> or <code>POST /matrix</code>.
+    Travel modes are <code>drive</code>, <code>walk</code>, <code>cycle</code>,
+    <code>motorcycle</code>, and <code>tuk</code>.</p>
+  <pre>{
+  "mode": "drive",
+  "coordinates": [[79.8612, 6.9271], [79.8744, 6.903]]
+}</pre>
+  <p>Routes accept 2–8 coordinates. Matrices accept 2–6 coordinates and optional
+    <code>sources</code> and <code>destinations</code> index arrays. Distances are in
+    meters and durations are in seconds. Set <code>speedLimits: true</code> on
+    a drive route or trace to include known mapped limits.</p>
+  <p><a href="/developer/native-sdk/">Native SDK setup</a></p>
+</main>
+</body>
+</html>

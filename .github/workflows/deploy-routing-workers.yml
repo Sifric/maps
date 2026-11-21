@@ -1,6 +1,9 @@
 name: Deploy private Sifric routing Workers
 
 on:
+  push:
+    branches: [main]
+    paths: ["routing-worker/**", "worker/routing.mjs"]
   workflow_dispatch:
 
 permissions:

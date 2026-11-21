@@ -7,6 +7,7 @@ import { createPrivateGateway } from "./private-gateway.mjs";
 import portal from "./private/portal.html.txt";
 import portalScript from "./private/portal.js.txt";
 import nativeSdkGuide from "./private/native-sdk.html.txt";
+import apiReference from "./private/api-reference.html.txt";
 import embed from "./private/embed.html.txt";
 import embedScript from "./private/embed.js.txt";
 import embedStyle from "./private/embed.css.txt";
@@ -23,6 +24,7 @@ const handleDeveloper = createPrivateGateway(new Map([
   ["/developer/", [portal, "text/html; charset=utf-8"]],
   ["/developer/portal.js", [portalScript, "text/javascript; charset=utf-8"]],
   ["/developer/native-sdk/", [nativeSdkGuide, "text/html; charset=utf-8"]],
+  ["/developer/api-reference/", [apiReference, "text/html; charset=utf-8"]],
   ["/developer/embed/", [embed, "text/html; charset=utf-8"]],
   ["/developer/embed.js", [embedScript, "text/javascript; charset=utf-8"]],
   ["/developer/embed.css", [embedStyle, "text/css; charset=utf-8"]],
