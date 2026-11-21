@@ -172,25 +172,83 @@ function appendExpanded(graph, graphArcs, pending, backwards) {
   }
 }
 
-function connect(graph, from, to) {
-  let bestWeight = Infinity;
-  let peak;
+function meetingRanks(from, to) {
+  const peaks = [];
   for (const [rank, visit] of from) {
     const reverse = to.get(rank);
-    if (reverse && visit.weight + reverse.weight < bestWeight) {
-      bestWeight = visit.weight + reverse.weight;
-      peak = rank;
-    }
+    if (reverse) peaks.push({ rank, weight: visit.weight + reverse.weight });
   }
-  if (peak === undefined) return null;
+  return peaks;
+}
+
+function expandRoute(graph, from, to, { rank, weight }) {
   const arcs = [];
   const forward = [];
-  for (let p = from.get(peak); p.arc !== undefined; p = from.get(p.rank)) forward.push([p.arc, false]);
+  for (let p = from.get(rank); p.arc !== undefined; p = from.get(p.rank)) forward.push([p.arc, false]);
   appendExpanded(graph, arcs, forward);
-  for (let p = to.get(peak); p.arc !== undefined; p = to.get(p.rank)) appendExpanded(graph, arcs, [[p.arc, true]]);
+  for (let p = to.get(rank); p.arc !== undefined; p = to.get(p.rank)) appendExpanded(graph, arcs, [[p.arc, true]]);
   let distance = 0;
   for (const arc of arcs) distance += graph.meters.get(arc);
-  return { arcs, distance, duration: bestWeight / 1000 };
+  return { arcs, distance, duration: weight / 1000 };
+}
+
+function connect(graph, from, to) {
+  const best = meetingRanks(from, to).reduce((best, next) => !best || next.weight < best.weight ? next : best, null);
+  return best && expandRoute(graph, from, to, best);
+}
+
+function alternativePaths(graph, forward, backward, primary, source) {
+  const alternatives = [];
+  const used = [new Set(primary.arcs)];
+  const peaks = meetingRanks(forward, backward)
+    .filter(peak => peak.weight <= primary.duration * 1550)
+    .sort((a, b) => a.weight - b.weight);
+  for (const peak of peaks.slice(0, 32)) {
+    const path = expandRoute(graph, forward, backward, peak);
+    if (!path.distance) continue;
+    const vertices = new Set([source]);
+    for (const arc of path.arcs) vertices.add(graph.heads.get(arc));
+    if (vertices.size !== path.arcs.length + 1) continue;
+    if (used.some(arcs => path.arcs.reduce((sum, arc) => sum + (arcs.has(arc) ? 0 : graph.meters.get(arc)), 0) < path.distance * 0.20)) continue;
+    alternatives.push(path);
+    used.push(new Set(path.arcs));
+    if (alternatives.length === 2) break;
+  }
+  return alternatives;
+}
+
+export function optimizeWaypointOrder(durations) {
+  const middle = durations.length - 2;
+  const all = (1 << middle) - 1;
+  const states = new Map();
+  function visit(mask, last) {
+    if (mask === all) return { cost: durations[last].at(-1) ?? Infinity, stops: [] };
+    const key = mask * durations.length + last;
+    if (states.has(key)) return states.get(key);
+    let best = { cost: Infinity, stops: [] };
+    for (let i = 0; i < middle; i++) {
+      if (mask & 1 << i || durations[last][i + 1] == null) continue;
+      const rest = visit(mask | 1 << i, i + 1);
+      const cost = durations[last][i + 1] + rest.cost;
+      if (cost < best.cost) best = { cost, stops: [i + 1, ...rest.stops] };
+    }
+    states.set(key, best);
+    return best;
+  }
+  const plan = visit(0, 0);
+  return Number.isFinite(plan.cost) ? [0, ...plan.stops, durations.length - 1] : null;
+}
+
+export function routingProfile(body) {
+  const mode = body.mode ?? 'drive';
+  if (!routingModes.includes(mode)) throw new RoutingError(400, 'Choose drive, walk, cycle, motorcycle, or tuk.');
+  for (const key of ['avoidTolls', 'avoidHighways', 'avoidFerries']) {
+    if (body[key] !== undefined && typeof body[key] !== 'boolean') throw new RoutingError(400, key + ' must be a Boolean.');
+  }
+  if ((body.avoidTolls || body.avoidHighways) && mode !== 'drive') {
+    throw new RoutingError(400, 'Toll and expressway avoidance are available for drive routes.');
+  }
+  return body.avoidTolls ? 'drive-no-tolls' : body.avoidHighways ? 'drive-no-highways' : mode;
 }
 
 const coordinate = (graph, vertex) => [graph.lon.get(vertex), graph.lat.get(vertex)];
@@ -269,7 +327,7 @@ function traceVertices(points, choices, pair) {
   return path.reverse();
 }
 
-export async function solveRoute(graph, points, sources, destinations, loadShapes, matchTrace = false, limits) {
+export async function solveRoute(graph, points, sources, destinations, loadShapes, matchTrace = false, limits, options = {}) {
   const radius = matchTrace ? 100 : 500;
   const choices = points.map(point => nearestVertices(graph, point, radius, matchTrace ? 3 : 1));
   if (choices.some(candidate => !candidate.length)) throw new RoutingError(422, `A coordinate is more than ${radius} m from a routable vertex.`);
@@ -281,8 +339,16 @@ export async function solveRoute(graph, points, sources, destinations, loadShape
     if (!backward.has(target)) backward.set(target, backwardSearch(graph, target));
     return connect(graph, forward.get(source), backward.get(target));
   };
-  const waypoints = matchTrace ? traceVertices(points, choices, pair) : choices.map(candidate => candidate[0]);
-  const pairs = waypoints.map(point => point.vertex);
+  let waypoints = matchTrace ? traceVertices(points, choices, pair) : choices.map(candidate => candidate[0]);
+  let pairs = waypoints.map(point => point.vertex);
+  let waypointOrder;
+  if (options.optimizeWaypointOrder) {
+    const times = pairs.map(from => pairs.map(to => pair(from, to)?.duration ?? null));
+    waypointOrder = optimizeWaypointOrder(times);
+    if (!waypointOrder) throw new RoutingError(422, 'The intermediate stops cannot be connected.');
+    waypoints = waypointOrder.map(index => waypoints[index]);
+    pairs = waypoints.map(point => point.vertex);
+  }
   if (sources) {
     const values = sources.map(a => destinations.map(b => pair(pairs[a], pairs[b])));
     return {
@@ -295,7 +361,6 @@ export async function solveRoute(graph, points, sources, destinations, loadShape
   const arcs = new Set();
   let geometrySize = 1;
   let distance = 0;
-  let duration = 0;
   for (let i = 1; i < pairs.length; i++) {
     const leg = pair(pairs[i - 1], pairs[i]);
     if (!leg) throw new RoutingError(422, 'No route connects these coordinates for this travel mode.');
@@ -306,29 +371,48 @@ export async function solveRoute(graph, points, sources, destinations, loadShape
     if (geometrySize > 40000) throw new RoutingError(422, 'The route exceeds the geometry limit.');
     paths.push(leg);
     distance += leg.distance;
-    duration += leg.duration;
   }
-  const shapes = await loadShapes(arcs);
-  const coordinates = [];
-  const legs = paths.map((leg, i) => {
-    const { coordinates: geometry, ...details } = legGeometry(graph, leg, pairs[i], pairs[i + 1], shapes, limits);
-    if (limits) {
-      const offset = i ? coordinates.length - 1 : 0;
-      for (const span of details.speedLimits) {
-        span.startIndex += offset;
-        span.endIndex += offset;
+  const render = (legsForRoute, shapes) => {
+    const coordinates = [];
+    const legs = legsForRoute.map((leg, i) => {
+      const { coordinates: geometry, ...details } = legGeometry(graph, leg, pairs[i], pairs[i + 1], shapes, limits);
+      if (limits) {
+        const offset = i ? coordinates.length - 1 : 0;
+        for (const span of details.speedLimits) {
+          span.startIndex += offset;
+          span.endIndex += offset;
+        }
       }
+      for (let j = i === 0 ? 0 : 1; j < geometry.length; j++) coordinates.push(geometry[j]);
+      return details;
+    });
+    if (coordinates.length === 1) coordinates.push(coordinates[0]);
+    return { distance: legsForRoute.reduce((sum, leg) => sum + leg.distance, 0),
+      duration: legsForRoute.reduce((sum, leg) => sum + leg.duration, 0),
+      geometry: { type: 'LineString', coordinates }, legs };
+  };
+  let alternatives = [];
+  if (options.alternatives && pairs[0] !== pairs[1]) {
+    alternatives = alternativePaths(graph, forward.get(pairs[0]), backward.get(pairs[1]), paths[0], pairs[0])
+      .filter(path => path.arcs.reduce((sum, arc) => sum + 1 + graph.geometryLengths.get(arc), 1) <= 40000);
+  }
+  let shapes;
+  if (alternatives.length) {
+    const combined = new Set([...arcs, ...alternatives.flatMap(path => path.arcs)]);
+    try { shapes = await loadShapes(combined); }
+    catch (error) {
+      if (!(error instanceof RoutingError) || error.status !== 422) throw error;
+      alternatives = [];
     }
-    for (let j = i === 0 ? 0 : 1; j < geometry.length; j++) coordinates.push(geometry[j]);
-    return details;
-  });
-  if (coordinates.length === 1) coordinates.push(coordinates[0]);
-  const route = { distance, duration, geometry: { type: 'LineString', coordinates }, legs };
+  }
+  shapes ??= await loadShapes(arcs);
+  const route = render(paths, shapes);
   if (matchTrace) {
     if (!distance) throw new RoutingError(422, 'The trace resolves to a single road vertex.');
     return { matchings: [route], tracepoints: waypoints.map(({ location, distance }) => ({ location, distance })) };
   }
-  return { routes: [route], waypoints };
+  return { routes: [route, ...alternatives.map(path => render([path], shapes))], waypoints,
+    ...(waypointOrder && { optimizedIntermediateWaypointIndices: waypointOrder.slice(1, -1).map(index => index - 1) }) };
 }
 
 let cachedGraph;
@@ -438,17 +522,24 @@ export async function availableRoutingModes(bucket) {
 
 export async function routingRequest(bucket, operation, body) {
   const mode = body.mode ?? 'drive';
-  if (!routingModes.includes(mode)) throw new RoutingError(400, 'Choose drive, walk, cycle, motorcycle, or tuk.');
+  const profile = routingProfile(body);
   if (body.speedLimits !== undefined && (typeof body.speedLimits !== 'boolean' || mode !== 'drive' || operation === 'matrix')) {
     throw new RoutingError(400, 'Speed limits are available for drive routes and traces.');
   }
-  const max = operation === 'matrix' ? 6 : 8;
+  for (const key of ['alternatives', 'optimizeWaypointOrder']) {
+    if (body[key] !== undefined && (typeof body[key] !== 'boolean' || operation !== 'routes')) {
+      throw new RoutingError(400, key + ' is a Boolean route option.');
+    }
+  }
+  const max = operation === 'matrix' ? 25 : operation === 'match' ? 25 : 8;
   const coordinates = body.coordinates;
   if (!Array.isArray(coordinates) || coordinates.length < 2 || coordinates.length > max ||
       coordinates.some(point => !Array.isArray(point) || point.length !== 2 || !point.every(Number.isFinite) ||
         point[0] < 78 || point[0] > 82.5 || point[1] < 5 || point[1] > 10.5)) {
     throw new RoutingError(400, 'Supply 2 to ' + max + ' coordinates as [longitude, latitude] in Sri Lanka.');
   }
+  if (body.alternatives && coordinates.length !== 2) throw new RoutingError(400, 'Alternatives require two coordinates.');
+  if (body.optimizeWaypointOrder && coordinates.length < 3) throw new RoutingError(400, 'Optimization requires at least one intermediate stop.');
   function indices(values) {
     if (values === undefined) return coordinates.map((_, i) => i);
     if (!Array.isArray(values) || !values.length || values.length > max ||
@@ -459,13 +550,13 @@ export async function routingRequest(bucket, operation, body) {
   }
   const sources = operation === 'matrix' ? indices(body.sources) : undefined;
   const destinations = operation === 'matrix' ? indices(body.destinations) : undefined;
-  if (activeRequests >= 2 || (activeRequests && (activeMode !== mode || !cachedGraph))) {
+  if (activeRequests >= 2 || (activeRequests && (activeMode !== profile || !cachedGraph))) {
     throw new RoutingError(503, 'Routing is busy. Retry shortly.');
   }
-  activeMode = mode;
+  activeMode = profile;
   activeRequests++;
   try {
-    const file = await getGraph(bucket, mode);
+    const file = await getGraph(bucket, profile);
     let limits;
     if (body.speedLimits) {
       const offset = file.size + file.graph.shapeBoundaries.get(file.graph.shapeBoundaries.length - 1) * 8;
@@ -474,8 +565,9 @@ export async function routingRequest(bucket, operation, body) {
       limits = new Uint16Array(await readRange(bucket, file.key, file.etag, offset, size));
     }
     const route = await solveRoute(file.graph, coordinates, sources, destinations,
-      arcs => loadGraphShapes(bucket, file, arcs), operation === 'match', limits);
-    return { code: 'Ok', mode, traffic: 'none', attribution: '© OpenStreetMap contributors', ...route };
+      arcs => loadGraphShapes(bucket, file, arcs), operation === 'match', limits, body);
+    return { code: 'Ok', mode, traffic: 'none', attribution: '© OpenStreetMap contributors',
+      ...(profile !== mode && { drivingProfile: profile }), ...route };
   } finally {
     activeRequests--;
   }

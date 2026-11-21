@@ -1,4 +1,4 @@
-import { routingRequest, RoutingError } from '../worker/routing.mjs';
+import { routingRequest, routingProfile, RoutingError } from '../worker/routing.mjs';
 
 export default {
   async fetch(request, env) {
@@ -8,7 +8,7 @@ export default {
     }
     try {
       const body = await request.json();
-      if (body.mode !== env.SIFRIC_ROUTING_MODE) {
+      if (routingProfile(body) !== env.SIFRIC_ROUTING_MODE) {
         return Response.json({ error: 'Routing mode does not match the bound service.' }, { status: 400 });
       }
       return Response.json(await routingRequest(env.TILES_BUCKET, operation, body));

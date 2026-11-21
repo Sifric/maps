@@ -1,0 +1,48 @@
+name: Deploy Sifric driving option graphs
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    environment: production
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        profile: [drive-no-tolls, drive-no-highways]
+    concurrency: sifric-graph-${{ matrix.profile }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Build a filtered routing graph
+        env:
+          PROFILE: ${{ matrix.profile }}
+        run: |
+          set -euo pipefail
+          if ! curl -fsSL --retry 2 --retry-all-errors --connect-timeout 12 --max-time 180 \
+              https://download.geofabrik.de/asia/sri-lanka/sri-lanka-latest.osm.pbf -o /tmp/lk.osm.pbf; then
+            curl -fsSL --retry 3 --retry-all-errors --connect-timeout 12 --max-time 180 \
+              https://download.openstreetmap.fr/extracts/asia/sri_lanka-latest.osm.pbf -o /tmp/lk.osm.pbf
+          fi
+          git init /tmp/routingkit
+          git -C /tmp/routingkit fetch --depth 1 https://github.com/RoutingKit/RoutingKit.git 54d49bb0cdea56dde182357522e4e86a03c57852
+          git -C /tmp/routingkit checkout --detach FETCH_HEAD
+          make -C /tmp/routingkit -j2 lib/libroutingkit.a
+          g++ -std=c++17 -O3 -DNDEBUG -I/tmp/routingkit/include scripts/build_routing_graph.cpp \
+            /tmp/routingkit/lib/libroutingkit.a -fopenmp -lz -pthread -o /tmp/build-routing
+          /tmp/build-routing /tmp/lk.osm.pbf /tmp/graph.bin "$PROFILE"
+          mkdir /tmp/options
+          python3 scripts/pack_routing_graph.py /tmp/graph.bin "/tmp/options/$PROFILE.bin"
+          node scripts/check_routing_data.mjs /tmp/options "$PROFILE"
+      - name: Publish the verified graph to Maps R2
+        env:
+          PROFILE: ${{ matrix.profile }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx --yes wrangler@4.166.0 r2 object put "mazo-maps/lkmaps/routing/v2/$PROFILE.bin" --file "/tmp/options/$PROFILE.bin" --content-type application/octet-stream --remote

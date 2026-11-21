@@ -23,14 +23,23 @@ for (const mode of process.argv.slice(3).length ? process.argv.slice(3) : ['driv
     },
   };
   const coordinates = [[79.8612, 6.9271], [79.8744, 6.903]];
-  const route = await routingRequest(bucket, 'routes', { mode, coordinates });
+  const options = mode === 'drive-no-tolls' ? { mode: 'drive', avoidTolls: true } :
+    mode === 'drive-no-highways' ? { mode: 'drive', avoidHighways: true } : { mode };
+  const route = await routingRequest(bucket, 'routes', { ...options, coordinates });
   assert.ok(route.routes[0].distance > 2500 && route.routes[0].distance < 15000);
   assert.ok(route.routes[0].geometry.coordinates.length > 5);
   assert.ok(route.routes[0].geometry.coordinates.every(point => point.every(Number.isFinite)));
   assert.ok(route.routes[0].legs[0].steps.length >= 2);
-  const matrix = await routingRequest(bucket, 'matrix', { mode, coordinates });
+  const matrix = await routingRequest(bucket, 'matrix', { ...options, coordinates });
   assert.equal(matrix.distances[0][0], 0);
   assert.equal(matrix.distances[0][1], route.routes[0].distance);
+  if (mode.startsWith('drive-no-')) {
+    assert.equal(route.drivingProfile, mode);
+    const { routes: [southern] } = await routingRequest(bucket, 'routes', {
+      ...options, coordinates: [coordinates[0], [80.221, 6.032]],
+    });
+    assert.ok(southern.distance > 100000 && southern.distance < 180000);
+  }
   if (mode === 'motorcycle' || mode === 'tuk') {
     const { routes: [southern] } = await routingRequest(bucket, 'routes', {
       mode, coordinates: [coordinates[0], [80.221, 6.032]],

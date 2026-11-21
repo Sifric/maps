@@ -54,7 +54,9 @@ int main(int argc, char** argv) {
         return 1;
     }
     const std::string mode = argv[3];
-    const bool drive = mode == "drive";
+    const bool avoid_tolls = mode == "drive-no-tolls";
+    const bool avoid_highways = mode == "drive-no-highways" || avoid_tolls;
+    const bool drive = mode == "drive" || avoid_highways;
     const bool motorcycle = mode == "motorcycle";
     const bool tuk = mode == "tuk";
     const bool car = drive || motorcycle || tuk;
@@ -65,6 +67,14 @@ int main(int argc, char** argv) {
         [&](uint64_t id, const TagMap& tags) {
             const std::string highway = tags["highway"] ? tags["highway"] : "";
             if (highway.empty()) return false;
+            if (avoid_highways && (highway == "motorway" || highway == "motorway_link")) return false;
+            if (avoid_tolls) {
+                const auto is_toll = [](const char* value) {
+                    return value && std::string(value) != "no";
+                };
+                if (is_toll(tags["toll"]) || is_toll(tags["toll:motorcar"]) ||
+                    is_toll(tags["toll:motor_vehicle"]) || tags["toll:conditional"]) return false;
+            }
             if (car) {
                 if (!drive) {
                     const std::string motorroad = tags["motorroad"] ? tags["motorroad"] : "";

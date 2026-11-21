@@ -16,7 +16,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        mode: [drive, walk, cycle, motorcycle, tuk]
+        mode: [drive, walk, cycle, motorcycle, tuk, drive-no-tolls, drive-no-highways]
     concurrency: sifric-router-${{ matrix.mode }}
     steps:
       - uses: actions/checkout@v4
