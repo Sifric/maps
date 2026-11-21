@@ -350,22 +350,43 @@ async function getGraph(bucket, mode) {
 
 async function loadGraphShapes(bucket, file, arcs) {
   const { key, etag, graph, size } = file;
-  const cells = new Map();
+  const intervals = [];
   for (const arc of arcs) {
     const length = graph.geometryLengths[arc];
     if (!length) continue;
     const start = graph.geometryOffsets[arc];
-    const cell = lowerBound(graph.shapeBoundaries, start + 1) - 1;
-    if (!cells.has(cell)) cells.set(cell, { start, end: start + length, arcs: [] });
-    const range = cells.get(cell);
-    range.start = Math.min(range.start, start);
-    range.end = Math.max(range.end, start + length);
-    range.arcs.push(arc);
+    intervals.push({ arc, start, end: start + length });
   }
-  const count = [...cells.values()].reduce((total, range) => total + range.end - range.start, 0);
-  if (cells.size > 36 || count * 8 > 12 * 1024 ** 2) throw new RoutingError(422, 'The route exceeds the shape retrieval limit.');
+  intervals.sort((a, b) => a.start - b.start);
+  const gaps = [];
+  for (let i = 1; i < intervals.length; i++) {
+    const points = intervals[i].start - intervals[i - 1].end;
+    if (points >= 512) gaps.push({ i, points });
+  }
+  // Spend the bounded range-request budget on the largest unused spans.
+  // Neighboring roads can be far apart in the stored arc ordering.
+  gaps.sort((a, b) => b.points - a.points);
+  const split = new Set();
+  let span = intervals.length ? intervals.at(-1).end - intervals[0].start : 0;
+  for (const gap of gaps) {
+    if (span <= 65536 || split.size === 35) break;
+    split.add(gap.i);
+    span -= gap.points;
+  }
+  const ranges = [];
+  for (let i = 0; i < intervals.length; i++) {
+    const { arc, start, end } = intervals[i];
+    if (i === 0 || split.has(i)) ranges.push({ start, end, arcs: [arc] });
+    else {
+      const range = ranges.at(-1);
+      range.end = end;
+      range.arcs.push(arc);
+    }
+  }
+  const count = ranges.reduce((total, range) => total + range.end - range.start, 0);
+  if (count * 8 > 12 * 1024 ** 2) throw new RoutingError(422, 'The route exceeds the shape retrieval limit.');
   const shapes = new Map();
-  await Promise.all([...cells.values()].map(async ({ start, end, arcs: group }) => {
+  await Promise.all(ranges.map(async ({ start, end, arcs: group }) => {
     const data = new Float32Array(await readRange(bucket, key, etag, size + start * 8, (end - start) * 8));
     for (const arc of group) {
       const first = (graph.geometryOffsets[arc] - start) * 2;

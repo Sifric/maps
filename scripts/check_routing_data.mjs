@@ -39,6 +39,12 @@ for (const mode of process.argv.slice(3).length ? process.argv.slice(3) : ['driv
     const limits = regional.legs[0].speedLimits;
     assert.ok(limits.some(span => span.speed > 0));
     assert.equal(limits.at(-1).endIndex, regional.geometry.coordinates.length - 1);
+    for (const destination of [[81.695, 7.717], [81.233, 8.577]]) {
+      const { routes: [regional] } = await routingRequest(bucket, 'routes', {
+        mode, coordinates: [coordinates[0], destination],
+      });
+      assert.ok(regional.distance > 200000 && regional.distance < 400000);
+    }
     const observations = route.routes[0].geometry.coordinates.filter((_, i) => i % 8 === 0).slice(0, 5);
     const trace = await routingRequest(bucket, 'match', { coordinates: observations });
     assert.equal(trace.tracepoints.length, observations.length);
