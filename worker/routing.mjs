@@ -48,26 +48,25 @@ function lowerBound(values, key) {
   return left;
 }
 
-function nearestVertex(graph, [lon, lat], radius = 500) {
+function nearestVertices(graph, [lon, lat], radius, count) {
   const lonScale = metersPerDegree * Math.cos(lat * Math.PI / 180);
   const cellX = value => Math.floor((value - 78) * 100);
   const cellY = value => Math.floor((value - 5) * 100);
-  let vertex;
-  let best = radius ** 2;
+  const ranked = [];
   for (let y = Math.max(0, cellY(lat - radius / metersPerDegree)); y <= Math.min(gridHeight - 1, cellY(lat + radius / metersPerDegree)); y++) {
     for (let x = Math.max(0, cellX(lon - radius / lonScale)); x <= Math.min(gridWidth - 1, cellX(lon + radius / lonScale)); x++) {
       const cell = y * gridWidth + x;
       for (let i = graph.cells[cell]; i < graph.cells[cell + 1]; i++) {
         const candidate = graph.cellNodes[i];
         const squared = ((graph.lon[candidate] - lon) * lonScale) ** 2 + ((graph.lat[candidate] - lat) * metersPerDegree) ** 2;
-        if (squared < best) {
-          best = squared;
-          vertex = candidate;
-        }
+        if (squared >= radius ** 2 || (ranked.length === count && squared >= ranked.at(-1).squared)) continue;
+        ranked.push({ vertex: candidate, squared });
+        ranked.sort((a, b) => a.squared - b.squared);
+        if (ranked.length > count) ranked.pop();
       }
     }
   }
-  return vertex === undefined ? null : { vertex, location: [graph.lon[vertex], graph.lat[vertex]], distance: Math.sqrt(best) };
+  return ranked.map(({ vertex, squared }) => ({ vertex, location: coordinate(graph, vertex), distance: Math.sqrt(squared) }));
 }
 
 function pushRank(queue, rank) {
@@ -173,10 +172,12 @@ function heading(a, b) {
   return Math.atan2((b[0] - a[0]) * Math.cos(a[1] * Math.PI / 180), b[1] - a[1]) * 180 / Math.PI;
 }
 
-function legGeometry(graph, leg, source, target, shapes) {
+function legGeometry(graph, leg, source, target, shapes, limits) {
   const coordinates = [coordinate(graph, source)];
   const steps = [step('depart', coordinates[0])];
+  const speedLimits = [];
   for (const arc of leg.arcs) {
+    const start = coordinates.length - 1;
     const from = coordinates.at(-1);
     const shape = shapes.get(arc);
     const to = coordinate(graph, graph.heads[arc]);
@@ -196,15 +197,53 @@ function legGeometry(graph, leg, source, target, shapes) {
       for (let i = 0; i < shape.length; i += 2) coordinates.push([shape[i], shape[i + 1]]);
     }
     coordinates.push(to);
+    if (limits) {
+      const amount = limits[arc] & 0x7fff;
+      const unit = amount ? (limits[arc] & 0x8000 ? 'mph' : 'km/h') : null;
+      const speed = amount || null;
+      const previous = speedLimits.at(-1);
+      const end = coordinates.length - 1;
+      if (previous?.speed === speed && previous?.unit === unit) previous.endIndex = end;
+      else speedLimits.push({ startIndex: start, endIndex: end, speed, unit });
+    }
   }
   steps.push(step('arrive', arrival(graph, leg.arcs, target)));
-  return { coordinates, steps, duration: leg.duration, distance: leg.distance };
+  return { coordinates, steps, duration: leg.duration, distance: leg.distance, ...(limits && { speedLimits }) };
 }
 
-export async function solveRoute(graph, points, sources, destinations, loadShapes) {
-  const waypoints = points.map(point => nearestVertex(graph, point));
-  if (waypoints.some(point => !point)) throw new RoutingError(422, 'A coordinate is more than 500 m from a routable vertex.');
-  const pairs = waypoints.map(point => point.vertex);
+function traceVertices(points, choices, pair) {
+  let previous = choices[0].map(point => ({ point, cost: point.distance }));
+  for (let i = 1; i < points.length; i++) {
+    const [lon, lat] = points[i];
+    const [previousLon, previousLat] = points[i - 1];
+    const observed = metersPerDegree * Math.hypot(
+      (lon - previousLon) * Math.cos(lat * Math.PI / 180), lat - previousLat,
+    );
+    const current = [];
+    for (const point of choices[i]) {
+      let best;
+      for (const before of previous) {
+        const route = pair(before.point.vertex, point.vertex);
+        if (!route || route.distance > observed * 4 + 100) continue;
+        const cost = before.cost + point.distance + Math.abs(route.distance - observed) * 0.5;
+        if (!best || cost < best.cost) best = { point, cost, before };
+      }
+      if (best) current.push(best);
+    }
+    if (!current.length) throw new RoutingError(422, 'The trace contains an implausible gap.');
+    previous = current;
+  }
+  const path = [];
+  for (let state = previous.reduce((best, next) => best.cost < next.cost ? best : next); state; state = state.before) {
+    path.push(state.point);
+  }
+  return path.reverse();
+}
+
+export async function solveRoute(graph, points, sources, destinations, loadShapes, matchTrace = false, limits) {
+  const radius = matchTrace ? 100 : 500;
+  const choices = points.map(point => nearestVertices(graph, point, radius, matchTrace ? 3 : 1));
+  if (choices.some(candidate => !candidate.length)) throw new RoutingError(422, `A coordinate is more than ${radius} m from a routable vertex.`);
   const forward = new Map();
   const backward = new Map();
   const pair = (source, target) => {
@@ -213,6 +252,8 @@ export async function solveRoute(graph, points, sources, destinations, loadShape
     if (!backward.has(target)) backward.set(target, backwardSearch(graph, target));
     return connect(graph, forward.get(source), backward.get(target));
   };
+  const waypoints = matchTrace ? traceVertices(points, choices, pair) : choices.map(candidate => candidate[0]);
+  const pairs = waypoints.map(point => point.vertex);
   if (sources) {
     const values = sources.map(a => destinations.map(b => pair(pairs[a], pairs[b])));
     return {
@@ -241,12 +282,24 @@ export async function solveRoute(graph, points, sources, destinations, loadShape
   const shapes = await loadShapes(arcs);
   const coordinates = [];
   const legs = paths.map((leg, i) => {
-    const { coordinates: geometry, ...details } = legGeometry(graph, leg, pairs[i], pairs[i + 1], shapes);
+    const { coordinates: geometry, ...details } = legGeometry(graph, leg, pairs[i], pairs[i + 1], shapes, limits);
+    if (limits) {
+      const offset = i ? coordinates.length - 1 : 0;
+      for (const span of details.speedLimits) {
+        span.startIndex += offset;
+        span.endIndex += offset;
+      }
+    }
     for (let j = i === 0 ? 0 : 1; j < geometry.length; j++) coordinates.push(geometry[j]);
     return details;
   });
   if (coordinates.length === 1) coordinates.push(coordinates[0]);
-  return { routes: [{ distance, duration, geometry: { type: 'LineString', coordinates }, legs }], waypoints };
+  const route = { distance, duration, geometry: { type: 'LineString', coordinates }, legs };
+  if (matchTrace) {
+    if (!distance) throw new RoutingError(422, 'The trace resolves to a single road vertex.');
+    return { matchings: [route], tracepoints: waypoints.map(({ location, distance }) => ({ location, distance })) };
+  }
+  return { routes: [route], waypoints };
 }
 
 let cachedGraph;
@@ -288,7 +341,7 @@ async function getGraph(bucket, mode) {
   const size = new DataView(metadata).getUint32(8, true);
   if (size < 12 || size > head.size || size > 80 * 1024 ** 2) throw new Error('Routing graph exceeds the memory budget.');
   const graph = parseRoutingGraph(await readRange(bucket, key, head.etag, 0, size));
-  cachedGraph = { key, etag: head.etag, graph, size };
+  cachedGraph = { key, etag: head.etag, graph, size, objectSize: head.size };
   return cachedGraph;
 }
 
@@ -328,6 +381,9 @@ export async function availableRoutingModes(bucket) {
 export async function routingRequest(bucket, operation, body) {
   const mode = body.mode ?? 'drive';
   if (!routingModes.includes(mode)) throw new RoutingError(400, 'Choose drive, walk, or cycle.');
+  if (body.speedLimits !== undefined && (typeof body.speedLimits !== 'boolean' || mode !== 'drive' || operation === 'matrix')) {
+    throw new RoutingError(400, 'Speed limits are available for drive routes and traces.');
+  }
   const max = operation === 'matrix' ? 6 : 8;
   const coordinates = body.coordinates;
   if (!Array.isArray(coordinates) || coordinates.length < 2 || coordinates.length > max ||
@@ -352,7 +408,15 @@ export async function routingRequest(bucket, operation, body) {
   activeRequests++;
   try {
     const file = await getGraph(bucket, mode);
-    const route = await solveRoute(file.graph, coordinates, sources, destinations, arcs => loadGraphShapes(bucket, file, arcs));
+    let limits;
+    if (body.speedLimits) {
+      const offset = file.size + file.graph.shapeBoundaries.at(-1) * 8;
+      const size = file.graph.heads.length * 2;
+      if (file.objectSize !== offset + size) throw new RoutingError(503, 'Posted speed data is unavailable.');
+      limits = new Uint16Array(await readRange(bucket, file.key, file.etag, offset, size));
+    }
+    const route = await solveRoute(file.graph, coordinates, sources, destinations,
+      arcs => loadGraphShapes(bucket, file, arcs), operation === 'match', limits);
     return { code: 'Ok', mode, traffic: 'none', attribution: '© OpenStreetMap contributors', ...route };
   } finally {
     activeRequests--;

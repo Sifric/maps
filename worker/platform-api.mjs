@@ -2,6 +2,8 @@ import { decode } from 'fast-png';
 import { EtagMismatch, PMTiles, TileType } from 'pmtiles';
 import { nearestRoad } from './roads.mjs';
 import { availableRoutingModes, routingRequest, RoutingError } from './routing.mjs';
+import { optimizeFleet } from './fleet.mjs';
+import { validateAddress } from './address.mjs';
 
 const result = (body, status = 200) => Response.json(body, { status });
 const bounds = { west: 78, east: 82.5, south: 5, north: 10.5 };
@@ -123,10 +125,21 @@ export function createPlatformApi(tileKey, renderStaticMap) {
     const prefix = '/developer/api/v1';
     if (!path.startsWith(prefix + '/')) return null;
     const endpoint = path.slice(prefix.length);
-    if (!env.SIFRIC_PLATFORM_ORIGIN && ['/routes', '/matrix'].includes(endpoint)) {
+    if (endpoint === '/address/validate') {
       if (request.method !== 'POST') return result({ error: 'Use POST.' }, 405);
       try {
-        return result(await routingRequest(env.TILES_BUCKET, endpoint.slice(1), await routePayload(request)));
+        return result(validateAddress(await routePayload(request)));
+      } catch (error) {
+        if (error instanceof RoutingError) return result({ error: error.message }, error.status);
+        throw error;
+      }
+    }
+    if (!env.SIFRIC_PLATFORM_ORIGIN && ['/routes', '/matrix', '/roads/match', '/optimize'].includes(endpoint)) {
+      if (request.method !== 'POST') return result({ error: 'Use POST.' }, 405);
+      try {
+        const payload = await routePayload(request);
+        if (endpoint === '/optimize') return result(await optimizeFleet(env.TILES_BUCKET, payload));
+        return result(await routingRequest(env.TILES_BUCKET, endpoint.split('/').at(-1), payload));
       } catch (error) {
         if (error instanceof RoutingError) return result({ error: error.message }, error.status);
         console.warn('Routing request failed', { operation: endpoint, reason: error?.message?.slice(0, 120) });
@@ -147,7 +160,8 @@ export function createPlatformApi(tileKey, renderStaticMap) {
         return result({
           region: 'LK', search: 'indexed places', geocoding: env.SIFRIC_PLATFORM_ORIGIN ? 'configured service' : 'indexed-place lookup',
           routing: env.SIFRIC_PLATFORM_ORIGIN ? 'configured service' : routingModes.length ? 'Sifric routing graph' : null,
-          routingModes, vectorTiles: true, nearestRoad: 'basemap centerlines', elevation: 'Mapzen Terrarium',
+          routingModes, vectorTiles: true, nearestRoad: 'basemap centerlines', traceMatching: routingModes.length > 0,
+          fleetOptimization: routingModes.includes('drive'), addressValidation: 'Sri Lanka postal towns', elevation: 'Mapzen Terrarium',
           staticMap: Boolean(env.MAP_BROWSER), liveTraffic: false,
         });
       }

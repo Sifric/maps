@@ -9,6 +9,12 @@ const remaining = $("remaining");
 const start = $("start");
 const stop = $("stop");
 const client = createSifricClient(location.origin);
+const query = new URLSearchParams(location.search);
+for (const field of ["origin", "destination"]) {
+  const value = query.get(field);
+  if (value && value.length <= 50) form.elements[field].value = value;
+}
+if (["drive", "walk", "cycle"].includes(query.get("mode"))) form.elements.mode.value = query.get("mode");
 let map;
 let marker;
 let revision = 0;

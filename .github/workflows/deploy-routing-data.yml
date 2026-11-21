@@ -2,6 +2,12 @@ name: Deploy Sifric routing data
 
 on:
   workflow_dispatch:
+    inputs:
+      mode:
+        type: choice
+        description: Travel profile to refresh
+        default: all
+        options: [all, drive, walk, cycle]
 
 permissions:
   contents: read
@@ -26,20 +32,28 @@ jobs:
           g++ -std=c++17 -O3 -DNDEBUG -I/tmp/routingkit/include scripts/build_routing_graph.cpp \
             /tmp/routingkit/lib/libroutingkit.a -fopenmp -lz -pthread -o /tmp/build-routing-graph
       - name: Build Sri Lanka graph artifacts
+        env:
+          PROFILE: ${{ inputs.mode }}
         run: |
           set -euo pipefail
           curl -fsSL --retry 3 --max-time 180 'https://download.geofabrik.de/asia/sri-lanka/sri-lanka-latest.osm.pbf' -o /tmp/sri-lanka.osm.pbf
           mkdir -p /tmp/sifric-graphs
-          for mode in drive walk cycle; do
+          modes=("$PROFILE")
+          if [ "$PROFILE" = all ]; then modes=(drive walk cycle); fi
+          for mode in "${modes[@]}"; do
             /tmp/build-routing-graph /tmp/sri-lanka.osm.pbf "/tmp/sifric-graphs/${mode}.bin" "$mode"
           done
-          node scripts/check_routing_data.mjs /tmp/sifric-graphs
+          node scripts/check_routing_data.mjs /tmp/sifric-graphs "${modes[@]}"
       - name: Publish routing objects to the Maps bucket
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
-          for mode in drive walk cycle; do
+          shopt -s nullglob
+          files=(/tmp/sifric-graphs/*.bin)
+          test "${#files[@]}" -gt 0
+          for file in "${files[@]}"; do
+            mode="$(basename "$file" .bin)"
             npx --yes wrangler@4.166.0 r2 object put "mazo-maps/lkmaps/routing/v1/${mode}.bin" \
               --file "/tmp/sifric-graphs/${mode}.bin" --content-type application/octet-stream --remote || exit $?
           done

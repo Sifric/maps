@@ -4,7 +4,7 @@ import { join } from 'node:path';
 import { routingRequest } from '../worker/routing.mjs';
 
 const directory = process.argv[2];
-for (const mode of ['drive', 'walk', 'cycle']) {
+for (const mode of process.argv.slice(3).length ? process.argv.slice(3) : ['drive', 'walk', 'cycle']) {
   const file = join(directory, mode + '.bin');
   const { size, mtimeMs } = await stat(file);
   const etag = String(mtimeMs);
@@ -31,5 +31,17 @@ for (const mode of ['drive', 'walk', 'cycle']) {
   const matrix = await routingRequest(bucket, 'matrix', { mode, coordinates });
   assert.equal(matrix.distances[0][0], 0);
   assert.equal(matrix.distances[0][1], route.routes[0].distance);
+  if (mode === 'drive') {
+    const { routes: [regional] } = await routingRequest(bucket, 'routes', {
+      mode, coordinates: [[79.8612, 6.9271], [80.635, 7.293]], speedLimits: true,
+    });
+    assert.ok(regional.distance > 80000 && regional.distance < 180000);
+    const limits = regional.legs[0].speedLimits;
+    assert.ok(limits.some(span => span.speed > 0));
+    assert.equal(limits.at(-1).endIndex, regional.geometry.coordinates.length - 1);
+    const observations = route.routes[0].geometry.coordinates.filter((_, i) => i % 8 === 0).slice(0, 5);
+    const trace = await routingRequest(bucket, 'match', { coordinates: observations });
+    assert.equal(trace.tracepoints.length, observations.length);
+  }
   console.log(mode, route.routes[0].distance, 'meters', route.routes[0].duration, 'seconds');
 }

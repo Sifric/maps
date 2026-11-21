@@ -32,6 +32,22 @@ void write_side(std::ostream& out, const ContractionHierarchy::Side& side) {
     write_column(out, second);
 }
 
+uint16_t posted_limit(const TagMap& tags, const char* direction, const char* conditional) {
+    if (tags[conditional] || tags["maxspeed:conditional"]) return 0;
+    const char* value = tags[direction];
+    if (!value) value = tags["maxspeed"];
+    if (!value) return 0;
+    std::string raw(value);
+    auto end = raw.find_first_not_of("0123456789");
+    auto digits = raw.substr(0, end);
+    if (digits.empty() || digits.size() > 3) return 0;
+    auto units = end == std::string::npos ? "" : raw.substr(end);
+    if (units != "" && units != " km/h" && units != " mph") return 0;
+    auto amount = std::stoi(digits);
+    if (amount < 1 || amount > 160) return 0;
+    return static_cast<uint16_t>(amount | (units == " mph" ? 0x8000 : 0));
+}
+
 int main(int argc, char** argv) {
     if (argc != 4) {
         std::cerr << "Usage: build-routing-graph INPUT.osm.pbf OUTPUT.bin MODE\n";
@@ -64,10 +80,15 @@ int main(int argc, char** argv) {
             return is_osm_way_used_by_pedestrians(id, tags);
         }, log, false);
     std::vector<unsigned> speed(mapping.is_routing_way.population_count());
+    std::vector<uint16_t> posted_forward(car ? speed.size() : 0), posted_backward(car ? speed.size() : 0);
     auto graph = load_osm_routing_graph_from_pbf(argv[1], mapping,
         [&](uint64_t id, unsigned way, const TagMap& tags) {
             speed[way] = car ? std::clamp(get_osm_way_speed(id, tags), 1u, 130u) : cycle ? 16 : 5;
-            if (car) return get_osm_car_direction_category(id, tags);
+            if (car) {
+                posted_forward[way] = posted_limit(tags, "maxspeed:forward", "maxspeed:forward:conditional");
+                posted_backward[way] = posted_limit(tags, "maxspeed:backward", "maxspeed:backward:conditional");
+                return get_osm_car_direction_category(id, tags);
+            }
             if (cycle) return get_osm_bicycle_direction_category(id, tags);
             return OSMWayDirectionCategory::open_in_both;
         },
@@ -183,6 +204,15 @@ int main(int argc, char** argv) {
     write_column(out, shape_boundaries);
     core_size = out.tellp();
     out.write(reinterpret_cast<const char*>(shapes.data()), sizeof(float) * shapes.size());
+    if (car) {
+        std::vector<uint16_t> limits;
+        limits.reserve(graph.arc_count());
+        for (unsigned arc = 0; arc < graph.arc_count(); ++arc) {
+            const auto& values = graph.is_arc_antiparallel_to_way[arc] ? posted_backward : posted_forward;
+            limits.push_back(values[graph.way[arc]]);
+        }
+        out.write(reinterpret_cast<const char*>(limits.data()), sizeof(uint16_t) * limits.size());
+    }
     out.seekp(8);
     out.write(reinterpret_cast<const char*>(&core_size), sizeof(core_size));
     out.close();

@@ -72,6 +72,29 @@ within 500 m. The motor vehicle profile accounts for supported OSM one-way
 and node-based turn restrictions. Estimates use map data and profile speeds.
 Live traffic and conditional or via-way restrictions are not available.
 
+POST `/roads/match` accepts 2–8 ordered GPS fixes. It compares candidate
+vertices within 100 m and reconstructs a connected path when the observed fixes
+support one. Set `speedLimits: true` on a drive route or trace to include
+numeric limits explicitly tagged on road segments in OpenStreetMap. Speed spans
+reference indexes in the returned geometry; unknown limits are `null`.
+
+POST `/optimize` accepts up to four drive vehicles, ten stops, and six distinct
+locations. The insertion heuristic uses the Sifric travel matrix and honors
+service times, vehicle and job time windows, capacity vectors, and paired
+pickup-delivery precedence. Infeasible jobs are returned under `unassigned`.
+If a vehicle has no end location, its route ends at its last assigned stop.
+
+POST `/address/validate` accepts `addressLines`, `locality`, `postalCode` and
+optional `countryCode: "LK"`. It normalizes postal details, reports missing or
+mismatched fields, and suggests entries from the
+[lankapost](https://github.com/AbQaadir/lankapost) postal office directory.
+Its precision is the postal town. It reports property type and street-level
+deliverability as unknown or unverified.
+
+Navigation links can prefill the form, for example
+`/developer/navigation/?origin=79.8612,6.9271&destination=79.8744,6.903&mode=drive`.
+The user starts guidance from the form and grants device location permission.
+
 The `Deploy Sifric routing data` workflow builds mode-specific graphs with
 [RoutingKit](https://github.com/RoutingKit/RoutingKit) from Geofabrik's Sri
 Lanka OpenStreetMap extract and validates them before uploading to the Maps

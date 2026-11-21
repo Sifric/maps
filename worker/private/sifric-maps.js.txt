@@ -78,5 +78,8 @@ export function createSifricClient(apiBase) {
     details: (id, signal) => request(`places/${encodeURIComponent(id)}`, {}, { signal }),
     route: (data, signal) => post("routes", data, signal),
     matrix: (data, signal) => post("matrix", data, signal),
+    matchTrace: (data, signal) => post("roads/match", data, signal),
+    optimizeFleet: (data, signal) => post("optimize", data, signal),
+    validateAddress: (data, signal) => post("address/validate", data, signal),
   };
 }
