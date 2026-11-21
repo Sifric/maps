@@ -31,12 +31,14 @@
     <li><code>POST /optimize</code> accepts <code>vehicles</code>, <code>jobs</code>, and paired
       <code>shipments</code>. Set vehicle <code>capacity</code>, optional <code>time_window</code>,
       and stop <code>time_windows</code>. Limits are 4 drive vehicles, 10 stops, and 6 distinct locations.</li>
+    <li><code>POST /transit/routes</code> accepts two <code>coordinates</code> and an optional
+      <code>departureTime</code> with a time-zone offset. Returns journeys on available Lanka Metro Transit schedules.</li>
     <li><code>POST /address/validate</code> accepts <code>addressLines</code>, <code>locality</code>,
-      <code>postalCode</code>, and optional <code>countryCode: "LK"</code>. Results verify postal towns.</li>
+      <code>postalCode</code>, and optional <code>countryCode: "LK"</code>. Supply <code>houseNumber</code> and <code>street</code> for an available mapped-premise match.</li>
     <li><code>POST /geolocate</code> accepts <code>cellTowers</code> with <code>radioType</code>,
       <code>mobileCountryCode: 413</code>, <code>mobileNetworkCode</code>, <code>locationAreaCode</code>,
       and <code>cellId</code> (or <code>newRadioCellId</code> for 5G). The result is an approximate
-      estimate from the OpenCellID snapshot.</li>
+      estimate from the OpenCellID snapshot. If an approved Wi-Fi index is present, <code>wifiAccessPoints</code> can provide a finer estimate.</li>
   </ul>
   <h2>Routes and matrices</h2>
   <p>Send the following JSON to <code>POST /routes</code> or <code>POST /matrix</code>.
@@ -49,7 +51,7 @@
   <p>Routes accept 2–8 coordinates. Matrices accept 2–6 coordinates and optional
     <code>sources</code> and <code>destinations</code> index arrays. Distances are in
     meters and durations are in seconds. Set <code>speedLimits: true</code> on
-    a drive route or trace to include known mapped limits.</p>
+    a drive route or trace to include known mapped limits. Set <code>trafficAware: true</code> on a motor vehicle route to request an estimate from available current observations.</p>
   <p><a href="/developer/native-sdk/">Native SDK setup</a></p>
 </main>
 </body>

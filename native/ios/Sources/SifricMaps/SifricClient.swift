@@ -46,6 +46,8 @@ public struct SifricRoute: Codable, Sendable {
     public let duration: Double
     public let geometry: Geometry
     public let legs: [Leg]
+    public let trafficDuration: Double?
+    public let matchedTrafficSegments: Int?
 }
 
 public enum SifricError: LocalizedError, Sendable {
@@ -112,9 +114,9 @@ public final class SifricClient: Sendable {
         return try JSONDecoder().decode(Photos.self, from: data).items
     }
 
-    public func route(coordinates: [[Double]], mode: String = "drive") async throws -> SifricRoute {
-        struct Request: Encodable { let coordinates: [[Double]]; let mode: String }
-        let body = try JSONEncoder().encode(Request(coordinates: coordinates, mode: mode))
+    public func route(coordinates: [[Double]], mode: String = "drive", trafficAware: Bool = false) async throws -> SifricRoute {
+        struct Request: Encodable { let coordinates: [[Double]]; let mode: String; let trafficAware: Bool? }
+        let body = try JSONEncoder().encode(Request(coordinates: coordinates, mode: mode, trafficAware: trafficAware ? true : nil))
         let data = try await request("routes", body: body)
         guard let first = try JSONDecoder().decode(Routes.self, from: data).routes.first else {
             throw SifricError.invalidResponse
@@ -127,6 +129,8 @@ public final class SifricClient: Sendable {
     public func optimizeFleet(json: Data) async throws -> Data { try await request("optimize", body: json) }
     public func validateAddress(json: Data) async throws -> Data { try await request("address/validate", body: json) }
     public func locateByCell(json: Data) async throws -> Data { try await request("geolocate", body: json) }
+    public func locate(json: Data) async throws -> Data { try await request("geolocate", body: json) }
+    public func transitRoute(json: Data) async throws -> Data { try await request("transit/routes", body: json) }
 
     private func request(_ path: String, query: [URLQueryItem] = [], body: Data? = nil) async throws -> Data {
         let token = try await credentialProvider()

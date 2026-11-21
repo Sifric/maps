@@ -78,6 +78,8 @@ export function createSifricClient(apiBase) {
     details: (id, signal) => request(`places/${encodeURIComponent(id)}`, {}, { signal }),
     photos: (id, signal) => request(`places/${encodeURIComponent(id)}/photos`, {}, { signal }),
     route: (data, signal) => post("routes", data, signal),
+    transitRoute: (data, signal) => post("transit/routes", data, signal),
+    locate: (data, signal) => post("geolocate", data, signal),
     matrix: (data, signal) => post("matrix", data, signal),
     matchTrace: (data, signal) => post("roads/match", data, signal),
     optimizeFleet: (data, signal) => post("optimize", data, signal),

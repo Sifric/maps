@@ -54,6 +54,8 @@ public final class SifricClient {
     }
 
     public JSONObject route(JSONObject payload) throws IOException, JSONException { return post("routes", payload); }
+    public JSONObject transitRoute(JSONObject payload) throws IOException, JSONException { return post("transit/routes", payload); }
+    public JSONObject locate(JSONObject payload) throws IOException, JSONException { return post("geolocate", payload); }
     public JSONObject matrix(JSONObject payload) throws IOException, JSONException { return post("matrix", payload); }
     public JSONObject matchTrace(JSONObject payload) throws IOException, JSONException { return post("roads/match", payload); }
     public JSONObject optimizeFleet(JSONObject payload) throws IOException, JSONException { return post("optimize", payload); }

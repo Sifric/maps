@@ -3,9 +3,12 @@ import { EtagMismatch, PMTiles, TileType } from 'pmtiles';
 import { nearestRoad } from './roads.mjs';
 import { availableRoutingModes, routingRequest, RoutingError } from './routing.mjs';
 import { optimizeFleet } from './fleet.mjs';
-import { validateAddress } from './address.mjs';
+import { validateAddress, verifyPremise } from './address.mjs';
 import { sampleRelief } from './bathymetry.mjs';
 import { locateByCell } from './cell-location.mjs';
+import { locateByWifi } from './wifi-location.mjs';
+import { transitRoute, transitKey } from './transit.mjs';
+import { annotateTraffic, trafficSnapshot } from './traffic.mjs';
 
 const result = (body, status = 200) => Response.json(body, { status });
 const bounds = { west: 78, east: 82.5, south: 5, north: 10.5 };
@@ -169,7 +172,8 @@ export function createPlatformApi(tileKey, renderStaticMap) {
     if (endpoint === '/address/validate') {
       if (request.method !== 'POST') return result({ error: 'Use POST.' }, 405);
       try {
-        return result(validateAddress(await routePayload(request)));
+        const body = await routePayload(request);
+        return result(await verifyPremise(validateAddress(body), body, env.TILES_BUCKET));
       } catch (error) {
         if (error instanceof RoutingError) return result({ error: error.message }, error.status);
         throw error;
@@ -178,10 +182,27 @@ export function createPlatformApi(tileKey, renderStaticMap) {
     if (endpoint === '/geolocate') {
       if (request.method !== 'POST') return result({ error: 'Use POST.' }, 405);
       try {
-        return result(await locateByCell(env.TILES_BUCKET, await routePayload(request)));
+        const body = await routePayload(request);
+        if (body.wifiAccessPoints !== undefined) {
+          try {
+            return result(await locateByWifi(env.TILES_BUCKET, body.wifiAccessPoints));
+          } catch (error) {
+            if (!(error instanceof RoutingError) || ![404, 503].includes(error.status) || !body.cellTowers?.length) throw error;
+          }
+        }
+        return result(await locateByCell(env.TILES_BUCKET, body));
       } catch (error) {
         if (error instanceof RoutingError) return result({ error: error.message }, error.status);
         return result({ error: 'The cellular index is unavailable.' }, 502);
+      }
+    }
+    if (endpoint === '/transit/routes') {
+      if (request.method !== 'POST') return result({ error: 'Use POST.' }, 405);
+      try {
+        return result(await transitRoute(env.TILES_BUCKET, await routePayload(request)));
+      } catch (error) {
+        if (error instanceof RoutingError) return result({ error: error.message }, error.status);
+        return result({ error: 'Transit schedules are unavailable.' }, 502);
       }
     }
     if (!env.SIFRIC_PLATFORM_ORIGIN && ['/routes', '/matrix', '/roads/match', '/optimize'].includes(endpoint)) {
@@ -192,7 +213,14 @@ export function createPlatformApi(tileKey, renderStaticMap) {
           return result(await optimizeFleet(env.TILES_BUCKET, payload,
             (_bucket, operation, matrix) => fleetMatrix(env, operation, matrix)));
         }
-        return await dispatchRouting(env, endpoint.split('/').at(-1), payload);
+        if (payload.trafficAware !== undefined && (typeof payload.trafficAware !== 'boolean' || endpoint !== '/routes')) {
+          return result({ error: 'trafficAware is a Boolean route option.' }, 400);
+        }
+        if (payload.trafficAware && ['walk', 'cycle'].includes(payload.mode)) {
+          return result({ error: 'Traffic-aware estimates are available for motor vehicle routes.' }, 400);
+        }
+        const response = await dispatchRouting(env, endpoint.split('/').at(-1), payload);
+        return payload.trafficAware ? await annotateTraffic(env.TILES_BUCKET, response) : response;
       } catch (error) {
         if (error instanceof RoutingError) return result({ error: error.message }, error.status);
         console.warn('Routing request failed', { operation: endpoint, reason: error?.message?.slice(0, 120) });
@@ -210,13 +238,20 @@ export function createPlatformApi(tileKey, renderStaticMap) {
     try {
       if (endpoint === '/health') return result({ status: 'ok', runtime: 'cloudflare-workers' });
       if (endpoint === '/capabilities') {
-        const routingModes = await availableRoutingModes(env.TILES_BUCKET);
+        const [routingModes, transit, wifi, premises, traffic] = await Promise.all([
+          availableRoutingModes(env.TILES_BUCKET), env.TILES_BUCKET?.head?.(transitKey),
+          env.TILES_BUCKET?.head?.('lkmaps/geolocation/v1/wifi.json'),
+          env.TILES_BUCKET?.head?.('lkmaps/address/v1/premises.json'),
+          env.TILES_BUCKET?.get ? trafficSnapshot(env.TILES_BUCKET).catch(() => null) : null,
+        ]);
         return result({
           region: 'LK', search: 'indexed places', geocoding: env.SIFRIC_PLATFORM_ORIGIN ? 'configured service' : 'indexed-place lookup',
           routing: env.SIFRIC_PLATFORM_ORIGIN ? 'configured service' : routingModes.length ? 'Sifric routing graph' : null,
           routingModes, vectorTiles: true, nearestRoad: 'basemap centerlines', traceMatching: routingModes.length > 0,
-          fleetOptimization: routingModes.includes('drive'), addressValidation: 'Sri Lanka postal towns', elevation: 'Mapzen Terrarium',
-          staticMap: Boolean(env.MAP_BROWSER), liveTraffic: false,
+          fleetOptimization: routingModes.includes('drive'),
+          addressValidation: premises ? 'Sri Lanka postal towns and mapped premises' : 'Sri Lanka postal towns',
+          elevation: 'Mapzen Terrarium', staticMap: Boolean(env.MAP_BROWSER), liveTraffic: Boolean(traffic),
+          transitSchedules: transit ? 'Lanka Metro Transit' : null, wifiPositioning: Boolean(wifi),
         });
       }
       if (tile) {

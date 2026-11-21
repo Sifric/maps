@@ -69,3 +69,29 @@ export function validateAddress(body) {
     source: 'lankapost postal office directory',
   };
 }
+
+export async function verifyPremise(output, body, bucket) {
+  const explicitNumber = value(body.houseNumber, 'house number', 30);
+  const explicitStreet = value(body.street, 'street', 120);
+  const parsed = /^(?:no\.?\s+)?([\d]+[\p{L}\d/-]*)\s*,?\s+(.+)$/iu.exec(output.normalizedAddress.addressLines[0] ?? '');
+  const number = explicitNumber || parsed?.[1];
+  const street = explicitStreet || parsed?.[2];
+  if (!number || !street) return output;
+  const { locality, postalCode } = output.normalizedAddress;
+  if (!locality && !postalCode) return { ...output, premiseStatus: 'needs-locality' };
+  const object = await bucket?.get('lkmaps/address/v1/premises.json');
+  if (!object || object.size > 2_000_000) return { ...output, premiseStatus: 'index-unavailable' };
+  const key = number.toLowerCase() + '\n' + street.toLowerCase();
+  const digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(key));
+  const hash = [...new Uint8Array(digest).subarray(0, 12)].map(byte => byte.toString(16).padStart(2, '0')).join('');
+  const index = await object.json();
+  const candidates = (index[hash] ?? []).filter(([town, postcode]) => {
+    const matchingCode = postalCode && postcode === postalCode;
+    const matchingTown = town && (simplify(town) === simplify(locality ?? '') || simplify(town) === simplify(body.locality ?? ''));
+    return (matchingCode || matchingTown) && !(postcode && postalCode && !matchingCode);
+  });
+  if (!candidates.length) return { ...output, premiseStatus: 'not-mapped' };
+  const categories = [...new Set(candidates.map(row => row[2]).filter(category => category !== 'unknown'))];
+  return { ...output, precision: 'mapped-premise', premiseStatus: 'matched',
+    propertyType: categories.length === 1 ? categories[0] : 'unknown', premiseSource: 'OpenStreetMap contributors' };
+}

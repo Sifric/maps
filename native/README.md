@@ -46,4 +46,40 @@ tokens on the developer server and use an authenticated app backend for
 consumer-facing deployments. Never place service tokens in a bundled app.
 For foreground guidance, the host application requests location permission
 and forwards device fixes. The SDKs expose guidance events for the host UI.
-They do not supply voice instructions, background navigation, or live traffic.
+The opt-in helpers below support voice and background guidance. Traffic-adjusted durations require an active observation feed.
+
+## Appearance and map overlays
+
+Android `SifricMapView.load(type, theme, callback)` and iOS
+`SifricMap.appearance(_:theme:traits:)` offer Default, Satellite, and Terrain
+in light, dark, or the device appearance. Camera bounds, markers, polylines
+and polygons have convenience methods. The MapLibre native objects also
+expose gestures, projection, map and annotation callbacks, custom overlays,
+GeoJSON sources, and data-driven style layers.
+
+## Voice guidance and screen lock
+
+Android hosts can enable voice prompts on a `SifricNavigation` instance with
+`enableVoice(context)`. For screen-lock guidance, subclass
+`SifricNavigationService`, supply the client, listener and foreground
+notification, and register the service with `android:exported="false"` and
+`android:foregroundServiceType="location"`. Grant precise location before
+starting it from visible app UI. Send `longitude`, `latitude`, `mode`, and
+optional `voice` Intent extras. Send the service's stop action to end navigation.
+
+iOS hosts use `SifricLocationSession` and retain it during guidance. Set a
+location usage description, enable **Location updates** in Background Modes
+for screen-lock guidance, call `start(..., background: true)` from the
+foreground, and call `stop()` when guidance ends. The helper uses Core Location
+and AVSpeechSynthesizer. Both platforms currently speak English prompts.
+
+## Shareable links
+
+Use `SifricMapsUrls` on Android or `SifricMapsURLs` on iOS to create links for
+search, a pinned map, and directions. The same HTTPS link opens the authorized
+browser view. To open an installed host app directly, register Android App
+Links or iOS Universal Links in that app. Publish the authorized association
+documents at `/.well-known/assetlinks.json` and
+`/.well-known/apple-app-site-association`. The Worker serves operator-verified
+documents from `lkmaps/sdk/v1/associations/`; configure the real package,
+signing fingerprint, Apple team, and bundle identifiers before publishing.

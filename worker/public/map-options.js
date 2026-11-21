@@ -141,6 +141,10 @@ export function initialMapStyle(style) {
     (settings.theme === "system" &&
       matchMedia("(prefers-color-scheme: dark)").matches);
   if (!isDark) return style;
+  return darkMapStyle(style);
+}
+
+export function darkMapStyle(style) {
   const result = structuredClone(style);
   for (const layer of result.layers)
     for (const key of Object.keys(layer.paint || {})) {

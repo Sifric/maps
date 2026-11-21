@@ -102,7 +102,7 @@ POST `/geolocate` accepts up to eight Sri Lankan cellular observations in
 `locationAreaCode` (LAC or TAC), `cellId` (or `newRadioCellId` for 5G), and
 `radioType: "gsm"|"wcdma"|"lte"|"nr"` on each observation or at the top level.
 The result estimates a location and a coverage radius from the matching
-cell centers. Wi-Fi identifiers and IP fallback are unsupported. Cell tower
+cell centers. A separately provisioned Wi-Fi index can be used as described below. Cell tower
 data from [OpenCellID](https://opencellid.org/), licensed under
 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), is filtered
 to Sri Lanka and stored as a local binary index from the
@@ -232,3 +232,36 @@ destination and needs a field-tested graph before production guidance.
 ## Implementation boundaries
 
 The native Android/iOS SDKs, native turn-by-turn navigation SDKs, native Places UI components, panorama capture/publishing and browsing, photorealistic 3D and aerial video, live traffic/transit, crowdsourced reviews, cell/Wi-Fi positioning, and postal-grade address validation require additional implementations and/or data. The current API does not fabricate these results.
+
+## Transit, mapped premises, Wi-Fi, and traffic
+
+`POST /transit/routes` plans trips on published Lanka Metro Transit schedules.
+Send two `coordinates` and an optional ISO `departureTime` with a time-zone
+offset. Walking estimates between a coordinate and a stop are straight-line.
+The service respects scheduled dates, stop access, and a two-minute minimum
+same-stop transfer. A recurring dataset build imports the available published
+dates. Timetable coverage is limited to the operator's available feed.
+
+Address validation also accepts `houseNumber` and `street`. A matching number,
+street and postal area in OpenStreetMap produces `mapped-premise` precision
+and a residential or commercial classification when tagged in the map.
+Deliverability remains unverified.
+
+The private geolocation endpoint accepts `wifiAccessPoints` containing
+`macAddress` observations. The system needs at least three matching access
+points in an authorized index. Use `scripts/build_wifi_index.mjs INPUT OUTPUT`
+to build an index privately from authorized observations with `longitude`,
+`latitude`, and `radiusMeters`, then publish to
+`lkmaps/geolocation/v1/wifi.json` in the Maps R2 bucket. Keep raw inputs outside
+Git. Wi-Fi observations are not forwarded to an external service. When provided
+with the request, cellular observations can supply an estimate if Wi-Fi coverage
+is insufficient.
+
+Supply `trafficAware: true` to `POST /routes` to include observed-segment delay
+in motor vehicle estimates. Publish a validated observation file to
+`lkmaps/traffic/v1/current.json` in the Maps R2 bucket. The object includes
+`observedAt`, `source`, and up to 32 directed `segments`, each with `from`,
+`to`, `factor`, and `closed`. Run `node scripts/check_traffic_snapshot.mjs FILE`
+before publishing. The Worker accepts observations at most 15 minutes old.
+A matching observed closure returns a conflict. This overlay adjusts estimates
+and detects matching closures without computing a replacement route.

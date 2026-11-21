@@ -8,12 +8,17 @@ public final class SifricLocationSession: NSObject, CLLocationManagerDelegate {
     private let client: SifricClient
     private let onEvent: (SifricNavigation.Event) -> Void
     private var active = false
+    private var routeReady = false
     private lazy var navigation = SifricNavigation(client: client) { [weak self] event in
         guard let self else { return }
-        if case .arrived = event {
+        switch event {
+        case .route: routeReady = true
+        case .error where !routeReady: stop()
+        case .arrived:
             active = false
             manager.stopUpdatingLocation()
             manager.allowsBackgroundLocationUpdates = false
+        default: break
         }
         onEvent(event)
     }
@@ -38,6 +43,7 @@ public final class SifricLocationSession: NSObject, CLLocationManagerDelegate {
         }
         try navigation.start(destination: destination, mode: mode)
         active = true
+        routeReady = false
         navigation.voiceEnabled = voice
         manager.allowsBackgroundLocationUpdates = background
         manager.showsBackgroundLocationIndicator = background

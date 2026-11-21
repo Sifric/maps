@@ -1,4 +1,5 @@
 import basemapStyle from "./style.json";
+import { nativeStyle } from "./native-style.mjs";
 
 
 import { createPlatformApi } from "./platform-api.mjs";
@@ -94,13 +95,23 @@ export default {
       response.headers.set("Cache-Control", "public, max-age=86400");
       return response;
     }
-    if (url.pathname === "/style.json") {
+    if (url.pathname === "/.well-known/assetlinks.json" || url.pathname === "/.well-known/apple-app-site-association") {
+      const name = url.pathname.slice("/.well-known/".length);
+      const file = await env.TILES_BUCKET.get("lkmaps/sdk/v1/associations/" + name);
+      if (!file || file.size > 65536) return new Response("Not Found", { status: 404 });
+      return new Response(request.method === "HEAD" ? null : file.body, {
+        headers: { "Content-Type": "application/json", "Cache-Control": "public, max-age=300" },
+      });
+    }
+    if (url.pathname === "/style.json" || url.pathname === "/api/v1/native-style.json") {
       const style = structuredClone(basemapStyle);
       delete style.sources.openmaptiles.tiles;
       style.sources.openmaptiles.url = `pmtiles://${url.origin}/tiles/sri-lanka.pmtiles`;
       style.sprite = `${url.origin}/api/v1/basemap/sprite`;
       style.glyphs = `${url.origin}/api/v1/fonts/{fontstack}/{range}.pbf`;
-      return new Response(request.method === "HEAD" ? null : JSON.stringify(style), {
+      const output = url.pathname === "/style.json" ? style : nativeStyle(style, url.searchParams);
+      if (!output) return new Response("Invalid native map appearance.", { status: 400, headers: cors });
+      return new Response(request.method === "HEAD" ? null : JSON.stringify(output), {
         headers: { ...cors, "Content-Type": "application/json; charset=utf-8", "Cache-Control": "no-cache" },
       });
     }

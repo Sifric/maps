@@ -40,9 +40,16 @@ public abstract class SifricNavigationService extends Service implements Locatio
                 throw new IllegalStateException("Grant precise location before starting navigation.");
             }
             navigation = new SifricNavigation(client(), new SifricNavigation.Listener() {
-                @Override public void onRoute(JSONObject route, boolean rerouted) { events.onRoute(route, rerouted); }
+                private boolean routeReady;
+                @Override public void onRoute(JSONObject route, boolean rerouted) {
+                    routeReady = true;
+                    events.onRoute(route, rerouted);
+                }
                 @Override public void onProgress(double meters, JSONObject next) { events.onProgress(meters, next); }
-                @Override public void onError(String message) { events.onError(message); }
+                @Override public void onError(String message) {
+                    if (!routeReady) stopSelf(startId);
+                    events.onError(message);
+                }
                 @Override public void onArrival() {
                     locations.removeUpdates(SifricNavigationService.this);
                     arrivalStop = () -> stopSelf(startId);
