@@ -97,7 +97,7 @@ test('routing sends only the validated request to the matching internal Worker',
         assert.equal(new URL(request.url).pathname, '/routes');
         assert.equal(request.headers.get('Authorization'), null);
         assert.equal((await request.json()).mode, 'walk');
-        if (dispatched === 1) return new Response('Resource limit', { status: 503 });
+        if (dispatched === 1) return Response.json({ error: 'Routing is busy. Retry shortly.' }, { status: 503 });
         return Response.json({ code: 'Ok', mode: 'walk', routes: [] });
       },
     },

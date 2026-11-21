@@ -68,16 +68,24 @@ async function dispatchRouting(env, operation, body) {
   if (!binding && profile !== mode) throw new RoutingError(503, 'This driving profile is unavailable.');
   if (!binding) return result(await routingRequest(env.TILES_BUCKET, operation, body));
   const payload = JSON.stringify({ ...body, mode });
-  for (let attempt = 0; attempt < 2; attempt++) {
+  const backoff = [500, 1500];
+  for (let attempt = 0; attempt <= backoff.length; attempt++) {
     try {
       const response = await binding.fetch(new Request('https://sifric-routing.internal/' + operation, {
         method: 'POST', headers: { 'Content-Type': 'application/json' }, body: payload,
       }));
-      if (response.headers.get('Content-Type')?.startsWith('application/json')) return response;
+      if (response.headers.get('Content-Type')?.startsWith('application/json')) {
+        if (response.status !== 503 || attempt === backoff.length) return response;
+        const { error } = await response.clone().json();
+        if (error !== 'Routing is busy. Retry shortly.' && error !== 'The routing graph is refreshing. Retry shortly.') {
+          return response;
+        }
+      }
       await response.body?.cancel();
     } catch {
       // The operation is read-only and can be retried after a Worker restart.
     }
+    if (attempt < backoff.length) await new Promise(resolve => setTimeout(resolve, backoff[attempt]));
   }
   return result({ error: 'The Sifric routing Worker is temporarily unavailable.' }, 503);
 }
