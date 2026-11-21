@@ -1,4 +1,7 @@
 #include <routingkit/contraction_hierarchy.h>
+#include <routingkit/geo_dist.h>
+#include <routingkit/id_mapper.h>
+#include <routingkit/osm_decoder.h>
 #include <routingkit/osm_graph_builder.h>
 #include <routingkit/osm_profile.h>
 #include <algorithm>
@@ -87,6 +90,56 @@ unsigned surface_speed(const TagMap& tags, unsigned speed, bool car, bool cycle)
     return speed;
 }
 
+void add_snap_vertices(const char* pbf, OSMRoutingIDMapping& mapping) {
+    const LocalIDMapper ids(mapping.is_modelling_node);
+    struct Position { float lat = 0, lon = 0; };
+    std::vector<Position> positions(ids.local_id_count());
+    unordered_read_osm_pbf(pbf, [&](uint64_t id, double lat, double lon, const TagMap&) {
+        const auto index = ids.to_local(id, UINT64_MAX);
+        if (index != UINT64_MAX) positions[index] = {static_cast<float>(lat), static_cast<float>(lon)};
+    }, nullptr, nullptr);
+
+    const auto add = [&](uint64_t node) {
+        mapping.is_routing_node.make_large_enough_for(node);
+        mapping.is_routing_node.set(node);
+    };
+    unordered_read_osm_pbf(pbf, nullptr, [&](uint64_t way, const std::vector<uint64_t>& nodes, const TagMap&) {
+        if (way >= mapping.is_routing_way.size() || !mapping.is_routing_way.is_set(way)) return;
+        double span = 0;
+        std::vector<std::pair<uint64_t, double>> interior;
+        for (size_t i = 1; i < nodes.size(); ++i) {
+            const auto a = ids.to_local(nodes[i - 1], UINT64_MAX);
+            const auto b = ids.to_local(nodes[i], UINT64_MAX);
+            if (a == UINT64_MAX || b == UINT64_MAX || positions[a].lat == 0 || positions[b].lat == 0) {
+                span = 0;
+                interior.clear();
+                continue;
+            }
+            const auto& from = positions[a];
+            const auto& to = positions[b];
+            span += geo_dist(from.lat, from.lon, to.lat, to.lon);
+            const auto node = nodes[i];
+            if (node >= mapping.is_routing_node.size() || !mapping.is_routing_node.is_set(node)) {
+                interior.emplace_back(node, span);
+                continue;
+            }
+            if (span > 900 && !interior.empty()) {
+                // Split only long edges to limit index size. Reuse mapped positions.
+                const auto pieces = static_cast<unsigned>(std::ceil(span / 550));
+                auto candidate = interior.begin();
+                for (unsigned part = 1; part < pieces; ++part) {
+                    const double target = span * part / pieces;
+                    while (candidate + 1 != interior.end() &&
+                            std::abs((candidate + 1)->second - target) < std::abs(candidate->second - target)) ++candidate;
+                    add(candidate->first);
+                }
+            }
+            span = 0;
+            interior.clear();
+        }
+    }, nullptr);
+}
+
 int main(int argc, char** argv) {
     if (argc != 4) {
         std::cerr << "Usage: build-routing-graph INPUT.osm.pbf OUTPUT.bin MODE\n";
@@ -144,6 +197,7 @@ int main(int argc, char** argv) {
                 sidewalk != "separate" && (access.empty() || access == "yes" || access == "permissive")) return true;
             return is_osm_way_used_by_pedestrians(id, tags);
         }, log, false);
+    add_snap_vertices(argv[1], mapping);
     std::vector<unsigned> forward_speed(mapping.is_routing_way.population_count()), backward_speed(forward_speed.size());
     std::vector<uint16_t> posted_forward(drive ? forward_speed.size() : 0), posted_backward(drive ? forward_speed.size() : 0);
     TagMap restriction_tags;

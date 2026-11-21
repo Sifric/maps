@@ -76,6 +76,8 @@ quality and directional posted speed limits where present.
 If the nearest vertices are disconnected, a route can try nearby connected
 vertices within the same travel profile. Matrices retain a single nearest
 vertex per input point so its row and column describe the same location.
+The graph builder promotes selected mapped points on long edges to make
+mid-road coordinates on rural routes easier to snap.
 Conditional and via-way restrictions are unavailable.
 
 On two-point routes, `alternatives: true` returns up to two additional paths

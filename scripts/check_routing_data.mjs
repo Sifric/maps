@@ -61,6 +61,14 @@ for (const mode of process.argv.slice(3).length ? process.argv.slice(3) : ['driv
         mode, coordinates: [coordinates[0], destination],
       });
       assert.ok(regional.distance > 200000 && regional.distance < 400000);
+      if (destination[1] === 8.577) {
+        const geometry = regional.geometry.coordinates;
+        const coordinates = Array.from({ length: 25 }, (_, index) =>
+          geometry[Math.round(index * (geometry.length - 1) / 24)]);
+        const corridor = await routingRequest(bucket, 'matrix', { mode, coordinates });
+        assert.ok(corridor.distances.every((row, index) => row.length === 25 && row[index] === 0));
+        assert.ok(corridor.distances[0].at(-1) > 200000);
+      }
     }
     const observations = route.routes[0].geometry.coordinates.filter((_, i) => i % 8 === 0).slice(0, 5);
     const trace = await routingRequest(bucket, 'match', { coordinates: observations });
