@@ -95,7 +95,13 @@ Navigation links can prefill the form, for example
 `/developer/navigation/?origin=79.8612,6.9271&destination=79.8744,6.903&mode=drive`.
 The user starts guidance from the form and grants device location permission.
 
-The `Deploy Sifric routing data` workflow builds mode-specific graphs with
+GET `/bathymetry?lon=79&lat=6.4` samples the nearest grid cell of the
+[NOAA/NCEI ETOPO 2022](https://doi.org/10.25921/fd45-gt74) relief grid. It
+reports elevation and, for negative elevations, depth below the EGM2008
+datum. The 15-arc-second grid is suitable for regional geographic estimates.
+It is not nautical chart data.
+
+The `Deploy Sifric Maps datasets` workflow builds mode-specific graphs with
 [RoutingKit](https://github.com/RoutingKit/RoutingKit) from Geofabrik's Sri
 Lanka OpenStreetMap extract and validates them before uploading to the Maps
 R2 bucket. Worker requests read the indexes from R2. Routing data is derived

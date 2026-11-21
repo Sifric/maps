@@ -1,13 +1,13 @@
-name: Deploy Sifric routing data
+name: Deploy Sifric Maps datasets
 
 on:
   workflow_dispatch:
     inputs:
       mode:
         type: choice
-        description: Travel profile to refresh
+        description: Dataset to refresh
         default: all
-        options: [all, drive, walk, cycle]
+        options: [all, drive, walk, cycle, relief]
 
 permissions:
   contents: read
@@ -23,6 +23,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Prepare graph compiler
+        if: inputs.mode != 'relief'
         run: |
           set -euo pipefail
           git init /tmp/routingkit
@@ -32,11 +33,13 @@ jobs:
           g++ -std=c++17 -O3 -DNDEBUG -I/tmp/routingkit/include scripts/build_routing_graph.cpp \
             /tmp/routingkit/lib/libroutingkit.a -fopenmp -lz -pthread -o /tmp/build-routing-graph
       - name: Build Sri Lanka graph artifacts
+        if: inputs.mode != 'relief'
         env:
           PROFILE: ${{ inputs.mode }}
         run: |
           set -euo pipefail
-          curl -fsSL --retry 3 --max-time 180 'https://download.geofabrik.de/asia/sri-lanka/sri-lanka-latest.osm.pbf' -o /tmp/sri-lanka.osm.pbf
+          curl -fsSL --retry 5 --retry-all-errors --connect-timeout 20 --max-time 180 \
+            'https://download.geofabrik.de/asia/sri-lanka/sri-lanka-latest.osm.pbf' -o /tmp/sri-lanka.osm.pbf
           mkdir -p /tmp/sifric-graphs
           modes=("$PROFILE")
           if [ "$PROFILE" = all ]; then modes=(drive walk cycle); fi
@@ -45,6 +48,7 @@ jobs:
           done
           node scripts/check_routing_data.mjs /tmp/sifric-graphs "${modes[@]}"
       - name: Publish routing objects to the Maps bucket
+        if: inputs.mode != 'relief'
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
@@ -57,3 +61,18 @@ jobs:
             npx --yes wrangler@4.166.0 r2 object put "mazo-maps/lkmaps/routing/v1/${mode}.bin" \
               --file "/tmp/sifric-graphs/${mode}.bin" --content-type application/octet-stream --remote || exit $?
           done
+      - name: Import NOAA relief and publish it to the Maps bucket
+        if: inputs.mode == 'relief' || inputs.mode == 'all'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          set -euo pipefail
+          python3 -m venv /tmp/sifric-relief-venv
+          /tmp/sifric-relief-venv/bin/pip install --disable-pip-version-check 'scipy==1.17.0'
+          curl -fsSL --retry 4 --retry-all-errors --connect-timeout 20 --max-time 90 \
+            'https://oceanwatch.pifsc.noaa.gov/erddap/griddap/ETOPO_2022_v1_15s.nc?z%5B(4.99):1:(10.51)%5D%5B(77.99):1:(82.51)%5D' \
+            -o /tmp/lk-relief.nc
+          /tmp/sifric-relief-venv/bin/python scripts/build_relief.py /tmp/lk-relief.nc /tmp/lk-relief.bin
+          npx --yes wrangler@4.166.0 r2 object put 'mazo-maps/lkmaps/relief/etopo-2022-lk.bin' \
+            --file /tmp/lk-relief.bin --content-type application/octet-stream --remote

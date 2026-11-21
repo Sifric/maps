@@ -4,6 +4,7 @@ import { nearestRoad } from './roads.mjs';
 import { availableRoutingModes, routingRequest, RoutingError } from './routing.mjs';
 import { optimizeFleet } from './fleet.mjs';
 import { validateAddress } from './address.mjs';
+import { sampleRelief } from './bathymetry.mjs';
 
 const result = (body, status = 200) => Response.json(body, { status });
 const bounds = { west: 78, east: 82.5, south: 5, north: 10.5 };
@@ -150,7 +151,7 @@ export function createPlatformApi(tileKey, renderStaticMap) {
     const id = /^\/places\/(\d{1,16})$/u.exec(endpoint)?.[1];
     const isNearestRoad = endpoint === '/roads/nearest' && request.method === 'GET';
     const isGeocode = !env.SIFRIC_PLATFORM_ORIGIN && ['/geocode','/geocode/reverse'].includes(endpoint);
-    if (!tile && !id && !isGeocode && !isNearestRoad && !['/health','/capabilities','/timezone','/elevation','/places/search','/places/nearby','/static-map'].includes(endpoint)) return null;
+    if (!tile && !id && !isGeocode && !isNearestRoad && !['/health','/capabilities','/timezone','/elevation','/bathymetry','/places/search','/places/nearby','/static-map'].includes(endpoint)) return null;
     if (request.method !== 'GET') return result({ error: 'Use GET.' }, 405);
     const { origin, searchParams: query } = new URL(request.url);
     try {
@@ -223,6 +224,12 @@ export function createPlatformApi(tileKey, renderStaticMap) {
       if (endpoint === '/elevation') {
         const sample = await terrarium(lon, lat);
         return sample ? result(sample) : result({ error: 'No elevation sample available.' }, 404);
+      }
+      if (endpoint === '/bathymetry') {
+        const sample = await sampleRelief(env.TILES_BUCKET, lon, lat);
+        if (sample === undefined) return result({ error: 'No relief grid has been deployed.' }, 503);
+        if (!sample) return result({ error: 'No relief sample is available.' }, 404);
+        return result(sample);
       }
       if (endpoint === '/timezone') {
         const timestamp = query.get('timestamp');
