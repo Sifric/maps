@@ -5,6 +5,7 @@ const graphPrefix = 'lkmaps/routing/v1/';
 const gridWidth = 500;
 const gridHeight = 600;
 const maxCoreBytes = 80 * 1024 ** 2;
+const coreReadBytes = 8 * 1024 ** 2;
 
 export class RoutingError extends Error {
   constructor(status, message) {
@@ -342,7 +343,11 @@ async function getGraph(bucket, mode) {
   const size = new DataView(metadata).getUint32(8, true);
   if (size < 12 || size > head.size || size > maxCoreBytes) throw new Error('Routing graph exceeds the memory budget.');
   coreBuffer ??= new ArrayBuffer(maxCoreBytes);
-  await readRange(bucket, key, head.etag, 0, size, new Uint8Array(coreBuffer, 0, size));
+  // Keep a cold R2 transfer bounded while the destination buffer is resident.
+  for (let offset = 0; offset < size; offset += coreReadBytes) {
+    const length = Math.min(coreReadBytes, size - offset);
+    await readRange(bucket, key, head.etag, offset, length, new Uint8Array(coreBuffer, offset, length));
+  }
   const graph = parseRoutingGraph(coreBuffer, size);
   cachedGraph = { key, etag: head.etag, graph, size, objectSize: head.size };
   return cachedGraph;
@@ -369,7 +374,7 @@ async function loadGraphShapes(bucket, file, arcs) {
   const split = new Set();
   let span = intervals.length ? intervals.at(-1).end - intervals[0].start : 0;
   for (const gap of gaps) {
-    if (span <= 65536 || split.size === 35) break;
+    if (span <= 65536 || split.size === 34) break;
     split.add(gap.i);
     span -= gap.points;
   }
