@@ -8,6 +8,9 @@ on:
         description: Routing graphs to refresh
         default: avoidance
         options: [avoidance, all]
+      source_checksum:
+        type: string
+        description: SHA-256 of a private staged Geofabrik extract (optional)
 
 permissions:
   contents: read
@@ -26,15 +29,29 @@ jobs:
       - uses: actions/checkout@v4
         with:
           persist-credentials: false
+      - name: Load the staged Geofabrik extract
+        if: inputs.source_checksum != ''
+        env:
+          SOURCE_SHA: ${{ inputs.source_checksum }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          set -euo pipefail
+          [[ "$SOURCE_SHA" =~ ^[a-f0-9]{64}$ ]]
+          for part in 01 02; do
+            npx --yes wrangler@4.166.0 r2 object get \
+              "mazo-maps/lkmaps/routing/import/$SOURCE_SHA.part$part" --file "/tmp/osm-part$part" --remote
+          done
+          cat /tmp/osm-part01 /tmp/osm-part02 > /tmp/lk.osm.pbf
+          printf '%s  %s\n' "$SOURCE_SHA" /tmp/lk.osm.pbf | sha256sum -c
       - name: Build and validate a routing graph
         env:
           PROFILE: ${{ matrix.profile }}
         run: |
           set -euo pipefail
-          if ! curl -fsSL --retry 2 --retry-all-errors --connect-timeout 12 --max-time 180 \
-              https://download.geofabrik.de/asia/sri-lanka/sri-lanka-latest.osm.pbf -o /tmp/lk.osm.pbf; then
-            curl -fsSL --retry 3 --retry-all-errors --connect-timeout 12 --max-time 180 \
-              https://download.openstreetmap.fr/extracts/asia/sri_lanka-latest.osm.pbf -o /tmp/lk.osm.pbf
+          if [ ! -s /tmp/lk.osm.pbf ]; then
+            curl -fsSL --retry 4 --retry-all-errors --connect-timeout 12 --max-time 180 \
+              https://download.geofabrik.de/asia/sri-lanka/sri-lanka-latest.osm.pbf -o /tmp/lk.osm.pbf
           fi
           git init /tmp/routingkit
           git -C /tmp/routingkit fetch --depth 1 https://github.com/RoutingKit/RoutingKit.git 54d49bb0cdea56dde182357522e4e86a03c57852
