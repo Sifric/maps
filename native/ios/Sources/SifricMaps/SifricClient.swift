@@ -29,6 +29,7 @@ public struct SifricRoute: Codable, Sendable {
         public let type: String
         public let location: [Double]
         public let modifier: String?
+        public let exit: Int?
     }
 
     public struct Step: Codable, Sendable {
@@ -40,6 +41,14 @@ public struct SifricRoute: Codable, Sendable {
         public let distance: Double
         public let duration: Double
         public let steps: [Step]
+        public let speedLimits: [SpeedLimit]?
+    }
+
+    public struct SpeedLimit: Codable, Sendable {
+        public let startIndex: Int
+        public let endIndex: Int
+        public let speed: Double?
+        public let unit: String?
     }
 
     public let distance: Double
@@ -48,6 +57,23 @@ public struct SifricRoute: Codable, Sendable {
     public let legs: [Leg]
     public let trafficDuration: Double?
     public let matchedTrafficSegments: Int?
+}
+
+public struct SifricRouteOptions: Encodable, Sendable {
+    public var alternatives: Bool?
+    public var optimizeWaypointOrder: Bool?
+    public var avoidTolls: Bool?
+    public var avoidHighways: Bool?
+    public var avoidFerries: Bool?
+    public var speedLimits: Bool?
+    public var trafficAware: Bool?
+
+    public init() {}
+}
+
+public struct SifricRouteChoices: Decodable, Sendable {
+    public let routes: [SifricRoute]
+    public let optimizedIntermediateWaypointIndices: [Int]?
 }
 
 public enum SifricError: LocalizedError, Sendable {
@@ -76,7 +102,6 @@ private final class RejectRedirects: NSObject, URLSessionTaskDelegate {
 public final class SifricClient: Sendable {
     private struct Places: Decodable { let items: [SifricPlace] }
     private struct Photos: Decodable { let items: [SifricPlacePhoto] }
-    private struct Routes: Decodable { let routes: [SifricRoute] }
     private struct ErrorResponse: Decodable { let error: String }
     private let credentialProvider: @Sendable () async throws -> String
     private let session: URLSession
@@ -115,13 +140,33 @@ public final class SifricClient: Sendable {
     }
 
     public func route(coordinates: [[Double]], mode: String = "drive", trafficAware: Bool = false) async throws -> SifricRoute {
-        struct Request: Encodable { let coordinates: [[Double]]; let mode: String; let trafficAware: Bool? }
-        let body = try JSONEncoder().encode(Request(coordinates: coordinates, mode: mode, trafficAware: trafficAware ? true : nil))
-        let data = try await request("routes", body: body)
-        guard let first = try JSONDecoder().decode(Routes.self, from: data).routes.first else {
+        var options = SifricRouteOptions()
+        if trafficAware { options.trafficAware = true }
+        let result = try await routes(coordinates: coordinates, mode: mode, options: options)
+        guard let first = result.routes.first else {
             throw SifricError.invalidResponse
         }
         return first
+    }
+
+    public func routes(coordinates: [[Double]], mode: String = "drive",
+                       options: SifricRouteOptions = .init()) async throws -> SifricRouteChoices {
+        struct Request: Encodable {
+            let coordinates: [[Double]]
+            let mode: String
+            let options: SifricRouteOptions
+
+            enum CodingKeys: String, CodingKey { case coordinates, mode }
+
+            func encode(to encoder: Encoder) throws {
+                try options.encode(to: encoder)
+                var container = encoder.container(keyedBy: CodingKeys.self)
+                try container.encode(coordinates, forKey: .coordinates)
+                try container.encode(mode, forKey: .mode)
+            }
+        }
+        let body = try JSONEncoder().encode(Request(coordinates: coordinates, mode: mode, options: options))
+        return try JSONDecoder().decode(SifricRouteChoices.self, from: await request("routes", body: body))
     }
 
     public func matrix(json: Data) async throws -> Data { try await request("matrix", body: json) }

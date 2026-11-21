@@ -26,6 +26,11 @@ a native search input and selectable results. `SifricNavigation` receives
 requests a route on the first usable fix and emits route, maneuver, progress,
 arrival, and error events. Stop or close it when leaving the guidance screen.
 
+Use `SifricClient.route(JSONObject)` with `alternatives: true` to preview
+route choices. The navigation `start` overload accepts route preferences and a
+selected two-point route. The listener's optional `onTelemetry` callback exposes
+remaining seconds, device speed, and mapped speed limits in km/h when available.
+
 ## iOS
 
 Download and unzip the package from `/developer/api/v1/sdk/ios/sifric-maps.zip`.
@@ -38,6 +43,13 @@ Sifric basemap. `SifricClient` offers asynchronous API methods, and
 `SifricPlaceSearchView` presents selectable results in SwiftUI.
 `SifricNavigation` receives `CLLocation` updates delivered by the application
 and reports route geometry, upcoming maneuvers, progress, rerouting, and arrival.
+
+Use `SifricClient.routes(coordinates:mode:options:)` and
+`SifricRouteOptions` to request route alternatives or optimized stop order.
+For two-point navigation, pass the selected route and preferences to
+`SifricNavigation.start(destination:mode:options:initialRoute:)`. Progress
+events update `metrics` with remaining seconds, device speed, and posted speed
+limit when the route requested `speedLimits` and the current segment is mapped.
 
 ## Credentials and device location
 

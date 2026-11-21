@@ -46,6 +46,9 @@ public abstract class SifricNavigationService extends Service implements Locatio
                     events.onRoute(route, rerouted);
                 }
                 @Override public void onProgress(double meters, JSONObject next) { events.onProgress(meters, next); }
+                @Override public void onTelemetry(double seconds, Double speed, Double limit) {
+                    events.onTelemetry(seconds, speed, limit);
+                }
                 @Override public void onError(String message) {
                     if (!routeReady) stopSelf(startId);
                     events.onError(message);

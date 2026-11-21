@@ -26,7 +26,7 @@ function project(point, segments, position = 0) {
     if (cost >= score) continue;
     score = cost;
     nearest = {
-      progress, away,
+      progress, away, index: segment.index,
       point: segment.a.map((value, index) => value + (segment.b[index] - value) * t),
     };
   }
@@ -47,17 +47,26 @@ function routePlan(payload) {
     const [dx, dy] = vector(a, b);
     const span = Math.hypot(dx, dy);
     if (!span) continue;
-    segments.push({ a, b, dx, dy, length: span, start: length });
+    segments.push({ a, b, dx, dy, length: span, start: length, index: i - 1 });
     length += span;
   }
   if (!length) throw new Error("The route has no distance.");
   const steps = [];
+  const speedLimits = [];
+  const weights = [];
   let lastManeuver = 0;
-  for (const leg of route.legs ?? []) {
+  const legs = route.legs ?? [];
+  for (const [index, leg] of legs.entries()) {
+    for (const span of leg.speedLimits ?? []) {
+      if (Number.isFinite(span.speed) && span.speed > 0 && ["km/h", "mph"].includes(span.unit)) {
+        speedLimits.push({ ...span, kph: span.speed * (span.unit === "mph" ? 1.609344 : 1) });
+      }
+    }
     for (const step of leg.steps ?? []) {
       const maneuver = step.maneuver;
       if (!validPoint(maneuver?.location) || maneuver.type === "depart") continue;
-      const where = maneuver.type === "arrive" ? length : project(maneuver.location, segments, lastManeuver).progress;
+      const where = maneuver.type === "arrive" && index === legs.length - 1 ? length :
+        project(maneuver.location, segments, lastManeuver).progress;
       lastManeuver = Math.max(lastManeuver, where);
       steps.push({
         type: maneuver.type,
@@ -65,13 +74,16 @@ function routePlan(payload) {
         exit: Number.isInteger(maneuver.exit) ? maneuver.exit : undefined,
         name: typeof step.name === "string" ? step.name : "",
         position: lastManeuver,
+        intermediate: maneuver.type === "arrive" && index < legs.length - 1,
       });
     }
+    weights.push({ end: lastManeuver, seconds: leg.duration });
   }
-  return { route, coordinates, segments, length, steps };
+  return { route, coordinates, segments, length, steps, speedLimits, weights };
 }
 
 export function formatSifricManeuver(maneuver) {
+  if (maneuver?.intermediate) return "Arrive at the next stop";
   if (!maneuver || maneuver.type === "arrive") return "Arrive at your destination";
   const road = maneuver.name ? ` onto ${maneuver.name}` : "";
   const direction = maneuver.modifier ? ` ${maneuver.modifier}` : "";
@@ -104,15 +116,24 @@ export function createSifricNavigation({
     active.controller?.abort();
     if (active.watch !== undefined) geolocation.clearWatch(active.watch);
   }
-  async function planRoute(active, origin, rerouting) {
+  async function planRoute(active, origin, rerouting, initialRoute) {
     const controller = new AbortController();
+    const stops = rerouting ? active.stops.slice(active.visited) : active.stops;
     active.controller = controller;
     emit(active, rerouting ? "rerouting" : "planning");
     try {
-      const payload = await client.route({ coordinates: [origin, active.destination], mode: active.mode }, controller.signal);
+      const payload = initialRoute ? { routes: [initialRoute] } : await client.route({
+        ...active.routeOptions,
+        ...(stops.length === 0 && active.routeOptions.optimizeWaypointOrder && { optimizeWaypointOrder: false }),
+        ...(stops.length > 0 && active.routeOptions.alternatives && { alternatives: false }),
+        coordinates: [origin, ...stops, active.destination],
+        mode: active.mode,
+      }, controller.signal);
       if (session !== active || controller.signal.aborted) return false;
       active.plan = routePlan(payload);
+      active.stops = payload.optimizedIntermediateWaypointIndices?.map(index => stops[index]) ?? stops;
       active.progress = 0;
+      active.visited = 0;
       active.offRoute = 0;
       emit(active, "route", { route: active.plan.route, rerouted: rerouting });
       return session === active;
@@ -126,12 +147,12 @@ export function createSifricNavigation({
 
   function track(active, position) {
     if (session !== active || !active.plan || active.controller) return;
-    const { longitude, latitude, accuracy } = position.coords;
+    const { longitude, latitude, accuracy, speed } = position.coords;
     const point = [longitude, latitude];
     if (!validPoint(point) || !Number.isFinite(accuracy) || accuracy < 0 || accuracy > 70 ||
         !Number.isFinite(position.timestamp) || position.timestamp <= active.lastFix) return;
     active.lastFix = position.timestamp;
-    const { segments, coordinates, length, steps, route } = active.plan;
+    const { segments, coordinates, length, steps, route, speedLimits, weights } = active.plan;
     const match = project(point, segments, active.progress);
     const threshold = Math.max(35, accuracy * 1.5);
     if (match.away > threshold) {
@@ -145,6 +166,8 @@ export function createSifricNavigation({
     }
     active.offRoute = 0;
     active.progress = Math.max(active.progress, match.progress);
+    const intermediate = steps.filter(step => step.intermediate);
+    active.visited = intermediate.filter(step => step.position <= active.progress + 5).length;
     const remaining = length - active.progress;
     if (remaining <= 25 && distance(point, coordinates.at(-1)) <= 25 && accuracy <= 25) {
       emit(active, "arrived", { position: point, snapped: match.point, remainingMeters: 0 });
@@ -152,24 +175,44 @@ export function createSifricNavigation({
       return;
     }
     const next = steps.find(step => step.position > active.progress + 5);
+    const limit = speedLimits.find(span => span.startIndex <= match.index && match.index < span.endIndex);
+    const speedKph = Number.isFinite(speed) && speed >= 0 ? speed * 3.6 : null;
+    const eta = route.trafficDuration ?? route.duration;
+    let remainingSeconds = Number.isFinite(eta) ? eta * remaining / length : null;
+    if (weights.length > 1 && Number.isFinite(route.duration) && route.duration > 0 &&
+        weights.every(weight => Number.isFinite(weight.seconds))) {
+      let start = 0;
+      remainingSeconds = weights.reduce((seconds, weight) => {
+        const distance = weight.end - start;
+        const fraction = distance > 0 ? Math.max(0, weight.end - Math.max(start, active.progress)) / distance : 0;
+        start = weight.end;
+        return seconds + weight.seconds * fraction;
+      }, 0) * eta / route.duration;
+    }
     emit(active, "progress", {
       position: point,
       snapped: match.point,
       remainingMeters: Math.round(remaining),
-      remainingSeconds: Number.isFinite(route.duration) ? Math.round(route.duration * remaining / length) : null,
+      remainingSeconds: remainingSeconds == null ? null : Math.round(remainingSeconds),
+      speedKph,
+      speedLimitKph: limit?.kph ?? null,
+      overSpeed: speedKph != null && Boolean(limit) && speedKph > limit.kph,
       nextManeuver: next ?? null,
       maneuverDistanceMeters: next ? Math.max(0, Math.round(next.position - active.progress)) : null,
     });
   }
 
   return {
-    async start({ origin, destination, mode = "drive" }) {
-      if (!validPoint(origin) || !validPoint(destination)) throw new Error("Choose a valid origin and destination.");
+    async start({ origin, destination, stops = [], mode = "drive", routeOptions = {}, initialRoute }) {
+      if (!Array.isArray(stops) || stops.length > 6 || ![origin, destination, ...stops].every(validPoint)) {
+        throw new Error("Choose a valid origin, destination, and up to six stops.");
+      }
       if (!geolocation?.watchPosition || !geolocation?.clearWatch) throw new Error("Device location is unavailable.");
       stop();
-      const active = { destination, mode, lastFix: -Infinity, lastReroute: -Infinity };
+      const active = { destination, mode, stops: stops.slice(), visited: 0, routeOptions,
+        lastFix: -Infinity, lastReroute: -Infinity };
       session = active;
-      if (!(await planRoute(active, origin, false))) {
+      if (!(await planRoute(active, origin, false, initialRoute))) {
         if (session === active) stop();
         return false;
       }

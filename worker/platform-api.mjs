@@ -1,7 +1,7 @@
 import { decode } from 'fast-png';
 import { EtagMismatch, PMTiles, TileType } from 'pmtiles';
 import { nearestRoad } from './roads.mjs';
-import { availableRoutingModes, routingRequest, RoutingError } from './routing.mjs';
+import { availableRoutingModes, graphPrefix, routingProfile, routingRequest, RoutingError } from './routing.mjs';
 import { optimizeFleet } from './fleet.mjs';
 import { validateAddress, verifyPremise } from './address.mjs';
 import { sampleRelief } from './bathymetry.mjs';
@@ -16,6 +16,7 @@ const normalize = value => value.normalize('NFKC').toLowerCase().trim();
 const routingBindings = new Map([
   ['drive', 'ROUTING_DRIVE'], ['walk', 'ROUTING_WALK'], ['cycle', 'ROUTING_CYCLE'],
   ['motorcycle', 'ROUTING_MOTORCYCLE'], ['tuk', 'ROUTING_TUK'],
+  ['drive-no-tolls', 'ROUTING_DRIVE_NO_TOLLS'], ['drive-no-highways', 'ROUTING_DRIVE_NO_HIGHWAYS'],
 ]);
 
 class Invalid extends Error {}
@@ -62,9 +63,9 @@ async function routePayload(request) {
 
 async function dispatchRouting(env, operation, body) {
   const mode = body.mode ?? 'drive';
-  const name = routingBindings.get(mode);
-  if (!name) throw new RoutingError(400, 'Choose drive, walk, cycle, motorcycle, or tuk.');
-  const binding = env[name];
+  const profile = routingProfile(body);
+  const binding = env[routingBindings.get(profile)];
+  if (!binding && profile !== mode) throw new RoutingError(503, 'This driving profile is unavailable.');
   if (!binding) return result(await routingRequest(env.TILES_BUCKET, operation, body));
   const payload = JSON.stringify({ ...body, mode });
   for (let attempt = 0; attempt < 2; attempt++) {
@@ -219,8 +220,33 @@ export function createPlatformApi(tileKey, renderStaticMap) {
         if (payload.trafficAware && ['walk', 'cycle'].includes(payload.mode)) {
           return result({ error: 'Traffic-aware estimates are available for motor vehicle routes.' }, 400);
         }
-        const response = await dispatchRouting(env, endpoint.split('/').at(-1), payload);
-        return payload.trafficAware ? await annotateTraffic(env.TILES_BUCKET, response) : response;
+        if (payload.waypoints !== undefined) {
+          if (endpoint !== '/routes' || payload.coordinates !== undefined || !Array.isArray(payload.waypoints) ||
+              payload.waypoints.length < 2 || payload.waypoints.length > 8) {
+            throw new RoutingError(400, 'Supply 2 to 8 waypoints instead of coordinates on a route request.');
+          }
+          const origin = new URL(request.url).origin;
+          const shards = new Map();
+          payload.coordinates = await Promise.all(payload.waypoints.map(async waypoint => {
+            if (waypoint?.location !== undefined && waypoint.placeId === undefined) return waypoint.location;
+            const id = waypoint?.placeId;
+            if (!Number.isSafeInteger(id) || id <= 0 || waypoint.location !== undefined) {
+              throw new RoutingError(400, 'Each waypoint must have a location or a numeric placeId.');
+            }
+            const index = id % 512;
+            if (!shards.has(index)) shards.set(index, shard(env, origin, 'id/' + index));
+            const row = (await shards.get(index)).find(row => row[0] === id);
+            if (!row) throw new RoutingError(404, 'Waypoint place not found.');
+            return [row[2], row[3]];
+          }));
+          delete payload.waypoints;
+        }
+        const snapshot = payload.trafficAware ? await trafficSnapshot(env.TILES_BUCKET).catch(() => null) : null;
+        const internalAlternatives = snapshot && payload.coordinates?.length === 2 && payload.alternatives !== true &&
+          (payload.alternatives === undefined || payload.alternatives === false);
+        const response = await dispatchRouting(env, endpoint.split('/').at(-1),
+          internalAlternatives ? { ...payload, alternatives: true } : payload);
+        return payload.trafficAware ? await annotateTraffic(env.TILES_BUCKET, response, snapshot, internalAlternatives) : response;
       } catch (error) {
         if (error instanceof RoutingError) return result({ error: error.message }, error.status);
         console.warn('Routing request failed', { operation: endpoint, reason: error?.message?.slice(0, 120) });
@@ -238,16 +264,20 @@ export function createPlatformApi(tileKey, renderStaticMap) {
     try {
       if (endpoint === '/health') return result({ status: 'ok', runtime: 'cloudflare-workers' });
       if (endpoint === '/capabilities') {
-        const [routingModes, transit, wifi, premises, traffic] = await Promise.all([
+        const drivingProfiles = ['drive-no-tolls', 'drive-no-highways'];
+        const [routingModes, transit, wifi, premises, traffic, availableProfiles] = await Promise.all([
           availableRoutingModes(env.TILES_BUCKET), env.TILES_BUCKET?.head?.(transitKey),
           env.TILES_BUCKET?.head?.('lkmaps/geolocation/v1/wifi.json'),
           env.TILES_BUCKET?.head?.('lkmaps/address/v1/premises.json'),
           env.TILES_BUCKET?.get ? trafficSnapshot(env.TILES_BUCKET).catch(() => null) : null,
+          Promise.all(drivingProfiles.map(profile => env[routingBindings.get(profile)] &&
+            env.TILES_BUCKET?.head?.(graphPrefix + profile + '.bin'))),
         ]);
         return result({
           region: 'LK', search: 'indexed places', geocoding: env.SIFRIC_PLATFORM_ORIGIN ? 'configured service' : 'indexed-place lookup',
           routing: env.SIFRIC_PLATFORM_ORIGIN ? 'configured service' : routingModes.length ? 'Sifric routing graph' : null,
           routingModes, vectorTiles: true, nearestRoad: 'basemap centerlines', traceMatching: routingModes.length > 0,
+          drivingAvoidanceProfiles: drivingProfiles.filter((_, index) => availableProfiles[index]),
           fleetOptimization: routingModes.includes('drive'),
           addressValidation: premises ? 'Sri Lanka postal towns and mapped premises' : 'Sri Lanka postal towns',
           elevation: 'Mapzen Terrarium', staticMap: Boolean(env.MAP_BROWSER), liveTraffic: Boolean(traffic),

@@ -72,6 +72,7 @@ export function createSifricClient(apiBase) {
   }
 
   return {
+    capabilities: signal => request("capabilities", {}, { signal }),
     search: (q, { limit, signal } = {}) => request("places/search", { q, limit }, { signal }),
     nearby: (lon, lat, { radius, limit, signal } = {}) =>
       request("places/nearby", { lon, lat, radius, limit }, { signal }),

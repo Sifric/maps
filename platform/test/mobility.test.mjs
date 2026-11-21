@@ -44,6 +44,11 @@ test('traffic estimates expire, report closure, and avoid double-counting overla
   assert.equal(result.routes[0].trafficDuration, 200);
   report.segments[0].closed = true;
   await assert.rejects(annotateTraffic(bucket(report), reply()), { status: 409 });
+  const detour = { duration: 160, geometry: { coordinates: [a, [a[0], a[1] + .01], c] } };
+  const options = await reply().json();
+  options.routes.push(detour);
+  const open = await (await annotateTraffic(bucket(report), Response.json(options), report, true)).json();
+  assert.equal(open.routes[0].duration, 160);
   assert.equal(validateTraffic({ ...report, observedAt: '2000-01-01T00:00:00Z' }), null);
   assert.equal((await (await annotateTraffic(bucket(null), reply())).json()).liveTraffic.status, 'unavailable');
 });

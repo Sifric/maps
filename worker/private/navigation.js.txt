@@ -6,8 +6,11 @@ const form = document.querySelector("form");
 const status = $("status");
 const maneuver = $("maneuver");
 const remaining = $("remaining");
+const speed = $("speed");
 const start = $("start");
 const stop = $("stop");
+const preview = $("preview");
+const choices = $("route-options");
 const client = createSifricClient(location.origin);
 const query = new URLSearchParams(location.search);
 for (const field of ["origin", "destination"]) {
@@ -18,6 +21,15 @@ if (["drive", "walk", "cycle", "motorcycle", "tuk"].includes(query.get("mode")))
 let map;
 let marker;
 let revision = 0;
+let previewController;
+let previewPlan;
+let active = false;
+let mapReady = false;
+let profiles = [];
+void client.capabilities().then(capabilities => {
+  profiles = capabilities.drivingAvoidanceProfiles ?? [];
+  controls(active);
+}).catch(() => {});
 
 function readPoint(input) {
   const parts = input.value.trim().split(",").map(value => value.trim());
@@ -28,8 +40,37 @@ function readPoint(input) {
 }
 
 function controls(active) {
-  start.disabled = active;
+  form.querySelectorAll("input, textarea, select").forEach(control => { control.disabled = active; });
+  form.elements.highways.disabled = active || form.elements.mode.value !== "drive" || !profiles.includes("drive-no-highways");
+  form.elements.tolls.disabled = active || form.elements.mode.value !== "drive" || !profiles.includes("drive-no-tolls");
+  $("use-location").disabled = active;
+  start.disabled = active || !mapReady;
+  preview.disabled = active || !mapReady;
   stop.disabled = !active;
+}
+
+function settings() {
+  const stops = form.elements.stops.value.split(/\r?\n/u).filter(line => line.trim()).map(value => readPoint({ value }));
+  if (stops.length > 6) throw new Error("Choose up to six intermediate stops.");
+  const mode = form.elements.mode.value;
+  return {
+    origin: readPoint(form.elements.origin),
+    destination: readPoint(form.elements.destination),
+    stops, mode,
+    routeOptions: {
+      ...(mode === "drive" && { speedLimits: true }),
+      ...(!form.elements.highways.disabled && form.elements.highways.checked && { avoidHighways: true }),
+      ...(!form.elements.tolls.disabled && form.elements.tolls.checked && { avoidTolls: true }),
+      ...(stops.length && form.elements.optimize.checked && { optimizeWaypointOrder: true }),
+      ...(["drive", "motorcycle", "tuk"].includes(mode) && { trafficAware: true }),
+    },
+  };
+}
+
+function invalidatePreview() {
+  previewController?.abort();
+  previewPlan = undefined;
+  $("route-choice").hidden = true;
 }
 
 function paintRoute(route) {
@@ -51,7 +92,7 @@ function paintRoute(route) {
 }
 
 function clearGuidance() {
-  maneuver.hidden = remaining.hidden = true;
+  maneuver.hidden = remaining.hidden = speed.hidden = true;
   marker?.remove();
   marker = undefined;
   map?.getSource("sifric-navigation-route")?.setData({ type: "FeatureCollection", features: [] });
@@ -67,7 +108,14 @@ const navigation = createSifricNavigation({
       status.textContent = "Guidance active.";
       const next = formatSifricManeuver(event.nextManeuver);
       maneuver.textContent = event.maneuverDistanceMeters == null ? next : `${event.maneuverDistanceMeters} m · ${next}`;
-      remaining.textContent = `${(event.remainingMeters / 1000).toFixed(2)} km remaining`;
+      const eta = event.remainingSeconds == null ? "" : ` · ${Math.ceil(event.remainingSeconds / 60)} min`;
+      remaining.textContent = `${(event.remainingMeters / 1000).toFixed(2)} km remaining${eta}`;
+      speed.hidden = event.speedKph == null && event.speedLimitKph == null;
+      speed.textContent = [
+        event.speedKph == null ? "" : `${Math.round(event.speedKph)} km/h`,
+        event.speedLimitKph == null ? "" : `Limit ${Math.round(event.speedLimitKph)} km/h`,
+        event.overSpeed ? "Over posted limit" : "",
+      ].filter(Boolean).join(" · ");
       maneuver.hidden = remaining.hidden = false;
       if (map) {
         marker ??= new maplibregl.Marker({ color: "#14736a" }).setLngLat(event.snapped).addTo(map);
@@ -75,14 +123,18 @@ const navigation = createSifricNavigation({
       }
     } else if (event.status === "arrived") {
       status.textContent = "You have arrived.";
-      maneuver.hidden = remaining.hidden = true;
+      maneuver.hidden = remaining.hidden = speed.hidden = true;
+      active = false;
       controls(false);
     } else if (event.status === "rerouting" || event.status === "off-route") {
       status.textContent = event.status === "rerouting" ? "Updating your route…" : "Device location is off the route.";
-      maneuver.hidden = remaining.hidden = true;
+      maneuver.hidden = remaining.hidden = speed.hidden = true;
     } else if (event.status.endsWith("error")) {
       status.textContent = event.message;
-      if (event.status === "location-error" && event.code === 1) controls(false);
+      if (event.status === "location-error" && event.code === 1) {
+        active = false;
+        controls(false);
+      }
     } else status.textContent = "Planning your route…";
   },
 });
@@ -90,24 +142,72 @@ const navigation = createSifricNavigation({
 form.addEventListener("submit", async event => {
   event.preventDefault();
   const request = ++revision;
-  controls(true);
-  clearGuidance();
   try {
-    const active = await navigation.start({
-      origin: readPoint(form.elements.origin),
-      destination: readPoint(form.elements.destination),
-      mode: form.elements.mode.value,
-    });
-    if (!active && revision === request) controls(false);
+    const config = settings();
+    const selected = previewPlan?.routes[Number(choices.value)];
+    if (selected) {
+      config.stops = previewPlan.optimizedIntermediateWaypointIndices?.map(index => config.stops[index]) ?? config.stops;
+      delete config.routeOptions.optimizeWaypointOrder;
+    }
+    invalidatePreview();
+    active = true;
+    controls(true);
+    clearGuidance();
+    const started = await navigation.start({ ...config, initialRoute: selected });
+    if (!started && revision === request) {
+      active = false;
+      controls(false);
+    }
   } catch (error) {
     if (revision !== request) return;
+    active = false;
     controls(false);
     status.textContent = error.message;
   }
 });
 
+form.addEventListener("input", event => {
+  if (event.target === choices) return;
+  invalidatePreview();
+  clearGuidance();
+  status.textContent = "";
+  controls(active);
+});
+
+choices.addEventListener("change", () => {
+  const selected = previewPlan?.routes[Number(choices.value)];
+  if (selected) paintRoute(selected);
+});
+
+preview.addEventListener("click", async () => {
+  if (!form.reportValidity()) return;
+  invalidatePreview();
+  const controller = new AbortController();
+  previewController = controller;
+  status.textContent = "Planning your routes…";
+  try {
+    const { origin, destination, stops, mode, routeOptions } = settings();
+    const plan = await client.route({
+      ...routeOptions, coordinates: [origin, ...stops, destination], mode, alternatives: !stops.length,
+    }, controller.signal);
+    if (controller.signal.aborted) return;
+    if (!plan.routes?.length) throw new Error("No routes found.");
+    previewPlan = plan;
+    choices.replaceChildren(...plan.routes.map((route, index) => new Option(
+      `Route ${index + 1} · ${(route.distance / 1000).toFixed(1)} km · ${Math.ceil((route.trafficDuration ?? route.duration) / 60)} min`,
+      index,
+    )));
+    $("route-choice").hidden = false;
+    paintRoute(plan.routes[0]);
+    status.textContent = "Choose a route to start guidance.";
+  } catch (error) {
+    if (!controller.signal.aborted) status.textContent = error.message;
+  }
+});
+
 stop.addEventListener("click", () => {
   revision++;
+  active = false;
   navigation.stop();
   clearGuidance();
   controls(false);
@@ -121,15 +221,21 @@ $("use-location").addEventListener("click", () => {
     return;
   }
   geo.getCurrentPosition(({ coords }) => {
+    if (active) return;
     form.elements.origin.value = `${coords.longitude.toFixed(6)}, ${coords.latitude.toFixed(6)}`;
+    form.elements.origin.dispatchEvent(new Event("input", { bubbles: true }));
   }, error => { status.textContent = error.message; }, { enableHighAccuracy: true, timeout: 12000 });
 });
 
-window.addEventListener("pagehide", () => navigation.stop());
+window.addEventListener("pagehide", () => { invalidatePreview(); navigation.stop(); });
 try {
   start.disabled = true;
+  preview.disabled = true;
   map = await createSifricMap("map");
-  map.once("load", () => controls(false));
+  map.once("load", () => {
+    mapReady = true;
+    controls(active);
+  });
   map.on("error", () => { status.textContent = "Map resources could not be loaded."; });
 } catch (error) {
   status.textContent = error.message;

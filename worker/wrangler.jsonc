@@ -15,7 +15,9 @@
     { "binding": "ROUTING_WALK", "service": "maps-router-walk" },
     { "binding": "ROUTING_CYCLE", "service": "maps-router-cycle" },
     { "binding": "ROUTING_MOTORCYCLE", "service": "maps-router-motorcycle" },
-    { "binding": "ROUTING_TUK", "service": "maps-router-tuk" }
+    { "binding": "ROUTING_TUK", "service": "maps-router-tuk" },
+    { "binding": "ROUTING_DRIVE_NO_TOLLS", "service": "maps-router-drive-no-tolls" },
+    { "binding": "ROUTING_DRIVE_NO_HIGHWAYS", "service": "maps-router-drive-no-highways" }
   ],
   "r2_buckets": [
     {

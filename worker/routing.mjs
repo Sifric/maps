@@ -1,7 +1,7 @@
 const missing = 0xffffffff;
 const metersPerDegree = 111195;
 const routingModes = ['drive', 'walk', 'cycle', 'motorcycle', 'tuk'];
-const graphPrefix = 'lkmaps/routing/v2/';
+export const graphPrefix = 'lkmaps/routing/v2/';
 const gridWidth = 500;
 const gridHeight = 600;
 const maxCoreBytes = 80 * 1024 ** 2;

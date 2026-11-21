@@ -26,14 +26,25 @@
           <option value="cycle">Cycle</option><option value="motorcycle">Motorcycle</option><option value="tuk">Tuk-tuk</option>
         </select>
       </label>
+      <label>Stops (optional, one longitude, latitude pair per line)
+        <textarea name="stops" rows="2"></textarea>
+      </label>
+      <label><input name="optimize" type="checkbox"> Optimize stop order</label>
+      <label><input name="highways" type="checkbox" disabled> Avoid expressways</label>
+      <label><input name="tolls" type="checkbox" disabled> Avoid tolls</label>
       <div class="actions">
+        <button id="preview" type="button">Preview routes</button>
         <button id="start" type="submit">Start guidance</button>
         <button id="stop" type="button" disabled>Stop</button>
       </div>
+      <label id="route-choice" hidden>Route
+        <select id="route-options"></select>
+      </label>
     </form>
     <p id="status" role="status"></p>
     <p id="maneuver" hidden></p>
     <p id="remaining" hidden></p>
+    <p id="speed" hidden></p>
   </aside>
   <main id="map" aria-label="Navigation map"></main>
 </body>

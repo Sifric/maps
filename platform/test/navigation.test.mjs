@@ -28,8 +28,8 @@ function devices() {
       watchPosition(success, error) { callback = success; locationError = error; return 17; },
       clearWatch(id) { cleared.push(id); },
     },
-    fix([longitude, latitude], timestamp, accuracy = 5) {
-      callback({ coords: { longitude, latitude, accuracy }, timestamp });
+    fix([longitude, latitude], timestamp, accuracy = 5, speed) {
+      callback({ coords: { longitude, latitude, accuracy, speed }, timestamp });
     },
     locationError(error) { locationError(error); },
     cleared,
@@ -56,6 +56,37 @@ test('reports the next maneuver, route progress and arrival from device fixes', 
   device.fix(end, 1030);
   assert.equal(events.at(-1).status, 'arrived');
   assert.deepEqual(device.cleared, [17]);
+});
+
+test('uses the selected route and telemetry, retaining unvisited stops on a reroute', async () => {
+  const device = devices();
+  const events = [];
+  const calls = [];
+  const selected = {
+    ...route, trafficDuration: 200,
+    legs: [
+      { duration: 90, speedLimits: [{ startIndex: 0, endIndex: 1, speed: 30, unit: 'mph' }],
+        steps: [{ maneuver: { type: 'arrive', location: turn } }] },
+      { duration: 90, steps: [{ maneuver: { type: 'arrive', location: end } }] },
+    ],
+  };
+  const client = { route: async body => { calls.push(body); return { routes: [route] }; } };
+  const session = createSifricNavigation({ client, geolocation: device.geolocation, onUpdate: event => events.push(event) });
+  await session.start({ origin: start, destination: end, stops: [turn], initialRoute: selected,
+    routeOptions: { speedLimits: true, avoidTolls: true } });
+  assert.equal(calls.length, 0);
+  device.fix(start, 1000, 5, 15);
+  assert.equal(events.at(-1).remainingSeconds, 200);
+  assert.equal(events.at(-1).speedKph, 54);
+  assert.equal(Math.round(events.at(-1).speedLimitKph), 48);
+  assert.ok(events.at(-1).overSpeed);
+  assert.equal(formatSifricManeuver(events.at(-1).nextManeuver), 'Arrive at the next stop');
+  device.fix(turn, 2000);
+  const offRoute = [79.867, 6.932];
+  for (const timestamp of [3000, 4000, 5000]) device.fix(offRoute, timestamp);
+  await new Promise(resolve => setImmediate(resolve));
+  assert.deepEqual(calls, [{ coordinates: [offRoute, end], mode: 'drive', speedLimits: true, avoidTolls: true }]);
+  session.stop();
 });
 
 test('routes again from the device after three off-route fixes and clears watches on cancellation', async () => {

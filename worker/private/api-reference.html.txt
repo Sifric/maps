@@ -48,10 +48,20 @@
   "mode": "drive",
   "coordinates": [[79.8612, 6.9271], [79.8744, 6.903]]
 }</pre>
-  <p>Routes accept 2–8 coordinates. Matrices accept 2–6 coordinates and optional
+  <p>Routes accept 2–8 coordinates or <code>waypoints</code> with either
+    <code>{"location":[lon,lat]}</code> or <code>{"placeId":123}</code> per item.
+    Matrices accept 2–25 coordinates and optional
     <code>sources</code> and <code>destinations</code> index arrays. Distances are in
     meters and durations are in seconds. Set <code>speedLimits: true</code> on
     a drive route or trace to include known mapped limits. Set <code>trafficAware: true</code> on a motor vehicle route to request an estimate from available current observations.</p>
+  <p>Set <code>alternatives: true</code> on a two-point route to request up to two
+    distinct alternatives. Set <code>optimizeWaypointOrder: true</code> to reorder up to six
+    intermediate stops while keeping the first and last locations fixed. The response
+    includes their original zero-based <code>optimizedIntermediateWaypointIndices</code>.</p>
+  <p>Drive routes and matrices accept <code>avoidTolls</code> and <code>avoidHighways</code>
+    when the corresponding profiles are listed by <code>GET /capabilities</code>.
+    Road graphs exclude ferries. GPS trace matching accepts 2–25 fixes.</p>
+  <p><a href="/developer/navigation/">Route preview and live guidance</a></p>
   <p><a href="/developer/native-sdk/">Native SDK setup</a></p>
 </main>
 </body>

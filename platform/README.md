@@ -66,14 +66,26 @@ The Worker supports POST `/routes` and `/matrix` for `drive`, `walk`, `cycle`,
 `motorcycle`, and `tuk`. Motorcycle and tuk-tuk profiles exclude expressways
 and marked motor-only roads. Pass coordinates in `[longitude, latitude]` order. Routes accept
 2–8 coordinates and return a GeoJSON path with estimated duration in seconds,
-distance in meters, and geometry-derived maneuvers. Matrices accept 2–6
+distance in meters, and geometry-derived maneuvers. Matrices accept 2–25
 coordinates with optional `sources` and `destinations` index arrays. An
 unreachable pair is `null`. Coordinates are snapped to routing vertices
 within 500 m. The motor vehicle profile accounts for supported OSM one-way
 and node-based turn restrictions. Estimates use map data and profile speeds.
-Live traffic and conditional or via-way restrictions are not available.
+Conditional and via-way restrictions are unavailable.
 
-POST `/roads/match` accepts 2–8 ordered GPS fixes. It compares candidate
+On two-point routes, `alternatives: true` returns up to two additional paths
+when the graph has distinct options with a reasonable travel time.
+`optimizeWaypointOrder: true` finds the lowest estimated driving or travel
+time among orders of up to six intermediate stops. Endpoints stay fixed and
+`optimizedIntermediateWaypointIndices` indexes the original intermediate
+stops from zero. A route can take `waypoints` in place of `coordinates`,
+with each waypoint specified by `{location: [lon, lat]}` or `{placeId: 123}`.
+Drive requests can opt into `avoidHighways` or `avoidTolls` when
+`GET /capabilities` lists the corresponding profile. Highway avoidance
+excludes expressways. Toll avoidance excludes mapped toll roads as well as
+expressways. The road graphs already exclude ferries.
+
+POST `/roads/match` accepts 2–25 ordered GPS fixes. It compares candidate
 vertices within 100 m and reconstructs a connected path when the observed fixes
 support one. Set `speedLimits: true` on a drive route or trace to include
 numeric limits explicitly tagged on road segments in OpenStreetMap. Speed spans
@@ -263,5 +275,8 @@ in motor vehicle estimates. Publish a validated observation file to
 `observedAt`, `source`, and up to 32 directed `segments`, each with `from`,
 `to`, `factor`, and `closed`. Run `node scripts/check_traffic_snapshot.mjs FILE`
 before publishing. The Worker accepts observations at most 15 minutes old.
-A matching observed closure returns a conflict. This overlay adjusts estimates
-and detects matching closures without computing a replacement route.
+Traffic-aware two-point requests compare available route candidates when there
+is a current snapshot. Closed candidates are removed and candidates are ordered
+by estimated duration. A closure on every available candidate returns HTTP
+409. Coverage varies by segment. Without fresh data, the response reports
+`unavailable` and keeps the base estimates.
