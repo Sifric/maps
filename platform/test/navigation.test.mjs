@@ -129,6 +129,26 @@ test('keeps a skipped stop when rerouting from a later portion of the route', as
   session.stop();
 });
 
+test('arrives after returning to the origin on a route with an intermediate stop', async () => {
+  const device = devices();
+  const events = [];
+  const selected = {
+    ...route,
+    geometry: { type: 'LineString', coordinates: [start, turn, start] },
+    legs: [
+      { steps: [{ maneuver: { type: 'arrive', location: turn, geometryIndex: 1 } }] },
+      { steps: [{ maneuver: { type: 'arrive', location: start, geometryIndex: 2 } }] },
+    ],
+  };
+  const session = createSifricNavigation({ geolocation: device.geolocation, onUpdate: event => events.push(event) });
+  await session.start({ origin: start, destination: start, stops: [turn], initialRoute: selected });
+  device.fix(start, 1000);
+  assert.equal(events.at(-1).status, 'progress');
+  device.fix(turn, 2000);
+  device.fix(start, 3000);
+  assert.equal(events.at(-1).status, 'arrived');
+});
+
 test('permission failure stops tracking and an abandoned route response cannot restart it', async () => {
   const device = devices();
   const events = [];

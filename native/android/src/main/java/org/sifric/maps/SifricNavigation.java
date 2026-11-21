@@ -130,7 +130,8 @@ public final class SifricNavigation implements AutoCloseable {
             return;
         }
         Turn nextStop = visitedStops < route.stopCount ? route.stops.get(visitedStops) : null;
-        Match match = route.project(lon, lat, progress, nextStop == null ? route.length : nextStop.along);
+        Match match = route.project(lon, lat, progress, nextStop == null ? route.length : nextStop.along,
+            Math.max(0, progress - 70));
         if (match.away > Math.max(35, location.getAccuracy() * 1.5)) {
             if (++outside >= 3 && (lastReroute == Long.MIN_VALUE || lastFix - lastReroute >= 15000)) {
                 lastReroute = lastFix;
@@ -329,7 +330,7 @@ public final class SifricNavigation implements AutoCloseable {
                     double lon = point.getDouble(0), lat = point.getDouble(1);
                     int index = maneuver.optInt("geometryIndex", -1);
                     double position = index == count - 1 ? length : index >= 0 && index < starts.length ?
-                        starts[index] : project(lon, lat, along, length).along;
+                        starts[index] : project(lon, lat, along, length, 0).along;
                     along = Math.max(along, position);
                     boolean intermediate = i < legs.length() - 1 && "arrive".equals(maneuver.optString("type"));
                     Turn turn = new Turn(along, maneuver, intermediate, lon, lat);
@@ -359,15 +360,16 @@ public final class SifricNavigation implements AutoCloseable {
             return null;
         }
 
-        Match project(double lon, double lat, double reference, double end) {
+        Match project(double lon, double lat, double reference, double end, double start) {
             double cost = Double.POSITIVE_INFINITY, bestAlong = 0, bestAway = cost;
             int bestIndex = 0;
             for (int i = 0; i < lengths.length; i++) {
                 if (starts[i] > end) break;
                 if (lengths[i] == 0) continue;
+                if (starts[i] + lengths[i] < start) continue;
                 double x = (lon - longitude[i]) * lonScale(latitude[i]);
                 double y = (lat - latitude[i]) * METERS_PER_DEGREE;
-                double t = Math.max(0, Math.min(Math.min(1, (end - starts[i]) / lengths[i]),
+                double t = Math.max(Math.max(0, (start - starts[i]) / lengths[i]), Math.min(Math.min(1, (end - starts[i]) / lengths[i]),
                     (x * dx[i] + y * dy[i]) / (lengths[i] * lengths[i])));
                 double away = Math.hypot(x - t * dx[i], y - t * dy[i]);
                 double along = starts[i] + t * lengths[i];

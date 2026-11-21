@@ -87,7 +87,8 @@ public final class SifricNavigation {
             return
         }
         let nextStop = visitedStops < plan.stops.count ? plan.stops[visitedStops] : nil
-        let match = plan.project(point, reference: progress, end: nextStop?.along ?? plan.length)
+        let match = plan.project(point, reference: progress, end: nextStop?.along ?? plan.length,
+                                 start: max(0, progress - 70))
         if match.away > max(35, location.horizontalAccuracy * 1.5) {
             metrics = nil
             offRoute += 1
@@ -265,14 +266,16 @@ private struct Plan {
         }
     }
 
-    func project(_ point: [Double], reference: Double, end: Double = .infinity) -> (along: Double, away: Double, index: Int) {
+    func project(_ point: [Double], reference: Double, end: Double = .infinity,
+                 start: Double = 0) -> (along: Double, away: Double, index: Int) {
         var cost = Double.infinity
         var best = (along: 0.0, away: Double.infinity, index: 0)
         for segment in segments {
             if segment.start > end { break }
+            if segment.start + segment.length < start { continue }
             let x = (point[0] - segment.a[0]) * Self.longitudeScale(segment.a[1])
             let y = (point[1] - segment.a[1]) * 111_195
-            let t = max(0, min(1, (end - segment.start) / segment.length,
+            let t = max(0, (start - segment.start) / segment.length, min(1, (end - segment.start) / segment.length,
                                (x * segment.x + y * segment.y) / (segment.length * segment.length)))
             let along = segment.start + t * segment.length
             let away = hypot(x - t * segment.x, y - t * segment.y)

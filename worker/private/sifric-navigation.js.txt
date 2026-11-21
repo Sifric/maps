@@ -13,13 +13,14 @@ function distance(a, b) {
   return Math.hypot(...vector(a, b));
 }
 
-function project(point, segments, position = 0, end = Infinity) {
+function project(point, segments, position = 0, end = Infinity, start = 0) {
   let nearest;
   let score = Infinity;
   for (const segment of segments) {
     if (segment.start > end) break;
+    if (segment.start + segment.length < start) continue;
     const [x, y] = vector(segment.a, point);
-    const t = Math.max(0, Math.min(1, (end - segment.start) / segment.length,
+    const t = Math.max(0, (start - segment.start) / segment.length, Math.min(1, (end - segment.start) / segment.length,
       (x * segment.dx + y * segment.dy) / (segment.length ** 2)));
     const away = Math.hypot(x - t * segment.dx, y - t * segment.dy);
     const progress = segment.start + t * segment.length;
@@ -165,7 +166,7 @@ export function createSifricNavigation({
     active.lastFix = position.timestamp;
     const { segments, coordinates, length, steps, stops, route, speedLimits, weights } = active.plan;
     const nextStop = stops[active.visited];
-    const match = project(point, segments, active.progress, nextStop?.position);
+    const match = project(point, segments, active.progress, nextStop?.position, Math.max(0, active.progress - 70));
     const threshold = Math.max(35, accuracy * 1.5);
     if (match.away > threshold) {
       active.offRoute++;
