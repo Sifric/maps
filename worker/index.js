@@ -1,5 +1,32 @@
 import basemapStyle from "./style.json";
 
+
+import { createPrivateGateway } from "./private-gateway.mjs";
+import portal from "./private/portal.html.txt";
+import embed from "./private/embed.html.txt";
+import embedScript from "./private/embed.js.txt";
+import embedStyle from "./private/embed.css.txt";
+import mapsSdk from "./private/sifric-maps.js.txt";
+import placesSdk from "./private/sifric-places.js.txt";
+import navigation from "./private/navigation.html.txt";
+import navigationScript from "./private/navigation.js.txt";
+import navigationStyle from "./private/navigation.css.txt";
+import navigationSdk from "./private/sifric-navigation.js.txt";
+
+const handleDeveloper = createPrivateGateway(new Map([
+  ["/developer", [portal, "text/html; charset=utf-8"]],
+  ["/developer/", [portal, "text/html; charset=utf-8"]],
+  ["/developer/embed/", [embed, "text/html; charset=utf-8"]],
+  ["/developer/embed.js", [embedScript, "text/javascript; charset=utf-8"]],
+  ["/developer/embed.css", [embedStyle, "text/css; charset=utf-8"]],
+  ["/developer/sifric-maps.js", [mapsSdk, "text/javascript; charset=utf-8"]],
+  ["/developer/sifric-places.js", [placesSdk, "text/javascript; charset=utf-8"]],
+  ["/developer/navigation/", [navigation, "text/html; charset=utf-8"]],
+  ["/developer/navigation/navigation.js", [navigationScript, "text/javascript; charset=utf-8"]],
+  ["/developer/navigation/navigation.css", [navigationStyle, "text/css; charset=utf-8"]],
+  ["/developer/sifric-navigation.js", [navigationSdk, "text/javascript; charset=utf-8"]],
+]));
+
 const TILE_KEY = "lkmaps/sri-lanka.pmtiles";
 const cors = {
   "Access-Control-Allow-Origin": "*",
@@ -21,6 +48,9 @@ let osrmRequestQueue = Promise.resolve();
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+    if (url.pathname === "/developer" || url.pathname.startsWith("/developer/")) {
+      return handleDeveloper(request, env, url.pathname);
+    }
 
     // Standalone UI-only developer demo; no authentication or API keys are enforced.
     if (url.pathname === "/dashboard" || url.pathname === "/dashboard/") {

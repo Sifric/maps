@@ -1,0 +1,130 @@
+import { createSifricClient, createSifricMap } from "../sifric-maps.js";
+import { createSifricNavigation, formatSifricManeuver } from "../sifric-navigation.js";
+
+const $ = id => document.getElementById(id);
+const form = document.querySelector("form");
+const status = $("status");
+const maneuver = $("maneuver");
+const remaining = $("remaining");
+const start = $("start");
+const stop = $("stop");
+const client = createSifricClient(location.origin);
+let map;
+let marker;
+let revision = 0;
+
+function readPoint(input) {
+  const parts = input.value.trim().split(",").map(value => value.trim());
+  if (parts.length !== 2 || parts.some(value => !value || !Number.isFinite(Number(value)))) {
+    throw new Error("Enter longitude and latitude separated by a comma.");
+  }
+  return parts.map(Number);
+}
+
+function controls(active) {
+  start.disabled = active;
+  stop.disabled = !active;
+}
+
+function paintRoute(route) {
+  if (!map) return;
+  const data = { type: "Feature", properties: {}, geometry: route.geometry };
+  if (map.getSource("sifric-navigation-route")) map.getSource("sifric-navigation-route").setData(data);
+  else {
+    map.addSource("sifric-navigation-route", { type: "geojson", data });
+    map.addLayer({
+      id: "sifric-navigation-route",
+      source: "sifric-navigation-route", type: "line",
+      layout: { "line-cap": "round", "line-join": "round" },
+      paint: { "line-color": "#14736a", "line-width": 6 },
+    });
+  }
+  const bounds = new maplibregl.LngLatBounds();
+  for (const point of route.geometry.coordinates) bounds.extend(point);
+  map.fitBounds(bounds, { padding: 48, duration: 0, maxZoom: 17 });
+}
+
+function clearGuidance() {
+  maneuver.hidden = remaining.hidden = true;
+  marker?.remove();
+  marker = undefined;
+  map?.getSource("sifric-navigation-route")?.setData({ type: "FeatureCollection", features: [] });
+}
+
+const navigation = createSifricNavigation({
+  client,
+  onUpdate(event) {
+    if (event.status === "route") {
+      paintRoute(event.route);
+      status.textContent = event.rerouted ? "Route updated." : "Waiting for device location.";
+    } else if (event.status === "progress") {
+      status.textContent = "Guidance active.";
+      const next = formatSifricManeuver(event.nextManeuver);
+      maneuver.textContent = event.maneuverDistanceMeters == null ? next : `${event.maneuverDistanceMeters} m · ${next}`;
+      remaining.textContent = `${(event.remainingMeters / 1000).toFixed(2)} km remaining`;
+      maneuver.hidden = remaining.hidden = false;
+      if (map) {
+        marker ??= new maplibregl.Marker({ color: "#14736a" }).setLngLat(event.snapped).addTo(map);
+        marker.setLngLat(event.snapped);
+      }
+    } else if (event.status === "arrived") {
+      status.textContent = "You have arrived.";
+      maneuver.hidden = remaining.hidden = true;
+      controls(false);
+    } else if (event.status === "rerouting" || event.status === "off-route") {
+      status.textContent = event.status === "rerouting" ? "Updating your route…" : "Device location is off the route.";
+      maneuver.hidden = remaining.hidden = true;
+    } else if (event.status.endsWith("error")) {
+      status.textContent = event.message;
+      if (event.status === "location-error" && event.code === 1) controls(false);
+    } else status.textContent = "Planning your route…";
+  },
+});
+
+form.addEventListener("submit", async event => {
+  event.preventDefault();
+  const request = ++revision;
+  controls(true);
+  clearGuidance();
+  try {
+    const active = await navigation.start({
+      origin: readPoint(form.elements.origin),
+      destination: readPoint(form.elements.destination),
+      mode: form.elements.mode.value,
+    });
+    if (!active && revision === request) controls(false);
+  } catch (error) {
+    if (revision !== request) return;
+    controls(false);
+    status.textContent = error.message;
+  }
+});
+
+stop.addEventListener("click", () => {
+  revision++;
+  navigation.stop();
+  clearGuidance();
+  controls(false);
+  status.textContent = "Guidance stopped.";
+});
+
+$("use-location").addEventListener("click", () => {
+  const geo = navigator.geolocation;
+  if (!geo) {
+    status.textContent = "Device location is unavailable.";
+    return;
+  }
+  geo.getCurrentPosition(({ coords }) => {
+    form.elements.origin.value = `${coords.longitude.toFixed(6)}, ${coords.latitude.toFixed(6)}`;
+  }, error => { status.textContent = error.message; }, { enableHighAccuracy: true, timeout: 12000 });
+});
+
+window.addEventListener("pagehide", () => navigation.stop());
+try {
+  start.disabled = true;
+  map = await createSifricMap("map");
+  map.once("load", () => controls(false));
+  map.on("error", () => { status.textContent = "Map resources could not be loaded."; });
+} catch (error) {
+  status.textContent = error.message;
+}

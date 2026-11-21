@@ -1,0 +1,26 @@
+import { createSifricMap } from "./sifric-maps.js";
+
+const query = new URLSearchParams(location.search);
+const read = (name, min, max) => {
+  const raw = query.get(name);
+  const value = Number(raw);
+  return raw?.trim() && Number.isFinite(value) && value >= min && value <= max ? value : undefined;
+};
+const lon = read("lon", -180, 180);
+const lat = read("lat", -85, 85);
+const zoom = read("zoom", 0, 20);
+const center = lon !== undefined && lat !== undefined ? [lon, lat] : undefined;
+
+try {
+  const map = await createSifricMap("map", {
+    ...(center ? { center } : {}),
+    ...(zoom !== undefined ? { zoom } : {}),
+  });
+  map.once("idle", () => { document.getElementById("map").dataset.ready = "true"; });
+  map.addControl(new maplibregl.NavigationControl({ showCompass: false }));
+  if (center && query.get("pin") === "1") new maplibregl.Marker().setLngLat(center).addTo(map);
+} catch {
+  const status = document.getElementById("status");
+  status.hidden = false;
+  status.textContent = "The map could not be loaded.";
+}

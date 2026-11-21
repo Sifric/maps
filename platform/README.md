@@ -1,0 +1,134 @@
+# Sifric Maps Platform
+
+The Sifric Worker continues to serve its public map. The developer portal is
+`https://maps.sifric.workers.dev/developer/`, and the developer API prefix is
+`https://maps.sifric.workers.dev/developer/api/v1`. Developer access requires a
+Sifric credential and has no dependency on GitHub accounts or repository access.
+
+The Node.js 24 service uses the existing Sifric place index and configured mapping
+services. It binds to localhost by default, and will only start with a valid private
+backend credential. The SDK, embed and portal are bundled outside the Worker public
+assets directory and delivered through the authenticated gateway.
+
+```sh
+npm ci --prefix platform
+npm test --prefix platform
+SIFRIC_PLATFORM_TOKEN=YOUR_PRIVATE_BACKEND_TOKEN npm start --prefix platform
+```
+
+All developer-facing API paths below use the prefix `/developer/api/v1`. Requests and GeoJSON positions use **longitude, latitude** order. The service returns `503` for features with missing configuration. Sri Lanka bounds are a bounding-box check. They do not provide coastline or jurisdiction validation.
+
+| Method and path | Inputs and behavior |
+| --- | --- |
+| GET `/health`, `/capabilities` | Service status and configured features |
+| GET `/places/search` | `q`, optional `limit`. Searches index names and alternate labels. Use for autocomplete. |
+| GET `/places/nearby` | `lon`, `lat`, optional `radius` in meters and `limit` |
+| GET `/places/:id` | Record from the Sifric place index |
+| GET `/geocode`, `/geocode/reverse` | Search text `q` or `lon` and `lat`. Uses Nominatim if configured. The default returns indexed place matches and explicitly identifies their precision. |
+| GET `/timezone` | `lon`, `lat`, optional ISO timestamp with offset. Returns the IANA Asia/Colombo offset for the timestamp. |
+| GET `/elevation` | `lon`, `lat`. Returns the nearest sample in a configured SRTM HGT tile. |
+| GET `/tiles/:z/:x/:y.pbf` | MVT from the configured local PMTiles archive |
+| GET `/static-map` | `lon`, `lat`, optional `zoom`, `width`, `height`, `pin=1`. Returns PNG including map attribution. |
+| POST `/routes`, `/matrix` | JSON `coordinates: [[lon, lat], ...]` and `mode`. Matrix also accepts zero-based `sources` and `destinations`. |
+| POST `/roads/nearest`, `/roads/match` | The same coordinates and mode contract. Nearest takes one point, and match takes 2–25 points. |
+| POST `/optimize` | VROOM JSON with `vehicles` plus `jobs`, `shipments`, or both. The optimizer consumes optional vehicle capacities and time windows. |
+
+## Backend container
+
+Build from the Sifric Maps checkout root, then carry the image to a Sifric-operated
+host or private registry. The image includes the Sifric place index and runs
+unprivileged. The build excludes the repository history, private Worker assets,
+and local credentials.
+
+```sh
+docker build --target api -f platform/Dockerfile -t sifric-platform:local .
+docker run --rm --env-file /secure/sifric-platform.env -p 127.0.0.1:8788:8788 sifric-platform:local
+```
+
+If your build network uses a private TLS CA, pass its certificate as the optional
+BuildKit secret `--secret id=npm_ca,src=/path/to/ca.pem`. The certificate
+is available only during dependency installation.
+
+Supply the private backend credential at runtime. Set the Worker’s
+`SIFRIC_PLATFORM_ORIGIN` to an HTTPS reverse proxy or tunnel to that service;
+developer clients continue to use `maps.sifric.workers.dev`. Mount any PMTiles
+archive or elevation datasets read-only, and use private endpoints for routing,
+geocoding and fleet optimization.
+
+Build the optional `renderer` target for PNG maps. It includes Chromium and
+requires a trusted `SIFRIC_WEB_ORIGIN` plus an allowlisted render credential.
+Run rendering in an isolated container. Both images use the authenticated
+`/api/v1/health` probe from inside the container.
+
+## Private setup
+
+- Store `SIFRIC_DEVELOPER_TOKEN_HASHES` as a Worker secret containing a JSON array
+  of lowercase SHA-256 hex hashes. Generate a different random 32-byte base64url
+  credential for each developer and revoke access by removing its hash. Share
+  credentials via a secure channel. An absent, empty or malformed allowlist
+  denies access.
+- Use username `sifric` and the assigned token as the browser password at
+  `/developer/`. Server clients send `Authorization: Bearer <token>`. Keep
+  bearer credentials on developer servers or in a credential store.
+- Set `SIFRIC_PLATFORM_ORIGIN` to the fixed HTTPS address of the privately
+  operated Node service. Set the same randomly generated `SIFRIC_PLATFORM_TOKEN`
+  on the Worker and backend. Use a token distinct from all developer credentials.
+- Use same-origin browser requests. The Worker strips upstream CORS headers,
+  applies `private, no-store`, and does not send developer credentials to the backend.
+  The private iframe is same-origin only. Public web integration needs a separately
+  scoped service and review.
+
+## Data and service configuration
+
+- `SIFRIC_PLACE_INDEX` optionally overrides the bundled place-search JSON or gzip file. The service indexes it at startup. Indexed-place results lack house-level guarantees.
+- `SIFRIC_OSRM_DRIVE_URL`, `SIFRIC_OSRM_VAN_URL`, `SIFRIC_OSRM_TUK_URL`, `SIFRIC_OSRM_WALK_URL`, `SIFRIC_OSRM_CYCLE_URL`, and `SIFRIC_OSRM_MOTORCYCLE_URL` must point to dedicated OSRM instances or fixed prefixes hosting the matching graphs. OSRM selects behavior from its graph. The HTTP path segment is not a travel-mode selector. There is no public demo endpoint fallback or live traffic feed in this API.
+- `SIFRIC_NOMINATIM_URL` points to a self-hosted instance with Sri Lankan address coverage. `SIFRIC_VROOM_URL` points to the exact private VROOM HTTP endpoint, which should use the corresponding private routing graphs.
+- `SIFRIC_PMTILES_PATH` points to a vector archive from the existing map release. `SIFRIC_ELEVATION_DIR` contains uncompressed 1201×1201 or 3601×3601 SRTM HGT tiles. SRTM covers land elevation. Ocean depth needs separate bathymetry data.
+- `SIFRIC_WEB_ORIGIN`, `SIFRIC_CHROMIUM`, and a dedicated allowlisted `SIFRIC_RENDER_TOKEN` enable server-side PNG rendering from a trusted Sifric Worker origin and an installed Chromium executable. Run the renderer in an isolated service as an unprivileged user.
+- `HOST` and `PORT` default to `127.0.0.1` and `8788`. Place the API behind appropriate authentication, quotas, and logging controls before allowing public access, especially for locations, routing, and rendering.
+
+## Embed and SDK
+
+```html
+<iframe
+  src="/developer/embed/?lon=79.86&lat=6.93&zoom=13&pin=1"
+  title="Pickup map" width="640" height="480" loading="lazy">
+</iframe>
+```
+
+Use the same link outside an iframe to share a map location.
+
+```js
+import { createSifricMap } from "/developer/sifric-maps.js";
+
+const map = await createSifricMap("map", { center: [79.86, 6.93], zoom: 13 });
+// map is a MapLibre instance. Add your own sources, markers, and layers.
+```
+
+For a Web Places picker, load `/developer/sifric-places.js` as a module and use
+`<sifric-place-search api-base="https://maps.sifric.workers.dev"></sifric-place-search>`.
+Listen for `sifric-place-select` to receive the chosen place record. The SDK
+also exports `createSifricClient(apiBase)` for search, details, nearby places,
+routing and matrix requests.
+
+## Browser navigation
+
+Open `/developer/navigation/` from the authenticated portal. Choose the
+origin, destination and mode, then start guidance and grant location permission.
+The selected mode needs its own configured OSRM graph. Only the origin,
+destination and reroute points are sent to the route service. Normal GPS fixes
+are processed in the browser. The navigation UI requires an active browser tab
+and a secure context. Its remaining time estimate uses route duration and does
+not include live traffic.
+
+For same-origin applications, import `createSifricNavigation` and
+`formatSifricManeuver` from `/developer/sifric-navigation.js`. Supply a
+`createSifricClient(location.origin)` client and an `onUpdate` callback.
+Call `start({ origin, destination, mode })` and `stop()` when leaving the page.
+Events include `route`, `progress`, `off-route`, `rerouting`, `arrived`,
+`error` and `location-error`. Navigation currently supports a single
+destination and needs a field-tested graph before production guidance.
+
+## Implementation boundaries
+
+The native Android/iOS SDKs, native turn-by-turn navigation SDKs, native Places UI components, panorama capture/publishing and browsing, photorealistic 3D and aerial video, live traffic/transit, crowdsourced reviews, cell/Wi-Fi positioning, and postal-grade address validation require additional implementations and/or data. The current API does not fabricate these results.

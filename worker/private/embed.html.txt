@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sifric Maps</title>
+  <link rel="stylesheet" href="/developer/embed.css">
+  <script type="module" src="/developer/embed.js"></script>
+</head>
+<body>
+  <main id="map" aria-label="Sifric Maps"></main>
+  <p id="status" role="status" hidden></p>
+</body>
+</html>

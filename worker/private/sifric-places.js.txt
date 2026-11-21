@@ -1,0 +1,72 @@
+import { createSifricClient } from "./sifric-maps.js";
+
+export class SifricPlaceSearch extends HTMLElement {
+  #root = this.attachShadow({ mode: "open" });
+  #controller;
+  #timer;
+
+  connectedCallback() {
+    if (this.#root.childNodes.length) return;
+    const input = document.createElement("input");
+    input.type = "search";
+    input.placeholder = "Search Sri Lanka";
+    input.setAttribute("aria-label", "Search places");
+    input.autocomplete = "off";
+    const status = document.createElement("p");
+    status.setAttribute("role", "status");
+    const results = document.createElement("ul");
+    results.setAttribute("aria-label", "Place results");
+    this.#root.append(input, status, results);
+    input.addEventListener("input", () => {
+      clearTimeout(this.#timer);
+      this.#controller?.abort();
+      results.replaceChildren();
+      status.textContent = "";
+      const query = input.value.trim();
+      if (query.length < 2) return;
+      this.#timer = setTimeout(() => this.#search(query, input, status, results), 180);
+    });
+  }
+
+  async #search(query, input, status, results) {
+    const api = this.getAttribute("api-base");
+    if (!api) {
+      status.textContent = "Set the API origin to search for places.";
+      return;
+    }
+    const controller = new AbortController();
+    this.#controller = controller;
+    status.textContent = "Searching…";
+    try {
+      const { items } = await createSifricClient(api).search(query, { signal: controller.signal });
+      if (controller.signal.aborted) return;
+      status.textContent = items.length ? `${items.length} results` : "No matching places.";
+      for (const place of items) {
+        const row = document.createElement("li");
+        const button = document.createElement("button");
+        button.type = "button";
+        button.textContent = [place.name, place.description].filter(Boolean).join(" — ");
+        button.addEventListener("click", () => {
+          input.value = place.name;
+          input.focus();
+          results.replaceChildren();
+          status.textContent = `Selected ${place.name}`;
+          this.dispatchEvent(new CustomEvent("sifric-place-select", { detail: place, bubbles: true, composed: true }));
+        });
+        row.append(button);
+        results.append(row);
+      }
+    } catch {
+      if (!controller.signal.aborted) status.textContent = "Place search is unavailable.";
+    }
+  }
+
+  disconnectedCallback() {
+    clearTimeout(this.#timer);
+    this.#controller?.abort();
+  }
+}
+
+if (!customElements.get("sifric-place-search")) {
+  customElements.define("sifric-place-search", SifricPlaceSearch);
+}

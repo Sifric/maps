@@ -1,0 +1,195 @@
+// Sifric browser navigation consumes OSRM routes from the private Sifric API.
+const metersPerDegree = 111195;
+const radians = Math.PI / 180;
+const validPoint = point => Array.isArray(point) && point.length === 2 &&
+  point.every(Number.isFinite) && Math.abs(point[0]) <= 180 && Math.abs(point[1]) <= 85;
+
+function vector(a, b) {
+  const scale = metersPerDegree * Math.cos((a[1] + b[1]) * radians / 2);
+  return [(b[0] - a[0]) * scale, (b[1] - a[1]) * metersPerDegree];
+}
+
+function distance(a, b) {
+  return Math.hypot(...vector(a, b));
+}
+
+function project(point, segments, position = 0) {
+  let nearest;
+  let score = Infinity;
+  for (const segment of segments) {
+    const [x, y] = vector(segment.a, point);
+    const t = Math.max(0, Math.min(1, (x * segment.dx + y * segment.dy) / (segment.length ** 2)));
+    const away = Math.hypot(x - t * segment.dx, y - t * segment.dy);
+    const progress = segment.start + t * segment.length;
+    // Favor the current part of the route where two portions cross.
+    const cost = away + Math.min(25, Math.abs(progress - position) / 200);
+    if (cost >= score) continue;
+    score = cost;
+    nearest = {
+      progress, away,
+      point: segment.a.map((value, index) => value + (segment.b[index] - value) * t),
+    };
+  }
+  return nearest;
+}
+
+function routePlan(payload) {
+  const route = payload?.routes?.[0];
+  const coordinates = route?.geometry?.coordinates;
+  if (!Array.isArray(coordinates) || coordinates.length < 2 || !coordinates.every(validPoint)) {
+    throw new Error("Sifric returned no usable route.");
+  }
+  const segments = [];
+  let length = 0;
+  for (let i = 1; i < coordinates.length; i++) {
+    const a = coordinates[i - 1];
+    const b = coordinates[i];
+    const [dx, dy] = vector(a, b);
+    const span = Math.hypot(dx, dy);
+    if (!span) continue;
+    segments.push({ a, b, dx, dy, length: span, start: length });
+    length += span;
+  }
+  if (!length) throw new Error("The route has no distance.");
+  const steps = [];
+  let lastManeuver = 0;
+  for (const leg of route.legs ?? []) {
+    for (const step of leg.steps ?? []) {
+      const maneuver = step.maneuver;
+      if (!validPoint(maneuver?.location) || maneuver.type === "depart") continue;
+      const where = maneuver.type === "arrive" ? length : project(maneuver.location, segments, lastManeuver).progress;
+      lastManeuver = Math.max(lastManeuver, where);
+      steps.push({
+        type: maneuver.type,
+        modifier: maneuver.modifier,
+        exit: Number.isInteger(maneuver.exit) ? maneuver.exit : undefined,
+        name: typeof step.name === "string" ? step.name : "",
+        position: lastManeuver,
+      });
+    }
+  }
+  return { route, coordinates, segments, length, steps };
+}
+
+export function formatSifricManeuver(maneuver) {
+  if (!maneuver || maneuver.type === "arrive") return "Arrive at your destination";
+  const road = maneuver.name ? ` onto ${maneuver.name}` : "";
+  const direction = maneuver.modifier ? ` ${maneuver.modifier}` : "";
+  switch (maneuver.type) {
+    case "turn":
+    case "end of road": return `Turn${direction}${road}`;
+    case "fork": return `Keep${direction}${road}`;
+    case "merge": return `Merge${direction}${road}`;
+    case "on ramp":
+    case "off ramp": return `Take the ramp${direction}${road}`;
+    case "roundabout":
+    case "rotary":
+    case "roundabout turn":
+      return maneuver.exit ? `At the roundabout, take exit ${maneuver.exit}${road}` : `Enter the roundabout${road}`;
+    default: return `Continue${direction}${road}`;
+  }
+}
+
+export function createSifricNavigation({
+  client, geolocation = globalThis.navigator?.geolocation, onUpdate = () => {},
+}) {
+  let session;
+  function emit(active, status, details = {}) {
+    if (session === active) onUpdate({ status, ...details });
+  }
+  function stop() {
+    const active = session;
+    if (!active) return;
+    session = undefined;
+    active.controller?.abort();
+    if (active.watch !== undefined) geolocation.clearWatch(active.watch);
+  }
+  async function planRoute(active, origin, rerouting) {
+    const controller = new AbortController();
+    active.controller = controller;
+    emit(active, rerouting ? "rerouting" : "planning");
+    try {
+      const payload = await client.route({ coordinates: [origin, active.destination], mode: active.mode }, controller.signal);
+      if (session !== active || controller.signal.aborted) return false;
+      active.plan = routePlan(payload);
+      active.progress = 0;
+      active.offRoute = 0;
+      emit(active, "route", { route: active.plan.route, rerouted: rerouting });
+      return session === active;
+    } catch (error) {
+      if (!controller.signal.aborted) emit(active, "error", { message: error.message });
+      return false;
+    } finally {
+      if (active.controller === controller) active.controller = undefined;
+    }
+  }
+
+  function track(active, position) {
+    if (session !== active || !active.plan || active.controller) return;
+    const { longitude, latitude, accuracy } = position.coords;
+    const point = [longitude, latitude];
+    if (!validPoint(point) || !Number.isFinite(accuracy) || accuracy < 0 || accuracy > 70 ||
+        !Number.isFinite(position.timestamp) || position.timestamp <= active.lastFix) return;
+    active.lastFix = position.timestamp;
+    const { segments, coordinates, length, steps, route } = active.plan;
+    const match = project(point, segments, active.progress);
+    const threshold = Math.max(35, accuracy * 1.5);
+    if (match.away > threshold) {
+      active.offRoute++;
+      emit(active, "off-route", { position: point, distanceFromRoute: Math.round(match.away) });
+      if (active.offRoute >= 3 && position.timestamp - active.lastReroute >= 15000) {
+        active.lastReroute = position.timestamp;
+        void planRoute(active, point, true);
+      }
+      return;
+    }
+    active.offRoute = 0;
+    active.progress = Math.max(active.progress, match.progress);
+    const remaining = length - active.progress;
+    if (remaining <= 25 && distance(point, coordinates.at(-1)) <= 25 && accuracy <= 25) {
+      emit(active, "arrived", { position: point, snapped: match.point, remainingMeters: 0 });
+      if (session === active) stop();
+      return;
+    }
+    const next = steps.find(step => step.position > active.progress + 5);
+    emit(active, "progress", {
+      position: point,
+      snapped: match.point,
+      remainingMeters: Math.round(remaining),
+      remainingSeconds: Number.isFinite(route.duration) ? Math.round(route.duration * remaining / length) : null,
+      nextManeuver: next ?? null,
+      maneuverDistanceMeters: next ? Math.max(0, Math.round(next.position - active.progress)) : null,
+    });
+  }
+
+  return {
+    async start({ origin, destination, mode = "drive" }) {
+      if (!validPoint(origin) || !validPoint(destination)) throw new Error("Choose a valid origin and destination.");
+      if (!geolocation?.watchPosition || !geolocation?.clearWatch) throw new Error("Device location is unavailable.");
+      stop();
+      const active = { destination, mode, lastFix: -Infinity, lastReroute: -Infinity };
+      session = active;
+      if (!(await planRoute(active, origin, false))) {
+        if (session === active) stop();
+        return false;
+      }
+      try {
+        active.watch = geolocation.watchPosition(
+          position => track(active, position),
+          error => {
+            emit(active, "location-error", { message: error.message, code: error.code });
+            if (error.code === 1 && session === active) stop();
+          },
+          { enableHighAccuracy: true, maximumAge: 0, timeout: 15000 },
+        );
+        if (session !== active) geolocation.clearWatch(active.watch);
+        return session === active;
+      } catch (error) {
+        emit(active, "location-error", { message: error.message, code: error.code });
+        if (session === active) stop();
+        return false;
+      }
+    },
+    stop,
+  };
+}

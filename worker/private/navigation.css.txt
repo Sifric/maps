@@ -1,0 +1,16 @@
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100dvh; display: grid; grid-template-columns: minmax(16rem, 21rem) 1fr; font: 1rem system-ui; color: #192424; background: #f4f8f7; }
+aside { padding: 1.5rem; }
+h1 { font-size: 1.65rem; margin: 1rem 0; }
+form, label { display: grid; gap: .5rem; }
+form { gap: .8rem; }
+input, select, button { font: inherit; padding: .55rem .7rem; border: 1px solid #9caeaa; border-radius: .4rem; }
+.actions { display: flex; gap: .5rem; flex-wrap: wrap; }
+#start { color: white; background: #155c51; }
+#start:disabled { opacity: .55; }
+#maneuver { font-size: 1.3rem; font-weight: 650; }
+#map { min-height: 100dvh; }
+@media (max-width: 650px) {
+  body { grid-template-columns: 1fr; }
+  #map { min-height: 55dvh; }
+}

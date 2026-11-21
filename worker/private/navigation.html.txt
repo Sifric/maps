@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sifric Navigation</title>
+  <link rel="stylesheet" href="/developer/navigation/navigation.css">
+  <script type="module" src="/developer/navigation/navigation.js"></script>
+</head>
+<body>
+  <aside>
+    <a href="/developer/">Developer portal</a>
+    <h1>Route guidance</h1>
+    <form>
+      <label>Origin (longitude, latitude)
+        <input name="origin" autocomplete="off" required placeholder="79.86, 6.93">
+      </label>
+      <button id="use-location" type="button">Use my location</button>
+      <label>Destination (longitude, latitude)
+        <input name="destination" autocomplete="off" required placeholder="79.87, 6.92">
+      </label>
+      <label>Travel mode
+        <select name="mode">
+          <option value="drive">Drive</option><option value="van">Van</option>
+          <option value="tuk">Tuk</option><option value="walk">Walk</option>
+          <option value="cycle">Cycle</option><option value="motorcycle">Motorcycle</option>
+        </select>
+      </label>
+      <div class="actions">
+        <button id="start" type="submit">Start guidance</button>
+        <button id="stop" type="button" disabled>Stop</button>
+      </div>
+    </form>
+    <p id="status" role="status"></p>
+    <p id="maneuver" hidden></p>
+    <p id="remaining" hidden></p>
+  </aside>
+  <main id="map" aria-label="Navigation map"></main>
+</body>
+</html>

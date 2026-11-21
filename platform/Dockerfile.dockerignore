@@ -1,0 +1,10 @@
+**
+!platform/
+!platform/Dockerfile
+!platform/package.json
+!platform/package-lock.json
+!platform/*.mjs
+!worker/
+!worker/public/
+!worker/public/assets/
+!worker/public/assets/places-search.json.gz
