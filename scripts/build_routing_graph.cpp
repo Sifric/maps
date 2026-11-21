@@ -7,6 +7,7 @@
 #include <iostream>
 #include <map>
 #include <stdexcept>
+#include <string_view>
 #include <unordered_map>
 #include <vector>
 
@@ -48,6 +49,44 @@ uint16_t posted_limit(const TagMap& tags, const char* direction, const char* con
     return static_cast<uint16_t>(amount | (units == " mph" ? 0x8000 : 0));
 }
 
+std::string_view tag(const TagMap& tags, const char* key) {
+    const char* value = tags[key];
+    return value ? value : "";
+}
+
+bool restricted(std::string_view access) {
+    return access == "no" || access == "private" || access == "customers" || access == "permit" ||
+        access == "delivery" || access == "agricultural" || access == "forestry" || access == "use_sidepath";
+}
+
+bool listed(std::string_view values, std::string_view expected) {
+    while (!values.empty()) {
+        const auto delimiter = values.find(';');
+        auto value = values.substr(0, delimiter);
+        const auto start = value.find_first_not_of(" \t");
+        if (start != std::string_view::npos &&
+            value.substr(start, value.find_last_not_of(" \t") - start + 1) == expected) return true;
+        if (delimiter == std::string_view::npos) break;
+        values.remove_prefix(delimiter + 1);
+    }
+    return false;
+}
+
+unsigned surface_speed(const TagMap& tags, unsigned speed, bool car, bool cycle) {
+    const auto surface = tag(tags, "surface");
+    const auto smoothness = tag(tags, "smoothness");
+    if (!car && tag(tags, "highway") == "steps") return cycle ? 4 : 3;
+    if (surface == "sand" || surface == "mud" || smoothness == "very_bad" ||
+        smoothness == "horrible" || smoothness == "very_horrible" || smoothness == "impassable") {
+        return std::min(speed, car ? 12u : cycle ? 6u : 4u);
+    }
+    if (surface == "unpaved" || surface == "gravel" || surface == "fine_gravel" || surface == "ground" ||
+        surface == "dirt" || surface == "earth" || surface == "compacted" || smoothness == "bad") {
+        return std::min(speed, car ? 30u : cycle ? 11u : 5u);
+    }
+    return speed;
+}
+
 int main(int argc, char** argv) {
     if (argc != 4) {
         std::cerr << "Usage: build-routing-graph INPUT.osm.pbf OUTPUT.bin MODE\n";
@@ -65,25 +104,33 @@ int main(int argc, char** argv) {
     auto log = [](const std::string& msg) { std::cerr << msg << '\n'; };
     auto mapping = load_osm_id_mapping_from_pbf(argv[1], nullptr,
         [&](uint64_t id, const TagMap& tags) {
-            const std::string highway = tags["highway"] ? tags["highway"] : "";
-            if (highway.empty()) return false;
+            const auto highway = tag(tags, "highway");
+            if (highway.empty() || highway == "construction" || highway == "proposed" || highway == "ferry" ||
+                tag(tags, "route") == "ferry" || tag(tags, "ferry") == "yes" || tag(tags, "area") == "yes") return false;
+            if ((car || cycle) && tag(tags, "smoothness") == "impassable") return false;
             if (avoid_highways && (highway == "motorway" || highway == "motorway_link")) return false;
             if (avoid_tolls) {
-                const auto is_toll = [](const char* value) {
-                    return value && std::string(value) != "no";
-                };
-                if (is_toll(tags["toll"]) || is_toll(tags["toll:motorcar"]) ||
-                    is_toll(tags["toll:motor_vehicle"]) || tags["toll:conditional"]) return false;
+                auto toll = tag(tags, "toll:motorcar");
+                if (toll.empty()) toll = tag(tags, "toll:motor_vehicle");
+                if (toll.empty()) toll = tag(tags, "toll");
+                if ((!toll.empty() && toll != "no") || tags["toll:conditional"] ||
+                    tags["toll:motorcar:conditional"] || tags["toll:motor_vehicle:conditional"]) return false;
             }
+            auto access = tag(tags, car ? (motorcycle ? "motorcycle" : drive ? "motorcar" : "motor_vehicle") :
+                cycle ? "bicycle" : "foot");
+            if (access.empty() && car) access = tag(tags, "motor_vehicle");
+            if (access.empty() && (car || cycle)) access = tag(tags, "vehicle");
+            if (access.empty()) access = tag(tags, "access");
+            if (restricted(access)) return false;
             if (car) {
                 if (!drive) {
-                    const std::string motorroad = tags["motorroad"] ? tags["motorroad"] : "";
+                    const auto motorroad = tag(tags, "motorroad");
                     if (highway == "motorway" || highway == "motorway_link" || motorroad == "yes") return false;
                     const char* tag = motorcycle ? tags["motorcycle"] : nullptr;
                     if (tag && (std::string(tag) == "no" || std::string(tag) == "private")) return false;
                 }
-                const std::string vehicle = tags["motor_vehicle"] ? tags["motor_vehicle"] : "";
-                const std::string motorcar = tags["motorcar"] ? tags["motorcar"] : "";
+                const auto vehicle = tag(tags, "motor_vehicle");
+                const auto motorcar = tag(tags, "motorcar");
                 if (vehicle == "private" || motorcar == "private" || motorcar == "no") return false;
                 return is_osm_way_used_by_cars(id, tags);
             }
@@ -91,23 +138,33 @@ int main(int argc, char** argv) {
             if (motorroad == "yes" || highway == "motorway" || highway == "motorway_link") return false;
             if (cycle) return is_osm_way_used_by_bicycles(id, tags);
             const std::string foot = tags["foot"] ? tags["foot"] : "";
-            const std::string access = tags["access"] ? tags["access"] : "";
             const std::string sidewalk = tags["sidewalk"] ? tags["sidewalk"] : "";
             if (foot == "no" || foot == "private" || foot == "use_sidepath") return false;
             if ((highway == "primary" || highway == "primary_link") &&
                 sidewalk != "separate" && (access.empty() || access == "yes" || access == "permissive")) return true;
             return is_osm_way_used_by_pedestrians(id, tags);
         }, log, false);
-    std::vector<unsigned> speed(mapping.is_routing_way.population_count());
-    std::vector<uint16_t> posted_forward(drive ? speed.size() : 0), posted_backward(drive ? speed.size() : 0);
+    std::vector<unsigned> forward_speed(mapping.is_routing_way.population_count()), backward_speed(forward_speed.size());
+    std::vector<uint16_t> posted_forward(drive ? forward_speed.size() : 0), posted_backward(drive ? forward_speed.size() : 0);
+    TagMap restriction_tags;
     auto graph = load_osm_routing_graph_from_pbf(argv[1], mapping,
         [&](uint64_t id, unsigned way, const TagMap& tags) {
             const unsigned top_speed = tuk ? 40 : motorcycle ? 80 : 130;
-            speed[way] = car ? std::clamp(get_osm_way_speed(id, tags), 1u, top_speed) : cycle ? 16 : 5;
+            const auto nominal = car ? std::clamp(get_osm_way_speed(id, tags), 1u, top_speed) : cycle ? 16u : 5u;
+            forward_speed[way] = backward_speed[way] = surface_speed(tags, nominal, car, cycle);
             if (car) {
+                const auto forward = posted_limit(tags, "maxspeed:forward", "maxspeed:forward:conditional");
+                const auto backward = posted_limit(tags, "maxspeed:backward", "maxspeed:backward:conditional");
+                const auto cap = [](unsigned speed, uint16_t limit) {
+                    if (!limit) return speed;
+                    const unsigned value = limit & 0x7fff;
+                    return std::min(speed, limit & 0x8000 ? value * 1609 / 1000 : value);
+                };
+                forward_speed[way] = cap(forward_speed[way], forward);
+                backward_speed[way] = cap(backward_speed[way], backward);
                 if (drive) {
-                    posted_forward[way] = posted_limit(tags, "maxspeed:forward", "maxspeed:forward:conditional");
-                    posted_backward[way] = posted_limit(tags, "maxspeed:backward", "maxspeed:backward:conditional");
+                    posted_forward[way] = forward;
+                    posted_backward[way] = backward;
                 }
                 return get_osm_car_direction_category(id, tags);
             }
@@ -116,7 +173,21 @@ int main(int argc, char** argv) {
         },
         [&](uint64_t id, const std::vector<OSMRelationMember>& members, const TagMap& tags,
             std::function<void(OSMTurnRestriction)> emit) {
-            if (car) decode_osm_car_turn_restrictions(id, members, tags, emit);
+            if (!car && !cycle) return;
+            const char* restriction = tags[cycle ? "restriction:bicycle" :
+                motorcycle ? "restriction:motorcycle" : drive ? "restriction:motorcar" : "restriction:motor_vehicle"];
+            if (!restriction && car) restriction = tags["restriction:motor_vehicle"];
+            if (!restriction) restriction = tags["restriction:vehicle"];
+            if (!restriction) {
+                const auto exceptions = tag(tags, "except");
+                if (listed(exceptions, "vehicle") || (car && listed(exceptions, "motor_vehicle")) ||
+                    (drive && listed(exceptions, "motorcar")) || (cycle && listed(exceptions, "bicycle")) ||
+                    (motorcycle && listed(exceptions, "motorcycle"))) return;
+                restriction = tags["restriction"];
+            }
+            if (!restriction) return;
+            restriction_tags.build(1, [](unsigned) { return "restriction"; }, [&](unsigned) { return restriction; });
+            decode_osm_car_turn_restrictions(id, members, restriction_tags, emit);
         }, log, true, OSMRoadGeometry::uncompressed);
     mapping = OSMRoutingIDMapping();
 
@@ -141,6 +212,7 @@ int main(int argc, char** argv) {
     };
     for (unsigned from = 0; from < graph.node_count(); ++from) {
         for (unsigned arc = graph.first_out[from]; arc < graph.first_out[from + 1]; ++arc) {
+            const auto& speed = graph.is_arc_antiparallel_to_way[arc] ? backward_speed : forward_speed;
             unsigned millis = std::max(1u, static_cast<unsigned>(3600.0 * graph.geo_distance[arc] / speed[graph.way[arc]]));
             arc_tails.push_back(from);
             travel_time.push_back(millis);

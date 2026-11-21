@@ -7,6 +7,7 @@ const gridHeight = 600;
 const maxCoreBytes = 80 * 1024 ** 2;
 const packedCoreBytes = 62 * 1024 ** 2;
 const coreReadBytes = 8 * 1024 ** 2;
+const snapSecondsPerMeter = 0.72;
 
 export class RoutingError extends Error {
   constructor(status, message) {
@@ -192,26 +193,36 @@ function expandRoute(graph, from, to, { rank, weight }) {
   return { arcs, distance, duration: weight / 1000 };
 }
 
-function connect(graph, from, to) {
-  const best = meetingRanks(from, to).reduce((best, next) => !best || next.weight < best.weight ? next : best, null);
-  return best && expandRoute(graph, from, to, best);
+function bestMeeting(from, to) {
+  let best = null;
+  // Keep ties in forward traversal order for stable route geometry.
+  for (const [rank, visit] of from) {
+    const reverse = to.get(rank);
+    if (!reverse) continue;
+    const weight = visit.weight + reverse.weight;
+    if (!best || weight < best.weight) best = { rank, weight };
+  }
+  return best;
 }
 
 function alternativePaths(graph, forward, backward, primary, source) {
   const alternatives = [];
-  const used = [new Set(primary.arcs)];
+  const used = [{ arcs: new Set(primary.arcs), distance: primary.distance }];
   const peaks = meetingRanks(forward, backward)
     .filter(peak => peak.weight <= primary.duration * 1550)
     .sort((a, b) => a.weight - b.weight);
-  for (const peak of peaks.slice(0, 32)) {
+  for (const peak of peaks.slice(0, 64)) {
     const path = expandRoute(graph, forward, backward, peak);
     if (!path.distance) continue;
     const vertices = new Set([source]);
     for (const arc of path.arcs) vertices.add(graph.heads.get(arc));
     if (vertices.size !== path.arcs.length + 1) continue;
-    if (used.some(arcs => path.arcs.reduce((sum, arc) => sum + (arcs.has(arc) ? 0 : graph.meters.get(arc)), 0) < path.distance * 0.20)) continue;
+    if (used.some(other => {
+      const shared = path.arcs.reduce((sum, arc) => sum + (other.arcs.has(arc) ? graph.meters.get(arc) : 0), 0);
+      return shared > Math.min(path.distance, other.distance) * 0.80;
+    })) continue;
     alternatives.push(path);
-    used.push(new Set(path.arcs));
+    used.push({ arcs: new Set(path.arcs), distance: path.distance });
     if (alternatives.length === 2) break;
   }
   return alternatives;
@@ -299,14 +310,14 @@ function legGeometry(graph, leg, source, target, shapes, limits) {
   return { coordinates, steps, duration: leg.duration, distance: leg.distance, ...(limits && { speedLimits }) };
 }
 
+function coordinateDistance([aLon, aLat], [bLon, bLat]) {
+  return metersPerDegree * Math.hypot((aLon - bLon) * Math.cos((aLat + bLat) * Math.PI / 360), aLat - bLat);
+}
+
 function traceVertices(points, choices, pair) {
   let previous = choices[0].map(point => ({ point, cost: point.distance }));
   for (let i = 1; i < points.length; i++) {
-    const [lon, lat] = points[i];
-    const [previousLon, previousLat] = points[i - 1];
-    const observed = metersPerDegree * Math.hypot(
-      (lon - previousLon) * Math.cos(lat * Math.PI / 180), lat - previousLat,
-    );
+    const observed = coordinateDistance(points[i - 1], points[i]);
     const current = [];
     for (const point of choices[i]) {
       let best;
@@ -328,49 +339,147 @@ function traceVertices(points, choices, pair) {
   return path.reverse();
 }
 
+function connectedWaypoints(points, choices, duration) {
+  let states = choices[0].map(point => ({ point, cost: point.distance * snapSecondsPerMeter }));
+  for (let i = 1; i < points.length; i++) {
+    const next = [];
+    const separated = coordinateDistance(points[i - 1], points[i]) > 35;
+    for (const point of choices[i]) {
+      let best;
+      for (const previous of states) {
+        if (separated && previous.point.vertex === point.vertex) continue;
+        const travel = duration(previous.point.vertex, point.vertex);
+        if (travel == null) continue;
+        const cost = previous.cost + travel + point.distance * snapSecondsPerMeter;
+        if (!best || cost < best.cost) best = { point, cost, previous };
+      }
+      if (best) next.push(best);
+    }
+    if (!next.length) return null;
+    states = next;
+  }
+  const best = states.reduce((current, state) => state.cost < current.cost ? state : current);
+  const waypoints = [];
+  for (let state = best; state; state = state.previous) waypoints.push(state.point);
+  return { waypoints: waypoints.reverse(), cost: best.cost };
+}
+
+function connectedWaypointOrder(points, choices, duration) {
+  const destination = choices.length - 1;
+  const all = (1 << (destination - 1)) - 1;
+  const separated = points.map(a => points.map(b => coordinateDistance(a, b) > 35));
+  const memo = new Map();
+  function visit(mask, fromIndex, from) {
+    if (fromIndex === destination) return { cost: 0, stops: [] };
+    const key = `${mask}:${fromIndex}:${from.vertex}`;
+    if (memo.has(key)) return memo.get(key);
+    const first = mask === all ? destination : 1;
+    const end = mask === all ? destination + 1 : destination;
+    let best = { cost: Infinity };
+    for (let index = first; index < end; index++) {
+      const bit = 1 << (index - 1);
+      if (mask & bit) continue;
+      for (const point of choices[index]) {
+        if (from.vertex === point.vertex && separated[fromIndex][index]) continue;
+        const seconds = duration(from.vertex, point.vertex);
+        if (seconds == null) continue;
+        const rest = visit(mask | bit, index, point);
+        const cost = seconds + point.distance * snapSecondsPerMeter + rest.cost;
+        if (cost < best.cost) best = { cost, stops: [{ index, point }, ...rest.stops] };
+      }
+    }
+    memo.set(key, best);
+    return best;
+  }
+  let best = { cost: Infinity };
+  for (const point of choices[0]) {
+    const rest = visit(0, 0, point);
+    const cost = point.distance * snapSecondsPerMeter + rest.cost;
+    if (cost < best.cost) best = { cost, stops: [{ index: 0, point }, ...rest.stops] };
+  }
+  return best.stops;
+}
+
 export async function solveRoute(graph, points, sources, destinations, loadShapes, matchTrace = false, limits, options = {}) {
   const radius = matchTrace ? 100 : 500;
   const choices = points.map(point => nearestVertices(graph, point, radius, matchTrace ? 3 : 1));
   if (choices.some(candidate => !candidate.length)) throw new RoutingError(422, `A coordinate is more than ${radius} m from a routable vertex.`);
   const forward = new Map();
   const backward = new Map();
-  const pair = (source, target) => {
-    if (source === target) return { arcs: [], distance: 0, duration: 0 };
+  const meeting = (source, target) => {
     if (!forward.has(source)) forward.set(source, search(graph.forward, [graph.ranks.get(source)]));
     if (!backward.has(target)) backward.set(target, backwardSearch(graph, target));
-    return connect(graph, forward.get(source), backward.get(target));
+    return bestMeeting(forward.get(source), backward.get(target));
+  };
+  const duration = (source, target) => {
+    if (source === target) return 0;
+    const peak = meeting(source, target);
+    return peak ? peak.weight / 1000 : null;
+  };
+  const pair = (source, target) => {
+    if (source === target) return { arcs: [], distance: 0, duration: 0 };
+    const peak = meeting(source, target);
+    return peak && expandRoute(graph, forward.get(source), backward.get(target), peak);
   };
   let waypoints = matchTrace ? traceVertices(points, choices, pair) : choices.map(candidate => candidate[0]);
   let pairs = waypoints.map(point => point.vertex);
+  const nearby = (count, extra) => points.map((point, i) => nearestVertices(graph, point, radius, count)
+    .filter(candidate => candidate.distance <= waypoints[i].distance + extra));
   let waypointOrder;
   if (options.optimizeWaypointOrder) {
-    const times = pairs.map(from => pairs.map(to => pair(from, to)?.duration ?? null));
+    const times = pairs.map(from => pairs.map(to => duration(from, to)));
     waypointOrder = optimizeWaypointOrder(times);
-    if (!waypointOrder) throw new RoutingError(422, 'The intermediate stops cannot be connected.');
-    waypoints = waypointOrder.map(index => waypoints[index]);
+    if (waypointOrder) waypoints = waypointOrder.map(index => waypoints[index]);
+    else {
+      const recovered = connectedWaypointOrder(points, nearby(3, 100), duration);
+      if (!recovered) throw new RoutingError(422, 'The intermediate stops cannot be connected.');
+      waypointOrder = recovered.map(stop => stop.index);
+      waypoints = recovered.map(stop => stop.point);
+    }
     pairs = waypoints.map(point => point.vertex);
   }
   if (sources) {
-    const values = sources.map(a => destinations.map(b => pair(pairs[a], pairs[b])));
+    const values = sources.map(a => destinations.map(b => {
+      const route = pair(pairs[a], pairs[b]);
+      return [route?.duration ?? null, route?.distance ?? null];
+    }));
     return {
-      durations: values.map(row => row.map(value => value?.duration ?? null)),
-      distances: values.map(row => row.map(value => value?.distance ?? null)),
+      durations: values.map(row => row.map(([seconds]) => seconds)),
+      distances: values.map(row => row.map(([, meters]) => meters)),
       sources: sources.map(i => waypoints[i]), destinations: destinations.map(i => waypoints[i]),
     };
   }
-  const paths = [];
+  let paths = pairs.slice(1).map((target, i) => pair(pairs[i], target));
+  if (!matchTrace && !waypointOrder) {
+    const disconnected = paths.some(path => !path);
+    const direct = points.length === 2 ? coordinateDistance(points[0], points[1]) : 0;
+    const path = paths[0];
+    const detour = direct > 0 && path?.distance > direct * 3 + 300;
+    const collapsed = direct > 70 && path?.distance === 0;
+    if (disconnected || detour || collapsed) {
+      const recovery = connectedWaypoints(points, nearby(5, disconnected ? 100 : 30), duration);
+      const baseCost = path?.duration + waypoints.reduce((sum, point) => sum + point.distance * snapSecondsPerMeter, 0);
+      if (recovery && (disconnected || (detour && recovery.cost + 20 < baseCost) || collapsed)) {
+        const vertices = recovery.waypoints.map(point => point.vertex);
+        const recoveredPath = collapsed ? pair(vertices[0], vertices[1]) : null;
+        if (!collapsed || (recoveredPath && recoveredPath.distance <= direct * 2 + 150)) {
+          waypoints = recovery.waypoints;
+          pairs = vertices;
+          paths = recoveredPath ? [recoveredPath] : pairs.slice(1).map((target, i) => pair(pairs[i], target));
+        }
+      }
+    }
+  }
   const arcs = new Set();
   let geometrySize = 1;
   let distance = 0;
-  for (let i = 1; i < pairs.length; i++) {
-    const leg = pair(pairs[i - 1], pairs[i]);
+  for (const leg of paths) {
     if (!leg) throw new RoutingError(422, 'No route connects these coordinates for this travel mode.');
     for (const arc of leg.arcs) {
       geometrySize += 1 + graph.geometryLengths.get(arc);
       arcs.add(arc);
     }
     if (geometrySize > 40000) throw new RoutingError(422, 'The route exceeds the geometry limit.');
-    paths.push(leg);
     distance += leg.distance;
   }
   const render = (legsForRoute, shapes) => {
@@ -399,12 +508,12 @@ export async function solveRoute(graph, points, sources, destinations, loadShape
       .filter(path => path.arcs.reduce((sum, arc) => sum + 1 + graph.geometryLengths.get(arc), 1) <= 40000);
   }
   let shapes;
-  if (alternatives.length) {
+  while (alternatives.length && !shapes) {
     const combined = new Set([...arcs, ...alternatives.flatMap(path => path.arcs)]);
     try { shapes = await loadShapes(combined); }
     catch (error) {
       if (!(error instanceof RoutingError) || error.status !== 422) throw error;
-      alternatives = [];
+      alternatives.pop();
     }
   }
   shapes ??= await loadShapes(arcs);

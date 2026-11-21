@@ -1,6 +1,8 @@
 import assert from 'node:assert/strict';
 import { createServer } from 'node:http';
+import { test } from 'node:test';
 import { handleApi } from '../api.mjs';
+import { solveRoute } from '../../worker/routing.mjs';
 
 const calls = [];
 const upstream = createServer((req, res) => {
@@ -34,3 +36,39 @@ try {
 } finally {
   upstream.close();
 }
+
+test('a disconnected nearest vertex can be recovered without building off-network geometry', async () => {
+  const longitude = [79.86, 79.8602, 79.8642, 79.864, 79.868];
+  const latitude = 6.92;
+  const column = values => ({ length: values.length, get: index => values[index] });
+  const cells = new Uint32Array(500 * 600 + 1);
+  const cellNodes = longitude.map((lon, index) => ({
+    index, cell: Math.floor((latitude - 5) * 100) * 500 + Math.floor((lon - 78) * 100),
+  })).sort((a, b) => a.cell - b.cell);
+  for (const { cell } of cellNodes) cells[cell + 1]++;
+  for (let i = 1; i < cells.length; i++) cells[i] += cells[i - 1];
+  const graph = {
+    ranks: column([0, 1, 2, 3, 4]), terminalNodes: column([]), terminalRanks: column([]),
+    cells: column(cells), cellNodes: column(cellNodes.map(({ index }) => index)),
+    lon: column(longitude), lat: column(longitude.map(() => latitude)),
+    forward: {
+      offsets: column([0, 0, 1, 2, 2, 2]), heads: column([2, 4]), weights: column([25000, 30000]),
+      first: column([0, 1]), second: column([0xffffffff, 0xffffffff]),
+    },
+    backward: { offsets: column([0, 0, 0, 0, 0, 0]) },
+    transitions: column([0, 1]), heads: column([2, 4]), meters: column([450, 425]),
+    geometryLengths: column([0, 0]),
+  };
+  const points = [[longitude[0], latitude], [longitude[3], latitude], [longitude[4], latitude]];
+  const shape = async () => new Map();
+  for (const options of [{}, { optimizeWaypointOrder: true }]) {
+    const result = await solveRoute(graph, points, undefined, undefined, shape, false, undefined, options);
+    assert.deepEqual(result.waypoints.map(point => point.vertex), [1, 2, 4]);
+    assert.equal(result.routes[0].duration, 55);
+    assert.deepEqual(result.routes[0].geometry.coordinates.map(point => point[0]),
+      [longitude[1], longitude[2], longitude[4]]);
+    if (options.optimizeWaypointOrder) assert.deepEqual(result.optimizedIntermediateWaypointIndices, [0]);
+  }
+  const matrix = await solveRoute(graph, points, [0], [2], shape);
+  assert.deepEqual(matrix.distances, [[null]]);
+});

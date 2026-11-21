@@ -1,7 +1,13 @@
-name: Deploy Sifric driving option graphs
+name: Deploy Sifric road routing profiles
 
 on:
   workflow_dispatch:
+    inputs:
+      profiles:
+        type: choice
+        description: Routing graphs to refresh
+        default: avoidance
+        options: [avoidance, all]
 
 permissions:
   contents: read
@@ -14,13 +20,13 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        profile: [drive-no-tolls, drive-no-highways]
+        profile: ${{ fromJSON(inputs.profiles == 'all' && '["drive","walk","cycle","motorcycle","tuk","drive-no-tolls","drive-no-highways"]' || '["drive-no-tolls","drive-no-highways"]') }}
     concurrency: sifric-graph-${{ matrix.profile }}
     steps:
       - uses: actions/checkout@v4
         with:
           persist-credentials: false
-      - name: Build a filtered routing graph
+      - name: Build and validate a routing graph
         env:
           PROFILE: ${{ matrix.profile }}
         run: |

@@ -70,11 +70,18 @@ distance in meters, and geometry-derived maneuvers. Matrices accept 2–25
 coordinates with optional `sources` and `destinations` index arrays. An
 unreachable pair is `null`. Coordinates are snapped to routing vertices
 within 500 m. The motor vehicle profile accounts for supported OSM one-way
-and node-based turn restrictions. Estimates use map data and profile speeds.
+and node-based turn restrictions. Bicycle routing also applies supported
+node-based turn restrictions. Routing estimates account for mapped surface
+quality and directional posted speed limits where present.
+If the nearest vertices are disconnected, a route can try nearby connected
+vertices within the same travel profile. Matrices retain a single nearest
+vertex per input point so its row and column describe the same location.
 Conditional and via-way restrictions are unavailable.
 
 On two-point routes, `alternatives: true` returns up to two additional paths
-when the graph has distinct options with a reasonable travel time.
+when the graph has distinct options with a reasonable travel time. Each option
+must differ from every other returned route along at least 20% of the shorter
+route measured over directed road segments.
 `optimizeWaypointOrder: true` finds the lowest estimated driving or travel
 time among orders of up to six intermediate stops. Endpoints stay fixed and
 `optimizedIntermediateWaypointIndices` indexes the original intermediate

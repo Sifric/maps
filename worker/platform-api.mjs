@@ -77,7 +77,8 @@ async function dispatchRouting(env, operation, body) {
       if (response.headers.get('Content-Type')?.startsWith('application/json')) {
         if (response.status !== 503 || attempt === backoff.length) return response;
         const { error } = await response.clone().json();
-        if (error !== 'Routing is busy. Retry shortly.' && error !== 'The routing graph is refreshing. Retry shortly.') {
+        if (error !== 'Routing is busy. Retry shortly.' && error !== 'The routing graph is refreshing. Retry shortly.' &&
+            error !== 'Routing graph changed. Retry the request.') {
           return response;
         }
       }
