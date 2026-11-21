@@ -30,5 +30,19 @@ export function nativeStyle(base, parameters) {
       paint: { 'hillshade-exaggeration': 0.5 },
     });
   }
+  if (type !== 'satellite' && style.sources.openmaptiles) {
+    const index = style.layers.findIndex(layer => layer.type === 'symbol');
+    style.layers.splice(index < 0 ? style.layers.length : index, 0, {
+      id: 'sifric-native-buildings', type: 'fill-extrusion', source: 'openmaptiles', 'source-layer': 'building',
+      minzoom: 15,
+      filter: ['all', ['!=', ['get', 'hide_3d'], true], ['>', ['coalesce', ['get', 'render_height'], 0], 0]],
+      paint: {
+        'fill-extrusion-color': theme === 'dark' ? '#3e4855' : '#d4dce4',
+        'fill-extrusion-height': ['max', 0, ['coalesce', ['get', 'render_height'], 0]],
+        'fill-extrusion-base': ['max', 0, ['coalesce', ['get', 'render_min_height'], 0]],
+        'fill-extrusion-opacity': 0.92,
+      },
+    });
+  }
   return style;
 }

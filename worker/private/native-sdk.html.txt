@@ -21,7 +21,7 @@ implementation 'org.maplibre.gl:android-sdk:13.6.1'</pre>
   <p>Requires iOS 15. Extract the ZIP, add the directory as a local Swift package in Xcode, and link <code>SifricMaps</code>.</p>
   <p>Use <code>SifricMapView</code> in SwiftUI or <code>SifricMap.makeView</code> in UIKit. The asynchronous <code>SifricClient</code> powers <code>SifricPlaceSearchView</code>. Forward Core Location updates to <code>SifricNavigation</code> for foreground guidance.</p>
   <h2>Map appearance and sharing</h2>
-  <p>Choose Default, Satellite, or Terrain and a light, dark, or device theme. The native map objects expose camera updates, gestures, overlays, and callbacks.</p>
+  <p>Choose Default, Satellite, or Terrain and a light, dark, or device theme. Pitch the map at street zoom to see mapped 3D building heights in Default or Terrain. The native map objects expose camera updates, gestures, overlays, and callbacks.</p>
   <p>Use <code>SifricMapsUrls</code> (Android) or <code>SifricMapsURLs</code> (iOS) for search, pinned locations and directions. An installed app can handle these URLs after its App Links or Universal Links association is registered.</p>
   <h2>Voice and background guidance</h2>
   <p>On Android, enable voice with <code>enableVoice</code> or subclass <code>SifricNavigationService</code>, provide a foreground notification, and declare a location foreground service. Start it while the app is visible after granting precise location.</p>

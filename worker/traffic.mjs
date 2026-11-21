@@ -52,11 +52,14 @@ export async function annotateTraffic(bucket, response) {
   const snapshot = await trafficSnapshot(bucket);
   if (!snapshot) return Response.json({ ...route, liveTraffic: { status: 'unavailable' } });
   const description = { source: snapshot.source, observedAt: snapshot.observedAt };
+  let observed = false;
   for (const variant of route.routes ?? []) {
     const { hits, traveled } = spans(variant.geometry.coordinates, snapshot.segments);
     if (hits.some(span => span.closed)) {
       throw new RoutingError(409, 'An observed closure intersects this route. A traffic-safe alternative is unavailable.');
     }
+    if (!hits.length) continue;
+    observed = true;
     const boundaries = [...new Set(hits.flatMap(span => [span.start, span.end]))].sort((a, b) => a - b);
     let added = 0;
     for (let i = 1; i < boundaries.length; i++) {
@@ -67,5 +70,5 @@ export async function annotateTraffic(bucket, response) {
     variant.trafficDuration = Math.round(variant.duration * (1 + (traveled ? added / traveled : 0)));
     variant.matchedTrafficSegments = hits.length;
   }
-  return Response.json({ ...route, liveTraffic: { ...description, status: 'observed-segments' } });
+  return Response.json({ ...route, liveTraffic: { ...description, status: observed ? 'observed-segments' : 'outside-coverage' } });
 }
