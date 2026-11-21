@@ -91,6 +91,22 @@ mismatched fields, and suggests entries from the
 Its precision is the postal town. It reports property type and street-level
 deliverability as unknown or unverified.
 
+GET `/places/:id/photos` returns photos for places with an unambiguous link
+from OpenStreetMap to Wikimedia Commons or Wikidata. Each photo includes the
+thumbnail URL, source page, contributor where available, and reuse license.
+Places without imported photos return an empty list.
+
+POST `/geolocate` accepts up to eight Sri Lankan cellular observations in
+`cellTowers`. Supply `mobileCountryCode: 413`, `mobileNetworkCode`,
+`locationAreaCode` (LAC or TAC), `cellId` (or `newRadioCellId` for 5G), and
+`radioType: "gsm"|"wcdma"|"lte"|"nr"` on each observation or at the top level.
+The result estimates a location and a coverage radius from the matching
+cell centers. Wi-Fi identifiers and IP fallback are unsupported. Cell tower
+data from [OpenCellID](https://opencellid.org/), licensed under
+[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), is filtered
+to Sri Lanka and stored as a local binary index from the
+[2026-10-06 snapshot](https://huggingface.co/datasets/yuiseki/opencellid).
+
 Navigation links can prefill the form, for example
 `/developer/navigation/?origin=79.8612,6.9271&destination=79.8744,6.903&mode=drive`.
 The user starts guidance from the form and grants device location permission.

@@ -49,11 +49,16 @@ public final class SifricClient {
         return request("places/" + placeId, null);
     }
 
+    public JSONObject photos(long placeId) throws IOException, JSONException {
+        return request("places/" + placeId + "/photos", null);
+    }
+
     public JSONObject route(JSONObject payload) throws IOException, JSONException { return post("routes", payload); }
     public JSONObject matrix(JSONObject payload) throws IOException, JSONException { return post("matrix", payload); }
     public JSONObject matchTrace(JSONObject payload) throws IOException, JSONException { return post("roads/match", payload); }
     public JSONObject optimizeFleet(JSONObject payload) throws IOException, JSONException { return post("optimize", payload); }
     public JSONObject validateAddress(JSONObject payload) throws IOException, JSONException { return post("address/validate", payload); }
+    public JSONObject locateByCell(JSONObject payload) throws IOException, JSONException { return post("geolocate", payload); }
 
     private JSONObject post(String path, JSONObject payload) throws IOException, JSONException {
         return request(path, Objects.requireNonNull(payload));

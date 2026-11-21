@@ -5,6 +5,7 @@ import { availableRoutingModes, routingRequest, RoutingError } from './routing.m
 import { optimizeFleet } from './fleet.mjs';
 import { validateAddress } from './address.mjs';
 import { sampleRelief } from './bathymetry.mjs';
+import { locateByCell } from './cell-location.mjs';
 
 const result = (body, status = 200) => Response.json(body, { status });
 const bounds = { west: 78, east: 82.5, south: 5, north: 10.5 };
@@ -142,6 +143,15 @@ export function createPlatformApi(tileKey, renderStaticMap) {
         throw error;
       }
     }
+    if (endpoint === '/geolocate') {
+      if (request.method !== 'POST') return result({ error: 'Use POST.' }, 405);
+      try {
+        return result(await locateByCell(env.TILES_BUCKET, await routePayload(request)));
+      } catch (error) {
+        if (error instanceof RoutingError) return result({ error: error.message }, error.status);
+        return result({ error: 'The cellular index is unavailable.' }, 502);
+      }
+    }
     if (!env.SIFRIC_PLATFORM_ORIGIN && ['/routes', '/matrix', '/roads/match', '/optimize'].includes(endpoint)) {
       if (request.method !== 'POST') return result({ error: 'Use POST.' }, 405);
       try {
@@ -156,9 +166,10 @@ export function createPlatformApi(tileKey, renderStaticMap) {
     }
     const tile = /^\/tiles\/(\d{1,2})\/(\d{1,9})\/(\d{1,9})\.pbf$/u.exec(endpoint);
     const id = /^\/places\/(\d{1,16})$/u.exec(endpoint)?.[1];
+    const photoId = /^\/places\/(\d{1,16})\/photos$/u.exec(endpoint)?.[1];
     const isNearestRoad = endpoint === '/roads/nearest' && request.method === 'GET';
     const isGeocode = !env.SIFRIC_PLATFORM_ORIGIN && ['/geocode','/geocode/reverse'].includes(endpoint);
-    if (!tile && !id && !isGeocode && !isNearestRoad && !['/health','/capabilities','/timezone','/elevation','/bathymetry','/places/search','/places/nearby','/static-map'].includes(endpoint)) return null;
+    if (!tile && !id && !photoId && !isGeocode && !isNearestRoad && !['/health','/capabilities','/timezone','/elevation','/bathymetry','/places/search','/places/nearby','/static-map'].includes(endpoint)) return null;
     if (request.method !== 'GET') return result({ error: 'Use GET.' }, 405);
     const { origin, searchParams: query } = new URL(request.url);
     try {
@@ -187,6 +198,15 @@ export function createPlatformApi(tileKey, renderStaticMap) {
         const key = number(id, 'place ID', 1, Number.MAX_SAFE_INTEGER);
         const row = (await shard(env, origin, 'id/' + (key % 512))).find(row => row[0] === key);
         return row ? result(place(row)) : result({ error: 'Place not found.' }, 404);
+      }
+      if (photoId) {
+        const key = number(photoId, 'place ID', 1, Number.MAX_SAFE_INTEGER);
+        const row = (await shard(env, origin, 'id/' + (key % 512))).find(row => row[0] === key);
+        if (!row) return result({ error: 'Place not found.' }, 404);
+        const object = await env.TILES_BUCKET.get('lkmaps/places/v1/photos.json');
+        if (!object || object.size > 1024 ** 2) return result({ error: 'The place photo catalog is unavailable.' }, 503);
+        const catalog = await object.json();
+        return result({ items: catalog[key] ?? [] });
       }
       if (endpoint === '/places/search' || endpoint === '/geocode') {
         const q = normalize(query.get('q') ?? '');

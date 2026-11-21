@@ -22,6 +22,15 @@ const env = {
       return value ? Response.json(value) : new Response(null, { status: 404 });
     },
   },
+  TILES_BUCKET: {
+    async get(key) {
+      if (key === 'lkmaps/places/v1/photos.json') {
+        return { size: 100, json: async () => ({ 123: [{ title: 'Colombo', license: 'CC BY 4.0' }] }) };
+      }
+      if (key === 'lkmaps/sdk/v1/android/sifric-maps.aar') return new Response(new Uint8Array([80, 75, 3, 4]));
+      return null;
+    },
+  },
 };
 
 async function call(path, authorized = true) {
@@ -63,6 +72,18 @@ test('Terrarium samples a bounded RGB tile at the configured source', async () =
   });
   assert.equal(sample.elevationMeters, 203.5);
   assert.equal(await terrarium(80.77, 6.97, async () => new Response(null, { status: 404 })), null);
+});
+
+test('place photo catalog and native SDK packages stay behind developer access', async () => {
+  assert.equal((await call('/places/123/photos', false)).status, 401);
+  assert.equal((await call('/places/124/photos')).status, 404);
+  assert.equal((await (await call('/places/123/photos')).json()).items[0].license, 'CC BY 4.0');
+  const path = '/sdk/android/sifric-maps.aar';
+  assert.equal((await call(path, false)).status, 401);
+  const artifact = await call(path);
+  assert.equal(artifact.status, 200);
+  assert.equal(artifact.headers.get('Cache-Control'), 'private, no-store');
+  assert.deepEqual([...new Uint8Array(await artifact.arrayBuffer())], [80, 75, 3, 4]);
 });
 
 test('static map validates options and launches a renderer only after authentication', async () => {

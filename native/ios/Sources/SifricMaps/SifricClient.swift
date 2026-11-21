@@ -10,6 +10,15 @@ public struct SifricPlace: Codable, Identifiable, Sendable {
     public let label: String?
 }
 
+public struct SifricPlacePhoto: Codable, Sendable {
+    public let title: String
+    public let thumbnailUrl: URL
+    public let sourcePage: URL
+    public let author: String?
+    public let license: String
+    public let licenseUrl: URL?
+}
+
 public struct SifricRoute: Codable, Sendable {
     public struct Geometry: Codable, Sendable {
         public let type: String
@@ -64,6 +73,7 @@ private final class RejectRedirects: NSObject, URLSessionTaskDelegate {
 
 public final class SifricClient: Sendable {
     private struct Places: Decodable { let items: [SifricPlace] }
+    private struct Photos: Decodable { let items: [SifricPlacePhoto] }
     private struct Routes: Decodable { let routes: [SifricRoute] }
     private struct ErrorResponse: Decodable { let error: String }
     private let credentialProvider: @Sendable () async throws -> String
@@ -97,6 +107,11 @@ public final class SifricClient: Sendable {
         try JSONDecoder().decode(SifricPlace.self, from: await request("places/\(id)"))
     }
 
+    public func photos(placeId: Int64) async throws -> [SifricPlacePhoto] {
+        let data = try await request("places/\(placeId)/photos")
+        return try JSONDecoder().decode(Photos.self, from: data).items
+    }
+
     public func route(coordinates: [[Double]], mode: String = "drive") async throws -> SifricRoute {
         struct Request: Encodable { let coordinates: [[Double]]; let mode: String }
         let body = try JSONEncoder().encode(Request(coordinates: coordinates, mode: mode))
@@ -111,6 +126,7 @@ public final class SifricClient: Sendable {
     public func matchTrace(json: Data) async throws -> Data { try await request("roads/match", body: json) }
     public func optimizeFleet(json: Data) async throws -> Data { try await request("optimize", body: json) }
     public func validateAddress(json: Data) async throws -> Data { try await request("address/validate", body: json) }
+    public func locateByCell(json: Data) async throws -> Data { try await request("geolocate", body: json) }
 
     private func request(_ path: String, query: [URLQueryItem] = [], body: Data? = nil) async throws -> Data {
         let token = try await credentialProvider()

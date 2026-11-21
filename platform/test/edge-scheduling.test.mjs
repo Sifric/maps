@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import { optimizeFleet } from '../../worker/fleet.mjs';
 import { validateAddress } from '../../worker/address.mjs';
+import { locateByCell } from '../../worker/cell-location.mjs';
 
 test('fleet insertion respects delivery precedence, loads, and time windows', async () => {
   const start = [79.86, 6.92], pickup = [79.87, 6.92], delivery = [79.88, 6.92];
@@ -37,4 +38,25 @@ test('address validation preserves leading zeroes and flags town mismatches', ()
   assert.ok(mismatch.issues.includes('postal_town_mismatch'));
   assert.equal(mismatch.suggestions[0].locality, 'Batticaloa');
   assert.equal(validateAddress({ locality: 'Kandy' }).suggestions[0].postalCode, '20000');
+});
+
+test('cellular estimates deduplicate observations and report coverage from the local index', async () => {
+  const bytes = new Uint8Array(44);
+  bytes.set(new TextEncoder().encode('SIFRICC1'));
+  const row = new DataView(bytes.buffer);
+  row.setUint32(8, 1, true);
+  row.setUint16(12, 3, true);
+  row.setUint16(14, 2, true);
+  row.setUint32(16, 100, true);
+  row.setBigUint64(20, 1234n, true);
+  row.setFloat32(28, 79.86, true);
+  row.setFloat32(32, 6.92, true);
+  row.setUint32(36, 1500, true);
+  const tower = { mobileCountryCode: 413, mobileNetworkCode: 2, locationAreaCode: 100, cellId: 1234 };
+  const bucket = { get: async () => ({ size: bytes.length, arrayBuffer: async () => bytes.buffer }) };
+  const match = await locateByCell(bucket, { radioType: 'lte', cellTowers: [tower, tower] });
+  assert.equal(match.matchedCells, 1);
+  assert.equal(match.estimatedCoverageMeters, 1500);
+  assert.ok(Math.abs(match.location.latitude - 6.92) < 1e-5);
+  await assert.rejects(locateByCell(bucket, { radioType: 'lte', cellTowers: [{ ...tower, cellId: 7 }] }), { status: 404 });
 });

@@ -7,7 +7,7 @@ on:
         type: choice
         description: Dataset to refresh
         default: all
-        options: [all, drive, walk, cycle, relief]
+        options: [all, drive, walk, cycle, relief, photos, cells]
 
 permissions:
   contents: read
@@ -23,7 +23,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Prepare graph compiler
-        if: inputs.mode != 'relief'
+        if: inputs.mode != 'relief' && inputs.mode != 'photos' && inputs.mode != 'cells'
         run: |
           set -euo pipefail
           git init /tmp/routingkit
@@ -33,7 +33,7 @@ jobs:
           g++ -std=c++17 -O3 -DNDEBUG -I/tmp/routingkit/include scripts/build_routing_graph.cpp \
             /tmp/routingkit/lib/libroutingkit.a -fopenmp -lz -pthread -o /tmp/build-routing-graph
       - name: Build Sri Lanka graph artifacts
-        if: inputs.mode != 'relief'
+        if: inputs.mode != 'relief' && inputs.mode != 'photos' && inputs.mode != 'cells'
         env:
           PROFILE: ${{ inputs.mode }}
         run: |
@@ -48,7 +48,7 @@ jobs:
           done
           node scripts/check_routing_data.mjs /tmp/sifric-graphs "${modes[@]}"
       - name: Publish routing objects to the Maps bucket
-        if: inputs.mode != 'relief'
+        if: inputs.mode != 'relief' && inputs.mode != 'photos' && inputs.mode != 'cells'
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
@@ -76,3 +76,34 @@ jobs:
           /tmp/sifric-relief-venv/bin/python scripts/build_relief.py /tmp/lk-relief.nc /tmp/lk-relief.bin
           npx --yes wrangler@4.166.0 r2 object put 'mazo-maps/lkmaps/relief/etopo-2022-lk.bin' \
             --file /tmp/lk-relief.bin --content-type application/octet-stream --remote
+      - name: Match and publish licensed place photos
+        if: inputs.mode == 'photos' || inputs.mode == 'all'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          set -euo pipefail
+          if [ ! -s /tmp/sri-lanka.osm.pbf ]; then
+            curl -fsSL --retry 5 --retry-all-errors --connect-timeout 20 --max-time 180 \
+              'https://download.geofabrik.de/asia/sri-lanka/sri-lanka-latest.osm.pbf' -o /tmp/sri-lanka.osm.pbf
+          fi
+          python3 -m venv /tmp/sifric-photos-venv
+          /tmp/sifric-photos-venv/bin/pip install --disable-pip-version-check 'osmium==4.3.2'
+          /tmp/sifric-photos-venv/bin/python scripts/build_place_photos.py \
+            /tmp/sri-lanka.osm.pbf worker/public/assets/places-search.json.gz /tmp/place-photos.json
+          npx --yes wrangler@4.166.0 r2 object put 'mazo-maps/lkmaps/places/v1/photos.json' \
+            --file /tmp/place-photos.json --content-type application/json --remote
+      - name: Import Sri Lanka OpenCellID locations
+        if: inputs.mode == 'cells' || inputs.mode == 'all'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          set -euo pipefail
+          curl -fsSL --retry 4 --retry-all-errors --connect-timeout 20 --max-time 180 \
+            'https://huggingface.co/datasets/yuiseki/opencellid/resolve/82e4acdb5ea93250ea6128ce08c03a4ca8870c88/raw/2026-10-06/cell_towers.csv.gz?download=true' \
+            -o /tmp/cell-towers.csv.gz
+          printf '%s  %s\n' '6ce8d77f1b421aa76ff9aafb7887043e4bbebbc6bdab5edcdf8a3d6cabd48c89' /tmp/cell-towers.csv.gz | sha256sum -c
+          python3 scripts/build_cell_locations.py /tmp/cell-towers.csv.gz /tmp/lk-cells.bin
+          npx --yes wrangler@4.166.0 r2 object put 'mazo-maps/lkmaps/geolocation/v1/lk-2026-10-06.bin' \
+            --file /tmp/lk-cells.bin --content-type application/octet-stream --remote

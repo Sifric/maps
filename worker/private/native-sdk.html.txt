@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sifric Maps Native SDKs</title>
+</head>
+<body>
+<main>
+  <p><a href="/developer/">Developer portal</a></p>
+  <h1>Native SDKs</h1>
+  <h2>Android</h2>
+  <p><a href="/developer/api/v1/sdk/android/sifric-maps.aar">Download the Android AAR</a></p>
+  <p>Requires Android API 23. Add the AAR to your app's <code>libs</code> directory and include these Gradle dependencies.</p>
+  <pre>implementation files('libs/sifric-maps.aar')
+implementation 'org.maplibre.gl:android-sdk:13.6.1'</pre>
+  <p>Use <code>org.sifric.maps.SifricMapView</code>. Forward the host lifecycle and call <code>load</code> to get the native MapLibre map. Use <code>SifricPlaceSearchView</code> to display selectable search results.</p>
+  <p>Construct <code>SifricClient</code> with a credential provider and call its methods on a background thread. Call <code>SifricNavigation.start</code> and forward Android location updates on the main thread.</p>
+  <h2>iOS</h2>
+  <p><a href="/developer/api/v1/sdk/ios/sifric-maps.zip">Download the iOS Swift package</a></p>
+  <p>Requires iOS 15. Extract the ZIP, add the directory as a local Swift package in Xcode, and link <code>SifricMaps</code>.</p>
+  <p>Use <code>SifricMapView</code> in SwiftUI or <code>SifricMap.makeView</code> in UIKit. The asynchronous <code>SifricClient</code> powers <code>SifricPlaceSearchView</code>. Forward Core Location updates to <code>SifricNavigation</code> for foreground guidance.</p>
+  <h2>API credentials</h2>
+  <p>Supply credentials at runtime. Keep service tokens on your server for consumer-facing integrations. The host app handles location permission, guidance presentation, and session lifecycle.</p>
+</main>
+</body>
+</html>
