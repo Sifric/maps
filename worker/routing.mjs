@@ -4,6 +4,7 @@ const routingModes = ['drive', 'walk', 'cycle'];
 const graphPrefix = 'lkmaps/routing/v1/';
 const gridWidth = 500;
 const gridHeight = 600;
+const maxCoreBytes = 80 * 1024 ** 2;
 
 export class RoutingError extends Error {
   constructor(status, message) {
@@ -12,8 +13,8 @@ export class RoutingError extends Error {
   }
 }
 
-export function parseRoutingGraph(buffer) {
-  if (buffer.byteLength > 80 * 1024 ** 2 || new TextDecoder().decode(new Uint8Array(buffer, 0, 8)) !== 'SIFRIC02') {
+export function parseRoutingGraph(buffer, length = buffer.byteLength) {
+  if (length > maxCoreBytes || new TextDecoder().decode(new Uint8Array(buffer, 0, 8)) !== 'SIFRIC02') {
     throw new Error('Invalid routing graph.');
   }
   let offset = 12;
@@ -30,7 +31,7 @@ export function parseRoutingGraph(buffer) {
     transitions: column(), heads: column(), meters: column(),
     geometryOffsets: column(), geometryLengths: column(), shapeBoundaries: column(),
   };
-  if (offset !== buffer.byteLength || graph.cells.length !== gridWidth * gridHeight + 1 ||
+  if (offset !== length || graph.cells.length !== gridWidth * gridHeight + 1 ||
       graph.lon.length !== graph.ranks.length || graph.lat.length !== graph.ranks.length ||
       graph.terminalRanks.length !== graph.terminalNodes.length || graph.heads.length !== graph.meters.length || graph.geometryOffsets.length !== graph.heads.length ||
       graph.geometryLengths.length !== graph.heads.length || graph.shapeBoundaries.length !== 121) throw new Error('Invalid routing graph layout.');
@@ -303,13 +304,13 @@ export async function solveRoute(graph, points, sources, destinations, loadShape
 }
 
 let cachedGraph;
+let coreBuffer;
 let activeMode;
 let activeRequests = 0;
 
-async function readRange(bucket, key, etag, offset, length) {
+async function readRange(bucket, key, etag, offset, length, buffer = new Uint8Array(length)) {
   const object = await bucket.get(key, { onlyIf: { etagMatches: etag }, range: { offset, length } });
   if (!object?.body) throw new RoutingError(503, 'Routing graph changed. Retry the request.');
-  const buffer = new Uint8Array(length);
   let written = 0;
   const reader = object.body.getReader();
   try {
@@ -339,8 +340,10 @@ async function getGraph(bucket, mode) {
   cachedGraph = undefined;
   const metadata = await readRange(bucket, key, head.etag, 0, 12);
   const size = new DataView(metadata).getUint32(8, true);
-  if (size < 12 || size > head.size || size > 80 * 1024 ** 2) throw new Error('Routing graph exceeds the memory budget.');
-  const graph = parseRoutingGraph(await readRange(bucket, key, head.etag, 0, size));
+  if (size < 12 || size > head.size || size > maxCoreBytes) throw new Error('Routing graph exceeds the memory budget.');
+  coreBuffer ??= new ArrayBuffer(maxCoreBytes);
+  await readRange(bucket, key, head.etag, 0, size, new Uint8Array(coreBuffer, 0, size));
+  const graph = parseRoutingGraph(coreBuffer, size);
   cachedGraph = { key, etag: head.etag, graph, size, objectSize: head.size };
   return cachedGraph;
 }
@@ -360,7 +363,7 @@ async function loadGraphShapes(bucket, file, arcs) {
     range.arcs.push(arc);
   }
   const count = [...cells.values()].reduce((total, range) => total + range.end - range.start, 0);
-  if (cells.size > 36 || count * 8 > 14 * 1024 ** 2) throw new RoutingError(422, 'The route exceeds the shape retrieval limit.');
+  if (cells.size > 36 || count * 8 > 12 * 1024 ** 2) throw new RoutingError(422, 'The route exceeds the shape retrieval limit.');
   const shapes = new Map();
   await Promise.all([...cells.values()].map(async ({ start, end, arcs: group }) => {
     const data = new Float32Array(await readRange(bucket, key, etag, size + start * 8, (end - start) * 8));
