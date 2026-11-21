@@ -25,6 +25,8 @@ public final class SifricNavigation {
     private let client: SifricClient
     private let onEvent: (Event) -> Void
     private var destination: CLLocationCoordinate2D?
+    private var intermediateStops: [[Double]] = []
+    private var visitedStops = 0
     private var mode = "drive"
     private var routeOptions = SifricRouteOptions()
     private var request: Task<Void, Never>?
@@ -55,15 +57,18 @@ public final class SifricNavigation {
     }
 
     public func start(destination: CLLocationCoordinate2D, mode: String = "drive",
-                      options: SifricRouteOptions, initialRoute: SifricRoute? = nil) throws {
-        guard (78...82.5).contains(destination.longitude), (5...10.5).contains(destination.latitude),
+                      stops: [CLLocationCoordinate2D] = [], options: SifricRouteOptions,
+                      initialRoute: SifricRoute? = nil) throws {
+        guard stops.count <= 6,
+              ([destination] + stops).allSatisfy({ (78...82.5).contains($0.longitude) && (5...10.5).contains($0.latitude) }),
               ["drive", "walk", "cycle", "motorcycle", "tuk"].contains(mode) else { throw SifricError.invalidCoordinates }
         let initialPlan = try initialRoute.map { try Plan($0) }
+        if let initialPlan, initialPlan.stopPositions.count != stops.count { throw SifricError.invalidResponse }
         stop()
         self.destination = destination
         self.mode = mode
+        intermediateStops = stops.map { [$0.longitude, $0.latitude] }
         routeOptions = options
-        routeOptions.optimizeWaypointOrder = nil
         routeOptions.alternatives = nil
         self.plan = initialPlan
         lastFix = .distantPast
@@ -93,6 +98,9 @@ public final class SifricNavigation {
         }
         offRoute = 0
         progress = max(progress, match.along)
+        while visitedStops < plan.stopPositions.count && plan.stopPositions[visitedStops] <= progress + 5 {
+            visitedStops += 1
+        }
         let remaining = plan.length - progress
         if remaining <= 25 && Plan.distance(point, plan.end) <= 25 && location.horizontalAccuracy <= 25 {
             stop()
@@ -104,12 +112,16 @@ public final class SifricNavigation {
                                speedLimitKph: plan.speedLimit(segment: match.index))
             let next = plan.turns.first { $0.along > progress + 5 }
             if let next, voiceEnabled, next.along - progress <= 120,
-               next.along != spokenPosition, next.maneuver.type != "arrive" {
+               next.along != spokenPosition, next.maneuver.type != "arrive" || next.intermediate {
                 spokenPosition = next.along
-                switch next.maneuver.modifier {
-                case "uturn": speak("Make a U-turn.")
-                case "straight", nil: speak("Continue straight.")
-                case let direction?: speak("Turn \(direction).")
+                if next.intermediate {
+                    speak("Arrive at the next stop.")
+                } else {
+                    switch next.maneuver.modifier {
+                    case "uturn": speak("Make a U-turn.")
+                    case "straight", nil: speak("Continue straight.")
+                    case let direction?: speak("Turn \(direction).")
+                    }
                 }
             }
             onEvent(.progress(remainingMeters: remaining, nextManeuver: next?.maneuver))
@@ -120,6 +132,8 @@ public final class SifricNavigation {
         request?.cancel()
         request = nil
         destination = nil
+        intermediateStops = []
+        visitedStops = 0
         plan = nil
         metrics = nil
         progress = 0
@@ -131,14 +145,27 @@ public final class SifricNavigation {
     private func makeRoute(from origin: [Double], to destination: CLLocationCoordinate2D, rerouting: Bool) {
         let target = [destination.longitude, destination.latitude]
         let profile = mode
-        let options = routeOptions
+        let stops = Array(intermediateStops.dropFirst(visitedStops))
+        var options = routeOptions
+        if stops.isEmpty || rerouting { options.optimizeWaypointOrder = nil }
         request = Task { [weak self] in
             guard let self else { return }
             do {
-                let choices = try await client.routes(coordinates: [origin, target], mode: profile, options: options)
+                let choices = try await client.routes(coordinates: [origin] + stops + [target], mode: profile, options: options)
                 guard let route = choices.routes.first else { throw SifricError.invalidResponse }
+                let ordered: [[Double]]
+                if let order = choices.optimizedIntermediateWaypointIndices {
+                    guard order.sorted() == Array(stops.indices) else { throw SifricError.invalidResponse }
+                    ordered = order.map { stops[$0] }
+                } else {
+                    ordered = stops
+                }
                 try Task.checkCancellation()
-                plan = try Plan(route)
+                let nextPlan = try Plan(route)
+                guard nextPlan.stopPositions.count == ordered.count else { throw SifricError.invalidResponse }
+                plan = nextPlan
+                intermediateStops = ordered
+                visitedStops = 0
                 progress = 0
                 offRoute = 0
                 spokenPosition = nil
@@ -169,7 +196,8 @@ private struct Plan {
     let limits: [SifricRoute.SpeedLimit]
     let end: [Double]
     let segments: [Segment]
-    var turns: [(along: Double, maneuver: SifricRoute.Maneuver)] = []
+    var turns: [(along: Double, maneuver: SifricRoute.Maneuver, intermediate: Bool)] = []
+    var stopPositions: [Double] = []
 
     init(_ route: SifricRoute) throws {
         let coordinates = route.geometry.coordinates
@@ -193,10 +221,12 @@ private struct Plan {
         length = total
         self.segments = segments
         var along = 0.0
-        for leg in route.legs {
+        for (index, leg) in route.legs.enumerated() {
             for step in leg.steps where step.maneuver.type != "depart" && step.maneuver.location.count == 2 {
                 along = max(along, project(step.maneuver.location, reference: along).along)
-                turns.append((along, step.maneuver))
+                let intermediate = index < route.legs.count - 1 && step.maneuver.type == "arrive"
+                if intermediate { stopPositions.append(along) }
+                turns.append((along, step.maneuver, intermediate))
             }
         }
     }

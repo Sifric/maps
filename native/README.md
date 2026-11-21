@@ -27,8 +27,8 @@ requests a route on the first usable fix and emits route, maneuver, progress,
 arrival, and error events. Stop or close it when leaving the guidance screen.
 
 Use `SifricClient.route(JSONObject)` with `alternatives: true` to preview
-route choices. The navigation `start` overload accepts route preferences and a
-selected two-point route. The listener's optional `onTelemetry` callback exposes
+route choices. The navigation `start` overload accepts route preferences,
+up to six stops, and a selected route. The listener's optional `onTelemetry` callback exposes
 remaining seconds, device speed, and mapped speed limits in km/h when available.
 
 ## iOS
@@ -46,10 +46,11 @@ and reports route geometry, upcoming maneuvers, progress, rerouting, and arrival
 
 Use `SifricClient.routes(coordinates:mode:options:)` and
 `SifricRouteOptions` to request route alternatives or optimized stop order.
-For two-point navigation, pass the selected route and preferences to
-`SifricNavigation.start(destination:mode:options:initialRoute:)`. Progress
+Pass the selected route, intermediate stops in route order, and preferences to
+`SifricNavigation.start(destination:mode:stops:options:initialRoute:)`. Progress
 events update `metrics` with remaining seconds, device speed, and posted speed
 limit when the route requested `speedLimits` and the current segment is mapped.
+Both SDKs retain the unvisited stops when recalculating a route.
 
 ## Credentials and device location
 

@@ -12,6 +12,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 import java.util.Locale;
@@ -40,6 +41,8 @@ public final class SifricNavigation implements AutoCloseable {
     private String mode;
     private String routeOptions;
     private double[] destination;
+    private List<double[]> intermediateStops = new ArrayList<>();
+    private int visitedStops;
     private Route route;
     private double progress;
     private TextToSpeech speech;
@@ -73,10 +76,23 @@ public final class SifricNavigation implements AutoCloseable {
 
     /** Uses an optional route preview and preserves route preferences when recalculating. */
     public void start(double longitude, double latitude, String travelMode, JSONObject options, JSONObject initialRoute) {
+        start(longitude, latitude, travelMode, Collections.emptyList(), options, initialRoute);
+    }
+
+    /** Supply intermediate stops in the chosen order when starting from a preview. */
+    public void start(double longitude, double latitude, String travelMode, List<double[]> stops,
+                      JSONObject options, JSONObject initialRoute) {
         if (closed) throw new IllegalStateException("Navigation session is closed.");
-        if (!Double.isFinite(longitude) || !Double.isFinite(latitude) ||
-            longitude < 78 || longitude > 82.5 || latitude < 5 || latitude > 10.5) {
+        if (!validPoint(longitude, latitude)) {
             throw new IllegalArgumentException("Choose a destination in Sri Lanka.");
+        }
+        if (stops == null || stops.size() > 6) throw new IllegalArgumentException("Choose up to six intermediate stops.");
+        List<double[]> waypointCopy = new ArrayList<>();
+        for (double[] stop : stops) {
+            if (stop == null || stop.length != 2 || !validPoint(stop[0], stop[1])) {
+                throw new IllegalArgumentException("Choose intermediate stops in Sri Lanka.");
+            }
+            waypointCopy.add(stop.clone());
         }
         if (!"drive".equals(travelMode) && !"walk".equals(travelMode) && !"cycle".equals(travelMode)
             && !"motorcycle".equals(travelMode) && !"tuk".equals(travelMode)) {
@@ -85,6 +101,9 @@ public final class SifricNavigation implements AutoCloseable {
         Route initialPlan;
         try {
             initialPlan = initialRoute == null ? null : new Route(initialRoute);
+            if (initialPlan != null && initialPlan.stopCount != waypointCopy.size()) {
+                throw new JSONException("The route preview must match the intermediate stops.");
+            }
         } catch (JSONException error) {
             throw new IllegalArgumentException("Invalid initial route.", error);
         }
@@ -95,6 +114,7 @@ public final class SifricNavigation implements AutoCloseable {
         mode = travelMode;
         routeOptions = options == null ? "{}" : options.toString();
         destination = new double[] {longitude, latitude};
+        intermediateStops = waypointCopy;
         route = initialPlan;
         if (initialPlan != null) listener.onRoute(initialRoute, false);
     }
@@ -119,6 +139,7 @@ public final class SifricNavigation implements AutoCloseable {
         }
         outside = 0;
         progress = Math.max(progress, match.along);
+        while (visitedStops < route.stopCount && route.stopPositions.get(visitedStops) <= progress + 5) visitedStops++;
         double remaining = route.length - progress;
         if (remaining < 25 && route.distanceToEnd(lon, lat) < 25 && location.getAccuracy() <= 25) {
             stop();
@@ -134,18 +155,19 @@ public final class SifricNavigation implements AutoCloseable {
                 if (turn.along > progress + 5) {
                     next = turn.maneuver;
                     if (speechReady && turn != spoken && turn.along - progress <= 120 &&
-                        !"arrive".equals(next.optString("type"))) {
+                        (!"arrive".equals(next.optString("type")) || turn.intermediate)) {
                         spoken = turn;
                         String turnDirection = next.optString("modifier");
-                        speak(turnDirection.equals("uturn") ? "Make a U-turn." :
+                        speak(turn.intermediate ? "Arrive at the next stop." : turnDirection.equals("uturn") ? "Make a U-turn." :
                             turnDirection.isEmpty() || turnDirection.equals("straight") ? "Continue straight." :
                             "Turn " + turnDirection + ".");
                     }
                     break;
                 }
             }
+            long currentGeneration = generation;
             listener.onProgress(remaining, next);
-            if (active) listener.onTelemetry(remainingSeconds, speed, speedLimit);
+            if (active && currentGeneration == generation) listener.onTelemetry(remainingSeconds, speed, speedLimit);
         }
     }
 
@@ -156,6 +178,8 @@ public final class SifricNavigation implements AutoCloseable {
         route = null;
         progress = 0;
         outside = 0;
+        visitedStops = 0;
+        intermediateStops = new ArrayList<>();
         spoken = null;
         if (speech != null) speech.stop();
     }
@@ -174,20 +198,31 @@ public final class SifricNavigation implements AutoCloseable {
         double[] target = destination;
         String travelMode = mode;
         String options = routeOptions;
+        List<double[]> stops = new ArrayList<>(intermediateStops.subList(visitedStops, intermediateStops.size()));
         planning = true;
         requests.execute(() -> {
             try {
+                JSONArray coordinates = new JSONArray().put(point(lon, lat));
+                for (double[] stop : stops) coordinates.put(point(stop[0], stop[1]));
                 JSONObject request = new JSONObject(options)
                     .put("mode", travelMode)
-                    .put("coordinates", new JSONArray().put(point(lon, lat)).put(point(target[0], target[1])));
+                    .put("coordinates", coordinates.put(point(target[0], target[1])));
                 request.remove("waypoints");
                 request.remove("alternatives");
-                request.remove("optimizeWaypointOrder");
-                JSONObject data = client.route(request).getJSONArray("routes").getJSONObject(0);
+                if (stops.isEmpty() || rerouting) request.remove("optimizeWaypointOrder");
+                JSONObject result = client.route(request);
+                JSONObject data = result.getJSONArray("routes").getJSONObject(0);
+                JSONArray order = result.optJSONArray("optimizedIntermediateWaypointIndices");
+                List<double[]> ordered = new ArrayList<>();
+                if (order == null) ordered.addAll(stops);
+                else for (int i = 0; i < order.length(); i++) ordered.add(stops.get(order.getInt(i)));
                 Route newRoute = new Route(data);
+                if (newRoute.stopCount != ordered.size()) throw new JSONException("Invalid intermediate stop count.");
                 main.post(() -> {
                     if (attempt != generation) return;
                     route = newRoute;
+                    intermediateStops = ordered;
+                    visitedStops = 0;
                     progress = 0;
                     outside = 0;
                     planning = false;
@@ -208,6 +243,10 @@ public final class SifricNavigation implements AutoCloseable {
         return new JSONArray().put(lon).put(lat);
     }
 
+    private static boolean validPoint(double lon, double lat) {
+        return lon >= 78 && lon <= 82.5 && lat >= 5 && lat <= 10.5;
+    }
+
     private static double lonScale(double latitude) {
         return METERS_PER_DEGREE * Math.cos(Math.toRadians(latitude));
     }
@@ -221,7 +260,12 @@ public final class SifricNavigation implements AutoCloseable {
     private static final class Turn {
         final double along;
         final JSONObject maneuver;
-        Turn(double along, JSONObject maneuver) { this.along = along; this.maneuver = maneuver; }
+        final boolean intermediate;
+        Turn(double along, JSONObject maneuver, boolean intermediate) {
+            this.along = along;
+            this.maneuver = maneuver;
+            this.intermediate = intermediate;
+        }
     }
 
     private static final class Route {
@@ -229,6 +273,8 @@ public final class SifricNavigation implements AutoCloseable {
         final List<Turn> turns = new ArrayList<>();
         final double length, duration;
         final List<JSONObject> limits = new ArrayList<>();
+        final List<Double> stopPositions = new ArrayList<>();
+        final int stopCount;
 
         Route(JSONObject data) throws JSONException {
             JSONArray coordinates = data.getJSONObject("geometry").getJSONArray("coordinates");
@@ -270,9 +316,12 @@ public final class SifricNavigation implements AutoCloseable {
                     if ("depart".equals(maneuver.optString("type"))) continue;
                     JSONArray point = maneuver.getJSONArray("location");
                     along = Math.max(along, project(point.getDouble(0), point.getDouble(1), along).along);
-                    turns.add(new Turn(along, maneuver));
+                    boolean intermediate = i < legs.length() - 1 && "arrive".equals(maneuver.optString("type"));
+                    if (intermediate) stopPositions.add(along);
+                    turns.add(new Turn(along, maneuver, intermediate));
                 }
             }
+            stopCount = stopPositions.size();
         }
 
         double distanceToEnd(double lon, double lat) {

@@ -9,6 +9,7 @@ public final class SifricLocationSession: NSObject, CLLocationManagerDelegate {
     private let onEvent: (SifricNavigation.Event) -> Void
     private var active = false
     private var routeReady = false
+    public var metrics: SifricNavigation.Progress? { navigation.metrics }
     private lazy var navigation = SifricNavigation(client: client) { [weak self] event in
         guard let self else { return }
         switch event {
@@ -34,16 +35,24 @@ public final class SifricLocationSession: NSObject, CLLocationManagerDelegate {
     }
 
     public func start(destination: CLLocationCoordinate2D, mode: String = "drive",
-                      background: Bool = false, voice: Bool = true) throws {
+                      background: Bool = false, voice: Bool = true,
+                      stops: [CLLocationCoordinate2D] = [], options: SifricRouteOptions = .init(),
+                      initialRoute: SifricRoute? = nil) throws {
         if background && !(Bundle.main.object(forInfoDictionaryKey: "UIBackgroundModes") as? [String] ?? []).contains("location") {
             throw SifricError.http(400, "Enable the Location updates background capability.")
         }
         guard Bundle.main.object(forInfoDictionaryKey: "NSLocationWhenInUseUsageDescription") != nil else {
             throw SifricError.http(400, "Add a location usage description to the host app.")
         }
-        try navigation.start(destination: destination, mode: mode)
-        active = true
+        let wasReady = routeReady
         routeReady = false
+        do {
+            try navigation.start(destination: destination, mode: mode, stops: stops, options: options, initialRoute: initialRoute)
+        } catch {
+            routeReady = wasReady
+            throw error
+        }
+        active = true
         navigation.voiceEnabled = voice
         manager.allowsBackgroundLocationUpdates = background
         manager.showsBackgroundLocationIndicator = background
