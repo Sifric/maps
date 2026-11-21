@@ -7,7 +7,7 @@ on:
         type: choice
         description: Routing graphs to refresh
         default: avoidance
-        options: [avoidance, all]
+        options: [avoidance, all, drive, walk, cycle, motorcycle, tuk, drive-no-tolls, drive-no-highways]
       source_checksum:
         type: string
         description: SHA-256 of a private staged Geofabrik extract (optional)
@@ -23,7 +23,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        profile: ${{ fromJSON(inputs.profiles == 'all' && '["drive","walk","cycle","motorcycle","tuk","drive-no-tolls","drive-no-highways"]' || '["drive-no-tolls","drive-no-highways"]') }}
+        profile: ${{ fromJSON(inputs.profiles == 'all' && '["drive","walk","cycle","motorcycle","tuk","drive-no-tolls","drive-no-highways"]' || inputs.profiles == 'avoidance' && '["drive-no-tolls","drive-no-highways"]' || format('["{0}"]', inputs.profiles)) }}
     concurrency: sifric-graph-${{ matrix.profile }}
     steps:
       - uses: actions/checkout@v4

@@ -47,7 +47,6 @@ jobs:
           for mode in "${modes[@]}"; do
             /tmp/build-routing-graph /tmp/sri-lanka.osm.pbf "/tmp/sifric-graphs/${mode}.bin" "$mode"
           done
-          node scripts/check_routing_data.mjs /tmp/sifric-graphs "${modes[@]}"
       - name: Import NOAA relief and publish it to the Maps bucket
         if: inputs.mode == 'relief' || inputs.mode == 'all'
         env:

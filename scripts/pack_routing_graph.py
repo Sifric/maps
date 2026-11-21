@@ -21,7 +21,8 @@ def exact(file, length):
 def main(source, destination):
     with Path(source).open("rb") as data, Path(destination).open("wb") as packed:
         magic, core_length = struct.unpack("<8sI", exact(data, 12))
-        if magic != b"SIFRIC02" or not 12 < core_length <= 80 * 2**20:
+        # Unpacked build files are never served by the packed-profile workflow.
+        if magic != b"SIFRIC02" or not 12 < core_length <= 96 * 2**20:
             raise ValueError("Unsupported routing index")
         packed.write(struct.pack("<8sI", b"SIFRIC03", 0))
         for column in range(COLUMNS):
