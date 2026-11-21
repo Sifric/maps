@@ -39,7 +39,7 @@ async function authorized(request, config) {
   return matched === 1;
 }
 
-export function createPrivateGateway(assets) {
+export function createPrivateGateway(assets, localApi) {
   return async function privateGateway(request, env, path, send = fetch) {
     if (!env.SIFRIC_DEVELOPER_TOKEN_HASHES) {
       return new Response("Not found", { status: 404, headers: privateHeaders });
@@ -82,6 +82,14 @@ export function createPrivateGateway(assets) {
     if (request.method === "POST" &&
         !/^application\/json(?:\s*;|$)/iu.test(request.headers.get("Content-Type") ?? "")) {
       return Response.json({ error: "Use application/json." }, { status: 415, headers: privateHeaders });
+    }
+    const local = await localApi?.(request, env, path);
+    if (local) {
+      const type = local.headers.get("Content-Type") ?? "application/octet-stream";
+      return new Response(local.body, {
+        status: local.status,
+        headers: { ...privateHeaders, "Content-Type": type },
+      });
     }
     try {
       const origin = new URL(env.SIFRIC_PLATFORM_ORIGIN);

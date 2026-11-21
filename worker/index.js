@@ -1,6 +1,7 @@
 import basemapStyle from "./style.json";
 
 
+import { createPlatformApi } from "./platform-api.mjs";
 import { createPrivateGateway } from "./private-gateway.mjs";
 import portal from "./private/portal.html.txt";
 import embed from "./private/embed.html.txt";
@@ -13,6 +14,7 @@ import navigationScript from "./private/navigation.js.txt";
 import navigationStyle from "./private/navigation.css.txt";
 import navigationSdk from "./private/sifric-navigation.js.txt";
 
+const TILE_KEY = "lkmaps/sri-lanka.pmtiles";
 const handleDeveloper = createPrivateGateway(new Map([
   ["/developer", [portal, "text/html; charset=utf-8"]],
   ["/developer/", [portal, "text/html; charset=utf-8"]],
@@ -25,9 +27,7 @@ const handleDeveloper = createPrivateGateway(new Map([
   ["/developer/navigation/navigation.js", [navigationScript, "text/javascript; charset=utf-8"]],
   ["/developer/navigation/navigation.css", [navigationStyle, "text/css; charset=utf-8"]],
   ["/developer/sifric-navigation.js", [navigationSdk, "text/javascript; charset=utf-8"]],
-]));
-
-const TILE_KEY = "lkmaps/sri-lanka.pmtiles";
+]), createPlatformApi(TILE_KEY));
 const cors = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Methods": "GET, HEAD, OPTIONS",
@@ -48,6 +48,12 @@ let osrmRequestQueue = Promise.resolve();
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+    let path;
+    try { path = decodeURIComponent(url.pathname); }
+    catch { return new Response("Not Found", { status: 404 }); }
+    if (/(?:^|\/)_sifric_index(?:\/|$)/i.test(path)) {
+      return new Response("Not Found", { status: 404 });
+    }
     if (url.pathname === "/developer" || url.pathname.startsWith("/developer/")) {
       return handleDeveloper(request, env, url.pathname);
     }

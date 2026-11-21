@@ -33,6 +33,20 @@ All developer-facing API paths below use the prefix `/developer/api/v1`. Request
 | POST `/roads/nearest`, `/roads/match` | The same coordinates and mode contract. Nearest takes one point, and match takes 2–25 points. |
 | POST `/optimize` | VROOM JSON with `vehicles` plus `jobs`, `shipments`, or both. The optimizer consumes optional vehicle capacities and time windows. |
 
+## Cloudflare Workers API
+
+The authenticated Worker serves `/health`, `/capabilities`, `/places/search`,
+`/places/nearby`, `/places/:id`, `/timezone`, `/elevation`, and
+`/tiles/:z/:x/:y.pbf` without the Node backend. The deployment builds search shards
+from the Sifric index. Search starts with at least two characters of an indexed
+name or word. Nearby search supports up to 5 km. Indexed forward and reverse
+geocoding are available with place-level precision when a separate geocoder is
+absent.
+
+Elevation samples existing Mapzen Terrarium data from AWS Open Data. The tile
+API reads vector byte ranges from the existing Sifric R2 archive. These endpoints
+use the same developer authentication as the rest of the portal.
+
 ## Backend container
 
 Build from the Sifric Maps checkout root, then carry the image to a Sifric-operated

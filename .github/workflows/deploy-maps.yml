@@ -63,8 +63,15 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: wrangler r2 object put mazo-maps/lkmaps/sri-lanka.pmtiles --file build/deploy/sri-lanka.pmtiles --remote
 
-      - name: Prepare worker style
-        run: cp config/style/mazo-basemap.json worker/style.json
+      - name: Prepare Worker assets
+        run: |
+          npm install --no-save --no-audit --no-fund maplibre-gl@5
+          mkdir -p worker/public/vendor
+          cp node_modules/maplibre-gl/dist/maplibre-gl.js worker/public/vendor/maplibre-gl.js
+          cp node_modules/maplibre-gl/dist/maplibre-gl.css worker/public/vendor/maplibre-gl.css
+          cp node_modules/pmtiles/dist/pmtiles.js worker/public/vendor/pmtiles.js
+          python3 scripts/build_platform_index.py worker/public/assets/places-search.json.gz worker/public/_sifric_index
+          cp config/style/mazo-basemap.json worker/style.json
 
       - name: Deploy worker
         working-directory: worker

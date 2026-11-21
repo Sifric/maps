@@ -4,5 +4,9 @@
   "private": true,
   "scripts": {
     "tiles": "python3 scripts/build_places_tiles.py"
+  },
+  "dependencies": {
+    "fast-png": "7.0.1",
+    "pmtiles": "4.5.0"
   }
 }
