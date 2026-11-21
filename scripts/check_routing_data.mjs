@@ -4,7 +4,7 @@ import { join } from 'node:path';
 import { routingRequest } from '../worker/routing.mjs';
 
 const directory = process.argv[2];
-for (const mode of process.argv.slice(3).length ? process.argv.slice(3) : ['drive', 'walk', 'cycle']) {
+for (const mode of process.argv.slice(3).length ? process.argv.slice(3) : ['drive', 'walk', 'cycle', 'motorcycle', 'tuk']) {
   const file = join(directory, mode + '.bin');
   const { size, mtimeMs } = await stat(file);
   const etag = String(mtimeMs);
@@ -31,6 +31,14 @@ for (const mode of process.argv.slice(3).length ? process.argv.slice(3) : ['driv
   const matrix = await routingRequest(bucket, 'matrix', { mode, coordinates });
   assert.equal(matrix.distances[0][0], 0);
   assert.equal(matrix.distances[0][1], route.routes[0].distance);
+  if (mode === 'motorcycle' || mode === 'tuk') {
+    const { routes: [southern] } = await routingRequest(bucket, 'routes', {
+      mode, coordinates: [coordinates[0], [80.221, 6.032]],
+    });
+    assert.ok(southern.distance > 100000 && southern.distance < 180000);
+    const speed = mode === 'tuk' ? 40 : 80;
+    assert.ok(southern.distance * 3.6 / southern.duration <= speed);
+  }
   if (mode === 'drive') {
     const { routes: [regional] } = await routingRequest(bucket, 'routes', {
       mode, coordinates: [[79.8612, 6.9271], [80.635, 7.293]], speedLimits: true,

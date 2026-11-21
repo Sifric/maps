@@ -54,7 +54,10 @@ int main(int argc, char** argv) {
         return 1;
     }
     const std::string mode = argv[3];
-    const bool car = mode == "drive";
+    const bool drive = mode == "drive";
+    const bool motorcycle = mode == "motorcycle";
+    const bool tuk = mode == "tuk";
+    const bool car = drive || motorcycle || tuk;
     const bool cycle = mode == "cycle";
     if (!car && !cycle && mode != "walk") return 1;
     auto log = [](const std::string& msg) { std::cerr << msg << '\n'; };
@@ -63,6 +66,12 @@ int main(int argc, char** argv) {
             const std::string highway = tags["highway"] ? tags["highway"] : "";
             if (highway.empty()) return false;
             if (car) {
+                if (!drive) {
+                    const std::string motorroad = tags["motorroad"] ? tags["motorroad"] : "";
+                    if (highway == "motorway" || highway == "motorway_link" || motorroad == "yes") return false;
+                    const char* tag = motorcycle ? tags["motorcycle"] : nullptr;
+                    if (tag && (std::string(tag) == "no" || std::string(tag) == "private")) return false;
+                }
                 const std::string vehicle = tags["motor_vehicle"] ? tags["motor_vehicle"] : "";
                 const std::string motorcar = tags["motorcar"] ? tags["motorcar"] : "";
                 if (vehicle == "private" || motorcar == "private" || motorcar == "no") return false;
@@ -80,13 +89,16 @@ int main(int argc, char** argv) {
             return is_osm_way_used_by_pedestrians(id, tags);
         }, log, false);
     std::vector<unsigned> speed(mapping.is_routing_way.population_count());
-    std::vector<uint16_t> posted_forward(car ? speed.size() : 0), posted_backward(car ? speed.size() : 0);
+    std::vector<uint16_t> posted_forward(drive ? speed.size() : 0), posted_backward(drive ? speed.size() : 0);
     auto graph = load_osm_routing_graph_from_pbf(argv[1], mapping,
         [&](uint64_t id, unsigned way, const TagMap& tags) {
-            speed[way] = car ? std::clamp(get_osm_way_speed(id, tags), 1u, 130u) : cycle ? 16 : 5;
+            const unsigned top_speed = tuk ? 40 : motorcycle ? 80 : 130;
+            speed[way] = car ? std::clamp(get_osm_way_speed(id, tags), 1u, top_speed) : cycle ? 16 : 5;
             if (car) {
-                posted_forward[way] = posted_limit(tags, "maxspeed:forward", "maxspeed:forward:conditional");
-                posted_backward[way] = posted_limit(tags, "maxspeed:backward", "maxspeed:backward:conditional");
+                if (drive) {
+                    posted_forward[way] = posted_limit(tags, "maxspeed:forward", "maxspeed:forward:conditional");
+                    posted_backward[way] = posted_limit(tags, "maxspeed:backward", "maxspeed:backward:conditional");
+                }
                 return get_osm_car_direction_category(id, tags);
             }
             if (cycle) return get_osm_bicycle_direction_category(id, tags);
@@ -204,7 +216,7 @@ int main(int argc, char** argv) {
     write_column(out, shape_boundaries);
     core_size = out.tellp();
     out.write(reinterpret_cast<const char*>(shapes.data()), sizeof(float) * shapes.size());
-    if (car) {
+    if (drive) {
         std::vector<uint16_t> limits;
         limits.reserve(graph.arc_count());
         for (unsigned arc = 0; arc < graph.arc_count(); ++arc) {

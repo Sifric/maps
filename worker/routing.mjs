@@ -1,6 +1,6 @@
 const missing = 0xffffffff;
 const metersPerDegree = 111195;
-const routingModes = ['drive', 'walk', 'cycle'];
+const routingModes = ['drive', 'walk', 'cycle', 'motorcycle', 'tuk'];
 const graphPrefix = 'lkmaps/routing/v1/';
 const gridWidth = 500;
 const gridHeight = 600;
@@ -404,7 +404,7 @@ export async function availableRoutingModes(bucket) {
 
 export async function routingRequest(bucket, operation, body) {
   const mode = body.mode ?? 'drive';
-  if (!routingModes.includes(mode)) throw new RoutingError(400, 'Choose drive, walk, or cycle.');
+  if (!routingModes.includes(mode)) throw new RoutingError(400, 'Choose drive, walk, cycle, motorcycle, or tuk.');
   if (body.speedLimits !== undefined && (typeof body.speedLimits !== 'boolean' || mode !== 'drive' || operation === 'matrix')) {
     throw new RoutingError(400, 'Speed limits are available for drive routes and traces.');
   }

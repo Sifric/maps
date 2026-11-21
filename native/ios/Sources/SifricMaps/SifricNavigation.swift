@@ -28,7 +28,7 @@ public final class SifricNavigation {
 
     public func start(destination: CLLocationCoordinate2D, mode: String = "drive") throws {
         guard (78...82.5).contains(destination.longitude), (5...10.5).contains(destination.latitude),
-              ["drive", "walk", "cycle"].contains(mode) else { throw SifricError.invalidCoordinates }
+              ["drive", "walk", "cycle", "motorcycle", "tuk"].contains(mode) else { throw SifricError.invalidCoordinates }
         stop()
         self.destination = destination
         self.mode = mode

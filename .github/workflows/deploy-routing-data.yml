@@ -7,7 +7,7 @@ on:
         type: choice
         description: Dataset to refresh
         default: all
-        options: [all, drive, walk, cycle, relief, photos, cells]
+        options: [all, drive, walk, cycle, motorcycle, tuk, light-vehicles, relief, photos, cells]
 
 permissions:
   contents: read
@@ -42,7 +42,8 @@ jobs:
             'https://download.geofabrik.de/asia/sri-lanka/sri-lanka-latest.osm.pbf' -o /tmp/sri-lanka.osm.pbf
           mkdir -p /tmp/sifric-graphs
           modes=("$PROFILE")
-          if [ "$PROFILE" = all ]; then modes=(drive walk cycle); fi
+          if [ "$PROFILE" = all ]; then modes=(drive walk cycle motorcycle tuk); fi
+          if [ "$PROFILE" = light-vehicles ]; then modes=(motorcycle tuk); fi
           for mode in "${modes[@]}"; do
             /tmp/build-routing-graph /tmp/sri-lanka.osm.pbf "/tmp/sifric-graphs/${mode}.bin" "$mode"
           done

@@ -48,8 +48,9 @@ public final class SifricNavigation implements AutoCloseable {
             longitude < 78 || longitude > 82.5 || latitude < 5 || latitude > 10.5) {
             throw new IllegalArgumentException("Choose a destination in Sri Lanka.");
         }
-        if (!"drive".equals(travelMode) && !"walk".equals(travelMode) && !"cycle".equals(travelMode)) {
-            throw new IllegalArgumentException("Choose drive, walk, or cycle.");
+        if (!"drive".equals(travelMode) && !"walk".equals(travelMode) && !"cycle".equals(travelMode)
+            && !"motorcycle".equals(travelMode) && !"tuk".equals(travelMode)) {
+            throw new IllegalArgumentException("Choose drive, walk, cycle, motorcycle, or tuk.");
         }
         stop();
         active = true;

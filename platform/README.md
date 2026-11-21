@@ -62,8 +62,9 @@ Share a place search with `/developer/?q=Colombo` or open a pinned location
 with `/developer/embed/?lon=79.86&lat=6.92&zoom=15&pin=1`. Both links require
 developer access. The public map's existing place sharing uses `/?place=ID`.
 
-The Worker supports POST `/routes` and `/matrix` for `drive`, `walk`, and
-`cycle`. Pass coordinates in `[longitude, latitude]` order. Routes accept
+The Worker supports POST `/routes` and `/matrix` for `drive`, `walk`, `cycle`,
+`motorcycle`, and `tuk`. Motorcycle and tuk-tuk profiles exclude expressways
+and marked motor-only roads. Pass coordinates in `[longitude, latitude]` order. Routes accept
 2–8 coordinates and return a GeoJSON path with estimated duration in seconds,
 distance in meters, and geometry-derived maneuvers. Matrices accept 2–6
 coordinates with optional `sources` and `destinations` index arrays. An
