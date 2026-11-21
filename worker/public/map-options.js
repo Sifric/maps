@@ -504,7 +504,7 @@ export function createMapOptions(map, { baseStyle, status }) {
             !raised &&
             l.layout?.visibility !== "none",
         );
-    for (const id of ["mazo-places-dot", "mazo-places-icon", "mazo-places-promoted"])
+    for (const id of ["mazo-places-dot", "mazo-places-icon"])
       visibility(
         id,
         settings.places && (settings.type !== "satellite" || settings.labels),
