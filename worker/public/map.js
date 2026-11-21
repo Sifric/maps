@@ -129,6 +129,9 @@ function markerImage(kind, canvas = document.createElement("canvas"), progress =
     c.arc(32, 65, 9, 0, Math.PI * 2);
     c.fill();
     c.stroke();
+    if (progress === 0) {
+      return { width: 128, height: 144, data: c.getImageData(0, 0, 128, 144).data };
+    }
     const scale = 0.36 + 0.64 * progress;
     c.translate(32, 65);
     c.scale(scale, scale);
