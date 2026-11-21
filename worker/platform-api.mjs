@@ -126,6 +126,13 @@ export function createPlatformApi(tileKey, renderStaticMap) {
     const prefix = '/developer/api/v1';
     if (!path.startsWith(prefix + '/')) return null;
     const endpoint = path.slice(prefix.length);
+    const sdk = /^\/sdk\/(android\/sifric-maps\.aar|ios\/sifric-maps\.zip)$/u.exec(endpoint)?.[1];
+    if (sdk) {
+      if (request.method !== 'GET') return result({ error: 'Use GET.' }, 405);
+      const artifact = await env.TILES_BUCKET.get('lkmaps/sdk/v1/' + sdk);
+      if (!artifact) return result({ error: 'The SDK package is unavailable.' }, 404);
+      return new Response(artifact.body, { headers: { 'Content-Type': 'application/octet-stream' } });
+    }
     if (endpoint === '/address/validate') {
       if (request.method !== 'POST') return result({ error: 'Use POST.' }, 405);
       try {

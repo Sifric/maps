@@ -1,0 +1,63 @@
+name: Publish Sifric native SDKs
+
+on:
+  workflow_dispatch:
+    inputs:
+      platform:
+        type: choice
+        description: Native platform to build and publish
+        default: all
+        options: [all, android, ios]
+
+permissions:
+  contents: read
+
+jobs:
+  android:
+    if: inputs.platform == 'all' || inputs.platform == 'android'
+    runs-on: ubuntu-24.04
+    environment: production
+    timeout-minutes: 20
+    concurrency: sifric-android-sdk
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.13'
+      - name: Compile Android library
+        working-directory: native/android
+        run: gradle --no-daemon assembleRelease lintRelease
+      - name: Publish Android AAR
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          npx --yes wrangler@4.166.0 r2 object put 'mazo-maps/lkmaps/sdk/v1/android/sifric-maps.aar' \
+            --file native/android/build/outputs/aar/sifric-maps-release.aar --content-type application/octet-stream --remote
+
+  ios:
+    if: inputs.platform == 'all' || inputs.platform == 'ios'
+    runs-on: macos-15
+    environment: production
+    timeout-minutes: 25
+    concurrency: sifric-ios-sdk
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile Swift package for iOS Simulator
+        working-directory: native/ios
+        run: |
+          xcodebuild -scheme SifricMaps -configuration Release -destination 'generic/platform=iOS Simulator' \
+            -derivedDataPath /tmp/sifric-ios-build CODE_SIGNING_ALLOWED=NO build
+      - name: Package Swift sources
+        run: git archive --format=zip HEAD:native/ios > /tmp/sifric-maps.zip
+      - name: Publish Swift package
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          npx --yes wrangler@4.166.0 r2 object put 'mazo-maps/lkmaps/sdk/v1/ios/sifric-maps.zip' \
+            --file /tmp/sifric-maps.zip --content-type application/zip --remote

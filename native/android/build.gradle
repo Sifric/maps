@@ -1,0 +1,21 @@
+plugins {
+    id 'com.android.library' version '8.11.1'
+}
+
+android {
+    namespace 'org.sifric.maps'
+    compileSdk 35
+
+    defaultConfig {
+        minSdk 23
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+    api 'org.maplibre.gl:android-sdk:13.6.1'
+}
