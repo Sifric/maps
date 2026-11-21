@@ -1,0 +1,16 @@
+.selected-marker {
+  width: 36px;
+  height: 42px;
+  filter: drop-shadow(0 2px 2px #0004);
+}
+.selected-marker .icon {
+  width: 36px;
+  height: 42px;
+  fill: #ea4335;
+  stroke: #ea4335;
+  stroke-width: 0.5;
+}
+.selected-marker .icon path + path {
+  fill: #b3261e;
+  stroke: #b3261e;
+}

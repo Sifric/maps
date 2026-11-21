@@ -1,3 +1,4 @@
+import { selectedPlaceElement } from "/place-markers.js";
 import { createSifricMap } from "./sifric-maps.js";
 
 const query = new URLSearchParams(location.search);
@@ -18,7 +19,10 @@ try {
   });
   map.once("idle", () => { document.getElementById("map").dataset.ready = "true"; });
   map.addControl(new maplibregl.NavigationControl({ showCompass: false }));
-  if (center && query.get("pin") === "1") new maplibregl.Marker().setLngLat(center).addTo(map);
+  if (center && query.get("pin") === "1") {
+    new maplibregl.Marker({ element: selectedPlaceElement(), anchor: "bottom" })
+      .setLngLat(center).addTo(map);
+  }
 } catch {
   const status = document.getElementById("status");
   status.hidden = false;

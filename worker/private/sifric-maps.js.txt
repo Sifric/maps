@@ -1,3 +1,5 @@
+import { registerPlaceImages, stylePlaces } from "/place-markers.js";
+
 const libraryLoads = new Map();
 
 function loadScript(url) {
@@ -25,9 +27,10 @@ export async function createSifricMap(container, options = {}) {
     link.href = css;
     document.head.append(link);
   }
-  await Promise.all([
+  const [, , styleResponse] = await Promise.all([
     globalThis.maplibregl ? undefined : loadScript(new URL("/vendor/maplibre-gl.js", base).href),
     globalThis.pmtiles ? undefined : loadScript(new URL("/vendor/pmtiles.js", base).href),
+    fetch(new URL("/style.json", base)),
   ]);
   const library = globalThis.maplibregl;
   if (!registered.has(library)) {
@@ -35,15 +38,19 @@ export async function createSifricMap(container, options = {}) {
     registered.add(library);
   }
   const { baseUrl, ...mapOptions } = options;
-  return new library.Map({
+  if (!styleResponse.ok) throw new Error("Could not load the Sifric map style.");
+  const style = stylePlaces(await styleResponse.json());
+  const map = new library.Map({
     center: [80.7, 7.9],
     zoom: 7,
     maxZoom: 20,
     renderWorldCopies: false,
     ...mapOptions,
     container,
-    style: new URL("/style.json", base).href,
+    style,
   });
+  registerPlaceImages(map);
+  return map;
 }
 
 export function createSifricClient(apiBase) {
