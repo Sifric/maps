@@ -1,8 +1,11 @@
 package org.sifric.maps;
 
 import android.location.Location;
+import android.content.Context;
+import android.media.AudioAttributes;
 import android.os.Handler;
 import android.os.Looper;
+import android.speech.tts.TextToSpeech;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -11,10 +14,11 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.Locale;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-/** Foreground guidance for host-provided Android location fixes. Call on the main thread. */
+/** Guidance for host-provided Android location fixes. Call on the main thread. */
 public final class SifricNavigation implements AutoCloseable {
     public interface Listener {
         void onRoute(JSONObject route, boolean rerouted);
@@ -36,10 +40,29 @@ public final class SifricNavigation implements AutoCloseable {
     private double[] destination;
     private Route route;
     private double progress;
+    private TextToSpeech speech;
+    private boolean speechReady;
+    private Turn spoken;
 
     public SifricNavigation(SifricClient client, Listener listener) {
         this.client = Objects.requireNonNull(client);
         this.listener = Objects.requireNonNull(listener);
+    }
+
+    public void enableVoice(Context context) {
+        if (closed) throw new IllegalStateException("Navigation session is closed.");
+        if (speech != null) return;
+        speech = new TextToSpeech(context.getApplicationContext(), status -> main.post(() -> {
+            if (speech == null || closed || status != TextToSpeech.SUCCESS) return;
+            speechReady = speech.setLanguage(Locale.ENGLISH) >= TextToSpeech.LANG_AVAILABLE;
+            speech.setAudioAttributes(new AudioAttributes.Builder()
+                .setUsage(AudioAttributes.USAGE_ASSISTANCE_NAVIGATION_GUIDANCE)
+                .setContentType(AudioAttributes.CONTENT_TYPE_SPEECH).build());
+        }));
+    }
+
+    private void speak(String text) {
+        if (speechReady) speech.speak(text, TextToSpeech.QUEUE_FLUSH, null, "sifric-maneuver");
     }
 
     public void start(double longitude, double latitude, String travelMode) {
@@ -83,12 +106,21 @@ public final class SifricNavigation implements AutoCloseable {
         double remaining = route.length - progress;
         if (remaining < 25 && route.distanceToEnd(lon, lat) < 25 && location.getAccuracy() <= 25) {
             stop();
+            speak("You have arrived.");
             listener.onArrival();
         } else {
             JSONObject next = null;
             for (Turn turn : route.turns) {
                 if (turn.along > progress + 5) {
                     next = turn.maneuver;
+                    if (speechReady && turn != spoken && turn.along - progress <= 120 &&
+                        !"arrive".equals(next.optString("type"))) {
+                        spoken = turn;
+                        String turnDirection = next.optString("modifier");
+                        speak(turnDirection.equals("uturn") ? "Make a U-turn." :
+                            turnDirection.isEmpty() || turnDirection.equals("straight") ? "Continue straight." :
+                            "Turn " + turnDirection + ".");
+                    }
                     break;
                 }
             }
@@ -103,11 +135,16 @@ public final class SifricNavigation implements AutoCloseable {
         route = null;
         progress = 0;
         outside = 0;
+        spoken = null;
+        if (speech != null) speech.stop();
     }
 
     @Override public void close() {
         stop();
         closed = true;
+        if (speech != null) speech.shutdown();
+        speech = null;
+        speechReady = false;
         requests.shutdownNow();
     }
 

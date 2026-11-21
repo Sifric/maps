@@ -4,13 +4,42 @@ import SwiftUI
 
 @MainActor
 public enum SifricMap {
+    public enum MapType: String { case `default`, satellite, terrain }
+    public enum Theme { case light, dark, system }
     public static let styleURL = URL(string: "https://maps.sifric.workers.dev/style.json")!
+
+    public static func appearance(_ type: MapType, theme: Theme = .system,
+                                  traits: UITraitCollection = .current) -> URL {
+        let dark = theme == .dark || (theme == .system && traits.userInterfaceStyle == .dark)
+        return URL(string: "https://maps.sifric.workers.dev/api/v1/native-style.json?type=\(type.rawValue)&theme=\(dark ? "dark" : "light")")!
+    }
 
     public static func makeView(center: CLLocationCoordinate2D = .init(latitude: 7.9, longitude: 80.7),
                                 zoom: Double = 7, style: URL? = nil) -> MLNMapView {
-        let map = MLNMapView(frame: .zero, styleURL: style ?? styleURL)
+        let map = MLNMapView(frame: .zero, styleURL: style ?? appearance(.default))
         map.setCenter(center, zoomLevel: zoom, animated: false)
         return map
+    }
+
+    public static func fitBounds(_ bounds: MLNCoordinateBounds, on map: MLNMapView,
+                                 padding: UIEdgeInsets = .zero, animated: Bool = true) {
+        map.setVisibleCoordinateBounds(bounds, edgePadding: padding, animated: animated)
+    }
+
+    @discardableResult
+    public static func addPolyline(_ coordinates: [CLLocationCoordinate2D], to map: MLNMapView) -> MLNPolyline? {
+        guard coordinates.count >= 2 else { return nil }
+        let line = MLNPolyline(coordinates: coordinates, count: UInt(coordinates.count))
+        map.addAnnotation(line)
+        return line
+    }
+
+    @discardableResult
+    public static func addPolygon(_ coordinates: [CLLocationCoordinate2D], to map: MLNMapView) -> MLNPolygon? {
+        guard coordinates.count >= 3 else { return nil }
+        let polygon = MLNPolygon(coordinates: coordinates, count: UInt(coordinates.count))
+        map.addAnnotation(polygon)
+        return polygon
     }
 
     @discardableResult

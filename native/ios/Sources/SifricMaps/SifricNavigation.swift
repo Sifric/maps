@@ -1,4 +1,5 @@
 import CoreLocation
+import AVFoundation
 import Foundation
 
 @MainActor
@@ -20,6 +21,17 @@ public final class SifricNavigation {
     private var offRoute = 0
     private var lastFix = Date.distantPast
     private var lastReroute = Date.distantPast
+    private let speech = AVSpeechSynthesizer()
+    public var voiceEnabled = false
+    private var spokenPosition: Double?
+
+    private func speak(_ text: String) {
+        guard voiceEnabled else { return }
+        speech.stopSpeaking(at: .immediate)
+        let utterance = AVSpeechUtterance(string: text)
+        utterance.voice = AVSpeechSynthesisVoice(language: "en")
+        speech.speak(utterance)
+    }
 
     public init(client: SifricClient, onEvent: @escaping (Event) -> Void) {
         self.client = client
@@ -60,10 +72,20 @@ public final class SifricNavigation {
         let remaining = plan.length - progress
         if remaining <= 25 && Plan.distance(point, plan.end) <= 25 && location.horizontalAccuracy <= 25 {
             stop()
+            speak("You have arrived.")
             onEvent(.arrived)
         } else {
-            let next = plan.turns.first { $0.along > progress + 5 }?.maneuver
-            onEvent(.progress(remainingMeters: remaining, nextManeuver: next))
+            let next = plan.turns.first { $0.along > progress + 5 }
+            if let next, voiceEnabled, next.along - progress <= 120,
+               next.along != spokenPosition, next.maneuver.type != "arrive" {
+                spokenPosition = next.along
+                switch next.maneuver.modifier {
+                case "uturn": speak("Make a U-turn.")
+                case "straight", nil: speak("Continue straight.")
+                case let direction?: speak("Turn \(direction).")
+                }
+            }
+            onEvent(.progress(remainingMeters: remaining, nextManeuver: next?.maneuver))
         }
     }
 
@@ -74,6 +96,8 @@ public final class SifricNavigation {
         plan = nil
         progress = 0
         offRoute = 0
+        spokenPosition = nil
+        speech.stopSpeaking(at: .immediate)
     }
 
     private func makeRoute(from origin: [Double], to destination: CLLocationCoordinate2D, rerouting: Bool) {
@@ -87,6 +111,7 @@ public final class SifricNavigation {
                 plan = try Plan(route)
                 progress = 0
                 offRoute = 0
+                spokenPosition = nil
                 request = nil
                 onEvent(.route(route, rerouted: rerouting))
             } catch {
