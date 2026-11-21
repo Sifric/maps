@@ -7,7 +7,7 @@ on:
         type: choice
         description: Dataset to refresh
         default: all
-        options: [all, drive, walk, cycle, motorcycle, tuk, light-vehicles, relief, photos, cells]
+        options: [all, drive, walk, cycle, motorcycle, tuk, light-vehicles, pack-routing, relief, photos, cells]
 
 permissions:
   contents: read
@@ -23,7 +23,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Prepare graph compiler
-        if: inputs.mode != 'relief' && inputs.mode != 'photos' && inputs.mode != 'cells'
+        if: inputs.mode != 'relief' && inputs.mode != 'photos' && inputs.mode != 'cells' && inputs.mode != 'pack-routing'
         run: |
           set -euo pipefail
           git init /tmp/routingkit
@@ -33,7 +33,7 @@ jobs:
           g++ -std=c++17 -O3 -DNDEBUG -I/tmp/routingkit/include scripts/build_routing_graph.cpp \
             /tmp/routingkit/lib/libroutingkit.a -fopenmp -lz -pthread -o /tmp/build-routing-graph
       - name: Build Sri Lanka graph artifacts
-        if: inputs.mode != 'relief' && inputs.mode != 'photos' && inputs.mode != 'cells'
+        if: inputs.mode != 'relief' && inputs.mode != 'photos' && inputs.mode != 'cells' && inputs.mode != 'pack-routing'
         env:
           PROFILE: ${{ inputs.mode }}
         run: |
@@ -49,7 +49,7 @@ jobs:
           done
           node scripts/check_routing_data.mjs /tmp/sifric-graphs "${modes[@]}"
       - name: Publish routing objects to the Maps bucket
-        if: inputs.mode != 'relief' && inputs.mode != 'photos' && inputs.mode != 'cells'
+        if: inputs.mode != 'relief' && inputs.mode != 'photos' && inputs.mode != 'cells' && inputs.mode != 'pack-routing'
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
@@ -108,3 +108,25 @@ jobs:
           python3 scripts/build_cell_locations.py /tmp/cell-towers.csv.gz /tmp/lk-cells.bin
           npx --yes wrangler@4.166.0 r2 object put 'mazo-maps/lkmaps/geolocation/v1/lk-2026-10-06.bin' \
             --file /tmp/lk-cells.bin --content-type application/octet-stream --remote
+      - name: Pack the deployed routing profiles
+        if: inputs.mode == 'pack-routing' || inputs.mode == 'all' || inputs.mode == 'drive' || inputs.mode == 'walk' || inputs.mode == 'cycle' || inputs.mode == 'motorcycle' || inputs.mode == 'tuk' || inputs.mode == 'light-vehicles'
+        env:
+          PROFILE: ${{ inputs.mode }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/sifric-packed
+          if [ "$PROFILE" = pack-routing ]; then
+            mkdir -p /tmp/sifric-graphs
+            for mode in drive walk cycle motorcycle tuk; do
+              npx --yes wrangler@4.166.0 r2 object get "mazo-maps/lkmaps/routing/v1/${mode}.bin" \
+                --file "/tmp/sifric-graphs/${mode}.bin" --remote
+            done
+          fi
+          for file in /tmp/sifric-graphs/*.bin; do
+            name="$(basename "$file")"
+            python3 scripts/pack_routing_graph.py "$file" "/tmp/sifric-packed/$name"
+            npx --yes wrangler@4.166.0 r2 object put "mazo-maps/lkmaps/routing/v2/$name" \
+              --file "/tmp/sifric-packed/$name" --content-type application/octet-stream --remote
+          done
