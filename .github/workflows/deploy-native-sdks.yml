@@ -21,6 +21,8 @@ jobs:
     concurrency: sifric-android-sdk
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
@@ -47,11 +49,19 @@ jobs:
     concurrency: sifric-ios-sdk
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - name: Compile Swift package for iOS Simulator
         working-directory: native/ios
         run: |
-          xcodebuild -scheme SifricMaps -configuration Release -destination 'generic/platform=iOS Simulator' \
-            -derivedDataPath /tmp/sifric-ios-build CODE_SIGNING_ALLOWED=NO build
+          for attempt in 1 2 3; do
+            if xcodebuild -scheme SifricMaps -configuration Release -destination 'generic/platform=iOS Simulator' \
+              -derivedDataPath /tmp/sifric-ios-build CODE_SIGNING_ALLOWED=NO build; then
+              exit 0
+            fi
+            if [ "$attempt" -lt 3 ]; then sleep 5; fi
+          done
+          exit 1
       - name: Package Swift sources
         run: git archive --format=zip HEAD:native/ios > /tmp/sifric-maps.zip
       - name: Publish Swift package
