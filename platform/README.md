@@ -91,10 +91,14 @@ support one. Set `speedLimits: true` on a drive route or trace to include
 numeric limits explicitly tagged on road segments in OpenStreetMap. Speed spans
 reference indexes in the returned geometry; unknown limits are `null`.
 
-POST `/optimize` accepts up to four drive vehicles, ten stops, and six distinct
+POST `/optimize` accepts up to eight drive vehicles, sixteen stops, and twenty distinct
 locations. The insertion heuristic uses the Sifric travel matrix and honors
-service times, vehicle and job time windows, capacity vectors, and paired
-pickup-delivery precedence. Infeasible jobs are returned under `unassigned`.
+service and setup times, vehicle and job time windows, capacity vectors, and paired
+pickup-delivery precedence. It inserts higher-priority feasible tasks first.
+Use `skills` to constrain assignment and `max_tasks`, `max_travel_time`, and
+`max_distance` to limit a vehicle's stops, travel seconds, and distance in meters.
+Fleet-wide `avoidTolls` and `avoidHighways` apply to the travel matrix.
+Infeasible jobs are returned under `unassigned`.
 If a vehicle has no end location, its route ends at its last assigned stop.
 
 POST `/address/validate` accepts `addressLines`, `locality`, `postalCode` and

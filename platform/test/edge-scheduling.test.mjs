@@ -40,6 +40,31 @@ test('address validation preserves leading zeroes and flags town mismatches', ()
   assert.equal(validateAddress({ locality: 'Kandy' }).suggestions[0].postalCode, '20000');
 });
 
+test('fleet planner assigns qualified vehicles within booking, distance, and travel limits', async () => {
+  const start = [79.86, 6.92], stop = [79.87, 6.92];
+  const matrix = { durations: [[0, 10], [10, 0]], distances: [[0, 150], [150, 0]] };
+  const result = await optimizeFleet({}, {
+    avoidHighways: true,
+    vehicles: [
+      { id: 1, start, skills: [7], max_tasks: 1, max_distance: 150, max_travel_time: 10 },
+      { id: 2, start, skills: [7], max_travel_time: 9 },
+      { id: 3, start, skills: [7], max_distance: 149 },
+      { id: 4, start, skills: [6] },
+    ],
+    jobs: [
+      { id: 1, location: stop, skills: [7], priority: 1 },
+      { id: 2, location: stop, skills: [7], priority: 5, setup: 20 },
+    ],
+  }, async (_bucket, _operation, request) => {
+    assert.equal(request.avoidHighways, true);
+    return matrix;
+  });
+  assert.deepEqual(result.unassigned.map(job => job.id), [1]);
+  assert.equal(result.routes[0].vehicle, 1);
+  assert.equal(result.routes[0].steps.at(-1).id, 2);
+  assert.equal(result.routes[0].steps.at(-1).setup, 20);
+});
+
 test('cellular estimates deduplicate observations and report coverage from the local index', async () => {
   const bytes = new Uint8Array(44);
   bytes.set(new TextEncoder().encode('SIFRICC1'));

@@ -1,4 +1,4 @@
-import { routingRequest, RoutingError } from './routing.mjs';
+import { routingProfile, routingRequest, RoutingError } from './routing.mjs';
 
 function invalid(message) {
   throw new RoutingError(400, message);
@@ -21,12 +21,28 @@ function windowList(value) {
   }).sort((a, b) => a[0] - b[0]);
 }
 
+function skills(values) {
+  if (values === undefined) return [];
+  if (!Array.isArray(values) || values.length > 20) invalid('Use at most 20 skill IDs.');
+  return values.map(value => integer(value, 'skill ID'));
+}
+
+function priority(value) {
+  const rank = integer(value ?? 0, 'priority');
+  if (rank > 100) invalid('Priority must be between 0 and 100.');
+  return rank;
+}
+
+function limit(value, label) {
+  return value === undefined ? Infinity : integer(value, label);
+}
+
 function parse(body) {
   const { vehicles, jobs = [], shipments = [] } = body;
-  if (!Array.isArray(vehicles) || !vehicles.length || vehicles.length > 4 ||
+  if (!Array.isArray(vehicles) || !vehicles.length || vehicles.length > 8 ||
       !Array.isArray(jobs) || !Array.isArray(shipments) || !jobs.length && !shipments.length ||
-      jobs.length + 2 * shipments.length > 10) {
-    invalid('Provide 1 to 4 vehicles and 1 to 10 job, pickup, or delivery stops.');
+      jobs.length + 2 * shipments.length > 16) {
+    invalid('Provide 1 to 8 vehicles and 1 to 16 job, pickup, or delivery stops.');
   }
   const locations = [];
   const index = new Map();
@@ -38,7 +54,7 @@ function parse(body) {
     }
     const key = point.join(',');
     if (!index.has(key)) {
-      if (locations.length === 6) invalid('Use at most six distinct locations.');
+      if (locations.length === 20) invalid('Use at most 20 distinct locations.');
       index.set(key, locations.length);
       locations.push(point);
     }
@@ -60,34 +76,43 @@ function parse(body) {
   }
   function stop(value, type, pickup, delivery) {
     if (!value || typeof value !== 'object') invalid('Each stop needs an ID and location.');
-    if (value.skills !== undefined || value.priority !== undefined || value.setup !== undefined) {
-      invalid('This fleet planner supports service durations, time windows, and capacity constraints.');
-    }
     return {
       id: id(value.id, type), type, location: location(value.location),
       service: integer(value.service ?? 0, 'service duration'),
+      setup: integer(value.setup ?? 0, 'setup duration'),
+      skills: skills(value.skills),
+      priority: priority(value.priority),
       windows: windowList(value.time_windows), pickup, delivery,
     };
   }
   const fleet = vehicles.map(vehicle => {
     if (!vehicle?.start || (vehicle.profile ?? 'drive') !== 'drive') invalid('Each vehicle needs a start and the drive profile.');
-    if (vehicle.breaks !== undefined || vehicle.skills !== undefined || vehicle.max_tasks !== undefined ||
-        vehicle.max_travel_time !== undefined || vehicle.max_distance !== undefined || vehicle.costs !== undefined) {
-      invalid('This fleet planner supports vehicle time windows and capacities.');
+    if (vehicle.breaks !== undefined || vehicle.costs !== undefined) {
+      invalid('Driver breaks and custom vehicle costs are unavailable.');
     }
     return {
       id: id(vehicle.id, 'vehicle'),
       start: location(vehicle.start), end: vehicle.end === undefined ? null : location(vehicle.end),
       capacity: amounts(vehicle.capacity), window: windowList(vehicle.time_window === undefined ? undefined : [vehicle.time_window])[0],
+      skills: new Set(skills(vehicle.skills)),
+      maxStops: limit(vehicle.max_tasks, 'maximum stop count'),
+      maxTravel: limit(vehicle.max_travel_time, 'maximum travel duration'),
+      maxDistance: limit(vehicle.max_distance, 'maximum distance'),
     };
   });
   const tasks = jobs.map(job => [stop(job, 'job', amounts(job?.pickup), amounts(job?.delivery))]);
   for (const shipment of shipments) {
     const amount = amounts(shipment?.amount);
-    tasks.push([
+    const stops = [
       stop(shipment?.pickup, 'pickup', amount, amounts()),
       stop(shipment?.delivery, 'delivery', amounts(), amount),
-    ]);
+    ];
+    const shipmentSkills = skills(shipment.skills);
+    for (const item of stops) {
+      item.skills.push(...shipmentSkills);
+      item.priority = Math.max(item.priority, priority(shipment.priority));
+    }
+    tasks.push(stops);
   }
   return { fleet, tasks, locations };
 }
@@ -109,14 +134,15 @@ function evaluate(vehicle, stops, matrix) {
     const window = stop.windows.find(([, end]) => arrival <= end);
     if (!window) return null;
     const serviceStart = Math.max(arrival, window[0]);
-    start = serviceStart + stop.service;
+    const setup = current === stop.location ? 0 : stop.setup;
+    start = serviceStart + setup + stop.service;
     for (let i = 0; i < load.length; i++) {
       if (load[i] < stop.delivery[i]) return null;
       load[i] += stop.pickup[i] - stop.delivery[i];
       if (load[i] > vehicle.capacity[i]) return null;
     }
     steps.push({ type: stop.type, id: stop.id, location: stop.location, arrival, service: stop.service,
-      waiting_time: serviceStart - arrival, load: [...load] });
+      waiting_time: serviceStart - arrival, ...(setup && { setup }), load: [...load] });
     current = stop.location;
   }
   if (vehicle.end !== null) {
@@ -127,7 +153,7 @@ function evaluate(vehicle, stops, matrix) {
     start += travel;
     steps.push({ type: 'end', location: vehicle.end, arrival: start, load: [...load] });
   }
-  if (start > vehicle.window[1]) return null;
+  if (start > vehicle.window[1] || duration > vehicle.maxTravel || distance > vehicle.maxDistance) return null;
   return { vehicle: vehicle.id, duration, distance, steps };
 }
 
@@ -146,19 +172,26 @@ function insertions(stops, task) {
 }
 
 export async function optimizeFleet(bucket, body, matrixRequest = routingRequest) {
+  const preferences = { mode: 'drive', avoidTolls: body.avoidTolls, avoidHighways: body.avoidHighways };
+  routingProfile(preferences);
   const { fleet, tasks, locations } = parse(body);
   const matrix = locations.length === 1 ? { durations: [[0]], distances: [[0]] } :
-    await matrixRequest(bucket, 'matrix', { coordinates: locations, mode: 'drive' });
+    await matrixRequest(bucket, 'matrix', { coordinates: locations, ...preferences });
   const routes = fleet.map(vehicle => ({ vehicle, stops: [], plan: null }));
   for (;;) {
     let best;
     for (let i = 0; i < tasks.length; i++) {
+      const task = tasks[i];
+      const rank = Math.max(...task.map(stop => stop.priority));
+      if (best && rank < best.rank) continue;
       for (const route of routes) {
-        for (const stops of insertions(route.stops, tasks[i])) {
+        if (route.stops.length + task.length > route.vehicle.maxStops ||
+            task.some(stop => stop.skills.some(skill => !route.vehicle.skills.has(skill)))) continue;
+        for (const stops of insertions(route.stops, task)) {
           const plan = evaluate(route.vehicle, stops, matrix);
           if (!plan) continue;
           const cost = plan.duration - (route.plan?.duration ?? 0);
-          if (!best || cost < best.cost) best = { i, route, stops, plan, cost };
+          if (!best || rank > best.rank || cost < best.cost) best = { i, route, stops, plan, cost, rank };
         }
       }
     }

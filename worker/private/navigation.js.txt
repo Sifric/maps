@@ -11,6 +11,9 @@ const start = $("start");
 const stop = $("stop");
 const preview = $("preview");
 const choices = $("route-options");
+const recenter = $("recenter");
+const voice = form.elements.voice;
+$("voice-option").hidden = !globalThis.speechSynthesis || !globalThis.SpeechSynthesisUtterance;
 const client = createSifricClient(location.origin);
 const query = new URLSearchParams(location.search);
 for (const field of ["origin", "destination"]) {
@@ -25,6 +28,9 @@ let previewController;
 let previewPlan;
 let active = false;
 let mapReady = false;
+let following = true;
+let lastSpoken;
+let lastPosition;
 let profiles = [];
 void client.capabilities().then(capabilities => {
   profiles = capabilities.drivingAvoidanceProfiles ?? [];
@@ -41,12 +47,21 @@ function readPoint(input) {
 
 function controls(active) {
   form.querySelectorAll("input, textarea, select").forEach(control => { control.disabled = active; });
+  voice.disabled = false;
   form.elements.highways.disabled = active || form.elements.mode.value !== "drive" || !profiles.includes("drive-no-highways");
   form.elements.tolls.disabled = active || form.elements.mode.value !== "drive" || !profiles.includes("drive-no-tolls");
   $("use-location").disabled = active;
   start.disabled = active || !mapReady;
   preview.disabled = active || !mapReady;
   stop.disabled = !active;
+}
+
+function speak(message) {
+  if (!voice.checked || $("voice-option").hidden) return;
+  const phrase = new SpeechSynthesisUtterance(message);
+  phrase.lang = "en";
+  speechSynthesis.cancel();
+  speechSynthesis.speak(phrase);
 }
 
 function settings() {
@@ -93,6 +108,8 @@ function paintRoute(route) {
 
 function clearGuidance() {
   maneuver.hidden = remaining.hidden = speed.hidden = true;
+  recenter.hidden = true;
+  lastPosition = undefined;
   marker?.remove();
   marker = undefined;
   map?.getSource("sifric-navigation-route")?.setData({ type: "FeatureCollection", features: [] });
@@ -103,10 +120,17 @@ const navigation = createSifricNavigation({
   onUpdate(event) {
     if (event.status === "route") {
       paintRoute(event.route);
+      lastSpoken = undefined;
       status.textContent = event.rerouted ? "Route updated." : "Waiting for device location.";
     } else if (event.status === "progress") {
       status.textContent = "Guidance active.";
       const next = formatSifricManeuver(event.nextManeuver);
+      if (voice.checked && event.nextManeuver && event.maneuverDistanceMeters <= 120 &&
+          event.nextManeuver.position !== lastSpoken &&
+          (event.nextManeuver.type !== "arrive" || event.nextManeuver.intermediate)) {
+        lastSpoken = event.nextManeuver.position;
+        speak(next);
+      }
       maneuver.textContent = event.maneuverDistanceMeters == null ? next : `${event.maneuverDistanceMeters} m · ${next}`;
       const eta = event.remainingSeconds == null ? "" : ` · ${Math.ceil(event.remainingSeconds / 60)} min`;
       remaining.textContent = `${(event.remainingMeters / 1000).toFixed(2)} km remaining${eta}`;
@@ -120,10 +144,14 @@ const navigation = createSifricNavigation({
       if (map) {
         marker ??= new maplibregl.Marker({ color: "#14736a" }).setLngLat(event.snapped).addTo(map);
         marker.setLngLat(event.snapped);
+        lastPosition = event.snapped;
+        if (following) map.easeTo({ center: event.snapped, zoom: Math.max(15, map.getZoom()), duration: 450 });
       }
     } else if (event.status === "arrived") {
       status.textContent = "You have arrived.";
+      speak("You have arrived.");
       maneuver.hidden = remaining.hidden = speed.hidden = true;
+      recenter.hidden = true;
       active = false;
       controls(false);
     } else if (event.status === "rerouting" || event.status === "off-route") {
@@ -151,8 +179,10 @@ form.addEventListener("submit", async event => {
     }
     invalidatePreview();
     active = true;
+    following = true;
     controls(true);
     clearGuidance();
+    speak("Starting guidance.");
     const started = await navigation.start({ ...config, initialRoute: selected });
     if (!started && revision === request) {
       active = false;
@@ -167,7 +197,7 @@ form.addEventListener("submit", async event => {
 });
 
 form.addEventListener("input", event => {
-  if (event.target === choices) return;
+  if (event.target === choices || event.target === voice) return;
   invalidatePreview();
   clearGuidance();
   status.textContent = "";
@@ -209,9 +239,21 @@ stop.addEventListener("click", () => {
   revision++;
   active = false;
   navigation.stop();
+  if (voice.checked) globalThis.speechSynthesis?.cancel();
   clearGuidance();
   controls(false);
   status.textContent = "Guidance stopped.";
+});
+
+voice.addEventListener("change", () => {
+  if (!voice.checked) globalThis.speechSynthesis?.cancel();
+});
+
+recenter.addEventListener("click", () => {
+  if (!lastPosition) return;
+  following = true;
+  recenter.hidden = true;
+  map.easeTo({ center: lastPosition, zoom: Math.max(15, map.getZoom()), duration: 450 });
 });
 
 $("use-location").addEventListener("click", () => {
@@ -227,7 +269,11 @@ $("use-location").addEventListener("click", () => {
   }, error => { status.textContent = error.message; }, { enableHighAccuracy: true, timeout: 12000 });
 });
 
-window.addEventListener("pagehide", () => { invalidatePreview(); navigation.stop(); });
+window.addEventListener("pagehide", () => {
+  invalidatePreview();
+  navigation.stop();
+  if (voice.checked) globalThis.speechSynthesis?.cancel();
+});
 try {
   start.disabled = true;
   preview.disabled = true;
@@ -235,6 +281,11 @@ try {
   map.once("load", () => {
     mapReady = true;
     controls(active);
+  });
+  map.on("dragstart", () => {
+    if (!active || !lastPosition) return;
+    following = false;
+    recenter.hidden = false;
   });
   map.on("error", () => { status.textContent = "Map resources could not be loaded."; });
 } catch (error) {
