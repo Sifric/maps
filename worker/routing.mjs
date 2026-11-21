@@ -1,10 +1,11 @@
 const missing = 0xffffffff;
 const metersPerDegree = 111195;
 const routingModes = ['drive', 'walk', 'cycle', 'motorcycle', 'tuk'];
-const graphPrefix = 'lkmaps/routing/v1/';
+const graphPrefix = 'lkmaps/routing/v2/';
 const gridWidth = 500;
 const gridHeight = 600;
 const maxCoreBytes = 80 * 1024 ** 2;
+const packedCoreBytes = 62 * 1024 ** 2;
 const coreReadBytes = 8 * 1024 ** 2;
 
 export class RoutingError extends Error {
@@ -15,15 +16,41 @@ export class RoutingError extends Error {
 }
 
 export function parseRoutingGraph(buffer, length = buffer.byteLength) {
-  if (length > maxCoreBytes || new TextDecoder().decode(new Uint8Array(buffer, 0, 8)) !== 'SIFRIC02') {
+  const header = new TextDecoder().decode(new Uint8Array(buffer, 0, 8));
+  const packed = header === 'SIFRIC03';
+  if (length > (packed ? packedCoreBytes : maxCoreBytes) || (!packed && header !== 'SIFRIC02')) {
     throw new Error('Invalid routing graph.');
   }
+  const view = new DataView(buffer, 0, length);
   let offset = 12;
   function column(Type = Uint32Array) {
-    const length = new DataView(buffer, offset, 4).getUint32(0, true);
-    const values = new Type(buffer, offset + 4, length);
-    offset += 4 + values.byteLength;
-    return values;
+    const count = view.getUint32(offset, true);
+    const width = packed ? view.getUint32(offset + 4, true) : 4;
+    offset += packed ? 8 : 4;
+    if (width < 1 || width > 4 || (Type === Float32Array && width !== 4) || offset + width * count > length) {
+      throw new Error('Invalid routing index column.');
+    }
+    const start = offset;
+    offset += width * count + ((-width * count) & 3);
+    if (width === 4) {
+      const values = new Type(buffer, start, count);
+      return { length: count, get: i => values[i] };
+    }
+    if (width === 2) {
+      const values = new Uint16Array(buffer, start, count);
+      return { length: count, get: i => values[i] === 65535 ? missing : values[i] };
+    }
+    const bytes = new Uint8Array(buffer, start, width * count);
+    if (width === 1) return { length: count, get: i => bytes[i] === 255 ? missing : bytes[i] };
+    return {
+      length: count,
+      get(i) {
+        if (i >= count) return undefined;
+        const index = i * 3;
+        const value = bytes[index] | bytes[index + 1] << 8 | bytes[index + 2] << 16;
+        return value === 0xffffff ? missing : value;
+      },
+    };
   }
   const side = () => ({ offsets: column(), heads: column(), weights: column(), first: column(), second: column() });
   const graph = {
@@ -44,7 +71,7 @@ function lowerBound(values, key) {
   let right = values.length;
   while (left < right) {
     const mid = (left + right) >>> 1;
-    if (values[mid] < key) left = mid + 1;
+    if (values.get(mid) < key) left = mid + 1;
     else right = mid;
   }
   return left;
@@ -58,9 +85,9 @@ function nearestVertices(graph, [lon, lat], radius, count) {
   for (let y = Math.max(0, cellY(lat - radius / metersPerDegree)); y <= Math.min(gridHeight - 1, cellY(lat + radius / metersPerDegree)); y++) {
     for (let x = Math.max(0, cellX(lon - radius / lonScale)); x <= Math.min(gridWidth - 1, cellX(lon + radius / lonScale)); x++) {
       const cell = y * gridWidth + x;
-      for (let i = graph.cells[cell]; i < graph.cells[cell + 1]; i++) {
-        const candidate = graph.cellNodes[i];
-        const squared = ((graph.lon[candidate] - lon) * lonScale) ** 2 + ((graph.lat[candidate] - lat) * metersPerDegree) ** 2;
+      for (let i = graph.cells.get(cell); i < graph.cells.get(cell + 1); i++) {
+        const candidate = graph.cellNodes.get(i);
+        const squared = ((graph.lon.get(candidate) - lon) * lonScale) ** 2 + ((graph.lat.get(candidate) - lat) * metersPerDegree) ** 2;
         if (squared >= radius ** 2 || (ranked.length === count && squared >= ranked.at(-1).squared)) continue;
         ranked.push({ vertex: candidate, squared });
         ranked.sort((a, b) => a.squared - b.squared);
@@ -111,9 +138,9 @@ function search(side, starts) {
   while (queue.length) {
     const rank = popRank(queue);
     const { weight } = visited.get(rank);
-    for (let arc = side.offsets[rank]; arc < side.offsets[rank + 1]; arc++) {
-      const head = side.heads[arc];
-      const next = weight + side.weights[arc];
+    for (let arc = side.offsets.get(rank); arc < side.offsets.get(rank + 1); arc++) {
+      const head = side.heads.get(arc);
+      const next = weight + side.weights.get(arc);
       const old = visited.get(head);
       if (old && old.weight <= next) continue;
       if (!old) pushRank(queue, head);
@@ -124,9 +151,9 @@ function search(side, starts) {
 }
 
 function backwardSearch(graph, target) {
-  const ranks = [graph.ranks[target]];
+  const ranks = [graph.ranks.get(target)];
   const i = lowerBound(graph.terminalNodes, target);
-  if (graph.terminalNodes[i] === target) ranks.push(graph.terminalRanks[i]);
+  if (graph.terminalNodes.get(i) === target) ranks.push(graph.terminalRanks.get(i));
   return search(graph.backward, ranks);
 }
 
@@ -134,13 +161,13 @@ function appendExpanded(graph, graphArcs, pending, backwards) {
   while (pending.length) {
     const [arc, direction] = pending.pop();
     const side = direction ? graph.backward : graph.forward;
-    const first = side.first[arc];
-    const second = side.second[arc];
+    const first = side.first.get(arc);
+    const second = side.second.get(arc);
     if (second !== missing) {
       pending.push([second, false], [first, true]);
       continue;
     }
-    const original = graph.transitions[first];
+    const original = graph.transitions.get(first);
     if (original !== missing) graphArcs.push(original);
   }
 }
@@ -162,12 +189,12 @@ function connect(graph, from, to) {
   appendExpanded(graph, arcs, forward);
   for (let p = to.get(peak); p.arc !== undefined; p = to.get(p.rank)) appendExpanded(graph, arcs, [[p.arc, true]]);
   let distance = 0;
-  for (const arc of arcs) distance += graph.meters[arc];
+  for (const arc of arcs) distance += graph.meters.get(arc);
   return { arcs, distance, duration: bestWeight / 1000 };
 }
 
-const coordinate = (graph, vertex) => [graph.lon[vertex], graph.lat[vertex]];
-const arrival = (graph, arcs, target) => arcs.length ? coordinate(graph, graph.heads[arcs.at(-1)]) : coordinate(graph, target);
+const coordinate = (graph, vertex) => [graph.lon.get(vertex), graph.lat.get(vertex)];
+const arrival = (graph, arcs, target) => arcs.length ? coordinate(graph, graph.heads.get(arcs.at(-1))) : coordinate(graph, target);
 const step = (type, location, modifier) => ({ name: '', maneuver: { type, location, ...(modifier && { modifier }) } });
 
 function heading(a, b) {
@@ -182,7 +209,7 @@ function legGeometry(graph, leg, source, target, shapes, limits) {
     const start = coordinates.length - 1;
     const from = coordinates.at(-1);
     const shape = shapes.get(arc);
-    const to = coordinate(graph, graph.heads[arc]);
+    const to = coordinate(graph, graph.heads.get(arc));
     if (coordinates.length > 1) {
       const next = shape ? [shape[0], shape[1]] : to;
       const previous = coordinates.at(-2);
@@ -250,7 +277,7 @@ export async function solveRoute(graph, points, sources, destinations, loadShape
   const backward = new Map();
   const pair = (source, target) => {
     if (source === target) return { arcs: [], distance: 0, duration: 0 };
-    if (!forward.has(source)) forward.set(source, search(graph.forward, [graph.ranks[source]]));
+    if (!forward.has(source)) forward.set(source, search(graph.forward, [graph.ranks.get(source)]));
     if (!backward.has(target)) backward.set(target, backwardSearch(graph, target));
     return connect(graph, forward.get(source), backward.get(target));
   };
@@ -273,7 +300,7 @@ export async function solveRoute(graph, points, sources, destinations, loadShape
     const leg = pair(pairs[i - 1], pairs[i]);
     if (!leg) throw new RoutingError(422, 'No route connects these coordinates for this travel mode.');
     for (const arc of leg.arcs) {
-      geometrySize += 1 + graph.geometryLengths[arc];
+      geometrySize += 1 + graph.geometryLengths.get(arc);
       arcs.add(arc);
     }
     if (geometrySize > 40000) throw new RoutingError(422, 'The route exceeds the geometry limit.');
@@ -341,8 +368,10 @@ async function getGraph(bucket, mode) {
   cachedGraph = undefined;
   const metadata = await readRange(bucket, key, head.etag, 0, 12);
   const size = new DataView(metadata).getUint32(8, true);
-  if (size < 12 || size > head.size || size > maxCoreBytes) throw new Error('Routing graph exceeds the memory budget.');
-  coreBuffer ??= new ArrayBuffer(maxCoreBytes);
+  const packed = new TextDecoder().decode(new Uint8Array(metadata, 0, 8)) === 'SIFRIC03';
+  const bufferSize = packed ? packedCoreBytes : maxCoreBytes;
+  if (size < 12 || size > head.size || size > bufferSize) throw new Error('Routing graph exceeds the memory budget.');
+  if (coreBuffer?.byteLength !== bufferSize) coreBuffer = new ArrayBuffer(bufferSize);
   // Keep a cold R2 transfer bounded while the destination buffer is resident.
   for (let offset = 0; offset < size; offset += coreReadBytes) {
     const length = Math.min(coreReadBytes, size - offset);
@@ -357,9 +386,9 @@ async function loadGraphShapes(bucket, file, arcs) {
   const { key, etag, graph, size } = file;
   const intervals = [];
   for (const arc of arcs) {
-    const length = graph.geometryLengths[arc];
+    const length = graph.geometryLengths.get(arc);
     if (!length) continue;
-    const start = graph.geometryOffsets[arc];
+    const start = graph.geometryOffsets.get(arc);
     intervals.push({ arc, start, end: start + length });
   }
   intervals.sort((a, b) => a.start - b.start);
@@ -394,8 +423,8 @@ async function loadGraphShapes(bucket, file, arcs) {
   await Promise.all(ranges.map(async ({ start, end, arcs: group }) => {
     const data = new Float32Array(await readRange(bucket, key, etag, size + start * 8, (end - start) * 8));
     for (const arc of group) {
-      const first = (graph.geometryOffsets[arc] - start) * 2;
-      shapes.set(arc, data.subarray(first, first + graph.geometryLengths[arc] * 2));
+      const first = (graph.geometryOffsets.get(arc) - start) * 2;
+      shapes.set(arc, data.subarray(first, first + graph.geometryLengths.get(arc) * 2));
     }
   }));
   return shapes;
@@ -439,7 +468,7 @@ export async function routingRequest(bucket, operation, body) {
     const file = await getGraph(bucket, mode);
     let limits;
     if (body.speedLimits) {
-      const offset = file.size + file.graph.shapeBoundaries.at(-1) * 8;
+      const offset = file.size + file.graph.shapeBoundaries.get(file.graph.shapeBoundaries.length - 1) * 8;
       const size = file.graph.heads.length * 2;
       if (file.objectSize !== offset + size) throw new RoutingError(503, 'Posted speed data is unavailable.');
       limits = new Uint16Array(await readRange(bucket, file.key, file.etag, offset, size));

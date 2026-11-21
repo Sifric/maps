@@ -121,7 +121,8 @@ It is not nautical chart data.
 The `Deploy Sifric Maps datasets` workflow builds mode-specific graphs with
 [RoutingKit](https://github.com/RoutingKit/RoutingKit) from Geofabrik's Sri
 Lanka OpenStreetMap extract and validates them before uploading to the Maps
-R2 bucket. Worker requests read the indexes from R2. Routing data is derived
+R2 bucket. The compact index uses variable-width numeric columns to reduce
+Worker memory usage without changing path weights or geometry. Routing data is derived
 from [OpenStreetMap contributors under the ODbL](https://www.openstreetmap.org/copyright).
 
 ## Backend container

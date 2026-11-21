@@ -48,20 +48,6 @@ jobs:
             /tmp/build-routing-graph /tmp/sri-lanka.osm.pbf "/tmp/sifric-graphs/${mode}.bin" "$mode"
           done
           node scripts/check_routing_data.mjs /tmp/sifric-graphs "${modes[@]}"
-      - name: Publish routing objects to the Maps bucket
-        if: inputs.mode != 'relief' && inputs.mode != 'photos' && inputs.mode != 'cells' && inputs.mode != 'pack-routing'
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        run: |
-          shopt -s nullglob
-          files=(/tmp/sifric-graphs/*.bin)
-          test "${#files[@]}" -gt 0
-          for file in "${files[@]}"; do
-            mode="$(basename "$file" .bin)"
-            npx --yes wrangler@4.166.0 r2 object put "mazo-maps/lkmaps/routing/v1/${mode}.bin" \
-              --file "/tmp/sifric-graphs/${mode}.bin" --content-type application/octet-stream --remote || exit $?
-          done
       - name: Import NOAA relief and publish it to the Maps bucket
         if: inputs.mode == 'relief' || inputs.mode == 'all'
         env:
@@ -124,9 +110,14 @@ jobs:
                 --file "/tmp/sifric-graphs/${mode}.bin" --remote
             done
           fi
+          modes=()
           for file in /tmp/sifric-graphs/*.bin; do
             name="$(basename "$file")"
+            modes+=("${name%.bin}")
             python3 scripts/pack_routing_graph.py "$file" "/tmp/sifric-packed/$name"
-            npx --yes wrangler@4.166.0 r2 object put "mazo-maps/lkmaps/routing/v2/$name" \
-              --file "/tmp/sifric-packed/$name" --content-type application/octet-stream --remote
+          done
+          node scripts/check_routing_data.mjs /tmp/sifric-packed "${modes[@]}"
+          for mode in "${modes[@]}"; do
+            npx --yes wrangler@4.166.0 r2 object put "mazo-maps/lkmaps/routing/v2/$mode.bin" \
+              --file "/tmp/sifric-packed/$mode.bin" --content-type application/octet-stream --remote
           done
