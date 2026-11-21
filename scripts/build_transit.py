@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
 """Compile selected Sri Lanka GTFS service days to a chronological connection index."""
+import argparse
 import csv
-from datetime import date, timedelta
+from datetime import date, datetime, time, timedelta
 import io
 import json
 from pathlib import Path
-import sys
 import zipfile
 from zoneinfo import ZoneInfo
-from datetime import datetime
 
 DAYS = ("monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday")
 
@@ -20,7 +19,7 @@ def seconds(text):
     return h * 3600 + m * 60 + s
 
 
-def build(source, target, today):
+def build(source, target, today, require_upcoming=False):
     with zipfile.ZipFile(source) as archive:
         def rows(key, optional=False):
             name = key + ".txt"
@@ -87,6 +86,14 @@ def build(source, target, today):
                    "routes": routes, "days": {key: edges for key, edges in days.items() if edges}}
         if not payload["days"]:
             raise ValueError("GTFS has no scheduled trips in the supported date window")
+        if require_upcoming:
+            timezone = ZoneInfo("Asia/Colombo")
+            last_arrival = max(
+                datetime.combine(date.fromisoformat(day), time.min, timezone) + timedelta(seconds=edge[1])
+                for day, edges in payload["days"].items() for edge in edges
+            )
+            if last_arrival <= datetime.now(timezone):
+                raise ValueError("The source GTFS has no upcoming service. The published index was not overwritten.")
         serialized = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
         if len(serialized.encode()) > 2_000_000:
             raise ValueError("GTFS index exceeds Worker input limit")
@@ -95,5 +102,10 @@ def build(source, target, today):
 
 
 if __name__ == "__main__":
-    build(sys.argv[1], sys.argv[2], date.fromisoformat(sys.argv[3]) if len(sys.argv) > 3 else
-          datetime.now(ZoneInfo("Asia/Colombo")).date())
+    parser = argparse.ArgumentParser()
+    parser.add_argument("source")
+    parser.add_argument("target")
+    parser.add_argument("date", nargs="?", type=date.fromisoformat)
+    parser.add_argument("--require-upcoming", action="store_true")
+    args = parser.parse_args()
+    build(args.source, args.target, args.date or datetime.now(ZoneInfo("Asia/Colombo")).date(), args.require_upcoming)

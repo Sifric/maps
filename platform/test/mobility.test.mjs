@@ -30,6 +30,23 @@ test('transit uses active dates and permits a transfer only with enough time', a
   await assert.rejects(transitRoute(bucket(data), { coordinates: [a, c], departureTime: '2026-11-22T00:00:00+05:30' }), { status: 404 });
 });
 
+test('transit preserves a faster boarding option when a previous ride requires a transfer buffer', async () => {
+  const origin = [79.86, 6.92], stop = [79.861, 6.92], destination = [79.88, 6.92];
+  const schedule = {
+    agency: 'Example', stops: [['Origin', ...origin], ['Transfer', ...stop], ['Destination', ...destination]],
+    routes: { bus: ['1', 'Bus', '3'] },
+    days: { '2026-11-21': [
+      [0, 40, 0, 1, 'first', 'bus', true, true],
+      [100, 200, 1, 2, 'second', 'bus', true, true],
+    ] },
+  };
+  const itinerary = await transitRoute(bucket(schedule), {
+    coordinates: [origin, destination], departureTime: '2026-11-21T00:00:00+05:30',
+  });
+  assert.equal(itinerary.accessWalk.stop, 'Transfer');
+  assert.equal(itinerary.legs.length, 1);
+});
+
 test('premise classification comes from a mapped house, street and postal area', async () => {
   const body = { addressLines: ['14 Main Street'], locality: 'Kandy', postalCode: '20000' };
   const id = createHash('sha256').update('14\nmain street').digest('hex').slice(0, 24);
@@ -55,6 +72,17 @@ test('traffic estimates expire, report closure, and avoid double-counting overla
   assert.equal(open.routes[0].duration, 160);
   assert.equal(validateTraffic({ ...report, observedAt: '2000-01-01T00:00:00Z' }), null);
   assert.equal((await (await annotateTraffic(bucket(null), reply())).json()).liveTraffic.status, 'unavailable');
+});
+
+test('traffic matches an interior stretch of a sparse line only in its reported direction', async () => {
+  const report = { observedAt: new Date().toISOString(), source: 'Fixture',
+    segments: [{ from: [79.87, 6.92], to: [79.89, 6.92], factor: 2, closed: false }] };
+  const variant = coordinates => ({ duration: 100, geometry: { coordinates } });
+  const response = Response.json({ routes: [variant([a, c]), variant([c, a])] });
+  const result = await (await annotateTraffic(bucket(report), response)).json();
+  assert.equal(result.routes[0].trafficDuration, undefined);
+  assert.equal(result.routes[1].trafficDuration, 150);
+  assert.equal(result.routes[1].matchedTrafficSegments, 1);
 });
 
 test('Wi-Fi requires distinct cooperating access points and preserves their privacy', async () => {

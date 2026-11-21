@@ -253,7 +253,8 @@ export function routingProfile(body) {
 
 const coordinate = (graph, vertex) => [graph.lon.get(vertex), graph.lat.get(vertex)];
 const arrival = (graph, arcs, target) => arcs.length ? coordinate(graph, graph.heads.get(arcs.at(-1))) : coordinate(graph, target);
-const step = (type, location, modifier) => ({ name: '', maneuver: { type, location, ...(modifier && { modifier }) } });
+const step = (type, location, geometryIndex, modifier) =>
+  ({ name: '', maneuver: { type, location, geometryIndex, ...(modifier && { modifier }) } });
 
 function heading(a, b) {
   return Math.atan2((b[0] - a[0]) * Math.cos(a[1] * Math.PI / 180), b[1] - a[1]) * 180 / Math.PI;
@@ -261,7 +262,7 @@ function heading(a, b) {
 
 function legGeometry(graph, leg, source, target, shapes, limits) {
   const coordinates = [coordinate(graph, source)];
-  const steps = [step('depart', coordinates[0])];
+  const steps = [step('depart', coordinates[0], 0)];
   const speedLimits = [];
   for (const arc of leg.arcs) {
     const start = coordinates.length - 1;
@@ -277,7 +278,7 @@ function legGeometry(graph, leg, source, target, shapes, limits) {
         const direction = angle > 0 ? 'right' : 'left';
         const modifier = absolute > 165 ? 'uturn' : absolute >= 115 ? 'sharp ' + direction :
           absolute < 55 ? 'slight ' + direction : direction;
-        steps.push(step('turn', from, modifier));
+        steps.push(step('turn', from, start, modifier));
       }
     }
     if (shape) {
@@ -294,7 +295,7 @@ function legGeometry(graph, leg, source, target, shapes, limits) {
       else speedLimits.push({ startIndex: start, endIndex: end, speed, unit });
     }
   }
-  steps.push(step('arrive', arrival(graph, leg.arcs, target)));
+  steps.push(step('arrive', arrival(graph, leg.arcs, target), coordinates.length - 1));
   return { coordinates, steps, duration: leg.duration, distance: leg.distance, ...(limits && { speedLimits }) };
 }
 
@@ -376,8 +377,9 @@ export async function solveRoute(graph, points, sources, destinations, loadShape
     const coordinates = [];
     const legs = legsForRoute.map((leg, i) => {
       const { coordinates: geometry, ...details } = legGeometry(graph, leg, pairs[i], pairs[i + 1], shapes, limits);
+      const offset = i ? coordinates.length - 1 : 0;
+      for (const { maneuver } of details.steps) maneuver.geometryIndex += offset;
       if (limits) {
-        const offset = i ? coordinates.length - 1 : 0;
         for (const span of details.speedLimits) {
           span.startIndex += offset;
           span.endIndex += offset;

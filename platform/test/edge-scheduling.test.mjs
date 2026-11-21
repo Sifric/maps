@@ -28,6 +28,18 @@ test('fleet insertion respects delivery precedence, loads, and time windows', as
   assert.equal(result.summary.distance, 200);
 });
 
+test('fleet saves the qualified vehicle for a stop with fewer assignment choices', async () => {
+  const start = [79.86, 6.92], flexible = [79.87, 6.92], restricted = [79.88, 6.92];
+  const matrix = { durations: [[0, 5, 20], [5, 0, 20], [20, 20, 0]],
+    distances: [[0, 50, 100], [50, 0, 50], [100, 50, 0]] };
+  const result = await optimizeFleet({}, {
+    vehicles: [{ id: 1, start, skills: [1], max_tasks: 1 }, { id: 2, start, max_tasks: 1 }],
+    jobs: [{ id: 3, location: flexible }, { id: 4, location: restricted, skills: [1] }],
+  }, async () => matrix);
+  assert.equal(result.unassigned.length, 0);
+  assert.equal(result.routes.find(route => route.vehicle === 1).steps.at(-1).id, 4);
+});
+
 test('address validation preserves leading zeroes and flags town mismatches', () => {
   const verified = validateAddress({ locality: 'Colombo 03', postalCode: '００３００', addressLines: [' 4  Main Road '] });
   assert.equal(verified.postalTownVerified, true);

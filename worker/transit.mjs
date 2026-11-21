@@ -71,7 +71,7 @@ export async function transitRoute(bucket, body) {
   for (const [i, [name, lon, lat]] of stops.entries()) {
     const from = distance(points[0], [lon, lat]);
     const to = distance(points[1], [lon, lat]);
-    if (from <= 1200) arrivals.set(i, { time: start + Math.ceil(from / walkSpeed), stop: name, origin: true, distance: Math.round(from) });
+    if (from <= 1200) arrivals.set(i, { readyAt: start + Math.ceil(from / walkSpeed), stop: name, origin: true, distance: Math.round(from) });
     if (to <= 1200) exits.set(i, Math.ceil(to / walkSpeed));
   }
   let best;
@@ -79,13 +79,16 @@ export async function transitRoute(bucket, body) {
     const [departure, arrival, from, to, tripId, routeId, pickup, dropoff] = edge;
     const trip = base + ':' + tripId;
     const previous = arrivals.get(from);
-    const ready = previous && previous.time + (previous.origin ? 0 : 120) <= base + departure;
-    const ride = boarded.get(trip) ?? (pickup && ready ? { previous, from, departure: base + departure } : null);
+    const ready = previous && previous.readyAt <= base + departure;
+    const earlierRide = boarded.get(trip);
+    const ride = earlierRide?.next === from ? earlierRide :
+      pickup && ready ? { previous, from, departure: base + departure } : null;
     if (!ride) continue;
-    boarded.set(trip, ride);
+    // Advance a rider only on the next connected edge of this trip.
+    boarded.set(trip, { ...ride, next: to });
     if (!dropoff) continue;
-    const end = { ride, routeId, trip, to, time: base + arrival };
-    if (!arrivals.has(to) || end.time < arrivals.get(to).time) arrivals.set(to, end);
+    const end = { ride, routeId, to, time: base + arrival, readyAt: base + arrival + 120 };
+    if (!arrivals.has(to) || end.readyAt < arrivals.get(to).readyAt) arrivals.set(to, end);
     const exit = exits.get(to);
     if (exit !== undefined && (!best || end.time + exit < best.arrival)) best = { arrival: end.time + exit, end, exit };
   }

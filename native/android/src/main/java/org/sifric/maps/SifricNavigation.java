@@ -129,7 +129,8 @@ public final class SifricNavigation implements AutoCloseable {
             plan(lon, lat, false);
             return;
         }
-        Match match = route.project(lon, lat, progress);
+        Turn nextStop = visitedStops < route.stopCount ? route.stops.get(visitedStops) : null;
+        Match match = route.project(lon, lat, progress, nextStop == null ? route.length : nextStop.along);
         if (match.away > Math.max(35, location.getAccuracy() * 1.5)) {
             if (++outside >= 3 && (lastReroute == Long.MIN_VALUE || lastFix - lastReroute >= 15000)) {
                 lastReroute = lastFix;
@@ -139,9 +140,11 @@ public final class SifricNavigation implements AutoCloseable {
         }
         outside = 0;
         progress = Math.max(progress, match.along);
-        while (visitedStops < route.stopCount && route.stopPositions.get(visitedStops) <= progress + 5) visitedStops++;
+        while (location.getAccuracy() <= 25 && visitedStops < route.stopCount &&
+            route.stops.get(visitedStops).isReached(lon, lat, progress)) visitedStops++;
+        Turn outstanding = visitedStops < route.stopCount ? route.stops.get(visitedStops) : null;
         double remaining = route.length - progress;
-        if (remaining < 25 && route.distanceToEnd(lon, lat) < 25 && location.getAccuracy() <= 25) {
+        if (outstanding == null && remaining <= 25 && route.distanceToEnd(lon, lat) <= 25 && location.getAccuracy() <= 25) {
             stop();
             speak("You have arrived.");
             listener.onArrival();
@@ -152,7 +155,7 @@ public final class SifricNavigation implements AutoCloseable {
                 ? location.getSpeed() * 3.6 : null;
             JSONObject next = null;
             for (Turn turn : route.turns) {
-                if (turn.along > progress + 5) {
+                if (turn == outstanding || turn.along > progress + 5) {
                     next = turn.maneuver;
                     if (speechReady && turn != spoken && turn.along - progress <= 120 &&
                         (!"arrive".equals(next.optString("type")) || turn.intermediate)) {
@@ -261,10 +264,18 @@ public final class SifricNavigation implements AutoCloseable {
         final double along;
         final JSONObject maneuver;
         final boolean intermediate;
-        Turn(double along, JSONObject maneuver, boolean intermediate) {
+        final double longitude, latitude;
+        Turn(double along, JSONObject maneuver, boolean intermediate, double longitude, double latitude) {
             this.along = along;
             this.maneuver = maneuver;
             this.intermediate = intermediate;
+            this.longitude = longitude;
+            this.latitude = latitude;
+        }
+
+        boolean isReached(double lon, double lat, double progress) {
+            return along <= progress + 25 &&
+                Math.hypot((longitude - lon) * lonScale(lat), (latitude - lat) * METERS_PER_DEGREE) <= 25;
         }
     }
 
@@ -273,7 +284,7 @@ public final class SifricNavigation implements AutoCloseable {
         final List<Turn> turns = new ArrayList<>();
         final double length, duration;
         final List<JSONObject> limits = new ArrayList<>();
-        final List<Double> stopPositions = new ArrayList<>();
+        final List<Turn> stops = new ArrayList<>();
         final int stopCount;
 
         Route(JSONObject data) throws JSONException {
@@ -315,13 +326,18 @@ public final class SifricNavigation implements AutoCloseable {
                     JSONObject maneuver = steps.getJSONObject(j).getJSONObject("maneuver");
                     if ("depart".equals(maneuver.optString("type"))) continue;
                     JSONArray point = maneuver.getJSONArray("location");
-                    along = Math.max(along, project(point.getDouble(0), point.getDouble(1), along).along);
+                    double lon = point.getDouble(0), lat = point.getDouble(1);
+                    int index = maneuver.optInt("geometryIndex", -1);
+                    double position = index == count - 1 ? length : index >= 0 && index < starts.length ?
+                        starts[index] : project(lon, lat, along, length).along;
+                    along = Math.max(along, position);
                     boolean intermediate = i < legs.length() - 1 && "arrive".equals(maneuver.optString("type"));
-                    if (intermediate) stopPositions.add(along);
-                    turns.add(new Turn(along, maneuver, intermediate));
+                    Turn turn = new Turn(along, maneuver, intermediate, lon, lat);
+                    if (intermediate) stops.add(turn);
+                    turns.add(turn);
                 }
             }
-            stopCount = stopPositions.size();
+            stopCount = stops.size();
         }
 
         double distanceToEnd(double lon, double lat) {
@@ -343,14 +359,16 @@ public final class SifricNavigation implements AutoCloseable {
             return null;
         }
 
-        Match project(double lon, double lat, double reference) {
+        Match project(double lon, double lat, double reference, double end) {
             double cost = Double.POSITIVE_INFINITY, bestAlong = 0, bestAway = cost;
             int bestIndex = 0;
             for (int i = 0; i < lengths.length; i++) {
+                if (starts[i] > end) break;
                 if (lengths[i] == 0) continue;
                 double x = (lon - longitude[i]) * lonScale(latitude[i]);
                 double y = (lat - latitude[i]) * METERS_PER_DEGREE;
-                double t = Math.max(0, Math.min(1, (x * dx[i] + y * dy[i]) / (lengths[i] * lengths[i])));
+                double t = Math.max(0, Math.min(Math.min(1, (end - starts[i]) / lengths[i]),
+                    (x * dx[i] + y * dy[i]) / (lengths[i] * lengths[i])));
                 double away = Math.hypot(x - t * dx[i], y - t * dy[i]);
                 double along = starts[i] + t * lengths[i];
                 double candidate = away + Math.min(25, Math.abs(along - reference) / 200);

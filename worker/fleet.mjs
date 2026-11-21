@@ -184,15 +184,24 @@ export async function optimizeFleet(bucket, body, matrixRequest = routingRequest
       const task = tasks[i];
       const rank = Math.max(...task.map(stop => stop.priority));
       if (best && rank < best.rank) continue;
+      let candidate;
+      let feasibleVehicles = 0;
       for (const route of routes) {
         if (route.stops.length + task.length > route.vehicle.maxStops ||
             task.some(stop => stop.skills.some(skill => !route.vehicle.skills.has(skill)))) continue;
+        let feasible = false;
         for (const stops of insertions(route.stops, task)) {
           const plan = evaluate(route.vehicle, stops, matrix);
           if (!plan) continue;
+          feasible = true;
           const cost = plan.duration - (route.plan?.duration ?? 0);
-          if (!best || rank > best.rank || cost < best.cost) best = { i, route, stops, plan, cost, rank };
+          if (!candidate || cost < candidate.cost) candidate = { i, route, stops, plan, cost, rank };
         }
+        if (feasible) feasibleVehicles++;
+      }
+      if (candidate && (!best || rank > best.rank || feasibleVehicles < best.feasibleVehicles ||
+          (feasibleVehicles === best.feasibleVehicles && candidate.cost < best.cost))) {
+        best = { ...candidate, feasibleVehicles };
       }
     }
     if (!best) break;

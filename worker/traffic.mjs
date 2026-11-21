@@ -24,26 +24,54 @@ function meters(a, b) {
 }
 
 function spans(coordinates, segments) {
-  const matched = segments.map(segment => ({ segment, from: null, to: null }));
   let traveled = 0;
-  for (let i = 0; i < coordinates.length; i++) {
-    if (i) traveled += meters(coordinates[i - 1], coordinates[i]);
-    for (const item of matched) {
-      for (const end of ['from', 'to']) {
-        const distance = meters(coordinates[i], item.segment[end]);
-        if (distance < (item[end]?.distance ?? 40)) item[end] = { distance, traveled };
+  const path = [];
+  for (let i = 1; i < coordinates.length; i++) {
+    const a = coordinates[i - 1], b = coordinates[i];
+    const length = meters(a, b);
+    if (!length) continue;
+    path.push({ a, b, length, start: traveled });
+    traveled += length;
+  }
+  const hits = [];
+  for (const [index, segment] of segments.entries()) {
+    const lonScale = 111195 * Math.cos(segment.from[1] * Math.PI / 180);
+    const dx = (segment.to[0] - segment.from[0]) * lonScale;
+    const dy = (segment.to[1] - segment.from[1]) * 111195;
+    const span = Math.hypot(dx, dy);
+    if (span < 30) continue;
+    function axes(point) {
+      const x = (point[0] - segment.from[0]) * lonScale;
+      const y = (point[1] - segment.from[1]) * 111195;
+      return [(x * dx + y * dy) / span, (y * dx - x * dy) / span];
+    }
+    let last;
+    for (const edge of path) {
+      const [from, offset] = axes(edge.a);
+      const [to, endOffset] = axes(edge.b);
+      const advance = to - from;
+      // Exclude opposing traffic and roads that cross the observation.
+      if (advance < edge.length * 0.87 || to <= 0 || from >= span) continue;
+      let low = Math.max(0, -from / advance);
+      let high = Math.min(1, (span - from) / advance);
+      const cross = endOffset - offset;
+      if (cross === 0) {
+        if (Math.abs(offset) > 20) continue;
+      } else {
+        const before = (-20 - offset) / cross, after = (20 - offset) / cross;
+        low = Math.max(low, Math.min(before, after));
+        high = Math.min(high, Math.max(before, after));
+      }
+      if (high <= low) continue;
+      const start = edge.start + low * edge.length, end = edge.start + high * edge.length;
+      if (last && start <= last.end + 0.01) last.end = end;
+      else {
+        last = { start, end, factor: segment.factor, closed: segment.closed, index };
+        hits.push(last);
       }
     }
   }
-  const hits = [];
-  for (const item of matched) {
-    if (!item.from || !item.to) continue;
-    const start = item.from.traveled, end = item.to.traveled;
-    const length = meters(item.segment.from, item.segment.to);
-    if (end - start < 30 || end - start > length * 2.5 + 60) continue;
-    hits.push({ start, end, factor: item.segment.factor, closed: item.segment.closed });
-  }
-  return { hits, traveled };
+  return { hits: hits.filter(hit => hit.end - hit.start >= 10), traveled };
 }
 
 export async function annotateTraffic(bucket, response, observation, bestOnly = false) {
@@ -60,15 +88,20 @@ export async function annotateTraffic(bucket, response, observation, bestOnly = 
     usable.push(variant);
     if (!hits.length) continue;
     observed = true;
-    const boundaries = [...new Set(hits.flatMap(span => [span.start, span.end]))].sort((a, b) => a - b);
+    const boundaries = hits.flatMap(({ start, end, factor }) =>
+      [{ at: start, factor, delta: 1 }, { at: end, factor, delta: -1 }]).sort((a, b) => a.at - b.at);
+    const active = new Map();
     let added = 0;
-    for (let i = 1; i < boundaries.length; i++) {
-      const low = boundaries[i - 1], high = boundaries[i];
-      const factor = hits.reduce((max, span) => span.start <= low && span.end >= high ? Math.max(max, span.factor) : max, 1);
-      added += (high - low) * (factor - 1);
+    let previous = 0;
+    for (const { at, factor, delta } of boundaries) {
+      added += (at - previous) * (Math.max(1, ...active.keys()) - 1);
+      const count = (active.get(factor) ?? 0) + delta;
+      if (count) active.set(factor, count);
+      else active.delete(factor);
+      previous = at;
     }
     variant.trafficDuration = Math.round(variant.duration * (1 + (traveled ? added / traveled : 0)));
-    variant.matchedTrafficSegments = hits.length;
+    variant.matchedTrafficSegments = new Set(hits.map(hit => hit.index)).size;
   }
   if (!usable.length && route.routes?.length) {
     throw new RoutingError(409, 'An observed closure intersects every available route.');

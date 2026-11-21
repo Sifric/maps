@@ -30,6 +30,7 @@ public struct SifricRoute: Codable, Sendable {
         public let location: [Double]
         public let modifier: String?
         public let exit: Int?
+        public let geometryIndex: Int?
     }
 
     public struct Step: Codable, Sendable {

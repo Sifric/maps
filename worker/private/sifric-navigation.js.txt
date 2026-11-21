@@ -13,12 +13,14 @@ function distance(a, b) {
   return Math.hypot(...vector(a, b));
 }
 
-function project(point, segments, position = 0) {
+function project(point, segments, position = 0, end = Infinity) {
   let nearest;
   let score = Infinity;
   for (const segment of segments) {
+    if (segment.start > end) break;
     const [x, y] = vector(segment.a, point);
-    const t = Math.max(0, Math.min(1, (x * segment.dx + y * segment.dy) / (segment.length ** 2)));
+    const t = Math.max(0, Math.min(1, (end - segment.start) / segment.length,
+      (x * segment.dx + y * segment.dy) / (segment.length ** 2)));
     const away = Math.hypot(x - t * segment.dx, y - t * segment.dy);
     const progress = segment.start + t * segment.length;
     // Favor the current part of the route where two portions cross.
@@ -40,15 +42,16 @@ function routePlan(payload) {
     throw new Error("Sifric returned no usable route.");
   }
   const segments = [];
+  const distances = [0];
   let length = 0;
   for (let i = 1; i < coordinates.length; i++) {
     const a = coordinates[i - 1];
     const b = coordinates[i];
     const [dx, dy] = vector(a, b);
     const span = Math.hypot(dx, dy);
-    if (!span) continue;
-    segments.push({ a, b, dx, dy, length: span, start: length, index: i - 1 });
+    if (span) segments.push({ a, b, dx, dy, length: span, start: length, index: i - 1 });
     length += span;
+    distances.push(length);
   }
   if (!length) throw new Error("The route has no distance.");
   const steps = [];
@@ -65,8 +68,8 @@ function routePlan(payload) {
     for (const step of leg.steps ?? []) {
       const maneuver = step.maneuver;
       if (!validPoint(maneuver?.location) || maneuver.type === "depart") continue;
-      const where = maneuver.type === "arrive" && index === legs.length - 1 ? length :
-        project(maneuver.location, segments, lastManeuver).progress;
+      const where = distances[maneuver.geometryIndex] ?? (maneuver.type === "arrive" && index === legs.length - 1 ?
+        length : project(maneuver.location, segments, lastManeuver).progress);
       lastManeuver = Math.max(lastManeuver, where);
       steps.push({
         type: maneuver.type,
@@ -74,12 +77,13 @@ function routePlan(payload) {
         exit: Number.isInteger(maneuver.exit) ? maneuver.exit : undefined,
         name: typeof step.name === "string" ? step.name : "",
         position: lastManeuver,
+        location: maneuver.location,
         intermediate: maneuver.type === "arrive" && index < legs.length - 1,
       });
     }
     weights.push({ end: lastManeuver, seconds: leg.duration });
   }
-  return { route, coordinates, segments, length, steps, speedLimits, weights };
+  return { route, coordinates, segments, length, steps, stops: steps.filter(step => step.intermediate), speedLimits, weights };
 }
 
 export function formatSifricManeuver(maneuver) {
@@ -124,14 +128,21 @@ export function createSifricNavigation({
     try {
       const payload = initialRoute ? { routes: [initialRoute] } : await client.route({
         ...active.routeOptions,
-        ...(stops.length === 0 && active.routeOptions.optimizeWaypointOrder && { optimizeWaypointOrder: false }),
+        ...((rerouting || stops.length === 0) && active.routeOptions.optimizeWaypointOrder && { optimizeWaypointOrder: false }),
         ...(stops.length > 0 && active.routeOptions.alternatives && { alternatives: false }),
         coordinates: [origin, ...stops, active.destination],
         mode: active.mode,
       }, controller.signal);
       if (session !== active || controller.signal.aborted) return false;
-      active.plan = routePlan(payload);
-      active.stops = payload.optimizedIntermediateWaypointIndices?.map(index => stops[index]) ?? stops;
+      const plan = routePlan(payload);
+      const order = payload.optimizedIntermediateWaypointIndices;
+      if (plan.stops.length !== stops.length || (order !== undefined &&
+          (!Array.isArray(order) || order.length !== stops.length || new Set(order).size !== stops.length ||
+          order.some(index => !Number.isInteger(index) || index < 0 || index >= stops.length)))) {
+        throw new Error("The route does not match the requested stops.");
+      }
+      active.plan = plan;
+      active.stops = order?.map(index => stops[index]) ?? stops;
       active.progress = 0;
       active.visited = 0;
       active.offRoute = 0;
@@ -152,8 +163,9 @@ export function createSifricNavigation({
     if (!validPoint(point) || !Number.isFinite(accuracy) || accuracy < 0 || accuracy > 70 ||
         !Number.isFinite(position.timestamp) || position.timestamp <= active.lastFix) return;
     active.lastFix = position.timestamp;
-    const { segments, coordinates, length, steps, route, speedLimits, weights } = active.plan;
-    const match = project(point, segments, active.progress);
+    const { segments, coordinates, length, steps, stops, route, speedLimits, weights } = active.plan;
+    const nextStop = stops[active.visited];
+    const match = project(point, segments, active.progress, nextStop?.position);
     const threshold = Math.max(35, accuracy * 1.5);
     if (match.away > threshold) {
       active.offRoute++;
@@ -166,15 +178,16 @@ export function createSifricNavigation({
     }
     active.offRoute = 0;
     active.progress = Math.max(active.progress, match.progress);
-    const intermediate = steps.filter(step => step.intermediate);
-    active.visited = intermediate.filter(step => step.position <= active.progress + 5).length;
+    while (accuracy <= 25 && stops[active.visited]?.position <= active.progress + 25 &&
+        distance(point, stops[active.visited].location) <= 25) active.visited++;
     const remaining = length - active.progress;
-    if (remaining <= 25 && distance(point, coordinates.at(-1)) <= 25 && accuracy <= 25) {
+    if (active.visited === stops.length && remaining <= 25 && distance(point, coordinates.at(-1)) <= 25 && accuracy <= 25) {
       emit(active, "arrived", { position: point, snapped: match.point, remainingMeters: 0 });
       if (session === active) stop();
       return;
     }
-    const next = steps.find(step => step.position > active.progress + 5);
+    const outstandingStop = stops[active.visited];
+    const next = steps.find(step => step === outstandingStop || step.position > active.progress + 5);
     const limit = speedLimits.find(span => span.startIndex <= match.index && match.index < span.endIndex);
     const speedKph = Number.isFinite(speed) && speed >= 0 ? speed * 3.6 : null;
     const eta = route.trafficDuration ?? route.duration;

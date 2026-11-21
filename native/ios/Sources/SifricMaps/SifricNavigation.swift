@@ -63,7 +63,7 @@ public final class SifricNavigation {
               ([destination] + stops).allSatisfy({ (78...82.5).contains($0.longitude) && (5...10.5).contains($0.latitude) }),
               ["drive", "walk", "cycle", "motorcycle", "tuk"].contains(mode) else { throw SifricError.invalidCoordinates }
         let initialPlan = try initialRoute.map { try Plan($0) }
-        if let initialPlan, initialPlan.stopPositions.count != stops.count { throw SifricError.invalidResponse }
+        if let initialPlan, initialPlan.stops.count != stops.count { throw SifricError.invalidResponse }
         stop()
         self.destination = destination
         self.mode = mode
@@ -86,7 +86,8 @@ public final class SifricNavigation {
             makeRoute(from: point, to: destination, rerouting: false)
             return
         }
-        let match = plan.project(point, reference: progress)
+        let nextStop = visitedStops < plan.stops.count ? plan.stops[visitedStops] : nil
+        let match = plan.project(point, reference: progress, end: nextStop?.along ?? plan.length)
         if match.away > max(35, location.horizontalAccuracy * 1.5) {
             metrics = nil
             offRoute += 1
@@ -98,11 +99,14 @@ public final class SifricNavigation {
         }
         offRoute = 0
         progress = max(progress, match.along)
-        while visitedStops < plan.stopPositions.count && plan.stopPositions[visitedStops] <= progress + 5 {
+        while location.horizontalAccuracy <= 25, visitedStops < plan.stops.count,
+              plan.stops[visitedStops].along <= progress + 25,
+              Plan.distance(point, plan.stops[visitedStops].maneuver.location) <= 25 {
             visitedStops += 1
         }
         let remaining = plan.length - progress
-        if remaining <= 25 && Plan.distance(point, plan.end) <= 25 && location.horizontalAccuracy <= 25 {
+        if visitedStops == plan.stops.count && remaining <= 25 &&
+            Plan.distance(point, plan.end) <= 25 && location.horizontalAccuracy <= 25 {
             stop()
             speak("You have arrived.")
             onEvent(.arrived)
@@ -110,7 +114,8 @@ public final class SifricNavigation {
             metrics = Progress(remainingSeconds: plan.duration * remaining / plan.length,
                                speedKph: location.speed.isFinite && location.speed >= 0 ? location.speed * 3.6 : nil,
                                speedLimitKph: plan.speedLimit(segment: match.index))
-            let next = plan.turns.first { $0.along > progress + 5 }
+            let outstanding = visitedStops < plan.stops.count ? plan.stops[visitedStops] : nil
+            let next = plan.turns.first { $0.stopIndex == outstanding?.stopIndex && $0.stopIndex != nil || $0.along > progress + 5 }
             if let next, voiceEnabled, next.along - progress <= 120,
                next.along != spokenPosition, next.maneuver.type != "arrive" || next.intermediate {
                 spokenPosition = next.along
@@ -162,7 +167,7 @@ public final class SifricNavigation {
                 }
                 try Task.checkCancellation()
                 let nextPlan = try Plan(route)
-                guard nextPlan.stopPositions.count == ordered.count else { throw SifricError.invalidResponse }
+                guard nextPlan.stops.count == ordered.count else { throw SifricError.invalidResponse }
                 plan = nextPlan
                 intermediateStops = ordered
                 visitedStops = 0
@@ -182,6 +187,12 @@ public final class SifricNavigation {
 }
 
 private struct Plan {
+    struct Turn {
+        let along: Double
+        let maneuver: SifricRoute.Maneuver
+        let stopIndex: Int?
+        var intermediate: Bool { stopIndex != nil }
+    }
     struct Segment {
         let a: [Double]
         let x: Double
@@ -196,8 +207,8 @@ private struct Plan {
     let limits: [SifricRoute.SpeedLimit]
     let end: [Double]
     let segments: [Segment]
-    var turns: [(along: Double, maneuver: SifricRoute.Maneuver, intermediate: Bool)] = []
-    var stopPositions: [Double] = []
+    var turns: [Turn] = []
+    var stops: [Turn] = []
 
     init(_ route: SifricRoute) throws {
         let coordinates = route.geometry.coordinates
@@ -209,13 +220,14 @@ private struct Plan {
         limits = route.legs.flatMap { $0.speedLimits ?? [] }
         var total = 0.0
         var segments: [Segment] = []
+        var distances = [0.0]
         for (index, (a, b)) in zip(coordinates, coordinates.dropFirst()).enumerated() {
             let x = (b[0] - a[0]) * Self.longitudeScale(a[1])
             let y = (b[1] - a[1]) * 111_195
             let length = hypot(x, y)
-            guard length > 0 else { continue }
-            segments.append(Segment(a: a, x: x, y: y, length: length, start: total, index: index))
+            if length > 0 { segments.append(Segment(a: a, x: x, y: y, length: length, start: total, index: index)) }
             total += length
+            distances.append(total)
         }
         guard total > 0 else { throw SifricError.invalidResponse }
         length = total
@@ -223,10 +235,17 @@ private struct Plan {
         var along = 0.0
         for (index, leg) in route.legs.enumerated() {
             for step in leg.steps where step.maneuver.type != "depart" && step.maneuver.location.count == 2 {
-                along = max(along, project(step.maneuver.location, reference: along).along)
+                let position: Double
+                if let index = step.maneuver.geometryIndex, distances.indices.contains(index) {
+                    position = distances[index]
+                } else {
+                    position = project(step.maneuver.location, reference: along).along
+                }
+                along = max(along, position)
                 let intermediate = index < route.legs.count - 1 && step.maneuver.type == "arrive"
-                if intermediate { stopPositions.append(along) }
-                turns.append((along, step.maneuver, intermediate))
+                let turn = Turn(along: along, maneuver: step.maneuver, stopIndex: intermediate ? stops.count : nil)
+                if intermediate { stops.append(turn) }
+                turns.append(turn)
             }
         }
     }
@@ -246,13 +265,15 @@ private struct Plan {
         }
     }
 
-    func project(_ point: [Double], reference: Double) -> (along: Double, away: Double, index: Int) {
+    func project(_ point: [Double], reference: Double, end: Double = .infinity) -> (along: Double, away: Double, index: Int) {
         var cost = Double.infinity
         var best = (along: 0.0, away: Double.infinity, index: 0)
         for segment in segments {
+            if segment.start > end { break }
             let x = (point[0] - segment.a[0]) * Self.longitudeScale(segment.a[1])
             let y = (point[1] - segment.a[1]) * 111_195
-            let t = max(0, min(1, (x * segment.x + y * segment.y) / (segment.length * segment.length)))
+            let t = max(0, min(1, (end - segment.start) / segment.length,
+                               (x * segment.x + y * segment.y) / (segment.length * segment.length)))
             let along = segment.start + t * segment.length
             let away = hypot(x - t * segment.x, y - t * segment.y)
             let next = away + min(25, abs(along - reference) / 200)

@@ -109,6 +109,26 @@ test('routes again from the device after three off-route fixes and clears watche
   assert.equal(events.length, count);
 });
 
+test('keeps a skipped stop when rerouting from a later portion of the route', async () => {
+  const device = devices();
+  const events = [];
+  const calls = [];
+  const selected = {
+    ...route, legs: [
+      { steps: [{ maneuver: { type: 'arrive', location: turn, geometryIndex: 1 } }] },
+      { steps: [{ maneuver: { type: 'arrive', location: end, geometryIndex: 2 } }] },
+    ],
+  };
+  const client = { route: async body => { calls.push(body); return { routes: [selected] }; } };
+  const session = createSifricNavigation({ client, geolocation: device.geolocation, onUpdate: event => events.push(event) });
+  await session.start({ origin: start, destination: end, stops: [turn], initialRoute: selected });
+  for (const time of [1000, 2000, 3000]) device.fix(end, time);
+  await new Promise(resolve => setImmediate(resolve));
+  assert.ok(!events.some(event => event.status === 'arrived'));
+  assert.deepEqual(calls[0].coordinates, [end, turn, end]);
+  session.stop();
+});
+
 test('permission failure stops tracking and an abandoned route response cannot restart it', async () => {
   const device = devices();
   const events = [];
