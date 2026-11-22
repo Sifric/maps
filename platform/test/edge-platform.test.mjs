@@ -11,6 +11,9 @@ const assets = new Map([
   ['/_sifric_index/id/123.json', [row]],
   ['/_sifric_index/near/798-69.json', [row]],
 ]);
+const sinhala = [124, 'Post Office කාත්තන්කුඩි', 81.73, 7.68, 'government', 'Post office', null];
+const distant = [125, 'Post Office කාත්තන්කුඩි', 80.64, 7.29, 'government', 'Post office', null];
+assets.set('/_sifric_index/search/' + Buffer.from('කා').toString('hex') + '.json', [distant, sinhala]);
 const local = createPlatformApi('sri-lanka.pmtiles');
 const gateway = createPrivateGateway(new Map(), local);
 const token = randomBytes(32).toString('base64url');
@@ -72,6 +75,16 @@ test('Terrarium samples a bounded RGB tile at the configured source', async () =
   });
   assert.equal(sample.elevationMeters, 203.5);
   assert.equal(await terrarium(80.77, 6.97, async () => new Response(null, { status: 404 })), null);
+});
+
+test('nearby search ranks indexed Sinhala spelling variants by proximity', async () => {
+  const response = await call('/places/search?' + new URLSearchParams({
+    q: 'කාත්තාන්කුඩි', lon: '81.73', lat: '7.68',
+  }));
+  assert.equal(response.status, 200);
+  const { items } = await response.json();
+  assert.deepEqual(items.map(item => item.id), [124, 125]);
+  assert.equal(items[0].distanceMeters, 0);
 });
 
 test('place photo catalog and native SDK packages stay behind developer access', async () => {

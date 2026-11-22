@@ -403,7 +403,9 @@ function connectedWaypointOrder(points, choices, duration) {
 export async function solveRoute(graph, points, sources, destinations, loadShapes, matchTrace = false, limits, options = {}) {
   const radius = matchTrace ? 100 : 500;
   const choices = points.map(point => nearestVertices(graph, point, radius, matchTrace ? 3 : 1));
-  if (choices.some(candidate => !candidate.length)) throw new RoutingError(422, `A coordinate is more than ${radius} m from a routable vertex.`);
+  if (!(sources && options.allowUnsnapped) && choices.some(candidate => !candidate.length)) {
+    throw new RoutingError(422, `A coordinate is more than ${radius} m from a routable vertex.`);
+  }
   const forward = new Map();
   const backward = new Map();
   const meeting = (source, target) => {
@@ -421,8 +423,8 @@ export async function solveRoute(graph, points, sources, destinations, loadShape
     const peak = meeting(source, target);
     return peak && expandRoute(graph, forward.get(source), backward.get(target), peak);
   };
-  let waypoints = matchTrace ? traceVertices(points, choices, pair) : choices.map(candidate => candidate[0]);
-  let pairs = waypoints.map(point => point.vertex);
+  let waypoints = matchTrace ? traceVertices(points, choices, pair) : choices.map(candidate => candidate[0] ?? null);
+  let pairs = waypoints.map(point => point?.vertex);
   const nearby = (count, extra) => points.map((point, i) => nearestVertices(graph, point, radius, count)
     .filter(candidate => candidate.distance <= waypoints[i].distance + extra));
   let waypointOrder;
@@ -440,7 +442,7 @@ export async function solveRoute(graph, points, sources, destinations, loadShape
   }
   if (sources) {
     const values = sources.map(a => destinations.map(b => {
-      const route = pair(pairs[a], pairs[b]);
+      const route = pairs[a] === undefined || pairs[b] === undefined ? null : pair(pairs[a], pairs[b]);
       return [route?.duration ?? null, route?.distance ?? null];
     }));
     return {
@@ -634,6 +636,9 @@ export async function availableRoutingModes(bucket) {
 export async function routingRequest(bucket, operation, body) {
   const mode = body.mode ?? 'drive';
   const profile = routingProfile(body);
+  if (body.allowUnsnapped !== undefined && (operation !== 'matrix' || typeof body.allowUnsnapped !== 'boolean')) {
+    throw new RoutingError(400, 'allowUnsnapped is a Boolean matrix option.');
+  }
   if (body.speedLimits !== undefined && (typeof body.speedLimits !== 'boolean' || mode !== 'drive' || operation === 'matrix')) {
     throw new RoutingError(400, 'Speed limits are available for drive routes and traces.');
   }
@@ -677,7 +682,7 @@ export async function routingRequest(bucket, operation, body) {
     }
     const route = await solveRoute(file.graph, coordinates, sources, destinations,
       arcs => loadGraphShapes(bucket, file, arcs), operation === 'match', limits, body);
-    return { code: 'Ok', mode, traffic: 'none', attribution: '© OpenStreetMap contributors',
+    return { code: 'Ok', mode, graphVersion: file.etag, traffic: 'none', attribution: '© OpenStreetMap contributors',
       ...(profile !== mode && { drivingProfile: profile }), ...route };
   } finally {
     activeRequests--;

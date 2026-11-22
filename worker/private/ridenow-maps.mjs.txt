@@ -1,0 +1,175 @@
+const base = "https://maps.sifric.workers.dev/developer/api/v1/";
+const bounds = Object.freeze([78, 5, 82.5, 10.5]);
+const modes = new Map([["TUK", "tuk"], ["CAR", "drive"], ["VAN", "drive"]]);
+
+function failure(status, code) {
+  return Object.assign(new Error(code), { status, code });
+}
+
+function inCoverage(point) {
+  return Array.isArray(point) && point.length === 2 && point.every(Number.isFinite) &&
+    point[0] >= bounds[0] && point[0] <= bounds[2] && point[1] >= bounds[1] && point[1] <= bounds[3];
+}
+
+function queryOptions(near) {
+  if (near === undefined) return {};
+  if (!inCoverage(near)) throw failure(422, "OUTSIDE_MAP_COVERAGE");
+  return { lon: near[0], lat: near[1] };
+}
+
+function mapRoute(response, count) {
+  const route = response?.routes?.[0];
+  const points = route?.geometry?.coordinates;
+  if (!Array.isArray(points) || points.length < 2 || route.geometry.type !== "LineString" ||
+      !Array.isArray(route.legs) || route.legs.length !== count ||
+      !Number.isFinite(route.distance) || !Number.isFinite(route.duration)) {
+    throw failure(502, "MAPS_INVALID_RESPONSE");
+  }
+  let start = 0;
+  const legs = route.legs.map((leg, index) => {
+    const end = leg.steps?.at(-1)?.maneuver?.geometryIndex;
+    if (!Number.isInteger(end) || end < start || end >= points.length ||
+        (index === count - 1 && route.distance > 0 && end !== points.length - 1) ||
+        !Number.isFinite(leg.distance) || !Number.isFinite(leg.duration)) {
+      throw failure(502, "MAPS_INVALID_RESPONSE");
+    }
+    const coordinates = points.slice(start, end + 1);
+    if (coordinates.length === 1) coordinates.push(coordinates[0]);
+    start = end;
+    return { distanceMeters: leg.distance, durationSeconds: leg.duration, geometry: { type: "LineString", coordinates } };
+  });
+  return {
+    distanceMeters: route.distance,
+    durationSeconds: route.duration,
+    legs,
+    provider: "sifric",
+    graphVersion: response.graphVersion ?? "sifric-routing-v2",
+  };
+}
+
+/**
+ * Server adapter for RideNow's maps interface. Keep the Sifric token on the server.
+ */
+export function createRideNowMaps({
+  token, approvedCategories = ["TUK", "CAR"], allowVanWithDrive = false,
+  maxSnapMeters = 150, timeoutMs = 8000, fetchImpl = globalThis.fetch,
+} = {}) {
+  if (typeof window !== "undefined") throw failure(500, "MAPS_SERVER_ONLY");
+  if (typeof token !== "string" || !/^[A-Za-z0-9_-]{43,128}$/u.test(token)) {
+    throw failure(503, "MAPS_CREDENTIAL_REQUIRED");
+  }
+  if (!Array.isArray(approvedCategories) || approvedCategories.some(category => !modes.has(category)) ||
+      !Number.isFinite(maxSnapMeters) || maxSnapMeters < 1 || maxSnapMeters > 500 ||
+      !Number.isInteger(timeoutMs) || timeoutMs < 100 || timeoutMs > 15000) {
+    throw failure(500, "MAPS_INVALID_CONFIGURATION");
+  }
+  const approved = [...new Set(approvedCategories)].filter(category => category !== "VAN" || allowVanWithDrive === true);
+
+  function modeFor(category) {
+    if (!approved.includes(category)) throw failure(503, "CATEGORY_MAP_NOT_APPROVED");
+    return modes.get(category);
+  }
+
+  async function request(path, { body, query } = {}) {
+    const url = new URL(path, base);
+    if (query) url.search = new URLSearchParams(query);
+    let response;
+    let data;
+    try {
+      response = await fetchImpl(url, {
+        method: body ? "POST" : "GET",
+        headers: {
+          Authorization: "Bearer " + token,
+          Accept: "application/json",
+          ...(body && { "Content-Type": "application/json" }),
+        },
+        ...(body && { body: JSON.stringify(body) }),
+        redirect: "error",
+        signal: AbortSignal.timeout(timeoutMs),
+      });
+      if (response.ok) data = await response.json();
+    } catch {
+      throw failure(503, "MAPS_UNAVAILABLE");
+    }
+    if (response.ok) return data;
+    if ([401, 403].includes(response.status)) throw failure(503, "MAPS_AUTH_FAILED");
+    if (response.status === 422) throw failure(422, "ROUTE_UNAVAILABLE");
+    if (response.status === 404) throw failure(404, "MAPS_NOT_FOUND");
+    if (response.status === 400) throw failure(400, "MAPS_INVALID_REQUEST");
+    throw failure(503, "MAPS_UNAVAILABLE");
+  }
+
+  return {
+    coverage: () => ({
+      bounds: [...bounds], version: "sifric-routing-v2", approvedCategories: [...approved],
+      limitations: ["Routing coverage depends on mapped roads.", "Travel times are estimates without live traffic."],
+    }),
+    async route({ waypoints, vehicleCategory }) {
+      const mode = modeFor(vehicleCategory);
+      if (!Array.isArray(waypoints) || waypoints.length < 2 || waypoints.length > 8) {
+        throw failure(400, "MAPS_INVALID_REQUEST");
+      }
+      if (!waypoints.every(inCoverage)) throw failure(422, "OUTSIDE_MAP_COVERAGE");
+      const value = await request("routes", { body: { coordinates: waypoints, mode } });
+      const snapped = value?.waypoints?.map(point => point?.distance);
+      if (snapped?.length !== waypoints.length || !snapped.every(Number.isFinite)) {
+        throw failure(502, "MAPS_INVALID_RESPONSE");
+      }
+      if (snapped.some(offset => offset > maxSnapMeters)) throw failure(422, "WAYPOINT_TOO_FAR_FROM_ROAD");
+      return { ...mapRoute(value, waypoints.length - 1), snappedWaypointDistancesMeters: snapped };
+    },
+    async matrix({ origins, destination, vehicleCategory }) {
+      const mode = modeFor(vehicleCategory);
+      if (!Array.isArray(origins) || origins.length > 24) throw failure(400, "MAPS_INVALID_REQUEST");
+      if (!inCoverage(destination)) throw failure(422, "OUTSIDE_MAP_COVERAGE");
+      const rows = Array(origins.length).fill(null);
+      const indexes = origins.flatMap((point, index) => inCoverage(point) ? [index] : []);
+      if (!indexes.length) return rows;
+      const body = {
+        coordinates: [...indexes.map(index => origins[index]), destination], mode,
+        sources: indexes.map((_, index) => index), destinations: [indexes.length],
+        allowUnsnapped: true,
+      };
+      const { durations, distances, sources, destinations } = await request("matrix", { body });
+      if (![durations, distances].every(grid => Array.isArray(grid) && grid.length === indexes.length &&
+          grid.every(row => Array.isArray(row) && row.length === 1)) ||
+          sources?.length !== indexes.length || destinations?.length !== 1) throw failure(502, "MAPS_INVALID_RESPONSE");
+      const pickupOffset = destinations[0]?.distance;
+      if (!Number.isFinite(pickupOffset) || pickupOffset > maxSnapMeters) throw failure(422, "WAYPOINT_TOO_FAR_FROM_ROAD");
+      indexes.forEach((index, row) => {
+        const durationSeconds = durations[row][0];
+        const distanceMeters = distances[row][0];
+        if (Number.isFinite(durationSeconds) && Number.isFinite(distanceMeters)) {
+          const offset = sources[row]?.distance;
+          if (!Number.isFinite(offset)) throw failure(502, "MAPS_INVALID_RESPONSE");
+          if (offset <= maxSnapMeters) rows[index] = { durationSeconds, distanceMeters };
+        }
+        else if (durationSeconds !== null || distanceMeters !== null) throw failure(502, "MAPS_INVALID_RESPONSE");
+      });
+      return rows;
+    },
+    async searchPlaces({ query, near }) {
+      if (typeof query !== "string" || query.trim().length < 2 || query.trim().length > 120) {
+        throw failure(400, "MAPS_INVALID_REQUEST");
+      }
+      const response = await request("places/search", { query: { q: query, limit: 20, ...queryOptions(near) } });
+      if (!Array.isArray(response?.items)) throw failure(502, "MAPS_INVALID_RESPONSE");
+      return {
+        items: response.items.map(place => ({
+          id: place.id, name: place.name, coordinates: [place.lon, place.lat],
+          kind: place.kind, label: place.label ?? null,
+          ...(Number.isFinite(place.distanceMeters) && { distanceMeters: place.distanceMeters }),
+        })),
+      };
+    },
+    async placeDetails(id) {
+      if (!Number.isSafeInteger(id) || id <= 0) throw failure(400, "MAPS_INVALID_REQUEST");
+      const place = await request("places/" + id);
+      return { ...place, coordinates: [place.lon, place.lat] };
+    },
+    async reverseGeocode({ coordinates, radius = 75 }) {
+      if (!inCoverage(coordinates)) throw failure(422, "OUTSIDE_MAP_COVERAGE");
+      return request("geocode/reverse", { query: { ...queryOptions(coordinates), radius } });
+    },
+  };
+}

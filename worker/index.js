@@ -18,6 +18,7 @@ import navigation from "./private/navigation.html.txt";
 import navigationScript from "./private/navigation.js.txt";
 import navigationStyle from "./private/navigation.css.txt";
 import navigationSdk from "./private/sifric-navigation.js.txt";
+import rideNowAdapter from "./private/ridenow-maps.mjs.txt";
 
 const TILE_KEY = "lkmaps/sri-lanka.pmtiles";
 const handleDeveloper = createPrivateGateway(new Map([
@@ -35,6 +36,7 @@ const handleDeveloper = createPrivateGateway(new Map([
   ["/developer/navigation/navigation.js", [navigationScript, "text/javascript; charset=utf-8"]],
   ["/developer/navigation/navigation.css", [navigationStyle, "text/css; charset=utf-8"]],
   ["/developer/sifric-navigation.js", [navigationSdk, "text/javascript; charset=utf-8"]],
+  ["/developer/ridenow-maps.mjs", [rideNowAdapter, "text/javascript; charset=utf-8"]],
 ]), createPlatformApi(TILE_KEY, renderStaticMap));
 const cors = {
   "Access-Control-Allow-Origin": "*",

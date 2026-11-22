@@ -208,6 +208,39 @@ Run rendering in an isolated container. Both images use the authenticated
 - `SIFRIC_WEB_ORIGIN`, `SIFRIC_CHROMIUM`, and a dedicated allowlisted `SIFRIC_RENDER_TOKEN` enable server-side PNG rendering from a trusted Sifric Worker origin and an installed Chromium executable. Run the renderer in an isolated service as an unprivileged user.
 - `HOST` and `PORT` default to `127.0.0.1` and `8788`. Place the API behind appropriate authentication, quotas, and logging controls before allowing public access, especially for locations, routing, and rendering.
 
+## RideNow test connection
+
+Download the server module from `https://maps.sifric.workers.dev/developer/ridenow-maps.mjs`
+with developer access. The module has no package dependencies. Instantiate it
+on the RideNow server, where it can read a Sifric bearer token.
+
+```js
+import { createRideNowMaps } from "./ridenow-maps.mjs";
+
+const maps = createRideNowMaps({
+  token: process.env.SIFRIC_MAPS_TOKEN,
+  approvedCategories: ["TUK", "CAR"],
+});
+```
+
+The module implements `coverage()`, `route({waypoints,vehicleCategory})`,
+`matrix({origins,destination,vehicleCategory})`, and `searchPlaces({query,near})`.
+Place details and reverse geocoding are available for map pickers.
+`route` preserves leg geometry and reports waypoint snap offsets. The pilot
+defaults to a 150 m snap limit and an 8 s upstream timeout. An unsnappable
+driver produces a null matrix entry at the original index. An auth or
+upstream outage raises a separate error. Fare policy, dispatch, GPS feeds
+and operating geofences belong to RideNow. Times use estimated road speeds.
+
+For `VAN`, use the driving profile only after validating local vehicle
+access and explicitly approving `VAN` and `allowVanWithDrive`. An approved
+van with that option receives ordinary driving routes. For addresses, use
+place search and a pin picker that keeps the exact selected coordinates.
+Reverse geocoding returns an indexed place and its distance. Saved address
+labels can be entered by the rider. Compare sample fares and driver ordering
+before using Sifric for production dispatch. The Android app can render the
+Sifric map with the native MapLibre SDK and get routes from its own backend.
+
 ## Embed and SDK
 
 ```html

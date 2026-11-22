@@ -16,7 +16,8 @@
   <ul>
     <li><code>GET /capabilities</code> lists currently deployed travel profiles and map features.</li>
     <li><code>GET /places/search?q=Colombo</code>, <code>GET /places/nearby?lon=79.86&amp;lat=6.92</code>,
-      <code>GET /places/:id</code>, and <code>GET /places/:id/photos</code> provide place lookup and licensed images where available.</li>
+      <code>GET /places/:id</code>, and <code>GET /places/:id/photos</code> provide place lookup and licensed images where available.
+      Search accepts optional <code>lon</code> and <code>lat</code> to order equally relevant matches by proximity.</li>
     <li><code>GET /geocode?q=Colombo</code> and <code>GET /geocode/reverse?lon=79.86&amp;lat=6.92</code>
       resolve indexed places.</li>
     <li><code>GET /static-map</code> accepts <code>lon</code>, <code>lat</code>, <code>zoom</code>,
@@ -53,7 +54,9 @@
     <code>{"location":[lon,lat]}</code> or <code>{"placeId":123}</code> per item.
     Matrices accept 2–25 coordinates and optional
     <code>sources</code> and <code>destinations</code> index arrays. Distances are in
-    meters and durations are in seconds. Set <code>speedLimits: true</code> on
+    meters and durations are in seconds. Set <code>allowUnsnapped: true</code> on a
+    matrix to return a null row or column for each coordinate with no nearby routable vertex.
+    Set <code>speedLimits: true</code> on
     a drive route or trace to include known mapped limits. Set <code>trafficAware: true</code> on a motor vehicle route to request an estimate from available current observations.</p>
   <p>Set <code>alternatives: true</code> on a two-point route to request up to two
     distinct alternatives. Set <code>optimizeWaypointOrder: true</code> to reorder up to six
@@ -64,6 +67,12 @@
     Road graphs exclude ferries. GPS trace matching accepts 2–25 fixes.</p>
   <p><a href="/developer/navigation/">Route preview and live guidance</a></p>
   <p><a href="/developer/native-sdk/">Native SDK setup</a></p>
+  <h2>RideNow test integration</h2>
+  <p><a href="/developer/ridenow-maps.mjs" download>Download the server adapter</a>.
+    It exposes RideNow-compatible route, dispatch matrix and places methods.
+    Use the authenticated Sifric server endpoint with a server-side bearer token.
+    The test defaults enable tuk-tuk and car and use estimated road travel times.
+    The native SDK packages provide the map renderer.</p>
 </main>
 </body>
 </html>

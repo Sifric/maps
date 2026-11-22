@@ -325,19 +325,39 @@ export function createPlatformApi(tileKey, renderStaticMap) {
         }
         const limit = Math.floor(number(query.get('limit') ?? 10, 'limit', 1, 50));
         const terms = q.split(/\s+/u);
-        const prefix = [...terms[0]].slice(0, 2).join('');
-        const key = [...new TextEncoder().encode(prefix)].map(b => b.toString(16).padStart(2, '0')).join('');
-        const rows = await shard(env, origin, 'search/' + key);
-        const primary = [], secondary = [];
-        for (const row of rows) {
-          const name = normalize(row[1]);
-          const text = name + ' ' + normalize(row[6] ?? '');
-          if (!terms.every(term => text.includes(term))) continue;
-          const matches = name.startsWith(q) ? primary : secondary;
-          if (matches.length < limit) matches.push(place(row));
-          if (primary.length >= limit) break;
+        const keys = [...new Set(terms.filter(term => [...term].length >= 2).map(term => {
+          const prefix = [...term].slice(0, 2).join('');
+          return [...new TextEncoder().encode(prefix)].map(b => b.toString(16).padStart(2, '0')).join('');
+        }))].slice(0, 3);
+        const near = query.has('lon') || query.has('lat') ? coords(query) : null;
+        const fold = value => value.normalize('NFD').replace(/\p{M}/gu, '');
+        const foldedTerms = terms.map(fold);
+        const shards = await Promise.all(keys.map(key => shard(env, origin, 'search/' + key)));
+        const seen = new Set(), matches = [];
+        for (const rows of shards) {
+          for (const row of rows) {
+            if (seen.has(row[0])) continue;
+            seen.add(row[0]);
+            const name = normalize(row[1]);
+            const label = normalize(row[6] ?? '');
+            const text = name + ' ' + label;
+            let rank;
+            if (name === q || label === q) rank = 0;
+            else if (name.startsWith(q) || label.startsWith(q)) rank = 1;
+            else if (terms.every(term => text.includes(term))) rank = 2;
+            else {
+              const folded = fold(text);
+              if (!foldedTerms.every(term => term && folded.includes(term))) continue;
+              rank = 3;
+            }
+            const meters = near ? distance(...near, row[2], row[3]) : 0;
+            matches.push({ row, rank, meters });
+          }
         }
-        return result({ items: primary.concat(secondary).slice(0, limit), precision: 'indexed-place' });
+        matches.sort((a, b) => a.rank - b.rank || a.meters - b.meters);
+        return result({ items: matches.slice(0, limit).map(({ row, meters }) => ({
+          ...place(row), ...(near && { distanceMeters: Math.round(meters) }),
+        })), precision: 'indexed-place' });
       }
       const [lon, lat] = coords(query);
       if (isNearestRoad) {

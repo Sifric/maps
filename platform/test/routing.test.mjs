@@ -71,4 +71,8 @@ test('a disconnected nearest vertex can be recovered without building off-networ
   }
   const matrix = await solveRoute(graph, points, [0], [2], shape);
   assert.deepEqual(matrix.distances, [[null]]);
+  const withUnsnapped = await solveRoute(graph, [[80, 7], [longitude[1], latitude], points[2]],
+    [0, 1], [2], shape, false, undefined, { allowUnsnapped: true });
+  assert.deepEqual(withUnsnapped.distances, [[null], [875]]);
+  assert.equal(withUnsnapped.sources[0], null);
 });

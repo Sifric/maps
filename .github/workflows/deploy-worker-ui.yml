@@ -52,7 +52,7 @@ jobs:
           grep -q '"/dashboard"' worker/index.js
           node --check worker/index.js
           node --check worker/public/map.js
-          node --test platform/test/privacy.test.mjs platform/test/edge-platform.test.mjs platform/test/edge-scheduling.test.mjs platform/test/mobility.test.mjs platform/test/navigation.test.mjs platform/test/routing.test.mjs
+          node --test platform/test/privacy.test.mjs platform/test/edge-platform.test.mjs platform/test/edge-scheduling.test.mjs platform/test/mobility.test.mjs platform/test/navigation.test.mjs platform/test/routing.test.mjs platform/test/ridenow-adapter.test.mjs
       - name: Verify Worker build without deploying
         working-directory: worker
         run: wrangler deploy --dry-run
