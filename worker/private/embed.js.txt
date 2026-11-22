@@ -12,6 +12,8 @@ const lon = read("lon", -180, 180);
 const lat = read("lat", -85, 85);
 const zoom = read("zoom", 0, 20);
 const center = lon !== undefined && lat !== undefined ? [lon, lat] : undefined;
+const staticImage = query.get("static") === "1";
+const attributionPreference = query.get("attribution");
 
 const status = document.getElementById("status");
 const view = document.getElementById("map-view");
@@ -23,9 +25,37 @@ function showStatus(message) {
 
 try {
   const map = await createSifricMap("map", {
+    attributionControl: false,
     ...(center ? { center } : {}),
     ...(zoom !== undefined ? { zoom } : {}),
   });
+  const wordmark = document.createElement("span");
+  wordmark.id = "sifric-wordmark";
+  wordmark.textContent = "Sifric";
+  map.getContainer().append(wordmark);
+
+  let attribution;
+  let attributionMode;
+  function showAttribution(type) {
+    const mode = staticImage || type === "satellite" || attributionPreference === "1" ? "full" :
+      attributionPreference === "0" ? "collapse" : "auto";
+    if (mode === attributionMode) return;
+    attributionMode = mode;
+    if (attribution) map.removeControl(attribution);
+    const control = new maplibregl.AttributionControl({
+      ...(mode !== "auto" && { compact: mode === "collapse" }),
+      customAttribution: '<a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap contributors</a>',
+    });
+    attribution = control;
+    map.addControl(control);
+    if (mode === "collapse") {
+      map.once("idle", () => setTimeout(() => {
+        if (attribution !== control) return;
+        map.getContainer().querySelector(".maplibregl-compact-show > summary")?.click();
+      }, 5000));
+    }
+  }
+  showAttribution(query.get("type"));
   map.once("load", () => {
     const appearance = createMapOptions(map, {
       baseStyle: map.getStyle(),
@@ -34,6 +64,7 @@ try {
         theme: query.get("theme"),
         type: query.get("type"),
         onChange(settings) {
+          showAttribution(settings.type);
           view.value = settings.type;
           theme.value = settings.theme;
           for (const option of view.options) option.disabled = settings.unavailable.includes(option.value);
@@ -46,7 +77,7 @@ try {
     document.getElementById("appearance").hidden = query.get("controls") !== "1";
     map.once("idle", () => { document.getElementById("map").dataset.ready = "true"; });
   });
-  if (query.get("static") !== "1") {
+  if (!staticImage && query.get("zoomControls") === "1") {
     map.addControl(new maplibregl.NavigationControl({ showCompass: false }));
   }
   if (center && query.get("pin") === "1") {

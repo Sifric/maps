@@ -1,4 +1,19 @@
 html, body, #map { height: 100%; width: 100%; margin: 0; }
+#sifric-wordmark {
+  position: absolute;
+  bottom: max(.65rem, env(safe-area-inset-bottom));
+  left: max(.75rem, env(safe-area-inset-left));
+  z-index: 1;
+  pointer-events: none;
+  color: #17242d;
+  opacity: .58;
+  font: 750 1rem/1 system-ui, sans-serif;
+  text-shadow: 0 0 3px #fff;
+}
+:root[data-theme="dark"] #sifric-wordmark {
+  color: #fff;
+  text-shadow: 0 0 3px #14202a;
+}
 #status { position: absolute; inset: auto 1rem 1rem; padding: .75rem; background: white; font: 1rem system-ui; }
 #appearance {
   position: absolute;
