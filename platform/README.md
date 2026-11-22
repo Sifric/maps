@@ -222,10 +222,9 @@ the Default map and follows the device theme. Add `type=default|satellite|terrai
 and `theme=system|light|dark` to preselect the view and theme. The appearance
 controls are hidden by default. Add `controls=1` to show the selector. Add
 `zoomControls=1` to show the zoom buttons. The position pin appears when
-`pin=1` is set. Use `attribution=0` to collapse the attribution into the
-information button after five seconds or map interaction, or `attribution=1`
-to keep the credit visible. Satellite views and static images keep their
-attribution visible. Satellite imagery retains its natural colors in both themes.
+`pin=1` is set. The Sifric logo appears at the bottom left and map source
+attribution stays visible at the bottom right. Satellite imagery retains its
+natural colors in both themes.
 
 ```js
 import { createSifricMap } from "/developer/sifric-maps.js";
