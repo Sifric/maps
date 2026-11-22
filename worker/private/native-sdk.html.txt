@@ -9,25 +9,48 @@
 <main>
   <p><a href="/developer/">Developer portal</a></p>
   <h1>Native SDKs</h1>
-  <h2>Android</h2>
+  <p>Use the native MapLibre renderer for gestures, camera moves, and overlays on the device. Your backend can request private place data and routes and return the results to your app.</p>
+  <nav aria-label="SDK setup sections">
+    <a href="#android">Android</a> · <a href="#ios">iOS</a> ·
+    <a href="#navigation">Navigation</a> · <a href="#credentials">Credentials</a>
+  </nav>
+  <h2 id="android">Android</h2>
   <p><a href="/developer/api/v1/sdk/android/sifric-maps.aar">Download the Android AAR</a></p>
   <p>Requires Android API 23. Add the AAR to your app's <code>libs</code> directory and include these Gradle dependencies.</p>
   <pre>implementation files('libs/sifric-maps.aar')
 implementation 'org.maplibre.gl:android-sdk:13.6.1'</pre>
   <p>Use <code>org.sifric.maps.SifricMapView</code>. Forward the host lifecycle and call <code>load</code> to get the native MapLibre map. Use <code>SifricPlaceSearchView</code> to display selectable search results.</p>
+  <ol>
+    <li>Give the host app internet access and add the map view to the layout. In Compose, host the view in <code>AndroidView</code>.</li>
+    <li>Call <code>onCreate(savedInstanceState)</code> and forward the remaining lifecycle callbacks, including <code>onDestroy()</code>.</li>
+    <li>Load the style and add overlays from the map-ready callback. Keep location permission separate from basic map rendering.</li>
+  </ol>
+  <pre><code>mapView.load(map -&gt; {
+    SifricMapView.addPin(map, 79.8612, 6.9271, "Colombo");
+});</code></pre>
   <p>Construct <code>SifricClient</code> with a credential provider and call its methods on a background thread. Call <code>SifricNavigation.start</code> and forward Android location updates on the main thread.</p>
-  <h2>iOS</h2>
+  <h2 id="ios">iOS</h2>
   <p><a href="/developer/api/v1/sdk/ios/sifric-maps.zip">Download the iOS Swift package</a></p>
   <p>Requires iOS 15. Extract the ZIP, add the directory as a local Swift package in Xcode, and link <code>SifricMaps</code>.</p>
   <p>Use <code>SifricMapView</code> in SwiftUI or <code>SifricMap.makeView</code> in UIKit. The asynchronous <code>SifricClient</code> powers <code>SifricPlaceSearchView</code>. Forward Core Location updates to <code>SifricNavigation</code> for foreground guidance.</p>
+  <p>After linking the package, import <code>SifricMaps</code>. This example renders the map around Colombo in SwiftUI.</p>
+  <pre><code>import CoreLocation
+import SifricMaps
+
+SifricMapView(
+    center: CLLocationCoordinate2D(latitude: 6.9271, longitude: 79.8612),
+    zoom: 14
+)</code></pre>
   <h2>Map appearance and sharing</h2>
   <p>Choose Default, Satellite, or Terrain and a light, dark, or device theme. Pitch the map at street zoom to see mapped 3D building heights in Default or Terrain. The native map objects expose camera updates, gestures, overlays, and callbacks.</p>
   <p>Use <code>SifricMapsUrls</code> (Android) or <code>SifricMapsURLs</code> (iOS) for search, pinned locations and directions. An installed app can handle these URLs after its App Links or Universal Links association is registered.</p>
-  <h2>Voice and background guidance</h2>
+  <h2 id="navigation">Voice and background guidance</h2>
   <p>On Android, enable voice with <code>enableVoice</code> or subclass <code>SifricNavigationService</code>, provide a foreground notification, and declare a location foreground service. Start it while the app is visible after granting precise location.</p>
   <p>On iOS, retain <code>SifricLocationSession</code>, set the host app's location usage description, and enable the Location updates background capability before starting a background session.</p>
-  <h2>API credentials</h2>
-  <p>Supply credentials at runtime. Keep service tokens on your server for consumer-facing integrations. The host app handles location permission, guidance presentation, and session lifecycle.</p>
+  <p>For a route preview, draw the returned GeoJSON coordinates as a native polyline. The guidance session owns progress and rerouting while your app owns the instruction UI and location permission. Test foreground, background, permission denial, and recovery from a lost connection on target devices.</p>
+  <h2 id="credentials">API credentials</h2>
+  <p>Basic map rendering uses the hosted style and tiles. For consumer apps, keep the shared Sifric token on your server and have the app call your authenticated backend for private search and routes. The bundled <code>SifricClient</code> calls Sifric directly and needs a runtime credential. Use it where your credential flow permits direct access.</p>
+  <p><a href="/developer/api-reference/#routing">API routing examples</a></p>
 </main>
 </body>
 </html>

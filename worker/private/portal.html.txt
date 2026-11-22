@@ -3,24 +3,66 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sifric Maps Developer Access</title>
-  <script type="module" src="/developer/portal.js"></script>
+  <title>Sifric Maps Developer Portal</title>
 </head>
 <body>
-  <main>
-    <h1>Sifric Maps Developer Access</h1>
+<header>
+  <h1>Sifric Maps Developer Portal</h1>
+  <p>Build maps, address pickers, route previews, and turn-by-turn guidance with Sri Lankan map data.</p>
+  <nav aria-label="Developer documentation">
     <ul>
+      <li><a href="#start">Quick start</a></li>
+      <li><a href="#integration">Choose an integration</a></li>
+      <li><a href="#examples">Try examples</a></li>
+      <li><a href="#checks">Integration checks</a></li>
       <li><a href="/developer/api-reference/">API reference</a></li>
-      <li><a href="/developer/api/v1/capabilities">API capabilities</a></li>
-      <li><a href="/developer/embed/?lon=79.86&amp;lat=6.93&amp;zoom=12&amp;pin=1">Map preview</a></li>
-      <li><a href="/developer/navigation/">Route guidance</a></li>
-      <li><a href="/developer/sifric-maps.js">Web SDK module</a></li>
-      <li><a href="/developer/sifric-places.js">Place search component</a></li>
-      <li><a href="/developer/native-sdk/">Android and iOS SDK downloads</a></li>
+      <li><a href="/developer/native-sdk/">Native SDK setup</a></li>
     </ul>
-    <p>Use the same Sifric credential as a bearer token in API requests. Keep it on your server.</p>
-    <h2>Place search</h2>
-    <sifric-place-search></sifric-place-search>
-  </main>
+  </nav>
+</header>
+<main>
+  <section id="start">
+    <h2>Quick start</h2>
+    <ol>
+      <li>Sign in to this portal with your Sifric developer credential. If the browser prompts for a username, enter <code>sifric</code>.</li>
+      <li>Keep the developer token in a server environment variable such as <code>SIFRIC_MAPS_TOKEN</code>. Send it in the <code>Authorization: Bearer …</code> header for private API calls.</li>
+      <li>Check <a href="/developer/api/v1/health">service health</a> and <a href="/developer/api/v1/capabilities">live capabilities</a> before trying search or routing.</li>
+    </ol>
+    <pre><code>curl --fail-with-body \
+  -H "Authorization: Bearer ${SIFRIC_MAPS_TOKEN}" \
+  "https://maps.sifric.workers.dev/developer/api/v1/capabilities"</code></pre>
+    <p>Use <code>[longitude, latitude]</code> for coordinates. For example, <code>[79.8612, 6.9271]</code> is in Colombo. Distances are in meters and durations are in seconds.</p>
+  </section>
+  <section id="integration">
+    <h2>Choose an integration</h2>
+    <dl>
+      <dt><strong>Android or iOS map</strong></dt>
+      <dd>Render the basemap and move markers on the device. Use your own authenticated backend for private search, routes, and estimates. The map renderer can load the hosted style without a developer token. <a href="/developer/native-sdk/">Set up a native map</a>.</dd>
+      <dt><strong>Web map or preview</strong></dt>
+      <dd>The <a href="/developer/sifric-maps.js">Web SDK module</a> and <a href="/developer/sifric-places.js">place search component</a> are available for developer pages on this origin. The <a href="#examples">Embed preview</a> can open as an authenticated link or be framed by a page on the Sifric origin. Private developer resources use same-origin browser access.</dd>
+      <dt><strong>Server-to-server integration</strong></dt>
+      <dd>Use the private API to look up places, calculate GeoJSON routes, and batch distance and ETA requests. Your application owns session authentication, live location updates, pricing, and other business rules. <a href="/developer/api-reference/">Review endpoints and payloads</a>.</dd>
+    </dl>
+  </section>
+  <section id="examples">
+    <h2>Try examples</h2>
+    <ul>
+      <li><a href="/developer/api/v1/places/search?q=Colombo&amp;limit=5">Search for Colombo</a> and inspect the indexed place IDs and coordinates.</li>
+      <li><a href="/developer/api/v1/geocode/reverse?lon=79.8612&amp;lat=6.9271&amp;radius=100">Look up an indexed place near a coordinate</a>.</li>
+      <li><a href="/developer/embed/?lon=79.8612&amp;lat=6.9271&amp;zoom=14&amp;pin=1">Open a pinned map</a>. Add <code>zoomControls=1</code> to show zoom buttons, or <code>controls=1</code> to show the map and theme selector. Click the Sifric logo to reveal map credits.</li>
+      <li><a href="/developer/navigation/?origin=79.8612,6.9271&amp;destination=79.8744,6.903&amp;mode=drive">Preview a route in Colombo</a>. Start guidance only when you can grant browser location access.</li>
+    </ul>
+  </section>
+  <section id="checks">
+    <h2>Integration checks</h2>
+    <ol>
+      <li>Verify search results, pickup pins, and route geometry in your actual service area. Check the returned snap distances before accepting a routed pickup.</li>
+      <li>Handle an empty search, null matrix entries, unavailable routes, and provider timeouts separately. Keep the selected coordinate when a street address is missing.</li>
+      <li>Read the live capability flags before enabling traffic, transit, Wi-Fi positioning, or static rendering. Road ETAs are estimates. Indexed geocoding may return a nearby place instead of a house address.</li>
+      <li>Test native location permission, camera movement, and route updates on devices you plan to support.</li>
+    </ol>
+  </section>
+</main>
+<footer><p><a href="/developer/">Developer portal home</a> · <a href="/">Open Sifric Maps</a></p></footer>
 </body>
 </html>

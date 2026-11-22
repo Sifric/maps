@@ -13,6 +13,18 @@
     Send <code>Authorization: Bearer &lt;token&gt;</code> from your server. POST requests
     use <code>Content-Type: application/json</code>. Coordinates use longitude before latitude.
     Coverage is Sri Lanka.</p>
+  <nav aria-label="API reference sections">
+    <a href="#authentication">Authentication</a> ·
+    <a href="#endpoints">Endpoints</a> ·
+    <a href="#routing">Routing and matrix</a> ·
+    <a href="#responses">Responses and errors</a>
+  </nav>
+  <h2 id="authentication">Make an authenticated request</h2>
+  <p>Run examples on your server with <code>SIFRIC_MAPS_TOKEN</code> set in the environment. Keep this token out of client code and URL query strings. A browser on a different origin should call your backend, which can call Sifric over HTTPS.</p>
+  <pre><code>curl --fail-with-body \
+  -H "Authorization: Bearer ${SIFRIC_MAPS_TOKEN}" \
+  "https://maps.sifric.workers.dev/developer/api/v1/places/search?q=Colombo&amp;limit=5"</code></pre>
+  <h2 id="endpoints">Endpoint directory</h2>
   <ul>
     <li><code>GET /capabilities</code> lists currently deployed travel profiles and map features.</li>
     <li><code>GET /places/search?q=Colombo</code>, <code>GET /places/nearby?lon=79.86&amp;lat=6.92</code>,
@@ -27,7 +39,7 @@
       accept <code>lon</code> and <code>lat</code>. Time zone accepts an optional ISO timestamp.
       Bathymetry includes depth below the EGM2008 datum for negative grid samples.</li>
     <li><code>GET /roads/nearest</code> accepts <code>lon</code>, <code>lat</code>, and optional
-      <code>radius</code> in meters. <code>POST /roads/match</code> accepts 2–8 ordered GPS observations
+      <code>radius</code> in meters. <code>POST /roads/match</code> accepts 2–25 ordered GPS observations
       in <code>coordinates</code> and a travel <code>mode</code>.</li>
     <li><code>POST /optimize</code> accepts <code>vehicles</code>, <code>jobs</code>, and paired
       <code>shipments</code>. Set vehicle <code>capacity</code>, optional <code>time_window</code>,
@@ -42,7 +54,7 @@
       and <code>cellId</code> (or <code>newRadioCellId</code> for 5G). The result is an approximate
       estimate from the OpenCellID snapshot. If an approved Wi-Fi index is present, <code>wifiAccessPoints</code> can provide a finer estimate.</li>
   </ul>
-  <h2>Routes and matrices</h2>
+  <h2 id="routing">Routes and matrices</h2>
   <p>Send the following JSON to <code>POST /routes</code> or <code>POST /matrix</code>.
     Travel modes are <code>drive</code>, <code>walk</code>, <code>cycle</code>,
     <code>motorcycle</code>, and <code>tuk</code>.</p>
@@ -65,14 +77,38 @@
   <p>Drive routes and matrices accept <code>avoidTolls</code> and <code>avoidHighways</code>
     when the corresponding profiles are listed by <code>GET /capabilities</code>.
     Road graphs exclude ferries. GPS trace matching accepts 2–25 fixes.</p>
+  <h3>Request a route</h3>
+  <pre><code>curl --fail-with-body \
+  -H "Authorization: Bearer ${SIFRIC_MAPS_TOKEN}" \
+  -H "Content-Type: application/json" \
+  --data '{"mode":"tuk","coordinates":[[79.8612,6.9271],[79.8744,6.903]]}' \
+  "https://maps.sifric.workers.dev/developer/api/v1/routes"</code></pre>
+  <p>Read <code>routes[0].geometry</code> as a GeoJSON LineString. The route includes <code>distance</code>, <code>duration</code>, <code>legs</code>, and maneuvers. The top-level <code>waypoints</code> shows snapped locations and offsets in meters. Keep the original coordinates for the user's selected pins.</p>
+  <h3>Find times from two origins to one destination</h3>
+  <p>POST this JSON to <code>/matrix</code>. Row order follows <code>sources</code>; column order follows <code>destinations</code>. A null entry means the pair could not be routed.</p>
+  <pre><code>{
+  "mode": "drive",
+  "coordinates": [[79.8612,6.9271],[79.867,6.92],[79.8744,6.903]],
+  "sources": [0,1],
+  "destinations": [2],
+  "allowUnsnapped": true
+}</code></pre>
+  <h2 id="responses">Responses and errors</h2>
+  <dl>
+    <dt><code>400</code> or <code>415</code></dt>
+    <dd>Check parameter ranges, coordinate order, and the JSON content type.</dd>
+    <dt><code>401</code></dt>
+    <dd>Check that the request carries a valid developer credential.</dd>
+    <dt><code>403</code></dt>
+    <dd>Private browser requests are limited by origin. Use a server-to-server integration for requests from a separate application.</dd>
+    <dt><code>404</code> or <code>422</code></dt>
+    <dd>Check for missing map data, an invalid place ID, or points the requested mode cannot connect. Treat empty search results and null matrix cells as valid responses.</dd>
+    <dt><code>409</code>, <code>502</code>, or <code>503</code></dt>
+    <dd>A known closure can make routes unavailable. Upstream or dataset failures may also make a feature temporarily unavailable. Check capabilities and use bounded retries for temporary failures.</dd>
+  </dl>
+  <p>Route times use estimated road speeds unless valid traffic observations cover the trip. Reverse geocoding may return a nearby indexed place; use its <code>distanceMeters</code> to judge relevance.</p>
   <p><a href="/developer/navigation/">Route preview and live guidance</a></p>
   <p><a href="/developer/native-sdk/">Native SDK setup</a></p>
-  <h2>RideNow test integration</h2>
-  <p><a href="/developer/ridenow-maps.mjs" download>Download the server adapter</a>.
-    It exposes RideNow-compatible route, dispatch matrix and places methods.
-    Use the authenticated Sifric server endpoint with a server-side bearer token.
-    The test defaults enable tuk-tuk and car and use estimated road travel times.
-    The native SDK packages provide the map renderer.</p>
 </main>
 </body>
 </html>
