@@ -13,7 +13,6 @@ const lat = read("lat", -85, 85);
 const zoom = read("zoom", 0, 20);
 const center = lon !== undefined && lat !== undefined ? [lon, lat] : undefined;
 const staticImage = query.get("static") === "1";
-const infoRequested = ["", "1"].includes(query.get("attribution"));
 
 const status = document.getElementById("status");
 const view = document.getElementById("map-view");
@@ -29,11 +28,8 @@ try {
     ...(center ? { center } : {}),
     ...(zoom !== undefined ? { zoom } : {}),
   });
-  const wordmark = document.createElement(staticImage || infoRequested ? "span" : "button");
+  const wordmark = document.createElement(staticImage ? "span" : "button");
   wordmark.id = "sifric-wordmark";
-  wordmark.setAttribute("role", "img");
-  wordmark.setAttribute("aria-label", "Sifric");
-  map.getContainer().append(wordmark);
 
   map.addControl(new maplibregl.AttributionControl({
     compact: false,
@@ -41,43 +37,23 @@ try {
   }));
   const credits = map.getContainer().querySelector(".maplibregl-ctrl-attrib");
   credits.id = "sifric-credits";
-  let creditsButton;
-  let creditsPinned;
-  if (!staticImage) {
-    creditsButton = wordmark;
-    if (infoRequested) {
-      creditsButton = document.createElement("button");
-      creditsButton.id = "sifric-credits-info";
-      creditsButton.textContent = "ⓘ";
-      map.getContainer().append(creditsButton);
-    }
-    creditsButton.type = "button";
-    creditsButton.removeAttribute("role");
-    const title = infoRequested ? "Map data credits" : "Sifric · Map data credits";
-    creditsButton.setAttribute("aria-label", title);
-    creditsButton.title = title;
-    creditsButton.setAttribute("aria-controls", credits.id);
-    creditsButton.addEventListener("click", () => {
-      setCreditsOpen(credits.hidden);
-    });
+  if (staticImage) {
+    wordmark.setAttribute("role", "img");
+    wordmark.setAttribute("aria-label", "Sifric");
+  } else {
+    credits.hidden = true;
+    wordmark.type = "button";
+    wordmark.title = "Sifric · Map data credits";
+    wordmark.setAttribute("aria-label", wordmark.title);
+    wordmark.setAttribute("aria-controls", credits.id);
+    wordmark.setAttribute("aria-expanded", "false");
+    wordmark.addEventListener("click", () => {
+      credits.hidden = false;
+      wordmark.setAttribute("aria-expanded", "true");
+    }, { once: true });
   }
+  map.getContainer().append(wordmark);
 
-  function setCreditsOpen(open) {
-    credits.hidden = !open;
-    creditsButton?.setAttribute("aria-expanded", String(open));
-  }
-
-  function updateCredits(type) {
-    const pinned = staticImage || type === "satellite";
-    if (creditsPinned === pinned) return;
-    creditsPinned = pinned;
-    setCreditsOpen(pinned);
-    if (!creditsButton) return;
-    creditsButton.disabled = pinned;
-    if (infoRequested) creditsButton.hidden = pinned;
-  }
-
-  updateCredits(query.get("type"));
   map.once("load", () => {
     const appearance = createMapOptions(map, {
       baseStyle: map.getStyle(),
@@ -86,7 +62,6 @@ try {
         theme: query.get("theme"),
         type: query.get("type"),
         onChange(settings) {
-          updateCredits(settings.type);
           view.value = settings.type;
           theme.value = settings.theme;
           for (const option of view.options) option.disabled = settings.unavailable.includes(option.value);

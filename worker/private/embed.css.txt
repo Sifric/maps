@@ -15,29 +15,9 @@ html, body, #map { height: 100%; width: 100%; margin: 0; }
   max-width: calc(100% - clamp(4rem, 18vw + 1rem, 5.5rem));
   overflow-wrap: anywhere;
 }
-button#sifric-wordmark:not(:disabled) { pointer-events: auto; cursor: pointer; }
+button#sifric-wordmark[aria-expanded="false"] { pointer-events: auto; cursor: pointer; }
 button#sifric-wordmark { border: 0; padding: 0; }
-#sifric-credits[hidden], #sifric-credits-info[hidden] { display: none; }
-#sifric-credits-info {
-  position: absolute;
-  right: max(.65rem, env(safe-area-inset-right));
-  bottom: max(.65rem, env(safe-area-inset-bottom));
-  z-index: 2;
-  display: grid;
-  place-items: center;
-  width: 2rem;
-  height: 2rem;
-  padding: 0;
-  border: 0;
-  border-radius: 50%;
-  background: #fff;
-  color: #202124;
-  font: 1.15rem system-ui, sans-serif;
-  cursor: pointer;
-}
-#map:has(#sifric-credits-info:not([hidden])) .maplibregl-ctrl-bottom-right {
-  bottom: 3rem;
-}
+#sifric-credits[hidden] { display: none; }
 #status { position: absolute; inset: auto 1rem 1rem; padding: .75rem; background: white; font: 1rem system-ui; }
 #appearance {
   position: absolute;
