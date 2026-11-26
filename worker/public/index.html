@@ -213,9 +213,6 @@ kbd{font:600 11px Geist,Inter;color:var(--sub);border:1px solid var(--line);bord
 .maplibregl-ctrl-attrib{display:none!important}
 body.attribution-open .maplibregl-ctrl-attrib{display:block!important}
 body.attribution-open .maplibregl-ctrl-attrib-button{display:none!important}
-#sifric-brand{position:absolute;z-index:8;left:16px;bottom:calc(64px + env(safe-area-inset-bottom));width:64px;border:0;background:none;padding:0;opacity:1;cursor:pointer;filter:drop-shadow(0 1px 2px rgba(0,0,0,.42))}
-#sifric-brand img{display:block;width:100%;height:auto}
-#sifric-brand:focus-visible{outline:2px solid var(--acc);outline-offset:3px;border-radius:5px}
 .maplibregl-ctrl-scale{border-color:var(--sub)!important;border-radius:0 6px 0 0}
 .pin{position:relative;width:38px;height:50px;cursor:pointer;filter:drop-shadow(0 8px 10px rgba(0,0,0,.38));animation:drop .5s cubic-bezier(.3,1.35,.5,1)}
 .pin svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible;color:var(--c)}
@@ -451,14 +448,12 @@ body.picking #panel,body.picking #ctrl,body.picking #tilt,body.picking #psheet,b
 
 /* ---- distance scale: calculated from zoom and latitude, feet above, metres below ---- */
 #scaleBox{position:absolute;z-index:5;left:auto;right:18px;bottom:calc(210px + env(safe-area-inset-bottom));pointer-events:none}
-.dual-scale{position:relative;height:27px;min-width:24px;color:var(--ink);font:600 11px/12px Geist,Inter,system-ui;text-shadow:0 0 4px var(--solid),0 0 2px var(--solid)}
-.dual-scale-rule{position:absolute;top:12px;left:0;right:0;border-top:1px solid var(--ink);box-shadow:0 1px 2px #0008}
-.dual-scale-mile-tick,.dual-scale-km-tick{position:absolute;border-left:1px solid var(--ink);width:0}
-.dual-scale-mile-tick{top:0;height:13px;left:var(--mile-left,0px)}
-.dual-scale-km-tick{top:12px;height:13px;left:var(--km-left,0px)}
-.dual-scale-mile-label,.dual-scale-km-label{position:absolute;right:0;white-space:nowrap}
-.dual-scale-mile-label{top:-1px}
-.dual-scale-km-label{top:14px}
+@media(max-width:640px){#scaleBox{right:clamp(90px,24vw,140px);bottom:calc(126px + env(safe-area-inset-bottom))}}
+.dual-scale{display:flex;flex-direction:column;align-items:flex-end;gap:4px;color:var(--ink);font:600 11px/13px Geist,Inter,system-ui;text-shadow:0 0 4px var(--solid),0 0 2px var(--solid)}
+.dual-scale-row{display:flex;align-items:center;justify-content:flex-end;gap:6px;white-space:nowrap}
+.dual-scale-bar{position:relative;flex:none;height:7px;border-bottom:1.5px solid var(--ink);filter:drop-shadow(0 1px 1px #0008)}
+.dual-scale-bar::before,.dual-scale-bar::after{content:"";position:absolute;bottom:-1.5px;height:6px;border-left:1.5px solid var(--ink)}
+.dual-scale-bar::before{left:0}.dual-scale-bar::after{right:0}
 #ctrl>.stack:has(#zin){display:none!important}
 /* ---- Layers sheet on phones: compact (peek), medium (half), expanded (full) ---- */
 @media(max-width:640px){
@@ -541,7 +536,7 @@ body:not(.search-open) #panel .srow{gap:0!important}
 .apl.off{opacity:.4;pointer-events:none}
 
 /* ---- search results open: clean card, no overlaps with map controls ---- */
-body:has(#body:not(:empty)) #scaleBox,body:has(#body:not(:empty)) .maplibregl-ctrl-attrib{display:none!important}
+body:has(#body:not(:empty)) .maplibregl-ctrl-attrib{display:none!important}
 body:not(.search-open):has(#body:not(:empty)) #panel{background:var(--solid)!important;border:1px solid var(--line)!important;border-radius:22px!important;padding:8px!important;box-shadow:var(--shadow)!important}
 body:not(.search-open):has(#body:not(:empty)) #panel .bar{box-shadow:none!important}
 body:has(#body:not(:empty)) #body{padding-right:70px!important;margin-top:6px}
@@ -617,7 +612,6 @@ body.routing #map .maplibregl-ctrl-bottom-right{bottom:env(safe-area-inset-botto
 </head>
 <body>
 <main id="map" aria-label="Map of Sri Lanka"></main>
-<button id="sifric-brand" type="button" aria-label="Show map attribution"><img src="/assets/sifric-wordmark.png" alt="Sifric"></button>
 <aside id="panel" class="glass">
   <button class="sgrab" type="button" aria-label="Close search sheet"><i></i></button>
   <div class="srow"><div class="bar">

@@ -218,12 +218,6 @@ const hasHash = hv.length === 3 && hv.every(Number.isFinite)
 const map = createMap({ container: 'map', center: hasHash ? [hv[2], hv[1]] : [80.5353, 5.9496], zoom: hasHash ? hv[0] : 14.2, attributionControl: false, maxPitch: 75, fadeDuration: 200 });
 window.map = map;
 map.addControl(new maplibregl.AttributionControl({ compact: true, customAttribution: 'Sifric Maps' }));
-$('sifric-brand').addEventListener('click', () => {
-  document.body.classList.add('attribution-open');
-  $('sifric-brand').setAttribute('aria-label', 'Map attribution shown');
-  const attribution = map.getContainer().querySelector('.maplibregl-ctrl-attrib');
-  if (attribution) attribution.open = true;
-});
 const geo = new maplibregl.GeolocateControl({ positionOptions: { enableHighAccuracy: true }, trackUserLocation: true, showAccuracyCircle: true, fitBoundsOptions: { maxZoom: 16.5 } });
 map.addControl(geo, 'bottom-right');
 geo.on('geolocate', e => userPos = [e.coords.longitude, e.coords.latitude]);
@@ -1435,37 +1429,35 @@ HP.addEventListener('input',e=>{
   box.setAttribute("role", "img");
   box.setAttribute("aria-label", "Map distance scale");
   box.innerHTML = `<div class="dual-scale">
-    <span class="dual-scale-rule"></span>
-    <span class="dual-scale-mile-tick"></span>
-    <span class="dual-scale-km-tick"></span>
-    <span class="dual-scale-mile-label"></span>
-    <span class="dual-scale-km-label"></span></div>`;
+    <div class="dual-scale-row"><i class="dual-scale-mile-bar dual-scale-bar"></i><span class="dual-scale-mile-label"></span></div>
+    <div class="dual-scale-row"><i class="dual-scale-km-bar dual-scale-bar"></i><span class="dual-scale-km-label"></span></div></div>`;
   document.body.appendChild(box);
   const dock = box.querySelector(".dual-scale");
   const mileLabel = box.querySelector(".dual-scale-mile-label");
   const kmLabel = box.querySelector(".dual-scale-km-label");
-  const mileTick = box.querySelector(".dual-scale-mile-tick");
-  const kmTick = box.querySelector(".dual-scale-km-tick");
-  const MAXPX = 68;
-  const FT = [10, 20, 50, 100, 200, 500, 1000, 2000, 5000, 5280, 10560, 26400, 52800, 105600, 264000, 528000];
+  const mileBar = box.querySelector(".dual-scale-mile-bar");
+  const kmBar = box.querySelector(".dual-scale-km-bar");
+  const MAXPX = 68, MINPX = 34;
+  const FT = [1, 2, 5, 10, 20, 50, 100, 200, 500, 1000, 2000, 5000, 5280, 10560, 26400, 52800, 105600, 264000, 528000];
   const M = [1, 2, 5, 10, 20, 50, 100, 200, 500, 1000, 2000, 5000, 10000, 20000, 50000, 100000, 200000, 500000, 1000000];
   const updateScale = () => {
     const c = map.getCenter(), z = map.getZoom();
     const mpp = 40075016.686 * Math.cos(c.lat * Math.PI / 180) / (512 * Math.pow(2, z)); /* metres per pixel */
-    let ft = FT[0];
-    for (const v of FT) if (v * 0.3048 / mpp <= MAXPX) ft = v;
-    let m = M[0];
-    for (const v of M) if (v / mpp <= MAXPX) m = v;
+    const choose = (values, unit) => {
+      let fallback = values[0], visible = values[0];
+      for (const v of values) {
+        const px = v * unit / mpp;
+        if (px <= MAXPX) { fallback = v; if (px >= MINPX) visible = v; }
+      }
+      return visible !== values[0] || values[0] * unit / mpp >= MINPX ? visible : fallback;
+    };
+    const ft = choose(FT, 0.3048), m = choose(M, 1);
     const ftPx = ft * 0.3048 / mpp, mPx = m / mpp;
     mileLabel.textContent = ft % 5280 === 0 ? `${ft / 5280} mi` : `${ft} ft`;   /* miles only for whole miles */
     kmLabel.textContent = m >= 1000 ? `${m / 1000} km` : `${m} m`;
-    const labelW = Math.max(mileLabel.offsetWidth, kmLabel.offsetWidth) + 10;
-    const width = Math.max(ftPx, mPx, labelW, 24);
-    dock.style.width = `${width}px`;
-    dock.style.setProperty("--mile-left", `${width - ftPx}px`);
-    dock.style.setProperty("--km-left", `${width - mPx}px`);
-    mileTick.style.display = ftPx >= labelW ? "" : "none";
-    kmTick.style.display = mPx >= labelW ? "" : "none";
+    mileBar.style.width = `${Math.max(12, ftPx)}px`;
+    kmBar.style.width = `${Math.max(12, mPx)}px`;
+    dock.style.width = `${Math.max(ftPx + mileLabel.offsetWidth, mPx + kmLabel.offsetWidth) + 6}px`;
     box.setAttribute("aria-label", `${mileLabel.textContent}, ${kmLabel.textContent}`);
   };
   let framePending = false;
