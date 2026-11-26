@@ -84,7 +84,7 @@ function build() {
 }
 
 function createMap(options) {
-  const instance = new maplibregl.Map({ ...options, style: build() });
+  const instance = new maplibregl.Map({ ...options, fadeDuration: 0, style: build() });
   registerPlaceImages(instance);
   return instance;
 }
@@ -251,11 +251,26 @@ const clearRoute = () => { routeRequest?.abort(); stopAnim(); routes = null; set
 map.on('style.load', syncRoute);
 function syncSelectedPlaceLabel() {
   if (!map.getStyle()) return;
-  const hasSelectedFeature = selectedFeatureId !== null && selectedFeatureId !== undefined;
-  if (map.getLayer('mazo-places-dot'))
-    map.setFilter('mazo-places-dot', hasSelectedFeature ? ['!=', ['id'], selectedFeatureId] : null);
-  if (map.getLayer('mazo-places-icon'))
-    map.setFilter('mazo-places-icon', hasSelectedFeature ? ['!=', ['id'], selectedFeatureId] : null);
+  const hidden = new Set();
+  if (selectedFeatureId !== null && selectedFeatureId !== undefined) {
+    hidden.add(selectedFeatureId);
+    // A nearby symbol can take the selected symbol's slot after it is hidden.
+    // Keep that symbol from drawing across the selected bubble and its name.
+    const selectedPoint = map.project([+cur.lon, +cur.lat]);
+    try {
+      for (const feature of map.querySourceFeatures('openmaptiles', { sourceLayer: 'places' })) {
+        if (feature.id === undefined || feature.geometry.type !== 'Point') continue;
+        const point = map.project(feature.geometry.coordinates);
+        if (Math.hypot(point.x - selectedPoint.x, point.y - selectedPoint.y) < 42)
+          hidden.add(feature.id);
+      }
+    } catch { /* The source may still be loading after a style change. */ }
+  }
+  const filter = hidden.size ? ['!', ['in', ['id'], ['literal', [...hidden]]]] : null;
+  for (const id of ['mazo-places-dot', 'mazo-places-icon']) {
+    if (map.getLayer(id) && JSON.stringify(map.getFilter(id) ?? null) !== JSON.stringify(filter))
+      map.setFilter(id, filter);
+  }
 }
 function syncSelectedMarkerName() {
   const label = pinMk?.getElement().querySelector('.selected-marker__name');
@@ -266,6 +281,7 @@ function syncSelectedMarkerName() {
   label.style.setProperty('--label-shift', `${Math.round(centered - x)}px`);
 }
 map.on('move', syncSelectedMarkerName);
+map.on('moveend', syncSelectedPlaceLabel);
 map.on('style.load', syncSelectedPlaceLabel);
 const pickRoute = i => { stopAnim(); ri = i; syncRoute(); dirCard(); };
 map.on('click', 'route-alt', e => pickRoute(e.features[0].properties.i));
@@ -482,7 +498,12 @@ map.on('click', e => {
     window.collapseSearch?.(true);
     return;
   }
-  const feature = visiblePlaces(map, e.point).find(item => item.geometry.type === 'Point' && item.properties.name);
+  const feature = visiblePlaces(map, e.point)
+    .filter(item => item.geometry.type === 'Point' && item.properties.name)
+    .sort((a, b) => {
+      const pa = map.project(a.geometry.coordinates), pb = map.project(b.geometry.coordinates);
+      return Math.hypot(pa.x - e.point.x, pa.y - e.point.y) - Math.hypot(pb.x - e.point.x, pb.y - e.point.y);
+    })[0];
   if (feature) select(mapPlace(feature), false);
   else drop(e.lngLat);
 });
