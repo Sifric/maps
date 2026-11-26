@@ -196,25 +196,6 @@ export function stylePlaces(style) {
     "text-halo-width": 1.5,
     "text-halo-blur": 0.5,
   };
-  const selectedLabel = structuredClone(pin);
-  selectedLabel.id = "mazo-places-selected-label";
-  selectedLabel.layout = Object.fromEntries(
-    Object.entries(pin.layout).filter(
-      ([key]) => key.startsWith("text-") || key === "symbol-sort-key",
-    ),
-  );
-  selectedLabel.layout["text-anchor"] = "top";
-  selectedLabel.layout["text-offset"] = [0, .8];
-  selectedLabel.layout["text-justify"] = "center";
-  selectedLabel.layout["text-max-width"] = 16;
-  selectedLabel.layout["text-size"] = ["interpolate", ["linear"], ["zoom"], 12, 11.5, 16, 12.5];
-  selectedLabel.layout["text-optional"] = false;
-  // Keep the selected name visible when space permits, while preserving
-  // nearby road/place labels instead of painting over them.
-  selectedLabel.layout["text-allow-overlap"] = false;
-  selectedLabel.layout["text-ignore-placement"] = false;
-  selectedLabel.filter = ["==", ["id"], "__no_selected_place__"];
-  selectedLabel.paint = { ...pin.paint, "text-color": "#ffffff", "text-halo-color": "rgba(0,0,0,.92)", "text-halo-width": 2.3, "text-halo-blur": .35 };
   dot.layout["symbol-sort-key"] = pin.layout["symbol-sort-key"];
   // Geographic names keep placement priority over businesses at overview zooms.
   const base = style.layers.filter((layer) => layer !== dot && layer !== pin);
@@ -222,7 +203,6 @@ export function stylePlaces(style) {
     (layer) => layer["source-layer"] === "place",
   );
   base.splice(geographicNames < 0 ? base.length : geographicNames, 0, dot, pin);
-  base.push(selectedLabel);
   style.layers = base;
   return style;
 }
@@ -251,7 +231,7 @@ export function registerPlaceImages(map) {
   });
 }
 
-export function selectedPlaceElement(kind = "", dropped = false) {
+export function selectedPlaceElement(kind = "", dropped = false, name = "") {
   const marker = document.createElement("div");
   marker.className = dropped ? "selected-marker" : "selected-marker selected-marker--place";
   if (dropped || !kind || kind === "location") {
@@ -270,5 +250,11 @@ export function selectedPlaceElement(kind = "", dropped = false) {
   marker.append(visual);
   const dot = document.createElement("span"); dot.className = "selected-marker__anchor-dot";
   marker.append(dot);
+  if (name) {
+    const label = document.createElement("span");
+    label.className = "selected-marker__name";
+    label.textContent = name;
+    marker.append(label);
+  }
   return marker;
 }

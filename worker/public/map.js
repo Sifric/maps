@@ -256,9 +256,16 @@ function syncSelectedPlaceLabel() {
     map.setFilter('mazo-places-dot', hasSelectedFeature ? ['!=', ['id'], selectedFeatureId] : null);
   if (map.getLayer('mazo-places-icon'))
     map.setFilter('mazo-places-icon', hasSelectedFeature ? ['!=', ['id'], selectedFeatureId] : null);
-  if (map.getLayer('mazo-places-selected-label'))
-    map.setFilter('mazo-places-selected-label', hasSelectedFeature ? ['==', ['id'], selectedFeatureId] : ['==', ['id'], '__no_selected_place__']);
 }
+function syncSelectedMarkerName() {
+  const label = pinMk?.getElement().querySelector('.selected-marker__name');
+  if (!label) return;
+  const x = map.project(pinMk.getLngLat()).x;
+  const half = label.offsetWidth / 2;
+  const centered = Math.max(half + 12, Math.min(innerWidth - half - 12, x));
+  label.style.setProperty('--label-shift', `${Math.round(centered - x)}px`);
+}
+map.on('move', syncSelectedMarkerName);
 map.on('style.load', syncSelectedPlaceLabel);
 const pickRoute = i => { stopAnim(); ri = i; syncRoute(); dirCard(); };
 map.on('click', 'route-alt', e => pickRoute(e.features[0].properties.i));
@@ -493,8 +500,9 @@ function select(p, fly = true) {
   const dropped = p.type === 'location' || p._t === 'Dropped pin';
   selectedFeatureId = dropped || (p._sourceLayer && p._sourceLayer !== 'places') ? null : p.id ?? null;
   syncSelectedPlaceLabel();
-  const el = selectedPlaceElement(p.category || p.type, dropped);
+  const el = selectedPlaceElement(p.category || p.type, dropped, p._t);
   pinMk = new maplibregl.Marker({ element: el, anchor: dropped ? 'bottom' : 'center' }).setLngLat([+p.lon, +p.lat]).addTo(map);
+  syncSelectedMarkerName();
   if (fly) {
     const bb = p.boundingbox;
     bb && +bb[1] - +bb[0] > .002 ? map.fitBounds([[+bb[2], +bb[0]], [+bb[3], +bb[1]]], { padding: pad(), maxZoom: 17, duration: 1200 })
