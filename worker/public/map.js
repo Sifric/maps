@@ -1422,58 +1422,70 @@ HP.addEventListener('input',e=>{
   setInterval(load,10*60*1000);
 })();
 
-/* distance scale: calculated from zoom and latitude; updates run on requestAnimationFrame */
-(()=>{
-  const box = document.createElement("div");
-  box.id = "scaleBox";
-  box.setAttribute("role", "img");
-  box.setAttribute("aria-label", "Map distance scale");
-  box.innerHTML = `<div class="dual-scale">
-    <div class="dual-scale-row"><i class="dual-scale-mile-bar dual-scale-bar"></i><span class="dual-scale-mile-label"></span></div>
-    <div class="dual-scale-row"><i class="dual-scale-km-bar dual-scale-bar"></i><span class="dual-scale-km-label"></span></div></div>`;
-  document.body.appendChild(box);
-  const dock = box.querySelector(".dual-scale");
-  const mileLabel = box.querySelector(".dual-scale-mile-label");
-  const kmLabel = box.querySelector(".dual-scale-km-label");
-  const mileBar = box.querySelector(".dual-scale-mile-bar");
-  const kmBar = box.querySelector(".dual-scale-km-bar");
-  const MAXPX = 68, MINPX = 34;
-  const FT = [1, 2, 5, 10, 20, 50, 100, 200, 500, 1000, 2000, 5000, 5280, 10560, 26400, 52800, 105600, 264000, 528000];
-  const M = [1, 2, 5, 10, 20, 50, 100, 200, 500, 1000, 2000, 5000, 10000, 20000, 50000, 100000, 200000, 500000, 1000000];
-  const updateScale = () => {
-    const c = map.getCenter(), z = map.getZoom();
-    const mpp = 40075016.686 * Math.cos(c.lat * Math.PI / 180) / (512 * Math.pow(2, z)); /* metres per pixel */
-    const choose = (values, unit) => {
-      let fallback = values[0], visible = values[0];
-      for (const v of values) {
-        const px = v * unit / mpp;
-        if (px <= MAXPX) { fallback = v; if (px >= MINPX) visible = v; }
-      }
-      return visible !== values[0] || values[0] * unit / mpp >= MINPX ? visible : fallback;
-    };
-    const ft = choose(FT, 0.3048), m = choose(M, 1);
-    const ftPx = ft * 0.3048 / mpp, mPx = m / mpp;
-    mileLabel.textContent = ft % 5280 === 0 ? `${ft / 5280} mi` : `${ft} ft`;   /* miles only for whole miles */
-    kmLabel.textContent = m >= 1000 ? `${m / 1000} km` : `${m} m`;
-    mileBar.style.width = `${Math.max(12, ftPx)}px`;
-    kmBar.style.width = `${Math.max(12, mPx)}px`;
-    dock.style.width = `${Math.max(ftPx + mileLabel.offsetWidth, mPx + kmLabel.offsetWidth) + 6}px`;
-    box.setAttribute("aria-label", `${mileLabel.textContent}, ${kmLabel.textContent}`);
-  };
-  let framePending = false;
-  const scheduleScaleUpdate = () => {
-    if (framePending) return;
-    framePending = true;
-    requestAnimationFrame(() => {
-      framePending = false;
-      updateScale();
-    });
-  };
-  map.on("render", scheduleScaleUpdate);
-  map.on("moveend", scheduleScaleUpdate);
-  map.once("load", scheduleScaleUpdate);
-  scheduleScaleUpdate();
-})();
+/* Google Maps style dual scale. Measure along the screen's centre line so
+   pitch, bearing and latitude are included in the ground-distance calculation. */
+class GoogleScaleControl {
+  constructor(options = {}) { this.maxWidth = options.maxWidth || 100; this._update = this._update.bind(this); }
+  onAdd(map) {
+    this._map = map;
+    this._el = document.createElement("div");
+    this._el.id = "scaleBox";
+    this._el.className = "gscale";
+    this._el.setAttribute("role", "img");
+    this._el.setAttribute("aria-label", "Map distance scale");
+    this._el.innerHTML = `<div class="gscale-row gscale-top"><div class="gscale-bar"></div><span class="gscale-label"></span></div><div class="gscale-line"></div><div class="gscale-row gscale-bottom"><div class="gscale-bar"></div><span class="gscale-label"></span></div>`;
+    const q = s => this._el.querySelector(s);
+    this._line = q(".gscale-line");
+    this._barTop = q(".gscale-top .gscale-bar");
+    this._lblTop = q(".gscale-top .gscale-label");
+    this._barBot = q(".gscale-bottom .gscale-bar");
+    this._lblBot = q(".gscale-bottom .gscale-label");
+    map.on("move", this._update);
+    map.on("resize", this._update);
+    map.on("load", this._update);
+    this._update();
+    return this._el;
+  }
+  onRemove() {
+    this._map.off("move", this._update);
+    this._map.off("resize", this._update);
+    this._map.off("load", this._update);
+    this._el.remove();
+    this._map = undefined;
+  }
+  _nice(n) {
+    const p = 10 ** Math.floor(Math.log10(n)), d = n / p;
+    return p * (d >= 5 ? 5 : d >= 2 ? 2 : 1);
+  }
+  _fmt(n) { return String(parseFloat(n.toPrecision(6))); }
+  _update() {
+    const map = this._map;
+    if (!map || !map.getContainer().clientHeight) return;
+    const y = map.getContainer().clientHeight / 2;
+    const maxMeters = map.unproject([0, y]).distanceTo(map.unproject([this.maxWidth, y]));
+    if (!Number.isFinite(maxMeters) || maxMeters <= 0) return;
+    let mVal, mUnit, mPx;
+    if (maxMeters >= 1000) {
+      mVal = this._nice(maxMeters / 1000); mUnit = "km"; mPx = mVal * 1000 / maxMeters * this.maxWidth;
+    } else {
+      mVal = this._nice(maxMeters); mUnit = "m"; mPx = mVal / maxMeters * this.maxWidth;
+    }
+    const maxFeet = maxMeters * 3.28084;
+    let iVal, iUnit, iPx;
+    if (maxFeet >= 5280) {
+      iVal = this._nice(maxFeet / 5280); iUnit = "mi"; iPx = iVal * 5280 / maxFeet * this.maxWidth;
+    } else {
+      iVal = this._nice(maxFeet); iUnit = "ft"; iPx = iVal / maxFeet * this.maxWidth;
+    }
+    this._barTop.style.width = `${iPx}px`;
+    this._barBot.style.width = `${mPx}px`;
+    this._line.style.width = `${Math.max(iPx, mPx)}px`;
+    this._lblTop.textContent = `${this._fmt(iVal)} ${iUnit}`;
+    this._lblBot.textContent = `${this._fmt(mVal)} ${mUnit}`;
+    this._el.setAttribute("aria-label", `${this._lblTop.textContent}, ${this._lblBot.textContent}`);
+  }
+}
+document.body.appendChild(new GoogleScaleControl({ maxWidth: 100 }).onAdd(map));
 
 /* ---------- search: expands to a bottom sheet while focused; swipe the pill to close ---------- */
 (() => {

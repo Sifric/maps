@@ -446,14 +446,16 @@ body.picking #panel,body.picking #ctrl,body.picking #tilt,body.picking #psheet,b
 #body{max-height:min(54vh,480px)}
 
 
-/* ---- distance scale: calculated from zoom and latitude, feet above, metres below ---- */
+/* ---- Google Maps style dual imperial + metric scale ---- */
 #scaleBox{position:absolute;z-index:5;left:auto;right:18px;bottom:calc(210px + env(safe-area-inset-bottom));pointer-events:none}
 @media(max-width:640px){#scaleBox{right:clamp(90px,24vw,140px);bottom:calc(126px + env(safe-area-inset-bottom))}}
-.dual-scale{display:flex;flex-direction:column;align-items:flex-end;gap:4px;color:var(--ink);font:600 11px/13px Geist,Inter,system-ui;text-shadow:0 0 4px var(--solid),0 0 2px var(--solid)}
-.dual-scale-row{display:flex;align-items:center;justify-content:flex-end;gap:6px;white-space:nowrap}
-.dual-scale-bar{position:relative;flex:none;height:7px;border-bottom:1.5px solid var(--ink);filter:drop-shadow(0 1px 1px #0008)}
-.dual-scale-bar::before,.dual-scale-bar::after{content:"";position:absolute;bottom:-1.5px;height:6px;border-left:1.5px solid var(--ink)}
-.dual-scale-bar::before{left:0}.dual-scale-bar::after{right:0}
+.gscale{pointer-events:none;margin:0!important;font:500 10px/1 Roboto,"Helvetica Neue",Arial,sans-serif;color:#222;filter:drop-shadow(0 0 1px #fff) drop-shadow(0 0 1px #fff) drop-shadow(0 0 1px #fff)}
+.gscale-row{display:flex;height:14px}
+.gscale-bar{box-sizing:border-box;height:100%;flex:none;border:0 solid #222;border-width:0 2px}
+.gscale-line{height:2px;background:#222}
+.gscale-label{margin-left:4px;white-space:nowrap}
+.gscale-top .gscale-label{align-self:flex-end;margin-bottom:2px}
+.gscale-bottom .gscale-label{align-self:flex-start;margin-top:2px}
 #ctrl>.stack:has(#zin){display:none!important}
 /* ---- Layers sheet on phones: compact (peek), medium (half), expanded (full) ---- */
 @media(max-width:640px){
