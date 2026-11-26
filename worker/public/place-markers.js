@@ -85,6 +85,7 @@ export function stylePlaces(style) {
   const pin = layers["mazo-places-icon"];
   if (!dot || !pin) return style;
   for (const id of [
+    "label_other",
     "mazo-places-pin",
     "mazo-places-label",
     "mazo-places-subtitle",
