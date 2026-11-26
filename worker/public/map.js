@@ -99,6 +99,7 @@ function mapPlace(feature) {
   const [lon, lat] = feature.geometry.coordinates;
   return {
     id: feature.id,
+    _sourceLayer: feature.layer?.['source-layer'],
     _t: properties.name,
     _r: properties.subtitle || '',
     type: properties.subclass || properties.kind || properties.class || 'place',
@@ -251,6 +252,8 @@ map.on('style.load', syncRoute);
 function syncSelectedPlaceLabel() {
   if (!map.getStyle()) return;
   const hasSelectedFeature = selectedFeatureId !== null && selectedFeatureId !== undefined;
+  if (map.getLayer('mazo-places-dot'))
+    map.setFilter('mazo-places-dot', hasSelectedFeature ? ['!=', ['id'], selectedFeatureId] : null);
   if (map.getLayer('mazo-places-icon'))
     map.setFilter('mazo-places-icon', hasSelectedFeature ? ['!=', ['id'], selectedFeatureId] : null);
   if (map.getLayer('mazo-places-selected-label'))
@@ -488,7 +491,10 @@ function select(p, fly = true) {
   ctl?.abort(); clearTimeout(timer);
   cur = p; clearFound(); pinMk && pinMk.remove(); clearRoute(); fromPt = map.getCenter().toArray();
   const dropped = p.type === 'location' || p._t === 'Dropped pin';
-  selectedFeatureId = dropped ? null : p.id ?? null;
+  selectedFeatureId = dropped ? null : (
+    p._sourceLayer === 'places' || (!p._sourceLayer && typeof p.id === 'string' && /^[0-9A-HJKMNP-TV-Z]{26}$/.test(p.id))
+      ? p.id ?? null : null
+  );
   syncSelectedPlaceLabel();
   const el = selectedPlaceElement(p.category || p.type, dropped);
   pinMk = new maplibregl.Marker({ element: el, anchor: dropped ? 'bottom' : 'center' }).setLngLat([+p.lon, +p.lat]).addTo(map);

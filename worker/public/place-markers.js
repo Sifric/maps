@@ -245,7 +245,10 @@ export function selectedPlaceElement(kind = "", dropped = false) {
   const image = markerImage(kind), canvas = document.createElement("canvas");
   canvas.width = image.width; canvas.height = image.height;
   canvas.getContext("2d").putImageData(new ImageData(image.data, image.width, image.height), 0, 0);
+  const visual = document.createElement("span");
+  visual.className = "selected-marker__visual";
   const img = document.createElement("img"); img.alt = ""; img.src = canvas.toDataURL("image/png");
-  marker.append(img);
+  visual.append(img);
+  marker.append(visual);
   return marker;
 }

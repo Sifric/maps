@@ -5659,10 +5659,11 @@
           16,
           12
         ],
-        "symbol-spacing": 160,
-        "text-padding": 1,
+        "symbol-spacing": 260,
+        "text-padding": 3,
         "text-optional": true,
-        "text-max-angle": 45
+        "text-max-angle": 35,
+        "text-keep-upright": true
       },
       "paint": {
         "text-color": "#5f6b74",
@@ -5769,10 +5770,11 @@
           16,
           12
         ],
-        "symbol-spacing": 160,
-        "text-padding": 1,
+        "symbol-spacing": 260,
+        "text-padding": 3,
         "text-optional": true,
-        "text-max-angle": 45
+        "text-max-angle": 35,
+        "text-keep-upright": true
       },
       "paint": {
         "text-color": "#5f6b74",
@@ -5866,10 +5868,11 @@
           16,
           12
         ],
-        "symbol-spacing": 160,
-        "text-padding": 1,
+        "symbol-spacing": 260,
+        "text-padding": 3,
         "text-optional": true,
-        "text-max-angle": 45
+        "text-max-angle": 35,
+        "text-keep-upright": true
       },
       "paint": {
         "text-color": "#5f6b74",
@@ -5934,7 +5937,7 @@
           11,
           "line"
         ],
-        "symbol-spacing": 360,
+        "symbol-spacing": 480,
         "text-field": [
           "to-string",
           [
