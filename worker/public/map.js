@@ -1,6 +1,6 @@
 // Keep the module response compatible with strict browser JavaScript MIME checks.
 import { darkMapStyle } from "./map-options.js";
-import { registerPlaceImages, selectedPlaceElement, stylePlaces } from "./place-markers.js";
+import { registerPlaceImages, selectedPlaceElement, stylePlaces } from "./place-markers.js?v=reference-34";
 
 const { maplibregl, pmtiles } = window;
 maplibregl.addProtocol("pmtiles", new pmtiles.Protocol().tile);
@@ -225,7 +225,7 @@ geo.on('geolocate', e => userPos = [e.coords.longitude, e.coords.latitude]);
 if (!hasHash) map.once('load', () => matchMedia('(prefers-reduced-motion: reduce)').matches ? map.jumpTo({ zoom: 15.2, pitch: 50, bearing: -18 }) : map.flyTo({ zoom: 15.2, pitch: 50, bearing: -18, duration: 1400, essential: true }));
 map.on('moveend', () => { const c = map.getCenter(); try { history.replaceState(null, '', `#${map.getZoom().toFixed(1)}/${c.lat.toFixed(5)}/${c.lng.toFixed(5)}`); } catch (e) {} });
 
-let routeRequest, routeOrigin, avoid = '', routes = null, ri = 0, tm = 'car', cur, pinMk, found = [], fromPt, userPos = null, timer, ctl, si = -1, anim = 0, selectedFeatureId = null;
+let routeRequest, routeOrigin, avoid = '', routes = null, ri = 0, tm = 'car', cur, pinMk, found = [], fromPt, userPos = null, timer, ctl, si = -1, anim = 0, selectedFeatureId = null, selectionVersion = 0;
 function restorePlaces(key, legacyKey) {
   try {
     if (localStorage.getItem('maps.' + key) !== null) return store.get(key);
@@ -517,13 +517,24 @@ function drop({ lng, lat }) {
 function select(p, fly = true) {
   window.collapseSearch?.(false);
   ctl?.abort(); clearTimeout(timer);
-  cur = p; clearFound(); pinMk && pinMk.remove(); clearRoute(); fromPt = map.getCenter().toArray();
+  const version = ++selectionVersion;
+  cur = p; clearFound(); pinMk && pinMk.remove(); pinMk = null; clearRoute(); fromPt = map.getCenter().toArray();
   const dropped = p.type === 'location' || p._t === 'Dropped pin';
   selectedFeatureId = dropped || (p._sourceLayer && p._sourceLayer !== 'places') ? null : p.id ?? null;
   syncSelectedPlaceLabel();
   const el = selectedPlaceElement(p.category || p.type, dropped, p._t);
-  pinMk = new maplibregl.Marker({ element: el, anchor: dropped ? 'bottom' : 'center' }).setLngLat([+p.lon, +p.lat]).addTo(map);
-  syncSelectedMarkerName();
+  const marker = new maplibregl.Marker({ element: el, anchor: dropped ? 'bottom' : 'center' }).setLngLat([+p.lon, +p.lat]);
+  const showMarker = () => {
+    if (version !== selectionVersion) return;
+    pinMk = marker.addTo(map);
+    syncSelectedMarkerName();
+  };
+  // The canvas redraws after setFilter. Add the expanded marker in that same
+  // frame, after the old tile icon is gone, so both sizes never paint together.
+  if (selectedFeatureId !== null && map.getLayer('mazo-places-icon')) {
+    map.once('render', showMarker);
+    map.triggerRepaint();
+  } else showMarker();
   if (fly) {
     const bb = p.boundingbox;
     bb && +bb[1] - +bb[0] > .002 ? map.fitBounds([[+bb[2], +bb[0]], [+bb[3], +bb[1]]], { padding: pad(), maxZoom: 17, duration: 1200 })
@@ -580,7 +591,7 @@ body.onclick = e => {
   else if (k === 'overview') routeOverview(); else if (k === 'alt') pickRoute(+a.dataset.i);
 };
 pbody.onclick = body.onclick;
-function closeAll() { clearFound(); pinMk && pinMk.remove(); cur = null; selectedFeatureId = null; syncSelectedPlaceLabel(); clearRoute(); body.innerHTML = ''; showSheet(false); }
+function closeAll() { ++selectionVersion; clearFound(); pinMk && pinMk.remove(); pinMk = null; cur = null; selectedFeatureId = null; syncSelectedPlaceLabel(); clearRoute(); body.innerHTML = ''; showSheet(false); }
 
 /* ---------- Directions ---------- */
 let tabs = () => `<div class="modes">${[['car', 'Drive'], ['foot', 'Walk'], ['bike', 'Cycle']].map(([k, t]) => `<button data-a="${k}" class="${k === tm ? 'on' : ''}">${t}</button>`).join('')}</div>`;
