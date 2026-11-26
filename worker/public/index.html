@@ -213,7 +213,8 @@ kbd{font:600 11px Geist,Inter;color:var(--sub);border:1px solid var(--line);bord
 .maplibregl-ctrl-attrib{display:none!important}
 body.attribution-open .maplibregl-ctrl-attrib{display:block!important}
 body.attribution-open .maplibregl-ctrl-attrib-button{display:none!important}
-#sifric-brand{position:absolute;z-index:8;left:16px;bottom:calc(108px + env(safe-area-inset-bottom));border:0;background:none;padding:2px;color:color-mix(in srgb,var(--ink) 52%,transparent);font:700 19px Geist,Inter,system-ui;letter-spacing:-.045em;cursor:pointer;text-shadow:0 1px 4px var(--solid)}
+#sifric-brand{position:absolute;z-index:8;left:16px;bottom:calc(108px + env(safe-area-inset-bottom));width:124px;border:0;background:none;padding:0;opacity:.72;cursor:pointer;filter:drop-shadow(0 1px 3px color-mix(in srgb,var(--solid) 65%,transparent))}
+#sifric-brand img{display:block;width:100%;height:auto}
 #sifric-brand:focus-visible{outline:2px solid var(--acc);outline-offset:3px;border-radius:5px}
 .maplibregl-ctrl-scale{border-color:var(--sub)!important;border-radius:0 6px 0 0}
 .pin{position:relative;width:38px;height:50px;cursor:pointer;filter:drop-shadow(0 8px 10px rgba(0,0,0,.38));animation:drop .5s cubic-bezier(.3,1.35,.5,1)}
@@ -449,7 +450,7 @@ body.picking #panel,body.picking #ctrl,body.picking #tilt,body.picking #psheet,b
 
 
 /* ---- distance scale: calculated from zoom and latitude, feet above, metres below ---- */
-#scaleBox{position:absolute;z-index:5;left:18px;bottom:calc(max(14px,env(safe-area-inset-bottom)) + 78px);pointer-events:none}
+#scaleBox{position:absolute;z-index:5;left:18px;bottom:calc(max(14px,env(safe-area-inset-bottom)) + 158px);pointer-events:none}
 .dual-scale{position:relative;height:27px;min-width:24px;color:var(--ink);font:600 11px/12px Geist,Inter,system-ui;text-shadow:0 0 4px var(--solid),0 0 2px var(--solid)}
 .dual-scale-rule{position:absolute;top:12px;left:0;right:0;border-top:1px solid var(--ink);box-shadow:0 1px 2px #0008}
 .dual-scale-mile-tick,.dual-scale-km-tick{position:absolute;border-left:1px solid var(--ink);width:0}
@@ -616,7 +617,7 @@ body.routing #map .maplibregl-ctrl-bottom-right{bottom:env(safe-area-inset-botto
 </head>
 <body>
 <main id="map" aria-label="Map of Sri Lanka"></main>
-<button id="sifric-brand" type="button" aria-label="Show map attribution">Sifric</button>
+<button id="sifric-brand" type="button" aria-label="Show map attribution"><img src="/assets/sifric-wordmark.png" alt="Sifric"></button>
 <aside id="panel" class="glass">
   <button class="sgrab" type="button" aria-label="Close search sheet"><i></i></button>
   <div class="srow"><div class="bar">
