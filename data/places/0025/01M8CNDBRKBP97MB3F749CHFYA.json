@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDBRKBP97MB3F749CHFYA",
+  "name": "Mihra motars",
+  "coordinates": {
+    "latitude": 7.7710551,
+    "longitude": 81.6121622
+  },
+  "categories": [
+    "Auto parts store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Main street Eravur, 01 Trincomalee-Batticaloa Rd, Town",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Open 24 hours"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

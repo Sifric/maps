@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDEFSAARFKPVCB6Z0R7AJ",
+  "name": "Jaya villa",
+  "coordinates": {
+    "latitude": 6.1484369999999995,
+    "longitude": 80.10278319999999
+  },
+  "categories": [
+    "Villa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "15 Quarry Rd, Hikkaduwa 80240",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7 AM–10 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

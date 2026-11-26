@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDC0Y6B07HESNB8TPMVH7",
+  "name": "Karaitivu Public Library காரைதீவு பொது வாசிகசாலை",
+  "coordinates": {
+    "latitude": 7.373384799999999,
+    "longitude": 81.8407175
+  },
+  "categories": [
+    "Public library"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "9RFR+974, Karaitivu 32250",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8 AM–6 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

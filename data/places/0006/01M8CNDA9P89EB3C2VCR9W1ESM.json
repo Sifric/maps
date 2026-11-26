@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDA9P89EB3C2VCR9W1ESM",
+  "name": "SLM Traders",
+  "coordinates": {
+    "latitude": 7.4166291,
+    "longitude": 81.82668609999999
+  },
+  "categories": [
+    "Vegetable wholesale market"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "B186, Kalmunai 32300",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4 AM–2 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4 AM–2 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4 AM–2 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4 AM–2 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4 AM–2 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4 AM–2 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4 AM–2 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

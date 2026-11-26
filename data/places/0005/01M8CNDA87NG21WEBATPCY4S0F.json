@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDA87NG21WEBATPCY4S0F",
+  "name": "PM.Farm",
+  "coordinates": {
+    "latitude": 7.934572599999999,
+    "longitude": 81.5026172
+  },
+  "categories": [
+    "Farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Main Street , Arafa Town, Thiyawatavan ,valaichenai Valaichenai",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Open 24 hours"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

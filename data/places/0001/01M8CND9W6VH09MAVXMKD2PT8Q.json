@@ -1,0 +1,23 @@
+{
+  "id": "01M8CND9W6VH09MAVXMKD2PT8Q",
+  "name": "Aim To A College",
+  "coordinates": {
+    "latitude": 7.405167199999999,
+    "longitude": 81.831114
+  },
+  "categories": [
+    "College"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "08 Main St, Kalmunai 32300",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDZMTG2FRR8N2BBM22S5",
+  "name": "Tikka Kottu",
+  "coordinates": {
+    "latitude": 6.1750017999999995,
+    "longitude": 80.16711219999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "No.151/A, Dunwatta, Baddegama",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6 PM–3 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6 PM–3 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6 PM–3 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6 PM–3 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6 PM–3 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6 PM–3 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6 PM–3 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

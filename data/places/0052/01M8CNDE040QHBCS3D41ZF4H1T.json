@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDE040QHBCS3D41ZF4H1T",
+  "name": "River Mouth Restaurant",
+  "coordinates": {
+    "latitude": 6.2285699999999995,
+    "longitude": 80.0544424
+  },
+  "categories": [
+    "Restaurant",
+    "Food seasoning manufacturer"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Colombo Main Rd",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "11 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "11 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "11 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "11 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "11 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "11 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "11 AM–11 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

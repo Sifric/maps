@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCQVB66KQPGKTHEPWAM9",
+  "name": "Gandhi park",
+  "coordinates": {
+    "latitude": 7.8541168,
+    "longitude": 81.5430104
+  },
+  "categories": [
+    "Memorial park"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "VG3V+J6R",
+  "business_status": "OPEN"
+}

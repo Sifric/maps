@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDZCWCD1C6VDEVW24ECG",
+  "name": "Sea View Street Food Hikkaduwa",
+  "coordinates": {
+    "latitude": 6.1336428,
+    "longitude": 80.1005904
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "295 Galle Rd, Hikkaduwa 80240",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9:30 AM–3:30 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9:30 AM–3:30 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9:30 AM–3:30 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9:30 AM–3:30 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9:30 AM–3:30 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9:30 AM–3:30 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "9:30 AM–3:30 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE6NYQD3D8XEVKHWBQ7G",
+  "name": "Galle Eats Delights",
+  "coordinates": {
+    "latitude": 6.0207201999999995,
+    "longitude": 80.5009481
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "family house scheme, 579/3 Akuressa Rd, nugadhuwa",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8 AM–8 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

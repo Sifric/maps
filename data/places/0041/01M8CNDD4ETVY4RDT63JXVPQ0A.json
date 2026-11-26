@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD4ETVY4RDT63JXVPQ0A",
+  "name": "Escape Tours and Travels Pvt Ltd",
+  "coordinates": {
+    "latitude": 7.7151293999999995,
+    "longitude": 81.712752
+  },
+  "categories": [
+    "Tour operator"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "372/2 Government Quarters, Road, Kallady 30000",
+  "business_status": "OPEN"
+}

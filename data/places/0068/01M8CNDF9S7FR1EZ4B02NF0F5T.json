@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDF9S7FR1EZ4B02NF0F5T",
+  "name": "Prageeth Motor",
+  "coordinates": {
+    "latitude": 6.1349808,
+    "longitude": 80.1986872
+  },
+  "categories": [
+    "Auto repair shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "B128",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9:30 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9:30 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9:30 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9:30 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9:30 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9:30 AM–12:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "9:30 AM–12:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

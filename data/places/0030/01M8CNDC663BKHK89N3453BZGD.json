@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDC663BKHK89N3453BZGD",
+  "name": "Raheema Hotel",
+  "coordinates": {
+    "latitude": 7.921681899999999,
+    "longitude": 81.5306932
+  },
+  "categories": [
+    "Sri Lankan restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WGCJ+M7G, Main St",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5:30 AM–8:45 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5:30 AM–8:45 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5:30 AM–8:45 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5:30 AM–8:45 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5:30 AM–8:45 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5:30 AM–8:45 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5:30 AM–8:45 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

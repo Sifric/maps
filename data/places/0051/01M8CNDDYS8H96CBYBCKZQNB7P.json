@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDYS8H96CBYBCKZQNB7P",
+  "name": "Villa Wunderschon Sea Food Restaurant",
+  "coordinates": {
+    "latitude": 6.4196181999999995,
+    "longitude": 79.99707409999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Beach Road, Pitaramba Road, Bentota 80500",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12 AM–10 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCQWF4AKQ69XHK9CJYXV",
+  "name": "FOS-Siena_zone-18/19",
+  "coordinates": {
+    "latitude": 7.7985033999999995,
+    "longitude": 81.5843017
+  },
+  "categories": [
+    "Park"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QHXP+325, Chenkaladi",
+  "business_status": "OPEN"
+}

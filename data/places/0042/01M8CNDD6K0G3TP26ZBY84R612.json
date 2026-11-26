@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD6K0G3TP26ZBY84R612",
+  "name": "Nethu food palace",
+  "coordinates": {
+    "latitude": 8.313296,
+    "longitude": 81.3220745
+  },
+  "categories": [
+    "Buffet restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "887C+8R, Ali Oluwa",
+  "business_status": "OPEN"
+}

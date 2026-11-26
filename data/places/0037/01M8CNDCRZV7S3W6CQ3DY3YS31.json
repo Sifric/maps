@@ -1,0 +1,71 @@
+{
+  "id": "01M8CNDCRZV7S3W6CQ3DY3YS31",
+  "name": "Aidersil",
+  "coordinates": {
+    "latitude": 7.7216581,
+    "longitude": 81.70264
+  },
+  "categories": [
+    "Computer repair service",
+    "Computer consultant",
+    "Computer service",
+    "Computer support and services",
+    "Electronics repair shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "55 Baily Rd, Batticaloa 30000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "11 AM–2 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

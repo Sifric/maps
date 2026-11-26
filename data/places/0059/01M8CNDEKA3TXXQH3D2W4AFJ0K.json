@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDEKA3TXXQH3D2W4AFJ0K",
+  "name": "North Gate Hotel",
+  "coordinates": {
+    "latitude": 9.664492,
+    "longitude": 80.0205835
+  },
+  "categories": [
+    "Hotel",
+    "Resort hotel",
+    "Serviced accommodation"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "136 Station Rd, Jaffna 40000",
+  "business_status": "OPEN"
+}

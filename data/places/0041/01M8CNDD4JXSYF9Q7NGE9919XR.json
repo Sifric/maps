@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD4JXSYF9Q7NGE9919XR",
+  "name": "S.K. Stores",
+  "coordinates": {
+    "latitude": 7.5006547999999995,
+    "longitude": 81.80364399999999
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GR23+7F6, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

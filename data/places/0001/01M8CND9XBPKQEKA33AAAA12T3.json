@@ -1,0 +1,66 @@
+{
+  "id": "01M8CND9XBPKQEKA33AAAA12T3",
+  "name": "Public Library - Kalappu Kattu",
+  "coordinates": {
+    "latitude": 6.866914599999999,
+    "longitude": 81.82494849999999
+  },
+  "categories": [
+    "Public library"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "VR8G+J5R, Children Park - Kalapukattu, Pottuvil",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8 AM–4 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

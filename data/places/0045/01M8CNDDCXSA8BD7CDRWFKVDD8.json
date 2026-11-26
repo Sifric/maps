@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDCXSA8BD7CDRWFKVDD8",
+  "name": "Hsk House",
+  "coordinates": {
+    "latitude": 7.7300624,
+    "longitude": 81.68488579999999
+  },
+  "categories": [
+    "Housing development"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMJM+2XC, Batticaloa",
+  "business_status": "OPEN"
+}

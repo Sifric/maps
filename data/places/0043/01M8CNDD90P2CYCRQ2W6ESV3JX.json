@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD90P2CYCRQ2W6ESV3JX",
+  "name": "ARUKARKUDHA BRIDGE",
+  "coordinates": {
+    "latitude": 8.1014366,
+    "longitude": 81.4412608
+  },
+  "categories": [
+    "Bridge"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Trincomalee-Batticaloa Rd",
+  "business_status": "OPEN"
+}

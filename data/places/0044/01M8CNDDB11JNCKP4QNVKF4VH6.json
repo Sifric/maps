@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDB11JNCKP4QNVKF4VH6",
+  "name": "ORCHID SHOE MART",
+  "coordinates": {
+    "latitude": 7.7164437999999995,
+    "longitude": 81.698587
+  },
+  "categories": [
+    "Shoe store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM8X+HCG, Batticaloa",
+  "business_status": "CLOSED"
+}

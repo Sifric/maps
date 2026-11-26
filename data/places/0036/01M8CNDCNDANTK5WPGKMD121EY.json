@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCNDANTK5WPGKMD121EY",
+  "name": "Hardware Shop",
+  "coordinates": {
+    "latitude": 7.8623264,
+    "longitude": 81.5391721
+  },
+  "categories": [
+    "Hardware store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Trincomalee-Batticaloa Rd",
+  "business_status": "OPEN"
+}

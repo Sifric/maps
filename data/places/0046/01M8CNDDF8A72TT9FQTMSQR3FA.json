@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDF8A72TT9FQTMSQR3FA",
+  "name": "Batti Car Selection",
+  "coordinates": {
+    "latitude": 7.7220170999999995,
+    "longitude": 81.69517479999999
+  },
+  "categories": [
+    "Motor vehicle dealer"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "16 Fatimagiri Ln, Batticaloa 30000",
+  "business_status": "OPEN"
+}

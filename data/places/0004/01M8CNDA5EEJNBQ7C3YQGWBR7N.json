@@ -1,0 +1,74 @@
+{
+  "id": "01M8CNDA5EEJNBQ7C3YQGWBR7N",
+  "name": "RA BUDGET MART",
+  "coordinates": {
+    "latitude": 7.347346099999999,
+    "longitude": 81.8488402
+  },
+  "categories": [
+    "Discount supermarket",
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "SOUTH ROAD , NINTAVUR 19, Nintavur 32340",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–2 PM",
+        "4–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–2 PM",
+        "4–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–2 PM",
+        "4–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–2 PM",
+        "4–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7–11 AM",
+        "4:30–9 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–2 PM",
+        "4–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7 AM–2 PM",
+        "4–10 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

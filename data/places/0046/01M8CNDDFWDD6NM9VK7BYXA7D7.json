@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDFWDD6NM9VK7BYXA7D7",
+  "name": "Mamangam batticaloa",
+  "coordinates": {
+    "latitude": 7.7373444,
+    "longitude": 81.69036419999999
+  },
+  "categories": [
+    "Home goods store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Theepan,no, 40 Cemetery Rd, Batticaloa",
+  "business_status": "OPEN"
+}

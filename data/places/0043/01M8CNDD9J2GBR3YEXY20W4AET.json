@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD9J2GBR3YEXY20W4AET",
+  "name": "K.SURESH Lanka IOC Filling Station",
+  "coordinates": {
+    "latitude": 7.6564745,
+    "longitude": 81.7402279
+  },
+  "categories": [
+    "Gas station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MP4R+H3Q, Junction, Thalankudah",
+  "business_status": "CLOSED_TEMPORARILY"
+}

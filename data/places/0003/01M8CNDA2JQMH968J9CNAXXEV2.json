@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA2JQMH968J9CNAXXEV2",
+  "name": "Falah Cakes - Best Cakes Shop in Ampara",
+  "coordinates": {
+    "latitude": 7.366862299999999,
+    "longitude": 81.7987722
+  },
+  "categories": [
+    "Cake shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9/1 Saly Road, Sammanthurai 32200",
+  "business_status": "OPEN"
+}

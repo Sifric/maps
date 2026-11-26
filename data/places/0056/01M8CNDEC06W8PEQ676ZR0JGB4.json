@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEC06W8PEQ676ZR0JGB4",
+  "name": "Hotel Bentota Village",
+  "coordinates": {
+    "latitude": 6.406753,
+    "longitude": 80.0046464
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Alwis Road, Warahena, Bentota 80500",
+  "business_status": "OPEN"
+}

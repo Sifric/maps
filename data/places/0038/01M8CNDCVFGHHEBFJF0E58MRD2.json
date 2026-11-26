@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCVFGHHEBFJF0E58MRD2",
+  "name": "Paul's Residence",
+  "coordinates": {
+    "latitude": 7.7200773,
+    "longitude": 81.69588209999999
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "15, 1 Boundary Rd S, Batticaloa",
+  "business_status": "OPEN"
+}

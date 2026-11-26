@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBZYCZPH96J1CN4VWJ0",
+  "name": "New Roy Guest House",
+  "coordinates": {
+    "latitude": 7.922725,
+    "longitude": 81.56947509999999
+  },
+  "categories": [
+    "Guest house"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Mariyamman Kovil Rd, Kalkudah",
+  "business_status": "OPEN"
+}

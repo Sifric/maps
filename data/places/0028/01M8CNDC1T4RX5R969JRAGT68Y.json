@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDC1T4RX5R969JRAGT68Y",
+  "name": "New Samagi Florist",
+  "coordinates": {
+    "latitude": 7.425175899999999,
+    "longitude": 81.2480417
+  },
+  "categories": [
+    "Florist"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "Navinna Juntion, Padiyatalawa 32100",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Open 24 hours"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

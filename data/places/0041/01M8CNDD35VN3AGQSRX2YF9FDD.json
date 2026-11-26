@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDD35VN3AGQSRX2YF9FDD",
+  "name": "School Street",
+  "coordinates": {
+    "latitude": 7.708644,
+    "longitude": 81.61513769999999
+  },
+  "categories": [
+    "Chicken shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PJ58+F3, Batticaloa",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7:29–9 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7:29–9 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7:29–9 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7:29–9 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7:29–9 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7:29–9 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7:29–9 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDENFV09T8JS54VMGF4ZG",
+  "name": "Cafe-24",
+  "coordinates": {
+    "latitude": 9.6595598,
+    "longitude": 80.0264929
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "50 Kandy Rd, Jaffna",
+  "business_status": "OPEN"
+}

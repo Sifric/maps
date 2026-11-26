@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEFXMJVDD9QXKK1HKESJ",
+  "name": "Hikkaduwa Transit Hotel",
+  "coordinates": {
+    "latitude": 6.1722665,
+    "longitude": 80.1735556
+  },
+  "categories": [
+    "Hostel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Old Hikkaduwa Road, Baddegama 80200",
+  "business_status": "OPEN"
+}

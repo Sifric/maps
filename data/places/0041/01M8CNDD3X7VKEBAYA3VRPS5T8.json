@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD3X7VKEBAYA3VRPS5T8",
+  "name": "Pratheep House",
+  "coordinates": {
+    "latitude": 7.7198341,
+    "longitude": 81.7016252
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PP92+WMJ, Batticaloa",
+  "business_status": "OPEN"
+}

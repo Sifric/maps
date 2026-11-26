@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEKGWE2RDRGXA94A3VKJ",
+  "name": "Raj Hotel",
+  "coordinates": {
+    "latitude": 9.6739906,
+    "longitude": 80.0028652
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "32 Villoondi Road, Jaffna",
+  "business_status": "OPEN"
+}

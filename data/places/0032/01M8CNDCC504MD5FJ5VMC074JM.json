@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDCC504MD5FJ5VMC074JM",
+  "name": "Prince’s Place Eco Cabana & Camping Site Passara",
+  "coordinates": {
+    "latitude": 6.9431441,
+    "longitude": 81.1437818
+  },
+  "categories": [
+    "Hotel",
+    "Bed & breakfast",
+    "Mountain cabin"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Blaniwaththa Prince’s place, road, Passara 90500",
+  "business_status": "OPEN"
+}

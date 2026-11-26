@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBQZ5MF14KY0TWZ0N4D7",
+  "name": "Sivam Multi Shop",
+  "coordinates": {
+    "latitude": 7.517758799999999,
+    "longitude": 81.78666559999999
+  },
+  "categories": [
+    "Book store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQ9P+4M3, Paddiruppu Village Rd, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

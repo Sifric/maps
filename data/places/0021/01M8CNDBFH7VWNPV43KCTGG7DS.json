@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDBFH7VWNPV43KCTGG7DS",
+  "name": "SANASA Development Bank PLC",
+  "coordinates": {
+    "latitude": 7.2222642,
+    "longitude": 81.8501565
+  },
+  "categories": [
+    "Bank"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "237 Colombo - Batticaloa Hwy, Akkaraipattu",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

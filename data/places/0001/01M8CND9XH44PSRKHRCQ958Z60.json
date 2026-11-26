@@ -1,0 +1,66 @@
+{
+  "id": "01M8CND9XH44PSRKHRCQ958Z60",
+  "name": "Examinations Division",
+  "coordinates": {
+    "latitude": 7.3010606,
+    "longitude": 81.85524099999999
+  },
+  "categories": [
+    "University"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "University Administration, Oluvil",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9:30 AM–4:15 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9:30 AM–4:15 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9:30 AM–4:15 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9:30 AM–4:15 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9:30 AM–4:15 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

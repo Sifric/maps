@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDBP23G04S2ZFXMQ4G85",
+  "name": "Sivaseyyon illam",
+  "coordinates": {
+    "latitude": 7.7358256,
+    "longitude": 81.6851291
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "83 School Rd, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDXM02W8FB85RZ541F6M",
+  "name": "Neluwa",
+  "coordinates": {
+    "latitude": 6.3774244,
+    "longitude": 80.3607926
+  },
+  "categories": [
+    "Bus stop",
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

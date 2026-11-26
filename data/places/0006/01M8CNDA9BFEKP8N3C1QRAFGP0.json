@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDA9BFEKP8N3C1QRAFGP0",
+  "name": "Windy Cafe",
+  "coordinates": {
+    "latitude": 6.072336,
+    "longitude": 80.7338632
+  },
+  "categories": [
+    "Sri Lankan restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Beliatta - Walasmulla Rd",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4 PM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

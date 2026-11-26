@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDD2HKG9JNXGSX4JYFFX5",
+  "name": "Phone Repairing&accessories",
+  "coordinates": {
+    "latitude": 7.921356599999999,
+    "longitude": 81.531009
+  },
+  "categories": [
+    "Phone repair service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Basstand site, Main St, Batticaloa 30410",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8–9 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8–9 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8–11:30 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8 AM–9 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

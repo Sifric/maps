@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE4R00Q5FXEWJDE889ZV",
+  "name": "Refresso Cafe & Smoothies",
+  "coordinates": {
+    "latitude": 5.9476534,
+    "longitude": 80.4625224
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "321/1 Vihandagoda Road,Udupila Mirissa, North 81740",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "10 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "10 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "10 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "10 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "10 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "10 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "10 AM–7:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

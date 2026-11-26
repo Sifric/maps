@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA18JVTEN9KZ118FPQJ5",
+  "name": "KKY Hotel",
+  "coordinates": {
+    "latitude": 7.390511699999999,
+    "longitude": 81.8388787
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "369 Udayar Rd, Sainthamaruthu 32280",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,63 @@
+{
+  "id": "01M8CNDFDMSNNMYAAMZZJBJ2VK",
+  "name": "Sivasothi Stores",
+  "coordinates": {
+    "latitude": 9.7477625,
+    "longitude": 79.9703906
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "PXXC+452, Vadaliyadaippu",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

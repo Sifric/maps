@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBDWD5NXH4XRN7PW16E",
+  "name": "Rega Store",
+  "coordinates": {
+    "latitude": 7.541431599999999,
+    "longitude": 81.7592585
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQR5+HPC, Batticaloa",
+  "business_status": "OPEN"
+}

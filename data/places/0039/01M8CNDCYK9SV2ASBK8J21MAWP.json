@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCYK9SV2ASBK8J21MAWP",
+  "name": "Eravur 05 Bus Stop",
+  "coordinates": {
+    "latitude": 7.7782405,
+    "longitude": 81.6003326
+  },
+  "categories": [
+    "Bus stop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Trincomalee Road, Eravur",
+  "business_status": "OPEN"
+}

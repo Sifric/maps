@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDC0JMXJZ5APNSQZ2FZJ",
+  "name": "Loji house",
+  "coordinates": {
+    "latitude": 7.912994599999999,
+    "longitude": 81.54757959999999
+  },
+  "categories": [
+    "Apartment complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG7W+GXP, Kalkudah",
+  "business_status": "OPEN"
+}

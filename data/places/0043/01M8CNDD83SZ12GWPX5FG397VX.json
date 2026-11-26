@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD83SZ12GWPX5FG397VX",
+  "name": "Kalkudah Bus Station",
+  "coordinates": {
+    "latitude": 7.9259007,
+    "longitude": 81.5381299
+  },
+  "categories": [
+    "Bus station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kalkudah-Valaichchenai Rd",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDCQVZDSGETZ5VFBMKR7V",
+  "name": "Kemamaliga",
+  "coordinates": {
+    "latitude": 7.7137483,
+    "longitude": 81.6696164
+  },
+  "categories": [
+    "Park"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM79+FR, Batticaloa",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5 AM–12 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

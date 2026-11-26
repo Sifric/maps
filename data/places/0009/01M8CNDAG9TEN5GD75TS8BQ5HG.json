@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAG9TEN5GD75TS8BQ5HG",
+  "name": "Lloyds hotel and banquet hall",
+  "coordinates": {
+    "latitude": 7.2492849999999995,
+    "longitude": 81.8544082
+  },
+  "categories": [
+    "Motel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "6VV3+86C, Colombo - Batticaloa Hwy, Addalaichenai",
+  "business_status": "OPEN"
+}

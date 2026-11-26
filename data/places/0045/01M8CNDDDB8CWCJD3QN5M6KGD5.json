@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDDDB8CWCJD3QN5M6KGD5",
+  "name": "Bank of Ceylon- Vellaveli",
+  "coordinates": {
+    "latitude": 7.5035155,
+    "longitude": 81.72977379999999
+  },
+  "categories": [
+    "Bank"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GP3H+CW2, Mandur",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

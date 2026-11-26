@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDAJ8R6RYW1DPR1QSBXAN",
+  "name": "MDS Trading & Hardware",
+  "coordinates": {
+    "latitude": 7.3450492999999994,
+    "longitude": 81.85126249999999
+  },
+  "categories": [
+    "Hardware store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "2nd Cross, 07 Road, Nintavur 32340",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7–11 AM",
+        "4:30–9:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7 AM–9 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

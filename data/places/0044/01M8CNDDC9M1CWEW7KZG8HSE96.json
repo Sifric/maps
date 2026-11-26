@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDC9M1CWEW7KZG8HSE96",
+  "name": "Najith house",
+  "coordinates": {
+    "latitude": 7.7789395,
+    "longitude": 81.6103033
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "160 Rifai mosque road, Eravur",
+  "business_status": "OPEN"
+}

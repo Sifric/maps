@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDDPZ5Z2X9KDWFRB1AK1Q",
+  "name": "Mahavila Preschool",
+  "coordinates": {
+    "latitude": 6.3856307,
+    "longitude": 80.0725922
+  },
+  "categories": [
+    "Preschool"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Mahavila",
+  "business_status": "OPEN"
+}

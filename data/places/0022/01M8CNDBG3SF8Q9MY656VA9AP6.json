@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDBG3SF8Q9MY656VA9AP6",
+  "name": "Petrol Station",
+  "coordinates": {
+    "latitude": 7.127272499999999,
+    "longitude": 81.5695681
+  },
+  "categories": [
+    "Gas station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "4HG9+WR4, Highway, Siyambalanduwa",
+  "business_status": "OPEN"
+}

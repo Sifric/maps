@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCGHS1VH7DC9YQC2YPP6",
+  "name": "Fazal's home",
+  "coordinates": {
+    "latitude": 7.685326399999999,
+    "longitude": 81.7259349
+  },
+  "categories": [
+    "Mosque"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "bus depot road new, 24/3, Kattankudy 03",
+  "business_status": "OPEN"
+}

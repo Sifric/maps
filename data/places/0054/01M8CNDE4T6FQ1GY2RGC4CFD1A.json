@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDE4T6FQ1GY2RGC4CFD1A",
+  "name": "The South Beach",
+  "coordinates": {
+    "latitude": 5.9826678,
+    "longitude": 80.33654039999999
+  },
+  "categories": [
+    "Bar",
+    "Resort hotel",
+    "Hotel",
+    "Restaurant",
+    "Spa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Kathaluwa, South Beach Resort, Poloyamodara Waththa, Ahangama 80650",
+  "business_status": "OPEN"
+}

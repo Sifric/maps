@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDE1TJHST6YRE2D7RFGCM",
+  "name": "Meat Shop",
+  "coordinates": {
+    "latitude": 5.9923405999999995,
+    "longitude": 80.43798699999999
+  },
+  "categories": [
+    "Meat products store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "XCRQ+W5Q, KOLEDANDA Rd, Weligama",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8 AM–3 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

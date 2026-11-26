@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBGX53KGMXKW4AD06PX",
+  "name": "Elephant house mobile service",
+  "coordinates": {
+    "latitude": 7.7541815,
+    "longitude": 81.6372944
+  },
+  "categories": [
+    "Ice cream shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJ3P+MWF, Thannamunai",
+  "business_status": "OPEN"
+}

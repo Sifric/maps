@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEFRJPDBMPHARMSECNXP",
+  "name": "Bird Lake Resort",
+  "coordinates": {
+    "latitude": 6.1419213,
+    "longitude": 80.120352
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Bird Lake Rd, Hikkaduwa 80240",
+  "business_status": "CLOSED_TEMPORARILY"
+}

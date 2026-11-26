@@ -1,0 +1,63 @@
+{
+  "id": "01M8CNDFDSWDFHA70V39X2F75B",
+  "name": "VSM Stores",
+  "coordinates": {
+    "latitude": 9.7176241,
+    "longitude": 79.9961481
+  },
+  "categories": [
+    "Asian grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "AB17, Manipay",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

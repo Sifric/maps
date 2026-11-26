@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC8F5DNNNTH4PVQ49AGW",
+  "name": "Agrarian Service Center, Vakarai",
+  "coordinates": {
+    "latitude": 8.1666669,
+    "longitude": 81.4133768
+  },
+  "categories": [
+    "Agricultural service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "5C87+M96",
+  "business_status": "OPEN"
+}

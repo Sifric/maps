@@ -1,0 +1,74 @@
+{
+  "id": "01M8CNDBQYCPZMNMC7GK4N28PJ",
+  "name": "Your vision book shop and suppliers",
+  "coordinates": {
+    "latitude": 7.5238201,
+    "longitude": 81.76607179999999
+  },
+  "categories": [
+    "Book store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Main road, Periyaporativu 30230",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12–7:30 AM",
+        "9 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12–8:59 AM",
+        "9 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12–8:59 AM",
+        "9 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12–8:59 AM",
+        "9 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12–8:59 AM",
+        "9 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "12–8:59 AM",
+        "9 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12–8:59 AM",
+        "10:30 AM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

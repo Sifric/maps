@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDFA8GHC6EGGJJTJBYBV4",
+  "name": "EV Zone Charging Station",
+  "coordinates": {
+    "latitude": 6.999727,
+    "longitude": 79.89528179999999
+  },
+  "categories": [
+    "Electric vehicle charging station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "58, 23 Kattiyawatta Road, Wattala",
+  "business_status": "CLOSED_TEMPORARILY"
+}

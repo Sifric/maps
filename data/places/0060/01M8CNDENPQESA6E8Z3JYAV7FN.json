@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDENPQESA6E8Z3JYAV7FN",
+  "name": "Chamees's Kitchen",
+  "coordinates": {
+    "latitude": 5.9904418,
+    "longitude": 80.7020702
+  },
+  "categories": [
+    "Takeout restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "B101",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "11 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "11 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "11 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "11 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "11 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "11 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

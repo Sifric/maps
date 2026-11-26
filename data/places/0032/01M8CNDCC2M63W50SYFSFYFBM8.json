@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDCC2M63W50SYFSFYFBM8",
+  "name": "Hotel Divine Light",
+  "coordinates": {
+    "latitude": 6.862574599999999,
+    "longitude": 81.34285659999999
+  },
+  "categories": [
+    "Hotel",
+    "Guest house",
+    "Resort hotel",
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No: 131, Wellawaya Road, A4, Monaragala",
+  "business_status": "OPEN"
+}

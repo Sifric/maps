@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA3EFW0G5W2JDM41SH22",
+  "name": "Vappa Restaurant",
+  "coordinates": {
+    "latitude": 7.3851768,
+    "longitude": 81.8370442
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Karaitivu 32250",
+  "business_status": "OPEN"
+}

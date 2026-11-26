@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6Q909X4THPVNX0J1FT",
+  "name": "ACM HOTEL",
+  "coordinates": {
+    "latitude": 7.6627472,
+    "longitude": 81.751438
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MQ72+3HW, Palamunai Rd, Kattankudy",
+  "business_status": "OPEN"
+}

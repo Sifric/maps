@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA95TKM055MFZQJ8RH5D",
+  "name": "Hotel de Francis",
+  "coordinates": {
+    "latitude": 7.2991601,
+    "longitude": 81.68765959999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "7MXQ+M37, Ampara",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAFGNK5AMTY8W9GY72K2",
+  "name": "Mala Home Stay",
+  "coordinates": {
+    "latitude": 7.6897872,
+    "longitude": 81.7214441
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Technical College Road 1st Cross 27/5 Technical Collage road, manjanthoduwai, Batticaloa",
+  "business_status": "OPEN"
+}

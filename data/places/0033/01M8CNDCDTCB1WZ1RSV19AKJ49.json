@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDCDTCB1WZ1RSV19AKJ49",
+  "name": "TEJASVINI POLYCLINIC",
+  "coordinates": {
+    "latitude": 7.6501892,
+    "longitude": 81.7453214
+  },
+  "categories": [
+    "Hospital"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "MP2W+34G, Colombo - Ratnapura - Wellawaya - Batticaloa Rd, Kattankudy",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7–10 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7–10 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7–10 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7–10 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7–10 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7–10 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7–10 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

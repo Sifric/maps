@@ -1,0 +1,68 @@
+{
+  "id": "01M8CNDA0YXZ5J15KHWPFC1Y4T",
+  "name": "Coco Hut Restaurant",
+  "coordinates": {
+    "latitude": 7.362666,
+    "longitude": 81.844244
+  },
+  "categories": [
+    "Sri Lankan restaurant",
+    "Family restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9R7V+3M, Nintavur",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "11 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "11 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "11 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "11 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "11 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "11 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "11 AM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

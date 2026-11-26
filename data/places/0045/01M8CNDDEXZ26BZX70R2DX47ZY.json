@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDDEXZ26BZX70R2DX47ZY",
+  "name": "Salon Trim Hub",
+  "coordinates": {
+    "latitude": 6.623429,
+    "longitude": 80.543403
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\npalitha Hotel 1st flor, Near to the Roundabout, balangoda Rd, Pelmadulla 70070",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "8:30 AM–9 PM"
+      ]
+    }
+  ],
+  "business_status": "CLOSED"
+}

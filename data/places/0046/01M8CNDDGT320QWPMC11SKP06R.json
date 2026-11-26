@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDGT320QWPMC11SKP06R",
+  "name": "Vinoth Multy Shop",
+  "coordinates": {
+    "latitude": 7.7383503,
+    "longitude": 81.67534069999999
+  },
+  "categories": [
+    "Shopping mall"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Karuveppankerny, Seliyan Rd, Batticaloa 33000",
+  "business_status": "OPEN"
+}

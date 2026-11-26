@@ -1,0 +1,68 @@
+{
+  "id": "01M8CNDEYNK5QG3HVD5MY4788W",
+  "name": "Supun Distributor",
+  "coordinates": {
+    "latitude": 6.0741875,
+    "longitude": 80.2942151
+  },
+  "categories": [
+    "Wholesale food store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "No 104 Amalgama, Hiyare",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "104 Amalgama, Hiyare"
+  ]
+}

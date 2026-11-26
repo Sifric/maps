@@ -1,0 +1,20 @@
+{
+  "id": "01M8CNDEK56YK9A8VPNV82FAG4",
+  "name": "Islands View Restaurant",
+  "coordinates": {
+    "latitude": 9.5969663,
+    "longitude": 79.7923007
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDFPPSATETB3Y2PE30G2B",
+  "name": "DARSHAN STORE",
+  "coordinates": {
+    "latitude": 9.822786899999999,
+    "longitude": 80.2397242
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "Jaffna Kokuvil, 40000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "10 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12–7 AM",
+        "8 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

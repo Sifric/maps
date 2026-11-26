@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDABTD4X7DK8HXHBAMH1H",
+  "name": "Alibud Vegitable",
+  "coordinates": {
+    "latitude": 7.359812499999999,
+    "longitude": 81.8425156
+  },
+  "categories": [
+    "Vegetable wholesale market"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9R5V+W2C, Nintavur",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–1 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–1 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–1 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–1 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7 AM–1 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–1 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDE777YRKM56ZP3X39JGS",
+  "name": "The Sunset",
+  "coordinates": {
+    "latitude": 5.9605065999999995,
+    "longitude": 80.4032356
+  },
+  "categories": [
+    "Coffee shop",
+    "Bar",
+    "Hotel",
+    "Coffee stand",
+    "Coworking space",
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "54,kadabeddagama, Gurubebila, Weligama 81700",
+  "business_status": "OPEN"
+}

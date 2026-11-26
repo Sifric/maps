@@ -1,0 +1,63 @@
+{
+  "id": "01M8CNDFDZF4J8PFHEZ8V3YG0T",
+  "name": "Kunju Mangay Store",
+  "coordinates": {
+    "latitude": 9.7070625,
+    "longitude": 79.9854375
+  },
+  "categories": [
+    "Greengrocer"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "PX4P+R5, Navaly",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

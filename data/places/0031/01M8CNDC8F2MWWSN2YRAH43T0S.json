@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDC8F2MWWSN2YRAH43T0S",
+  "name": "Vonfidel Ranch",
+  "coordinates": {
+    "latitude": 7.9250916,
+    "longitude": 81.4853018
+  },
+  "categories": [
+    "Horseback riding service",
+    "Horse boarding stable",
+    "Tour operator"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Sudupathinasenai, Vonfidel Drive, 30420",
+  "business_status": "OPEN"
+}

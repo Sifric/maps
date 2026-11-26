@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA2AF6B6JWEEG2GGBDTD",
+  "name": "Eastern province pothuvil 2",
+  "coordinates": {
+    "latitude": 6.8703515,
+    "longitude": 81.83260349999999
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Pottuvil 2",
+  "business_status": "OPEN"
+}

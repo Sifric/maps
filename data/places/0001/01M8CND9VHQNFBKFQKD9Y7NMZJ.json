@@ -1,0 +1,22 @@
+{
+  "id": "01M8CND9VHQNFBKFQKD9Y7NMZJ",
+  "name": "Education center",
+  "coordinates": {
+    "latitude": 7.292279799999999,
+    "longitude": 81.85661809999999
+  },
+  "categories": [
+    "School center",
+    "Service establishment"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD4MVHKWXQW9Z2T3049N",
+  "name": "Sugarcane Juice Bar",
+  "coordinates": {
+    "latitude": 7.433736,
+    "longitude": 81.8238605
+  },
+  "categories": [
+    "Juice shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CRMF+H65, Maruthamunai",
+  "business_status": "OPEN"
+}

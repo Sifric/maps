@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD5ZDF90HJHN2DEQGS5V",
+  "name": "New Hiluriy",
+  "coordinates": {
+    "latitude": 7.692682199999999,
+    "longitude": 81.7278809
+  },
+  "categories": [
+    "Mosque"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPVH+35C, Kattankudy",
+  "business_status": "OPEN"
+}

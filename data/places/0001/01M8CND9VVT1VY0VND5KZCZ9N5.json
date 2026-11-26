@@ -1,0 +1,67 @@
+{
+  "id": "01M8CND9VVT1VY0VND5KZCZ9N5",
+  "name": "Zahira pre school",
+  "coordinates": {
+    "latitude": 7.4181845,
+    "longitude": 81.74868339999999
+  },
+  "categories": [
+    "Preschool"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Central Camp Rd, 32050",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7–11 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7–11 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7–11 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7–11 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7–11 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

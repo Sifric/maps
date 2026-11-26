@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC8APG38YAEJGW746DFC",
+  "name": "Bismi Farm",
+  "coordinates": {
+    "latitude": 7.964149,
+    "longitude": 81.34064699999999
+  },
+  "categories": [
+    "Farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Rideethanna Main Rd",
+  "business_status": "OPEN"
+}

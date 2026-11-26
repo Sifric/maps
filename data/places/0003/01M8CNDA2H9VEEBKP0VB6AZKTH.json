@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDA2H9VEEBKP0VB6AZKTH",
+  "name": "Bismillah Kabeer Hotel & Bakery",
+  "coordinates": {
+    "latitude": 7.4366417,
+    "longitude": 81.8130949
+  },
+  "categories": [
+    "Bakery",
+    "Hotel",
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Colombo - Batticaloa Hwy, Maruthamunai",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCPEK5RZ0B27NZQST785",
+  "name": "Mirkaath beef shop",
+  "coordinates": {
+    "latitude": 7.6770505,
+    "longitude": 81.7346156
+  },
+  "categories": [
+    "Meat wholesaler",
+    "Service establishment"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

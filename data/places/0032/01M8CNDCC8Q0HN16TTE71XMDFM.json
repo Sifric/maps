@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCC8Q0HN16TTE71XMDFM",
+  "name": "Auro Home Stay",
+  "coordinates": {
+    "latitude": 7.7094952999999995,
+    "longitude": 81.6970173
+  },
+  "categories": [
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM5W+QRR, Batticaloa",
+  "business_status": "OPEN"
+}

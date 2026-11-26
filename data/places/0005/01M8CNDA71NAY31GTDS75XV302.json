@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDA71NAY31GTDS75XV302",
+  "name": "N.P.T Restaurant",
+  "coordinates": {
+    "latitude": 7.1830042,
+    "longitude": 81.8157939
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "5RM8+683, Akkaraipattu",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "3 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "3 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "3 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "3 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "3 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "3 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "3 AM–9 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

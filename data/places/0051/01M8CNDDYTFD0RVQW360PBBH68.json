@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDYTFD0RVQW360PBBH68",
+  "name": "Ice cream bar",
+  "coordinates": {
+    "latitude": 6.4737927,
+    "longitude": 79.988089
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "FXFQ+H6, Beruwala",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12–11:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12–11:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12–11:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12–11:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "3–11:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "12–11:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12–11:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

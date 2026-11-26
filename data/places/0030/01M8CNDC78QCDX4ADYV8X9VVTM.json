@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC78QCDX4ADYV8X9VVTM",
+  "name": "Musammil hotel",
+  "coordinates": {
+    "latitude": 7.932658,
+    "longitude": 81.4977518
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WFMX+34, Kayankerni",
+  "business_status": "OPEN"
+}

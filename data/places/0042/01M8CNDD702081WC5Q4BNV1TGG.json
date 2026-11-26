@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDD702081WC5Q4BNV1TGG",
+  "name": "Wiki Super",
+  "coordinates": {
+    "latitude": 7.3678298,
+    "longitude": 80.9506956
+  },
+  "categories": [
+    "Wholesale market",
+    "Supermarket",
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "infront of school, keenapalassa, Hasalaka",
+  "business_status": "OPEN"
+}

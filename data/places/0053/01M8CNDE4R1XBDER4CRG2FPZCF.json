@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE4R1XBDER4CRG2FPZCF",
+  "name": "Theenu juice bar",
+  "coordinates": {
+    "latitude": 5.9774312,
+    "longitude": 80.42882879999999
+  },
+  "categories": [
+    "Bar"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "91 kalderam watta, Weligama",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8:30 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8:30 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8:30 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8:30 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8:30 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8:30 AM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

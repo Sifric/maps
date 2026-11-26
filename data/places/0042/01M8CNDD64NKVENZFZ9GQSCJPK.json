@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD64NKVENZFZ9GQSCJPK",
+  "name": "Kurukkalmadam Cemetery - குருக்கள்மடம் மயானம்.",
+  "coordinates": {
+    "latitude": 7.5930727,
+    "longitude": 81.7876356
+  },
+  "categories": [
+    "Cemetery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "HQVQ+63, Kurukkalmadam",
+  "business_status": "OPEN"
+}

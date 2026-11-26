@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD9P1DT2Q683VZPC83EW",
+  "name": "Lucky Fashion",
+  "coordinates": {
+    "latitude": 7.6794275999999995,
+    "longitude": 81.7295982
+  },
+  "categories": [
+    "Clothing store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kattankudy",
+  "business_status": "OPEN"
+}

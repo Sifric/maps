@@ -1,0 +1,28 @@
+{
+  "id": "01M8CNDA2CMC2YE6NHEE6F93CW",
+  "name": "Homemade Cake and Coffee",
+  "coordinates": {
+    "latitude": 6.8387889,
+    "longitude": 81.83471109999999
+  },
+  "categories": [
+    "Bakery",
+    "Cafe",
+    "Cake shop",
+    "Coffee shop",
+    "Dessert shop",
+    "Gluten-free restaurant",
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Main Point Rd, Sinhapura Rd, Arugam Bay 32500",
+  "business_status": "CLOSED_TEMPORARILY"
+}

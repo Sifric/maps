@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDC3P28B1E86J927Y88X",
+  "name": "Niresh’s place",
+  "coordinates": {
+    "latitude": 7.7386712,
+    "longitude": 81.69184609999999
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMQR+FP, Batticaloa",
+  "business_status": "OPEN"
+}

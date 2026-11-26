@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDEFRPM3GFRZADSVKVMTN",
+  "name": "Villa Green Paradise",
+  "coordinates": {
+    "latitude": 6.1483191999999995,
+    "longitude": 80.1037783
+  },
+  "categories": [
+    "Villa",
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Hikkaduwa",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "44X3+89F, Wellawatta Rd, Hikkaduwa"
+  ]
+}

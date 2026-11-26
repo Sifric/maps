@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA5022T8GVBHAQB25MPC",
+  "name": "Le Onde Italian Restaurant",
+  "coordinates": {
+    "latitude": 6.843566699999999,
+    "longitude": 81.83125319999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Main Street, Arugam Bay 32500",
+  "business_status": "CLOSED_TEMPORARILY"
+}

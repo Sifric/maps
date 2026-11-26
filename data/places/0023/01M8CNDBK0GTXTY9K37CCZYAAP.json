@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDBK0GTXTY9K37CCZYAAP",
+  "name": "Salon 4U",
+  "coordinates": {
+    "latitude": 7.2140930999999995,
+    "longitude": 81.6574189
+  },
+  "categories": [
+    "Hair salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "A25",
+  "business_status": "OPEN"
+}

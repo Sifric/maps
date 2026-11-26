@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC80T7SYDP5DANQ2D3DJ",
+  "name": "Farm House",
+  "coordinates": {
+    "latitude": 7.777156499999999,
+    "longitude": 81.603364
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Eravur",
+  "business_status": "OPEN"
+}

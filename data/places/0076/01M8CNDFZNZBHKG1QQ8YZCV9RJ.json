@@ -1,0 +1,70 @@
+{
+  "id": "01M8CNDFZNZBHKG1QQ8YZCV9RJ",
+  "name": "LifeCare Medical & Surgical care center",
+  "coordinates": {
+    "latitude": 6.8079538,
+    "longitude": 81.3997084
+  },
+  "categories": [
+    "Medical Center"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "R95X+5V, Veheragala",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:45–8 AM",
+        "4:30–8 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:45–8 AM",
+        "4:30–8 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:45–8 AM",
+        "4:30–8 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:45–8 AM",
+        "4:30–8 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:45–8 AM",
+        "4:30–8 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:45–8 AM",
+        "4:30–8 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6:45–9 AM",
+        "4:30–8 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

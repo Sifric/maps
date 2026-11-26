@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDF642YVHNA03A8S0483J",
+  "name": "LOLC Finance PLC Chankanai",
+  "coordinates": {
+    "latitude": 9.7486559,
+    "longitude": 79.96861
+  },
+  "categories": [
+    "Financial institution"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Main Street, 40212",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8:30 AM–5:15 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8:30 AM–5:15 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8:30 AM–5:15 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8:30 AM–5:15 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8:30 AM–5:15 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8:30 AM–5:15 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

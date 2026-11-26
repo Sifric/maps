@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCWYJXPQ214YT5MRZ92M",
+  "name": "Al Aqsa Jewellers",
+  "coordinates": {
+    "latitude": 7.6874351999999995,
+    "longitude": 81.7290226
+  },
+  "categories": [
+    "Jewelry store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPPH+XJC, Telecom Rd, Kattankudy",
+  "business_status": "OPEN"
+}

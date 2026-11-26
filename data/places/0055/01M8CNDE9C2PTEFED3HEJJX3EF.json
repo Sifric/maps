@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE9C2PTEFED3HEJJX3EF",
+  "name": "Damith Grocery store",
+  "coordinates": {
+    "latitude": 6.0389579,
+    "longitude": 80.3886708
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "29QQ+HFX, Imaduwa",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6–9 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6–9 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6–9 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6–9 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6–9 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6–9 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6–9 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

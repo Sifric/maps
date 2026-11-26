@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDC5YM4F6S6G6F55GSTED",
+  "name": "aaysha fresh chicken",
+  "coordinates": {
+    "latitude": 7.680458499999999,
+    "longitude": 81.72288879999999
+  },
+  "categories": [
+    "Chicken shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "no 18 methaipalli road kattankudy 04, Kattankudy 30100",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:30 AM–2 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:30 AM–2 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:30 AM–2 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:30 AM–2 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:30 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:30 AM–2 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6:30 AM–2 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

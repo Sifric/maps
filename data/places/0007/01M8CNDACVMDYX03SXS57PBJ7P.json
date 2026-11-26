@@ -1,0 +1,72 @@
+{
+  "id": "01M8CNDACVMDYX03SXS57PBJ7P",
+  "name": "UD SMART",
+  "coordinates": {
+    "latitude": 7.6949803999999995,
+    "longitude": 81.0488376
+  },
+  "categories": [
+    "Store",
+    "Cell phone accessory store",
+    "Computer accessories store",
+    "Countertop store",
+    "Electronics store",
+    "Gift shop",
+    "Shopping mall",
+    "Stationery store",
+    "Supermarket"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "No.338 Dolakanda, Dehiattakandiya 32150",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8:30 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7 AM–5:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

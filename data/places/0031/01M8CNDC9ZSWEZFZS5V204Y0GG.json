@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9ZSWEZFZS5V204Y0GG",
+  "name": "Sun Bite",
+  "coordinates": {
+    "latitude": 7.6862394,
+    "longitude": 81.7255852
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kattankudy",
+  "business_status": "OPEN"
+}

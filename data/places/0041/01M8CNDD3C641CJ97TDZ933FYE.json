@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD3C641CJ97TDZ933FYE",
+  "name": "Pus stop- onthachimadam",
+  "coordinates": {
+    "latitude": 7.500165099999999,
+    "longitude": 81.8043809
+  },
+  "categories": [
+    "Bus stop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kaluwanchikudy",
+  "business_status": "OPEN"
+}

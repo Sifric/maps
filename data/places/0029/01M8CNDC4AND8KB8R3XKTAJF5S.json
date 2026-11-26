@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC4AND8KB8R3XKTAJF5S",
+  "name": "Blooming Buds Pre-School, Batticaloa",
+  "coordinates": {
+    "latitude": 7.7294405,
+    "longitude": 81.69903339999999
+  },
+  "categories": [
+    "Educational institution"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "201 Bar Rd - Batticaloa, Batticaloa 30000",
+  "business_status": "OPEN"
+}

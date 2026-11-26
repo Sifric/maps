@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAK669Z0YP1SQHK8CRTE",
+  "name": "Welcome food city - warehouse",
+  "coordinates": {
+    "latitude": 7.9480369,
+    "longitude": 81.5034384
+  },
+  "categories": [
+    "Warehouse"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WGX3+6C8, Thirukkondaiadimadu",
+  "business_status": "OPEN"
+}

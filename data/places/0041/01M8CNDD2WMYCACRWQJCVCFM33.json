@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD2WMYCACRWQJCVCFM33",
+  "name": "Bus Stop Paddiruppu M.V National School",
+  "coordinates": {
+    "latitude": 7.517406299999999,
+    "longitude": 81.7865219
+  },
+  "categories": [
+    "Bus charter"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQ8P+XJ6, Kaluwanchikudi - Vellaveli Rd, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

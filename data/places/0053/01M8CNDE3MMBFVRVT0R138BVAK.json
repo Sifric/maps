@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDE3MMBFVRVT0R138BVAK",
+  "name": "Sunday market",
+  "coordinates": {
+    "latitude": 6.1412672,
+    "longitude": 80.1007571
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "44R2+J8V, Hikkaduwa",
+  "business_status": "OPEN"
+}

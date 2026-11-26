@@ -1,0 +1,68 @@
+{
+  "id": "01M8CNDD7ZSJT7DAKYXH9Y8Y2Z",
+  "name": "Greenway Rent A Car - Polonnaruwa",
+  "coordinates": {
+    "latitude": 7.9414077999999995,
+    "longitude": 81.005152
+  },
+  "categories": [
+    "Car rental agency",
+    "Smart Car dealer"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Infront of NDB Bank, Maradankadawala-Habarana-Thirukkondaiadimadu Hwy, Polonnaruwa 50000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Open 24 hours"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

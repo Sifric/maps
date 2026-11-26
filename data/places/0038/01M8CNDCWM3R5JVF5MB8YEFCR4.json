@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDCWM3R5JVF5MB8YEFCR4",
+  "name": "Baby & Kids Wearhouse",
+  "coordinates": {
+    "latitude": 7.686691799999999,
+    "longitude": 81.72510539999999
+  },
+  "categories": [
+    "Children's clothing store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Welcome Board Bus Stop, Colombo-Ratnapura-Wellawaya-Batticaloa Hwy, Kattankudy",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9:30 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9:30 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9:30 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9:30 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9:30 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "9:30 AM–9:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDAK377X3QCCDHZPNN408",
+  "name": "Ceylon Shipping lines Ltd",
+  "coordinates": {
+    "latitude": 7.2579338,
+    "longitude": 81.8542777
+  },
+  "categories": [
+    "Shipping service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "7V53+5PC, Addalaichenai",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6:30 AM–5 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

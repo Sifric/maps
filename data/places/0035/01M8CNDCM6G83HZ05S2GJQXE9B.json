@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCM6G83HZ05S2GJQXE9B",
+  "name": "Hisam",
+  "coordinates": {
+    "latitude": 7.7768972,
+    "longitude": 81.6042028
+  },
+  "categories": [
+    "Apartment complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "696E 1st croos Road michnager, Eravur",
+  "business_status": "OPEN"
+}

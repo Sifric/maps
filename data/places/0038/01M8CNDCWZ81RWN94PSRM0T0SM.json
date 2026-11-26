@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDCWZ81RWN94PSRM0T0SM",
+  "name": "Premium Fragrance",
+  "coordinates": {
+    "latitude": 7.678279099999999,
+    "longitude": 81.72293189999999
+  },
+  "categories": [
+    "Cosmetics store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPHF+857, Central Rd, Kattankudy",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9 AM–4:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9 AM–4:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9 AM–4:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9 AM–4:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9 AM–4:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "9 AM–4:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC716TPT43Z2JVT3QFEB",
+  "name": "Home",
+  "coordinates": {
+    "latitude": 7.7001398,
+    "longitude": 81.7180977
+  },
+  "categories": [
+    "Cake shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Batticaloa 12345",
+  "business_status": "OPEN"
+}

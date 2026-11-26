@@ -1,0 +1,71 @@
+{
+  "id": "01M8CNDA2KDTB00JJ9KNKCVCRJ",
+  "name": "ISHARA MINI MART",
+  "coordinates": {
+    "latitude": 7.246810099999999,
+    "longitude": 81.7207006
+  },
+  "categories": [
+    "Grocery store",
+    "Supermarket"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "6PWC+P79, Eragama",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "2 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "90 ampara road, Eragama 32000"
+  ]
+}

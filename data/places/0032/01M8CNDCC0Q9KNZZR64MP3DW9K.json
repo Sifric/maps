@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCC0Q9KNZZR64MP3DW9K",
+  "name": "John Guest Inn",
+  "coordinates": {
+    "latitude": 7.918211299999999,
+    "longitude": 81.5617457
+  },
+  "categories": [
+    "Guest house"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kalkudah 30410",
+  "business_status": "OPEN"
+}

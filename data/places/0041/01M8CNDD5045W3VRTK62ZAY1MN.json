@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD5045W3VRTK62ZAY1MN",
+  "name": "Sampath Tailors",
+  "coordinates": {
+    "latitude": 7.228061899999999,
+    "longitude": 81.6739348
+  },
+  "categories": [
+    "Tailor"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Hingurana",
+  "business_status": "OPEN"
+}

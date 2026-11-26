@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDABEBNE0SSGT5N0A8CK2",
+  "name": "Thana Super Market",
+  "coordinates": {
+    "latitude": 7.4412389999999995,
+    "longitude": 81.8126218
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "CRR7+F2X, Main Street, Periyaneelavanai",
+  "business_status": "OPEN"
+}

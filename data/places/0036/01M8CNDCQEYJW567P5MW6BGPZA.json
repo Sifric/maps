@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCQEYJW567P5MW6BGPZA",
+  "name": "Cave painting place",
+  "coordinates": {
+    "latitude": 7.684677,
+    "longitude": 81.211985
+  },
+  "categories": [
+    "Tourist attraction"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "M6M6+VQ, Damminna",
+  "business_status": "CLOSED_TEMPORARILY"
+}

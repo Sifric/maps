@@ -1,0 +1,20 @@
+{
+  "id": "01M8CNDE6RZFMNNVJJA4J398NT",
+  "name": "Cake Cabin",
+  "coordinates": {
+    "latitude": 6.229844,
+    "longitude": 80.054368
+  },
+  "categories": [
+    "Cake shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

@@ -1,0 +1,74 @@
+{
+  "id": "01M8CNDCGBS6CJKYJSC5YS7BAQ",
+  "name": "Salamath Jummah Mosque",
+  "coordinates": {
+    "latitude": 7.6750304,
+    "longitude": 81.7327882
+  },
+  "categories": [
+    "Mosque"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPGM+247, Kattankudy",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4:15–7 AM",
+        "11:30 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4:15–7 AM",
+        "11:30 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4:15–7 AM",
+        "11:30 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4:15–7 AM",
+        "11:30 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4:15–7 AM",
+        "11:30 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4:15–7 AM",
+        "11:30 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4:15–7 AM",
+        "11:30 AM–8:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

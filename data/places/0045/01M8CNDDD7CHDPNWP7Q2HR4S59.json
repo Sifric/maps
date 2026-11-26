@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDD7CHDPNWP7Q2HR4S59",
+  "name": "Amman Guest house",
+  "coordinates": {
+    "latitude": 7.7203259,
+    "longitude": 81.69054489999999
+  },
+  "categories": [
+    "Lodging"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMCR+46M, Kannaki Amman 4th Cross St, Batticaloa",
+  "business_status": "OPEN"
+}

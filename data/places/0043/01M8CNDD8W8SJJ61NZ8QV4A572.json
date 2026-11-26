@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD8W8SJJ61NZ8QV4A572",
+  "name": "Foursquare Church akkuranai",
+  "coordinates": {
+    "latitude": 7.9233934999999995,
+    "longitude": 81.3667521
+  },
+  "categories": [
+    "Church"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "W9F8+9P2, School road akkuranai, batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD6J6JGSH929BJQY205W",
+  "name": "Vakarei Police Station",
+  "coordinates": {
+    "latitude": 8.1290477,
+    "longitude": 81.43742859999999
+  },
+  "categories": [
+    "Police station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "4CHQ+J3X, Trincomalee-Batticaloa Rd, Vakarai",
+  "business_status": "OPEN"
+}

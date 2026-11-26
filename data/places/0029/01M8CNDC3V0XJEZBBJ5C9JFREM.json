@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC3V0XJEZBBJ5C9JFREM",
+  "name": "AAT Centre Batticaloa",
+  "coordinates": {
+    "latitude": 7.7342397,
+    "longitude": 81.6967463
+  },
+  "categories": [
+    "College"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMMW+MMX, Mamangam Rd, Batticaloa",
+  "business_status": "OPEN"
+}

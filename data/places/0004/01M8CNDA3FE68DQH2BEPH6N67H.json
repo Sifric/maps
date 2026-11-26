@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA3FE68DQH2BEPH6N67H",
+  "name": "King Bee Restaurant",
+  "coordinates": {
+    "latitude": 6.5611866,
+    "longitude": 79.9636874
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "109 A St. Sebastian's Road, Kalutara 12000",
+  "business_status": "CLOSED_TEMPORARILY"
+}

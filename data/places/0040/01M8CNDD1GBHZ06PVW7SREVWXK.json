@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD1GBHZ06PVW7SREVWXK",
+  "name": "Risan Home",
+  "coordinates": {
+    "latitude": 7.9132845,
+    "longitude": 81.52878369999999
+  },
+  "categories": [
+    "Taxi service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Viyafariyar road, birainthuraicheni 40400",
+  "business_status": "OPEN"
+}

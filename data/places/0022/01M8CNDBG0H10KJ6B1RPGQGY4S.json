@@ -1,0 +1,68 @@
+{
+  "id": "01M8CNDBG0H10KJ6B1RPGQGY4S",
+  "name": "Omi's laundry in Arugam bay",
+  "coordinates": {
+    "latitude": 6.8434548,
+    "longitude": 81.8301173
+  },
+  "categories": [
+    "Laundry service",
+    "Laundromat",
+    "Pressure washing service",
+    "Washer & dryer store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Main street, Arugam Bay",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12–6 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12–6 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12–6 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12–6 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "12–6 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12–6 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

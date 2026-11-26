@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCJAAKHGBC4V4XNY1F04",
+  "name": "Kisho",
+  "coordinates": {
+    "latitude": 7.7858407,
+    "longitude": 81.5898284
+  },
+  "categories": [
+    "Home builder"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "77, Chenkaladi",
+  "business_status": "OPEN"
+}

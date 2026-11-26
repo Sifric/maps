@@ -1,0 +1,72 @@
+{
+  "id": "01M8CNDBVZCJKC0NSJY6RPWS8A",
+  "name": "Hingurana Pharmacy",
+  "coordinates": {
+    "latitude": 7.229285699999999,
+    "longitude": 81.6727985
+  },
+  "categories": [
+    "Pharmacy"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "6MHF+P47, Hingurana",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12–8 AM",
+        "9 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12–8 AM",
+        "9 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12–8 AM",
+        "9 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12–8 AM",
+        "9 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12–8 AM",
+        "9 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "12–8 AM",
+        "9 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12–8 AM",
+        "9 AM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

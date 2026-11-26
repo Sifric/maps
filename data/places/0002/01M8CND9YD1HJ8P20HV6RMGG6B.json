@@ -1,0 +1,67 @@
+{
+  "id": "01M8CND9YD1HJ8P20HV6RMGG6B",
+  "name": "PCE",
+  "coordinates": {
+    "latitude": 7.4122007,
+    "longitude": 81.82772039999999
+  },
+  "categories": [
+    "Education center"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "216 Colombo - Batticaloa Hwy, Kalmunai 32300",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7:30 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7:30 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7:30 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7:30 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7:30 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7:30 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7:30 AM–7 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

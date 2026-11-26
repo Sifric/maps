@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCT2T3AG7KQ1428QJKC8",
+  "name": "Thara book shop",
+  "coordinates": {
+    "latitude": 7.7100043,
+    "longitude": 81.6914524
+  },
+  "categories": [
+    "Book store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM6R+2H4, Nallaiya road, 3, Batticaloa",
+  "business_status": "OPEN"
+}

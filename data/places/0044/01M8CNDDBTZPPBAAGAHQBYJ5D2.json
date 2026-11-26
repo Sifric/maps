@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDBTZPPBAAGAHQBYJ5D2",
+  "name": "Carunesthan",
+  "coordinates": {
+    "latitude": 7.6948365,
+    "longitude": 81.71539589999999
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "260 Old Kalmunai Road, Batticaloa",
+  "business_status": "OPEN"
+}

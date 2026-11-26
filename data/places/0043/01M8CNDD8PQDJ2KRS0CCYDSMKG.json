@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD8PQDJ2KRS0CCYDSMKG",
+  "name": "Nive's House",
+  "coordinates": {
+    "latitude": 7.7098713,
+    "longitude": 81.6928114
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "2/5 Nallaiya Rd, Batticaloa",
+  "business_status": "OPEN"
+}

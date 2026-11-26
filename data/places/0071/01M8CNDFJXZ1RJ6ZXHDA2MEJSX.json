@@ -1,0 +1,63 @@
+{
+  "id": "01M8CNDFJXZ1RJ6ZXHDA2MEJSX",
+  "name": "Kandy Post Office - 20000 | මහනුවර තැපැල් කාර්යාලය",
+  "coordinates": {
+    "latitude": 7.2902021999999995,
+    "longitude": 80.63197459999999
+  },
+  "categories": [
+    "Post office"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "Station Rd, Kandy",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8 AM–4 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

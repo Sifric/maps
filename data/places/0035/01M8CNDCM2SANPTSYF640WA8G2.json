@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCM2SANPTSYF640WA8G2",
+  "name": "CIC Yoghurt Distributor Eravur",
+  "coordinates": {
+    "latitude": 7.774457399999999,
+    "longitude": 81.6094265
+  },
+  "categories": [
+    "Distribution service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "197, Kayar Road, 1st Cross, Eravur 30300",
+  "business_status": "OPEN"
+}

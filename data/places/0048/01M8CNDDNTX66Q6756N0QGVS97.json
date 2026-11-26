@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDNTX66Q6756N0QGVS97",
+  "name": "National School Neluwa",
+  "coordinates": {
+    "latitude": 6.3765127999999995,
+    "longitude": 80.35836789999999
+  },
+  "categories": [
+    "Bus stop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Neluwa",
+  "business_status": "OPEN"
+}

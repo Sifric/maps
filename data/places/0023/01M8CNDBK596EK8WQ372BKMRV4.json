@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBK596EK8WQ372BKMRV4",
+  "name": "Mount Rent a car",
+  "coordinates": {
+    "latitude": 7.9067224,
+    "longitude": 81.5340406
+  },
+  "categories": [
+    "Car rental agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kalkudah 30400",
+  "business_status": "OPEN"
+}

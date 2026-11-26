@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAQQC1K2SSXTY48XAR0H",
+  "name": "Masjid Al Muhyideen",
+  "coordinates": {
+    "latitude": 7.4042859,
+    "longitude": 81.8316815
+  },
+  "categories": [
+    "Mosque"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kalmunai 32300",
+  "business_status": "OPEN"
+}

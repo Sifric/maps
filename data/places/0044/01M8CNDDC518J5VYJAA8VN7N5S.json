@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDC518J5VYJAA8VN7N5S",
+  "name": "Nava home",
+  "coordinates": {
+    "latitude": 7.740058599999999,
+    "longitude": 81.69518099999999
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMRW+23F, Kathirkamar Rd, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDCP0DFRKSWDPRNTCR64",
+  "name": "Nila residents",
+  "coordinates": {
+    "latitude": 7.7304322999999995,
+    "longitude": 81.6977343
+  },
+  "categories": [
+    "Condominium complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "120 Boundary Rd, Batticaloa 30000",
+  "business_status": "OPEN"
+}

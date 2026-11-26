@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDEFYC682Q589B7EMT9GA",
+  "name": "Villa Kia Ora",
+  "coordinates": {
+    "latitude": 6.0815358,
+    "longitude": 80.15116019999999
+  },
+  "categories": [
+    "Villa",
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Boossa",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "Rillamba, D.E Thilakarathna Mawatha, Rathgama 80260"
+  ]
+}

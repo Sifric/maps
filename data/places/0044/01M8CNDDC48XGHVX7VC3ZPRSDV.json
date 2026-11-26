@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDC48XGHVX7VC3ZPRSDV",
+  "name": "Sana Kuna Residencies",
+  "coordinates": {
+    "latitude": 7.7089418,
+    "longitude": 81.695707
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "15 Hospital Rd, Batticaloa",
+  "business_status": "OPEN"
+}

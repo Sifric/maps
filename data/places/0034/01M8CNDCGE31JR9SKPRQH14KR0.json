@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCGE31JR9SKPRQH14KR0",
+  "name": "Zaviya Masjid",
+  "coordinates": {
+    "latitude": 7.6836633,
+    "longitude": 81.7219089
+  },
+  "categories": [
+    "Mosque"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPMC+FQ7, Kattankudy",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA4BC4DCPCAFBSEMZAJ0",
+  "name": "New Taly Hotel",
+  "coordinates": {
+    "latitude": 7.2233651,
+    "longitude": 81.8231752
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "6RFF+87V, Akkaraipattu",
+  "business_status": "OPEN"
+}

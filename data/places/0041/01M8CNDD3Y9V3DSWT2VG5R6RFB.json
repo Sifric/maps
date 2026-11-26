@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDD3Y9V3DSWT2VG5R6RFB",
+  "name": "Kapil Reload Centre",
+  "coordinates": {
+    "latitude": 7.7165738,
+    "longitude": 81.6987985
+  },
+  "categories": [
+    "Shopping mall"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No-251,Trinco Road,Thanganagar,Kiliveddy, Trinco Rd, Batticaloa",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5 AM–7 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

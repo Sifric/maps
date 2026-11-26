@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC8S7RWECP2278C0HN5R",
+  "name": "Rilwan store",
+  "coordinates": {
+    "latitude": 7.691713699999999,
+    "longitude": 81.7272651
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPVH+35C, Kattankudy",
+  "business_status": "OPEN"
+}

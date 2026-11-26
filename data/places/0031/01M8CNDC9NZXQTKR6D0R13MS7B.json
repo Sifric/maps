@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDC9NZXQTKR6D0R13MS7B",
+  "name": "DELIGHT CAFE",
+  "coordinates": {
+    "latitude": 7.7726172,
+    "longitude": 81.6099493
+  },
+  "categories": [
+    "Fast food restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJF5+2XW, Trincomalee-Batticaloa Rd, Eravur",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5:30 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5:30 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5:30 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5:30 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5:30 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5:30 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5:30 PM–1 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

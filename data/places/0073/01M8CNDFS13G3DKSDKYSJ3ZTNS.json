@@ -1,0 +1,63 @@
+{
+  "id": "01M8CNDFS13G3DKSDKYSJ3ZTNS",
+  "name": "Anjaneya mini mart",
+  "coordinates": {
+    "latitude": 9.7061747,
+    "longitude": 80.0032028
+  },
+  "categories": [
+    "Asian grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "P243+F7M, Annamalai street, Manipay",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7:30–8:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7:30–8:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7:30–8:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7:30–8:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7:30–8:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7:30–8:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7:30–8:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

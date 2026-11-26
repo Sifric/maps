@@ -1,0 +1,28 @@
+{
+  "id": "01M8CNDDEYRV3S4CYESB9ASH1Q",
+  "name": "JanithRu Salon",
+  "coordinates": {
+    "latitude": 6.6640345,
+    "longitude": 80.4713673
+  },
+  "categories": [
+    "Barber shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "9 AM–11:30 PM"
+      ]
+    }
+  ]
+}

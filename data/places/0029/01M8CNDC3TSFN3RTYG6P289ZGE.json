@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC3TSFN3RTYG6P289ZGE",
+  "name": "Arrupe College Batticaloa",
+  "coordinates": {
+    "latitude": 7.7110844,
+    "longitude": 81.6951433
+  },
+  "categories": [
+    "Elementary school"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "82 St Mary's St, Batticaloa",
+  "business_status": "OPEN"
+}

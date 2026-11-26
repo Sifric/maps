@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCPWJ6YZ9WH514Y7GNP7",
+  "name": "Hilmy Gardens",
+  "coordinates": {
+    "latitude": 7.792715899999999,
+    "longitude": 81.6232923
+  },
+  "categories": [
+    "Garden"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Thaikka Road",
+  "business_status": "OPEN"
+}

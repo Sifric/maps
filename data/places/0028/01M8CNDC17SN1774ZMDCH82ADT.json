@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC17SN1774ZMDCH82ADT",
+  "name": "Multi Selection",
+  "coordinates": {
+    "latitude": 7.4515883999999994,
+    "longitude": 81.8142076
+  },
+  "categories": [
+    "Book store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "FR27+JMP, Periyaneelavanai",
+  "business_status": "OPEN"
+}

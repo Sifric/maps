@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDCDBT53YQY87B2D66K9Y",
+  "name": "New Pioneer Dental Clinic and Surgery",
+  "coordinates": {
+    "latitude": 7.719400299999999,
+    "longitude": 81.7013442
+  },
+  "categories": [
+    "Dental clinic"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "72 Pioneer Rd, Batticaloa",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4–7 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4–7 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4–7 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4–7 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4–7 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4–7 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

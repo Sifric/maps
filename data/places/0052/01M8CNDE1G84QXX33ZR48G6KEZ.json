@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE1G84QXX33ZR48G6KEZ",
+  "name": "Surf Cafe Family Restaurant Rillamba",
+  "coordinates": {
+    "latitude": 6.0794451,
+    "longitude": 80.1502891
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Rillamba Surf Point ,Galle Road ,Rillamba, Rathgama",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "11 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9:30 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "11 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "11 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "11 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "11 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "11 AM–10 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

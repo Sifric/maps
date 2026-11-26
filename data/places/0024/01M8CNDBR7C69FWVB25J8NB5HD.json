@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBR7C69FWVB25J8NB5HD",
+  "name": "SAS MOTORS",
+  "coordinates": {
+    "latitude": 7.6846625,
+    "longitude": 81.73701679999999
+  },
+  "categories": [
+    "Auto parts store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kattankudy",
+  "business_status": "OPEN"
+}

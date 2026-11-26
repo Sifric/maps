@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDADB6EAY58DX8CKX8TZY",
+  "name": "Wine shop (Bar)",
+  "coordinates": {
+    "latitude": 7.5139312,
+    "longitude": 81.74761769999999
+  },
+  "categories": [
+    "Bar"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GP7X+H2, Mandur",
+  "business_status": "OPEN"
+}

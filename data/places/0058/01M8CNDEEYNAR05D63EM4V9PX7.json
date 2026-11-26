@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEEYNAR05D63EM4V9PX7",
+  "name": "Garden On Sea",
+  "coordinates": {
+    "latitude": 6.137936,
+    "longitude": 80.099306
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "306/1 Galle Rd, Hikkaduwa",
+  "business_status": "OPEN"
+}

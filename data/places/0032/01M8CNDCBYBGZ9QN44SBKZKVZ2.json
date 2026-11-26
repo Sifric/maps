@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBYBGZ9QN44SBKZKVZ2",
+  "name": "Aaruthraa Villa",
+  "coordinates": {
+    "latitude": 7.9231082,
+    "longitude": 81.55098559999999
+  },
+  "categories": [
+    "Villa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kalkudah-Valaichchenai Rd, Kalkudah",
+  "business_status": "OPEN"
+}

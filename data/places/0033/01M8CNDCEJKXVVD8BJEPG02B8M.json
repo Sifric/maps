@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCEJKXVVD8BJEPG02B8M",
+  "name": "New Central Medical Stores",
+  "coordinates": {
+    "latitude": 7.7776691,
+    "longitude": 81.60496479999999
+  },
+  "categories": [
+    "Pharmacy",
+    "Service establishment"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

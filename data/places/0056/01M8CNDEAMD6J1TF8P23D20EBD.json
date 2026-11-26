@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEAMD6J1TF8P23D20EBD",
+  "name": "Cool Beach Hotel",
+  "coordinates": {
+    "latitude": 6.1967433,
+    "longitude": 80.0629508
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Galle Road, Akurala, Hikkaduwa",
+  "business_status": "OPEN"
+}

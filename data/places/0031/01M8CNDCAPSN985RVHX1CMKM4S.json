@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCAPSN985RVHX1CMKM4S",
+  "name": "Local Cashew Kiosks",
+  "coordinates": {
+    "latitude": 7.7144268,
+    "longitude": 81.6973751
+  },
+  "categories": [
+    "Market"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM7W+QXC, Munai St, Batticaloa",
+  "business_status": "OPEN"
+}

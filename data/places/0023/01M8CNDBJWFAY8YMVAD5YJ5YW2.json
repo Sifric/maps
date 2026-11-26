@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBJWFAY8YMVAD5YJ5YW2",
+  "name": "People’ Bank ATM",
+  "coordinates": {
+    "latitude": 7.251608699999999,
+    "longitude": 81.85450569999999
+  },
+  "categories": [
+    "ATM"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Main Street, Main Street Colombo - Batticaloa Hwy, Addalaichenai",
+  "business_status": "OPEN"
+}

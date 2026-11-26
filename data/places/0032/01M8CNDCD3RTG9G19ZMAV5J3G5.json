@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCD3RTG9G19ZMAV5J3G5",
+  "name": "Risan house",
+  "coordinates": {
+    "latitude": 7.4027071,
+    "longitude": 81.83516
+  },
+  "categories": [
+    "House sitter"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "245 Cassim Rd, Kalmunai 32300",
+  "business_status": "OPEN"
+}

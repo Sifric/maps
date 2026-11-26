@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBYBMSV788QGSY4HSMP",
+  "name": "Anantaya Resort and Spa Passikuda",
+  "coordinates": {
+    "latitude": 7.9310129,
+    "longitude": 81.5593608
+  },
+  "categories": [
+    "Resort hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Coconut Cultivation Board, Road, Kalkudah 30410",
+  "business_status": "OPEN"
+}

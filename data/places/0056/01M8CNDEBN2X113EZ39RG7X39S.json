@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDEBN2X113EZ39RG7X39S",
+  "name": "Olee Villa",
+  "coordinates": {
+    "latitude": 6.4191151,
+    "longitude": 80.0056487
+  },
+  "categories": [
+    "Villa",
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Massalagoda, Bentota 80500",
+  "business_status": "OPEN"
+}

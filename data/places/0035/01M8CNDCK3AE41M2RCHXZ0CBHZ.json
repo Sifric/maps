@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCK3AE41M2RCHXZ0CBHZ",
+  "name": "Magistrate Court Batticaloa",
+  "coordinates": {
+    "latitude": 7.712592099999999,
+    "longitude": 81.70031569999999
+  },
+  "categories": [
+    "Magistrates' court"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PP72+24P, Fort Road, Batticaloa",
+  "business_status": "OPEN"
+}

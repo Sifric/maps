@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDC2BZ1HGS1XGJ1CJFDKB",
+  "name": "Amarasinghe Tyre Traders",
+  "coordinates": {
+    "latitude": 7.0806476,
+    "longitude": 79.85614679999999
+  },
+  "categories": [
+    "Tire shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "No.115/5/A Bopitiya, Bopitiya 60155",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7:30 AM–6:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7:30 AM–6:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7:30 AM–6:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7:30 AM–6:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7:30 AM–6:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7:30 AM–6:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7:30 AM–1:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

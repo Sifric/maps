@@ -1,0 +1,70 @@
+{
+  "id": "01M8CNDBHADGJB5F9BYXDQXH6F",
+  "name": "Sanasa General Insurance - Ampara",
+  "coordinates": {
+    "latitude": 7.3017701,
+    "longitude": 81.6747243
+  },
+  "categories": [
+    "Insurance company"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "No.40 D.S.Senanayake Street, Ampara 32000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8:30 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12 AM–5:15 PM",
+        "8:30 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12 AM–5:15 PM",
+        "8:30 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12 AM–5:15 PM",
+        "8:30 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12 AM–5:15 PM",
+        "8:30 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "12 AM–5:15 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

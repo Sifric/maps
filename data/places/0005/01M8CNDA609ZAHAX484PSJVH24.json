@@ -1,0 +1,72 @@
+{
+  "id": "01M8CNDA609ZAHAX484PSJVH24",
+  "name": "Sazna Trading Centre",
+  "coordinates": {
+    "latitude": 7.2244024,
+    "longitude": 81.8501088
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "236, 02 Main St, Akkaraipattu 92400",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8:30 AM–1 PM",
+        "4–11 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8:30 AM–1 PM",
+        "4–11 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8:30 AM–1 PM",
+        "4–11 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8:30 AM–1 PM",
+        "4–11 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8:30–10:30 AM",
+        "4–11 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8:30 AM–1 PM",
+        "4–11 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8:30 AM–1 PM",
+        "4–11 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

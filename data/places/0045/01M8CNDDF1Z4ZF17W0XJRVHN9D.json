@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDDF1Z4ZF17W0XJRVHN9D",
+  "name": "Salon (Hair & Beauty) Unisex",
+  "coordinates": {
+    "latitude": 7.3660328,
+    "longitude": 80.6735761
+  },
+  "categories": [
+    "Hair salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\n9M8F+CC, B462, Wattegama",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "7–10 PM"
+      ]
+    }
+  ],
+  "business_status": "CLOSED"
+}

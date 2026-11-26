@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDA4JW4REBFS4B1EAMXJS",
+  "name": "Rhythm and Blues (R&B)",
+  "coordinates": {
+    "latitude": 6.8926969,
+    "longitude": 79.8578095
+  },
+  "categories": [
+    "Disco club"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "R. A. De Mel Mawatha, Colombo 00500",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 PM–4 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 PM–4 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 PM–4 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 PM–4 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7 PM–5 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 PM–5 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7 PM–4 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA53519G6QRCD9Q60S5W",
+  "name": "ArugamBay PodBay",
+  "coordinates": {
+    "latitude": 6.845949399999999,
+    "longitude": 81.83152969999999
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Main Street, Arugambay, Pottuvil 32500",
+  "business_status": "OPEN"
+}

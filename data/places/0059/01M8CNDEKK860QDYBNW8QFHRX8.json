@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDEKK860QDYBNW8QFHRX8",
+  "name": "Mathi Veg Hotel",
+  "coordinates": {
+    "latitude": 9.7044848,
+    "longitude": 79.99764119999999
+  },
+  "categories": [
+    "Vegetarian restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "PX3X+Q3R, Manipay road",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5:30 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5:30–9 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5:30 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5:30 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5:30 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5:30 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5:30 AM–1 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

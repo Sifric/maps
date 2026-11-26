@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD4GHTVGF4YRMW9YYZTW",
+  "name": "Karuna Stores",
+  "coordinates": {
+    "latitude": 7.601100799999999,
+    "longitude": 81.7682306
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "JQ29+C7X, Kirankulam",
+  "business_status": "OPEN"
+}

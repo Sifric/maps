@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA0EJPC73FVXX7YV93JH",
+  "name": "Kanduoori foods kky",
+  "coordinates": {
+    "latitude": 7.6828097,
+    "longitude": 81.7344294
+  },
+  "categories": [
+    "Soup kitchen"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPMM+4QF, Dr Badhiudeen Mahmood Mawatha, Kattankudy",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDEAJBDQPJ774YBFHB6MT",
+  "name": "Hotel Meer",
+  "coordinates": {
+    "latitude": 6.2415233,
+    "longitude": 80.0484216
+  },
+  "categories": [
+    "Villa",
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "115/2 Beach Rd, Ambalangoda",
+  "business_status": "OPEN"
+}

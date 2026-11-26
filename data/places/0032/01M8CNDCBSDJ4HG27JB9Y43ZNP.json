@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBSDJ4HG27JB9Y43ZNP",
+  "name": "Batti SAT Guest House",
+  "coordinates": {
+    "latitude": 7.717072,
+    "longitude": 81.7085211
+  },
+  "categories": [
+    "Guest house"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "25/8, Marri Amman 1st Cross Road, kallady, Batticaloa 30000",
+  "business_status": "OPEN"
+}

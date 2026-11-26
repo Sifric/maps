@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC7BY3X38BDJSC3Q0H8E",
+  "name": "Saratha kitchen",
+  "coordinates": {
+    "latitude": 7.7941578,
+    "longitude": 81.5804483
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Trincomalee-Batticaloa Rd, vantharamoolai 30350",
+  "business_status": "OPEN"
+}

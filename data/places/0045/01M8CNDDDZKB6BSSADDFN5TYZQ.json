@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDDDZKB6BSSADDFN5TYZQ",
+  "name": "Be Smart",
+  "coordinates": {
+    "latitude": 7.6890887999999995,
+    "longitude": 81.7312431
+  },
+  "categories": [
+    "Phone repair service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Telecom Road Ward No - 04, Pulmoddai",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8–9 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

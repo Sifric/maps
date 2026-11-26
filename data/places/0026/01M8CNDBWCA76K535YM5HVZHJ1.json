@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDBWCA76K535YM5HVZHJ1",
+  "name": "Central Green - Chavalakadai Retail Shop",
+  "coordinates": {
+    "latitude": 7.414333,
+    "longitude": 81.7758429
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "CQ7G+P92, Kalmunai",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "9 AM–5 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

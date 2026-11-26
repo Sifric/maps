@@ -1,0 +1,70 @@
+{
+  "id": "01M8CNDACHERT78SZX74V3P2Q2",
+  "name": "DK Traders",
+  "coordinates": {
+    "latitude": 6.0070212,
+    "longitude": 80.3055667
+  },
+  "categories": [
+    "Supermarket",
+    "Asian grocery store",
+    "Beverage distributor",
+    "Convenience store",
+    "General store",
+    "Wholesale grocer"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "hospitel road katukurundara, Habaraduwa 80630",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5:30 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5:30 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5:30 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5:30 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5:30 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5:30 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5:30 AM–10:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

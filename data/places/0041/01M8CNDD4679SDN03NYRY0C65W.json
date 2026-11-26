@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD4679SDN03NYRY0C65W",
+  "name": "Ranasinghe Medical Center",
+  "coordinates": {
+    "latitude": 6.9187110999999994,
+    "longitude": 80.1007133
+  },
+  "categories": [
+    "Medical Center"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Colombo - Batticaloa Hwy",
+  "business_status": "OPEN"
+}

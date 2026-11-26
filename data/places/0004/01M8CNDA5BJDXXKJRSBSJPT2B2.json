@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA5BJDXXKJRSBSJPT2B2",
+  "name": "Nanba Grocery shop",
+  "coordinates": {
+    "latitude": 6.8620735999999996,
+    "longitude": 81.8304282
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "748/8F Marka cross road kalappukattu, Pottuvil 15",
+  "business_status": "OPEN"
+}

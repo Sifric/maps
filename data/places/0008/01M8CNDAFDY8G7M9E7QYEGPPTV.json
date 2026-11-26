@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAFDY8G7M9E7QYEGPPTV",
+  "name": "Sri Lanka",
+  "coordinates": {
+    "latitude": 7.4170811,
+    "longitude": 81.81323979999999
+  },
+  "categories": [
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "natpiddimunai, 307 E waba road, Kalmunai",
+  "business_status": "OPEN"
+}

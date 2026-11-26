@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCC52PR17M6Q82FJSY6C",
+  "name": "Yala Safari Camping",
+  "coordinates": {
+    "latitude": 6.3785791,
+    "longitude": 81.38165269999999
+  },
+  "categories": [
+    "Campground"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Yala Block II ,Yala National Park ,SriLanka, Yala National Park 82600",
+  "business_status": "OPEN"
+}

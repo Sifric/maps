@@ -1,0 +1,72 @@
+{
+  "id": "01M8CNDA70HTRQS71R3QD5R36B",
+  "name": "Naazer Hotel",
+  "coordinates": {
+    "latitude": 7.4320013,
+    "longitude": 81.8204058
+  },
+  "categories": [
+    "Breakfast restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "CRJC+QCV, Pandiruppu",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6 AM–12 PM",
+        "3:30–10:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6 AM–12 PM",
+        "3:30–10:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6 AM–12 PM",
+        "3:30–10:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6 AM–12 PM",
+        "3:30–10:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6–11:30 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6 AM–12 PM",
+        "3:30–10:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6 AM–12 PM",
+        "3:30–10:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

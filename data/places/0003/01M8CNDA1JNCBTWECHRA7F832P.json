@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDA1JNCBTWECHRA7F832P",
+  "name": "RJPOFFYS food and beverage",
+  "coordinates": {
+    "latitude": 7.4054895,
+    "longitude": 81.84101419999999
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "CR4R+695, Beach Rd, Sainthamaruthu 32300",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5 PM–2 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5 PM–2 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5 PM–2 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5 PM–2 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5 PM–2 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5 PM–2 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

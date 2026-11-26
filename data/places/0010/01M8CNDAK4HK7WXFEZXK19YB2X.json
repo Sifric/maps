@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAK4HK7WXFEZXK19YB2X",
+  "name": "Amri Distribution",
+  "coordinates": {
+    "latitude": 7.3643569,
+    "longitude": 81.7934664
+  },
+  "categories": [
+    "Warehouse"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9Q7V+P9W, Ampara Rd, Sammanthurai",
+  "business_status": "OPEN"
+}

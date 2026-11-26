@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDA7KD1ZPF1CEY4VEJ9H",
+  "name": "CO-OP",
+  "coordinates": {
+    "latitude": 7.6817079999999995,
+    "longitude": 81.73216339999999
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPJJ+MVM, Kattankudy",
+  "business_status": "OPEN"
+}

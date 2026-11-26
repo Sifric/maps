@@ -1,0 +1,68 @@
+{
+  "id": "01M8CNDC3903ZH82MV5BN7KPMZ",
+  "name": "Cara Jewellers (Galle Fort)",
+  "coordinates": {
+    "latitude": 6.0262495,
+    "longitude": 80.2181311
+  },
+  "categories": [
+    "Jewelry store",
+    "Jeweler",
+    "Jewelry manufacturer",
+    "Jewelry repair service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "46 Pedlar St, Galle 80000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "10 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "10 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "10 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "10 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "10 AM–12 PM",
+        "2–9 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "10 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "10 AM–9 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

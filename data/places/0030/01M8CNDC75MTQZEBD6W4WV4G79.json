@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC75MTQZEBD6W4WV4G79",
+  "name": "Fouzar Hotel and Restaurant",
+  "coordinates": {
+    "latitude": 7.6585303,
+    "longitude": 81.75272269999999
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MQ53+C39, Main Rd, palamunai",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDD5BQD09NGDGMG6WTS5T",
+  "name": "Smart Mobile Phone Shop",
+  "coordinates": {
+    "latitude": 7.6746322,
+    "longitude": 81.7321772
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

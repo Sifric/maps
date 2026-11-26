@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDA4KCBAF0G67XEYWQXG1",
+  "name": "Indika Bakers Uhana",
+  "coordinates": {
+    "latitude": 7.3636671,
+    "longitude": 81.63486669999999
+  },
+  "categories": [
+    "Hotel",
+    "Bakery",
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No14 Ampara-Uhana-Maha Oya Hwy, Uhana 32060",
+  "business_status": "OPEN"
+}

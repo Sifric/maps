@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE33MMJ3HA80V9G5KNPB",
+  "name": "Chai Break",
+  "coordinates": {
+    "latitude": 6.428624699999999,
+    "longitude": 79.999124
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "619, 20 Galle Rd, Aluthgama",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12 PM–2 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12 PM–2 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12 PM–2 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12 PM–2 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4 PM–2 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "12 PM–2 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12 PM–2 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

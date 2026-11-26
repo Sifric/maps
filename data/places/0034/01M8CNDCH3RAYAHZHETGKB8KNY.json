@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCH3RAYAHZHETGKB8KNY",
+  "name": "Al Aqsa Mosque",
+  "coordinates": {
+    "latitude": 7.910753,
+    "longitude": 81.522099
+  },
+  "categories": [
+    "Mosque"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG6C+GX9, PS Rd, Oddamavadi",
+  "business_status": "OPEN"
+}

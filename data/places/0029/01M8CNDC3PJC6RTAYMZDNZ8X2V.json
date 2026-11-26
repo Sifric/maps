@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC3PJC6RTAYMZDNZ8X2V",
+  "name": "Fareed Hall",
+  "coordinates": {
+    "latitude": 7.6829393999999995,
+    "longitude": 81.73547339999999
+  },
+  "categories": [
+    "Auditorium"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPMP+55H, Dr Badhiudeen Mahmood Mawatha, Kattankudy 30100",
+  "business_status": "OPEN"
+}

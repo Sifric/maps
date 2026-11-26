@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCW0DCHCNQ3MQMB9FYZ7",
+  "name": "Athayee's house",
+  "coordinates": {
+    "latitude": 7.6783736,
+    "longitude": 81.729091
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "24/3 SK Hajiar Ln, Kattankudy",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDEQGXRVQNZH38W7RS5HW",
+  "name": "Delft Cultural Home Stay",
+  "coordinates": {
+    "latitude": 9.5214318,
+    "longitude": 79.7003148
+  },
+  "categories": [
+    "Hotel",
+    "Guest house",
+    "Motel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Ward Number 08, Delft 40370",
+  "business_status": "OPEN"
+}

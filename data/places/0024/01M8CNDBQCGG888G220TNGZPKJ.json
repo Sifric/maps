@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDBQCGG888G220TNGZPKJ",
+  "name": "Sri Lanka Travel Partner",
+  "coordinates": {
+    "latitude": 7.261182,
+    "longitude": 79.866742
+  },
+  "categories": [
+    "Travel agency",
+    "Scooter rental service",
+    "Tour agency",
+    "Tour operator"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "The Finanes Waththa, No. 33/2C Thoppuwa, Negombo 11540",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Open 24 hours"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

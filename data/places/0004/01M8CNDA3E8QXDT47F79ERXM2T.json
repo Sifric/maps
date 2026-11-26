@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA3E8QXDT47F79ERXM2T",
+  "name": "Shafee Hotel and Restaurant",
+  "coordinates": {
+    "latitude": 7.4024775,
+    "longitude": 81.76122819999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "B77",
+  "business_status": "OPEN"
+}

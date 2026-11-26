@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDA0V8WRW0A5G3AA7DB8G",
+  "name": "Meet N Eat Food Court",
+  "coordinates": {
+    "latitude": 7.3563462,
+    "longitude": 81.8456458
+  },
+  "categories": [
+    "Fast food restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9R4W+G7J, Whitehouse Building, Main Street, Nintavur",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4 PM–1 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

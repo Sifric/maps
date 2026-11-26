@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDEKVYVC2S66W3FR405QM",
+  "name": "N VINI Restaurant",
+  "coordinates": {
+    "latitude": 9.733782,
+    "longitude": 80.04930949999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "P2MX+GP7, Palaly rode urelu, 40000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "12 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12 PM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

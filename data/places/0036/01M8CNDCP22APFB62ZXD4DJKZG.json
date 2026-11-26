@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCP22APFB62ZXD4DJKZG",
+  "name": "Estern products",
+  "coordinates": {
+    "latitude": 7.788721499999999,
+    "longitude": 81.61358849999999
+  },
+  "categories": [
+    "Condiments supplier"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "35 Kalandar Road meerakerny, Eravur 00035",
+  "business_status": "OPEN"
+}

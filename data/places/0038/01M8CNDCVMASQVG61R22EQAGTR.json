@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCVMASQVG61R22EQAGTR",
+  "name": "Pillaiyarady Lagoon",
+  "coordinates": {
+    "latitude": 7.7412683,
+    "longitude": 81.65722079999999
+  },
+  "categories": [
+    "Tourist attraction"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMR4+GV5, Trincomalee-Batticaloa Rd, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDDA53WQPDFQD15T7PPT5",
+  "name": "Colombo Rice Mill",
+  "coordinates": {
+    "latitude": 7.441071,
+    "longitude": 81.8124086
+  },
+  "categories": [
+    "Rice mill"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CRR6+CXF, Colombo - Batticaloa Hwy, Periyaneelavanai",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7 AM–7:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

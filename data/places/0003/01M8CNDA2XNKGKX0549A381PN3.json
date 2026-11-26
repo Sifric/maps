@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA2XNKGKX0549A381PN3",
+  "name": "Sun foodcity",
+  "coordinates": {
+    "latitude": 7.119360899999999,
+    "longitude": 81.8520769
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "4V92+PRW, Thirukkovil",
+  "business_status": "OPEN"
+}

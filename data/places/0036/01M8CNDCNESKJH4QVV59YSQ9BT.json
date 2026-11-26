@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCNESKJH4QVV59YSQ9BT",
+  "name": "Wital Direct Warehouse Main",
+  "coordinates": {
+    "latitude": 6.965084699999999,
+    "longitude": 81.03701029999999
+  },
+  "categories": [
+    "Warehouse"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "X28P+2RJ, Hali-ela",
+  "business_status": "OPEN"
+}

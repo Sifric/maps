@@ -1,0 +1,20 @@
+{
+  "id": "01M8CNDF36QACE113JKMF03TYQ",
+  "name": "Sandilipay North",
+  "coordinates": {
+    "latitude": 9.762234,
+    "longitude": 79.9892034
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

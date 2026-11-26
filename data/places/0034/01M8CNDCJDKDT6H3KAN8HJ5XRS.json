@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCJDKDT6H3KAN8HJ5XRS",
+  "name": "Siyama house",
+  "coordinates": {
+    "latitude": 7.677559899999999,
+    "longitude": 81.72857239999999
+  },
+  "categories": [
+    "Home builder"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPHH+2CG, Dr Ahamed Fareed Mawatha, Kattankudy",
+  "business_status": "OPEN"
+}

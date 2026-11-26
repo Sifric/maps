@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCF7E5K6V7X5DY8KPMVJ",
+  "name": "Batti Gobs Supplement",
+  "coordinates": {
+    "latitude": 7.7347109,
+    "longitude": 81.6984793
+  },
+  "categories": [
+    "Gym"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "452 Bar Rd - Batticaloa, Batticaloa",
+  "business_status": "CLOSED_TEMPORARILY"
+}

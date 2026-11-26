@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD2YW85VVNM9MNCV4BJ2",
+  "name": "Selvam Store",
+  "coordinates": {
+    "latitude": 7.509440499999999,
+    "longitude": 81.7822719
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kaluwanchikudy",
+  "business_status": "OPEN"
+}

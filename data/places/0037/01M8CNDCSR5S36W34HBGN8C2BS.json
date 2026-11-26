@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCSR5S36W34HBGN8C2BS",
+  "name": "Saravanas Jewellery",
+  "coordinates": {
+    "latitude": 7.7300492,
+    "longitude": 81.6863125
+  },
+  "categories": [
+    "Jewelry store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMJP+2G7, Irathapuram East Rd, Batticaloa",
+  "business_status": "OPEN"
+}

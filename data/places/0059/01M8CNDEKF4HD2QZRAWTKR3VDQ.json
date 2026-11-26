@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDEKF4HD2QZRAWTKR3VDQ",
+  "name": "Inch's place restaurant",
+  "coordinates": {
+    "latitude": 6.3106390999999995,
+    "longitude": 81.23112739999999
+  },
+  "categories": [
+    "Family restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "17,පන්නගමුව වැල්ලවාය පාර, වීරවිල 82632",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12:30–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12:30–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12:30–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12:30–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "12:30–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12:30–10 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

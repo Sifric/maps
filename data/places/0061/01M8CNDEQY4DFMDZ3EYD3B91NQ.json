@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDEQY4DFMDZ3EYD3B91NQ",
+  "name": "Augustin Guest House - Superior Villa",
+  "coordinates": {
+    "latitude": 9.82518,
+    "longitude": 80.23960869999999
+  },
+  "categories": [
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Point Pedro",
+  "business_status": "OPEN"
+}

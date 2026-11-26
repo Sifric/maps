@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDD67RA4H11TTF9G6V6TK",
+  "name": "Alsevana Hall",
+  "coordinates": {
+    "latitude": 6.9740861999999995,
+    "longitude": 81.085933
+  },
+  "categories": [
+    "Banquet hall",
+    "Lodging"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Udawela, Peradeniya-Badulla-Chenkaladi Hwy",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAZT4DHTPXDB32SXQV5T",
+  "name": "Viyalendran Fitness Centre",
+  "coordinates": {
+    "latitude": 7.6972318,
+    "longitude": 81.6768836
+  },
+  "categories": [
+    "Gym"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Veechukalmunai",
+  "business_status": "OPEN"
+}

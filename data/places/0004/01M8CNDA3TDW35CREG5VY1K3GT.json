@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDA3TDW35CREG5VY1K3GT",
+  "name": "ANUSRI BAKE HOTEL",
+  "coordinates": {
+    "latitude": 7.9029687,
+    "longitude": 81.5316831
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG3J+5MM, Karuwakkeny, Anna Rd, Oddamavadi",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:15 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:15 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:15 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:15 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:15 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:15 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6:15 AM–10:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

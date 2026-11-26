@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCVA14BC91B8M86CKSE9",
+  "name": "Arun Fancy & Transport",
+  "coordinates": {
+    "latitude": 7.7296888,
+    "longitude": 81.68520199999999
+  },
+  "categories": [
+    "Transportation service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMHP+V3G, Kumara Kovil Veethy, Batticaloa",
+  "business_status": "OPEN"
+}

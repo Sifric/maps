@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDDEZ2YEKTBXZGDN7WT84",
+  "name": "Salone Hub",
+  "coordinates": {
+    "latitude": 6.5043035,
+    "longitude": 80.6506311
+  },
+  "categories": [
+    "Hair salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\nMain Street, Godakawela",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "12–7 AM\n8 AM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDETAB0ECBCGYH7S68PTD",
+  "name": "Post office",
+  "coordinates": {
+    "latitude": 9.7956819,
+    "longitude": 80.20472509999999
+  },
+  "categories": [
+    "Post office"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Q6W3+7VH, Karaveddi",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7:01 AM–4 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–4 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–4 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–4 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–4 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

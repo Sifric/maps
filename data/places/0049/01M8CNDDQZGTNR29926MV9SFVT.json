@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDQZGTNR29926MV9SFVT",
+  "name": "Fare & Feed",
+  "coordinates": {
+    "latitude": 6.0396807,
+    "longitude": 80.3010164
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Chinthamaniya, galle 80000",
+  "business_status": "OPEN"
+}

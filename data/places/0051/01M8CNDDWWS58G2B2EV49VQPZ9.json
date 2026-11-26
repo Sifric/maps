@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDWWS58G2B2EV49VQPZ9",
+  "name": "Mirisgala Restaurant",
+  "coordinates": {
+    "latitude": 6.0263189,
+    "longitude": 80.21834439999999
+  },
+  "categories": [
+    "Seafood restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "40 Pedlar St, Galle 80000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12–9:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12–9:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12–9:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12–9:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12–9:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "12–9:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12–9:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDEDGNH6VY1P29YWJ5TT9",
+  "name": "Pearl Nest",
+  "coordinates": {
+    "latitude": 6.0265515,
+    "longitude": 80.2155769
+  },
+  "categories": [
+    "Lodging",
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "16 Chando St, Galle 80000",
+  "business_status": "OPEN"
+}

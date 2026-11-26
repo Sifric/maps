@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCN02G1PDTBJAFGYX41W",
+  "name": "Fashion gallery",
+  "coordinates": {
+    "latitude": 7.7271839,
+    "longitude": 81.6971478
+  },
+  "categories": [
+    "Textile mill"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMGW+VVC, Boundary Rd, Batticaloa",
+  "business_status": "OPEN"
+}

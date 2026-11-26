@@ -1,0 +1,19 @@
+{
+  "id": "01M8CNDC335ZJ2XGQE6TWV9FG7",
+  "name": "Super Mart",
+  "coordinates": {
+    "latitude": 5.962867999999999,
+    "longitude": 80.4095875
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

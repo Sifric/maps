@@ -1,0 +1,70 @@
+{
+  "id": "01M8CNDBKRCQ68FDB8TBMFEQ24",
+  "name": "MoneyGram",
+  "coordinates": {
+    "latitude": 7.415074199999999,
+    "longitude": 81.8260866
+  },
+  "categories": [
+    "Money transfer service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Inside Sampath Bank, Police Station Rd, Kalmunai 32300",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9 AM–12:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "Inside Nations Trust Bank Plc, 174 Colombo - Batticaloa Hwy, Kalmunai 32300"
+  ]
+}

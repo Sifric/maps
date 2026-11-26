@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDCC1GC5Q56NE00Z1S09G",
+  "name": "Breeze Pasikudah",
+  "coordinates": {
+    "latitude": 7.9265238,
+    "longitude": 81.57438499999999
+  },
+  "categories": [
+    "Resort hotel",
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No 13 Hotel Road, Kalkudah 30410",
+  "business_status": "OPEN"
+}

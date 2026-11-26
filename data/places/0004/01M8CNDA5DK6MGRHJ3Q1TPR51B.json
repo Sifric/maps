@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA5DK6MGRHJ3Q1TPR51B",
+  "name": "Beef Shop மாட்டிறைச்சிக் கடை",
+  "coordinates": {
+    "latitude": 7.3914431,
+    "longitude": 81.8447312
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9RRV+HWM, Sainthamaruthu 32300",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD3DB2G2TXW56Y1E7SH9",
+  "name": "Public Toilets",
+  "coordinates": {
+    "latitude": 6.8077909,
+    "longitude": 80.95686959999999
+  },
+  "categories": [
+    "Public bathroom"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "RX54+4RC, Diyatalawa",
+  "business_status": "OPEN"
+}

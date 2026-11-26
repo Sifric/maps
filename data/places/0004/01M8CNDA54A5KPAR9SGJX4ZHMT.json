@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDA54A5KPAR9SGJX4ZHMT",
+  "name": "Break Time | Sandwich and Juice Arugambay",
+  "coordinates": {
+    "latitude": 6.8397251,
+    "longitude": 81.8329357
+  },
+  "categories": [
+    "Restaurant",
+    "Juice shop",
+    "Sandwich shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "Main Street Baywings Cross Road, Arugam Bay",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:30 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:30 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:30 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:30 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:30 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:30 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6:30 AM–11:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

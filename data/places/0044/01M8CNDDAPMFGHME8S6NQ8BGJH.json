@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDAPMFGHME8S6NQ8BGJH",
+  "name": "Mask Entertainment",
+  "coordinates": {
+    "latitude": 7.6741323999999995,
+    "longitude": 81.73276039999999
+  },
+  "categories": [
+    "Movie rental store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPFM+M42, Colombo - Ratnapura - Wellawaya - Batticaloa Rd, Kattankudy",
+  "business_status": "OPEN"
+}

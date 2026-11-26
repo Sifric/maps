@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD531EF7X75EHKY5BQV6",
+  "name": "Gasoitha Jewellers",
+  "coordinates": {
+    "latitude": 7.778162699999999,
+    "longitude": 81.60077799999999
+  },
+  "categories": [
+    "Jewelry store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Eravur",
+  "business_status": "OPEN"
+}

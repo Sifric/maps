@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAGWAP5ADPC531SA1Y33",
+  "name": "Kanz jamuh Villa",
+  "coordinates": {
+    "latitude": 7.3923866,
+    "longitude": 81.8380779
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "95a, 2 Kalyana Rd, Sainthamaruthu 32300",
+  "business_status": "OPEN"
+}

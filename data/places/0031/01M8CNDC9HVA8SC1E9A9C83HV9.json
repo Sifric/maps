@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9HVA8SC1E9A9C83HV9",
+  "name": "Mahawali Bake House",
+  "coordinates": {
+    "latitude": 7.9224141999999995,
+    "longitude": 81.1853325
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "W5CP+X48, Mahawali rasa hala, Sewanapitiya",
+  "business_status": "OPEN"
+}

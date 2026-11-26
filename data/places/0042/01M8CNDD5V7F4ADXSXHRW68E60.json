@@ -1,0 +1,27 @@
+{
+  "id": "01M8CNDD5V7F4ADXSXHRW68E60",
+  "name": "Rideethenna Railway station",
+  "coordinates": {
+    "latitude": 7.963833299999999,
+    "longitude": 81.3394029
+  },
+  "categories": [
+    "Train station",
+    "Railway services"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ],
+    "names": [
+      "Rideethenna Railway Station"
+    ]
+  },
+  "address": "Rideethanna Main Rd",
+  "business_status": "OPEN"
+}

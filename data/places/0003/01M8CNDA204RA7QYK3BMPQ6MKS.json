@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDA204RA7QYK3BMPQ6MKS",
+  "name": "OK PIZZA HOUSE",
+  "coordinates": {
+    "latitude": 7.214477899999999,
+    "longitude": 81.8545867
+  },
+  "categories": [
+    "Pizza restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Pottuvil road, Akkaraipattu 32400",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5–11 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5–11 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5–11 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5–11:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5–11:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5–11:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5–11 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

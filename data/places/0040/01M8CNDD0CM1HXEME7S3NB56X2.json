@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD0CM1HXEME7S3NB56X2",
+  "name": "SWEETS ZONE",
+  "coordinates": {
+    "latitude": 7.916029,
+    "longitude": 81.5205546
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Oddamavadi",
+  "business_status": "OPEN"
+}

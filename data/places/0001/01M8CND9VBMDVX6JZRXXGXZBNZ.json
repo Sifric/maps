@@ -1,0 +1,66 @@
+{
+  "id": "01M8CND9VBMDVX6JZRXXGXZBNZ",
+  "name": "jasee Home",
+  "coordinates": {
+    "latitude": 7.351813699999999,
+    "longitude": 81.8073507
+  },
+  "categories": [
+    "Education center"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "284/1A Kallarichal-02, Sammanthurai 32200",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–1 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8 AM–1 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

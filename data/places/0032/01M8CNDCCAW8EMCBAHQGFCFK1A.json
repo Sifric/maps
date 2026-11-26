@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCCAW8EMCBAHQGFCFK1A",
+  "name": "Vasikaran Home",
+  "coordinates": {
+    "latitude": 7.776621199999999,
+    "longitude": 81.5993352
+  },
+  "categories": [
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "51 Veerapathirar Kovil Road, Eravur",
+  "business_status": "OPEN"
+}

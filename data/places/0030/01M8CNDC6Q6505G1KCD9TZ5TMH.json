@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6Q6505G1KCD9TZ5TMH",
+  "name": "HAAS HOME",
+  "coordinates": {
+    "latitude": 7.6882459,
+    "longitude": 81.7331549
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPQM+77R, Kattankudy",
+  "business_status": "OPEN"
+}

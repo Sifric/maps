@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDQ3TQZV05NXV2EA6HCA",
+  "name": "Highway Roti shop හයිවේ රොටි කඩෙ",
+  "coordinates": {
+    "latitude": 6.0593656,
+    "longitude": 80.26151399999999
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Southern Expy Access Rd",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4–9 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4–9 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4–9 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

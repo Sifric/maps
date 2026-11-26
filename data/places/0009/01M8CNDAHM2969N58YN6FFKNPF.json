@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAHM2969N58YN6FFKNPF",
+  "name": "Diluxshan Rest",
+  "coordinates": {
+    "latitude": 7.518457,
+    "longitude": 81.8036249
+  },
+  "categories": [
+    "Resort hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GR93+9CQ, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

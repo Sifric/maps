@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDCBVSK3XYWEW5RRZPSBN",
+  "name": "Sun and Sand Resort",
+  "coordinates": {
+    "latitude": 7.7192719,
+    "longitude": 81.7116423
+  },
+  "categories": [
+    "Resort hotel",
+    "Hotel",
+    "Homestay",
+    "Villa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Nagathambiran Temple, 29/5 New Dutch Bar Road, Kallady 30000",
+  "business_status": "OPEN"
+}

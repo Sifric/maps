@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC7HNM4R9CBXKQ2DGB2Y",
+  "name": "Canada Batticaloa Friendship Farm",
+  "coordinates": {
+    "latitude": 7.7562093999999995,
+    "longitude": 81.667361
+  },
+  "categories": [
+    "Agricultural service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QM48+FWQ, Thiraimadu, Batticaloa",
+  "business_status": "OPEN"
+}

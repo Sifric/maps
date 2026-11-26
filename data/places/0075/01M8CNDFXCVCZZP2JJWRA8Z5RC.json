@@ -1,0 +1,63 @@
+{
+  "id": "01M8CNDFXCVCZZP2JJWRA8Z5RC",
+  "name": "Royal Education Center",
+  "coordinates": {
+    "latitude": 9.384811299999999,
+    "longitude": 80.3978357
+  },
+  "categories": [
+    "Middle school"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "99MX+W4G, Kanagapuram, Kilinochchi",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12 AM–12:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "3–5:30 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "3–5:29 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "3–5:30 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "3:08–5:30 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–12:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8 PM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

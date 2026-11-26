@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCJT2K3QN5BA2VQ4KZQP",
+  "name": "Berendina Employment Center Batticaloa",
+  "coordinates": {
+    "latitude": 7.6972103999999995,
+    "longitude": 81.7176755
+  },
+  "categories": [
+    "Corporate office"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "3, 1 Kankanippillaiyar Kovil Rd, Kallady",
+  "business_status": "OPEN"
+}

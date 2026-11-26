@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCAWVG9N1B2F66RGAQES",
+  "name": "Shree Ram Traders",
+  "coordinates": {
+    "latitude": 7.6676395,
+    "longitude": 81.7368875
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MP9P+3Q2, Colombo - Ratnapura - Wellawaya - Batticaloa Rd, Kattankudy",
+  "business_status": "OPEN"
+}

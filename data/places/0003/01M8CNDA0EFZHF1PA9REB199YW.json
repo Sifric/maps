@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA0EFZHF1PA9REB199YW",
+  "name": "Kerala kitchen",
+  "coordinates": {
+    "latitude": 7.2906232,
+    "longitude": 81.8597578
+  },
+  "categories": [
+    "Soup kitchen"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "7VR5+6WR, Oluvil",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDR58RA0NMC0J549V0SW",
+  "name": "Galle Billiards Club",
+  "coordinates": {
+    "latitude": 6.0416973,
+    "longitude": 80.2146645
+  },
+  "categories": [
+    "Pool billard club"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "201/D/2/2 Wakwella Rd, Galle 80000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "10 AM–2 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "10 AM–2 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

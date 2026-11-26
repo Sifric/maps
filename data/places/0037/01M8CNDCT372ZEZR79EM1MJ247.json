@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCT372ZEZR79EM1MJ247",
+  "name": "ST Communication",
+  "coordinates": {
+    "latitude": 7.7120023,
+    "longitude": 81.6939517
+  },
+  "categories": [
+    "Stationery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM6V+QG9, Batticaloa",
+  "business_status": "OPEN"
+}

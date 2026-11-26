@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDERNA2ZQ179HPF0Z5WBY",
+  "name": "V B Medical (Pvt) Ltd",
+  "coordinates": {
+    "latitude": 9.7481809,
+    "longitude": 80.02944409999999
+  },
+  "categories": [
+    "Medical equipment supplier"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Jaffna-Kankesanturai Rd, Chunnakam",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "11 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "11 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "11 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "11 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "11 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "11 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "11 AM–4 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDF7VBZEHP6A1K8QAM93V",
+  "name": "Electric Vehicle Charging Station",
+  "coordinates": {
+    "latitude": 6.0425749,
+    "longitude": 80.2498906
+  },
+  "categories": [
+    "Electric vehicle charging station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Sri Sumangala Rd, Anangoda 80044",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6 AM–8:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

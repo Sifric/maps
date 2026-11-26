@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDBSPF2CHBYJPWPKKZC0",
+  "name": "Mr BGL'S House",
+  "coordinates": {
+    "latitude": 7.7202014,
+    "longitude": 81.6898136
+  },
+  "categories": [
+    "Apartment complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "54/11A,14,Kannagiyamman, kovil road, Batticaloa",
+  "business_status": "OPEN"
+}

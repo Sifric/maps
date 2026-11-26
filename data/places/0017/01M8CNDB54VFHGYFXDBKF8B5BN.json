@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDB54VFHGYFXDBKF8B5BN",
+  "name": "Christian Church",
+  "coordinates": {
+    "latitude": 7.8322148,
+    "longitude": 81.5522781
+  },
+  "categories": [
+    "Church"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "RHM2+3J2, Murakkottanchenai",
+  "business_status": "OPEN"
+}

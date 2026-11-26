@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDQFF5Z7HKRPSK5FD795",
+  "name": "Hot Dish",
+  "coordinates": {
+    "latitude": 6.2605521,
+    "longitude": 80.0375093
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "726Q+62C, Balapitiya",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5 AM–11 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

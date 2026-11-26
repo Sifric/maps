@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDB5AFP3HBGCHMCC0AXXD",
+  "name": "Masjid Al Minan",
+  "coordinates": {
+    "latitude": 7.4309151,
+    "longitude": 81.8184753
+  },
+  "categories": [
+    "Mosque"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CRJ9+999, Maruthamunai",
+  "business_status": "OPEN"
+}

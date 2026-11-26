@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD6EMV04H47FVWRKEQ6V",
+  "name": "Vijayakumar shop",
+  "coordinates": {
+    "latitude": 8.1067581,
+    "longitude": 81.4465956
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "4C4W+PM, Arukarkudah",
+  "business_status": "OPEN"
+}

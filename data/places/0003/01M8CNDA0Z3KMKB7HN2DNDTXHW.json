@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA0Z3KMKB7HN2DNDTXHW",
+  "name": "Mixmax Bakery &sweet shop",
+  "coordinates": {
+    "latitude": 7.3415469,
+    "longitude": 81.8563637
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "8VR4+JG9, 3rd Cross St, Nintavur",
+  "business_status": "OPEN"
+}

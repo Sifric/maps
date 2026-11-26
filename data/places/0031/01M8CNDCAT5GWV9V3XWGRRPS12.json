@@ -1,0 +1,68 @@
+{
+  "id": "01M8CNDCAT5GWV9V3XWGRRPS12",
+  "name": "Seyed Watch Service [ MALKAN HOROLOGY ]",
+  "coordinates": {
+    "latitude": 7.7150143,
+    "longitude": 81.6990379
+  },
+  "categories": [
+    "Clock repair service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "UDA Building, Public Market, 4B, Batticaloa 30000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9:30–11:45 AM",
+        "1:30–5 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9:30 AM–4:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "9:30 AM–1:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBBBE4XMPK10CGVY6NT",
+  "name": "Siva puram",
+  "coordinates": {
+    "latitude": 7.7727916,
+    "longitude": 81.6306761
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJFJ+47, Mylambaveli",
+  "business_status": "OPEN"
+}

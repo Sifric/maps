@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE1NV9F16BWP2ZVY6NSN",
+  "name": "N.C.S. Groceries",
+  "coordinates": {
+    "latitude": 6.0359150999999995,
+    "longitude": 80.2209563
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "16 A2, Galle 80000",
+  "business_status": "OPEN"
+}

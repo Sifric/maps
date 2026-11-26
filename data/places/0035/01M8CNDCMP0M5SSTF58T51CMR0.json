@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCMP0M5SSTF58T51CMR0",
+  "name": "MJ Enterprises",
+  "coordinates": {
+    "latitude": 7.5207768999999995,
+    "longitude": 81.7879193
+  },
+  "categories": [
+    "Courier service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQCQ+857, Colombo - Batticaloa Hwy, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

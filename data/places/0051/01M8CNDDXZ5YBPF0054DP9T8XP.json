@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDDXZ5YBPF0054DP9T8XP",
+  "name": "මචං Kitchen Resturant",
+  "coordinates": {
+    "latitude": 6.0473763,
+    "longitude": 80.2219975
+  },
+  "categories": [
+    "Family restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "26WC+XQ5, Galle 80000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7–11 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7–11 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "01M8CNDEN7MV60BCC13CDW5VWY",
+  "name": "Pizza Hut - Jaffna Square",
+  "coordinates": {
+    "latitude": 9.6651936,
+    "longitude": 80.0137541
+  },
+  "categories": [
+    "Fast food restaurant",
+    "Pizza delivery",
+    "Pizza restaurant",
+    "Pizza takeaway"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "2nd Floor, Hospital Rd, Jaffna 40000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "11 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "11 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "11 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "11 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "11 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "11 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "11 AM–11 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCA19TDFVT56BGT7CPYQ",
+  "name": "Lula bakes",
+  "coordinates": {
+    "latitude": 7.781686799999999,
+    "longitude": 81.6071092
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "340 Hospital Rd, Eravur",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDDMVXH0AM355DGKPDDZ",
+  "name": "Ceypetco",
+  "coordinates": {
+    "latitude": 7.7722022,
+    "longitude": 81.6109606
+  },
+  "categories": [
+    "Gas station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Eravur",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDA9PMHYJXQMFW5ZXJG15",
+  "name": "S.H.I store kalmunai",
+  "coordinates": {
+    "latitude": 7.415728799999999,
+    "longitude": 81.827039
+  },
+  "categories": [
+    "Shopping mall"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "Market, Kalmunai 32300",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6 AM–1 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6 AM–1 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6 AM–1 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6 AM–1 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6–11:15 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6 AM–1 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

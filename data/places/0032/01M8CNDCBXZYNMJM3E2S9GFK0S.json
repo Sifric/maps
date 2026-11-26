@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBXZYNMJM3E2S9GFK0S",
+  "name": "Amaya Beach Pasikuda",
+  "coordinates": {
+    "latitude": 7.925186999999999,
+    "longitude": 81.56946669999999
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kalkudah",
+  "business_status": "OPEN"
+}

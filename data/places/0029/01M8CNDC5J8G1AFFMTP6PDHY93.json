@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC5J8G1AFFMTP6PDHY93",
+  "name": "Baby Garden",
+  "coordinates": {
+    "latitude": 7.7131336,
+    "longitude": 81.6984367
+  },
+  "categories": [
+    "Baby store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM7X+793, A15, Batticaloa",
+  "business_status": "OPEN"
+}

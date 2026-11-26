@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6A2TJAJQQ94BNS5R3X",
+  "name": "Faisal restaurant",
+  "coordinates": {
+    "latitude": 7.9096188,
+    "longitude": 81.5309472
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG5J+R9W, Mavadichenai",
+  "business_status": "OPEN"
+}

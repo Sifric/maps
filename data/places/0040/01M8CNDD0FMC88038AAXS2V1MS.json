@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDD0FMC88038AAXS2V1MS",
+  "name": "AMF vegetables shop",
+  "coordinates": {
+    "latitude": 7.9208231,
+    "longitude": 81.5230054
+  },
+  "categories": [
+    "Fruit and vegetable store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "HAIRATH ROAD, 30400",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "Hairath Road, 30400"
+  ]
+}

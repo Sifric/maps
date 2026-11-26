@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDEYSWX77MQDJ0K1TZ02J",
+  "name": "Salamon stor",
+  "coordinates": {
+    "latitude": 9.7352934,
+    "longitude": 79.98942699999999
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "AB17, Sandilipay",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:28 AM–9:20 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:28 AM–9:20 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:28 AM–9:20 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:28 AM–9:20 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:28 AM–9:20 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:28 AM–9:20 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6:28 AM–9:20 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

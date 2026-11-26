@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBP2A8D2DKNC07RF8GCZ",
+  "name": "Salon Beauty With Ashi",
+  "coordinates": {
+    "latitude": 7.740209699999999,
+    "longitude": 81.2153385
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "P6R8+34P, Unnamed Road, Damminna",
+  "business_status": "OPEN"
+}

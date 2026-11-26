@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9GBSNVJDWFJ4A1CYAP",
+  "name": "Mona’s Kitchen",
+  "coordinates": {
+    "latitude": 7.731507,
+    "longitude": 81.6953686
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "49A Koolavadi Main Rd, Batticaloa",
+  "business_status": "CLOSED_TEMPORARILY"
+}

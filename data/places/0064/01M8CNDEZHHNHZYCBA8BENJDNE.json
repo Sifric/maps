@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDEZHHNHZYCBA8BENJDNE",
+  "name": "GYM Friends & Fitness Sports Club",
+  "coordinates": {
+    "latitude": 6.0224063,
+    "longitude": 80.24738479999999
+  },
+  "categories": [
+    "Gym"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "26CW+XX6, A2, Unawatuna",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6 AM–9:45 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6 AM–9:45 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6 AM–9:45 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6 AM–9:45 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6 AM–9:45 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6 AM–9:45 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5:45 AM–1 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

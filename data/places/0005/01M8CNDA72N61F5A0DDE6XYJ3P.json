@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDA72N61F5A0DDE6XYJ3P",
+  "name": "Aliqfareeth",
+  "coordinates": {
+    "latitude": 7.218504299999999,
+    "longitude": 81.8599146
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "6V95+CX3, Akkaraipattu",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12 AM–12 PM",
+        "5 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5 PM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

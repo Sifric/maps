@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDAFZG84PT011GES1DW72",
+  "name": "Villa Capricorn",
+  "coordinates": {
+    "latitude": 6.9604048999999995,
+    "longitude": 79.91466849999999
+  },
+  "categories": [
+    "Villa",
+    "Guest house",
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "23 Pasihena Rd, Kelaniya 11600",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEKV8MKNWFD3JDA0RZN8",
+  "name": "Ahil Rest Inn online location",
+  "coordinates": {
+    "latitude": 9.7290799,
+    "longitude": 80.0256965
+  },
+  "categories": [
+    "Fast food restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "B268",
+  "business_status": "OPEN"
+}

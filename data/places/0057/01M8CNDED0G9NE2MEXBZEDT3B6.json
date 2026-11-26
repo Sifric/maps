@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDED0G9NE2MEXBZEDT3B6",
+  "name": "Hotel Hasaral",
+  "coordinates": {
+    "latitude": 6.0564363,
+    "longitude": 80.1957232
+  },
+  "categories": [
+    "Guest house",
+    "Bed & breakfast"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Galgodalla Waththa Sri Piyarathana Lane, Bope, Galle 80000",
+  "business_status": "OPEN"
+}

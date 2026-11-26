@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC69H8XBT04J5PE590MN",
+  "name": "அப்பம் கடை",
+  "coordinates": {
+    "latitude": 7.936134699999999,
+    "longitude": 81.5222045
+  },
+  "categories": [
+    "Brunch restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WGPC+MC, Kayankerni",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEDHYFV83CM1M6QEN992",
+  "name": "Closenberg Hotel",
+  "coordinates": {
+    "latitude": 6.0316491,
+    "longitude": 80.2350972
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "11 Closenberg Road, Closenberg Rd, Galle 80000",
+  "business_status": "OPEN"
+}

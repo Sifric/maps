@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDERM34ZZD401GV4MCYBN",
+  "name": "Thivani Agro Trade Centre.",
+  "coordinates": {
+    "latitude": 9.7264372,
+    "longitude": 80.0303138
+  },
+  "categories": [
+    "Agricultural product wholesaler"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Kaithady Manipay Road, Uduvil",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6 AM–12 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

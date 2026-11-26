@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE32BRRXCN4QCCQP97WF",
+  "name": "Loulou Lane",
+  "coordinates": {
+    "latitude": 6.4333504,
+    "longitude": 79.99941
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "No. 39 Douglas Gunawardena Road, Aluthgama 12080",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "11 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "11 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "11 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "11 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "11 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "11 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "11 AM–8 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

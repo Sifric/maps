@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDH3GPC1Y59ASPE0W9R9",
+  "name": "Segar Store",
+  "coordinates": {
+    "latitude": 7.5073992,
+    "longitude": 81.7893703
+  },
+  "categories": [
+    "Shopping mall"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQ4Q+XP5, Karthigesu road",
+  "business_status": "OPEN"
+}

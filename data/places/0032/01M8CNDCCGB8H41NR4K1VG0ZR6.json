@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCCGB8H41NR4K1VG0ZR6",
+  "name": "Doctors' Official Residence",
+  "coordinates": {
+    "latitude": 7.7083815,
+    "longitude": 81.6907901
+  },
+  "categories": [
+    "Hostel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM5R+983, Easwaran Rd, Batticaloa 30000",
+  "business_status": "OPEN"
+}

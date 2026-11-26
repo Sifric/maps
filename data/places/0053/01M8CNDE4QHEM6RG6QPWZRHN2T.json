@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE4QHEM6RG6QPWZRHN2T",
+  "name": "Smoke & Bitters",
+  "coordinates": {
+    "latitude": 5.9611341,
+    "longitude": 80.7009247
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Pehebiya, Pehebiya Rd Dickwella, south 81200",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5–11 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5–11 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5–11 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5–11 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5–11 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5–11 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5–11 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

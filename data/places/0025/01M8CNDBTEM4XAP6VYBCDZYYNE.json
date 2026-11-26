@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBTEM4XAP6VYBCDZYYNE",
+  "name": "TRENDING",
+  "coordinates": {
+    "latitude": 7.438155999999999,
+    "longitude": 81.8188187
+  },
+  "categories": [
+    "Stationery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "61 SM Road, Maruthamunai",
+  "business_status": "OPEN"
+}

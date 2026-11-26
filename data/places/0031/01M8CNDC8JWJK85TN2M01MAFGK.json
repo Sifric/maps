@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDC8JWJK85TN2M01MAFGK",
+  "name": "Challitivumunai",
+  "coordinates": {
+    "latitude": 8.1,
+    "longitude": 81.45
+  },
+  "categories": [
+    "Agricultural"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

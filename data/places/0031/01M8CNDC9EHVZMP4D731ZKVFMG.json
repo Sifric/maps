@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9EHVZMP4D731ZKVFMG",
+  "name": "Hana Hopper Hotel",
+  "coordinates": {
+    "latitude": 7.724769299999999,
+    "longitude": 81.69117159999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMFR+WF3, Batticaloa",
+  "business_status": "OPEN"
+}

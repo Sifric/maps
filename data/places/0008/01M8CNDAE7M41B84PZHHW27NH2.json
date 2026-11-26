@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAE7M41B84PZHHW27NH2",
+  "name": "Villa Vago",
+  "coordinates": {
+    "latitude": 7.2971717,
+    "longitude": 81.8634132
+  },
+  "categories": [
+    "Villa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "7VW7+V97, University road, Oluvil 04",
+  "business_status": "OPEN"
+}

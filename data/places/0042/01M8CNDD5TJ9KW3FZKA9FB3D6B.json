@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD5TJ9KW3FZKA9FB3D6B",
+  "name": "S.K.Mayuran service centre(வாழைக்காலை)",
+  "coordinates": {
+    "latitude": 7.5543292,
+    "longitude": 81.6553571
+  },
+  "categories": [
+    "Car wash"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "HM34+P4Q, Batticaloa",
+  "business_status": "OPEN"
+}

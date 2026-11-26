@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDC65Q6W1TZZ77Q95K4SR",
+  "name": "Mr.Fish",
+  "coordinates": {
+    "latitude": 7.9220973,
+    "longitude": 81.5238494
+  },
+  "categories": [
+    "Seafood restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "hairath road, 05, 30400",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5 PM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

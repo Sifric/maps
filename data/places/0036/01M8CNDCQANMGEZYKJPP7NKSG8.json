@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCQANMGEZYKJPP7NKSG8",
+  "name": "Faculty Gymnasium",
+  "coordinates": {
+    "latitude": 7.727353,
+    "longitude": 81.6670844
+  },
+  "categories": [
+    "Gym"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMH9+36H, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDVV6GNT57FWC7WNEEHW",
+  "name": "P&S (Perera & Sons) - Hikkaduwa",
+  "coordinates": {
+    "latitude": 6.1390376,
+    "longitude": 80.09956059999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "292A Galle Rd, Hikkaduwa",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6 AM–8:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

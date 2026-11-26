@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC3QYHS4VDP49R3JVAB6",
+  "name": "Akeela’s Villa",
+  "coordinates": {
+    "latitude": 7.6785524,
+    "longitude": 81.7272747
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "50 Arabic College Rd, Kattankudy 30100",
+  "business_status": "OPEN"
+}

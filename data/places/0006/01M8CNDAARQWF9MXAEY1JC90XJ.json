@@ -1,0 +1,19 @@
+{
+  "id": "01M8CNDAARQWF9MXAEY1JC90XJ",
+  "name": "Madola Stores",
+  "coordinates": {
+    "latitude": 6.0691086,
+    "longitude": 80.2686952
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

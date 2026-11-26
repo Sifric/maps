@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCB38DHQAG2PMHFMX4VY",
+  "name": "Jana Grocery",
+  "coordinates": {
+    "latitude": 7.4991752,
+    "longitude": 81.80478939999999
+  },
+  "categories": [
+    "Asian grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "FRX3+MWF, Periyakallar",
+  "business_status": "OPEN"
+}

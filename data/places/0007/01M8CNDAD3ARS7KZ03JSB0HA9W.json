@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAD3ARS7KZ03JSB0HA9W",
+  "name": "Susikaran farm",
+  "coordinates": {
+    "latitude": 7.6561233,
+    "longitude": 81.6955136
+  },
+  "categories": [
+    "Shrimp farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Karayakkantheevu, Batticaloa 30016",
+  "business_status": "OPEN"
+}

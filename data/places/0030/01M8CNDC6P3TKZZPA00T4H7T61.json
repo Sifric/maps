@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6P3TKZZPA00T4H7T61",
+  "name": "Aleez Tea Room",
+  "coordinates": {
+    "latitude": 7.713493,
+    "longitude": 81.6983661
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM7X+98X, 1st Cross St, Batticaloa",
+  "business_status": "OPEN"
+}

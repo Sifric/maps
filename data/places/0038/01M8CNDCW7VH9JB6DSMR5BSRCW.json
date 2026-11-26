@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDCW7VH9JB6DSMR5BSRCW",
+  "name": "Dazz Dealer",
+  "coordinates": {
+    "latitude": 7.6816903,
+    "longitude": 81.7355876
+  },
+  "categories": [
+    "Dress store",
+    "Home goods store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "L Block, Kattankudy",
+  "business_status": "OPEN"
+}

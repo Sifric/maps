@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD8887YEBN63SHYQJAWP",
+  "name": "Lakpohora Regional Fertilizer Store - Trincomalee",
+  "coordinates": {
+    "latitude": 8.5904175,
+    "longitude": 81.2229732
+  },
+  "categories": [
+    "Fertilizer supplier"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No: 46, N.C. Road, Sirimapura, Trincomalee",
+  "business_status": "OPEN"
+}

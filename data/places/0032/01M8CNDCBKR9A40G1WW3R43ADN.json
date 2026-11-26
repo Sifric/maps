@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBKR9A40G1WW3R43ADN",
+  "name": "Sinfa cool spot",
+  "coordinates": {
+    "latitude": 7.9286718,
+    "longitude": 81.5128573
+  },
+  "categories": [
+    "Ice cream shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WGH7+F4, Oddamavadi",
+  "business_status": "CLOSED"
+}

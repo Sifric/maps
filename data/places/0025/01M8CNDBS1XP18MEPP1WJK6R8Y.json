@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDBS1XP18MEPP1WJK6R8Y",
+  "name": "NRS Book shop & Communication",
+  "coordinates": {
+    "latitude": 7.6795931,
+    "longitude": 81.0507172
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "M3H2+R7P, Dehiattakandiya",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:30 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:30 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:30 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:30 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:30 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7:30–8 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7:30–8 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

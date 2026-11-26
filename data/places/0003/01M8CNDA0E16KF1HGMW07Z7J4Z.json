@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA0E16KF1HGMW07Z7J4Z",
+  "name": "Beef Shop Vangalavadi Junction",
+  "coordinates": {
+    "latitude": 7.3528705,
+    "longitude": 81.7752716
+  },
+  "categories": [
+    "Butcher shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Veeramunai 04, Sammanthurai",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9EDGT7V8PEV0EJTVMG",
+  "name": "Briyani Cafe",
+  "coordinates": {
+    "latitude": 7.7272554,
+    "longitude": 81.6871673
+  },
+  "categories": [
+    "Rice restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "15A Selvanayagam Rd, Batticaloa",
+  "business_status": "OPEN"
+}

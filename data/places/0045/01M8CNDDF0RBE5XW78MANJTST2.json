@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDDF0RBE5XW78MANJTST2",
+  "name": "Salon Dilini \"Bridal ,Hair & Beauty\"",
+  "coordinates": {
+    "latitude": 6.7185705,
+    "longitude": 80.7857127
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\nUniversity road, Belihuloya",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "7 AM–6 PM"
+      ]
+    }
+  ],
+  "business_status": "CLOSED"
+}

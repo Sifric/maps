@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA963HHT15RNPMTH1TGN",
+  "name": "minaro hotel",
+  "coordinates": {
+    "latitude": 7.3017701,
+    "longitude": 81.6747243
+  },
+  "categories": [
+    "Family restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "c, 265 d.s.senanayaka street, Ampara",
+  "business_status": "OPEN"
+}

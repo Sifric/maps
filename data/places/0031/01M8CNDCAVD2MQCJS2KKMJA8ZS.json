@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCAVD2MQCJS2KKMJA8ZS",
+  "name": "CO-OP Shopping",
+  "coordinates": {
+    "latitude": 7.6718242,
+    "longitude": 81.73443929999999
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPCM+PQG",
+  "business_status": "OPEN"
+}

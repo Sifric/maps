@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDYD7MKEMSBBCPNS5XF5",
+  "name": "P & S",
+  "coordinates": {
+    "latitude": 6.2807694,
+    "longitude": 80.040836
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Balapitiya",
+  "business_status": "OPEN"
+}

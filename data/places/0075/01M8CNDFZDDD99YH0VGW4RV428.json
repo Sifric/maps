@@ -1,0 +1,70 @@
+{
+  "id": "01M8CNDFZDDD99YH0VGW4RV428",
+  "name": "Dr.Dasitha Rathnayake Medical Centre",
+  "coordinates": {
+    "latitude": 6.9852409,
+    "longitude": 81.06862629999999
+  },
+  "categories": [
+    "Medical Center"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "Hindagoda 90000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7–8 AM",
+        "4–8 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7–8 AM",
+        "4–8 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7–8 AM",
+        "4–8 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7–8 AM",
+        "4–8 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7–8 AM",
+        "4–8 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7–8 AM",
+        "4–8 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8–10 AM",
+        "4–8 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

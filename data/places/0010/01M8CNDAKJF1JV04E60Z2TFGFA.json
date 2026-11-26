@@ -1,0 +1,20 @@
+{
+  "id": "01M8CNDAKJF1JV04E60Z2TFGFA",
+  "name": "Nestle",
+  "coordinates": {
+    "latitude": 7.857685,
+    "longitude": 80.70625
+  },
+  "categories": [
+    "Warehouse",
+    "Service establishment"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

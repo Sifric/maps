@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDACRA9CET6EA7WNZN62B",
+  "name": "IT SWEET BAKERY",
+  "coordinates": {
+    "latitude": 7.4151611,
+    "longitude": 81.74556079999999
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Central Camp 02",
+  "business_status": "CLOSED"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBZQXTFN1V027THD9DE",
+  "name": "Hotel krish",
+  "coordinates": {
+    "latitude": 7.9181987,
+    "longitude": 81.5672785
+  },
+  "categories": [
+    "Guest house"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kalkudha",
+  "business_status": "OPEN"
+}

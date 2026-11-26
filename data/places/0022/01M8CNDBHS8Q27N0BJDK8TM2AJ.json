@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDBHS8Q27N0BJDK8TM2AJ",
+  "name": "Airport Parking Sri Lanka",
+  "coordinates": {
+    "latitude": 7.129285899999999,
+    "longitude": 79.8758131
+  },
+  "categories": [
+    "Parking lot",
+    "Car wash",
+    "Park & ride",
+    "Parking garage"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "371/5 Negombo Main Rd, Seeduwa 11410",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Open 24 hours"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

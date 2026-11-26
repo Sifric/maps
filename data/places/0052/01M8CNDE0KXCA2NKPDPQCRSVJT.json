@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDE0KXCA2NKPDPQCRSVJT",
+  "name": "250 Kitchen House",
+  "coordinates": {
+    "latitude": 6.222111,
+    "longitude": 80.672755
+  },
+  "categories": [
+    "Asian restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "B485",
+  "business_status": "OPEN"
+}

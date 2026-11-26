@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA2EYRZ9ASSK627HZHMR",
+  "name": "Noname Rotty Shop",
+  "coordinates": {
+    "latitude": 6.8377598,
+    "longitude": 81.83219079999999
+  },
+  "categories": [
+    "Bakery",
+    "Sri Lankan restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Panama Rd, Arugam Bay 32500",
+  "business_status": "CLOSED_TEMPORARILY"
+}

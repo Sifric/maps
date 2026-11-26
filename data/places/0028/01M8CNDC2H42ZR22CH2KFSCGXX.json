@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC2H42ZR22CH2KFSCGXX",
+  "name": "Grand Glamora luxury banquet",
+  "coordinates": {
+    "latitude": 7.3078186999999994,
+    "longitude": 81.6714681
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Gemunupura, Ampara 32000",
+  "business_status": "OPEN"
+}

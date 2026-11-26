@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDD0E8GP5HG70A00B0E83",
+  "name": "A.L.I fish shop",
+  "coordinates": {
+    "latitude": 7.925960099999999,
+    "longitude": 81.5262724
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WGGG+9GJ, Makkalady road, 05",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5:30 AM–8:37 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5:30 AM–8:37 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5:30 AM–8:37 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5:30 AM–8:37 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5:30 AM–8:37 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5:30 AM–8:37 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5:30 AM–8:37 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

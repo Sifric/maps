@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCG00CA5M754D1AKKG84",
+  "name": "Shaafi Mosque",
+  "coordinates": {
+    "latitude": 7.7827477,
+    "longitude": 81.6032877
+  },
+  "categories": [
+    "Mosque"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Ghanthiyar Cross Road, Eravur-03",
+  "business_status": "OPEN"
+}

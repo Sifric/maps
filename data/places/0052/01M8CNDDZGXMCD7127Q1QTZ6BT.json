@@ -1,0 +1,29 @@
+{
+  "id": "01M8CNDDZGXMCD7127Q1QTZ6BT",
+  "name": "The Tandem Restaurant",
+  "coordinates": {
+    "latitude": 6.1274789,
+    "longitude": 80.1055789
+  },
+  "categories": [
+    "Barbecue restaurant",
+    "Barbecue area",
+    "Fish & chips restaurant",
+    "Fish and chips takeaway",
+    "Fish restaurant",
+    "Fried chicken takeaway",
+    "Juice shop",
+    "Seafood restaurant",
+    "Soup shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "465 Galle Rd, Hikkaduwa",
+  "business_status": "CLOSED_TEMPORARILY"
+}

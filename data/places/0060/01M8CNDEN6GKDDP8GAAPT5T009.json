@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDEN6GKDDP8GAAPT5T009",
+  "name": "Gnanams Hotel - Jaffna",
+  "coordinates": {
+    "latitude": 9.6670561,
+    "longitude": 80.0144926
+  },
+  "categories": [
+    "Restaurant",
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "299, 301 Clock Tower Rd, Jaffna",
+  "business_status": "OPEN"
+}

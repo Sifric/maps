@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDCH9J49716FZ0YD0PST3",
+  "name": "Mohideen Jumma Mosque",
+  "coordinates": {
+    "latitude": 7.653592,
+    "longitude": 81.73450609999999
+  },
+  "categories": [
+    "Mosque",
+    "Federal government office"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MP3M+CRJ, Kattankudy",
+  "business_status": "OPEN"
+}

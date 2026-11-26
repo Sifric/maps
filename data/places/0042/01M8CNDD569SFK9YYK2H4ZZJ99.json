@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDD569SFK9YYK2H4ZZJ99",
+  "name": "Gluco care Laboratory Services",
+  "coordinates": {
+    "latitude": 7.682337899999999,
+    "longitude": 81.72944199999999
+  },
+  "categories": [
+    "Laboratory"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Advocate M.C Abdul Cader Road, Kattankudy",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–2 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–2 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–2 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–2 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7 AM–2 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–2 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7 AM–2 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

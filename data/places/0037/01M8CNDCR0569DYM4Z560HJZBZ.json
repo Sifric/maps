@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCR0569DYM4Z560HJZBZ",
+  "name": "Children's park",
+  "coordinates": {
+    "latitude": 7.481846099999999,
+    "longitude": 81.8079127
+  },
+  "categories": [
+    "Park"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "FRJ5+P5, Periyakallar",
+  "business_status": "OPEN"
+}

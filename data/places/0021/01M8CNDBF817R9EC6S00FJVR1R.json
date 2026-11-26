@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBF817R9EC6S00FJVR1R",
+  "name": "Paathu Saloon",
+  "coordinates": {
+    "latitude": 7.3653504,
+    "longitude": 81.8435258
+  },
+  "categories": [
+    "Barber shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9R8V+4CR, Main Street, Karaitivu 32250",
+  "business_status": "OPEN"
+}

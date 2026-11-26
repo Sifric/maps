@@ -1,0 +1,72 @@
+{
+  "id": "01M8CNDDR5Z5RYZVGVVQK0M5E3",
+  "name": "Radio Ceylon",
+  "coordinates": {
+    "latitude": 6.0264207,
+    "longitude": 80.2167667
+  },
+  "categories": [
+    "Bar",
+    "Art gallery",
+    "Restaurant",
+    "Cafe",
+    "Clothing store",
+    "Coffee shop",
+    "Record store",
+    "Vintage clothing store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "50A Lighthouse St, Galle 80000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12–11 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12–11:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12–11:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12–11:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "12–11:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12–11 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

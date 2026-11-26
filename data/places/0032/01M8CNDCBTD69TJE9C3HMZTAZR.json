@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBTD69TJE9C3HMZTAZR",
+  "name": "Batti Rest",
+  "coordinates": {
+    "latitude": 7.7090735,
+    "longitude": 81.69631609999999
+  },
+  "categories": [
+    "Lodging"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "12 Hospital Rd, Batticaloa",
+  "business_status": "OPEN"
+}

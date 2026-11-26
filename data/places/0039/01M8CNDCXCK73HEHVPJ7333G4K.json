@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCXCK73HEHVPJ7333G4K",
+  "name": "Reaping shop",
+  "coordinates": {
+    "latitude": 7.6851296,
+    "longitude": 81.7328675
+  },
+  "categories": [
+    "Electronics repair shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPPM+345, Kattankudy",
+  "business_status": "OPEN"
+}

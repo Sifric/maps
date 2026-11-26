@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDDF4R4D8DRM282R4KWT8",
+  "name": "Krisha Salon - Havelock Road",
+  "coordinates": {
+    "latitude": 6.8769887,
+    "longitude": 79.8694807
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\n634 Havelock Rd, Colombo 00600",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "9 AM–7 PM"
+      ]
+    }
+  ],
+  "business_status": "CLOSED"
+}

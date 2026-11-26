@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDABQK7N4T46X7FPWCKS7",
+  "name": "Street food and groceries store",
+  "coordinates": {
+    "latitude": 5.9999591,
+    "longitude": 80.2675486
+  },
+  "categories": [
+    "Convenience store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "573 A2, Unawatuna",
+  "business_status": "OPEN"
+}

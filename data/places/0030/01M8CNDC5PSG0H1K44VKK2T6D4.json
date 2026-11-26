@@ -1,0 +1,72 @@
+{
+  "id": "01M8CNDC5PSG0H1K44VKK2T6D4",
+  "name": "Rafaideen rotti shop",
+  "coordinates": {
+    "latitude": 7.6885531,
+    "longitude": 81.7258889
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPQG+C9C, Elders Home Rd, Kattankudy",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12 AM–12 PM",
+        "10 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12–10 AM",
+        "10 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12–10 AM",
+        "10 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12–10 AM",
+        "10 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12–10 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "10 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12–10 AM",
+        "10 PM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

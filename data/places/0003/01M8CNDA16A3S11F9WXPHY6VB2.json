@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA16A3S11F9WXPHY6VB2",
+  "name": "Home Made Restaurant",
+  "coordinates": {
+    "latitude": 7.5324839,
+    "longitude": 81.35762319999999
+  },
+  "categories": [
+    "Fast food restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "G9J5+X2X, Maha Oya",
+  "business_status": "OPEN"
+}

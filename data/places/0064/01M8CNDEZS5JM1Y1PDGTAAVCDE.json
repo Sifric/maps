@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEZS5JM1Y1PDGTAAVCDE",
+  "name": "Jaffna Railway Station",
+  "coordinates": {
+    "latitude": 9.66521,
+    "longitude": 80.0208
+  },
+  "categories": [
+    "Train station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Jaffna Railway Station Road, Jaffna 40000",
+  "business_status": "OPEN"
+}

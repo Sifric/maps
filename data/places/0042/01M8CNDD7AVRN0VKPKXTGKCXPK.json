@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD7AVRN0VKPKXTGKCXPK",
+  "name": "Bank Of Ceylon",
+  "coordinates": {
+    "latitude": 8.135293599999999,
+    "longitude": 81.4352601
+  },
+  "categories": [
+    "Bank"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Vakarai",
+  "business_status": "OPEN"
+}

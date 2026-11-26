@@ -1,0 +1,20 @@
+{
+  "id": "01M8CNDBM6EHD0DXZPF29F6P30",
+  "name": "Center Bus Stop",
+  "coordinates": {
+    "latitude": 7.2492202,
+    "longitude": 81.8544665
+  },
+  "categories": [
+    "Bus stop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "Colombo - Batticaloa Hwy, Addalaichenai",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDD4N74KYCS4YB2C3ZX4W",
+  "name": "Fresh Juice",
+  "coordinates": {
+    "latitude": 7.224949,
+    "longitude": 81.84986579999999
+  },
+  "categories": [
+    "Juice shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "6RFX+XX7, Akkaraipattu",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4 PM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

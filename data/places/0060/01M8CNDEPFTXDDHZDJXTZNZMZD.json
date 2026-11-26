@@ -1,0 +1,27 @@
+{
+  "id": "01M8CNDEPFTXDDHZDJXTZNZMZD",
+  "name": "Karapitiya Homes",
+  "coordinates": {
+    "latitude": 6.0610639,
+    "longitude": 80.2270015
+  },
+  "categories": [
+    "Holiday apartment rental",
+    "Guest house",
+    "Holiday home",
+    "Serviced apartment",
+    "Student housing center",
+    "Villa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "44/7 Peter Kiringoda Mawatha, Galle 80000",
+  "business_status": "OPEN"
+}

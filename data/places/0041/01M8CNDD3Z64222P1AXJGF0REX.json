@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD3Z64222P1AXJGF0REX",
+  "name": "Vithu Service Centre",
+  "coordinates": {
+    "latitude": 7.7042696,
+    "longitude": 81.68551649999999
+  },
+  "categories": [
+    "Electrician"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "10 Vinayagar Kovil Rd, Batticaloa",
+  "business_status": "OPEN"
+}

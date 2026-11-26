@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDVJ9794AMCMTCTVHA59",
+  "name": "Asiri Stores",
+  "coordinates": {
+    "latitude": 6.2123487,
+    "longitude": 80.27941609999999
+  },
+  "categories": [
+    "Supermarket"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "676H+WQM, Nayapamulla - Unanwitiya - Nagoda Rd, Mulana",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5 AM–8 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

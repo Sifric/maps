@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCRX8ZWB7FS6KAY8M53H",
+  "name": "Meter taxi service batticaloa",
+  "coordinates": {
+    "latitude": 7.7096547,
+    "longitude": 81.6902157
+  },
+  "categories": [
+    "Taxi service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Suriya Ln, Batticaloa",
+  "business_status": "OPEN"
+}

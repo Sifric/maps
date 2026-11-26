@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDCCM63SRQ757BHGF1BK4",
+  "name": "Corniche Villa and Rooms kattankudy - Two-Bedroom Villa",
+  "coordinates": {
+    "latitude": 7.6904802,
+    "longitude": 81.7340316
+  },
+  "categories": [
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kattankudy",
+  "business_status": "OPEN"
+}

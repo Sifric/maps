@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCY07RB0BNFHV377G399",
+  "name": "Cemetery",
+  "coordinates": {
+    "latitude": 7.6760966999999996,
+    "longitude": 81.7310091
+  },
+  "categories": [
+    "Cemetery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPGJ+CCJ, Kattankudy 30100",
+  "business_status": "OPEN"
+}

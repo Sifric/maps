@@ -1,0 +1,63 @@
+{
+  "id": "01M8CNDFF0DWNV793Q4J7FGM3T",
+  "name": "Clinic Center - Base Hospital Chavakachcheri",
+  "coordinates": {
+    "latitude": 9.6623013,
+    "longitude": 80.1664062
+  },
+  "categories": [
+    "Hospital department"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "M578+9CP, BH Chavakachcheri, Dutch Rd, Chavakachcheri",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7:30 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7:30 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7:30 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7:30 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7:30 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

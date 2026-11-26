@@ -1,0 +1,68 @@
+{
+  "id": "01M8CNDC7X2Y2ZNZE5T9QPNP9G",
+  "name": "Quill FARM",
+  "coordinates": {
+    "latitude": 7.7925206,
+    "longitude": 81.6186651
+  },
+  "categories": [
+    "Farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Meerakeny Road, Kattupalli New Road, Eravur 00000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12–6:30 AM",
+        "8 AM–6:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–6:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–6:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–6:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–6:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–6:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8 AM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

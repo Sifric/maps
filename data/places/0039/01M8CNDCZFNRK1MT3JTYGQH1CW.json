@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCZFNRK1MT3JTYGQH1CW",
+  "name": "Smm rent a car service",
+  "coordinates": {
+    "latitude": 7.775333,
+    "longitude": 81.61586
+  },
+  "categories": [
+    "Car leasing service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJF8+V33, Kalaimahal Rd, Eravur",
+  "business_status": "OPEN"
+}

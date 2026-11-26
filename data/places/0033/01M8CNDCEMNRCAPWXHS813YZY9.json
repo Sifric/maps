@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDCEMNRCAPWXHS813YZY9",
+  "name": "Kaluthavalai DISPENSARY",
+  "coordinates": {
+    "latitude": 7.539372299999999,
+    "longitude": 81.787202
+  },
+  "categories": [
+    "Hospital"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "GQQP+PVW, Kaluthavalai Pillaiyar Kovil Rd, Kaluwanchikudy",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–12:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–12:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–12:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–12:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–12:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–12:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

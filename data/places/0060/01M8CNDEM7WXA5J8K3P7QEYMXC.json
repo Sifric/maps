@@ -1,0 +1,72 @@
+{
+  "id": "01M8CNDEM7WXA5J8K3P7QEYMXC",
+  "name": "Police welfare canteen",
+  "coordinates": {
+    "latitude": 9.809017599999999,
+    "longitude": 80.0392581
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "R25Q+HM, Kankesanturai",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5:30 AM–12:09 PM",
+        "3–6:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5:30 AM–12:09 PM",
+        "3–6:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5:30 AM–12:09 PM",
+        "3–6:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5:30 AM–12:09 PM",
+        "3–6:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5:30 AM–12:09 PM",
+        "3–6:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5:30 AM–12:09 PM",
+        "3–6:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5:30 AM–12:09 PM",
+        "3–6:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

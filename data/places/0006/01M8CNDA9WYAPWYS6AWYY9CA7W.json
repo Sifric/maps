@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDA9WYAPWYS6AWYY9CA7W",
+  "name": "LULU Super Center",
+  "coordinates": {
+    "latitude": 6.0748916,
+    "longitude": 80.18354579999999
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "Galle",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7:30 AM–11 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

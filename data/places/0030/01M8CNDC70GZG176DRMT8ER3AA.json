@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC70GZG176DRMT8ER3AA",
+  "name": "ANI Bakehouse",
+  "coordinates": {
+    "latitude": 7.9246919,
+    "longitude": 81.5311835
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WGFJ+M4P, Oddamavadi",
+  "business_status": "OPEN"
+}

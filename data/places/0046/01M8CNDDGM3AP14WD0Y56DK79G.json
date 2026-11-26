@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDDGM3AP14WD0Y56DK79G",
+  "name": "Happy Deal Store",
+  "coordinates": {
+    "latitude": 7.912807699999999,
+    "longitude": 81.5192699
+  },
+  "categories": [
+    "Home goods store",
+    "Fashion accessories store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG79+4PC, Gso Road, Oddamavadi 30400",
+  "business_status": "CLOSED"
+}

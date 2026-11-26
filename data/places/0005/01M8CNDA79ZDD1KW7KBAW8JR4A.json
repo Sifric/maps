@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA79ZDD1KW7KBAW8JR4A",
+  "name": "Mutton shop",
+  "coordinates": {
+    "latitude": 7.675428699999999,
+    "longitude": 81.7319175
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kattankudy",
+  "business_status": "OPEN"
+}

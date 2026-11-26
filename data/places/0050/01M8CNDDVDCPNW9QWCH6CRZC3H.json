@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDDVDCPNW9QWCH6CRZC3H",
+  "name": "Koha Surf Lounge",
+  "coordinates": {
+    "latitude": 6.0101043,
+    "longitude": 80.2474704
+  },
+  "categories": [
+    "Cafe",
+    "Bar",
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "266W+2XX, Welle Dewalaya Rd, Unawatuna",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12–11 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12–11 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12–11 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12–11 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12–11 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "12–11 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12–11 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

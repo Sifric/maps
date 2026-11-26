@@ -1,0 +1,28 @@
+{
+  "id": "01M8CNDA36VMEQ3DAD665JNCJB",
+  "name": "The Long Hostel",
+  "coordinates": {
+    "latitude": 6.8389,
+    "longitude": 81.832675
+  },
+  "categories": [
+    "Bar",
+    "Hostel",
+    "Bistro",
+    "Cafe",
+    "Restaurant",
+    "Serviced accommodation",
+    "Student dormitory",
+    "Youth hostel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Panama Rd, Arugam Bay 32500",
+  "business_status": "OPEN"
+}

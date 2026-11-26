@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCS85E9N3MVP4EXD6KAF",
+  "name": "Mahendra stores and transport services",
+  "coordinates": {
+    "latitude": 7.7376043999999995,
+    "longitude": 81.6728474
+  },
+  "categories": [
+    "General store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMQF+24X, Arasadithivu main roda Kokkaddicholai, Batticaloa",
+  "business_status": "OPEN"
+}

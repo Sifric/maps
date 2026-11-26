@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE5WN5APD4GV21T1915Y",
+  "name": "Mahoga Stores",
+  "coordinates": {
+    "latitude": 6.0618829,
+    "longitude": 80.2077279
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "3665+Q35, Galle 80000",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAF6WJV59GKR3B6TQJTX",
+  "name": "Mountain View",
+  "coordinates": {
+    "latitude": 6.3229017,
+    "longitude": 80.2196222
+  },
+  "categories": [
+    "Homestay",
+    "Guest house"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Elpitiya",
+  "business_status": "OPEN"
+}

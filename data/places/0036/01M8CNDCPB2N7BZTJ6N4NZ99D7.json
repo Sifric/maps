@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCPB2N7BZTJ6N4NZ99D7",
+  "name": "Q Feet Products",
+  "coordinates": {
+    "latitude": 7.6849323,
+    "longitude": 81.7375939
+  },
+  "categories": [
+    "Produce wholesaler"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "150 Dr Badhiudeen Mahmood Mawatha, Kattankudy",
+  "business_status": "OPEN"
+}

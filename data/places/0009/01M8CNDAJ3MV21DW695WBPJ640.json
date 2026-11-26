@@ -1,0 +1,71 @@
+{
+  "id": "01M8CNDAJ3MV21DW695WBPJ640",
+  "name": "வர்ணன் மல்டி சென்றர் (Varnan multi centre)",
+  "coordinates": {
+    "latitude": 7.1964163,
+    "longitude": 81.8484939
+  },
+  "categories": [
+    "Hardware store",
+    "Cement supplier",
+    "Pipe supplier",
+    "Roofing supply store",
+    "Steel distributor"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Sagama road, kolavil-01, Akkaraipattu 32400",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6 AM–9 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC7XCRWJVE3SRDZHSF7X",
+  "name": "HTF FARM HOUSE",
+  "coordinates": {
+    "latitude": 7.654987599999999,
+    "longitude": 81.7378064
+  },
+  "categories": [
+    "Farmstay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "8/4F, SAMSUDEEN SAHIB LANE, MANMUNAI ROAD, 30150",
+  "business_status": "OPEN"
+}

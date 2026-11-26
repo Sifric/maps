@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDC6063N347K7ZKB9PNBK",
+  "name": "Hotel East Lagoon",
+  "coordinates": {
+    "latitude": 7.7287349,
+    "longitude": 81.7049026
+  },
+  "categories": [
+    "Restaurant",
+    "Banquet hall",
+    "Bar",
+    "Conference center",
+    "Event venue",
+    "Hotel",
+    "Swimming pool",
+    "Wedding venue"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Munai Lane, Sinna Uppodai Road, Uppodai Lake Rd, Batticaloa 30000",
+  "business_status": "OPEN"
+}

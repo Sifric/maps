@@ -1,0 +1,63 @@
+{
+  "id": "01M8CNDFFD2EWM39W5YYNZX8X0",
+  "name": "Happy life medi clinic",
+  "coordinates": {
+    "latitude": 9.6836621,
+    "longitude": 80.0177372
+  },
+  "categories": [
+    "Medical clinic"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "55 Kaladdi Amman Kovil Rd, Jaffna",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5:30–8:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5:30–8:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5:30–8:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5:30–8:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5:30–8:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5:30–8:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5:30–8:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

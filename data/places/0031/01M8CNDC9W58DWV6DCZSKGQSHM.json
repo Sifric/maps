@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9W58DWV6DCZSKGQSHM",
+  "name": "Raj hotel",
+  "coordinates": {
+    "latitude": 7.782330099999999,
+    "longitude": 81.5432186
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QGJV+W7P, Thavapuram",
+  "business_status": "OPEN"
+}

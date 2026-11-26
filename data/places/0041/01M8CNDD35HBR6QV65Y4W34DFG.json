@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD35HBR6QV65Y4W34DFG",
+  "name": "Batticaloa Holiday Resort",
+  "coordinates": {
+    "latitude": 7.5040346,
+    "longitude": 81.79729979999999
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Colombo - Batticaloa Hwy, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

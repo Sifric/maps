@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDC5A7072JFZ5F7GFZ9P9",
+  "name": "Department of Primary Health Care, FHCS, EUSL",
+  "coordinates": {
+    "latitude": 7.7276906,
+    "longitude": 81.6681753
+  },
+  "categories": [
+    "University"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMH9+36H, Batticaloa",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–4 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–4 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–4 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–4 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–4 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

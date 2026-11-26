@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDA1C85PH7ZR3JW87RFE7",
+  "name": "Hotel Senondra",
+  "coordinates": {
+    "latitude": 7.2901454,
+    "longitude": 81.6763259
+  },
+  "categories": [
+    "Restaurant",
+    "Diner",
+    "Takeout restaurant",
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "5-A 2nd Ave, Ampara 32000",
+  "business_status": "OPEN"
+}

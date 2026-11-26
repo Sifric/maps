@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDCSWXHWTMWJ2JBRXJR6M",
+  "name": "Shiny beauty parlour",
+  "coordinates": {
+    "latitude": 7.7314357,
+    "longitude": 81.695326
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "\n49b Koolavadi Main Rd, Batticaloa",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "49b Koolavadi Main Rd, Batticaloa"
+  ]
+}

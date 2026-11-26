@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDB1KYEMEC09H99EWW5D1",
+  "name": "Harasgala mountain",
+  "coordinates": {
+    "latitude": 7.4636875,
+    "longitude": 81.3035625
+  },
+  "categories": [
+    "Hiking area"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "F873+FC, Harasgala",
+  "business_status": "OPEN"
+}

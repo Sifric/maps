@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD2D4QK0NT7X7WQFH2KA",
+  "name": "Fresh Vegetable Shop",
+  "coordinates": {
+    "latitude": 7.803116299999999,
+    "longitude": 81.5718924
+  },
+  "categories": [
+    "Fruit and vegetable store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "RH3C+6QR, Main St, Vantharumoolai",
+  "business_status": "OPEN"
+}

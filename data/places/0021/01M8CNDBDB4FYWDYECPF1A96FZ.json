@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBDB4FYWDYECPF1A96FZ",
+  "name": "MBI (AMS) Bus Booking Center",
+  "coordinates": {
+    "latitude": 7.2219136,
+    "longitude": 81.8501057
+  },
+  "categories": [
+    "Bus ticket agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "6VC2+Q29, Main St, Akkaraipattu",
+  "business_status": "OPEN"
+}

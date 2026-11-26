@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCT7P2ZDRVXC3PDWBW7R",
+  "name": "Zion Digital Printing",
+  "coordinates": {
+    "latitude": 7.724876699999999,
+    "longitude": 81.69097219999999
+  },
+  "categories": [
+    "Lodging"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "519 Trincomalee-Batticaloa Rd, Batticaloa",
+  "business_status": "OPEN"
+}

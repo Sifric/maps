@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCA407YKVW8GYCQRME6N",
+  "name": "Nature Food City",
+  "coordinates": {
+    "latitude": 7.925980099999999,
+    "longitude": 81.5363797
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WGGP+9HR",
+  "business_status": "OPEN"
+}

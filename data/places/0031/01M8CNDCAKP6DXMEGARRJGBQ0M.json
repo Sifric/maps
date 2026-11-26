@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDCAKP6DXMEGARRJGBQ0M",
+  "name": "Suvithuru Farm & Restaurant",
+  "coordinates": {
+    "latitude": 7.9799131999999995,
+    "longitude": 81.23654959999999
+  },
+  "categories": [
+    "Farm",
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "20 Sinha pura, Welikanda 51070",
+  "business_status": "CLOSED_TEMPORARILY"
+}

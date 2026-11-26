@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC8QXP6EXMZ3A4HNVST1",
+  "name": "SUJO MINI MART",
+  "coordinates": {
+    "latitude": 7.8848221,
+    "longitude": 81.5243368
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "VGMF+WPG, Clinic center, Road",
+  "business_status": "OPEN"
+}

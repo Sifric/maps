@@ -1,0 +1,63 @@
+{
+  "id": "01M8CNDG68Y4DPYVG5B2WK4J40",
+  "name": "Anil stores",
+  "coordinates": {
+    "latitude": 6.9641835,
+    "longitude": 81.51799539999999
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "XG79+M5H, Muthukandiya",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:30 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:30 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:30 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:30 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:30 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:30 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6:30 AM–7:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

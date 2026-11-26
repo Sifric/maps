@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDAFBZZCPZQKCPQWH0WP3",
+  "name": "Sky homestay - One-Bedroom House",
+  "coordinates": {
+    "latitude": 7.3065801,
+    "longitude": 81.66860199999999
+  },
+  "categories": [
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Ampara",
+  "business_status": "OPEN"
+}

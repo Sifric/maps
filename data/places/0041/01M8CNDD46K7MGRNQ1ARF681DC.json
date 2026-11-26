@@ -1,0 +1,74 @@
+{
+  "id": "01M8CNDD46K7MGRNQ1ARF681DC",
+  "name": "V.M.Medical Clinic center",
+  "coordinates": {
+    "latitude": 7.1214613,
+    "longitude": 81.8515774
+  },
+  "categories": [
+    "Medical clinic"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "4VC2+HJP, Pathman Veethi, Thambiluvil",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:30–8:30 AM",
+        "6:30–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:30–8:30 AM",
+        "6:30–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:30–8:30 AM",
+        "6:30–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:30–8:30 AM",
+        "6:30–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:30–8:30 AM",
+        "6:30–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:30–8:30 AM",
+        "6:30–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6:30–8:30 AM",
+        "6:30–10 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

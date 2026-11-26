@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDE0545D6BTYAJME0DESH",
+  "name": "Ninety Kilometers",
+  "coordinates": {
+    "latitude": 6.1942854999999994,
+    "longitude": 80.0622953
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "a2 A2, 80300",
+  "business_status": "CLOSED_TEMPORARILY"
+}

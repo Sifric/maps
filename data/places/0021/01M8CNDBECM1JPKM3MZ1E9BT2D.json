@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBECM1JPKM3MZ1E9BT2D",
+  "name": "Haputhale EV charging station",
+  "coordinates": {
+    "latitude": 6.766947,
+    "longitude": 80.9546428
+  },
+  "categories": [
+    "Electric vehicle charging station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Welimada road, Haputale 90160",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBY7XQXB07GXJ0R3NNAG",
+  "name": "Prince Jewellery",
+  "coordinates": {
+    "latitude": 7.2184351,
+    "longitude": 81.8498642
+  },
+  "categories": [
+    "Jewelry store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Akkaraipattu",
+  "business_status": "OPEN"
+}

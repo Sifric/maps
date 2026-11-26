@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD473BFRXNJC4JM90NJB",
+  "name": "Library",
+  "coordinates": {
+    "latitude": 7.7182828,
+    "longitude": 81.6167962
+  },
+  "categories": [
+    "Public library"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PJ98+8P7, Vilavedduwan",
+  "business_status": "OPEN"
+}

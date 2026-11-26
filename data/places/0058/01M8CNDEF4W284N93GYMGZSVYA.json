@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEF4W284N93GYMGZSVYA",
+  "name": "Samudra Resort",
+  "coordinates": {
+    "latitude": 5.9456555,
+    "longitude": 80.4548468
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "48, A Samudra, Sunanda Road, Mirissa 81740",
+  "business_status": "OPEN"
+}

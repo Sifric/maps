@@ -1,0 +1,71 @@
+{
+  "id": "01M8CNDFD2YQ3S8040R72DQKHA",
+  "name": "Rathy Store",
+  "coordinates": {
+    "latitude": 9.670233,
+    "longitude": 80.015447
+  },
+  "categories": [
+    "Grocery store",
+    "Electronics repair shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "174 Kannathiddy Rd, Jaffna 40000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6 AM–1 PM",
+        "5–8 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6 AM–1 PM",
+        "5–8 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6 AM–1 PM",
+        "5–8 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6 AM–1 PM",
+        "5–8 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6 AM–1 PM",
+        "5–8 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6 AM–1 PM",
+        "5–8 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6 AM–1 PM",
+        "5–7 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

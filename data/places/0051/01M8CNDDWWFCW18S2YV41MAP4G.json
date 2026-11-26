@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDWWFCW18S2YV41MAP4G",
+  "name": "Royal Restaurant",
+  "coordinates": {
+    "latitude": 6.0349838,
+    "longitude": 80.21585139999999
+  },
+  "categories": [
+    "Sri Lankan restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "26M8+X8X, Sri Dewamiththa Mawatha, Galle 80000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "11 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "11 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "11 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "11 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "11 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "11 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "11 AM–10:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

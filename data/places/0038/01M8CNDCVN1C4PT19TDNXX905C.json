@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCVN1C4PT19TDNXX905C",
+  "name": "Confort Hall",
+  "coordinates": {
+    "latitude": 7.729657,
+    "longitude": 81.686843
+  },
+  "categories": [
+    "Banquet hall"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMHP+VP8, Selvanayagam Rd 5th Cross, Batticaloa",
+  "business_status": "OPEN"
+}

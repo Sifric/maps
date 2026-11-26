@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDXWANG54P1AXA00AME1",
+  "name": "King Restaurant",
+  "coordinates": {
+    "latitude": 6.0405807,
+    "longitude": 80.2332626
+  },
+  "categories": [
+    "Fast food restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "26RM+68J, A.P.Ganewatta, Circular Rd, Galle",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "10:30 PM–2:29 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "10:30 PM–2:29 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "10:30 PM–2:29 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "10:30 PM–2:29 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "10:30 PM–2:29 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "10:30 PM–2:29 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "10:30 PM–2:29 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

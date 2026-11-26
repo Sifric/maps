@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE2P23SCAJA966X61T6R",
+  "name": "Bara Beach Pizza",
+  "coordinates": {
+    "latitude": 6.0665987,
+    "longitude": 80.1695311
+  },
+  "categories": [
+    "Pizza restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "131 Galle - Colombo Rd, Galle",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBSKH8RGS9ZZSTRYWJ2Q",
+  "name": "Aftha Book Shop",
+  "coordinates": {
+    "latitude": 7.2445901,
+    "longitude": 81.8541407
+  },
+  "categories": [
+    "Book store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Addalaichenai",
+  "business_status": "OPEN"
+}

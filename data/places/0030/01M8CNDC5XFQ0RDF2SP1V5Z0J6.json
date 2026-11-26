@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC5XFQ0RDF2SP1V5Z0J6",
+  "name": "Thangama home food",
+  "coordinates": {
+    "latitude": 7.6927806,
+    "longitude": 81.7214723
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPVC+4H9, Colombo - Batticaloa Hwy, Kattankudy",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD13859K1Z7JJSTPF8KS",
+  "name": "Alma Mobile Shop",
+  "coordinates": {
+    "latitude": 7.9133241,
+    "longitude": 81.52516159999999
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Oddamavadi",
+  "business_status": "OPEN"
+}

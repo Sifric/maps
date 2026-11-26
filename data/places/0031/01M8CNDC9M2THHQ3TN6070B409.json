@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9M2THHQ3TN6070B409",
+  "name": "KPK Hotel",
+  "coordinates": {
+    "latitude": 7.725997199999999,
+    "longitude": 81.7099894
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PPG5+9XX, Kallady Mugathuvaram",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA4KQ1RRKT2AXKYV7K7K",
+  "name": "Moththe ice cream",
+  "coordinates": {
+    "latitude": 6.2026338999999995,
+    "longitude": 80.0819492
+  },
+  "categories": [
+    "Ice cream shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Galdhuva Rd",
+  "business_status": "OPEN"
+}

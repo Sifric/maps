@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDCSWSC5YYHTYW7BKYM3X",
+  "name": "Dewy Beauty Hub",
+  "coordinates": {
+    "latitude": 7.7354682,
+    "longitude": 81.6948898
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "\n45d Mamangam Rd, Batticaloa 30000",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "45d Mamangam Rd, Batticaloa 30000"
+  ]
+}

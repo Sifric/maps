@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBCTW0NHFKVHD8CS3KJC",
+  "name": "V4 rent a car",
+  "coordinates": {
+    "latitude": 7.5057768,
+    "longitude": 81.7958113
+  },
+  "categories": [
+    "Car rental agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQ4W+78W, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

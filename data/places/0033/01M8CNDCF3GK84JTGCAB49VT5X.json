@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDCF3GK84JTGCAB49VT5X",
+  "name": "Primary Care Medical Unit (PMCU)",
+  "coordinates": {
+    "latitude": 8.0138926,
+    "longitude": 81.48685809999999
+  },
+  "categories": [
+    "Hospital"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "2F7P+HP5, Mankerni",
+  "business_status": "OPEN"
+}

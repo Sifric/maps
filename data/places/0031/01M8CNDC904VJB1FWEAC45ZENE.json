@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC904VJB1FWEAC45ZENE",
+  "name": "LEEF SUPER MARKET",
+  "coordinates": {
+    "latitude": 7.6811316,
+    "longitude": 81.7253379
+  },
+  "categories": [
+    "Shopping mall"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPJG+F44, Methapalli Rd, Kattankudy",
+  "business_status": "OPEN"
+}

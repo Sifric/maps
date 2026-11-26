@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCJDXZN3YJKPNJ2MTA96",
+  "name": "Homie",
+  "coordinates": {
+    "latitude": 7.6738145,
+    "longitude": 81.7250217
+  },
+  "categories": [
+    "Home builder"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPFG+G2C, Lake Dr, Kattankudy",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBTWBDSZHKT1100X6Q1",
+  "name": "City Lagoon Guest House",
+  "coordinates": {
+    "latitude": 7.721227,
+    "longitude": 81.689015
+  },
+  "categories": [
+    "Guest house"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "# 92/10 Poombukar Street, Batticaloa 30000",
+  "business_status": "OPEN"
+}

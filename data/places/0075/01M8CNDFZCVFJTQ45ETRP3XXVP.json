@@ -1,0 +1,63 @@
+{
+  "id": "01M8CNDFZCVFJTQ45ETRP3XXVP",
+  "name": "medical center",
+  "coordinates": {
+    "latitude": 6.3443157,
+    "longitude": 80.5769354
+  },
+  "categories": [
+    "Doctor"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "8HVG+PQF",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4–8 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4–8 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4–8 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4–8 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4–8 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4–8 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4–8 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

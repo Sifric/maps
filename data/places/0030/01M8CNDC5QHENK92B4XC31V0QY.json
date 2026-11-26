@@ -1,0 +1,76 @@
+{
+  "id": "01M8CNDC5QHENK92B4XC31V0QY",
+  "name": "Q Kitchen Express",
+  "coordinates": {
+    "latitude": 7.6832537,
+    "longitude": 81.7349575
+  },
+  "categories": [
+    "Arab restaurant",
+    "Caterer",
+    "Egyptian restaurant",
+    "Food manufacturer",
+    "Food producer",
+    "Food products supplier",
+    "Indian restaurant",
+    "Indian takeaway",
+    "Pizza restaurant",
+    "Pizza takeaway"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "New, 525 (Al Aqsha Complex), Beach Road, 03, Kattankudy 30100",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12:30 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12:30 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12:30 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "1:30 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "12:30 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12:30 PM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

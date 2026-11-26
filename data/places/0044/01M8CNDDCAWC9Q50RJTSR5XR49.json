@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDCAWC9Q50RJTSR5XR49",
+  "name": "RSH HOUSE",
+  "coordinates": {
+    "latitude": 7.7719017,
+    "longitude": 81.6118133
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJC6+JJM, Trincomalee-Batticaloa Rd, Eravur",
+  "business_status": "OPEN"
+}

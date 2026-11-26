@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDF3TQ1WYKTGXVC98FRJE",
+  "name": "Maria plaza",
+  "coordinates": {
+    "latitude": 9.7452236,
+    "longitude": 79.9724245
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "180 road, Atchuvely",
+  "business_status": "OPEN"
+}

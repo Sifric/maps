@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCASQNHHFJ61VA862VCX",
+  "name": "NT Store",
+  "coordinates": {
+    "latitude": 7.7131383,
+    "longitude": 81.6984439
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM7X+794, Main Street, arasadiththeevu",
+  "business_status": "OPEN"
+}

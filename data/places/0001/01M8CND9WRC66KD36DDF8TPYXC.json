@@ -1,0 +1,22 @@
+{
+  "id": "01M8CND9WRC66KD36DDF8TPYXC",
+  "name": "Rahumath Chicken Shop",
+  "coordinates": {
+    "latitude": 7.3994363,
+    "longitude": 81.8362338
+  },
+  "categories": [
+    "Chicken shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "14 Zahira College Rd, Kalmunai 32300",
+  "business_status": "OPEN"
+}

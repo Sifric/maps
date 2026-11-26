@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCVCG568FBT001S1AQRH",
+  "name": "Raj Grinding Mill",
+  "coordinates": {
+    "latitude": 7.7296480999999995,
+    "longitude": 81.6850894
+  },
+  "categories": [
+    "Mill"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMHP+V24, Batticaloa",
+  "business_status": "OPEN"
+}

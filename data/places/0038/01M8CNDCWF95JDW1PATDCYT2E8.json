@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCWF95JDW1PATDCYT2E8",
+  "name": "World of Juice",
+  "coordinates": {
+    "latitude": 7.6842749999999995,
+    "longitude": 81.72686159999999
+  },
+  "categories": [
+    "Juice shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPMG+PP5, Colombo - Batticaloa Hwy, Kattankudy",
+  "business_status": "CLOSED"
+}

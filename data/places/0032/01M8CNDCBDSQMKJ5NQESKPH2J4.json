@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBDSQMKJ5NQESKPH2J4",
+  "name": "Nirojan Stores",
+  "coordinates": {
+    "latitude": 7.543352,
+    "longitude": 81.7892542
+  },
+  "categories": [
+    "Asian grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Vanniyar St, Kaluthavalai",
+  "business_status": "OPEN"
+}

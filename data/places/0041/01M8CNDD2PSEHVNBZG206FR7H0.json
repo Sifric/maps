@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD2PSEHVNBZG206FR7H0",
+  "name": "Riza Home",
+  "coordinates": {
+    "latitude": 7.9223582,
+    "longitude": 81.5275025
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "134 Buhary Alim Rd, Oddamavadi 5",
+  "business_status": "OPEN"
+}

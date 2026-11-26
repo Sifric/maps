@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDBHCET08Q29463B0AA2B",
+  "name": "Checkpoint Auto Hybrid Lanka",
+  "coordinates": {
+    "latitude": 7.3543129,
+    "longitude": 81.84600789999999
+  },
+  "categories": [
+    "Car battery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Main Street, Nintavur",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7:30 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7:30 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7:30 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7:30 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7:30 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7:30 AM–5:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

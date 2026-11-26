@@ -1,0 +1,74 @@
+{
+  "id": "01M8CNDC5WATDZ10EGFY8XJ49G",
+  "name": "Delmo chicken & sausages dealer batticaloa",
+  "coordinates": {
+    "latitude": 7.682900399999999,
+    "longitude": 81.73450799999999
+  },
+  "categories": [
+    "Chicken shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "New, 254A, Beach Road, 06, Kattankudy 30100",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–2 PM",
+        "4:30–10:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–2 PM",
+        "4:30–10:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–2 PM",
+        "4:30–10:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–2 PM",
+        "4:30–10:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7–11:30 AM",
+        "4:30–8:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–2 PM",
+        "4:30–10:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7 AM–2 PM",
+        "4:30–10:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

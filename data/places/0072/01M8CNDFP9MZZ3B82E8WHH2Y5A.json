@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDFP9MZZ3B82E8WHH2Y5A",
+  "name": "Shivaraaj Trading Co",
+  "coordinates": {
+    "latitude": 9.8251669,
+    "longitude": 80.2368053
+  },
+  "categories": [
+    "Hardware store",
+    "Paint store",
+    "Roofing supply store",
+    "Tile store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "No163, Main Street, Point pedro, Jaffna 40000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

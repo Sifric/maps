@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD8DS98T2WTNJVGJRP9G",
+  "name": "Rice Mill",
+  "coordinates": {
+    "latitude": 7.7539134999999995,
+    "longitude": 81.63540309999999
+  },
+  "categories": [
+    "Shopping mall"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJ3P+H56, Vipulanantha Puram",
+  "business_status": "OPEN"
+}

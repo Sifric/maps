@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDA9KY0S7G8NXGZFKKF89",
+  "name": "The Culture Cafe",
+  "coordinates": {
+    "latitude": 7.692284399999999,
+    "longitude": 81.7220401
+  },
+  "categories": [
+    "Sri Lankan restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "485, New Kalmunai Road, East, Batticaloa 30000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5–11:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5–11:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5–11:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5–11:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5–11:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5–11:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

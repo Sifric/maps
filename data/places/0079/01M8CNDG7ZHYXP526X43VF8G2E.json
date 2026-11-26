@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDG7ZHYXP526X43VF8G2E",
+  "name": "Rocky",
+  "coordinates": {
+    "latitude": 9.3663483,
+    "longitude": 80.3686488
+  },
+  "categories": [
+    "Traditional market"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "418, Kilinochchi 44000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12–10 AM",
+        "8–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

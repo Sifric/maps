@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDBNKBJVJER726R9EJMA6",
+  "name": "Blood Bank Sammanthurai",
+  "coordinates": {
+    "latitude": 7.3684989,
+    "longitude": 81.8126623
+  },
+  "categories": [
+    "Blood bank"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "9R97+93V, Hospital Rd, Sammanthurai",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8 AM–4 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

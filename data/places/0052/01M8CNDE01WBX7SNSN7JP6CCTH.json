@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE01WBX7SNSN7JP6CCTH",
+  "name": "Summer Reef Restaurant",
+  "coordinates": {
+    "latitude": 6.2066493,
+    "longitude": 80.0627695
+  },
+  "categories": [
+    "Chinese restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Galle Road, Wenamulla, Ambalangoda 80300",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5–10 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5–10 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5–10 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Open 24 hours"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

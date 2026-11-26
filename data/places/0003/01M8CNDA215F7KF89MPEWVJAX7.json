@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA215F7KF89MPEWVJAX7",
+  "name": "NR Heavenly Treats",
+  "coordinates": {
+    "latitude": 7.404102399999999,
+    "longitude": 81.8330142
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "272/A Mosque Rd, Kalmunai 09",
+  "business_status": "OPEN"
+}

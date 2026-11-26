@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBVB909HYWKGB8CV218",
+  "name": "Breeze Villa",
+  "coordinates": {
+    "latitude": 7.754401499999999,
+    "longitude": 81.68473399999999
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "605 Bar Rd - Batticaloa, Batticaloa",
+  "business_status": "OPEN"
+}

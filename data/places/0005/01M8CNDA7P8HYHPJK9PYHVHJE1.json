@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDA7P8HYHPJK9PYHVHJE1",
+  "name": "Araliya Leisure Villa",
+  "coordinates": {
+    "latitude": 7.2953002,
+    "longitude": 81.6741874
+  },
+  "categories": [
+    "Restaurant",
+    "Family restaurant",
+    "Holiday home",
+    "Shopping mall",
+    "Villa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Devasthana Mawatha, Ampara",
+  "business_status": "OPEN"
+}

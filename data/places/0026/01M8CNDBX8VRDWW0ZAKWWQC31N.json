@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDBX8VRDWW0ZAKWWQC31N",
+  "name": "Saheed Fancy Store",
+  "coordinates": {
+    "latitude": 7.3632085,
+    "longitude": 81.7975256
+  },
+  "categories": [
+    "Cosmetics store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "7Th lane, Sammanthurai 00000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6–11 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6–11 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6–11 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6–11 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6–11 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6–11 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6 AM–11 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

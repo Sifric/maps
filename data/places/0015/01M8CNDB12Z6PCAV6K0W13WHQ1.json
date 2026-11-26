@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDB12Z6PCAV6K0W13WHQ1",
+  "name": "Adventure Cove",
+  "coordinates": {
+    "latitude": 6.8746884999999995,
+    "longitude": 79.8980164
+  },
+  "categories": [
+    "Indoor playground"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "271 Stanley Thilakarathna Mawatha, Nugegoda",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "11 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "11 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "11 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "11 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "11 AM–4 PM",
+        "7–9 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "11 AM–9 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

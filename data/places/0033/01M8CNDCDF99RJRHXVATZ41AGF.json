@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDCDF99RJRHXVATZ41AGF",
+  "name": "STD, SEXUAL HEALTH AND HIV CLINIC BATTICALOபாலியல் தொற்று நோய் சிகிச்சைப் பிரிவு",
+  "coordinates": {
+    "latitude": 7.7089364,
+    "longitude": 81.6932782
+  },
+  "categories": [
+    "Health consultant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM5V+H8C, Hospital Rd, Batticaloa",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8:30 AM–3 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8:30 AM–3 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8:30 AM–3 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8:30 AM–3 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8:30 AM–3 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8:30–11 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

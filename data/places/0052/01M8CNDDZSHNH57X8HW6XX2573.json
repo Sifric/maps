@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDZSHNH57X8HW6XX2573",
+  "name": "Rasa Madira (රස මදිරා)",
+  "coordinates": {
+    "latitude": 6.2277603,
+    "longitude": 80.1201689
+  },
+  "categories": [
+    "Sri Lankan restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Sadamulla, Galle - Elpitiya Rd, Batapola 80320",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12–3 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12–3 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12–3 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12–3 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12–3 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "12–3 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCY96N8KQHAB95513065",
+  "name": "Fahmi Home",
+  "coordinates": {
+    "latitude": 7.7772317,
+    "longitude": 81.606571
+  },
+  "categories": [
+    "Housing development"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "55 AKM Rd, Eravur",
+  "business_status": "OPEN"
+}

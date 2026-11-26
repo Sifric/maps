@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDB8RGF9EDXX1YDVERHVG",
+  "name": "R.I Rent a car",
+  "coordinates": {
+    "latitude": 7.3995562999999995,
+    "longitude": 81.8384822
+  },
+  "categories": [
+    "Rental car return location"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9RXQ+PC3, Kalyana Rd, Sainthamaruthu 32280",
+  "business_status": "OPEN"
+}

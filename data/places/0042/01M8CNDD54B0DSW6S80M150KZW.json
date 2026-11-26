@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDD54B0DSW6S80M150KZW",
+  "name": "MA Saloon",
+  "coordinates": {
+    "latitude": 7.926371,
+    "longitude": 81.52964349999999
+  },
+  "categories": [
+    "Hair salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "\nAnnoor 52 NC Rd, Kalkudah",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "Annoor 52 NC Rd, Kalkudah"
+  ]
+}

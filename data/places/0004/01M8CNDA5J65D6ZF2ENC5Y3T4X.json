@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDA5J65D6ZF2ENC5Y3T4X",
+  "name": "Le café",
+  "coordinates": {
+    "latitude": 6.0117141,
+    "longitude": 80.2499503
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "266X+MX8, A2, Unawatuna",
+  "business_status": "OPEN"
+}

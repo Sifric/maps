@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDACNNBNW8HXFD4KRY9GG",
+  "name": "New Central Pharma",
+  "coordinates": {
+    "latitude": 7.3691039,
+    "longitude": 81.8054468
+  },
+  "categories": [
+    "Grocery store",
+    "Pharmacy"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "Central Rd, Sammanthurai",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8:30 AM–11 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

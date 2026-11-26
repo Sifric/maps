@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDB68SE8QHJEYHWZEJPVW",
+  "name": "ELANKO HOUSE",
+  "coordinates": {
+    "latitude": 7.4071988,
+    "longitude": 81.8404942
+  },
+  "categories": [
+    "Apartment complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "157 Beach Rd, Kalmunai 32300",
+  "business_status": "OPEN"
+}

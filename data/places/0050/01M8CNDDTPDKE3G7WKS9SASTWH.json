@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDDTPDKE3G7WKS9SASTWH",
+  "name": "Saman Bakery",
+  "coordinates": {
+    "latitude": 6.1089503,
+    "longitude": 80.2184147
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "4659+H9M, Poddala",
+  "business_status": "OPEN"
+}

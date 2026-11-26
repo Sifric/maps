@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCKMDV04SC5PV3BP089P",
+  "name": "District Court Batticaloa | மாவட்ட நீதிமன்றம்",
+  "coordinates": {
+    "latitude": 7.7123181999999995,
+    "longitude": 81.7003562
+  },
+  "categories": [
+    "District court"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PP62+W4H, Batticaloa",
+  "business_status": "OPEN"
+}

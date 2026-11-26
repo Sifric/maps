@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD4K0Q9MNHGZT7DBNZ23",
+  "name": "Kiran Kulam",
+  "coordinates": {
+    "latitude": 7.605563699999999,
+    "longitude": 81.76708459999999
+  },
+  "categories": [
+    "Bus stop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kirankulam",
+  "business_status": "OPEN"
+}

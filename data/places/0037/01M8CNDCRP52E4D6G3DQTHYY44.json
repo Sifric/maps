@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCRP52E4D6G3DQTHYY44",
+  "name": "Antranas home",
+  "coordinates": {
+    "latitude": 7.7249146,
+    "longitude": 81.6966911
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "144/6 vijayapuram, railway road, Batticaloa",
+  "business_status": "OPEN"
+}

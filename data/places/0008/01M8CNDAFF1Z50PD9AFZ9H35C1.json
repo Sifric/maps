@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAFF1Z50PD9AFZ9H35C1",
+  "name": "RF VILLA",
+  "coordinates": {
+    "latitude": 7.6997919999999995,
+    "longitude": 81.728622
+  },
+  "categories": [
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No:-83 Poonochimunai Rd, Kattankudy",
+  "business_status": "OPEN"
+}

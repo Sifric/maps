@@ -1,0 +1,63 @@
+{
+  "id": "01M8CNDFZAZJ4DXFW7PADBQRHM",
+  "name": "Mediclinic",
+  "coordinates": {
+    "latitude": 7.3617402,
+    "longitude": 81.7960062
+  },
+  "categories": [
+    "Doctor"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "vilinaiyady road, Sammanthurai 32200",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5:15–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5:10–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5:10–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5:10–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5:10–9 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5:10–8:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5–9 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC1RET7A2EKWBF2PDJ1P",
+  "name": "Cemetery",
+  "coordinates": {
+    "latitude": 7.434298699999999,
+    "longitude": 81.765582
+  },
+  "categories": [
+    "Pharmacy"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CQM8+P68",
+  "business_status": "OPEN"
+}

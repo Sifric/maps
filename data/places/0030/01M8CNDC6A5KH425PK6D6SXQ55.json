@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDC6A5KH425PK6D6SXQ55",
+  "name": "Gnanam Holiday Inn",
+  "coordinates": {
+    "latitude": 7.9211016999999995,
+    "longitude": 81.5538947
+  },
+  "categories": [
+    "Restaurant",
+    "Guest house"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WHC3+CHR, Kalkudah-Valaichchenai Rd, Kalkudah",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCYRTWK3V5P7H3Y2D2NJ",
+  "name": "Suhail Resort",
+  "coordinates": {
+    "latitude": 7.7696267,
+    "longitude": 81.60650969999999
+  },
+  "categories": [
+    "Lodging"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Library, Road, Eravur",
+  "business_status": "CLOSED"
+}

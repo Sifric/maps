@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA7ATYNFWT4TKSKN6J6E",
+  "name": "My Lanka restaurant",
+  "coordinates": {
+    "latitude": 7.2629828,
+    "longitude": 81.8610114
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "7V76+579, Addalaichenai",
+  "business_status": "OPEN"
+}

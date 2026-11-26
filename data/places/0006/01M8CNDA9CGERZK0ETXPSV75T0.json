@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDA9CGERZK0ETXPSV75T0",
+  "name": "Masha Allah Hotel",
+  "coordinates": {
+    "latitude": 7.3437652,
+    "longitude": 81.8467979
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "8RVW+GP3, Nintavur",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6 AM–3 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA7J4XM4VF76Z2RDJ8ZX",
+  "name": "Haya hotel",
+  "coordinates": {
+    "latitude": 7.2010076,
+    "longitude": 81.7184687
+  },
+  "categories": [
+    "Breakfast restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "11 A village wagkamam, 2",
+  "business_status": "OPEN"
+}

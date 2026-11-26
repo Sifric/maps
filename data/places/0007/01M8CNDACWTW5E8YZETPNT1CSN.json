@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDACWTW5E8YZETPNT1CSN",
+  "name": "Kumara Stores Nagasthalawa",
+  "coordinates": {
+    "latitude": 7.616308399999999,
+    "longitude": 81.028216
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "J28H+G7G",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCM2S1802X27JCFGW2V9",
+  "name": "Eastern Cashew",
+  "coordinates": {
+    "latitude": 7.7750284999999995,
+    "longitude": 81.610444
+  },
+  "categories": [
+    "General store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "425 Palliyadi Rd, Eravur",
+  "business_status": "OPEN"
+}

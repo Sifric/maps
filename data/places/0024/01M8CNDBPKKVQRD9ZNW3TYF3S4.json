@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDBPKKVQRD9ZNW3TYF3S4",
+  "name": "Theva saloon",
+  "coordinates": {
+    "latitude": 7.670043499999999,
+    "longitude": 81.6553165
+  },
+  "categories": [
+    "Barber shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "\nMMC4+248, Unnamed Road, Batticaloa",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "MMC4+248, Unnamed Road, Batticaloa"
+  ]
+}

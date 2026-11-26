@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA0TYXX01P04TEW06358",
+  "name": "The Coffee Cabin",
+  "coordinates": {
+    "latitude": 7.2920799,
+    "longitude": 81.6741521
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Coffee Cabin, Pandukabaya Street, Ampara 32000",
+  "business_status": "CLOSED_TEMPORARILY"
+}

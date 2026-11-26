@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD835QMMM83VZN9V0XZP",
+  "name": "Railway Station - Welikanda",
+  "coordinates": {
+    "latitude": 7.947095699999999,
+    "longitude": 81.2505031
+  },
+  "categories": [
+    "Railway services"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "W7W2+R6J, Welikanda",
+  "business_status": "OPEN"
+}

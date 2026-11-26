@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCSY38MJ89E2NY6E1FNK",
+  "name": "A Aasai saloon",
+  "coordinates": {
+    "latitude": 7.713964799999999,
+    "longitude": 81.6979973
+  },
+  "categories": [
+    "Barber shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM7X+H5Q, Bazaar St, Batticaloa",
+  "business_status": "OPEN"
+}

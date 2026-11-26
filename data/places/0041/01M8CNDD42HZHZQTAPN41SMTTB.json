@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD42HZHZQTAPN41SMTTB",
+  "name": "Facefood sweet centre",
+  "coordinates": {
+    "latitude": 7.4357564,
+    "longitude": 81.8144488
+  },
+  "categories": [
+    "Candy store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "228 Public Library Rd, Maruthamunai",
+  "business_status": "CLOSED_TEMPORARILY"
+}

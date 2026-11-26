@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDW4NECRBBFFEB1HCBAP",
+  "name": "Gelato House by Nawodi",
+  "coordinates": {
+    "latitude": 6.5817103999999995,
+    "longitude": 79.96177879999999
+  },
+  "categories": [
+    "Ice cream shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "143/B/4, Dons Plaza",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "11 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "11 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "11 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "11 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "11 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "11 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "11 AM–8 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCSKYTM0KRQ4EF1PTMJR",
+  "name": "MODERN TAILORING SHOP",
+  "coordinates": {
+    "latitude": 7.7302085,
+    "longitude": 81.6860877
+  },
+  "categories": [
+    "Tailor"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMJP+3CP, Kumara Kovil Veethy, Batticaloa",
+  "business_status": "OPEN"
+}

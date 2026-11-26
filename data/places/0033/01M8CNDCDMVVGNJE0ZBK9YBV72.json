@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDCDMVVGNJE0ZBK9YBV72",
+  "name": "Seth Sewana Medical Center",
+  "coordinates": {
+    "latitude": 6.6732001,
+    "longitude": 80.7199261
+  },
+  "categories": [
+    "Medical Center"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Colombo - Batticaloa Hwy",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA8W9ZN2RCHAE3A229DW",
+  "name": "Dosa Hut",
+  "coordinates": {
+    "latitude": 7.2922258,
+    "longitude": 81.6785302
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "L/165 Kachcheri Rd, Ampara",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE4CGGDK9WA3N9VMCFRT",
+  "name": "FOOD COURT",
+  "coordinates": {
+    "latitude": 6.9846581,
+    "longitude": 81.05920909999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Badulla",
+  "business_status": "OPEN"
+}

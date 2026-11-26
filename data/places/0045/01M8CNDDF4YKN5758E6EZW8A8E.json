@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDDF4YKN5758E6EZW8A8E",
+  "name": "Wasantha saloon",
+  "coordinates": {
+    "latitude": 7.0100813,
+    "longitude": 81.2802198
+  },
+  "categories": [
+    "Hairdresser"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\nB56",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "5 AM–9 PM"
+      ]
+    }
+  ],
+  "business_status": "CLOSED"
+}

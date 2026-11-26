@@ -1,0 +1,23 @@
+{
+  "id": "01M8CND9Z2VZH9CJRMG6RM2CBV",
+  "name": "Afrin",
+  "coordinates": {
+    "latitude": 7.6831365,
+    "longitude": 81.738216
+  },
+  "categories": [
+    "Driving school"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPMQ+774, 4th Cross St, Kattankudy",
+  "business_status": "OPEN"
+}

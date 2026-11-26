@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDAD9T7PGDC51RNE168Z6",
+  "name": "Soya cool spot",
+  "coordinates": {
+    "latitude": 6.2777169,
+    "longitude": 80.1426639
+  },
+  "categories": [
+    "Ice cream shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Galle - Elpitiya Rd",
+  "business_status": "OPEN"
+}

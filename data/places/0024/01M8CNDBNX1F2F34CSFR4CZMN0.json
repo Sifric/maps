@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBNX1F2F34CSFR4CZMN0",
+  "name": "VK Rent ca car",
+  "coordinates": {
+    "latitude": 7.8296163,
+    "longitude": 81.5555291
+  },
+  "categories": [
+    "Transportation service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "RHH4+R6R, Murakkottanchenai",
+  "business_status": "OPEN"
+}

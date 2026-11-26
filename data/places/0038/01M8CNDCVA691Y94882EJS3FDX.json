@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCVA691Y94882EJS3FDX",
+  "name": "Post office, uppodai",
+  "coordinates": {
+    "latitude": 7.720292199999999,
+    "longitude": 81.712368
+  },
+  "categories": [
+    "Post office"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PPC6+4W9, Kallady",
+  "business_status": "OPEN"
+}

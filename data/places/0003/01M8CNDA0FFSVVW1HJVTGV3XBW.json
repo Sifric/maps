@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA0FFSVVW1HJVTGV3XBW",
+  "name": "Manaseer home",
+  "coordinates": {
+    "latitude": 7.420058,
+    "longitude": 81.7512888
+  },
+  "categories": [
+    "Soup kitchen"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CQC2+2GF",
+  "business_status": "OPEN"
+}

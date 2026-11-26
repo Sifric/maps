@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCN6G352A308REDY05HQ",
+  "name": "House of kajan",
+  "coordinates": {
+    "latitude": 7.6960114,
+    "longitude": 81.6570813
+  },
+  "categories": [
+    "Warehouse"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MMW4+CR4, Batticaloa",
+  "business_status": "OPEN"
+}

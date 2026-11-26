@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDZ3ZXYQRKC7DBSFMJGJ",
+  "name": "Waves Edge Restaurant",
+  "coordinates": {
+    "latitude": 6.1224041,
+    "longitude": 80.11275499999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Galle Rd, Hikkaduwa 80030",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8:30 AM–11 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

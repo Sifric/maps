@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA2VC89P4RFH3YYN2F0V",
+  "name": "Kinthujan Shopping Center",
+  "coordinates": {
+    "latitude": 7.377896799999999,
+    "longitude": 81.8492033
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "9RHX+5M4, Karaitivu 32250",
+  "business_status": "OPEN"
+}

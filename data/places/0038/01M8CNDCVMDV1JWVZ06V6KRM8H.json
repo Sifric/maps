@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDCVMDV1JWVZ06V6KRM8H",
+  "name": "Pallekele International Cricket Stadium",
+  "coordinates": {
+    "latitude": 7.2806593,
+    "longitude": 80.7224512
+  },
+  "categories": [
+    "Stadium",
+    "Cricket ground"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kandy-Mahiyangane-Padiyatalawa Hwy, Pallekele",
+  "business_status": "OPEN"
+}

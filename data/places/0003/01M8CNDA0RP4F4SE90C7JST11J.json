@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA0RP4F4SE90C7JST11J",
+  "name": "Shihab Chicken Farm",
+  "coordinates": {
+    "latitude": 7.3643260999999995,
+    "longitude": 81.80917099999999
+  },
+  "categories": [
+    "Butcher shop deli"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9R75+PMM, Sammanthurai",
+  "business_status": "OPEN"
+}

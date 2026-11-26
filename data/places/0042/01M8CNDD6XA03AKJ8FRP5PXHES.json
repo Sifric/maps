@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD6XA03AKJ8FRP5PXHES",
+  "name": "Tharu stores",
+  "coordinates": {
+    "latitude": 8.0426864,
+    "longitude": 81.2469461
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No 342 perakumyaya",
+  "business_status": "OPEN"
+}

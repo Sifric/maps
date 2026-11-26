@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDAM9YGSN0M3GS53CG0VN",
+  "name": "Sathya Sai Center, Thirukkovil",
+  "coordinates": {
+    "latitude": 7.1173499,
+    "longitude": 81.851327
+  },
+  "categories": [
+    "Place of worship"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "sathya, Sai Samithi Rd, Thirukkovil",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9–10:30 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "9–10:30 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

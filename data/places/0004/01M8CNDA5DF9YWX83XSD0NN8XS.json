@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA5DF9YWX83XSD0NN8XS",
+  "name": "Ene veedu",
+  "coordinates": {
+    "latitude": 7.6874733,
+    "longitude": 81.732895
+  },
+  "categories": [
+    "Butcher shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPPM+RF6, Fisheries Rd, Kattankudy",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDA3188PEP1FTPZXJ3JMC",
+  "name": "Fingerprint Family Restaurant-Siripura",
+  "coordinates": {
+    "latitude": 7.7325439,
+    "longitude": 81.0203166
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "No 24- Commercial Mudungama, Siripura 32155",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "2 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "2 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "2 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "2 PM–12:30 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "2 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "2 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "2 PM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

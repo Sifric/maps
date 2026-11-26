@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCCDM2MC7SRHDY10G2MJ",
+  "name": "Amaaji's Home",
+  "coordinates": {
+    "latitude": 7.9167935,
+    "longitude": 81.52276979999999
+  },
+  "categories": [
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No 301 Dharusslam Road, Oddamavadi",
+  "business_status": "OPEN"
+}

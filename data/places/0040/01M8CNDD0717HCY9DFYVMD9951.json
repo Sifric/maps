@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD0717HCY9DFYVMD9951",
+  "name": "Riskan rice",
+  "coordinates": {
+    "latitude": 7.9021558,
+    "longitude": 81.5268971
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG2G+VQ6, Oddamavadi",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDA7KW514CAR1JAWKTTM",
+  "name": "Matheen’s Home",
+  "coordinates": {
+    "latitude": 7.683222,
+    "longitude": 81.72384149999999
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "373,4th lane, kaburady road, Kattankudy 01",
+  "business_status": "OPEN"
+}

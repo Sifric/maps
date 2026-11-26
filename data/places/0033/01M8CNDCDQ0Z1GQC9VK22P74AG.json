@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCDQ0Z1GQC9VK22P74AG",
+  "name": "Nalaa Medi Clinic",
+  "coordinates": {
+    "latitude": 7.6763635,
+    "longitude": 81.7306351
+  },
+  "categories": [
+    "Medical clinic"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPGJ+G7R, Kattankudy",
+  "business_status": "OPEN"
+}

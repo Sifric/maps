@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9R4XJS95PH5CZ43X78",
+  "name": "Digana Hotel",
+  "coordinates": {
+    "latitude": 7.801211599999999,
+    "longitude": 81.608983
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "RJ25+FHQ, Punnakuda Road,Thalawai, Chenkaladi",
+  "business_status": "OPEN"
+}

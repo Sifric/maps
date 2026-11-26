@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE8HF1EMN8BHF1FYPYVP",
+  "name": "Gamage Hotel",
+  "coordinates": {
+    "latitude": 6.9691712,
+    "longitude": 81.1080801
+  },
+  "categories": [
+    "Rice restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Vineethagama",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBFEMWN11VFWK9VXEA9D",
+  "name": "Peoples Bank ATM",
+  "coordinates": {
+    "latitude": 7.4035668999999995,
+    "longitude": 81.8313371
+  },
+  "categories": [
+    "ATM"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CR3J+CGG, Kalmunai 32300",
+  "business_status": "OPEN"
+}

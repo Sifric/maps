@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC7M30A92M1W99BBR30V",
+  "name": "Sangeetha Plant Nursery",
+  "coordinates": {
+    "latitude": 7.7575218999999995,
+    "longitude": 81.62986289999999
+  },
+  "categories": [
+    "Plant nursery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Trincomalee-Batticaloa Rd, Batticaloa 30000",
+  "business_status": "OPEN"
+}

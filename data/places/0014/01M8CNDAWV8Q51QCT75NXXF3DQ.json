@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAWV8Q51QCT75NXXF3DQ",
+  "name": "Regional Office Stop",
+  "coordinates": {
+    "latitude": 7.231,
+    "longitude": 81.8511
+  },
+  "categories": [
+    "Bus stop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "Akkaraipattu",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "Akkaraipattu - Kalmunai Main Rd, Akkaraipattu"
+  ]
+}

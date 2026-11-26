@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCYQKYJRMMH9FKE53D3Z",
+  "name": "JS restaurant",
+  "coordinates": {
+    "latitude": 7.7775227,
+    "longitude": 81.6030272
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJH3+262, Main St, Eravur",
+  "business_status": "OPEN"
+}

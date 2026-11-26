@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCMWXQ4DMDKRFX006BVK",
+  "name": "SELVI METALS STORES",
+  "coordinates": {
+    "latitude": 7.725336199999999,
+    "longitude": 81.6901405
+  },
+  "categories": [
+    "Warehouse"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "501 Trincomalee-Batticaloa Rd, Batticaloa",
+  "business_status": "OPEN"
+}

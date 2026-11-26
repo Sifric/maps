@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD38D0BETFDTG47KTDMW",
+  "name": "Public Library",
+  "coordinates": {
+    "latitude": 7.538091199999999,
+    "longitude": 81.7940129
+  },
+  "categories": [
+    "Library"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQQV+6JJ, Beach Rd, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD1H98MFADXADED6Y606",
+  "name": "Siddeeks Bussiness land",
+  "coordinates": {
+    "latitude": 7.9177833,
+    "longitude": 81.5316134
+  },
+  "categories": [
+    "Warehouse"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG9J+4J9",
+  "business_status": "OPEN"
+}

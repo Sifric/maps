@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA66XZQH7T0W10Q4ZH69",
+  "name": "Thennilavan palace",
+  "coordinates": {
+    "latitude": 7.5819098,
+    "longitude": 81.7530666
+  },
+  "categories": [
+    "Night club"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Navatkadu Rd",
+  "business_status": "OPEN"
+}

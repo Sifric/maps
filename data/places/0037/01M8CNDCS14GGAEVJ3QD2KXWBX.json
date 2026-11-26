@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCS14GGAEVJ3QD2KXWBX",
+  "name": "A.J. Food",
+  "coordinates": {
+    "latitude": 7.720698,
+    "longitude": 81.7008926
+  },
+  "categories": [
+    "Candy store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PPC2+79C, Bar Rd - Batticaloa, Batticaloa",
+  "business_status": "OPEN"
+}

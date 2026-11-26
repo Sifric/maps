@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC3RAEX2SYWZSY7Z2QEM",
+  "name": "VIP rent a car",
+  "coordinates": {
+    "latitude": 7.6778621,
+    "longitude": 81.72565019999999
+  },
+  "categories": [
+    "Auto painting"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPHG+47R, Arabic College Rd, Kattankudy",
+  "business_status": "OPEN"
+}

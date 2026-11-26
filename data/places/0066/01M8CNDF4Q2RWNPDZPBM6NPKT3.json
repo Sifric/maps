@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDF4Q2RWNPDZPBM6NPKT3",
+  "name": "Home",
+  "coordinates": {
+    "latitude": 9.7885534,
+    "longitude": 80.19012459999999
+  },
+  "categories": [
+    "Housing complex",
+    "Service establishment"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

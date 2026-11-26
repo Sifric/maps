@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA7BS1CN123S9JW4W4KQ",
+  "name": "Ground Way Restaurant",
+  "coordinates": {
+    "latitude": 7.2726064,
+    "longitude": 81.8502997
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "7VF2+24V, Palamunai",
+  "business_status": "OPEN"
+}

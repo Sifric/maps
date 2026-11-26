@@ -1,0 +1,23 @@
+{
+  "id": "01M8CND9VRTZHTNKG9WBT2J2MX",
+  "name": "Jeslan Driving School",
+  "coordinates": {
+    "latitude": 7.3666728,
+    "longitude": 81.8120148
+  },
+  "categories": [
+    "Driving school"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Sammanthurai",
+  "business_status": "OPEN"
+}

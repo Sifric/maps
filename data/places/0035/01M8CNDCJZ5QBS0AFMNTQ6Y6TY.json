@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCJZ5QBS0AFMNTQ6Y6TY",
+  "name": "Land Registry - Batticaloa",
+  "coordinates": {
+    "latitude": 7.758573299999999,
+    "longitude": 81.66754569999999
+  },
+  "categories": [
+    "Local government office"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QM58+CXF, Thiraimadu, School Road, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD7V6Z3P58VJVSZ2X3D4",
+  "name": "City Tyres House",
+  "coordinates": {
+    "latitude": 8.4445648,
+    "longitude": 81.263438
+  },
+  "categories": [
+    "Auto parts store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "375 Trincomalee-Batticaloa Rd, Mutur",
+  "business_status": "OPEN"
+}

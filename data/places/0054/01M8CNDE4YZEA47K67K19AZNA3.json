@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDE4YZEA47K67K19AZNA3",
+  "name": "Vasantha Bakery",
+  "coordinates": {
+    "latitude": 9.7010309,
+    "longitude": 79.8626843
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Kayts",
+  "business_status": "OPEN"
+}

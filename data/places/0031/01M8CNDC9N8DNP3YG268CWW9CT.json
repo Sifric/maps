@@ -1,0 +1,28 @@
+{
+  "id": "01M8CNDC9N8DNP3YG268CWW9CT",
+  "name": "Hotel Nirutha",
+  "coordinates": {
+    "latitude": 7.79,
+    "longitude": 81.5848961
+  },
+  "categories": [
+    "Restaurant",
+    "Banquet hall",
+    "Karaoke bar",
+    "Meeting planning service",
+    "Pizza restaurant",
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "main road,, kommathurai, Chenkaladi 30350",
+  "business_status": "OPEN"
+}

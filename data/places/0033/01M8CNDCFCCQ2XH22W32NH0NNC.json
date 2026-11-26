@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDCFCCQ2XH22W32NH0NNC",
+  "name": "Bishop's House",
+  "coordinates": {
+    "latitude": 7.7126741,
+    "longitude": 81.6961978
+  },
+  "categories": [
+    "Chapel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM7W+3F8, Trincomalee-Batticaloa Rd, Batticaloa",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "10 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "10 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "10 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "10 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "10 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "10 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

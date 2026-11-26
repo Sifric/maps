@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEPVY955BK2HKMSTWDMQ",
+  "name": "Hotel Cedar",
+  "coordinates": {
+    "latitude": 9.6595663,
+    "longitude": 80.0267588
+  },
+  "categories": [
+    "Guest house"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "50A Kandy Rd, Jaffna 40000",
+  "business_status": "OPEN"
+}

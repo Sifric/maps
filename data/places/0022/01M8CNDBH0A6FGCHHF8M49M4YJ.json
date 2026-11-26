@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBH0A6FGCHHF8M49M4YJ",
+  "name": "NiFs Auto",
+  "coordinates": {
+    "latitude": 7.389454799999999,
+    "longitude": 81.84493239999999
+  },
+  "categories": [
+    "Auto repair shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Maliga Rd, Sainthamaruthu 50142",
+  "business_status": "OPEN"
+}

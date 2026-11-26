@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCPVW2QZT8ZSE2Z9RKD6",
+  "name": "Sivakalay Home",
+  "coordinates": {
+    "latitude": 7.6719833,
+    "longitude": 81.65741849999999
+  },
+  "categories": [
+    "Garden"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kayanmadu, Kurinchamunai Rd, Batticaloa",
+  "business_status": "OPEN"
+}

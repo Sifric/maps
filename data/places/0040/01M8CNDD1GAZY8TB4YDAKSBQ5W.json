@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD1GAZY8TB4YDAKSBQ5W",
+  "name": "Kalkudah",
+  "coordinates": {
+    "latitude": 7.896274,
+    "longitude": 81.55411269999999
+  },
+  "categories": [
+    "Train station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kalkudah Rd",
+  "business_status": "OPEN"
+}

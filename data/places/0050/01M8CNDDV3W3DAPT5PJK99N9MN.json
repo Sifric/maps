@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDV3W3DAPT5PJK99N9MN",
+  "name": "ELEFENT BAKERS",
+  "coordinates": {
+    "latitude": 6.4451322,
+    "longitude": 79.9903952
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "NO.36/A KALUWAMODARA, Aluthgama",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7 AM–12 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC577NBHKBEMG1J0CK5H",
+  "name": "New Brilliant Campus",
+  "coordinates": {
+    "latitude": 7.719049699999999,
+    "longitude": 81.7016342
+  },
+  "categories": [
+    "Educational institution"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "10/3 Singing Fish Rd, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCS9QGB357AMESPT110Y",
+  "name": "Sharmi Fruit Shop",
+  "coordinates": {
+    "latitude": 7.722034099999999,
+    "longitude": 81.7007064
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDBPW45EKT49WW5PJNX5F",
+  "name": "Bus Hold",
+  "coordinates": {
+    "latitude": 7.3818548999999996,
+    "longitude": 81.83790859999999
+  },
+  "categories": [
+    "Bus depot"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "No 26 Main Street karaitivu -01, Karaitivu 32250",
+  "business_status": "OPEN"
+}

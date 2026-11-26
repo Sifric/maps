@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD8Z1PN0K88FXQNH3TAQ",
+  "name": "Kani Beach",
+  "coordinates": {
+    "latitude": 8.1836653,
+    "longitude": 81.4278863
+  },
+  "categories": [
+    "Tourist attraction"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "5CMH+F5, Vakarai",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDEWQER8SKKKE37BS1NBX",
+  "name": "Maniyam & Sons",
+  "coordinates": {
+    "latitude": 9.741353,
+    "longitude": 79.8862374
+  },
+  "categories": [
+    "Electrical supply store",
+    "Auto parts store",
+    "Building materials store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Valanthalai, Karainagar 41250",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

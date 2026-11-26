@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEBV3NE9N1F9NM017ZS9",
+  "name": "Aqua Reach Hotel",
+  "coordinates": {
+    "latitude": 6.4344914,
+    "longitude": 80.0004644
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "No. 78, Beruwela 12080",
+  "business_status": "OPEN"
+}

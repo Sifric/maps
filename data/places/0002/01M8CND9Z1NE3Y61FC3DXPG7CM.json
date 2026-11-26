@@ -1,0 +1,22 @@
+{
+  "id": "01M8CND9Z1NE3Y61FC3DXPG7CM",
+  "name": "Bibile Driving School",
+  "coordinates": {
+    "latitude": 7.1555572,
+    "longitude": 81.224954
+  },
+  "categories": [
+    "Driving school"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Bibile",
+  "business_status": "OPEN"
+}

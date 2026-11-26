@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDCF3JAXSGYKH4GNPYR51",
+  "name": "Clinical centre",
+  "coordinates": {
+    "latitude": 8.1419219,
+    "longitude": 81.3260717
+  },
+  "categories": [
+    "Hospital department"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "48RG+WJ2, Kaddumurivu",
+  "business_status": "OPEN"
+}

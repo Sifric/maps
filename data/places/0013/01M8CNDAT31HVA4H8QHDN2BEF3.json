@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAT31HVA4H8QHDN2BEF3",
+  "name": "Furniture plus",
+  "coordinates": {
+    "latitude": 7.3545959,
+    "longitude": 81.8540055
+  },
+  "categories": [
+    "Furniture store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9V33+RJJ, Nintavur 03",
+  "business_status": "OPEN"
+}

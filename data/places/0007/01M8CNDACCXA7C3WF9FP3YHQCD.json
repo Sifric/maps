@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDACCXA7C3WF9FP3YHQCD",
+  "name": "Dilshan Hotel",
+  "coordinates": {
+    "latitude": 6.8425512,
+    "longitude": 81.06759509999999
+  },
+  "categories": [
+    "Sri Lankan restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "A23",
+  "business_status": "OPEN"
+}

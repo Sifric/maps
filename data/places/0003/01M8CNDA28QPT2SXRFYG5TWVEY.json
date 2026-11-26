@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA28QPT2SXRFYG5TWVEY",
+  "name": "ZAS Food Land",
+  "coordinates": {
+    "latitude": 7.4061227999999995,
+    "longitude": 81.8376799
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "227 Hanifa Rd, Kalmunai 32300",
+  "business_status": "OPEN"
+}

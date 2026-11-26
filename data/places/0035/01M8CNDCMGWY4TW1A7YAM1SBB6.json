@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCMGWY4TW1A7YAM1SBB6",
+  "name": "IT Corner",
+  "coordinates": {
+    "latitude": 7.6805724,
+    "longitude": 81.7285922
+  },
+  "categories": [
+    "Electronics store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPJH+6CG, Colombo - Batticaloa Hwy, Kattankudy",
+  "business_status": "CLOSED_TEMPORARILY"
+}

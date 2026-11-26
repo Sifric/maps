@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD32N75NWSAT5X2G75XK",
+  "name": "Worldwide Express",
+  "coordinates": {
+    "latitude": 7.5188061,
+    "longitude": 81.7875172
+  },
+  "categories": [
+    "Transportation service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQ9Q+G2C, Main Street, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

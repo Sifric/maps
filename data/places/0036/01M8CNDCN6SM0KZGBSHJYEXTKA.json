@@ -1,0 +1,73 @@
+{
+  "id": "01M8CNDCN6SM0KZGBSHJYEXTKA",
+  "name": "DSI Distribution Store -More Fast",
+  "coordinates": {
+    "latitude": 7.679906099999999,
+    "longitude": 81.73628699999999
+  },
+  "categories": [
+    "Footwear wholesaler"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Hostel, Road, Kattankudy",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9:30 AM–2 PM",
+        "4:30–9:45 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9:30 AM–2 PM",
+        "4:30–9:45 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9:30 AM–2 PM",
+        "4:30–9:45 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9:30 AM–2 PM",
+        "4:30–9:45 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9:30 AM–2 PM",
+        "4:30–9:45 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "9:30 AM–2 PM",
+        "4:30–9:45 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCWEFKMYHRS33DSTMBP4",
+  "name": "Quickz Delivery",
+  "coordinates": {
+    "latitude": 7.6840578,
+    "longitude": 81.7341543
+  },
+  "categories": [
+    "Delivery service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPMM+JMC, Kattankudy",
+  "business_status": "CLOSED"
+}

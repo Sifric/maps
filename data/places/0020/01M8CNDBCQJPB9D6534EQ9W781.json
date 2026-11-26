@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBCQJPB9D6534EQ9W781",
+  "name": "Best Rental Car service",
+  "coordinates": {
+    "latitude": 7.3587849,
+    "longitude": 81.8452166
+  },
+  "categories": [
+    "Car leasing service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9R5W+G38, Main Street, Nintavur",
+  "business_status": "OPEN"
+}

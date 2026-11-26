@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDC0VSQAMRHY41FP3CEW",
+  "name": "Viji",
+  "coordinates": {
+    "latitude": 7.6468428,
+    "longitude": 81.7514099
+  },
+  "categories": [
+    "Apartment complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "JQW2+J6C, Colombo - Batticaloa Hwy, Thalankudah",
+  "business_status": "OPEN"
+}

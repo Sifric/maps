@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCC11WK341NJQS9FEKZS",
+  "name": "Coral Waves Inn Pasikuda",
+  "coordinates": {
+    "latitude": 7.920066599999999,
+    "longitude": 81.5774607
+  },
+  "categories": [
+    "Resort hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kalkudah",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCATY74Y53MWT93PKN6N",
+  "name": "Vegetable Market",
+  "coordinates": {
+    "latitude": 7.7086841999999995,
+    "longitude": 81.6882822
+  },
+  "categories": [
+    "Vegetable wholesale market"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "238 D Hospital Rd, Batticaloa 30000",
+  "business_status": "OPEN"
+}

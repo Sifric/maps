@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBVP6DTCD8AV0V890QN",
+  "name": "Coop Inn",
+  "coordinates": {
+    "latitude": 7.725549,
+    "longitude": 81.690771
+  },
+  "categories": [
+    "Motel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMGR+686, Trinco Rd, Batticaloa",
+  "business_status": "OPEN"
+}

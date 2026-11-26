@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBSJ76BG0188TT2S7K9",
+  "name": "East Gate 8-9",
+  "coordinates": {
+    "latitude": 7.7094289,
+    "longitude": 81.6951265
+  },
+  "categories": [
+    "Guest house"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "46, 9 Hospital Rd, Batticaloa 30000",
+  "business_status": "OPEN"
+}

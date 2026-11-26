@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDV951YHC3FDEK4TYK26",
+  "name": "Sandwich Spot",
+  "coordinates": {
+    "latitude": 5.9732004,
+    "longitude": 80.3611555
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Ahangama 80650",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "1–11 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "1–11 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "1–11 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "1–11 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "1–11 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "1–11 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "1–11 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,74 @@
+{
+  "id": "01M8CNDCSZWMKJ6GEN9MKN7YHH",
+  "name": "Uclean laundry",
+  "coordinates": {
+    "latitude": 7.729468,
+    "longitude": 81.67874499999999
+  },
+  "categories": [
+    "Laundry service",
+    "Dry cleaner"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ],
+    "names": [
+      "UClean Laundry"
+    ]
+  },
+  "address": "598/4A Trincomalee-Batticaloa Rd, Batticaloa 30000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8 AM–8 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "568 Trincomalee-Batticaloa Rd, Batticaloa"
+  ]
+}

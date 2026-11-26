@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDDF4VVY2B3KR2J4YHYJ0",
+  "name": "Salon Nish Hair",
+  "coordinates": {
+    "latitude": 6.7183861,
+    "longitude": 80.0585169
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\n212/1 Panadura Road, Horana",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "9 AM–7 PM"
+      ]
+    }
+  ],
+  "business_status": "CLOSED"
+}

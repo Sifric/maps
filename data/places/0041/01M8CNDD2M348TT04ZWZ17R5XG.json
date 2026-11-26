@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD2M348TT04ZWZ17R5XG",
+  "name": "Pasikudah Taxi & Tours",
+  "coordinates": {
+    "latitude": 7.8604556,
+    "longitude": 81.5398951
+  },
+  "categories": [
+    "Taxi service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "no 179 Main St, 30394",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCWE24G442MPT217G9FD",
+  "name": "N.A.F.Resort",
+  "coordinates": {
+    "latitude": 7.692573299999999,
+    "longitude": 81.7358089
+  },
+  "categories": [
+    "Resort hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kattankudy Division 6 So, Kattankudy",
+  "business_status": "OPEN"
+}

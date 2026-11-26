@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDA1DS1F793339PTBA9YJ",
+  "name": "Isle of Gelato",
+  "coordinates": {
+    "latitude": 6.8731503,
+    "longitude": 81.0489984
+  },
+  "categories": [
+    "Ice cream shop",
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Isle of gelato Ella Wellawaya, road, Ella 90090",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8:30 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8:30 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8:30 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8:30 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8:30 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8:30 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8:30 AM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

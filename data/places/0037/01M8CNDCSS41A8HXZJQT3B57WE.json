@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCSS41A8HXZJQT3B57WE",
+  "name": "Jewel City",
+  "coordinates": {
+    "latitude": 7.7140546,
+    "longitude": 81.69708609999999
+  },
+  "categories": [
+    "Jewelry store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM7W+JRG, St Anthony`s St, Batticaloa",
+  "business_status": "OPEN"
+}

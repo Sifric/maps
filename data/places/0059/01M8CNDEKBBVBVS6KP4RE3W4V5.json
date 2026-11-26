@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEKBBVBVS6KP4RE3W4V5",
+  "name": "S & R Pastry Shop",
+  "coordinates": {
+    "latitude": 6.047723899999999,
+    "longitude": 80.2263175
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Galle 80000",
+  "business_status": "OPEN"
+}

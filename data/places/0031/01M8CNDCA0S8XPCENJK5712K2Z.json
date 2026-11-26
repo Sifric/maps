@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCA0S8XPCENJK5712K2Z",
+  "name": "Suba Bakery | சுபா பேக்கரி",
+  "coordinates": {
+    "latitude": 7.7795691,
+    "longitude": 81.5980811
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QHHX+R6G, Town, Eravur",
+  "business_status": "OPEN"
+}

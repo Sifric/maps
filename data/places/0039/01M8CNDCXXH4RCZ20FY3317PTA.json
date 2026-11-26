@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCXXH4RCZ20FY3317PTA",
+  "name": "துர்க்கை அரைப்பகம்",
+  "coordinates": {
+    "latitude": 7.672463,
+    "longitude": 81.73637099999999
+  },
+  "categories": [
+    "Rice mill"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPCP+R2P, Village Ct Rd, Kattankudy",
+  "business_status": "OPEN"
+}

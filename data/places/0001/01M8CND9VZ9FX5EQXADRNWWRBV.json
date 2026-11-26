@@ -1,0 +1,67 @@
+{
+  "id": "01M8CND9VZ9FX5EQXADRNWWRBV",
+  "name": "Ruby English Academy",
+  "coordinates": {
+    "latitude": 7.265597,
+    "longitude": 81.8617668
+  },
+  "categories": [
+    "Kindergarten"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "O.P.A, Road, Palamunai 02",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8–11 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8–11 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8–11 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8–11 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8–10 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7:30–11:45 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7:30–11:45 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

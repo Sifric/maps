@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA5BVS5QWY0TMZTFGP7Z",
+  "name": "Meat shop இறைச்சி கடை",
+  "coordinates": {
+    "latitude": 7.396084699999999,
+    "longitude": 81.8338733
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9RWM+CGQ, Main street, Sainthamaruthu 32300",
+  "business_status": "OPEN"
+}

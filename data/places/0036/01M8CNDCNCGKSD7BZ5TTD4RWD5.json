@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCNCGKSD7BZ5TTD4RWD5",
+  "name": "Vegetable Collection Centre",
+  "coordinates": {
+    "latitude": 8.2084082,
+    "longitude": 81.40898229999999
+  },
+  "categories": [
+    "Collectibles store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "6C55+9H9, Vakarai",
+  "business_status": "OPEN"
+}

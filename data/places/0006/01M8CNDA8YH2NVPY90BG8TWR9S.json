@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDA8YH2NVPY90BG8TWR9S",
+  "name": "Rupas Beach Hotel",
+  "coordinates": {
+    "latitude": 6.8395161,
+    "longitude": 81.8342182
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "beach road, Arugam Bay 32500",
+  "business_status": "OPEN"
+}

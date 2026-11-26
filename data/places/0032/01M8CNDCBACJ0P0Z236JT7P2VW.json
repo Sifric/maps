@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBACJ0P0Z236JT7P2VW",
+  "name": "Global Mart",
+  "coordinates": {
+    "latitude": 7.785533099999999,
+    "longitude": 81.6121876
+  },
+  "categories": [
+    "Shopping mall"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJP6+6V8, Jinnah Road, Eravur",
+  "business_status": "OPEN"
+}

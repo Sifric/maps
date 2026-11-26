@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBCQHXHTN9VDR84MXAHG",
+  "name": "Five Stars Rental Car Service",
+  "coordinates": {
+    "latitude": 7.5396393999999995,
+    "longitude": 81.7929551
+  },
+  "categories": [
+    "Car rental agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQQV+V54, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

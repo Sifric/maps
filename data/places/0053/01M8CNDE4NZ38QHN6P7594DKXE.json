@@ -1,0 +1,71 @@
+{
+  "id": "01M8CNDE4NZ38QHN6P7594DKXE",
+  "name": "La Belle",
+  "coordinates": {
+    "latitude": 5.971659799999999,
+    "longitude": 80.3647403
+  },
+  "categories": [
+    "Restaurant",
+    "Brunch restaurant",
+    "Cocktail bar",
+    "Seafood restaurant",
+    "Tapas restaurant",
+    "Vegan restaurant",
+    "Vegetarian restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Galle road, Ahangama 80650",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9 AM–1 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9 AM–1 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9 AM–1 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9 AM–1 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9 AM–1 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9 AM–1 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "9 AM–1 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

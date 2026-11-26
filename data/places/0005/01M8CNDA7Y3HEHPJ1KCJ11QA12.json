@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDA7Y3HEHPJ1KCJ11QA12",
+  "name": "Kugan vegetable shop",
+  "coordinates": {
+    "latitude": 7.1295383,
+    "longitude": 81.84852169999999
+  },
+  "categories": [
+    "Vegetable wholesaler",
+    "Grocery delivery service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "4RHX+V9G, Colombo - Ratnapura - Wellawaya - Batticaloa Rd, Thirukkovil 32415",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6 AM–10 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

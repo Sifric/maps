@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD1Q481BTZDW66C5EH6C",
+  "name": "Thajudeen Home",
+  "coordinates": {
+    "latitude": 7.910241699999999,
+    "longitude": 81.5301528
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Parihariyar Land, 01 Trincomalee-Batticaloa Rd, Oddamavadi 30420",
+  "business_status": "OPEN"
+}

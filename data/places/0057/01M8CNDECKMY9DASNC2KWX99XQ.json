@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDECKMY9DASNC2KWX99XQ",
+  "name": "The One Apartment",
+  "coordinates": {
+    "latitude": 6.0454552999999995,
+    "longitude": 80.2155342
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "79 A Woodward Street, Galle 80000",
+  "business_status": "OPEN"
+}

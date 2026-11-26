@@ -1,0 +1,23 @@
+{
+  "id": "01M8CND9VSGTC7KDNQ7BXFD1GB",
+  "name": "Saara driving school",
+  "coordinates": {
+    "latitude": 7.3555151,
+    "longitude": 81.8458323
+  },
+  "categories": [
+    "Driving school"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9R4W+684, Main Street, Nintavur",
+  "business_status": "OPEN"
+}

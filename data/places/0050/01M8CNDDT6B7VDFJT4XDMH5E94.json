@@ -1,0 +1,72 @@
+{
+  "id": "01M8CNDDT6B7VDFJT4XDMH5E94",
+  "name": "Jojo's Café",
+  "coordinates": {
+    "latitude": 6.0969416,
+    "longitude": 80.2195467
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Holuwagoda Water park, Baddegama road, Galle 80000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5–7 AM",
+        "4–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5–7 AM",
+        "4–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5–7 AM",
+        "4–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5–7 AM",
+        "4–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5–7 AM",
+        "4–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5–7 AM",
+        "4–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5–7 AM",
+        "4–10 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

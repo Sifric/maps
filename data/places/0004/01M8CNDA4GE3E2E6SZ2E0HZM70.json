@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA4GE3E2E6SZ2E0HZM70",
+  "name": "FFC ( Fresh Food Cabin)",
+  "coordinates": {
+    "latitude": 7.253221099999999,
+    "longitude": 81.85443509999999
+  },
+  "categories": [
+    "Fast food restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "3c Main St, Addalaichenai",
+  "business_status": "OPEN"
+}

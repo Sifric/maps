@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDEQZ9T0P36RTX192FNGM",
+  "name": "Thavam Guest House",
+  "coordinates": {
+    "latitude": 9.4080964,
+    "longitude": 80.4084271
+  },
+  "categories": [
+    "Hotel",
+    "Guest house",
+    "Lodge"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "175 Kandy - Jaffna Hwy, Kilinochchi",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "01M8CNDEBHSB6FXV6P86YM2EYT",
+  "name": "River Side Inn Fuji",
+  "coordinates": {
+    "latitude": 6.4248183999999995,
+    "longitude": 80.0041651
+  },
+  "categories": [
+    "Guest house",
+    "Group accommodation",
+    "Hotel",
+    "Inn",
+    "Lodging",
+    "Resort hotel",
+    "Tour operator",
+    "Villa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "81, Circular Road, Obadawatta, Bentota",
+  "business_status": "OPEN"
+}

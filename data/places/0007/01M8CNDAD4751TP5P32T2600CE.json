@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDAD4751TP5P32T2600CE",
+  "name": "Fresh chicken 🐔 shop",
+  "coordinates": {
+    "latitude": 7.4427761,
+    "longitude": 81.7763975
+  },
+  "categories": [
+    "Chicken shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "102b Kali Kovil Rd",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7 AM–4 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

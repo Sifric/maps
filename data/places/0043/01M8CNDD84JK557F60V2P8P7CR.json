@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD84JK557F60V2P8P7CR",
+  "name": "weli Transport",
+  "coordinates": {
+    "latitude": 8.0409169,
+    "longitude": 80.9546294
+  },
+  "categories": [
+    "Delivery service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Sameeraprasana179, හිඟුරක්ගොඩ",
+  "business_status": "OPEN"
+}

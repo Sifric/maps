@@ -1,0 +1,22 @@
+{
+  "id": "01M8CND9YQAT6SB04P8S68KKNP",
+  "name": "Public Library",
+  "coordinates": {
+    "latitude": 7.2250144,
+    "longitude": 81.8396408
+  },
+  "categories": [
+    "Library"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "6RGQ+2R5, Akkaraipattu",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCSE730ES132648SRGS6",
+  "name": "Unique Lady",
+  "coordinates": {
+    "latitude": 7.7129765,
+    "longitude": 81.6984937
+  },
+  "categories": [
+    "Women's clothing store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "44-6 Amen Corner, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD4MQGKW75SF0X49W42E",
+  "name": "Juice X Press 🥤🥤",
+  "coordinates": {
+    "latitude": 7.3967833999999995,
+    "longitude": 81.8387518
+  },
+  "categories": [
+    "Juice shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "225,B Mavadi Road, Sainthamaruthu 06",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA5D41AM8WWYVG13W58Z",
+  "name": "Mutten shop",
+  "coordinates": {
+    "latitude": 7.393019799999999,
+    "longitude": 81.8361005
+  },
+  "categories": [
+    "Butcher shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9RVP+6C5, Main street, Sainthamaruthu 32300",
+  "business_status": "OPEN"
+}

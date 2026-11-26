@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDC9NVGN2JQER7VCE3XT2",
+  "name": "𝐌𝐚𝐬𝐭𝐞𝐫 𝐊𝐮𝐥𝐟𝐢",
+  "coordinates": {
+    "latitude": 7.7734304,
+    "longitude": 81.60857299999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Main St, Eravur 30300",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4 PM–4 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4 PM–4 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4 PM–4 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4 PM–4 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4 PM–4 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4 PM–4 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4 PM–4 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

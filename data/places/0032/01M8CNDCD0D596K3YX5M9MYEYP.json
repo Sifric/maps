@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCD0D596K3YX5M9MYEYP",
+  "name": "Blue Wild",
+  "coordinates": {
+    "latitude": 6.2992415,
+    "longitude": 81.2870554
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No. 42, Suduwella Punchiakurugoda, Tissamaharama 82600",
+  "business_status": "OPEN"
+}

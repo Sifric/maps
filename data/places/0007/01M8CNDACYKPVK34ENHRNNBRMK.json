@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDACYKPVK34ENHRNNBRMK",
+  "name": "My Home",
+  "coordinates": {
+    "latitude": 7.5968493,
+    "longitude": 81.7256819
+  },
+  "categories": [
+    "Ice cream shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "HPWG+89W, Arasaditivu",
+  "business_status": "OPEN"
+}

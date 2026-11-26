@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC18KSQ53V6YD4FXMRZ5",
+  "name": "JETWING CARS",
+  "coordinates": {
+    "latitude": 7.414942699999999,
+    "longitude": 81.8257737
+  },
+  "categories": [
+    "Car dealer"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kalmunai 32300",
+  "business_status": "OPEN"
+}

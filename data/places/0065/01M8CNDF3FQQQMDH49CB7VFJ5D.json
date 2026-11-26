@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDF3FQQQMDH49CB7VFJ5D",
+  "name": "Jaffna City Cabs",
+  "coordinates": {
+    "latitude": 9.668541,
+    "longitude": 80.010155
+  },
+  "categories": [
+    "Taxi service",
+    "Chauffeur service",
+    "Handicapped transportation service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "M296+C36, Grand bazzar, Jumma Mosque Ln, Jaffna 40000",
+  "business_status": "OPEN"
+}

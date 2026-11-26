@@ -1,0 +1,72 @@
+{
+  "id": "01M8CNDF79V5QPT7SS9T1JZ1GB",
+  "name": "PREETHY BEAUTY PARLOUR",
+  "coordinates": {
+    "latitude": 9.522492,
+    "longitude": 80.1372384
+  },
+  "categories": [
+    "Beauty salon",
+    "Service establishment"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12–5:30 AM",
+        "9 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12–6 AM",
+        "9 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12–6 AM",
+        "9 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12–6 AM",
+        "9 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12–6 AM",
+        "9 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "12–6 AM",
+        "9 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12–6 AM",
+        "10 AM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

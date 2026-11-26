@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9KFQXN9G1ZJWNR92SZ",
+  "name": "Mika Retaurant",
+  "coordinates": {
+    "latitude": 7.7155431,
+    "longitude": 81.7102184
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PP86+638, Kallady",
+  "business_status": "OPEN"
+}

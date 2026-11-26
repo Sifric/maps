@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDBRJQ613CG11JS78RJ3",
+  "name": "Rukshan Sellar House",
+  "coordinates": {
+    "latitude": 7.7364647,
+    "longitude": 81.6898727
+  },
+  "categories": [
+    "Apartment complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "130 A 1st cross mamangam, Batticaloa",
+  "business_status": "OPEN"
+}

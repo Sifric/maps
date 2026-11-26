@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDAN3TMX488YRGARQDKS",
+  "name": "Raihana beach palace",
+  "coordinates": {
+    "latitude": 7.7003696999999995,
+    "longitude": 81.7278149
+  },
+  "categories": [
+    "Holiday apartment rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "145 Beach Road, Kattankudy",
+  "business_status": "OPEN"
+}

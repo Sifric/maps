@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDAA2ASVKQ9QCCJPZSM6",
+  "name": "ITHREES Home",
+  "coordinates": {
+    "latitude": 7.6810228,
+    "longitude": 81.7222192
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "126/2 Old Rd, Kattankudy",
+  "business_status": "OPEN"
+}

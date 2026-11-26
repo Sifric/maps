@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEERRCXGZZH3ANYB8WCM",
+  "name": "Why Not Guest House",
+  "coordinates": {
+    "latitude": 6.1257269,
+    "longitude": 80.1066208
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "101 Galle Rd, Hikkaduwa",
+  "business_status": "OPEN"
+}

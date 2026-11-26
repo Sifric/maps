@@ -1,0 +1,23 @@
+{
+  "id": "01M8CND9ZGA09MEB1S34P0GBC3",
+  "name": "Dining 1",
+  "coordinates": {
+    "latitude": 7.6558405,
+    "longitude": 81.74524799999999
+  },
+  "categories": [
+    "College"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MP4W+83, Thalankudah",
+  "business_status": "OPEN"
+}

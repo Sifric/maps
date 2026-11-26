@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA44H2XJNCEMBTC442AZ",
+  "name": "Swell Cafe",
+  "coordinates": {
+    "latitude": 6.8397501,
+    "longitude": 81.83396909999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Arugam Bay",
+  "business_status": "CLOSED_TEMPORARILY"
+}

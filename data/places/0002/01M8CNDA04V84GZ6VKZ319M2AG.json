@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDA04V84GZ6VKZ319M2AG",
+  "name": "Rio Magic Ice Cream",
+  "coordinates": {
+    "latitude": 6.0331122,
+    "longitude": 80.2164289
+  },
+  "categories": [
+    "Ice cream shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "4 Gamini Mawatha, Galle 80000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "10 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "10 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "10 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "10 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "10 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "10 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "10 AM–7:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

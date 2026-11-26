@@ -1,0 +1,68 @@
+{
+  "id": "01M8CNDDWS9QVHD1KH7FZM4P3Z",
+  "name": "Kandoori",
+  "coordinates": {
+    "latitude": 6.0369416,
+    "longitude": 80.2302844
+  },
+  "categories": [
+    "Biryani restaurant",
+    "Halal restaurant",
+    "Indian restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Access Through Arpico Parking Lot, 181 A Matara Rd, මාගල්ල 80000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "11:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "11:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "11:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "11:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "1:30–11 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "11:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "11:30 AM–11 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

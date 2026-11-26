@@ -1,0 +1,70 @@
+{
+  "id": "01M8CNDADFQ6XZDVV1XK6C63VV",
+  "name": "Home made food ගමේ ආරේට",
+  "coordinates": {
+    "latitude": 6.3711969999999996,
+    "longitude": 80.01148599999999
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "92C6+FHH, A2, Induruwa",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12–7 AM",
+        "12 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12–7 AM",
+        "12 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12–7 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12–7 AM",
+        "12 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "12–7 AM",
+        "12 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12–7 AM",
+        "12 PM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

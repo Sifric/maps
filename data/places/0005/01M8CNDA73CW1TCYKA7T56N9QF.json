@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDA73CW1TCYKA7T56N9QF",
+  "name": "TRAX Ahangama",
+  "coordinates": {
+    "latitude": 5.978186,
+    "longitude": 80.3523914
+  },
+  "categories": [
+    "Bar",
+    "Art gallery",
+    "Club",
+    "Garden",
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Matara Road, Welhengoda Junction, Ahangama",
+  "business_status": "CLOSED_TEMPORARILY"
+}

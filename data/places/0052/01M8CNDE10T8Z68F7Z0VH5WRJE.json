@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE10T8Z68F7Z0VH5WRJE",
+  "name": "Springvalley Bar",
+  "coordinates": {
+    "latitude": 6.9273894,
+    "longitude": 81.0943855
+  },
+  "categories": [
+    "Bar"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "W3GV+WMX, Spring Vally",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "11 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "11 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "11 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "11 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "11 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "11 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "11 AM–7:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

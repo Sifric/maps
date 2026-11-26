@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAG5VWC8NDBJE63R5FWV",
+  "name": "Honey Guest, Batticaloa",
+  "coordinates": {
+    "latitude": 7.727585899999999,
+    "longitude": 81.69063179999999
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMGR+Q8X, Batticaloa",
+  "business_status": "OPEN"
+}

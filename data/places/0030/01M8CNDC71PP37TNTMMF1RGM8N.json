@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC71PP37TNTMMF1RGM8N",
+  "name": "BATTICALOA CAKES",
+  "coordinates": {
+    "latitude": 7.7477678999999995,
+    "longitude": 81.6893584
+  },
+  "categories": [
+    "Cake shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "463 Bar Rd - Batticaloa, Batticaloa 30000",
+  "business_status": "OPEN"
+}

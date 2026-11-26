@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDENDA8MCX9AA9Y5TCH1",
+  "name": "Polonnaruwa Allion Self Drive Rental",
+  "coordinates": {
+    "latitude": 7.9493192,
+    "longitude": 81.0126899
+  },
+  "categories": [
+    "Car rental agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "595/61 4 galtabarawa, Polonnaruwa",
+  "business_status": "OPEN"
+}

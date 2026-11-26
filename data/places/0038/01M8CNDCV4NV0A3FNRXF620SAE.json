@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDCV4NV0A3FNRXF620SAE",
+  "name": "Ravi Petrol Station.",
+  "coordinates": {
+    "latitude": 7.6987935,
+    "longitude": 81.71775869999999
+  },
+  "categories": [
+    "Gas station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "\nMPX9+G46, Kallady",
+  "business_status": "CLOSED_TEMPORARILY",
+  "alternate_addresses": [
+    "MPX9+G46, Kallady"
+  ]
+}

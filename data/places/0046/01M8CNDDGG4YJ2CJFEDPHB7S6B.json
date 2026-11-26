@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDGG4YJ2CJFEDPHB7S6B",
+  "name": "The Flower Shop powered by Asirima Fresh flowers",
+  "coordinates": {
+    "latitude": 6.9085506,
+    "longitude": 79.94261449999999
+  },
+  "categories": [
+    "Wholesale florist"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Thalangama Road, Thalangama 10120",
+  "business_status": "OPEN"
+}

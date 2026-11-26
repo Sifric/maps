@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE5ZRHR530QYWRFCD922",
+  "name": "සම්පත් ස්ටෝර්ස්",
+  "coordinates": {
+    "latitude": 6.0690064,
+    "longitude": 80.2006926
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Galle",
+  "business_status": "OPEN"
+}

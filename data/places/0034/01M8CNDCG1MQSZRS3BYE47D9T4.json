@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDCG1MQSZRS3BYE47D9T4",
+  "name": "Al Markazul Islami Jum'a Masjid",
+  "coordinates": {
+    "latitude": 7.779907499999999,
+    "longitude": 81.603003
+  },
+  "categories": [
+    "Mosque"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No 31 Jiffry Thaikka Road, Eravur 30300",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4 AM–9 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCB370S3RFQ759VQS5VW",
+  "name": "Siritharan",
+  "coordinates": {
+    "latitude": 8.2165007,
+    "longitude": 81.40511839999999
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Trincomalee-Batticaloa Rd",
+  "business_status": "OPEN"
+}

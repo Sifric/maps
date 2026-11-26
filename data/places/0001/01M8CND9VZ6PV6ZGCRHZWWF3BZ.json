@@ -1,0 +1,23 @@
+{
+  "id": "01M8CND9VZ6PV6ZGCRHZWWF3BZ",
+  "name": "Pre-School Sri Lanka Air Force Batticaloa",
+  "coordinates": {
+    "latitude": 7.698051899999999,
+    "longitude": 81.6724776
+  },
+  "categories": [
+    "Nursery school"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MMXC+6XH, Unnamed Road, Batticaloa",
+  "business_status": "OPEN"
+}

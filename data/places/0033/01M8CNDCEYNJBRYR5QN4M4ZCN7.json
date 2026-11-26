@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDCEYNJBRYR5QN4M4ZCN7",
+  "name": "Primecare Medical Center",
+  "coordinates": {
+    "latitude": 7.4943453,
+    "longitude": 81.6341576
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "FJVM+PMM, Piyangala",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5–7:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5–7:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5–7:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5–7:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5–7:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4:30–7:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4:30–7:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

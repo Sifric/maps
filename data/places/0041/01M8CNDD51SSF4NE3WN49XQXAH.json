@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD51SSF4NE3WN49XQXAH",
+  "name": "Ashwini Jewellers",
+  "coordinates": {
+    "latitude": 7.7120744,
+    "longitude": 81.7105009
+  },
+  "categories": [
+    "Jewelry store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kallady",
+  "business_status": "OPEN"
+}

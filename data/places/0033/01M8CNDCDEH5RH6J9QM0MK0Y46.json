@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDCDEH5RH6J9QM0MK0Y46",
+  "name": "VITHUS CLINIC",
+  "coordinates": {
+    "latitude": 7.7280701999999994,
+    "longitude": 81.6973898
+  },
+  "categories": [
+    "Doctor"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMHW+6XC, Batticaloa",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4:30 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4:30–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4:30–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4:30–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4:30–9 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4:30–9 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4:30–9 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

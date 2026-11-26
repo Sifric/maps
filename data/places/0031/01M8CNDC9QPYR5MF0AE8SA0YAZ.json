@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDC9QPYR5MF0AE8SA0YAZ",
+  "name": "MOM'S CAFETERIA",
+  "coordinates": {
+    "latitude": 7.7849015999999995,
+    "longitude": 81.60446499999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Boundary Rd, Eravur",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5 AM–3 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

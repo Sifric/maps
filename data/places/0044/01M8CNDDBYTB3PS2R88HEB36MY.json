@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDBYTB3PS2R88HEB36MY",
+  "name": "Azee home",
+  "coordinates": {
+    "latitude": 7.6864816,
+    "longitude": 81.7324733
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPPJ+HXX, Fisheries Rd, Kattankudy",
+  "business_status": "OPEN"
+}

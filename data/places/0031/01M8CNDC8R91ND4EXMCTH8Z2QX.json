@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC8R91ND4EXMCTH8Z2QX",
+  "name": "arayampathy Public market",
+  "coordinates": {
+    "latitude": 7.6704422999999995,
+    "longitude": 81.7349054
+  },
+  "categories": [
+    "Market"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPCM+5XC",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDA2CG9RYCE2HAMPFA2XG",
+  "name": "Pottuvil",
+  "coordinates": {
+    "latitude": 7.2199675,
+    "longitude": 81.8528492
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "6V93+X4Q, People's bank, road, pottuvil12",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8–10 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8–10 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8–10 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8–10 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8–10 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8–10 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8–10 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

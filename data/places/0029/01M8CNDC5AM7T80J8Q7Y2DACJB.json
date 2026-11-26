@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC5AM7T80J8Q7Y2DACJB",
+  "name": "My school",
+  "coordinates": {
+    "latitude": 7.7993029,
+    "longitude": 81.5804007
+  },
+  "categories": [
+    "Primary school"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "APC Rd",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDDFH4EHEKP80KA1TDG5",
+  "name": "Sk barber shop",
+  "coordinates": {
+    "latitude": 7.8294929,
+    "longitude": 80.6103858
+  },
+  "categories": [
+    "Barber shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Thennakoonpuara, thalakiriyagama, Dambulla 21116",
+  "business_status": "OPEN"
+}

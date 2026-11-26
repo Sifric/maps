@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDD9703C9VBG7DEFVRX3V",
+  "name": "Vakaneri Tank",
+  "coordinates": {
+    "latitude": 7.9341667,
+    "longitude": 81.42277779999999
+  },
+  "categories": [
+    "Reservoir"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

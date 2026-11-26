@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE0DT6D3EX2P0PA0FHGV",
+  "name": "SuSha Restaurant (Pre Online Orders Only)",
+  "coordinates": {
+    "latitude": 6.1119277,
+    "longitude": 80.1281918
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Ampitiyawatta Dodandugoda Rd, Dodanduwa 80250",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5–10 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD42YZC97NJM17CWDAS4",
+  "name": "White Doe Rest",
+  "coordinates": {
+    "latitude": 7.7158238,
+    "longitude": 81.70181389999999
+  },
+  "categories": [
+    "Lodging"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "15 Pioneer Rd, Batticaloa",
+  "business_status": "CLOSED"
+}

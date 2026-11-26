@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDAA4SVMH15Q7Y0XHRQ2B",
+  "name": "Q FARM",
+  "coordinates": {
+    "latitude": 7.659678199999999,
+    "longitude": 81.485834
+  },
+  "categories": [
+    "Farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MF5P+V8, Urukamam",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7 AM–5 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

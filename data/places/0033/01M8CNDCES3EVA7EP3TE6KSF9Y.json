@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCES3EVA7EP3TE6KSF9Y",
+  "name": "Central Ayurvedic Dispensary",
+  "coordinates": {
+    "latitude": 7.71313,
+    "longitude": 81.7127087
+  },
+  "categories": [
+    "Government hospital"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PP77+734, Kallady",
+  "business_status": "OPEN"
+}

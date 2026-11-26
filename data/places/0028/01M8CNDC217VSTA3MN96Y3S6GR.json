@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC217VSTA3MN96Y3S6GR",
+  "name": "Saraniya Jewellers",
+  "coordinates": {
+    "latitude": 7.4148806,
+    "longitude": 81.8259697
+  },
+  "categories": [
+    "Jewelry store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kalmunai 32300",
+  "business_status": "OPEN"
+}

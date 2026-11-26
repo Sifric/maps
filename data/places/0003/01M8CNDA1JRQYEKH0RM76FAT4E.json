@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA1JRQYEKH0RM76FAT4E",
+  "name": "Mini Cafe",
+  "coordinates": {
+    "latitude": 7.408868399999999,
+    "longitude": 81.8301165
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CR5J+G2X, Colombo - Batticaloa Hwy, Kalmunai 32300",
+  "business_status": "OPEN"
+}

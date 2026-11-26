@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDCY3ZVZ675P2Q9J4XYA",
+  "name": "Ruban",
+  "coordinates": {
+    "latitude": 7.7315685,
+    "longitude": 81.68463
+  },
+  "categories": [
+    "Housing development"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "18/8 2nd course, Batticaloa",
+  "business_status": "OPEN"
+}

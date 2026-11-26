@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDBFHT7BZ2BJKFW1ER2A",
+  "name": "Thandavanveli",
+  "coordinates": {
+    "latitude": 7.7212391,
+    "longitude": 81.6918403
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Batticaloa",
+  "business_status": "OPEN"
+}

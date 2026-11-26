@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAME2EE24RXJWSHFVWMY",
+  "name": "Paddy Warehouse",
+  "coordinates": {
+    "latitude": 7.220109,
+    "longitude": 81.6309583
+  },
+  "categories": [
+    "Warehouse"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Paddy warehouse, Amarasinghe Mawatha, 2nd Bridge, Moragahapallama 32012",
+  "business_status": "OPEN"
+}

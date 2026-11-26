@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCZRPR8WEM7KD4Z2ER2B",
+  "name": "Thalavai Foursquare Gospel Church",
+  "coordinates": {
+    "latitude": 7.8062219,
+    "longitude": 81.6114466
+  },
+  "categories": [
+    "Foursquare church"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Punnakuda Rd, Eravur 30000",
+  "business_status": "OPEN"
+}

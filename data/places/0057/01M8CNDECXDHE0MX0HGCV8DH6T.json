@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDECXDHE0MX0HGCV8DH6T",
+  "name": "Avon Rich Motel",
+  "coordinates": {
+    "latitude": 6.0434128,
+    "longitude": 80.2295944
+  },
+  "categories": [
+    "Motel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "139 Circular Rd, Galle 80000",
+  "business_status": "OPEN"
+}

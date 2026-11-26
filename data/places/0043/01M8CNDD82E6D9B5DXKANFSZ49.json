@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD82E6D9B5DXKANFSZ49",
+  "name": "Welikanda Bus Stand",
+  "coordinates": {
+    "latitude": 7.9472023,
+    "longitude": 81.2478391
+  },
+  "categories": [
+    "Bus station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Welikanda 51070",
+  "business_status": "OPEN"
+}

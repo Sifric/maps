@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCD302NWE0KV2FDJ2QH5",
+  "name": "Velya cabana",
+  "coordinates": {
+    "latitude": 6.7059105,
+    "longitude": 80.7830673
+  },
+  "categories": [
+    "Villa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "62/1 Olithenna, Belihuloya",
+  "business_status": "OPEN"
+}

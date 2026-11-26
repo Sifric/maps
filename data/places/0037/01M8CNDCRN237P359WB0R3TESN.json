@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCRN237P359WB0R3TESN",
+  "name": "Udaya home",
+  "coordinates": {
+    "latitude": 7.7249146,
+    "longitude": 81.6966911
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9 Rosairo lane, Batticaloa",
+  "business_status": "OPEN"
+}

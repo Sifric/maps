@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCZM8AK19KJM3QAR84C5",
+  "name": "Aakil house",
+  "coordinates": {
+    "latitude": 7.7752073,
+    "longitude": 81.60878939999999
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJG5+3GM, Ghanthiyar Road, Eravur 03",
+  "business_status": "OPEN"
+}

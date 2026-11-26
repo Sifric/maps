@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC7AX6R5PJPT6EX5GXMJ",
+  "name": "LAKSHI BAKERY",
+  "coordinates": {
+    "latitude": 7.796846599999999,
+    "longitude": 81.6007655
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJW2+P8J",
+  "business_status": "OPEN"
+}

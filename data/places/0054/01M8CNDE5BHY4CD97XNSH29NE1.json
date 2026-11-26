@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDE5BHY4CD97XNSH29NE1",
+  "name": "Co-op bakery",
+  "coordinates": {
+    "latitude": 9.6718508,
+    "longitude": 80.09584799999999
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "M3CW+P8X, Chavakachcheri",
+  "business_status": "OPEN"
+}

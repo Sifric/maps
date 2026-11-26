@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD0W16X1M9CW2NYPWFGG",
+  "name": "LOC Filling Sttion",
+  "coordinates": {
+    "latitude": 7.9085024,
+    "longitude": 81.53352149999999
+  },
+  "categories": [
+    "Gas station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG5M+CC2, Trincomalee-Batticaloa Rd, Oddamavadi",
+  "business_status": "OPEN"
+}

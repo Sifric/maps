@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDB0ETZ1953NT5P82G8YT",
+  "name": "Nintavur Beach Park",
+  "coordinates": {
+    "latitude": 7.3528192,
+    "longitude": 81.8581643
+  },
+  "categories": [
+    "Park"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9V35+47F, Nintavur 32340",
+  "business_status": "OPEN"
+}

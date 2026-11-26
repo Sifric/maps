@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCAZTRR0J0ACPB7RKS8H",
+  "name": "ASKY'S HOME",
+  "coordinates": {
+    "latitude": 7.775061399999999,
+    "longitude": 81.6078802
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJG5+25C, Vithanayar Rd, Eravur",
+  "business_status": "OPEN"
+}

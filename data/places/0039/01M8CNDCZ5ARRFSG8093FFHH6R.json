@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCZ5ARRFSG8093FFHH6R",
+  "name": "People's Bank ATM, Eastern University, Vantharumoolai",
+  "coordinates": {
+    "latitude": 7.7947795,
+    "longitude": 81.5798519
+  },
+  "categories": [
+    "ATM"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QHVH+WW9, Chenkaladi",
+  "business_status": "OPEN"
+}

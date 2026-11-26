@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE4AGSA8HQCS1S12N4BZ",
+  "name": "Maragala Restaurant",
+  "coordinates": {
+    "latitude": 6.8986301,
+    "longitude": 81.4020109
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "30 mile post, Galabedda",
+  "business_status": "OPEN"
+}

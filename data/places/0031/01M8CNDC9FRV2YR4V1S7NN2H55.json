@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9FRV2YR4V1S7NN2H55",
+  "name": "Town centre east milk outlet",
+  "coordinates": {
+    "latitude": 7.7146405,
+    "longitude": 81.694379
+  },
+  "categories": [
+    "Asian restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM7V+VQ2, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCC5HPJVWVM4KGCEGGVM",
+  "name": "Pearl beach house",
+  "coordinates": {
+    "latitude": 7.7444752999999995,
+    "longitude": 81.7024857
+  },
+  "categories": [
+    "Holiday apartment rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Dutch bar, road, Batticaloa 30000",
+  "business_status": "OPEN"
+}

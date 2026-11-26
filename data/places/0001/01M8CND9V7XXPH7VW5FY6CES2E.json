@@ -1,0 +1,66 @@
+{
+  "id": "01M8CND9V7XXPH7VW5FY6CES2E",
+  "name": "Samadhi Pre School",
+  "coordinates": {
+    "latitude": 7.314253399999999,
+    "longitude": 80.758758
+  },
+  "categories": [
+    "Preschool"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Teldeniya",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–1 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–1 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–1 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–1 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–1 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

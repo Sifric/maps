@@ -1,0 +1,71 @@
+{
+  "id": "01M8CNDBV1GM6XZ1JTEAN897G4",
+  "name": "NP Fashion",
+  "coordinates": {
+    "latitude": 7.159635199999999,
+    "longitude": 81.2248659
+  },
+  "categories": [
+    "Clothing store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "Pradeshiya Sabha building, No;07 doun floor, Bibile",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12–4:30 AM",
+        "8 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12–6 AM",
+        "8 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12–6 AM",
+        "8 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12–6 AM",
+        "8 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12–6 AM",
+        "8 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "12–6 AM",
+        "8 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12–6 AM",
+        "8 AM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

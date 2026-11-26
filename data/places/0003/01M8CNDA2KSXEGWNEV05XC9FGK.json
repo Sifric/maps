@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA2KSXEGWNEV05XC9FGK",
+  "name": "Kaja Bake House",
+  "coordinates": {
+    "latitude": 7.4259432,
+    "longitude": 81.8172879
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Pandiruppu",
+  "business_status": "OPEN"
+}

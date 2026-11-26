@@ -1,0 +1,27 @@
+{
+  "id": "01M8CNDEQ73064CWCQM5FRGK0C",
+  "name": "Thanu travels & guest house",
+  "coordinates": {
+    "latitude": 9.7487379,
+    "longitude": 79.9613167
+  },
+  "categories": [
+    "Travel agency",
+    "Bus company",
+    "Car leasing service",
+    "Guest house",
+    "Hotel",
+    "Taxi service",
+    "Villa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Udayar road vaddu east, Jaffna 40000",
+  "business_status": "OPEN"
+}

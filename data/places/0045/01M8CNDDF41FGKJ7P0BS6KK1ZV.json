@@ -1,0 +1,33 @@
+{
+  "id": "01M8CNDDF41FGKJ7P0BS6KK1ZV",
+  "name": "Lugo Beauty",
+  "coordinates": {
+    "latitude": 5.9933905,
+    "longitude": 80.3087557
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "No.5, Lugo Beauty, 10 Matara Rd, Habaraduwa",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "9 AM–7:30 PM"
+      ]
+    }
+  ],
+  "business_status": "CLOSED",
+  "alternate_addresses": [
+    "\nNo.5, Lugo Beauty, 10 Matara Rd, Habaraduwa"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAZRH42G007Z52PKB4CM",
+  "name": "Tharani Fitness Center",
+  "coordinates": {
+    "latitude": 7.670076399999999,
+    "longitude": 81.73511719999999
+  },
+  "categories": [
+    "Gym"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPCP+328, Kattankudy",
+  "business_status": "OPEN"
+}

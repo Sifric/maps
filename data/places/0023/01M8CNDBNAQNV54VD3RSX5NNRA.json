@@ -1,0 +1,27 @@
+{
+  "id": "01M8CNDBNAQNV54VD3RSX5NNRA",
+  "name": "Sri Lanka Real Estate Agents",
+  "coordinates": {
+    "latitude": 5.974938,
+    "longitude": 80.43712479999999
+  },
+  "categories": [
+    "Real estate agent",
+    "Commercial real estate agency",
+    "Property investment company",
+    "Property maintenance",
+    "Property management company",
+    "Real estate consultant",
+    "Real estate developer"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "No.30 Gangarama Road, Weligama 81700",
+  "business_status": "OPEN"
+}

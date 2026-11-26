@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDASD01Q4G9FXN4TMTHST",
+  "name": "Najeem's Home",
+  "coordinates": {
+    "latitude": 7.3903273,
+    "longitude": 81.840515
+  },
+  "categories": [
+    "Wholesaler"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9RRR+46J, Sainthamaruthu 32300",
+  "business_status": "OPEN"
+}

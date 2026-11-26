@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDC5QBMD8ZDTT6ABXQ7MP",
+  "name": "Happy wings",
+  "coordinates": {
+    "latitude": 7.6863407,
+    "longitude": 81.73989139999999
+  },
+  "categories": [
+    "Fast food restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPPQ+GXJ, Dr Badhiudeen Mahmood Mawatha, Kattankudy",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4:30 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4:30 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4:30 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4:30 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4:30 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4:30 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4:30 PM–1 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

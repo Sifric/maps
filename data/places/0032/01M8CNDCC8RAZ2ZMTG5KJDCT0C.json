@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCC8RAZ2ZMTG5KJDCT0C",
+  "name": "Krishna’s home",
+  "coordinates": {
+    "latitude": 7.7249146,
+    "longitude": 81.6966911
+  },
+  "categories": [
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "54, 36 Ethirmanasingam road, Batticaloa",
+  "business_status": "OPEN"
+}

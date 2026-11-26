@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD3C808SKZNCCTP8JBX8",
+  "name": "Post office",
+  "coordinates": {
+    "latitude": 7.5432611,
+    "longitude": 81.7879332
+  },
+  "categories": [
+    "Post office"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Colombo - Batticaloa Hwy, Kaluthavalai",
+  "business_status": "OPEN"
+}

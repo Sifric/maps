@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDE9QX65X81MNSE9M9RJT",
+  "name": "Manta Beach Resort",
+  "coordinates": {
+    "latitude": 6.0714657999999995,
+    "longitude": 80.16292949999999
+  },
+  "categories": [
+    "Restaurant",
+    "Resort hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Racecourse Rd, Galle 80270",
+  "business_status": "OPEN"
+}

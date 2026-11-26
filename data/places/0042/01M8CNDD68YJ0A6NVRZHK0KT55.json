@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDD68YJ0A6NVRZHK0KT55",
+  "name": "The Lakeside",
+  "coordinates": {
+    "latitude": 7.099332599999999,
+    "longitude": 79.96528239999999
+  },
+  "categories": [
+    "Banquet hall",
+    "Event venue",
+    "Hotel",
+    "Wedding venue"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "82/A Makewita Road, Thammita 11000",
+  "business_status": "OPEN"
+}

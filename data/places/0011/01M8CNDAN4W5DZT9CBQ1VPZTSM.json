@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDAN4W5DZT9CBQ1VPZTSM",
+  "name": "DFCC Bank - Akkaraipattu",
+  "coordinates": {
+    "latitude": 7.2181090999999995,
+    "longitude": 81.8491031
+  },
+  "categories": [
+    "Private sector bank",
+    "Currency exchange service",
+    "Money transfer service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "MBS Building, Ampara, Block 02 Road, Akkaraipattu 32400",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

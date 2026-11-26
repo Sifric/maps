@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6BJ2QKHKBHC6Z6DXPP",
+  "name": "Maaady Munch",
+  "coordinates": {
+    "latitude": 7.7148091,
+    "longitude": 81.714077
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "45, 7 Government Quarters Ln, Kallady 30000",
+  "business_status": "CLOSED_TEMPORARILY"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDEQGTVR2F4WY7EDWC9DX",
+  "name": "GG Hotel",
+  "coordinates": {
+    "latitude": 9.7427595,
+    "longitude": 80.009091
+  },
+  "categories": [
+    "Hostel",
+    "Guest house",
+    "Horse rental service",
+    "Hotel",
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Uduvil 40075",
+  "business_status": "OPEN"
+}

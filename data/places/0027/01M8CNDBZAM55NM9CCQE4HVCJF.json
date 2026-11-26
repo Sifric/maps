@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBZAM55NM9CCQE4HVCJF",
+  "name": "Afaas Tyre House",
+  "coordinates": {
+    "latitude": 7.6626802,
+    "longitude": 81.7405077
+  },
+  "categories": [
+    "Tire shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Colombo - Batticaloa Hwy, Colombo",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDDZMT14875N9BJDV15H4",
+  "name": "Pradeep Restaurant",
+  "coordinates": {
+    "latitude": 6.1897055,
+    "longitude": 80.1481767
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "B143",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDBYTEHKT3PGFMNW9DQA",
+  "name": "Ameena House",
+  "coordinates": {
+    "latitude": 7.683833,
+    "longitude": 81.729506
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "50 Fisheries Rd, Kattankudy",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9TMYCD0XDN63KD9RSX",
+  "name": "NEW BISMILLAH HOTEL",
+  "coordinates": {
+    "latitude": 7.775664,
+    "longitude": 81.6056503
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Eravur",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDDB19VZTX9MGQ27VSVD",
+  "name": "Mf Traders & Repairing",
+  "coordinates": {
+    "latitude": 7.774146699999999,
+    "longitude": 81.60768259999999
+  },
+  "categories": [
+    "Auto repair shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Eravur",
+  "business_status": "OPEN"
+}

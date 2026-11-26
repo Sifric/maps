@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCS74VN4BZQXG40HE7ZZ",
+  "name": "Seafood Terrase",
+  "coordinates": {
+    "latitude": 7.7175118,
+    "longitude": 81.71854119999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PP99+2C3, Road, Batticaloa",
+  "business_status": "CLOSED"
+}

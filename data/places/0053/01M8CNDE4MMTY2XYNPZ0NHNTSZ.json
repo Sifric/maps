@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDE4MMTY2XYNPZ0NHNTSZ",
+  "name": "Brine",
+  "coordinates": {
+    "latitude": 5.9657808999999995,
+    "longitude": 80.3781175
+  },
+  "categories": [
+    "Restaurant",
+    "Cocktail bar"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Eramudugahawatta, Goviyapana, Ahangama 20090",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5–10 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA49BDPY4NHNNR56X4VP",
+  "name": "Hot Max",
+  "coordinates": {
+    "latitude": 7.2215,
+    "longitude": 81.858052
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "51 Deens Road, Akkaraipattu 32400",
+  "business_status": "OPEN"
+}

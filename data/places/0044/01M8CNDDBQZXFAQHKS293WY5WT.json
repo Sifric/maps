@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDDBQZXFAQHKS293WY5WT",
+  "name": "Ariyaratnam Home",
+  "coordinates": {
+    "latitude": 7.6994975,
+    "longitude": 81.7131459
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "\n34 Anumar Rd, Batticaloa",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "34 Anumar Rd, Batticaloa"
+  ]
+}

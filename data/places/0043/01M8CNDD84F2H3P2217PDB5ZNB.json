@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD84F2H3P2217PDB5ZNB",
+  "name": "Rathnayaka transport",
+  "coordinates": {
+    "latitude": 7.9632990999999995,
+    "longitude": 81.3166933
+  },
+  "categories": [
+    "Transportation service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kadawath Maduwa",
+  "business_status": "OPEN"
+}

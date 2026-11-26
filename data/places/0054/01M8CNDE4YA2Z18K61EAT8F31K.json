@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDE4YA2Z18K61EAT8F31K",
+  "name": "Talent Bake Shop",
+  "coordinates": {
+    "latitude": 6.0360266,
+    "longitude": 80.3882544
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Talent bake shop, Galle road, Imaduwa",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6 AM–10:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

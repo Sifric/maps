@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC69WFYG7HFMHR8CP9MQ",
+  "name": "Fashion Hotel in Oddamavadi",
+  "coordinates": {
+    "latitude": 7.9176018,
+    "longitude": 81.51890279999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG99+2HR, Oddamavadi",
+  "business_status": "OPEN"
+}

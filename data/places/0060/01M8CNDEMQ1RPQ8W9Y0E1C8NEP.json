@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDEMQ1RPQ8W9Y0E1C8NEP",
+  "name": "Masala Chai Delicious",
+  "coordinates": {
+    "latitude": 9.6871261,
+    "longitude": 80.0200344
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "M2P9+PXC, Brown Road, Kokuvil East",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4:30–10:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4:30–10:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4:30–10:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4:30–10:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4:30–10:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4:30–10:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4:30–10:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

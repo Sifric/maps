@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDD8HAEB7ZZWJH3JR9D2V",
+  "name": "NPC Paper Mill",
+  "coordinates": {
+    "latitude": 7.926549499999999,
+    "longitude": 81.50416729999999
+  },
+  "categories": [
+    "Industrial building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

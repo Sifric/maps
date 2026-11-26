@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDFZ9D6YVJT59Q17RG5MN",
+  "name": "Ana Dental Care",
+  "coordinates": {
+    "latitude": 9.2315715,
+    "longitude": 80.8045829
+  },
+  "categories": [
+    "Dentist"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "Mullaitivu road, mansolai, Mulliyawalai 42000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4–8 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4–8 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4–8 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4–8 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4–8 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "3–8 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "9–11 AM",
+        "4–8 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

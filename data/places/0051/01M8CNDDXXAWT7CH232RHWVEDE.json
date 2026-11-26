@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDXXAWT7CH232RHWVEDE",
+  "name": "Madeena Beach Restaurant",
+  "coordinates": {
+    "latitude": 6.0325161,
+    "longitude": 80.23911389999999
+  },
+  "categories": [
+    "Sri Lankan restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "502 Matara Rd, Galle 80000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6 AM–1:15 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6 AM–1:15 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6 AM–1:15 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6 AM–1:15 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6 AM–1:15 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6 AM–1:15 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6 AM–1:15 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD82PNRW9GGJDT7W6YZ0",
+  "name": "S N cab sevis",
+  "coordinates": {
+    "latitude": 7.9770495,
+    "longitude": 81.29603209999999
+  },
+  "categories": [
+    "Transportation service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "X7GW+RC7, Ranaviru no 1 aselapura, Welikanda",
+  "business_status": "OPEN"
+}

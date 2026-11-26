@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDD6TGD64QQATY2N6CP42",
+  "name": "Pasikkudah Resort",
+  "coordinates": {
+    "latitude": 7.9213099,
+    "longitude": 81.5686035
+  },
+  "categories": [
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kalkudah",
+  "business_status": "OPEN"
+}

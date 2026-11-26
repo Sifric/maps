@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBZ3M3G123ANH4NXCWG",
+  "name": "Royal Pearl Guest House - Pasikuda, Kalkudah",
+  "coordinates": {
+    "latitude": 7.9194952999999995,
+    "longitude": 81.5673032
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Beach road, Kalkudah 30400",
+  "business_status": "OPEN"
+}

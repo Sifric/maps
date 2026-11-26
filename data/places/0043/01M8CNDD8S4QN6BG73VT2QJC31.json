@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD8S4QN6BG73VT2QJC31",
+  "name": "Netaji",
+  "coordinates": {
+    "latitude": 7.714236499999999,
+    "longitude": 81.71047039999999
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "125 New Kalmunai Rd, Kallady, Batticaloa",
+  "business_status": "OPEN"
+}

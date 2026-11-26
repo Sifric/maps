@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBQYZQW8N3H5W09ZN056",
+  "name": "Vidamsa book shop",
+  "coordinates": {
+    "latitude": 7.3092318999999994,
+    "longitude": 81.2272101
+  },
+  "categories": [
+    "Book store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Ekiriyankumbura",
+  "business_status": "OPEN"
+}

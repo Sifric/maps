@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAH4FZK4T72C386XGTEX",
+  "name": "Sri Sharavi Beach Villas & Spa",
+  "coordinates": {
+    "latitude": 5.9390262,
+    "longitude": 80.4873787
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "153 Km Post, Kamburugamuwa, Mirissa",
+  "business_status": "OPEN"
+}

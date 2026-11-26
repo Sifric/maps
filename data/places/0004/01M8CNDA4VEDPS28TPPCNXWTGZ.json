@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA4VEDPS28TPPCNXWTGZ",
+  "name": "Lagoon Restaurant",
+  "coordinates": {
+    "latitude": 6.850322299999999,
+    "longitude": 81.8305744
+  },
+  "categories": [
+    "Seafood restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "RRRM+F4C, Main street, Arugam Bay 32500",
+  "business_status": "OPEN"
+}

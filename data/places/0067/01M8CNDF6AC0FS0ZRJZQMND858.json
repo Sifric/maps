@@ -1,0 +1,29 @@
+{
+  "id": "01M8CNDF6AC0FS0ZRJZQMND858",
+  "name": "Click Travel Mate",
+  "coordinates": {
+    "latitude": 9.6665677,
+    "longitude": 80.02089409999999
+  },
+  "categories": [
+    "Tour agency",
+    "Bicycle rental service",
+    "Motorcycle rental agency",
+    "Scooter rental service",
+    "Sightseeing tour agency",
+    "Taxi service",
+    "Tour operator",
+    "Tourist information center",
+    "Travel agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "447 Stanley Rd, Jaffna 40000",
+  "business_status": "OPEN"
+}

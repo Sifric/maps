@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA3S8Y6A9TARS9ZBRF11",
+  "name": "Murugan Bake House",
+  "coordinates": {
+    "latitude": 7.8362832,
+    "longitude": 81.5500706
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "RHP2+G28, Thavapuram",
+  "business_status": "OPEN"
+}

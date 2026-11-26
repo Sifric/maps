@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD5BC2H08ZWT67AXJ02C",
+  "name": "Raajhee Phone Plaza",
+  "coordinates": {
+    "latitude": 7.434790899999999,
+    "longitude": 81.81272299999999
+  },
+  "categories": [
+    "Cell phone store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "299 Makkamadi Rd, Maruthamunai",
+  "business_status": "OPEN"
+}

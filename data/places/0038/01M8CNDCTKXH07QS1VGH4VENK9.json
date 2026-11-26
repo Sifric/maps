@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCTKXH07QS1VGH4VENK9",
+  "name": "Inojan home",
+  "coordinates": {
+    "latitude": 7.738196599999999,
+    "longitude": 81.67002
+  },
+  "categories": [
+    "Home audio store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "3 Kokuvil 1st Cross Rd, Batticaloa",
+  "business_status": "OPEN"
+}

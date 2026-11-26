@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDAAYDBRJNBRJX5ZVQD6X",
+  "name": "ONWAY supermarket",
+  "coordinates": {
+    "latitude": 7.2899107999999995,
+    "longitude": 81.8484131
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "2/1 Main St, Oluvil 01",
+  "business_status": "OPEN"
+}

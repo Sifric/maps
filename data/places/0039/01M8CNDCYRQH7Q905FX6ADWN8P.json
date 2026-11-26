@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCYRQH7Q905FX6ADWN8P",
+  "name": "Mishary Store",
+  "coordinates": {
+    "latitude": 7.7855117,
+    "longitude": 81.6120997
+  },
+  "categories": [
+    "Convenience store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJP6+6V6, Eravur",
+  "business_status": "OPEN"
+}

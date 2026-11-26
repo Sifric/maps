@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA3X5XCMQHM6XK0VBH0K",
+  "name": "Hotel Kit",
+  "coordinates": {
+    "latitude": 7.4130553,
+    "longitude": 81.8268753
+  },
+  "categories": [
+    "Sri Lankan restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "CR7G+6QC, Colombo - Batticaloa Hwy, Kalmunai 32300",
+  "business_status": "OPEN"
+}

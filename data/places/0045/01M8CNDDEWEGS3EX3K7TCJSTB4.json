@@ -1,0 +1,29 @@
+{
+  "id": "01M8CNDDEWEGS3EX3K7TCJSTB4",
+  "name": "Cutting Line Salon",
+  "coordinates": {
+    "latitude": 7.9442264,
+    "longitude": 79.8064635
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\nPuluthivayal",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "8–11:30 AM"
+      ]
+    }
+  ]
+}

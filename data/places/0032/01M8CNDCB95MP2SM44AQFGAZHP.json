@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCB95MP2SM44AQFGAZHP",
+  "name": "Mini mart",
+  "coordinates": {
+    "latitude": 7.6996120999999995,
+    "longitude": 81.7278066
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PP2H+2CF, Poonochimunai Rd, Kallady",
+  "business_status": "OPEN"
+}

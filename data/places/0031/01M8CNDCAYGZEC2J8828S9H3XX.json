@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCAYGZEC2J8828S9H3XX",
+  "name": "Three star bakery",
+  "coordinates": {
+    "latitude": 7.7779913999999994,
+    "longitude": 81.60130269999999
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "175 Trincomalee Hwy, Eravur",
+  "business_status": "CLOSED"
+}

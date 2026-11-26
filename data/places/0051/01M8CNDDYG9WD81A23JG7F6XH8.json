@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDDYG9WD81A23JG7F6XH8",
+  "name": "The Bakeland",
+  "coordinates": {
+    "latitude": 6.038021,
+    "longitude": 80.2099489
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "4 Mosque Ln, Galle 80000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4 AM–9 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

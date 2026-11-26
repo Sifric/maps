@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDF5XN2VD1WQNBMWYWXEF",
+  "name": "Sumi House",
+  "coordinates": {
+    "latitude": 9.654919399999999,
+    "longitude": 80.02411769999999
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "18 Mathews Rd, Jaffna",
+  "business_status": "OPEN"
+}

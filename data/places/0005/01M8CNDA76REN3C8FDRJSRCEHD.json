@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDA76REN3C8FDRJSRCEHD",
+  "name": "Natural Tea Shop",
+  "coordinates": {
+    "latitude": 7.5752615,
+    "longitude": 81.4310302
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "HCGJ+4C2, Tempitiya, junction",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4 AM–11 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

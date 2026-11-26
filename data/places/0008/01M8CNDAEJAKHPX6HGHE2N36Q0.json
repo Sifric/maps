@@ -1,0 +1,28 @@
+{
+  "id": "01M8CNDAEJAKHPX6HGHE2N36Q0",
+  "name": "Villa Wansha",
+  "coordinates": {
+    "latitude": 6.0935079,
+    "longitude": 80.1460201
+  },
+  "categories": [
+    "Villa",
+    "Bed & breakfast",
+    "Hotel",
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Rathgama",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "Palliyapitiya, Rathgama 70063"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBNX9PVVH4GN9FS36PGY",
+  "name": "S.k rent cars centre",
+  "coordinates": {
+    "latitude": 7.7306235,
+    "longitude": 81.6823172
+  },
+  "categories": [
+    "Car rental agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMJJ+6WW, Kali Kovil Rd, Batticaloa",
+  "business_status": "OPEN"
+}

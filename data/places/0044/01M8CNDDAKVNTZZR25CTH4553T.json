@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDAKVNTZZR25CTH4553T",
+  "name": "Smyrna Church battcaloa",
+  "coordinates": {
+    "latitude": 7.7500539999999996,
+    "longitude": 81.6763392
+  },
+  "categories": [
+    "Church"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "22, government housing scheme, Thiraimadu School Rd, Batticaloa",
+  "business_status": "OPEN"
+}

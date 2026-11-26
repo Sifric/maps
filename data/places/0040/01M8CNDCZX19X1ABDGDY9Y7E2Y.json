@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCZX19X1ABDGDY9Y7E2Y",
+  "name": "ASH House",
+  "coordinates": {
+    "latitude": 7.9036158,
+    "longitude": 81.521495
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG3C+FH, Oddamavadi",
+  "business_status": "OPEN"
+}

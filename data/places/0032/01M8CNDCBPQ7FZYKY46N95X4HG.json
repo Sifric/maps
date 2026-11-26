@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBPQ7FZYKY46N95X4HG",
+  "name": "புதுக்கடை",
+  "coordinates": {
+    "latitude": 7.7744221,
+    "longitude": 81.6094157
+  },
+  "categories": [
+    "Soup kitchen"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "197, Kayar Road, 1st Cross Ln, Eravur 30300",
+  "business_status": "OPEN"
+}

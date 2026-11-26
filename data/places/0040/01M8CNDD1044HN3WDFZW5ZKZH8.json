@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD1044HN3WDFZW5ZKZH8",
+  "name": "Western Union",
+  "coordinates": {
+    "latitude": 7.912779199999999,
+    "longitude": 81.52579829999999
+  },
+  "categories": [
+    "Money transfer service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Oddamavadi",
+  "business_status": "OPEN"
+}

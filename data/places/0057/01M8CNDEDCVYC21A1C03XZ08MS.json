@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEDCVYC21A1C03XZ08MS",
+  "name": "Sunset Fort Hotel",
+  "coordinates": {
+    "latitude": 6.0284445,
+    "longitude": 80.2153147
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "23 Middle St, Galle 80000",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDBT3F6HXG8NDBR9GS09",
+  "name": "My home",
+  "coordinates": {
+    "latitude": 7.703775299999999,
+    "longitude": 81.711877
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "11 Malaimahal Rd, Kallady",
+  "business_status": "OPEN"
+}

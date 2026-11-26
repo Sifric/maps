@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCKH8WH8NGCY7CKF7MYT",
+  "name": "Forest Office",
+  "coordinates": {
+    "latitude": 7.7164427,
+    "longitude": 81.7024898
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PP82+MXH, Batticaloa",
+  "business_status": "OPEN"
+}

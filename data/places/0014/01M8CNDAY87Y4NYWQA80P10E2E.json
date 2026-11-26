@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAY87Y4NYWQA80P10E2E",
+  "name": "Clinic Center",
+  "coordinates": {
+    "latitude": 7.4167407999999995,
+    "longitude": 81.7538493
+  },
+  "categories": [
+    "Community health center"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CQ83+MGX",
+  "business_status": "OPEN"
+}

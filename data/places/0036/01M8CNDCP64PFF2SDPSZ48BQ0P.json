@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCP64PFF2SDPSZ48BQ0P",
+  "name": "Noon Cosmetic",
+  "coordinates": {
+    "latitude": 7.6775018,
+    "longitude": 81.7312525
+  },
+  "categories": [
+    "Cosmetics wholesaler"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "6 Main St, Kattankudy",
+  "business_status": "OPEN"
+}

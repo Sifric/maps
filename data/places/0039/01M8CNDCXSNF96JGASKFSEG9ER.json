@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCXSNF96JGASKFSEG9ER",
+  "name": "New barakath service centre",
+  "coordinates": {
+    "latitude": 7.6734953,
+    "longitude": 81.72666009999999
+  },
+  "categories": [
+    "Car wash"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "South Boundary Road, Kattankudy 30100",
+  "business_status": "CLOSED_TEMPORARILY"
+}

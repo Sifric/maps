@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD92EM1XBYZ5F4CHT36R",
+  "name": "Aakif point",
+  "coordinates": {
+    "latitude": 8.1780482,
+    "longitude": 81.4339404
+  },
+  "categories": [
+    "Tourist attraction"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "5CHM+6H, Vakarai",
+  "business_status": "OPEN"
+}

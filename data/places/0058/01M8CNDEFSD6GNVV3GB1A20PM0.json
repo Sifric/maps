@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDEFSD6GNVV3GB1A20PM0",
+  "name": "Cinnamon Villa",
+  "coordinates": {
+    "latitude": 6.1609715,
+    "longitude": 80.11125129999999
+  },
+  "categories": [
+    "Villa",
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Hikkaduwa",
+  "business_status": "OPEN"
+}

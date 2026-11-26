@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDAFFMV1T1K2D7W09XWYK",
+  "name": "NT Home Stay",
+  "coordinates": {
+    "latitude": 5.9667862,
+    "longitude": 80.41096089999999
+  },
+  "categories": [
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Walliwala East",
+  "business_status": "OPEN"
+}

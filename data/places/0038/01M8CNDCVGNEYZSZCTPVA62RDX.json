@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCVGNEYZSZCTPVA62RDX",
+  "name": "Batticaloa Boarding",
+  "coordinates": {
+    "latitude": 7.7086473,
+    "longitude": 81.6872247
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "254/1/1 Hospital Rd, Batticaloa",
+  "business_status": "OPEN"
+}

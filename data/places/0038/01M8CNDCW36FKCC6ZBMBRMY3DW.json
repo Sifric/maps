@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCW36FKCC6ZBMBRMY3DW",
+  "name": "Dharul Wardha",
+  "coordinates": {
+    "latitude": 7.6818265,
+    "longitude": 81.7285259
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "2 Old Rd, Kattankudy",
+  "business_status": "OPEN"
+}

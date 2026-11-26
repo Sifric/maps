@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDDKJEBD6JF21JA83DMM1",
+  "name": "Egodage place",
+  "coordinates": {
+    "latitude": 6.2550881,
+    "longitude": 80.0544196
+  },
+  "categories": [
+    "Education center"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "7343+2QM, Ambalangoda",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12–6:30 AM",
+        "8:30 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8:30 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8:30 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8:30 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8:30 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8:30 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8:30 AM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

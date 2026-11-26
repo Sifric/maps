@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCN1QWGMACJVMBR8AJ56",
+  "name": "Thivya Store",
+  "coordinates": {
+    "latitude": 7.7890825999999995,
+    "longitude": 81.59544009999999
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QHQW+J5P, Chenkaladi 1",
+  "business_status": "OPEN"
+}

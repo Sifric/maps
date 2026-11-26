@@ -1,0 +1,72 @@
+{
+  "id": "01M8CNDE57NQY8VPDCDY8CAT9M",
+  "name": "Nagamma Restaurant",
+  "coordinates": {
+    "latitude": 9.8117453,
+    "longitude": 80.1648854
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "R567+MXR, Udupiddy",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6 AM–2 PM",
+        "4–6 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6 AM–2 PM",
+        "4–6 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6 AM–2 PM",
+        "4–6 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6 AM–2 PM",
+        "4 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12 AM–2 PM",
+        "4–6 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6 AM–2 PM",
+        "4–6 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6 AM–2 PM",
+        "4–6 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

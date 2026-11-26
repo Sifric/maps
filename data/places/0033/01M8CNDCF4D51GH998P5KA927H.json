@@ -1,0 +1,68 @@
+{
+  "id": "01M8CNDCF4D51GH998P5KA927H",
+  "name": "Dental Clinic Dr.Karunarathne",
+  "coordinates": {
+    "latitude": 6.989228499999999,
+    "longitude": 81.056968
+  },
+  "categories": [
+    "Dental clinic"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "16 King's Street, Badulla 90000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4–7 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4–7 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4–7 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4–7 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4–7 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "12–2 PM",
+        "4–7 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "10 AM–2 PM",
+        "4–7 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

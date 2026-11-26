@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD8247932264QK0MW26K",
+  "name": "Arsadi Clock Towr",
+  "coordinates": {
+    "latitude": 7.7203805999999995,
+    "longitude": 81.70123149999999
+  },
+  "categories": [
+    "Bus stop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Batticaloa",
+  "business_status": "OPEN"
+}

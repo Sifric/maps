@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCAZKQJAKVAGC7627RMC",
+  "name": "Happy Mart",
+  "coordinates": {
+    "latitude": 7.7818581,
+    "longitude": 81.6052251
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJJ4+P3X, Punnakuda Rd, Eravur",
+  "business_status": "OPEN"
+}

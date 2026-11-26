@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDA5881QY88Y9SW56Q3W9",
+  "name": "Bun maska chai",
+  "coordinates": {
+    "latitude": 7.2142538,
+    "longitude": 81.8551973
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "pottuvil road, akkaraipattu 32400",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "3 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "3 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "3 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "3 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "3 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "3 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "3 PM–1 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

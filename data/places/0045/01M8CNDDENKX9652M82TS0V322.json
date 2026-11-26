@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDENKX9652M82TS0V322",
+  "name": "K.G.S rent a car",
+  "coordinates": {
+    "latitude": 6.0509718,
+    "longitude": 80.736858
+  },
+  "categories": [
+    "Car rental agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "3P2P+9PQ, Chathrika, Aranwella road, Beliatta",
+  "business_status": "OPEN"
+}

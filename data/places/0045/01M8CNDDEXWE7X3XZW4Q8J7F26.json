@@ -1,0 +1,33 @@
+{
+  "id": "01M8CNDDEXWE7X3XZW4Q8J7F26",
+  "name": "PUTHA SALOON",
+  "coordinates": {
+    "latitude": 7.0193279,
+    "longitude": 81.2741753
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "279F+PM, Alanmulla",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "6 AM–8 PM"
+      ]
+    }
+  ],
+  "business_status": "CLOSED",
+  "alternate_addresses": [
+    "\n279F+PM, Alanmulla"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCRZ4EDA67CSD3DE157S",
+  "name": "Sampath Motors Vehicle Valuation Center",
+  "coordinates": {
+    "latitude": 7.720124599999999,
+    "longitude": 81.6968069
+  },
+  "categories": [
+    "Car inspection station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "532 Trincomalee-Batticaloa Rd, Batticaloa 30000",
+  "business_status": "OPEN"
+}

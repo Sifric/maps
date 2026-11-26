@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD9WS6S7WPDASH3Z9W03",
+  "name": "Ceyunco Insurance",
+  "coordinates": {
+    "latitude": 7.7213351999999995,
+    "longitude": 81.7032576
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Batticaloa",
+  "business_status": "OPEN"
+}

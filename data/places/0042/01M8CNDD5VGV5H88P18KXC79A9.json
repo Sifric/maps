@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD5VGV5H88P18KXC79A9",
+  "name": "EASY CAB AND TOURS-POLONNARUWA",
+  "coordinates": {
+    "latitude": 7.8953019,
+    "longitude": 81.1275368
+  },
+  "categories": [
+    "Taxi service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No.19, 1st Mile Post, Seelapura, Manampitiya 51090",
+  "business_status": "OPEN"
+}

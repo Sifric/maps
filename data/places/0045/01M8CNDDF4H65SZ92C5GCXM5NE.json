@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDDF4H65SZ92C5GCXM5NE",
+  "name": "Kess",
+  "coordinates": {
+    "latitude": 6.901926,
+    "longitude": 79.8583272
+  },
+  "categories": [
+    "Hairdresser"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\n80/1 Thurston Rd, Colombo 00300",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "9 AM–6 PM"
+      ]
+    }
+  ],
+  "business_status": "CLOSED"
+}

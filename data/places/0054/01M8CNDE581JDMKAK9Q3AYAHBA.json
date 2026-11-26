@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDE581JDMKAK9Q3AYAHBA",
+  "name": "Dinesh bakery",
+  "coordinates": {
+    "latitude": 9.7997033,
+    "longitude": 80.1983305
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Q5XX+V8P, Nelliady",
+  "business_status": "OPEN"
+}

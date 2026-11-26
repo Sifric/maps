@@ -1,0 +1,70 @@
+{
+  "id": "01M8CNDC8JVFEPEFFPEKR70T8Z",
+  "name": "The Liya Cafe & Restaurant",
+  "coordinates": {
+    "latitude": 7.7180579,
+    "longitude": 81.7088448
+  },
+  "categories": [
+    "Fast food restaurant",
+    "Hamburger restaurant",
+    "Indian restaurant",
+    "Sri Lankan restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Batticaloa Main Street Singing fish park complex Batticaloa kallady near kallady bridge Batticaloa, Kallady 30000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "12 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12 PM–1 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

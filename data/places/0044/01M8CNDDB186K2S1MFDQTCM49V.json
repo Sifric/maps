@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDB186K2S1MFDQTCM49V",
+  "name": "Beach Food Corner BFC Kallady",
+  "coordinates": {
+    "latitude": 7.7175389,
+    "longitude": 81.7185346
+  },
+  "categories": [
+    "Fast food restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Saravana Rd, Kallady",
+  "business_status": "CLOSED"
+}

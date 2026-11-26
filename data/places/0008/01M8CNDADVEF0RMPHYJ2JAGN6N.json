@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDADVEF0RMPHYJ2JAGN6N",
+  "name": "Nilanthi stores",
+  "coordinates": {
+    "latitude": 7.7679664,
+    "longitude": 81.1809028
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "Q59J+59J, Kirigalahena",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6 AM–10:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

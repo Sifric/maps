@@ -1,0 +1,68 @@
+{
+  "id": "01M8CNDC1TN6EQENAXQNAGBPQ9",
+  "name": "Wasantha Tyre Shop",
+  "coordinates": {
+    "latitude": 7.906105999999999,
+    "longitude": 81.1249046
+  },
+  "categories": [
+    "Tire shop",
+    "Car battery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "W44F+CXR, Batticaloa Junction, Maradankadawala-Habarana-Thirukkondaiadimadu Hwy, Manampitiya மன்னம்பிட்டி",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7 AM–7 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

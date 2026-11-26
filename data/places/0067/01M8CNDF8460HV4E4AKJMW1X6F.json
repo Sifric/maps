@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDF8460HV4E4AKJMW1X6F",
+  "name": "Clean Plus Total Auto Care - Horana",
+  "coordinates": {
+    "latitude": 6.720625399999999,
+    "longitude": 80.0470504
+  },
+  "categories": [
+    "Car wash"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "No. 493 Road, Horana",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7:30 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7:30 AM–7 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

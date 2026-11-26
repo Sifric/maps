@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDC4V34BDVNZC8XXTZ56",
+  "name": "Seal",
+  "coordinates": {
+    "latitude": 7.7128242,
+    "longitude": 81.692166
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "21 Buntings Ln, Batticaloa",
+  "business_status": "OPEN"
+}

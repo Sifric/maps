@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9DBTAMT97XHSVWFG25",
+  "name": "KFC Batticaloa",
+  "coordinates": {
+    "latitude": 7.712299,
+    "longitude": 81.6972562
+  },
+  "categories": [
+    "Chicken restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM7W+2RQ, 17 Central Road, Batticaloa 30100",
+  "business_status": "OPEN"
+}

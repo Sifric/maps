@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAE5DQXX3GQE7N9ZPJY6",
+  "name": "Malith Hotel Rooms",
+  "coordinates": {
+    "latitude": 7.420852,
+    "longitude": 81.82068939999999
+  },
+  "categories": [
+    "Inn"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CRCC+87W, Colombo - Batticaloa Hwy, Kalmunai 32300",
+  "business_status": "OPEN"
+}

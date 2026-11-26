@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDBFTSPTZGENPKG437SNG",
+  "name": "Public Toilet",
+  "coordinates": {
+    "latitude": 6.6627544,
+    "longitude": 80.3979569
+  },
+  "categories": [
+    "Public bathroom"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "M97W+6WM, Pansala asala, athoya, Ratnapura",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "M97X+454, Ethoya"
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDAAHW3MKDDWYJVXFJACF",
+  "name": "Chocowave",
+  "coordinates": {
+    "latitude": 6.8627673,
+    "longitude": 81.83693559999999
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "VR7P+4PF, Pottuvil",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6 PM–1 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

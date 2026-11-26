@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDA096ZDW0CWDCYR5CB83",
+  "name": "Lakshan Ice Cream",
+  "coordinates": {
+    "latitude": 6.4126002,
+    "longitude": 80.0814548
+  },
+  "categories": [
+    "Ice cream shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "C37J+2HW, Malliyawaththa junction, Ittapane",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12 AM–7:30 PM",
+        "8 PM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

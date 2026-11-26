@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDC6D44Y4CZF5PJH52BR1",
+  "name": "Captain Seafood Restaurant",
+  "coordinates": {
+    "latitude": 7.923247,
+    "longitude": 81.5638393
+  },
+  "categories": [
+    "Seafood restaurant",
+    "Delivery service",
+    "Tour operator",
+    "Tourist information center"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Coconut Cultivation Board Road, WHF7+8JJ Kalkudah Pasikuda, 30410",
+  "business_status": "CLOSED_TEMPORARILY"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD4FCZ57EHRP4PQKE8H3",
+  "name": "CEB Depot - Kiran",
+  "coordinates": {
+    "latitude": 7.8607406,
+    "longitude": 81.5397737
+  },
+  "categories": [
+    "Electric utility company"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Trincomalee-Batticaloa Rd",
+  "business_status": "OPEN"
+}

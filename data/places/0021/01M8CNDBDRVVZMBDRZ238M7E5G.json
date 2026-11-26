@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDBDRVVZMBDRZ238M7E5G",
+  "name": "S.S.N Tyre Service",
+  "coordinates": {
+    "latitude": 7.4160729,
+    "longitude": 81.81273159999999
+  },
+  "categories": [
+    "Auto repair shop",
+    "Tire shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CR87+C3H, Natpiddimunai Rd, Kalmunai",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD4RG3JFCXVDPKFNQ9KM",
+  "name": "Iqra Catering Colombo",
+  "coordinates": {
+    "latitude": 6.9415784,
+    "longitude": 79.8754628
+  },
+  "categories": [
+    "Biryani restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "387 Bodhirajarama Mawatha, Colombo 01000",
+  "business_status": "OPEN"
+}

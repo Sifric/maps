@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDA7GPMEGHWKDM0NQPQ60",
+  "name": "Serein Café",
+  "coordinates": {
+    "latitude": 6.7131824,
+    "longitude": 80.7866769
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Belihuloya 70140",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12:30–9:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12:30–9:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12:30–9:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12:30–9:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12:30–9:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "12:30–9:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12:30–9:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

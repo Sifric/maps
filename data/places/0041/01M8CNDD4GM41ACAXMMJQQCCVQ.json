@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD4GM41ACAXMMJQQCCVQ",
+  "name": "Jeweller & Pawner",
+  "coordinates": {
+    "latitude": 7.864152,
+    "longitude": 81.5383657
+  },
+  "categories": [
+    "Jeweler"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Trincomalee-Batticaloa Rd",
+  "business_status": "OPEN"
+}

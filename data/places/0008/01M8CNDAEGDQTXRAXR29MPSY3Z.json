@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAEGDQTXRAXR29MPSY3Z",
+  "name": "Taru Villas Maia Habarana",
+  "coordinates": {
+    "latitude": 8.042807,
+    "longitude": 80.743865
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kekirawa road Laksirigama, Habarana",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE8TCVCR5MW5KXQ9XF9S",
+  "name": "Liyanage Stores",
+  "coordinates": {
+    "latitude": 6.2638336,
+    "longitude": 80.2633032
+  },
+  "categories": [
+    "Asian grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Duwegoda, road, Manampita 80470",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–9:31 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–9:31 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–9:31 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–9:31 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7 AM–9:31 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–9:31 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7 AM–9:31 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCNKSN5HCW0MFR1T92QT",
+  "name": "Haya multy&home delivery",
+  "coordinates": {
+    "latitude": 7.9010245999999995,
+    "longitude": 81.5233444
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG2F+C85, Hospital Road, Oddamavadi",
+  "business_status": "OPEN"
+}

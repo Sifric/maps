@@ -1,0 +1,74 @@
+{
+  "id": "01M8CNDDVA3G655Y3PGQ1T4746",
+  "name": "Maya Food Court",
+  "coordinates": {
+    "latitude": 5.9779374999999995,
+    "longitude": 80.3511875
+  },
+  "categories": [
+    "Coffee shop",
+    "Asian restaurant",
+    "Cafe",
+    "Food court",
+    "Fast food restaurant",
+    "Malaysian restaurant",
+    "Pizza restaurant",
+    "Restaurant",
+    "Smoothie shop",
+    "Sri Lankan restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "X9H2+5F6 Galle Road A2, Kabalana Rd, Ahangama 80650",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "9 AM–10 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

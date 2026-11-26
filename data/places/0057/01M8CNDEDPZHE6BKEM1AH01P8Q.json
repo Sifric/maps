@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDEDPZHE6BKEM1AH01P8Q",
+  "name": "AB Villa",
+  "coordinates": {
+    "latitude": 6.1313184,
+    "longitude": 80.10575829999999
+  },
+  "categories": [
+    "Hotel",
+    "Bed & breakfast",
+    "Villa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Wewala, S.R Nanayakkara Road, Hikkaduwa 80240",
+  "business_status": "OPEN"
+}

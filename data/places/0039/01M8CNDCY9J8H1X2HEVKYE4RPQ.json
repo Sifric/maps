@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCY9J8H1X2HEVKYE4RPQ",
+  "name": "IRN Home",
+  "coordinates": {
+    "latitude": 7.774406399999999,
+    "longitude": 81.6042607
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJF3+QP6, Kathiyar Rd, Eravur",
+  "business_status": "OPEN"
+}

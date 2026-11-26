@@ -1,0 +1,72 @@
+{
+  "id": "01M8CNDA77Z8W9TX06VK4RS2ST",
+  "name": "KSS STORES",
+  "coordinates": {
+    "latitude": 7.098855299999999,
+    "longitude": 81.85153989999999
+  },
+  "categories": [
+    "Asian grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Old Post Office Road, Vinayagapuram",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–1:45 PM",
+        "4–7:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–1:45 PM",
+        "4–7:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–1:45 PM",
+        "4–7:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–1:45 PM",
+        "4–7:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–1:45 PM",
+        "4–7:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–1:45 PM",
+        "4–7:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8 AM–1:45 PM",
+        "4–7:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

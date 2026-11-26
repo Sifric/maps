@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAFGCYXV0TSY6H0JRSWX",
+  "name": "Dinu bro home",
+  "coordinates": {
+    "latitude": 7.5923985,
+    "longitude": 81.7420017
+  },
+  "categories": [
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Dinu St",
+  "business_status": "OPEN"
+}

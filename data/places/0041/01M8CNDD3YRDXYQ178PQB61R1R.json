@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD3YRDXYQ178PQB61R1R",
+  "name": "Naithan",
+  "coordinates": {
+    "latitude": 7.7188289999999995,
+    "longitude": 81.6996794
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "19 Bar Rd, Batticaloa",
+  "business_status": "OPEN"
+}

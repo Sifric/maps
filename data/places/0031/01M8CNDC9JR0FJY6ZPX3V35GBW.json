@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9JR0FJY6ZPX3V35GBW",
+  "name": "Cake Shop",
+  "coordinates": {
+    "latitude": 7.581666299999999,
+    "longitude": 81.74880759999999
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "HPJX+JGV, Ampilanthurai North",
+  "business_status": "OPEN"
+}

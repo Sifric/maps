@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCPS0MY47FF3KYZWBV21",
+  "name": "HANSY GARDEN",
+  "coordinates": {
+    "latitude": 7.752928,
+    "longitude": 81.68359799999999
+  },
+  "categories": [
+    "Park"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QM3M+443, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDF642KR8QB2668XJ7TXC",
+  "name": "Hatton National Bank ATM",
+  "coordinates": {
+    "latitude": 9.748814,
+    "longitude": 79.968876
+  },
+  "categories": [
+    "ATM"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "AB17",
+  "business_status": "OPEN"
+}

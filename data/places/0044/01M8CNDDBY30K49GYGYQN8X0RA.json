@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDBY30K49GYGYQN8X0RA",
+  "name": "Hafil's home",
+  "coordinates": {
+    "latitude": 7.686405499999999,
+    "longitude": 81.73878719999999
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "New, 11/16, Thaqwa Nager, Bus Depot, Road, Kattankudy 03",
+  "business_status": "OPEN"
+}

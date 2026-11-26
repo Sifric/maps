@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBQFVRQJTE7XTE10QTC2",
+  "name": "Mavadippalli",
+  "coordinates": {
+    "latitude": 7.3726793,
+    "longitude": 81.8212309
+  },
+  "categories": [
+    "Home builder"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "10b Central Rd, west",
+  "business_status": "OPEN"
+}

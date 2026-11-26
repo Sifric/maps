@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCNEMHWGRQT23AJW38VJ",
+  "name": "Shimry house",
+  "coordinates": {
+    "latitude": 7.9142085,
+    "longitude": 81.5214666
+  },
+  "categories": [
+    "Warehouse"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG7C+JHX, Seeni Podiyaar Rd, Oddamavadi",
+  "business_status": "OPEN"
+}

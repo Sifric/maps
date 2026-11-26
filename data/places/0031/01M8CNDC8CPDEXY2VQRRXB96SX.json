@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC8CPDEXY2VQRRXB96SX",
+  "name": "SM Fish Farm",
+  "coordinates": {
+    "latitude": 8.2043125,
+    "longitude": 81.4184375
+  },
+  "categories": [
+    "Fish farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "6C39+P9, Palchenai, Kathiraveli",
+  "business_status": "OPEN"
+}

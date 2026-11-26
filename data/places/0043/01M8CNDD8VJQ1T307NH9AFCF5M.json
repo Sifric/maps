@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD8VJQ1T307NH9AFCF5M",
+  "name": "Local/ Foreign Washrooms",
+  "coordinates": {
+    "latitude": 7.9407141999999995,
+    "longitude": 80.9997357
+  },
+  "categories": [
+    "Public bathroom"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WXRX+7WM, Polonnaruwa",
+  "business_status": "OPEN"
+}

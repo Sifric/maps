@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCDZPH2W971SPFQWXA7H",
+  "name": "NS medicare",
+  "coordinates": {
+    "latitude": 7.8288343,
+    "longitude": 81.5522874
+  },
+  "categories": [
+    "Medical clinic"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Trincomalee-Batticaloa Rd",
+  "business_status": "OPEN"
+}

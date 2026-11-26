@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAA1S4FBK20K7Y5RR2RP",
+  "name": "GreenBees Nature Farm",
+  "coordinates": {
+    "latitude": 7.4739039,
+    "longitude": 81.3733043
+  },
+  "categories": [
+    "Campground"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "https://www.google.lk/maps/@7.4584261,81.3645277,89m/data=!3m1!1e3?hl=en, 32070",
+  "business_status": "OPEN"
+}

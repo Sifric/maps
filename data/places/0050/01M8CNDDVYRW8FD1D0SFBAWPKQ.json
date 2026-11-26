@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDVYRW8FD1D0SFBAWPKQ",
+  "name": "Amaroo",
+  "coordinates": {
+    "latitude": 6.1258247,
+    "longitude": 80.1074083
+  },
+  "categories": [
+    "Hotel",
+    "Restaurant",
+    "Massage spa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "572 Galle Rd, Hikkaduwa 80240",
+  "business_status": "OPEN"
+}

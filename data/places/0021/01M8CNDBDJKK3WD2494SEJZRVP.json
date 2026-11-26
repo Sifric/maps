@@ -1,0 +1,20 @@
+{
+  "id": "01M8CNDBDJKK3WD2494SEJZRVP",
+  "name": "Maha Oya Bus Stop",
+  "coordinates": {
+    "latitude": 7.5321748,
+    "longitude": 81.3570726
+  },
+  "categories": [
+    "Bus stop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "Maha Oya",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE3WEJ92BB3HT1A9HQ8R",
+  "name": "S.H.A.C.K",
+  "coordinates": {
+    "latitude": 6.4170732,
+    "longitude": 79.9960833
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Near Chami villa Surf school, Ground Floor Main Road, Bentota, Galle 80500",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7–10 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

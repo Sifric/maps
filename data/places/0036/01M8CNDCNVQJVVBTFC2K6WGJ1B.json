@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCNVQJVVBTFC2K6WGJ1B",
+  "name": "Maruthi Rice Exporters",
+  "coordinates": {
+    "latitude": 7.7165783999999995,
+    "longitude": 81.6987839
+  },
+  "categories": [
+    "Rice wholesaler"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Batticaloa Batticaloa city, Batticaloa 30000",
+  "business_status": "OPEN"
+}

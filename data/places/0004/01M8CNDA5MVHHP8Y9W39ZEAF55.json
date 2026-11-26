@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA5MVHHP8Y9W39ZEAF55",
+  "name": "Sifan Hotel",
+  "coordinates": {
+    "latitude": 7.2375875,
+    "longitude": 81.78402
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Sambungar Rd",
+  "business_status": "OPEN"
+}

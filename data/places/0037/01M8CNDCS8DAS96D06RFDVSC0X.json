@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCS8DAS96D06RFDVSC0X",
+  "name": "Shakthi Super City",
+  "coordinates": {
+    "latitude": 7.6962475999999995,
+    "longitude": 81.6546039
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MMW3+FRX, Batticaloa",
+  "business_status": "OPEN"
+}

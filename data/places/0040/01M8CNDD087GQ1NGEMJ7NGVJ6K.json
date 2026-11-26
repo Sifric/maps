@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD087GQ1NGEMJ7NGVJ6K",
+  "name": "CEYPETCO MPCS Oddamavadi",
+  "coordinates": {
+    "latitude": 7.9100624999999996,
+    "longitude": 81.52489539999999
+  },
+  "categories": [
+    "Gas station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPCS Rd, Oddamavadi",
+  "business_status": "OPEN"
+}

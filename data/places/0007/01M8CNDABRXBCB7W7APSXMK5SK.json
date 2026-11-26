@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDABRXBCB7W7APSXMK5SK",
+  "name": "Grocery Corner",
+  "coordinates": {
+    "latitude": 6.0417781,
+    "longitude": 80.23320199999999
+  },
+  "categories": [
+    "Convenience store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "No : 10/1 Madawalwatta, Galle",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5 AM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

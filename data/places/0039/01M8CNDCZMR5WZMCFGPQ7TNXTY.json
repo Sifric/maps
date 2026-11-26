@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCZMR5WZMCFGPQ7TNXTY",
+  "name": "Akee's home",
+  "coordinates": {
+    "latitude": 7.774496699999999,
+    "longitude": 81.6093989
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "34c Kayar Rd, Eravur",
+  "business_status": "OPEN"
+}

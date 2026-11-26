@@ -1,0 +1,23 @@
+{
+  "id": "01M8CND9WK2C8Z6P3NKQWS6H33",
+  "name": "Magistrate's Courts of Sri Lanka",
+  "coordinates": {
+    "latitude": 7.4210566,
+    "longitude": 81.82571589999999
+  },
+  "categories": [
+    "Magistrates' court"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kalmunai 32300",
+  "business_status": "OPEN"
+}

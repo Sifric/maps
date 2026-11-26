@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCNXJG421H87KVKM6ZWF",
+  "name": "கேசகபூபதி பழக்கடை",
+  "coordinates": {
+    "latitude": 7.7249146,
+    "longitude": 81.6966911
+  },
+  "categories": [
+    "Fruits wholesaler"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "பிரதானவீதி, புதுக்குடியிருப்பு, Batticaloa",
+  "business_status": "OPEN"
+}

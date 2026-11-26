@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD6T9CPFJNFC1Z3TBPG6",
+  "name": "Happy Rest",
+  "coordinates": {
+    "latitude": 7.7235663,
+    "longitude": 81.6879532
+  },
+  "categories": [
+    "Resort hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kannaki Amman Kovil, 11th Cross, Poompugar, Batticaloa 30000",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC532EDJ7XNAPPWACQMP",
+  "name": "Public Library, Kiran",
+  "coordinates": {
+    "latitude": 7.8585579999999995,
+    "longitude": 81.5407228
+  },
+  "categories": [
+    "Library"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "VG5R+C7H, Korakallimadu",
+  "business_status": "OPEN"
+}

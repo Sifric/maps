@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDASEKWBSRBYP0KCMP3GE",
+  "name": "Faby's Distribution Centre - 05",
+  "coordinates": {
+    "latitude": 7.3893124,
+    "longitude": 81.8439605
+  },
+  "categories": [
+    "Spice wholesaler"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Al Zareef Mosque, Sainthamaruthu 32300",
+  "business_status": "OPEN"
+}

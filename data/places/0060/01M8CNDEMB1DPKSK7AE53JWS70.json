@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEMB1DPKSK7AE53JWS70",
+  "name": "89 Grocery & Cafe",
+  "coordinates": {
+    "latitude": 9.6557554,
+    "longitude": 80.02772639999999
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Old Park Rd, Jaffna 40000",
+  "business_status": "OPEN"
+}

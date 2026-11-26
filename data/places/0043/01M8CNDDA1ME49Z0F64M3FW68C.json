@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDA1ME49Z0F64M3FW68C",
+  "name": "Saju",
+  "coordinates": {
+    "latitude": 7.7121059999999995,
+    "longitude": 81.71093309999999
+  },
+  "categories": [
+    "Transportation service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PP66+R9V, kovil road, Kallady",
+  "business_status": "OPEN"
+}

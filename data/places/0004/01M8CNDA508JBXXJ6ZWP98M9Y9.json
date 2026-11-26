@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA508JBXXJ6ZWP98M9Y9",
+  "name": "Food Hut",
+  "coordinates": {
+    "latitude": 6.863212099999999,
+    "longitude": 81.83296299999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "VR7M+75P, Pottuvil",
+  "business_status": "CLOSED"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDEVQ2Y1M1CACDXQZMWRG",
+  "name": "Sri Shirdi Transport",
+  "coordinates": {
+    "latitude": 9.6745548,
+    "longitude": 80.0407496
+  },
+  "categories": [
+    "Transportation service",
+    "Construction material wholesaler",
+    "Contractor"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "35 Rani road, Jaffna 40000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBBFKJKBCYAR39YNJK2",
+  "name": "FOREIGN PLAZA",
+  "coordinates": {
+    "latitude": 7.6831211999999995,
+    "longitude": 81.7245937
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPMF+6RW, Ash Shaheed Ahamed Lebbe Rd, Kattankudy",
+  "business_status": "OPEN"
+}

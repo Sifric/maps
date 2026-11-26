@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDGRWRY1RZ96EN68J1A2",
+  "name": "Yuki chemical shop",
+  "coordinates": {
+    "latitude": 7.9093010999999995,
+    "longitude": 81.5301574
+  },
+  "categories": [
+    "Shopping mall"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG5J+P3F, Mavadichenai",
+  "business_status": "OPEN"
+}

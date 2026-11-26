@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDB29RP38ZE5CXH9THH4S",
+  "name": "Sarah’s Garden",
+  "coordinates": {
+    "latitude": 7.4353099,
+    "longitude": 81.8229501
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CRPF+45G, Mashoor Moulana Rd, Maruthamunai",
+  "business_status": "OPEN"
+}

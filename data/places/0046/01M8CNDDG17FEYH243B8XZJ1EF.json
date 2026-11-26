@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDG17FEYH243B8XZJ1EF",
+  "name": "Sathi store",
+  "coordinates": {
+    "latitude": 7.4372212,
+    "longitude": 81.7215587
+  },
+  "categories": [
+    "Home goods store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "11/30 Annamalai",
+  "business_status": "OPEN"
+}

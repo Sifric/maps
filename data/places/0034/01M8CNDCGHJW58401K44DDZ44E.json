@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCGHJW58401K44DDZ44E",
+  "name": "Salamath mosque",
+  "coordinates": {
+    "latitude": 7.6757618,
+    "longitude": 81.73382959999999
+  },
+  "categories": [
+    "Mosque"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "92/7 Fareenas Rd, Kattankudy",
+  "business_status": "OPEN"
+}

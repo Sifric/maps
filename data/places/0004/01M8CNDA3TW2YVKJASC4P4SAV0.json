@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA3TW2YVKJASC4P4SAV0",
+  "name": "HOT BREAD BAKE HOUSE",
+  "coordinates": {
+    "latitude": 7.7834761,
+    "longitude": 81.6057502
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJM4+98R, Punnakuda Rd, Eravur",
+  "business_status": "OPEN"
+}

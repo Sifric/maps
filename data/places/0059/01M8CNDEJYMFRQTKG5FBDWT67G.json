@@ -1,0 +1,71 @@
+{
+  "id": "01M8CNDEJYMFRQTKG5FBDWT67G",
+  "name": "Amma Vegetarian Restaurant",
+  "coordinates": {
+    "latitude": 9.824178999999999,
+    "longitude": 80.166405
+  },
+  "categories": [
+    "Vegetarian restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "R5G8+464, Valvettithurai",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:30–11 AM",
+        "5–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:30–11 AM",
+        "5–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:30–11 AM",
+        "5–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:30–11 AM",
+        "5–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:30–11 AM",
+        "5–9 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6:30–11 AM",
+        "5–9 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBJ8T2SK1NC0SFJC84B",
+  "name": "Vithushan Restaurant",
+  "coordinates": {
+    "latitude": 7.6996818,
+    "longitude": 81.6807323
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Boundary Rd 3rd Cross, Batticaloa",
+  "business_status": "OPEN"
+}

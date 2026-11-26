@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE1B85EM7XDVYFAHE9R5",
+  "name": "Ruhunu hotel",
+  "coordinates": {
+    "latitude": 6.3408709,
+    "longitude": 80.2231832
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "No. 7 Main Street, Pitigala 80420",
+  "business_status": "OPEN"
+}

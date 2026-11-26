@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCAW45MENVVBE409CCDR",
+  "name": "Nadha Stores",
+  "coordinates": {
+    "latitude": 7.6842089,
+    "longitude": 81.7228007
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPMF+M4M, Kattankudy",
+  "business_status": "OPEN"
+}

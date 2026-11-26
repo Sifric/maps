@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDC2G91R3QD0Z2KB7YV1",
+  "name": "Thanu house",
+  "coordinates": {
+    "latitude": 7.7413291,
+    "longitude": 81.68483719999999
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMRM+GWP, Ambroos Rd, Batticaloa",
+  "business_status": "OPEN"
+}

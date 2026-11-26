@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDBHXSSZPH1NER0F8GMB5",
+  "name": "HNH Fashion Gallery",
+  "coordinates": {
+    "latitude": 7.363944399999999,
+    "longitude": 81.8014511
+  },
+  "categories": [
+    "Tailor",
+    "Clothing alteration service",
+    "Dress store",
+    "Women's clothing store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kal, 3rd street, Sammanthurai 32200",
+  "business_status": "OPEN"
+}

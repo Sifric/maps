@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBZVAP8NT0AZJ655026",
+  "name": "Nirmaa Shadow Inn",
+  "coordinates": {
+    "latitude": 7.9049727999999995,
+    "longitude": 81.5626896
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WH37+X3P, Fisheries Road, Kumburumoolai Road, Kalkudah 30410",
+  "business_status": "OPEN"
+}

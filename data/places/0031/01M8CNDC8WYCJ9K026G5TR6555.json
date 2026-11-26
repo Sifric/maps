@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC8WYCJ9K026G5TR6555",
+  "name": "Manz Store",
+  "coordinates": {
+    "latitude": 7.6922761,
+    "longitude": 81.72946309999999
+  },
+  "categories": [
+    "Frozen food store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Haja Lane Infront Open Centere, Kattankudy 30100",
+  "business_status": "OPEN"
+}

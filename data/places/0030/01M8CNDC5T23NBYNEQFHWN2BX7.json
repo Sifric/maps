@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDC5T23NBYNEQFHWN2BX7",
+  "name": "Mr.Falafel",
+  "coordinates": {
+    "latitude": 7.6828797,
+    "longitude": 81.7345376
+  },
+  "categories": [
+    "Falafel restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPPH+G2R, Dr Badhiudeen Mahmood Mawatha, Kattankudy 30100",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5 PM–12:30 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5–11:38 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5–11:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5–11:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5:30–11:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5–11:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5–11:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

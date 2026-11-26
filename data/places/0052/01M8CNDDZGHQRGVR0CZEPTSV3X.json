@@ -1,0 +1,27 @@
+{
+  "id": "01M8CNDDZGHQRGVR0CZEPTSV3X",
+  "name": "Joe's Kitchen Family Restaurant",
+  "coordinates": {
+    "latitude": 6.1268503999999995,
+    "longitude": 80.10594809999999
+  },
+  "categories": [
+    "Restaurant",
+    "Chinese restaurant",
+    "Family restaurant",
+    "Fast food restaurant",
+    "Health food restaurant",
+    "Seafood restaurant",
+    "Vegan restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "A2, Hikkaduwa",
+  "business_status": "CLOSED_TEMPORARILY"
+}

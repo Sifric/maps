@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDE24C4T4TANSZKMY04HP",
+  "name": "Thinesh Bake House",
+  "coordinates": {
+    "latitude": 9.6608483,
+    "longitude": 80.1661804
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "A9, Chavakachcheri",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:30–9 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:30–9 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:30–9 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:30–9 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:30–9 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:30–9 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6:30–9 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

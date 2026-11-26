@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCCNDR02VAW60E6V8JNS",
+  "name": "Aarush rooms",
+  "coordinates": {
+    "latitude": 7.714849,
+    "longitude": 81.696321
+  },
+  "categories": [
+    "Villa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "23 Munai St, Batticaloa",
+  "business_status": "OPEN"
+}

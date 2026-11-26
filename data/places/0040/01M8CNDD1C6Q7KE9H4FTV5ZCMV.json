@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD1C6Q7KE9H4FTV5ZCMV",
+  "name": "Ilyas Auto Parking Area",
+  "coordinates": {
+    "latitude": 7.9182019,
+    "longitude": 81.5244809
+  },
+  "categories": [
+    "Transportation service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG9F+7QQ, bukary, Alim Road, Oddamavadi",
+  "business_status": "OPEN"
+}

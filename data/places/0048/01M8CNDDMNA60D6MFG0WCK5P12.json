@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDMNA60D6MFG0WCK5P12",
+  "name": "Oceanbrothers",
+  "coordinates": {
+    "latitude": 6.1279926,
+    "longitude": 80.1128555
+  },
+  "categories": [
+    "Surf school"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Narigama",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:30 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:30 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4:30 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:30 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7:30 AM–7 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCD157TEN81VD294153E",
+  "name": "Xavier's Cottage",
+  "coordinates": {
+    "latitude": 6.9771449,
+    "longitude": 80.76554999999999
+  },
+  "categories": [
+    "Villa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No. 10,, Lady Mccollum Drive, Nuwara Eliya 22200",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAEYRJX0CGFHB8YN5M5B",
+  "name": "sukoon beach villa",
+  "coordinates": {
+    "latitude": 7.6813401,
+    "longitude": 81.7425078
+  },
+  "categories": [
+    "Holiday apartment rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Sukoon beach villa (Marine Drive) kattankudy Kattankudy, beach 30100",
+  "business_status": "OPEN"
+}

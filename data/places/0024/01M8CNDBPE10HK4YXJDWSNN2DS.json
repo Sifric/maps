@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBPE10HK4YXJDWSNN2DS",
+  "name": "Electric Vehicle Charging Station",
+  "coordinates": {
+    "latitude": 7.0510595,
+    "longitude": 80.5247423
+  },
+  "categories": [
+    "Electric vehicle charging station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "3G2F+CVH, Nawalapitiya - Ginigathena Rd, Nawalapitiya",
+  "business_status": "OPEN"
+}

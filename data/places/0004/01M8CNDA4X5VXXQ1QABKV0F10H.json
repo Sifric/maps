@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDA4X5VXXQ1QABKV0F10H",
+  "name": "Pottuvil town",
+  "coordinates": {
+    "latitude": 6.8633982,
+    "longitude": 81.8305925
+  },
+  "categories": [
+    "Chicken shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "VR7J+964, Main Street, Pottuvil",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–4:01 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7–11:45 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–3:15 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8:15 AM–3 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

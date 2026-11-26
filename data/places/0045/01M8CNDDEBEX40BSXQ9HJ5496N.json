@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDDEBEX40BSXQ9HJ5496N",
+  "name": "Beli laundry",
+  "coordinates": {
+    "latitude": 5.9630773,
+    "longitude": 80.7140854
+  },
+  "categories": [
+    "Laundry"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "XP77+6F6, Nilwella",
+  "business_status": "OPEN"
+}

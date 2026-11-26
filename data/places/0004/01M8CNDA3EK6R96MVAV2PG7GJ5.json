@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDA3EK6R96MVAV2PG7GJ5",
+  "name": "Nifras Hotel",
+  "coordinates": {
+    "latitude": 7.3509568,
+    "longitude": 81.8458687
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "9R2W+98Q, Colombo - Ratnapura - Wellawaya - Batticaloa Rd, Nintavur",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5:30 AM–2 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5:30 AM–2 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5:30 AM–2 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5:30 AM–2 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5:30–11:30 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5:30 AM–2 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5:30 AM–2 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

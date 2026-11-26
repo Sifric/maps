@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCDGFX1W4B76W3FCJ964",
+  "name": "Prashanth Hospital Information Center",
+  "coordinates": {
+    "latitude": 7.721234099999999,
+    "longitude": 81.7026188
+  },
+  "categories": [
+    "Fertility clinic"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PPC3+F2X, Baily Rd, Batticaloa",
+  "business_status": "OPEN"
+}

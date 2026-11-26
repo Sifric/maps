@@ -1,0 +1,71 @@
+{
+  "id": "01M8CNDE7PAXN6PJ2VJ96C8TNS",
+  "name": "FIRA Food Cafe",
+  "coordinates": {
+    "latitude": 6.0363967,
+    "longitude": 80.2427213
+  },
+  "categories": [
+    "Fast food restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Mosque road, Galle",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:30–11 AM",
+        "4–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:30–11 AM",
+        "4–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:30–11 AM",
+        "4–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:30–11 AM",
+        "4–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:30–11 AM",
+        "4–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6:30–11 AM",
+        "4–10 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

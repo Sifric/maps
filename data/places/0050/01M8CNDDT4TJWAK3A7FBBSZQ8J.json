@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDDT4TJWAK3A7FBBSZQ8J",
+  "name": "Tea Zone Ceylon",
+  "coordinates": {
+    "latitude": 6.0392892,
+    "longitude": 80.2036643
+  },
+  "categories": [
+    "Coffee shop",
+    "Tea store",
+    "Stores and shopping",
+    "Spice store",
+    "Tea house"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "178 Galle - Colombo Rd, Galle",
+  "business_status": "CLOSED_TEMPORARILY"
+}

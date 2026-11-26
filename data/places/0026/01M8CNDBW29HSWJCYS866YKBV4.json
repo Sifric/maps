@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBW29HSWJCYS866YKBV4",
+  "name": "Pharmacy Thasmira Pharmaceuticals",
+  "coordinates": {
+    "latitude": 7.2919089999999995,
+    "longitude": 81.6815853
+  },
+  "categories": [
+    "Pharmacy"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Ampara",
+  "business_status": "OPEN"
+}

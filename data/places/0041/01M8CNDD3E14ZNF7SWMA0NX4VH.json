@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD3E14ZNF7SWMA0NX4VH",
+  "name": "Puthukkudiyiruppu Beach",
+  "coordinates": {
+    "latitude": 7.6403772,
+    "longitude": 81.7674918
+  },
+  "categories": [
+    "Beach"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "01M8CNDDY9FPWXY78NQN2HKZ9Y",
+  "name": "Blooming Breakfast Resto Bar & Cafe",
+  "coordinates": {
+    "latitude": 6.902372,
+    "longitude": 79.8694816
+  },
+  "categories": [
+    "Cafe",
+    "Breakfast restaurant",
+    "Wine bar"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "No.30, Arcade Independence Square, Bauddhaloka Mawatha",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12–3 AM",
+        "6 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12–2 AM",
+        "6 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12–2 AM",
+        "6 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12–2 AM",
+        "6 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12–2 AM",
+        "6 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Open 24 hours"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

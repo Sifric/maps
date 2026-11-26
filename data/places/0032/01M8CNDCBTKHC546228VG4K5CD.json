@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBTKHC546228VG4K5CD",
+  "name": "Deemah Beach Rest Inn",
+  "coordinates": {
+    "latitude": 7.7209124,
+    "longitude": 81.71373779999999
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "28, 3rd Cross Street Tiruchenthur, Kallady, Batticaloa 30000",
+  "business_status": "OPEN"
+}

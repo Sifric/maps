@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBE9JETC7PS2WZ4BNGNT",
+  "name": "Electric Vehicle Charging Station",
+  "coordinates": {
+    "latitude": 6.9184011,
+    "longitude": 81.55830519999999
+  },
+  "categories": [
+    "Electric vehicle charging station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Ampara, road, Siyambalanduwa 91030",
+  "business_status": "OPEN"
+}

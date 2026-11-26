@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC70D9BJDJ9PBPQ37PYH",
+  "name": "Konesh bakery",
+  "coordinates": {
+    "latitude": 7.7300331,
+    "longitude": 81.6850015
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "7/9 kali kovil Road, periya, Batticaloa",
+  "business_status": "OPEN"
+}

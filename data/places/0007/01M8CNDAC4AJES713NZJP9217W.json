@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDAC4AJES713NZJP9217W",
+  "name": "Shalomi Shopping Center",
+  "coordinates": {
+    "latitude": 7.4422831,
+    "longitude": 81.7989558
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "CQRX+WH, Thuraineelavanai",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–10:02 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–10:02 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–10:02 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–10:02 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7 AM–10:02 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–10:02 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7 AM–10:02 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

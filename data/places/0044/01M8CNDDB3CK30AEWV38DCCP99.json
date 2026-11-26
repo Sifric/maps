@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDB3CK30AEWV38DCCP99",
+  "name": "Sanjevii Hospital",
+  "coordinates": {
+    "latitude": 7.707491699999999,
+    "longitude": 81.7133051
+  },
+  "categories": [
+    "Hospital"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "199 Colombo - Batticaloa Hwy, Kallady",
+  "business_status": "CLOSED"
+}

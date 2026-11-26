@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD76WSCSRNH4CTVKKYEC",
+  "name": "ASIA VISION",
+  "coordinates": {
+    "latitude": 6.9549777,
+    "longitude": 80.9249178
+  },
+  "categories": [
+    "Optician"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Lunuwatte",
+  "business_status": "OPEN"
+}

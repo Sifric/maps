@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE4F9YZC6EY69QT0G06W",
+  "name": "Taste Of Home!",
+  "coordinates": {
+    "latitude": 6.0914440999999995,
+    "longitude": 80.2398822
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Castle Hills, 80000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12–6 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12–6 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12–6 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12–6 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12–6 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12–6 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

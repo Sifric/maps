@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBVZJ0MEXP04TGNNCQX9",
+  "name": "Apshara Pharmacy",
+  "coordinates": {
+    "latitude": 7.392406899999999,
+    "longitude": 81.8352884
+  },
+  "categories": [
+    "Pharmacy"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Main street, Sainthamaruthu 32300",
+  "business_status": "OPEN"
+}

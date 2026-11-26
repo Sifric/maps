@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA7XEB3K859GJWVKBRG8",
+  "name": "Jeeva Restaurant",
+  "coordinates": {
+    "latitude": 7.6963402,
+    "longitude": 81.654854
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Karaveddy, Manmunai West",
+  "business_status": "OPEN"
+}

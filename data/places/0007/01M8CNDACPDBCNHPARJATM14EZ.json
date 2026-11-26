@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDACPDBCNHPARJATM14EZ",
+  "name": "Cafe Italia",
+  "coordinates": {
+    "latitude": 6.8763277,
+    "longitude": 81.8293357
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Main Street, Pottuvil",
+  "business_status": "CLOSED"
+}

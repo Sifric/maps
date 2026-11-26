@@ -1,0 +1,79 @@
+{
+  "id": "01M8CNDE3TYKYS6BBK6ECGJQ85",
+  "name": "Breeze Restaurant at Thaala Bentota",
+  "coordinates": {
+    "latitude": 6.4238512,
+    "longitude": 79.99615949999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "No. 20 Hotel Road, Bentota 80500",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7–10 AM",
+        "12:30–3 PM",
+        "7–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7–10 AM",
+        "12:30–3 PM",
+        "7–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7–10 AM",
+        "12:30–3 PM",
+        "7–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7–10 AM",
+        "12:30–3 PM",
+        "7–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7–10 AM",
+        "12:30–3 PM",
+        "7–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7–10 AM",
+        "12:30–3 PM",
+        "7–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7–10 AM",
+        "12:30–3 PM",
+        "7–10 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

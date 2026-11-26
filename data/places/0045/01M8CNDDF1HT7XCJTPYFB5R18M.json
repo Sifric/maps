@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDDF1HT7XCJTPYFB5R18M",
+  "name": "Salon Amiya✂️",
+  "coordinates": {
+    "latitude": 6.8913649,
+    "longitude": 81.237239
+  },
+  "categories": [
+    "Hair salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\nKiramanaberaliya, Badalkumbura - Buttala - Sella Kataragama Rd, Badalkumbura",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "9:30 AM–6:30 PM"
+      ]
+    }
+  ],
+  "business_status": "CLOSED"
+}

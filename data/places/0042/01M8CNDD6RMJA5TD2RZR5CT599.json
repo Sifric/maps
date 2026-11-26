@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD6RMJA5TD2RZR5CT599",
+  "name": "Dubai Cafeteria",
+  "coordinates": {
+    "latitude": 7.9685603,
+    "longitude": 81.3393763
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "X89Q+CQC, Rideethanna Main Rd, Kayankerni",
+  "business_status": "OPEN"
+}

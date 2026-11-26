@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCCMXAXAWJ93EZ6YW39R",
+  "name": "SM Beach House",
+  "coordinates": {
+    "latitude": 7.6837838,
+    "longitude": 81.7406749
+  },
+  "categories": [
+    "Villa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPMR+MC4, Anver Masjith St, Kattankudy",
+  "business_status": "OPEN"
+}

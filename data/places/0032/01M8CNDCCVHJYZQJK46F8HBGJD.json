@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCCVHJYZQJK46F8HBGJD",
+  "name": "Hussaina’s Villa",
+  "coordinates": {
+    "latitude": 7.6782799,
+    "longitude": 81.7229344
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "100 Central Rd, Kattankudy 03",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCNV0CG5ZHB1RM56KDWV",
+  "name": "Spica enterprises",
+  "coordinates": {
+    "latitude": 7.7213747999999995,
+    "longitude": 81.70075949999999
+  },
+  "categories": [
+    "Wholesaler"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "12 Bar Rd - Batticaloa, Batticaloa",
+  "business_status": "OPEN"
+}

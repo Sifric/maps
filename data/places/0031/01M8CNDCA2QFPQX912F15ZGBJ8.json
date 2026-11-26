@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCA2QFPQX912F15ZGBJ8",
+  "name": "Social Food City VCH",
+  "coordinates": {
+    "latitude": 7.9168501,
+    "longitude": 81.5418073
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG8R+PPV, 6th Cross Rd, Kalkudah",
+  "business_status": "OPEN"
+}

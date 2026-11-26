@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBXS63BAMZ6YZV032S7",
+  "name": "Amanda Beach Resort",
+  "coordinates": {
+    "latitude": 7.9197788,
+    "longitude": 81.5700964
+  },
+  "categories": [
+    "Resort hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WH9C+W29, Kalkudah-Valaichchenai Rd, Kalkudah",
+  "business_status": "OPEN"
+}

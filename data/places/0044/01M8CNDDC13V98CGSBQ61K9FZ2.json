@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDC13V98CGSBQ61K9FZ2",
+  "name": "Kokulan",
+  "coordinates": {
+    "latitude": 7.5373206999999995,
+    "longitude": 81.7888251
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kaluthawalai 4",
+  "business_status": "OPEN"
+}

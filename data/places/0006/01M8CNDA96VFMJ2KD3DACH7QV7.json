@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA96VFMJ2KD3DACH7QV7",
+  "name": "DK Food Lab",
+  "coordinates": {
+    "latitude": 7.2966855,
+    "longitude": 81.68582529999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "18 Saddhatissa Mawatha, Ampara",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD7TXTS7X96JEF5XHRWF",
+  "name": "Vehicle Service Garage",
+  "coordinates": {
+    "latitude": 8.832621399999999,
+    "longitude": 79.964877
+  },
+  "categories": [
+    "Mechanic"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "RXM7+2XR, Moddaikadai",
+  "business_status": "OPEN"
+}

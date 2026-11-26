@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCER8BS64P40633HTFZW",
+  "name": "PHI",
+  "coordinates": {
+    "latitude": 7.6656394,
+    "longitude": 81.7378957
+  },
+  "categories": [
+    "Public health department"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "84/1 Main St, Kattankudy 30150",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEQQ2GP7TFZ8JQBXDEWR",
+  "name": "Sarah's Guest House",
+  "coordinates": {
+    "latitude": 5.963067,
+    "longitude": 80.39631899999999
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "200 A2, 80650",
+  "business_status": "OPEN"
+}

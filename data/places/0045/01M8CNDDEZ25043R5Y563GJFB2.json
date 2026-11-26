@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDDEZ25043R5Y563GJFB2",
+  "name": "Hair way unisex salon",
+  "coordinates": {
+    "latitude": 6.0897855,
+    "longitude": 80.4761046
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\nAmalagoda, Akuressa 80000",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "Open 24 hours"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

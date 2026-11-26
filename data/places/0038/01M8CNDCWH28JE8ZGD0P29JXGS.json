@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCWH28JE8ZGD0P29JXGS",
+  "name": "Ummi's kitchen",
+  "coordinates": {
+    "latitude": 7.6863478,
+    "longitude": 81.7398954
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Beach road, beach round about, Infront of litro gas company, near beach rounde, 30100",
+  "business_status": "CLOSED"
+}

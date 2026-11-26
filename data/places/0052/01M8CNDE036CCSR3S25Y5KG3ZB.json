@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE036CCSR3S25Y5KG3ZB",
+  "name": "BK RESTAURANT 2",
+  "coordinates": {
+    "latitude": 6.1836008,
+    "longitude": 80.0720394
+  },
+  "categories": [
+    "Chinese restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Junction, NO 20/A,Kahawa, Galle Rd, Kahawa",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "11 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "11 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "11 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "11–11:30 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "11 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "11 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "11 AM–11:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

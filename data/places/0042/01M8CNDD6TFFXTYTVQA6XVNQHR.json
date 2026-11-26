@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD6TFFXTYTVQA6XVNQHR",
+  "name": "EAST WIND RESORTS, Panichchankerni",
+  "coordinates": {
+    "latitude": 8.1094591,
+    "longitude": 81.4557761
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Challimunaipoomi, Panichchankerni",
+  "business_status": "OPEN"
+}

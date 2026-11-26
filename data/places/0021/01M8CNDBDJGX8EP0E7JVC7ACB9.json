@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBDJGX8EP0E7JVC7ACB9",
+  "name": "Three wheel Park",
+  "coordinates": {
+    "latitude": 7.4941591,
+    "longitude": 81.6339752
+  },
+  "categories": [
+    "Public parking space"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "FJVM+MH9",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDC5KVPHQPZ99MEK31BHR",
+  "name": "Batticaloa Dutch Fort",
+  "coordinates": {
+    "latitude": 7.7118126,
+    "longitude": 81.702124
+  },
+  "categories": [
+    "Fortress",
+    "Park",
+    "Tourist attraction"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PP62+PRH, Fort Road, Batticaloa",
+  "business_status": "OPEN"
+}

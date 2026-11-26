@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAGTHHH91ZSV2NXXHRG6",
+  "name": "HK Villas",
+  "coordinates": {
+    "latitude": 7.408861,
+    "longitude": 81.8398709
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CR5Q+GWX, Kalmunai 32300",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDE07XMCHQYEYZ4K1GWWB",
+  "name": "Bara Beach",
+  "coordinates": {
+    "latitude": 6.0668131999999995,
+    "longitude": 80.16966219999999
+  },
+  "categories": [
+    "Bar",
+    "Restaurant",
+    "Hostel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "A2, Boossa 80270",
+  "business_status": "OPEN"
+}

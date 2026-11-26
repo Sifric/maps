@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDDXVPHG3JNQMP4N0MA8K",
+  "name": "Gimhan Restaurant",
+  "coordinates": {
+    "latitude": 6.1652134,
+    "longitude": 80.0901931
+  },
+  "categories": [
+    "Family restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "538R+33P, Gimhan restaurant, Galle road, Pareliya, Thelwatta",
+  "business_status": "OPEN"
+}

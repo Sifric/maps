@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBD7486FQ1B539MP0BVD",
+  "name": "Electric Vehicle Charging Station",
+  "coordinates": {
+    "latitude": 7.2481254999999996,
+    "longitude": 80.4465594
+  },
+  "categories": [
+    "Electric vehicle charging station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "375 A1, Old, Kandy - Colombo Rd, Mawanella",
+  "business_status": "OPEN"
+}

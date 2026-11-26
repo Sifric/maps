@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDDFMEVH9ZS914QTVS2JS",
+  "name": "VIEW MULTI CORNER",
+  "coordinates": {
+    "latitude": 7.7540657,
+    "longitude": 81.6356586
+  },
+  "categories": [
+    "Electronics store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MAIN STREET,MYLAMPAVELY, Batticaloa 30024",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "10 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "10 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "10 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "10 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "10 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "10 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "2–10 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

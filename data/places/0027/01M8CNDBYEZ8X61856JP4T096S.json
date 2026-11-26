@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBYEZ8X61856JP4T096S",
+  "name": "Tk mini shop",
+  "coordinates": {
+    "latitude": 7.3651443,
+    "longitude": 81.84720999999999
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9R7X+M4Q, Karaitivu 32250",
+  "business_status": "OPEN"
+}

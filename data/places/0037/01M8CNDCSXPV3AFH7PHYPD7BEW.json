@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDCSXPV3AFH7PHYPD7BEW",
+  "name": "Keerthika beauty parlour",
+  "coordinates": {
+    "latitude": 7.710055199999999,
+    "longitude": 81.6948161
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "\n23 2nd Cross St, Batticaloa 30000",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "23 2nd Cross St, Batticaloa 30000"
+  ]
+}

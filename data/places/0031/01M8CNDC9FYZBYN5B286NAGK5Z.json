@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9FYZBYN5B286NAGK5Z",
+  "name": "Sk tasty food",
+  "coordinates": {
+    "latitude": 7.7014226,
+    "longitude": 81.6836217
+  },
+  "categories": [
+    "Fast food restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Main street veechukalmunai, Batticaloa 30000",
+  "business_status": "OPEN"
+}

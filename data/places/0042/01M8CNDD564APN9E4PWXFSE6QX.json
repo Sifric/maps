@@ -1,0 +1,74 @@
+{
+  "id": "01M8CNDD564APN9E4PWXFSE6QX",
+  "name": "Dispensary & Surgery (Dr.R.Kuruparan )",
+  "coordinates": {
+    "latitude": 7.3701121999999994,
+    "longitude": 81.7945301
+  },
+  "categories": [
+    "Medical clinic"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9QCV+2RR, Pilavady Ln, Sammanthurai",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:30–7:30 AM",
+        "5–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:30–7:30 AM",
+        "5–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:30–7:30 AM",
+        "5–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:30–7:30 AM",
+        "5–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:30–7:30 AM",
+        "5–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:30–7:30 AM",
+        "5–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6:30–7:30 AM",
+        "5–10 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

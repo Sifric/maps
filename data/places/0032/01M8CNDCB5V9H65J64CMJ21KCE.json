@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCB5V9H65J64CMJ21KCE",
+  "name": "Viji Stores",
+  "coordinates": {
+    "latitude": 7.497354,
+    "longitude": 81.8009022
+  },
+  "categories": [
+    "Asian grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "FRW2+W8, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

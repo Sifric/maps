@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCZAM7XEDJA35Y84895J",
+  "name": "Colormart",
+  "coordinates": {
+    "latitude": 7.7738486,
+    "longitude": 81.5993934
+  },
+  "categories": [
+    "Hardware store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "271 Trincomalee-Batticaloa Rd, Eravur 5",
+  "business_status": "OPEN"
+}

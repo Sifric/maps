@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAC5HMETH9MM64T4H7AX",
+  "name": "RJ Mini Market",
+  "coordinates": {
+    "latitude": 7.401767899999999,
+    "longitude": 81.7648675
+  },
+  "categories": [
+    "Shopping mall"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CQ27+PW5, Veerathidal, Sammanthurai",
+  "business_status": "OPEN"
+}

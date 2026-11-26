@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE6HM0M8N5TH403FWMQJ",
+  "name": "Sumith Grocery shop",
+  "coordinates": {
+    "latitude": 5.9971181,
+    "longitude": 80.3159637
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "X8W8+V5X, Magalthota Rd, Koggala",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:30–9:30 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:30–9:30 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:30–9:30 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:30–9:30 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:30–9:30 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:30–9:30 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6:30–9:30 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDDANPAHA99MM49BVF26N",
+  "name": "ZAHIRA Beach Place Kattankudy - One-Bedroom House",
+  "coordinates": {
+    "latitude": 7.679500099999999,
+    "longitude": 81.7398529
+  },
+  "categories": [
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kattankudy",
+  "business_status": "OPEN"
+}

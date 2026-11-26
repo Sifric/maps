@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE36GMNHYVZ4JNWMWRA2",
+  "name": "ICEBURG Sri Lanka",
+  "coordinates": {
+    "latitude": 6.4592028,
+    "longitude": 79.9868204
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "380/1 Galle Road, Mahagoda, Beruwala 12070",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12 PM–2 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12–2 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12 PM–2 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12 PM–2 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "11 AM–3 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "11 AM–3 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12 PM–2 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

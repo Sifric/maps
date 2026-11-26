@@ -1,0 +1,63 @@
+{
+  "id": "01M8CNDFYGPMBAVBK7BY8JK0M9",
+  "name": "Ambal Cafe",
+  "coordinates": {
+    "latitude": 9.4363719,
+    "longitude": 80.4074583
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "Central Bus Stand, Kandy - Jaffna Hwy, Parantan",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4 AM–11 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

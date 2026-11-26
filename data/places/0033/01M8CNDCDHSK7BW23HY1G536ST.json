@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCDHSK7BW23HY1G536ST",
+  "name": "Health Centre Savukkady",
+  "coordinates": {
+    "latitude": 7.7810535,
+    "longitude": 81.6280773
+  },
+  "categories": [
+    "Medical clinic"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJHH+W2G, Eravur",
+  "business_status": "OPEN"
+}

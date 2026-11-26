@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAFF60E41YBYHC3PD1C1",
+  "name": "White House",
+  "coordinates": {
+    "latitude": 7.3099973,
+    "longitude": 81.6752001
+  },
+  "categories": [
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "30/B Rajawewa, Ampara",
+  "business_status": "OPEN"
+}

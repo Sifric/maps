@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDC4618AGN9FDQ488GDSV",
+  "name": "SIP Abacus Batticalo",
+  "coordinates": {
+    "latitude": 7.7202069,
+    "longitude": 81.7013063
+  },
+  "categories": [
+    "Education center"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Clock Tower, No 94, Anjeneya building, Arasady, Batticaloa 30000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5–7:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5–8 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6–8:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "3–8 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "3–8 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

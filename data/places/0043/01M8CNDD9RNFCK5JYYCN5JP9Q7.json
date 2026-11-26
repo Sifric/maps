@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDD9RNFCK5JYYCN5JP9Q7",
+  "name": "Friendly Barber 💈",
+  "coordinates": {
+    "latitude": 7.6772599999999995,
+    "longitude": 81.73114
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "\n11 Main St, palamunai",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "11 Main St, palamunai"
+  ]
+}

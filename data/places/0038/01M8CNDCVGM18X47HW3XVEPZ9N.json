@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCVGM18X47HW3XVEPZ9N",
+  "name": "Vishnuka home",
+  "coordinates": {
+    "latitude": 7.7225579,
+    "longitude": 81.6925382
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "419/6 Trinco Rd, Batticaloa",
+  "business_status": "OPEN"
+}

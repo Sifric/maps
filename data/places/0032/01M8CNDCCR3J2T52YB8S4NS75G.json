@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDCCR3J2T52YB8S4NS75G",
+  "name": "Sunny side residence villa",
+  "coordinates": {
+    "latitude": 7.7414865,
+    "longitude": 81.6817856
+  },
+  "categories": [
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Batticaloa",
+  "business_status": "OPEN"
+}

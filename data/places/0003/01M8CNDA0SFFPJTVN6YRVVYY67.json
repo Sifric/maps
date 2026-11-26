@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA0SFFPJTVN6YRVVYY67",
+  "name": "Cafe",
+  "coordinates": {
+    "latitude": 7.259122,
+    "longitude": 81.741029
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "7P5R+7HM, Eragama",
+  "business_status": "OPEN"
+}

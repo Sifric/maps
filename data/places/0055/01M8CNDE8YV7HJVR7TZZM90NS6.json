@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE8YV7HJVR7TZZM90NS6",
+  "name": "Co-op City",
+  "coordinates": {
+    "latitude": 6.3436341999999994,
+    "longitude": 80.2224356
+  },
+  "categories": [
+    "Supermarket"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "17 Thotupala Rd, Pitigala 80420",
+  "business_status": "OPEN"
+}

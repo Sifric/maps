@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDCY11B0YNNSG784ZXAPX",
+  "name": "Jumeirah banquet Hall",
+  "coordinates": {
+    "latitude": 7.6889603,
+    "longitude": 81.738304
+  },
+  "categories": [
+    "Wedding venue",
+    "Banquet hall",
+    "Resort hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Marine Dr, Kattankudy 30100",
+  "business_status": "OPEN"
+}

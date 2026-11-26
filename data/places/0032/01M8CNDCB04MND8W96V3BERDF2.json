@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCB04MND8W96V3BERDF2",
+  "name": "Public Market - Eravur | பொதுச் சந்தை",
+  "coordinates": {
+    "latitude": 7.7843515,
+    "longitude": 81.6056849
+  },
+  "categories": [
+    "Market"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJM4+P7V, Boundary Rd, Eravur",
+  "business_status": "OPEN"
+}

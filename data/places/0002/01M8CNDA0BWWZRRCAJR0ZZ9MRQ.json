@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA0BWWZRRCAJR0ZZ9MRQ",
+  "name": "Real choice icecream",
+  "coordinates": {
+    "latitude": 7.3646208,
+    "longitude": 81.79718679999999
+  },
+  "categories": [
+    "Ice cream shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "122/2 9th Rd, Sammanthurai",
+  "business_status": "OPEN"
+}

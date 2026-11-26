@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE8S8RFQYNVNBQ95R5NZ",
+  "name": "PK Supermarket",
+  "coordinates": {
+    "latitude": 6.3273787,
+    "longitude": 80.23517919999999
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "86GP+X33, Mapalagama Road, Pitigala",
+  "business_status": "OPEN"
+}

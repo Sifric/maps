@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC7Z45EG375YMQKGFPY8",
+  "name": "Fish Farm",
+  "coordinates": {
+    "latitude": 7.7855438999999995,
+    "longitude": 81.6163346
+  },
+  "categories": [
+    "Farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "571,MARKET ROAD , MEERAKERNY, ERAVUR 30300",
+  "business_status": "OPEN"
+}

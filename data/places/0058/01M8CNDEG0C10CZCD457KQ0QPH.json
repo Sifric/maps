@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDEG0C10CZCD457KQ0QPH",
+  "name": "Vienna Beach Villa",
+  "coordinates": {
+    "latitude": 6.0770121999999995,
+    "longitude": 80.1539099
+  },
+  "categories": [
+    "Hotel",
+    "Villa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Galle - Colombo Rd",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBYEWJJYQ2H5BVHS266",
+  "name": "Holiday Beach Guest House",
+  "coordinates": {
+    "latitude": 7.917817899999999,
+    "longitude": 81.5668013
+  },
+  "categories": [
+    "Lodging"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Road, Kalkudah",
+  "business_status": "OPEN"
+}

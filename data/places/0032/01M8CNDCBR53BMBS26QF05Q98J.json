@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDCBR53BMBS26QF05Q98J",
+  "name": "RoaBaa Guesthouse",
+  "coordinates": {
+    "latitude": 7.7244446,
+    "longitude": 81.6909778
+  },
+  "categories": [
+    "Guest house",
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "501/8 Trincomalee-Batticaloa Rd, Batticaloa 30000",
+  "business_status": "OPEN"
+}

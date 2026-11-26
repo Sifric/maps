@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA0XX527T531B1T3ZED0",
+  "name": "Shop",
+  "coordinates": {
+    "latitude": 7.386574899999999,
+    "longitude": 81.8365211
+  },
+  "categories": [
+    "Ice cream shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9RPP+JJC, Colombo - Ratnapura - Wellawaya - Batticaloa Rd, Karaitivu 32250",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDDZ99CFHM1T8AC9XCV7P",
+  "name": "Bluefin restaurant and beach bar",
+  "coordinates": {
+    "latitude": 6.1641202999999996,
+    "longitude": 80.09015099999999
+  },
+  "categories": [
+    "Seafood restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Galle Rd, Peraliya 80240",
+  "business_status": "OPEN"
+}

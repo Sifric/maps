@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA4E4J0W35Q68R9DGAB3",
+  "name": "Zafka",
+  "coordinates": {
+    "latitude": 7.223062,
+    "longitude": 81.8499844
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "6RFX+6XH, Union Road, Akkaraipattu",
+  "business_status": "OPEN"
+}

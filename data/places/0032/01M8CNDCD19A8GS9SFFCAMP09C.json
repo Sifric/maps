@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCD19A8GS9SFFCAMP09C",
+  "name": "Kabeer house",
+  "coordinates": {
+    "latitude": 7.6625369999999995,
+    "longitude": 81.7471473
+  },
+  "categories": [
+    "Housing society"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Main street New Palamunai 10",
+  "business_status": "OPEN"
+}

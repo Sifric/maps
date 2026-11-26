@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBR7FCYRXC64SC37HHGM",
+  "name": "NW Phone Shop",
+  "coordinates": {
+    "latitude": 7.3950952,
+    "longitude": 81.8340504
+  },
+  "categories": [
+    "Cell phone store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9RWM+2JM, Osman Rd, Sainthamaruthu 32300",
+  "business_status": "CLOSED_TEMPORARILY"
+}

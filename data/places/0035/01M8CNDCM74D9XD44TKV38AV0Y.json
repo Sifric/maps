@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCM74D9XD44TKV38AV0Y",
+  "name": "Shop",
+  "coordinates": {
+    "latitude": 7.775601699999999,
+    "longitude": 81.6057601
+  },
+  "categories": [
+    "Computer store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJG4+68R, Trincomalee-Batticaloa Rd, Eravur",
+  "business_status": "OPEN"
+}

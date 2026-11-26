@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCWFEVMA5X6GVX65SQJZ",
+  "name": "Cool dring",
+  "coordinates": {
+    "latitude": 7.6676217,
+    "longitude": 81.7373025
+  },
+  "categories": [
+    "Juice shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MP9P+3WC, Kattankudy",
+  "business_status": "OPEN"
+}

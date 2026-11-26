@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCEQA2N44GBHPPC0CQNG",
+  "name": "Vk hospital",
+  "coordinates": {
+    "latitude": 7.6333619,
+    "longitude": 81.7600355
+  },
+  "categories": [
+    "Hospital"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "JQM5+HRG",
+  "business_status": "OPEN"
+}

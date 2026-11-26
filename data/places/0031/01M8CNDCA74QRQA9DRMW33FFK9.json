@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCA74QRQA9DRMW33FFK9",
+  "name": "SMS",
+  "coordinates": {
+    "latitude": 7.7969687,
+    "longitude": 81.5876424
+  },
+  "categories": [
+    "Supermarket"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QHWQ+Q3J, Chenkaladi",
+  "business_status": "OPEN"
+}

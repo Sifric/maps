@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDA9CX5VQBG61793R173Y",
+  "name": "M & M Food Corner",
+  "coordinates": {
+    "latitude": 7.3423558,
+    "longitude": 81.8479445
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "4/1 Main Street, Nintavur 20, Nintavur 32340",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4 PM–1 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

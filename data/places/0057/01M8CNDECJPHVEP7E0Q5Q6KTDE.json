@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDECJPHVEP7E0Q5Q6KTDE",
+  "name": "Ceylon Beach home",
+  "coordinates": {
+    "latitude": 6.0665767,
+    "longitude": 80.1700994
+  },
+  "categories": [
+    "Hotel",
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "119 Pinthaliya Junction Pitiwalla, Boossa 80000",
+  "business_status": "OPEN"
+}

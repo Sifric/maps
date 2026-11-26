@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDESDN2STQ16S91AJRY52",
+  "name": "Point pedro CTB Depot",
+  "coordinates": {
+    "latitude": 9.8198717,
+    "longitude": 80.23568089999999
+  },
+  "categories": [
+    "Bus stop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "AB20, Point Pedro",
+  "business_status": "OPEN"
+}

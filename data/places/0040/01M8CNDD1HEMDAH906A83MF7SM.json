@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD1HEMDAH906A83MF7SM",
+  "name": "Pavi’s Home",
+  "coordinates": {
+    "latitude": 7.9226529999999995,
+    "longitude": 81.5426275
+  },
+  "categories": [
+    "Warehouse"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WGFV+336, Kalkudah",
+  "business_status": "OPEN"
+}

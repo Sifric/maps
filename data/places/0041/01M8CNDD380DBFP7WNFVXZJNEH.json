@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD380DBFP7WNFVXZJNEH",
+  "name": "Public Library",
+  "coordinates": {
+    "latitude": 7.542884099999999,
+    "longitude": 81.7593215
+  },
+  "categories": [
+    "Library"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQV5+5P4, Ferry road, Palugamam, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

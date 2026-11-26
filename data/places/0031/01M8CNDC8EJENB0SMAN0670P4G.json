@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC8EJENB0SMAN0670P4G",
+  "name": "Royal Garden Farm",
+  "coordinates": {
+    "latitude": 8.045238399999999,
+    "longitude": 81.23528639999999
+  },
+  "categories": [
+    "Farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No.01, Sinhapura Rd, Welikanda",
+  "business_status": "OPEN"
+}

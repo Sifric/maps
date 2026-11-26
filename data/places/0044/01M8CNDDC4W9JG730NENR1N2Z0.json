@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDC4W9JG730NENR1N2Z0",
+  "name": "Sinoj house",
+  "coordinates": {
+    "latitude": 7.7327284999999994,
+    "longitude": 81.686574
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMMP+FP5, School Rd, Batticaloa",
+  "business_status": "OPEN"
+}

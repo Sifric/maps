@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDDF2H6VDVNNP4H6J089A",
+  "name": "Salon Chamari",
+  "coordinates": {
+    "latitude": 6.7148124,
+    "longitude": 80.7859275
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\nSalon Chamari, Infront Sabaragamuwa University of, Belihuloya 70140",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–5 PM"
+      ]
+    }
+  ],
+  "business_status": "CLOSED"
+}

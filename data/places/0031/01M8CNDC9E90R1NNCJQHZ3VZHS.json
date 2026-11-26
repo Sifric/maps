@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9E90R1NNCJQHZ3VZHS",
+  "name": "TREATOOO GRAND Selva Hall",
+  "coordinates": {
+    "latitude": 7.7123748999999995,
+    "longitude": 81.7086898
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No.20 Pandith Poopalapillai Road Kallady, Batticaloa 30000",
+  "business_status": "OPEN"
+}

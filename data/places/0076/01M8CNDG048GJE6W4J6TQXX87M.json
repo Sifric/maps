@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDG048GJE6W4J6TQXX87M",
+  "name": "Richmond Physiotherapy Centre",
+  "coordinates": {
+    "latitude": 6.0429962,
+    "longitude": 80.2078901
+  },
+  "categories": [
+    "Physical therapy clinic",
+    "Physical therapist"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "86B D. J. Wimalasurendra Mawatha, Galle 80000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5–8 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5–8 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5–8 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5–8 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5–8 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "3–6 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

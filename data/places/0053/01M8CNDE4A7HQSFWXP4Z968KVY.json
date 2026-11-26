@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE4A7HQSFWXP4Z968KVY",
+  "name": "MR.සුප්",
+  "coordinates": {
+    "latitude": 6.1167131999999995,
+    "longitude": 80.21337249999999
+  },
+  "categories": [
+    "Soup restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Balagoda Junction, Poddala 80170",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "2–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "2–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "2–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "2–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "2–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "2–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDACZ138Q1TFC8K6V2BS2",
+  "name": "Horona Hotel",
+  "coordinates": {
+    "latitude": 7.1148886,
+    "longitude": 81.8495458
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "4R7X+XR3, Thirukkovil",
+  "business_status": "OPEN"
+}

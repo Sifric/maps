@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAHQPXJ17RHZ5CQR9XKG",
+  "name": "15 LMD",
+  "coordinates": {
+    "latitude": 7.7147147,
+    "longitude": 81.7011854
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "15 Lady Manning Dr, Batticaloa 30000",
+  "business_status": "OPEN"
+}

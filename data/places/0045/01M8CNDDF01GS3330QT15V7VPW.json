@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDDF01GS3330QT15V7VPW",
+  "name": "Saloon Star City Hair Studio",
+  "coordinates": {
+    "latitude": 7.873054,
+    "longitude": 80.771797
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\n8 Mile post, Elayapattuwa",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "12–8 AM"
+      ]
+    }
+  ],
+  "business_status": "CLOSED"
+}

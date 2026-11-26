@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDBGDECPK7P1JCGWYXE7Q",
+  "name": "JF AUTO PRO CAR SERVICE",
+  "coordinates": {
+    "latitude": 6.868118099999999,
+    "longitude": 81.8324438
+  },
+  "categories": [
+    "Auto repair shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Panama Rd, Arugam Bay",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5–10 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8 AM–5 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

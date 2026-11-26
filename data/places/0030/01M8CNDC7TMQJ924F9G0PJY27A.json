@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC7TMQJ924F9G0PJY27A",
+  "name": "Кафе",
+  "coordinates": {
+    "latitude": 7.7468615,
+    "longitude": 81.6909082
+  },
+  "categories": [
+    "Bar"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMWR+P9, Batticaloa",
+  "business_status": "OPEN"
+}

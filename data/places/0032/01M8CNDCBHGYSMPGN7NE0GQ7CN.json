@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBHGYSMPGN7NE0GQ7CN",
+  "name": "Thiyawattawan sarbath shop",
+  "coordinates": {
+    "latitude": 7.9264383,
+    "longitude": 81.51342129999999
+  },
+  "categories": [
+    "Ice cream shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WGG7+H9F, Main road, Thiyawattawan",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6MQWET44BMXKTM6HEJ",
+  "name": "FCC Cafe",
+  "coordinates": {
+    "latitude": 7.7134366,
+    "longitude": 81.69707079999999
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM7W+9RG, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA5209HT6QWD5C867WDV",
+  "name": "Ar Resturant",
+  "coordinates": {
+    "latitude": 6.8408279,
+    "longitude": 81.83265
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Panama Rd, Pottuvil",
+  "business_status": "CLOSED_TEMPORARILY"
+}

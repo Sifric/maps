@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC8PEQR1RA3R20W09DA5",
+  "name": "F & J MULTI MART",
+  "coordinates": {
+    "latitude": 7.9041283,
+    "longitude": 81.5249554
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPCS ROAD, 04, 30426",
+  "business_status": "OPEN"
+}

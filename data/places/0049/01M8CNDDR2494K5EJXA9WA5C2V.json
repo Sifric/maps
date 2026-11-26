@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDR2494K5EJXA9WA5C2V",
+  "name": "The Thalpe Restaurant",
+  "coordinates": {
+    "latitude": 5.9953973,
+    "longitude": 80.28874499999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Uyanawatte, Talpe 80615",
+  "business_status": "CLOSED_TEMPORARILY"
+}

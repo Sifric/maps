@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9NEMC04W2ZEQF5A9CT",
+  "name": "Sri Prabas Restaurant",
+  "coordinates": {
+    "latitude": 7.7828344,
+    "longitude": 81.59389999999999
+  },
+  "categories": [
+    "Family restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QHMV+4HJ, Main St, Chenkaladi 30350",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9QWZCA7BVH71K7G6NX",
+  "name": "SIENA ZONE",
+  "coordinates": {
+    "latitude": 7.798462799999999,
+    "longitude": 81.5841301
+  },
+  "categories": [
+    "Brunch restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QHXM+9MJ, Eastern University, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD1GH533J56XYRNJVAYW",
+  "name": "எல்லாளன் பேருந்து தரிப்பிடம்",
+  "coordinates": {
+    "latitude": 7.907423,
+    "longitude": 81.5339697
+  },
+  "categories": [
+    "Bus depot"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG4M+VM9, Oddamavadi",
+  "business_status": "OPEN"
+}

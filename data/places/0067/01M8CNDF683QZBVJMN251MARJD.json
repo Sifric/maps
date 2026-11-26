@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDF683QZBVJMN251MARJD",
+  "name": "Sujee Rental Car",
+  "coordinates": {
+    "latitude": 9.685255399999999,
+    "longitude": 80.0305422
+  },
+  "categories": [
+    "Car rental agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Kalikovilady, East",
+  "business_status": "OPEN"
+}

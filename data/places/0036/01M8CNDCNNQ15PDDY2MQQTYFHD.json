@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCNNQ15PDDY2MQQTYFHD",
+  "name": "Marsook shop",
+  "coordinates": {
+    "latitude": 7.6624007,
+    "longitude": 81.745648
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MP6W+X76, Palamunai Rd, Kattankudy",
+  "business_status": "OPEN"
+}

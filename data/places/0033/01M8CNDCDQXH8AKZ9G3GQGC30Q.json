@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDCDQXH8AKZ9G3GQGC30Q",
+  "name": "Aneeka Dental Hospital",
+  "coordinates": {
+    "latitude": 7.3988739,
+    "longitude": 81.8318329
+  },
+  "categories": [
+    "Dental clinic"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "5a Myown Ln, Kalmunai 32300",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4–9:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4–9:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4–9:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4–9:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4–9:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4–9:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4–9:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

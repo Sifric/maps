@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDBP16DM1SK6K35V572M",
+  "name": "Ronushan",
+  "coordinates": {
+    "latitude": 7.7437593,
+    "longitude": 81.6842424
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMVM+GM5, Mamankap Pillaiyar Kovil Rd, Batticaloa",
+  "business_status": "OPEN"
+}

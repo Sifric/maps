@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA1VXY7QNJ7E0GGYFVRS",
+  "name": "Akbar Beef Shop",
+  "coordinates": {
+    "latitude": 7.6613149,
+    "longitude": 81.7264126
+  },
+  "categories": [
+    "Meat wholesaler"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MP6G+GHF, Main street",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD51DMGZZXPEA6WJB708",
+  "name": "Thaniga Jewellery",
+  "coordinates": {
+    "latitude": 7.581652699999999,
+    "longitude": 81.748741
+  },
+  "categories": [
+    "Jewelry store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Main Street Ampilanthurai West",
+  "business_status": "OPEN"
+}

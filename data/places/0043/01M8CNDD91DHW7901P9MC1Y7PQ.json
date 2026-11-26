@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD91DHW7901P9MC1Y7PQ",
+  "name": "Nine Arch Bridge",
+  "coordinates": {
+    "latitude": 6.8768104,
+    "longitude": 81.0607553
+  },
+  "categories": [
+    "Bridge"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Akasa road, Demodara",
+  "business_status": "OPEN"
+}

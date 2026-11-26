@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCCH00XWDM48AB8RH2FQ",
+  "name": "Hostel batti students",
+  "coordinates": {
+    "latitude": 7.709095,
+    "longitude": 81.690674
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "28 Suriya Ln, Batticaloa 30000",
+  "business_status": "OPEN"
+}

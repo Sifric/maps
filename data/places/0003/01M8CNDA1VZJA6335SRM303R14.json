@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA1VZJA6335SRM303R14",
+  "name": "Beef shop இறைச்சிக்கடை",
+  "coordinates": {
+    "latitude": 7.3936395,
+    "longitude": 81.8348297
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9RVM+FW4, Sainthamaruthu 32280",
+  "business_status": "OPEN"
+}

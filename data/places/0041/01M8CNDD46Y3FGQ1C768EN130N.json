@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD46Y3FGQ1C768EN130N",
+  "name": "MST PHARMACY",
+  "coordinates": {
+    "latitude": 7.6965506999999995,
+    "longitude": 81.7192956
+  },
+  "categories": [
+    "Pharmacy"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPW9+JPF, Colombo - Ratnapura - Wellawaya - Batticaloa Rd, Kallady",
+  "business_status": "OPEN"
+}

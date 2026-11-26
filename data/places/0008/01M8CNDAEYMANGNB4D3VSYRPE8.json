@@ -1,0 +1,33 @@
+{
+  "id": "01M8CNDAEYMANGNB4D3VSYRPE8",
+  "name": "YAS BEACH VILLA",
+  "coordinates": {
+    "latitude": 7.688398899999999,
+    "longitude": 81.7379828
+  },
+  "categories": [
+    "Villa",
+    "Guest house",
+    "Hotel",
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ],
+    "names": [
+      "YAS Beach Villa"
+    ]
+  },
+  "address": "Kattankudy",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "new, 98,4th cross, Central Rd, Kattankudy"
+  ]
+}

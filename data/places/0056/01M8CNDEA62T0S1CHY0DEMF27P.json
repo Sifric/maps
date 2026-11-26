@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEA62T0S1CHY0DEMF27P",
+  "name": "Villa Olga",
+  "coordinates": {
+    "latitude": 6.0196156,
+    "longitude": 80.2520479
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "65/20 Ukaswatta, Unawatuna 80600",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDBARJWJCQGHGDY4VAKE",
+  "name": "St.Teresa Statue",
+  "coordinates": {
+    "latitude": 7.733452199999999,
+    "longitude": 81.6844402
+  },
+  "categories": [
+    "Church"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMMM+9QP, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD7XGMT23F6EH2W2BEBP",
+  "name": "Electric Vehicle Charging Station",
+  "coordinates": {
+    "latitude": 7.932204,
+    "longitude": 80.2433401
+  },
+  "categories": [
+    "Electric vehicle charging station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "W6JV+V8P, Sevana Lanka Filling Station, Ambanpola",
+  "business_status": "OPEN"
+}

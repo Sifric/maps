@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA1QWN7STYEX5MR63249",
+  "name": "SEVENA Plant Nursery",
+  "coordinates": {
+    "latitude": 7.4150529,
+    "longitude": 81.7201683
+  },
+  "categories": [
+    "Plant nursery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Chadaiyantalava",
+  "business_status": "OPEN"
+}

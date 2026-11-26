@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCMFB1GC7AYDEV3FGMH0",
+  "name": "Ranmuthu jewellery",
+  "coordinates": {
+    "latitude": 7.6808381,
+    "longitude": 81.7299922
+  },
+  "categories": [
+    "Jewelry store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "80 Dr Badhiudeen Mahmood Mawatha, Kattankudy",
+  "business_status": "OPEN"
+}

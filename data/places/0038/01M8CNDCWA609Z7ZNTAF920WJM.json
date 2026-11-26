@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCWA609Z7ZNTAF920WJM",
+  "name": "Crystal Palace Guest House",
+  "coordinates": {
+    "latitude": 7.6784221,
+    "longitude": 81.72950639999999
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Crystal Palace, Kattankudy",
+  "business_status": "OPEN"
+}

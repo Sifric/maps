@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA5PEYRNAQ2GX94A3AW6",
+  "name": "Star Wine Store",
+  "coordinates": {
+    "latitude": 7.4206778,
+    "longitude": 81.77279779999999
+  },
+  "categories": [
+    "Bar"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CQCF+74F",
+  "business_status": "OPEN"
+}

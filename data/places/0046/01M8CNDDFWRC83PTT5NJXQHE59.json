@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDFWRC83PTT5NJXQHE59",
+  "name": "Snow White",
+  "coordinates": {
+    "latitude": 7.7133804999999995,
+    "longitude": 81.69814559999999
+  },
+  "categories": [
+    "Home goods store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM7X+972, Batticaloa",
+  "business_status": "OPEN"
+}

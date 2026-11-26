@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA0WWRNDA3T32JFV5FMZ",
+  "name": "Ice Age Ice Cream",
+  "coordinates": {
+    "latitude": 7.4103838,
+    "longitude": 81.82855959999999
+  },
+  "categories": [
+    "Ice cream shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CR6H+4CV, Colombo - Batticaloa Hwy, Kalmunai 32300",
+  "business_status": "OPEN"
+}

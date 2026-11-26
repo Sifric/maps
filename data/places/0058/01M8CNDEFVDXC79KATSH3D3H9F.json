@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEFVDXC79KATSH3D3H9F",
+  "name": "Samsara Hotel",
+  "coordinates": {
+    "latitude": 6.0759592,
+    "longitude": 80.1556217
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "292b Galle - Colombo Rd, Boossa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "01M8CNDEK536E0WQHRANFHC9CR",
+  "name": "Happy Home Restaurant",
+  "coordinates": {
+    "latitude": 9.7285931,
+    "longitude": 79.9488593
+  },
+  "categories": [
+    "Sri Lankan restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Thellippalai Road, Vaddukoddai 40000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "11 AM–3:30 PM",
+        "5–10:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "11 AM–3:30 PM",
+        "5–10:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "11 AM–3:30 PM",
+        "5–10:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "11 AM–3:30 PM",
+        "5–10:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "11 AM–3:30 PM",
+        "5–10:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "11 AM–3:30 PM",
+        "5–10:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "11 AM–3:30 PM",
+        "5–10:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

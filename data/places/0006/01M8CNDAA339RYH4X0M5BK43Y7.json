@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAA339RYH4X0M5BK43Y7",
+  "name": "Farm",
+  "coordinates": {
+    "latitude": 7.5653231,
+    "longitude": 81.7064116
+  },
+  "categories": [
+    "Warehouse"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Katchenai Rd",
+  "business_status": "OPEN"
+}

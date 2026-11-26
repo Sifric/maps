@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCAD3ZEXSN96ZRQ46FE1",
+  "name": "Mohaideen traders",
+  "coordinates": {
+    "latitude": 7.776874299999999,
+    "longitude": 81.6070606
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJG4+PRV, Kattupalli Road, Eravur",
+  "business_status": "OPEN"
+}

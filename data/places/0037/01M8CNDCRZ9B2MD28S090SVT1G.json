@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCRZ9B2MD28S090SVT1G",
+  "name": "Wheel alignment",
+  "coordinates": {
+    "latitude": 7.7245577999999995,
+    "longitude": 81.69141379999999
+  },
+  "categories": [
+    "Tire shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "502 Trincomalee-Batticaloa Rd, Batticaloa 30000",
+  "business_status": "OPEN"
+}

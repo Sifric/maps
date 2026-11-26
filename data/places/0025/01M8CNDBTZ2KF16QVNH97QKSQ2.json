@@ -1,0 +1,20 @@
+{
+  "id": "01M8CNDBTZ2KF16QVNH97QKSQ2",
+  "name": "Home Depot",
+  "coordinates": {
+    "latitude": 7.225133899999999,
+    "longitude": 81.8504091
+  },
+  "categories": [
+    "Hardware store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "Akkaraipattu",
+  "business_status": "OPEN"
+}

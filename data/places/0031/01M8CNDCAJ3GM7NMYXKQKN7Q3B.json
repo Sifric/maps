@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCAJ3GM7NMYXKQKN7Q3B",
+  "name": "Mohan Stores",
+  "coordinates": {
+    "latitude": 7.7083869,
+    "longitude": 81.6883946
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Batticaloa",
+  "business_status": "OPEN"
+}

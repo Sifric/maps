@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDA979R9TZ8R0DMTBVY66",
+  "name": "Dulip Take Away & Catering Service",
+  "coordinates": {
+    "latitude": 7.3017701,
+    "longitude": 81.6747243
+  },
+  "categories": [
+    "Chinese restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "8M2F+PV5, Hospital Junction, Ampara",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5–11:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5–11:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5–11:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5–11:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5–11:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5–11:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

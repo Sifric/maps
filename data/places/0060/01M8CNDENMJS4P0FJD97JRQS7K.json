@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDENMJS4P0FJD97JRQS7K",
+  "name": "සුප්පා Kitchen",
+  "coordinates": {
+    "latitude": 6.2008904,
+    "longitude": 80.4770899
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Siyabalagoda W Rd, Pitabeddara 81450",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12–10:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12–10:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12–10:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12–10:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "12–10:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12–10:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

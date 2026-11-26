@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC0X9DCTE2Z6QJVNJ13G",
+  "name": "Ganesh Super Market",
+  "coordinates": {
+    "latitude": 7.7842502,
+    "longitude": 81.5901861
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QHMR+P33, Chenkaladi",
+  "business_status": "OPEN"
+}

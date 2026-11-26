@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6WABQXC52PKTYKMQVH",
+  "name": "Siththeek Roddy Shop",
+  "coordinates": {
+    "latitude": 7.6776082,
+    "longitude": 81.7279674
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPHH+25W, Dr Ahmed, Fareed Mawatha, Kattankudy 06",
+  "business_status": "OPEN"
+}

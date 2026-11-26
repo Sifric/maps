@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDE1BRGA71QN0TVPX3NQT",
+  "name": "Nimsara Bake House",
+  "coordinates": {
+    "latitude": 5.9736923,
+    "longitude": 80.4289441
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Weligama",
+  "business_status": "OPEN"
+}

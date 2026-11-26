@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEQRQD5Y1D1RZT7XCAXD",
+  "name": "Family house inn",
+  "coordinates": {
+    "latitude": 6.3381254,
+    "longitude": 81.2069162
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "A2",
+  "business_status": "OPEN"
+}

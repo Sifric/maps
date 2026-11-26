@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC8WQ5Y7RHSFGJBGK5Y9",
+  "name": "Hasee store",
+  "coordinates": {
+    "latitude": 7.683653,
+    "longitude": 81.7300173
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPMJ+F26, TC road kattankudy, batticaloa 2",
+  "business_status": "OPEN"
+}

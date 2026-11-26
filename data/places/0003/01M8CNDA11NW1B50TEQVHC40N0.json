@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDA11NW1B50TEQVHC40N0",
+  "name": "Ocean Chef",
+  "coordinates": {
+    "latitude": 7.4108659999999995,
+    "longitude": 81.8395074
+  },
+  "categories": [
+    "Restaurant",
+    "Guest house",
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "KKP Rd., Kalmunai 32300",
+  "business_status": "OPEN"
+}

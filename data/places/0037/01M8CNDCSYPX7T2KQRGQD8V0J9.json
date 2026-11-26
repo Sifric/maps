@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDCSYPX7T2KQRGQD8V0J9",
+  "name": "Saloon Trisha",
+  "coordinates": {
+    "latitude": 7.725936699999999,
+    "longitude": 81.6891402
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "\n442 Trincomalee-Batticaloa Rd, Batticaloa 30000",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "442 Trincomalee-Batticaloa Rd, Batticaloa 30000"
+  ]
+}

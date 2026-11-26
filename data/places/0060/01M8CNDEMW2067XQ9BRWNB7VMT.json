@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDEMW2067XQ9BRWNB7VMT",
+  "name": "Mathi cafe",
+  "coordinates": {
+    "latitude": 9.7101285,
+    "longitude": 79.99749109999999
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "PX6W+3X5, Sandilipay",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5 AM–8:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

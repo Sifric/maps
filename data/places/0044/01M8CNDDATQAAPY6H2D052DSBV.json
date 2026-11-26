@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDATQAAPY6H2D052DSBV",
+  "name": "Jeyarajah's House",
+  "coordinates": {
+    "latitude": 7.7110641,
+    "longitude": 81.7127081
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No 19 1st Cross Rd, Kallady",
+  "business_status": "OPEN"
+}

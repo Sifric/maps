@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC3Y66RJBTDKH7J06C19",
+  "name": "Hari hiri home",
+  "coordinates": {
+    "latitude": 7.701762199999999,
+    "longitude": 81.7214467
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "4th cross Music College Rd, Kallady",
+  "business_status": "OPEN"
+}

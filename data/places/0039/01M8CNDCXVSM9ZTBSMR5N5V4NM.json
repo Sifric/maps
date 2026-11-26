@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDCXVSM9ZTBSMR5N5V4NM",
+  "name": "Ayna tours",
+  "coordinates": {
+    "latitude": 7.6888422,
+    "longitude": 81.736402
+  },
+  "categories": [
+    "Transportation service",
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPQP+PF5, Fisheries Rd, Kattankudy",
+  "business_status": "OPEN"
+}

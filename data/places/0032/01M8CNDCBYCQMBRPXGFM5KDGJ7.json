@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBYCQMBRPXGFM5KDGJ7",
+  "name": "BRT HOSTEL",
+  "coordinates": {
+    "latitude": 7.915436199999999,
+    "longitude": 81.5604941
+  },
+  "categories": [
+    "Hostel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WH86+763, BRT HOSTEL, Kalkudah",
+  "business_status": "OPEN"
+}

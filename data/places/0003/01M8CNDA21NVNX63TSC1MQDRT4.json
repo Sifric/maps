@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA21NVNX63TSC1MQDRT4",
+  "name": "Nawfan Cake Shop",
+  "coordinates": {
+    "latitude": 7.3968158,
+    "longitude": 81.8396643
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9RWQ+G8V, 235 PM Rd, Sainthamaruthu 32300",
+  "business_status": "OPEN"
+}

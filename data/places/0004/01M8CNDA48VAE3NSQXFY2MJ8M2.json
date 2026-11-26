@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA48VAE3NSQXFY2MJ8M2",
+  "name": "Jaleel Garden",
+  "coordinates": {
+    "latitude": 7.23926,
+    "longitude": 81.8386584
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Akkaraipattu",
+  "business_status": "OPEN"
+}

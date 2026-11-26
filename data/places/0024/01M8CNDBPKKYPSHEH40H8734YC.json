@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBPKKYPSHEH40H8734YC",
+  "name": "Style N Care Barber Shop",
+  "coordinates": {
+    "latitude": 7.681098899999999,
+    "longitude": 81.7363484
+  },
+  "categories": [
+    "Barber shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "L Block, Kattankudy",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCAH9DW07YWT3Z0HY7NA",
+  "name": "J & SSPR Brothers Grocery Store(Thandavanveli Branch)",
+  "coordinates": {
+    "latitude": 7.7206407,
+    "longitude": 81.6956336
+  },
+  "categories": [
+    "Wholesale grocer"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMCW+772, Trinco Rd, Batticaloa",
+  "business_status": "OPEN"
+}

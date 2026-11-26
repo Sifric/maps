@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEF77694F42B845HPQ9B",
+  "name": "Hotel Harbour View",
+  "coordinates": {
+    "latitude": 5.946667499999999,
+    "longitude": 80.45068669999999
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "WFW2+M77, Harbour Road, Weligama",
+  "business_status": "OPEN"
+}

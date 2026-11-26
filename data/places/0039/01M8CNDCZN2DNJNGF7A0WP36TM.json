@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCZN2DNJNGF7A0WP36TM",
+  "name": "Mosque",
+  "coordinates": {
+    "latitude": 7.7852926,
+    "longitude": 81.6190507
+  },
+  "categories": [
+    "Mosque"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJP9+4J7, Maiyavadi Road, Eravur",
+  "business_status": "OPEN"
+}

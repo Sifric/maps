@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD80N77VXMMZK93BRQC8",
+  "name": "Wijaya Rent A Car",
+  "coordinates": {
+    "latitude": 8.1583834,
+    "longitude": 80.9699528
+  },
+  "categories": [
+    "Car rental agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "5X59+9X4, Rd, Medirigiriya",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD2B9YG9DTSY5SD05MRD",
+  "name": "Piyassa Restaurant - පියස්ස රෙස්ටුරන්ට්",
+  "coordinates": {
+    "latitude": 7.8513418999999995,
+    "longitude": 80.6535881
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Temple junction, Dambulla 21100",
+  "business_status": "CLOSED_TEMPORARILY"
+}

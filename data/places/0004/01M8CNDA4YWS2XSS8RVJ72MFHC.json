@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA4YWS2XSS8RVJ72MFHC",
+  "name": "Cafe Uno",
+  "coordinates": {
+    "latitude": 6.8781615,
+    "longitude": 81.8254206
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Pottuvil",
+  "business_status": "OPEN"
+}

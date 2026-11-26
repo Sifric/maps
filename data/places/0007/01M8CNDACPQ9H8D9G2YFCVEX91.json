@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDACPQ9H8D9G2YFCVEX91",
+  "name": "Quick-N-Easy Restaurant",
+  "coordinates": {
+    "latitude": 6.839770199999999,
+    "longitude": 81.8330658
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "RRQM+V54, Panama Rd, Arugam Bay",
+  "business_status": "CLOSED_TEMPORARILY"
+}

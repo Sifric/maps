@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEPRYR6EVSJXJJZ6A2Q7",
+  "name": "Happy Guest House",
+  "coordinates": {
+    "latitude": 9.6647425,
+    "longitude": 80.01853249999999
+  },
+  "categories": [
+    "Guest house"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "No. 20 St. Peter's Lane, Hospital Rd, Jaffna 40000",
+  "business_status": "OPEN"
+}

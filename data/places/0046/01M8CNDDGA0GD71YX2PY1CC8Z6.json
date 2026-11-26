@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDGA0GD71YX2PY1CC8Z6",
+  "name": "Vaasini retail shop",
+  "coordinates": {
+    "latitude": 7.515447,
+    "longitude": 81.7546934
+  },
+  "categories": [
+    "General store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQ83+5V, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

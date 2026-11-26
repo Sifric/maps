@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDABP1TXDYDQT9FE2ED3A",
+  "name": "JR fresh fish",
+  "coordinates": {
+    "latitude": 7.387173799999999,
+    "longitude": 81.8408834
+  },
+  "categories": [
+    "Seafood market"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Karaitivu 32000",
+  "business_status": "OPEN"
+}

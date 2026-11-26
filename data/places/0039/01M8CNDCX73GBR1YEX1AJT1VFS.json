@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCX73GBR1YEX1AJT1VFS",
+  "name": "ATM Kathankudy People's Bank",
+  "coordinates": {
+    "latitude": 7.6753845,
+    "longitude": 81.7319864
+  },
+  "categories": [
+    "ATM"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPGJ+5Q5, Main St, Kattankudy",
+  "business_status": "OPEN"
+}

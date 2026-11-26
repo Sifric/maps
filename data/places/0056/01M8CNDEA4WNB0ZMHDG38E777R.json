@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEA4WNB0ZMHDG38E777R",
+  "name": "Hotel Acrus - Galle",
+  "coordinates": {
+    "latitude": 6.040474199999999,
+    "longitude": 80.23569859999999
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "No 22/7 Kalgewaththa, Galle 80000",
+  "business_status": "OPEN"
+}

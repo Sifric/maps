@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA2BEER5FKYRNP29HYSA",
+  "name": "Anwar Bakery",
+  "coordinates": {
+    "latitude": 6.8705295,
+    "longitude": 81.84097
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "VR9R+X34, Market Rd, Pottuvil",
+  "business_status": "OPEN"
+}

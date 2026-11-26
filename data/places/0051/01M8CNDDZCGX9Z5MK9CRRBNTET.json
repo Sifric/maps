@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDDZCGX9Z5MK9CRRBNTET",
+  "name": "Curry Bowl Restaurant & Turtles Rest",
+  "coordinates": {
+    "latitude": 6.1310322,
+    "longitude": 80.10125939999999
+  },
+  "categories": [
+    "Restaurant",
+    "Guest house"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "368 Galle Rd, Hikkaduwa 80240",
+  "business_status": "OPEN"
+}

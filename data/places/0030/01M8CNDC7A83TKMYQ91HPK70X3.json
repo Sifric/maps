@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC7A83TKMYQ91HPK70X3",
+  "name": "Baked with love",
+  "coordinates": {
+    "latitude": 7.8421204,
+    "longitude": 81.5494842
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "RGRX+RQX, School Rd, oddamavadi",
+  "business_status": "OPEN"
+}

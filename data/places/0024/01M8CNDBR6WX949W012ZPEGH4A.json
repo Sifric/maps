@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBR6WX949W012ZPEGH4A",
+  "name": "Mobile Shop",
+  "coordinates": {
+    "latitude": 7.3917068,
+    "longitude": 81.8405081
+  },
+  "categories": [
+    "Cell phone store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9RRR+J58, Al Hilal S Rd, Sainthamaruthu 32280",
+  "business_status": "OPEN"
+}

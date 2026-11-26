@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDA8P58YTCNBXF2MFH2TP",
+  "name": "VSK SuperMarket",
+  "coordinates": {
+    "latitude": 7.4272298,
+    "longitude": 81.8168015
+  },
+  "categories": [
+    "Supermarket"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "1c Main St, Pandiruppu 32300",
+  "business_status": "CLOSED_TEMPORARILY"
+}

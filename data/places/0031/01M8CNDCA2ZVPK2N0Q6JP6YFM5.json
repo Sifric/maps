@@ -1,0 +1,74 @@
+{
+  "id": "01M8CNDCA2ZVPK2N0Q6JP6YFM5",
+  "name": "Ayya Store",
+  "coordinates": {
+    "latitude": 7.7292152,
+    "longitude": 81.668629
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMH9+JPG, Para Eco park(පාරා හරිත උයන, Batticaloa",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7–10 AM",
+        "4–8:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7–10 AM",
+        "4–8:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7–10 AM",
+        "4–8:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7–10 AM",
+        "4–8:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7–10 AM",
+        "4–8:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7–10 AM",
+        "4–8:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7–10 AM",
+        "4–8:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

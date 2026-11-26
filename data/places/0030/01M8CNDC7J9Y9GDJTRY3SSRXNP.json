@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC7J9Y9GDJTRY3SSRXNP",
+  "name": "Apinesh Agro Farm",
+  "coordinates": {
+    "latitude": 7.7218921,
+    "longitude": 81.62219929999999
+  },
+  "categories": [
+    "Garden"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PJCC+QV, Batticaloa",
+  "business_status": "OPEN"
+}

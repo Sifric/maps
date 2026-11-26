@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBF0J5QRJE5M9XFCB70",
+  "name": "Happy Scoops",
+  "coordinates": {
+    "latitude": 7.7515348,
+    "longitude": 81.67191609999999
+  },
+  "categories": [
+    "Ice cream shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QM2C+JQ7, Batticaloa",
+  "business_status": "OPEN"
+}

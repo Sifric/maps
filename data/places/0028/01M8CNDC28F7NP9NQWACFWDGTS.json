@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC28F7NP9NQWACFWDGTS",
+  "name": "Tyre pancher",
+  "coordinates": {
+    "latitude": 7.4364113,
+    "longitude": 81.8223357
+  },
+  "categories": [
+    "Tire shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "640 Zam Zam Rd, Maruthamunai",
+  "business_status": "OPEN"
+}

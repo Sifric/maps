@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAHQSYYGWFC0YBA3GZJZ",
+  "name": "Villa Frangipani",
+  "coordinates": {
+    "latitude": 6.046676199999999,
+    "longitude": 80.2179917
+  },
+  "categories": [
+    "Guest house",
+    "Lodging",
+    "Villa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "17 Pokunawatta Rd, Galle 80000",
+  "business_status": "OPEN"
+}

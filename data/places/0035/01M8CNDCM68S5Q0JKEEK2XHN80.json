@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCM68S5Q0JKEEK2XHN80",
+  "name": "M.A.M Jewellers",
+  "coordinates": {
+    "latitude": 7.7773224999999995,
+    "longitude": 81.6027083
+  },
+  "categories": [
+    "Jeweler"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "175 Trincomalee-Batticaloa Rd, Eravur",
+  "business_status": "OPEN"
+}

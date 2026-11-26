@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6A8DX1NTR4VCWTKDBS",
+  "name": "Sh Restaurants",
+  "coordinates": {
+    "latitude": 7.906424599999999,
+    "longitude": 81.52821399999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Semmanoda/Al-hamra vidiyalam School road semmanodai, 07 valaichnnai School road semmanodai, 07 valaichnnai Valaichnai, 30400",
+  "business_status": "OPEN"
+}

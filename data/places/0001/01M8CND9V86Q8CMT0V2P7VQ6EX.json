@@ -1,0 +1,67 @@
+{
+  "id": "01M8CND9V86Q8CMT0V2P7VQ6EX",
+  "name": "Little bee",
+  "coordinates": {
+    "latitude": 6.875349399999999,
+    "longitude": 81.8306454
+  },
+  "categories": [
+    "Kindergarten"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "VRGJ+47J, Old pradeshiya sabha, road, Pottuvil 02",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8–11 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8–11 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8–11 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8–11 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8–11 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

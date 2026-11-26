@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDA2J75G871A5TCMMESD",
+  "name": "KC Tours",
+  "coordinates": {
+    "latitude": 7.7033878,
+    "longitude": 81.6844938
+  },
+  "categories": [
+    "Transportation service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM3M+9Q5, Vipulananda road, Kallady, Batticaloa",
+  "business_status": "OPEN"
+}

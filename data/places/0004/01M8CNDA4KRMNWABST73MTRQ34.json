@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA4KRMNWABST73MTRQ34",
+  "name": "Kurusanthan house",
+  "coordinates": {
+    "latitude": 7.4655904,
+    "longitude": 81.7095243
+  },
+  "categories": [
+    "Ice cream shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "FP85+6R, Mandur",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCB4GSHK872T65CT5MAX",
+  "name": "Rana Chicken Shop",
+  "coordinates": {
+    "latitude": 7.779632599999999,
+    "longitude": 81.59815689999999
+  },
+  "categories": [
+    "Chicken shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QHHX+V73, Eravur",
+  "business_status": "OPEN"
+}

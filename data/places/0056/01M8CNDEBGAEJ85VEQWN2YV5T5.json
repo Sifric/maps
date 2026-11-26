@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEBGAEJ85VEQWN2YV5T5",
+  "name": "The Residence",
+  "coordinates": {
+    "latitude": 6.4212368,
+    "longitude": 79.99856489999999
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "106 Pitaramba Road, Bentota 80500",
+  "business_status": "OPEN"
+}

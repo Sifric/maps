@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDA56Y3XCDK8WZA001HCN",
+  "name": "Bun cafe",
+  "coordinates": {
+    "latitude": 7.220728599999999,
+    "longitude": 81.8548168
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Near 191 Aalim Rd, Akkaraipattu 32400",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "3:30–11:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "3:30–11:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "3:30–11:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "3:30–11:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "3:30–11:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "3:30–11:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "3:30–11:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

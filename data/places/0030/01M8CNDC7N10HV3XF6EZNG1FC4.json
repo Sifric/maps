@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC7N10HV3XF6EZNG1FC4",
+  "name": "MR Estate",
+  "coordinates": {
+    "latitude": 7.7783671,
+    "longitude": 81.6451903
+  },
+  "categories": [
+    "Farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Mylanpaveli, Batticaloa 30000",
+  "business_status": "OPEN"
+}

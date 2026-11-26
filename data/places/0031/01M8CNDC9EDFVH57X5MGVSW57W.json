@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9EDFVH57X5MGVSW57W",
+  "name": "Hotel",
+  "coordinates": {
+    "latitude": 7.712065699999999,
+    "longitude": 81.6981382
+  },
+  "categories": [
+    "Fast food restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Amen Corner, Batticaloa",
+  "business_status": "OPEN"
+}

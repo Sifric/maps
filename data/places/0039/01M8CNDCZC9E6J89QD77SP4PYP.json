@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCZC9E6J89QD77SP4PYP",
+  "name": "Mrd.Shif bike sales",
+  "coordinates": {
+    "latitude": 7.7738961,
+    "longitude": 81.6102913
+  },
+  "categories": [
+    "Motorcycle repair shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "167 Palliyadi Rd, Eravur 30300",
+  "business_status": "OPEN"
+}

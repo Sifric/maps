@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD4F5J19K2WAHJM87GZF",
+  "name": "Kovi ticket shop",
+  "coordinates": {
+    "latitude": 7.8121334,
+    "longitude": 81.5569003
+  },
+  "categories": [
+    "Ticket office"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "RH64+VQ2, Main road, 4",
+  "business_status": "OPEN"
+}

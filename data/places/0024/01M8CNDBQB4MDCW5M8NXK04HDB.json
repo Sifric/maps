@@ -1,0 +1,20 @@
+{
+  "id": "01M8CNDBQB4MDCW5M8NXK04HDB",
+  "name": "Bus stop",
+  "coordinates": {
+    "latitude": 7.118348699999999,
+    "longitude": 81.8433337
+  },
+  "categories": [
+    "Bus depot"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "4R9V+C8, Thirukkovil",
+  "business_status": "OPEN"
+}

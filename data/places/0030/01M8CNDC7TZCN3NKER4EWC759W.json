@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC7TZCN3NKER4EWC759W",
+  "name": "Student room-THB",
+  "coordinates": {
+    "latitude": 7.7074719,
+    "longitude": 81.6909263
+  },
+  "categories": [
+    "Lounge bar"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM4R+X9M, Hospital Rd, Batticaloa",
+  "business_status": "OPEN"
+}

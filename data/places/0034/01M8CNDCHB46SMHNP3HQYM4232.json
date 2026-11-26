@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCHB46SMHNP3HQYM4232",
+  "name": "Ammar Mosque",
+  "coordinates": {
+    "latitude": 7.660875099999999,
+    "longitude": 81.75029839999999
+  },
+  "categories": [
+    "Mosque"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MQ62+943, Oluvil",
+  "business_status": "OPEN"
+}

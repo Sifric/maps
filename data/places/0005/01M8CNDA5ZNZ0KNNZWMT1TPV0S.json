@@ -1,0 +1,71 @@
+{
+  "id": "01M8CNDA5ZNZ0KNNZWMT1TPV0S",
+  "name": "Meow's Store",
+  "coordinates": {
+    "latitude": 7.6528122,
+    "longitude": 80.829347
+  },
+  "categories": [
+    "Children's store",
+    "Cake shop",
+    "Flower designer",
+    "Flower market",
+    "Gift shop",
+    "Party planner",
+    "Plant nursery",
+    "School supply store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "128/1 thorapitiya, Laggala 20713",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Open 24 hours"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

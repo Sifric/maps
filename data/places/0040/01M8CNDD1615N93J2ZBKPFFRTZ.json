@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDD1615N93J2ZBKPFFRTZ",
+  "name": "Eastern Lanka Hardware",
+  "coordinates": {
+    "latitude": 7.9119125,
+    "longitude": 81.5275156
+  },
+  "categories": [
+    "Hardware store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG6H+Q26, Oddamavadi",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7–7:30 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7 AM–7:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC5RETS6GRNZ1RE77ZH1",
+  "name": "Fort Park ARK Restaurant",
+  "coordinates": {
+    "latitude": 7.7096076,
+    "longitude": 81.7008068
+  },
+  "categories": [
+    "Family restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PP52+R8V, Batticaloa",
+  "business_status": "OPEN"
+}

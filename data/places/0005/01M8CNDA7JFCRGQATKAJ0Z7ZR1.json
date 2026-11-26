@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA7JFCRGQATKAJ0Z7ZR1",
+  "name": "Bun World",
+  "coordinates": {
+    "latitude": 7.2968702,
+    "longitude": 81.6896663
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "7MWQ+PV7, Ampara",
+  "business_status": "OPEN"
+}

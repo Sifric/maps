@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD81KXCXB4V0EDZH13GK",
+  "name": "Nafshan’s Home",
+  "coordinates": {
+    "latitude": 8.4578957,
+    "longitude": 81.262242
+  },
+  "categories": [
+    "Car rental agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "F756+5V5, Mutur",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD43DPJJA1KGR0A9QCF3",
+  "name": "Daily Fashion",
+  "coordinates": {
+    "latitude": 7.715111599999999,
+    "longitude": 81.6990089
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "10, Batticaloa",
+  "business_status": "OPEN"
+}

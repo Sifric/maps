@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEDPR4KYDXW1YZZJZ1BX",
+  "name": "Funky Hotel",
+  "coordinates": {
+    "latitude": 6.126149,
+    "longitude": 80.106163
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "S.R. Nanayakkara Mawatha - Wewala - Milla - Nalagasdeniya Rd, Hikkaduwa 80240",
+  "business_status": "OPEN"
+}

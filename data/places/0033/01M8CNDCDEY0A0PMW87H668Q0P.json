@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCDEY0A0PMW87H668Q0P",
+  "name": "Homeo Clinic",
+  "coordinates": {
+    "latitude": 7.7199884999999995,
+    "longitude": 81.6914999
+  },
+  "categories": [
+    "Medical Center"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM9R+XHX, Kannaki Amman 2nd Cross St, Batticaloa",
+  "business_status": "OPEN"
+}

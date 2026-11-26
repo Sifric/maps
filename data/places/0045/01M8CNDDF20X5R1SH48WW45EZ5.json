@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDDF20X5R1SH48WW45EZ5",
+  "name": "රූ' salon by kavee",
+  "coordinates": {
+    "latitude": 7.5999006,
+    "longitude": 80.0505249
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\nhalawatha road, Hettipola 60441",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–7 PM"
+      ]
+    }
+  ],
+  "business_status": "CLOSED"
+}

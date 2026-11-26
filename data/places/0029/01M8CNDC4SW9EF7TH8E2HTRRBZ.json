@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDC4SW9EF7TH8E2HTRRBZ",
+  "name": "Genius chess academy",
+  "coordinates": {
+    "latitude": 7.6723582,
+    "longitude": 81.7359661
+  },
+  "categories": [
+    "Chess instructor",
+    "Service establishment"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4:30–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4:30–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4:30–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4:30–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4:30–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7 AM–10 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

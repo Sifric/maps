@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDB2MDTBT0PYN5Q46WMY",
+  "name": "Varnesh Jewellery",
+  "coordinates": {
+    "latitude": 7.7310507,
+    "longitude": 81.68296959999999
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Batticaloa",
+  "business_status": "OPEN"
+}

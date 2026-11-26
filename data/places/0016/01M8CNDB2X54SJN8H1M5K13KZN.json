@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDB2X54SJN8H1M5K13KZN",
+  "name": "Hindu Temple",
+  "coordinates": {
+    "latitude": 7.6779722999999995,
+    "longitude": 81.5655646
+  },
+  "categories": [
+    "Hindu temple"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MHH8+56P, Ayithiyamalai, Karadiyanaru",
+  "business_status": "OPEN"
+}

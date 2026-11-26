@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA2VBZ5RTPXZ4HZV7AZY",
+  "name": "Jamsith Super Market",
+  "coordinates": {
+    "latitude": 7.3630381,
+    "longitude": 81.79865339999999
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Sammanthurai",
+  "business_status": "OPEN"
+}

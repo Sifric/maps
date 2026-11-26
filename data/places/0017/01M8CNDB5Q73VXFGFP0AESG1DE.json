@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDB5Q73VXFGFP0AESG1DE",
+  "name": "Masjithul Rahmath jumma Mosque",
+  "coordinates": {
+    "latitude": 7.3893415,
+    "longitude": 81.6966568
+  },
+  "categories": [
+    "Mosque"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Central Camp Rd",
+  "business_status": "OPEN"
+}

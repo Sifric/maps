@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDCBXMJVVWDDYA0GXHKNZ",
+  "name": "Laya Waves",
+  "coordinates": {
+    "latitude": 7.918172599999999,
+    "longitude": 81.5681725
+  },
+  "categories": [
+    "Hotel",
+    "Lodging"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WH99+777, Kalkudah",
+  "business_status": "OPEN"
+}

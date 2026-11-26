@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCB5ZA6GMXBJAH4Y9SWG",
+  "name": "Moorthy Multi Store",
+  "coordinates": {
+    "latitude": 7.514138,
+    "longitude": 81.7912698
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQ7R+MF, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

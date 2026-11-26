@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDAGE5EW5P8D1PEC2W4YJ",
+  "name": "Meemure Camping- Sri Lankan Eco Tourism",
+  "coordinates": {
+    "latitude": 7.4267465999999995,
+    "longitude": 80.84557819999999
+  },
+  "categories": [
+    "Campground",
+    "Resort hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Meemure",
+  "business_status": "OPEN"
+}

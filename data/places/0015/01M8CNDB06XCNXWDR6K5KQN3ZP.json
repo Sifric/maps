@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDB06XCNXWDR6K5KQN3ZP",
+  "name": "SMS Garden",
+  "coordinates": {
+    "latitude": 7.276387499999999,
+    "longitude": 81.8595781
+  },
+  "categories": [
+    "Park"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "7VG5+HR4, Palamunai",
+  "business_status": "OPEN"
+}

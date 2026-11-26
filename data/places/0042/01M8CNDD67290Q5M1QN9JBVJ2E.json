@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDD67290Q5M1QN9JBVJ2E",
+  "name": "Kethumathiya Banquet hall, Pub & Restaurant",
+  "coordinates": {
+    "latitude": 7.1093068,
+    "longitude": 80.0330847
+  },
+  "categories": [
+    "Banquet hall",
+    "Bar",
+    "Hotel",
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Aluthgama-Wigoda Road, Bemmulla Rd, Yakkala",
+  "business_status": "OPEN"
+}

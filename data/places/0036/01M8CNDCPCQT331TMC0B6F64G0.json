@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCPCQT331TMC0B6F64G0",
+  "name": "Makbool fruits and vagetapel store",
+  "coordinates": {
+    "latitude": 7.682564299999999,
+    "longitude": 81.73806499999999
+  },
+  "categories": [
+    "Vegetable wholesaler"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPMQ+26G, Hostel road pand, Kattankudy",
+  "business_status": "OPEN"
+}

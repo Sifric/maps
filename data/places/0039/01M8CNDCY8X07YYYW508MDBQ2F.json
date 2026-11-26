@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCY8X07YYYW508MDBQ2F",
+  "name": "Ahmas home",
+  "coordinates": {
+    "latitude": 7.778318,
+    "longitude": 81.60544999999999
+  },
+  "categories": [
+    "Apartment complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJH4+85G, Old Market Rd, Eravur",
+  "business_status": "OPEN"
+}

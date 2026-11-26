@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDAF19BMSNXBZ11X2015P",
+  "name": "Birdsong Villa",
+  "coordinates": {
+    "latitude": 6.1070918999999995,
+    "longitude": 80.1432864
+  },
+  "categories": [
+    "Villa",
+    "Hotel",
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Sarath Zoysa, Bujamulla waththa, Katudampe Rd, Rathgama",
+  "business_status": "OPEN"
+}

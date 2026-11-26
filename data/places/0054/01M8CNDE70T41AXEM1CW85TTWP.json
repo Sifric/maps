@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE70T41AXEM1CW85TTWP",
+  "name": "Yume Café",
+  "coordinates": {
+    "latitude": 5.9836398,
+    "longitude": 80.3937728
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Midigama, Ahangama 80650",
+  "business_status": "CLOSED_TEMPORARILY"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDE0C34JQKS2Q3728305G",
+  "name": "Saloon",
+  "coordinates": {
+    "latitude": 6.3167086999999995,
+    "longitude": 80.161647
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "B114",
+  "business_status": "OPEN"
+}

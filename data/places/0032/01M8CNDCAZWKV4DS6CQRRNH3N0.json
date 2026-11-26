@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCAZWKV4DS6CQRRNH3N0",
+  "name": "Nuzaid stores",
+  "coordinates": {
+    "latitude": 7.7794783,
+    "longitude": 81.6153429
+  },
+  "categories": [
+    "Supermarket"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJH8+Q4W, Savukkody",
+  "business_status": "OPEN"
+}

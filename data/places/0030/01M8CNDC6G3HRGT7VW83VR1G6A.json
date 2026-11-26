@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6G3HRGT7VW83VR1G6A",
+  "name": ".",
+  "coordinates": {
+    "latitude": 7.484564499999999,
+    "longitude": 81.7648536
+  },
+  "categories": [
+    "Steak house"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kaluwanchikudy",
+  "business_status": "OPEN"
+}

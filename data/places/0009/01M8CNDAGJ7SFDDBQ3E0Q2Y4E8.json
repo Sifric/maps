@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAGJ7SFDDBQ3E0Q2Y4E8",
+  "name": "Sielen Diva",
+  "coordinates": {
+    "latitude": 5.9987243,
+    "longitude": 80.27061929999999
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "776/1 Galle-Matara Coastal Road, Mihiripenne, Talpe 80615",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCD91KAGNPPZRX4GJVNX",
+  "name": "Ayurvedic hospital (pancha karma)",
+  "coordinates": {
+    "latitude": 7.679949199999999,
+    "longitude": 81.7211789
+  },
+  "categories": [
+    "Hospital"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPHC+XFF, Lake Dr, Kattankudy",
+  "business_status": "CLOSED_TEMPORARILY"
+}

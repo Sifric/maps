@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBSK7K2MN9H6ZN5B3GFX",
+  "name": "new smart motors",
+  "coordinates": {
+    "latitude": 7.684981199999999,
+    "longitude": 81.72611169999999
+  },
+  "categories": [
+    "Auto parts store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "247 Main St, Kattankudy",
+  "business_status": "OPEN"
+}

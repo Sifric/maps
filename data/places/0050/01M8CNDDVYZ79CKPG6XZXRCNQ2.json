@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDVYZ79CKPG6XZXRCNQ2",
+  "name": "Rasa Bojun Shop",
+  "coordinates": {
+    "latitude": 6.1406769,
+    "longitude": 80.10259789999999
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "44R3+72H, Baddegama Rd, Hikkaduwa",
+  "business_status": "OPEN"
+}

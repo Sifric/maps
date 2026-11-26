@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE4TM661KXPNNJAEB1Q2",
+  "name": "New gamage grocery",
+  "coordinates": {
+    "latitude": 6.0314225,
+    "longitude": 80.2634941
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Kalahe wanchawala, Galle",
+  "business_status": "OPEN"
+}

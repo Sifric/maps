@@ -1,0 +1,68 @@
+{
+  "id": "01M8CNDAT299EKG5WRDRMJ2M6T",
+  "name": "Shariff Store",
+  "coordinates": {
+    "latitude": 7.3608145,
+    "longitude": 81.8545133
+  },
+  "categories": [
+    "General store",
+    "Cell phone store",
+    "Computer accessories store",
+    "Computer store",
+    "Computer support and services"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "10/2 Meera Nager Road, Nintavur - 01, Nintavur 32340",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "3 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "9 AM–9:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

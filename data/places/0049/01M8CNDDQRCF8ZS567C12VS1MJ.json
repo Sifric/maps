@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDQRCF8ZS567C12VS1MJ",
+  "name": "Zam Zam Hotel",
+  "coordinates": {
+    "latitude": 6.0456676,
+    "longitude": 80.2247828
+  },
+  "categories": [
+    "Soup kitchen"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "11-3 H.K. Edmond Mawatha, Galle 80000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "10 AM–2:56 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "10 AM–2:56 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "10 AM–2:56 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "10 AM–2:56 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "10 AM–2:56 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "10 AM–2:56 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "10 AM–2:56 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

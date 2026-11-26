@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDBV7VV87EQECZAXX4V8Y",
+  "name": "CCTV GALLERY",
+  "coordinates": {
+    "latitude": 7.3632621,
+    "longitude": 81.7979884
+  },
+  "categories": [
+    "Electronics store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "Near Food City, Ampara Rd, Sammanthurai 32000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

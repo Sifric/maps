@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDB2MZHT1HG7AC1TY9D9A",
+  "name": "Yaznah Garden",
+  "coordinates": {
+    "latitude": 7.8030748,
+    "longitude": 81.6012839
+  },
+  "categories": [
+    "Farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "RJ32+6GF",
+  "business_status": "OPEN"
+}

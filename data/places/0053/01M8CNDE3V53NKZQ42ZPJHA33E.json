@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE3V53NKZQ42ZPJHA33E",
+  "name": "NEW DELHI INDIAN RESTAURANT BENTOTA",
+  "coordinates": {
+    "latitude": 6.4162642,
+    "longitude": 80.0017874
+  },
+  "categories": [
+    "Indian restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "313 Galle Rd, Bentota 80500",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9 AM–11:50 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9 AM–11:50 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9 AM–11:50 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9 AM–11:50 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9 AM–11:50 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9 AM–11:50 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "9 AM–11:50 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

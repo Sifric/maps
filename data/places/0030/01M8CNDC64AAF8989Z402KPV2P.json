@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC64AAF8989Z402KPV2P",
+  "name": "Orien hotel",
+  "coordinates": {
+    "latitude": 7.9124726999999995,
+    "longitude": 81.52550649999999
+  },
+  "categories": [
+    "Family restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG7G+254, MPCS Rd, Oddamavadi",
+  "business_status": "OPEN"
+}

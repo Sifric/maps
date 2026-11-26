@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDECZB1TEFQDGT9VCC1VC",
+  "name": "House of Merchants",
+  "coordinates": {
+    "latitude": 6.0475105,
+    "longitude": 80.2153857
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "122/2 Eliot Rd, Galle 80000",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE7VZSTE37QGD044XCEE",
+  "name": "BENTOTA FRESH FRUITS",
+  "coordinates": {
+    "latitude": 6.4335569,
+    "longitude": 79.9999966
+  },
+  "categories": [
+    "Fruits wholesaler"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "No 59 Daglas F. Gunawardana Mawatha, Aluthgama 12080",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–2 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–2 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–2 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–2 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–2 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–2 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8 AM–2 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

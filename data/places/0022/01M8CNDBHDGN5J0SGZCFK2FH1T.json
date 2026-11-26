@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBHDGN5J0SGZCFK2FH1T",
+  "name": "Prasanth Motor Workshop",
+  "coordinates": {
+    "latitude": 7.7083208999999995,
+    "longitude": 81.6884719
+  },
+  "categories": [
+    "Car repair and maintenance service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Batticaloa",
+  "business_status": "OPEN"
+}

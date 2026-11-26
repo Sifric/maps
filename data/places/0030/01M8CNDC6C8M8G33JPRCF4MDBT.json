@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6C8M8G33JPRCF4MDBT",
+  "name": "Aishu Bunz",
+  "coordinates": {
+    "latitude": 7.908808199999999,
+    "longitude": 81.525059
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG5G+G2W, MPCS Rd, Oddamavadi",
+  "business_status": "CLOSED_TEMPORARILY"
+}

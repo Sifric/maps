@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCTAC95CP3ENV92D41G3",
+  "name": "Samurdhi Bank-Iruthayapuram",
+  "coordinates": {
+    "latitude": 7.7359786999999995,
+    "longitude": 81.67469609999999
+  },
+  "categories": [
+    "Bank"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMPF+9VW, Main Rd, Batticaloa",
+  "business_status": "OPEN"
+}

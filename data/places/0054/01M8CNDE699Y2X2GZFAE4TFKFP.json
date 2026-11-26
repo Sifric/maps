@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE699Y2X2GZFAE4TFKFP",
+  "name": "Фрукты",
+  "coordinates": {
+    "latitude": 6.0953205,
+    "longitude": 80.1482128
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "34WX+48J, Rathgama - Dodangoda Rd, Rathgama",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCDYTAJHJ9C6MK52Q1QY",
+  "name": "Eravur Medical Centre",
+  "coordinates": {
+    "latitude": 7.7803265999999995,
+    "longitude": 81.60437739999999
+  },
+  "categories": [
+    "Medical clinic"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJJ3+4QJ, Town, Eravur",
+  "business_status": "OPEN"
+}

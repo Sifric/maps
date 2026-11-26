@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDA4YVPTDJDP1DCSMRMHZ",
+  "name": "Sbarro hotel",
+  "coordinates": {
+    "latitude": 6.8667782,
+    "longitude": 81.8324871
+  },
+  "categories": [
+    "Sri Lankan restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "VR8J+PX9, Pottuvil",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–11:15 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–11:15 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–11:15 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–11:15 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7 AM–11:15 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–11:15 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7 AM–11:15 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

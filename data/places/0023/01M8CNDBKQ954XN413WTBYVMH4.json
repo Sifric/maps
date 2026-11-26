@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBKQ954XN413WTBYVMH4",
+  "name": "Public Toilet",
+  "coordinates": {
+    "latitude": 7.9391737,
+    "longitude": 80.9999976
+  },
+  "categories": [
+    "Public bathroom"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WXQX+MX9, Tourism Info Center, Polonnaruwa",
+  "business_status": "OPEN"
+}

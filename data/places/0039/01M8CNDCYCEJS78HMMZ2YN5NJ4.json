@@ -1,0 +1,73 @@
+{
+  "id": "01M8CNDCYCEJS78HMMZ2YN5NJ4",
+  "name": "A.R.M. BROTHERS MULTI SHOP",
+  "coordinates": {
+    "latitude": 7.772057599999999,
+    "longitude": 81.6137663
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJC7+RGC, Kalaimahal Rd, Eravur",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–2 PM",
+        "4–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–2 PM",
+        "4–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–2 PM",
+        "4–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–2 PM",
+        "4–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–2 PM",
+        "4–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7 AM–2 PM",
+        "4–10 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

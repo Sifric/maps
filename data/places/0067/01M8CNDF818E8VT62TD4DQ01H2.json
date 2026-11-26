@@ -1,0 +1,72 @@
+{
+  "id": "01M8CNDF818E8VT62TD4DQ01H2",
+  "name": "baba saloon",
+  "coordinates": {
+    "latitude": 9.6747838,
+    "longitude": 80.0084011
+  },
+  "categories": [
+    "Barber shop",
+    "Tailor"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ],
+    "names": [
+      "Baba saloon"
+    ]
+  },
+  "address": "Jaffna",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "No 272 Jaffna-Manipay-Karainagar Rd, Jaffna"
+  ]
+}

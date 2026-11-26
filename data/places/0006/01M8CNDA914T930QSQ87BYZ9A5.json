@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA914T930QSQ87BYZ9A5",
+  "name": "RB Hotel",
+  "coordinates": {
+    "latitude": 7.342632,
+    "longitude": 81.8560933
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Theatre Rd, Nintavur 32340",
+  "business_status": "OPEN"
+}

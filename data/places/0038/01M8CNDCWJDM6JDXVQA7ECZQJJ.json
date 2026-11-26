@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCWJDM6JDXVQA7ECZQJJ",
+  "name": "HIKTEKSTORE",
+  "coordinates": {
+    "latitude": 7.6868232999999995,
+    "longitude": 81.7251495
+  },
+  "categories": [
+    "Camera store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "414Main Street, Kattankudy 01",
+  "business_status": "OPEN"
+}

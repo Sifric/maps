@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDCEYQPZ0HYAHW3314CWK",
+  "name": "Medical centre dehiwaththa",
+  "coordinates": {
+    "latitude": 8.3486052,
+    "longitude": 81.25835239999999
+  },
+  "categories": [
+    "Medical clinic"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Ranathunga junction,dehiwaththa",
+  "business_status": "OPEN"
+}

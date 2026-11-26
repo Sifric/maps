@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEMWCJTDSSZ2Q7Z1KRQM",
+  "name": "Sparrow Restaurant",
+  "coordinates": {
+    "latitude": 9.6598509,
+    "longitude": 80.0262353
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "49 A9, Jaffna",
+  "business_status": "OPEN"
+}

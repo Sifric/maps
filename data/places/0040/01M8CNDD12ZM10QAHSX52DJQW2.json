@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD12ZM10QAHSX52DJQW2",
+  "name": "Phone shop",
+  "coordinates": {
+    "latitude": 7.9207353,
+    "longitude": 81.5216183
+  },
+  "categories": [
+    "Cell phone store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WGCC+7JX, Oddamavadi",
+  "business_status": "OPEN"
+}

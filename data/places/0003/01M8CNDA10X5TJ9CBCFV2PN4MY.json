@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA10X5TJ9CBCFV2PN4MY",
+  "name": "MTR super market",
+  "coordinates": {
+    "latitude": 7.3472379,
+    "longitude": 81.853788
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "8VW3+VGV, South Rd, Nintavur 32340",
+  "business_status": "OPEN"
+}

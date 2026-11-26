@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCCHX90NTP2SRJVXGQPV",
+  "name": "C Wing Hostel",
+  "coordinates": {
+    "latitude": 7.7975227,
+    "longitude": 81.5848594
+  },
+  "categories": [
+    "Hostel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QHXM+2W5",
+  "business_status": "OPEN"
+}

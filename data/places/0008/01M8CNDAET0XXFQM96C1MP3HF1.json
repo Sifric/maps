@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDAET0XXFQM96C1MP3HF1",
+  "name": "The Villas Wadduwa",
+  "coordinates": {
+    "latitude": 6.674970999999999,
+    "longitude": 79.9217772
+  },
+  "categories": [
+    "Resort hotel",
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "4, 352 Rathnayake Road, Wadduwa 12560",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDEKN5HVV7DR14R6NQW1T",
+  "name": "Kajenthini Vegetarian Restaurant",
+  "coordinates": {
+    "latitude": 9.733632,
+    "longitude": 80.01643399999999
+  },
+  "categories": [
+    "Breakfast restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "221 Uduvil Rd, Uduvil",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

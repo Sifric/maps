@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCMTN8S0AZEYMEZTTVZ5",
+  "name": "Kattankudy",
+  "coordinates": {
+    "latitude": 7.6791326,
+    "longitude": 81.73750439999999
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPHQ+M22, Nooraniya, Mosque Avenue, Kattankudy",
+  "business_status": "OPEN"
+}

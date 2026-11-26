@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC4WQFQMJZS8XBG9KZQ7",
+  "name": "St. John's Preschool, Valaichchenai",
+  "coordinates": {
+    "latitude": 7.9258964999999995,
+    "longitude": 81.53701749999999
+  },
+  "categories": [
+    "Preschool"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kalkudah Road",
+  "business_status": "OPEN"
+}

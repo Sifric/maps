@@ -1,0 +1,68 @@
+{
+  "id": "01M8CNDFZZKQ7KDZKVWD0FV7Q3",
+  "name": "Vision Care - Head Office - Ward Place",
+  "coordinates": {
+    "latitude": 6.9170219,
+    "longitude": 79.86551759999999
+  },
+  "categories": [
+    "Optician",
+    "Eye care center",
+    "Hearing aid store",
+    "Optometrist",
+    "Pharmacy",
+    "Sunglasses store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "06 Ward Pl, Colombo 00700",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8 AM–5 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

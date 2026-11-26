@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEA2TMVAGSG8V9QHSRKX",
+  "name": "Tranquil Retreat",
+  "coordinates": {
+    "latitude": 6.0228136999999995,
+    "longitude": 80.2446552
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Samagiri, Kesbapana, Unawatuna",
+  "business_status": "OPEN"
+}

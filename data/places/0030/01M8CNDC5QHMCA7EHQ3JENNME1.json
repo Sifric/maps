@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDC5QHMCA7EHQ3JENNME1",
+  "name": "Deen Road Idiyappa Kadai",
+  "coordinates": {
+    "latitude": 7.676692699999999,
+    "longitude": 81.7340057
+  },
+  "categories": [
+    "Takeout restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "71Deen, Rd, Kattankudy",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4:30–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4:30–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4:30–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4:30–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4:30–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4:30–10 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

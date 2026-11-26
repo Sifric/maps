@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD1FY9NBRCS88WD5Y8KZ",
+  "name": "TS TOURS PASSIKUDAH",
+  "coordinates": {
+    "latitude": 7.921815,
+    "longitude": 81.5356884
+  },
+  "categories": [
+    "Taxi service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "160/B Muthumariyamman Kovil Road, Valaichenai 30400",
+  "business_status": "OPEN"
+}

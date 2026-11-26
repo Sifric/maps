@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA29QZFW9EWN0HFJY5BA",
+  "name": "Marigold Cakes",
+  "coordinates": {
+    "latitude": 7.4321237,
+    "longitude": 81.8159175
+  },
+  "categories": [
+    "Cake shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kariyapper Rd, Maruthamunai",
+  "business_status": "CLOSED_TEMPORARILY"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD4JFD24QEHXZXW8XSAJ",
+  "name": "Imran shop",
+  "coordinates": {
+    "latitude": 7.967427499999999,
+    "longitude": 81.3529597
+  },
+  "categories": [
+    "Shopping mall"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kayankerni",
+  "business_status": "OPEN"
+}

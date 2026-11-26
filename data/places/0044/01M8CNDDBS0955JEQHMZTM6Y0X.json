@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDBS0955JEQHMZTM6Y0X",
+  "name": "Sathyananthan Home",
+  "coordinates": {
+    "latitude": 7.741028099999999,
+    "longitude": 81.6953836
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMRW+C56, Batticaloa",
+  "business_status": "OPEN"
+}

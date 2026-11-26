@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDQ85BYDJFMS0YSJ9NVC",
+  "name": "H A Restarunt & Cafe",
+  "coordinates": {
+    "latitude": 6.2744775,
+    "longitude": 80.0387727
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "174 Main Street, Balapitiya",
+  "business_status": "OPEN"
+}

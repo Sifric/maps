@@ -1,0 +1,20 @@
+{
+  "id": "01M8CNDEM7DJ1RT8072D3F0GXH",
+  "name": "Sham Cafe",
+  "coordinates": {
+    "latitude": 9.756819,
+    "longitude": 80.0291055
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

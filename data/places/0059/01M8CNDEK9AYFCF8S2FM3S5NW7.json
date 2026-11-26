@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDEK9AYFCF8S2FM3S5NW7",
+  "name": "Pearl Island Inn Jaffna",
+  "coordinates": {
+    "latitude": 9.6641166,
+    "longitude": 80.0177291
+  },
+  "categories": [
+    "Bar",
+    "Guest house",
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "603 Hospital St, Jaffna 40000",
+  "business_status": "OPEN"
+}

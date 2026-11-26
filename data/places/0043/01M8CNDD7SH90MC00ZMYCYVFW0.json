@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD7SH90MC00ZMYCYVFW0",
+  "name": "ARS VEHICLE FACILITY&Buy&sale",
+  "coordinates": {
+    "latitude": 7.9454869,
+    "longitude": 81.5067013
+  },
+  "categories": [
+    "Auto parts store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WGW4+5MW, Trincomalee-Batticaloa Rd, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,74 @@
+{
+  "id": "01M8CNDAZGM2QHCQ8AHEWKR352",
+  "name": "Natural History & Science Museum of Srilanka",
+  "coordinates": {
+    "latitude": 7.713185299999999,
+    "longitude": 81.6998351
+  },
+  "categories": [
+    "Museum",
+    "Tourist attraction"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM7X+7WG, Batticaloa",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "10 AM–12:30 PM",
+        "4:30–7:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "10 AM–12:30 PM",
+        "4:30–7:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "10 AM–12:30 PM",
+        "4:30–7:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "10 AM–12:30 PM",
+        "4:30–7:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "10 AM–12:30 PM",
+        "4:30–7:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "10 AM–12:30 PM",
+        "4:30–7:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDDHXWZ3J9GZYV78S8RZ1",
+  "name": "Dekma Education Center - Kahaduwa",
+  "coordinates": {
+    "latitude": 6.2200048,
+    "longitude": 80.20972379999999
+  },
+  "categories": [
+    "Education center"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Walikatiya Kahaduwa, Elpitiya 80460",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "2:30–8:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "2:30–8:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "2:30–8:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "2:30–8:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "2:30–8:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7:30 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "1–8:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

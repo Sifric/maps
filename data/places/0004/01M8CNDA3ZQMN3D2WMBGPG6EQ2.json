@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA3ZQMN3D2WMBGPG6EQ2",
+  "name": "CFC - City Food Court",
+  "coordinates": {
+    "latitude": 7.4105468,
+    "longitude": 81.82872859999999
+  },
+  "categories": [
+    "Family restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "222/6 Main St, Kalmunai 32300",
+  "business_status": "OPEN"
+}

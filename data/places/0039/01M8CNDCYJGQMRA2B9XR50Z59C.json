@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCYJGQMRA2B9XR50Z59C",
+  "name": "SLTB Depot - Eravur",
+  "coordinates": {
+    "latitude": 7.7843146,
+    "longitude": 81.6066827
+  },
+  "categories": [
+    "Transportation service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJM4+PMF, Eravur 30300",
+  "business_status": "OPEN"
+}

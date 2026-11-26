@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEF76ZHWNR9MW56FHTZC",
+  "name": "Hotel Rhome Home",
+  "coordinates": {
+    "latitude": 5.9732829,
+    "longitude": 80.4258645
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "No.223 Main Street, Weligama 81700",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCR42FT6CVJ3R52A0AC9",
+  "name": "Indoor Stadium",
+  "coordinates": {
+    "latitude": 7.937537,
+    "longitude": 81.5125589
+  },
+  "categories": [
+    "Playground"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WGQ7+227, Thiyavattavan",
+  "business_status": "OPEN"
+}

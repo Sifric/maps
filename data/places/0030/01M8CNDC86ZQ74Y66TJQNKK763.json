@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC86ZQ74Y66TJQNKK763",
+  "name": "Modern Fish Farm",
+  "coordinates": {
+    "latitude": 7.675700399999999,
+    "longitude": 81.7453716
+  },
+  "categories": [
+    "Pond"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kattankudy",
+  "business_status": "OPEN"
+}

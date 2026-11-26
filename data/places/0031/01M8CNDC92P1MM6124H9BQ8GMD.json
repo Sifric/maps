@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC92P1MM6124H9BQ8GMD",
+  "name": "Organic Vegetable Sales Outlet-Batticaloa",
+  "coordinates": {
+    "latitude": 7.714510499999999,
+    "longitude": 81.6997023
+  },
+  "categories": [
+    "Supermarket"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM7X+RV4, Lady Manning Dr, Batticaloa",
+  "business_status": "OPEN"
+}

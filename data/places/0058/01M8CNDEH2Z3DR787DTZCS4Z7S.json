@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDEH2Z3DR787DTZCS4Z7S",
+  "name": "Kopay R.C.T.M School",
+  "coordinates": {
+    "latitude": 9.7112065,
+    "longitude": 80.0599618
+  },
+  "categories": [
+    "Primary school"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Kopay Base Hospital, Jaffna",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7:30 AM–2:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7:30 AM–2:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7:30 AM–2:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7:30 AM–2:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7:30 AM–2:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

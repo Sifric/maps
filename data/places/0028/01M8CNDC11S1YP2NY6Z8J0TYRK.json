@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC11S1YP2NY6Z8J0TYRK",
+  "name": "yaso store",
+  "coordinates": {
+    "latitude": 7.579196,
+    "longitude": 81.7516579
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Ampilanthurai School Rd",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAFCNXHH3NFDG5RZBNPW",
+  "name": "Nabeehan Home",
+  "coordinates": {
+    "latitude": 7.3473809999999995,
+    "longitude": 81.857598
+  },
+  "categories": [
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "192/2 Southroad Nintavur 06, Nintavur 12345",
+  "business_status": "OPEN"
+}

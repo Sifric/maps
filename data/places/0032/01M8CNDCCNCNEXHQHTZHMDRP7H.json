@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCCNCNEXHQHTZHMDRP7H",
+  "name": "Hana Villa",
+  "coordinates": {
+    "latitude": 7.682037599999999,
+    "longitude": 81.7213183
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "10/21hijra Lane, Old Rd, Kattankudy",
+  "business_status": "OPEN"
+}

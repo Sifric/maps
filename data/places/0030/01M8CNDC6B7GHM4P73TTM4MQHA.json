@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6B7GHM4P73TTM4MQHA",
+  "name": "TEA TIME",
+  "coordinates": {
+    "latitude": 7.9129166,
+    "longitude": 81.5259368
+  },
+  "categories": [
+    "Fast food restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG7G+49Q, Colombo Road, Brainthurachenai",
+  "business_status": "OPEN"
+}

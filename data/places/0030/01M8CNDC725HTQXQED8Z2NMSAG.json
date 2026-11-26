@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC725HTQXQED8Z2NMSAG",
+  "name": "𝑺𝒘𝒆𝒆𝒕 𝑷𝒓𝒐𝒎𝒊𝒔𝒆𝒔",
+  "coordinates": {
+    "latitude": 7.7128738,
+    "longitude": 81.71073559999999
+  },
+  "categories": [
+    "Cake shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "141/3 New Kalmunai Rd, Batticaloa 30000",
+  "business_status": "OPEN"
+}

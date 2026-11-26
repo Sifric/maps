@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD65BB3M84ZY80K8H0VH",
+  "name": "Maruthamunai Cemetery",
+  "coordinates": {
+    "latitude": 7.4345593999999995,
+    "longitude": 81.8228958
+  },
+  "categories": [
+    "Cemetery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CRMF+R5C, Maruthamunai",
+  "business_status": "OPEN"
+}

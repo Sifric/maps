@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCVMBJ2JRVFNDKTFX5Y7",
+  "name": "Batticaloa Bridge",
+  "coordinates": {
+    "latitude": 7.7157104,
+    "longitude": 81.69400019999999
+  },
+  "categories": [
+    "Bridge"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM8V+7JJ, Batticaloa",
+  "business_status": "OPEN"
+}

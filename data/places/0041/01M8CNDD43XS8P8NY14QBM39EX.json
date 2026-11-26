@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD43XS8P8NY14QBM39EX",
+  "name": "Vegetable Collection Centre -Vaharai",
+  "coordinates": {
+    "latitude": 7.717284899999999,
+    "longitude": 81.69984889999999
+  },
+  "categories": [
+    "Supermarket"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM8X+WW9, Nagapuram. Vaharai, Trinco Rd, Batticaloa",
+  "business_status": "CLOSED"
+}

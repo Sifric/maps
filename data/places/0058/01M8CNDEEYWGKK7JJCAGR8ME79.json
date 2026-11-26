@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDEEYWGKK7JJCAGR8ME79",
+  "name": "Tour Hub Traveling and Villa",
+  "coordinates": {
+    "latitude": 6.1238136,
+    "longitude": 80.1165596
+  },
+  "categories": [
+    "Villa",
+    "Homestay",
+    "Taxi service",
+    "Tour agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Hikkaduwa 80240",
+  "business_status": "OPEN"
+}

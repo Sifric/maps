@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDDW2ZFHHQKRVVYKWW9HD",
+  "name": "Sam’s Cafe",
+  "coordinates": {
+    "latitude": 7.160016799999999,
+    "longitude": 81.2232363
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "566F+275, Anderson de Silva Mawatha, Bibile",
+  "business_status": "OPEN"
+}

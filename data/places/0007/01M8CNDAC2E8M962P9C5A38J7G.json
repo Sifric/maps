@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAC2E8M962P9C5A38J7G",
+  "name": "Fima sports complex",
+  "coordinates": {
+    "latitude": 7.394863,
+    "longitude": 81.8345605
+  },
+  "categories": [
+    "Sports complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "268 Market Rd, Sainthamaruthu 32300",
+  "business_status": "OPEN"
+}

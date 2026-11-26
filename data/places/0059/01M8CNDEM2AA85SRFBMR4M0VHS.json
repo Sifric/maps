@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDEM2AA85SRFBMR4M0VHS",
+  "name": "UTT Hotel & Catering",
+  "coordinates": {
+    "latitude": 9.6936903,
+    "longitude": 80.0548534
+  },
+  "categories": [
+    "Takeout restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Koppay South Jaffna Bus Stop, AB20",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–10:15 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–10:15 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–10:15 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–10:15 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–10:15 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–10:15 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8 AM–10:15 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

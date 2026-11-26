@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBHVRHGWJFZ6SHJ17XM",
+  "name": "Juice pot",
+  "coordinates": {
+    "latitude": 7.690336599999999,
+    "longitude": 81.7374487
+  },
+  "categories": [
+    "Ice cream shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPRP+4X4, Marine Dr, Kattankudy",
+  "business_status": "OPEN"
+}

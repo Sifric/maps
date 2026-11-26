@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDA4TBENWDTR4WW84XRGC",
+  "name": "NS Food Corner",
+  "coordinates": {
+    "latitude": 6.865818099999999,
+    "longitude": 81.8328442
+  },
+  "categories": [
+    "Sri Lankan restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "VR8M+83C, Panama Rd, Pottuvil",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6 AM–1 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6 AM–1 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6 AM–1 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6 AM–1 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6 AM–1 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6 AM–1 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6 AM–1 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

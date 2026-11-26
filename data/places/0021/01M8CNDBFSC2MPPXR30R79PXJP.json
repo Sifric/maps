@@ -1,0 +1,20 @@
+{
+  "id": "01M8CNDBFSC2MPPXR30R79PXJP",
+  "name": "DS Office Bus Stop",
+  "coordinates": {
+    "latitude": 7.3591231,
+    "longitude": 81.8450506
+  },
+  "categories": [
+    "Bus stop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "Colombo - Batticaloa Hwy, Nintavur",
+  "business_status": "OPEN"
+}

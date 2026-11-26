@@ -1,0 +1,63 @@
+{
+  "id": "01M8CNDFDWEHR5D0JFK66VW1RY",
+  "name": "Fish Market",
+  "coordinates": {
+    "latitude": 9.7448831,
+    "longitude": 80.0266383
+  },
+  "categories": [
+    "Market"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "P2VG+XM2, Chunnakam",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:30 AM–1 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:30 AM–1 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:30 AM–1 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:30 AM–1 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:30 AM–1 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:30 AM–1 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6:30 AM–1 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

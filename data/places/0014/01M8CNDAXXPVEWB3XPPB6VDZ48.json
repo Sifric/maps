@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAXXPVEWB3XPPB6VDZ48",
+  "name": "Aims Church",
+  "coordinates": {
+    "latitude": 7.3863015999999995,
+    "longitude": 81.84009669999999
+  },
+  "categories": [
+    "Church"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "754 Vipulananda Rd, Karaitivu 32250",
+  "business_status": "OPEN"
+}

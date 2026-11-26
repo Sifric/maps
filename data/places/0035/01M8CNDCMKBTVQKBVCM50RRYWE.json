@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCMKBTVQKBVCM50RRYWE",
+  "name": "Oddamavadi Bus Stand",
+  "coordinates": {
+    "latitude": 7.9171856,
+    "longitude": 81.51912469999999
+  },
+  "categories": [
+    "Bus charter"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG89+VJH, Oddamavadi",
+  "business_status": "OPEN"
+}

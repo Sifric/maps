@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA5028NEFZEDFQX2TPAR",
+  "name": "Fire farm restaurant",
+  "coordinates": {
+    "latitude": 6.9223833,
+    "longitude": 81.84422719999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Colombo Batticaloa highway, 25, Pottuvil 32500",
+  "business_status": "CLOSED_TEMPORARILY"
+}

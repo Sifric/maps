@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBF8KKM2SE9SPXEPAY3G",
+  "name": "Sutha Barber",
+  "coordinates": {
+    "latitude": 7.3950738,
+    "longitude": 81.8341136
+  },
+  "categories": [
+    "Barber shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9RWM+2JH, Osman Rd, Kalmunai 32300",
+  "business_status": "OPEN"
+}

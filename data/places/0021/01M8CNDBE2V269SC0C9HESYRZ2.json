@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBE2V269SC0C9HESYRZ2",
+  "name": "Haniffa Auto Service",
+  "coordinates": {
+    "latitude": 7.363351,
+    "longitude": 81.7868676
+  },
+  "categories": [
+    "Car wash"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Ampara Road, Sammanthurai 32200",
+  "business_status": "OPEN"
+}

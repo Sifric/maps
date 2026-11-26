@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCQJJXXZ1A4P9ZEC6MT4",
+  "name": "No 1 building",
+  "coordinates": {
+    "latitude": 7.7019836999999995,
+    "longitude": 81.6628143
+  },
+  "categories": [
+    "Historical landmark"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM27+Q4, Batticaloa",
+  "business_status": "OPEN"
+}

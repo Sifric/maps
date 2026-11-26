@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCST2T35TK0RWAV5EQ9W",
+  "name": "Pravin fancy",
+  "coordinates": {
+    "latitude": 7.7207266,
+    "longitude": 81.7008651
+  },
+  "categories": [
+    "Cosmetics store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No.55 Bar Rd, Batticaloa",
+  "business_status": "OPEN"
+}

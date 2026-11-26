@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEQZ17S0Z69Q8MT4Q9W6",
+  "name": "DREAM CITY HOTEL",
+  "coordinates": {
+    "latitude": 9.3938128,
+    "longitude": 80.4046611
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Road, Kilinochchi",
+  "business_status": "OPEN"
+}

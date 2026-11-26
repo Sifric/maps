@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDDWT3205N1P537MBHWDH",
+  "name": "Lucky Fort Restaurant And Cooking Class And Boat Rides",
+  "coordinates": {
+    "latitude": 6.026376,
+    "longitude": 80.216021
+  },
+  "categories": [
+    "Sri Lankan restaurant",
+    "Cooking class",
+    "Cooking school"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "07 Parawa St, Galle 80000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12–9 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "12–9 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12–9 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

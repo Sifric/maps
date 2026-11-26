@@ -1,0 +1,68 @@
+{
+  "id": "01M8CNDA4K44T0SDDQS0YSW4FN",
+  "name": "W Lounge",
+  "coordinates": {
+    "latitude": 6.911808499999999,
+    "longitude": 79.8673518
+  },
+  "categories": [
+    "Night club",
+    "Bar"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "31 Horton Pl, Colombo 7",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 PM–5 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 PM–5 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 PM–5 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 PM–5 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7 PM–5 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 PM–5 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7 PM–5 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

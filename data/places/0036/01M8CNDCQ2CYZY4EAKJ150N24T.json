@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCQ2CYZY4EAKJ150N24T",
+  "name": "Elite Garden",
+  "coordinates": {
+    "latitude": 7.6682293999999995,
+    "longitude": 81.7471516
+  },
+  "categories": [
+    "Garden"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MP9W+7VR",
+  "business_status": "OPEN"
+}

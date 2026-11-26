@@ -1,0 +1,72 @@
+{
+  "id": "01M8CNDC1QKEP9TV1X15PN60RW",
+  "name": "V Medicine Vet House",
+  "coordinates": {
+    "latitude": 7.4146309,
+    "longitude": 81.825964
+  },
+  "categories": [
+    "Veterinarian",
+    "Pharmacy"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CR7G+V94, Colombo - Batticaloa Hwy, Kalmunai 32300",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12–6:59 AM",
+        "8:58 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8:58 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12–6:59 AM",
+        "8:58 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12–6:59 AM",
+        "8:58 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12–6:59 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8:58 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12–6:59 AM",
+        "8:58 AM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

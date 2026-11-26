@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCV39KDX8HSJX9PZPNVA",
+  "name": "Ravi Service Station",
+  "coordinates": {
+    "latitude": 7.699027399999999,
+    "longitude": 81.7175491
+  },
+  "categories": [
+    "Auto tune up service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPX9+J27, New Kalmunai Road, Batticaloa",
+  "business_status": "CLOSED_TEMPORARILY"
+}

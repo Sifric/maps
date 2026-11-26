@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCC7Q6G312NGWQXNNQ2B",
+  "name": "Rooms & Parking",
+  "coordinates": {
+    "latitude": 7.917261,
+    "longitude": 81.5186191
+  },
+  "categories": [
+    "Holiday apartment rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG89+VJH, Oddamavadi",
+  "business_status": "OPEN"
+}

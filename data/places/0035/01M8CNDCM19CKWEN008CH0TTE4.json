@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCM19CKWEN008CH0TTE4",
+  "name": "EVR Sewing machine center",
+  "coordinates": {
+    "latitude": 7.7739204,
+    "longitude": 81.6078706
+  },
+  "categories": [
+    "Sewing machine store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "136 Main St, Eravur",
+  "business_status": "OPEN"
+}

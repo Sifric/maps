@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDACD29Q8A23B28C1F65R",
+  "name": "Maheshi bakery",
+  "coordinates": {
+    "latitude": 6.805201899999999,
+    "longitude": 81.12236589999999
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "R44C+3WQ, Ulahitithanna",
+  "business_status": "OPEN"
+}

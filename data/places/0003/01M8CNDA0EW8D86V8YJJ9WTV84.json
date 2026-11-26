@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA0EW8D86V8YJJ9WTV84",
+  "name": "Swet &spice hub",
+  "coordinates": {
+    "latitude": 7.3632085,
+    "longitude": 81.7975256
+  },
+  "categories": [
+    "Soup kitchen"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "11 moheeden mavatha, Sammanthurai",
+  "business_status": "OPEN"
+}

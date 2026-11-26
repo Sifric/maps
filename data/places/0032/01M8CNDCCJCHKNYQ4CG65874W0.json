@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCCJCHKNYQ4CG65874W0",
+  "name": "Ampara",
+  "coordinates": {
+    "latitude": 7.976470099999999,
+    "longitude": 81.3767105
+  },
+  "categories": [
+    "Hostel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "X9HG+2G, Kayankerni",
+  "business_status": "OPEN"
+}

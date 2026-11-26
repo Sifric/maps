@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDA72X1QYVNA3HZ1TPVFW",
+  "name": "BFC",
+  "coordinates": {
+    "latitude": 7.2192399,
+    "longitude": 81.8561618
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "6V94+MFV, Deens Road, Akkaraipattu",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "3–8:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "3–8:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "3–8:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "3–8:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "3–8:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "12–6:30 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "3–8:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

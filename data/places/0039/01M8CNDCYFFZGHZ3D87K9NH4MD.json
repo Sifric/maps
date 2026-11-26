@@ -1,0 +1,68 @@
+{
+  "id": "01M8CNDCYFFZGHZ3D87K9NH4MD",
+  "name": "Saroos Tailor shop",
+  "coordinates": {
+    "latitude": 7.7815825,
+    "longitude": 81.60517829999999
+  },
+  "categories": [
+    "Men's tailor"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "3A Punnakuda Rd, Eravur",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12–8:30 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12–8:30 AM",
+        "9 AM–8:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC8YZ2GDSQPJHM2ZP7C3",
+  "name": "Umar Grocery Store",
+  "coordinates": {
+    "latitude": 7.681828299999999,
+    "longitude": 81.736842
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "20, mmv behind road new kattankudy;06 srilanka, 30100",
+  "business_status": "OPEN"
+}

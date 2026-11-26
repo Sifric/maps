@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD6VXT7VYTQQ12TNJ9N8",
+  "name": "Hamir’s Home",
+  "coordinates": {
+    "latitude": 7.998115899999999,
+    "longitude": 81.1755682
+  },
+  "categories": [
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "286/A, Kattuwanvila",
+  "business_status": "OPEN"
+}

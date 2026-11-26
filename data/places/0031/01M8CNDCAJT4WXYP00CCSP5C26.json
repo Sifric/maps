@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCAJT4WXYP00CCSP5C26",
+  "name": "HYCU Integrated Farm",
+  "coordinates": {
+    "latitude": 8.0243957,
+    "longitude": 81.2271793
+  },
+  "categories": [
+    "Farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "26FG+QV, Kattuwanvila",
+  "business_status": "OPEN"
+}

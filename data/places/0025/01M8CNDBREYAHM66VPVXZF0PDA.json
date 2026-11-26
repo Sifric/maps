@@ -1,0 +1,72 @@
+{
+  "id": "01M8CNDBREYAHM66VPVXZF0PDA",
+  "name": "Syth parts shop",
+  "coordinates": {
+    "latitude": 7.7713906999999995,
+    "longitude": 81.61216809999999
+  },
+  "categories": [
+    "Motorcycle parts store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJC6+MX7, Thaikka Road, Eravur",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12–7 AM",
+        "8 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12–7 AM",
+        "8 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12–7 AM",
+        "8 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12–7 AM",
+        "8 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12–7 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12–7 AM",
+        "8 AM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

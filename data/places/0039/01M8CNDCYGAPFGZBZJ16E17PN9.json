@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDCYGAPFGZBZJ16E17PN9",
+  "name": "Fashion Look Tailor Shop",
+  "coordinates": {
+    "latitude": 7.7726554,
+    "longitude": 81.60568289999999
+  },
+  "categories": [
+    "Tailor"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJF4+377, Rc Rd, Eravur",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8–10 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8–10 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8–10 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8–10 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8–10 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8–10 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

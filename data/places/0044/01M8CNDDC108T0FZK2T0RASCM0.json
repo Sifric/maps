@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDC108T0FZK2T0RASCM0",
+  "name": "Crystal Palace",
+  "coordinates": {
+    "latitude": 7.6784197999999995,
+    "longitude": 81.7295104
+  },
+  "categories": [
+    "Multi-unit residential building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kattankudy",
+  "business_status": "OPEN"
+}

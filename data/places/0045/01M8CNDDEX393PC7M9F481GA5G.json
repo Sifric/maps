@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDDEX393PC7M9F481GA5G",
+  "name": "Bellezza Sri Lanka",
+  "coordinates": {
+    "latitude": 6.7203426,
+    "longitude": 80.0546616
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\n327 Panadura - Horana Rd, Horana 12400",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "9 AM–7:30 PM"
+      ]
+    }
+  ],
+  "business_status": "CLOSED"
+}

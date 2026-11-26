@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCZE146PHXZ65STKMQBR",
+  "name": "Proposed Filling Station",
+  "coordinates": {
+    "latitude": 7.788994,
+    "longitude": 81.60690799999999
+  },
+  "categories": [
+    "Gas station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJQ4+9QV, Punnakuda Rd, Eravur",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA6XMJK0CVG99J8E321Y",
+  "name": "SAR Food Corner",
+  "coordinates": {
+    "latitude": 7.4168609,
+    "longitude": 81.72425059999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Central Camp Rd, 32050",
+  "business_status": "OPEN"
+}

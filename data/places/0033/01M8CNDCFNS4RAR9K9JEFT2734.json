@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDCFNS4RAR9K9JEFT2734",
+  "name": "St.Sebastian church",
+  "coordinates": {
+    "latitude": 7.7198828,
+    "longitude": 81.70445939999999
+  },
+  "categories": [
+    "Church",
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ],
+    "names": [
+      "St Sebastian Church"
+    ]
+  },
+  "address": "B542, Batticaloa",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "76 St Sebastian St, Batticaloa"
+  ]
+}

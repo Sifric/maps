@@ -1,0 +1,63 @@
+{
+  "id": "01M8CNDFDJA930W3GVKKT1SWYD",
+  "name": "Public Market",
+  "coordinates": {
+    "latitude": 9.8066645,
+    "longitude": 80.2262272
+  },
+  "categories": [
+    "Market"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "R64G+MG9, Point Pedro",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4 AM–8 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

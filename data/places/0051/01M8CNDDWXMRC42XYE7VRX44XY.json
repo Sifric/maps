@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDWXMRC42XYE7VRX44XY",
+  "name": "Ameen Roti Shop",
+  "coordinates": {
+    "latitude": 6.0255052,
+    "longitude": 80.21849399999999
+  },
+  "categories": [
+    "Indian restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "26G9+58F, Galle 80000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9 AM–7:45 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9 AM–7:45 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9 AM–7:45 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9 AM–7:45 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9 AM–7:45 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "9 AM–7:45 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

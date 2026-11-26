@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDBWB6TJFM789T9W0V6ZX",
+  "name": "Aina store",
+  "coordinates": {
+    "latitude": 7.4184885,
+    "longitude": 81.74885429999999
+  },
+  "categories": [
+    "General store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "Chalambaikerny, 04 Central Camp Rd, 32050",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "2:30 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6 AM–11:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

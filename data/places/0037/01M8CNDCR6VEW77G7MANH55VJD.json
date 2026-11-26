@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCR6VEW77G7MANH55VJD",
+  "name": "Kallady playground",
+  "coordinates": {
+    "latitude": 8.254345299999999,
+    "longitude": 81.371219
+  },
+  "categories": [
+    "Playground"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kallady, mawadichenai, Verugal",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD64Z3N2NJERV1YF3B23",
+  "name": "Muslim Cemetray",
+  "coordinates": {
+    "latitude": 7.6511979,
+    "longitude": 81.7336474
+  },
+  "categories": [
+    "Cemetery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MP2M+FFC",
+  "business_status": "OPEN"
+}

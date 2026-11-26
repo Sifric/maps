@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDQ456WGT5YYXKREDENV",
+  "name": "SWEET LANKA BAKERY",
+  "coordinates": {
+    "latitude": 6.1062194,
+    "longitude": 80.34817129999999
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "484X+F7M, Yakkalamulla",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6–10 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6–10 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6–10 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6–10 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6–10 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6–10 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6–10 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

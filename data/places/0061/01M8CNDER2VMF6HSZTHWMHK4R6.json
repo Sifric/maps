@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDER2VMF6HSZTHWMHK4R6",
+  "name": "40500 Post Office - Chavakachcheri | அஞ்சல் அலுவலகம் - சாவகச்சேரி",
+  "coordinates": {
+    "latitude": 9.6609313,
+    "longitude": 80.1607454
+  },
+  "categories": [
+    "Post office"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "M566+97H, Chavakachcheri 40000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4:30 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4:30 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4:30 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4:30 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4:30 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4:30 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

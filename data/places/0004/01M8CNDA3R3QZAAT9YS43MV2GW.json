@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA3R3QZAAT9YS43MV2GW",
+  "name": "Delizia",
+  "coordinates": {
+    "latitude": 7.232842499999999,
+    "longitude": 81.8516391
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "6VM2+4JP, Main St, Akkaraipattu",
+  "business_status": "OPEN"
+}

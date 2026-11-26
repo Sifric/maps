@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBG8ZP0E5BR05NW0FYC",
+  "name": "Snack bar",
+  "coordinates": {
+    "latitude": 7.926126399999999,
+    "longitude": 81.5612144
+  },
+  "categories": [
+    "Ice cream shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WHG6+CC7, Kalkudah",
+  "business_status": "OPEN"
+}

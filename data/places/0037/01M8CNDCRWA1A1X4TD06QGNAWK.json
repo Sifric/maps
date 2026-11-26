@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCRWA1A1X4TD06QGNAWK",
+  "name": "Sampath Moters Batticaloa/ Valuation",
+  "coordinates": {
+    "latitude": 7.7200951,
+    "longitude": 81.6968066
+  },
+  "categories": [
+    "Motor vehicle dealer"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMCW+2PM, Coop-in, Batticaloa",
+  "business_status": "OPEN"
+}

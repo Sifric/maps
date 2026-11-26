@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCYAZZR60W6SVAD7J4JV",
+  "name": "My Home",
+  "coordinates": {
+    "latitude": 7.779384899999999,
+    "longitude": 81.60370689999999
+  },
+  "categories": [
+    "Housing development"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJH3+QF2, Old Market Rd, Eravur",
+  "business_status": "OPEN"
+}

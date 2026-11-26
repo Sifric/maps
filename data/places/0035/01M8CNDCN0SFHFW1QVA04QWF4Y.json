@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCN0SFHFW1QVA04QWF4Y",
+  "name": "My home",
+  "coordinates": {
+    "latitude": 7.7732679,
+    "longitude": 81.60255409999999
+  },
+  "categories": [
+    "Warehouse"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJF2+2X4, Eravur",
+  "business_status": "OPEN"
+}

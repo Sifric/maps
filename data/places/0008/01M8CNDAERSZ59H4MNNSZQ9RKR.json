@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAERSZ59H4MNNSZQ9RKR",
+  "name": "Corniche Villa and Rooms",
+  "coordinates": {
+    "latitude": 7.6904746,
+    "longitude": 81.73402519999999
+  },
+  "categories": [
+    "Holiday apartment rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kattankudy",
+  "business_status": "OPEN"
+}

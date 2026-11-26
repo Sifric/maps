@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCYQ21A888KSFVYYB5NT",
+  "name": "MY BURGER",
+  "coordinates": {
+    "latitude": 7.7787136,
+    "longitude": 81.6047002
+  },
+  "categories": [
+    "Fast food restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJH3+FVP, INFRONT OF KULFI ICE POP, Punnakuda Rd, Eravur",
+  "business_status": "CLOSED"
+}

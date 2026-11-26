@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCWHEKG0TDM33Q1D0122",
+  "name": "Aamina's Sweet Home",
+  "coordinates": {
+    "latitude": 7.6865352,
+    "longitude": 81.732263
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "New, No 148 FC Road, Kattankudy 03",
+  "business_status": "OPEN"
+}

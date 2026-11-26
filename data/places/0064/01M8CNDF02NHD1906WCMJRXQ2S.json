@@ -1,0 +1,71 @@
+{
+  "id": "01M8CNDF02NHD1906WCMJRXQ2S",
+  "name": "JK Fitness 5.0",
+  "coordinates": {
+    "latitude": 9.6814108,
+    "longitude": 80.21764639999999
+  },
+  "categories": [
+    "Fitness center"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Kandy - Jaffna Hwy, Kodikamam",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5–9 AM",
+        "3–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5–9 AM",
+        "3–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5–9 AM",
+        "3–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5–9 AM",
+        "3–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5–9 AM",
+        "3–9 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5–9 AM",
+        "3–9 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

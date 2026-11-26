@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCXTHF7STZGTXNXJEPNP",
+  "name": "Kaththankudi",
+  "coordinates": {
+    "latitude": 7.6792513,
+    "longitude": 81.72945039999999
+  },
+  "categories": [
+    "Bus stop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kattankudy",
+  "business_status": "OPEN"
+}

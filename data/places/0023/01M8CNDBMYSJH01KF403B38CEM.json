@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDBMYSJH01KF403B38CEM",
+  "name": "Iresha Filling Station (pvt) Ltd",
+  "coordinates": {
+    "latitude": 6.2783954,
+    "longitude": 81.285755
+  },
+  "categories": [
+    "Gas station",
+    "Gas shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "Main St, Tissamaharama",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4 AM–10 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

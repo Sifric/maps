@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6ZRFP2TR9579D07J1D",
+  "name": "Shakthi Bakery",
+  "coordinates": {
+    "latitude": 7.7341957,
+    "longitude": 81.6768937
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMMG+MQC, Main St, Batticaloa",
+  "business_status": "OPEN"
+}

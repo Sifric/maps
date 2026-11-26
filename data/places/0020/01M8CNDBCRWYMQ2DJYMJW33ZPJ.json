@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBCRWYMQ2DJYMJW33ZPJ",
+  "name": "Try It Car rental",
+  "coordinates": {
+    "latitude": 7.1156261999999995,
+    "longitude": 81.8504165
+  },
+  "categories": [
+    "Car rental agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "4V82+753, Thirukkovil",
+  "business_status": "OPEN"
+}

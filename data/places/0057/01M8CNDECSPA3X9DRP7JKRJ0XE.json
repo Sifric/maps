@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDECSPA3X9DRP7JKRJ0XE",
+  "name": "Urban Galle Villa",
+  "coordinates": {
+    "latitude": 6.0557719,
+    "longitude": 80.1795755
+  },
+  "categories": [
+    "Hotel",
+    "Bed & breakfast",
+    "Guest house",
+    "Resort hotel",
+    "Swimming pool",
+    "Villa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Gingaga Mawatha, Galle 80000",
+  "business_status": "OPEN"
+}

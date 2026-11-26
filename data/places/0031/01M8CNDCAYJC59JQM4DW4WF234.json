@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCAYJC59JQM4DW4WF234",
+  "name": "Rampant shop",
+  "coordinates": {
+    "latitude": 7.773916099999999,
+    "longitude": 81.61142389999999
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJF6+GH9, Rahumaniya School Rd, Eravur",
+  "business_status": "OPEN"
+}

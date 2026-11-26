@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCHAE6JFGK9JG5E9WSRY",
+  "name": "Nafeela's Home",
+  "coordinates": {
+    "latitude": 7.662114,
+    "longitude": 81.746123
+  },
+  "categories": [
+    "Housing society"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "701 Palamunai Rd, Kattankudy",
+  "business_status": "OPEN"
+}

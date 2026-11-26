@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE75W788BQ62745G9240",
+  "name": "flow café Weligama",
+  "coordinates": {
+    "latitude": 5.9724258,
+    "longitude": 80.42634919999999
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "No. 220/ 11 Paranakade, Weligama 81700",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7 AM–3 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

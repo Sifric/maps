@@ -1,0 +1,63 @@
+{
+  "id": "01M8CNDFEJ15QS70GMQXKVJZJ5",
+  "name": "A to Z Dental Care",
+  "coordinates": {
+    "latitude": 9.662457,
+    "longitude": 80.169258
+  },
+  "categories": [
+    "Dental clinic"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "Kandy Rd, Chavakachcheri",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4–7 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4–7 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4–7 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4–7 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4–7 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4–7 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "9 AM–12 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

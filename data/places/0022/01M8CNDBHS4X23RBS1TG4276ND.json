@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDBHS4X23RBS1TG4276ND",
+  "name": "Auto parking",
+  "coordinates": {
+    "latitude": 8.0019321,
+    "longitude": 81.1736856
+  },
+  "categories": [
+    "Parking lot"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "252F+QFF, Kattuwanvila",
+  "business_status": "OPEN"
+}

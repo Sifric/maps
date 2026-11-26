@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAY127TSQSQ8R7J7ARTK",
+  "name": "Nafees stores",
+  "coordinates": {
+    "latitude": 7.425122399999999,
+    "longitude": 81.7486287
+  },
+  "categories": [
+    "Hardware store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "M.27 Channel Rd, Chawalakadai 32050",
+  "business_status": "OPEN"
+}

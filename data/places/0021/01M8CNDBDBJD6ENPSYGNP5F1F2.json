@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBDBJD6ENPSYGNP5F1F2",
+  "name": "H.L.A Transport Service",
+  "coordinates": {
+    "latitude": 7.2263595,
+    "longitude": 81.8506149
+  },
+  "categories": [
+    "Transportation service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "562, C, 9 Akkaraipattu - Kalmunai Rd, ampara",
+  "business_status": "OPEN"
+}

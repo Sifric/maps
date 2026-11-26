@@ -1,0 +1,63 @@
+{
+  "id": "01M8CNDG8G8J574TVHV006FBWZ",
+  "name": "Northern School",
+  "coordinates": {
+    "latitude": 8.9768305,
+    "longitude": 79.9115163
+  },
+  "categories": [
+    "Training center"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "Grand Bazaar, No.18 Salttern Road, 41000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "9:30 AM–5 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

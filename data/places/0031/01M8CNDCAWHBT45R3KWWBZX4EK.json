@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCAWHBT45R3KWWBZX4EK",
+  "name": "Jeya Ganesha Stores",
+  "coordinates": {
+    "latitude": 7.6676424,
+    "longitude": 81.7369011
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MP9P+3Q2, Kattankudy",
+  "business_status": "OPEN"
+}

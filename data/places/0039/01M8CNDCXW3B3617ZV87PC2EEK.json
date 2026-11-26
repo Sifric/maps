@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCXW3B3617ZV87PC2EEK",
+  "name": "Hana's Home",
+  "coordinates": {
+    "latitude": 7.6826778,
+    "longitude": 81.74080119999999
+  },
+  "categories": [
+    "Manufacturer"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPMR+38F, Kattankudy",
+  "business_status": "OPEN"
+}

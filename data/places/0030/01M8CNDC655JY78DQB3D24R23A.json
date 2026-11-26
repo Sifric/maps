@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC655JY78DQB3D24R23A",
+  "name": "Shalini Hotel",
+  "coordinates": {
+    "latitude": 7.919046,
+    "longitude": 81.5610214
+  },
+  "categories": [
+    "Family restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WH96+JC, Kalkudah",
+  "business_status": "OPEN"
+}

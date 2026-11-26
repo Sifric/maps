@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDTGRJCSAZREGJTSGR98",
+  "name": "Bun Hut",
+  "coordinates": {
+    "latitude": 6.0390087999999995,
+    "longitude": 80.2039001
+  },
+  "categories": [
+    "Hot dog stand"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "26Q3+JH2, Galle - Colombo Rd, Galle",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "11:30 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "11:30 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "11:30 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "11:30 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "11:30 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "11:30 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "11:30 AM–9:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

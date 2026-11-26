@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD3EPCFN0BQ1KMRG0AKM",
+  "name": "Paddiruppu Bridge",
+  "coordinates": {
+    "latitude": 7.5166426,
+    "longitude": 81.78064739999999
+  },
+  "categories": [
+    "Bridge"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kaluwanchikudi - Vellaveli Rd",
+  "business_status": "OPEN"
+}

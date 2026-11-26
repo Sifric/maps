@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD8RTRV4N8HCHYMPRFBZ",
+  "name": "Pavithra Home",
+  "coordinates": {
+    "latitude": 7.7092613,
+    "longitude": 81.7107796
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "28/3 Vakkar Mavady, Kallady",
+  "business_status": "OPEN"
+}

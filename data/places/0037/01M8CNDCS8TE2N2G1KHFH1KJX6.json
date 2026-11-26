@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCS8TE2N2G1KHFH1KJX6",
+  "name": "Home for short stay",
+  "coordinates": {
+    "latitude": 7.7268808,
+    "longitude": 81.6970819
+  },
+  "categories": [
+    "Holiday home"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Boundary Rd, Batticaloa 30000",
+  "business_status": "OPEN"
+}

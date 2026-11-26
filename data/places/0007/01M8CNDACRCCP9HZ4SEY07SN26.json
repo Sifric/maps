@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDACRCCP9HZ4SEY07SN26",
+  "name": "Hairath Bakery",
+  "coordinates": {
+    "latitude": 7.9221954,
+    "longitude": 81.5238732
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WGCF+VGH",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:30 AM–11:45 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:30 AM–11:45 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:30 AM–11:45 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:30 AM–11:45 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:30 AM–11:45 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:30 AM–11:45 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6:30 AM–11:45 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

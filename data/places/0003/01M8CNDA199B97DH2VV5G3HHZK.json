@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA199B97DH2VV5G3HHZK",
+  "name": "Kalmunai main Street,",
+  "coordinates": {
+    "latitude": 7.410613,
+    "longitude": 81.8286873
+  },
+  "categories": [
+    "Chicken restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CR6H+7F4, Colombo - Batticaloa Hwy, Kalmunai 32300",
+  "business_status": "OPEN"
+}

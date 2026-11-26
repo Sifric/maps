@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDCCAY8VC6WDFCXAH060C",
+  "name": "Yuhibuhi Homestay - Double Room",
+  "coordinates": {
+    "latitude": 7.7297302,
+    "longitude": 81.6678238
+  },
+  "categories": [
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Batticaloa",
+  "business_status": "OPEN"
+}

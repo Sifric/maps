@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDTH92YC01CSPNDKJ80R",
+  "name": "Tuna Gate Beach Restaurant",
+  "coordinates": {
+    "latitude": 6.0405625,
+    "longitude": 80.1981875
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Galle 06108",
+  "business_status": "CLOSED_TEMPORARILY"
+}

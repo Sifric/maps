@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDGNJZZSXEDD93DP2XR1",
+  "name": "BHAI STORES",
+  "coordinates": {
+    "latitude": 7.1714356,
+    "longitude": 80.5126774
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Madulbowa",
+  "business_status": "OPEN"
+}

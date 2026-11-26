@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD6STYJPPG2CDKJDFSDF",
+  "name": "Kallady",
+  "coordinates": {
+    "latitude": 7.706332199999999,
+    "longitude": 81.7134911
+  },
+  "categories": [
+    "American restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PP47+G9Q, Colombo - Ratnapura - Wellawaya - Batticaloa Rd, Kallady",
+  "business_status": "OPEN"
+}

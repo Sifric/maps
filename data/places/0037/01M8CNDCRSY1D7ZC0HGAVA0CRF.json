@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCRSY1D7ZC0HGAVA0CRF",
+  "name": "Vani multi shop murrakodanchenai batticaloa",
+  "coordinates": {
+    "latitude": 7.7131383,
+    "longitude": 81.69844379999999
+  },
+  "categories": [
+    "Book store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM7X+794, Main Street Murrakoddanchenai, Batticaloa",
+  "business_status": "OPEN"
+}

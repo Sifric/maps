@@ -1,0 +1,20 @@
+{
+  "id": "01M8CNDE2X99T58BCAZ6GNG764",
+  "name": "Paddy Fields",
+  "coordinates": {
+    "latitude": 6.0742403,
+    "longitude": 80.2467688
+  },
+  "categories": [
+    "Agricultural"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

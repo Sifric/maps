@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD1DC9K7RHXY3K719QQT",
+  "name": "Batticaloa",
+  "coordinates": {
+    "latitude": 7.9027039,
+    "longitude": 81.535356
+  },
+  "categories": [
+    "Auto parts store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG3P+34H, Trincomalee-Batticaloa Rd, Oddamavadi",
+  "business_status": "OPEN"
+}

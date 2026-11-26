@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCCZ5QF5DKJYJHS07ACJ",
+  "name": "Romance Valley",
+  "coordinates": {
+    "latitude": 6.7491362,
+    "longitude": 80.952631
+  },
+  "categories": [
+    "Villa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Viharagala, Beragala, Haputale 90160",
+  "business_status": "OPEN"
+}

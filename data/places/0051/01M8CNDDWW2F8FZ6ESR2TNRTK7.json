@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDWW2F8FZ6ESR2TNRTK7",
+  "name": "Galle Food Delivery & Restaurant",
+  "coordinates": {
+    "latitude": 6.0331274,
+    "longitude": 80.2143943
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "No:178 Colombo Rd, Galle 80000",
+  "business_status": "OPEN"
+}

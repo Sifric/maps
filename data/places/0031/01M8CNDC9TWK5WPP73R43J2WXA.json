@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDC9TWK5WPP73R43J2WXA",
+  "name": "Tasty 1st Food",
+  "coordinates": {
+    "latitude": 7.771808399999999,
+    "longitude": 81.6092194
+  },
+  "categories": [
+    "Restaurant",
+    "Food manufacturer"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "01A Library Road, Eravur 30300",
+  "business_status": "OPEN"
+}

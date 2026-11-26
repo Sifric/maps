@@ -1,0 +1,29 @@
+{
+  "id": "01M8CNDCBYBYPXTRB4TYFJ20H4",
+  "name": "Victoria Guest House",
+  "coordinates": {
+    "latitude": 7.921058299999999,
+    "longitude": 81.5543732
+  },
+  "categories": [
+    "Guest house",
+    "Hotel",
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kalkudah",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "Kalkudah-Valaichchenai Rd, Kalkudah 30410"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCE80Q6TJ2WE3V73JVN3",
+  "name": "Kish Healthcare",
+  "coordinates": {
+    "latitude": 7.679854,
+    "longitude": 81.7278556
+  },
+  "categories": [
+    "Pharmacy"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPHH+W4X, Kattankudy",
+  "business_status": "OPEN"
+}

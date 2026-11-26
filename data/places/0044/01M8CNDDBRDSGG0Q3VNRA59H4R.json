@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDBRDSGG0Q3VNRA59H4R",
+  "name": "Jenulakshan’s house",
+  "coordinates": {
+    "latitude": 7.732672,
+    "longitude": 81.67978459999999
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No,90, 7 11th cross, Batticaloa",
+  "business_status": "OPEN"
+}

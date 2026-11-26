@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDDDA1N4KCGNDHD99K1H7",
+  "name": "Shopping complex",
+  "coordinates": {
+    "latitude": 7.7141619,
+    "longitude": 81.6936248
+  },
+  "categories": [
+    "Building firm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "PM7V+MC9, Batticaloa 30000",
+  "business_status": "OPEN"
+}

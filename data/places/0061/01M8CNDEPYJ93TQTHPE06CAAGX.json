@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEPYJ93TQTHPE06CAAGX",
+  "name": "Millon Inn",
+  "coordinates": {
+    "latitude": 9.6857258,
+    "longitude": 80.016534
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Jaffna",
+  "business_status": "OPEN"
+}

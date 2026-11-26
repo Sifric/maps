@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDA7ZEDNNRC8JEGXMSYFX",
+  "name": "Hotel Coffee",
+  "coordinates": {
+    "latitude": 7.3700475,
+    "longitude": 81.8058858
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "9RC4+296, AB33, Sammanthurai",
+  "business_status": "OPEN"
+}

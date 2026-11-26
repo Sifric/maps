@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDBGVMJFSVYEB4KFYMPMN",
+  "name": "SEHAS AUTO CARE",
+  "coordinates": {
+    "latitude": 7.2470305999999995,
+    "longitude": 81.1017461
+  },
+  "categories": [
+    "Auto repair shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "Bibile - Uraniya - Mahiyangana Rd, බිබිලේ 91500",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8 AM–5 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

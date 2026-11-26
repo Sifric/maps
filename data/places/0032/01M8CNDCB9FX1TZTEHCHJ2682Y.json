@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCB9FX1TZTEHCHJ2682Y",
+  "name": "Api Stores",
+  "coordinates": {
+    "latitude": 7.7346207,
+    "longitude": 81.6758831
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMMG+R9R, Main St, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDDEYR8YNBNPHXE7YWGMD",
+  "name": "Praveen Salon",
+  "coordinates": {
+    "latitude": 7.5090898,
+    "longitude": 80.6227143
+  },
+  "categories": [
+    "Hairdresser"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\nGJ5F+J3P, Thotagamuwa",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "7:30 AM–8 PM"
+      ]
+    }
+  ],
+  "business_status": "CLOSED"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDCHX74TFZWKGVMJPZA0T",
+  "name": "Kiran",
+  "coordinates": {
+    "latitude": 7.8677797,
+    "longitude": 81.5102655
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

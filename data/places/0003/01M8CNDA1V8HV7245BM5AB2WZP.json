@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA1V8HV7245BM5AB2WZP",
+  "name": "Beef Meat shop",
+  "coordinates": {
+    "latitude": 7.4169835,
+    "longitude": 81.8088441
+  },
+  "categories": [
+    "Butcher shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CR85+QGX, Kalmunai-Chavalakadai Rd, Kalmunai",
+  "business_status": "OPEN"
+}

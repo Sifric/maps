@@ -1,0 +1,68 @@
+{
+  "id": "01M8CNDABDNTNEXRK3NQWZB1YD",
+  "name": "S.M.Aliyar Stores",
+  "coordinates": {
+    "latitude": 7.420341199999999,
+    "longitude": 81.7540021
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Central Camp, 12/60,F Chalambaikeny 04, 32050",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5:30 AM–12 PM",
+        "3–11 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5:30 AM–11 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

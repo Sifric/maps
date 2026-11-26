@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD8P65WYG95NTQP760W5",
+  "name": "Pavi home",
+  "coordinates": {
+    "latitude": 7.7249146,
+    "longitude": 81.6966911
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Ennampalapuval, kannankuda, Batticaloa",
+  "business_status": "OPEN"
+}

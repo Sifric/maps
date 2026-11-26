@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBCVS27XGQGZ6D3XYR72",
+  "name": "IMAKI TAXI & CABS SERVICE",
+  "coordinates": {
+    "latitude": 7.2943468,
+    "longitude": 81.6985638
+  },
+  "categories": [
+    "Car rental agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kalmunai, Road, Ampara 32000",
+  "business_status": "CLOSED_TEMPORARILY"
+}

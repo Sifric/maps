@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDA6K0X3DGS84CYC8J9DR",
+  "name": "நோனாக்கா கடை",
+  "coordinates": {
+    "latitude": 7.1385726,
+    "longitude": 81.8476778
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "4RQX+C3F, Thambiluvil",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7–8:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7–8:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7–8:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7–8:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "12 AM–12 PM",
+        "7–8:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7–8:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

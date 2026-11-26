@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDEJJ7YHTY22H6NF9QVYF",
+  "name": "The Coffee Manor - Nawala",
+  "coordinates": {
+    "latitude": 6.8929776,
+    "longitude": 79.8887495
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "389 Nawala Rd, Sri Jayawardenepura Kotte 11222",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7 AM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

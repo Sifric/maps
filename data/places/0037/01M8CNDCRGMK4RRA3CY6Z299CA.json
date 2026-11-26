@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCRGMK4RRA3CY6Z299CA",
+  "name": "Boat safari",
+  "coordinates": {
+    "latitude": 7.677320699999999,
+    "longitude": 81.7221682
+  },
+  "categories": [
+    "Tourist attraction"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPGC+WVF, Kattankudy",
+  "business_status": "OPEN"
+}

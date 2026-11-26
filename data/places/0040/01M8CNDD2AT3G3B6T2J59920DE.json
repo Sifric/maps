@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD2AT3G3B6T2J59920DE",
+  "name": "SLTB Depot Valachchennai",
+  "coordinates": {
+    "latitude": 7.9213276,
+    "longitude": 81.5246705
+  },
+  "categories": [
+    "Bus depot"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WGCF+GVM",
+  "business_status": "OPEN"
+}

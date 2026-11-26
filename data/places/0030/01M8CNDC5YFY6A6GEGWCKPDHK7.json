@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDC5YFY6A6GEGWCKPDHK7",
+  "name": "King's Chef",
+  "coordinates": {
+    "latitude": 7.7128044,
+    "longitude": 81.6931803
+  },
+  "categories": [
+    "Meal delivery",
+    "Catering food and drink supplier",
+    "Chinese takeaway",
+    "Food court"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No.7/2 Bundinges lane, Batticaloa 30000",
+  "business_status": "OPEN"
+}

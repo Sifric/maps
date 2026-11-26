@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6TZ07DZN06HEFR8078",
+  "name": "Cake Town",
+  "coordinates": {
+    "latitude": 7.6816097999999995,
+    "longitude": 81.7354622
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPJP+J5W, Kattankudy",
+  "business_status": "OPEN"
+}

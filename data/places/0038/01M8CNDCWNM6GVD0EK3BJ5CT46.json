@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCWNM6GVD0EK3BJ5CT46",
+  "name": "Royal Fashion",
+  "coordinates": {
+    "latitude": 7.6811099,
+    "longitude": 81.7283329
+  },
+  "categories": [
+    "Clothing store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPJH+C8W, Colombo - Batticaloa Hwy, Kattankudy",
+  "business_status": "OPEN"
+}

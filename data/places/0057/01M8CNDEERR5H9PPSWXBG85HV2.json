@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEERR5H9PPSWXBG85HV2",
+  "name": "Villa Vanna",
+  "coordinates": {
+    "latitude": 6.0145884999999994,
+    "longitude": 80.27743509999999
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Talpe, Unawatuna",
+  "business_status": "OPEN"
+}

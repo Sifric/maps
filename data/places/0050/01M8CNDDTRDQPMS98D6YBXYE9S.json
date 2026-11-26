@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDDTRDQPMS98D6YBXYE9S",
+  "name": "Bake Villa Bakery & Pastry Shop",
+  "coordinates": {
+    "latitude": 6.0602244,
+    "longitude": 80.2192173
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "3669+3MP, Galle 80000",
+  "business_status": "OPEN"
+}

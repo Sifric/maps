@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCXT26M21QN7YJ17TDNH",
+  "name": "Bus Stand - Kathankudy",
+  "coordinates": {
+    "latitude": 7.6792026,
+    "longitude": 81.729387
+  },
+  "categories": [
+    "Bus stop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kattankudy",
+  "business_status": "OPEN"
+}

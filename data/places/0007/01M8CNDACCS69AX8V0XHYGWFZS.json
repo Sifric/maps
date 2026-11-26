@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDACCS69AX8V0XHYGWFZS",
+  "name": "Thorai Restaurent",
+  "coordinates": {
+    "latitude": 7.5377773999999995,
+    "longitude": 81.7885326
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQQQ+4C7, Beach Rd, Kaluthavalai",
+  "business_status": "OPEN"
+}

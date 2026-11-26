@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA1GGPEPMJ2MBNGHQH35",
+  "name": "Tik tok fruit shop& coffee",
+  "coordinates": {
+    "latitude": 7.4183807999999996,
+    "longitude": 81.8165056
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CR98+9J2, Mani street, Natpiddimunai Rd, Kalmunai",
+  "business_status": "OPEN"
+}

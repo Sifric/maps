@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDEYM47EYD9CM51C00SSC",
+  "name": "MOH Office Tellippalai Jaffna",
+  "coordinates": {
+    "latitude": 9.7859906,
+    "longitude": 80.0383592
+  },
+  "categories": [
+    "Community health center"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Q2PQ+98X, Tellippalai",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–4 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–4 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–4 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–4 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–4 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–4 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

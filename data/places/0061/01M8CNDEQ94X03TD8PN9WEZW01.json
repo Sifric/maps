@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDEQ94X03TD8PN9WEZW01",
+  "name": "Kamala villa",
+  "coordinates": {
+    "latitude": 9.6781693,
+    "longitude": 80.01960749999999
+  },
+  "categories": [
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Jaffna",
+  "business_status": "OPEN"
+}

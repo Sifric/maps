@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDCSAAACHQE9767RTC6JE",
+  "name": "City Choice",
+  "coordinates": {
+    "latitude": 7.7133334,
+    "longitude": 81.6980751
+  },
+  "categories": [
+    "Clothing store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM7X+86P, Main Street, Batticaloa",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9:15 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9:15 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9:15 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9:15 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9:15 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9:15 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "9:15 AM–9 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

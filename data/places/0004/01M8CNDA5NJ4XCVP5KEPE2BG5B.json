@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA5NJ4XCVP5KEPE2BG5B",
+  "name": "Anaz Cool Bar",
+  "coordinates": {
+    "latitude": 7.5174892,
+    "longitude": 81.7835623
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kaluwanchikudi - Vellaveli Rd, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

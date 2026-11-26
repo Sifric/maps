@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD32XF9Q8HBCNV4VS7DP",
+  "name": "KALUWANCHIKUDY Bus stand",
+  "coordinates": {
+    "latitude": 7.5164588,
+    "longitude": 81.7867582
+  },
+  "categories": [
+    "Bus depot"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQ8P+JPF, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

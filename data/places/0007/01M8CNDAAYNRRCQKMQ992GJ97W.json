@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDAAYNRRCQKMQ992GJ97W",
+  "name": "GRAND MART OLUVIL",
+  "coordinates": {
+    "latitude": 7.2873646,
+    "longitude": 81.86426709999999
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Thethavady Rd, Oluvil 32360",
+  "business_status": "OPEN"
+}

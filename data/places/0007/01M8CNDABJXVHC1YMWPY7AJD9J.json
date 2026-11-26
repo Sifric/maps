@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDABJXVHC1YMWPY7AJD9J",
+  "name": "CandiRoom",
+  "coordinates": {
+    "latitude": 6.9113033999999995,
+    "longitude": 79.8702598
+  },
+  "categories": [
+    "Night club"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "58A Horton Pl, Colombo 00700",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9 PM–4 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9 PM–4 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

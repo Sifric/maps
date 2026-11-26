@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCC2BSB383QGJ8EWYCB3",
+  "name": "Fishing Spot",
+  "coordinates": {
+    "latitude": 7.7597838999999995,
+    "longitude": 81.6889551
+  },
+  "categories": [
+    "Fishing camp"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QM5Q+WH8, New Dutch Bar Road, Kallady",
+  "business_status": "OPEN"
+}

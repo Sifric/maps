@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD3Y7MNCA1ZYCEMRS2WG",
+  "name": "Top Tex",
+  "coordinates": {
+    "latitude": 7.7171695,
+    "longitude": 81.6989332
+  },
+  "categories": [
+    "Shopping mall"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "T.P NO 0652224249, NO-123 Trinco Rd, Batticaloa",
+  "business_status": "OPEN"
+}

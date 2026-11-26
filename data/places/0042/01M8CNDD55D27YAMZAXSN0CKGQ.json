@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDD55D27YAMZAXSN0CKGQ",
+  "name": "Anna salon",
+  "coordinates": {
+    "latitude": 7.818496499999999,
+    "longitude": 81.5560647
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "\nRH94+HFR, Thavapuram",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "RH94+HFR, Thavapuram"
+  ]
+}

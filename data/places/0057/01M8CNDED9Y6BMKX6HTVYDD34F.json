@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDED9Y6BMKX6HTVYDD34F",
+  "name": "The Dutch Boutique",
+  "coordinates": {
+    "latitude": 6.0250818,
+    "longitude": 80.21799659999999
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "66A Church St, Dutch 80000",
+  "business_status": "OPEN"
+}

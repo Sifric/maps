@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDA2R7F2AMS73YWHJSR7Q",
+  "name": "Hajara Stores",
+  "coordinates": {
+    "latitude": 6.0676776,
+    "longitude": 80.18213329999999
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "359J+3VC, Road, Galle",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "2 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "2 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "2 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "2 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "2 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "2 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "2 AM–12 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

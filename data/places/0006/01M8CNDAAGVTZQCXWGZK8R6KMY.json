@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAAGVTZQCXWGZK8R6KMY",
+  "name": "Villa LUXEZ",
+  "coordinates": {
+    "latitude": 7.3988855,
+    "longitude": 81.8319059
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "NO.2/12 , MYOWN MAWATHA, 13 BEHIND KFC, Kalmunai 32300",
+  "business_status": "OPEN"
+}

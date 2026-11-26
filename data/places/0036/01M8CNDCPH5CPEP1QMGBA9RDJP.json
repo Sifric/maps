@@ -1,0 +1,70 @@
+{
+  "id": "01M8CNDCPH5CPEP1QMGBA9RDJP",
+  "name": "Life Furniture",
+  "coordinates": {
+    "latitude": 7.9254096,
+    "longitude": 81.54294229999999
+  },
+  "categories": [
+    "Home goods store",
+    "Bedroom furniture store",
+    "Electronics wholesaler",
+    "Furniture wholesaler"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Pethalai, Kalkudah Road, Valaichenai 30400",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "11 AM–9 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

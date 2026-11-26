@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCPSPEA3SJ2DM6MBTQX6",
+  "name": "Yahya Beach Garden",
+  "coordinates": {
+    "latitude": 7.7026568,
+    "longitude": 81.72872579999999
+  },
+  "categories": [
+    "Tourist attraction"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Yahya Beach Road Poonochchimunai Batticaloa, Kattankudy 30100",
+  "business_status": "OPEN"
+}

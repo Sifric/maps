@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA3KHJQGFYDN68E50CYT",
+  "name": "Bakery Hut Ck",
+  "coordinates": {
+    "latitude": 7.223774,
+    "longitude": 81.8478836
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "2/3 Common Rd, Akkaraipattu 32400",
+  "business_status": "OPEN"
+}

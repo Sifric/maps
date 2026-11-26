@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEKHHREFPE1G7TRESXA5",
+  "name": "Phone Order lunch and curry dinner",
+  "coordinates": {
+    "latitude": 9.7482823,
+    "longitude": 79.9286444
+  },
+  "categories": [
+    "Vegetarian restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Kovil, road, Moolai",
+  "business_status": "OPEN"
+}

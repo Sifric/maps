@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCR1BA4RKPG08785BST7",
+  "name": "District Cricket Ground Batticaloa",
+  "coordinates": {
+    "latitude": 7.7550197999999995,
+    "longitude": 81.6607076
+  },
+  "categories": [
+    "Playground"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QM46+274, Batticaloa",
+  "business_status": "OPEN"
+}

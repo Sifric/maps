@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE3KK2CKTX4FXV7F0EYP",
+  "name": "Family Cook Off",
+  "coordinates": {
+    "latitude": 6.1111227,
+    "longitude": 80.2492773
+  },
+  "categories": [
+    "Family restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "466X+CPR, Gambadda Waththa,Hirigalketiya,Madakimbiya, 80082",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "10 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "10 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "10 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "10 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "10 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "10 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "10 AM–11:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

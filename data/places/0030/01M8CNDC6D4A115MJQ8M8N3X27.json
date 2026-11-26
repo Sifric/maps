@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDC6D4A115MJQ8M8N3X27",
+  "name": "KPS Restaurant and KPS Dry Fish Shop & Rooms Available",
+  "coordinates": {
+    "latitude": 7.9152267,
+    "longitude": 81.5222407
+  },
+  "categories": [
+    "Restaurant",
+    "Catering food and drink supplier"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Main St, Oddamavadi",
+  "business_status": "CLOSED_TEMPORARILY"
+}

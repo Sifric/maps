@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9QM169XRWKNET7APRR",
+  "name": "Fairoos taste shop",
+  "coordinates": {
+    "latitude": 7.7816383,
+    "longitude": 81.6127094
+  },
+  "categories": [
+    "Asian restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Rds road michnahar, Eravur",
+  "business_status": "OPEN"
+}

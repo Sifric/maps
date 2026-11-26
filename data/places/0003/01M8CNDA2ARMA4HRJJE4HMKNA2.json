@@ -1,0 +1,73 @@
+{
+  "id": "01M8CNDA2ARMA4HRJJE4HMKNA2",
+  "name": "Ahsin Brothers Bakery",
+  "coordinates": {
+    "latitude": 6.872549599999999,
+    "longitude": 81.8295186
+  },
+  "categories": [
+    "Bakery",
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ],
+    "names": [
+      "AHSIN BROTHERS BAKERY"
+    ]
+  },
+  "address": "VRFH+2VC, Al Najath Rd, Pottuvil",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6 AM–10 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "VRFH+2R6, Al Najath Rd, Pottuvil"
+  ]
+}

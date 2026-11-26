@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC4SP9D4DDXFANDK7K64",
+  "name": "Pumpkins",
+  "coordinates": {
+    "latitude": 7.6785958999999995,
+    "longitude": 81.7300266
+  },
+  "categories": [
+    "Baby store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Divisional Secretariat Office, Main St, Kattankudy 30100",
+  "business_status": "OPEN"
+}

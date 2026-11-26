@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCAAACQEG58NHJCVPD0B",
+  "name": "மளிகைக் கடை",
+  "coordinates": {
+    "latitude": 7.793827599999999,
+    "longitude": 81.6134873
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJV7+G9Q, சதாம் ஹுசைன் கிராமம் மீராகேனி, Eravur",
+  "business_status": "OPEN"
+}

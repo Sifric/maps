@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD6THFYSNXJNBG572VKM",
+  "name": "Levinya Resort",
+  "coordinates": {
+    "latitude": 7.9153433,
+    "longitude": 81.5638086
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kalkudah",
+  "business_status": "OPEN"
+}

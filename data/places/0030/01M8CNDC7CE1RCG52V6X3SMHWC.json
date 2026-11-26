@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC7CE1RCG52V6X3SMHWC",
+  "name": "Aniyas Restaurant",
+  "coordinates": {
+    "latitude": 7.648658299999999,
+    "longitude": 81.7458241
+  },
+  "categories": [
+    "Sri Lankan restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "New Kalmunai Road, Thalankudah 30000",
+  "business_status": "OPEN"
+}

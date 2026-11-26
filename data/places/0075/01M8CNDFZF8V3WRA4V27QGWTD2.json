@@ -1,0 +1,63 @@
+{
+  "id": "01M8CNDFZF8V3WRA4V27QGWTD2",
+  "name": "Family medical center",
+  "coordinates": {
+    "latitude": 6.010048299999999,
+    "longitude": 80.5181925
+  },
+  "categories": [
+    "Family practice physician"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "2G69+278, Malimbada Junction",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4–8:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4–8:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4–8:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4–8:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4–8:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6–8:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

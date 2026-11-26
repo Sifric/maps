@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA8DZ5F2MPFZ82CH71PM",
+  "name": "Foreign Mart",
+  "coordinates": {
+    "latitude": 7.4026207,
+    "longitude": 81.8315932
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "364/1 Main St, Kalmunai 32300",
+  "business_status": "OPEN"
+}

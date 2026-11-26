@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEPBSFANFM5PBEYCHW1A",
+  "name": "Star Bakers",
+  "coordinates": {
+    "latitude": 6.0455283,
+    "longitude": 80.2248698
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Galle 80000",
+  "business_status": "OPEN"
+}

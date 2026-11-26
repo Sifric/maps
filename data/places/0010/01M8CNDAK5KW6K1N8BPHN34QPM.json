@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAK5KW6K1N8BPHN34QPM",
+  "name": "Galle Shoe Mart",
+  "coordinates": {
+    "latitude": 7.2505795,
+    "longitude": 81.85514839999999
+  },
+  "categories": [
+    "Shoe store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "3 Beach Road, Addalaichenai",
+  "business_status": "OPEN"
+}

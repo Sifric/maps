@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC8V06FA1YV3WAHZ0YQ1",
+  "name": "Arayoore Grocery",
+  "coordinates": {
+    "latitude": 7.6771255,
+    "longitude": 81.7312244
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "161 Main St, Kattankudy",
+  "business_status": "OPEN"
+}

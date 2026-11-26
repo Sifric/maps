@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDD3B7MS92EAVEVWCK8PB",
+  "name": "Ruhunu Cab Service Gampaha",
+  "coordinates": {
+    "latitude": 7.0750813,
+    "longitude": 80.0182554
+  },
+  "categories": [
+    "Taxi service",
+    "Car rental agency",
+    "Transportation service",
+    "Wedding service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Junction, 100 B3 Kandy Rd, Mudungoda 11056",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBDNNAWTZ5A2X9PDPDH5",
+  "name": "Sarook Auto Repairing Center",
+  "coordinates": {
+    "latitude": 7.4091556,
+    "longitude": 81.82993359999999
+  },
+  "categories": [
+    "Auto repair shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CR5H+MX7, Colombo - Batticaloa Hwy, Kalmunai 32300",
+  "business_status": "OPEN"
+}

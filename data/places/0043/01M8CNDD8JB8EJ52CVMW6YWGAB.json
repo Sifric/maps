@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD8JB8EJ52CVMW6YWGAB",
+  "name": "S.A.S. Rice Mill",
+  "coordinates": {
+    "latitude": 7.4380264,
+    "longitude": 81.8129354
+  },
+  "categories": [
+    "Rice mill"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Maruthamunai",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC87QNYPV6A7Y1TH31CX",
+  "name": "NB House",
+  "coordinates": {
+    "latitude": 7.6746227,
+    "longitude": 81.744494
+  },
+  "categories": [
+    "Housing society"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPFV+RQX, Modern Farm, Kattankudy",
+  "business_status": "OPEN"
+}

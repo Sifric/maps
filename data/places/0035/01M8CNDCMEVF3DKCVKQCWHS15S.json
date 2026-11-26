@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCMEVF3DKCVKQCWHS15S",
+  "name": "Muzammil house",
+  "coordinates": {
+    "latitude": 7.6806505,
+    "longitude": 81.7286568
+  },
+  "categories": [
+    "Housing development"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "27, 3 Main St, Kattankudy",
+  "business_status": "OPEN"
+}

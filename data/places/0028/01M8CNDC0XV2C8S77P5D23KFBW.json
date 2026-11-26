@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC0XV2C8S77P5D23KFBW",
+  "name": "kabeera shope",
+  "coordinates": {
+    "latitude": 7.7736303,
+    "longitude": 81.6018385
+  },
+  "categories": [
+    "Supermarket"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJF2+FP4, Rc Rd, Eravur",
+  "business_status": "OPEN"
+}

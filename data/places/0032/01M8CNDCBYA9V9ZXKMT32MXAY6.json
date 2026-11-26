@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBYA9V9ZXKMT32MXAY6",
+  "name": "Blue Sands Beach Resort",
+  "coordinates": {
+    "latitude": 7.917810599999999,
+    "longitude": 81.5673917
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WH98+4XC, Kalkudah",
+  "business_status": "OPEN"
+}

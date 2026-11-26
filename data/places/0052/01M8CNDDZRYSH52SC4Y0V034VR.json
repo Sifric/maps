@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDZRYSH52SC4Y0V034VR",
+  "name": "Wonderba Restaurant",
+  "coordinates": {
+    "latitude": 6.2252708,
+    "longitude": 80.1171031
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Batapola",
+  "business_status": "OPEN"
+}

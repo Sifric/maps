@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCTQRC6YF8YKEJ7JVPF8",
+  "name": "Londan Shop Mart",
+  "coordinates": {
+    "latitude": 7.7136562,
+    "longitude": 81.6981291
+  },
+  "categories": [
+    "Home goods store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM7X+F76, Batticaloa",
+  "business_status": "OPEN"
+}

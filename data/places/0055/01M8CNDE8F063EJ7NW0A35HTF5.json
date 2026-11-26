@@ -1,0 +1,68 @@
+{
+  "id": "01M8CNDE8F063EJ7NW0A35HTF5",
+  "name": "Pete's Meats",
+  "coordinates": {
+    "latitude": 7.857685,
+    "longitude": 80.70625
+  },
+  "categories": [
+    "Butcher shop",
+    "Service establishment",
+    "Farm shop",
+    "Food manufacturer",
+    "Meat products store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7 AM–3 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

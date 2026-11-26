@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCPTJSPD1WM04BFH8359",
+  "name": "Rayappu Garden",
+  "coordinates": {
+    "latitude": 7.716859599999999,
+    "longitude": 81.6988487
+  },
+  "categories": [
+    "Housing development"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "95 Trinco Rd, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDBGFK91WCYKBE8A8KTW",
+  "name": "Smyrna CDP",
+  "coordinates": {
+    "latitude": 7.756503599999999,
+    "longitude": 81.6705801
+  },
+  "categories": [
+    "Church"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QM4C+J64, Thiraimadu, Smyrna street, Batticaloa",
+  "business_status": "OPEN"
+}

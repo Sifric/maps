@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDB1400DE2TR38GPVD6BY",
+  "name": "Ampara",
+  "coordinates": {
+    "latitude": 7.4828724,
+    "longitude": 81.6311262
+  },
+  "categories": [
+    "Museum"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "FJMJ+4FR",
+  "business_status": "OPEN"
+}

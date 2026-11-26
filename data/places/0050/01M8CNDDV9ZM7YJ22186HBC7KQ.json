@@ -1,0 +1,68 @@
+{
+  "id": "01M8CNDDV9ZM7YJ22186HBC7KQ",
+  "name": "Sundays Cafe & Restaurant",
+  "coordinates": {
+    "latitude": 5.965799,
+    "longitude": 80.37829219999999
+  },
+  "categories": [
+    "Coffee shop",
+    "Brunch restaurant",
+    "Cafe",
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Eramudugaha Watta, Goviyapana, Ahangama 80650",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–4:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–4:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–4:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–4:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–4:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–4:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8 AM–4:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

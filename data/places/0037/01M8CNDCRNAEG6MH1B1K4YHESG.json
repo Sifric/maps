@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCRNAEG6MH1B1K4YHESG",
+  "name": "276/12 Trinco Road, Batticaloa",
+  "coordinates": {
+    "latitude": 7.722383,
+    "longitude": 81.69433099999999
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "276/12 Trinco Rd, Batticaloa",
+  "business_status": "OPEN"
+}

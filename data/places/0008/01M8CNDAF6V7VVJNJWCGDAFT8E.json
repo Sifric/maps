@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDAF6V7VVJNJWCGDAFT8E",
+  "name": "Haneen Villas",
+  "coordinates": {
+    "latitude": 7.3887782,
+    "longitude": 81.8408367
+  },
+  "categories": [
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "781 B/2, K K Rd, Sainthamaruthu 32300",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "781 B/2, 781 K K Rd, Sainthamaruthu 32300"
+  ]
+}

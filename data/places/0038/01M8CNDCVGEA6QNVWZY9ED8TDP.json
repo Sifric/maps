@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCVGEA6QNVWZY9ED8TDP",
+  "name": "Piriya's Place",
+  "coordinates": {
+    "latitude": 7.7275034,
+    "longitude": 81.6920098
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "72/10, Gnanasooriyam Square, 1st Cross, Batticaloa 30000",
+  "business_status": "OPEN"
+}

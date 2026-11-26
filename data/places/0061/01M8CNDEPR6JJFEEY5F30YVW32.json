@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEPR6JJFEEY5F30YVW32",
+  "name": "Sk guest house",
+  "coordinates": {
+    "latitude": 9.6725123,
+    "longitude": 80.0359945
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "11 Nayanmar Rd, Jaffna",
+  "business_status": "OPEN"
+}

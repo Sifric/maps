@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDAD7GV3202BTN282VFMD",
+  "name": "LIGHTHOUSE CAFE KOMARI",
+  "coordinates": {
+    "latitude": 7.0267542999999995,
+    "longitude": 81.8774481
+  },
+  "categories": [
+    "Coffee shop",
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "SANGAMANKANDA LIGHTHOUSE, Komari",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:30 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:30 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:30 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:30 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:30 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:30 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6:30 AM–5:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

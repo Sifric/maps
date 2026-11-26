@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC8Q7HX91J8A13A64A2A",
+  "name": "Ansar store",
+  "coordinates": {
+    "latitude": 7.9188733,
+    "longitude": 81.5247751
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG9F+GWR, Oddamavadi",
+  "business_status": "OPEN"
+}

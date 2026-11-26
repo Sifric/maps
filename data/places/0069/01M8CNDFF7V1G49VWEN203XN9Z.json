@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDFF7V1G49VWEN203XN9Z",
+  "name": "LINGA MEDICAL CENTRE",
+  "coordinates": {
+    "latitude": 9.7216522,
+    "longitude": 79.9971547
+  },
+  "categories": [
+    "Medical Center",
+    "Hospital"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "Jaffna road, Manipay",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5:30–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5:30–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5:30–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5:30–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5:30–9 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5:30–9 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4–9 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

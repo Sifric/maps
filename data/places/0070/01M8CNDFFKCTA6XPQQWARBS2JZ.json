@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDFFKCTA6XPQQWARBS2JZ",
+  "name": "Diabetes Rehabilitation Center",
+  "coordinates": {
+    "latitude": 6.8915945,
+    "longitude": 79.8859775
+  },
+  "categories": [
+    "Diabetes center",
+    "Diabetes equipment supplier",
+    "Diabetologist"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "11/1 Wimala Vihara Rd, Sri Jayawardenepura Kotte 11222",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12–8 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12–8 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "1:30–8 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "1–8 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "1:30–8:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

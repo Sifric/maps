@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAFGTRGN3W5PM6SAHSXB",
+  "name": "Zuja Home",
+  "coordinates": {
+    "latitude": 7.400282799999999,
+    "longitude": 81.837017
+  },
+  "categories": [
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "246a New Rd, Kalmunai 32300",
+  "business_status": "OPEN"
+}

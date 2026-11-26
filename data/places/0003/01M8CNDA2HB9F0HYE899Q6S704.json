@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA2HB9F0HYE899Q6S704",
+  "name": "Aksha Hottal & bakery",
+  "coordinates": {
+    "latitude": 7.4333138,
+    "longitude": 81.8121614
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CRM6+8VF, Nooraniya Rd, Maruthamunai",
+  "business_status": "OPEN"
+}

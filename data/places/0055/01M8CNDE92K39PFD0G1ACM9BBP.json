@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDE92K39PFD0G1ACM9BBP",
+  "name": "Diyathra Seascape",
+  "coordinates": {
+    "latitude": 6.028823699999999,
+    "longitude": 80.24304269999999
+  },
+  "categories": [
+    "Restaurant",
+    "Family service center",
+    "Hotel",
+    "Wine store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Matara Rd, Unawatuna",
+  "business_status": "OPEN"
+}

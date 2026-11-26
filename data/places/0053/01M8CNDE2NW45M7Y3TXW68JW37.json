@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE2NW45M7Y3TXW68JW37",
+  "name": "Beach Paradise Restaurant",
+  "coordinates": {
+    "latitude": 6.0734612,
+    "longitude": 80.158796
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

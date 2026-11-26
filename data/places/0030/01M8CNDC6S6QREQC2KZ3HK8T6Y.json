@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6S6QREQC2KZ3HK8T6Y",
+  "name": "Happy baking",
+  "coordinates": {
+    "latitude": 7.6757677,
+    "longitude": 81.733846
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPGM+8G5, Fareenas Rd, Kattankudy",
+  "business_status": "OPEN"
+}

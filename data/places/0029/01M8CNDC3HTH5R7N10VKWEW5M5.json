@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC3HTH5R7N10VKWEW5M5",
+  "name": "Eastern International College",
+  "coordinates": {
+    "latitude": 7.7131509,
+    "longitude": 81.694634
+  },
+  "categories": [
+    "International school"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "12 Advocate's Rd, Batticaloa 30000",
+  "business_status": "OPEN"
+}

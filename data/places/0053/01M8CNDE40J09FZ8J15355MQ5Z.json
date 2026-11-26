@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDE40J09FZ8J15355MQ5Z",
+  "name": "Nisala Arana Boutique Hotel",
+  "coordinates": {
+    "latitude": 6.42863,
+    "longitude": 80.020111
+  },
+  "categories": [
+    "Hotel",
+    "Ayurvedic clinic",
+    "Sri Lankan restaurant",
+    "Villa",
+    "Wedding planner"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "326/1 Yathramulla Rd, Bentota 80500",
+  "business_status": "OPEN"
+}

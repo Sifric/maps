@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD2J98ZGX7QYPWFAZH82",
+  "name": "Wings Auto Paint",
+  "coordinates": {
+    "latitude": 6.8287168,
+    "longitude": 80.3417734
+  },
+  "categories": [
+    "Auto repair shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Pathberiya",
+  "business_status": "OPEN"
+}

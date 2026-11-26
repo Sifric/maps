@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDB4EPXN3ZXNK7E0B19TY",
+  "name": "Spiritual Book Centre",
+  "coordinates": {
+    "latitude": 7.7076156,
+    "longitude": 81.7128348
+  },
+  "categories": [
+    "Book store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kallady",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEECV9FX9K87AK5XSEYQ",
+  "name": "Sanlota Resort",
+  "coordinates": {
+    "latitude": 5.995874,
+    "longitude": 80.3004345
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "B.D.A Gunasekara Rd, Habaraduwa 80630",
+  "business_status": "OPEN"
+}

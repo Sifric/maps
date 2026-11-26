@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDACVXEC156P9H3YWTTNP",
+  "name": "Salamath Hotel",
+  "coordinates": {
+    "latitude": 7.244194599999999,
+    "longitude": 81.7047654
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "6PV3+MW, Eragama",
+  "business_status": "OPEN"
+}

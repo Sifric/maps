@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE76DYX7XWBN1JQ3YSC5",
+  "name": "Coffee n’ Kulfi",
+  "coordinates": {
+    "latitude": 5.9798146999999995,
+    "longitude": 80.4313571
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "254, 3 New St, Weligama",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "1:30–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "1:30–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "1:30–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "1:30–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "1:30–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "1:30–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "1:30–10 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA2ET139BS5T2XEMDRDN",
+  "name": "Grandgers",
+  "coordinates": {
+    "latitude": 6.839644,
+    "longitude": 81.8329389
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Panama Rd, Arugam Bay 32500",
+  "business_status": "CLOSED_TEMPORARILY"
+}

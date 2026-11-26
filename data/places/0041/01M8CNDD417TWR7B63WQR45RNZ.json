@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD417TWR7B63WQR45RNZ",
+  "name": "பால் சேமிப்பு நிலையம் Milco center",
+  "coordinates": {
+    "latitude": 7.8189987,
+    "longitude": 81.55615019999999
+  },
+  "categories": [
+    "Milk delivery service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "RH94+HFR, Thavapuram",
+  "business_status": "OPEN"
+}

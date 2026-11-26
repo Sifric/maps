@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDB66CZ92TS1DV2K2YVDW",
+  "name": "Inthujan's house",
+  "coordinates": {
+    "latitude": 7.4171201,
+    "longitude": 81.8314474
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CR8J+RHW, Kalmunai 32300",
+  "business_status": "OPEN"
+}

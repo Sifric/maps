@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAEDZTPN89A7CW9174RA",
+  "name": "Hathy's villa",
+  "coordinates": {
+    "latitude": 7.350914899999999,
+    "longitude": 81.8044269
+  },
+  "categories": [
+    "Villa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "317/A/¼ G.S. Lane, Sammanthurai",
+  "business_status": "OPEN"
+}

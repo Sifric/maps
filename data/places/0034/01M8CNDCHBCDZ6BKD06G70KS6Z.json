@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCHBCDZ6BKD06G70KS6Z",
+  "name": "Fatima statue",
+  "coordinates": {
+    "latitude": 7.650543099999999,
+    "longitude": 81.7358113
+  },
+  "categories": [
+    "Religious destination"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "01 fattimapuram, batticaloa",
+  "business_status": "OPEN"
+}

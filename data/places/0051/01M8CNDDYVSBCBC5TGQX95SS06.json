@@ -1,0 +1,79 @@
+{
+  "id": "01M8CNDDYVSBCBC5TGQX95SS06",
+  "name": "Café Bem - Centara Ceysands",
+  "coordinates": {
+    "latitude": 6.4314336,
+    "longitude": 79.9946324
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "1, Aluthgama",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:30–10 AM",
+        "12:30–3 PM",
+        "7–10:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:30–10 AM",
+        "12:30–3 PM",
+        "7–10:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:30–10 AM",
+        "12:30–3 PM",
+        "7–10:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:30–10 AM",
+        "12:30–3 PM",
+        "7–10:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:30–10 AM",
+        "12:30–3 PM",
+        "7–10:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:30–10 AM",
+        "12:30–3 PM",
+        "7–10:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6:30–10 AM",
+        "12:30–3 PM",
+        "7–10:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

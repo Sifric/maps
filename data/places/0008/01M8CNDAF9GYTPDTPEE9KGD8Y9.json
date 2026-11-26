@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAF9GYTPDTPEE9KGD8Y9",
+  "name": "Sam Hotel & Rooms",
+  "coordinates": {
+    "latitude": 7.114704199999999,
+    "longitude": 81.8498372
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "4R7X+VWP, Thirukkovil",
+  "business_status": "OPEN"
+}

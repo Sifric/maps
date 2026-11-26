@@ -1,0 +1,27 @@
+{
+  "id": "01M8CNDAEC80HJE9ZRVS9R5N0W",
+  "name": "Sasiya Rinsin Villa",
+  "coordinates": {
+    "latitude": 7.350388499999999,
+    "longitude": 81.8475587
+  },
+  "categories": [
+    "Building",
+    "Residential building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "1st Cross St, Nintavur 32340",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "70 1st Cross St, Nintavur 32340"
+  ]
+}

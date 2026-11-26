@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDECNBR1C4AEKDXM24XS4",
+  "name": "Majestic Villa",
+  "coordinates": {
+    "latitude": 6.0644564999999995,
+    "longitude": 80.1763849
+  },
+  "categories": [
+    "Hotel",
+    "Villa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Galle 80280",
+  "business_status": "OPEN"
+}

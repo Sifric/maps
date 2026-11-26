@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBWCWYENN4PX94DVEH9",
+  "name": "Ceylon Rest House",
+  "coordinates": {
+    "latitude": 7.6822196,
+    "longitude": 81.74201049999999
+  },
+  "categories": [
+    "Guest house"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Marine Dr, Kattankudy 30100",
+  "business_status": "OPEN"
+}

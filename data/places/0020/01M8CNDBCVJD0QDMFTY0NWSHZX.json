@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBCVJD0QDMFTY0NWSHZX",
+  "name": "Van&Car rendal& hiar",
+  "coordinates": {
+    "latitude": 7.6986788,
+    "longitude": 81.7191594
+  },
+  "categories": [
+    "Car rental agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "202 Tharisanam Rd, Kallady",
+  "business_status": "OPEN"
+}

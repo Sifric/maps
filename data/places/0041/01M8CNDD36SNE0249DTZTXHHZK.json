@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDD36SNE0249DTZTXHHZK",
+  "name": "Jilla Saloon",
+  "coordinates": {
+    "latitude": 7.5004984,
+    "longitude": 81.80370289999999
+  },
+  "categories": [
+    "Hairdresser"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "\nGR23+5FW, Kaluwanchikudy",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "GR23+5FW, Kaluwanchikudy"
+  ]
+}

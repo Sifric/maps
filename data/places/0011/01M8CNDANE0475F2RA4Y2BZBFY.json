@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDANE0475F2RA4Y2BZBFY",
+  "name": "RENT A CAR - Sainthamaruthu.",
+  "coordinates": {
+    "latitude": 7.3979395,
+    "longitude": 81.8402538
+  },
+  "categories": [
+    "Car rental agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "614d Old Market Rd, Sainthamaruthu 32300",
+  "business_status": "OPEN"
+}

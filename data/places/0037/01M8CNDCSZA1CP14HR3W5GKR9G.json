@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCSZA1CP14HR3W5GKR9G",
+  "name": "A.K.Pharmacy",
+  "coordinates": {
+    "latitude": 7.7300586,
+    "longitude": 81.686745
+  },
+  "categories": [
+    "Pharmacy"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No:14 Iruthayapuram, East, Batticaloa 30000",
+  "business_status": "OPEN"
+}

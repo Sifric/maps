@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC72N7NHEZWCA95ZER27",
+  "name": "CS Catering",
+  "coordinates": {
+    "latitude": 7.7249064999999995,
+    "longitude": 81.69508359999999
+  },
+  "categories": [
+    "Cake shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "46, 75 Barathi Ln, Batticaloa",
+  "business_status": "CLOSED_TEMPORARILY"
+}

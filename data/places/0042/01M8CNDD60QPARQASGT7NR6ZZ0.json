@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD60QPARQASGT7NR6ZZ0",
+  "name": "Mosque",
+  "coordinates": {
+    "latitude": 7.978840399999999,
+    "longitude": 81.47819779999999
+  },
+  "categories": [
+    "Mosque"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "XFHH+G7, Kayankerni",
+  "business_status": "OPEN"
+}

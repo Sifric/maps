@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC8VSHQP5S3D71HE68EH",
+  "name": "Hairath grocery shop kattankudy",
+  "coordinates": {
+    "latitude": 7.683133499999999,
+    "longitude": 81.7336625
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "141 hairath Mosque Avenue, Kattankudy",
+  "business_status": "OPEN"
+}

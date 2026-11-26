@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDD26MS61VM8PSRPTRR5T",
+  "name": "QUICK TRANSLATION",
+  "coordinates": {
+    "latitude": 7.921265099999999,
+    "longitude": 81.5261831
+  },
+  "categories": [
+    "Translation service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "695A,Nahja Madrasa Road, 05, 30400",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "2:30–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "2:30–9:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "2:30–9:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "2:30–9:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Open 24 hours"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

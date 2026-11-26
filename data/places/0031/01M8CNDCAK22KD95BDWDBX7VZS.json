@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCAK22KD95BDWDBX7VZS",
+  "name": "OSHKI Farm and Holiday Resort",
+  "coordinates": {
+    "latitude": 8.0355367,
+    "longitude": 81.2340146
+  },
+  "categories": [
+    "Resort hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Sinhapura Rd, Welikanda 51070",
+  "business_status": "OPEN"
+}

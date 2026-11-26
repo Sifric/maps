@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6XZEC9QRYG135273XE",
+  "name": "Mr Dot's fast food (New Open)",
+  "coordinates": {
+    "latitude": 7.6854719,
+    "longitude": 81.7407724
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPPR+67G, Marine Dr, Kattankudy",
+  "business_status": "OPEN"
+}

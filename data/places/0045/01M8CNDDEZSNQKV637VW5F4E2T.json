@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDDEZSNQKV637VW5F4E2T",
+  "name": "කලාත්මා salon",
+  "coordinates": {
+    "latitude": 6.7657279,
+    "longitude": 80.039182
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\n20,moragahahena rd, Gonapola - Thalagala Rd, 12410",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "Open 24 hours"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

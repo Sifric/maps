@@ -1,0 +1,20 @@
+{
+  "id": "01M8CNDDEWJV434X5K0ZTRRJB6",
+  "name": "Sanja Beauty Parlour",
+  "coordinates": {
+    "latitude": 7.841622,
+    "longitude": 81.5487902
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  }
+}

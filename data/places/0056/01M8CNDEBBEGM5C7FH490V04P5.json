@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEBBEGM5C7FH490V04P5",
+  "name": "BoBo's Bed & Breakfast",
+  "coordinates": {
+    "latitude": 6.3178385,
+    "longitude": 80.0335515
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "120 a Galle Rd, Ahungalla 80562",
+  "business_status": "OPEN"
+}

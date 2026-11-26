@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD6MY18GYVEBV7HWW30Y",
+  "name": "Cafe 4-3 Charlie",
+  "coordinates": {
+    "latitude": 8.1456466,
+    "longitude": 81.43299669999999
+  },
+  "categories": [
+    "Food court"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Trincomalee-Batticaloa Rd",
+  "business_status": "OPEN"
+}

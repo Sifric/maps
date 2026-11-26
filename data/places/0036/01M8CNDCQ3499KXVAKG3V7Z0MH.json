@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCQ3499KXVAKG3V7Z0MH",
+  "name": "Ammar Garden",
+  "coordinates": {
+    "latitude": 7.6786109,
+    "longitude": 81.7333536
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Amanullah Rd., Kattankudy",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDC398JZH87EFJPBJ2XDG",
+  "name": "Raddella Jewellers",
+  "coordinates": {
+    "latitude": 6.870473,
+    "longitude": 79.8873249
+  },
+  "categories": [
+    "Jewelry store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "High Level Rd, Nugegoda",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "10 AM–6:45 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "10 AM–6:45 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "10 AM–6:45 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "10 AM–6:45 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "10 AM–6:45 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "10 AM–6:45 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "10 AM–6 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

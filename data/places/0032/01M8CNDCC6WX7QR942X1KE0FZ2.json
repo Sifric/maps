@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCC6WX7QR942X1KE0FZ2",
+  "name": "WELCOME VILLA (Rooms, Wedding and Waleema Hall)",
+  "coordinates": {
+    "latitude": 7.6871158,
+    "longitude": 81.7248359
+  },
+  "categories": [
+    "Holiday apartment rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Main St, Kattankudy 30100",
+  "business_status": "OPEN"
+}

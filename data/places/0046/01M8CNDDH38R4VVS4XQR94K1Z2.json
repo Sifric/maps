@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDH38R4VVS4XQR94K1Z2",
+  "name": "Anil Stores",
+  "coordinates": {
+    "latitude": 7.379171299999999,
+    "longitude": 81.7229212
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9PHF+M5, Chadaiyantalava",
+  "business_status": "OPEN"
+}

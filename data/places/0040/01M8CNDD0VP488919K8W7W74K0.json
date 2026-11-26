@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDD0VP488919K8W7W74K0",
+  "name": "Laundry Services by AHSRAM",
+  "coordinates": {
+    "latitude": 7.9207326,
+    "longitude": 81.5657907
+  },
+  "categories": [
+    "Laundry service",
+    "Laundry"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Coconut cultivation Board, Rd, Kalkudah 30410",
+  "business_status": "OPEN"
+}

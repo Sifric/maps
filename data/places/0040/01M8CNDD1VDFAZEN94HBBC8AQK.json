@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD1VDFAZEN94HBBC8AQK",
+  "name": "Onthachimadam Beach",
+  "coordinates": {
+    "latitude": 7.500158099999999,
+    "longitude": 81.8091164
+  },
+  "categories": [
+    "Beach pavillion"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GR25+3J9, Sri",
+  "business_status": "OPEN"
+}

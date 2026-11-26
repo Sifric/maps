@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEFKFV7TDTZK6BD8BDYJ",
+  "name": "Jungle Resort",
+  "coordinates": {
+    "latitude": 5.9957844,
+    "longitude": 80.3717305
+  },
+  "categories": [
+    "Bed & breakfast"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Unnamed Road, Ahangama",
+  "business_status": "OPEN"
+}

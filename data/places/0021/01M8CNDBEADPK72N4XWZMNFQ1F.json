@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBEADPK72N4XWZMNFQ1F",
+  "name": "100 Bungalow",
+  "coordinates": {
+    "latitude": 6.9172157,
+    "longitude": 81.5557729
+  },
+  "categories": [
+    "Electric vehicle charging station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WH84+V8, Siyambalanduwa",
+  "business_status": "OPEN"
+}

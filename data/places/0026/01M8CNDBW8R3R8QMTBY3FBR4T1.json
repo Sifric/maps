@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBW8R3R8QMTBY3FBR4T1",
+  "name": "Ashvitha Shoe Palace & Fancy",
+  "coordinates": {
+    "latitude": 7.785516299999999,
+    "longitude": 81.5906649
+  },
+  "categories": [
+    "Shoe store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Chenkaladi",
+  "business_status": "OPEN"
+}

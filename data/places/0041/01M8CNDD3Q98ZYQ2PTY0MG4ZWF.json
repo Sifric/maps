@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD3Q98ZYQ2PTY0MG4ZWF",
+  "name": "A To Z Jewellery",
+  "coordinates": {
+    "latitude": 7.7801402,
+    "longitude": 81.5978207
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Eravur",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDCDQTFV6JZECY5J6H26M",
+  "name": "Dental surgery (Dr. MHM Zarook)",
+  "coordinates": {
+    "latitude": 7.3722734999999995,
+    "longitude": 81.825721
+  },
+  "categories": [
+    "Dental clinic"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "25/B,old jumma masjid Road, Mavadippalli, Sammanthurai 32250",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4–8 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4–8 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4–8 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4–8 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4–8 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4–8 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4–8 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

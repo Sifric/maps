@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC89Z3HPA6J3FVX9BCM7",
+  "name": "Delani Food City",
+  "coordinates": {
+    "latitude": 7.7190731999999995,
+    "longitude": 81.70029749999999
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No. 22 Bar Rd, Batticaloa",
+  "business_status": "OPEN"
+}

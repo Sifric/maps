@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDDF37XSQE0DNJFTD85MV",
+  "name": "STYLE HUB SALON",
+  "coordinates": {
+    "latitude": 6.8652878,
+    "longitude": 80.9374082
+  },
+  "categories": [
+    "Hair salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\nVW8P+4X7, Mirahawatta",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–5 PM"
+      ]
+    }
+  ],
+  "business_status": "CLOSED"
+}

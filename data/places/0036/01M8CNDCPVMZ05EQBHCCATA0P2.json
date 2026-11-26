@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCPVMZ05EQBHCCATA0P2",
+  "name": "Varnojan house",
+  "coordinates": {
+    "latitude": 7.7241404,
+    "longitude": 81.7131714
+  },
+  "categories": [
+    "Garden"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PPF7+M73, 8th Cross St, Batticaloa",
+  "business_status": "OPEN"
+}

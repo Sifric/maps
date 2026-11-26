@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDA91R52TAQWRBCR1A5VC",
+  "name": "TWIST",
+  "coordinates": {
+    "latitude": 7.352922599999999,
+    "longitude": 81.8581537
+  },
+  "categories": [
+    "Snack bar"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "9V35+576, Beach Rd, Nintavur",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4–11 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4–11 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4–11 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4–11 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4–11 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4–11 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4–11 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

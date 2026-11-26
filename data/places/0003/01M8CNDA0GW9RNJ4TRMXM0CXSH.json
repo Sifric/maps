@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA0GW9RNJ4TRMXM0CXSH",
+  "name": "Marutha Vadi (மருத வாடி)",
+  "coordinates": {
+    "latitude": 7.2871136,
+    "longitude": 81.8481218
+  },
+  "categories": [
+    "Soup kitchen"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "7RPX+R6X, A4, Palamunai",
+  "business_status": "CLOSED_TEMPORARILY"
+}

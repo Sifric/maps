@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDA790PFY764CXQQJJCRC",
+  "name": "Thaj home foods",
+  "coordinates": {
+    "latitude": 7.2618477,
+    "longitude": 81.8571475
+  },
+  "categories": [
+    "Food court"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "93/d Deens Rd, Addalaichenai 32350",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7–10 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7–10 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7–10 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7–10 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7–10 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7–10 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7–10 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

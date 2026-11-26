@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCAX6PR6V8VHN3ZMRFBA",
+  "name": "Beauty Handloom",
+  "coordinates": {
+    "latitude": 7.6611622,
+    "longitude": 81.7458135
+  },
+  "categories": [
+    "Clothes market"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MP6W+F88, Batticaloa, Arayampathy, Palamunai, 11, Batticaloa 30150",
+  "business_status": "OPEN"
+}

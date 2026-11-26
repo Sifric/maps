@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC68F6H5PH1Q12T221XX",
+  "name": "Home cooking restaurant",
+  "coordinates": {
+    "latitude": 7.9071525,
+    "longitude": 81.5322047
+  },
+  "categories": [
+    "Indian restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Junior school Rd karuvaakkeni valaichenai, Valaichenai 30400",
+  "business_status": "CLOSED_TEMPORARILY"
+}

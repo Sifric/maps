@@ -1,0 +1,68 @@
+{
+  "id": "01M8CNDAW6H87A6W5PWZ1ASHT6",
+  "name": "SH AHAMED Lanka Filling Station",
+  "coordinates": {
+    "latitude": 7.3447157,
+    "longitude": 81.8466693
+  },
+  "categories": [
+    "Gas station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "8RVW+VMM, Colombo - Batticaloa Hwy, Nintavur",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:30 AM–8:45 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:30 AM–8:45 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:30 AM–8:45 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:30 AM–8:45 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:30 AM–12 PM",
+        "3–8:45 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:30 AM–8:45 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6:30 AM–8:45 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

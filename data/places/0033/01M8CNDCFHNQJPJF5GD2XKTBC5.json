@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDCFHNQJPJF5GD2XKTBC5",
+  "name": "Lighthouse Church Prayer Center Batticaloa",
+  "coordinates": {
+    "latitude": 7.707457499999999,
+    "longitude": 81.6882851
+  },
+  "categories": [
+    "Pentecostal church"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Batticaloa",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5–6 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7–11 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

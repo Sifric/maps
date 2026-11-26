@@ -1,0 +1,73 @@
+{
+  "id": "01M8CNDFEJJ5MFHFKHKD9WBS4H",
+  "name": "Chunnakam Medical & Dental Clinic",
+  "coordinates": {
+    "latitude": 9.7484463,
+    "longitude": 80.0291216
+  },
+  "categories": [
+    "Dentist",
+    "Private hospital",
+    "General practitioner",
+    "Medical Center"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "Jaffna-Kankesanturai Rd, Chunnakam",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7–10:30 AM",
+        "3:30–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7–10:30 AM",
+        "3:30–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7–10:30 AM",
+        "3–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7–10:30 AM",
+        "3–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7–10:30 AM",
+        "3:30–9 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7–10:30 AM",
+        "3:30–9 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7–10:30 AM",
+        "3:30–9 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

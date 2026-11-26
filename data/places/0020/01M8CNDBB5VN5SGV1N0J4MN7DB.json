@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBB5VN5SGV1N0J4MN7DB",
+  "name": "MJ HOME",
+  "coordinates": {
+    "latitude": 7.6655761,
+    "longitude": 81.7487697
+  },
+  "categories": [
+    "Apartment complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MP8W+5X9, Kattankudy 30150",
+  "business_status": "OPEN"
+}

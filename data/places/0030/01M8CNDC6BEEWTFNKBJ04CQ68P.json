@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6BEEWTFNKBJ04CQ68P",
+  "name": "Theesan's Buisness",
+  "coordinates": {
+    "latitude": 7.9118566999999995,
+    "longitude": 81.53911049999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG6Q+PJX, Kalkudah",
+  "business_status": "OPEN"
+}

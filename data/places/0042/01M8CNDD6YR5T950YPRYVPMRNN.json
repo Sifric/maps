@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD6YR5T950YPRYVPMRNN",
+  "name": "Vavunathivu Market",
+  "coordinates": {
+    "latitude": 7.6961467,
+    "longitude": 81.6545507
+  },
+  "categories": [
+    "Market"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Karaveddy, Manmunai West",
+  "business_status": "OPEN"
+}

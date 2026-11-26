@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCC71RY661SR5AN36RVT",
+  "name": "Subi Nature's Nook",
+  "coordinates": {
+    "latitude": 7.737164099999999,
+    "longitude": 81.6976468
+  },
+  "categories": [
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "317 Bar Road, Batticaloa 30000",
+  "business_status": "OPEN"
+}

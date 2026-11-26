@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDB84V8RR20XEWKKPRDJE",
+  "name": "SATHIK HOUSE",
+  "coordinates": {
+    "latitude": 7.7816468,
+    "longitude": 81.6098928
+  },
+  "categories": [
+    "Apartment complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "288/3 alayadi road michnagar, Eravur",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDAFCZ43H8V9ZFFEJKK57",
+  "name": "Mehrin housing complex",
+  "coordinates": {
+    "latitude": 7.4218654,
+    "longitude": 81.73679349999999
+  },
+  "categories": [
+    "Homestay",
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "3rd Ward, Chalambaikerny, 12/138 , 12th Colony, 04 Central Camp Rd, 32050",
+  "business_status": "OPEN"
+}

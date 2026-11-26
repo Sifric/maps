@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBCT1JEB3EWE7ME4RY9V",
+  "name": "KMMG (PVT) LTD",
+  "coordinates": {
+    "latitude": 7.6851753,
+    "longitude": 81.7262338
+  },
+  "categories": [
+    "Car rental agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kattankudy Division 2 No, Kattankudy",
+  "business_status": "OPEN"
+}

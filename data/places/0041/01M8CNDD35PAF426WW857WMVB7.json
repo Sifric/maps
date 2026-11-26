@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD35PAF426WW857WMVB7",
+  "name": "Milk Collecting Center Kaluwanchikudy",
+  "coordinates": {
+    "latitude": 7.5191601,
+    "longitude": 81.7899812
+  },
+  "categories": [
+    "Milk delivery service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQ9Q+MX9, Old People's Bank Rd, Kaluwanchikudy",
+  "business_status": "CLOSED"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBD8JVDTFN0JPFAJ6C2H",
+  "name": "Power Holdings",
+  "coordinates": {
+    "latitude": 7.2790650999999995,
+    "longitude": 80.6191822
+  },
+  "categories": [
+    "Electric vehicle charging station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "650 William Gopallawa Mawatha, Kandy 20000",
+  "business_status": "OPEN"
+}

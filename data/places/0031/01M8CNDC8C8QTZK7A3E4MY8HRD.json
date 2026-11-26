@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC8C8QTZK7A3E4MY8HRD",
+  "name": "Fahira Farm House",
+  "coordinates": {
+    "latitude": 8.0418202,
+    "longitude": 81.1885293
+  },
+  "categories": [
+    "Organic farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "172",
+  "business_status": "OPEN"
+}

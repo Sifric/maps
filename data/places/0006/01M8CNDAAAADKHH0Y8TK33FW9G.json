@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDAAAADKHH0Y8TK33FW9G",
+  "name": "Fox Hill Farm",
+  "coordinates": {
+    "latitude": 6.8044006,
+    "longitude": 81.6103432
+  },
+  "categories": [
+    "Aquaculture farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "RJ36+Q4, Ethimale",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12 AM–4 PM",
+        "7 PM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

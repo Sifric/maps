@@ -1,0 +1,74 @@
+{
+  "id": "01M8CNDBNA40V85AWSBE7QT3VN",
+  "name": "Lanka Real Estate",
+  "coordinates": {
+    "latitude": 6.0275222,
+    "longitude": 80.2190601
+  },
+  "categories": [
+    "Real estate agency",
+    "Commercial real estate agency",
+    "Investment service",
+    "Property management company",
+    "Real estate agent",
+    "Real estate consultant",
+    "Real estate developer",
+    "Real estate rental agency",
+    "Vacation home rental agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Number One, Court Square, Queens St, Galle 81000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

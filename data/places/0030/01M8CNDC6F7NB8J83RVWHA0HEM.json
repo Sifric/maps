@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6F7NB8J83RVWHA0HEM",
+  "name": "Harishka store",
+  "coordinates": {
+    "latitude": 7.4826625,
+    "longitude": 81.7540781
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "FQM3+3J8, sangar puram, Mandur",
+  "business_status": "OPEN"
+}

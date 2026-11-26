@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE03AAKNEZ1FZPAR7RY5",
+  "name": "Tasty food",
+  "coordinates": {
+    "latitude": 6.2378371,
+    "longitude": 80.05561589999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "63Q4+46Q, Heen Ela Rd, Ambalangoda 80300",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6–8:45 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6–8:45 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6–8:45 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6–8:45 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6–8:45 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6–8:45 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6–8:45 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

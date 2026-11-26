@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDB0N8H72P9DE9CF7H56G",
+  "name": "Ashraff Garden",
+  "coordinates": {
+    "latitude": 7.411960199999999,
+    "longitude": 81.7359165
+  },
+  "categories": [
+    "Park"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Central Camp Rd, 02",
+  "business_status": "OPEN"
+}

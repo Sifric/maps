@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA2E4X53T84SDKHQ6W03",
+  "name": "Waffle Bay",
+  "coordinates": {
+    "latitude": 6.8426804,
+    "longitude": 81.8317093
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Main Street, Arugam Bay 32500",
+  "business_status": "CLOSED_TEMPORARILY"
+}

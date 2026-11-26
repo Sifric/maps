@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAK00QYGFRZF1SC5VRCA",
+  "name": "Alumex Warehouse",
+  "coordinates": {
+    "latitude": 7.5087397,
+    "longitude": 81.7922701
+  },
+  "categories": [
+    "Warehouse"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQ5R+FWR, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

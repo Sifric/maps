@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDEJHYJS2TEA3MD631TXG",
+  "name": "Chankanai Public Market",
+  "coordinates": {
+    "latitude": 9.7477266,
+    "longitude": 79.97040439999999
+  },
+  "categories": [
+    "Market"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "PXXC+452, AB17, Vadaliyadaippu",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5 AM–12 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

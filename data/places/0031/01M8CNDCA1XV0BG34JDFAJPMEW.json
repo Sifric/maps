@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCA1XV0BG34JDFAJPMEW",
+  "name": "ASHFA Hotel",
+  "coordinates": {
+    "latitude": 7.77736,
+    "longitude": 81.6138991
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJG7+WHR, Eravur",
+  "business_status": "OPEN"
+}

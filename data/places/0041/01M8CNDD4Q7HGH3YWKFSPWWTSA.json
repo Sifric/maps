@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD4Q7HGH3YWKFSPWWTSA",
+  "name": "NS sea food restaurant",
+  "coordinates": {
+    "latitude": 7.9187993,
+    "longitude": 81.5668559
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WH98+GP6, Pasikuda Road, Kalkudah",
+  "business_status": "OPEN"
+}

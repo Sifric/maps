@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCRRMW2KJCCDZMERYDWD",
+  "name": "CBH Lands Batticaloa",
+  "coordinates": {
+    "latitude": 7.717581399999999,
+    "longitude": 81.6991736
+  },
+  "categories": [
+    "Real estate agent"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "A, 15 Trincomalee-Batticaloa Rd, Batticaloa 30400",
+  "business_status": "OPEN"
+}

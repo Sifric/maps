@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDDFDAG4JYM0CKK1S7FTW",
+  "name": "New Oxford Mobile Store",
+  "coordinates": {
+    "latitude": 7.926449099999999,
+    "longitude": 81.53096819999999
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD05YE5JSPQRFKJ0HS5Q",
+  "name": "RFM AAYSHA MULTI shop",
+  "coordinates": {
+    "latitude": 7.9011812,
+    "longitude": 81.5234409
+  },
+  "categories": [
+    "Dressmaker"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "mancholai, No1 Hospital Road, Oddamavadi 30426",
+  "business_status": "OPEN"
+}

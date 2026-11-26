@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCQEZDPXW1B7N9CY2X0S",
+  "name": "Beach",
+  "coordinates": {
+    "latitude": 7.7596646,
+    "longitude": 81.6884632
+  },
+  "categories": [
+    "Tourist attraction"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QM5Q+V98, Batticaloa",
+  "business_status": "OPEN"
+}

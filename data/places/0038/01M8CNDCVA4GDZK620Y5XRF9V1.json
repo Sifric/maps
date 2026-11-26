@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCVA4GDZK620Y5XRF9V1",
+  "name": "Post Office, Navatkadu",
+  "coordinates": {
+    "latitude": 7.7141696,
+    "longitude": 81.6400001
+  },
+  "categories": [
+    "Post office"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PJ7R+M26, Batticaloa",
+  "business_status": "OPEN"
+}

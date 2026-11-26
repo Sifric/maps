@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA4F0PHQ8QC8Z7T5YG4G",
+  "name": "Mareena Hotel",
+  "coordinates": {
+    "latitude": 7.222637,
+    "longitude": 81.8446815
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "17 Jinnah Rd, Akkaraipattu 32400",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDB137T0YMMSB7BR7FB5J",
+  "name": "KIDS U",
+  "coordinates": {
+    "latitude": 7.0530943,
+    "longitude": 79.8964893
+  },
+  "categories": [
+    "Indoor playground"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "Joseph Perera Road, Kandana 11320",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7–11 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "9 AM–5 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

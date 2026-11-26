@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEEN4T6M44HPJXTX43QC",
+  "name": "Hotel Indigo",
+  "coordinates": {
+    "latitude": 6.0004827999999995,
+    "longitude": 80.2658508
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Meegahawaththa Road, Unawatuna 80600",
+  "business_status": "OPEN"
+}

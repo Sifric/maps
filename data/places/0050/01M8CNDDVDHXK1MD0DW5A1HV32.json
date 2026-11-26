@@ -1,0 +1,70 @@
+{
+  "id": "01M8CNDDVDHXK1MD0DW5A1HV32",
+  "name": "The Jungle by Blue Waves - Coffee & Food",
+  "coordinates": {
+    "latitude": 5.9652709999999995,
+    "longitude": 80.3805984
+  },
+  "categories": [
+    "Coffee shop",
+    "Breakfast restaurant",
+    "Brunch restaurant",
+    "Cafe",
+    "Restaurant",
+    "Tapas restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "349 Matara Rd, Ahangama 80650",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8 AM–6 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

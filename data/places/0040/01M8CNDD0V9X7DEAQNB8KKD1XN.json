@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD0V9X7DEAQNB8KKD1XN",
+  "name": "Ashanki service center",
+  "coordinates": {
+    "latitude": 7.9039380999999995,
+    "longitude": 81.5363297
+  },
+  "categories": [
+    "Car wash"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG3P+HG, Oddamavadi",
+  "business_status": "OPEN"
+}

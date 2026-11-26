@@ -1,0 +1,71 @@
+{
+  "id": "01M8CNDD7082PST4R9PM0PEKK8",
+  "name": "Agrotrade Ceylon (Private) Limited",
+  "coordinates": {
+    "latitude": 7.4324473,
+    "longitude": 81.81468199999999
+  },
+  "categories": [
+    "Wholesale market",
+    "Distribution service",
+    "Import export company",
+    "Marketing agency",
+    "Agricultural production"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "14 Colombo - Batticaloa Hwy, Maruthamunai 32314",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8:30 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA7MKTDF7YVY0RN5M1HV",
+  "name": "Hotel Nila",
+  "coordinates": {
+    "latitude": 7.2499635,
+    "longitude": 81.71793009999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "No 07 Eragama Rd, Hingurana 32014",
+  "business_status": "OPEN"
+}

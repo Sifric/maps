@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC7RAWRTWP8W6YN2AEE0",
+  "name": "Max Super Market",
+  "coordinates": {
+    "latitude": 7.9127407,
+    "longitude": 81.5254952
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG7G+35X, MPCS Rd, Oddamavadi",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC8A99DFTD247Q4VK4HW",
+  "name": "Lala supermarket",
+  "coordinates": {
+    "latitude": 7.7768248,
+    "longitude": 81.6103416
+  },
+  "categories": [
+    "Supermarket"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJG6+P5J, Eravur",
+  "business_status": "OPEN"
+}

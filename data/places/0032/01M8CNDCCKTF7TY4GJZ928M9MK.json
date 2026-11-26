@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCCKTF7TY4GJZ928M9MK",
+  "name": "Kallady Beach",
+  "coordinates": {
+    "latitude": 7.7186502,
+    "longitude": 81.718903
+  },
+  "categories": [
+    "Beach"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kallady",
+  "business_status": "OPEN"
+}

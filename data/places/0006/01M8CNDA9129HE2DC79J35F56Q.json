@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDA9129HE2DC79J35F56Q",
+  "name": "Mubarak hotel Nintavur",
+  "coordinates": {
+    "latitude": 7.348814699999999,
+    "longitude": 81.8551621
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "3rd Cross St, Nintavur 33000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5 AM–10:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

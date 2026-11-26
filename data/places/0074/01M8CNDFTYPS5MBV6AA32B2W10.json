@@ -1,0 +1,63 @@
+{
+  "id": "01M8CNDFTYPS5MBV6AA32B2W10",
+  "name": "TR Mithu Welding shop",
+  "coordinates": {
+    "latitude": 9.8085284,
+    "longitude": 80.0387878
+  },
+  "categories": [
+    "Welder"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "K k s Road kankesanthurai, Tellippalai 40000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7–9:30 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8 AM–1:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

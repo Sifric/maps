@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDFMHG9GB1HGNHJZ1HWVT",
+  "name": "Thurkaah Electrical",
+  "coordinates": {
+    "latitude": 9.7442084,
+    "longitude": 80.0274939
+  },
+  "categories": [
+    "Transportation service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "Chunnakam",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7:24 AM–12 PM",
+        "7:30 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12 AM–6:30 PM",
+        "7:30 PM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

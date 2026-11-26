@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBE2PB8V10XHR2J1BEQ",
+  "name": "Apple Cream House",
+  "coordinates": {
+    "latitude": 7.7157613,
+    "longitude": 81.69839379999999
+  },
+  "categories": [
+    "Juice shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "31 Trinco Rd, Batticaloa 30000",
+  "business_status": "OPEN"
+}

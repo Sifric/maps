@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDGX0PN8F65JQ5BEENRZ",
+  "name": "PALANDAGE STORS",
+  "coordinates": {
+    "latitude": 6.8336291,
+    "longitude": 80.4165422
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "RCM8+CJ, Erathna",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCX8J5A6NS7G20RKT66Z",
+  "name": "My fashion",
+  "coordinates": {
+    "latitude": 7.679284,
+    "longitude": 81.7295997
+  },
+  "categories": [
+    "ATM"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPHH+PR9, Colombo - Ratnapura - Wellawaya - Batticaloa Rd, Kattankudy",
+  "business_status": "OPEN"
+}

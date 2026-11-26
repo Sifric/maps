@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBM52V0ABCFRHPP9SAYR",
+  "name": "සුපුන් Vehicle Repair",
+  "coordinates": {
+    "latitude": 7.3144452,
+    "longitude": 81.40509519999999
+  },
+  "categories": [
+    "Auto repair shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Wellassa,galgamuwa, Inginiyagala Rd",
+  "business_status": "OPEN"
+}

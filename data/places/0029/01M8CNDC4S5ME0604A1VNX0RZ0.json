@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC4S5ME0604A1VNX0RZ0",
+  "name": "Beach Way Swimming Pool",
+  "coordinates": {
+    "latitude": 7.6819937,
+    "longitude": 81.7321486
+  },
+  "categories": [
+    "Swimming pool"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPJJ+QVR, Kattankudy",
+  "business_status": "OPEN"
+}

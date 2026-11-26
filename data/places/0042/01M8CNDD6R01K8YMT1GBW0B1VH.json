@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD6R01K8YMT1GBW0B1VH",
+  "name": "J.V.Hotel",
+  "coordinates": {
+    "latitude": 7.918959699999999,
+    "longitude": 81.5603471
+  },
+  "categories": [
+    "Fast food restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WH96+H45, Kalkudah",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD52NZG0D1W43RYM782T",
+  "name": "A.P Jewellery",
+  "coordinates": {
+    "latitude": 7.7781001,
+    "longitude": 81.6009622
+  },
+  "categories": [
+    "Jewelry store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Eravur",
+  "business_status": "OPEN"
+}

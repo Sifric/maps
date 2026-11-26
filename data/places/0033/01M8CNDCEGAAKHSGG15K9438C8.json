@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCEGAAKHSGG15K9438C8",
+  "name": "Fracture Hospital",
+  "coordinates": {
+    "latitude": 7.8157296,
+    "longitude": 81.55820949999999
+  },
+  "categories": [
+    "Hospital"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "RH85+77W, Thavapuram",
+  "business_status": "OPEN"
+}

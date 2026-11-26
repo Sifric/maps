@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDEBTVPP35EQ03SK9MA9J",
+  "name": "Hotel Susantha Garden",
+  "coordinates": {
+    "latitude": 6.421782899999999,
+    "longitude": 79.9969677
+  },
+  "categories": [
+    "Hotel",
+    "Bar",
+    "Group accommodation",
+    "Guest house",
+    "Lodging",
+    "Resort hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "CXCW+PQ8, Nikethena Road, Pitaramba Road, Bentota 80500",
+  "business_status": "OPEN"
+}

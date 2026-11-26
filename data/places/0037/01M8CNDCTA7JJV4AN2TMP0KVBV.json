@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCTA7JJV4AN2TMP0KVBV",
+  "name": "Seylan Off Site Kiosks ATM - Batticaloa",
+  "coordinates": {
+    "latitude": 7.7218564999999995,
+    "longitude": 81.7029294
+  },
+  "categories": [
+    "ATM"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Batticaloa",
+  "business_status": "OPEN"
+}

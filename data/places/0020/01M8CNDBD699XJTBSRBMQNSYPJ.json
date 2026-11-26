@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBD699XJTBSRBMQNSYPJ",
+  "name": "chargeNET Charging Station",
+  "coordinates": {
+    "latitude": 8.0365476,
+    "longitude": 80.7498103
+  },
+  "categories": [
+    "Electric vehicle charging station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "2PPX+JW7, Unnamed Road, Habarana 50150",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAH80GWAHJW8A8KAB169",
+  "name": "Kumara Luxury Villa",
+  "coordinates": {
+    "latitude": 5.9700399,
+    "longitude": 80.4551773
+  },
+  "categories": [
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

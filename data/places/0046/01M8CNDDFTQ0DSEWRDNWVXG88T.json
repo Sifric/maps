@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDFTQ0DSEWRDNWVXG88T",
+  "name": "Kathirkamaththambi store",
+  "coordinates": {
+    "latitude": 7.5180948999999995,
+    "longitude": 81.75454189999999
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "kovilporathivu, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

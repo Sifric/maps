@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC99SQNZ0EFXVQ7A41AD",
+  "name": "Kanthan Liquor Shop",
+  "coordinates": {
+    "latitude": 7.6647836,
+    "longitude": 81.73880609999999
+  },
+  "categories": [
+    "Bar"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MP7Q+WG7",
+  "business_status": "CLOSED"
+}

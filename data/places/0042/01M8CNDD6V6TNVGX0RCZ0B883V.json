@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD6V6TNVGX0RCZ0B883V",
+  "name": "Deep Sea Resort",
+  "coordinates": {
+    "latitude": 7.7381401,
+    "longitude": 81.70387269999999
+  },
+  "categories": [
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

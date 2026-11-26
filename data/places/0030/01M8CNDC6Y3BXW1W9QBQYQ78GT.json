@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6Y3BXW1W9QBQYQ78GT",
+  "name": "SITHY BAKE HOUSE",
+  "coordinates": {
+    "latitude": 7.731776,
+    "longitude": 81.69502059999999
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "40 COOLAVADI Main Road, Batticaloa",
+  "business_status": "OPEN"
+}

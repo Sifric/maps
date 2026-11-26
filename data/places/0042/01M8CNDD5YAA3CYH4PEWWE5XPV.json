@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD5YAA3CYH4PEWWE5XPV",
+  "name": "Leisure boat service",
+  "coordinates": {
+    "latitude": 7.2898147,
+    "longitude": 81.6681844
+  },
+  "categories": [
+    "Boat rental service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "7MQ9+W7F, Ampara",
+  "business_status": "OPEN"
+}

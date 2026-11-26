@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCXR7R3YDGZ3XEMVKD7H",
+  "name": "Azeek Auto For Hire",
+  "coordinates": {
+    "latitude": 7.678967699999999,
+    "longitude": 81.7397052
+  },
+  "categories": [
+    "Transportation service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No: 5/16 Abrar Masjid Road, Kattankudy 06",
+  "business_status": "OPEN"
+}

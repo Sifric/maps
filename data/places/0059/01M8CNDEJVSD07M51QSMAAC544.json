@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDEJVSD07M51QSMAAC544",
+  "name": "Gj farm",
+  "coordinates": {
+    "latitude": 9.8182297,
+    "longitude": 80.2345378
+  },
+  "categories": [
+    "Farm shop",
+    "Chicken shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Main St, Point Pedro 40600",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5–10:30 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5 AM–10:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

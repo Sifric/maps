@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAEC90WD0E07F1KQ71JJ",
+  "name": "Villa",
+  "coordinates": {
+    "latitude": 7.3472876,
+    "longitude": 81.853027
+  },
+  "categories": [
+    "Housing development"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "7.347712, 81.850610 South Rd, Nintavur",
+  "business_status": "OPEN"
+}

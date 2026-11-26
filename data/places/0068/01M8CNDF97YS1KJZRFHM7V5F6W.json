@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDF97YS1KJZRFHM7V5F6W",
+  "name": "Rent a Car C",
+  "coordinates": {
+    "latitude": 6.0357145999999995,
+    "longitude": 80.291108
+  },
+  "categories": [
+    "Car rental agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Pilana 80000",
+  "business_status": "OPEN"
+}

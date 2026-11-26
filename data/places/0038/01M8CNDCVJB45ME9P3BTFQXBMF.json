@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCVJB45ME9P3BTFQXBMF",
+  "name": "Kokkuvil Cemetery",
+  "coordinates": {
+    "latitude": 7.744582599999999,
+    "longitude": 81.6729366
+  },
+  "categories": [
+    "Cemetery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMVF+R5M, Cemetery, Batticaloa",
+  "business_status": "OPEN"
+}

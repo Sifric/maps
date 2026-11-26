@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEE3VF32NKMWNME8ESB4",
+  "name": "BK Beach",
+  "coordinates": {
+    "latitude": 6.1146633999999995,
+    "longitude": 80.12073389999999
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "1014 Galle Rd, Hikkaduwa 80250",
+  "business_status": "OPEN"
+}

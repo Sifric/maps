@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA6Z7DQZR2XRTBCVV1EM",
+  "name": "Vishnu hotel",
+  "coordinates": {
+    "latitude": 7.6759834,
+    "longitude": 81.5707731
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "MHGC+98R, Aayiththiyamalaila",
+  "business_status": "OPEN"
+}

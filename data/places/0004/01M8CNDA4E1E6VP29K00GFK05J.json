@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA4E1E6VP29K00GFK05J",
+  "name": "Moon Garden Hotel & Restaurant",
+  "coordinates": {
+    "latitude": 6.8498553,
+    "longitude": 81.83019689999999
+  },
+  "categories": [
+    "Eclectic restaurant",
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Main Street, Arugam Bay 32500",
+  "business_status": "OPEN"
+}

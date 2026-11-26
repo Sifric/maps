@@ -1,0 +1,63 @@
+{
+  "id": "01M8CNDFAX6TQB9VDGWMJNZJ4G",
+  "name": "KTR Farm",
+  "coordinates": {
+    "latitude": 9.7471835,
+    "longitude": 80.0855301
+  },
+  "categories": [
+    "Farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "Raja St, Siruppiddy 40000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–4:30 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

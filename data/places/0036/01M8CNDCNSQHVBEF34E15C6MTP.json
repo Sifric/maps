@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCNSQHVBEF34E15C6MTP",
+  "name": "Vesloo Wholesale centre",
+  "coordinates": {
+    "latitude": 7.682509499999999,
+    "longitude": 81.72992599999999
+  },
+  "categories": [
+    "Clothing store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No. 26 Abdul Cader Road, Kattankudy-03, Kattankudy 30100",
+  "business_status": "OPEN"
+}

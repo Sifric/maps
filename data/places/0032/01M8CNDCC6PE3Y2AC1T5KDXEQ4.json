@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCC6PE3Y2AC1T5KDXEQ4",
+  "name": "Abdullah Beach Resort",
+  "coordinates": {
+    "latitude": 7.6918557,
+    "longitude": 81.7358311
+  },
+  "categories": [
+    "Holiday apartment rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPRP+VG5, Marine Dr, Kattankudy",
+  "business_status": "OPEN"
+}

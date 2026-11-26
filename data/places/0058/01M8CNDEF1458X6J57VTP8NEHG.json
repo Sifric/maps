@@ -1,0 +1,28 @@
+{
+  "id": "01M8CNDEF1458X6J57VTP8NEHG",
+  "name": "Castle Bay Resort",
+  "coordinates": {
+    "latitude": 5.9611111,
+    "longitude": 80.4197222
+  },
+  "categories": [
+    "Hotel",
+    "Group accommodation",
+    "Lodging",
+    "Massage spa",
+    "Resort hotel",
+    "Spa and health club",
+    "Sri Lankan restaurant",
+    "Whale watching tour agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "124, Kapparathota, Weligama 81700",
+  "business_status": "OPEN"
+}

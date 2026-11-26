@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD591TNANXH8ZG3Q0Q30",
+  "name": "Royal Row book shop",
+  "coordinates": {
+    "latitude": 7.715825199999999,
+    "longitude": 81.6984128
+  },
+  "categories": [
+    "Book store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No.37 Trincomalee-Batticaloa Rd, habarana",
+  "business_status": "OPEN"
+}

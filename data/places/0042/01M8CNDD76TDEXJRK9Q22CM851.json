@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD76TDEXJRK9Q22CM851",
+  "name": "Pet Care animal clinic",
+  "coordinates": {
+    "latitude": 7.1121554,
+    "longitude": 81.8481858
+  },
+  "categories": [
+    "Veterinarian"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "4R6X+V77, Main street, Thirukkovil 2",
+  "business_status": "OPEN"
+}

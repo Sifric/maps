@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE7J9WV1G8B27YM40WNY",
+  "name": "Rathna bakery",
+  "coordinates": {
+    "latitude": 6.0183808,
+    "longitude": 80.40574939999999
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "a, Jamburutugoda",
+  "business_status": "CLOSED_TEMPORARILY"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDFPGKPACQN6GA1GNP8B",
+  "name": "Jd Furniture Showroom",
+  "coordinates": {
+    "latitude": 7.7689528999999995,
+    "longitude": 81.61398539999999
+  },
+  "categories": [
+    "Home goods store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Eravur",
+  "business_status": "OPEN"
+}

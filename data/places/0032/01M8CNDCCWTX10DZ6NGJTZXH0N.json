@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCCWTX10DZ6NGJTZXH0N",
+  "name": "Haya's Villa",
+  "coordinates": {
+    "latitude": 7.681343699999999,
+    "longitude": 81.730974
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPJJ+G9Q, Kattankudy",
+  "business_status": "OPEN"
+}

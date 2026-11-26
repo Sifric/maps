@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDCCTA55VDXMGTFJVZ4FN",
+  "name": "Shalom Beach Villa - One-Bedroom Villa",
+  "coordinates": {
+    "latitude": 7.9005098,
+    "longitude": 81.5631027
+  },
+  "categories": [
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kalkudah",
+  "business_status": "OPEN"
+}

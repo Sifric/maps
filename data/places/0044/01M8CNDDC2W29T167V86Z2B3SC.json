@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDC2W29T167V86Z2B3SC",
+  "name": "Vijayapala house",
+  "coordinates": {
+    "latitude": 7.7348513,
+    "longitude": 81.6883572
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "68 subramaniyam lane, Batticaloa 30000",
+  "business_status": "OPEN"
+}

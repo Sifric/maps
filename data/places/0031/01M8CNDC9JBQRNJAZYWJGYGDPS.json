@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9JBQRNJAZYWJGYGDPS",
+  "name": "Bakery",
+  "coordinates": {
+    "latitude": 7.5787048,
+    "longitude": 81.7503497
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Ampilanthurai Junction, Main Street",
+  "business_status": "OPEN"
+}

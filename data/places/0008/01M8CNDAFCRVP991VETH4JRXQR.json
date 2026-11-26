@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAFCRVP991VETH4JRXQR",
+  "name": "Harsnika House",
+  "coordinates": {
+    "latitude": 7.4886728,
+    "longitude": 81.7920611
+  },
+  "categories": [
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "FQQR+FR7, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

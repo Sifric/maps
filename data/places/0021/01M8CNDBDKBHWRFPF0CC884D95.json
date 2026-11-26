@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBDKBHWRFPF0CC884D95",
+  "name": "Kisha Barbershop",
+  "coordinates": {
+    "latitude": 7.4065072999999995,
+    "longitude": 81.83108089999999
+  },
+  "categories": [
+    "Barber shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CR4J+HCV, Colombo - Ratnapura - Wellawaya - Batticaloa Rd, Kalmunai 32300",
+  "business_status": "OPEN"
+}

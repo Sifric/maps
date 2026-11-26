@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDENXQ0F2YDJ3BZW0EYX3",
+  "name": "Kankeayan Bakery & Veg Food",
+  "coordinates": {
+    "latitude": 9.7302891,
+    "longitude": 80.0235874
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Uduvil",
+  "business_status": "OPEN"
+}

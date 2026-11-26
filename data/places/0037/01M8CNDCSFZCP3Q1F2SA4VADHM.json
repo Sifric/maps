@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCSFZCP3Q1F2SA4VADHM",
+  "name": "Saree pleet shop",
+  "coordinates": {
+    "latitude": 7.7301454,
+    "longitude": 81.68597969999999
+  },
+  "categories": [
+    "Tailor"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMJP+395, Batticaloa",
+  "business_status": "OPEN"
+}

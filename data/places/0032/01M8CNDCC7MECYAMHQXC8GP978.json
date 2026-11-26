@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCC7MECYAMHQXC8GP978",
+  "name": "Kapil Guest Inn",
+  "coordinates": {
+    "latitude": 7.6928813,
+    "longitude": 81.7214229
+  },
+  "categories": [
+    "Holiday apartment rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "238a New Kalmunai Road, Batticaloa",
+  "business_status": "OPEN"
+}

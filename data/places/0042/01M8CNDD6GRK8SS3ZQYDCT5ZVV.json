@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD6GRK8SS3ZQYDCT5ZVV",
+  "name": "AG Multi shop",
+  "coordinates": {
+    "latitude": 8.185236699999999,
+    "longitude": 81.4106558
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "5CP6+37, Kathiraveli",
+  "business_status": "OPEN"
+}

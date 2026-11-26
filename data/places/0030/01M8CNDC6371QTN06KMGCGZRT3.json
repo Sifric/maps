@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6371QTN06KMGCGZRT3",
+  "name": "Eastern Liquor Shop",
+  "coordinates": {
+    "latitude": 7.7165561,
+    "longitude": 81.6988173
+  },
+  "categories": [
+    "Bar"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM8X+JGG, Trinco Rd, Batticaloa",
+  "business_status": "OPEN"
+}

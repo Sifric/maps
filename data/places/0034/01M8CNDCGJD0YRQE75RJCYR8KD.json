@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCGJD0YRQE75RJCYR8KD",
+  "name": "UM Residence",
+  "coordinates": {
+    "latitude": 7.6803573,
+    "longitude": 81.7310531
+  },
+  "categories": [
+    "Housing society"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "202 Quazi S.M.M. Musthafa Ln, Kattankudy",
+  "business_status": "OPEN"
+}

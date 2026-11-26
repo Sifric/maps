@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDA2B7Y5YG76N0YC5PVCS",
+  "name": "MeYow",
+  "coordinates": {
+    "latitude": 6.8434874,
+    "longitude": 81.83145809999999
+  },
+  "categories": [
+    "Sri Lankan restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "pottuvill. P/05, Ali road, Arugam Bay 32508",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5 PM–5 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5 PM–5:05 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5 PM–5 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5 PM–5 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5 PM–5 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5 PM–5 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5 PM–5 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

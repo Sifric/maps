@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDC2B9RGX2N51RGCDVQJ",
+  "name": "A.janush",
+  "coordinates": {
+    "latitude": 7.5193509,
+    "longitude": 81.75612389999999
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "886 B344",
+  "business_status": "OPEN"
+}

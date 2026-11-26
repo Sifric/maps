@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDEN98PFJA4G4HBA6F7AJ",
+  "name": "Thanam Sweets",
+  "coordinates": {
+    "latitude": 9.667539,
+    "longitude": 80.0107206
+  },
+  "categories": [
+    "Sweets and dessert buffet"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "M286+X8R, Jaffna",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9 AM–4 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9 AM–4 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9 AM–4 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9 AM–4 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9 AM–4 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9 AM–4 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

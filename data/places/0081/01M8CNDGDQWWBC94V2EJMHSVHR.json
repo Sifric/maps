@@ -1,0 +1,63 @@
+{
+  "id": "01M8CNDGDQWWBC94V2EJMHSVHR",
+  "name": "Taco Super Place",
+  "coordinates": {
+    "latitude": 6.0107871,
+    "longitude": 80.2485301
+  },
+  "categories": [
+    "Mexican restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/southern-province-collector"
+    ]
+  },
+  "address": "106 Yaddehimulla Rd, Unawatuna 80600",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "11 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "11 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "11 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "11 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "11 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "11 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "11 AM–11 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

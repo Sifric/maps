@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD7W57VX9MK5XDC70H8A",
+  "name": "Apollo Tyre Shop 24 hours service",
+  "coordinates": {
+    "latitude": 7.9602118,
+    "longitude": 80.99002399999999
+  },
+  "categories": [
+    "Tire shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "XX6R+32J, 25th mile post, Polonnaruwa",
+  "business_status": "OPEN"
+}

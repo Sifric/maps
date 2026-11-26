@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA7J8T55AT2PEHD3NSN7",
+  "name": "Saakeer",
+  "coordinates": {
+    "latitude": 7.2525669,
+    "longitude": 81.71015
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Eragama Rd",
+  "business_status": "OPEN"
+}

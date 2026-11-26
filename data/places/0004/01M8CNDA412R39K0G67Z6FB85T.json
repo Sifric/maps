@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA412R39K0G67Z6FB85T",
+  "name": "Al-Aqsa Restaurant",
+  "coordinates": {
+    "latitude": 7.4038992,
+    "longitude": 81.8312581
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Kalmunai 32300",
+  "business_status": "OPEN"
+}

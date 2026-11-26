@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9QR0D539KVYQF328N7",
+  "name": "SAMEEM HOTEL",
+  "coordinates": {
+    "latitude": 7.7854356,
+    "longitude": 81.61249169999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Eravur",
+  "business_status": "OPEN"
+}

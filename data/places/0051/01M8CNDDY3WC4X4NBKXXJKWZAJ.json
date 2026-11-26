@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDDY3WC4X4NBKXXJKWZAJ",
+  "name": "Southside Restaurant & Cafe",
+  "coordinates": {
+    "latitude": 6.0338895,
+    "longitude": 80.2360135
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "289 Matara Rd, Galle 80000",
+  "business_status": "CLOSED_TEMPORARILY"
+}

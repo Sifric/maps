@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBK57K1DB32CE11VTJA6",
+  "name": "Stay easy drive",
+  "coordinates": {
+    "latitude": 7.4843426,
+    "longitude": 81.8080888
+  },
+  "categories": [
+    "Car leasing service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "FRM5+P6P",
+  "business_status": "OPEN"
+}

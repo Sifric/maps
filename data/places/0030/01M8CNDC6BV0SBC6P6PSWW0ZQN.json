@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6BV0SBC6P6PSWW0ZQN",
+  "name": "Sajitha Hotel",
+  "coordinates": {
+    "latitude": 7.9136475,
+    "longitude": 81.52835089999999
+  },
+  "categories": [
+    "Sri Lankan restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG7H+F85, Brainthuraichenai, Hudha Mosque Rd, Oddamavadi",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDAGZ5FJ0JY7G30S6P2VN",
+  "name": "Ayasha Beach House",
+  "coordinates": {
+    "latitude": 7.683935099999999,
+    "longitude": 81.7413554
+  },
+  "categories": [
+    "Furnished apartment building",
+    "Extended stay hotel",
+    "Hostel",
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Anver Masjith St, Kattankudy",
+  "business_status": "OPEN"
+}

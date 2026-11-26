@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBETAX3NT9CQ3QGFA2R1",
+  "name": "Tailor shop",
+  "coordinates": {
+    "latitude": 7.2718551,
+    "longitude": 81.8502582
+  },
+  "categories": [
+    "Tailor"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "V.P Road, Palamunai",
+  "business_status": "OPEN"
+}

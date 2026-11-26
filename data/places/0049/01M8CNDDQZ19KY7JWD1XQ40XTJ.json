@@ -1,0 +1,73 @@
+{
+  "id": "01M8CNDDQZ19KY7JWD1XQ40XTJ",
+  "name": "Ocean Bistro by Starbeans",
+  "coordinates": {
+    "latitude": 6.0266895,
+    "longitude": 80.2195112
+  },
+  "categories": [
+    "Eclectic restaurant",
+    "Bistro",
+    "Cafe",
+    "Cake shop",
+    "Coffee shop",
+    "Meal delivery",
+    "Takeout restaurant",
+    "Pizza delivery",
+    "Pizza takeaway"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Galle Dutch Fort, Dutch Hospital, Hospital St, Galle 80000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "10 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "10 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "10 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "10 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "10 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "10 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "10 AM–10:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDADC082NDM0F451ZTCEP",
+  "name": "Nishan cafe",
+  "coordinates": {
+    "latitude": 6.713728,
+    "longitude": 81.106203
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "P474+GF7",
+  "business_status": "OPEN"
+}

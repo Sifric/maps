@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6GG8M1XEP95PJFRKW5",
+  "name": "Wasana Bakery",
+  "coordinates": {
+    "latitude": 7.516255699999999,
+    "longitude": 81.7868074
+  },
+  "categories": [
+    "Cake shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQ8P+FPV, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

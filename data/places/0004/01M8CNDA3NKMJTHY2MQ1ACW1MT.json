@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA3NKMJTHY2MQ1ACW1MT",
+  "name": "4s bake house",
+  "coordinates": {
+    "latitude": 7.347357199999999,
+    "longitude": 81.8587203
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "South Rd, Nintavur",
+  "business_status": "OPEN"
+}

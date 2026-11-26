@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCM4DV04DY5YG45VMT9S",
+  "name": "Best Hardware",
+  "coordinates": {
+    "latitude": 7.7756373,
+    "longitude": 81.6057221
+  },
+  "categories": [
+    "Hardware store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJG4+775, Main St, Eravur",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDFVKK79VEC6N9YG562J",
+  "name": "Luxmy Food City",
+  "coordinates": {
+    "latitude": 7.572698699999999,
+    "longitude": 81.7847079
+  },
+  "categories": [
+    "Shopping mall"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "HQFM+3VG, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDD7TWTFBGZ83629KCY3",
+  "name": "Megawell palace",
+  "coordinates": {
+    "latitude": 7.6942382,
+    "longitude": 81.73417649999999
+  },
+  "categories": [
+    "Holiday apartment rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "171 Elders Home Rd, Kattankudy",
+  "business_status": "OPEN"
+}

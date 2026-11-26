@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCCJKHD7EKZKDB6B7C46",
+  "name": "MSV VILLA RÉSIDENCE HOME",
+  "coordinates": {
+    "latitude": 7.7387786,
+    "longitude": 81.69104899999999
+  },
+  "categories": [
+    "Holiday apartment rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "54, 48B ETHIRMANNASINGAM ROAD, Batticaloa",
+  "business_status": "OPEN"
+}

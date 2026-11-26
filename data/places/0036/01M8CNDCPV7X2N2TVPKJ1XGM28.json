@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCPV7X2N2TVPKJ1XGM28",
+  "name": "OMER GARDEN",
+  "coordinates": {
+    "latitude": 7.686085599999999,
+    "longitude": 81.7400803
+  },
+  "categories": [
+    "Park"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "419 Dr Badhiudeen Mahmood Mawatha, Kattankudy",
+  "business_status": "OPEN"
+}

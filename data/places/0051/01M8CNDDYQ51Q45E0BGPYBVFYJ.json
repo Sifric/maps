@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDYQ51Q45E0BGPYBVFYJ",
+  "name": "The Taste Of Galle",
+  "coordinates": {
+    "latitude": 6.0413812,
+    "longitude": 80.22424199999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Galle 80000",
+  "business_status": "CLOSED_TEMPORARILY"
+}

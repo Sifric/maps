@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAGMVWNPP8HHEBF885F7",
+  "name": "Thilsath's Home (villa)",
+  "coordinates": {
+    "latitude": 7.3634621,
+    "longitude": 81.8006687
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "234/2 Ampara, 5th Road, Sammanthurai",
+  "business_status": "OPEN"
+}

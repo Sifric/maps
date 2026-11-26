@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBWYVXRRB0ETF5ZFPPW0",
+  "name": "My Kutties Fancy Mart, Palamunai",
+  "coordinates": {
+    "latitude": 7.2693826999999995,
+    "longitude": 81.85340649999999
+  },
+  "categories": [
+    "Cosmetics store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "beach road, Palamunai 32356",
+  "business_status": "OPEN"
+}

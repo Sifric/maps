@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDD679QMBAAN3WFABW55D",
+  "name": "The Grand Walawwa",
+  "coordinates": {
+    "latitude": 7.2515716999999995,
+    "longitude": 80.34763939999999
+  },
+  "categories": [
+    "Hotel",
+    "Restaurant",
+    "Wedding venue"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "NO 190/8 Kandy Rd, Kegalle 71000",
+  "business_status": "OPEN"
+}

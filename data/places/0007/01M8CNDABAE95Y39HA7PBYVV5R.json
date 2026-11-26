@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDABAE95Y39HA7PBYVV5R",
+  "name": "Upananda Stores",
+  "coordinates": {
+    "latitude": 6.1338379,
+    "longitude": 80.4905978
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "4FMR+G6, Maramba",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7:30 AM–11 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

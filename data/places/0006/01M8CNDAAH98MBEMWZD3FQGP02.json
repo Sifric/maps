@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDAAH98MBEMWZD3FQGP02",
+  "name": "Driftwood Cafe",
+  "coordinates": {
+    "latitude": 6.8448052,
+    "longitude": 81.8309008
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Main Street, Panama Road Arugam Bay, Pottuvil 32500",
+  "business_status": "OPEN"
+}

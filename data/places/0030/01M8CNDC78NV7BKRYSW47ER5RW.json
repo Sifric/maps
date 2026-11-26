@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC78NV7BKRYSW47ER5RW",
+  "name": "Central Bakery & Hotel",
+  "coordinates": {
+    "latitude": 7.916312899999999,
+    "longitude": 81.5212023
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG8C+GFG, Oddamavadi",
+  "business_status": "OPEN"
+}

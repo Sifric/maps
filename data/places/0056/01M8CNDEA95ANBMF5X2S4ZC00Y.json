@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDEA95ANBMF5X2S4ZC00Y",
+  "name": "Villa 234",
+  "coordinates": {
+    "latitude": 6.070302,
+    "longitude": 80.16570399999999
+  },
+  "categories": [
+    "Hotel",
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Galle road, Boossa, Galle 80000",
+  "business_status": "OPEN"
+}

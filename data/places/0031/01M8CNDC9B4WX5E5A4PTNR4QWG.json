@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9B4WX5E5A4PTNR4QWG",
+  "name": "Bramanas vegetarian restaurant",
+  "coordinates": {
+    "latitude": 7.7090852,
+    "longitude": 81.7129625
+  },
+  "categories": [
+    "Vegetarian restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PP57+M82, Batticaloa",
+  "business_status": "OPEN"
+}

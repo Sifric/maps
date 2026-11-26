@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDB1003NJ3G1S78SWJ4ET",
+  "name": "City Park",
+  "coordinates": {
+    "latitude": 7.3707208,
+    "longitude": 81.8097116
+  },
+  "categories": [
+    "Park"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9RC5+7VP, AB33, Sammanthurai",
+  "business_status": "OPEN"
+}

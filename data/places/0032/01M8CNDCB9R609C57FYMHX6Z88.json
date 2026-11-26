@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCB9R609C57FYMHX6Z88",
+  "name": "Aloysius Stores",
+  "coordinates": {
+    "latitude": 7.712521199999999,
+    "longitude": 81.6716038
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM7C+2J5, Urani Rd, Batticaloa",
+  "business_status": "OPEN"
+}

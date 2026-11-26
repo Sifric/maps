@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDWQD73YCC101ME08028",
+  "name": "Chambers",
+  "coordinates": {
+    "latitude": 6.0263453,
+    "longitude": 80.21774409999999
+  },
+  "categories": [
+    "Middle Eastern restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "40 Church St, Galle 80000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12–9:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12–9:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12–9:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12–9:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4–9:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "12–9:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12–9:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

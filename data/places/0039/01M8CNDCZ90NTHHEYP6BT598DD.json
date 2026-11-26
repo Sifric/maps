@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCZ90NTHHEYP6BT598DD",
+  "name": "Electronics Multi Center",
+  "coordinates": {
+    "latitude": 7.7809155,
+    "longitude": 81.5967168
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Eravur",
+  "business_status": "OPEN"
+}

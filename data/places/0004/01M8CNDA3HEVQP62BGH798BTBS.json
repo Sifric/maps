@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA3HEVQP62BGH798BTBS",
+  "name": "Moulana Bakery",
+  "coordinates": {
+    "latitude": 7.253684,
+    "longitude": 81.85417679999999
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "7V33+FMF, Addalaichenai",
+  "business_status": "OPEN"
+}

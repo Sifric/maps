@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDFY6BY3YRVEHB8TPDARZ",
+  "name": "RS Restuarant and Bar",
+  "coordinates": {
+    "latitude": 9.60666,
+    "longitude": 80.3336479
+  },
+  "categories": [
+    "Restaurant",
+    "Bar"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "A9, Pachchilapalli 42550",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "10 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "10 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "10 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "10 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "10 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "10 AM–11:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

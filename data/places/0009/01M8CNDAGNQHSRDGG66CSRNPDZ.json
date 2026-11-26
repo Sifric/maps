@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAGNQHSRDGG66CSRNPDZ",
+  "name": "SaRa Villa",
+  "coordinates": {
+    "latitude": 7.3953413999999995,
+    "longitude": 81.8357837
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "95/B Osman Rd, Sainthamaruthu 32300",
+  "business_status": "OPEN"
+}

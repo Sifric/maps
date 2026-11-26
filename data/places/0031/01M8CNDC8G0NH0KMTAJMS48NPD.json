@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC8G0NH0KMTAJMS48NPD",
+  "name": "Thusha view",
+  "coordinates": {
+    "latitude": 8.3624793,
+    "longitude": 81.2755036
+  },
+  "categories": [
+    "Farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Sivapuram killiveddy trincomalee",
+  "business_status": "OPEN"
+}

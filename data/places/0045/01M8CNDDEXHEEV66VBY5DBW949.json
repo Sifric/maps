@@ -1,0 +1,33 @@
+{
+  "id": "01M8CNDDEXHEEV66VBY5DBW949",
+  "name": "Salon Menu",
+  "coordinates": {
+    "latitude": 6.0663756,
+    "longitude": 80.268913
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Junction, Pinnaduwa Exit",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–6 PM"
+      ]
+    }
+  ],
+  "business_status": "CLOSED",
+  "alternate_addresses": [
+    "\nJunction, Pinnaduwa Exit"
+  ]
+}

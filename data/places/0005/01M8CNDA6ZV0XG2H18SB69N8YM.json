@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA6ZV0XG2H18SB69N8YM",
+  "name": "Vive Restaurant",
+  "coordinates": {
+    "latitude": 7.4198287,
+    "longitude": 81.8220491
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Kalmunai 32300",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCNRTGMZSW6YX5MK8S2S",
+  "name": "Provincial sub store",
+  "coordinates": {
+    "latitude": 7.7160049,
+    "longitude": 81.71343259999999
+  },
+  "categories": [
+    "Warehouse"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PP87+C93, Kallady",
+  "business_status": "OPEN"
+}

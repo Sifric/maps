@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD0F51FMAED6F51YNSMH",
+  "name": "T & T Hottel",
+  "coordinates": {
+    "latitude": 7.9079391999999995,
+    "longitude": 81.524971
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG5F+5XH, Oddamavadi",
+  "business_status": "OPEN"
+}

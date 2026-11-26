@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDENHFD88842D6DAGGS8",
+  "name": "Ahzab rend a car",
+  "coordinates": {
+    "latitude": 8.584549599999999,
+    "longitude": 81.19872769999999
+  },
+  "categories": [
+    "Car rental agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "H5MX+RF9, Trincomalee",
+  "business_status": "OPEN"
+}

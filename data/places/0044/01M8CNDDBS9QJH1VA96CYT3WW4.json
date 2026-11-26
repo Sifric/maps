@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDBS9QJH1VA96CYT3WW4",
+  "name": "SASIYAHAM",
+  "coordinates": {
+    "latitude": 7.7328617,
+    "longitude": 81.6751451
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "41/8A sarvoday cross road, Batticaloa",
+  "business_status": "OPEN"
+}

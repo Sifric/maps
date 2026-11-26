@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDENSYGWYMD6CDHV2XTRV",
+  "name": "Anthony's Meat Shop",
+  "coordinates": {
+    "latitude": 6.517484,
+    "longitude": 80.1169676
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Matugama",
+  "business_status": "OPEN"
+}

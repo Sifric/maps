@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCYTPWMDAWF5C04B2V4W",
+  "name": "Vt Fashion Mart",
+  "coordinates": {
+    "latitude": 7.7827367999999995,
+    "longitude": 81.5940833
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No 14 Main St, Chenkaladi",
+  "business_status": "OPEN"
+}

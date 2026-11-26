@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCME349M1DRTE4QKEP88",
+  "name": "Kattankudy signal",
+  "coordinates": {
+    "latitude": 7.6814713999999995,
+    "longitude": 81.72834069999999
+  },
+  "categories": [
+    "Travel agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPJH+H8P, Main St, Kattankudy",
+  "business_status": "OPEN"
+}

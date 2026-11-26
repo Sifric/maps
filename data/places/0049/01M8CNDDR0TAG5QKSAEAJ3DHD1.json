@@ -1,0 +1,71 @@
+{
+  "id": "01M8CNDDR0TAG5QKSAEAJ3DHD1",
+  "name": "Sirilani Harvest",
+  "coordinates": {
+    "latitude": 6.0265647,
+    "longitude": 80.2908154
+  },
+  "categories": [
+    "Organic restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "27GR+R9R, Pilana 80200",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9 AM–1 PM",
+        "5–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9 AM–1 PM",
+        "5 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12 AM–1 PM",
+        "5 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12 AM–1 PM",
+        "5 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9 AM–1 PM",
+        "5–9 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "9 AM–1 PM",
+        "5–9 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

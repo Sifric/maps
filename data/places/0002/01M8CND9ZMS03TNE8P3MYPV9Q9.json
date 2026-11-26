@@ -1,0 +1,23 @@
+{
+  "id": "01M8CND9ZMS03TNE8P3MYPV9Q9",
+  "name": "University Mosque",
+  "coordinates": {
+    "latitude": 7.7993684,
+    "longitude": 81.5816194
+  },
+  "categories": [
+    "Mosque"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QHXJ+PJX, Eastern University, Thavapuram",
+  "business_status": "OPEN"
+}

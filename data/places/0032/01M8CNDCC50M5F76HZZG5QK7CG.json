@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCC50M5F76HZZG5QK7CG",
+  "name": "Meemure Campsite",
+  "coordinates": {
+    "latitude": 7.432797099999999,
+    "longitude": 80.8569502
+  },
+  "categories": [
+    "Lodging"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Meemure",
+  "business_status": "OPEN"
+}

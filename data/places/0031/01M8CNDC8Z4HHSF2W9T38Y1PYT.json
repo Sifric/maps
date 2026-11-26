@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC8Z4HHSF2W9T38Y1PYT",
+  "name": "Jabras Stores",
+  "coordinates": {
+    "latitude": 7.6811989,
+    "longitude": 81.7364453
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPJP+MMW, Kattankudy",
+  "business_status": "OPEN"
+}

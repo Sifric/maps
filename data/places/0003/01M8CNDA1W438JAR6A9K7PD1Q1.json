@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDA1W438JAR6A9K7PD1Q1",
+  "name": "Base Night Club",
+  "coordinates": {
+    "latitude": 6.8436955,
+    "longitude": 79.95821509999999
+  },
+  "categories": [
+    "Disco club"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "278 2AHigh Level Rd, Pannipitiya 10230",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 PM–5 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 PM–5 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 PM–5 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 PM–5 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7 PM–5 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 PM–5 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7 PM–5 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

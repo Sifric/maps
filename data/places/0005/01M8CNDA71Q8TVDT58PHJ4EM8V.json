@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA71Q8TVDT58PHJ4EM8V",
+  "name": "THE CHEESE BRO",
+  "coordinates": {
+    "latitude": 7.4352409999999995,
+    "longitude": 81.81553439999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "297 Makkamady Road, Maruthamunai 32314",
+  "business_status": "CLOSED_TEMPORARILY"
+}

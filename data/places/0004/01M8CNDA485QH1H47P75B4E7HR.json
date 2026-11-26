@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA485QH1H47P75B4E7HR",
+  "name": "RAHMAN HOTEL",
+  "coordinates": {
+    "latitude": 7.2124203,
+    "longitude": 81.8585272
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Pottuvil Road, Akkaraipattu",
+  "business_status": "OPEN"
+}

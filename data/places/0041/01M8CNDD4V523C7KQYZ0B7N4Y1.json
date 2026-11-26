@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD4V523C7KQYZ0B7N4Y1",
+  "name": "SR vegetable",
+  "coordinates": {
+    "latitude": 7.8260549,
+    "longitude": 81.55311669999999
+  },
+  "categories": [
+    "Market"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "RHG3+C6H",
+  "business_status": "OPEN"
+}

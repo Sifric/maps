@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAC7A036STJH76P7954W",
+  "name": "Munas Mali vegetable market",
+  "coordinates": {
+    "latitude": 7.4144409,
+    "longitude": 81.8305678
+  },
+  "categories": [
+    "Vegetable wholesale market"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CR7J+Q6G, Kasim, Road, Kalmunai 32300",
+  "business_status": "OPEN"
+}

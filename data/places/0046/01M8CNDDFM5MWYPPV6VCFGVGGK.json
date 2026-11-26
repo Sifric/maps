@@ -1,0 +1,72 @@
+{
+  "id": "01M8CNDDFM5MWYPPV6VCFGVGGK",
+  "name": "Y.D.MULTY CENTER",
+  "coordinates": {
+    "latitude": 7.8443128,
+    "longitude": 81.5459273
+  },
+  "categories": [
+    "Electronics store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "RGVW+P9F, Main St",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8:30 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12–8:30 AM",
+        "8:30 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12–8:30 AM",
+        "8:30 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12–8:30 AM",
+        "8:30 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12–8:30 AM",
+        "8:30 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "12–8:30 AM",
+        "8:30 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12 AM–12:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

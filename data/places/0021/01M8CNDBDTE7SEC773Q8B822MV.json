@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBDTE7SEC773Q8B822MV",
+  "name": "Mina Auto House Parts Shop",
+  "coordinates": {
+    "latitude": 7.4141708,
+    "longitude": 81.8264937
+  },
+  "categories": [
+    "Auto parts store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "164 Colombo - Batticaloa Hwy, Kalmunai 32300",
+  "business_status": "OPEN"
+}

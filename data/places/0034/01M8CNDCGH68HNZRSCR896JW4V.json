@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCGH68HNZRSCR896JW4V",
+  "name": "Jannath Mosque",
+  "coordinates": {
+    "latitude": 7.680631399999999,
+    "longitude": 81.7342874
+  },
+  "categories": [
+    "Mosque"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPJM+7P3, Bawa Ln, Kattankudy",
+  "business_status": "OPEN"
+}

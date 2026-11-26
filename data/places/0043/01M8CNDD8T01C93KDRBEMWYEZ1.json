@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD8T01C93KDRBEMWYEZ1",
+  "name": "Public Toilet",
+  "coordinates": {
+    "latitude": 8.371889099999999,
+    "longitude": 81.32057549999999
+  },
+  "categories": [
+    "Public bathroom"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "98CC+Q64, Seruwila, Seruwawila",
+  "business_status": "OPEN"
+}

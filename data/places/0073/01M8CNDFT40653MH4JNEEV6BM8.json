@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDFT40653MH4JNEEV6BM8",
+  "name": "Swasthi Shoe Palace",
+  "coordinates": {
+    "latitude": 9.6917466,
+    "longitude": 80.05263
+  },
+  "categories": [
+    "Shoe store",
+    "Outlet mall"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "Irupalai junction Kopay South, 40000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–8:15 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–8:15 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–8:15 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–8:15 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8 AM–2:15 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

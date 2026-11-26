@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6W40XTD1TDP6SCWJC3",
+  "name": "Niru",
+  "coordinates": {
+    "latitude": 7.7214893,
+    "longitude": 81.7031518
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "47 New Kalmunai Rd, Batticaloa",
+  "business_status": "OPEN"
+}

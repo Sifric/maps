@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDBDETFCAYFC6RZCWDS0D",
+  "name": "Rash Nail Lounge",
+  "coordinates": {
+    "latitude": 6.8772506,
+    "longitude": 79.9385965
+  },
+  "categories": [
+    "Nail salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "261/A/3/4 Hokandara Rd, Ruhunupura 10116",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "10 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "10 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "10 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "10 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "10 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "10 AM–7:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

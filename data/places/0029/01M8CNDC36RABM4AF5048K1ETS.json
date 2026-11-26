@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC36RABM4AF5048K1ETS",
+  "name": "Sasi Furnitures Centre",
+  "coordinates": {
+    "latitude": 7.447250899999999,
+    "longitude": 81.8118994
+  },
+  "categories": [
+    "Furniture store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CRW6+WQ2, Periyaneelavanai",
+  "business_status": "OPEN"
+}

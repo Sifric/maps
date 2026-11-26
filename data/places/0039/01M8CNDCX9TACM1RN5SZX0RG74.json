@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCX9TACM1RN5SZX0RG74",
+  "name": "MoneyGram",
+  "coordinates": {
+    "latitude": 7.68537,
+    "longitude": 81.72601
+  },
+  "categories": [
+    "Money transfer service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "42 FAWZI MAWATHA, Kattankudy 30100",
+  "business_status": "CLOSED"
+}

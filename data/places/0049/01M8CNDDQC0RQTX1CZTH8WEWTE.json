@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDQC0RQTX1CZTH8WEWTE",
+  "name": "Mom's Table Restaurant",
+  "coordinates": {
+    "latitude": 6.241644,
+    "longitude": 80.0502331
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "425/1 Patabedimulla, Ambalangoda",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6 AM–3 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

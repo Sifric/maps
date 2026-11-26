@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDCDXNM19T9CMTD7A3P27",
+  "name": "New Medical Center",
+  "coordinates": {
+    "latitude": 7.7918845999999995,
+    "longitude": 81.5827051
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

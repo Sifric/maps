@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDDF3G55TE1P5M1KP5PV0",
+  "name": "Shara salon",
+  "coordinates": {
+    "latitude": 6.3289769,
+    "longitude": 80.6812824
+  },
+  "categories": [
+    "Hair salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\n8MHJ+HGV",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–5 PM"
+      ]
+    }
+  ],
+  "business_status": "CLOSED"
+}

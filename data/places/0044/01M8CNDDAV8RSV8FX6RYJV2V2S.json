@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDAV8RSV8FX6RYJV2V2S",
+  "name": "Mr and Mrs Manickaretnam residence",
+  "coordinates": {
+    "latitude": 7.7093511999999995,
+    "longitude": 81.7112946
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "32 Old Rd, Kallady",
+  "business_status": "OPEN"
+}

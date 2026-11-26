@@ -1,0 +1,32 @@
+{
+  "id": "01M8CNDD2MJQ0A72W706YWRVNJ",
+  "name": "Dilana Cab Service & Tours",
+  "coordinates": {
+    "latitude": 5.974342,
+    "longitude": 80.42475379999999
+  },
+  "categories": [
+    "Taxi service",
+    "Airport shuttle service",
+    "Minibus taxi service",
+    "Tour agency",
+    "Tour operator",
+    "Tourist attraction",
+    "Tourist information center",
+    "Transportation service",
+    "Travel agency",
+    "Whale watching tour agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "46 Hetti Weediya Weligama 81700 Hetti Weediya, Weligama 81700",
+  "business_status": "OPEN"
+}

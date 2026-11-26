@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD43N63ZEVJPSF9GKBFF",
+  "name": "Subaraj Inn",
+  "coordinates": {
+    "latitude": 7.7162334999999995,
+    "longitude": 81.6979214
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM8X+F5V, Lloyd's Ave, Batticaloa",
+  "business_status": "CLOSED"
+}

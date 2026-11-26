@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6F1RRF05SMGX0X4TN3",
+  "name": "OLAI Restaurant Batticaloa ஓலை உணவகம்",
+  "coordinates": {
+    "latitude": 7.729977099999999,
+    "longitude": 81.6770914
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMHG+WRV, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDGB6FQZT4XMSAP7N570",
+  "name": "Athvika stores",
+  "coordinates": {
+    "latitude": 7.4801876,
+    "longitude": 81.71782069999999
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "FPJ9+34, Mandur",
+  "business_status": "OPEN"
+}

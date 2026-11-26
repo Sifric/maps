@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCTJ5H6CF1JGWS7CEC9T",
+  "name": "Batticaloa",
+  "coordinates": {
+    "latitude": 7.7078625999999995,
+    "longitude": 81.71578939999999
+  },
+  "categories": [
+    "Electronics store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PP58+48V, Main Street, Kallady",
+  "business_status": "OPEN"
+}

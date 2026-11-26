@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD3MNBX833X5VAEVE8WG",
+  "name": "Eravur Liquor Shop",
+  "coordinates": {
+    "latitude": 7.7811512,
+    "longitude": 81.5964832
+  },
+  "categories": [
+    "Liquor store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QHJW+FH9, Eravur",
+  "business_status": "OPEN"
+}

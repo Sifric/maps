@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDDRCMMZRYQ56RK47020T",
+  "name": "Bhat Farm",
+  "coordinates": {
+    "latitude": 6.0415939,
+    "longitude": 80.262732
+  },
+  "categories": [
+    "Building",
+    "Residential building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Gunarathanarama Rd",
+  "business_status": "OPEN"
+}

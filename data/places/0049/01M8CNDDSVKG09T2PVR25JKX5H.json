@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDDSVKG09T2PVR25JKX5H",
+  "name": "Cafe by Manjari",
+  "coordinates": {
+    "latitude": 6.0527007,
+    "longitude": 80.2082829
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "3635+38M, Wakwella Rd, Galle 80000",
+  "business_status": "OPEN"
+}

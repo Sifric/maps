@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD822GJXER6HFMPA39F1",
+  "name": "2nd Bus Stand",
+  "coordinates": {
+    "latitude": 7.581618799999999,
+    "longitude": 81.7487862
+  },
+  "categories": [
+    "Bus charter"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "HPJX+JGV, Ampilanthurai North",
+  "business_status": "OPEN"
+}

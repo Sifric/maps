@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA2EWTGDXPNYWXDS72E9",
+  "name": "Mellow Restaurant",
+  "coordinates": {
+    "latitude": 6.8388998,
+    "longitude": 81.832948
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Panama Rd, Arugam Bay 32500",
+  "business_status": "CLOSED_TEMPORARILY"
+}

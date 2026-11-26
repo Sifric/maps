@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCM47QDAX7NY3CN9ZB2R",
+  "name": "Green Garden Eravur",
+  "coordinates": {
+    "latitude": 7.776126199999999,
+    "longitude": 81.6083022
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Land, KADDUPPALLI NEW ROAD, KADDUPPALI 30300",
+  "business_status": "OPEN"
+}

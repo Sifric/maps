@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCB9385MA7ARH9Q1T5EZ",
+  "name": "City Mart Super Store",
+  "coordinates": {
+    "latitude": 7.7212524,
+    "longitude": 81.70407089999999
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PPC3+GJ4, Batticaloa",
+  "business_status": "OPEN"
+}

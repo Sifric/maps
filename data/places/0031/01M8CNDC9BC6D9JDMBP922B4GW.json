@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9BC6D9JDMBP922B4GW",
+  "name": "Lagoon Hub",
+  "coordinates": {
+    "latitude": 7.7267736,
+    "longitude": 81.6861716
+  },
+  "categories": [
+    "Family restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMGP+PF6, Batticaloa",
+  "business_status": "OPEN"
+}

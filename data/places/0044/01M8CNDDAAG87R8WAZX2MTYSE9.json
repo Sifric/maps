@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDAAG87R8WAZX2MTYSE9",
+  "name": "Hawwa house",
+  "coordinates": {
+    "latitude": 7.6812993,
+    "longitude": 81.7235206
+  },
+  "categories": [
+    "Apartment complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPJF+G99, Kattankudy",
+  "business_status": "OPEN"
+}

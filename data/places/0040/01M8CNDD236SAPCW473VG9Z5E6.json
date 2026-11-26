@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD236SAPCW473VG9Z5E6",
+  "name": "AKS Travels",
+  "coordinates": {
+    "latitude": 7.905068,
+    "longitude": 81.532983
+  },
+  "categories": [
+    "Travel agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG3M+W6, Oddamavadi",
+  "business_status": "OPEN"
+}

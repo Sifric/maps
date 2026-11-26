@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDDF0C25J25CRMADPTH1R",
+  "name": "MELO SALON",
+  "coordinates": {
+    "latitude": 5.9935469,
+    "longitude": 80.306669
+  },
+  "categories": [
+    "Barber shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\nX8V4+CM7, Liyanagoda",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "9 AM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCTWHD62SSYXWFW9YPDP",
+  "name": "batticaloa",
+  "coordinates": {
+    "latitude": 7.7121176,
+    "longitude": 81.6719901
+  },
+  "categories": [
+    "Motorcycle repair shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM6C+RQX, 6th cross thirupperunthurai, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEDS8R5KMJYB09XNV9NH",
+  "name": "Edelweiss Residence",
+  "coordinates": {
+    "latitude": 6.1284813,
+    "longitude": 80.1092168
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Wewalagoda Road, Hikkaduwa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD3XJFH7T94B0GMPWGK9",
+  "name": "St. Benedict’s Shop",
+  "coordinates": {
+    "latitude": 7.7175625,
+    "longitude": 81.70004689999999
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PP92+22F, Batticaloa",
+  "business_status": "OPEN"
+}

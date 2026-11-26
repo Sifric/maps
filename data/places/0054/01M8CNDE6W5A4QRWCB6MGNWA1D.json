@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE6W5A4QRWCB6MGNWA1D",
+  "name": "Nilu's kitchen",
+  "coordinates": {
+    "latitude": 5.9886666,
+    "longitude": 80.36302599999999
+  },
+  "categories": [
+    "Sri Lankan restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Dikheraliyagaha watta, Meegahagoda, Ahangama 80650",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "11 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "11 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "11 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "11 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "11 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "11 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "11 AM–8:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

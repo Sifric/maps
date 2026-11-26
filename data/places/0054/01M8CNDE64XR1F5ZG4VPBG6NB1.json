@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE64XR1F5ZG4VPBG6NB1",
+  "name": "Restaurant Tasty",
+  "coordinates": {
+    "latitude": 6.0741211999999996,
+    "longitude": 80.19806799999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "6 Batuwanthudawa Rd, Hapugala",
+  "business_status": "OPEN"
+}

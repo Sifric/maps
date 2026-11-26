@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDERVACQRRWVMXE11T4MR",
+  "name": "taprobane seafoods pv ltd",
+  "coordinates": {
+    "latitude": 9.7007621,
+    "longitude": 79.8532546
+  },
+  "categories": [
+    "Pharmaceutical products wholesaler",
+    "Pharmacy"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "PV23+882, Kayts",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8:30 AM–5:15 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7:45 AM–3:45 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8:30 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8:30 AM–4:15 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–4:15 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

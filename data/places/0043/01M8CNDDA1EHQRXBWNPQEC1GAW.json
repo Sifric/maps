@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDA1EHQRXBWNPQEC1GAW",
+  "name": "Senara Auto Service Center",
+  "coordinates": {
+    "latitude": 7.6464944,
+    "longitude": 81.7505036
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Thalankudah",
+  "business_status": "OPEN"
+}

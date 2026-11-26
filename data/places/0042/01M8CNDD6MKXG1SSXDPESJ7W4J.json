@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD6MKXG1SSXDPESJ7W4J",
+  "name": "Cocunut Drink & Sarbath",
+  "coordinates": {
+    "latitude": 7.299381299999999,
+    "longitude": 81.8607675
+  },
+  "categories": [
+    "Juice shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Faculty of Arts and Culture, Oluvil",
+  "business_status": "OPEN"
+}

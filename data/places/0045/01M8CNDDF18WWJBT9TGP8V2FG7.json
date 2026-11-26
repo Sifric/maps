@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDDF18WWJBT9TGP8V2FG7",
+  "name": "Lima Beauty & Hair Salon",
+  "coordinates": {
+    "latitude": 6.9876983,
+    "longitude": 80.4940822
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\nXFQV+3JG, Ella Uda Theniyagala Rd, Ginigathhena",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "Open 24 hours"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

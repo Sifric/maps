@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDY22NYFR1GRJX4FQPME",
+  "name": "Ovitawatta Foods",
+  "coordinates": {
+    "latitude": 6.0347984,
+    "longitude": 80.2342611
+  },
+  "categories": [
+    "Porridge restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Magalle, Galle 80000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6–11 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6–11 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6–11 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6–11 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6–11 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6–11 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

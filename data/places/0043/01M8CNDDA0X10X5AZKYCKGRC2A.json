@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDA0X10X5AZKYCKGRC2A",
+  "name": "Home Decor & Furniture",
+  "coordinates": {
+    "latitude": 7.7709473,
+    "longitude": 81.6119203
+  },
+  "categories": [
+    "Carpenter"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Eravur",
+  "business_status": "OPEN"
+}

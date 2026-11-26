@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA6YPRT49FS2BPXW1C8N",
+  "name": "Sealine Restaurant",
+  "coordinates": {
+    "latitude": 7.4387048,
+    "longitude": 81.8205081
+  },
+  "categories": [
+    "Tiffin center"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CRQC+F6J, Maruthamunai",
+  "business_status": "OPEN"
+}

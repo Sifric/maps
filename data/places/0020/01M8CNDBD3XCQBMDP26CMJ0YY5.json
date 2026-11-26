@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBD3XCQBMDP26CMJ0YY5",
+  "name": "Electric Vehicle Charging Station",
+  "coordinates": {
+    "latitude": 7.2996365999999995,
+    "longitude": 80.6301427
+  },
+  "categories": [
+    "Electric vehicle charging station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "68 Wariyapola Sri Sumangala Mawatha, Kandy",
+  "business_status": "OPEN"
+}

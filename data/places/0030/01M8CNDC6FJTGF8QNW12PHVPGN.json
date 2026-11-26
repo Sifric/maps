@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6FJTGF8QNW12PHVPGN",
+  "name": "Utheshan Restaurant",
+  "coordinates": {
+    "latitude": 7.499515799999999,
+    "longitude": 81.7165892
+  },
+  "categories": [
+    "Family restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "FPH5+JQP, Aliyarvaddai",
+  "business_status": "OPEN"
+}

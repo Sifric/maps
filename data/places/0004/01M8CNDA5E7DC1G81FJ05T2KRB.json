@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA5E7DC1G81FJ05T2KRB",
+  "name": "F.M Stores",
+  "coordinates": {
+    "latitude": 7.350994399999999,
+    "longitude": 81.8468678
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "9R2W+9PX, Nintavur",
+  "business_status": "OPEN"
+}

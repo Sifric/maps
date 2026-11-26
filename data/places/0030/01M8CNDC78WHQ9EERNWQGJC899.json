@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC78WHQ9EERNWQGJC899",
+  "name": "Royal cake house",
+  "coordinates": {
+    "latitude": 7.8070526,
+    "longitude": 81.5677109
+  },
+  "categories": [
+    "Cake shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Ellai road, 1, Chenkaladi 30350",
+  "business_status": "OPEN"
+}

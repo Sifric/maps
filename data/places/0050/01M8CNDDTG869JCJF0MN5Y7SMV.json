@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDTG869JCJF0MN5Y7SMV",
+  "name": "PS Hotel",
+  "coordinates": {
+    "latitude": 6.0870633,
+    "longitude": 80.2061866
+  },
+  "categories": [
+    "Fast food restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "36P4+RFF, Batuwanthudawa Rd, Hapugala",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "3–8:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "3–8:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "3–8:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "3–8:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "3–8:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "3–8:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

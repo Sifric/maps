@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE5XV9PH0K58W4HKRZ3Z",
+  "name": "Batti Stores",
+  "coordinates": {
+    "latitude": 6.071536,
+    "longitude": 80.219758
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "36C9+MRW, Godakanda Narawala Rd, Galle",
+  "business_status": "OPEN"
+}

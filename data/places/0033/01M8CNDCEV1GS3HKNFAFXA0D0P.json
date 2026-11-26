@@ -1,0 +1,68 @@
+{
+  "id": "01M8CNDCEV1GS3HKNFAFXA0D0P",
+  "name": "Rehab Physiotherapy Centre",
+  "coordinates": {
+    "latitude": 7.2523718,
+    "longitude": 81.8564176
+  },
+  "categories": [
+    "Physical therapy clinic"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "149,Al-Jannah Road Addalaichenai,02, 32350",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4:30–9:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4:30 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12–9:30 AM",
+        "4:30–9:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4:30–9:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4:30–9:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4:30–9:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4:30–9:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

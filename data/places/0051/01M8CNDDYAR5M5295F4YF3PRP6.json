@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDYAR5M5295F4YF3PRP6",
+  "name": "D.C Cafe",
+  "coordinates": {
+    "latitude": 6.1626343,
+    "longitude": 80.1793847
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Baddegama",
+  "business_status": "CLOSED"
+}

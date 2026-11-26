@@ -1,0 +1,22 @@
+{
+  "id": "01M8CND9XHD5K7RQ0T54763CPN",
+  "name": "University Bus Stop (SEUSL)",
+  "coordinates": {
+    "latitude": 7.296790499999999,
+    "longitude": 81.8482798
+  },
+  "categories": [
+    "Bus depot"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "7RWX+P86, Oluvil",
+  "business_status": "OPEN"
+}

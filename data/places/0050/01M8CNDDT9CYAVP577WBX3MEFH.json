@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDT9CYAVP577WBX3MEFH",
+  "name": "B Cafe Restaurant",
+  "coordinates": {
+    "latitude": 6.0486547,
+    "longitude": 80.21481659999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "26X7+FW8, B Cafe Restaurant, Eliot Rd, Galle 80000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:35–9 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:35–9 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:35–9 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:35–9 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:35–9 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:35–9 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6:35–9 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA52TVZD85AZYJ26JRXA",
+  "name": "Tandoori Hut",
+  "coordinates": {
+    "latitude": 6.8452708,
+    "longitude": 81.8300206
+  },
+  "categories": [
+    "Indian restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Manal Rd, Arugam Bay 32500",
+  "business_status": "CLOSED_TEMPORARILY"
+}

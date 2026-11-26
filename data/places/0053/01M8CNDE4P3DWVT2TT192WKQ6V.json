@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDE4P3DWVT2TT192WKQ6V",
+  "name": "Hakuna Matata",
+  "coordinates": {
+    "latitude": 5.9669324,
+    "longitude": 80.3748655
+  },
+  "categories": [
+    "Bar",
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Aranwala Junction, Matara Rd, Ahangama 80600",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "11 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "11 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "11 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "11 AM–3 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "11 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "11 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "11 AM–3 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

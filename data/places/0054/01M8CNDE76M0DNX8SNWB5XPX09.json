@@ -1,0 +1,70 @@
+{
+  "id": "01M8CNDE76M0DNX8SNWB5XPX09",
+  "name": "Rich Berry Cafe and Restaurant(Juice Bar)",
+  "coordinates": {
+    "latitude": 5.9785224999999995,
+    "longitude": 80.4363122
+  },
+  "categories": [
+    "Coffee shop",
+    "Breakfast restaurant",
+    "Brunch restaurant",
+    "Asian restaurant",
+    "Juice shop",
+    "Lunch restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Polwath, Weligama 81730",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8 AM–11 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDDRVS633AD1SFHQZB5X7",
+  "name": "Vito Juice Bar & Restaurant Hikkaduwa",
+  "coordinates": {
+    "latitude": 6.1343613,
+    "longitude": 80.1087441
+  },
+  "categories": [
+    "Cafe",
+    "Restaurant",
+    "Pizza restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "JAYASIRI,MEDA MAWATHA, Villa Wismar Hikkaduwa, Milla Hill Rd, Hikkaduwa 80240",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5–11 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5–11 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5–11 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5–11 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5–11 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5–11 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5–11 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

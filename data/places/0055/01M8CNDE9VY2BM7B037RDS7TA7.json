@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE9VY2BM7B037RDS7TA7",
+  "name": "Hotel Ranthil",
+  "coordinates": {
+    "latitude": 6.0492213999999995,
+    "longitude": 80.2486129
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "26XX+PF4, Galle",
+  "business_status": "OPEN"
+}

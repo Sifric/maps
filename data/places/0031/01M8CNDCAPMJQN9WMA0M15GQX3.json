@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCAPMJQN9WMA0M15GQX3",
+  "name": "රන්‍ රස බත් කඩේ",
+  "coordinates": {
+    "latitude": 6.7373332999999995,
+    "longitude": 81.1525267
+  },
+  "categories": [
+    "Sri Lankan restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Colombo - Batticaloa Hwy",
+  "business_status": "OPEN"
+}

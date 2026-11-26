@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDBMB7FFZMKJW6QGDFGFZ",
+  "name": "Ros Travel Consultants",
+  "coordinates": {
+    "latitude": 7.5177976,
+    "longitude": 81.78717429999999
+  },
+  "categories": [
+    "Travel agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Kaluwanchikudy",
+  "business_status": "OPEN"
+}

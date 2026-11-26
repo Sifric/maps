@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCNR589A4RTANJFGXADS",
+  "name": "Fishermen Ware House",
+  "coordinates": {
+    "latitude": 7.717511399999999,
+    "longitude": 81.7183323
+  },
+  "categories": [
+    "Warehouse"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PP99+284, Kallady",
+  "business_status": "OPEN"
+}

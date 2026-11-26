@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCTRATKA91KW40P2RJ2T",
+  "name": "Building Material",
+  "coordinates": {
+    "latitude": 7.7365322,
+    "longitude": 81.66147079999999
+  },
+  "categories": [
+    "Building materials market"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMP6+JH9, Trinco Rd, Batticaloa",
+  "business_status": "OPEN"
+}

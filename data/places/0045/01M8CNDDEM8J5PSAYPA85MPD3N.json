@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDEM8J5PSAYPA85MPD3N",
+  "name": "Duhansa Rent car",
+  "coordinates": {
+    "latitude": 6.9392887,
+    "longitude": 81.31461929999999
+  },
+  "categories": [
+    "Car rental agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "137.debaddakiwula, Batugammana",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA52Z7V7CDV95ZWA7BZ9",
+  "name": "Flo Restaurant",
+  "coordinates": {
+    "latitude": 6.8418509,
+    "longitude": 81.8314474
+  },
+  "categories": [
+    "Eclectic restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Tri Star Rd, Arugam Bay",
+  "business_status": "CLOSED_TEMPORARILY"
+}

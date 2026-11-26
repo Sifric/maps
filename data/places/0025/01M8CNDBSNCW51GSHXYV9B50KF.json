@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBSNCW51GSHXYV9B50KF",
+  "name": "Sri Bookshop & Super mart",
+  "coordinates": {
+    "latitude": 6.930623499999999,
+    "longitude": 80.9042594
+  },
+  "categories": [
+    "Book store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WWJ3+6PR, Ganethanna Handiya, Kumarapattiya, Ambagasdowa",
+  "business_status": "OPEN"
+}

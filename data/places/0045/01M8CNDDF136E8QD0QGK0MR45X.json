@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDDF136E8QD0QGK0MR45X",
+  "name": "Prasansa Salon",
+  "coordinates": {
+    "latitude": 6.5261144,
+    "longitude": 80.5351181
+  },
+  "categories": [
+    "Hair salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\nGGGP+34W, Endana",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–6 PM"
+      ]
+    }
+  ],
+  "business_status": "CLOSED"
+}

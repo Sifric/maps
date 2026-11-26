@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD6ZCRFT5ZPVGDW7J3T3",
+  "name": "DIAMOND BEST FOOD Distribution",
+  "coordinates": {
+    "latitude": 7.9413405,
+    "longitude": 81.01171889999999
+  },
+  "categories": [
+    "Wholesale market"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Near The JMC College, Polonnaruwa 51000",
+  "business_status": "OPEN"
+}

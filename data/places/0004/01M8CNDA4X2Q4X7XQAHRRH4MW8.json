@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDA4X2Q4X7XQAHRRH4MW8",
+  "name": "Upali Beach Surf Resort",
+  "coordinates": {
+    "latitude": 6.839892,
+    "longitude": 81.838466
+  },
+  "categories": [
+    "Restaurant",
+    "Cafe",
+    "Lodge",
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Singapura Arugam Bay, Pottuvil 32500",
+  "business_status": "OPEN"
+}

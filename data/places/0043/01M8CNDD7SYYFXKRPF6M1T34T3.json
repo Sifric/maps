@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD7SYYFXKRPF6M1T34T3",
+  "name": "Raj Motor Stores",
+  "coordinates": {
+    "latitude": 7.720656399999999,
+    "longitude": 81.70129589999999
+  },
+  "categories": [
+    "Auto parts store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "49, 1 Baily Rd, Batticaloa",
+  "business_status": "OPEN"
+}

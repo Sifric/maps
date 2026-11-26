@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCSYRWGJ9JDFXQN97MVV",
+  "name": "Men City Saloon",
+  "coordinates": {
+    "latitude": 7.7276776,
+    "longitude": 81.6973936
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMHW+3XC, Taveran Rd, Batticaloa",
+  "business_status": "OPEN"
+}

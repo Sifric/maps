@@ -1,0 +1,28 @@
+{
+  "id": "01M8CNDAHQGKH5Z9MT51WX1W2D",
+  "name": "Sri Construction Circuit Bungalow",
+  "coordinates": {
+    "latitude": 7.713076,
+    "longitude": 81.695863
+  },
+  "categories": [
+    "Guest house",
+    "Hotel",
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "\n18 St Michael's St, Batticaloa 30000",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "18 St Michael's St, Batticaloa 30000"
+  ]
+}

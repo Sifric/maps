@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDCBEHGK5VY8AMV4A8TGJ",
+  "name": "Sun Cream House",
+  "coordinates": {
+    "latitude": 7.7143814,
+    "longitude": 81.69510819999999
+  },
+  "categories": [
+    "Ice cream shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM7W+Q25, St Anthony`s St, Batticaloa",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:15 AM–9:45 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:15 AM–9:45 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:15 AM–9:45 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:15 AM–9:45 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:15 AM–9:45 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:15 AM–9:45 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

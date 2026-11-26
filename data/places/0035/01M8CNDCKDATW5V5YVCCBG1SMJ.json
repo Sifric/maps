@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCKDATW5V5YVCCBG1SMJ",
+  "name": "Lawyer Office",
+  "coordinates": {
+    "latitude": 7.9104573,
+    "longitude": 81.5198415
+  },
+  "categories": [
+    "Lawyer"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG69+5WP, Oddamavadi",
+  "business_status": "OPEN"
+}

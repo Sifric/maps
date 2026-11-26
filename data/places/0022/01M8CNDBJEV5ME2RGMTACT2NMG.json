@@ -1,0 +1,73 @@
+{
+  "id": "01M8CNDBJEV5ME2RGMTACT2NMG",
+  "name": "MySL Travel",
+  "coordinates": {
+    "latitude": 7.169552899999999,
+    "longitude": 79.9477102
+  },
+  "categories": [
+    "Travel agency",
+    "Bus company",
+    "Bus tour agency",
+    "Tour agency",
+    "Tour operator",
+    "Tourist information center",
+    "Transportation service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Freedom Park Shopping Complex, No 82 3rd floor, Minuwangoda 11550",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8 AM–5 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

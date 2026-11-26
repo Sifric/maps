@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAQXN0E5MNCZRN3X6GN9",
+  "name": "Holy Cross Shrine",
+  "coordinates": {
+    "latitude": 7.3906956,
+    "longitude": 81.7968825
+  },
+  "categories": [
+    "Catholic church"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Sammanthurai",
+  "business_status": "OPEN"
+}

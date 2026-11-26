@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDCRZVHQ5K5PYMHR0F2VQ",
+  "name": "crematorium, Batticaloa. தகனசாலை மட்டக்களப்பு.",
+  "coordinates": {
+    "latitude": 7.7277293,
+    "longitude": 81.693342
+  },
+  "categories": [
+    "Cremation service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMHV+38H, Batticaloa",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6–8 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6 AM–6 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

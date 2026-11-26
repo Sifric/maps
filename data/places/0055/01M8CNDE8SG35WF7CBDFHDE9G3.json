@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE8SG35WF7CBDFHDE9G3",
+  "name": "Nirmal Stores",
+  "coordinates": {
+    "latitude": 6.364891,
+    "longitude": 80.222882
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "967F+X5, Pitigala",
+  "business_status": "OPEN"
+}

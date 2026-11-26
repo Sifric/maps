@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDEE0SNSTA1RZNSZK6NAH",
+  "name": "Kumara Villa",
+  "coordinates": {
+    "latitude": 6.1124212,
+    "longitude": 80.1276293
+  },
+  "categories": [
+    "Hotel",
+    "Lodging"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Walamulla Rd, Hikkaduwa",
+  "business_status": "OPEN"
+}

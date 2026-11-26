@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDEFG7ETPE7ADZCVK13PP",
+  "name": "Hotel Sanmark",
+  "coordinates": {
+    "latitude": 5.9673485,
+    "longitude": 80.3747534
+  },
+  "categories": [
+    "Hotel",
+    "Resort hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Hotel sanmark, Aranwala Matara Rd, Ahangama",
+  "business_status": "OPEN"
+}

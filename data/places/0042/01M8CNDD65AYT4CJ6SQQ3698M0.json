@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD65AYT4CJ6SQQ3698M0",
+  "name": "Cemetery Onthachimadam",
+  "coordinates": {
+    "latitude": 7.4947535,
+    "longitude": 81.809448
+  },
+  "categories": [
+    "Cemetery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Onthachimadam Beach Rd",
+  "business_status": "OPEN"
+}

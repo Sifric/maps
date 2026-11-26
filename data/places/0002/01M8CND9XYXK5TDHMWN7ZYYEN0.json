@@ -1,0 +1,75 @@
+{
+  "id": "01M8CND9XYXK5TDHMWN7ZYYEN0",
+  "name": "NAJI FITNESS GYM",
+  "coordinates": {
+    "latitude": 7.2394808,
+    "longitude": 81.85313459999999
+  },
+  "categories": [
+    "Fitness center",
+    "Boxing gym",
+    "Gym"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Main St, Addalaichenai",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5:45–10:30 AM",
+        "4–10:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5:45–10:30 AM",
+        "4–10:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5:45–10:30 AM",
+        "4–10:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5:45–10:30 AM",
+        "4–10:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5:45–10:30 AM",
+        "4–10:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5:45–10:30 AM",
+        "4–10:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

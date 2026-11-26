@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDF8G5H9WQ3ND1D7169WJ",
+  "name": "Premium Rent & Ride | Galle",
+  "coordinates": {
+    "latitude": 6.0337306,
+    "longitude": 80.2348164
+  },
+  "categories": [
+    "Car rental agency",
+    "Airport shuttle service",
+    "Car leasing service",
+    "Driver's license office",
+    "Taxi service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "5, 1 Closenberg Rd, Galle 80000",
+  "business_status": "OPEN"
+}

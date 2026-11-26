@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDDZG375P9WFTV60FFX6P",
+  "name": "Hotel Seethani & Restaurant",
+  "coordinates": {
+    "latitude": 6.1248933999999995,
+    "longitude": 80.1085136
+  },
+  "categories": [
+    "Restaurant",
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Narigama, Seethani, Galle Rd, Hikkaduwa 80240",
+  "business_status": "OPEN"
+}

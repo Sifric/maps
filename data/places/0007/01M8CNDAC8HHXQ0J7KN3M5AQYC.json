@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDAC8HHXQ0J7KN3M5AQYC",
+  "name": "සෙනෙවිරත්න Stores",
+  "coordinates": {
+    "latitude": 6.3624182,
+    "longitude": 80.0249102
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "926F+XX7, Maha Induruwa",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:30–7:30 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:30–7:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:30–7:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:30–7:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:30–7:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:30–7:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6:30–7:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

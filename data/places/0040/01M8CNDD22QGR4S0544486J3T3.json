@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD22QGR4S0544486J3T3",
+  "name": "AL MUHARAMA TRAVELS",
+  "coordinates": {
+    "latitude": 7.9121220999999995,
+    "longitude": 81.5201864
+  },
+  "categories": [
+    "Travel agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "342 Jumma Masjid Road, Oddamavadi 30420",
+  "business_status": "OPEN"
+}

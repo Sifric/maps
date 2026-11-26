@@ -1,0 +1,27 @@
+{
+  "id": "01M8CNDDFYRM4XVD05RM8ED2HF",
+  "name": "ARZ shopping",
+  "coordinates": {
+    "latitude": 7.680143299999999,
+    "longitude": 81.732085
+  },
+  "categories": [
+    "Home goods store",
+    "Shopping mall"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ],
+    "names": [
+      "ARZ Shopping"
+    ]
+  },
+  "address": "56 Rasa Alim Rd, Kattankudy",
+  "business_status": "OPEN"
+}

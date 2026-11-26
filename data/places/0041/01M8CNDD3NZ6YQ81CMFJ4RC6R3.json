@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD3NZ6YQ81CMFJ4RC6R3",
+  "name": "Sellam Premier 3D Cinema.",
+  "coordinates": {
+    "latitude": 7.7820886,
+    "longitude": 81.5954134
+  },
+  "categories": [
+    "Movie theater"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Trincomalee-Batticaloa Rd",
+  "business_status": "OPEN"
+}

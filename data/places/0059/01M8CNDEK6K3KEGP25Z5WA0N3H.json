@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEK6K3KEGP25Z5WA0N3H",
+  "name": "மணி உணவகம்",
+  "coordinates": {
+    "latitude": 9.7283747,
+    "longitude": 79.9949322
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Manipay",
+  "business_status": "OPEN"
+}

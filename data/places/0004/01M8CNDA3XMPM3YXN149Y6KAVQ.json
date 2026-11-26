@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA3XMPM3YXN149Y6KAVQ",
+  "name": "Fairoos Hotel",
+  "coordinates": {
+    "latitude": 7.4047288,
+    "longitude": 81.8310273
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "CR3J+VCR, Colombo - Batticaloa Hwy, Kalmunai 32300",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDD67ZKA768G8ZFS863BF",
+  "name": "Resheen Hotel and Banquets",
+  "coordinates": {
+    "latitude": 7.2843734,
+    "longitude": 80.06794479999999
+  },
+  "categories": [
+    "Wedding venue",
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kurunegala Rd, Kotadeniyawa 11232",
+  "business_status": "OPEN"
+}

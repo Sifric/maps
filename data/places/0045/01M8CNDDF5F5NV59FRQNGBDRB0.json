@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDF5F5NV59FRQNGBDRB0",
+  "name": "Kaleel safras",
+  "coordinates": {
+    "latitude": 7.9187783,
+    "longitude": 81.528725
+  },
+  "categories": [
+    "Auto parts store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Mohammadiya Rd",
+  "business_status": "OPEN"
+}

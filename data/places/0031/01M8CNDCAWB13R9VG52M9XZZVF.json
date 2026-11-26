@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCAWB13R9VG52M9XZZVF",
+  "name": "Murugan Stores",
+  "coordinates": {
+    "latitude": 7.6673545,
+    "longitude": 81.7321625
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MP8J+WVV, Amarasingam Rd",
+  "business_status": "OPEN"
+}

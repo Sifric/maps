@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE3N6426X3TXEX4J7KQC",
+  "name": "Curd shop",
+  "coordinates": {
+    "latitude": 6.1167175,
+    "longitude": 80.1188251
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "60, 944 Colombo Main Rd, Hikkaduwa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDF9SA6DF240CYN4JD9Z",
+  "name": "THAIBA BOOK CENTER",
+  "coordinates": {
+    "latitude": 7.778694,
+    "longitude": 81.6046851
+  },
+  "categories": [
+    "Book store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Eravur",
+  "business_status": "OPEN"
+}

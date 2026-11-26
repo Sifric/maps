@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDCV6YTEJW23EGZCRQ5WQ",
+  "name": "Batticaloa",
+  "coordinates": {
+    "latitude": 7.723478,
+    "longitude": 81.69258169999999
+  },
+  "categories": [
+    "Bus stop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

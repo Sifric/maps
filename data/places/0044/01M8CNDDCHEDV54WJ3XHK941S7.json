@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDCHEDV54WJ3XHK941S7",
+  "name": "Maryam Village",
+  "coordinates": {
+    "latitude": 7.916710299999999,
+    "longitude": 81.5234681
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG8F+M9P, Maryam Village, Trincomalee-Batticaloa Rd, Oddamavadi",
+  "business_status": "OPEN"
+}

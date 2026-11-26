@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDVQFQXDXV8TNBRNAXFA",
+  "name": "Mountain city",
+  "coordinates": {
+    "latitude": 6.2755233,
+    "longitude": 80.04626069999999
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "72GW+89F, B40, Balapitiya",
+  "business_status": "OPEN"
+}

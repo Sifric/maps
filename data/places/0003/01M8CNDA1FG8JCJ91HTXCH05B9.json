@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA1FG8JCJ91HTXCH05B9",
+  "name": "Bismillah Bakery Branch-01 பிஸ்மில்லாஹ் பேக்கரி",
+  "coordinates": {
+    "latitude": 7.388162599999999,
+    "longitude": 81.8400194
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Maliga Rd, Sainthamaruthu 32300",
+  "business_status": "OPEN"
+}

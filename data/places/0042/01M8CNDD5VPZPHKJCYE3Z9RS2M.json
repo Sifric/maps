@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD5VPZPHKJCYE3Z9RS2M",
+  "name": "Sewanapitiya Railway Station",
+  "coordinates": {
+    "latitude": 7.9214471,
+    "longitude": 81.18380359999999
+  },
+  "categories": [
+    "Train station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Sewanapitiya",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6M38XQ5CFM8CNTHQ8F",
+  "name": "Dream cafe",
+  "coordinates": {
+    "latitude": 7.716773099999999,
+    "longitude": 81.70012469999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PP82+P25, Pansala Rd, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAR7D4BK5R06W932QKRY",
+  "name": "Samaranayaka Stores",
+  "coordinates": {
+    "latitude": 7.3645314,
+    "longitude": 81.6309387
+  },
+  "categories": [
+    "Hardware store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9J7J+V92, Ampara, Maha Oya Highway, Uhana",
+  "business_status": "OPEN"
+}

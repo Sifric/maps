@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE0VD465C451GWEGF527",
+  "name": "Dileep",
+  "coordinates": {
+    "latitude": 6.3215183,
+    "longitude": 80.128901
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Dileep restaurant,Atakohota,Nawadagala, Elpitiya 12345",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–2 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–2 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–2 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–2 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7 AM–2 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–2 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7 AM–2 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

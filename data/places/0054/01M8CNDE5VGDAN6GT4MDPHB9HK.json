@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE5VGDAN6GT4MDPHB9HK",
+  "name": "Senadeera Stores",
+  "coordinates": {
+    "latitude": 6.0708733,
+    "longitude": 80.21829129999999
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "36C9+88V, B128, Galle",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5:30 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5:30 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5:30 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5:30 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5:30 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5:30 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5:30 AM–11:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

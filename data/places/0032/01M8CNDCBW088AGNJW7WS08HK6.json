@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBW088AGNJW7WS08HK6",
+  "name": "RL Guest In",
+  "coordinates": {
+    "latitude": 7.788641999999999,
+    "longitude": 81.59786079999999
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No181,K.P Road ,chenklady",
+  "business_status": "OPEN"
+}

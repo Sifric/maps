@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDECJFM7W4HQRJ4K0RPET",
+  "name": "Sam’s House",
+  "coordinates": {
+    "latitude": 6.0428583,
+    "longitude": 80.2080616
+  },
+  "categories": [
+    "Bed & breakfast"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "90a D. J. Wimalasurendra Mawatha, Galle 80000",
+  "business_status": "OPEN"
+}

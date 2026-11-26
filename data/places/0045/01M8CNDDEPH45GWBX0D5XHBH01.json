@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDEPH45GWBX0D5XHBH01",
+  "name": "Vel saloon",
+  "coordinates": {
+    "latitude": 7.71101,
+    "longitude": 81.6439621
+  },
+  "categories": [
+    "Barber shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PJ6V+9H, Batticaloa",
+  "business_status": "OPEN"
+}

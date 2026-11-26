@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE1D4YW1N7GD7GE5W7QD",
+  "name": "Neil Bakery Egodauyana",
+  "coordinates": {
+    "latitude": 6.7432398,
+    "longitude": 79.8923801
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Moratuwa",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5 AM–9:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

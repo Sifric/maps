@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCS3FK5QX04SQQTY0PTK",
+  "name": "இயற்கை உணவகம்",
+  "coordinates": {
+    "latitude": 7.7124668,
+    "longitude": 81.69051209999999
+  },
+  "categories": [
+    "Juice shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "57 Upstair Rd, Batticaloa",
+  "business_status": "OPEN"
+}

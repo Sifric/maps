@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC8TVF71CAJG5SM94VH2",
+  "name": "Public Market - Kathankudy",
+  "coordinates": {
+    "latitude": 7.6763819,
+    "longitude": 81.7261783
+  },
+  "categories": [
+    "Market"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPGG+HF3, Kattankudy",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBP6TZFR0GEV9H7EP3KN",
+  "name": "Auto Mart Service Center",
+  "coordinates": {
+    "latitude": 7.9085437,
+    "longitude": 81.1141768
+  },
+  "categories": [
+    "Car repair and maintenance service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Maradankadawala-Habarana-Thirukkondaiadimadu Hwy",
+  "business_status": "OPEN"
+}

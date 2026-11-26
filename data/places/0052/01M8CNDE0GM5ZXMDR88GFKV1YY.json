@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE0GM5ZXMDR88GFKV1YY",
+  "name": "Gunathilaka Hotel",
+  "coordinates": {
+    "latitude": 6.4032835,
+    "longitude": 80.2183555
+  },
+  "categories": [
+    "Family restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "233/31 Welegewatta - Gorakadoowa Rd, Pelawatta",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5 AM–8 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

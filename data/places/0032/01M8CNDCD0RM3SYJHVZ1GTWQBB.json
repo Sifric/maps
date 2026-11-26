@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCD0RM3SYJHVZ1GTWQBB",
+  "name": "La Grande Villa",
+  "coordinates": {
+    "latitude": 6.9706867,
+    "longitude": 80.7719125
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Nuwara Eliya 22200",
+  "business_status": "OPEN"
+}

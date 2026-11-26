@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDCEY09Z5PE6Y5KHYGZDV",
+  "name": "Gageyaya clinic senter",
+  "coordinates": {
+    "latitude": 7.3611634,
+    "longitude": 80.9804875
+  },
+  "categories": [
+    "Medical clinic"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Clinic senter, Gageyaya Rd",
+  "business_status": "OPEN"
+}

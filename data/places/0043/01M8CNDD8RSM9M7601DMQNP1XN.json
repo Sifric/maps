@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD8RSM9M7601DMQNP1XN",
+  "name": "Ramanan house",
+  "coordinates": {
+    "latitude": 7.7104566,
+    "longitude": 81.6950877
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9/5 2nd cross, matharshanga road, Batticaloa",
+  "business_status": "OPEN"
+}

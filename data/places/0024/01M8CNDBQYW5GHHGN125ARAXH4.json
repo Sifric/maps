@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBQYW5GHHGN125ARAXH4",
+  "name": "MAHMOOD MULTI SHOP",
+  "coordinates": {
+    "latitude": 7.377114199999999,
+    "longitude": 81.8415603
+  },
+  "categories": [
+    "Book store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9RGR+RJV, Main Road, Karaithivu, Ponparappi, Puttalam",
+  "business_status": "OPEN"
+}

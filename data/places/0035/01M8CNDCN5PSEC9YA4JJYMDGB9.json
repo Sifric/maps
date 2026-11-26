@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCN5PSEC9YA4JJYMDGB9",
+  "name": "Jaathra Jewellery",
+  "coordinates": {
+    "latitude": 7.7854401,
+    "longitude": 81.59148019999999
+  },
+  "categories": [
+    "Jewelry store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Market, Road, Chenkaladi",
+  "business_status": "OPEN"
+}

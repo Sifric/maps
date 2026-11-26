@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDCEAWAWV5CGZV8H25A8F",
+  "name": "MedCare Laborotary",
+  "coordinates": {
+    "latitude": 7.683964899999999,
+    "longitude": 81.726553
+  },
+  "categories": [
+    "Hospital"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "MPMG+HJM, Kattankudy",
+  "business_status": "OPEN"
+}

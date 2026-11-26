@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDD5FFHBMGW4RJGZVB9BY",
+  "name": "Dynamic Hardware & Electronics",
+  "coordinates": {
+    "latitude": 7.5851184,
+    "longitude": 81.7843321
+  },
+  "categories": [
+    "Hardware store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

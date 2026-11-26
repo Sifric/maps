@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC3X4F0T3A2BNXP5QAMD",
+  "name": "Thaya Store",
+  "coordinates": {
+    "latitude": 7.7017681,
+    "longitude": 81.7214704
+  },
+  "categories": [
+    "Shopping mall"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PP2C+PH4, Music College Rd, Kallady",
+  "business_status": "OPEN"
+}

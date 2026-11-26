@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCAWCNTQR1HAN9D6P1XT",
+  "name": "Razak Grocery Store",
+  "coordinates": {
+    "latitude": 7.657235399999999,
+    "longitude": 81.7261644
+  },
+  "categories": [
+    "Indian grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MP4G+VFV, South",
+  "business_status": "OPEN"
+}

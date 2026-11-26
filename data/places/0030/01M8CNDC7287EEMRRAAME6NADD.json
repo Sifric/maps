@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC7287EEMRRAAME6NADD",
+  "name": "DelevenCake",
+  "coordinates": {
+    "latitude": 7.7211348,
+    "longitude": 81.7035612
+  },
+  "categories": [
+    "Cake shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "234 New Kalmunai Rd, Kallady 30000",
+  "business_status": "OPEN"
+}

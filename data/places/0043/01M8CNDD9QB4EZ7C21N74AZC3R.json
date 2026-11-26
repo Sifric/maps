@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD9QB4EZ7C21N74AZC3R",
+  "name": "Kidz Time",
+  "coordinates": {
+    "latitude": 7.6745842,
+    "longitude": 81.73246999999999
+  },
+  "categories": [
+    "Clothing store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kattankudy",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCASDPMSY41CXGH91GEE",
+  "name": "J & SSPR Brothers Greengrocer's Shop (Thandavanveli Branch)",
+  "coordinates": {
+    "latitude": 7.7306018,
+    "longitude": 81.6737491
+  },
+  "categories": [
+    "Wholesale grocer"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMJF+6FX, Trincomalee-Batticaloa Rd, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC91KSWENM2XTQQNGXRS",
+  "name": "Bahee Home",
+  "coordinates": {
+    "latitude": 7.678254399999999,
+    "longitude": 81.73897939999999
+  },
+  "categories": [
+    "Supermarket"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "no.07 s.n t lane, Kattankudy 30100",
+  "business_status": "OPEN"
+}

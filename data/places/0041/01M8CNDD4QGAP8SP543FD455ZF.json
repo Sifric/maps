@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD4QGAP8SP543FD455ZF",
+  "name": "Red Snapper Seafood Restaurant",
+  "coordinates": {
+    "latitude": 7.9218277,
+    "longitude": 81.5687457
+  },
+  "categories": [
+    "Seafood restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "103 Pasikuda Road, Kalkudah 30410",
+  "business_status": "CLOSED_TEMPORARILY"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDCENS9KF5C9QYXK80Q63",
+  "name": "Child CARE CENTER (DR.VIJI)",
+  "coordinates": {
+    "latitude": 7.365378499999999,
+    "longitude": 81.84373939999999
+  },
+  "categories": [
+    "Medical Center"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Main Street karaitivu, Ninthavur 12",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7:30–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7:30–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7:30–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7:30–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7:30–9 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7:30–9 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7:30–9 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDDEWGM1RRR6CSB0EF6Q6",
+  "name": "Tharaki Timber Center",
+  "coordinates": {
+    "latitude": 7.7368959,
+    "longitude": 81.6799339
+  },
+  "categories": [
+    "Wood supplier"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\nPMPH+QX3, New Boundary Rd, Batticaloa",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "7 AM–5 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

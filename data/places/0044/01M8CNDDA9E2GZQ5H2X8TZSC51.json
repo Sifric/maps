@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDA9E2GZQ5H2X8TZSC51",
+  "name": "Azmy Home",
+  "coordinates": {
+    "latitude": 7.6782680999999995,
+    "longitude": 81.72267649999999
+  },
+  "categories": [
+    "Condominium complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPHF+833, Division 3 We, Kattankudy",
+  "business_status": "OPEN"
+}

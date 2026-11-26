@@ -1,0 +1,23 @@
+{
+  "id": "01M8CND9XY8NHPM8XZFSX62DYP",
+  "name": "Alex driving school",
+  "coordinates": {
+    "latitude": 7.7681219,
+    "longitude": 81.6623824
+  },
+  "categories": [
+    "Driving school"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QM96+6X, Batticaloa",
+  "business_status": "OPEN"
+}

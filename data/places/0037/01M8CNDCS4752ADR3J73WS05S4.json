@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCS4752ADR3J73WS05S4",
+  "name": "Taste Hunters",
+  "coordinates": {
+    "latitude": 7.7291159,
+    "longitude": 81.6798098
+  },
+  "categories": [
+    "Juice shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMHH+PMQ, Aviyar Rd, Batticaloa",
+  "business_status": "OPEN"
+}

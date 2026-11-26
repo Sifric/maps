@@ -1,0 +1,73 @@
+{
+  "id": "01M8CNDBJET95NWBVF600Q1XMF",
+  "name": "Navigeto Travels",
+  "coordinates": {
+    "latitude": 6.8958677999999995,
+    "longitude": 79.8769288
+  },
+  "categories": [
+    "Travel agency",
+    "Airline",
+    "Airline ticket agency",
+    "Student career counseling office",
+    "Tour agency",
+    "Tour operator",
+    "Visa consulting service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "420, 2/1 Elvitigala Mawatha, Colombo 10500",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "10 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

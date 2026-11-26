@@ -1,0 +1,71 @@
+{
+  "id": "01M8CNDA6WVRTYFMMNJMFK948J",
+  "name": "Aakil Grocery",
+  "coordinates": {
+    "latitude": 6.0697604,
+    "longitude": 80.1792667
+  },
+  "categories": [
+    "Asian grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "349 B138, Galle",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5 AM–12:30 PM",
+        "3:30–11 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5 AM–12:30 PM",
+        "3:30–11 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5 AM–12:30 PM",
+        "3:30–11 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5 AM–12:30 PM",
+        "3:30–11 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5 AM–12:30 PM",
+        "3:30–11 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5 AM–12:30 PM",
+        "3:30–11 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5 AM–12:30 PM",
+        "3:30–11 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

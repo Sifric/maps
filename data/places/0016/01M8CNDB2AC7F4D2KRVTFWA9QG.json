@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDB2AC7F4D2KRVTFWA9QG",
+  "name": "Benzene Park",
+  "coordinates": {
+    "latitude": 7.799033199999999,
+    "longitude": 81.5829428
+  },
+  "categories": [
+    "Park"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QHXM+J58, Eastern University, Thavapuram",
+  "business_status": "OPEN"
+}

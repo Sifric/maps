@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD31P6R2P51DP1KXCC7T",
+  "name": "Onthachimadam Pottile Shop",
+  "coordinates": {
+    "latitude": 7.5067241,
+    "longitude": 81.79486759999999
+  },
+  "categories": [
+    "Liquor store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQ4V+MWQ, Kaluwanchikudy",
+  "business_status": "CLOSED_TEMPORARILY"
+}

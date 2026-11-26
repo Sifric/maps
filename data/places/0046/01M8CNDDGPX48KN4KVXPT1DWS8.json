@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDGPX48KN4KVXPT1DWS8",
+  "name": "Pushpalatha Stores and Hotel",
+  "coordinates": {
+    "latitude": 6.8114257,
+    "longitude": 80.1438582
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "R46V+HGH, Handapangoda",
+  "business_status": "OPEN"
+}

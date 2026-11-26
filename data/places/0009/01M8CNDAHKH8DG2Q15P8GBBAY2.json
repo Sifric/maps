@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAHKH8DG2Q15P8GBBAY2",
+  "name": "DILANIE Rest Inn",
+  "coordinates": {
+    "latitude": 7.4126344,
+    "longitude": 81.8279484
+  },
+  "categories": [
+    "Lodge"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CR7H+354, Unnamed Road, Kalmunai 32300",
+  "business_status": "OPEN"
+}

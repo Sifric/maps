@@ -1,0 +1,71 @@
+{
+  "id": "01M8CNDEZJN9W0QFXCY39DV54S",
+  "name": "FIT OR FIGHT Health & Fitness Center 2.0",
+  "coordinates": {
+    "latitude": 9.7588455,
+    "longitude": 80.02914009999999
+  },
+  "categories": [
+    "Gym"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "1st Floor, 80/14 Jaffna-Kankesanturai Rd, Jaffna",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5–11 AM",
+        "4–9:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5–11 AM",
+        "4–9:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5–11 AM",
+        "4–9:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5–11 AM",
+        "4–9:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5–11 AM",
+        "4–9:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5–11 AM",
+        "4–9:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

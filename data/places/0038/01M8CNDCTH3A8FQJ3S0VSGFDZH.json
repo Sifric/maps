@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCTH3A8FQJ3S0VSGFDZH",
+  "name": "City electronics & appliances",
+  "coordinates": {
+    "latitude": 7.725018899999999,
+    "longitude": 81.6909041
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "519 Trinco Rd, Batticaloa",
+  "business_status": "OPEN"
+}

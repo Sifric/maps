@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCG8GGXFG7Y7A2EPM9RN",
+  "name": "Ajmal house",
+  "coordinates": {
+    "latitude": 7.6842714,
+    "longitude": 81.7343035
+  },
+  "categories": [
+    "Housing society"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "no 37 Central Rd, Kattankudy",
+  "business_status": "OPEN"
+}

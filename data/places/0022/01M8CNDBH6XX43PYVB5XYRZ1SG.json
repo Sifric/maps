@@ -1,0 +1,73 @@
+{
+  "id": "01M8CNDBH6XX43PYVB5XYRZ1SG",
+  "name": "VM Studio",
+  "coordinates": {
+    "latitude": 7.3631204,
+    "longitude": 81.79837619999999
+  },
+  "categories": [
+    "Photography studio"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Ampara Rd, Sammanthurai 32200",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8:30 AM–1:30 PM",
+        "3–10:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8:30 AM–1:30 PM",
+        "3–10:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8:30 AM–1:30 PM",
+        "3–10:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8:30 AM–1:30 PM",
+        "3–10:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8:30 AM–1:30 PM",
+        "3–10:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8:30 AM–1:30 PM",
+        "3–10:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

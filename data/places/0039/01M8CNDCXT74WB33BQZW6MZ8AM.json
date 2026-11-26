@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCXT74WB33BQZW6MZ8AM",
+  "name": "Rent a minivan",
+  "coordinates": {
+    "latitude": 7.6803317,
+    "longitude": 81.7289785
+  },
+  "categories": [
+    "Transportation service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPJH+4HQ, ALS, Mawatha, Kattankudy",
+  "business_status": "OPEN"
+}

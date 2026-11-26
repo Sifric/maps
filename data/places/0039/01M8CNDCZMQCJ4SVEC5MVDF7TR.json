@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCZMQCJ4SVEC5MVDF7TR",
+  "name": "Mano Home",
+  "coordinates": {
+    "latitude": 7.7846803,
+    "longitude": 81.5984963
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QHMX+V9H, Eravur",
+  "business_status": "OPEN"
+}

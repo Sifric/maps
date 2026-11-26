@@ -1,0 +1,69 @@
+{
+  "id": "01M8CNDCE0BZ36A6DN81VNDWFE",
+  "name": "Agasthiyar Happy Cure",
+  "coordinates": {
+    "latitude": 7.7303079,
+    "longitude": 81.6865476
+  },
+  "categories": [
+    "Ayurvedic clinic"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "14, Kumara Kovil Road, East, Batticaloa",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "3–6 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "3–6 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "3–6 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "3–6 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9 AM–12 PM",
+        "3–6 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "9 AM–12 PM",
+        "3–6 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

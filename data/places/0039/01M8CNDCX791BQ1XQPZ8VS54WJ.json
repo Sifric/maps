@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCX791BQ1XQPZ8VS54WJ",
+  "name": "Sharaf Centre",
+  "coordinates": {
+    "latitude": 7.6863706999999994,
+    "longitude": 81.72528319999999
+  },
+  "categories": [
+    "Bank"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPPG+G4V, Kattankudy",
+  "business_status": "OPEN"
+}

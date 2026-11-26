@@ -1,0 +1,70 @@
+{
+  "id": "01M8CNDCBC3GNVMK9RH6T685WS",
+  "name": "Courier Service in Oddamavadi - NAIF Courier",
+  "coordinates": {
+    "latitude": 7.905111,
+    "longitude": 81.5238607
+  },
+  "categories": [
+    "Courier service",
+    "Delivery service",
+    "Logistics service",
+    "Shipping and mailing service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "NO 284 NOORANIYA ROAD, 04, Oddamavadi 30420",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Open 24 hours"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

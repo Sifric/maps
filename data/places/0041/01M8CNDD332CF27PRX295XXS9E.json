@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD332CF27PRX295XXS9E",
+  "name": "Mankadu",
+  "coordinates": {
+    "latitude": 7.5721121,
+    "longitude": 81.7847908
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kaluwanchikudy",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE3Q9FV23KSC56ZTG9YX",
+  "name": "Hikkaduwa Fish Market",
+  "coordinates": {
+    "latitude": 6.1416311,
+    "longitude": 80.099424
+  },
+  "categories": [
+    "Seafood market"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "43RX+MQ3, Hikkaduwa",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7 AM–7:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

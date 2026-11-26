@@ -1,0 +1,70 @@
+{
+  "id": "01M8CNDEC0JMVA0PTSGRSJZ6R0",
+  "name": "Shehan villa",
+  "coordinates": {
+    "latitude": 6.4703517,
+    "longitude": 79.9817757
+  },
+  "categories": [
+    "Villa",
+    "Gym",
+    "Hotel supply store",
+    "Motorcycle dealer",
+    "Swimming pool",
+    "Travel agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "No:22/A Nallahena Road, Beruwala 12070",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Open 24 hours"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

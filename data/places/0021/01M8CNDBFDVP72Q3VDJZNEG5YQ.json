@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBFDVP72Q3VDJZNEG5YQ",
+  "name": "People's bank ATm",
+  "coordinates": {
+    "latitude": 7.362296499999999,
+    "longitude": 81.8047654
+  },
+  "categories": [
+    "ATM"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9R63+WW6, Karativu-Ampara Hwy, Sammanthurai",
+  "business_status": "OPEN"
+}

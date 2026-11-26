@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCV6E97VTWBKZKJ9FS3V",
+  "name": "Taxi Spot",
+  "coordinates": {
+    "latitude": 7.708304,
+    "longitude": 81.6906091
+  },
+  "categories": [
+    "Taxi service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM5R+86H, Hospital Rd, Batticaloa",
+  "business_status": "OPEN"
+}

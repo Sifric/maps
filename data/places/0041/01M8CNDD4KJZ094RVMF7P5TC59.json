@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDD4KJZ094RVMF7P5TC59",
+  "name": "Kiran Junction",
+  "coordinates": {
+    "latitude": 7.8642226,
+    "longitude": 81.5384527
+  },
+  "categories": [
+    "Bus stop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

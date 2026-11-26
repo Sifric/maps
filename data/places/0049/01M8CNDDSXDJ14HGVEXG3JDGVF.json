@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDSXDJ14HGVEXG3JDGVF",
+  "name": "cafe T",
+  "coordinates": {
+    "latitude": 6.0304644,
+    "longitude": 80.2150237
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Galle 80000",
+  "business_status": "OPEN"
+}

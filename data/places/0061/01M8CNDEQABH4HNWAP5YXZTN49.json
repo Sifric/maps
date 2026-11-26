@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEQABH4HNWAP5YXZTN49",
+  "name": "Orin Hotel",
+  "coordinates": {
+    "latitude": 9.66574,
+    "longitude": 80.0388098
+  },
+  "categories": [
+    "Villa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "50 Kalaimagal Rd, Jaffna",
+  "business_status": "CLOSED_TEMPORARILY"
+}

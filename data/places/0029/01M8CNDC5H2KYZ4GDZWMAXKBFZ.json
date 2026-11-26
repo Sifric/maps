@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDC5H2KYZ4GDZWMAXKBFZ",
+  "name": "Holiday villa",
+  "coordinates": {
+    "latitude": 7.6802879,
+    "longitude": 81.7429009
+  },
+  "categories": [
+    "Guest house",
+    "Villa",
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Abrar Pre School Road Abrar town, Kattankudy 30100",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCB9A3SDBN9GGBNCQ9SZ",
+  "name": "மண்டூர் பொதுச் சந்தை",
+  "coordinates": {
+    "latitude": 7.4817962,
+    "longitude": 81.759069
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "FQJ5+PM7, Mandur",
+  "business_status": "OPEN"
+}

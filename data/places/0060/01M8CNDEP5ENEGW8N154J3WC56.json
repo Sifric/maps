@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDEP5ENEGW8N154J3WC56",
+  "name": "Shabari Tea shop",
+  "coordinates": {
+    "latitude": 9.6893321,
+    "longitude": 80.1633414
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Chavakachcheri-Puloli Road, Chavakachcheri",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:30 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:30 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:30 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:30 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:30 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:30 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6:30 AM–1 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

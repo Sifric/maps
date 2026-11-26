@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCAZATJG8NB6G0Q7GNY5",
+  "name": "ANUSHA FOOD CITY",
+  "coordinates": {
+    "latitude": 7.7807606,
+    "longitude": 81.6072745
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJJ4+8W2, Girls School Rd, Eravur",
+  "business_status": "OPEN"
+}

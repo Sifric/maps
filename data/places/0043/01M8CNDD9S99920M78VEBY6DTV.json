@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD9S99920M78VEBY6DTV",
+  "name": "Public Library",
+  "coordinates": {
+    "latitude": 7.689949299999999,
+    "longitude": 81.7215463
+  },
+  "categories": [
+    "Public library"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPQC+XJF, Main St, Kallady",
+  "business_status": "OPEN"
+}

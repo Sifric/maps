@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCKN9PCBS70YA33ZRXB3",
+  "name": "Postal Administrative Complex - Eastern Province தபால் நிர்வாகத் தொகுதி - கிழக்கு மாகாணம்",
+  "coordinates": {
+    "latitude": 7.7098643,
+    "longitude": 81.6978173
+  },
+  "categories": [
+    "Post office"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM5X+W4W, Chapel’s Street, Batticaloa",
+  "business_status": "OPEN"
+}

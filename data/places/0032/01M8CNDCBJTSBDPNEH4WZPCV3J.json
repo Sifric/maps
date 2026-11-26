@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBJTSBDPNEH4WZPCV3J",
+  "name": "Aqua Beach Resort",
+  "coordinates": {
+    "latitude": 7.721113,
+    "longitude": 81.7169859
+  },
+  "categories": [
+    "Seafood restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PPC8+3VP, Kallady Children's Park, Kallady",
+  "business_status": "OPEN"
+}

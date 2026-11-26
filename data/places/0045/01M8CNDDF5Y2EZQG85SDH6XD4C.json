@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDDF5Y2EZQG85SDH6XD4C",
+  "name": "AVRA Salon by Thushari De Silva",
+  "coordinates": {
+    "latitude": 6.9140767,
+    "longitude": 79.9049825
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\n20A Perera Mawatha, off Buthgamuwa Rd, 10107",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "9 AM–7 PM"
+      ]
+    }
+  ],
+  "business_status": "CLOSED"
+}

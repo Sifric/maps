@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEDV7YEB682HCJCWP32Y",
+  "name": "Hotel Remember",
+  "coordinates": {
+    "latitude": 6.1268571,
+    "longitude": 80.10581189999999
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "520 Galle Road Wewala, Hikkaduwa",
+  "business_status": "OPEN"
+}

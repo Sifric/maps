@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDBVR5BQ60MMSPK5R0W2",
+  "name": "Rinas house",
+  "coordinates": {
+    "latitude": 7.7772353,
+    "longitude": 81.6154689
+  },
+  "categories": [
+    "Apartment complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJG8+P95, Eravur",
+  "business_status": "OPEN"
+}

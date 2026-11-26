@@ -1,0 +1,70 @@
+{
+  "id": "01M8CNDDYSDWV0PFAEQ10NVVD6",
+  "name": "7 Tables Restaurant",
+  "coordinates": {
+    "latitude": 6.4028205,
+    "longitude": 80.0045615
+  },
+  "categories": [
+    "Seafood restaurant",
+    "Asian fusion restaurant",
+    "Fine dining restaurant",
+    "Italian restaurant",
+    "Japanese restaurant",
+    "Sushi restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "No 579 Warahena 3rd railgate, Bentota 80500",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5:30–9:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5:30–9:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5:30–9:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5:30–9:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5:30–9:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5:30–9:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5:30–9:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

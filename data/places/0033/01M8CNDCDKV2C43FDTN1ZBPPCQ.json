@@ -1,0 +1,71 @@
+{
+  "id": "01M8CNDCDKV2C43FDTN1ZBPPCQ",
+  "name": "Medi clinic Dr sugumar",
+  "coordinates": {
+    "latitude": 7.782853599999999,
+    "longitude": 81.591212
+  },
+  "categories": [
+    "Hospital"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QHMR+4FW, Pillayar Kovil Rd, Chenkaladi",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4–9 AM",
+        "1:30–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4–8 AM",
+        "1:30–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4–8 AM",
+        "1:30–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4–8 AM",
+        "1:30–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4–8 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4 AM–10 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDE4PDC8EX0HF33CC5J65",
+  "name": "Together Boutique Villa",
+  "coordinates": {
+    "latitude": 5.9712781,
+    "longitude": 80.36920409999999
+  },
+  "categories": [
+    "Hotel",
+    "Boutique",
+    "Cocktail bar",
+    "Restaurant",
+    "Swimming pool"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Hirigala Watta, Ahangama",
+  "business_status": "OPEN"
+}

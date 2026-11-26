@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE037MM40P2AZZ8T6Q3K",
+  "name": "Sanu Foods",
+  "coordinates": {
+    "latitude": 6.2466186,
+    "longitude": 80.07381029999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Polwaththa Rd",
+  "business_status": "OPEN"
+}

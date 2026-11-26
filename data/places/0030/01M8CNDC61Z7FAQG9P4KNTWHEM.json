@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC61Z7FAQG9P4KNTWHEM",
+  "name": "Srilankan food batticaloa",
+  "coordinates": {
+    "latitude": 7.691342799999999,
+    "longitude": 81.7240917
+  },
+  "categories": [
+    "Family restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "2nd cross, saratha street Manchantoduwai, 30000",
+  "business_status": "CLOSED_TEMPORARILY"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBD57NCDG89MT93CG9M6",
+  "name": "Electric Vehicle Charging Station",
+  "coordinates": {
+    "latitude": 7.312892499999999,
+    "longitude": 80.5604956
+  },
+  "categories": [
+    "Electric vehicle charging station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "115A Kobbekaduwa Yahalatenna, Kandy 20234",
+  "business_status": "OPEN"
+}

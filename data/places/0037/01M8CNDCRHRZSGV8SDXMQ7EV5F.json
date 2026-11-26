@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCRHRZSGV8SDXMQ7EV5F",
+  "name": "Sea Forrest",
+  "coordinates": {
+    "latitude": 7.495560599999999,
+    "longitude": 81.81022279999999
+  },
+  "categories": [
+    "Tourist attraction"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "FRW6+63, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCC809YSZMJ09VB2GYWY",
+  "name": "Abirami Place",
+  "coordinates": {
+    "latitude": 7.7102169,
+    "longitude": 81.69463329999999
+  },
+  "categories": [
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM6V+3VJ, 2nd Cross St, batticaloa",
+  "business_status": "OPEN"
+}

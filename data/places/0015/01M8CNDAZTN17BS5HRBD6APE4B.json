@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAZTN17BS5HRBD6APE4B",
+  "name": "Kallar Central Fitness Centre",
+  "coordinates": {
+    "latitude": 7.4654232,
+    "longitude": 81.8083582
+  },
+  "categories": [
+    "Gym"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Periyakallar",
+  "business_status": "OPEN"
+}

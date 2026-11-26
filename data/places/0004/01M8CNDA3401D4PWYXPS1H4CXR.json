@@ -1,0 +1,75 @@
+{
+  "id": "01M8CNDA3401D4PWYXPS1H4CXR",
+  "name": "Café One Love",
+  "coordinates": {
+    "latitude": 6.8406575,
+    "longitude": 81.833405
+  },
+  "categories": [
+    "Bar",
+    "Asian restaurant",
+    "Restaurant",
+    "Beach club",
+    "Breakfast restaurant",
+    "Brunch restaurant",
+    "Dinner theater",
+    "Food court",
+    "Gastropub",
+    "Pub"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Panama Rd, Arugam Bay 32500",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–2 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–2 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–2 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–2 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7 AM–2 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–2 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7 AM–2 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

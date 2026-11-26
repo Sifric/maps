@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDEMKA5MWX276BG079BPD",
+  "name": "K2R Friends Caffe",
+  "coordinates": {
+    "latitude": 9.6838407,
+    "longitude": 80.0136667
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "jaffna SIVAN TEMPLE NORTH STREET, Jaffna 40000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "10 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "10 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "10 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "10 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "10:30 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "10:30 AM–4 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

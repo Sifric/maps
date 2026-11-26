@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDA1DS89ZDQ5J6RAH92G9",
+  "name": "Haajan Ice Cream",
+  "coordinates": {
+    "latitude": 7.6846312999999995,
+    "longitude": 81.7372321
+  },
+  "categories": [
+    "Ice cream shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "349 Dr Badhiudeen Mahmood Mawatha, Kattankudy 30100",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4–11:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4–11:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4–11:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4–11:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4–11:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4–11:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4–11:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

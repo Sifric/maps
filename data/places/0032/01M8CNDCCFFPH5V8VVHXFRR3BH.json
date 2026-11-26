@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDCCFFPH5V8VVHXFRR3BH",
+  "name": "Uthayam Guest House - Single Room",
+  "coordinates": {
+    "latitude": 7.749129699999999,
+    "longitude": 81.68341819999999
+  },
+  "categories": [
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Batticaloa",
+  "business_status": "OPEN"
+}

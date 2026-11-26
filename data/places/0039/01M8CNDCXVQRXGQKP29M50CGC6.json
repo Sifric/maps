@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCXVQRXGQKP29M50CGC6",
+  "name": "District Line",
+  "coordinates": {
+    "latitude": 7.6856637999999995,
+    "longitude": 81.7198044
+  },
+  "categories": [
+    "Bus tour agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Manchanthoduvai, 402 Old Rd, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAEQ02X1G22YEZF1MPBC",
+  "name": "The Moonlight Luxury Villa",
+  "coordinates": {
+    "latitude": 7.7837882,
+    "longitude": 81.5968475
+  },
+  "categories": [
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "01M8CNDBHVBHZAX4EZGKE37PQT",
+  "name": "YD Tours & Rent A Car",
+  "coordinates": {
+    "latitude": 6.8983374,
+    "longitude": 79.893155
+  },
+  "categories": [
+    "Car rental agency",
+    "Car dealer",
+    "Minibus taxi service",
+    "Tour agency",
+    "Tour operator",
+    "Van rental agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "Nawala Rd, Sri Jayawardenepura Kotte 10100",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Open 24 hours"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

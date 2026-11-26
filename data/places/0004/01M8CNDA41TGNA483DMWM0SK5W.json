@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA41TGNA483DMWM0SK5W",
+  "name": "SLS Hotel",
+  "coordinates": {
+    "latitude": 7.4075983999999995,
+    "longitude": 81.8306351
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "CR5J+27J, Colombo - Batticaloa Hwy, Kalmunai 32300",
+  "business_status": "CLOSED_TEMPORARILY"
+}

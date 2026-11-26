@@ -1,0 +1,33 @@
+{
+  "id": "01M8CNDDEYFAR2QR3YQ1QJASJA",
+  "name": "Salon Cසර්",
+  "coordinates": {
+    "latitude": 6.1360122,
+    "longitude": 80.5534107
+  },
+  "categories": [
+    "Hair salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "බටඅතවල, Makandura 81070",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "Open 24 hours"
+      ]
+    }
+  ],
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "\nබටඅතවල, Makandura 81070"
+  ]
+}

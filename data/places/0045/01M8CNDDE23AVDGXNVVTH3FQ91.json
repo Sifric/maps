@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDDE23AVDGXNVVTH3FQ91",
+  "name": "Royal Real Estate",
+  "coordinates": {
+    "latitude": 7.729824799999999,
+    "longitude": 81.67556119999999
+  },
+  "categories": [
+    "Real estate agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "563 Trincomalee-Batticaloa Rd, Batticaloa 30000",
+  "business_status": "OPEN"
+}

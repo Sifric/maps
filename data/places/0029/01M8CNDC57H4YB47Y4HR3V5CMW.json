@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC57H4YB47Y4HR3V5CMW",
+  "name": "Eia",
+  "coordinates": {
+    "latitude": 7.7155092,
+    "longitude": 81.6982111
+  },
+  "categories": [
+    "Educational institution"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "15/2 Trinco Rd, Batticaloa",
+  "business_status": "OPEN"
+}

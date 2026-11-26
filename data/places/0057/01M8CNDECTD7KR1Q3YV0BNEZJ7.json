@@ -1,0 +1,27 @@
+{
+  "id": "01M8CNDECTD7KR1Q3YV0BNEZJ7",
+  "name": "Villa Renaissance",
+  "coordinates": {
+    "latitude": 6.0684026,
+    "longitude": 80.2183247
+  },
+  "categories": [
+    "Villa",
+    "Lodge",
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Galle",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "No. 21 Gamunu Mawatha, Galle"
+  ]
+}

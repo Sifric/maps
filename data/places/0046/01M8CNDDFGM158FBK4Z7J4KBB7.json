@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDFGM158FBK4Z7J4KBB7",
+  "name": "Reema Garment",
+  "coordinates": {
+    "latitude": 7.6849492999999995,
+    "longitude": 81.7379602
+  },
+  "categories": [
+    "Clothing store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "370 Dr Badhiudeen Mahmood Mawatha, Kattankudy",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCQRF6G34ZQJF1FVRF6W",
+  "name": "நீரூற்றுப் பூங்கா",
+  "coordinates": {
+    "latitude": 7.7126711,
+    "longitude": 81.6996115
+  },
+  "categories": [
+    "Park"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM7X+3R9, Chapel St, Batticaloa",
+  "business_status": "OPEN"
+}

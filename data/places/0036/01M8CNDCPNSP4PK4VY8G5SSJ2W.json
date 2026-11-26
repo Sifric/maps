@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDCPNSP4PK4VY8G5SSJ2W",
+  "name": "Arayampathi Gas Station",
+  "coordinates": {
+    "latitude": 7.671428,
+    "longitude": 81.7346185
+  },
+  "categories": [
+    "Gas station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "\nMPCM+HRH, Kattankudy",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "MPCM+HRH, Kattankudy"
+  ]
+}

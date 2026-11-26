@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCFNE66D8WY2A7NPVX20",
+  "name": "New Post Office complex",
+  "coordinates": {
+    "latitude": 7.7097538,
+    "longitude": 81.69770009999999
+  },
+  "categories": [
+    "Post office"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "18 Chapel St, Batticaloa",
+  "business_status": "OPEN"
+}

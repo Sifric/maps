@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAGZHZVM0CTDPF3K80VR",
+  "name": "Gal Oya Camping",
+  "coordinates": {
+    "latitude": 7.3215299,
+    "longitude": 81.4002685
+  },
+  "categories": [
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

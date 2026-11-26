@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE3YZY7EGZWV1RCXX42Q",
+  "name": "Amal Villa",
+  "coordinates": {
+    "latitude": 6.4117374,
+    "longitude": 80.0010578
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "135 A2, Bentota 80500",
+  "business_status": "OPEN"
+}

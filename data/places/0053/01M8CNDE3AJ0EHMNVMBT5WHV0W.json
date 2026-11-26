@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE3AJ0EHMNVMBT5WHV0W",
+  "name": "Coffee Break",
+  "coordinates": {
+    "latitude": 6.2834083,
+    "longitude": 80.0410677
+  },
+  "categories": [
+    "Coffee store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "162/A Galle Rd, Balapitiya 80550",
+  "business_status": "CLOSED"
+}

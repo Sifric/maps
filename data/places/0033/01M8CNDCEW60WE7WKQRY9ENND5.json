@@ -1,0 +1,73 @@
+{
+  "id": "01M8CNDCEW60WE7WKQRY9ENND5",
+  "name": "The Medical Centre Kalukale",
+  "coordinates": {
+    "latitude": 7.7776838999999995,
+    "longitude": 81.0656716
+  },
+  "categories": [
+    "Doctor"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Kalukele",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:30–8 AM",
+        "4:30–8 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:30–8 AM",
+        "4:30–8 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:30–8 AM",
+        "4:30–8 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:30–8 AM",
+        "4:30–8 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:30–8 AM",
+        "4:30–8 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:30–8 AM",
+        "4:30–8 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6:30–8:30 AM",
+        "4–8:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

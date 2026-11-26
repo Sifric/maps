@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE04DT03W0TF3SM1Q6NV",
+  "name": "Juice Bar",
+  "coordinates": {
+    "latitude": 6.2368688,
+    "longitude": 80.05427379999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "47 Galle Rd, Ambalangoda",
+  "business_status": "OPEN"
+}

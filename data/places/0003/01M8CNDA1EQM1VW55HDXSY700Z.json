@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDA1EQM1VW55HDXSY700Z",
+  "name": "Ahamed Cafe",
+  "coordinates": {
+    "latitude": 7.3475284,
+    "longitude": 81.85965639999999
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "8VX5+2V7, Beach Rd, Nintavur",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4 PM–4 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4 PM–4 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4 PM–4 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4 PM–4 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4 PM–4 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4 PM–4 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4 PM–4 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

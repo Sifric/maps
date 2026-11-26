@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCWG1VY5RFZ4GS9XD1BQ",
+  "name": "Dine & Divine",
+  "coordinates": {
+    "latitude": 7.6906281,
+    "longitude": 81.7336596
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPPH+XMR, 100 Telecom Rd, Kattankudy",
+  "business_status": "CLOSED"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBR115K8WD3H7G78XZX2",
+  "name": "The Book Shop",
+  "coordinates": {
+    "latitude": 7.545115399999999,
+    "longitude": 81.3766953
+  },
+  "categories": [
+    "Book store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "G9WG+2MW",
+  "business_status": "CLOSED_TEMPORARILY"
+}

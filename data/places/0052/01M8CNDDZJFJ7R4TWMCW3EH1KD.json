@@ -1,0 +1,71 @@
+{
+  "id": "01M8CNDDZJFJ7R4TWMCW3EH1KD",
+  "name": "Kaiju Japanese Restaurant & Izakaya Unawatuna",
+  "coordinates": {
+    "latitude": 6.010205399999999,
+    "longitude": 80.24720479999999
+  },
+  "categories": [
+    "Bar",
+    "Japanese restaurant",
+    "Beer garden",
+    "Japanese curry restaurant",
+    "Izakaya restaurant",
+    "Modern izakaya restaurant",
+    "Pub"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "55, 1 Yaddehimulla Rd, Unawatuna 80600",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "11 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "11 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "10 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "11 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "11 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "11 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "11 AM–10 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

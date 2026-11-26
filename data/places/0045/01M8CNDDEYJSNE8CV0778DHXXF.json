@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDDEYJSNE8CV0778DHXXF",
+  "name": "Salon Hair Hub",
+  "coordinates": {
+    "latitude": 6.4035005,
+    "longitude": 80.0979644
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\nAviththawa Rd, Loolbadduwa",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "9 AM–8 PM"
+      ]
+    }
+  ],
+  "business_status": "CLOSED"
+}

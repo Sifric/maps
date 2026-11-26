@@ -1,0 +1,73 @@
+{
+  "id": "01M8CNDCECG1SPH5041WY7ANEQ",
+  "name": "Accura Medi Lab",
+  "coordinates": {
+    "latitude": 7.774306299999999,
+    "longitude": 81.61094369999999
+  },
+  "categories": [
+    "Blood testing service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "359,Palliyadi Road ,Eravur -02, Eravur 30300",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6–10 AM",
+        "4–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6–10 AM",
+        "4–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6–10 AM",
+        "4–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6–10 AM",
+        "4–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6–10 AM",
+        "4–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6–10 AM",
+        "4–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6 AM–9 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

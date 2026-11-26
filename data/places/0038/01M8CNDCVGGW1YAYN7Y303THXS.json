@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCVGGW1YAYN7Y303THXS",
+  "name": "Public Toilet",
+  "coordinates": {
+    "latitude": 7.713368399999999,
+    "longitude": 81.69985679999999
+  },
+  "categories": [
+    "Public bathroom"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM7X+8WM, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCK1QABAS96C9SZADYY9",
+  "name": "The Traveller Global (pvt) ltd",
+  "coordinates": {
+    "latitude": 7.7212868,
+    "longitude": 81.69415459999999
+  },
+  "categories": [
+    "Airline ticket agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "373B Trinco Rd, Batticaloa 30000",
+  "business_status": "OPEN"
+}

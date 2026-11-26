@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCNT9PTZ13KSGXMYHA1Y",
+  "name": "Mars Traders",
+  "coordinates": {
+    "latitude": 7.7139156,
+    "longitude": 81.6975178
+  },
+  "categories": [
+    "Wholesale grocer"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "6 Main Street, Batticaloa 30000",
+  "business_status": "OPEN"
+}

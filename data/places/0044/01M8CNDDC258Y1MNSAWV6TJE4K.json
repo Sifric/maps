@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDC258Y1MNSAWV6TJE4K",
+  "name": "Thanusan home",
+  "coordinates": {
+    "latitude": 7.4828689,
+    "longitude": 81.70385379999999
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "FPM3+9X, Mandur",
+  "business_status": "OPEN"
+}

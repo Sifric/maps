@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE3CYZ6699MX0NATW0GR",
+  "name": "Ridiyagama NLDB Dairy Farm",
+  "coordinates": {
+    "latitude": 6.2280888999999995,
+    "longitude": 80.9524175
+  },
+  "categories": [
+    "Dairy farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Ridiyagama",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7 AM–5:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

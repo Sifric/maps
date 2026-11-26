@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC05Y2PYVXXXDMY9A6R6",
+  "name": "S.S BROTHERS SHOE MART",
+  "coordinates": {
+    "latitude": 7.349383899999999,
+    "longitude": 81.7436845
+  },
+  "categories": [
+    "Shoe store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "8PXV+QF3",
+  "business_status": "OPEN"
+}

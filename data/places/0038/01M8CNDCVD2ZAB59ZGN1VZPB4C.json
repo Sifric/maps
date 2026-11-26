@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCVD2ZAB59ZGN1VZPB4C",
+  "name": "Batticaloa - Property Valuation Service",
+  "coordinates": {
+    "latitude": 7.7079737999999995,
+    "longitude": 81.7148596
+  },
+  "categories": [
+    "Real estate consultant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "59/5 Pillaiyar Kovil Rd, Batticaloa",
+  "business_status": "OPEN"
+}

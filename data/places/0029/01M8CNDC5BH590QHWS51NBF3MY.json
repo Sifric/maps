@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC5BH590QHWS51NBF3MY",
+  "name": "Primary School",
+  "coordinates": {
+    "latitude": 7.8641521999999995,
+    "longitude": 81.5383657
+  },
+  "categories": [
+    "Educational institution"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Trincomalee Hwy",
+  "business_status": "CLOSED"
+}

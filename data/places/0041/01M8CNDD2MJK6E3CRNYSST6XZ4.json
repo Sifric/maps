@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD2MJK6E3CRNYSST6XZ4",
+  "name": "Vaagai courier service",
+  "coordinates": {
+    "latitude": 7.6252976,
+    "longitude": 81.7051072
+  },
+  "categories": [
+    "Courier service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "JPG3+3Q, Thalankudah",
+  "business_status": "OPEN"
+}

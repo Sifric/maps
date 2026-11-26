@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDA511T9MFYWX2RX4XJJB",
+  "name": "Chai Leaves & Juice Lounge",
+  "coordinates": {
+    "latitude": 6.8409225,
+    "longitude": 81.83265229999999
+  },
+  "categories": [
+    "Restaurant",
+    "Coffee shop",
+    "Coworking space",
+    "Juice shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "P18 Ulla Pottuvil, Arugam bay, Pottuvil 32500",
+  "business_status": "CLOSED_TEMPORARILY"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCB1RDZQ8PXXW2KF5Y1B",
+  "name": "Rinas. Karam nour hotel and super market",
+  "coordinates": {
+    "latitude": 7.7870415,
+    "longitude": 81.6090226
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJP5+RJ6, Jinnah Road, Eravur",
+  "business_status": "OPEN"
+}

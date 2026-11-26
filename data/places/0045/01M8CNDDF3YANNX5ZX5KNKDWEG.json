@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDDF3YANNX5ZX5KNKDWEG",
+  "name": "Salon Ever Look (Hair&Beauty) Unisex",
+  "coordinates": {
+    "latitude": 7.3257916,
+    "longitude": 80.5992728
+  },
+  "categories": [
+    "Hair salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\n8HGX+8MH, Nugawela",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "9 AM–6 PM"
+      ]
+    }
+  ],
+  "business_status": "CLOSED"
+}

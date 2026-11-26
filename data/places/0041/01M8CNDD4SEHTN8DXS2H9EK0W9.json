@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD4SEHTN8DXS2H9EK0W9",
+  "name": "Antony Store",
+  "coordinates": {
+    "latitude": 7.974754399999999,
+    "longitude": 81.51531419999999
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "XGF8+W44, Kayankerni",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAGE36JWS9D4M1RS7A8K",
+  "name": "Ojaye Camp",
+  "coordinates": {
+    "latitude": 7.3669312,
+    "longitude": 81.012774
+  },
+  "categories": [
+    "Campground"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "814/1 Parani Makulugolla, Sorabora Janapadhaya, Mahiyanganaya 90700",
+  "business_status": "OPEN"
+}

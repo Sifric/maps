@@ -1,0 +1,73 @@
+{
+  "id": "01M8CNDCDV43CCWBG7CKSVS4K3",
+  "name": "Health Navigator Dispensary and Surgery",
+  "coordinates": {
+    "latitude": 7.910184999999999,
+    "longitude": 81.521371
+  },
+  "categories": [
+    "Doctor"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "WG6C+3GH, Dharul Uloom School, Road, Oddamavadi 02",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:30–8 AM",
+        "5–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:30–8 AM",
+        "5–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:30–8 AM",
+        "5–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:30–8 AM",
+        "5–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:30–8 AM",
+        "5–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:30–8 AM",
+        "5–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6:30–8 AM",
+        "5–10 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDEPBCBH9YHPQ398KHM5H",
+  "name": "Mercury Inn",
+  "coordinates": {
+    "latitude": 9.6596198,
+    "longitude": 80.0265099
+  },
+  "categories": [
+    "Hotel",
+    "Guest house"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "50 Kandy Rd, Jaffna 40000",
+  "business_status": "OPEN"
+}

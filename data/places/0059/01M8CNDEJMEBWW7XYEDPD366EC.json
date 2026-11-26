@@ -1,0 +1,20 @@
+{
+  "id": "01M8CNDEJMEBWW7XYEDPD366EC",
+  "name": "DD cafe",
+  "coordinates": {
+    "latitude": 9.7662424,
+    "longitude": 79.98382769999999
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

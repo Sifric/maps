@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDCDA00V9ESW8N4RR30T2",
+  "name": "Andapana hospital",
+  "coordinates": {
+    "latitude": 6.0948736,
+    "longitude": 80.5642088
+  },
+  "categories": [
+    "Hospital"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "3HV7+WMW",
+  "business_status": "OPEN"
+}

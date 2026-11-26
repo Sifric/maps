@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA853SD750AZW8V19EFR",
+  "name": "L. K farm",
+  "coordinates": {
+    "latitude": 7.8059251,
+    "longitude": 81.6239363
+  },
+  "categories": [
+    "Farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Savukkady road thalawai",
+  "business_status": "OPEN"
+}

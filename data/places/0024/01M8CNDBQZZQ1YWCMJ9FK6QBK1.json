@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBQZZQ1YWCMJ9FK6QBK1",
+  "name": "ANBU STORE book shop",
+  "coordinates": {
+    "latitude": 7.4135518,
+    "longitude": 81.82636699999999
+  },
+  "categories": [
+    "Book store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CR7G+CGH, YMCA building, Main St, Kalmunai 32300",
+  "business_status": "OPEN"
+}

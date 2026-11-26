@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBD7816NGW1SG4M2WXZ2",
+  "name": "VEDRIVE Charging Station - Odel Mall Kandy",
+  "coordinates": {
+    "latitude": 7.2857639999999995,
+    "longitude": 80.6264617
+  },
+  "categories": [
+    "Electric vehicle charging station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "High School Bus Stop, Peradeniya Rd, Kandy 20000",
+  "business_status": "OPEN"
+}

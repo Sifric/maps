@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA51Q8AMC5ZM5A5ARQHR",
+  "name": "Wayside Thai Restaurant",
+  "coordinates": {
+    "latitude": 6.8406825,
+    "longitude": 81.830917
+  },
+  "categories": [
+    "Thai restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Mafaza Mosque Rd, Arugam Bay",
+  "business_status": "CLOSED_TEMPORARILY"
+}

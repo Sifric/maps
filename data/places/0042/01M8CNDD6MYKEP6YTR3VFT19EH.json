@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD6MYKEP6YTR3VFT19EH",
+  "name": "Homie Burger 🍔",
+  "coordinates": {
+    "latitude": 8.3219129,
+    "longitude": 81.381278
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "89CJ+QF, Thoppur",
+  "business_status": "OPEN"
+}

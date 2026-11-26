@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDY1P09640FN5QPJXGHE",
+  "name": "Cafe 4 - welipatha",
+  "coordinates": {
+    "latitude": 6.0662638,
+    "longitude": 80.2355747
+  },
+  "categories": [
+    "Sri Lankan restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Morris Rd, Galle 80000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6–10 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

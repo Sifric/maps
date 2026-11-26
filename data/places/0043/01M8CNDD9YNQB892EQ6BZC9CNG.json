@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD9YNQB892EQ6BZC9CNG",
+  "name": "Shopeed",
+  "coordinates": {
+    "latitude": 7.677007,
+    "longitude": 81.7241336
+  },
+  "categories": [
+    "E-commerce service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "3/5 Maraikkar Lane, 04 Old Rd, Kattankudy 30100",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCPXPZD93QJYPD22S3N5",
+  "name": "NSR GARDEN",
+  "coordinates": {
+    "latitude": 7.8081209,
+    "longitude": 81.60023939999999
+  },
+  "categories": [
+    "Garden"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "RJ52+63X",
+  "business_status": "OPEN"
+}

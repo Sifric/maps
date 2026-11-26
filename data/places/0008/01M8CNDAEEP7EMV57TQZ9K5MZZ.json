@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAEEP7EMV57TQZ9K5MZZ",
+  "name": "Sellapa Resort",
+  "coordinates": {
+    "latitude": 7.3284063999999995,
+    "longitude": 81.8638007
+  },
+  "categories": [
+    "Villa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "8VH7+9G7, Nintavur",
+  "business_status": "OPEN"
+}

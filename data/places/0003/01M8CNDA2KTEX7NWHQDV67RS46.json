@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDA2KTEX7NWHQDV67RS46",
+  "name": "HMS Supermarket Irakkamam",
+  "coordinates": {
+    "latitude": 7.2474418,
+    "longitude": 81.72225089999999
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "6PWC+XV3, Eragama",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:40 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:40 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:40 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:40 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:40 AM–12 PM",
+        "2–11 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:40 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6:40 AM–11 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

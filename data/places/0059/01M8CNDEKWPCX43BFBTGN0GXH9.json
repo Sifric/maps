@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDEKWPCX43BFBTGN0GXH9",
+  "name": "Rajan Hotel",
+  "coordinates": {
+    "latitude": 9.7617126,
+    "longitude": 80.02953
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Q26H+MRJ, Jaffna",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5:30 AM–11 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

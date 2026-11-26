@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDA79VWQQAJG9Q0AJVB5T",
+  "name": "LakeFire Family Restaurant",
+  "coordinates": {
+    "latitude": 7.2414378,
+    "longitude": 81.72212809999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "139B, Kulakkarai Road, 01, Ampara",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12–11 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12–11 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12–11 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12–11 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12–11 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "12–11 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12–11 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

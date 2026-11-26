@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBBE5GKFQJ8FR16R0XVE",
+  "name": "Lipith home",
+  "coordinates": {
+    "latitude": 7.500553399999999,
+    "longitude": 81.792189
+  },
+  "categories": [
+    "Apartment complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQ2R+3GM, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

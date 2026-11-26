@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA2FWS0SFR2XM7D9T3T8",
+  "name": "Sima bake house",
+  "coordinates": {
+    "latitude": 7.3626724999999995,
+    "longitude": 81.7992384
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "68b Ampara Rd, Sammanthurai",
+  "business_status": "OPEN"
+}

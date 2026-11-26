@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDEPEYZHV5ARBPHTGF3TD",
+  "name": "The Fort Apartment - Galle",
+  "coordinates": {
+    "latitude": 6.0466068,
+    "longitude": 80.21527139999999
+  },
+  "categories": [
+    "Holiday apartment rental",
+    "Holiday home",
+    "Hostel",
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "No.97 Eliot Rd, Galle 80000",
+  "business_status": "OPEN"
+}

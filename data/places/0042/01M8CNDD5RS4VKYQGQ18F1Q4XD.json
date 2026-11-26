@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDD5RS4VKYQGQ18F1Q4XD",
+  "name": "Sathees Motors Repairing Service",
+  "coordinates": {
+    "latitude": 7.8126714999999995,
+    "longitude": 81.56191869999999
+  },
+  "categories": [
+    "Auto repair shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAGT3K9TM1KSMVBVWJZS",
+  "name": "FY VL",
+  "coordinates": {
+    "latitude": 7.4026235,
+    "longitude": 81.8331037
+  },
+  "categories": [
+    "Housing development"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "99b Cassim Rd, Kalmunai 32300",
+  "business_status": "OPEN"
+}

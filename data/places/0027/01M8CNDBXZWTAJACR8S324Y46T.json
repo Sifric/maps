@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBXZWTAJACR8S324Y46T",
+  "name": "Asra Ihsaan Mini Mart",
+  "coordinates": {
+    "latitude": 7.3498537,
+    "longitude": 81.7839833
+  },
+  "categories": [
+    "Convenience store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "8QXM+WHX, Sammanthurai",
+  "business_status": "OPEN"
+}

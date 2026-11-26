@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCXJ38BGVW2YWD46M52D",
+  "name": "Razeek Timber Depot",
+  "coordinates": {
+    "latitude": 7.6842362,
+    "longitude": 81.7265656
+  },
+  "categories": [
+    "Building materials store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "211 Main St, Kattankudy",
+  "business_status": "OPEN"
+}

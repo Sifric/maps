@@ -1,0 +1,28 @@
+{
+  "id": "01M8CNDEDKNW5M09CF967TT1V1",
+  "name": "Hotel Happy Tuna",
+  "coordinates": {
+    "latitude": 6.1394711,
+    "longitude": 80.1013625
+  },
+  "categories": [
+    "Hotel",
+    "Group accommodation",
+    "Guest house",
+    "Holiday home",
+    "Lodge",
+    "Lodging",
+    "Sri Lankan restaurant",
+    "Tourist attraction"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "45 Amarasena Mawatha, Hikkaduwa 80240",
+  "business_status": "OPEN"
+}

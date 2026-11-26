@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC7572498R1Z5SVZ4558",
+  "name": "Achchu Farm",
+  "coordinates": {
+    "latitude": 7.6057866999999995,
+    "longitude": 81.7415827
+  },
+  "categories": [
+    "Farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "kokkadicholai, Pandariyavely",
+  "business_status": "CLOSED_TEMPORARILY"
+}

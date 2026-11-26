@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDDG74DRTE8MXDAJSWR0B",
+  "name": "Be One Fashion Store",
+  "coordinates": {
+    "latitude": 7.1583558,
+    "longitude": 81.2247465
+  },
+  "categories": [
+    "Clothing store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Main Street, Bibile",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8–9 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8–9 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8–9 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

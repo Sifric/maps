@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDBKPB70KDWN6GMCARNM3",
+  "name": "Toilet",
+  "coordinates": {
+    "latitude": 6.8731542,
+    "longitude": 81.0493901
+  },
+  "categories": [
+    "Public bathroom"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "39 Passara Rd, Ambagollapathana",
+  "business_status": "OPEN"
+}

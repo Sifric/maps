@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDD4Q5486R8WDRY47KAF0",
+  "name": "Savukkadi Seafood Market",
+  "coordinates": {
+    "latitude": 7.7919977,
+    "longitude": 81.63998099999999
+  },
+  "categories": [
+    "Seafood market"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJRQ+HFM, Chenkaladi",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6–8 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6–8 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6–8 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6–8 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6–8 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6–8 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6–8 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

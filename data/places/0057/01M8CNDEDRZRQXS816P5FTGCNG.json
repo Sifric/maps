@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEDRZRQXS816P5FTGCNG",
+  "name": "Arcadia Resort",
+  "coordinates": {
+    "latitude": 6.1421011,
+    "longitude": 80.1017754
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "80240, 47 Kurunduwatta Rd, Hikkaduwa",
+  "business_status": "OPEN"
+}

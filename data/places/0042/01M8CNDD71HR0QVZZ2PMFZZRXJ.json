@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD71HR0QVZZ2PMFZZRXJ",
+  "name": "Fareed Stores",
+  "coordinates": {
+    "latitude": 8.4869595,
+    "longitude": 81.1734553
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "F5PF+Q9P, Tampalakamam-Kinniyai Rd, Kinniya",
+  "business_status": "OPEN"
+}

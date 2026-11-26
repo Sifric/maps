@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDCYPN9Q4T71ZJXBFJXCK",
+  "name": "Thalappu biryani",
+  "coordinates": {
+    "latitude": 7.7718713,
+    "longitude": 81.6091971
+  },
+  "categories": [
+    "Food court"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Library Road, Eravur 30300",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12–2 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12–2 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12–2 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "12–2 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12–2 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

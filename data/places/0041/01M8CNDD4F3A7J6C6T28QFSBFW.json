@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD4F3A7J6C6T28QFSBFW",
+  "name": "Sharmila Travels",
+  "coordinates": {
+    "latitude": 7.719398699999999,
+    "longitude": 81.70057369999999
+  },
+  "categories": [
+    "Travel agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PP92+Q64, Bar Rd, Batticaloa",
+  "business_status": "CLOSED"
+}

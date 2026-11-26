@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCYWC8F0MJ33CBB3BE47",
+  "name": "Rizvi Tailors",
+  "coordinates": {
+    "latitude": 7.7738612,
+    "longitude": 81.6126395
+  },
+  "categories": [
+    "Men's tailor"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "136 Mavadi Road, Eravur, Batticaloa",
+  "business_status": "OPEN"
+}

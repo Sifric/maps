@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE8Y4EZ0YAS9FE2Z5E4P",
+  "name": "Liyanage Stores",
+  "coordinates": {
+    "latitude": 6.2923911,
+    "longitude": 80.3114137
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Palliya Rd",
+  "business_status": "OPEN"
+}

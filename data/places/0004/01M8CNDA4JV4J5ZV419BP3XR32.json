@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA4JV4J5ZV419BP3XR32",
+  "name": "Rio Hotel",
+  "coordinates": {
+    "latitude": 7.2427985999999995,
+    "longitude": 81.8540549
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "6VV3+4J7, Colombo - Batticaloa Hwy, Addalaichenai",
+  "business_status": "CLOSED_TEMPORARILY"
+}

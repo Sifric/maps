@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC5XSD5DHZQYK9Q1QNSQ",
+  "name": "Master Bun",
+  "coordinates": {
+    "latitude": 7.6836709999999995,
+    "longitude": 81.7268921
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPMG+FQ6, Colombo - Ratnapura - Wellawaya - Batticaloa Rd, Kattankudy",
+  "business_status": "OPEN"
+}

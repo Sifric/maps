@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEKGNVXH3VWR855AP42H",
+  "name": "STAR HOTEL",
+  "coordinates": {
+    "latitude": 9.6761828,
+    "longitude": 80.0073785
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "83 Pitchaikulam Road, Jaffna",
+  "business_status": "OPEN"
+}

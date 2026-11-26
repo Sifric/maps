@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDFC3W34NR9CTM6QXJ6V",
+  "name": "HCO Tile Store",
+  "coordinates": {
+    "latitude": 7.9349495999999995,
+    "longitude": 81.51022309999999
+  },
+  "categories": [
+    "Tile store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WGP5+6Q4, Trincomalee-Batticaloa Rd, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "01M8CNDAG5YDF5JEZCBT7P76ZG",
+  "name": "MEERA BAYSIDE VILLAS",
+  "coordinates": {
+    "latitude": 7.9021159,
+    "longitude": 81.519559
+  },
+  "categories": [
+    "Hotel",
+    "Guest house",
+    "Religious lodging",
+    "Serviced accommodation",
+    "Villa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Shareef Chairman, Road, Oddamavadi",
+  "business_status": "OPEN"
+}

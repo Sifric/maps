@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC5J4T0P1SDA5JJK2ZPP",
+  "name": "Welcome Baby",
+  "coordinates": {
+    "latitude": 7.714187,
+    "longitude": 81.6972071
+  },
+  "categories": [
+    "Baby store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "5, 1st cross street, Munai street, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD5GPHVX9AWFE4Y1H713",
+  "name": "Hare Krishna Paint House",
+  "coordinates": {
+    "latitude": 7.711670799999999,
+    "longitude": 81.7106618
+  },
+  "categories": [
+    "Home goods store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kallady",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCP5NAN2D39SFSE8MCC2",
+  "name": "VESLOO Wholesale Center",
+  "coordinates": {
+    "latitude": 7.6748436,
+    "longitude": 81.7248657
+  },
+  "categories": [
+    "Clothing store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPFF+WWQ, carder, Abdul Majeed Alim Ln, Kattankudy 03",
+  "business_status": "OPEN"
+}

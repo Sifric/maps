@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCRFKHMR339ZBT0HEFQ1",
+  "name": "New Kallady bridge view point",
+  "coordinates": {
+    "latitude": 7.719087399999999,
+    "longitude": 81.70472079999999
+  },
+  "categories": [
+    "Tourist attraction"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "131 Lady Manning Dr, Batticaloa",
+  "business_status": "OPEN"
+}

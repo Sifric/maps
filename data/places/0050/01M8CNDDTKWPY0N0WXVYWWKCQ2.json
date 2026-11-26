@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDDTKWPY0N0WXVYWWKCQ2",
+  "name": "Sarujan Bakery, Navaly",
+  "coordinates": {
+    "latitude": 9.7080441,
+    "longitude": 79.9902484
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "B230",
+  "business_status": "OPEN"
+}

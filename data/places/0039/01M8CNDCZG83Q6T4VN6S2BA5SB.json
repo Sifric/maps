@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCZG83Q6T4VN6S2BA5SB",
+  "name": "Fardar Express Domestic (Pvt) Ltd. - Kantale.",
+  "coordinates": {
+    "latitude": 7.7728253,
+    "longitude": 81.60981579999999
+  },
+  "categories": [
+    "Courier service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "303 c Trincomalee-Batticaloa Rd, Kanthale",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "01M8CNDEQ034ZP2Q67C5FSGK7N",
+  "name": "Ammu Villa",
+  "coordinates": {
+    "latitude": 9.8154121,
+    "longitude": 80.2307584
+  },
+  "categories": [
+    "Guest house",
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ],
+    "names": [
+      "Ammu villa"
+    ]
+  },
+  "address": "Point Pedro",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "Point Pedro 40000"
+  ]
+}

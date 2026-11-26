@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCWNVYA6PH431JMQHAXN",
+  "name": "MEN'S WEAR",
+  "coordinates": {
+    "latitude": 7.6857919,
+    "longitude": 81.7256094
+  },
+  "categories": [
+    "Clothing store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPPG+866, 365 Main St, Kattankudy 30100",
+  "business_status": "OPEN"
+}

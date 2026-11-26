@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDB1TNF395ABCXAH9DH1",
+  "name": "Jamiyul Lafireen Super Market",
+  "coordinates": {
+    "latitude": 7.6774423,
+    "longitude": 81.7304551
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kattankudy",
+  "business_status": "OPEN"
+}

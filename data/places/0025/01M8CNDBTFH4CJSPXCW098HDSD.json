@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDBTFH4CJSPXCW098HDSD",
+  "name": "Sarasavi Book Shop & Communication",
+  "coordinates": {
+    "latitude": 7.4632822999999995,
+    "longitude": 81.0093203
+  },
+  "categories": [
+    "Stationery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "No 04 Millaththawa, Girandurukotte",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Open 24 hours"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

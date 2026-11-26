@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC81M67DR9VJMEF01F4T",
+  "name": "SZ Garden and Organic Farm",
+  "coordinates": {
+    "latitude": 7.806161599999999,
+    "longitude": 81.6003805
+  },
+  "categories": [
+    "Garden"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "RJ42+F5, Eravur",
+  "business_status": "OPEN"
+}

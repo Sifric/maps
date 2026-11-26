@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCPD624E96BWCNGV8TNT",
+  "name": "Sulaiman Distributor",
+  "coordinates": {
+    "latitude": 7.6392273,
+    "longitude": 81.5248986
+  },
+  "categories": [
+    "Stationery wholesaler",
+    "Service establishment"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

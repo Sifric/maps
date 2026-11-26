@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBRRXTWHC87T0SA4JNW",
+  "name": "D&J Stamford Hotel - Hostel",
+  "coordinates": {
+    "latitude": 7.7132627,
+    "longitude": 81.6981615
+  },
+  "categories": [
+    "Hostel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM7X+873, Main Street, Batticaloa 30250",
+  "business_status": "OPEN"
+}

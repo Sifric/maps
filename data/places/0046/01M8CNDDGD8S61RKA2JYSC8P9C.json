@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDGD8S61RKA2JYSC8P9C",
+  "name": "Lady's mart",
+  "coordinates": {
+    "latitude": 7.778146899999999,
+    "longitude": 81.6141935
+  },
+  "categories": [
+    "Shopping mall"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJH7+8JJ, Alayadi Rd, Eravur",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDTWGTAJHWGWPMJM6QH8",
+  "name": "Bakery shop",
+  "coordinates": {
+    "latitude": 6.0797355,
+    "longitude": 80.1932061
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "35HV+W78, Wakwella Rd, Galle",
+  "business_status": "OPEN"
+}

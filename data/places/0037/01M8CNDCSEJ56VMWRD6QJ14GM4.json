@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCSEJ56VMWRD6QJ14GM4",
+  "name": "Topazz",
+  "coordinates": {
+    "latitude": 7.7134781,
+    "longitude": 81.69780999999999
+  },
+  "categories": [
+    "Clothing store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM7X+94V, Main Street, Batticaloa",
+  "business_status": "OPEN"
+}

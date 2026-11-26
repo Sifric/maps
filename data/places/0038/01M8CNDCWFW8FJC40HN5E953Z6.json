@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCWFW8FJC40HN5E953Z6",
+  "name": "A TO Z",
+  "coordinates": {
+    "latitude": 7.678279099999999,
+    "longitude": 81.72293189999999
+  },
+  "categories": [
+    "Food court"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Central Rd, Kattankudy 30100",
+  "business_status": "OPEN"
+}

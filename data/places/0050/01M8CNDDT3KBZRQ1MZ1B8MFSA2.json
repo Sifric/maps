@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDT3KBZRQ1MZ1B8MFSA2",
+  "name": "Cafe Forty",
+  "coordinates": {
+    "latitude": 6.0409125999999995,
+    "longitude": 80.2180688
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "40 Lower Dickson Rd, Galle 80000",
+  "business_status": "CLOSED_TEMPORARILY"
+}

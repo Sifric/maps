@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD9K4DQ2G3D380BBFSZT",
+  "name": "HOT POT FAMILY RESTAURANT",
+  "coordinates": {
+    "latitude": 7.9378857,
+    "longitude": 81.02264509999999
+  },
+  "categories": [
+    "Family restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No.133 Main Street, Polonnaruwa 51000",
+  "business_status": "OPEN"
+}

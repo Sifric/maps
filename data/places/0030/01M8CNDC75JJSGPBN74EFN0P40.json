@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC75JJSGPBN74EFN0P40",
+  "name": "Gaya home",
+  "coordinates": {
+    "latitude": 7.6516077,
+    "longitude": 81.730729
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MP2J+W5, Thalankudah",
+  "business_status": "OPEN"
+}

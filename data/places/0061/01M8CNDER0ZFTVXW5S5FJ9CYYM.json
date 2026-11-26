@@ -1,0 +1,27 @@
+{
+  "id": "01M8CNDER0ZFTVXW5S5FJ9CYYM",
+  "name": "Thalgahaduwa Apartments",
+  "coordinates": {
+    "latitude": 6.0503509,
+    "longitude": 80.2540784
+  },
+  "categories": [
+    "Holiday apartment rental",
+    "Apartment building",
+    "Condominium complex",
+    "Furnished apartment building",
+    "Holiday home",
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Galle - Udugama Rd, Walahanduwa",
+  "business_status": "OPEN"
+}

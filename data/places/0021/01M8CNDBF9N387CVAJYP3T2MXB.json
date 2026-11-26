@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDBF9N387CVAJYP3T2MXB",
+  "name": "Eastern Saloon",
+  "coordinates": {
+    "latitude": 7.3868618999999995,
+    "longitude": 81.83776929999999
+  },
+  "categories": [
+    "Hair salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "\n218 Riyal Sawmill Rd, Karaitivu 32250",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "218 Riyal Sawmill Rd, Karaitivu 32250"
+  ]
+}

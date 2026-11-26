@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD8PH8WH1ZMAK9TGPJA1",
+  "name": "Rent house Stephen",
+  "coordinates": {
+    "latitude": 7.7135210999999995,
+    "longitude": 81.6947618
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "13 Cecil Ln, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCCSK9BFFHAKNSFCWGXQ",
+  "name": "Villa Exora Pasikudah",
+  "coordinates": {
+    "latitude": 7.9250121,
+    "longitude": 81.53927709999999
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kalkudah road, Valaichenai 30400",
+  "business_status": "OPEN"
+}

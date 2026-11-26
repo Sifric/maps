@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCCR5Q4N08G8KRZGEVGW",
+  "name": "Fn.Anfas villa Evr",
+  "coordinates": {
+    "latitude": 7.7810824,
+    "longitude": 81.6037996
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "649 jiffry thika cross road, Eravur 03",
+  "business_status": "OPEN"
+}

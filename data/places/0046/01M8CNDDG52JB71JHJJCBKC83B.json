@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDG52JB71JHJJCBKC83B",
+  "name": "Mithu Store",
+  "coordinates": {
+    "latitude": 7.5334952,
+    "longitude": 81.7920829
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQMR+9RW, Vivekananda Rd, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC8ZDNC25R0H6XB6VKRZ",
+  "name": "Fazul stores",
+  "coordinates": {
+    "latitude": 7.6829405,
+    "longitude": 81.7380632
+  },
+  "categories": [
+    "Supermarket"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No59hostel road new, 06 Hostel Rd, Kattankudy",
+  "business_status": "OPEN"
+}

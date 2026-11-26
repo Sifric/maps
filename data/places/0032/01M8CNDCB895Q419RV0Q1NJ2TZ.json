@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCB895Q419RV0Q1NJ2TZ",
+  "name": "KKY STORE",
+  "coordinates": {
+    "latitude": 7.7132860999999995,
+    "longitude": 81.71411619999999
+  },
+  "categories": [
+    "Asian grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "47 Pillaiyar Kovil Rd, Kallady",
+  "business_status": "OPEN"
+}

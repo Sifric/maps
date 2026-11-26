@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC5FN7NSKTB8J8TY11R7",
+  "name": "Shane Pre School",
+  "coordinates": {
+    "latitude": 7.7090592,
+    "longitude": 81.6963092
+  },
+  "categories": [
+    "Preschool"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "12 Hospital Rd, Batticaloa",
+  "business_status": "OPEN"
+}

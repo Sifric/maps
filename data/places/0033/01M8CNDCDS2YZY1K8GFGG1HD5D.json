@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCDS2YZY1K8GFGG1HD5D",
+  "name": "Supreme Care Dispensary",
+  "coordinates": {
+    "latitude": 7.667220899999999,
+    "longitude": 81.7370806
+  },
+  "categories": [
+    "Hospital"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MP8P+VRP, Colombo-Ratnapura-Wellawaya, Batticaloa Hwy, Kattankudy",
+  "business_status": "OPEN"
+}

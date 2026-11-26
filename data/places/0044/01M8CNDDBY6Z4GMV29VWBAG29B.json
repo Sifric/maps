@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDBY6Z4GMV29VWBAG29B",
+  "name": "Ameena House",
+  "coordinates": {
+    "latitude": 7.6853286,
+    "longitude": 81.7293433
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "56 FC Road, Kattankudy 02",
+  "business_status": "OPEN"
+}

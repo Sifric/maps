@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE9R4Y1XBK247EXBDCXG",
+  "name": "Abeywickrama Stores",
+  "coordinates": {
+    "latitude": 6.3135097,
+    "longitude": 80.4020764
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Kalubovitiyana",
+  "business_status": "OPEN"
+}

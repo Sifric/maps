@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCWBZEQ3XS7PMZJN3SZ3",
+  "name": "Gadafi Service Centre",
+  "coordinates": {
+    "latitude": 7.6817797,
+    "longitude": 81.73131149999999
+  },
+  "categories": [
+    "Car wash"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPJJ+QH8, Hizbullah Stadium Rd, Kattankudy",
+  "business_status": "OPEN"
+}

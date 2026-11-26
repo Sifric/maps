@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDDDK90TKCF8F4A0C8VHE",
+  "name": "Salon මෞලි",
+  "coordinates": {
+    "latitude": 7.7166896,
+    "longitude": 81.6977854
+  },
+  "categories": [
+    "Hair salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\n27 Thomas Ln, Batticaloa",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "27 Thomas Ln, Batticaloa"
+  ]
+}

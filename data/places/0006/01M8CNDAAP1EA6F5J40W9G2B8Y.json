@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAAP1EA6F5J40W9G2B8Y",
+  "name": "Prasath Food Store",
+  "coordinates": {
+    "latitude": 7.501654899999999,
+    "longitude": 81.3263623
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kekirihena mahaoya, A5",
+  "business_status": "OPEN"
+}

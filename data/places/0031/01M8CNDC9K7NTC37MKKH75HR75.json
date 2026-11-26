@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9K7NTC37MKKH75HR75",
+  "name": "City Food Lab",
+  "coordinates": {
+    "latitude": 7.713473,
+    "longitude": 81.71001989999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PP76+926, Kallady",
+  "business_status": "OPEN"
+}

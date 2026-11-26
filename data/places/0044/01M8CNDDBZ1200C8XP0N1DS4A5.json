@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDBZ1200C8XP0N1DS4A5",
+  "name": "White House",
+  "coordinates": {
+    "latitude": 7.6875165999999995,
+    "longitude": 81.7275097
+  },
+  "categories": [
+    "Hostel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Ibrahim Manzil, Road, Kattankudy",
+  "business_status": "OPEN"
+}

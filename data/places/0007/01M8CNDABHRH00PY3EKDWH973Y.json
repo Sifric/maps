@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDABHRH00PY3EKDWH973Y",
+  "name": "The Chiller Room",
+  "coordinates": {
+    "latitude": 6.921479,
+    "longitude": 79.8484649
+  },
+  "categories": [
+    "Night club"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "32B Sir Mohomad Macan Markar Mawatha, Colombo 00300",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 PM–3 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 PM–3 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 PM–3 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7 PM–5 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 PM–5 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5 PM–2 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

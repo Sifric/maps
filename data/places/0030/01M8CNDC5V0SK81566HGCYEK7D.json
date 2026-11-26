@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC5V0SK81566HGCYEK7D",
+  "name": "Fareed Taste shop",
+  "coordinates": {
+    "latitude": 7.682815799999999,
+    "longitude": 81.73443189999999
+  },
+  "categories": [
+    "Fast food restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPMM+4QF, Dr Badhiudeen Mahmood Mawatha, Kattankudy",
+  "business_status": "OPEN"
+}

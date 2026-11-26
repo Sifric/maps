@@ -1,0 +1,29 @@
+{
+  "id": "01M8CNDCRM7ZPK9BKNYS795226",
+  "name": "Batticaloa Car Taxi",
+  "coordinates": {
+    "latitude": 7.730531699999999,
+    "longitude": 81.6939907
+  },
+  "categories": [
+    "Taxi service",
+    "Car leasing service",
+    "Car rental agency",
+    "Tour agency",
+    "Tour operator",
+    "Transportation service",
+    "Van rental agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "59/40, Tissaweerasingam Square -West, 30000",
+  "business_status": "OPEN"
+}

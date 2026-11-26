@@ -1,0 +1,68 @@
+{
+  "id": "01M8CNDCK69MSP6CBXPX15PG56",
+  "name": "Eravur Lawyer Office",
+  "coordinates": {
+    "latitude": 7.7743283,
+    "longitude": 81.6024784
+  },
+  "categories": [
+    "Lawyer"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No 09, Oddupally Cross Road, Eravur -06, postcode: 30300",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5–9 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "9:30 AM–12:30 PM",
+        "5–9 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

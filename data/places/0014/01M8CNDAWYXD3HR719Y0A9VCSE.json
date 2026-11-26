@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAWYXD3HR719Y0A9VCSE",
+  "name": "RKC WAREHOUSE",
+  "coordinates": {
+    "latitude": 6.768082199999999,
+    "longitude": 81.1880685
+  },
+  "categories": [
+    "Warehouse"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "B359, Pelwatta",
+  "business_status": "OPEN"
+}

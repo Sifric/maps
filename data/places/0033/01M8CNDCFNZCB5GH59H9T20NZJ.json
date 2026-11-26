@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCFNZCB5GH59H9T20NZJ",
+  "name": "Christian Church",
+  "coordinates": {
+    "latitude": 7.7198256,
+    "longitude": 81.69648749999999
+  },
+  "categories": [
+    "Church"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "319 Trincomalee-Batticaloa Rd, Batticaloa 30000",
+  "business_status": "OPEN"
+}

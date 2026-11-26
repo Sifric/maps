@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCCY35397VTPKH40VVDJ",
+  "name": "IT VILLA",
+  "coordinates": {
+    "latitude": 7.9751734,
+    "longitude": 81.3370104
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "X8FP+MW8, Rideethenna, Kayankerni",
+  "business_status": "OPEN"
+}

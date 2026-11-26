@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBRZW3EJA97E7864JG2",
+  "name": "Naval Beach Rest Inn (Naval Beach Villa)",
+  "coordinates": {
+    "latitude": 7.740896299999999,
+    "longitude": 81.70563779999999
+  },
+  "categories": [
+    "Lodging"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "31, 07 School Rd, Batticaloa",
+  "business_status": "OPEN"
+}

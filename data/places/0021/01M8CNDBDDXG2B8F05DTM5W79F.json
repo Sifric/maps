@@ -1,0 +1,20 @@
+{
+  "id": "01M8CNDBDDXG2B8F05DTM5W79F",
+  "name": "Beach Road Bus Stop",
+  "coordinates": {
+    "latitude": 7.2244185,
+    "longitude": 81.8503413
+  },
+  "categories": [
+    "Bus stop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "Beach Road, Akkaraipattu",
+  "business_status": "OPEN"
+}

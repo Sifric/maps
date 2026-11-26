@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDAC5BVV5P407TYRSXVKT",
+  "name": "Pandiruppu Market",
+  "coordinates": {
+    "latitude": 7.4225866,
+    "longitude": 81.8190631
+  },
+  "categories": [
+    "Market"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "CRF9+2JP, A4, Pandiruppu 32300",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–12:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–12:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–12:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–12:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7 AM–12:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–12:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7 AM–12:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

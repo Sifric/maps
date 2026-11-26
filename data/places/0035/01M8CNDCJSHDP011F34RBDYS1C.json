@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCJSHDP011F34RBDYS1C",
+  "name": "Satha Home",
+  "coordinates": {
+    "latitude": 7.481753599999999,
+    "longitude": 81.7596568
+  },
+  "categories": [
+    "Home builder"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No:- 215A Old Hospital Road, Mandur",
+  "business_status": "OPEN"
+}

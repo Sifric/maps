@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDBGGB6M54W2W2NTFZY4",
+  "name": "Forms Mission",
+  "coordinates": {
+    "latitude": 7.7391212,
+    "longitude": 81.677093
+  },
+  "categories": [
+    "Church"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "61 Navatkeny Rd, Batticaloa",
+  "business_status": "OPEN"
+}

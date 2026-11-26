@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCC1DFVAJXC6SH7KVTFX",
+  "name": "Sun Siyam Pasikudah",
+  "coordinates": {
+    "latitude": 7.9256619,
+    "longitude": 81.57263789999999
+  },
+  "categories": [
+    "Resort hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kalkudah 30410",
+  "business_status": "OPEN"
+}

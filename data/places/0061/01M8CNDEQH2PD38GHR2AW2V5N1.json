@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDEQH2PD38GHR2AW2V5N1",
+  "name": "Banyan Camp",
+  "coordinates": {
+    "latitude": 6.5386336,
+    "longitude": 80.96301559999999
+  },
+  "categories": [
+    "Campground",
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Bodagama-Hambegamuwa-Kaltota Rd, Thanamalwila 91308",
+  "business_status": "OPEN"
+}

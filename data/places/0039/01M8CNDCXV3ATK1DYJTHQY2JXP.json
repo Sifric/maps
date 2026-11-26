@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCXV3ATK1DYJTHQY2JXP",
+  "name": "Myo Transport",
+  "coordinates": {
+    "latitude": 7.679103,
+    "longitude": 81.7232914
+  },
+  "categories": [
+    "Transportation service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPHF+J8V, Old Rd, Kattankudy",
+  "business_status": "OPEN"
+}

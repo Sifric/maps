@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDDR491HN2NZYSX0SM5SA",
+  "name": "TAP HOUSE BY TRIO",
+  "coordinates": {
+    "latitude": 6.0264055,
+    "longitude": 80.21942829999999
+  },
+  "categories": [
+    "Bar"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Old Dutch Hospital, GF 7 Hospital St, Galle 80000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "11 AM–2 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "11 AM–2 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "11 AM–2 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "11 AM–2 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "11 AM–2 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "11 AM–2 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "11 AM–2 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCY1M3EGRJQTBMENEZBG",
+  "name": "Lagoon View Park, Kattankudy",
+  "coordinates": {
+    "latitude": 7.6822054,
+    "longitude": 81.7200955
+  },
+  "categories": [
+    "Park & ride"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Lagoon drive, Kattankudy",
+  "business_status": "CLOSED"
+}

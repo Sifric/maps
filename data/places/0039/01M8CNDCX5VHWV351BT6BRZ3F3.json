@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCX5VHWV351BT6BRZ3F3",
+  "name": "CopyLand",
+  "coordinates": {
+    "latitude": 7.687049399999999,
+    "longitude": 81.7255303
+  },
+  "categories": [
+    "Print shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "01 Dr.Mahboob Road, Kattankudy 30100",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDBPWYNT3YMMGZYBY3PGS",
+  "name": "Bus Hold",
+  "coordinates": {
+    "latitude": 7.3763293999999995,
+    "longitude": 81.8391374
+  },
+  "categories": [
+    "Bus depot"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "9RGQ+QJR, Karaitivu 32250",
+  "business_status": "OPEN"
+}

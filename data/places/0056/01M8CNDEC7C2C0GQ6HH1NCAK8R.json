@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDEC7C2C0GQ6HH1NCAK8R",
+  "name": "Aurora Residence Bentota",
+  "coordinates": {
+    "latitude": 6.4224283,
+    "longitude": 79.9984558
+  },
+  "categories": [
+    "Apartment building",
+    "Bed & breakfast",
+    "Hotel",
+    "Lodge",
+    "Villa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Pitaramba Road, No.17, Sri Dharmavijayarama Mawatha, Bentota 80500",
+  "business_status": "OPEN"
+}

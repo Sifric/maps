@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCSKF35FRRZ7AM4D8GFQ",
+  "name": "Aradhanas Tailors",
+  "coordinates": {
+    "latitude": 7.7140308,
+    "longitude": 81.69751029999999
+  },
+  "categories": [
+    "Tailor"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "7 Munai St, Batticaloa",
+  "business_status": "OPEN"
+}

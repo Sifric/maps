@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDEAH0MJFEC1DCC4S05GH",
+  "name": "Mangrove Paradise Resort & Spa",
+  "coordinates": {
+    "latitude": 6.0239207,
+    "longitude": 80.2532561
+  },
+  "categories": [
+    "Resort hotel",
+    "Airport shuttle service",
+    "Boat tour agency",
+    "Herb shop",
+    "Restaurant",
+    "Spa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Road, Heenatigala",
+  "business_status": "OPEN"
+}

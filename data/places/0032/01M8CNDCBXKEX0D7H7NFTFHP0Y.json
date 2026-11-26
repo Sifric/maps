@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBXKEX0D7H7NFTFHP0Y",
+  "name": "The Calm Resort & Spa",
+  "coordinates": {
+    "latitude": 7.928677599999999,
+    "longitude": 81.5603479
+  },
+  "categories": [
+    "Resort hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WHH6+H2M, Coconut Cultivation Board, Road, Kalkudah",
+  "business_status": "OPEN"
+}

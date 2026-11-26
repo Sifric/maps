@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9Z5ZAXBZDXJ4X4WCMC",
+  "name": "Kalkudah Foreign Liquor Shop",
+  "coordinates": {
+    "latitude": 7.917715599999999,
+    "longitude": 81.53190239999999
+  },
+  "categories": [
+    "Beer distributor"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG9J+3QJ, Unnamed Road, Oddamavadi",
+  "business_status": "OPEN"
+}

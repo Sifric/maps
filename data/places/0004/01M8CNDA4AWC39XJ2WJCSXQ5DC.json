@@ -1,0 +1,72 @@
+{
+  "id": "01M8CNDA4AWC39XJ2WJCSXQ5DC",
+  "name": "Golden Daily Fresh",
+  "coordinates": {
+    "latitude": 7.2243838,
+    "longitude": 81.8544155
+  },
+  "categories": [
+    "Chicken shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Akkaraipattu",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–1:30 PM",
+        "4–7:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–1:30 PM",
+        "4–7:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–1:30 PM",
+        "4–7:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–1:30 PM",
+        "4–7:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6–11:45 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–1:30 PM",
+        "4–7:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7 AM–1:30 PM",
+        "4–7:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDADH3ZXK3N37653V7Y95",
+  "name": "Golden Bites",
+  "coordinates": {
+    "latitude": 7.3918317,
+    "longitude": 81.84130259999999
+  },
+  "categories": [
+    "Candy store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9RRR+PGM, Giramothaya Road, Sainthamaruthu 32300",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDEK44AK0FJV94SBBDJXG",
+  "name": "Valampuri Hotel",
+  "coordinates": {
+    "latitude": 9.6640795,
+    "longitude": 80.0215609
+  },
+  "categories": [
+    "Restaurant",
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "148, 10 Station Rd, Jaffna",
+  "business_status": "OPEN"
+}

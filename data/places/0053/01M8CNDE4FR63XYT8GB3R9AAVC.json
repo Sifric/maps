@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE4FR63XYT8GB3R9AAVC",
+  "name": "Unsung",
+  "coordinates": {
+    "latitude": 5.9647799,
+    "longitude": 80.3915415
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Midigama, Ahangama 80650",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6 AM–4 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

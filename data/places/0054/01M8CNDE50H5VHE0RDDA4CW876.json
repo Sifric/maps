@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE50H5VHE0RDDA4CW876",
+  "name": "Kevins Cafe",
+  "coordinates": {
+    "latitude": 6.0390586,
+    "longitude": 80.2157251
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "106 Wakwella Rd, Galle 80000",
+  "business_status": "OPEN"
+}

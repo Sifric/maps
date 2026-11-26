@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE8BCWMVZH168AB3VB6K",
+  "name": "Heavenly Pizza",
+  "coordinates": {
+    "latitude": 6.0639287,
+    "longitude": 80.2155686
+  },
+  "categories": [
+    "Pizza restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Heavenly treats, Kithulampitiya road, Galle 80000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "1–9:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "1–9:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "1–9:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "1–9:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "1–9:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "1–9:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "1–9:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

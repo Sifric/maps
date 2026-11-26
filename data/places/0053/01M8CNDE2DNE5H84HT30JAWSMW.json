@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE2DNE5H84HT30JAWSMW",
+  "name": "Silva hotel",
+  "coordinates": {
+    "latitude": 5.9939965,
+    "longitude": 80.3061018
+  },
+  "categories": [
+    "Sri Lankan restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "X8V4+HCX, Habaraduwa",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:30 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:30 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:30 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:30 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:30 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:30 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6:30 AM–4 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD2R76FD8F52AR5F75JK",
+  "name": "Vasu House",
+  "coordinates": {
+    "latitude": 7.5101871,
+    "longitude": 81.78273039999999
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQ6J+2RG, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

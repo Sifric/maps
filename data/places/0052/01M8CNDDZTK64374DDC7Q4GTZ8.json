@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDDZTK64374DDC7Q4GTZ8",
+  "name": "RED CHILLI Restaurant",
+  "coordinates": {
+    "latitude": 6.2781609,
+    "longitude": 80.1436319
+  },
+  "categories": [
+    "Asian restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Galle - Elpitiya Rd",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "01M8CNDDRW7PTZ6WQKMQZ7N4WC",
+  "name": "Ceylons House Hikkaduwa, Sri Lanka",
+  "coordinates": {
+    "latitude": 6.1332965999999995,
+    "longitude": 80.1106042
+  },
+  "categories": [
+    "Coffee shop",
+    "Hotel",
+    "Restaurant",
+    "Seafood restaurant",
+    "Surf school",
+    "Swimming pool",
+    "Yoga instructor"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Godagamagewaththa, Milla Hill Rd, Hikkaduwa",
+  "business_status": "OPEN"
+}

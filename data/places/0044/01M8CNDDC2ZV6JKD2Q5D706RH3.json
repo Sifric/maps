@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDC2ZV6JKD2Q5D706RH3",
+  "name": "Keyashnie House",
+  "coordinates": {
+    "latitude": 7.7309056,
+    "longitude": 81.6807529
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "55/2,5th Cross,Kali kovil Road,Periya, Batticaloa",
+  "business_status": "OPEN"
+}

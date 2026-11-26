@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC3PP37PKTHER6XK58GS",
+  "name": "Hilmiya Grocery",
+  "coordinates": {
+    "latitude": 7.6783529999999995,
+    "longitude": 81.7258511
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "92/25, K.p.lane Arabic College Road, Kattankudy-04, 30100",
+  "business_status": "OPEN"
+}

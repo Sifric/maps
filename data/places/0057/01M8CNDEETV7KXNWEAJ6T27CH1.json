@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEETV7KXNWEAJ6T27CH1",
+  "name": "Hotel Wewala Beach",
+  "coordinates": {
+    "latitude": 6.1304536999999995,
+    "longitude": 80.10165219999999
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "380 Galle Rd, Hikkaduwa 80240",
+  "business_status": "OPEN"
+}

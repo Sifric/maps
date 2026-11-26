@@ -1,0 +1,73 @@
+{
+  "id": "01M8CNDDGY8HCCF4EAS9JWYRXN",
+  "name": "Randilu Tyre Service",
+  "coordinates": {
+    "latitude": 6.9056938,
+    "longitude": 80.91672109999999
+  },
+  "categories": [
+    "Tire shop",
+    "Battery store",
+    "Battery wholesaler",
+    "Car battery store",
+    "Car repair and maintenance service",
+    "Repair service",
+    "Used tire shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Bandarawela - Welimada Rd, Welimada",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7:15 AM–6:45 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7:15 AM–6:45 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7:15 AM–6:45 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7:15 AM–6:45 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7:15 AM–6:45 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7:15 AM–6:45 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7:15 AM–6:45 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC8WW5CHBPHH97C1J73B",
+  "name": "FRS market",
+  "coordinates": {
+    "latitude": 7.685326399999999,
+    "longitude": 81.7259349
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPPG+49M, Market square, Kattankudy",
+  "business_status": "OPEN"
+}

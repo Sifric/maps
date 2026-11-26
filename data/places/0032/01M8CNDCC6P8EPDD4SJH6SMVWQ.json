@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCC6P8EPDD4SJH6SMVWQ",
+  "name": "EAST WAY Holiday Inn",
+  "coordinates": {
+    "latitude": 7.914006799999999,
+    "longitude": 81.525497
+  },
+  "categories": [
+    "Holiday apartment rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG7G+J55, Oddamavadi",
+  "business_status": "OPEN"
+}

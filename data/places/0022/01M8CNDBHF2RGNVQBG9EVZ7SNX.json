@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBHF2RGNVQBG9EVZ7SNX",
+  "name": "Rusthy Auto Electrical Shop",
+  "coordinates": {
+    "latitude": 7.3636523,
+    "longitude": 81.8082197
+  },
+  "categories": [
+    "Car repair and maintenance service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Sammanthurai",
+  "business_status": "OPEN"
+}

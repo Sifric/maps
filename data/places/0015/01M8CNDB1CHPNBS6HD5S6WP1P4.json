@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDB1CHPNBS6HD5S6WP1P4",
+  "name": "Yaso gym",
+  "coordinates": {
+    "latitude": 7.7152379,
+    "longitude": 81.71058
+  },
+  "categories": [
+    "Gym"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PP86+36P, Kallady",
+  "business_status": "OPEN"
+}

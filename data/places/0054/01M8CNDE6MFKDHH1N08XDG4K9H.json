@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE6MFKDHH1N08XDG4K9H",
+  "name": "KERUBIN MEAT SHOP",
+  "coordinates": {
+    "latitude": 6.8558707,
+    "longitude": 80.74713729999999
+  },
+  "categories": [
+    "Meat processor"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "No 48/1 D dayagama bazar, Dayagama",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8:30 AM–8:45 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8:30 AM–8:45 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8:30 AM–8:45 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8:30 AM–8:45 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8:30 AM–8:45 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8:30 AM–8:45 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8:30 AM–8:45 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

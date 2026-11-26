@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDACRBJ782G9YWVG6K6GN",
+  "name": "Mohideen Bakery",
+  "coordinates": {
+    "latitude": 7.6873508,
+    "longitude": 81.7249339
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kattankudy",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDBSEPP8AW2J95MNWEFE",
+  "name": "Teecha",
+  "coordinates": {
+    "latitude": 7.7090558,
+    "longitude": 81.6930144
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "3 Nallaiya Rd, Batticaloa",
+  "business_status": "OPEN"
+}

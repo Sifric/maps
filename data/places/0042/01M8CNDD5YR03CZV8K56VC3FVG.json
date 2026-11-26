@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD5YR03CZV8K56VC3FVG",
+  "name": "F.R Fishing Store",
+  "coordinates": {
+    "latitude": 7.410374399999999,
+    "longitude": 81.8285473
+  },
+  "categories": [
+    "Fishing store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CR6H+4CV, Colombo - Batticaloa Hwy, Kalmunai 32300",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBPY6ZA3JW420BF3CK1X",
+  "name": "Kanga Tailors",
+  "coordinates": {
+    "latitude": 7.7826211,
+    "longitude": 81.59423249999999
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Chenkaladi",
+  "business_status": "OPEN"
+}

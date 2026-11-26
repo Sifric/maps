@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD56XHXZX03R8C1V2HK6",
+  "name": "Sai hospital kirankulam south",
+  "coordinates": {
+    "latitude": 7.5951086,
+    "longitude": 81.7716808
+  },
+  "categories": [
+    "Hospital"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "HQWC+2MV",
+  "business_status": "CLOSED"
+}

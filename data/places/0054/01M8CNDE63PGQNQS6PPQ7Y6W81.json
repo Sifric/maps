@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE63PGQNQS6PPQ7Y6W81",
+  "name": "Madawa Grocery",
+  "coordinates": {
+    "latitude": 6.2106482,
+    "longitude": 80.1843277
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "656M+9PH, Divitura",
+  "business_status": "OPEN"
+}

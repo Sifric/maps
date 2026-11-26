@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDEF8WV9HWC8321G8PZ0J",
+  "name": "i Resort",
+  "coordinates": {
+    "latitude": 5.9752442,
+    "longitude": 80.4371061
+  },
+  "categories": [
+    "Hotel",
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Gangarama Cross Rd, Weligama",
+  "business_status": "OPEN"
+}

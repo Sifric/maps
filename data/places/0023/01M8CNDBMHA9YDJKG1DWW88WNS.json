@@ -1,0 +1,20 @@
+{
+  "id": "01M8CNDBMHA9YDJKG1DWW88WNS",
+  "name": "Lanka Cruiser Taxi",
+  "coordinates": {
+    "latitude": 7.2809459,
+    "longitude": 80.83446339999999
+  },
+  "categories": [
+    "Taxi service",
+    "Service establishment"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCNZK3VT2YMS8QW8XCG1",
+  "name": "HK TRADERS",
+  "coordinates": {
+    "latitude": 7.7821596,
+    "longitude": 81.5952331
+  },
+  "categories": [
+    "Footwear wholesaler"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Main St, Chenkaladi 30350",
+  "business_status": "OPEN"
+}

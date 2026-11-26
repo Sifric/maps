@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDBJRZN5S5057G85V8NPM",
+  "name": "Bruntha Beauty Parlor",
+  "coordinates": {
+    "latitude": 7.4201448999999995,
+    "longitude": 81.8214928
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "\nKalmunai 32300",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "Kalmunai 32300"
+  ]
+}

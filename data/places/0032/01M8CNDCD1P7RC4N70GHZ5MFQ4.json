@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCD1P7RC4N70GHZ5MFQ4",
+  "name": "Braganza House",
+  "coordinates": {
+    "latitude": 6.0078648,
+    "longitude": 80.2664533
+  },
+  "categories": [
+    "Villa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Ussaiddamale Watta, Road, Talpe",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD6Q758W2YTW2M7XE766",
+  "name": "Milco Milk Chilling Center",
+  "coordinates": {
+    "latitude": 7.9884761,
+    "longitude": 81.1804458
+  },
+  "categories": [
+    "Milk delivery service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No-234 Nawa Senapura, Kattuwanvila",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDA36V04MBVP8AAD4TA2Y",
+  "name": "The Spice Trail",
+  "coordinates": {
+    "latitude": 6.841206799999999,
+    "longitude": 81.8319861
+  },
+  "categories": [
+    "Bar",
+    "Hotel",
+    "Cafe",
+    "Restaurant",
+    "Serviced accommodation"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "RRRJ+FPX, The Spice Trail, Panama Rd, Arugam Bay 32500",
+  "business_status": "OPEN"
+}

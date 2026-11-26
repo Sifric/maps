@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCENKX16HV16N6QGMYT2",
+  "name": "Primary Medical Care Unit Pulipanjakal",
+  "coordinates": {
+    "latitude": 7.8627192,
+    "longitude": 81.5062782
+  },
+  "categories": [
+    "Hospital"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "VG74+3GJ, Unnamed Road, Perillaveli",
+  "business_status": "OPEN"
+}

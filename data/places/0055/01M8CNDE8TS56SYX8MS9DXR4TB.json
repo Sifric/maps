@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE8TS56SYX8MS9DXR4TB",
+  "name": "Madusarana",
+  "coordinates": {
+    "latitude": 6.353300399999999,
+    "longitude": 80.2823063
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Pitigala 80420",
+  "business_status": "OPEN"
+}

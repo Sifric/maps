@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCS6RR831XCFQCATJAK2",
+  "name": "Street Food Stalls",
+  "coordinates": {
+    "latitude": 7.686361499999999,
+    "longitude": 81.7275062
+  },
+  "categories": [
+    "Food court"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPPH+G2V, Telecom Rd, Kattankudy",
+  "business_status": "OPEN"
+}

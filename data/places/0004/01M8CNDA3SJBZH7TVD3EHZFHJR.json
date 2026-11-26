@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA3SJBZH7TVD3EHZFHJR",
+  "name": "MUSLIM BAKERY & GROCERY",
+  "coordinates": {
+    "latitude": 7.9240724,
+    "longitude": 81.5303624
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

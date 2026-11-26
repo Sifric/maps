@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDC01DQZA9PZ6PZJBB31",
+  "name": "U1 Home",
+  "coordinates": {
+    "latitude": 7.9201659,
+    "longitude": 81.5237843
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WGCF+3G7, Kalmadu Road, Kalkudah",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC0X82PG494EQ0AXTN7Y",
+  "name": "கந்தசாமி ஸ்டோர்ஸ்",
+  "coordinates": {
+    "latitude": 7.5302387,
+    "longitude": 81.6842988
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GMJM+3P, Mandur",
+  "business_status": "OPEN"
+}

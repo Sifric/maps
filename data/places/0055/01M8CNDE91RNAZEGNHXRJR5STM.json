@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE91RNAZEGNHXRJR5STM",
+  "name": "Multi Trade Center",
+  "coordinates": {
+    "latitude": 6.3425445,
+    "longitude": 80.22276149999999
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "86VF+246, Pitigala",
+  "business_status": "OPEN"
+}

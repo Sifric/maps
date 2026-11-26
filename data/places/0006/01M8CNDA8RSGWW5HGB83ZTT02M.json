@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA8RSGWW5HGB83ZTT02M",
+  "name": "Nanba Grocery Store",
+  "coordinates": {
+    "latitude": 6.8760182,
+    "longitude": 81.82953909999999
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "VRGH+CR3, Marks cross road kalappukattu, Pottuvil 15",
+  "business_status": "OPEN"
+}

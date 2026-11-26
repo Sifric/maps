@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD6XZ5YFXSPX7E0E4PJW",
+  "name": "Krithikan stores",
+  "coordinates": {
+    "latitude": 8.351588,
+    "longitude": 81.3823685
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "992J+JWQ",
+  "business_status": "OPEN"
+}

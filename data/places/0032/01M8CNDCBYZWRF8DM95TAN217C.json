@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBYZWRF8DM95TAN217C",
+  "name": "Kiramam Villa",
+  "coordinates": {
+    "latitude": 7.937646399999999,
+    "longitude": 81.5407852
+  },
+  "categories": [
+    "Guest house"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Nasuvantivu, School Road, 30400",
+  "business_status": "OPEN"
+}

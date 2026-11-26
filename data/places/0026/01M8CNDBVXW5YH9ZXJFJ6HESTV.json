@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDBVXW5YH9ZXJFJ6HESTV",
+  "name": "Gamage super",
+  "coordinates": {
+    "latitude": 6.4127184999999995,
+    "longitude": 80.2299135
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "C67H+3XM",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8–9 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8–9 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8–9 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8–9 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8–9 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8–9 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8–9 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCAJ8QXGYCDQBPYXRXCQ",
+  "name": "SAN MULTY SHOP",
+  "coordinates": {
+    "latitude": 7.699734599999999,
+    "longitude": 81.719303
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPX9+RJQ, Tharisanam Rd, Kallady",
+  "business_status": "OPEN"
+}

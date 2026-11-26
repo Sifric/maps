@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDH2A9DVAPV50Y3G32J2",
+  "name": "Sun City",
+  "coordinates": {
+    "latitude": 7.6743909,
+    "longitude": 81.7326145
+  },
+  "categories": [
+    "Shopping mall"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPFM+Q25, Colombo - Ratnapura - Wellawaya - Batticaloa Rd, Kattankudy",
+  "business_status": "OPEN"
+}

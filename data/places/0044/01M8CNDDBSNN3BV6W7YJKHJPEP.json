@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDBSNN3BV6W7YJKHJPEP",
+  "name": "Solaman Lane",
+  "coordinates": {
+    "latitude": 7.707947099999999,
+    "longitude": 81.69226929999999
+  },
+  "categories": [
+    "Apartment complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM5R+5W2, Mathew's Rd, Batticaloa",
+  "business_status": "OPEN"
+}

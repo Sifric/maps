@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC7M9CX8J09KZGMM5C2Z",
+  "name": "PL Chicken and Egg Farm",
+  "coordinates": {
+    "latitude": 7.7341926,
+    "longitude": 81.6728208
+  },
+  "categories": [
+    "Children's farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMMF+M4G, Panichiyady Munmary, Batticaloa 30160",
+  "business_status": "OPEN"
+}

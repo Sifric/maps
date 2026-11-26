@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCE1QNJ710RKFZRD6NKK",
+  "name": "Shakthi Medical",
+  "coordinates": {
+    "latitude": 7.7085889,
+    "longitude": 81.6920188
+  },
+  "categories": [
+    "Pharmacy"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "118,A Hospital Rd, Batticaloa 30000",
+  "business_status": "OPEN"
+}

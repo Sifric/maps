@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCCSAHW8FV1MDHCY74G7",
+  "name": "Villa Exora Pasikudha - Three-Bedroom House",
+  "coordinates": {
+    "latitude": 7.9252500999999995,
+    "longitude": 81.5397033
+  },
+  "categories": [
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

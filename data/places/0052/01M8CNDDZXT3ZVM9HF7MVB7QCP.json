@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDZXT3ZVM9HF7MVB7QCP",
+  "name": "Mr.Food",
+  "coordinates": {
+    "latitude": 6.2568250999999995,
+    "longitude": 80.1393792
+  },
+  "categories": [
+    "Chinese restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Kurundugaha Hethekma",
+  "business_status": "OPEN"
+}

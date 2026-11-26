@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBGT4Q1QP6MRDW222B0X",
+  "name": "Pan Asia Bank ATM",
+  "coordinates": {
+    "latitude": 7.2194825,
+    "longitude": 81.8498853
+  },
+  "categories": [
+    "ATM"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "6R9X+QXR, Akkaraipattu - Kalmunai Rd, Akkaraipattu",
+  "business_status": "OPEN"
+}

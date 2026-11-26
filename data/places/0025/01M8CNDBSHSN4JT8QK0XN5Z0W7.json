@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBSHSN4JT8QK0XN5Z0W7",
+  "name": "Thai Lanka Motor Parts",
+  "coordinates": {
+    "latitude": 7.6844585,
+    "longitude": 81.7264282
+  },
+  "categories": [
+    "Auto parts store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPMG+QHJ, Kattankudy",
+  "business_status": "OPEN"
+}

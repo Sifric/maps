@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCQYW4N8Z2T60B3PGCNQ",
+  "name": "Kaluthavalai Beach",
+  "coordinates": {
+    "latitude": 7.5442734,
+    "longitude": 81.8020276
+  },
+  "categories": [
+    "Beach"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Indian Ocean, Kaluthavalai",
+  "business_status": "OPEN"
+}

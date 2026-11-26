@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCPCG80JZBSB2B76P83V",
+  "name": "Fathoona Traders",
+  "coordinates": {
+    "latitude": 7.684476399999999,
+    "longitude": 81.7292022
+  },
+  "categories": [
+    "Pharmaceutical products wholesaler"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "63/1 Fisheries Rd, Kattankudy 30100",
+  "business_status": "OPEN"
+}

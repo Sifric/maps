@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAGS7TPAP0155Z1VWEW8",
+  "name": "Ahana's place",
+  "coordinates": {
+    "latitude": 7.4404978999999996,
+    "longitude": 81.8213952
+  },
+  "categories": [
+    "Villa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CRRC+5HR, Maruthamunai",
+  "business_status": "OPEN"
+}

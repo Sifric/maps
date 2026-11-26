@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE93VEHFKR9RN3XSS27Y",
+  "name": "S&S SUPERMARKET",
+  "coordinates": {
+    "latitude": 6.1834308,
+    "longitude": 80.1183259
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Vocational Training Center",
+  "business_status": "OPEN"
+}

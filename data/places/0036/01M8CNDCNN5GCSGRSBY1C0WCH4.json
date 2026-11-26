@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCNN5GCSGRSBY1C0WCH4",
+  "name": "Marsook shop",
+  "coordinates": {
+    "latitude": 7.6607218999999995,
+    "longitude": 81.74902519999999
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MQ62+943, Oluvil",
+  "business_status": "OPEN"
+}

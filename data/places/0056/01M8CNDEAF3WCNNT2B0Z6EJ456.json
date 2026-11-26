@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDEAF3WCNNT2B0Z6EJ456",
+  "name": "Surfers Paradise",
+  "coordinates": {
+    "latitude": 5.9652055,
+    "longitude": 80.3885657
+  },
+  "categories": [
+    "Hotel",
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Surfers paradise, midigama, weligama 81700",
+  "business_status": "OPEN"
+}

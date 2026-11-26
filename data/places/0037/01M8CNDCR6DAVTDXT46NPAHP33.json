@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDCR6DAVTDXT46NPAHP33",
+  "name": "Cheddipalayam Public Playground",
+  "coordinates": {
+    "latitude": 7.578756899999999,
+    "longitude": 81.78844199999999
+  },
+  "categories": [
+    "Playground"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

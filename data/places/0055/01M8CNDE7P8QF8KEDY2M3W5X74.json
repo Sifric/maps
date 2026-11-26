@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDE7P8QF8KEDY2M3W5X74",
+  "name": "Cafe Cinema",
+  "coordinates": {
+    "latitude": 6.0102269999999995,
+    "longitude": 80.245621
+  },
+  "categories": [
+    "Bar",
+    "Restaurant or cafe",
+    "Cafe",
+    "Internet cafe",
+    "Pizza restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "266W+36X, Wallaye Deywala Rd, Unawatuna",
+  "business_status": "OPEN"
+}

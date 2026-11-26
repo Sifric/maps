@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCVKYC6ZP6V2X055G9WE",
+  "name": "Bar Pine Forest",
+  "coordinates": {
+    "latitude": 7.757693199999999,
+    "longitude": 81.691019
+  },
+  "categories": [
+    "Park"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QM5R+3C, Batticaloa",
+  "business_status": "OPEN"
+}

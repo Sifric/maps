@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDTDS4D9RGF7P4Z2W0K5",
+  "name": "蔚蓝海岸餐厅",
+  "coordinates": {
+    "latitude": 6.0458934,
+    "longitude": 80.1900572
+  },
+  "categories": [
+    "Chinese restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Galle, Colombo Main Rd",
+  "business_status": "OPEN"
+}

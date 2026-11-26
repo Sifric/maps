@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDCKEME8H61DP8PM4HCAC",
+  "name": "UIV MEDIA OFFICE",
+  "coordinates": {
+    "latitude": 7.909866699999999,
+    "longitude": 81.52603669999999
+  },
+  "categories": [
+    "Media company"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG5G+WCV, MPCS Rd, Oddamavadi",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9–11:45 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9–11:15 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

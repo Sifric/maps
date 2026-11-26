@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDAF0PS3ZSVRNTRTNVFDY",
+  "name": "Elysian Villa",
+  "coordinates": {
+    "latitude": 6.0140313,
+    "longitude": 80.78180619999999
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "199/7 Mahawela Road, Goyambokka",
+  "business_status": "OPEN"
+}

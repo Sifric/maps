@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD3CYABJPB1MVN4ZWFZP",
+  "name": "Batticaloa Vehicle Hire",
+  "coordinates": {
+    "latitude": 7.7003017,
+    "longitude": 81.7158699
+  },
+  "categories": [
+    "Taxi service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "32, 16 Anumar Rd, Kallady 30000",
+  "business_status": "CLOSED"
+}

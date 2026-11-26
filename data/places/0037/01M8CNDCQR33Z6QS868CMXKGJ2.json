@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCQR33Z6QS868CMXKGJ2",
+  "name": "Lake park",
+  "coordinates": {
+    "latitude": 7.7142846,
+    "longitude": 81.692747
+  },
+  "categories": [
+    "Park"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "2 Buntings Ln, Batticaloa",
+  "business_status": "OPEN"
+}

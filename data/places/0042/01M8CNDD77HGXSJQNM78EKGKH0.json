@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD77HGXSJQNM78EKGKH0",
+  "name": "Veterinary clinic",
+  "coordinates": {
+    "latitude": 7.7831604,
+    "longitude": 81.0677601
+  },
+  "categories": [
+    "Veterinarian"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Mahiyangane-Dimbulagala-Dalukkane Hwy, Kalukele",
+  "business_status": "CLOSED_TEMPORARILY"
+}

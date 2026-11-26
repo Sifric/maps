@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDB6AHV0XKF041SE96BPT",
+  "name": "Khalith's House",
+  "coordinates": {
+    "latitude": 7.408738499999999,
+    "longitude": 81.8370042
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "239/2 Sailan Rd, Kalmunai 32300",
+  "business_status": "OPEN"
+}

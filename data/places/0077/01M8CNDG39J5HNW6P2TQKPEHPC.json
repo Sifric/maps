@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDG39J5HNW6P2TQKPEHPC",
+  "name": "DFCC Bank - Kilinochchi",
+  "coordinates": {
+    "latitude": 9.4058536,
+    "longitude": 80.40828929999999
+  },
+  "categories": [
+    "ATM",
+    "Private sector bank",
+    "Currency exchange service",
+    "Money transfer service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "No.554 Kandy - Jaffna Hwy, Kilinochchi",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9 AM–3 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

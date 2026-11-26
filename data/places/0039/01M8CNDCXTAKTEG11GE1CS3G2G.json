@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCXTAKTEG11GE1CS3G2G",
+  "name": "Welcome Board Bus Stop",
+  "coordinates": {
+    "latitude": 7.6869564,
+    "longitude": 81.7251398
+  },
+  "categories": [
+    "Bus stop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Colombo-Ratnapura-Wellawaya-Batticaloa Hwy, Kattankudy",
+  "business_status": "OPEN"
+}

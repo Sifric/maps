@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBGXY4KKHM7CBY3R1Z2B",
+  "name": "Mohideen auto garage",
+  "coordinates": {
+    "latitude": 7.811512899999999,
+    "longitude": 81.5633067
+  },
+  "categories": [
+    "Auto repair shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "RH67+J83, Main St, valaichenai",
+  "business_status": "OPEN"
+}

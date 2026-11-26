@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEDFVQ8GY2XHDDD9TCYG",
+  "name": "Le Grand Galle",
+  "coordinates": {
+    "latitude": 6.031729899999999,
+    "longitude": 80.2124639
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Hilltop Building, 30 Park Rd, Galle 80000",
+  "business_status": "OPEN"
+}

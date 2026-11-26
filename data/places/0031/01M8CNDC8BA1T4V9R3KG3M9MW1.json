@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC8BA1T4V9R3KG3M9MW1",
+  "name": "MBM Farm",
+  "coordinates": {
+    "latitude": 7.928740599999999,
+    "longitude": 81.4987721
+  },
+  "categories": [
+    "Farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WFHX+FGR",
+  "business_status": "OPEN"
+}

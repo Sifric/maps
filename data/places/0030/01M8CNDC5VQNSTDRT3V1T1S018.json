@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC5VQNSTDRT3V1T1S018",
+  "name": "Lia Shawarma Hub",
+  "coordinates": {
+    "latitude": 7.680212399999999,
+    "longitude": 81.728467
+  },
+  "categories": [
+    "Shawarma restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPJH+39P, Sir Razeek Fareed Mawatha, Kattankudy",
+  "business_status": "OPEN"
+}

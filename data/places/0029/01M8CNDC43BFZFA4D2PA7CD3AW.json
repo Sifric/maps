@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC43BFZFA4D2PA7CD3AW",
+  "name": "Priyankara Driving School",
+  "coordinates": {
+    "latitude": 6.8672317,
+    "longitude": 81.3466356
+  },
+  "categories": [
+    "Driving school"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Monaragala",
+  "business_status": "OPEN"
+}

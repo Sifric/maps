@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCQVEZ5XX206BHPGCG5W",
+  "name": "Oxfam Batticaloa sri lanka",
+  "coordinates": {
+    "latitude": 7.726154999999999,
+    "longitude": 81.68583699999999
+  },
+  "categories": [
+    "Park"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMGP+F88, Selvanayagam Rd, Batticaloa",
+  "business_status": "OPEN"
+}

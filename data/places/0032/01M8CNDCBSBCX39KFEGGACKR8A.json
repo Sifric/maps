@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBSBCX39KFEGGACKR8A",
+  "name": "New Sunrise Hotel, Batticaloa",
+  "coordinates": {
+    "latitude": 7.7328014,
+    "longitude": 81.70762789999999
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "37/6 3rd Cross, New Dutch Bar Road, Batticaloa",
+  "business_status": "OPEN"
+}

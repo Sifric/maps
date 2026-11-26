@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBD68XNXSDGAVKEF146M",
+  "name": "chargeNET Charging Station",
+  "coordinates": {
+    "latitude": 7.9204364,
+    "longitude": 80.68096589999999
+  },
+  "categories": [
+    "Electric vehicle charging station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WMCJ+59G, Kannangara Niwasa Inamaluwa, Dambulla 21124",
+  "business_status": "OPEN"
+}

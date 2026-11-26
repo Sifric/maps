@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE17ZA8HY69RQJKDTPV4",
+  "name": "Humanity",
+  "coordinates": {
+    "latitude": 5.9646773,
+    "longitude": 80.52124789999999
+  },
+  "categories": [
+    "Soup kitchen"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "193, 201 Matara - Akuressa Hwy, Matara",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "2:30–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "2:30–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "2:30–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "2:30–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "2:30–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

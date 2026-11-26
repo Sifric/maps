@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCD0H8R218MQCKMCY4DH",
+  "name": "Water Garden Sigiriya",
+  "coordinates": {
+    "latitude": 7.9928666999999995,
+    "longitude": 80.7458307
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Indigaswewa, Sigiriya 21120",
+  "business_status": "OPEN"
+}

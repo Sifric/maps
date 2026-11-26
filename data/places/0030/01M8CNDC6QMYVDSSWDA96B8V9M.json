@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6QMYVDSSWDA96B8V9M",
+  "name": "Family Food Center",
+  "coordinates": {
+    "latitude": 7.7267091,
+    "longitude": 81.7133834
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Beach, Dutch Bar, Kallady",
+  "business_status": "OPEN"
+}

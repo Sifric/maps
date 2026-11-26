@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAD3XWH1G91ZHTJ9NY8K",
+  "name": "ReJa Farm",
+  "coordinates": {
+    "latitude": 7.5876484,
+    "longitude": 81.67611959999999
+  },
+  "categories": [
+    "Farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kuluvinamadu Kokkaddicholai, 30000",
+  "business_status": "OPEN"
+}

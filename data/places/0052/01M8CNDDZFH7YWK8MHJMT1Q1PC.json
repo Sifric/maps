@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDZFH7YWK8MHJMT1Q1PC",
+  "name": "Black and white Restaurant",
+  "coordinates": {
+    "latitude": 6.1180259999999995,
+    "longitude": 80.1172259
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Hikkaduwa",
+  "business_status": "CLOSED_TEMPORARILY"
+}

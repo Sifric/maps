@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCM4BQ49HGGQ0M7ND3RQ",
+  "name": "Timber Shop",
+  "coordinates": {
+    "latitude": 7.7774347,
+    "longitude": 81.602908
+  },
+  "categories": [
+    "Lumber store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJG3+X4Q, Town, Eravur",
+  "business_status": "OPEN"
+}

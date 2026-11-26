@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCDSN6PGCWC932PFJ3H1",
+  "name": "MG AYURVEDIC HOSPITAL BATTICALOA ➕",
+  "coordinates": {
+    "latitude": 7.6924304999999995,
+    "longitude": 81.72399879999999
+  },
+  "categories": [
+    "Hospital"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "no 378 2nd Cross Road, Kallady",
+  "business_status": "OPEN"
+}

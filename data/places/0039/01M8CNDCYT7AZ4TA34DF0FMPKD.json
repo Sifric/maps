@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCYT7AZ4TA34DF0FMPKD",
+  "name": "Smart bike shop",
+  "coordinates": {
+    "latitude": 7.7788802,
+    "longitude": 81.6130848
+  },
+  "categories": [
+    "Men's tailor"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJH7+H82xwxc, Alayadi Rd, Eravur",
+  "business_status": "OPEN"
+}

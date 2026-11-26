@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD3K8K5C1SFS5P23BE06",
+  "name": "Christi Stores",
+  "coordinates": {
+    "latitude": 7.7852589,
+    "longitude": 81.59142349999999
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Chenkaladi",
+  "business_status": "OPEN"
+}

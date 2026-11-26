@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDGC3SE56T58KHB8HZEY",
+  "name": "Car business",
+  "coordinates": {
+    "latitude": 7.7309971,
+    "longitude": 81.6747295
+  },
+  "categories": [
+    "Car dealer"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMJF+9VX, Batticaloa 30000",
+  "business_status": "OPEN"
+}

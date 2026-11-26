@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDBFRXATBH14AG3TRM7SB",
+  "name": "Afri Bus Booking Centre",
+  "coordinates": {
+    "latitude": 7.3503167,
+    "longitude": 81.8461014
+  },
+  "categories": [
+    "Transportation service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "9R2W+3FM, Colombo - Ratnapura - Wellawaya - Batticaloa Rd, Nintavur",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6 AM–11:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

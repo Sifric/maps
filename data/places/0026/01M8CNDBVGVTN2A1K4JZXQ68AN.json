@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBVGVTN2A1K4JZXQ68AN",
+  "name": "Princess Beauty Care",
+  "coordinates": {
+    "latitude": 7.4235007,
+    "longitude": 81.8191014
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Pandiruppu",
+  "business_status": "OPEN"
+}

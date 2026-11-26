@@ -1,0 +1,70 @@
+{
+  "id": "01M8CNDBNQY28ZD92MGMS7PXR4",
+  "name": "DP Travel - PVT LTD",
+  "coordinates": {
+    "latitude": 6.7954607,
+    "longitude": 79.9332716
+  },
+  "categories": [
+    "Travel agency",
+    "Airline ticket agency",
+    "Aviation consultant",
+    "Chauffeur service",
+    "Cruise agency",
+    "Tour operator",
+    "Visa consulting service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "45K Colombo - Horana Rd, Piliyandala 10300",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9:30 AM–1:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

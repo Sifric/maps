@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBR6H7WP2XACG6P62BT",
+  "name": "Sea View Resort",
+  "coordinates": {
+    "latitude": 7.7250502999999995,
+    "longitude": 81.7137364
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Navalady Rd, Kallady",
+  "business_status": "OPEN"
+}

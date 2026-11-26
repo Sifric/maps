@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCFJG56E88KWD8WP2GXK",
+  "name": "Chapel of St. Joseph",
+  "coordinates": {
+    "latitude": 7.7238028,
+    "longitude": 81.6933384
+  },
+  "categories": [
+    "Church"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMFV+G8G, Trincomalee-Batticaloa Rd, Batticaloa",
+  "business_status": "OPEN"
+}

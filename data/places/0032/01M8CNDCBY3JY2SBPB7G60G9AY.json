@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDCBY3JY2SBPB7G60G9AY",
+  "name": "Amethyst Resort, Passikudah",
+  "coordinates": {
+    "latitude": 7.9237082999999995,
+    "longitude": 81.5646484
+  },
+  "categories": [
+    "Resort hotel",
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Coconut Board Road, Kalkudah 30410",
+  "business_status": "OPEN"
+}

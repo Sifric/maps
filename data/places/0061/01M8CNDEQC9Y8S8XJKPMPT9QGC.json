@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDEQC9Y8S8XJKPMPT9QGC",
+  "name": "Raveena Home Stay",
+  "coordinates": {
+    "latitude": 6.10283,
+    "longitude": 80.1302872
+  },
+  "categories": [
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Dodanduwa",
+  "business_status": "OPEN"
+}

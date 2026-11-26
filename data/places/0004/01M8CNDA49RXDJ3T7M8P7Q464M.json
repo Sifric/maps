@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDA49RXDJ3T7M8P7Q464M",
+  "name": "Nilam Hotel",
+  "coordinates": {
+    "latitude": 7.2272513,
+    "longitude": 81.8455931
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "6RGW+W64, Akkaraipattu",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5–11 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5 AM–9:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

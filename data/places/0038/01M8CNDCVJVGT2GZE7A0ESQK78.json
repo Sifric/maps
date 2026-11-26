@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCVJVGT2GZE7A0ESQK78",
+  "name": "Methodist Cemetery Section",
+  "coordinates": {
+    "latitude": 7.7266052,
+    "longitude": 81.6951108
+  },
+  "categories": [
+    "Cemetery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMGW+J2X, Cemetery Rd, Batticaloa",
+  "business_status": "OPEN"
+}

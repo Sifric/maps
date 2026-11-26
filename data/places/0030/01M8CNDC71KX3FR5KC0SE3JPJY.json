@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC71KX3FR5KC0SE3JPJY",
+  "name": "Heshi Cakes",
+  "coordinates": {
+    "latitude": 7.7327384,
+    "longitude": 81.6939519
+  },
+  "categories": [
+    "Cake shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No:10B, Koolavadi 8th Cross St, Batticaloa 30000",
+  "business_status": "OPEN"
+}

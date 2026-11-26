@@ -1,0 +1,68 @@
+{
+  "id": "01M8CNDD4W40HRRJCKS7BFNXDV",
+  "name": "Ishaara fruits shop",
+  "coordinates": {
+    "latitude": 7.4391441,
+    "longitude": 81.8200457
+  },
+  "categories": [
+    "Fruits wholesaler"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CRQC+M23, Akbar Rd, Maruthamunai",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–1 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–1 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–1 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–1 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7–11:30 AM",
+        "1 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–1 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7 AM–1 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

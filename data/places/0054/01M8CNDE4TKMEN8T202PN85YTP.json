@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDE4TKMEN8T202PN85YTP",
+  "name": "Tartaruga Beach Unawatuna",
+  "coordinates": {
+    "latitude": 6.0100134999999995,
+    "longitude": 80.24847969999999
+  },
+  "categories": [
+    "Bar",
+    "Hotel",
+    "Resort hotel",
+    "Restaurant",
+    "Seafood restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Yaddehimulla Rd, Unawatuna 80600",
+  "business_status": "OPEN"
+}

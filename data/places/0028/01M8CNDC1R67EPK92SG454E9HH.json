@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC1R67EPK92SG454E9HH",
+  "name": "Ajith Pharmacy",
+  "coordinates": {
+    "latitude": 7.3632962,
+    "longitude": 81.6359453
+  },
+  "categories": [
+    "Pharmacy"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9J7P+898, Uhana",
+  "business_status": "OPEN"
+}

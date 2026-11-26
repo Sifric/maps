@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDC1GXTR8F8042H3X4AY",
+  "name": "Daksan",
+  "coordinates": {
+    "latitude": 7.6423616999999995,
+    "longitude": 81.7421067
+  },
+  "categories": [
+    "Apartment complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "JPRR+WR, Thalankudah",
+  "business_status": "OPEN"
+}

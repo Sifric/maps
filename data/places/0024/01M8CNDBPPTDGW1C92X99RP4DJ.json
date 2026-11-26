@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDBPPTDGW1C92X99RP4DJ",
+  "name": "Lanka Ioc",
+  "coordinates": {
+    "latitude": 7.4182483999999995,
+    "longitude": 81.82330859999999
+  },
+  "categories": [
+    "Gas station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\nKalmunai 32300",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "Kalmunai 32300"
+  ]
+}

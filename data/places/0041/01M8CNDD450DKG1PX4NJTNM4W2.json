@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDD450DKG1PX4NJTNM4W2",
+  "name": "Maruthy Beauty Parlour",
+  "coordinates": {
+    "latitude": 7.7204716,
+    "longitude": 81.7009528
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "\nBatticaloa",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "Batticaloa"
+  ]
+}

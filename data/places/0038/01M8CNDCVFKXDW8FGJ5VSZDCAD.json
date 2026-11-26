@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCVFKXDW8FGJ5VSZDCAD",
+  "name": "Sanath's home",
+  "coordinates": {
+    "latitude": 7.728188299999999,
+    "longitude": 81.6918586
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "NO.66, Iruthayapuram East, Gnaasuriyam Square, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCTBZXX9S66HMKDGZ8W6",
+  "name": "Mcb Bank",
+  "coordinates": {
+    "latitude": 7.7155084,
+    "longitude": 81.6982108
+  },
+  "categories": [
+    "Bank"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "2, 365A Trincomalee-Batticaloa Rd, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBKEB85SYCGSHB1Y4AA",
+  "name": "St.Theresa's Hall",
+  "coordinates": {
+    "latitude": 7.7240008,
+    "longitude": 81.7055506
+  },
+  "categories": [
+    "Concert hall"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "St Theresa's Orphanage, Uppodai Lake Rd, Batticaloa",
+  "business_status": "OPEN"
+}

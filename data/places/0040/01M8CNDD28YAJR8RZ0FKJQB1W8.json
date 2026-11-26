@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDD28YAJR8RZ0FKJQB1W8",
+  "name": "Thaj Auto Mart",
+  "coordinates": {
+    "latitude": 7.9195461,
+    "longitude": 81.5224362
+  },
+  "categories": [
+    "Car dealer"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG9C+VWR, HAIRATH ROAD, Oddamavadi 05",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "WG9C+VWR, Hairath road, Oddamavadi 05"
+  ]
+}

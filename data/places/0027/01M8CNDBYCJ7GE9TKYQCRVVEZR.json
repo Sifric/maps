@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBYCJ7GE9TKYQCRVVEZR",
+  "name": "land mart",
+  "coordinates": {
+    "latitude": 7.775579199999999,
+    "longitude": 81.60596319999999
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJG4+69P, Kattupalli Road, Eravur",
+  "business_status": "OPEN"
+}

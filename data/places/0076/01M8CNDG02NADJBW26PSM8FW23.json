@@ -1,0 +1,63 @@
+{
+  "id": "01M8CNDG02NADJBW26PSM8FW23",
+  "name": "Medical Center",
+  "coordinates": {
+    "latitude": 6.0653124,
+    "longitude": 80.22004919999999
+  },
+  "categories": [
+    "Doctor"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "368C+42F, Galle 80000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4:30–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4:30–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4:30–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4:30–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4:30–9 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4:30–9 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4:30–9 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAFF8H046J925DPZN0SD",
+  "name": "May home",
+  "coordinates": {
+    "latitude": 7.2639264,
+    "longitude": 81.861719
+  },
+  "categories": [
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "122I opa read, Addalaichenai",
+  "business_status": "OPEN"
+}

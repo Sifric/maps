@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE35Q7GSJ0TXW25Y73H5",
+  "name": "Tasty Food restaurant beruwala",
+  "coordinates": {
+    "latitude": 6.4777743999999995,
+    "longitude": 79.9918698
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "25 Dharga Rd, Beruwala 12070",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6–11:15 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6–11:15 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6–11:15 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6–11:15 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6–11:15 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6–11:15 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

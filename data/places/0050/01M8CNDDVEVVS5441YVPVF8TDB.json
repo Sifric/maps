@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDDVEVVS5441YVPVF8TDB",
+  "name": "On Set",
+  "coordinates": {
+    "latitude": 5.9708349,
+    "longitude": 80.3693498
+  },
+  "categories": [
+    "Coffee shop",
+    "Breakfast restaurant",
+    "Brunch restaurant",
+    "Cafe",
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Hirigala Waththa, Ahangama",
+  "business_status": "CLOSED_TEMPORARILY"
+}

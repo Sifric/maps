@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC7ATY096G4SQQKF5P3N",
+  "name": "Mechanic",
+  "coordinates": {
+    "latitude": 7.9115128,
+    "longitude": 81.5288817
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG6H+GGW, Oddamavadi",
+  "business_status": "OPEN"
+}

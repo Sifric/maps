@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDC4X6946YZ69QGR9CJZ",
+  "name": "Thimothi Home",
+  "coordinates": {
+    "latitude": 7.7295275,
+    "longitude": 81.6818794
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "101, 5 Selvanayagam Rd, Batticaloa",
+  "business_status": "OPEN"
+}

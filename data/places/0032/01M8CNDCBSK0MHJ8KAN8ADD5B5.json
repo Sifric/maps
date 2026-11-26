@@ -1,0 +1,28 @@
+{
+  "id": "01M8CNDCBSK0MHJ8KAN8ADD5B5",
+  "name": "Juda Holiday Villa",
+  "coordinates": {
+    "latitude": 7.719826899999999,
+    "longitude": 81.7155154
+  },
+  "categories": [
+    "Guest house",
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kallady",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "PP98+W6J, Navalady Rd, Kallady"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDDSS7J1GV58NEM11S6XY",
+  "name": "Butcher’s Corner",
+  "coordinates": {
+    "latitude": 6.0476209999999995,
+    "longitude": 80.248177
+  },
+  "categories": [
+    "Butcher shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "354 Haliwala Rd, Galle",
+  "business_status": "OPEN"
+}

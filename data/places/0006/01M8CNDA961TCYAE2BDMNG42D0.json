@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDA961TCYAE2BDMNG42D0",
+  "name": "Sameera Guest Ampara",
+  "coordinates": {
+    "latitude": 7.2857962999999994,
+    "longitude": 81.6919231
+  },
+  "categories": [
+    "Restaurant",
+    "Hotel",
+    "Guest house"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "C, 620 Eragama Road, Ampara 32000",
+  "business_status": "OPEN"
+}

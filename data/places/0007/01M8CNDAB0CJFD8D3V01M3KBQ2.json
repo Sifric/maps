@@ -1,0 +1,20 @@
+{
+  "id": "01M8CNDAB0CJFD8D3V01M3KBQ2",
+  "name": "Grocery shop",
+  "coordinates": {
+    "latitude": 6.235846,
+    "longitude": 80.6540931
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "Ambagahahena",
+  "business_status": "OPEN"
+}

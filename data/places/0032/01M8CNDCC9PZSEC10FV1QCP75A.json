@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCC9PZSEC10FV1QCP75A",
+  "name": "KOMU HOME",
+  "coordinates": {
+    "latitude": 7.648506899999999,
+    "longitude": 81.6482995
+  },
+  "categories": [
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "JJXX+C8, Batticaloa",
+  "business_status": "OPEN"
+}

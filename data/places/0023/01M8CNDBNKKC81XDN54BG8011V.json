@@ -1,0 +1,70 @@
+{
+  "id": "01M8CNDBNKKC81XDN54BG8011V",
+  "name": "Senaratne Insurance Brokers (Pvt) Limited",
+  "coordinates": {
+    "latitude": 6.911728,
+    "longitude": 79.851367
+  },
+  "categories": [
+    "Insurance broker",
+    "Auto insurance agency",
+    "Health insurance agency",
+    "Home insurance agency",
+    "Life insurance agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "408, Liberty Plaza, 409 Fourth Floor, Colombo 00300",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8:30 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

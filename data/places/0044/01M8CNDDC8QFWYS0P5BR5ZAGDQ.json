@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDC8QFWYS0P5BR5ZAGDQ",
+  "name": "Vasantharuban Home",
+  "coordinates": {
+    "latitude": 7.7765458,
+    "longitude": 81.59944759999999
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "51 Veerapathirar Kovil Road, Eravur",
+  "business_status": "OPEN"
+}

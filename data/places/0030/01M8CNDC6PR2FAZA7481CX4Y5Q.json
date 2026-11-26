@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6PR2FAZA7481CX4Y5Q",
+  "name": "James Hotel",
+  "coordinates": {
+    "latitude": 7.7307172,
+    "longitude": 81.6873908
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "34 Kumara Kovil Veethy, Batticaloa",
+  "business_status": "OPEN"
+}

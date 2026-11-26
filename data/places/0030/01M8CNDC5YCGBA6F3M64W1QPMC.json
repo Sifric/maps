@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDC5YCGBA6F3M64W1QPMC",
+  "name": "Meat & Spicy",
+  "coordinates": {
+    "latitude": 7.6799938,
+    "longitude": 81.7277998
+  },
+  "categories": [
+    "Fast food restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPHH+X4R, Sir fareed mawatha, Kattankudy 03",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5:30 PM–2 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5:30 PM–2 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5:30 PM–2 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5:30 PM–2 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5:30 PM–2 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5:30 PM–2 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5:30 PM–2 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

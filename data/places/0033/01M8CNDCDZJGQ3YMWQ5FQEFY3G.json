@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCDZJGQ3YMWQ5FQEFY3G",
+  "name": "MOH Clinic",
+  "coordinates": {
+    "latitude": 7.735844299999999,
+    "longitude": 81.6849982
+  },
+  "categories": [
+    "Hospital"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMPM+8XQ, Unnamed Road, Batticaloa",
+  "business_status": "OPEN"
+}

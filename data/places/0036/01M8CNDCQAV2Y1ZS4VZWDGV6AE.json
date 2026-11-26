@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCQAV2Y1ZS4VZWDGV6AE",
+  "name": "INSEE GYM AND FITNESS CENTER",
+  "coordinates": {
+    "latitude": 7.9885614,
+    "longitude": 79.8865991
+  },
+  "categories": [
+    "Fitness center"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "XVQP+MQH, B5, Kalladiya",
+  "business_status": "OPEN"
+}

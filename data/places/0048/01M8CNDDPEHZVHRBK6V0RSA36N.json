@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDPEHZVHRBK6V0RSA36N",
+  "name": "Vidyaloka College",
+  "coordinates": {
+    "latitude": 6.0346129,
+    "longitude": 80.21703339999999
+  },
+  "categories": [
+    "Bus stop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Galle 80000",
+  "business_status": "OPEN"
+}

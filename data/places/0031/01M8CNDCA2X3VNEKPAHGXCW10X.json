@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCA2X3VNEKPAHGXCW10X",
+  "name": "Sheron Supermarket",
+  "coordinates": {
+    "latitude": 7.7324315,
+    "longitude": 81.690085
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "97 kumara kovil Road, Batticaloa 30000",
+  "business_status": "OPEN"
+}

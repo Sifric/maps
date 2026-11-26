@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCGG19RR271K1N706KVD",
+  "name": "Abrary House",
+  "coordinates": {
+    "latitude": 7.6803352,
+    "longitude": 81.73289009999999
+  },
+  "categories": [
+    "Translation service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "29/10,jowfer ali lane,2nd cross road, Deen road, Kattankudy 6",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9MZWFC7SHZ7CZCCM1D",
+  "name": "Mini M movies retail shop",
+  "coordinates": {
+    "latitude": 7.7158643,
+    "longitude": 81.7103155
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PP86+849, Kallady",
+  "business_status": "OPEN"
+}

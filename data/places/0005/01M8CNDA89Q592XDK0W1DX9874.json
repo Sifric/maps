@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDA89Q592XDK0W1DX9874",
+  "name": "ஆரோக்கியா பண்ணை (Aarogyaa Farm)",
+  "coordinates": {
+    "latitude": 7.753749699999999,
+    "longitude": 81.6702104
+  },
+  "categories": [
+    "Poultry farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "46, Viru Upahara Housing Scheme Swiss Village Thiraimadu, 30000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6–8 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6–8 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6–8 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6–8 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5–6 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:30–8 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Open 24 hours"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

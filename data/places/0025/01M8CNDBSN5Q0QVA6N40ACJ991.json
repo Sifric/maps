@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBSN5Q0QVA6N40ACJ991",
+  "name": "SR print shope",
+  "coordinates": {
+    "latitude": 7.3632085,
+    "longitude": 81.7975256
+  },
+  "categories": [
+    "Book store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "109 malkampitty lane, Sammanthurai",
+  "business_status": "OPEN"
+}

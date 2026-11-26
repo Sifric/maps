@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD3Z7CF0MAGXSWN3A9F3",
+  "name": "Vel Murugan Stores",
+  "coordinates": {
+    "latitude": 7.7150304,
+    "longitude": 81.6992605
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM8X+2P6, B542, Batticaloa",
+  "business_status": "CLOSED"
+}

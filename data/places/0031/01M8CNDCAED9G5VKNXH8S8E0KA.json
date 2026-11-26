@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCAED9G5VKNXH8S8E0KA",
+  "name": "J24 Juice & Snacks",
+  "coordinates": {
+    "latitude": 7.897773399999999,
+    "longitude": 81.5538784
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kalkudah Rd, 30250",
+  "business_status": "OPEN"
+}

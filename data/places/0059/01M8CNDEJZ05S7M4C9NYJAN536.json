@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEJZ05S7M4C9NYJAN536",
+  "name": "N.Saran Restaurant",
+  "coordinates": {
+    "latitude": 9.8238703,
+    "longitude": 80.17439929999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Valvettithurai",
+  "business_status": "OPEN"
+}

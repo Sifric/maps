@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD5E7SCGK17AFPHCNBTD",
+  "name": "Sharvika Hardware",
+  "coordinates": {
+    "latitude": 7.6960611,
+    "longitude": 81.7198173
+  },
+  "categories": [
+    "Hardware store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kallady",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBKJFV9H1P5AGJ2JFEVS",
+  "name": "Tharsan Saloon",
+  "coordinates": {
+    "latitude": 7.3868266,
+    "longitude": 81.8404805
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9RPR+P5Q, Central Rd, Karaitivu 32250",
+  "business_status": "OPEN"
+}

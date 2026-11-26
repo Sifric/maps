@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE1H7K43EPJ3V936BMSD",
+  "name": "Кафе",
+  "coordinates": {
+    "latitude": 6.0083565,
+    "longitude": 80.2510776
+  },
+  "categories": [
+    "Bar"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "2752+9C5, Unawatuna",
+  "business_status": "OPEN"
+}

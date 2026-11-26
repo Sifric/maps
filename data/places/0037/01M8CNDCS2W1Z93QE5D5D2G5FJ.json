@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCS2W1Z93QE5D5D2G5FJ",
+  "name": "Tourism information Centre Batticaloa",
+  "coordinates": {
+    "latitude": 7.7129426,
+    "longitude": 81.69964329999999
+  },
+  "categories": [
+    "Information services"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Chapel St, Batticaloa",
+  "business_status": "OPEN"
+}

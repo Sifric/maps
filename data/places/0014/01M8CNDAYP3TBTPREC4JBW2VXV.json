@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAYP3TBTPREC4JBW2VXV",
+  "name": "Madrasa Bulding",
+  "coordinates": {
+    "latitude": 7.3884732,
+    "longitude": 81.8411544
+  },
+  "categories": [
+    "Place of worship"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9RQR+9FJ, Maliga Rd, Sainthamaruthu 17",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "01M8CNDDX0PAE1607KW3BCPK1C",
+  "name": "The Sun House",
+  "coordinates": {
+    "latitude": 6.0378744,
+    "longitude": 80.2190134
+  },
+  "categories": [
+    "Restaurant",
+    "Airport shuttle service",
+    "Guest house",
+    "Hotel",
+    "Retreat center",
+    "Tour operator",
+    "Villa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "18 Upper Dickson Rd, Galle 80000",
+  "business_status": "OPEN"
+}

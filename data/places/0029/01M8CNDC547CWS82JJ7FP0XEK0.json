@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC547CWS82JJ7FP0XEK0",
+  "name": "Arayampathy Public Library",
+  "coordinates": {
+    "latitude": 7.6712953,
+    "longitude": 81.7342221
+  },
+  "categories": [
+    "Library"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPCM+GM9",
+  "business_status": "OPEN"
+}

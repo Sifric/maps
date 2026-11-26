@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDZBQ997TJHP1T087AEA",
+  "name": "Aroma Restaurant",
+  "coordinates": {
+    "latitude": 6.1343852,
+    "longitude": 80.10028439999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "285/A, Galle Rd,, Hikkaduwa",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "10:30 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "10:30 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "10:30 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "10:30 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "10:30 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "10:30 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "10:30 AM–11:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

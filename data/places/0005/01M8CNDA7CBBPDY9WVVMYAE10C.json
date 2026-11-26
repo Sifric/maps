@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA7CBBPDY9WVVMYAE10C",
+  "name": "Fareed Chicken Shop",
+  "coordinates": {
+    "latitude": 7.2485387,
+    "longitude": 81.85433119999999
+  },
+  "categories": [
+    "Chicken shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Main St, Addalaichenai 32350",
+  "business_status": "OPEN"
+}

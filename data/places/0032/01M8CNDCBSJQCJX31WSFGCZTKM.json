@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBSJQCJX31WSFGCZTKM",
+  "name": "DIRO Beach Holiday Home",
+  "coordinates": {
+    "latitude": 7.7198332999999995,
+    "longitude": 81.71525319999999
+  },
+  "categories": [
+    "Lodging"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PP98+W4J, Navalady Rd, Kallady",
+  "business_status": "OPEN"
+}

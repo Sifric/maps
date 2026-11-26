@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCV9VYWXHA7RR7VQ5QMQ",
+  "name": "Citypak",
+  "coordinates": {
+    "latitude": 7.723557199999999,
+    "longitude": 81.69897689999999
+  },
+  "categories": [
+    "Courier service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMFX+CHH, B27, Batticaloa",
+  "business_status": "OPEN"
+}

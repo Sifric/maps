@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDCK0PM5EXP7RH7DMC3A",
+  "name": "Kejaa",
+  "coordinates": {
+    "latitude": 7.503725599999999,
+    "longitude": 81.8047225
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Vishnu kovil, Road, onthachimadam",
+  "business_status": "OPEN"
+}

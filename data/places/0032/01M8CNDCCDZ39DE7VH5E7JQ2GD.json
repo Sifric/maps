@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCCDZ39DE7VH5E7JQ2GD",
+  "name": "KETH SISILA GUEST HOUSE",
+  "coordinates": {
+    "latitude": 7.9176766999999995,
+    "longitude": 81.1747317
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "W59G+539, Batticaloa Rd, Sewanapitiya 51070",
+  "business_status": "OPEN"
+}

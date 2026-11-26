@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBKCWWHH3E0WVWWJDZY",
+  "name": "Town Hall",
+  "coordinates": {
+    "latitude": 7.7100646,
+    "longitude": 81.70080209999999
+  },
+  "categories": [
+    "Concert hall"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PP62+28F, Batticaloa",
+  "business_status": "OPEN"
+}

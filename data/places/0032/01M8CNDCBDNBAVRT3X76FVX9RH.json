@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBDNBAVRT3X76FVX9RH",
+  "name": "Sanamathu stores",
+  "coordinates": {
+    "latitude": 7.579644,
+    "longitude": 81.787668
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "HQJQ+558, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

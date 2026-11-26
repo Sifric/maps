@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDCEYEXBJS8BP5FTC2R9W",
+  "name": "Medical Centre",
+  "coordinates": {
+    "latitude": 7.0522618999999995,
+    "longitude": 81.0609514
+  },
+  "categories": [
+    "Health consultant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "B36",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4–7 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4–7 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4–7 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4–7 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4–7 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4–7 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4–7 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

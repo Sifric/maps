@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAE9GNB102QQABMSHQJF",
+  "name": "Ilman's villa",
+  "coordinates": {
+    "latitude": 7.3509106,
+    "longitude": 81.8044463
+  },
+  "categories": [
+    "Villa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9R23+89J, Sammanthurai",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEAGPJCCMYHBQ2KX5DYS",
+  "name": "Golden Crown Hotel",
+  "coordinates": {
+    "latitude": 6.0464544,
+    "longitude": 80.2304741
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "97 Kanampitiya Rd, Galle 80000",
+  "business_status": "OPEN"
+}

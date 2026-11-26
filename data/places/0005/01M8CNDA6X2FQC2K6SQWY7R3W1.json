@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDA6X2FQC2K6SQWY7R3W1",
+  "name": "FOOD JUNCTION RESTAURANT.12/60F CHALAMBAIKENI 4 CENTER CAMP",
+  "coordinates": {
+    "latitude": 7.4203408,
+    "longitude": 81.7539965
+  },
+  "categories": [
+    "Fast food restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CHALAMBAIKENI 4 CENTER CAMP, 12/60F, 32300",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4–11 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4–11 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4–11 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4–11 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4–11 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4–11 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4–11 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

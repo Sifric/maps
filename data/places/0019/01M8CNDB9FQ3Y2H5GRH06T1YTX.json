@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDB9FQ3Y2H5GRH06T1YTX",
+  "name": "New housing complex",
+  "coordinates": {
+    "latitude": 6.9950959,
+    "longitude": 81.0123081
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "X2W6+2WM, Ketawala",
+  "business_status": "OPEN"
+}

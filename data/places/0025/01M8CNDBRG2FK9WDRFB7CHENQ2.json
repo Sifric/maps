@@ -1,0 +1,76 @@
+{
+  "id": "01M8CNDBRG2FK9WDRFB7CHENQ2",
+  "name": "Tech Junction",
+  "coordinates": {
+    "latitude": 7.9220625,
+    "longitude": 81.5236875
+  },
+  "categories": [
+    "Cell phone store",
+    "Cell phone accessory store",
+    "Mobile phone repair shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Hairath mosque, road, 30400",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9:30 AM–2:30 PM",
+        "4–10:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9:30 AM–2:30 PM",
+        "4–10:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9:30 AM–2:30 PM",
+        "4–10:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9:30 AM–2:30 PM",
+        "4–10:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9–11 AM",
+        "4:30–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9:30 AM–2:30 PM",
+        "4–10:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "9:30 AM–2:30 PM",
+        "4:30–10:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

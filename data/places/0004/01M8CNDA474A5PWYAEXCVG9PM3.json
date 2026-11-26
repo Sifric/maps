@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA474A5PWYAEXCVG9PM3",
+  "name": "A B H Restaurant (Pvt) Ltd.",
+  "coordinates": {
+    "latitude": 7.240890899999999,
+    "longitude": 81.8536072
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "6VR3+9C5, Main St, Addalaichenai",
+  "business_status": "OPEN"
+}

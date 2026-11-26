@@ -1,0 +1,29 @@
+{
+  "id": "01M8CNDE36GX0W3YBSWHSF1ZQ7",
+  "name": "Esprit Bentota",
+  "coordinates": {
+    "latitude": 6.4210739,
+    "longitude": 79.9972409
+  },
+  "categories": [
+    "Hotel",
+    "Bed & breakfast",
+    "Extended stay hotel",
+    "Health resort",
+    "Hostel",
+    "Motel",
+    "Resort hotel",
+    "Serviced accommodation",
+    "Villa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "26 Pitaramba Road, Bentota 80500",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBNJ2M07WTXXYM7J54W",
+  "name": "இடியப்பம் கடை",
+  "coordinates": {
+    "latitude": 7.731055,
+    "longitude": 81.6879988
+  },
+  "categories": [
+    "Soup kitchen"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMJQ+C5H, Kumaran Kovil Road, Batticaloa",
+  "business_status": "OPEN"
+}

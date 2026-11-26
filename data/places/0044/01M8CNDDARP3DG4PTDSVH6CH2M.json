@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDARP3DG4PTDSVH6CH2M",
+  "name": "Techo Connect",
+  "coordinates": {
+    "latitude": 7.7099547,
+    "longitude": 81.714198
+  },
+  "categories": [
+    "Manufacturer"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "50/6 1st Cross Rd, Kallady 30000",
+  "business_status": "OPEN"
+}

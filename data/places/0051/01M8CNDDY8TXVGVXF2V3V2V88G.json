@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDY8TXVGVXF2V3V2V88G",
+  "name": "Lanki Place",
+  "coordinates": {
+    "latitude": 6.0702883,
+    "longitude": 80.2180286
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "40 Galle - Baddegama Rd, Galle 80000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "2–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "2–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "2–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "2–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "2–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "2–10 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

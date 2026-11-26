@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDDTC7C89JT8VMHN11PD7",
+  "name": "Hotel Hasara",
+  "coordinates": {
+    "latitude": 6.0494794,
+    "longitude": 80.20641379999999
+  },
+  "categories": [
+    "Restaurant",
+    "Bar",
+    "Group accommodation",
+    "Holiday home",
+    "Hotel",
+    "Lodging",
+    "Guest house",
+    "Sri Lankan restaurant",
+    "Tourist attraction",
+    "Villa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "1 Wakunugoda Road, Galle 80000",
+  "business_status": "OPEN"
+}

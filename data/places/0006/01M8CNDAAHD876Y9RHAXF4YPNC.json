@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDAAHD876Y9RHAXF4YPNC",
+  "name": "The Milk Station",
+  "coordinates": {
+    "latitude": 6.863906699999999,
+    "longitude": 81.83323089999999
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Pottuvil",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDDRRHXF5XEYWXQ1KT2QE",
+  "name": "Hikka Bridge Café & Restaurant",
+  "coordinates": {
+    "latitude": 6.1473337,
+    "longitude": 80.0996687
+  },
+  "categories": [
+    "Cafe",
+    "Restaurant",
+    "Seafood restaurant",
+    "Sri Lankan restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "7 Galle - Colombo Rd, Hikkaduwa 80240",
+  "business_status": "CLOSED_TEMPORARILY"
+}

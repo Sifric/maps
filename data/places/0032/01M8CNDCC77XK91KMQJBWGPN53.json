@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCC77XK91KMQJBWGPN53",
+  "name": "Rooms for rent",
+  "coordinates": {
+    "latitude": 7.909801399999999,
+    "longitude": 81.51971979999999
+  },
+  "categories": [
+    "Lodging"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG59+WVH, Oddamavadi",
+  "business_status": "OPEN"
+}

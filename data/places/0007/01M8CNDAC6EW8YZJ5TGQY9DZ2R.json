@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAC6EW8YZJ5TGQY9DZ2R",
+  "name": "Saama Market",
+  "coordinates": {
+    "latitude": 7.4327536,
+    "longitude": 81.81532469999999
+  },
+  "categories": [
+    "Wholesale market"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "177c Al-Hamra Rd, Maruthamunai",
+  "business_status": "OPEN"
+}

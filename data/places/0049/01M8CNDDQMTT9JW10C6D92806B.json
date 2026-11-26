@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDQMTT9JW10C6D92806B",
+  "name": "The Chef",
+  "coordinates": {
+    "latitude": 6.2585177,
+    "longitude": 80.0563
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Ambalangoda",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "01M8CNDDVWV2XCRGCH6WBEASC0",
+  "name": "Bread Factory",
+  "coordinates": {
+    "latitude": 6.1270235,
+    "longitude": 80.1126608
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "44G7+R33, Hikkaduwa",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5–10 AM",
+        "3:30–10:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5–10 AM",
+        "3:30–10:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5–10 AM",
+        "3:30–10:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5–10 AM",
+        "3:30–10:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5–10 AM",
+        "3:30–10:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5–10 AM",
+        "3:30–10:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5–10 AM",
+        "3:30–10:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

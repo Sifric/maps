@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDBGBKQC0E69NC43XB1TB",
+  "name": "Abay Wave Taxi",
+  "coordinates": {
+    "latitude": 6.847687499999999,
+    "longitude": 81.8303281
+  },
+  "categories": [
+    "Taxi service",
+    "Airport shuttle service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Manal Rd, Arugam Bay",
+  "business_status": "OPEN"
+}

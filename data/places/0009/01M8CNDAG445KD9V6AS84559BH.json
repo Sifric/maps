@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAG445KD9V6AS84559BH",
+  "name": "Rila Residency",
+  "coordinates": {
+    "latitude": 7.2296423,
+    "longitude": 81.8490959
+  },
+  "categories": [
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "109, 02 2/3 Common Rd, Akkaraipattu 32400",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAM5BCAEG077A3V5ZQJA",
+  "name": "KPA Distributor",
+  "coordinates": {
+    "latitude": 6.870294899999999,
+    "longitude": 81.8228214
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "VRCF+448, Pottuvil",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCAP2QJS7FSY8RXJJC8P",
+  "name": "Aathi restaurant",
+  "coordinates": {
+    "latitude": 8.2229452,
+    "longitude": 81.4038485
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "6CF3+5GH, Kathiraveli",
+  "business_status": "OPEN"
+}

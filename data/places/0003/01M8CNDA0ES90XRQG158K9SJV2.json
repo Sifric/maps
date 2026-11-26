@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA0ES90XRQG158K9SJV2",
+  "name": "Hot place සුප් කඩේ",
+  "coordinates": {
+    "latitude": 7.2962365,
+    "longitude": 81.6827112
+  },
+  "categories": [
+    "Soup kitchen"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "7MWM+F3W, Buddhangala Rd, Ampara",
+  "business_status": "OPEN"
+}

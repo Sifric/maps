@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDGX0P2XT46K17M1W82F",
+  "name": "Sisira Tire Center සිසිර ටයර් සෙන්ටර්",
+  "coordinates": {
+    "latitude": 6.8600715,
+    "longitude": 80.87392179999999
+  },
+  "categories": [
+    "Tire shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "B353",
+  "business_status": "OPEN"
+}

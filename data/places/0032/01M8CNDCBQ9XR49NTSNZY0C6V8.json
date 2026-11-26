@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBQ9XR49NTSNZY0C6V8",
+  "name": "Vavisri chicken store",
+  "coordinates": {
+    "latitude": 7.6478817999999995,
+    "longitude": 81.75425849999999
+  },
+  "categories": [
+    "Soup kitchen"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "JQX3+5P2, Thalankudha Beech Rd, Thalankudah",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDABP5SM02R92MPZE7W28",
+  "name": "Dt choice mart shop",
+  "coordinates": {
+    "latitude": 6.2735417,
+    "longitude": 80.136895
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "69, Karandeniya",
+  "business_status": "OPEN"
+}

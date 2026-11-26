@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDCM3ZERWJWFTEWB7N0JJ",
+  "name": "Fuel Filling Station - Eravur MPCS",
+  "coordinates": {
+    "latitude": 7.772185299999999,
+    "longitude": 81.61098729999999
+  },
+  "categories": [
+    "Gas station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "\nTown, Eravur",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "Town, Eravur"
+  ]
+}

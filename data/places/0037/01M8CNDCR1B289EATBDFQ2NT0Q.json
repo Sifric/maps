@@ -1,0 +1,69 @@
+{
+  "id": "01M8CNDCR1B289EATBDFQ2NT0Q",
+  "name": "Swimming Pool, Weber Stadium.",
+  "coordinates": {
+    "latitude": 7.7102683999999995,
+    "longitude": 81.69938959999999
+  },
+  "categories": [
+    "Playground"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM6X+4Q2, Braiyan Dr, Batticaloa",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4–6 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4–6 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4–6 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4–6 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4–6 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7–11 AM",
+        "3–6 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7–11 AM",
+        "3–6 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

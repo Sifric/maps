@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCQJFTBGNWPB0JNNK1HB",
+  "name": "Buffalo Island",
+  "coordinates": {
+    "latitude": 7.6885749,
+    "longitude": 81.6988327
+  },
+  "categories": [
+    "Tourist attraction"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MMQX+CG, Batticaloa",
+  "business_status": "OPEN"
+}

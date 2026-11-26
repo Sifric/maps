@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCNWSB4H2Q9DS7F02B11",
+  "name": "Rns Wholesale, Suppliers And Retails.",
+  "coordinates": {
+    "latitude": 7.7248228999999995,
+    "longitude": 81.6914613
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Batticaloa",
+  "business_status": "OPEN"
+}

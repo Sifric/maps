@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDA2VSWYE071BPE55HR41",
+  "name": "Hajar mart",
+  "coordinates": {
+    "latitude": 7.3947515,
+    "longitude": 81.8385938
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "08 Kalyana Rd, Sainthamaruthu 32300",
+  "business_status": "OPEN"
+}

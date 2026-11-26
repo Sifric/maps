@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD53XKMWCJEB81CWRZ40",
+  "name": "Uthaya Jewellers",
+  "coordinates": {
+    "latitude": 7.605261499999999,
+    "longitude": 81.767409
+  },
+  "categories": [
+    "Jewelry store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kirankulam",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAA7J8T359ACAW63TXZB",
+  "name": "Apinaya Model Farm",
+  "coordinates": {
+    "latitude": 7.5441544,
+    "longitude": 81.6838573
+  },
+  "categories": [
+    "Farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GMVM+MG9, Youth Farm, Thumbankerny, Vellavelly, Batticaloa",
+  "business_status": "OPEN"
+}

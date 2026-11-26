@@ -1,0 +1,23 @@
+{
+  "id": "01M8CND9VT9P22YGHJEVDXS0BF",
+  "name": "Shakthi Preschool",
+  "coordinates": {
+    "latitude": 7.4904186,
+    "longitude": 81.78034459999999
+  },
+  "categories": [
+    "Preschool"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kurumanvely 12",
+  "business_status": "OPEN"
+}

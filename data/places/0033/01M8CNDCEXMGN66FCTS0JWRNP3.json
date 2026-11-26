@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCEXMGN66FCTS0JWRNP3",
+  "name": "Engel Medical Clinic",
+  "coordinates": {
+    "latitude": 7.9315598,
+    "longitude": 81.4389746
+  },
+  "categories": [
+    "Hospital"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WCJQ+JHH",
+  "business_status": "OPEN"
+}

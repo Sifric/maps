@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCNDYD4CP7929S7N7R94",
+  "name": "மணிபுரம் கரிஸ் பன்னை",
+  "coordinates": {
+    "latitude": 7.6700259,
+    "longitude": 81.55429339999999
+  },
+  "categories": [
+    "Warehouse"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MHC3+2P, Karadiyanaru",
+  "business_status": "OPEN"
+}

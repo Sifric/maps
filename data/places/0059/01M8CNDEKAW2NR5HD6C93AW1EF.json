@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDEKAW2NR5HD6C93AW1EF",
+  "name": "Jaffna City Hotel",
+  "coordinates": {
+    "latitude": 9.6654127,
+    "longitude": 80.01072169999999
+  },
+  "categories": [
+    "Bar",
+    "Hotel",
+    "Gym",
+    "Restaurant",
+    "Swimming pool",
+    "Wedding venue"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "70, 6 Jaffna-Kankesanturai Rd, Jaffna 40000",
+  "business_status": "OPEN"
+}

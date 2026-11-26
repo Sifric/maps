@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDTE337T5512MPZ7432Y",
+  "name": "Hopper restaurant",
+  "coordinates": {
+    "latitude": 6.039156999999999,
+    "longitude": 80.20394499999999
+  },
+  "categories": [
+    "Sri Lankan restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "174 Colombo Main Rd, Galle",
+  "business_status": "OPEN"
+}

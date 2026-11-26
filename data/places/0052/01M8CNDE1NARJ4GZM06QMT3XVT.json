@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE1NARJ4GZM06QMT3XVT",
+  "name": "Mogan",
+  "coordinates": {
+    "latitude": 6.0330676,
+    "longitude": 80.2192834
+  },
+  "categories": [
+    "Grocery delivery service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Mountvilla, Wakwella Rd, Galle 80000",
+  "business_status": "OPEN"
+}

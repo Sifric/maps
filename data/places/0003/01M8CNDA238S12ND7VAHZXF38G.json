@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA238S12ND7VAHZXF38G",
+  "name": "RINA BAKE HOUSE",
+  "coordinates": {
+    "latitude": 7.4083489,
+    "longitude": 81.83997049999999
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "4/3 Beach Rd, Kalmunai 32300",
+  "business_status": "OPEN"
+}

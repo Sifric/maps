@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDBRJTMW89HV562QA8HR",
+  "name": "Kishok house",
+  "coordinates": {
+    "latitude": 7.7261025,
+    "longitude": 81.6870098
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "no 601, 10 Trincomalee-Batticaloa Rd, Batticaloa",
+  "business_status": "OPEN"
+}

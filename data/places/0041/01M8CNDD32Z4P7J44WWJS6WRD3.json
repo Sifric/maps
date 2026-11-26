@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD32Z4P7J44WWJS6WRD3",
+  "name": "SLTB Bus Depot - Kaluwanchikudy",
+  "coordinates": {
+    "latitude": 7.5104291,
+    "longitude": 81.79509879999999
+  },
+  "categories": [
+    "Bus depot"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQ6W+52H, Atputhapillaiyar kovil road, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

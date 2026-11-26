@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD5VMGPYQS3W1HPPM371",
+  "name": "Polonnaruwa Railway Station",
+  "coordinates": {
+    "latitude": 7.9301254,
+    "longitude": 81.0333351
+  },
+  "categories": [
+    "Train station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "maitreegama",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA14PJT6TCKV4N2C5FGJ",
+  "name": "Taste of East",
+  "coordinates": {
+    "latitude": 7.524718399999999,
+    "longitude": 81.7877912
+  },
+  "categories": [
+    "Family restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQFQ+V39, Colombo - Batticaloa Hwy, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

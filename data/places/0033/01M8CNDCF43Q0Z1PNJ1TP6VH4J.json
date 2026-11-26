@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDCF43Q0Z1PNJ1TP6VH4J",
+  "name": "KENGALLA DENTAL SURGERY",
+  "coordinates": {
+    "latitude": 7.2906832999999995,
+    "longitude": 80.7210875
+  },
+  "categories": [
+    "Dental clinic"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "No 90 Kandy road, Kengalla 20186",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4–7 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4–7 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4–7 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4–7 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4–7:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "2–7 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8 AM–7 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCRWTMASQ4K7S1AQWF7C",
+  "name": "Painting work shop",
+  "coordinates": {
+    "latitude": 7.7270300999999995,
+    "longitude": 81.6999633
+  },
+  "categories": [
+    "Auto painting"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "167 Bar Rd - Batticaloa, Batticaloa 30000",
+  "business_status": "OPEN"
+}

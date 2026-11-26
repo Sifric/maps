@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDDG2BA75JEZ43J259SN9",
+  "name": "Vengadash Jewellery",
+  "coordinates": {
+    "latitude": 7.8416052999999994,
+    "longitude": 81.5487684
+  },
+  "categories": [
+    "Jewelry store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

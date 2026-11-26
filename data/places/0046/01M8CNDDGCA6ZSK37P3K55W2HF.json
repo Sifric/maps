@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDGCA6ZSK37P3K55W2HF",
+  "name": "Bike sale",
+  "coordinates": {
+    "latitude": 7.733486399999999,
+    "longitude": 81.694148
+  },
+  "categories": [
+    "RV dealer"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "14 Koolavadi 8th Cross St, Batticaloa 30000",
+  "business_status": "OPEN"
+}

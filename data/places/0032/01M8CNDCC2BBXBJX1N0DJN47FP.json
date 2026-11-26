@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCC2BBXBJX1N0DJN47FP",
+  "name": "Rayyan Beach Garden",
+  "coordinates": {
+    "latitude": 7.684956199999999,
+    "longitude": 81.7408954
+  },
+  "categories": [
+    "Beach"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kattankudy",
+  "business_status": "OPEN"
+}

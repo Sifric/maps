@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDQGYH0KPJV1GYSNBK00",
+  "name": "Rasa Sewana Restaurant",
+  "coordinates": {
+    "latitude": 6.2456857,
+    "longitude": 80.06328769999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "63W7+78F, Ambalangoda",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:45 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:45 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:45 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:45 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:45 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:45 AM–9:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6:45 AM–9:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

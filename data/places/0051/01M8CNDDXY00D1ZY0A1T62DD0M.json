@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDXY00D1ZY0A1T62DD0M",
+  "name": "Y-NOT Restaurant",
+  "coordinates": {
+    "latitude": 6.0366025,
+    "longitude": 80.2199936
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "26P9+MX8, Galle 80000",
+  "business_status": "OPEN"
+}

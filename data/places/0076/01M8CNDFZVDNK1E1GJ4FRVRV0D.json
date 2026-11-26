@@ -1,0 +1,70 @@
+{
+  "id": "01M8CNDFZVDNK1E1GJ4FRVRV0D",
+  "name": "Nagapoosani medical clinic",
+  "coordinates": {
+    "latitude": 9.3855767,
+    "longitude": 80.40297
+  },
+  "categories": [
+    "Medical Center"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "9CP3+65Q, 2nd cross lane, Kilinochchi",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7–11 AM",
+        "3:30–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7–11 AM",
+        "3:30–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7–11 AM",
+        "3:30–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7–11 AM",
+        "3:30–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7–11 AM",
+        "3:30–9 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7–11 AM",
+        "3:30–9 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7–11 AM",
+        "3:30–9 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

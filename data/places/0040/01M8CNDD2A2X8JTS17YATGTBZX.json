@@ -1,0 +1,69 @@
+{
+  "id": "01M8CNDD2A2X8JTS17YATGTBZX",
+  "name": "Blendz Restaurant - Colombo 6",
+  "coordinates": {
+    "latitude": 6.8769824999999996,
+    "longitude": 79.86769799999999
+  },
+  "categories": [
+    "Juice shop",
+    "Dessert restaurant",
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "181 W.A. Silva Mawatha, Colombo 00600",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "1 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "1 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "1 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "1 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "1:30 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "1 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "1 PM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

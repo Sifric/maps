@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDDF2ZHSZMBQCDB2PR3EW",
+  "name": "Pabasara Hair Salon",
+  "coordinates": {
+    "latitude": 6.3369375,
+    "longitude": 81.0041875
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\nSooriyawewa",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–9 PM"
+      ]
+    }
+  ],
+  "business_status": "CLOSED"
+}

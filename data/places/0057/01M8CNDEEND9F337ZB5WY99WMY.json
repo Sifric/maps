@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEEND9F337ZB5WY99WMY",
+  "name": "Palm Grove Guest House",
+  "coordinates": {
+    "latitude": 6.0126972,
+    "longitude": 80.2491362
+  },
+  "categories": [
+    "Lodging"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Unawatuna",
+  "business_status": "OPEN"
+}

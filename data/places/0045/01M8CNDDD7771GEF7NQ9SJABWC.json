@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDDD7771GEF7NQ9SJABWC",
+  "name": "5 room holiday bungalow in Batticaloa - One-Bedroom House",
+  "coordinates": {
+    "latitude": 7.731,
+    "longitude": 81.67472839999999
+  },
+  "categories": [
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Batticaloa",
+  "business_status": "OPEN"
+}

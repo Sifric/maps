@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD1PE5DNE6JB7715YPSW",
+  "name": "KPS House",
+  "coordinates": {
+    "latitude": 7.909961699999999,
+    "longitude": 81.5321335
+  },
+  "categories": [
+    "Housing development"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "488A, KPS House, Railway Rd, Oddamavadi 1",
+  "business_status": "OPEN"
+}

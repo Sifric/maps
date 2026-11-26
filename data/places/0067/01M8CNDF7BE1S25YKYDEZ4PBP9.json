@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDF7BE1S25YKYDEZ4PBP9",
+  "name": "People's Bank",
+  "coordinates": {
+    "latitude": 9.7996052,
+    "longitude": 80.1985669
+  },
+  "categories": [
+    "ATM",
+    "Bank"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Q5XX+RCW, AB20, Karaveddi",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8:30 AM–3 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8:30 AM–3 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8:30 AM–3 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8:30 AM–3 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8:30 AM–3 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8:30 AM–1 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

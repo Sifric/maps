@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBS2F8S73MRYFCP56YJE",
+  "name": "New Najeems Textiles",
+  "coordinates": {
+    "latitude": 7.4163074,
+    "longitude": 81.8247502
+  },
+  "categories": [
+    "Dress store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No.55. Main Street, Colombo - Batticaloa Hwy, Kalmunai 32300",
+  "business_status": "OPEN"
+}

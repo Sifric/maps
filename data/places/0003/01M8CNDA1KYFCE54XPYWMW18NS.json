@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDA1KYFCE54XPYWMW18NS",
+  "name": "AMS Farm",
+  "coordinates": {
+    "latitude": 7.4172411,
+    "longitude": 81.81329559999999
+  },
+  "categories": [
+    "Farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CR87+V8V, Kalmunai",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "10:14 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "10:14 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "10:14 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "10:14 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "10:14 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "10:14 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "10:14 AM–5 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

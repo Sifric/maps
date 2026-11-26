@@ -1,0 +1,27 @@
+{
+  "id": "01M8CNDEQGRQA148CN8Z87MC23",
+  "name": "Delft Village Stay",
+  "coordinates": {
+    "latitude": 9.524178899999999,
+    "longitude": 79.7038324
+  },
+  "categories": [
+    "Homestay",
+    "Barbecue area",
+    "Campground",
+    "Extended stay hotel",
+    "Hostel",
+    "Hotel",
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Ward No 10 Delft Center, Delft island 40370",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDB4SX6258ZSN1A7FY9AH",
+  "name": "Hindu Temple",
+  "coordinates": {
+    "latitude": 7.6976827,
+    "longitude": 81.6734484
+  },
+  "categories": [
+    "Hindu temple"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MMXF+39G, Unnamed Road, Batticaloa",
+  "business_status": "OPEN"
+}

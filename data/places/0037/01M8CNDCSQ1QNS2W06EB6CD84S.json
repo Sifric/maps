@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCSQ1QNS2W06EB6CD84S",
+  "name": "Jewel Gallery",
+  "coordinates": {
+    "latitude": 7.7309971,
+    "longitude": 81.6747295
+  },
+  "categories": [
+    "Jewelry store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "09 Mudaliyar SinnaLebbe Street, Batticaloa 30000",
+  "business_status": "OPEN"
+}

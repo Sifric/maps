@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCC4FS00DK2DFHCHGPTK",
+  "name": "hills camping ground",
+  "coordinates": {
+    "latitude": 7.089562399999999,
+    "longitude": 81.1625948
+  },
+  "categories": [
+    "Campground"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "35Q7+R2H, Madulsima",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDCD00ETFM31NRV2KDM5N",
+  "name": "The Villa by Contemporary Ceylon",
+  "coordinates": {
+    "latitude": 6.6600855999999995,
+    "longitude": 79.9280929
+  },
+  "categories": [
+    "Villa",
+    "Event venue",
+    "Hotel",
+    "Wedding venue"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "40/17 Samanthara Rd, Wadduwa 12560",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDAAHJ6JZJ2F4JFZ0W46C",
+  "name": "Badam Cafe",
+  "coordinates": {
+    "latitude": 6.865590399999999,
+    "longitude": 81.8328757
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "108/3 Main Street, Pottuvil 32500",
+  "business_status": "OPEN"
+}

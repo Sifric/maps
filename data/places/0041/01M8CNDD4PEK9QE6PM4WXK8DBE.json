@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD4PEK9QE6PM4WXK8DBE",
+  "name": "Thiruvalluvar Fast Food Hotel",
+  "coordinates": {
+    "latitude": 7.8199694,
+    "longitude": 81.5551071
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "RH94+X2Q, Sttandikudi Junction, Thavapuram",
+  "business_status": "OPEN"
+}

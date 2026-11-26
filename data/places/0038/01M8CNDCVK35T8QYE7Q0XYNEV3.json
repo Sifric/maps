@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCVK35T8QYE7Q0XYNEV3",
+  "name": "Eachchantheevu Cemetery",
+  "coordinates": {
+    "latitude": 7.7200057,
+    "longitude": 81.6427671
+  },
+  "categories": [
+    "Cemetery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PJCV+24, Batticaloa",
+  "business_status": "OPEN"
+}

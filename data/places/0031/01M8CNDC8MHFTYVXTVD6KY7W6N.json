@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC8MHFTYVXTVD6KY7W6N",
+  "name": "Ajenthan chiken shop",
+  "coordinates": {
+    "latitude": 7.9213276,
+    "longitude": 81.5246705
+  },
+  "categories": [
+    "Poultry farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Mullai road, 30410",
+  "business_status": "OPEN"
+}

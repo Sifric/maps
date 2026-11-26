@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDDSSKRWTXMAP59379N0X",
+  "name": "Meat Shop",
+  "coordinates": {
+    "latitude": 6.1431366999999995,
+    "longitude": 80.0999248
+  },
+  "categories": [
+    "Butcher shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "no149 Galle Rd, Hikkaduwa",
+  "business_status": "OPEN"
+}

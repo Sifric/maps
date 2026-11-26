@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDB8S34Q7MP6KY0VTBHX5",
+  "name": "Zaid rent a car",
+  "coordinates": {
+    "latitude": 7.247367799999999,
+    "longitude": 81.72222769999999
+  },
+  "categories": [
+    "Car rental agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "6PWC+XV3, Eragama",
+  "business_status": "OPEN"
+}

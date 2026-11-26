@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCD2MWDC4AH23ECP5DY6",
+  "name": "Kanesan House",
+  "coordinates": {
+    "latitude": 7.651876199999999,
+    "longitude": 81.7283041
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MP2H+Q83, Unnamed Road, Kattankudy",
+  "business_status": "OPEN"
+}

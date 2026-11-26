@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDC9BSD2Q9M1PSSBVNWNZ",
+  "name": "Treatooo Lagoon Resort Batticaloa",
+  "coordinates": {
+    "latitude": 7.7410254,
+    "longitude": 81.6953827
+  },
+  "categories": [
+    "Restaurant",
+    "Lodging"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMRW+C56, Batticaloa",
+  "business_status": "OPEN"
+}

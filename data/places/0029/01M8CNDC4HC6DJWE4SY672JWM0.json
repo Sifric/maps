@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC4HC6DJWE4SY672JWM0",
+  "name": "வாசகர் இல்லம் (Readers' Home)",
+  "coordinates": {
+    "latitude": 7.775754699999999,
+    "longitude": 81.60288299999999
+  },
+  "categories": [
+    "Library"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJG3+852, Bus Stop, Trincomalee-Batticaloa Rd, Eravur",
+  "business_status": "OPEN"
+}

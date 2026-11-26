@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCQYKCZHD0P8BJ6JD8ZS",
+  "name": "Parking, Kaluwanchikudy Market",
+  "coordinates": {
+    "latitude": 7.5174895,
+    "longitude": 81.783962
+  },
+  "categories": [
+    "Parking lot"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "B344, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

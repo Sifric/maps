@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9FVF09V70W62VRS67R",
+  "name": "Yummy delights kitchen",
+  "coordinates": {
+    "latitude": 7.7249146,
+    "longitude": 81.6966911
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMFW+XM8, Yummy delights kitchen, Batticaloa",
+  "business_status": "OPEN"
+}

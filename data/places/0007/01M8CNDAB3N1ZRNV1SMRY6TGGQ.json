@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDAB3N1ZRNV1SMRY6TGGQ",
+  "name": "Sandamali Stores",
+  "coordinates": {
+    "latitude": 6.2427065,
+    "longitude": 80.42488689999999
+  },
+  "categories": [
+    "Supermarket"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "Hiniduma - Opatha - Pitabeddera Rd",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:25 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:25 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:25 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:25 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6:25 AM–11 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE91TYKXTF4Q15TEEM3F",
+  "name": "Weerasuriya stores",
+  "coordinates": {
+    "latitude": 6.0055665,
+    "longitude": 80.7084155
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Galagama Road",
+  "business_status": "OPEN"
+}

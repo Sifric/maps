@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC206G3KAAXV8JE7ZPDP",
+  "name": "Sornamahal Jewellers",
+  "coordinates": {
+    "latitude": 7.4144409,
+    "longitude": 81.8263387
+  },
+  "categories": [
+    "Jewelry store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "168 Colombo - Batticaloa Hwy, Kalmunai 32300",
+  "business_status": "OPEN"
+}

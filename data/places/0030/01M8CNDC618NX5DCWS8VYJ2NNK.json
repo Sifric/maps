@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC618NX5DCWS8VYJ2NNK",
+  "name": "Kava Chai Hut- Restaurant - Kattankudy Beach",
+  "coordinates": {
+    "latitude": 7.684606,
+    "longitude": 81.7411948
+  },
+  "categories": [
+    "Family restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Marine Dr, Kattankudy",
+  "business_status": "CLOSED_TEMPORARILY"
+}

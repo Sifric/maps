@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCYNXZ76RHY1DKPYT2Q0",
+  "name": "Raseed Testy Shope",
+  "coordinates": {
+    "latitude": 7.7773718999999994,
+    "longitude": 81.60590479999999
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJG4+W9R, Eravur",
+  "business_status": "OPEN"
+}

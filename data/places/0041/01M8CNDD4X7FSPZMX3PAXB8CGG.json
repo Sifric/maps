@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD4X7FSPZMX3PAXB8CGG",
+  "name": "Lankan Handloom",
+  "coordinates": {
+    "latitude": 7.4305084,
+    "longitude": 81.8157469
+  },
+  "categories": [
+    "Clothing store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Pandiruppu",
+  "business_status": "OPEN"
+}

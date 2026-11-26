@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAAPE9DY5P533P2WKE3R",
+  "name": "Punchi Appu Mart",
+  "coordinates": {
+    "latitude": 7.5609801999999995,
+    "longitude": 81.340858
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Unuwathura Bubula",
+  "business_status": "OPEN"
+}

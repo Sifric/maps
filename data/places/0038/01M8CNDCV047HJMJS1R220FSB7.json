@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCV047HJMJS1R220FSB7",
+  "name": "Sujeevan Garage",
+  "coordinates": {
+    "latitude": 7.7343266999999996,
+    "longitude": 81.6928557
+  },
+  "categories": [
+    "Car repair and maintenance service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMMV+P4Q, Mamangam 3rd Cross Rd, Batticaloa",
+  "business_status": "OPEN"
+}

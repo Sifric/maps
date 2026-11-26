@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCZAP843HTQ8P5F8RYND",
+  "name": "Ad",
+  "coordinates": {
+    "latitude": 7.800753299999999,
+    "longitude": 81.6107502
+  },
+  "categories": [
+    "Internet cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "RJ26+4RV, Eravur",
+  "business_status": "OPEN"
+}

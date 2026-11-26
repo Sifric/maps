@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDZHBXG2QZGV0T2KP1YW",
+  "name": "Polina Restaurant Hikkaduwa",
+  "coordinates": {
+    "latitude": 6.1317555,
+    "longitude": 80.1014758
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "323 Galle Rd, Hikkaduwa 80240",
+  "business_status": "CLOSED_TEMPORARILY"
+}

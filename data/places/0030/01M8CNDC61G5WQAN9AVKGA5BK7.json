@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC61G5WQAN9AVKGA5BK7",
+  "name": "Radwa Fresh Chicken",
+  "coordinates": {
+    "latitude": 7.679944399999999,
+    "longitude": 81.7289364
+  },
+  "categories": [
+    "Chicken shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPHH+XHF, Colombo - Batticaloa Hwy, Kattankudy",
+  "business_status": "OPEN"
+}

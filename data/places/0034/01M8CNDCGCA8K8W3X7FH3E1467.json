@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCGCA8K8W3X7FH3E1467",
+  "name": "Sanoordeen place",
+  "coordinates": {
+    "latitude": 7.6803466,
+    "longitude": 81.7290297
+  },
+  "categories": [
+    "Housing society"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Al Aqsa, road, Kattankudy",
+  "business_status": "OPEN"
+}

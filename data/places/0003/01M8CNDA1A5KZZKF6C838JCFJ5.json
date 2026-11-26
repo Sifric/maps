@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA1A5KZZKF6C838JCFJ5",
+  "name": "City Restaurant",
+  "coordinates": {
+    "latitude": 7.656778,
+    "longitude": 81.7408394
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "05th mile post, main street, NO 204 NEW KALMUNAI ROAD, BATTICALAO 20000",
+  "business_status": "OPEN"
+}

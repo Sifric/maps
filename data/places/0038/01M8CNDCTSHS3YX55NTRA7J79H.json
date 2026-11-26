@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCTSHS3YX55NTRA7J79H",
+  "name": "Navathniya Selection",
+  "coordinates": {
+    "latitude": 7.7146685999999995,
+    "longitude": 81.69653029999999
+  },
+  "categories": [
+    "Furniture store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "63 Munai St, Batticaloa",
+  "business_status": "OPEN"
+}

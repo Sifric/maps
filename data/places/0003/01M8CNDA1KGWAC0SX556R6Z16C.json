@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDA1KGWAC0SX556R6Z16C",
+  "name": "Integrated Model Farm Mandoor",
+  "coordinates": {
+    "latitude": 7.4704872,
+    "longitude": 81.7354612
+  },
+  "categories": [
+    "Poultry farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "ollimaduwal Road, South 30220",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8:15 AM–4:15 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8:15 AM–4:15 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8:15 AM–4:15 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8:15 AM–4:15 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8:15 AM–4:15 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8:15 AM–4:15 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8:15 AM–4:15 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

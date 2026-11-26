@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCD0E93Q6JPS977K13GF",
+  "name": "Fresco Water Villa",
+  "coordinates": {
+    "latitude": 7.9457366,
+    "longitude": 80.73548579999999
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Fresco Water Villa Pvt Ltd, 72/A 4TH Mile Post, Sigiriya",
+  "business_status": "OPEN"
+}

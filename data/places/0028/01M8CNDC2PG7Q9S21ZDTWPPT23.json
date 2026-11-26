@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC2PG7Q9S21ZDTWPPT23",
+  "name": "Lilyish Flowers",
+  "coordinates": {
+    "latitude": 6.7715467,
+    "longitude": 80.0558789
+  },
+  "categories": [
+    "Florist"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Q3C4+J96, B123, Talagala",
+  "business_status": "OPEN"
+}

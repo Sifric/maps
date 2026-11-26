@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9000XVBNFM31K980C5",
+  "name": "Shafeel Store ෂාෆීල් ස්ටෝර්ස්",
+  "coordinates": {
+    "latitude": 7.680095,
+    "longitude": 81.74107149999999
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPJR+2CP, Abrar Rd, Kattankudy",
+  "business_status": "OPEN"
+}

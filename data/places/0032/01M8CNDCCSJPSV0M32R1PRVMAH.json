@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCCSJPSV0M32R1PRVMAH",
+  "name": "Aathanya Villa",
+  "coordinates": {
+    "latitude": 7.7980912,
+    "longitude": 81.5750929
+  },
+  "categories": [
+    "Housing society"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Thavapuram",
+  "business_status": "OPEN"
+}

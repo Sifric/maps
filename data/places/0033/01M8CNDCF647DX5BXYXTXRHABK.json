@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCF647DX5BXYXTXRHABK",
+  "name": "Arogya Pharmacy",
+  "coordinates": {
+    "latitude": 7.7236012999999994,
+    "longitude": 81.69882559999999
+  },
+  "categories": [
+    "Pharmacy"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No.57 Railway Cross road, Batticaloa 30000",
+  "business_status": "OPEN"
+}

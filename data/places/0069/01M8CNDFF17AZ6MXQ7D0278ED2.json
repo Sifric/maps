@@ -1,0 +1,63 @@
+{
+  "id": "01M8CNDFF17AZ6MXQ7D0278ED2",
+  "name": "Family Medical Care",
+  "coordinates": {
+    "latitude": 9.6961748,
+    "longitude": 80.05699489999999
+  },
+  "categories": [
+    "Medical Center"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "Family Medical care Matha kovilady Kopay south Kopay, 40000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8–10:30 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5–8 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5–8 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5–8 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5–8 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5–8 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

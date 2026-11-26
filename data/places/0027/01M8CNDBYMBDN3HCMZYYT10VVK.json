@@ -1,0 +1,73 @@
+{
+  "id": "01M8CNDBYMBDN3HCMZYYT10VVK",
+  "name": "HAPPY MEDIC CARE (Dr.Renukanth)",
+  "coordinates": {
+    "latitude": 7.4124373,
+    "longitude": 81.82993599999999
+  },
+  "categories": [
+    "Family practice physician"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "28 Udyar Rd, Kalmunai 32300",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:30–7:30 AM",
+        "4:30–9:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:30–7:30 AM",
+        "4:30–9:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:30–7:30 AM",
+        "4:30–9:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:30–7:30 AM",
+        "4:30–9:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:30–7:30 AM",
+        "4:30–9:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:30–7:30 AM",
+        "4:30–9:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6:30–7:30 AM",
+        "4:30–9:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

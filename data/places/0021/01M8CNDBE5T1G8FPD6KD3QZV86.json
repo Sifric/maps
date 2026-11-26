@@ -1,0 +1,74 @@
+{
+  "id": "01M8CNDBE5T1G8FPD6KD3QZV86",
+  "name": "People's Bank ATM",
+  "coordinates": {
+    "latitude": 7.3910655,
+    "longitude": 81.8352013
+  },
+  "categories": [
+    "ATM",
+    "Public sector bank"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ],
+    "names": [
+      "People's Bank & ATM"
+    ]
+  },
+  "address": "9RRP+C4M, Colombo - Batticaloa Hwy, Sainthamaruthu 32300",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8:30 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8:30 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8:30 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8:30 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8:30 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8:30 AM–12:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "9RRP+C3G, Colombo - Batticaloa Hwy, Sainthamaruthu 32280"
+  ]
+}

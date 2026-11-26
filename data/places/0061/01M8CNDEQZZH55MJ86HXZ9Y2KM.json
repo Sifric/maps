@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDEQZZH55MJ86HXZ9Y2KM",
+  "name": "AKR Hotel Pvt Ltd",
+  "coordinates": {
+    "latitude": 9.408903,
+    "longitude": 80.40780199999999
+  },
+  "categories": [
+    "Hotel",
+    "Motel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Kandy - Jaffna Hwy, Kilinochchi",
+  "business_status": "OPEN"
+}

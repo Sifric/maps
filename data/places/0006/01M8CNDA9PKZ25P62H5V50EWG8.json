@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA9PKZ25P62H5V50EWG8",
+  "name": "Munas vegetable supermarket",
+  "coordinates": {
+    "latitude": 7.402958399999999,
+    "longitude": 81.8417753
+  },
+  "categories": [
+    "Vegetable wholesale market"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CR3R+5PJ, Beach Rd, Kalmunai 11",
+  "business_status": "OPEN"
+}

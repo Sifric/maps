@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC3WE07EZ4F546A36JX2",
+  "name": "St.Mary's College",
+  "coordinates": {
+    "latitude": 7.7126432,
+    "longitude": 81.6951764
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "10 Advocate's Rd, Batticaloa",
+  "business_status": "OPEN"
+}

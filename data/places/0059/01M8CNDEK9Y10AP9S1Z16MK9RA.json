@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEK9Y10AP9S1Z16MK9RA",
+  "name": "Nadeshalingam Shop",
+  "coordinates": {
+    "latitude": 9.7482767,
+    "longitude": 79.9741961
+  },
+  "categories": [
+    "Supermarket"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "B170",
+  "business_status": "OPEN"
+}

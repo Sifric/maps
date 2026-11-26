@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCRJH1TV52X5PX379NXR",
+  "name": "PS Tours Co.Ltd",
+  "coordinates": {
+    "latitude": 7.7257922,
+    "longitude": 81.6932953
+  },
+  "categories": [
+    "Taxi service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Rosairo's Ln, Batticaloa 30000",
+  "business_status": "OPEN"
+}

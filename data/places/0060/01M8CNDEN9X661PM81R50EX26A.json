@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEN9X661PM81R50EX26A",
+  "name": "Raj hotel",
+  "coordinates": {
+    "latitude": 9.656276199999999,
+    "longitude": 80.0156959
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "256 Beach Rd, Jaffna",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDCC3PBQX5Z0Q8W9VQZYM",
+  "name": "Bambaragala Camping Area",
+  "coordinates": {
+    "latitude": 6.8834954999999995,
+    "longitude": 81.1390753
+  },
+  "categories": [
+    "Camping cabin",
+    "Travel agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Sanka Passara Road Pelgahathenna, Passara 90100",
+  "business_status": "OPEN"
+}

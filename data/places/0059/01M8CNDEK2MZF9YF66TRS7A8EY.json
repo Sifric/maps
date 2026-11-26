@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEK2MZF9YF66TRS7A8EY",
+  "name": "Senthuran Restaurant",
+  "coordinates": {
+    "latitude": 9.8269708,
+    "longitude": 80.18258829999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Valvettithurai",
+  "business_status": "CLOSED_TEMPORARILY"
+}

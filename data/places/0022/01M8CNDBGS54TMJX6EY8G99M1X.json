@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBGS54TMJX6EY8G99M1X",
+  "name": "Public Toilet",
+  "coordinates": {
+    "latitude": 7.3714286,
+    "longitude": 81.8213519
+  },
+  "categories": [
+    "Public bathroom"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9RCC+HGH, Karativu-Ampara Hwy, Karaitivu",
+  "business_status": "OPEN"
+}

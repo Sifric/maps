@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCRVFF97JW5ZXX95D63F",
+  "name": "Shoe Repair Shop",
+  "coordinates": {
+    "latitude": 7.7151988,
+    "longitude": 81.6986798
+  },
+  "categories": [
+    "Shoe repair shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "11 Bar Rd - Batticaloa, Batticaloa",
+  "business_status": "OPEN"
+}

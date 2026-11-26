@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC7NRBVMG5Q57N9Z5TCX",
+  "name": "Poo Nochimunai Fishery Harbour",
+  "coordinates": {
+    "latitude": 7.699786199999999,
+    "longitude": 81.7286907
+  },
+  "categories": [
+    "Fish farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPXH+WF8, Poonochimunai Rd, Kallady",
+  "business_status": "OPEN"
+}

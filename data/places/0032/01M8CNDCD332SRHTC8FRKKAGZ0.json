@@ -1,0 +1,28 @@
+{
+  "id": "01M8CNDCD332SRHTC8FRKKAGZ0",
+  "name": "Pivithuru Villa",
+  "coordinates": {
+    "latitude": 5.9613023,
+    "longitude": 80.65676119999999
+  },
+  "categories": [
+    "Lodging",
+    "Vacation rental",
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "New Tangalle Rd, Dikwella 81200",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "Maaliyadda"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBCRB4EGZ8PWTWWE3X64",
+  "name": "Urban Rentals",
+  "coordinates": {
+    "latitude": 7.3957479,
+    "longitude": 81.8368828
+  },
+  "categories": [
+    "Car rental agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "146 A/2 Pm Road Sainthamaruthu 05, Kalmunai 32280",
+  "business_status": "OPEN"
+}

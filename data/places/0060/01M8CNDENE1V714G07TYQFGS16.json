@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDENE1V714G07TYQFGS16",
+  "name": "Surfview Beach Club & Hotel",
+  "coordinates": {
+    "latitude": 5.94462,
+    "longitude": 80.4555306
+  },
+  "categories": [
+    "Restaurant",
+    "Beach club",
+    "Coffee shop",
+    "Hotel",
+    "Lounge bar"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "road, Mirissa 81740",
+  "business_status": "OPEN"
+}

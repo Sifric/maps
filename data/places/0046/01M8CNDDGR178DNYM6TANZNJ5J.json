@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDGR178DNYM6TANZNJ5J",
+  "name": "Naweed Shopping Centre",
+  "coordinates": {
+    "latitude": 7.903267,
+    "longitude": 81.51925729999999
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG39+8P2, Oddamavadi",
+  "business_status": "OPEN"
+}

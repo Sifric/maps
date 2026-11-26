@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDRAJ4QTVRADFV1W1HZR",
+  "name": "Nizam Farm Shop",
+  "coordinates": {
+    "latitude": 6.0627203,
+    "longitude": 80.2216158
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Mapalagama Bus Rd, Galle 80000",
+  "business_status": "OPEN"
+}

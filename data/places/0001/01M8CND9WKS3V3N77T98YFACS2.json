@@ -1,0 +1,23 @@
+{
+  "id": "01M8CND9WKS3V3N77T98YFACS2",
+  "name": "Brothers Hostel",
+  "coordinates": {
+    "latitude": 7.420164199999999,
+    "longitude": 81.8244268
+  },
+  "categories": [
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CRCF+3Q7, Carmel Fatima College Rd, Kalmunai 32300",
+  "business_status": "OPEN"
+}

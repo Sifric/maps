@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDDRWD80Y9WQ4JSCVJRDN",
+  "name": "RELAX Food Art Restaurant",
+  "coordinates": {
+    "latitude": 6.0098522999999995,
+    "longitude": 80.2470629
+  },
+  "categories": [
+    "Coffee shop",
+    "Cake shop",
+    "Restaurant",
+    "Coffee stand",
+    "Event planner",
+    "Party planner",
+    "Raw food restaurant",
+    "Vegan restaurant",
+    "Vegetarian restaurant",
+    "Wedding planner"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "35, Koswatthage Wattha, Yaddehimulla Rd, Unawatuna 80600",
+  "business_status": "CLOSED_TEMPORARILY"
+}

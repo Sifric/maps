@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAG5ANAHERKNF964KQPF",
+  "name": "Ramiy Resort",
+  "coordinates": {
+    "latitude": 7.7336559,
+    "longitude": 81.6680481
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Batticaloa",
+  "business_status": "OPEN"
+}

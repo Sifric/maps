@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCA2Q63DB5T3A9AJ27S4",
+  "name": "SAKR Traders",
+  "coordinates": {
+    "latitude": 7.9249054999999995,
+    "longitude": 81.5299785
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WGFH+XX9",
+  "business_status": "OPEN"
+}

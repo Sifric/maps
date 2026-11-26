@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCTKT12GDH682BRVGV30",
+  "name": "Shapthana Electrical Shop",
+  "coordinates": {
+    "latitude": 7.7293175,
+    "longitude": 81.68816149999999
+  },
+  "categories": [
+    "Electrical equipment supplier"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMHQ+P7F, Irathapuram East Rd, Batticaloa",
+  "business_status": "OPEN"
+}

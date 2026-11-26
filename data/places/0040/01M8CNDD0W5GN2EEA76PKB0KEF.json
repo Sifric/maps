@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDD0W5GN2EEA76PKB0KEF",
+  "name": "V Clean Laundry Mart",
+  "coordinates": {
+    "latitude": 6.844267899999999,
+    "longitude": 79.8758397
+  },
+  "categories": [
+    "Laundromat"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "1C Sangabo Road, Kawdana Rd, Dehiwala 10350",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "9 AM–3:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

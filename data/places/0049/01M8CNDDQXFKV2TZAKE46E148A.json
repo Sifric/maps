@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDQXFKV2TZAKE46E148A",
+  "name": "Sunflower Hotel & Restaurant",
+  "coordinates": {
+    "latitude": 6.1413765,
+    "longitude": 80.33749929999999
+  },
+  "categories": [
+    "Fast food restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "48RP+HX5, Galle - Udugama Rd, Nakiyadeniya",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5 AM–11:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

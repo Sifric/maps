@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDCZFR0EM6S1BGZ05TNBV",
+  "name": "Eravur",
+  "coordinates": {
+    "latitude": 7.7855864,
+    "longitude": 81.6044138
+  },
+  "categories": [
+    "Train station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

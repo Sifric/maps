@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCED39SQE695H7JX7575",
+  "name": "Mafas Medicare",
+  "coordinates": {
+    "latitude": 7.774230599999999,
+    "longitude": 81.6072081
+  },
+  "categories": [
+    "Pharmacy"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJF4+QW7, Main St, Eravur 06",
+  "business_status": "OPEN"
+}

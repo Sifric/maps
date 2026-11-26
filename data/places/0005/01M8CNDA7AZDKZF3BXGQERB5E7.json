@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA7AZDKZF3BXGQERB5E7",
+  "name": "Port Corner",
+  "coordinates": {
+    "latitude": 7.270807899999999,
+    "longitude": 81.8477466
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "SLPA Road, Palamunai",
+  "business_status": "OPEN"
+}

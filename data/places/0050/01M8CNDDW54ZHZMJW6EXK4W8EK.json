@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDW54ZHZMJW6EXK4W8EK",
+  "name": "මඩුව Restaurant",
+  "coordinates": {
+    "latitude": 6.2689109,
+    "longitude": 80.0981963
+  },
+  "categories": [
+    "Seafood restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "5 Miles post, Galle - Elpitiya Rd, Karandeniya",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5 PM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

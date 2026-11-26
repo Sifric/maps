@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCQVSGCBKD50B58B915E",
+  "name": "SIENA",
+  "coordinates": {
+    "latitude": 7.7976374999999996,
+    "longitude": 81.5851094
+  },
+  "categories": [
+    "Park"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QHXP+325, Chenkaladi",
+  "business_status": "OPEN"
+}

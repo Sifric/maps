@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBDAHKQ47RHX7188G4Z1",
+  "name": "Electric Vehicle Charging Station",
+  "coordinates": {
+    "latitude": 7.1950848999999995,
+    "longitude": 80.5969884
+  },
+  "categories": [
+    "Electric vehicle charging station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "214/c3 Polgahaanga",
+  "business_status": "CLOSED_TEMPORARILY"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC60ABM6V44J4TWBDMGJ",
+  "name": "Annapoorana",
+  "coordinates": {
+    "latitude": 7.6668614999999996,
+    "longitude": 81.7378019
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MP8Q+P4V, Colombo - Batticaloa Hwy, Kattankudy",
+  "business_status": "OPEN"
+}

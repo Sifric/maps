@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDBYKAC9AW5BEY6NHHVZQ",
+  "name": "PMICH- PrimeCare Medical & Integrated Channelling Hub!",
+  "coordinates": {
+    "latitude": 7.4011933999999995,
+    "longitude": 81.8329524
+  },
+  "categories": [
+    "Medical Center"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "182/ A GS Lane, Kalmunai 32300",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6–9 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6–9 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6–9 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

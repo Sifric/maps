@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDBRG7XVYEAQZ2SY9J7XY",
+  "name": "U Mart",
+  "coordinates": {
+    "latitude": 7.2519374999999995,
+    "longitude": 81.7081875
+  },
+  "categories": [
+    "Cell phone store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "Hingurana 32450",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8:31 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8:31 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8:31 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8:31 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "3:31–10:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8:31 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8:31 AM–10:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

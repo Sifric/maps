@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6QPWEY4CZS1NHGWPY7",
+  "name": "my cafe",
+  "coordinates": {
+    "latitude": 7.6804079,
+    "longitude": 81.72875979999999
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPJH+5G6, Kattankudy",
+  "business_status": "OPEN"
+}

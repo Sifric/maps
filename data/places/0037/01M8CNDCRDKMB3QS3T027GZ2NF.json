@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCRDKMB3QS3T027GZ2NF",
+  "name": "Gandhi Stadium / காந்தி விளையாட்டு அரங்கம்",
+  "coordinates": {
+    "latitude": 7.667682699999999,
+    "longitude": 81.6880492
+  },
+  "categories": [
+    "Stadium"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MM8P+XX6, Batticaloa",
+  "business_status": "OPEN"
+}

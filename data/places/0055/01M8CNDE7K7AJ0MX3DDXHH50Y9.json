@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE7K7AJ0MX3DDXHH50Y9",
+  "name": "Manoj bakery",
+  "coordinates": {
+    "latitude": 6.0278598,
+    "longitude": 80.4092276
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Delgahathota Rd",
+  "business_status": "OPEN"
+}

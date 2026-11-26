@@ -1,0 +1,23 @@
+{
+  "id": "01M8CND9VRC30H6GCW214XQB9C",
+  "name": "Amal",
+  "coordinates": {
+    "latitude": 7.4267857,
+    "longitude": 81.7264599
+  },
+  "categories": [
+    "Driving school"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Central Camp 05",
+  "business_status": "OPEN"
+}

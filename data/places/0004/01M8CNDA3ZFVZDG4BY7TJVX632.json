@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA3ZFVZDG4BY7TJVX632",
+  "name": "Bilal Hotel",
+  "coordinates": {
+    "latitude": 7.4185586,
+    "longitude": 81.8167027
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "CR98+CMG, Natpiddimunai Rd, Kalmunai 32300",
+  "business_status": "OPEN"
+}

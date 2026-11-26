@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBW7D3BTWSG04NDHVGJW",
+  "name": "MOLINA SHOE KKY",
+  "coordinates": {
+    "latitude": 7.6847086,
+    "longitude": 81.73823139999999
+  },
+  "categories": [
+    "Shoe store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "new, 19/2,Abrar mosque, 1st Cross St, Kattankudy",
+  "business_status": "OPEN"
+}

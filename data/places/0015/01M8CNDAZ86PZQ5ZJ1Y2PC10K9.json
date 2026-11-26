@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDAZ86PZQ5ZJ1Y2PC10K9",
+  "name": "Zilantro Foods",
+  "coordinates": {
+    "latitude": 7.224262899999999,
+    "longitude": 81.85473139999999
+  },
+  "categories": [
+    "Food manufacturer"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "150 Beach Road, Akkaraipattu 32400",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9:30 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "10:30 AM–2 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

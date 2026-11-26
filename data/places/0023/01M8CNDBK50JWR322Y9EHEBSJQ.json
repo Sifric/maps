@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBK50JWR322Y9EHEBSJQ",
+  "name": "Rent a car",
+  "coordinates": {
+    "latitude": 5.9786527,
+    "longitude": 80.6968224
+  },
+  "categories": [
+    "Car rental agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "XMHW+FPF, MahimaMulti City (pvt) ltd & Cab Service Wewurukannala, Dikwella",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDAHA1407P1ZSX9VHZTKW",
+  "name": "Aiden Homestay",
+  "coordinates": {
+    "latitude": 7.92556,
+    "longitude": 81.5485382
+  },
+  "categories": [
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kalkudah",
+  "business_status": "OPEN"
+}

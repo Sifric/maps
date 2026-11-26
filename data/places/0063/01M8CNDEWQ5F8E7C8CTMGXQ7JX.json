@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEWQ5F8E7C8CTMGXQ7JX",
+  "name": "Karainagar IOC Filling station",
+  "coordinates": {
+    "latitude": 9.7394123,
+    "longitude": 79.88951829999999
+  },
+  "categories": [
+    "Gas station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Karainagar",
+  "business_status": "OPEN"
+}

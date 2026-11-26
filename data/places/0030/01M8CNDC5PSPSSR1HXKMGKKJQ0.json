@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDC5PSPSSR1HXKMGKKJQ0",
+  "name": "Eastern vibes cafe",
+  "coordinates": {
+    "latitude": 7.684017,
+    "longitude": 81.720638
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "319 Old Rd, Kattankudy 01",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5–9:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5–9:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5–9:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5–9:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5–9:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5–9:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

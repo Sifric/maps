@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDA2Q65KZR22FEFB6646C",
+  "name": "New supermarket",
+  "coordinates": {
+    "latitude": 7.353815699999999,
+    "longitude": 81.7979098
+  },
+  "categories": [
+    "Supermarket"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "9Q3X+G5F, Sammanthurai",
+  "business_status": "OPEN"
+}

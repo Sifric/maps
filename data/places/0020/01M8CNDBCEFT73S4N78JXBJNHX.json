@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBCEFT73S4N78JXBJNHX",
+  "name": "Noufy home",
+  "coordinates": {
+    "latitude": 7.7910523,
+    "longitude": 81.6142759
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJH9+MQ2, Eravur",
+  "business_status": "OPEN"
+}

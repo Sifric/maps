@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDD34RMSB7V0MFV74033",
+  "name": "Sujath house",
+  "coordinates": {
+    "latitude": 7.6825053,
+    "longitude": 81.7402675
+  },
+  "categories": [
+    "Housing development"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "24/8 Hostel Rd, Kattankudy",
+  "business_status": "OPEN"
+}

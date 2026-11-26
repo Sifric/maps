@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBDM8Q57K4MB5VDM76QK",
+  "name": "Sherlina Beauty Saloon",
+  "coordinates": {
+    "latitude": 7.417548399999999,
+    "longitude": 81.824122
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "77 A4, Kalmunai 32300",
+  "business_status": "OPEN"
+}

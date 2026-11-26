@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC90HYDTB1JBKJ5ERBSZ",
+  "name": "Ladies Market",
+  "coordinates": {
+    "latitude": 7.6834335,
+    "longitude": 81.7350112
+  },
+  "categories": [
+    "Market"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPMP+92C, Kattankudy",
+  "business_status": "OPEN"
+}

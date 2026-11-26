@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBFN1YRPZ8G1T0CMR0G",
+  "name": "Batti cool production & Sales centre",
+  "coordinates": {
+    "latitude": 7.7782329,
+    "longitude": 81.6054948
+  },
+  "categories": [
+    "Ice cream shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJH4+75X, Eravur",
+  "business_status": "OPEN"
+}

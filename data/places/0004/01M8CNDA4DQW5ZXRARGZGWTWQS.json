@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA4DQW5ZXRARGZGWTWQS",
+  "name": "Subaideen Hotel",
+  "coordinates": {
+    "latitude": 7.2243729,
+    "longitude": 81.85102069999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Bus Stop, 10 Beach Road, Akkaraipattu 32400",
+  "business_status": "OPEN"
+}

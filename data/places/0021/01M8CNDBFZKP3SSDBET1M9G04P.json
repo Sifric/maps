@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBFZKP3SSDBET1M9G04P",
+  "name": "Laundry Service Fast",
+  "coordinates": {
+    "latitude": 6.861865099999999,
+    "longitude": 81.83612769999999
+  },
+  "categories": [
+    "Laundry service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "VR6P+PF, Pottuvil",
+  "business_status": "OPEN"
+}

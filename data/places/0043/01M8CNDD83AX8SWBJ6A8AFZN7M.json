@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD83AX8SWBJ6A8AFZN7M",
+  "name": "Kurukkalmadam Express Bus Stop",
+  "coordinates": {
+    "latitude": 7.5864096,
+    "longitude": 81.78269159999999
+  },
+  "categories": [
+    "Transportation service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "HQPM+H38, Kurukkalmadam",
+  "business_status": "OPEN"
+}

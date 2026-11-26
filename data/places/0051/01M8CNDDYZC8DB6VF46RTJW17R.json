@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDYZC8DB6VF46RTJW17R",
+  "name": "Rambo's Retreat",
+  "coordinates": {
+    "latitude": 6.4325078,
+    "longitude": 80.0034519
+  },
+  "categories": [
+    "American restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "246 Aluthgama - Mathugama Rd, Beruwala",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12:30 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12:30 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12:30 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12:30 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12:30 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

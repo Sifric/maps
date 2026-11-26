@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC97AGBCZGPTMT93EYXT",
+  "name": "Zam Zam Chicken Shop",
+  "coordinates": {
+    "latitude": 7.9148086,
+    "longitude": 81.52689269999999
+  },
+  "categories": [
+    "Farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG8G+2GG, Hudha Mosque Rd, Oddamavadi",
+  "business_status": "OPEN"
+}

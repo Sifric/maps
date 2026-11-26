@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCV50TVTBJYX5X95RY5P",
+  "name": "Niroshan house",
+  "coordinates": {
+    "latitude": 7.7104232999999995,
+    "longitude": 81.71848729999999
+  },
+  "categories": [
+    "Taxi service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "4th cross navy camp road kallady, batticaloa 30000",
+  "business_status": "OPEN"
+}

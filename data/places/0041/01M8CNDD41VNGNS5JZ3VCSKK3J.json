@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD41VNGNS5JZ3VCSKK3J",
+  "name": "ප්‍රියන්ත බේක් හවුස්",
+  "coordinates": {
+    "latitude": 6.9909479,
+    "longitude": 80.2787008
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "X7RH+9G7, Magammana",
+  "business_status": "OPEN"
+}

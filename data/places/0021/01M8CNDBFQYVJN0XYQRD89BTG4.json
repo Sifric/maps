@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDBFQYVJN0XYQRD89BTG4",
+  "name": "Abdul Razeen Filling Station",
+  "coordinates": {
+    "latitude": 7.221765899999999,
+    "longitude": 81.8387388
+  },
+  "categories": [
+    "Gas station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "Akkaraipattu - Warapathanchenai, Akkaraipattu",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5:15 AM–8:45 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5:15 AM–8:45 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5:15 AM–8:45 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5:15 AM–8:45 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5:15 AM–8:45 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5:15 AM–8:45 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5:15 AM–8:45 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

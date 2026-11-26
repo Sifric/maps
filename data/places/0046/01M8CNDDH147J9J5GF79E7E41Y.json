@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDH147J9J5GF79E7E41Y",
+  "name": "Hala selection",
+  "coordinates": {
+    "latitude": 7.6804096,
+    "longitude": 81.7293104
+  },
+  "categories": [
+    "Shopping mall"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "12 Dr Badhiudeen Mahmood Mawatha, Kattankudy",
+  "business_status": "OPEN"
+}

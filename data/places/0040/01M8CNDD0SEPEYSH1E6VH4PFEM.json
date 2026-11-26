@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDD0SEPEYSH1E6VH4PFEM",
+  "name": "Uma Saloon",
+  "coordinates": {
+    "latitude": 7.9224701,
+    "longitude": 81.5302241
+  },
+  "categories": [
+    "Hair salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "\nWGCJ+X3Q, Oddamavadi",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "WGCJ+X3Q, Oddamavadi"
+  ]
+}

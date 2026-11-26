@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBD6ZTCC1RATP6RVM7H9",
+  "name": "AKS Charging centre",
+  "coordinates": {
+    "latitude": 8.350080199999999,
+    "longitude": 81.0063351
+  },
+  "categories": [
+    "Electric vehicle charging station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No. 736/B TC Road, Kantale 31300",
+  "business_status": "OPEN"
+}

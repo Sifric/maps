@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDE9PAVC552K1FV6KKJ0J",
+  "name": "Sadun Kitchen",
+  "coordinates": {
+    "latitude": 6.0651731,
+    "longitude": 80.171262
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Galle",
+  "business_status": "CLOSED_TEMPORARILY"
+}

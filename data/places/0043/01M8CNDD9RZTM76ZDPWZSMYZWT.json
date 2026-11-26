@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDD9RZTM76ZDPWZSMYZWT",
+  "name": "Ayurvedic Medical Centre",
+  "coordinates": {
+    "latitude": 7.734106,
+    "longitude": 81.6784946
+  },
+  "categories": [
+    "Ayurvedic clinic",
+    "Service establishment"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "3–6 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "3–6 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "3–6 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "3–6 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "3–6 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "3–6 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC8NAXTV02SCRB263BH9",
+  "name": "Rikas store",
+  "coordinates": {
+    "latitude": 7.9221539,
+    "longitude": 81.5275102
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WGCH+V26, Buhary Alim Rd, Oddamavadi",
+  "business_status": "OPEN"
+}

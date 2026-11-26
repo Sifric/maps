@@ -1,0 +1,71 @@
+{
+  "id": "01M8CNDEM8N35D8NH5GN9VCMNM",
+  "name": "Olai Manai",
+  "coordinates": {
+    "latitude": 6.8691651,
+    "longitude": 79.8622026
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "324, Galle Road, entrance, 36th Ln, 00600",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "11:30 AM–3 PM",
+        "6:30–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "11:30 AM–3 PM",
+        "6:30–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "11:30 AM–3 PM",
+        "6:30–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "11:30 AM–3 PM",
+        "6:30–9 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "11:30 AM–3 PM",
+        "6:30–9 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "11:30 AM–3 PM",
+        "6:30–9 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

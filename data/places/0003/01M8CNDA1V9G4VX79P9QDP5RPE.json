@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDA1V9G4VX79P9QDP5RPE",
+  "name": "H. USAITH BEEF SHOP ( இறைச்சிக்கடை )",
+  "coordinates": {
+    "latitude": 7.7857831,
+    "longitude": 81.6180234
+  },
+  "categories": [
+    "Butcher shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJP9+866, Maiyavadi Junction, Meerakerny, Thaikka Road, Eravur",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6 AM–1 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6 AM–1 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6 AM–1 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6 AM–1 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6 AM–1 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6 AM–1 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6 AM–1 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

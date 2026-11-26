@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDGPZNP5E3FNVAKVJF85",
+  "name": "Weerasingha Stores",
+  "coordinates": {
+    "latitude": 6.9749779,
+    "longitude": 81.043926
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "02 Mile Post, Hali Ela, Peradeniya-Badulla-Chenkaladi Hwy",
+  "business_status": "OPEN"
+}

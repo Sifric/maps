@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAFEP4X3S91VA02CB0VH",
+  "name": "Deneth Homestay",
+  "coordinates": {
+    "latitude": 7.004002,
+    "longitude": 81.0600982
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "2336+J25, Madapathana Road, kithalella",
+  "business_status": "OPEN"
+}

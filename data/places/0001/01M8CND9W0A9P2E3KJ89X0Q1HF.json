@@ -1,0 +1,23 @@
+{
+  "id": "01M8CND9W0A9P2E3KJ89X0Q1HF",
+  "name": "Nursery School",
+  "coordinates": {
+    "latitude": 7.6665975,
+    "longitude": 81.60598999999999
+  },
+  "categories": [
+    "Nursery school"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MJ84+J9Q, Bharathi Nagar, Batticaloa",
+  "business_status": "OPEN"
+}

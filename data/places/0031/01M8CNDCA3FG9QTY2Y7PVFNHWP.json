@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCA3FG9QTY2Y7PVFNHWP",
+  "name": "Thanaluxmi Stores",
+  "coordinates": {
+    "latitude": 7.9330782,
+    "longitude": 81.536664
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WGMP+6MM, Nasivanthivu",
+  "business_status": "OPEN"
+}

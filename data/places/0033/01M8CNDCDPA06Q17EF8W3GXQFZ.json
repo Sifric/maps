@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDCDPA06Q17EF8W3GXQFZ",
+  "name": "Sadunpura Dental Clinic",
+  "coordinates": {
+    "latitude": 7.6231401,
+    "longitude": 81.04848799999999
+  },
+  "categories": [
+    "Dental clinic"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "J2FX+794, Sandunpura",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4:30–8 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4:30–8 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4:30–8 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4:30–8 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4:30–8 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "3–8 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "3–8 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

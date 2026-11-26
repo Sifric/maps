@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCRF5VFJYDMK6X8YVN1V",
+  "name": "Sand bridge - Batticaloa",
+  "coordinates": {
+    "latitude": 7.7602324,
+    "longitude": 81.6882349
+  },
+  "categories": [
+    "Tourist attraction"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QM6Q+37X, Batticaloa",
+  "business_status": "OPEN"
+}

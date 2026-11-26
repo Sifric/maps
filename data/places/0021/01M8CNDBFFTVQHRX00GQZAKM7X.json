@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDBFFTVQHRX00GQZAKM7X",
+  "name": "Gd salon1",
+  "coordinates": {
+    "latitude": 6.8768417,
+    "longitude": 81.8294727
+  },
+  "categories": [
+    "Barber shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "\nVRGH+PQQ, Panama Rd, Pottuvil",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "VRGH+PQQ, Panama Rd, Pottuvil"
+  ]
+}

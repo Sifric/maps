@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC3HPV0JBREKPXBZ3RSF",
+  "name": "Science college",
+  "coordinates": {
+    "latitude": 7.7196023,
+    "longitude": 81.7032298
+  },
+  "categories": [
+    "Educational institution"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "42 Gold Smith's St, Batticaloa",
+  "business_status": "OPEN"
+}

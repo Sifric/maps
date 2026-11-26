@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBCTJQX1D3A46X687JJ7",
+  "name": "J&J Rental Car Service",
+  "coordinates": {
+    "latitude": 7.6053206,
+    "longitude": 81.7683828
+  },
+  "categories": [
+    "Car leasing service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kirankulam",
+  "business_status": "OPEN"
+}

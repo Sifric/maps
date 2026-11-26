@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCP0WX690W7RCFQGJVPV",
+  "name": "Sun distributors",
+  "coordinates": {
+    "latitude": 7.7958114,
+    "longitude": 81.5867931
+  },
+  "categories": [
+    "Delivery service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Uma Mill Road, Chenkaladi 30350",
+  "business_status": "OPEN"
+}

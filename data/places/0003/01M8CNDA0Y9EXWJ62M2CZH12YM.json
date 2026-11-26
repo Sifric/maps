@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA0Y9EXWJ62M2CZH12YM",
+  "name": "Saadh cool and hot spot",
+  "coordinates": {
+    "latitude": 7.7842591,
+    "longitude": 81.6036428
+  },
+  "categories": [
+    "Ice cream shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJM3+PF2, Main Street, Eravur",
+  "business_status": "OPEN"
+}

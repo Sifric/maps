@@ -1,0 +1,63 @@
+{
+  "id": "01M8CNDG4P9V135H7V09BFA9XD",
+  "name": "S & Sons Book Shop",
+  "coordinates": {
+    "latitude": 6.2320226,
+    "longitude": 80.1003278
+  },
+  "categories": [
+    "Book store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "Batapola",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:45 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:45 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:45 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:45 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:45 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:45 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6:45 AM–8:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

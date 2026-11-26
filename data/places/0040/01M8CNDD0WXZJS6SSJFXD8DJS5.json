@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD0WXZJS6SSJFXD8DJS5",
+  "name": "Ceypetco",
+  "coordinates": {
+    "latitude": 7.9086454999999996,
+    "longitude": 81.53355429999999
+  },
+  "categories": [
+    "Gas station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG5M+FC3, Oddamavadi",
+  "business_status": "OPEN"
+}

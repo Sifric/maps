@@ -1,0 +1,73 @@
+{
+  "id": "01M8CNDCEXG1CP4HJR57JRAVN6",
+  "name": "Weeralanda Medical Centre",
+  "coordinates": {
+    "latitude": 7.7349787999999995,
+    "longitude": 81.1086696
+  },
+  "categories": [
+    "Medical Center"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "P4M5+XFV, පොළොන්නරු",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:30–7:50 AM",
+        "4–8 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:30–7:50 AM",
+        "4–8 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:30–7:50 AM",
+        "4–8 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:30–7:50 AM",
+        "4–8 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:30–7:50 AM",
+        "4–8 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:30–7:50 AM",
+        "4–8 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6:30–7:50 AM",
+        "4–8 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

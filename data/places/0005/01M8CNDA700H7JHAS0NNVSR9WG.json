@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA700H7JHAS0NNVSR9WG",
+  "name": "Katheer Bhai catering",
+  "coordinates": {
+    "latitude": 7.4410264999999995,
+    "longitude": 81.8159617
+  },
+  "categories": [
+    "Indian restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CRR8+JCW, 148 VC Rd, Periyaneelavanai",
+  "business_status": "OPEN"
+}

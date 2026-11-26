@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEBG0EW9SCPTR89G7B7M",
+  "name": "Oasey Beach Hotel Bentota",
+  "coordinates": {
+    "latitude": 6.3872355,
+    "longitude": 80.0079583
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Induruwa",
+  "business_status": "OPEN"
+}

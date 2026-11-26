@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCXT0ED014PYN5XY64V8",
+  "name": "Arayampathy Private Bus Station",
+  "coordinates": {
+    "latitude": 7.669852199999999,
+    "longitude": 81.7354045
+  },
+  "categories": [
+    "Bus stop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kattankudy",
+  "business_status": "OPEN"
+}

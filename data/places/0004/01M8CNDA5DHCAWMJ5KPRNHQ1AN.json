@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA5DHCAWMJ5KPRNHQ1AN",
+  "name": "Elite Restaurant",
+  "coordinates": {
+    "latitude": 7.4107889,
+    "longitude": 81.8392442
+  },
+  "categories": [
+    "Butcher shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CR6Q+8M9, Kalmunai 32300",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAHFBVQYBXY71BYEXR5T",
+  "name": "Missaka Rest Inn",
+  "coordinates": {
+    "latitude": 7.2544735,
+    "longitude": 81.60373129999999
+  },
+  "categories": [
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "2, 166 Vidyala Mawatha, Paragahakele",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDE276QXTX0M63M98Z1ZC",
+  "name": "Sampath Bakery",
+  "coordinates": {
+    "latitude": 6.1310055,
+    "longitude": 80.22806849999999
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Kokawala, Wanduramba",
+  "business_status": "OPEN"
+}

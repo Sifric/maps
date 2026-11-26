@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA9KFY5WJ2DTZPTXBJMP",
+  "name": "Sun sat cafe",
+  "coordinates": {
+    "latitude": 7.7175816,
+    "longitude": 81.6991735
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "94 Trincomalee-Batticaloa Rd, Kanthale 31300",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDF63NGPWWBAPQX1XEH4B",
+  "name": "Commercial Bank ATM",
+  "coordinates": {
+    "latitude": 9.748806799999999,
+    "longitude": 79.9687716
+  },
+  "categories": [
+    "ATM"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "AB17",
+  "business_status": "OPEN"
+}

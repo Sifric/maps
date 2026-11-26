@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCJ2FPV60SAEHTZBQDXY",
+  "name": "Community Center",
+  "coordinates": {
+    "latitude": 8.313127099999999,
+    "longitude": 81.3278587
+  },
+  "categories": [
+    "Community center"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "887H+745, Mahindapura",
+  "business_status": "OPEN"
+}

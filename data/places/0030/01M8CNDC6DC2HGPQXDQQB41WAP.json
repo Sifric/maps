@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6DC2HGPQXDQQB41WAP",
+  "name": "Meera Floating Restaurant",
+  "coordinates": {
+    "latitude": 7.9031579999999995,
+    "longitude": 81.5182607
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "River bank, Meeravodai-05, OddAAMAVADI, Oddamavadi",
+  "business_status": "CLOSED_TEMPORARILY"
+}

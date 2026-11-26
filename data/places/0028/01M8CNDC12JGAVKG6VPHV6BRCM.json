@@ -1,0 +1,69 @@
+{
+  "id": "01M8CNDC12JGAVKG6VPHV6BRCM",
+  "name": "PC Hut",
+  "coordinates": {
+    "latitude": 7.2250625,
+    "longitude": 81.8504375
+  },
+  "categories": [
+    "Telephone exchange"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "Akkaraipattu - Kalmunai Rd, Addalaichenai 13450",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "3–11 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–1 PM",
+        "3–11 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "3–11 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–1 PM",
+        "3–11 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–1 PM",
+        "3–11 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–1 PM",
+        "3–11 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8 AM–1 PM",
+        "3–11 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

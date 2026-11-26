@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6ZHT3VCXBZAKY1TW8J",
+  "name": "நித்திசன் பேக்கரி ,சில்லறை கடை",
+  "coordinates": {
+    "latitude": 7.7457885,
+    "longitude": 81.6847588
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMWM+8W6, Kumarapuram, Batticaloa",
+  "business_status": "OPEN"
+}

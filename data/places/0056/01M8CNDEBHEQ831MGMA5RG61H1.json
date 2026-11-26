@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEBHEQ831MGMA5RG61H1",
+  "name": "Hotel Nadee",
+  "coordinates": {
+    "latitude": 6.431239199999999,
+    "longitude": 79.9969198
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Aluthgama, Riverside Road",
+  "business_status": "OPEN"
+}

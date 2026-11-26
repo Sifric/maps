@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDB0BJBXE0MG8BV1XQ2RW",
+  "name": "Happy Kids Play Zone",
+  "coordinates": {
+    "latitude": 6.8660834,
+    "longitude": 81.8325974
+  },
+  "categories": [
+    "Playground"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "VR8M+F2G, Panama Rd, Pottuvil",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6–9 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6–9 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6–9 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "01M8CNDFEV62ECR6EN3PMBWZ5W",
+  "name": "GG Medi Clinic",
+  "coordinates": {
+    "latitude": 9.8066683,
+    "longitude": 80.2187983
+  },
+  "categories": [
+    "Medical Center"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "Madathadi Junction, Jaffna-Point Pedro Rd, Alvai 40000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6–10 AM",
+        "4–7:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6–10 AM",
+        "4–5:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6–10 AM",
+        "4–7:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6–10 AM",
+        "4–7:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6–10 AM",
+        "4–7:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6–10 AM",
+        "4–7:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6–10 AM",
+        "4–7:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

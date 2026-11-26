@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDEPZYS0FYESN4T4J9FTM",
+  "name": "TL Villa",
+  "coordinates": {
+    "latitude": 6.1887493,
+    "longitude": 80.1179016
+  },
+  "categories": [
+    "Hotel",
+    "Holiday home"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "80330",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA00PXH7HCFR1SKDY16J",
+  "name": "Mindada Hotel & Luxury Banquets",
+  "coordinates": {
+    "latitude": 7.2882798,
+    "longitude": 81.6821916
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Ampara",
+  "business_status": "OPEN"
+}

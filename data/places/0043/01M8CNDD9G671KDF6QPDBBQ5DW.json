@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD9G671KDF6QPDBBQ5DW",
+  "name": "SKM RIO",
+  "coordinates": {
+    "latitude": 7.6589474,
+    "longitude": 81.7260311
+  },
+  "categories": [
+    "Candy store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Hizbullah St, 30150",
+  "business_status": "OPEN"
+}

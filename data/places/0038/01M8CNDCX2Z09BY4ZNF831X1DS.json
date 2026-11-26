@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCX2Z09BY4ZNF831X1DS",
+  "name": "TK saloon",
+  "coordinates": {
+    "latitude": 7.6836101999999995,
+    "longitude": 81.7257161
+  },
+  "categories": [
+    "Barber shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPMG+C7W, Kattankudy",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "01M8CNDBJBYZD2CS54BETXTR60",
+  "name": "Ampara Junction",
+  "coordinates": {
+    "latitude": 7.2927019,
+    "longitude": 81.686866
+  },
+  "categories": [
+    "Bus stop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "Ampara",
+  "business_status": "OPEN"
+}

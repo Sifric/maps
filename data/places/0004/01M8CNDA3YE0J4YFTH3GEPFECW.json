@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDA3YE0J4YFTH3GEPFECW",
+  "name": "FOWMIYAS HOME FOOD (காலை மற்றும் பகல் உணவுகள் இங்கே கிடைக்கும்)",
+  "coordinates": {
+    "latitude": 7.409729899999999,
+    "longitude": 81.8375937
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "150, 1 KKP Rd., Kalmunai 32300",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6–11 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6–11 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6–11 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6–11 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6–11 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6–11 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD6NP9C6P807Y2SSVVST",
+  "name": "Sachi restaurant",
+  "coordinates": {
+    "latitude": 7.980872,
+    "longitude": 81.27066599999999
+  },
+  "categories": [
+    "Family restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "X7JC+C6, Magul Pokuna",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD8EFS6BDC709K0ZPGDP",
+  "name": "SRA Grinding Mill",
+  "coordinates": {
+    "latitude": 7.453442,
+    "longitude": 81.816565
+  },
+  "categories": [
+    "Flour mill"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "FR39+73, Periyaneelavanai",
+  "business_status": "OPEN"
+}

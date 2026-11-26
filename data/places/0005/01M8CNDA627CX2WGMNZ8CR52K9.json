@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDA627CX2WGMNZ8CR52K9",
+  "name": "Mohan Store",
+  "coordinates": {
+    "latitude": 7.2097887,
+    "longitude": 81.8405445
+  },
+  "categories": [
+    "Wholesale food store",
+    "Asian grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Akkaraipattu 7",
+  "business_status": "OPEN"
+}

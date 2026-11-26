@@ -1,0 +1,68 @@
+{
+  "id": "01M8CNDCBMDVBHSESF75ZCPS1R",
+  "name": "Game Zone",
+  "coordinates": {
+    "latitude": 7.9122094,
+    "longitude": 81.5263143
+  },
+  "categories": [
+    "Adult entertainment club",
+    "Game store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG6G+VGP, Oddamavadi",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "3–10:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "3–10:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "3–10:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "3–10:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "3–10:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "9 AM–10:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

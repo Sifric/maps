@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE94WWNSXV7M23JWYPTD",
+  "name": "Jayasinghe Grocery",
+  "coordinates": {
+    "latitude": 6.1721857,
+    "longitude": 80.1732954
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Vincent Abeywickrema Mawatha",
+  "business_status": "OPEN"
+}

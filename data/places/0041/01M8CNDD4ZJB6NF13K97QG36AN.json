@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDD4ZJB6NF13K97QG36AN",
+  "name": "Dorcas Tailoring",
+  "coordinates": {
+    "latitude": 7.670883099999999,
+    "longitude": 81.7346764
+  },
+  "categories": [
+    "Tailor"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

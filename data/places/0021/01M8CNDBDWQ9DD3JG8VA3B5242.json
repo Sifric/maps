@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBDWQ9DD3JG8VA3B5242",
+  "name": "Auto Repair",
+  "coordinates": {
+    "latitude": 7.4096945,
+    "longitude": 81.8357982
+  },
+  "categories": [
+    "Auto repair shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CR5P+V8F, Beach, Mosque Rd, Kalmunai 32300",
+  "business_status": "OPEN"
+}

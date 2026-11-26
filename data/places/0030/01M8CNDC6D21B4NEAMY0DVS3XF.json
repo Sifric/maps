@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6D21B4NEAMY0DVS3XF",
+  "name": "Biryani House",
+  "coordinates": {
+    "latitude": 7.9111728999999995,
+    "longitude": 81.5290971
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Oddamavadi",
+  "business_status": "OPEN"
+}

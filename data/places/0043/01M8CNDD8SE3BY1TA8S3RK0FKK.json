@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD8SE3BY1TA8S3RK0FKK",
+  "name": "GA Resident",
+  "coordinates": {
+    "latitude": 7.7063219,
+    "longitude": 81.69841219999999
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "10 Esplanade Lake Rd, Batticaloa",
+  "business_status": "OPEN"
+}

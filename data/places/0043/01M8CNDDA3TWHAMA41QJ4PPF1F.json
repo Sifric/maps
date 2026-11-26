@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDA3TWHAMA41QJ4PPF1F",
+  "name": "Hospital Rd, Three wheel park",
+  "coordinates": {
+    "latitude": 7.7082586,
+    "longitude": 81.6907837
+  },
+  "categories": [
+    "Park & ride"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM5R+883, Teaching Hospital, Hospital Rd, Batticaloa",
+  "business_status": "OPEN"
+}

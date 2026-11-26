@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC2TDD5PNFMYQNNTGDWS",
+  "name": "Kekirihena Fruit Shop",
+  "coordinates": {
+    "latitude": 7.5029803,
+    "longitude": 81.3271791
+  },
+  "categories": [
+    "Fruit and vegetable store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "G83G+5VV, Kekirihena",
+  "business_status": "OPEN"
+}

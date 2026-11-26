@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDD41BSV2Y2EHJ8KPHX1W",
+  "name": "V.S.S ICE STORE",
+  "coordinates": {
+    "latitude": 7.7490273,
+    "longitude": 81.6874041
+  },
+  "categories": [
+    "Market"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMXP+JX6, Bar Rd, Batticaloa",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5 AM–7 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCB05YK59G4QA9JFV86M",
+  "name": "Cashew nut shop",
+  "coordinates": {
+    "latitude": 7.7809838,
+    "longitude": 81.6148272
+  },
+  "categories": [
+    "Grocery delivery service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJJ7+9W, Eravur",
+  "business_status": "OPEN"
+}

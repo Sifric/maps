@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC36VQ5YR2DFNN9476JE",
+  "name": "Fowsar Furniture Show Room",
+  "coordinates": {
+    "latitude": 7.3728636,
+    "longitude": 81.8249739
+  },
+  "categories": [
+    "Furniture store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Karaitivu",
+  "business_status": "OPEN"
+}

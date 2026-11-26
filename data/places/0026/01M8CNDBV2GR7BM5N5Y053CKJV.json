@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBV2GR7BM5N5Y053CKJV",
+  "name": "H.R.M Hardware",
+  "coordinates": {
+    "latitude": 7.3523046999999995,
+    "longitude": 81.8460051
+  },
+  "categories": [
+    "Hardware store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Nintavur",
+  "business_status": "OPEN"
+}

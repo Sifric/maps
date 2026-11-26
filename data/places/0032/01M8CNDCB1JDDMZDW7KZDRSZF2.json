@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDCB1JDDMZDW7KZDRSZF2",
+  "name": "Varshika Stores",
+  "coordinates": {
+    "latitude": 7.6695199,
+    "longitude": 81.7324798
+  },
+  "categories": [
+    "Convenience store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MP9J+RX5, Kaali kovil road, Thalankudah01, srimathurapuram",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6–9 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6–9 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6–9 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6–9 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6–9 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6–9 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6–9 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "01M8CNDBNPBSM8M3PDP11T37AF",
+  "name": "2nd Chance Travels (Pvt) Ltd",
+  "coordinates": {
+    "latitude": 6.8963559,
+    "longitude": 79.8559779
+  },
+  "categories": [
+    "Travel agency",
+    "Airline ticket agency",
+    "Tour agency",
+    "Tour operator",
+    "Visa consulting service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "25 Edward Ln, Colombo 00300",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8:30 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8:30 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8:30 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8:30 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8:30 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8:30 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

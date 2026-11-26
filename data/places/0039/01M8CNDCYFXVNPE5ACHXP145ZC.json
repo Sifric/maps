@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDCYFXVNPE5ACHXP145ZC",
+  "name": "bata Show Room",
+  "coordinates": {
+    "latitude": 7.776633299999999,
+    "longitude": 81.60448819999999
+  },
+  "categories": [
+    "Shoe store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJG3+MQ5, Eravur",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8–10 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8–10 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8–10 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8–10 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8–10 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8–10 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

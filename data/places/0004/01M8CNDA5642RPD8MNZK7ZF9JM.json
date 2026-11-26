@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDA5642RPD8MNZK7ZF9JM",
+  "name": "Laa Laa cafe",
+  "coordinates": {
+    "latitude": 7.2284741,
+    "longitude": 81.86202829999999
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "270/1 Kathariya Beach Road, Akkaraipattu",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5:30 PM–12:01 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5:30 PM–12:01 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5:30 PM–12:01 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5:30 PM–12:01 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5:30 PM–12:01 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5:30 PM–12:01 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5:30 PM–12:01 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

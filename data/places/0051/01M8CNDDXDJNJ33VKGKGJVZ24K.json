@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDDXDJNJ33VKGKGJVZ24K",
+  "name": "Pizza Point",
+  "coordinates": {
+    "latitude": 9.8248419,
+    "longitude": 80.2358196
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "R6FP+W8P, AB20, Point Pedro",
+  "business_status": "OPEN"
+}

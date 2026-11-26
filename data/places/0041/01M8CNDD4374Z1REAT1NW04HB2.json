@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD4374Z1REAT1NW04HB2",
+  "name": "Mountain View Home Stay",
+  "coordinates": {
+    "latitude": 7.257141,
+    "longitude": 80.5177506
+  },
+  "categories": [
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "169/8,Rathnamali,Farm Estate, Kadugannawa 20300",
+  "business_status": "CLOSED_TEMPORARILY"
+}

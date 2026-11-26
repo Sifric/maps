@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBN9JADYPFTZGXQ5E4R",
+  "name": "Bites Shop",
+  "coordinates": {
+    "latitude": 7.7149867,
+    "longitude": 81.6987383
+  },
+  "categories": [
+    "Soup kitchen"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM7X+XFX, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "01M8CNDFGYPZ06ENSWJVYT3V68",
+  "name": "Singer Service Centre - Jaffna",
+  "coordinates": {
+    "latitude": 9.698870699999999,
+    "longitude": 80.0336256
+  },
+  "categories": [
+    "Repair service",
+    "Air conditioning repair service",
+    "Microwave oven repair service",
+    "Refrigerator repair service",
+    "Television repair service",
+    "Washer & dryer repair service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "50, Palaly Road, East, Kondavil 40000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8:30 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8:30 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8:30 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8:30 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8:30 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8:30 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

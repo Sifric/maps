@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDA3Z5PRD0PS6D3WT57C",
+  "name": "Thalankuda Junction",
+  "coordinates": {
+    "latitude": 7.6483026999999995,
+    "longitude": 81.7461335
+  },
+  "categories": [
+    "Bus stop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "A4 Colombo-Ratnapura-Wellawaya-Batticaloa Highway, Thalankudah",
+  "business_status": "OPEN"
+}

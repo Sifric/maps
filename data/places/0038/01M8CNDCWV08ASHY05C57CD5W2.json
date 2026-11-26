@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCWV08ASHY05C57CD5W2",
+  "name": "Faleel's Textiles",
+  "coordinates": {
+    "latitude": 7.6816933,
+    "longitude": 81.7282474
+  },
+  "categories": [
+    "Clothing store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kattankudy",
+  "business_status": "OPEN"
+}

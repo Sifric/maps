@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDACD3TDE62V3BG9CQHSJ",
+  "name": "ThanaS",
+  "coordinates": {
+    "latitude": 7.926228999999999,
+    "longitude": 81.5331022
+  },
+  "categories": [
+    "Sri Lankan restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Near, Kalkudah-Valaichchenai Rd, 30400",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6–8:30 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6–8:30 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6–8:30 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6–8:30 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6–8:30 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

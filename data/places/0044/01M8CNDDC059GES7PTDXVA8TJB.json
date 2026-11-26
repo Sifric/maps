@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDC059GES7PTDXVA8TJB",
+  "name": "Ahyans home",
+  "coordinates": {
+    "latitude": 7.9118625,
+    "longitude": 81.5401632
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG6R+P3V",
+  "business_status": "OPEN"
+}

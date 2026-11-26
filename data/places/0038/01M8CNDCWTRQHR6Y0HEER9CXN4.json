@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCWTRQHR6Y0HEER9CXN4",
+  "name": "Click the mall",
+  "coordinates": {
+    "latitude": 7.6739903,
+    "longitude": 81.72474849999999
+  },
+  "categories": [
+    "Women's clothing store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPFF+HVX, Jamiullafreen road, Kattankudy",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD13BHJ71FKYQV0P09F1",
+  "name": "APP STORE",
+  "coordinates": {
+    "latitude": 7.9075017999999995,
+    "longitude": 81.5249163
+  },
+  "categories": [
+    "Cell phone store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPCS Rd, Semmanoadai",
+  "business_status": "OPEN"
+}

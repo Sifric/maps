@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCMWNW5E5SHCSTRTF676",
+  "name": "Railway Station - Batticaloa | දුම්රිය ස්ථානය - මඩකලපුව | புகையிரத நிலையம் - மட்டக்களப்பு",
+  "coordinates": {
+    "latitude": 7.7244686,
+    "longitude": 81.6987663
+  },
+  "categories": [
+    "Railway services"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMFX+QGJ, Thissaveerasingam Sathuk, Batticaloa",
+  "business_status": "OPEN"
+}

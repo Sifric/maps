@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCDEDD4NJY825GD73X3F",
+  "name": "Shalom Medical Center",
+  "coordinates": {
+    "latitude": 7.7292451,
+    "longitude": 81.6884824
+  },
+  "categories": [
+    "Medical clinic"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "26D, Iruthayapuram East, Gnanasooriyum Square, Batticaloa",
+  "business_status": "OPEN"
+}

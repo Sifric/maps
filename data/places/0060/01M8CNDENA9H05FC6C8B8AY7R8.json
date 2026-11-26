@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDENA9H05FC6C8B8AY7R8",
+  "name": "Tasty Treats",
+  "coordinates": {
+    "latitude": 9.6642685,
+    "longitude": 80.017161
+  },
+  "categories": [
+    "Wholesale bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "420 Hospital St, Jaffna 40000",
+  "business_status": "OPEN"
+}

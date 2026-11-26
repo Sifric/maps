@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD3C44G6B4DE6GBHKTFC",
+  "name": "Bus stop",
+  "coordinates": {
+    "latitude": 7.5001485,
+    "longitude": 81.80437959999999
+  },
+  "categories": [
+    "Transportation service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GR23+3Q2, Colombo Highway onthachimadam, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

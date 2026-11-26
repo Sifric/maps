@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD57ZA3FYSK4JGZ726A1",
+  "name": "Regional Medical Laboratory (RDHS - Kalmuani)",
+  "coordinates": {
+    "latitude": 7.2693867,
+    "longitude": 81.8479876
+  },
+  "categories": [
+    "Medical laboratory"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "7R9X+Q55, Palamunai",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC88EK7PZNEDN0PQG2T9",
+  "name": "Tamil Pasanga Mutton Shop",
+  "coordinates": {
+    "latitude": 7.7813886,
+    "longitude": 81.5958292
+  },
+  "categories": [
+    "Chicken shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Main St, Chenkaladi 30350",
+  "business_status": "OPEN"
+}

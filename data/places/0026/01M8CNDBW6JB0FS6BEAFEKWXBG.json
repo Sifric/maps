@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBW6JB0FS6BEAFEKWXBG",
+  "name": "Maazin Footwear Zone",
+  "coordinates": {
+    "latitude": 7.682211,
+    "longitude": 81.7334218
+  },
+  "categories": [
+    "Shoe store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPJM+V97, Dr Badhiudeen Mahmood Mawatha, Kattankudy",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDACY7582ED4KQVHV3N5",
+  "name": "Karbala Jumma Mosque",
+  "coordinates": {
+    "latitude": 7.6730541,
+    "longitude": 81.7432345
+  },
+  "categories": [
+    "Mosque"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPFV+78P, 38 Karbala, Kattankudy",
+  "business_status": "OPEN"
+}

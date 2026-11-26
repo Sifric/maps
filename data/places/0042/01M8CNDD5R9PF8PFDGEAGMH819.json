@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD5R9PF8PFDGEAGMH819",
+  "name": "Santhanam Service Station",
+  "coordinates": {
+    "latitude": 7.7512327999999995,
+    "longitude": 81.566993
+  },
+  "categories": [
+    "Car repair and maintenance service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "A5",
+  "business_status": "OPEN"
+}

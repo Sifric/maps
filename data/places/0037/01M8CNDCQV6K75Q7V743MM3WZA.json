@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCQV6K75Q7V743MM3WZA",
+  "name": "Livius park",
+  "coordinates": {
+    "latitude": 7.7984642,
+    "longitude": 81.5841039
+  },
+  "categories": [
+    "Park"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Vantharumoolai East",
+  "business_status": "OPEN"
+}

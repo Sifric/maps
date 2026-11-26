@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD3P5CR1A528K8M26PM5",
+  "name": "K&K Hotel And Restaurant",
+  "coordinates": {
+    "latitude": 7.787106,
+    "longitude": 81.59238789999999
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QHPR+RXR, Market Rd, Thalawila",
+  "business_status": "OPEN"
+}

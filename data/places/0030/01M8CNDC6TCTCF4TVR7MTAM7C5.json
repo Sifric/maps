@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6TCTCF4TVR7MTAM7C5",
+  "name": "MELTS MAGIC",
+  "coordinates": {
+    "latitude": 7.6761095,
+    "longitude": 81.72518989999999
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Colombo - Batticaloa Hwy, Kattankudy 30100",
+  "business_status": "OPEN"
+}

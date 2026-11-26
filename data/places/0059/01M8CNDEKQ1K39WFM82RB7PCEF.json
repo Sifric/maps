@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEKQ1K39WFM82RB7PCEF",
+  "name": "Chelva Restaurant",
+  "coordinates": {
+    "latitude": 9.6916197,
+    "longitude": 80.0135931
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "1229 AB16, Jaffna 40000",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA7T15YSJJ1WBYETTK49",
+  "name": "Junction Food",
+  "coordinates": {
+    "latitude": 7.2903246,
+    "longitude": 81.8487809
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "7RRX+4GC, Oluvil",
+  "business_status": "CLOSED_TEMPORARILY"
+}

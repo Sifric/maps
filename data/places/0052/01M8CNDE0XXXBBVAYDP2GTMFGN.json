@@ -1,0 +1,28 @@
+{
+  "id": "01M8CNDE0XXXBBVAYDP2GTMFGN",
+  "name": "Villa Kubura",
+  "coordinates": {
+    "latitude": 6.1389083,
+    "longitude": 80.14543909999999
+  },
+  "categories": [
+    "Restaurant",
+    "Hotel",
+    "Villa",
+    "Wedding photographer",
+    "Residential building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Gonapinuwala, Mahawella Road, 80240",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "45 Mahawella Road Kosgahaduwawatta, Gonapinuwala"
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDBHE2ZFW8ZBS6Q3ZA2MZ",
+  "name": "Nagarasa Auto Garage",
+  "coordinates": {
+    "latitude": 7.7328024,
+    "longitude": 81.69078189999999
+  },
+  "categories": [
+    "Machine repair service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMMR+48F, Kumara Kovil Veethy, Batticaloa",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7:45 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7:45 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7:45 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7:45 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7:45 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7:45 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8 AM–1 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

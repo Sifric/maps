@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA76NGVEGZZYSVHB1S4D",
+  "name": "Senavirathna hotel and bakery",
+  "coordinates": {
+    "latitude": 7.5313479,
+    "longitude": 81.3561563
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Senavirathna hotel and bakery, ampara, Mahaoya-Polonnaruwa Rd, Maha Oya",
+  "business_status": "OPEN"
+}

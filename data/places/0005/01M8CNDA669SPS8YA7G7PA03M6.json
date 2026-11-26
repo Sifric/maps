@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA669SPS8YA7G7PA03M6",
+  "name": "Mr Chicken Street",
+  "coordinates": {
+    "latitude": 7.920786,
+    "longitude": 81.5161645
+  },
+  "categories": [
+    "Night club"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WGC8+8F7, Oddamavadi",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAFB2BXZCZJ7N1H6EHC5",
+  "name": "Shifan's home",
+  "coordinates": {
+    "latitude": 7.357537799999999,
+    "longitude": 81.7950295
+  },
+  "categories": [
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "290/4 Anver Ismail Mawatha, Sammanthurai",
+  "business_status": "OPEN"
+}

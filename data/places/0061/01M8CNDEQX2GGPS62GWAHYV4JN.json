@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDEQX2GGPS62GWAHYV4JN",
+  "name": "CampingLyfe Bandarawela Sri Lanka",
+  "coordinates": {
+    "latitude": 6.8788317,
+    "longitude": 80.9553672
+  },
+  "categories": [
+    "Campground",
+    "Camping cabin",
+    "Camping farm",
+    "Hotel",
+    "Resort hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Wathalawa Kurukudegama, Bandarawela 90100",
+  "business_status": "OPEN"
+}

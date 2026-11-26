@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC7A1QEJ17PV2VDHNHRY",
+  "name": "Muravodai",
+  "coordinates": {
+    "latitude": 7.894081399999999,
+    "longitude": 81.52688979999999
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kannaki Amman Kovil, Road, Batticaloa",
+  "business_status": "OPEN"
+}

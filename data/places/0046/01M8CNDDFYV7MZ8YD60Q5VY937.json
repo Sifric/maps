@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDFYV7MZ8YD60Q5VY937",
+  "name": "Poovar City",
+  "coordinates": {
+    "latitude": 7.7774947999999995,
+    "longitude": 81.6022517
+  },
+  "categories": [
+    "Home goods store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJG2+XWR, Trincomalee-Batticaloa Rd, Batticaloa",
+  "business_status": "OPEN"
+}

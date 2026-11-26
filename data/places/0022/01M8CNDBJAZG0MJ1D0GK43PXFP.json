@@ -1,0 +1,20 @@
+{
+  "id": "01M8CNDBJAZG0MJ1D0GK43PXFP",
+  "name": "Ampara Bus Stand",
+  "coordinates": {
+    "latitude": 7.2901959,
+    "longitude": 81.67318929999999
+  },
+  "categories": [
+    "Bus station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "Ampara",
+  "business_status": "OPEN"
+}

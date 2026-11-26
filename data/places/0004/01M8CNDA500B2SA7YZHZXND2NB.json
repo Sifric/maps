@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDA500B2SA7YZHZXND2NB",
+  "name": "Galaxy Lounge",
+  "coordinates": {
+    "latitude": 6.849168199999999,
+    "longitude": 81.8311063
+  },
+  "categories": [
+    "Restaurant",
+    "Cafe",
+    "Hotel",
+    "Guest house"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Galaxy Rd, Arugam Bay 32500",
+  "business_status": "OPEN"
+}

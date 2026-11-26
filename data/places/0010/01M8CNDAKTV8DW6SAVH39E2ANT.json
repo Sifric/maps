@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAKTV8DW6SAVH39E2ANT",
+  "name": "sir house",
+  "coordinates": {
+    "latitude": 7.6063259,
+    "longitude": 81.7670919
+  },
+  "categories": [
+    "Warehouse"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "JQ48+GRP, Kirankulam",
+  "business_status": "OPEN"
+}

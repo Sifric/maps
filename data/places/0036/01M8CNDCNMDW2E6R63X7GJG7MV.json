@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCNMDW2E6R63X7GJG7MV",
+  "name": "Nilu Store",
+  "coordinates": {
+    "latitude": 7.6643295,
+    "longitude": 81.7328517
+  },
+  "categories": [
+    "Shopping mall"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "119 Old Rd, Kattankudy",
+  "business_status": "OPEN"
+}

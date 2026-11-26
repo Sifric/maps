@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDE57VVRHPJZ7F5X144GY",
+  "name": "Kishoni Bakery",
+  "coordinates": {
+    "latitude": 9.81735,
+    "longitude": 80.2317959
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "R68J+WPV, Thampasidy Rd, Point Pedro",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD2ZGMH45CBVYR72YD8R",
+  "name": "Meena Stores",
+  "coordinates": {
+    "latitude": 7.521580299999999,
+    "longitude": 81.8009464
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GRC2+J9P, Beach Rd, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

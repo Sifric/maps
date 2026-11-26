@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBPKE3CWNKSFTWJSQ6JC",
+  "name": "IRN Salon",
+  "coordinates": {
+    "latitude": 7.5144003999999995,
+    "longitude": 81.7818206
+  },
+  "categories": [
+    "Barber shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQ7J+QP8",
+  "business_status": "OPEN"
+}

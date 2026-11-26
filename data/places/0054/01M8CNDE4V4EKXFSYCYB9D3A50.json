@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE4V4EKXFSYCYB9D3A50",
+  "name": "wap market",
+  "coordinates": {
+    "latitude": 6.9959679999999995,
+    "longitude": 79.8851072
+  },
+  "categories": [
+    "Supermarket"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "akmeemana, galle 80090",
+  "business_status": "OPEN"
+}

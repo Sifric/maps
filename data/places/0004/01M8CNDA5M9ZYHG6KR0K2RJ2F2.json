@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDA5M9ZYHG6KR0K2RJ2F2",
+  "name": "Jamal Hotel",
+  "coordinates": {
+    "latitude": 7.2699925,
+    "longitude": 81.8499436
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "125, Beach Road, 05, Palamunai 32354",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5 AM–12 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA2E8PVQJKMYTWC2D54N",
+  "name": "Cafe Arcadia Arugam Bay",
+  "coordinates": {
+    "latitude": 6.8405187,
+    "longitude": 81.83266669999999
+  },
+  "categories": [
+    "Coffee shop",
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Main Street Panama Rd, Arugam Bay 32500",
+  "business_status": "CLOSED_TEMPORARILY"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA11979NYJ9V9S8N74JQ",
+  "name": "NR Restaurant",
+  "coordinates": {
+    "latitude": 7.3581809,
+    "longitude": 81.79596579999999
+  },
+  "categories": [
+    "Night club"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "malayadi gramam, 46 AL / Arshath road, 3, Sammanthurai",
+  "business_status": "OPEN"
+}

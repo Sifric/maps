@@ -1,0 +1,72 @@
+{
+  "id": "01M8CNDEZHF9TW2W7XJQRHRN7C",
+  "name": "Fitness Hub",
+  "coordinates": {
+    "latitude": 6.3144317999999995,
+    "longitude": 80.03510969999999
+  },
+  "categories": [
+    "Gym"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Galle Rd, Ahungalla",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5–11 AM",
+        "3–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5–11 AM",
+        "3–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5–11 AM",
+        "3–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5–11 AM",
+        "3–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5–11 AM",
+        "3–9 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5–11 AM",
+        "3–9 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5–11 AM",
+        "3–9 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

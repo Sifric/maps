@@ -1,0 +1,72 @@
+{
+  "id": "01M8CNDA0YXQJF2RYGAZEAC51K",
+  "name": "Haya food city and bake house",
+  "coordinates": {
+    "latitude": 7.3535409,
+    "longitude": 81.8541856
+  },
+  "categories": [
+    "Supermarket"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "9V33+CM7, 3rd Cross St, Nintavur",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–1 PM",
+        "4:30–9:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–1 PM",
+        "4:30–9:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–1 PM",
+        "4:30–9:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–1 PM",
+        "4:30–9:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–1 PM",
+        "4:30–9:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8 AM–1 PM",
+        "4:30–9:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

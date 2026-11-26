@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDBMAFYCAV7TNHQXZNHNG",
+  "name": "Al Bari Travels",
+  "coordinates": {
+    "latitude": 7.413627099999999,
+    "longitude": 81.8267705
+  },
+  "categories": [
+    "Travel agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Kalmunai 32300",
+  "business_status": "OPEN"
+}

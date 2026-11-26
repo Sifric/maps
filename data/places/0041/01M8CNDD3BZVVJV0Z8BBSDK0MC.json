@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD3BZVVJV0Z8BBSDK0MC",
+  "name": "Ella Budget Taxi",
+  "coordinates": {
+    "latitude": 6.8738446,
+    "longitude": 81.0498978
+  },
+  "categories": [
+    "Taxi service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Rukaththana Estate, Naulla, Ella 90090",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBTBJ1YBMZE1WBYK64V",
+  "name": "Vishna Guest, Batticaloa",
+  "coordinates": {
+    "latitude": 7.7082554,
+    "longitude": 81.689799
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "170/1 Hospital Rd, Batticaloa 30000",
+  "business_status": "OPEN"
+}

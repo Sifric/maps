@@ -1,0 +1,28 @@
+{
+  "id": "01M8CNDCCY33R3DAE86NTTZ3VN",
+  "name": "Athulya Villas",
+  "coordinates": {
+    "latitude": 7.2259321,
+    "longitude": 80.5473985
+  },
+  "categories": [
+    "Villa",
+    "Group accommodation",
+    "Lodging",
+    "Resort hotel",
+    "Sri Lankan restaurant",
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Panabokke, Wattappola, Kandy, Kadugannawa 20000",
+  "business_status": "OPEN"
+}

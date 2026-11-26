@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDCBYF6JR8A0ZAKAX1H19",
+  "name": "The Bay an Uga Experience",
+  "coordinates": {
+    "latitude": 7.9266773,
+    "longitude": 81.56135139999999
+  },
+  "categories": [
+    "Resort hotel",
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Coconut Board, Road, Kalkudah 30410",
+  "business_status": "OPEN"
+}

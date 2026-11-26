@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA9EPJD55NNDAQTBPDSH",
+  "name": "Rasa Soup Shop",
+  "coordinates": {
+    "latitude": 7.3593934,
+    "longitude": 81.85569389999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "9V54+Q74, கடற்கரை வீதி, Nintavur",
+  "business_status": "OPEN"
+}

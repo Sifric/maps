@@ -1,0 +1,63 @@
+{
+  "id": "01M8CNDFEVPX3NXJ7P4ZQ0BKMM",
+  "name": "Doctor Asmina",
+  "coordinates": {
+    "latitude": 9.7175045,
+    "longitude": 80.0202291
+  },
+  "categories": [
+    "Doctor"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "P29C+235, Kanthasamy Kovil Rd, Uduvil 40000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6–9 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "3–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "3–10 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

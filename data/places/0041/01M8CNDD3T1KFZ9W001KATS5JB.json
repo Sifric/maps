@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD3T1KFZ9W001KATS5JB",
+  "name": "Masjid Al Aysha",
+  "coordinates": {
+    "latitude": 7.6784618,
+    "longitude": 81.7221343
+  },
+  "categories": [
+    "Mosque"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPHC+9VJ, Kattankudy",
+  "business_status": "OPEN"
+}

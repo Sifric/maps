@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDB0ZFYEA7Y5Y3PXB5BVR",
+  "name": "Ratmalgaella",
+  "coordinates": {
+    "latitude": 7.3274615999999995,
+    "longitude": 81.4284878
+  },
+  "categories": [
+    "Hiking area"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Mullegama",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBDF73ASCWWT9YMZ89Y",
+  "name": "விது ஸ்ரோர்ஸ்",
+  "coordinates": {
+    "latitude": 7.5446649,
+    "longitude": 81.6584232
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GMV5+V9, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

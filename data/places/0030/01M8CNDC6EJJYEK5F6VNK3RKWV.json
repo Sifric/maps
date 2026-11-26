@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6EJJYEK5F6VNK3RKWV",
+  "name": "Nasrin Hotel",
+  "coordinates": {
+    "latitude": 7.9101925,
+    "longitude": 81.5317804
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Railway Rd",
+  "business_status": "OPEN"
+}

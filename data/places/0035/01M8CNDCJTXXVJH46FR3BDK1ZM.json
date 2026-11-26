@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCJTXXVJH46FR3BDK1ZM",
+  "name": "Stand",
+  "coordinates": {
+    "latitude": 7.714701499999999,
+    "longitude": 81.69634959999999
+  },
+  "categories": [
+    "Corporate office"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "23 Munai St, Batticaloa",
+  "business_status": "OPEN"
+}

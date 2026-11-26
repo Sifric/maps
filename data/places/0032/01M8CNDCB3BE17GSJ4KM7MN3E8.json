@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCB3BE17GSJ4KM7MN3E8",
+  "name": "New star bakery",
+  "coordinates": {
+    "latitude": 7.4766300999999995,
+    "longitude": 81.75687169999999
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "FQG4+4J7, Ampilanturai-Veeramunai Rd, Mandur",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCGG6ZN5NWNKFRVW3RXD",
+  "name": "Ayesha Gardens",
+  "coordinates": {
+    "latitude": 7.6795165999999995,
+    "longitude": 81.7229619
+  },
+  "categories": [
+    "Housing society"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kattankudy",
+  "business_status": "OPEN"
+}

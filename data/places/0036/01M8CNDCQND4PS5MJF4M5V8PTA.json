@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDCQND4PS5MJF4M5V8PTA",
+  "name": "Valaichchenai Lagoon",
+  "coordinates": {
+    "latitude": 7.929722,
+    "longitude": 81.531111
+  },
+  "categories": [
+    "Water"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

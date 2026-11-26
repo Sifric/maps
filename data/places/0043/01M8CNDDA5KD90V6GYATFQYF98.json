@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDA5KD90V6GYATFQYF98",
+  "name": "RTN Grinding Mill",
+  "coordinates": {
+    "latitude": 7.5781141,
+    "longitude": 81.7864852
+  },
+  "categories": [
+    "Mill"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "HQHP+6HX, Public ground Road",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDE20D8HEGJPSBFZG3PWG",
+  "name": "Cafe Ceylon Kalawana",
+  "coordinates": {
+    "latitude": 6.5337100999999995,
+    "longitude": 80.412696
+  },
+  "categories": [
+    "Coffee shop",
+    "Cafe",
+    "Juice shop",
+    "Pizza delivery",
+    "Pizza takeaway",
+    "Tea store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Hangarangala",
+  "business_status": "CLOSED_TEMPORARILY"
+}

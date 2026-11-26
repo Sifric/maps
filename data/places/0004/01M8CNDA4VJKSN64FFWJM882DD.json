@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDA4VJKSN64FFWJM882DD",
+  "name": "Canggu Surf Hotel & Restaurant",
+  "coordinates": {
+    "latitude": 6.8472186,
+    "longitude": 81.8305144
+  },
+  "categories": [
+    "Restaurant",
+    "Coffee shop",
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Main street, Arugam Bay 32500",
+  "business_status": "OPEN"
+}

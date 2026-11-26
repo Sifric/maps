@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDF7RXVM092RK1YYTQAHV",
+  "name": "EV Charging Point",
+  "coordinates": {
+    "latitude": 6.0425325,
+    "longitude": 80.1952718
+  },
+  "categories": [
+    "Electric vehicle charging station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "25VW+246, Galle",
+  "business_status": "OPEN"
+}

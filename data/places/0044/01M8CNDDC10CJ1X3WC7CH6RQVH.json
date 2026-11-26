@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDC10CJ1X3WC7CH6RQVH",
+  "name": "Anu home",
+  "coordinates": {
+    "latitude": 7.5316164,
+    "longitude": 81.791721
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQJR+JMX, Sri Murukan Kovil Rd, Kaluthavalai",
+  "business_status": "OPEN"
+}

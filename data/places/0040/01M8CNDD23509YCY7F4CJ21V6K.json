@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD23509YCY7F4CJ21V6K",
+  "name": "Nava tours & travel",
+  "coordinates": {
+    "latitude": 7.7212632999999995,
+    "longitude": 81.7140533
+  },
+  "categories": [
+    "Travel agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "4th Cross Rd, Kallady",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBQYFMRBSVBX15PV146G",
+  "name": "Maha Book Center",
+  "coordinates": {
+    "latitude": 7.5102174999999995,
+    "longitude": 81.7913205
+  },
+  "categories": [
+    "Book store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kaluwanchikudy",
+  "business_status": "OPEN"
+}

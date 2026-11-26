@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC7WTPTZ5REFV842SFMW",
+  "name": "New Ruby Farm House",
+  "coordinates": {
+    "latitude": 7.542936399999999,
+    "longitude": 81.7878051
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kaluthavalai",
+  "business_status": "OPEN"
+}

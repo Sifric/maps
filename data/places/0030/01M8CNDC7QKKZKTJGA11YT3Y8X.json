@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC7QKKZKTJGA11YT3Y8X",
+  "name": "Sha market",
+  "coordinates": {
+    "latitude": 7.7239645999999995,
+    "longitude": 81.6943225
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Barathi Ln, Valaichenai 30400",
+  "business_status": "OPEN"
+}

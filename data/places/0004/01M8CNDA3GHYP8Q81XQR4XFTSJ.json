@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA3GHYP8Q81XQR4XFTSJ",
+  "name": "Bismillah Bake House",
+  "coordinates": {
+    "latitude": 7.2483154,
+    "longitude": 81.85437139999999
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Addalaichenai",
+  "business_status": "OPEN"
+}

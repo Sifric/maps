@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDB575NBZTG9G6YM89GCY",
+  "name": "St.Anthony's Church",
+  "coordinates": {
+    "latitude": 7.7171639999999995,
+    "longitude": 81.70995409999999
+  },
+  "categories": [
+    "Catholic church"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PP85+VX8, New Kalmunai Rd, Kallady",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "01M8CNDF6G3V5DQD6CTBQW8RTH",
+  "name": "Salon HER",
+  "coordinates": {
+    "latitude": 6.0152608,
+    "longitude": 80.2561759
+  },
+  "categories": [
+    "Beauty salon",
+    "Beautician",
+    "Bridal shop",
+    "Facial spa",
+    "Make-up artist",
+    "Nail salon",
+    "Hairdresser",
+    "Waxing hair removal service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "575/B,Pokunawattha Sri mawatha, Unawatuna 80600",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7 AM–10:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

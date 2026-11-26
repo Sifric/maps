@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCFJCWT8C8N8QYR4Q48X",
+  "name": "Hindu Temple",
+  "coordinates": {
+    "latitude": 7.7229413,
+    "longitude": 81.7004584
+  },
+  "categories": [
+    "Hindu temple"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PPF2+55G, Station Cross Rd, Batticaloa",
+  "business_status": "OPEN"
+}

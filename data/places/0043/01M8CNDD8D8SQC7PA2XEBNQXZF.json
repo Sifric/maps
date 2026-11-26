@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD8D8SQC7PA2XEBNQXZF",
+  "name": "Keragala Rice Mill",
+  "coordinates": {
+    "latitude": 7.949992,
+    "longitude": 81.31243409999999
+  },
+  "categories": [
+    "Manufacturer"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Nethu Rice Keragala Rice Mill, No.404/3, Kadawathmaduwa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCAK63EG12KHNQ2GN3SQ",
+  "name": "Five Farm",
+  "coordinates": {
+    "latitude": 7.9701388,
+    "longitude": 81.22235769999999
+  },
+  "categories": [
+    "Farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "X6CC+3W5, Welikanda",
+  "business_status": "OPEN"
+}

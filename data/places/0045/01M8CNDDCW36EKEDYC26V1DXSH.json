@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDCW36EKEDYC26V1DXSH",
+  "name": "H.A House",
+  "coordinates": {
+    "latitude": 7.745397199999999,
+    "longitude": 81.67455129999999
+  },
+  "categories": [
+    "Housing development"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "174 A Zone, Batticaloa",
+  "business_status": "OPEN"
+}

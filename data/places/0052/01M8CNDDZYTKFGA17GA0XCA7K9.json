@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDZYTKFGA17GA0XCA7K9",
+  "name": "Bito foodies",
+  "coordinates": {
+    "latitude": 7.0279172999999995,
+    "longitude": 79.91475919999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "54/A Mahabage road, Ragama 11010",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "12 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12 PM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

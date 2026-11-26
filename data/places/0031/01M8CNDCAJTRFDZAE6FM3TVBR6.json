@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCAJTRFDZAE6FM3TVBR6",
+  "name": "Mithunas grocery shop",
+  "coordinates": {
+    "latitude": 7.7366304999999995,
+    "longitude": 81.6888592
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMQQ+2V4, Batticaloa",
+  "business_status": "OPEN"
+}

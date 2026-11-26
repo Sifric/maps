@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDCCTD8DBN0QKR5C0ZRAW",
+  "name": "Roshan Villas Hotel",
+  "coordinates": {
+    "latitude": 7.8265499,
+    "longitude": 81.552959
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

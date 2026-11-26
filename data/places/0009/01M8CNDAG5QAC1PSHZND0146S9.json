@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAG5QAC1PSHZND0146S9",
+  "name": "Joe's Rest House",
+  "coordinates": {
+    "latitude": 7.913398099999999,
+    "longitude": 81.5458498
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG7W+985, Kalkudah",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC8ABXRSKNT4V6VBHCWB",
+  "name": "AT Farm",
+  "coordinates": {
+    "latitude": 8.1796123,
+    "longitude": 81.42271699999999
+  },
+  "categories": [
+    "Garden"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "5CHC+PX, Vakarai",
+  "business_status": "OPEN"
+}

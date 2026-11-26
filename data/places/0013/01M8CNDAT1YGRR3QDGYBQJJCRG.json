@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAT1YGRR3QDGYBQJJCRG",
+  "name": "Habinash Store",
+  "coordinates": {
+    "latitude": 7.364183499999999,
+    "longitude": 81.84904739999999
+  },
+  "categories": [
+    "General store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9R7X+M78, Karaitivu 32250",
+  "business_status": "OPEN"
+}

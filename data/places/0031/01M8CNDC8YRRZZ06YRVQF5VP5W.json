@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC8YRRZZ06YRVQF5VP5W",
+  "name": "Shameem Store",
+  "coordinates": {
+    "latitude": 7.6802705,
+    "longitude": 81.74164119999999
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPJR+4M2, Abrar Rd, Kattankudy",
+  "business_status": "OPEN"
+}

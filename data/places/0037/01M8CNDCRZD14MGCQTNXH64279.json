@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCRZD14MGCQTNXH64279",
+  "name": "Traffic Signal",
+  "coordinates": {
+    "latitude": 7.7198937,
+    "longitude": 81.696585
+  },
+  "categories": [
+    "Traffic officer"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM9W+XJ4, Arunagiri Rd, Batticaloa",
+  "business_status": "OPEN"
+}

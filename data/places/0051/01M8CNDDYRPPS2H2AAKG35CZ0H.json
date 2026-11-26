@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDYRPPS2H2AAKG35CZ0H",
+  "name": "RoofVo Fine-Dine Restaurant",
+  "coordinates": {
+    "latitude": 6.4285922,
+    "longitude": 80.0007854
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "88/A welipenna, road, Aluthgama 12080",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12:30–10:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12:30–10:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12:30–10:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12:30–10:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12:30–10:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "12:30–10:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12:30–10:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

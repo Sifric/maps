@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBEBSXK1SARD4FX0R58F",
+  "name": "Haputale Engineers Charging Station",
+  "coordinates": {
+    "latitude": 6.7669242999999994,
+    "longitude": 80.9546524
+  },
+  "categories": [
+    "Electric vehicle charging station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QX83+QV6, Keppetipola - Boralanda - Haputale Rd, Haputale",
+  "business_status": "OPEN"
+}

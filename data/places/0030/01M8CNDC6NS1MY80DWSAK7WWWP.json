@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDC6NS1MY80DWSAK7WWWP",
+  "name": "இந்து காலை உணவகம்",
+  "coordinates": {
+    "latitude": 7.7416569,
+    "longitude": 81.66878059999999
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMR9+W4J, Batticaloa",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6–11 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6–11 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6–11 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6–11 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6–11 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6–11 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

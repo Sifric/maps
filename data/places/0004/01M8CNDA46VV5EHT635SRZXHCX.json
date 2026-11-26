@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA46VV5EHT635SRZXHCX",
+  "name": "Delukshi Stores",
+  "coordinates": {
+    "latitude": 7.173082699999999,
+    "longitude": 81.8597291
+  },
+  "categories": [
+    "Convenience store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "5VC5+VJ4, Sinnamuhattuvaram",
+  "business_status": "OPEN"
+}

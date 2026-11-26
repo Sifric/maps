@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDCVEXFS3HWHGJ5V5C5CP",
+  "name": "Sathu Home",
+  "coordinates": {
+    "latitude": 7.7275978,
+    "longitude": 81.7014574
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "\nPPH2+2HV, Batticaloa",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "PPH2+2HV, Batticaloa"
+  ]
+}

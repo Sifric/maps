@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDEKD7MCDN3EJGYYE1CVJ",
+  "name": "JV Hotel",
+  "coordinates": {
+    "latitude": 9.8235958,
+    "longitude": 80.1722953
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "R5FC+CWM, Valvettithurai",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5:30–9 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5:30–9 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5:30–9 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5:30–9 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5:30–9 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5:30–9 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5:30–9 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

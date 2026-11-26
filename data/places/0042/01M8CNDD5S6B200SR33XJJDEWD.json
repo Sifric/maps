@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD5S6B200SR33XJJDEWD",
+  "name": "leno Tyre Works",
+  "coordinates": {
+    "latitude": 7.7193201,
+    "longitude": 81.6971602
+  },
+  "categories": [
+    "Auto repair shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Batticaloa",
+  "business_status": "OPEN"
+}

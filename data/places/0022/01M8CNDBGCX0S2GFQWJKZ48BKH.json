@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDBGCX0S2GFQWJKZ48BKH",
+  "name": "Muba Taxi Service",
+  "coordinates": {
+    "latitude": 6.839645099999999,
+    "longitude": 81.83304679999999
+  },
+  "categories": [
+    "Taxi service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "arugambay Main road, arugambay, Pottuvil 32500",
+  "business_status": "OPEN"
+}

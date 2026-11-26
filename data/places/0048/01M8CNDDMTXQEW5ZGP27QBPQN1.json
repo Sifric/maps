@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDDMTXQEW5ZGP27QBPQN1",
+  "name": "Manawa Educational Centre",
+  "coordinates": {
+    "latitude": 6.1064691,
+    "longitude": 80.3501737
+  },
+  "categories": [
+    "Tutoring service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "B480, Yakkalamulla",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "2–5 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "2–5 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "2–5 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "2–5 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "2–5 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7 AM–5 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

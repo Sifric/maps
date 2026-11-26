@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD6WSWQD90TT1KFKK7EG",
+  "name": "Sigiri Rock Side Home Stay",
+  "coordinates": {
+    "latitude": 7.949438,
+    "longitude": 80.75496199999999
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Inamaluwa - Sigiriya Rd, Sigiriya 21120",
+  "business_status": "OPEN"
+}

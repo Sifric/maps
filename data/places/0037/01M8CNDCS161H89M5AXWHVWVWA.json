@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCS161H89M5AXWHVWVWA",
+  "name": "Sri Lanka Air Force Station Batticaloa",
+  "coordinates": {
+    "latitude": 7.7065093,
+    "longitude": 81.68446809999999
+  },
+  "categories": [
+    "Airport"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM4M+JQ4, Batticaloa",
+  "business_status": "OPEN"
+}

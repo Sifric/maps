@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA1HW4PXBHHWW1M3B1D8",
+  "name": "Krishna cool bar",
+  "coordinates": {
+    "latitude": 7.4146347,
+    "longitude": 81.8261582
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "43 Main St, Karaitivu 12",
+  "business_status": "OPEN"
+}

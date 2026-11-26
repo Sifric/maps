@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCVMQY5NZPJTCHFGWP4Z",
+  "name": "East Lagoon Pool",
+  "coordinates": {
+    "latitude": 7.7292488,
+    "longitude": 81.70476699999999
+  },
+  "categories": [
+    "Swimming pool"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Uppodai Lake Rd, Batticaloa",
+  "business_status": "OPEN"
+}

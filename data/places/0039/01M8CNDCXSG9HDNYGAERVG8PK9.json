@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCXSG9HDNYGAERVG8PK9",
+  "name": "Electric Vehicle Charging Station",
+  "coordinates": {
+    "latitude": 8.6181933,
+    "longitude": 81.21798629999999
+  },
+  "categories": [
+    "Electric vehicle charging station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "8.619344, 81.218409 Sarvodaya Rd, Trincomalee 83408",
+  "business_status": "OPEN"
+}

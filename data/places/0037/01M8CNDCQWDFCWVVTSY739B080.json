@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCQWDFCWVVTSY739B080",
+  "name": "Food Park",
+  "coordinates": {
+    "latitude": 7.6859877,
+    "longitude": 81.7396328
+  },
+  "categories": [
+    "Food court"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "194 Dr Badhiudeen Mahmood Mawatha, Kattankudy",
+  "business_status": "OPEN"
+}

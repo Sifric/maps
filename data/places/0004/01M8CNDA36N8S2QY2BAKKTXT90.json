@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA36N8S2QY2BAKKTXT90",
+  "name": "Hideout Lounge",
+  "coordinates": {
+    "latitude": 6.8395923,
+    "longitude": 81.83294459999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Panama Rd, Arugam Bay",
+  "business_status": "CLOSED_TEMPORARILY"
+}

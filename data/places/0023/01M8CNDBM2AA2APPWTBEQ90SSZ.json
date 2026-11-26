@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDBM2AA2APPWTBEQ90SSZ",
+  "name": "BOC ATM",
+  "coordinates": {
+    "latitude": 7.1249731999999995,
+    "longitude": 81.8489103
+  },
+  "categories": [
+    "ATM"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "4RFX+XH, Thambiluvil",
+  "business_status": "OPEN"
+}

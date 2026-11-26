@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDA2ATH9BD07NPZ985DN",
+  "name": "City Parking",
+  "coordinates": {
+    "latitude": 7.7137326999999996,
+    "longitude": 81.6967992
+  },
+  "categories": [
+    "Parking lot"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "21 St Anthony`s St, Batticaloa",
+  "business_status": "OPEN"
+}

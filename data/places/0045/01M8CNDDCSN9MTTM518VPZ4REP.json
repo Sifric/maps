@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDCSN9MTTM518VPZ4REP",
+  "name": "Zahra Home",
+  "coordinates": {
+    "latitude": 7.686013099999999,
+    "longitude": 81.7343243
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPPM+9RR, 4th Cross St, Kattankudy",
+  "business_status": "OPEN"
+}

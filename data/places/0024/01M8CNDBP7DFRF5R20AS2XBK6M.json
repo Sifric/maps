@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBP7DFRF5R20AS2XBK6M",
+  "name": "Lucky Tech Service Station",
+  "coordinates": {
+    "latitude": 7.8998763,
+    "longitude": 81.51804419999999
+  },
+  "categories": [
+    "Car wash"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "VGX9+X63, Oddamavadi",
+  "business_status": "OPEN"
+}

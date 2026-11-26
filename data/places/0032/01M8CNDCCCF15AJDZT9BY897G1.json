@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCCCF15AJDZT9BY897G1",
+  "name": "Musny",
+  "coordinates": {
+    "latitude": 7.774038699999999,
+    "longitude": 81.61519899999999
+  },
+  "categories": [
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kalaimahal Rd, Eravur",
+  "business_status": "OPEN"
+}

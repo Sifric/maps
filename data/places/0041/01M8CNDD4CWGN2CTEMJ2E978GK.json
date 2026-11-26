@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD4CWGN2CTEMJ2E978GK",
+  "name": "Muslim Public Cemetery",
+  "coordinates": {
+    "latitude": 7.6637265999999995,
+    "longitude": 81.72725129999999
+  },
+  "categories": [
+    "Cemetery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MP7G+FWR",
+  "business_status": "OPEN"
+}

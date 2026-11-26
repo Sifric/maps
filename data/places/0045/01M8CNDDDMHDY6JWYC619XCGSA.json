@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDDMHDY6JWYC619XCGSA",
+  "name": "TH Moshith Fuel Mary",
+  "coordinates": {
+    "latitude": 7.8322819,
+    "longitude": 81.5514822
+  },
+  "categories": [
+    "Gas station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "RHJ2+WH9, Morakatanchenai",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDCBR4J7V3CX3FRPX9358",
+  "name": "Seethevi Hotels",
+  "coordinates": {
+    "latitude": 7.7135744,
+    "longitude": 81.7100653
+  },
+  "categories": [
+    "Guest house",
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "182 New Kalmunai road, Kallady 30000",
+  "business_status": "OPEN"
+}

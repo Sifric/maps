@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCPW4YRZHB9AXT9T2RHS",
+  "name": "Saheer's Garden",
+  "coordinates": {
+    "latitude": 7.802376,
+    "longitude": 81.60732399999999
+  },
+  "categories": [
+    "Garden"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "RJ24+XW4",
+  "business_status": "OPEN"
+}

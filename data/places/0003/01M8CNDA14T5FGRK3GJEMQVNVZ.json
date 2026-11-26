@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA14T5FGRK3GJEMQVNVZ",
+  "name": "டேமியா உணவகம்",
+  "coordinates": {
+    "latitude": 7.4711551,
+    "longitude": 81.80796629999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "FRC5+F58, Periyakallar",
+  "business_status": "OPEN"
+}

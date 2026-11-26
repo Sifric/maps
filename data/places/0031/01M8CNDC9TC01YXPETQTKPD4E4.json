@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9TC01YXPETQTKPD4E4",
+  "name": "Lafeer Catering",
+  "coordinates": {
+    "latitude": 7.7761447,
+    "longitude": 81.6064859
+  },
+  "categories": [
+    "South Indian restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJG4+8J6, Eravur",
+  "business_status": "OPEN"
+}

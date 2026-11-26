@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9XX92GHWVP8WYXBZGZ",
+  "name": "The Chilli Cherry",
+  "coordinates": {
+    "latitude": 7.508902,
+    "longitude": 81.7921112
+  },
+  "categories": [
+    "Chicken restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQ5R+HRM, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

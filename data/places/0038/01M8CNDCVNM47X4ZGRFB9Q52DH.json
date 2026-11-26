@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCVNM47X4ZGRFB9Q52DH",
+  "name": "Koattamunai Bridge",
+  "coordinates": {
+    "latitude": 7.7150075,
+    "longitude": 81.6983149
+  },
+  "categories": [
+    "Bridge"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM8X+284, Batticaloa",
+  "business_status": "OPEN"
+}

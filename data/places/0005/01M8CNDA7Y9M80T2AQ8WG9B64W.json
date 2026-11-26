@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA7Y9M80T2AQ8WG9B64W",
+  "name": "Hubaib Chicken Shop",
+  "coordinates": {
+    "latitude": 7.2351724,
+    "longitude": 81.8516786
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Addalaichenai",
+  "business_status": "OPEN"
+}

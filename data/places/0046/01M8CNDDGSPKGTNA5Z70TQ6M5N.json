@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDGSPKGTNA5Z70TQ6M5N",
+  "name": "Siyam stores",
+  "coordinates": {
+    "latitude": 7.9163405,
+    "longitude": 81.5201127
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "138 Main St, Oddamavadi",
+  "business_status": "OPEN"
+}

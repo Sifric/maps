@@ -1,0 +1,20 @@
+{
+  "id": "01M8CNDA6EE5KYAQ405JXVMW9C",
+  "name": "Grocery stores",
+  "coordinates": {
+    "latitude": 6.4975252,
+    "longitude": 80.6243313
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "Dikyaya Rd",
+  "business_status": "OPEN"
+}

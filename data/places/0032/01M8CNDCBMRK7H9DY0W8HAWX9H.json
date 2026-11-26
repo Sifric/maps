@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBMRK7H9DY0W8HAWX9H",
+  "name": "Friends Sports Arena",
+  "coordinates": {
+    "latitude": 7.7325786999999995,
+    "longitude": 81.6706899
+  },
+  "categories": [
+    "Indoor playground"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "5G, Nagaiah Road, Pillayarady, Batticaloa 30000",
+  "business_status": "OPEN"
+}

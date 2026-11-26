@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDEAHK2VBHHJ7FDX34N6H",
+  "name": "Hotel Hillside Galle",
+  "coordinates": {
+    "latitude": 6.0517208,
+    "longitude": 80.2414067
+  },
+  "categories": [
+    "Hotel",
+    "Apartment building",
+    "Lodging",
+    "Restaurant",
+    "Wedding venue"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "No:46, Springfield Garden, D.Samson Rajapaksha Mw, Haliwala Rd, Galle 80000",
+  "business_status": "OPEN"
+}

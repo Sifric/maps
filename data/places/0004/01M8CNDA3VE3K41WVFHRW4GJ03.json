@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDA3VE3K41WVFHRW4GJ03",
+  "name": "ASWAR BHAI HOTEL",
+  "coordinates": {
+    "latitude": 7.4051132,
+    "longitude": 81.8408808
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Mosque Road, kalmunai kudy-09, Kalmunai 32300",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12–11:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12–11:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12–11:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12–11:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12–3 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "12–11:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12–11:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

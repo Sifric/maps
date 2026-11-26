@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA6P0A03RYDEPD7ATK03",
+  "name": "RGN Stores",
+  "coordinates": {
+    "latitude": 7.1333364999999995,
+    "longitude": 81.84724729999999
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "4RMW+8VQ, Thambiluvil 1",
+  "business_status": "OPEN"
+}

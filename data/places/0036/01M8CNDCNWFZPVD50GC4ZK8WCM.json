@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCNWFZPVD50GC4ZK8WCM",
+  "name": "Sheri distributors",
+  "coordinates": {
+    "latitude": 7.709845,
+    "longitude": 81.694276
+  },
+  "categories": [
+    "Transportation service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "118 Hospital Rd, Batticaloa",
+  "business_status": "OPEN"
+}

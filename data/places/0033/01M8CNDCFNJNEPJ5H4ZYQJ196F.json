@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCFNJNEPJ5H4ZYQJ196F",
+  "name": "Lighthouse Church Batticaloa",
+  "coordinates": {
+    "latitude": 7.7319064,
+    "longitude": 81.70045619999999
+  },
+  "categories": [
+    "Evangelical church"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No: 23, Periya Uppodai Road, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "01M8CNDENE8JFZJ6RD9CPT950M",
+  "name": "Dots Bay House",
+  "coordinates": {
+    "latitude": 5.9632602,
+    "longitude": 80.7076665
+  },
+  "categories": [
+    "Bar",
+    "Restaurant",
+    "Bed & breakfast",
+    "Cafe",
+    "Coworking space",
+    "Hostel",
+    "Hotel",
+    "Live music venue",
+    "Yoga studio"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Hiriketiya Beach, Dikwella 81200",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDD215EYYSN1T0Z2BN5XD",
+  "name": "Sri Lanka Telecom - ශ්‍රී ලංකා ටෙලිකොම්",
+  "coordinates": {
+    "latitude": 6.8409333,
+    "longitude": 80.0014108
+  },
+  "categories": [
+    "Telecommunications service provider"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "A4 Avissawella Rd, Homagama",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8:45 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8:45 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8:45 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8:45 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8:45 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8:45 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAYCAJRG66DQBKKZX9XP",
+  "name": "NPP Political Office",
+  "coordinates": {
+    "latitude": 7.3871379,
+    "longitude": 81.8373976
+  },
+  "categories": [
+    "Political party office"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "104 Maliga Rd, Sainthamaruthu 32250",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC7ME1BHTKR5P7SE806C",
+  "name": "Wesley Farm",
+  "coordinates": {
+    "latitude": 7.734032099999999,
+    "longitude": 81.6736184
+  },
+  "categories": [
+    "Garden"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMMF+JC9, Batticaloa",
+  "business_status": "OPEN"
+}

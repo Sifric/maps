@@ -1,0 +1,73 @@
+{
+  "id": "01M8CNDDG61263PBNKVB8YKV7K",
+  "name": "Ravi Jewellers",
+  "coordinates": {
+    "latitude": 6.9406611,
+    "longitude": 79.8540268
+  },
+  "categories": [
+    "Jewelry store",
+    "Currency exchange service",
+    "Jeweler",
+    "Jewelry buyer",
+    "Jewelry manufacturer",
+    "Jewelry repair service",
+    "Wholesale jeweler"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "115 Sea St, Colombo 01100",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9:30 AM–6:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9:30 AM–6:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9:30 AM–6:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9:30 AM–6:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9:30 AM–6:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9:30 AM–6:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

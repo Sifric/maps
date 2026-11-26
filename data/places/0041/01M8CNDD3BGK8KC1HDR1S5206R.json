@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD3BGK8KC1HDR1S5206R",
+  "name": "Mirissa Cabs",
+  "coordinates": {
+    "latitude": 5.9456671,
+    "longitude": 80.45992849999999
+  },
+  "categories": [
+    "Taxi service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "indrani, Udupila Road, Mirissa 81740",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA0E29CSG67EG5TK1MBJ",
+  "name": "Hangar puram",
+  "coordinates": {
+    "latitude": 7.4826649,
+    "longitude": 81.7540902
+  },
+  "categories": [
+    "Soup kitchen"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "13, 06 sangar puram, Mandur",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD59MS2MHKA5FWC4QTX8",
+  "name": "Golden Book Shop",
+  "coordinates": {
+    "latitude": 7.7287780999999995,
+    "longitude": 81.6809735
+  },
+  "categories": [
+    "Book store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Batticaloa",
+  "business_status": "OPEN"
+}

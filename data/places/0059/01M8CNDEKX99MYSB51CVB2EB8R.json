@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDEKX99MYSB51CVB2EB8R",
+  "name": "EDEN’S",
+  "coordinates": {
+    "latitude": 9.6606268,
+    "longitude": 80.0412448
+  },
+  "categories": [
+    "Coffee shop",
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "365 Mampalam junction, Jaffna 40000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "11 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "11 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "11 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "11 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "11 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "11 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12 PM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

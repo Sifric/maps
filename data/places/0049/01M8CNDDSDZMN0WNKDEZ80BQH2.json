@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDSDZMN0WNKDEZ80BQH2",
+  "name": "Vijitha stores",
+  "coordinates": {
+    "latitude": 6.0908786,
+    "longitude": 80.3626809
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Imaduwa Rd, Yakkalamulla",
+  "business_status": "OPEN"
+}

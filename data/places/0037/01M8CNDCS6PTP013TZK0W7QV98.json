@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDCS6PTP013TZK0W7QV98",
+  "name": "Bite & Go",
+  "coordinates": {
+    "latitude": 7.717408799999999,
+    "longitude": 81.719049
+  },
+  "categories": [
+    "Fast food restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Beach Road, Kallady 30000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4:30–11:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4:30–11:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4:30–11:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4:30–11:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4:30–11:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4:30–11:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4:30–11:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

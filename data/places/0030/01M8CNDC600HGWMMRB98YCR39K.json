@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC600HGWMMRB98YCR39K",
+  "name": "Hotel ahnaf(parotto)",
+  "coordinates": {
+    "latitude": 7.6808046999999995,
+    "longitude": 81.7436341
+  },
+  "categories": [
+    "Family restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPJV+98J, Abrar Rd, Kattankudy",
+  "business_status": "OPEN"
+}

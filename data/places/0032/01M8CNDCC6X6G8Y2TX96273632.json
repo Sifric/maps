@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCC6X6G8Y2TX96273632",
+  "name": "Moon holiday inn",
+  "coordinates": {
+    "latitude": 7.6771746,
+    "longitude": 81.7383224
+  },
+  "categories": [
+    "Holiday apartment rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Deen Rd, Kattankudy",
+  "business_status": "OPEN"
+}

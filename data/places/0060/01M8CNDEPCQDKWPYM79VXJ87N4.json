@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEPCQDKWPYM79VXJ87N4",
+  "name": "Taste of Yarl",
+  "coordinates": {
+    "latitude": 9.6771238,
+    "longitude": 80.0142193
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "466 Kasthuriyar Rd, Jaffna",
+  "business_status": "OPEN"
+}

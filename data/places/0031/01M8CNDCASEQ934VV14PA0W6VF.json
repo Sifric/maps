@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCASEQ934VV14PA0W6VF",
+  "name": "Karuvappankeny Public Market",
+  "coordinates": {
+    "latitude": 7.738758,
+    "longitude": 81.680872
+  },
+  "categories": [
+    "Market"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMQJ+G85, Batticaloa",
+  "business_status": "OPEN"
+}

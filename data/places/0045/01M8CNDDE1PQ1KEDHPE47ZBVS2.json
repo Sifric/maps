@@ -1,0 +1,73 @@
+{
+  "id": "01M8CNDDE1PQ1KEDHPE47ZBVS2",
+  "name": "Zam Mobiles & Repairing",
+  "coordinates": {
+    "latitude": 7.928851099999999,
+    "longitude": 81.03987099999999
+  },
+  "categories": [
+    "Mobile phone repair shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "70/6A Hijra Mawatha, Polonnaruwa 51000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8:30 AM–2 PM",
+        "4–8:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8:30 AM–2 PM",
+        "4–8:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8:30 AM–2 PM",
+        "4–8:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8:30 AM–2 PM",
+        "4–8:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8:30–11:30 AM",
+        "4–8:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8:30 AM–2 PM",
+        "4–8:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8:30 AM–2 PM",
+        "4–8:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

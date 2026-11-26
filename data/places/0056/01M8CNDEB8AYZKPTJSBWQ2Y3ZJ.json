@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDEB8AYZKPTJSBWQ2Y3ZJ",
+  "name": "Hotel Riu Sri Lanka",
+  "coordinates": {
+    "latitude": 6.30957,
+    "longitude": 80.03323999999999
+  },
+  "categories": [
+    "Hotel",
+    "Wellness hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Galle Rd, Ahungalla 80562",
+  "business_status": "OPEN"
+}

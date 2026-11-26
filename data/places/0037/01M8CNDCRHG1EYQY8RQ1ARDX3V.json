@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCRHG1EYQY8RQ1ARDX3V",
+  "name": "Siriyativu Island",
+  "coordinates": {
+    "latitude": 7.6351102,
+    "longitude": 81.73188549999999
+  },
+  "categories": [
+    "Tourist attraction"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "JPPJ+2Q, Thalankudah",
+  "business_status": "OPEN"
+}

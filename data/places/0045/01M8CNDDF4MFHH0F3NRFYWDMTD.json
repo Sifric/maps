@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDDF4MFHH0F3NRFYWDMTD",
+  "name": "Ramani Fernando Salons at Cinnamon Grand Colombo",
+  "coordinates": {
+    "latitude": 6.9180052,
+    "longitude": 79.8485396
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\n77 Galle Rd, Colombo 00300",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "9 AM–8 PM"
+      ]
+    }
+  ],
+  "business_status": "CLOSED"
+}

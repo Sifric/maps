@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDDW8DAC4KBEY78P2F8W",
+  "name": "AMW - Suzuki",
+  "coordinates": {
+    "latitude": 7.7301011,
+    "longitude": 81.67467189999999
+  },
+  "categories": [
+    "Motor vehicle dealer"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "570 F & G,Trinco Road, Batticaloa 30162",
+  "business_status": "CLOSED_TEMPORARILY"
+}

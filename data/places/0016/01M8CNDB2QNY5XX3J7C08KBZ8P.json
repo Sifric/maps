@@ -1,0 +1,71 @@
+{
+  "id": "01M8CNDB2QNY5XX3J7C08KBZ8P",
+  "name": "Global Sport Club",
+  "coordinates": {
+    "latitude": 7.6031702999999995,
+    "longitude": 80.0744316
+  },
+  "categories": [
+    "Gym"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "30 Chilaw - Wariyapola Rd, Hettipola 60430",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5 AM–12 PM",
+        "3–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5 AM–12 PM",
+        "3–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5 AM–12 PM",
+        "3–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5 AM–12 PM",
+        "3–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5 AM–12 PM",
+        "3–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5 AM–12 PM",
+        "3–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

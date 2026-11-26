@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCPV1M3424X0JNQP3HGE",
+  "name": "Spectra One",
+  "coordinates": {
+    "latitude": 7.7825546999999995,
+    "longitude": 81.5954235
+  },
+  "categories": [
+    "Garden"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Sellam Residency, Chenkaladi 30350",
+  "business_status": "OPEN"
+}

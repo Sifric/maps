@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA11DTAWSHAGXPHZC03V",
+  "name": "MR.Restaurant",
+  "coordinates": {
+    "latitude": 7.3228257999999995,
+    "longitude": 81.8520319
+  },
+  "categories": [
+    "Family restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Musthafa Manager Rd, Nintavur 32340",
+  "business_status": "OPEN"
+}

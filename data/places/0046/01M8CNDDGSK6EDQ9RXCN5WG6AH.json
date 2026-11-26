@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDGSK6EDQ9RXCN5WG6AH",
+  "name": "An shafnas",
+  "coordinates": {
+    "latitude": 7.7817899,
+    "longitude": 81.61589529999999
+  },
+  "categories": [
+    "Convenience store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "RDS ROAD Michnagar, Eravur 30300",
+  "business_status": "OPEN"
+}

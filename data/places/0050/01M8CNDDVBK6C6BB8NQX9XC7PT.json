@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDDVBK6C6BB8NQX9XC7PT",
+  "name": "Atmosphere",
+  "coordinates": {
+    "latitude": 6.0100273,
+    "longitude": 80.2469534
+  },
+  "categories": [
+    "Cafe",
+    "Hookah bar",
+    "Seafood restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Yaddehimulla Rd, Unawatuna 80600",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "12 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12 PM–1 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDBV32PAWJ36GNZZ65FT6",
+  "name": "Mohammed store",
+  "coordinates": {
+    "latitude": 6.8721147,
+    "longitude": 81.82097949999999
+  },
+  "categories": [
+    "Shopping mall"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "VRCC+VC, Pottuvil",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7:59 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7:59 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7:59 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7:59 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7:59 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7:59 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7:59 AM–11 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

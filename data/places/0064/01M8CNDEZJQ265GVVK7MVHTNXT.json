@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDEZJQ265GVVK7MVHTNXT",
+  "name": "Yaarl Fitness",
+  "coordinates": {
+    "latitude": 9.6696694,
+    "longitude": 80.01110419999999
+  },
+  "categories": [
+    "Gym"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "3rd Floor, M296+PMQ, ESPN Building No. 12, Stanley Rd, Jaffna",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5–11 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

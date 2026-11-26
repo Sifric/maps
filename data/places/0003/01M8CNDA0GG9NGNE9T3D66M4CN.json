@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA0GG9NGNE9T3D66M4CN",
+  "name": "Friendship டேஸ்ட் கடை",
+  "coordinates": {
+    "latitude": 7.4732521,
+    "longitude": 81.8081748
+  },
+  "categories": [
+    "Soup kitchen"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kalar, Periyakallar",
+  "business_status": "OPEN"
+}

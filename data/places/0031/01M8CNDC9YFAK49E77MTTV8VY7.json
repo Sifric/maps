@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9YFAK49E77MTTV8VY7",
+  "name": "Jeyakumar Chicken Shop",
+  "coordinates": {
+    "latitude": 7.5195098,
+    "longitude": 81.78671659999999
+  },
+  "categories": [
+    "Chicken shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQ9P+RM4, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

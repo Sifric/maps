@@ -1,0 +1,20 @@
+{
+  "id": "01M8CNDA2TTSERY926CRKNJE3T",
+  "name": "Fara Supermarket",
+  "coordinates": {
+    "latitude": 7.364087199999999,
+    "longitude": 81.8091912
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "Sammanthurai",
+  "business_status": "OPEN"
+}

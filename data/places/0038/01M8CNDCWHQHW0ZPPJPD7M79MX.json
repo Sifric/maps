@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCWHQHW0ZPPJPD7M79MX",
+  "name": "Fish Auction Centre, Kattankudy",
+  "coordinates": {
+    "latitude": 7.6834833,
+    "longitude": 81.71982659999999
+  },
+  "categories": [
+    "Fishing pier"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPM9+9WW, Lagoon drive, Kattankudy",
+  "business_status": "OPEN"
+}

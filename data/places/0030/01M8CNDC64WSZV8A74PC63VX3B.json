@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC64WSZV8A74PC63VX3B",
+  "name": "ACM HOT & COOL",
+  "coordinates": {
+    "latitude": 7.9232758,
+    "longitude": 81.5176977
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WGF8+6W, River Park - ரிவர் பார்க், Oddamavadi",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD4TRZ6HT701CJ3QMA8Z",
+  "name": "S. T. S Store",
+  "coordinates": {
+    "latitude": 7.9661553,
+    "longitude": 81.35569129999999
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "X984+J7M, Kayankerni",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDE9DXCSMG7VSM8SHAFRJ",
+  "name": "Egg hoppers",
+  "coordinates": {
+    "latitude": 6.015047,
+    "longitude": 80.43340099999999
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "2C8M+296, B465, Kananke",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "2:30–7:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "2:30–7:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "2:30–7:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "2:30–7:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "2:30–7:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "2:30–7:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "2:30–7:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

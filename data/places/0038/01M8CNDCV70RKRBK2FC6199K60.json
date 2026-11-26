@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCV70RKRBK2FC6199K60",
+  "name": "Priya home",
+  "coordinates": {
+    "latitude": 7.7341663,
+    "longitude": 81.6823704
+  },
+  "categories": [
+    "Transportation service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMMJ+MW9, Batticaloa",
+  "business_status": "OPEN"
+}

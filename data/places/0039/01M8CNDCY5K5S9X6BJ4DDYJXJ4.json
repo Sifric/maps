@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDCY5K5S9X6BJ4DDYJXJ4",
+  "name": "Telecommunication Tower - Kathankudy",
+  "coordinates": {
+    "latitude": 7.6884679,
+    "longitude": 81.7230484
+  },
+  "categories": [
+    "Cell tower",
+    "Tower",
+    "Building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kattankudy",
+  "business_status": "OPEN"
+}

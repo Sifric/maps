@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC4EJC76Q1CBRNDH6HS9",
+  "name": "Quick Mart",
+  "coordinates": {
+    "latitude": 7.780384199999999,
+    "longitude": 81.61086259999999
+  },
+  "categories": [
+    "Education center"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Alayadi Road , Eravur - 03 Eravur, Town 30300",
+  "business_status": "OPEN"
+}

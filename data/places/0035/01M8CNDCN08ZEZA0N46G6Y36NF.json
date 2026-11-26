@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCN08ZEZA0N46G6Y36NF",
+  "name": "Highland Fresh Milk Store",
+  "coordinates": {
+    "latitude": 7.7190674999999995,
+    "longitude": 81.697395
+  },
+  "categories": [
+    "Dairy store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "261 Trinco Rd, Batticaloa",
+  "business_status": "OPEN"
+}

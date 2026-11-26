@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDA0ABSGQSQZ0F75WSCYC",
+  "name": "Scoopy Doo - Restaurant and Cafe",
+  "coordinates": {
+    "latitude": 7.352794299999999,
+    "longitude": 81.8459458
+  },
+  "categories": [
+    "Western restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "9R3W+498, Main Street, Nintavur",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4 PM–1 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

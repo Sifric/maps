@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDDBP3DM19RDEBCJNP3EA",
+  "name": "Dilax’s Home",
+  "coordinates": {
+    "latitude": 7.7271144,
+    "longitude": 81.7116483
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "\n1, 10 Sidney Road, Batticaloa",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "1, 10 Sidney Road, Batticaloa"
+  ]
+}

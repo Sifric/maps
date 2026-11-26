@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCSMV513H5BA5YS9HN0W",
+  "name": "SMZ travel agent",
+  "coordinates": {
+    "latitude": 7.7009691,
+    "longitude": 81.7140227
+  },
+  "categories": [
+    "Tailor"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "11/5 Kalaimagal Road, Batticaloa 30000",
+  "business_status": "OPEN"
+}

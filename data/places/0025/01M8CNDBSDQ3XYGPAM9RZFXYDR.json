@@ -1,0 +1,73 @@
+{
+  "id": "01M8CNDBSDQ3XYGPAM9RZFXYDR",
+  "name": "Dream MAX",
+  "coordinates": {
+    "latitude": 7.4326197,
+    "longitude": 81.8182121
+  },
+  "categories": [
+    "Cell phone store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "332/C Kariyappar Road, Maruthamunai 32314",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8:30 AM–1 PM",
+        "4:30–10:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8:30 AM–1 PM",
+        "4:30–10:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8:30 AM–1 PM",
+        "4:30–10:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8:30 AM–1 PM",
+        "4:30–10:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4:30–8:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8:30 AM–1 PM",
+        "4:30–10:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8:30 AM–1 PM",
+        "4:30–10:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

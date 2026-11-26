@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDAZ5BFTJA1ANSPHGFSR",
+  "name": "MAHIBee",
+  "coordinates": {
+    "latitude": 7.734106,
+    "longitude": 81.6784946
+  },
+  "categories": [
+    "Shipping service",
+    "Service establishment"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

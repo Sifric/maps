@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDECZP4ADABPSZ0VZYX4M",
+  "name": "Friendship Villa",
+  "coordinates": {
+    "latitude": 6.0456509,
+    "longitude": 80.2377049
+  },
+  "categories": [
+    "Guest house",
+    "Hotel",
+    "Park",
+    "Restaurant",
+    "Villa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "88/5 B2, Sri Subadrarama Road,Thenkallagoda, Galle 80000",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD0450VWM9JK8K9DDH82",
+  "name": "Ashfa Stores",
+  "coordinates": {
+    "latitude": 7.9039383999999995,
+    "longitude": 81.52508689999999
+  },
+  "categories": [
+    "Shopping mall"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG3G+H2G, MPCS Rd, Oddamavadi",
+  "business_status": "OPEN"
+}

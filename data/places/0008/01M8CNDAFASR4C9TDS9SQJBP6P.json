@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAFASR4C9TDS9SQJBP6P",
+  "name": "TM.KINAS",
+  "coordinates": {
+    "latitude": 7.4181479999999995,
+    "longitude": 81.8112209
+  },
+  "categories": [
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "83 Poomarathady Rd, Kalmunai 32300",
+  "business_status": "OPEN"
+}

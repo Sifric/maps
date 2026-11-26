@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCAAMFH1K01WR41TRSJE",
+  "name": "Devi Super Market",
+  "coordinates": {
+    "latitude": 7.7781765,
+    "longitude": 81.6014588
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Eravur",
+  "business_status": "OPEN"
+}

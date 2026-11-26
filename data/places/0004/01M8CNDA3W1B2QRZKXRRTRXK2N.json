@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDA3W1B2QRZKXRRTRXK2N",
+  "name": "Elite Chicken",
+  "coordinates": {
+    "latitude": 7.4058037,
+    "longitude": 81.8408615
+  },
+  "categories": [
+    "Chicken shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "CR4R+88H, Kalmunai 32300",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6–9 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6–9 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6–9 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6–9 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6 AM–12 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6–9 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6–9 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

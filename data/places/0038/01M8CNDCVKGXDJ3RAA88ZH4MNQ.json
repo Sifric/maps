@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCVKGXDJ3RAA88ZH4MNQ",
+  "name": "Katcheanai Cemetery",
+  "coordinates": {
+    "latitude": 7.5682697999999995,
+    "longitude": 81.7250435
+  },
+  "categories": [
+    "Cemetery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "HP9G+823, katcheanai, main street, Batticaloa",
+  "business_status": "OPEN"
+}

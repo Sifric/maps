@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAKNS64ZMGKF83K00MB0",
+  "name": "Vathany stores",
+  "coordinates": {
+    "latitude": 7.1042571,
+    "longitude": 81.8306334
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "4R3J+P72, 5th road, Thirukkovil 4",
+  "business_status": "OPEN"
+}

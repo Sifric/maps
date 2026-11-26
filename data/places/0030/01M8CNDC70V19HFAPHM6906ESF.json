@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC70V19HFAPHM6906ESF",
+  "name": "N.K. Bake House & Cafe",
+  "coordinates": {
+    "latitude": 7.7312441,
+    "longitude": 81.6964516
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Batticaloa",
+  "business_status": "OPEN"
+}

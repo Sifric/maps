@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA24ZBC0PJPQDGM3YK10",
+  "name": "நிப்றாஸ் வீடு",
+  "coordinates": {
+    "latitude": 7.4044395,
+    "longitude": 81.8345994
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "196,mosque road islamabath, Kalmunai",
+  "business_status": "OPEN"
+}

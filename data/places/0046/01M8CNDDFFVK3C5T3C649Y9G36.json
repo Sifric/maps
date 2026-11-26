@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDFFVK3C5T3C649Y9G36",
+  "name": "Phone Touch",
+  "coordinates": {
+    "latitude": 7.4340019999999996,
+    "longitude": 81.8130195
+  },
+  "categories": [
+    "Cell phone store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "14 Colombo - Batticaloa Hwy, Maruthamunai 32314",
+  "business_status": "OPEN"
+}

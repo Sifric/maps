@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE0VZMATDR00EZ8M0QK8",
+  "name": "Hotel Shanika",
+  "coordinates": {
+    "latitude": 6.3030778,
+    "longitude": 80.20087939999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "No:583/1 Gurugodalla, Elpitiya",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAJZ24YB3DE1EW53HBBV",
+  "name": "Welcome Fair Centre - Unilever Warehouse",
+  "coordinates": {
+    "latitude": 7.2197005999999995,
+    "longitude": 81.849522
+  },
+  "categories": [
+    "Warehouse"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Welcome Fair Centre, 55 AVV Rd, Akkaraipattu",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCQ3N086K7P66GXXYZ12",
+  "name": "Aamina Garden (Available Rooms & Hall)",
+  "coordinates": {
+    "latitude": 7.6995938,
+    "longitude": 81.7287872
+  },
+  "categories": [
+    "Holiday home"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Poonochchimunai, Iqra Vidhyalaya, Poonochchimunai",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCCQC61QP8Q9RKPZD4X5",
+  "name": "Rado villa",
+  "coordinates": {
+    "latitude": 7.679231,
+    "longitude": 81.724622
+  },
+  "categories": [
+    "Villa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPHF+MRX, Dr Badhiudeen Mahmood Mawatha, Kattankudy",
+  "business_status": "OPEN"
+}

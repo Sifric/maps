@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCB5BQ0DP0ZG6ENHVJSF",
+  "name": "Koneshan Grocery shop",
+  "coordinates": {
+    "latitude": 7.582856499999999,
+    "longitude": 81.7854447
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "HQMP+45W, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

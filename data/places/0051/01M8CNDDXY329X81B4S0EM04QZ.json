@@ -1,0 +1,72 @@
+{
+  "id": "01M8CNDDXY329X81B4S0EM04QZ",
+  "name": "Namikaze Restaurant & Bar",
+  "coordinates": {
+    "latitude": 5.9996640999999995,
+    "longitude": 80.2671
+  },
+  "categories": [
+    "Asian restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "724 Matara Rd, Galle 80000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7–10:30 AM",
+        "11:30 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7–10:30 AM",
+        "11:30 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7–10:30 AM",
+        "11:30 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7–10:30 AM",
+        "11:30 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7–10:30 AM",
+        "11:30 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7–10:30 AM",
+        "11:30 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7–10:30 AM",
+        "11:30 AM–10 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

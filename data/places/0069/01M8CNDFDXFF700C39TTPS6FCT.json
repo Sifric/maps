@@ -1,0 +1,63 @@
+{
+  "id": "01M8CNDFDXFF700C39TTPS6FCT",
+  "name": "Nadaraja supermarket",
+  "coordinates": {
+    "latitude": 9.7731642,
+    "longitude": 79.9586946
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "QXF5+7F8, Amman Rd, Panippulam",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:30 AM–8:29 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:30 AM–8:29 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:30 AM–8:29 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:30 AM–8:29 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:30 AM–8:29 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:30 AM–8:29 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6:30 AM–8:29 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

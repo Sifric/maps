@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBK6G1F733KMY7N8P57D",
+  "name": "JH RENT A CAR",
+  "coordinates": {
+    "latitude": 7.7733528,
+    "longitude": 81.6123507
+  },
+  "categories": [
+    "Recreational vehicle rental agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "86 Mavady Rd, Eravur 30300",
+  "business_status": "OPEN"
+}

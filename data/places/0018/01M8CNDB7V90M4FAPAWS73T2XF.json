@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDB7V90M4FAPAWS73T2XF",
+  "name": "Thathu House",
+  "coordinates": {
+    "latitude": 7.5164941999999995,
+    "longitude": 81.7926141
+  },
+  "categories": [
+    "Apartment complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQ8V+J3, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

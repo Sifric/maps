@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6E6RXXHSYJP7V1RZB6",
+  "name": "Barakath Chicken Shop",
+  "coordinates": {
+    "latitude": 7.9115721,
+    "longitude": 81.5284345
+  },
+  "categories": [
+    "Chicken shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG6H+J97, Oddamavadi",
+  "business_status": "CLOSED_TEMPORARILY"
+}

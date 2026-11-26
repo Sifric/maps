@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDFYDGXMMYJMC619B66M",
+  "name": "New Remico Furniture",
+  "coordinates": {
+    "latitude": 7.774843499999999,
+    "longitude": 81.6064277
+  },
+  "categories": [
+    "Home goods store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Eravur",
+  "business_status": "OPEN"
+}

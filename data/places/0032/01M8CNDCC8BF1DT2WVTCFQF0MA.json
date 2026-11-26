@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCC8BF1DT2WVTCFQF0MA",
+  "name": "Tharshi House",
+  "coordinates": {
+    "latitude": 7.7502352,
+    "longitude": 81.6763014
+  },
+  "categories": [
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "22, government housing scheme, Thiraimadu School Rd, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCTPYZFFVNDB4X0X50BQ",
+  "name": "Diura Hardware",
+  "coordinates": {
+    "latitude": 7.7092255,
+    "longitude": 81.6887385
+  },
+  "categories": [
+    "Hardware store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "97 Lake Rd No. 1, Batticaloa",
+  "business_status": "OPEN"
+}

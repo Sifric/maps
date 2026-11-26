@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD2ZGPCDAHPJSW5CCK5F",
+  "name": "Raja stores",
+  "coordinates": {
+    "latitude": 7.5140131,
+    "longitude": 81.7855962
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQ7P+J65, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

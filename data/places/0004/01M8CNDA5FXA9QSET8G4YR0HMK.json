@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA5FXA9QSET8G4YR0HMK",
+  "name": "3N Mini Market",
+  "coordinates": {
+    "latitude": 7.346114399999999,
+    "longitude": 81.85035099999999
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "8VW2+C4X, APC Rd, Nintavur 32340",
+  "business_status": "OPEN"
+}

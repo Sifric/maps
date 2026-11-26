@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCCYXYC65JB4JCG6F15H",
+  "name": "22 villa",
+  "coordinates": {
+    "latitude": 8.1456466,
+    "longitude": 81.43299669999999
+  },
+  "categories": [
+    "Apartment complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "4CWM+755, china bay, Trincomalee-Batticaloa Rd, nachchikuda",
+  "business_status": "OPEN"
+}

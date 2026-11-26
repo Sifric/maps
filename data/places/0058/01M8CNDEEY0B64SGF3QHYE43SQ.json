@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEEY0B64SGF3QHYE43SQ",
+  "name": "L&D Stay Inn",
+  "coordinates": {
+    "latitude": 6.1322502,
+    "longitude": 80.1034024
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Pannamgoda Meda Para Road, Hikkaduwa 80240",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCV9145ZM002QZ2DAPG4",
+  "name": "Royal express courier",
+  "coordinates": {
+    "latitude": 7.7169086,
+    "longitude": 81.6997889
+  },
+  "categories": [
+    "Courier service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "30 Pansala Rd, Batticaloa",
+  "business_status": "OPEN"
+}

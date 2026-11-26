@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCKQHWX4DFQ3WKVNBEMY",
+  "name": "Midwife clinic",
+  "coordinates": {
+    "latitude": 7.7359073,
+    "longitude": 81.6847263
+  },
+  "categories": [
+    "Government office"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMPM+9V9, St.Antony's of Hermat St, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD8JH2M5DDDV45YX8RBS",
+  "name": "Bandula Rice Mill",
+  "coordinates": {
+    "latitude": 8.0564853,
+    "longitude": 81.066469
+  },
+  "categories": [
+    "Manufacturer"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "B488",
+  "business_status": "OPEN"
+}

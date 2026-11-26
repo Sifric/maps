@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDA4PYP5RXQJ9JQK31ZSP",
+  "name": "The man's restaurant",
+  "coordinates": {
+    "latitude": 6.843282599999999,
+    "longitude": 81.830106
+  },
+  "categories": [
+    "Sri Lankan restaurant",
+    "Bed & breakfast",
+    "Breakfast restaurant",
+    "Coffee shop",
+    "Hostel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "100 Ali Cross Rd, Arugam Bay",
+  "business_status": "OPEN"
+}

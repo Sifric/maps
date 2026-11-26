@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDACCNTC60GYQSSDPW39K",
+  "name": "Rajah's Rest & Rajah’s family inn",
+  "coordinates": {
+    "latitude": 7.5175195,
+    "longitude": 81.78729779999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kaluwanchikudy",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4 AM–11 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

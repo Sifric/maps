@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCXTCMRFQKXHKWEJSGF7",
+  "name": "Fort Railway station",
+  "coordinates": {
+    "latitude": 6.9337010999999995,
+    "longitude": 79.85003019999999
+  },
+  "categories": [
+    "Train station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Colombo",
+  "business_status": "OPEN"
+}

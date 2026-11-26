@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEP4ZXFXP07H838FHXR5",
+  "name": "Lavan Cafe",
+  "coordinates": {
+    "latitude": 9.6615425,
+    "longitude": 80.04348139999999
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Jaffna",
+  "business_status": "OPEN"
+}

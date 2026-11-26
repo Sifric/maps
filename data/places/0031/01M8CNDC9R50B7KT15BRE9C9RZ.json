@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9R50B7KT15BRE9C9RZ",
+  "name": "Sabareesha Vegetarian Restaurant",
+  "coordinates": {
+    "latitude": 7.779085299999999,
+    "longitude": 81.60210479999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJH2+MV2, Railway Station Rd, Eravur",
+  "business_status": "OPEN"
+}

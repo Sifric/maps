@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE8WXZPW964EPPBSM394",
+  "name": "Tharaka Stores",
+  "coordinates": {
+    "latitude": 6.2747237,
+    "longitude": 80.3230426
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Panangala North",
+  "business_status": "OPEN"
+}

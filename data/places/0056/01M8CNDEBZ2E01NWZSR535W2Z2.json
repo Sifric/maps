@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDEBZ2E01NWZSR535W2Z2",
+  "name": "Guest House Basilea",
+  "coordinates": {
+    "latitude": 6.452543599999999,
+    "longitude": 79.98654429999999
+  },
+  "categories": [
+    "Homestay",
+    "Group accommodation",
+    "Lodging",
+    "Resort hotel",
+    "Retreat center"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "285/2 Diyarilla Rd, Beruwala 12070",
+  "business_status": "OPEN"
+}

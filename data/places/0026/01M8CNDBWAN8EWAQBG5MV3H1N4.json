@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBWAN8EWAQBG5MV3H1N4",
+  "name": "NSK SHOE POINT (NAJEEMA'S)",
+  "coordinates": {
+    "latitude": 7.6831833,
+    "longitude": 81.7271597
+  },
+  "categories": [
+    "Footwear wholesaler"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPMG+7VF, Main St, Kattankudy",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDBJAB7RRFQGD2TWMZ3KK",
+  "name": "Kapila Hotel",
+  "coordinates": {
+    "latitude": 7.2901959,
+    "longitude": 81.67318929999999
+  },
+  "categories": [
+    "Transportation service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "Main Bus Stand, Ampara",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6 PM–5 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6 PM–5 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6 PM–5 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6 PM–5 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6 PM–5 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6 PM–5 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6 PM–5 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

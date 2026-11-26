@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCPT46Z7XV9KY3G41DA5",
+  "name": "Keshimara Garden",
+  "coordinates": {
+    "latitude": 7.7727135,
+    "longitude": 81.64785189999999
+  },
+  "categories": [
+    "Garden"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJFX+34, Batticaloa",
+  "business_status": "OPEN"
+}

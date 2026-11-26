@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCDN15RFPHA03DB12RE0",
+  "name": "NETHRA Medi Clinic",
+  "coordinates": {
+    "latitude": 7.526097699999999,
+    "longitude": 81.78780739999999
+  },
+  "categories": [
+    "Medical Center"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQGQ+C4M, A4, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

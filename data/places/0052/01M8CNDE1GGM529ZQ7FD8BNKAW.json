@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE1GGM529ZQ7FD8BNKAW",
+  "name": "Thenu Bakery shop",
+  "coordinates": {
+    "latitude": 6.269029,
+    "longitude": 80.1401565
+  },
+  "categories": [
+    "Wedding bakery",
+    "Service establishment"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

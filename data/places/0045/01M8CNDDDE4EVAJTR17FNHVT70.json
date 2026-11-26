@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDDDE4EVAJTR17FNHVT70",
+  "name": "Suji Saloon",
+  "coordinates": {
+    "latitude": 7.5784107999999994,
+    "longitude": 81.750265
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "\nHPHX+HMX, Ampilanthurai North",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "HPHX+HMX, Ampilanthurai North"
+  ]
+}

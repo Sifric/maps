@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCMPBY6VYDK5CHCSA8XY",
+  "name": "Pirathiksha Transport & Material Supplier",
+  "coordinates": {
+    "latitude": 7.509470299999999,
+    "longitude": 81.7890668
+  },
+  "categories": [
+    "Construction material wholesaler"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Police Station, Road, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

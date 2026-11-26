@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDDEZK55YM6AG4X8J1VX4",
+  "name": "Salon Goshal",
+  "coordinates": {
+    "latitude": 6.8938143,
+    "longitude": 80.8650799
+  },
+  "categories": [
+    "Hairdresser"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\nKeppetipola",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "Open 24 hours"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

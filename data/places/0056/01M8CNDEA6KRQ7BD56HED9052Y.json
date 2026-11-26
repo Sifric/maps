@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDEA6KRQ7BD56HED9052Y",
+  "name": "Unawatuna Guest",
+  "coordinates": {
+    "latitude": 6.0136955,
+    "longitude": 80.2494222
+  },
+  "categories": [
+    "Guest house",
+    "Cafe",
+    "Coffee shop",
+    "Hotel",
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "202 A2, Unawatuna",
+  "business_status": "OPEN"
+}

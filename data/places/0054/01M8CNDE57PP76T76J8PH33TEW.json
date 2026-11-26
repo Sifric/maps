@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE57PP76T76J8PH33TEW",
+  "name": "Thiviya Bakery",
+  "coordinates": {
+    "latitude": 9.7445825,
+    "longitude": 80.03365459999999
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Chunnakam",
+  "business_status": "OPEN"
+}

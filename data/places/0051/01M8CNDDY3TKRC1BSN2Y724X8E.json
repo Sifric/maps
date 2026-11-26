@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDDY3TKRC1BSN2Y724X8E",
+  "name": "Sea side restaurant",
+  "coordinates": {
+    "latitude": 6.1975437,
+    "longitude": 80.06340159999999
+  },
+  "categories": [
+    "Italian restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Akurala",
+  "business_status": "CLOSED_TEMPORARILY"
+}

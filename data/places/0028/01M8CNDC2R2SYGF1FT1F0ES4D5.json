@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC2R2SYGF1FT1F0ES4D5",
+  "name": "Anjanayar Store",
+  "coordinates": {
+    "latitude": 7.4425330999999995,
+    "longitude": 81.8140694
+  },
+  "categories": [
+    "General store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CRV7+2J8, VC Rd, Periyaneelavanai",
+  "business_status": "OPEN"
+}

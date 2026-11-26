@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDCPT996H5HB0JHV5EP39",
+  "name": "Lawrence Rest House",
+  "coordinates": {
+    "latitude": 7.766779799999999,
+    "longitude": 81.6581157
+  },
+  "categories": [
+    "Garden",
+    "Guest house",
+    "Tourist attraction"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "675 Kumblamamadu, Batticaloa",
+  "business_status": "OPEN"
+}

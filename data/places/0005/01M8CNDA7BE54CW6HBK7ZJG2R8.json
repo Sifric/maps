@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA7BE54CW6HBK7ZJG2R8",
+  "name": "A1 RESTAURANT",
+  "coordinates": {
+    "latitude": 7.6964486999999995,
+    "longitude": 81.7333635
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Beach Road, Poonochchimunai 30100",
+  "business_status": "OPEN"
+}

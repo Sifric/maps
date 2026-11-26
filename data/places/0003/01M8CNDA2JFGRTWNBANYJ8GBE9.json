@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA2JFGRTWNBANYJ8GBE9",
+  "name": "NRA cake",
+  "coordinates": {
+    "latitude": 7.441556299999999,
+    "longitude": 81.81889939999999
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CRR9+JHC, Periyaneelavanai",
+  "business_status": "OPEN"
+}

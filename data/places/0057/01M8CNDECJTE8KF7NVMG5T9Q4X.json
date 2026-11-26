@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDECJTE8KF7NVMG5T9Q4X",
+  "name": "ArrowFront Hotel",
+  "coordinates": {
+    "latitude": 6.0695773,
+    "longitude": 80.1662352
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "241 Galle Rd",
+  "business_status": "OPEN"
+}

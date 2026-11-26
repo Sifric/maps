@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDV3HCHSGHK5ZYM91DZX",
+  "name": "Aditya Resort",
+  "coordinates": {
+    "latitude": 6.0947588999999995,
+    "longitude": 80.13494399999999
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "719/1 Galle - Colombo Rd, Rathgama",
+  "business_status": "OPEN"
+}

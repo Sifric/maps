@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDAC00NDT68E3WFK7Z75",
+  "name": "Althff home",
+  "coordinates": {
+    "latitude": 7.6493613,
+    "longitude": 81.7375206
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "68 peace village, Thalankudah",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "01M8CNDEFVBQ81ZA3G6XN1SNTZ",
+  "name": "Hikka Villa",
+  "coordinates": {
+    "latitude": 6.1483269,
+    "longitude": 80.10299309999999
+  },
+  "categories": [
+    "Villa",
+    "Holiday home",
+    "Holiday apartment",
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Hikkaduwa",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "14 A, Quarry Road, Wallewattha, Hikkaduwa 80240"
+  ]
+}

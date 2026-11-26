@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC8NXC4H4B92DY9H7KS8",
+  "name": "Mega Mart",
+  "coordinates": {
+    "latitude": 7.9050239,
+    "longitude": 81.52053599999999
+  },
+  "categories": [
+    "Gift shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG4C+26F, Oddamavadi",
+  "business_status": "OPEN"
+}

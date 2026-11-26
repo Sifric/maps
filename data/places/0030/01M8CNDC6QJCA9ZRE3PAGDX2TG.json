@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6QJCA9ZRE3PAGDX2TG",
+  "name": "Bombay Sweets & Cafe",
+  "coordinates": {
+    "latitude": 7.677037599999999,
+    "longitude": 81.7307258
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Main St, Kattankudy 30100",
+  "business_status": "OPEN"
+}

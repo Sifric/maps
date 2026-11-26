@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDC64B1QBTNPMVDY87M3E",
+  "name": "Hoppers Shop( Pasi Khuda)",
+  "coordinates": {
+    "latitude": 7.920280999999999,
+    "longitude": 81.55730799999999
+  },
+  "categories": [
+    "Family restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WH95+W2H, B185, Kalkudah",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5 PM–12:30 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5 PM–12:30 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5 PM–12:30 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5 PM–12:30 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5 PM–12:30 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5 PM–12:30 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5 PM–12:30 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

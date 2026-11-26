@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCQ09XYADF9WENSPXG21",
+  "name": "அயோத்தி ஒன்றிணைந்த பண்ணை",
+  "coordinates": {
+    "latitude": 7.8074043,
+    "longitude": 81.5604515
+  },
+  "categories": [
+    "Garden"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "RH46+X58, Thavapuram",
+  "business_status": "OPEN"
+}

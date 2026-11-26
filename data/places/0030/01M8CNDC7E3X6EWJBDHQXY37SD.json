@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC7E3X6EWJBDHQXY37SD",
+  "name": "Cargills Food city - Kaluwanchikudy",
+  "coordinates": {
+    "latitude": 7.5204698,
+    "longitude": 81.7881123
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Main Street, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDDK7Y0VTW7MJJC24YN51",
+  "name": "Southern Express Driving School",
+  "coordinates": {
+    "latitude": 5.9469962999999995,
+    "longitude": 80.5737611
+  },
+  "categories": [
+    "Driving school"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Matara",
+  "business_status": "OPEN"
+}

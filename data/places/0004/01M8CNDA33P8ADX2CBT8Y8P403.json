@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA33P8ADX2CBT8Y8P403",
+  "name": "Sea Breeze Hotel",
+  "coordinates": {
+    "latitude": 7.3952127999999995,
+    "longitude": 81.8435507
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "9RWV+3CV, Sainthamaruthu 32280",
+  "business_status": "OPEN"
+}

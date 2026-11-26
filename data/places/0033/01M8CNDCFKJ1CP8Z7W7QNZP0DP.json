@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCFKJ1CP8Z7W7QNZP0DP",
+  "name": "St. Antony's church",
+  "coordinates": {
+    "latitude": 7.7237972,
+    "longitude": 81.694569
+  },
+  "categories": [
+    "Church"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMFV+GR8, Glennie Lane, Batticaloa",
+  "business_status": "OPEN"
+}

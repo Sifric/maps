@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD0WW3Y0ZXC1T7QDR89H",
+  "name": "Desel Filling Station",
+  "coordinates": {
+    "latitude": 7.9163485,
+    "longitude": 81.5320958
+  },
+  "categories": [
+    "Gas station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG8J+GRQ, main street valaichenai, Oddamavadi",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCGHFQSMHDGAF1HXEY6V",
+  "name": "Masjid Al Walidayn",
+  "coordinates": {
+    "latitude": 7.6859291999999995,
+    "longitude": 81.7251161
+  },
+  "categories": [
+    "Mosque"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPPG+92H, Kattankudy",
+  "business_status": "OPEN"
+}

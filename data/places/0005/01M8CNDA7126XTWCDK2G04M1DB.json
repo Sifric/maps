@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA7126XTWCDK2G04M1DB",
+  "name": "Zestro cafe",
+  "coordinates": {
+    "latitude": 7.7115465,
+    "longitude": 81.7107346
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "no 200 New Kalmunai Road, Kallady",
+  "business_status": "OPEN"
+}

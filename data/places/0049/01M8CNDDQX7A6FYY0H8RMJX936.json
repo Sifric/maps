@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDQX7A6FYY0H8RMJX936",
+  "name": "U.G.I.Restaurant",
+  "coordinates": {
+    "latitude": 6.1797609,
+    "longitude": 80.3522729
+  },
+  "categories": [
+    "Rice restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Suduwelipotha junction, Udugama 80070",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6 AM–7:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CND9W5Q8XYKXSVAM2CQ7VE",
+  "name": "Safa Pre School",
+  "coordinates": {
+    "latitude": 7.4087118,
+    "longitude": 81.8352534
+  },
+  "categories": [
+    "Kindergarten"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "215A/1 KKP Rd., Kalmunai 32300",
+  "business_status": "CLOSED_TEMPORARILY"
+}

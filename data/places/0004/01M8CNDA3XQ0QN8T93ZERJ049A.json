@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA3XQ0QN8T93ZERJ049A",
+  "name": "New Star Hotel",
+  "coordinates": {
+    "latitude": 7.4099404,
+    "longitude": 81.82912499999999
+  },
+  "categories": [
+    "Sri Lankan restaurant",
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "216 Colombo - Batticaloa Hwy, Kalmunai 32300",
+  "business_status": "OPEN"
+}

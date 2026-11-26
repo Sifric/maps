@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDA2DXGWJGAYM7CSPXHQJ",
+  "name": "IH Restaurant",
+  "coordinates": {
+    "latitude": 6.8332118,
+    "longitude": 81.82398549999999
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "RRMF+7HQ, Main Street,pasarichenai, pottuvil 19",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5:33 AM–9:15 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5:30 AM–9:15 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5:30 AM–9:15 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5:30 AM–9:15 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5:30 AM–9:15 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5:30 AM–9:15 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

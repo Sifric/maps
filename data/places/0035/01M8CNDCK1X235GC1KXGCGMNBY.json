@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCK1X235GC1KXGCGMNBY",
+  "name": "domex courier office,batticaloa",
+  "coordinates": {
+    "latitude": 7.7302838,
+    "longitude": 81.6744523
+  },
+  "categories": [
+    "Courier service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMJF+4Q8, Batticaloa",
+  "business_status": "OPEN"
+}

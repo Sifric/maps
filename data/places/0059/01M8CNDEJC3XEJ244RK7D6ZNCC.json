@@ -1,0 +1,72 @@
+{
+  "id": "01M8CNDEJC3XEJ244RK7D6ZNCC",
+  "name": "Liquor Restaurant No1",
+  "coordinates": {
+    "latitude": 9.6659207,
+    "longitude": 80.0095023
+  },
+  "categories": [
+    "Bar & grill"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "78, 80 Jaffna-Kankesanturai Rd, Jaffna 40000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "11 AM–2 PM",
+        "5–11 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "11 AM–2 PM",
+        "5–11 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "11 AM–2 PM",
+        "5–11 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "11 AM–2 PM",
+        "5–11 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "11 AM–2 PM",
+        "5–11 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "11 AM–2 PM",
+        "5–11 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "11 AM–2 PM",
+        "5–11 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

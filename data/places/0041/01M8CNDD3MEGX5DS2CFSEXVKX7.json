@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD3MEGX5DS2CFSEXVKX7",
+  "name": "Sengaladi junction bus stand",
+  "coordinates": {
+    "latitude": 7.7849252,
+    "longitude": 81.590971
+  },
+  "categories": [
+    "Bus depot"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QHMR+XCF, Main St, Chenkaladi 30350",
+  "business_status": "OPEN"
+}

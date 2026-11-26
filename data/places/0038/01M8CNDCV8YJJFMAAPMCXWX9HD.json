@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCV8YJJFMAAPMCXWX9HD",
+  "name": "Batticaloa lagoon",
+  "coordinates": {
+    "latitude": 7.7161121999999995,
+    "longitude": 81.6926096
+  },
+  "categories": [
+    "River port"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM8V+C2X, Batticaloa",
+  "business_status": "OPEN"
+}

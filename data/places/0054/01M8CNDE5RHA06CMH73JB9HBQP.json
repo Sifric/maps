@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE5RHA06CMH73JB9HBQP",
+  "name": "Gamage Stores",
+  "coordinates": {
+    "latitude": 6.1151154,
+    "longitude": 80.2175046
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "4689+22R, Keembiya Rd, Poddala",
+  "business_status": "OPEN"
+}

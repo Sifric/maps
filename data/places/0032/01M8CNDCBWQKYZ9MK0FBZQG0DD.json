@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBWQKYZ9MK0FBZQG0DD",
+  "name": "Queen's Guest",
+  "coordinates": {
+    "latitude": 7.7186249,
+    "longitude": 81.7121501
+  },
+  "categories": [
+    "Guest house"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PP96+CVR, Kallady",
+  "business_status": "OPEN"
+}

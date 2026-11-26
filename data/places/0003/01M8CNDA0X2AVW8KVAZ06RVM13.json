@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA0X2AVW8KVAZ06RVM13",
+  "name": "Five Brothers Restaurant",
+  "coordinates": {
+    "latitude": 7.3540798,
+    "longitude": 81.856888
+  },
+  "categories": [
+    "Sri Lankan restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "263 3rd Cross St, Nintavur",
+  "business_status": "OPEN"
+}

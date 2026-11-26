@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC830G36NCSDSW0FWN7M",
+  "name": "Greenery Farmers Market",
+  "coordinates": {
+    "latitude": 7.718779,
+    "longitude": 81.6996719
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "19c Bar Rd, Batticaloa",
+  "business_status": "OPEN"
+}

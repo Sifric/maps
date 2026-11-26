@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBVPY1Q7J73VQDJE4G21",
+  "name": "Central Opticians",
+  "coordinates": {
+    "latitude": 7.4169576,
+    "longitude": 81.8242697
+  },
+  "categories": [
+    "Optician"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "44/D Colombo - Batticaloa Hwy, Kalmunai 32300",
+  "business_status": "OPEN"
+}

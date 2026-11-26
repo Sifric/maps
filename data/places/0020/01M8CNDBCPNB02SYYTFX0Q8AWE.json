@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBCPNB02SYYTFX0Q8AWE",
+  "name": "NRA RENT A CAR",
+  "coordinates": {
+    "latitude": 7.2902369,
+    "longitude": 81.8628296
+  },
+  "categories": [
+    "Car rental agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "7VR7+34M, Oluvil",
+  "business_status": "OPEN"
+}

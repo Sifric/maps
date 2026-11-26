@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC95ZBX2T4QWXETAKDCC",
+  "name": "The East Food park",
+  "coordinates": {
+    "latitude": 7.647162499999999,
+    "longitude": 81.7477031
+  },
+  "categories": [
+    "Chinese restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "JPWX+V38, Thalankudah",
+  "business_status": "OPEN"
+}

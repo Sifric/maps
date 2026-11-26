@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBPM3XDYTQF39HG2AXAK",
+  "name": "Royal saloon",
+  "coordinates": {
+    "latitude": 7.6790945,
+    "longitude": 81.7379198
+  },
+  "categories": [
+    "Barber shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPHQ+J5M, Kattankudy",
+  "business_status": "OPEN"
+}

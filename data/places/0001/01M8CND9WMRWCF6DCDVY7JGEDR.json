@@ -1,0 +1,23 @@
+{
+  "id": "01M8CND9WMRWCF6DCDVY7JGEDR",
+  "name": "Commerce Centre",
+  "coordinates": {
+    "latitude": 7.4291943,
+    "longitude": 81.8164901
+  },
+  "categories": [
+    "Private college"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CRH8+MHH, 01, Pandiruppu",
+  "business_status": "OPEN"
+}

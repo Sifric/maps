@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDEFPR2HVB4THFFQ8F9ND",
+  "name": "Bandara House",
+  "coordinates": {
+    "latitude": 5.9857824,
+    "longitude": 80.39525979999999
+  },
+  "categories": [
+    "Hotel",
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Panchaliya Rd",
+  "business_status": "OPEN"
+}

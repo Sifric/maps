@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDGJQ4MT08PHSVJ25PPP",
+  "name": "Motti's Bouquets",
+  "coordinates": {
+    "latitude": 6.9278828,
+    "longitude": 79.89381809999999
+  },
+  "categories": [
+    "Florist"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Laksada Sevana, Ranasinghe Rd, 10600",
+  "business_status": "OPEN"
+}

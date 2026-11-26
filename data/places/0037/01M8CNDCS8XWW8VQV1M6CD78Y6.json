@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCS8XWW8VQV1M6CD78Y6",
+  "name": "R.G Stores",
+  "coordinates": {
+    "latitude": 7.708587199999999,
+    "longitude": 81.69175
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM5R+CPJ, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDAPRAMJ8XY5QV6B8WR3B",
+  "name": "CTB",
+  "coordinates": {
+    "latitude": 7.4168394,
+    "longitude": 81.8230339
+  },
+  "categories": [
+    "Government office",
+    "Public transport"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "36 Colombo - Batticaloa Hwy, Kalmunai 32300",
+  "business_status": "OPEN"
+}

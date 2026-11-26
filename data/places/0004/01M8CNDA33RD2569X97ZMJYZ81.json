@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA33RD2569X97ZMJYZ81",
+  "name": "ASMY HOTEL",
+  "coordinates": {
+    "latitude": 7.4006533,
+    "longitude": 81.84214039999999
+  },
+  "categories": [
+    "Restaurant",
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "182 Beach Road, Sainthamaruthu2, Sainthamaruthu 32300",
+  "business_status": "OPEN"
+}

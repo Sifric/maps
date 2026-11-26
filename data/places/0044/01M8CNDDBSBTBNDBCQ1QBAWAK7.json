@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDDBSBTBNDBCQ1QBAWAK7",
+  "name": "Sanjay home",
+  "coordinates": {
+    "latitude": 7.7340553,
+    "longitude": 81.6869945
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "\nPMMP+JQH, School Rd, Batticaloa",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "PMMP+JQH, School Rd, Batticaloa"
+  ]
+}

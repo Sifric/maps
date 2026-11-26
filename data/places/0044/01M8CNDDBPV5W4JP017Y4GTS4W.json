@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDDBPV5W4JP017Y4GTS4W",
+  "name": "Kishanth's Home",
+  "coordinates": {
+    "latitude": 7.7344566,
+    "longitude": 81.6808787
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "\n64 10th cross, Batticaloa",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "64 10th cross, Batticaloa"
+  ]
+}

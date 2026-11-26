@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCR0XV6VMB2XGQMSYCVS",
+  "name": "Batticaoal Public playground",
+  "coordinates": {
+    "latitude": 7.7087629,
+    "longitude": 81.69885459999999
+  },
+  "categories": [
+    "Playground"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Batticaloa",
+  "business_status": "OPEN"
+}

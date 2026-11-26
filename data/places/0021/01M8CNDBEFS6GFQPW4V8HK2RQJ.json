@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDBEFS6GFQPW4V8HK2RQJ",
+  "name": "Sulaiman Travels (Pvt) Ltd",
+  "coordinates": {
+    "latitude": 7.857685,
+    "longitude": 80.70625
+  },
+  "categories": [
+    "Travel agency",
+    "Service establishment"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

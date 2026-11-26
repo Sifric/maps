@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD4WX3TWF1PJ6Z2VVW2Q",
+  "name": "Shafnam Fruit Shop",
+  "coordinates": {
+    "latitude": 7.4339276,
+    "longitude": 81.8136081
+  },
+  "categories": [
+    "Fruit parlor"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CRM7+HCH, Maruthamunai",
+  "business_status": "OPEN"
+}

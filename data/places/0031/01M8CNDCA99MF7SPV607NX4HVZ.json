@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCA99MF7SPV607NX4HVZ",
+  "name": "Risve kaju shop",
+  "coordinates": {
+    "latitude": 7.7722165,
+    "longitude": 81.6106768
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJC6+V7M, Main St, Eravur",
+  "business_status": "OPEN"
+}

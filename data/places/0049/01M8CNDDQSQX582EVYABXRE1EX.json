@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDDQSQX582EVYABXRE1EX",
+  "name": "SJ Family Restaurant",
+  "coordinates": {
+    "latitude": 6.0334316999999995,
+    "longitude": 80.3394137
+  },
+  "categories": [
+    "Family restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Urban park, No 12, Imaduwa",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:30–10 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:30–10 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:30–10 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:30–10 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:30–10 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:30–10 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6:30–10 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

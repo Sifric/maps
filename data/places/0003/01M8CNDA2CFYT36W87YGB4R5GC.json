@@ -1,0 +1,31 @@
+{
+  "id": "01M8CNDA2CFYT36W87YGB4R5GC",
+  "name": "Whisky Point Resort",
+  "coordinates": {
+    "latitude": 6.9060809,
+    "longitude": 81.84246929999999
+  },
+  "categories": [
+    "Hotel",
+    "Bar",
+    "Massage spa",
+    "Restaurant",
+    "Summer camp organizer",
+    "Surf school",
+    "Surf shop",
+    "Wildlife and safari park",
+    "Yoga retreat center",
+    "Yoga studio"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Whisky Point Road, Pottuvil 32500",
+  "business_status": "OPEN"
+}

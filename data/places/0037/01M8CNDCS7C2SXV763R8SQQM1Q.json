@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCS7C2SXV763R8SQQM1Q",
+  "name": "Paalameenmadu Fish Market",
+  "coordinates": {
+    "latitude": 7.752235799999999,
+    "longitude": 81.6858714
+  },
+  "categories": [
+    "Seafood market"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QM2P+V8X, B46, Batticaloa",
+  "business_status": "OPEN"
+}

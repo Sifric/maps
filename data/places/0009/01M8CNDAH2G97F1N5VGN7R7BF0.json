@@ -1,0 +1,27 @@
+{
+  "id": "01M8CNDAH2G97F1N5VGN7R7BF0",
+  "name": "Amara villa",
+  "coordinates": {
+    "latitude": 6.1401848999999995,
+    "longitude": 80.1094437
+  },
+  "categories": [
+    "Lodging",
+    "Vacation rental",
+    "Villa",
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ],
+    "names": [
+      "Amara Villa"
+    ]
+  },
+  "address": "Hikkaduwa",
+  "business_status": "OPEN"
+}

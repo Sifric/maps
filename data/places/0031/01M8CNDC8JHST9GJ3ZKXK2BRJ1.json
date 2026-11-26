@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC8JHST9GJ3ZKXK2BRJ1",
+  "name": "Kerny lane",
+  "coordinates": {
+    "latitude": 7.673898899999999,
+    "longitude": 81.72796749999999
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No.21/1 Kerny lane, Kattankudy 05",
+  "business_status": "OPEN"
+}

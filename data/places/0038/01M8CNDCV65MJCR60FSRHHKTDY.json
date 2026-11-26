@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCV65MJCR60FSRHHKTDY",
+  "name": "bus stop",
+  "coordinates": {
+    "latitude": 7.6374593,
+    "longitude": 81.7282594
+  },
+  "categories": [
+    "Bus tour agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "JPPH+X8J, Batticaloa",
+  "business_status": "OPEN"
+}

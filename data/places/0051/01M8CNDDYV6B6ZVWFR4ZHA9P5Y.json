@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDDYV6B6ZVWFR4ZHA9P5Y",
+  "name": "Riviera Tide Hotel and Restaurant",
+  "coordinates": {
+    "latitude": 6.4207516,
+    "longitude": 79.997119
+  },
+  "categories": [
+    "Hotel",
+    "Seafood restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "34 Pitaramba Road, Bentota 80500",
+  "business_status": "OPEN"
+}

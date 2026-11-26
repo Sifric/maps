@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAR9TN0Y031JXG03B3CD",
+  "name": "Delankawala book shop and fancy corner",
+  "coordinates": {
+    "latitude": 7.362874,
+    "longitude": 81.636269
+  },
+  "categories": [
+    "Book store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "infront of police, No 19/06 bandaranayaka mawatha, Uhana",
+  "business_status": "OPEN"
+}

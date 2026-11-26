@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD6MBZNSFYGXJXKTC33T",
+  "name": "Kumarasingha Stores",
+  "coordinates": {
+    "latitude": 8.021168,
+    "longitude": 81.293769
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No. 236 Nawa Mahasenpura, Welikanda 51070",
+  "business_status": "OPEN"
+}

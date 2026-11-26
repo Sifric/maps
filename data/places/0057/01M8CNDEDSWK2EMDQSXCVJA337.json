@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEDSWK2EMDQSXCVJA337",
+  "name": "Hotel Lucky Elephant",
+  "coordinates": {
+    "latitude": 6.1195835,
+    "longitude": 80.1160591
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Thiranagama, 878 Galle Rd, Hikkaduwa 80244",
+  "business_status": "OPEN"
+}

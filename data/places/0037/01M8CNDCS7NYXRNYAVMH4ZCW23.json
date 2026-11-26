@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCS7NYXRNYAVMH4ZCW23",
+  "name": "வி.பரிய தர்சினி",
+  "coordinates": {
+    "latitude": 7.732445599999999,
+    "longitude": 81.67609519999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "90/48b 12 th lruthapuram wate, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,74 @@
+{
+  "id": "01M8CNDA162DMKVM1R2FR4CD6Z",
+  "name": "●කුමාර හෝටලය●(hotel kumara)■රයිස් කඩේ■",
+  "coordinates": {
+    "latitude": 7.526564,
+    "longitude": 81.5765153
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "kohobagasthalawa hamuda kadaura ediripita, kohobagasthalawa 32069",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12–6 AM",
+        "6 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12–6 AM",
+        "6 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12–6 AM",
+        "6 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12–6 AM",
+        "6 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12–6 AM",
+        "6 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "12–6 AM",
+        "6 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12–12:30 AM",
+        "6 PM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

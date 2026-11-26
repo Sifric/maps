@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA44D598H9GRHGQS39DS",
+  "name": "Cafe Arugam",
+  "coordinates": {
+    "latitude": 6.8425446,
+    "longitude": 81.8320277
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Main Street Pottuvil, Arugam Bay",
+  "business_status": "CLOSED_TEMPORARILY"
+}

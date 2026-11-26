@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCCA7CF31PTA1PE2S2SV",
+  "name": "Evr Home Stay",
+  "coordinates": {
+    "latitude": 7.7728623,
+    "longitude": 81.60765099999999
+  },
+  "categories": [
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJF5+43R, Munaiyavalavu Rd, Eravur",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAGZ4CJ07STTDRB5C895",
+  "name": "Dep pl 1",
+  "coordinates": {
+    "latitude": 7.7049281999999994,
+    "longitude": 81.197456
+  },
+  "categories": [
+    "Campground"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "P53W+XX, Damminna",
+  "business_status": "OPEN"
+}

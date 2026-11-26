@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDCE495QQ1CJQXTMWBH62",
+  "name": "Hamid Medicals",
+  "coordinates": {
+    "latitude": 7.9155429999999996,
+    "longitude": 81.5214226
+  },
+  "categories": [
+    "Pharmacy"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG8C+6H7, Main St, Oddamavadi",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8:30 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8:30 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8:30 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8:30 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8:30 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8:30 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8:30 AM–11:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

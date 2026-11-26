@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDC6D7ETSAVW2PMZW7Q81",
+  "name": "City Bun Shop",
+  "coordinates": {
+    "latitude": 7.9181963,
+    "longitude": 81.5218264
+  },
+  "categories": [
+    "Fast food restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG9C+7PV, Oddamavadi",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "3 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "3 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "3 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "3 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "3 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "3 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12 AM–12 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

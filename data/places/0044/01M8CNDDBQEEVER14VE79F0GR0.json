@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDDBQEEVER14VE79F0GR0",
+  "name": "Vinmathy'S Home",
+  "coordinates": {
+    "latitude": 7.7286304999999995,
+    "longitude": 81.6894001
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "\n72/18, Nagathambiran kovil road, Ganasooriyam square, Batticaloa",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "72/18, Nagathambiran kovil road, Ganasooriyam square, Batticaloa"
+  ]
+}

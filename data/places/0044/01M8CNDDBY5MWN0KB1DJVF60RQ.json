@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDBY5MWN0KB1DJVF60RQ",
+  "name": "Rifan House",
+  "coordinates": {
+    "latitude": 7.680719799999999,
+    "longitude": 81.7364221
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "72/1 Karbala Rd, Kattankudy",
+  "business_status": "OPEN"
+}

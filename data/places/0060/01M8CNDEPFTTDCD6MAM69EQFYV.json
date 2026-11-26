@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDEPFTTDCD6MAM69EQFYV",
+  "name": "Crystal Bay Villa",
+  "coordinates": {
+    "latitude": 6.1304023,
+    "longitude": 80.10192889999999
+  },
+  "categories": [
+    "Holiday apartment rental",
+    "Apartment building",
+    "Guest house",
+    "Hotel",
+    "Villa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "382/3, Hikkaduwa 80240",
+  "business_status": "OPEN"
+}

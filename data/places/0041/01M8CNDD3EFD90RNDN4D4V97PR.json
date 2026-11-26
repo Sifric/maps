@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD3EFD90RNDN4D4V97PR",
+  "name": "Sri Murugan Stadium",
+  "coordinates": {
+    "latitude": 7.6530024,
+    "longitude": 81.66497749999999
+  },
+  "categories": [
+    "Stadium"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MM37+6X, Batticaloa",
+  "business_status": "OPEN"
+}

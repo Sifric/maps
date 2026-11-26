@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD4M2P7N2YN3XG1EWB7K",
+  "name": "Quick juice bar",
+  "coordinates": {
+    "latitude": 7.2951147,
+    "longitude": 81.6719973
+  },
+  "categories": [
+    "Juice shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "7MWC+3PM, Ampara",
+  "business_status": "OPEN"
+}

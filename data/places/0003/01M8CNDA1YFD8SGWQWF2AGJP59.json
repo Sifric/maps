@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA1YFD8SGWQWF2AGJP59",
+  "name": "Sarbath shop",
+  "coordinates": {
+    "latitude": 7.4899033,
+    "longitude": 81.7465067
+  },
+  "categories": [
+    "Ice cream shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "FPQW+VQ5, Moongilaru Bridge, B18, Mandur",
+  "business_status": "OPEN"
+}

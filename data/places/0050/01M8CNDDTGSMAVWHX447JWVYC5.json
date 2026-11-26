@@ -1,0 +1,72 @@
+{
+  "id": "01M8CNDDTGSMAVWHX447JWVYC5",
+  "name": "Galleat",
+  "coordinates": {
+    "latitude": 6.0651407,
+    "longitude": 80.2130353
+  },
+  "categories": [
+    "Fast food restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "21/15 , Gedarawatta Lane, Nawinna Rd, Galle",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "10:30 AM–2:30 PM",
+        "4:30–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "10 AM–2:30 PM",
+        "4:30–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "10 AM–2:30 PM",
+        "4:30–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "10 AM–2:30 PM",
+        "4:30–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "10 AM–2:30 PM",
+        "4:30–9 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "10 AM–2:30 PM",
+        "4:30–9 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "10 AM–2:30 PM",
+        "4:30–9 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "01M8CNDEZCNNQSQDWBRDQRQV4S",
+  "name": "Flexmax Fitness",
+  "coordinates": {
+    "latitude": 9.6873702,
+    "longitude": 80.0264109
+  },
+  "categories": [
+    "Gym"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Palali Rd, Jaffna 40000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5–11 AM",
+        "3–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5–11 AM",
+        "3–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5–11 AM",
+        "3–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5–11 AM",
+        "3–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5–11 AM",
+        "3–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5–11 AM",
+        "3–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6–10 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

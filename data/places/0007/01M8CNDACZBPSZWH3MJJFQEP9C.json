@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDACZBPSZWH3MJJFQEP9C",
+  "name": "Rifaya Cool Spot",
+  "coordinates": {
+    "latitude": 7.774006099999999,
+    "longitude": 81.60311229999999
+  },
+  "categories": [
+    "Ice cream shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJF3+J65, Oothupalli Rd, Eravur",
+  "business_status": "OPEN"
+}

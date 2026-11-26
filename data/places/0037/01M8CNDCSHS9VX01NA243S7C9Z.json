@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCSHS9VX01NA243S7C9Z",
+  "name": "MOM & BABY",
+  "coordinates": {
+    "latitude": 7.731849899999999,
+    "longitude": 81.694349
+  },
+  "categories": [
+    "Baby store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "61/C Main Street, Batticaloa 30000",
+  "business_status": "OPEN"
+}

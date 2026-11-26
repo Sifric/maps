@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD6TVVHDPNH53D5CT1QV",
+  "name": "K.K Guesthouse",
+  "coordinates": {
+    "latitude": 7.7225326,
+    "longitude": 81.69096139999999
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMFR+298, Poompukar 5th Cross St, Batticaloa",
+  "business_status": "OPEN"
+}

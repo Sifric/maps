@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDFMEE2DRMDKJPATCB08K",
+  "name": "Siva transport",
+  "coordinates": {
+    "latitude": 9.1791701,
+    "longitude": 80.30746049999999
+  },
+  "categories": [
+    "Transportation service",
+    "Service establishment"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ],
+    "names": [
+      "Siva Transport"
+    ]
+  },
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–6:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "2:30 AM–5 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

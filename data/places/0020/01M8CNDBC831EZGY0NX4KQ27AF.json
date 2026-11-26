@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBC831EZGY0NX4KQ27AF",
+  "name": "Sathir home",
+  "coordinates": {
+    "latitude": 7.781545599999999,
+    "longitude": 81.61546799999999
+  },
+  "categories": [
+    "Apartment complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJJ8+FC4, road, Eravur",
+  "business_status": "OPEN"
+}

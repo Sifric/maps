@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDEZJZY0W4JB6A14MZ2GY",
+  "name": "Unawatuna Fitness Center",
+  "coordinates": {
+    "latitude": 6.025545,
+    "longitude": 80.24572359999999
+  },
+  "categories": [
+    "Gym",
+    "Physical fitness program"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "A2, Unawatuna",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5 AM–6 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

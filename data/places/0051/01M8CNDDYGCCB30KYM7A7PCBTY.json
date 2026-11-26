@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDDYGCCB30KYM7A7PCBTY",
+  "name": "Ranil Bakery",
+  "coordinates": {
+    "latitude": 6.0413634,
+    "longitude": 80.2217022
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "26RC+GMW, Galle 80000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5:30 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5:30 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5:30 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5:30 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5:30 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5:30 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5:30 AM–7 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

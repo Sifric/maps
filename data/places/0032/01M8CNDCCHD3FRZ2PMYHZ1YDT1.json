@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCCHD3FRZ2PMYHZ1YDT1",
+  "name": "Semi Boys Hostel",
+  "coordinates": {
+    "latitude": 7.800602199999999,
+    "longitude": 81.5846526
+  },
+  "categories": [
+    "Hostel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Vantharumoolai East",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD3D1S1JFHB0ADF96KTJ",
+  "name": "Reji's home",
+  "coordinates": {
+    "latitude": 7.493083599999999,
+    "longitude": 81.7928021
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "FQVV+64W, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

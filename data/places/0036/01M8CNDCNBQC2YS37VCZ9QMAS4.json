@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCNBQC2YS37VCZ9QMAS4",
+  "name": "NTS TRADERS MAVADICHENAI",
+  "coordinates": {
+    "latitude": 7.923198999999999,
+    "longitude": 81.53053469999999
+  },
+  "categories": [
+    "Home goods store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "250 Main St",
+  "business_status": "OPEN"
+}

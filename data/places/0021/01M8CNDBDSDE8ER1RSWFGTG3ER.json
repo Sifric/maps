@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBDSDE8ER1RSWFGTG3ER",
+  "name": "Jarina tyre mart",
+  "coordinates": {
+    "latitude": 7.4094646,
+    "longitude": 81.8297965
+  },
+  "categories": [
+    "Tire shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No.120, 191 Main St, Kalmunai 32300",
+  "business_status": "OPEN"
+}

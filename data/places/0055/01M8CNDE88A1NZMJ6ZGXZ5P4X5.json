@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE88A1NZMJ6ZGXZ5P4X5",
+  "name": "Godakanda Stores",
+  "coordinates": {
+    "latitude": 6.1656707,
+    "longitude": 80.2157484
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "5688+779",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBECT52YY2NMM196T7S",
+  "name": "One love",
+  "coordinates": {
+    "latitude": 7.7135044,
+    "longitude": 81.6977095
+  },
+  "categories": [
+    "Ice cream shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM7X+C34, Main Street, Batticaloa",
+  "business_status": "OPEN"
+}

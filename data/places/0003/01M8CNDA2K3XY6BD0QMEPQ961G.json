@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA2K3XY6BD0QMEPQ961G",
+  "name": "Pushpa Bake House",
+  "coordinates": {
+    "latitude": 7.4199138,
+    "longitude": 81.82197359999999
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kalmunai 32300",
+  "business_status": "OPEN"
+}

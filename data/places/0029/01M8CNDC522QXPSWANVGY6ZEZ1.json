@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC522QXPSWANVGY6ZEZ1",
+  "name": "Bilaal Book Centre",
+  "coordinates": {
+    "latitude": 7.9121828999999995,
+    "longitude": 81.5227427
+  },
+  "categories": [
+    "Book store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "223, 02 School Road, Oddamavadi 30420",
+  "business_status": "CLOSED_TEMPORARILY"
+}

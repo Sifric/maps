@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDPFGXNHD56TECNP2GKY",
+  "name": "Richmond Hill",
+  "coordinates": {
+    "latitude": 6.0538935,
+    "longitude": 80.20468939999999
+  },
+  "categories": [
+    "Train station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Galle 80000",
+  "business_status": "OPEN"
+}

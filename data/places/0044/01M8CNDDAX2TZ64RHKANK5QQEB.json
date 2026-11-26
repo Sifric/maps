@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDAX2TZ64RHKANK5QQEB",
+  "name": "ITN-TVS",
+  "coordinates": {
+    "latitude": 7.7107779999999995,
+    "longitude": 81.7108801
+  },
+  "categories": [
+    "Showroom"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "ITN TVS, 204 New Kalmunai Road, Kallady",
+  "business_status": "OPEN"
+}

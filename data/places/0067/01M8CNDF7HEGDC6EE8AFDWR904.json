@@ -1,0 +1,73 @@
+{
+  "id": "01M8CNDF7HEGDC6EE8AFDWR904",
+  "name": "Sampath Auto Care - Galle",
+  "coordinates": {
+    "latitude": 6.0431174,
+    "longitude": 80.21027169999999
+  },
+  "categories": [
+    "Car wash",
+    "Auto body shop",
+    "Auto machine shop",
+    "Auto painting",
+    "Auto repair shop",
+    "Auto tune up service",
+    "Car battery store",
+    "Car repair and maintenance service",
+    "Truck accessories store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "99/2 Humes Road, Wimalasurendra Road, Galle 80000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8:30 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8:30 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8:30 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8:30 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8:30 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8:30 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8:30 AM–5:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

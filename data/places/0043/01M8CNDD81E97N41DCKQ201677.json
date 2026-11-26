@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDD81E97N41DCKQ201677",
+  "name": "Vehicle hire",
+  "coordinates": {
+    "latitude": 8.58845,
+    "longitude": 81.217809
+  },
+  "categories": [
+    "Motoring club",
+    "Tour agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Unnamed Road, Trincomalee",
+  "business_status": "OPEN"
+}

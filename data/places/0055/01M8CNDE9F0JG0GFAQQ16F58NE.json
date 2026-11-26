@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE9F0JG0GFAQQ16F58NE",
+  "name": "KNJ Foods",
+  "coordinates": {
+    "latitude": 6.0708172,
+    "longitude": 80.2336777
+  },
+  "categories": [
+    "Sri Lankan restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "36CM+8FF, Mapalagama Bus Rd, Galle 80000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4:30–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4:30–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4:30–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4:30–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4:30–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4:30–10 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

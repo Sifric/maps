@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD5VZ1PAGBEF9RZTXDD8",
+  "name": "புகையிரத நிலையம் தேவாபுரம் Railway stations Thavapuram",
+  "coordinates": {
+    "latitude": 7.826270699999999,
+    "longitude": 81.5573864
+  },
+  "categories": [
+    "Railway services"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Thavapuram",
+  "business_status": "OPEN"
+}

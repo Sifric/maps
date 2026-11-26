@@ -1,0 +1,28 @@
+{
+  "id": "01M8CNDACA0YDYR2BGSD3QTZBF",
+  "name": "AMBA Estate",
+  "coordinates": {
+    "latitude": 6.832694099999999,
+    "longitude": 81.05632059999999
+  },
+  "categories": [
+    "Guest house",
+    "Coffee roastery",
+    "Farm shop",
+    "Farmstay",
+    "Organic farm",
+    "Tea exporter"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Ambadandegama Village Turn at 17km marker, Wellawaya-Ella-Kumbalwela Hwy, Ella",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCW28NH9VFJQKRY6RY41",
+  "name": "Athiya's home",
+  "coordinates": {
+    "latitude": 7.679225199999999,
+    "longitude": 81.72732169999999
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPHF+857, Central Rd, Kattankudy",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC65S7JEK7AC0P29F82Z",
+  "name": "Haajima Restaurant",
+  "coordinates": {
+    "latitude": 7.9258216,
+    "longitude": 81.51348399999999
+  },
+  "categories": [
+    "Fast food restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WGG7+89H, Navalady",
+  "business_status": "OPEN"
+}

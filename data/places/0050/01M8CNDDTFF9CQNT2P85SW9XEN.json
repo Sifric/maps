@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDTFF9CQNT2P85SW9XEN",
+  "name": "Sun rich Restaurant",
+  "coordinates": {
+    "latitude": 6.0686919999999995,
+    "longitude": 80.199473
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "359X+HR, Galle",
+  "business_status": "OPEN"
+}

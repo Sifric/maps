@@ -1,0 +1,66 @@
+{
+  "id": "01M8CND9YT8GPSWW9BZRZNC1MB",
+  "name": "VTC Central Camp",
+  "coordinates": {
+    "latitude": 7.417153399999999,
+    "longitude": 81.73351029999999
+  },
+  "categories": [
+    "Vocational school"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "CP8M+VC6, B440, අම්පාර",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8:30 AM–4:04 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8:30 AM–4:04 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8:30 AM–4:04 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8:30 AM–4:04 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8:30 AM–4:04 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

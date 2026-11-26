@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD4GC1EMEMM5DSZ77E5T",
+  "name": "Thangarani Shop",
+  "coordinates": {
+    "latitude": 7.8633625,
+    "longitude": 81.5387344
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "VG7Q+8FX, Perillaveli",
+  "business_status": "OPEN"
+}

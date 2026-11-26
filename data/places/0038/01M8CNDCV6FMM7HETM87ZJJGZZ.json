@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCV6FMM7HETM87ZJJGZZ",
+  "name": "Valaichchena Railway Station",
+  "coordinates": {
+    "latitude": 7.9102777,
+    "longitude": 81.5318128
+  },
+  "categories": [
+    "Train station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Batticaloa-Thirukkondiadimadu-Trincomalee Hwy",
+  "business_status": "OPEN"
+}

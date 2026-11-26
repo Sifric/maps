@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCW1XWRWR2Q962D2NGB2",
+  "name": "A T home",
+  "coordinates": {
+    "latitude": 7.6795421,
+    "longitude": 81.7307112
+  },
+  "categories": [
+    "Housing development"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No 6/2 hijra lane, Rasa Alim Rd, Kattankudy 06",
+  "business_status": "OPEN"
+}

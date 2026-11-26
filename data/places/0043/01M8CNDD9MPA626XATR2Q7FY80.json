@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDD9MPA626XATR2Q7FY80",
+  "name": "Chilies Lathpandura",
+  "coordinates": {
+    "latitude": 7.936598699999999,
+    "longitude": 81.02458949999999
+  },
+  "categories": [
+    "Sri Lankan restaurant",
+    "Bar",
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "126/1 Maradankadawala-Habarana-Thirukkondaiadimadu Hwy, Polonnaruwa 51000",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD9XT7GGFKA3C03PBXBD",
+  "name": "Smart hampers",
+  "coordinates": {
+    "latitude": 7.679437,
+    "longitude": 81.73548799999999
+  },
+  "categories": [
+    "Gift shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "105 Amanullah Rd., Kattankudy",
+  "business_status": "OPEN"
+}

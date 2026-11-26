@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE36R5CCSFREBTBECR51",
+  "name": "my zone cool spot",
+  "coordinates": {
+    "latitude": 6.4317746,
+    "longitude": 79.9986012
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "CXJX+PC5, 1st Ln, Aluthgama",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:29 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:29 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:29 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:29 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:29 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:29 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6:29 AM–6 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

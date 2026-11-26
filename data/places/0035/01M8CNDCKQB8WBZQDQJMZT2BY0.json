@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCKQB8WBZQDQJMZT2BY0",
+  "name": "சிறைச்சாலை மட்டக்களப்பு Batticaloa Prison",
+  "coordinates": {
+    "latitude": 7.708643299999999,
+    "longitude": 81.69282319999999
+  },
+  "categories": [
+    "Prison"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Batticaloa Prison, Batticaloa",
+  "business_status": "OPEN"
+}

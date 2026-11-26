@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDE12VGMMTHJMGK7ZVT55",
+  "name": "City of London lounge",
+  "coordinates": {
+    "latitude": 6.8749734,
+    "longitude": 79.9342458
+  },
+  "categories": [
+    "Disco club",
+    "Karaoke bar"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Capital Mall, 531 Madiwela Road, Ruhunupura 10116",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 PM–4 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 PM–4 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 PM–4 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 PM–4 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 PM–4 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 PM–4 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8 PM–4 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

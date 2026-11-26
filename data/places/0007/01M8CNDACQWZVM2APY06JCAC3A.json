@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDACQWZVM2APY06JCAC3A",
+  "name": "Vasana Bake House",
+  "coordinates": {
+    "latitude": 7.700037699999999,
+    "longitude": 81.71557299999999
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "41 Anumar Rd, Kallady",
+  "business_status": "OPEN"
+}

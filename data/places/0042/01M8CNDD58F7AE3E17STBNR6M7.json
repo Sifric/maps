@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD58F7AE3E17STBNR6M7",
+  "name": "Karametiya Ayurvedic Hospital",
+  "coordinates": {
+    "latitude": 7.1902748,
+    "longitude": 81.0305312
+  },
+  "categories": [
+    "Hospital"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Mahiyangane Road",
+  "business_status": "OPEN"
+}

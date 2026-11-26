@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBA9PK6K84KQMAY4SXBV",
+  "name": "Siro House",
+  "coordinates": {
+    "latitude": 7.403799599999999,
+    "longitude": 81.8370451
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "10c, mosque road, Kalmunai-09, Kalmunai 32300",
+  "business_status": "OPEN"
+}

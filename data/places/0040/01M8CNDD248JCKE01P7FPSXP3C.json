@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD248JCKE01P7FPSXP3C",
+  "name": "THAHIR",
+  "coordinates": {
+    "latitude": 7.92117,
+    "longitude": 81.5240082
+  },
+  "categories": [
+    "Apartment complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WGCF+FJ6, Fisheries Road",
+  "business_status": "OPEN"
+}

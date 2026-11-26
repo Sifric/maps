@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD6MGQBXJ4AYWJK2DR5P",
+  "name": "புச்சாகேணி செந்தூர் பரோட்டா கடை",
+  "coordinates": {
+    "latitude": 8.2155045,
+    "longitude": 81.40534079999999
+  },
+  "categories": [
+    "Vegetarian restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Trincomalee-Batticaloa Rd",
+  "business_status": "OPEN"
+}

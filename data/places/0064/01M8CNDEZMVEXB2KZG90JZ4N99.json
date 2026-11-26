@@ -1,0 +1,71 @@
+{
+  "id": "01M8CNDEZMVEXB2KZG90JZ4N99",
+  "name": "FIT OR FIGHT Health & Fitness Center 1.0",
+  "coordinates": {
+    "latitude": 9.7035305,
+    "longitude": 80.0335825
+  },
+  "categories": [
+    "Fitness center"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "P23M+CC8, Station Rd, Kondavil",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5–11 AM",
+        "4–9:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5–11 AM",
+        "4–9:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5–11 AM",
+        "4–9:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5–11 AM",
+        "4–9:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5–11 AM",
+        "4–9:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5–11 AM",
+        "4–9:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

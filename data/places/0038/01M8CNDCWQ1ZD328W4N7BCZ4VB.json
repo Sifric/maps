@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCWQ1ZD328W4N7BCZ4VB",
+  "name": "BLUE TICK",
+  "coordinates": {
+    "latitude": 7.680583899999999,
+    "longitude": 81.7286742
+  },
+  "categories": [
+    "Clothing store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPJH+6FM, Main St, Kattankudy",
+  "business_status": "OPEN"
+}

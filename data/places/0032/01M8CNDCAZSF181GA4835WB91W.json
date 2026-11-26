@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCAZSF181GA4835WB91W",
+  "name": "Eravur New Market",
+  "coordinates": {
+    "latitude": 7.7779412,
+    "longitude": 81.6022215
+  },
+  "categories": [
+    "Market"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJH2+5VH, Railway Station Rd, Eravur",
+  "business_status": "OPEN"
+}

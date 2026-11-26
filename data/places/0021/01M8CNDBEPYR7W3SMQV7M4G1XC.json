@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBEPYR7W3SMQV7M4G1XC",
+  "name": "HA Auto service",
+  "coordinates": {
+    "latitude": 7.3701292,
+    "longitude": 81.64305879999999
+  },
+  "categories": [
+    "Car wash"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "251 B73, 32062",
+  "business_status": "OPEN"
+}

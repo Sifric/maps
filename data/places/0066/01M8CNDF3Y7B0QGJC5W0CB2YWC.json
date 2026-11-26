@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDF3Y7B0QGJC5W0CB2YWC",
+  "name": "Vimal house",
+  "coordinates": {
+    "latitude": 9.8224032,
+    "longitude": 80.230854
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "151, 169 College St, Point Pedro",
+  "business_status": "OPEN"
+}

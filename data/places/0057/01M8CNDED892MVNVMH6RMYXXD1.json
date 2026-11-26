@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDED892MVNVMH6RMYXXD1",
+  "name": "Villa Sky Blue",
+  "coordinates": {
+    "latitude": 6.0419236,
+    "longitude": 80.2248142
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "39 Thakkiya Rd, Galle 80000",
+  "business_status": "OPEN"
+}

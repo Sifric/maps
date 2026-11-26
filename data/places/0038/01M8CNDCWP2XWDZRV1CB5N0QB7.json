@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCWP2XWDZRV1CB5N0QB7",
+  "name": "Hassan Ali Multy Shop",
+  "coordinates": {
+    "latitude": 7.674960899999999,
+    "longitude": 81.7254541
+  },
+  "categories": [
+    "Clothing store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPFG+X5P, Old Rd, Kattankudy",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "01M8CNDABV80V7NSXPEQ3XHE1G",
+  "name": "Isuru Stores",
+  "coordinates": {
+    "latitude": 6.0941939,
+    "longitude": 80.648692
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "Hakmana",
+  "business_status": "OPEN"
+}

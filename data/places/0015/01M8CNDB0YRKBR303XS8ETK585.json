@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDB0YRKBR303XS8ETK585",
+  "name": "Riswan's Garden",
+  "coordinates": {
+    "latitude": 7.7950650999999995,
+    "longitude": 81.62225959999999
+  },
+  "categories": [
+    "Garden"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Chowkadi Rd",
+  "business_status": "OPEN"
+}

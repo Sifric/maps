@@ -1,0 +1,74 @@
+{
+  "id": "01M8CNDB1NAY5FFR0V9DY0NFQA",
+  "name": "Gold Fitness",
+  "coordinates": {
+    "latitude": 7.7844539,
+    "longitude": 81.1839633
+  },
+  "categories": [
+    "Gym"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Q5MM+QHP, Aralaganwila",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5–11 AM",
+        "4–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5–11 AM",
+        "4–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5–11 AM",
+        "4–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5–11 AM",
+        "4–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5–11 AM",
+        "4–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5–11 AM",
+        "4–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5–11 AM",
+        "4–10 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

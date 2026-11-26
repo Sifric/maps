@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA17ZV1DE2Z2365R5ASS",
+  "name": "Arabian Cahwa",
+  "coordinates": {
+    "latitude": 7.3967903999999995,
+    "longitude": 81.83338719999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Sainthamaruthu 32300",
+  "business_status": "OPEN"
+}

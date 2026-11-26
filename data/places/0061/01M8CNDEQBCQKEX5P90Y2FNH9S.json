@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEQBCQKEX5P90Y2FNH9S",
+  "name": "CASA VACANSA HOME STAY",
+  "coordinates": {
+    "latitude": 6.1135402,
+    "longitude": 80.9588089
+  },
+  "categories": [
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

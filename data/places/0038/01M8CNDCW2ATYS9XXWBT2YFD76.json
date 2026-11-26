@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCW2ATYS9XXWBT2YFD76",
+  "name": "ShivaShakthi Multy Shop",
+  "coordinates": {
+    "latitude": 7.6477911999999995,
+    "longitude": 81.7469072
+  },
+  "categories": [
+    "Apartment building",
+    "Service establishment"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

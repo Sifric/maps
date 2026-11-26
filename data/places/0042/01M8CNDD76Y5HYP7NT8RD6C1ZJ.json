@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD76Y5HYP7NT8RD6C1ZJ",
+  "name": "Veterinary hospital",
+  "coordinates": {
+    "latitude": 7.11283,
+    "longitude": 81.84821409999999
+  },
+  "categories": [
+    "Animal hospital"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Thirukkovil",
+  "business_status": "OPEN"
+}

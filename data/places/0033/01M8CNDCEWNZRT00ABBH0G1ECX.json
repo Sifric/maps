@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCEWNZRT00ABBH0G1ECX",
+  "name": "Doctor Electric",
+  "coordinates": {
+    "latitude": 7.686061199999999,
+    "longitude": 81.7284195
+  },
+  "categories": [
+    "Home builder"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPPH+C9F, Kattankudy",
+  "business_status": "OPEN"
+}

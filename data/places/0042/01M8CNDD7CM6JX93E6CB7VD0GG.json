@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD7CM6JX93E6CB7VD0GG",
+  "name": "HNB assurance",
+  "coordinates": {
+    "latitude": 8.2892061,
+    "longitude": 81.3620644
+  },
+  "categories": [
+    "Insurance agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Main street, Echilampattu, Mutur 31236",
+  "business_status": "CLOSED_TEMPORARILY"
+}

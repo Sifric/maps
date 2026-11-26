@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBGTN25WFEB5EA11Q9N7",
+  "name": "People's Bank ATM",
+  "coordinates": {
+    "latitude": 7.220043899999999,
+    "longitude": 81.84994429999999
+  },
+  "categories": [
+    "ATM"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "LHEI City, Akkaraipattu - Kalmunai Rd, Akkaraipattu 32410",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "01M8CNDEVSNNASY0KZ8VWG9MY6",
+  "name": "The Toner Shop",
+  "coordinates": {
+    "latitude": 9.6630414,
+    "longitude": 80.02049319999999
+  },
+  "categories": [
+    "Toner cartridge supplier",
+    "Computer service",
+    "Computer store",
+    "Copier repair service",
+    "Printer ink refill store",
+    "Printer repair service",
+    "Printing equipment supplier"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "699 Hospital St, Jaffna 40000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

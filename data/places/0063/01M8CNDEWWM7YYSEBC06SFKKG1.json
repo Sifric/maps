@@ -1,0 +1,70 @@
+{
+  "id": "01M8CNDEWWM7YYSEBC06SFKKG1",
+  "name": "Bavani Stores ( PSM )",
+  "coordinates": {
+    "latitude": 9.7281282,
+    "longitude": 80.073989
+  },
+  "categories": [
+    "Fertilizer supplier",
+    "Agricultural product wholesaler",
+    "Agricultural service",
+    "Distribution service",
+    "Hardware store",
+    "Tractor dealer"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "P3HF+7H5, Neervelly West",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

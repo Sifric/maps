@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCT0PFC5VTXAGJWE0VY3",
+  "name": "Pillayarady Library",
+  "coordinates": {
+    "latitude": 7.7333282,
+    "longitude": 81.67133299999999
+  },
+  "categories": [
+    "Library"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMMC+8G, Batticaloa",
+  "business_status": "OPEN"
+}

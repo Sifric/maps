@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC3MRN46F73FXEWHZ3KD",
+  "name": "Arabic College Rd Kattankudy, Eastern Province",
+  "coordinates": {
+    "latitude": 7.6784861,
+    "longitude": 81.72698369999999
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPHG+9QX, Arabic College Rd, Kattankudy",
+  "business_status": "OPEN"
+}

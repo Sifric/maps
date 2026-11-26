@@ -1,0 +1,71 @@
+{
+  "id": "01M8CNDDV47AQWVXYJYGM7TWWY",
+  "name": "Sisira Bakery",
+  "coordinates": {
+    "latitude": 6.3689703,
+    "longitude": 80.1541646
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "9593+HMM, Ihalakanda Rd, Yagirala",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "3:30–8 AM",
+        "2:30–5 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "3:30–8 AM",
+        "2:30–5 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "3:30–8 AM",
+        "2:30–5 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "3:30–8 AM",
+        "2:30–5 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "3:30–8 AM",
+        "2:30–5 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "3:30–8 AM",
+        "2:30–5 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

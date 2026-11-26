@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC77AT7Y0HXSRQEZM682",
+  "name": "Manna Bakery",
+  "coordinates": {
+    "latitude": 7.9121030999999995,
+    "longitude": 81.538518
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG6Q+RMG, Road, Kalkudah",
+  "business_status": "OPEN"
+}

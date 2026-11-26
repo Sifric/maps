@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDQ73H0GT3JYFY5STRA2",
+  "name": "Aruna Bake House",
+  "coordinates": {
+    "latitude": 6.1116464,
+    "longitude": 80.47616909999999
+  },
+  "categories": [
+    "Bakery",
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "A17, Akuressa 81400",
+  "business_status": "CLOSED_TEMPORARILY"
+}

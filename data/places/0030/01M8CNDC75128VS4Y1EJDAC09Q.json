@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC75128VS4Y1EJDAC09Q",
+  "name": "Star Bakeary",
+  "coordinates": {
+    "latitude": 7.6413687999999995,
+    "longitude": 81.7560479
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "JQR4+GCV, Puthukudiyirippu",
+  "business_status": "OPEN"
+}

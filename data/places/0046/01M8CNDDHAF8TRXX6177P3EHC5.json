@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDDHAF8TRXX6177P3EHC5",
+  "name": "Jayaruk Driving School",
+  "coordinates": {
+    "latitude": 6.0686765,
+    "longitude": 80.2174537
+  },
+  "categories": [
+    "Driving school"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "3698+9W3, Galle",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8:15 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8:15 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8:15 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8:15 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8:15 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8:15 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8:15 AM–5 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

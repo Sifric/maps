@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDCA8HHVRDHN3G0FQMYVH",
+  "name": "Wahab Store",
+  "coordinates": {
+    "latitude": 7.7832596,
+    "longitude": 81.6096148
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJM5+8R5, Hayaththu Mohammed Rd, Eravur",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4:45–11:15 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4:45–11:15 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4:45–11:15 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4:45–11:15 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4:45–11:15 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4:45–11:15 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4:45–11:15 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

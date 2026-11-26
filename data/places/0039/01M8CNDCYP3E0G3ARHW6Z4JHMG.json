@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCYP3E0G3ARHW6Z4JHMG",
+  "name": "Jayam Milk Pvt.Ltd",
+  "coordinates": {
+    "latitude": 7.7804185,
+    "longitude": 81.5977249
+  },
+  "categories": [
+    "Multi-unit residential building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Trincomalee-Batticaloa Rd, Eravur 30300",
+  "business_status": "OPEN"
+}

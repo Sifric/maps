@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDCCNJK25M8WMKX59GXF3",
+  "name": "Coastal Villa • Stunning Beach Getaway",
+  "coordinates": {
+    "latitude": 7.7186961,
+    "longitude": 81.7157974
+  },
+  "categories": [
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kallady",
+  "business_status": "OPEN"
+}

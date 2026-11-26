@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDKQ52T1ARKXSHFHJ31D",
+  "name": "Karapitiya Bus Stand",
+  "coordinates": {
+    "latitude": 6.06665,
+    "longitude": 80.2248
+  },
+  "categories": [
+    "Bus station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Galle 80000",
+  "business_status": "OPEN"
+}

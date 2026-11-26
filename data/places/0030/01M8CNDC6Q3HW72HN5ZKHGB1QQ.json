@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6Q3HW72HN5ZKHGB1QQ",
+  "name": "Tee Room",
+  "coordinates": {
+    "latitude": 7.6623845,
+    "longitude": 81.7406007
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MP6R+V67, Colombo - Batticaloa Hwy, Kattankudy",
+  "business_status": "OPEN"
+}

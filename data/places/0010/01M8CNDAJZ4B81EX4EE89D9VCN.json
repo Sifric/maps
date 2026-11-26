@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAJZ4B81EX4EE89D9VCN",
+  "name": "Warehouse Thalankudah",
+  "coordinates": {
+    "latitude": 7.6579934,
+    "longitude": 81.7388908
+  },
+  "categories": [
+    "Warehouse"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MP5Q+5HR, Old Rd, Kattankudy",
+  "business_status": "OPEN"
+}

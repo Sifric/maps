@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA0EZY6G8W4QY3J405G5",
+  "name": "Sweet &spice hub",
+  "coordinates": {
+    "latitude": 7.3924886,
+    "longitude": 81.8422128
+  },
+  "categories": [
+    "Soup kitchen"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "11 hijra, 3 road, Sammanthurai",
+  "business_status": "OPEN"
+}

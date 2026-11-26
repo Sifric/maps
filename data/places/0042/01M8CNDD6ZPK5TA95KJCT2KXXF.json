@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD6ZPK5TA95KJCT2KXXF",
+  "name": "MY MART",
+  "coordinates": {
+    "latitude": 7.588215,
+    "longitude": 81.77955829999999
+  },
+  "categories": [
+    "Vegetable wholesale market"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Main street, Kurukkalmadam 30192",
+  "business_status": "CLOSED_TEMPORARILY"
+}

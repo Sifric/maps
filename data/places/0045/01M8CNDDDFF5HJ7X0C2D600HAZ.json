@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDDDFF5HJ7X0C2D600HAZ",
+  "name": "Parking 3",
+  "coordinates": {
+    "latitude": 7.7291056,
+    "longitude": 81.6687175
+  },
+  "categories": [
+    "Parking garage"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "PMH9+JPG, Batticaloa",
+  "business_status": "OPEN"
+}

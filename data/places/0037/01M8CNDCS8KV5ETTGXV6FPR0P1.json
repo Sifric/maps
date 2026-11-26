@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCS8KV5ETTGXV6FPR0P1",
+  "name": "General complex",
+  "coordinates": {
+    "latitude": 7.714357,
+    "longitude": 81.695245
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM7W+Q32, Batticaloa",
+  "business_status": "OPEN"
+}

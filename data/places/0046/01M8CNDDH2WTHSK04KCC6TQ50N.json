@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDH2WTHSK04KCC6TQ50N",
+  "name": "Salam stores",
+  "coordinates": {
+    "latitude": 7.6780617,
+    "longitude": 81.7311489
+  },
+  "categories": [
+    "Shopping mall"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPHJ+6C5, Kattankudy",
+  "business_status": "OPEN"
+}

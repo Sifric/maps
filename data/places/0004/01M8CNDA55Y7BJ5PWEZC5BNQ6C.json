@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA55Y7BJ5PWEZC5BNQ6C",
+  "name": "Kuttiyan Tea Cafe",
+  "coordinates": {
+    "latitude": 7.2511874999999995,
+    "longitude": 81.83697149999999
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "7R2P+FQH, Meelathnagar, Addalaichenai 05",
+  "business_status": "OPEN"
+}

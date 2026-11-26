@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC607DQDCEZH8B60PKDK",
+  "name": "Kings Hut Restaurant",
+  "coordinates": {
+    "latitude": 7.6806139,
+    "longitude": 81.7292107
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Beach Road, Kattankudiy-03, Kattankudy 30100",
+  "business_status": "OPEN"
+}

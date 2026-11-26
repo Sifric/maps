@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDCDY1AE60H2VZF3A7E0Q",
+  "name": "EVR MEDICARE CENTER",
+  "coordinates": {
+    "latitude": 7.7799084999999994,
+    "longitude": 81.61206519999999
+  },
+  "categories": [
+    "Medical clinic"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJH6+XR8, Eravur",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5–9:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5–9:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5–9:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5–9:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5–9:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5–9:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5–9:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

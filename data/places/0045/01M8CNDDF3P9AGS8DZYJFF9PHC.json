@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDDF3P9AGS8DZYJFF9PHC",
+  "name": "Salon Sanketha",
+  "coordinates": {
+    "latitude": 7.3168379,
+    "longitude": 79.8635
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\n8V87+P9, Bandirippuwa",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "Open 24 hours"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCN3FDFDRB24Q0C2DTFN",
+  "name": "Rooms in chenkaladi",
+  "coordinates": {
+    "latitude": 7.786434,
+    "longitude": 81.5893966
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Trincomalee-Batticaloa Rd, Chenkaladi 00001",
+  "business_status": "OPEN"
+}

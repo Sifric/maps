@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9R8N06HRWD1JB2DPQT",
+  "name": "Miskhath restaurant",
+  "coordinates": {
+    "latitude": 7.7783546999999995,
+    "longitude": 81.6063131
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "602 Girls School Rd, Eravur",
+  "business_status": "OPEN"
+}

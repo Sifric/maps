@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE87XG2E23P7W9D4F5YT",
+  "name": "Grocery Store",
+  "coordinates": {
+    "latitude": 6.0979573,
+    "longitude": 80.2649931
+  },
+  "categories": [
+    "Asian grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "37X7+5XQ, Galle",
+  "business_status": "OPEN"
+}

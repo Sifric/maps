@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA6KPA3R1EW9XGMY7Y4Z",
+  "name": "VK Super Market",
+  "coordinates": {
+    "latitude": 7.1879588,
+    "longitude": 81.8433055
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "B2",
+  "business_status": "OPEN"
+}

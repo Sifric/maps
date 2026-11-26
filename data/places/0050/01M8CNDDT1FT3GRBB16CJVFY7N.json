@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDT1FT3GRBB16CJVFY7N",
+  "name": "Sino Cafe",
+  "coordinates": {
+    "latitude": 6.0381616,
+    "longitude": 80.2159296
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "82 Wakwella Rd, Galle 80000",
+  "business_status": "OPEN"
+}

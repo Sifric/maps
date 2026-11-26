@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD83QKN4GBVHJ30DRRYC",
+  "name": "Pulukulunawa/30Km Post Bus Stop",
+  "coordinates": {
+    "latitude": 7.519819999999999,
+    "longitude": 81.60978
+  },
+  "categories": [
+    "Bus stop",
+    "Bus station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

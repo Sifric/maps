@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDEFFB23J9V7H1DSEETRE",
+  "name": "Cheeky Monkey",
+  "coordinates": {
+    "latitude": 5.9617986,
+    "longitude": 80.39676089999999
+  },
+  "categories": [
+    "Hotel",
+    "Bar & grill",
+    "Restaurant",
+    "Surf school",
+    "Surf shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Cheeky Monkey, Galle - Matara Main Road, Midigama East Midigama, Ahangama 80650",
+  "business_status": "OPEN"
+}

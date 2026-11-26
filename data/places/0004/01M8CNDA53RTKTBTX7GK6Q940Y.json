@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA53RTKTBTX7GK6Q940Y",
+  "name": "Doha chicken shop",
+  "coordinates": {
+    "latitude": 6.8721419,
+    "longitude": 81.8306296
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "2 Market Rd, Pottuvil",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA0XR2QYBGN0XZ9F8MWP",
+  "name": "Hilmy Ice Cream",
+  "coordinates": {
+    "latitude": 7.4028848,
+    "longitude": 81.8374255
+  },
+  "categories": [
+    "Ice cream shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CR3P+5X3, Kalmunai 32300",
+  "business_status": "OPEN"
+}

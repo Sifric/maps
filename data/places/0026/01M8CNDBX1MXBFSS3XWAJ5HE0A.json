@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBX1MXBFSS3XWAJ5HE0A",
+  "name": "Siva Shopping Mall",
+  "coordinates": {
+    "latitude": 7.5099576,
+    "longitude": 81.78078049999999
+  },
+  "categories": [
+    "Shopping mall"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQ5J+X8J, Main Road, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

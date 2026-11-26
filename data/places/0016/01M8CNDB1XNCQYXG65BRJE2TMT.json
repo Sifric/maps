@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDB1XNCQYXG65BRJE2TMT",
+  "name": "KSC Play Ground",
+  "coordinates": {
+    "latitude": 7.4680557,
+    "longitude": 81.7363572
+  },
+  "categories": [
+    "Playground"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "FP9P+6GH",
+  "business_status": "OPEN"
+}

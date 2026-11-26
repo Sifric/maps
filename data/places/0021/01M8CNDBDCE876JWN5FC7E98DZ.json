@@ -1,0 +1,69 @@
+{
+  "id": "01M8CNDBDCE876JWN5FC7E98DZ",
+  "name": "WTL Flight Crew",
+  "coordinates": {
+    "latitude": 7.2237836,
+    "longitude": 81.83956769999999
+  },
+  "categories": [
+    "Airline ticket agency",
+    "Air taxi",
+    "Courier service",
+    "Student career counseling office",
+    "Transportation service",
+    "Visa consulting service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "195 Akkaraipattu - Warapathanchenai, Akkaraipattu",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCC1XFJTJWHYHY15G5MB",
+  "name": "Seruwila Rest House",
+  "coordinates": {
+    "latitude": 8.3170255,
+    "longitude": 81.3185548
+  },
+  "categories": [
+    "Bed & breakfast"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "8889+R9, Ali Oluwa",
+  "business_status": "OPEN"
+}

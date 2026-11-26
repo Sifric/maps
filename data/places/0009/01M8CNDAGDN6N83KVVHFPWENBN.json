@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAGDN6N83KVVHFPWENBN",
+  "name": "Alahakoon camping Meemure",
+  "coordinates": {
+    "latitude": 7.4404126999999995,
+    "longitude": 80.8448863
+  },
+  "categories": [
+    "Campground"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CRRV+5X6, Hunnasgiriya - Meemure Road, Meemure",
+  "business_status": "OPEN"
+}

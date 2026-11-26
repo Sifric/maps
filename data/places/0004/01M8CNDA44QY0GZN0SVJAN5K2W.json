@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA44QY0GZN0SVJAN5K2W",
+  "name": "Neela Cafe and restaurant",
+  "coordinates": {
+    "latitude": 6.9437776,
+    "longitude": 81.54571539999999
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "3rd mile post, Ampara road, Siyambalanduwa",
+  "business_status": "OPEN"
+}

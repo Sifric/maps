@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDE0ZF3XKFS29KXEPMP7W",
+  "name": "Chandimal 2 Restaurant",
+  "coordinates": {
+    "latitude": 6.175038,
+    "longitude": 80.1734413
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "55GF+298",
+  "business_status": "CLOSED_TEMPORARILY"
+}

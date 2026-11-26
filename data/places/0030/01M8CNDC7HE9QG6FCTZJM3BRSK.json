@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC7HE9QG6FCTZJM3BRSK",
+  "name": "Evergreen",
+  "coordinates": {
+    "latitude": 7.9753383,
+    "longitude": 81.3352851
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "X8GP+C4, Kayankerni",
+  "business_status": "OPEN"
+}

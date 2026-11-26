@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCM78MMD96YC6GNZ6HHW",
+  "name": "KS Home",
+  "coordinates": {
+    "latitude": 7.7784165,
+    "longitude": 81.6038167
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJH3+9G3, Eravur",
+  "business_status": "OPEN"
+}

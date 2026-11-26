@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBGW6EHMVMJ4EZXY80ZV",
+  "name": "Meshak Service Station",
+  "coordinates": {
+    "latitude": 7.1064947,
+    "longitude": 81.8453265
+  },
+  "categories": [
+    "Auto repair shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "4R4W+H4W, Colombo - Batticaloa Hwy, Thirukkovil",
+  "business_status": "OPEN"
+}

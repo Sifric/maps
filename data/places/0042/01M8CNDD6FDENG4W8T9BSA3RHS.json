@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD6FDENG4W8T9BSA3RHS",
+  "name": "J.J Stores",
+  "coordinates": {
+    "latitude": 8.1989616,
+    "longitude": 81.40943469999999
+  },
+  "categories": [
+    "Shopping mall"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "5CX5+FQ6, Trincomalee-Batticaloa Rd, Palchenai",
+  "business_status": "OPEN"
+}

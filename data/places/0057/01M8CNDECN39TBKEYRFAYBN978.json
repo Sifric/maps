@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDECN39TBKEYRFAYBN978",
+  "name": "Hotel Apna",
+  "coordinates": {
+    "latitude": 6.0512153,
+    "longitude": 80.2098872
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "300/8 Wakwella Rd, Galle 80000",
+  "business_status": "OPEN"
+}

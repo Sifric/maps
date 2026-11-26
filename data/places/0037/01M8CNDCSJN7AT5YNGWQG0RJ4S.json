@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCSJN7AT5YNGWQG0RJ4S",
+  "name": "Abacca",
+  "coordinates": {
+    "latitude": 7.7129758,
+    "longitude": 81.6985686
+  },
+  "categories": [
+    "Fabric store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM7X+5CR, 66 Main Street, Batticaloa",
+  "business_status": "OPEN"
+}

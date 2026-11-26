@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCD2Q93D2H64WN24QG30",
+  "name": "Sahishnu House",
+  "coordinates": {
+    "latitude": 7.6547579,
+    "longitude": 81.7276004
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MP3H+W25, Unnamed Road, Kattankudy",
+  "business_status": "OPEN"
+}

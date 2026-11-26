@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDA28ZCX7T6VNBAHQSWTN",
+  "name": "Buy Zone",
+  "coordinates": {
+    "latitude": 7.395818299999999,
+    "longitude": 81.8399933
+  },
+  "categories": [
+    "Wedding service",
+    "Clothing store",
+    "Cosmetics store",
+    "Stationery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "386B/1 Osman Road, Sainthamaruthu-08, Sainthamaruthu 32200",
+  "business_status": "OPEN"
+}

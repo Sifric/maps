@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAE75R4063PRKZ2QP0W2",
+  "name": "Mango Villa",
+  "coordinates": {
+    "latitude": 7.2876334,
+    "longitude": 81.8190771
+  },
+  "categories": [
+    "Garden"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "7RP9+W39, Oluvil",
+  "business_status": "OPEN"
+}

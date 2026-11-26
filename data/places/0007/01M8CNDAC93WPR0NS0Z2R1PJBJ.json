@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAC93WPR0NS0Z2R1PJBJ",
+  "name": "Al-Irfan Vegetable Shop",
+  "coordinates": {
+    "latitude": 7.433999699999999,
+    "longitude": 81.81318329999999
+  },
+  "categories": [
+    "Market"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "299 Makkamadi Rd, Maruthamunai",
+  "business_status": "CLOSED_TEMPORARILY"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDF5J3BSA560REVWQTAP",
+  "name": "Allu.lk PVT LTD",
+  "coordinates": {
+    "latitude": 7.7297370999999995,
+    "longitude": 81.6734032
+  },
+  "categories": [
+    "Motor vehicle dealer"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "609 Trincomalee-Batticaloa Rd, Batticaloa 30000",
+  "business_status": "OPEN"
+}

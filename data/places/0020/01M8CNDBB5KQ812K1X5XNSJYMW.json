@@ -1,0 +1,20 @@
+{
+  "id": "01M8CNDBB5KQ812K1X5XNSJYMW",
+  "name": "Rooms for rent - One-Bedroom Apartment",
+  "coordinates": {
+    "latitude": 7.5170002,
+    "longitude": 81.34371949999999
+  },
+  "categories": [
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD07HXTD87K4Q9S9E58X",
+  "name": "Medical Laboratory Services",
+  "coordinates": {
+    "latitude": 7.914077,
+    "longitude": 81.5206347
+  },
+  "categories": [
+    "Laboratory"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG7C+J7J, Oddamavadi",
+  "business_status": "OPEN"
+}

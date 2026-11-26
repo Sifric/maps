@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCAFRF2Y14R70NF4F1HC",
+  "name": "Luxmy Store",
+  "coordinates": {
+    "latitude": 7.6641468999999995,
+    "longitude": 81.73953039999999
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MP7Q+MR2, Colombo - Ratnapura - Wellawaya - Batticaloa Rd, Kattankudy",
+  "business_status": "OPEN"
+}

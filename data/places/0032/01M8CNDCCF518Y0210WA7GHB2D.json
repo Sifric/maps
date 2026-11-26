@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDCCF518Y0210WA7GHB2D",
+  "name": "Nilo's Guest House - Holiday Home",
+  "coordinates": {
+    "latitude": 7.7136597,
+    "longitude": 81.69611359999999
+  },
+  "categories": [
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Batticaloa",
+  "business_status": "OPEN"
+}

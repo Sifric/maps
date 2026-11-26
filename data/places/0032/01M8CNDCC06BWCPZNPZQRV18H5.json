@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCC06BWCPZNPZQRV18H5",
+  "name": "Simla Inn Tourist Guest House",
+  "coordinates": {
+    "latitude": 7.9209397,
+    "longitude": 81.5548585
+  },
+  "categories": [
+    "Bed & breakfast"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "B185, Kalkudah 30410",
+  "business_status": "OPEN"
+}

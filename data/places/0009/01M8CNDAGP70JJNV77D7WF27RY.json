@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAGP70JJNV77D7WF27RY",
+  "name": "UPI's Home",
+  "coordinates": {
+    "latitude": 7.4031937,
+    "longitude": 81.8368796
+  },
+  "categories": [
+    "Villa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "159/A Matharaza Rd, Kalmunai 10",
+  "business_status": "OPEN"
+}

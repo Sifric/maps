@@ -1,0 +1,70 @@
+{
+  "id": "01M8CNDEJRDV9G5VTCGQMEQ641",
+  "name": "Sanju Restaurant",
+  "coordinates": {
+    "latitude": 9.8146677,
+    "longitude": 80.23172129999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "R67J+VM9, Kiramakkodu Junction, Main St, Point Pedro",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "11 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "11 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12–10 AM",
+        "11 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12–10 AM",
+        "11 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12–10 AM",
+        "11 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "12–10 AM",
+        "11 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12–10 AM",
+        "11 AM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

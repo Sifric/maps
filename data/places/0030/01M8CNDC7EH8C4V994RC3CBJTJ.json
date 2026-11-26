@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC7EH8C4V994RC3CBJTJ",
+  "name": "Harita Restaurant",
+  "coordinates": {
+    "latitude": 7.743572899999999,
+    "longitude": 81.6558355
+  },
+  "categories": [
+    "Bar"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMV4+4FQ, Batticaloa",
+  "business_status": "OPEN"
+}

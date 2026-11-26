@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCQQ3VJ2J47F2A95BYTH",
+  "name": "Mother Place",
+  "coordinates": {
+    "latitude": 8.315752,
+    "longitude": 81.39158599999999
+  },
+  "categories": [
+    "Museum"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "898R+8J, Verugal",
+  "business_status": "OPEN"
+}

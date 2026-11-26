@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDD5ZZ8V491K03Z291FK8",
+  "name": "Naithan Rice Mill",
+  "coordinates": {
+    "latitude": 7.6163466,
+    "longitude": 81.7621296
+  },
+  "categories": [
+    "Rice mill"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

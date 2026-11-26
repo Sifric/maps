@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCA0HG3Y3BW5CYFA71JC",
+  "name": "Mufeetha bakery",
+  "coordinates": {
+    "latitude": 7.7761605,
+    "longitude": 81.6133972
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJG7+F96, Thaikka Road, Eravur",
+  "business_status": "OPEN"
+}

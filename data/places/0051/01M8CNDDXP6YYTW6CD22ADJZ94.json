@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDXP6YYTW6CD22ADJZ94",
+  "name": "Galabada stores",
+  "coordinates": {
+    "latitude": 6.3189912,
+    "longitude": 80.36928139999999
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Halvitigala Colony Step",
+  "business_status": "OPEN"
+}

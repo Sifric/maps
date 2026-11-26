@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC4NFTRE18MD9JPS0Q8P",
+  "name": "NAAS CAMPUS BATICALOA",
+  "coordinates": {
+    "latitude": 7.6866806,
+    "longitude": 81.72816929999999
+  },
+  "categories": [
+    "Education center"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "42 1, 1 Telecom Rd, Kattankudy 30100",
+  "business_status": "OPEN"
+}

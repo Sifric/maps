@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD5ZM43GD2QJTMJ7A4Z7",
+  "name": "Polonnaruwa Fire Brigade",
+  "coordinates": {
+    "latitude": 7.9414022,
+    "longitude": 81.0026264
+  },
+  "categories": [
+    "Fire station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "W2R3+H36, 1st Canal Road, Polonnaruwa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCCN1V860GN3RMASM3WP",
+  "name": "PM Villa",
+  "coordinates": {
+    "latitude": 7.7759624999999994,
+    "longitude": 81.6161796
+  },
+  "categories": [
+    "Villa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJG8+9FM, Kalaimahal Rd, Eravur",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE396FSGAHA837NXTMDS",
+  "name": "MONO",
+  "coordinates": {
+    "latitude": 5.9725588,
+    "longitude": 80.363579
+  },
+  "categories": [
+    "Bar"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "51 Station Road, Ahangama 80650",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6–11 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6–11 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6–11 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6 PM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

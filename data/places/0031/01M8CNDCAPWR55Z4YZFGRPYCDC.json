@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCAPWR55Z4YZFGRPYCDC",
+  "name": "Forums City Centre",
+  "coordinates": {
+    "latitude": 7.7227868,
+    "longitude": 81.6981031
+  },
+  "categories": [
+    "Supermarket"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMFX+469, B27, Batticaloa",
+  "business_status": "OPEN"
+}

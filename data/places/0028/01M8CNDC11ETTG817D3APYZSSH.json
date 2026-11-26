@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC11ETTG817D3APYZSSH",
+  "name": "Village Supermarket",
+  "coordinates": {
+    "latitude": 7.7308368,
+    "longitude": 81.6777591
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "New Boundary Rd, Batticaloa",
+  "business_status": "OPEN"
+}

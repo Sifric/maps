@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDEKYRP7Q42W9N14ET4SW",
+  "name": "Russian street food",
+  "coordinates": {
+    "latitude": 9.6687747,
+    "longitude": 80.1229381
+  },
+  "categories": [
+    "Fast food restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "M49C+MP2, Chavakachcheri",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12–11:59 AM",
+        "6–11:59 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6–11:59 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6–11:59 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6–11:59 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6–11:59 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

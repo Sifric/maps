@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCV55XE8KC4V8YD43YQZ",
+  "name": "Kartar tractor",
+  "coordinates": {
+    "latitude": 7.7321896,
+    "longitude": 81.66900849999999
+  },
+  "categories": [
+    "Car rental agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMJ9+WGC, Trincomalee-Batticaloa Rd, Batticaloa",
+  "business_status": "OPEN"
+}

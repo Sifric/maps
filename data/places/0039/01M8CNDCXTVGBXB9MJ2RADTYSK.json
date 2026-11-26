@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCXTVGBXB9MJ2RADTYSK",
+  "name": "Laxmi travel tour",
+  "coordinates": {
+    "latitude": 7.672901899999999,
+    "longitude": 81.72812259999999
+  },
+  "categories": [
+    "Taxi service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "New Kali Kovil Road, 01, Batticaloa 30150",
+  "business_status": "OPEN"
+}

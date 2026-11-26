@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC7QJC0QW5C4QZSDVKAB",
+  "name": "Multy Farm",
+  "coordinates": {
+    "latitude": 7.6803954999999995,
+    "longitude": 81.7285189
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPJH+5C2, Sir Razeek Fareed Mawatha, Kattankudy",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA16KJVGBTVDG0CXKC5R",
+  "name": "Rilwan Restaurant Arabian Food",
+  "coordinates": {
+    "latitude": 7.3968247,
+    "longitude": 81.8414031
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "287 D P.M Road Sainthamaruthu, 06, Kalmunai 33700",
+  "business_status": "OPEN"
+}

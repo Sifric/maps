@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCA5AC35CSZRZP2FQ0N6",
+  "name": "AMS MULTY SHOP",
+  "coordinates": {
+    "latitude": 7.7163379,
+    "longitude": 81.7128595
+  },
+  "categories": [
+    "Supermarket"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "40 Saravana Road kallady, Batticaloa 30000",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "01M8CNDAAGDVXH2DARAZVGEFN7",
+  "name": "Teshan food store",
+  "coordinates": {
+    "latitude": 7.2962304,
+    "longitude": 81.6770303
+  },
+  "categories": [
+    "Grocery store",
+    "Service establishment"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

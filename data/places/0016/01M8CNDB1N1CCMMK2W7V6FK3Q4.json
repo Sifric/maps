@@ -1,0 +1,70 @@
+{
+  "id": "01M8CNDB1N1CCMMK2W7V6FK3Q4",
+  "name": "True Life Gym",
+  "coordinates": {
+    "latitude": 7.9317766999999995,
+    "longitude": 81.0314291
+  },
+  "categories": [
+    "Gym"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "W2JJ+PH7, 4th canal road, Polonnaruwa 5200",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5:30–9:30 AM",
+        "2:30–9:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5:30–9:30 AM",
+        "2:30–9:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5:30–9:30 AM",
+        "2:30–9:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5:30–9:30 AM",
+        "2:30–9:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5:30–9:30 AM",
+        "2:30–9:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5:30–9:30 AM",
+        "2:30–9:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

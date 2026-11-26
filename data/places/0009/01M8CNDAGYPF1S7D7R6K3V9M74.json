@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAGYPF1S7D7R6K3V9M74",
+  "name": "Kalmunai",
+  "coordinates": {
+    "latitude": 7.426181199999999,
+    "longitude": 81.8211188
+  },
+  "categories": [
+    "Hostel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CRGC+FCH, Pandiruppu",
+  "business_status": "OPEN"
+}

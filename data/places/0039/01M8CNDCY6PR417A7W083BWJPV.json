@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCY6PR417A7W083BWJPV",
+  "name": "Speed Eats Delivery Service office",
+  "coordinates": {
+    "latitude": 7.6853286,
+    "longitude": 81.7293433
+  },
+  "categories": [
+    "Delivery service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Fowzimawathai, new, 222, Kattankudy 02",
+  "business_status": "OPEN"
+}

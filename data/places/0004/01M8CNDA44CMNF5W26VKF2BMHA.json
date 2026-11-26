@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDA44CMNF5W26VKF2BMHA",
+  "name": "Shady Lane",
+  "coordinates": {
+    "latitude": 6.8374513,
+    "longitude": 81.8348611
+  },
+  "categories": [
+    "Cafe",
+    "Breakfast restaurant",
+    "Guest house",
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "RRPP+786, Sinhapura Rd, Arugam Bay 32500",
+  "business_status": "CLOSED_TEMPORARILY"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCD8TWKGQVS7713S9R2N",
+  "name": "Divisional Hospital Cheddipalayam",
+  "coordinates": {
+    "latitude": 7.5797973999999995,
+    "longitude": 81.7808434
+  },
+  "categories": [
+    "Hospital"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "HQHJ+W88, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

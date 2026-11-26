@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA40PVH6QH41N47E5P31",
+  "name": "Kilanku Shop",
+  "coordinates": {
+    "latitude": 7.4107835,
+    "longitude": 81.8392452
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "CR6Q+8M9, Kalmunai 32300",
+  "business_status": "OPEN"
+}

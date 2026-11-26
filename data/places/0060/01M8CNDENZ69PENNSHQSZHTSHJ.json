@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDENZ69PENNSHQSZHTSHJ",
+  "name": "AP coffee shop",
+  "coordinates": {
+    "latitude": 9.8187289,
+    "longitude": 80.2538888
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "R793+CQ5, Point Pedro t, Point Pedro",
+  "business_status": "OPEN"
+}

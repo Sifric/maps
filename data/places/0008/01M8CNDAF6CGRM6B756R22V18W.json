@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAF6CGRM6B756R22V18W",
+  "name": "Asvar Home",
+  "coordinates": {
+    "latitude": 7.3654642,
+    "longitude": 81.8059543
+  },
+  "categories": [
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9R84+69H, Sammanthurai",
+  "business_status": "OPEN"
+}

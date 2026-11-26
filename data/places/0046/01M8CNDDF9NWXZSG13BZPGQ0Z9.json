@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDF9NWXZSG13BZPGQ0Z9",
+  "name": "AFRITH MULTI & BOOKSHOP",
+  "coordinates": {
+    "latitude": 7.779018799999999,
+    "longitude": 81.6152453
+  },
+  "categories": [
+    "Book store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Eravur",
+  "business_status": "OPEN"
+}

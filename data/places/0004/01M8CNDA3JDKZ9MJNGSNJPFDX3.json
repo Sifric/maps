@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA3JDKZ9MJNGSNJPFDX3",
+  "name": "Buhary Bakery",
+  "coordinates": {
+    "latitude": 7.2571940999999995,
+    "longitude": 81.8544541
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "7V43+VQG, Main St, Addalaichenai 10",
+  "business_status": "OPEN"
+}

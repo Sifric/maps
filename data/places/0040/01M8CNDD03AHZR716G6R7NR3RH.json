@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD03AHZR716G6R7NR3RH",
+  "name": "AF TRAVEL",
+  "coordinates": {
+    "latitude": 7.8995707,
+    "longitude": 81.5225576
+  },
+  "categories": [
+    "Travel agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Modnar road batury nager macolaie, Oddamavadi",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCYFQY1507ZMZ8E2JFPC",
+  "name": "Aariz zayan online shopping",
+  "coordinates": {
+    "latitude": 7.7726277999999995,
+    "longitude": 81.6032924
+  },
+  "categories": [
+    "Shopping mall"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "d, Ahmed fareed play ground, road, Eravur 6",
+  "business_status": "OPEN"
+}

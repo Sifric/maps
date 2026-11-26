@@ -1,0 +1,68 @@
+{
+  "id": "01M8CNDC9XAPPV4SXEB62V33EF",
+  "name": "Riyasa Cafe",
+  "coordinates": {
+    "latitude": 7.779328899999999,
+    "longitude": 81.609876
+  },
+  "categories": [
+    "Cafeteria",
+    "Food delivery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJH5+PXJ, Makkah madi Rd, Eravur",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:30–9 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:30–9 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:30–9 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:30–9 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:30–9 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:30–9 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6:30–9 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

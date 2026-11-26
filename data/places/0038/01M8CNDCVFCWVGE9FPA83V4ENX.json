@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDCVFCWVGE9FPA83V4ENX",
+  "name": "Vasanthans’ Home",
+  "coordinates": {
+    "latitude": 7.7249259,
+    "longitude": 81.691411
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "\n334 Trincomalee-Batticaloa Rd, Batticaloa",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "334 Trincomalee-Batticaloa Rd, Batticaloa"
+  ]
+}

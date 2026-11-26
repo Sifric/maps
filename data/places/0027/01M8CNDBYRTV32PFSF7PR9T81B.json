@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDBYRTV32PFSF7PR9T81B",
+  "name": "UrbanDrive Car Sales",
+  "coordinates": {
+    "latitude": 7.521469799999999,
+    "longitude": 80.41599269999999
+  },
+  "categories": [
+    "Car dealer"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "245, North East Park, Thorayaya, Kurunegala",
+  "business_status": "OPEN"
+}

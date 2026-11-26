@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCQZSV8DTP82B53Y8N9E",
+  "name": "Parking Area",
+  "coordinates": {
+    "latitude": 7.5172728,
+    "longitude": 81.78458189999999
+  },
+  "categories": [
+    "Parking lot"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQ8M+WR4, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

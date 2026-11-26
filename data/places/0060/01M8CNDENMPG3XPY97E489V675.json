@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDENMPG3XPY97E489V675",
+  "name": "King Restaurant",
+  "coordinates": {
+    "latitude": 6.1332713,
+    "longitude": 80.19986349999999
+  },
+  "categories": [
+    "Food court"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "54/C Keembiela, Poddala 22865",
+  "business_status": "OPEN"
+}

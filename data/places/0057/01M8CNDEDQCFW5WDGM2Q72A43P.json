@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDEDQCFW5WDGM2Q72A43P",
+  "name": "Jasmine Hotel",
+  "coordinates": {
+    "latitude": 6.1170439,
+    "longitude": 80.1179434
+  },
+  "categories": [
+    "Guest house",
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "No 72, Galle Road, Patuwatha, Dodanduwa, Hikkaduwa 80240",
+  "business_status": "OPEN"
+}

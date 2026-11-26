@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAX9WM3WM5639X9D7K2H",
+  "name": "A.C.A Building Construction",
+  "coordinates": {
+    "latitude": 7.431038,
+    "longitude": 81.81525889999999
+  },
+  "categories": [
+    "Construction company"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Maruthamunai",
+  "business_status": "OPEN"
+}

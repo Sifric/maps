@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDBVDZCDCT4PR7DN6H4M",
+  "name": "ALMAZEEH",
+  "coordinates": {
+    "latitude": 7.7753682,
+    "longitude": 81.6096645
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "171 Kayar Rd, Eravur",
+  "business_status": "OPEN"
+}

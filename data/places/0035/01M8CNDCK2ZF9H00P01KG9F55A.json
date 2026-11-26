@@ -1,0 +1,69 @@
+{
+  "id": "01M8CNDCK2ZF9H00P01KG9F55A",
+  "name": "Singer Batticaloa B",
+  "coordinates": {
+    "latitude": 7.718911299999999,
+    "longitude": 81.69978449999999
+  },
+  "categories": [
+    "Electronics store",
+    "Cell phone store",
+    "Mattress store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Bar Road, 23 Bar Rd - Batticaloa, Batticaloa 30000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8:30 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8:30 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8:30 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8:30 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8:30 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8:30 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8:30 AM–4 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

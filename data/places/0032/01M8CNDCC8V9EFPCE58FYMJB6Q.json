@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCC8V9EFPCE58FYMJB6Q",
+  "name": "Chill Zone Home Stay",
+  "coordinates": {
+    "latitude": 7.7249146,
+    "longitude": 81.6966911
+  },
+  "categories": [
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "109 Thabamunai Colony, Batticaloa 30000",
+  "business_status": "OPEN"
+}

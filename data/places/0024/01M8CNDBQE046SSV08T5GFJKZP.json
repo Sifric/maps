@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBQE046SSV08T5GFJKZP",
+  "name": "Kollikatte tailor shop",
+  "coordinates": {
+    "latitude": 7.3428248,
+    "longitude": 81.8520813
+  },
+  "categories": [
+    "Tailor"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "8VV2+4H7, Theatre Rd, Kalmunai",
+  "business_status": "OPEN"
+}

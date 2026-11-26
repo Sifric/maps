@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDCF911BKK2QRZPSMZZ1",
+  "name": "Haani's home",
+  "coordinates": {
+    "latitude": 7.6855120999999995,
+    "longitude": 81.73119249999999
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "144, 3 Fisheries Rd, Kattankudy",
+  "business_status": "OPEN"
+}

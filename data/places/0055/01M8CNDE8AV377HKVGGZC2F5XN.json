@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDE8AV377HKVGGZC2F5XN",
+  "name": "Sparrow Restaurant",
+  "coordinates": {
+    "latitude": 6.0163711,
+    "longitude": 80.2391839
+  },
+  "categories": [
+    "Sri Lankan restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Unawatuna",
+  "business_status": "OPEN"
+}

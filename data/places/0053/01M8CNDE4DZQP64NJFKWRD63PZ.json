@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE4DZQP64NJFKWRD63PZ",
+  "name": "Sithum Restaurant",
+  "coordinates": {
+    "latitude": 6.830042,
+    "longitude": 80.9330033
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Hingurugamuwa Gama Gal Edanda Rd",
+  "business_status": "OPEN"
+}

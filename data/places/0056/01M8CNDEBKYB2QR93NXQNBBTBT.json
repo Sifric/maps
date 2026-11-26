@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDEBKYB2QR93NXQNBBTBT",
+  "name": "Bentota Villa",
+  "coordinates": {
+    "latitude": 6.4225699,
+    "longitude": 80.0057793
+  },
+  "categories": [
+    "Villa",
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Bentota",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "89 Maddewela Road, Bentota"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDE40QPYFN583D7EQ6BZQ",
+  "name": "South Street Restaurant",
+  "coordinates": {
+    "latitude": 6.4164598999999995,
+    "longitude": 79.9976976
+  },
+  "categories": [
+    "Restaurant",
+    "Seafood restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Dharmavijayarama Road, South Street, Bentota 80500",
+  "business_status": "CLOSED_TEMPORARILY"
+}

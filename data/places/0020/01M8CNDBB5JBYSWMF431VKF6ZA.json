@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBB5JBYSWMF431VKF6ZA",
+  "name": "Fayas home",
+  "coordinates": {
+    "latitude": 7.7830151999999995,
+    "longitude": 81.6049113
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJM3+6X3, Eravur",
+  "business_status": "OPEN"
+}

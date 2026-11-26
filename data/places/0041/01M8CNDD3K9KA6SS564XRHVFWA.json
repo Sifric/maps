@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD3K9KA6SS564XRHVFWA",
+  "name": "Akshaya Stores",
+  "coordinates": {
+    "latitude": 7.7842807,
+    "longitude": 81.59225699999999
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Chenkaladi",
+  "business_status": "OPEN"
+}

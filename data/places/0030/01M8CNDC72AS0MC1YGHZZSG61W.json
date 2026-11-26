@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC72AS0MC1YGHZZSG61W",
+  "name": "Make my cakes",
+  "coordinates": {
+    "latitude": 7.706568799999999,
+    "longitude": 81.7122598
+  },
+  "categories": [
+    "Cake shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "69 Old Kalmunai Road, Batticaloa",
+  "business_status": "CLOSED_TEMPORARILY"
+}

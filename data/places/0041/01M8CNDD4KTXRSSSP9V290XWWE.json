@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD4KTXRSSSP9V290XWWE",
+  "name": "MILCO Milk Chilling Centre பால் சேமிப்பு நிலையம்",
+  "coordinates": {
+    "latitude": 7.853805899999999,
+    "longitude": 81.50797299999999
+  },
+  "categories": [
+    "Milk delivery service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "VG35+G5H",
+  "business_status": "OPEN"
+}

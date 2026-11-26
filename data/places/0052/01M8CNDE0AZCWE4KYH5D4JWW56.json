@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDE0AZCWE4KYH5D4JWW56",
+  "name": "AP Cocktails",
+  "coordinates": {
+    "latitude": 6.0098389999999995,
+    "longitude": 80.24686
+  },
+  "categories": [
+    "Cocktail bar",
+    "Bar",
+    "European restaurant",
+    "Restaurant",
+    "Seafood restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "135 Yaddehimulla Rd, Unawatuna 80600",
+  "business_status": "CLOSED_TEMPORARILY"
+}

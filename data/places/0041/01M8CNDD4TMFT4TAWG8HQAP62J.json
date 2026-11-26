@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD4TMFT4TAWG8HQAP62J",
+  "name": "Murugan store",
+  "coordinates": {
+    "latitude": 7.8258570999999995,
+    "longitude": 81.5869446
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "RHGP+8QW",
+  "business_status": "OPEN"
+}

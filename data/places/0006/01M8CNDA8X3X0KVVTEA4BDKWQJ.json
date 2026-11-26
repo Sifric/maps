@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDA8X3X0KVVTEA4BDKWQJ",
+  "name": "Beach Wave Hotel",
+  "coordinates": {
+    "latitude": 6.8473144,
+    "longitude": 81.8315769
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Water Music Rd, Arugam Bay 32500",
+  "business_status": "OPEN"
+}

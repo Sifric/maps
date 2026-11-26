@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA1PY29JKWG31SYC5RVN",
+  "name": "FRD.s. Farm",
+  "coordinates": {
+    "latitude": 7.420436199999999,
+    "longitude": 81.819402
+  },
+  "categories": [
+    "Farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kalmunai",
+  "business_status": "OPEN"
+}

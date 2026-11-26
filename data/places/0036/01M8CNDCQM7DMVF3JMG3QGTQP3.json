@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCQM7DMVF3JMG3QGTQP3",
+  "name": "Valaichchenai Junction",
+  "coordinates": {
+    "latitude": 7.9087635999999994,
+    "longitude": 81.53379629999999
+  },
+  "categories": [
+    "Road cycling"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG5M+GG3, A15, Oddamavadi",
+  "business_status": "OPEN"
+}

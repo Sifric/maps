@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA1TQ4K2P7MXD1DA1H99",
+  "name": "A H.A",
+  "coordinates": {
+    "latitude": 7.4040548,
+    "longitude": 81.8414343
+  },
+  "categories": [
+    "Butcher shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "238A Beach Rd, Kalmunai 32300",
+  "business_status": "OPEN"
+}

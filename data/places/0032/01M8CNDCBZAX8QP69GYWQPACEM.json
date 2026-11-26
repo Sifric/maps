@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBZAX8QP69GYWQPACEM",
+  "name": "Abi Holiday Inn",
+  "coordinates": {
+    "latitude": 7.9196161,
+    "longitude": 81.5566075
+  },
+  "categories": [
+    "Guest house"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "284 Main Street, Kalkudah 30410",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDE380KADQH7BG5QW8VMY",
+  "name": "Cafe Queens Bee",
+  "coordinates": {
+    "latitude": 6.2240378,
+    "longitude": 80.1177792
+  },
+  "categories": [
+    "Ice cream shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Baddegama Road, Batapola 80320",
+  "business_status": "OPEN"
+}

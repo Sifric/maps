@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6PGGH64WQ2GH3C8QD9",
+  "name": "Sathu",
+  "coordinates": {
+    "latitude": 7.7003705,
+    "longitude": 81.6839371
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM2M+4HV, Boundary Rd 1st Cross, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCHM6F6PDNHN8RGQ7ZJY",
+  "name": "Thettativu Post Office",
+  "coordinates": {
+    "latitude": 7.560589299999999,
+    "longitude": 81.78617849999999
+  },
+  "categories": [
+    "Post office"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "HQ6P+7F3, Colombo - Batticaloa Hwy, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

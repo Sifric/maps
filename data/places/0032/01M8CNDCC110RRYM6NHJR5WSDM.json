@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCC110RRYM6NHJR5WSDM",
+  "name": "Seamoon Garden",
+  "coordinates": {
+    "latitude": 7.6135581,
+    "longitude": 81.7633566
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "〒30000 Batticaloa, Main street, kirankulam, Batticaloa .",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC3QME8MRF2SNG0BD0XD",
+  "name": "Sathir’s Residence",
+  "coordinates": {
+    "latitude": 7.6819947,
+    "longitude": 81.7249983
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "55, 17 Thajweed College Road, Kattankudy 02",
+  "business_status": "OPEN"
+}

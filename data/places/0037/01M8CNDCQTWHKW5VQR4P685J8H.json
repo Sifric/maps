@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCQTWHKW5VQR4P685J8H",
+  "name": "Kallady Beach Park கல்லடி கடற்கரைப்பூங்கா",
+  "coordinates": {
+    "latitude": 7.717121199999999,
+    "longitude": 81.71882889999999
+  },
+  "categories": [
+    "Park"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PP89+RGW, Kallady",
+  "business_status": "OPEN"
+}

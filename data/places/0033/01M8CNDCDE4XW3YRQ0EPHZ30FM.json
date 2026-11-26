@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCDE4XW3YRQ0EPHZ30FM",
+  "name": "Thiraimadu Midwife Clinic",
+  "coordinates": {
+    "latitude": 7.7540429,
+    "longitude": 81.6763163
+  },
+  "categories": [
+    "Medical clinic"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QM3G+JG8, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "01M8CNDCCKM4NKMMP7FQ7QH01G",
+  "name": "Sri Lanka Holiday",
+  "coordinates": {
+    "latitude": 7.739902,
+    "longitude": 81.7035051
+  },
+  "categories": [
+    "Villa",
+    "Bed & breakfast",
+    "Cottage",
+    "Resort hotel",
+    "Holiday apartment"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "143 School Rd, Kallady",
+  "business_status": "OPEN"
+}

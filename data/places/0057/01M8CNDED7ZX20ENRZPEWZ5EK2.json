@@ -1,0 +1,27 @@
+{
+  "id": "01M8CNDED7ZX20ENRZPEWZ5EK2",
+  "name": "Cara Galle Fort",
+  "coordinates": {
+    "latitude": 6.0283468,
+    "longitude": 80.2154925
+  },
+  "categories": [
+    "Hotel",
+    "Bed & breakfast",
+    "Guest house",
+    "Lodge",
+    "Motel",
+    "Homestay",
+    "Resort hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "21 Middle St, Galle 80000",
+  "business_status": "OPEN"
+}

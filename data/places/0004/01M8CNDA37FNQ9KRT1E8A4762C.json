@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDA37FNQ9KRT1E8A4762C",
+  "name": "BonaVista Beach Hotel/Restaurant",
+  "coordinates": {
+    "latitude": 6.839124699999999,
+    "longitude": 81.8349136
+  },
+  "categories": [
+    "Bar",
+    "Hotel",
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "LK, 100 Main Point Rd, Arugam Bay 32500",
+  "business_status": "OPEN"
+}

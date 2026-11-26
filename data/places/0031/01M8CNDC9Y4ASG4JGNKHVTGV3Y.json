@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9Y4ASG4JGNKHVTGV3Y",
+  "name": "KPM hotel",
+  "coordinates": {
+    "latitude": 7.5638362,
+    "longitude": 81.7856175
+  },
+  "categories": [
+    "Indian restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "HQ7P+G6Q, Colombo - Ratnapura - Wellawaya - Batticaloa Rd, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

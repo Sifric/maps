@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD77JFY4N6NMDSXK0P3F",
+  "name": "VET LANKA Animal Hospital",
+  "coordinates": {
+    "latitude": 6.9708141,
+    "longitude": 81.0396703
+  },
+  "categories": [
+    "Animal hospital"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Hali-ela 90060",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCRT5VKD37T5R2G91C87",
+  "name": "BATTICALOA",
+  "coordinates": {
+    "latitude": 7.725580099999999,
+    "longitude": 81.68927529999999
+  },
+  "categories": [
+    "Cell phone store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "569-b Trinco Rd, Batticaloa",
+  "business_status": "OPEN"
+}

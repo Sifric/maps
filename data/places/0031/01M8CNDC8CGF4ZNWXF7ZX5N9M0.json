@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC8CGF4ZNWXF7ZX5N9M0",
+  "name": "Aboodi Farm",
+  "coordinates": {
+    "latitude": 7.933216799999999,
+    "longitude": 81.4732559
+  },
+  "categories": [
+    "Farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WFMF+J5, Kayankerni",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC944WKNR6FTZVYQ9TQD",
+  "name": "நானேஸ்வரி காலை உணவகம்",
+  "coordinates": {
+    "latitude": 7.7551349,
+    "longitude": 81.655638
+  },
+  "categories": [
+    "Breakfast restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QM44+3M, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD9NPV7JFEDW25M6E512",
+  "name": "SAN Mini Mart",
+  "coordinates": {
+    "latitude": 7.3959879,
+    "longitude": 81.12283819999999
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "welpallewela dambana, No 179",
+  "business_status": "OPEN"
+}

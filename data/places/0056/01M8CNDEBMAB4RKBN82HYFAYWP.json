@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEBMAB4RKBN82HYFAYWP",
+  "name": "Lagoon Bentota",
+  "coordinates": {
+    "latitude": 6.4311789,
+    "longitude": 80.0069582
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Yathramulla Road, Bentota",
+  "business_status": "OPEN"
+}

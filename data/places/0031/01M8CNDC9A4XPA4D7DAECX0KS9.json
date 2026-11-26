@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9A4XPA4D7DAECX0KS9",
+  "name": "Moulana Medicare",
+  "coordinates": {
+    "latitude": 7.688292,
+    "longitude": 81.73185769999999
+  },
+  "categories": [
+    "Hospital"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "02, New, Farm Road,Fareed Nagar New, Kattankudy 13100",
+  "business_status": "OPEN"
+}

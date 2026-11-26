@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD9WPGFYNMWGP479DAD1",
+  "name": "Ceylinco Insurance",
+  "coordinates": {
+    "latitude": 7.7138753,
+    "longitude": 81.71014129999999
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kallady",
+  "business_status": "OPEN"
+}

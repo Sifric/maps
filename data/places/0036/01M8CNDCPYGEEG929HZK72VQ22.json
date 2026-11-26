@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCPYGEEG929HZK72VQ22",
+  "name": "my home",
+  "coordinates": {
+    "latitude": 7.7831988,
+    "longitude": 81.6180009
+  },
+  "categories": [
+    "Garden"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJM9+76C, Thaikka Road, Eravur",
+  "business_status": "OPEN"
+}

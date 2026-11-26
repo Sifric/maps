@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDCHS7HRDXAT9Z7VFZ7FM",
+  "name": "HAPPY KIDS FUN WORLD BATTICALOA",
+  "coordinates": {
+    "latitude": 7.7277261,
+    "longitude": 81.6925459
+  },
+  "categories": [
+    "Amusement park"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMHV+38H, 46 Cemetery Rd, Batticaloa 30000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "3–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "3–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "3–10 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

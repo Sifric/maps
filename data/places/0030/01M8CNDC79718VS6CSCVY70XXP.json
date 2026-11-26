@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC79718VS6CSCVY70XXP",
+  "name": "HBI",
+  "coordinates": {
+    "latitude": 7.9079754,
+    "longitude": 81.5249628
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG5F+5XH, Oddamavadi",
+  "business_status": "OPEN"
+}

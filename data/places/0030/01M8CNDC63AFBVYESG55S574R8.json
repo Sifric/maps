@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDC63AFBVYESG55S574R8",
+  "name": "Jabeer Hopper Hut",
+  "coordinates": {
+    "latitude": 7.6769273,
+    "longitude": 81.73104119999999
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "6 Colombo - Batticaloa Hwy, Kattankudy",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 PM–4 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 PM–4 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 PM–4 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 PM–4 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 PM–4 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 PM–4 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8 PM–4 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

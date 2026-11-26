@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDA8ZCVCVS8YXK4YT0XK",
+  "name": "Sana’s Home",
+  "coordinates": {
+    "latitude": 7.6783914,
+    "longitude": 81.72512619999999
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPHG+779, Kattankudy",
+  "business_status": "OPEN"
+}

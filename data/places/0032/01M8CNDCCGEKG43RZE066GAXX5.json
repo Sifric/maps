@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCCGEKG43RZE066GAXX5",
+  "name": "Men's Hostel FHCS EUSL",
+  "coordinates": {
+    "latitude": 7.7286886,
+    "longitude": 81.6698993
+  },
+  "categories": [
+    "Hostel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMHC+C28, Batticaloa",
+  "business_status": "OPEN"
+}

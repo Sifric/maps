@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCEC5DYR91H8X57Q0Y25",
+  "name": "Central Dispensary",
+  "coordinates": {
+    "latitude": 7.5394136,
+    "longitude": 81.78708139999999
+  },
+  "categories": [
+    "Medical clinic"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQQP+QR8, main street, kaluthawalai, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDDF29TGJ2TZYBVAP6CJN",
+  "name": "Shiva Salon",
+  "coordinates": {
+    "latitude": 6.8768776,
+    "longitude": 81.0683791
+  },
+  "categories": [
+    "Barber shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\nV3G9+Q92, Passara Road, Pelwatta",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–8 PM"
+      ]
+    }
+  ],
+  "business_status": "CLOSED"
+}

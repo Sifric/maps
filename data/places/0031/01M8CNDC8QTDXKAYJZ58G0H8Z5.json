@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC8QTDXKAYJZ58G0H8Z5",
+  "name": "Salaam grocery",
+  "coordinates": {
+    "latitude": 7.9021259,
+    "longitude": 81.52488009999999
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG2F+VX2, Oddamavadi",
+  "business_status": "OPEN"
+}

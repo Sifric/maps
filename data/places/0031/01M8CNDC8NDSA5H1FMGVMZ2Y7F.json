@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC8NDSA5H1FMGVMZ2Y7F",
+  "name": "Aaysah shop",
+  "coordinates": {
+    "latitude": 7.900447499999999,
+    "longitude": 81.52328709999999
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG2F+58F, Oddamavadi",
+  "business_status": "OPEN"
+}

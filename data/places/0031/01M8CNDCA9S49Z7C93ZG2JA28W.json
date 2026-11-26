@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCA9S49Z7C93ZG2JA28W",
+  "name": "PK Store",
+  "coordinates": {
+    "latitude": 7.7615405,
+    "longitude": 81.63905079999999
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "55JANATHYPATHY ST., TSUNAMI HOUSING SCHEME, CARITAS PROJ. MYLAMPavely, Batticaloa 30000",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "01M8CNDCBS236CR5ZMYW4QC8FK",
+  "name": "Naval Paradise Villa & Holiday Home",
+  "coordinates": {
+    "latitude": 7.7482155,
+    "longitude": 81.6987594
+  },
+  "categories": [
+    "Villa",
+    "Event venue",
+    "Holiday home",
+    "Hotel",
+    "Homestay",
+    "Resort hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Murugan kovil, Road, Batticaloa 30000",
+  "business_status": "OPEN"
+}

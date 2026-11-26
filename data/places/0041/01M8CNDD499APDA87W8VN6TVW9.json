@@ -1,0 +1,76 @@
+{
+  "id": "01M8CNDD499APDA87W8VN6TVW9",
+  "name": "Gunarathne Electricals",
+  "coordinates": {
+    "latitude": 6.8464259,
+    "longitude": 79.9264827
+  },
+  "categories": [
+    "Electrical supply store",
+    "Electrical equipment supplier",
+    "Electrical installation service",
+    "Electrical products wholesaler",
+    "Electronics store",
+    "Hardware store",
+    "Light bulb supplier",
+    "Lighting store",
+    "Solar energy equipment supplier",
+    "Wire and cable supplier"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "75, Supermarket, Maharagama 10280",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8:30 AM–7 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

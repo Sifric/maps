@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDD45WZW5F8Y7SWWASCEZ",
+  "name": "Shyluk Beauty Salon",
+  "coordinates": {
+    "latitude": 7.7214597,
+    "longitude": 81.7030733
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "\nBatticaloa",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "Batticaloa"
+  ]
+}

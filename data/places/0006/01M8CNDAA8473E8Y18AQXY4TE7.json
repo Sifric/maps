@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAA8473E8Y18AQXY4TE7",
+  "name": "Sri Farm",
+  "coordinates": {
+    "latitude": 7.6861912,
+    "longitude": 81.6356321
+  },
+  "categories": [
+    "Farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MJPP+F7, Batticaloa",
+  "business_status": "OPEN"
+}

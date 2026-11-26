@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA7XA7CC0DMR6BGBR090",
+  "name": "Ape Gedara",
+  "coordinates": {
+    "latitude": 7.734985,
+    "longitude": 81.0274185
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "AB44",
+  "business_status": "OPEN"
+}

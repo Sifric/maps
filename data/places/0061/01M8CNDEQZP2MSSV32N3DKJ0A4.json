@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDEQZP2MSSV32N3DKJ0A4",
+  "name": "Hotel Sella",
+  "coordinates": {
+    "latitude": 9.3831221,
+    "longitude": 80.3960975
+  },
+  "categories": [
+    "Restaurant",
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Road, Kilinochchi",
+  "business_status": "OPEN"
+}

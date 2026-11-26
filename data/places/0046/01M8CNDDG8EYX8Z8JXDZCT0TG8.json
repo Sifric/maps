@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDG8EYX8Z8JXDZCT0TG8",
+  "name": "Sri mangalam flower shop",
+  "coordinates": {
+    "latitude": 7.7452685,
+    "longitude": 81.6715476
+  },
+  "categories": [
+    "Flower delivery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMWC+4J3, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6XHG43ARJJTAC7XREP",
+  "name": "Navakuda",
+  "coordinates": {
+    "latitude": 7.7240347,
+    "longitude": 81.69147389999999
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "383/15 Nadarajah Ln, Batticaloa",
+  "business_status": "OPEN"
+}

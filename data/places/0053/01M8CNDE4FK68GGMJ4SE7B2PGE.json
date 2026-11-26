@@ -1,0 +1,28 @@
+{
+  "id": "01M8CNDE4FK68GGMJ4SE7B2PGE",
+  "name": "Villa WaterLily",
+  "coordinates": {
+    "latitude": 6.0376449,
+    "longitude": 80.2480921
+  },
+  "categories": [
+    "Coffee shop",
+    "Catering food and drink supplier",
+    "Villa",
+    "Espresso bar",
+    "Event planner",
+    "Family restaurant",
+    "Hotel",
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "508 Akuressa Road, Galle 80000",
+  "business_status": "OPEN"
+}

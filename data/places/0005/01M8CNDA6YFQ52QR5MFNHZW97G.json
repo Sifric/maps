@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA6YFQ52QR5MFNHZW97G",
+  "name": "Aappa (Hopper) Shop",
+  "coordinates": {
+    "latitude": 7.4125,
+    "longitude": 81.736031
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "14 B440",
+  "business_status": "OPEN"
+}

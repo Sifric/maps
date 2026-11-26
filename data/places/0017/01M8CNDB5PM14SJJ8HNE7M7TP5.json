@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDB5PM14SJJ8HNE7M7TP5",
+  "name": "Place of worship",
+  "coordinates": {
+    "latitude": 7.6730138,
+    "longitude": 81.5704779
+  },
+  "categories": [
+    "Church"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Manmunai West",
+  "business_status": "OPEN"
+}

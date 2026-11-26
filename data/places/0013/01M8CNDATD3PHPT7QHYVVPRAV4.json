@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDATD3PHPT7QHYVVPRAV4",
+  "name": "Axis Engineering Construction",
+  "coordinates": {
+    "latitude": 7.353173399999999,
+    "longitude": 81.85103989999999
+  },
+  "categories": [
+    "Construction company"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Nintavur",
+  "business_status": "OPEN"
+}

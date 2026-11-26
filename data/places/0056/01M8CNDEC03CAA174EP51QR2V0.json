@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEC03CAA174EP51QR2V0",
+  "name": "Hostel V",
+  "coordinates": {
+    "latitude": 6.3973181,
+    "longitude": 80.0056792
+  },
+  "categories": [
+    "Bed & breakfast"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "392 Galle Rd, Bentota",
+  "business_status": "OPEN"
+}

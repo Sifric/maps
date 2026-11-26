@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDGAS97SQCF84NFC8JMJ",
+  "name": "Flower Poet",
+  "coordinates": {
+    "latitude": 7.731888799999999,
+    "longitude": 81.693077
+  },
+  "categories": [
+    "Florist"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Next to Singer showroom, No.73/5, road, Batticaloa 30000",
+  "business_status": "OPEN"
+}

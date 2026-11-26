@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCCGGPQ76Y5YW8ME4NZW",
+  "name": "Thasan Home",
+  "coordinates": {
+    "latitude": 7.8188059999999995,
+    "longitude": 81.549425
+  },
+  "categories": [
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "RG9X+GQ, Thavapuram",
+  "business_status": "OPEN"
+}

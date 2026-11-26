@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD6GB80MZBYVMDX2RV7F",
+  "name": "SN Shopping Center",
+  "coordinates": {
+    "latitude": 8.1997141,
+    "longitude": 81.4094764
+  },
+  "categories": [
+    "Shopping mall"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Palchenai, Trincomalee-Batticaloa Rd",
+  "business_status": "OPEN"
+}

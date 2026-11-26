@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA5PBA85QQA21K72RDK3",
+  "name": "Renuka Wine Stores",
+  "coordinates": {
+    "latitude": 7.4144361,
+    "longitude": 81.73485269999999
+  },
+  "categories": [
+    "Bar"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CP8M+3JM",
+  "business_status": "OPEN"
+}

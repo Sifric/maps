@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA1C6DAGD44RG9W9E6C7",
+  "name": "Kedo",
+  "coordinates": {
+    "latitude": 7.2917697,
+    "longitude": 81.6748557
+  },
+  "categories": [
+    "Ice cream shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kumarasiri Building, Cinema Rd, Ampara",
+  "business_status": "OPEN"
+}

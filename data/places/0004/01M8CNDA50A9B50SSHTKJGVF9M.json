@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA50A9B50SSHTKJGVF9M",
+  "name": "My Home Restaurant",
+  "coordinates": {
+    "latitude": 6.8385321999999995,
+    "longitude": 81.832903
+  },
+  "categories": [
+    "Italian restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "RRQM+F47, Arugam Bay 32500",
+  "business_status": "CLOSED_TEMPORARILY"
+}

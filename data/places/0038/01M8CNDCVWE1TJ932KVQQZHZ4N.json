@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCVWE1TJ932KVQQZHZ4N",
+  "name": "Air Green Travels",
+  "coordinates": {
+    "latitude": 7.7214928,
+    "longitude": 81.702854
+  },
+  "categories": [
+    "Travel agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PPC3+H5R, New Kalmunai Rd, Batticaloa",
+  "business_status": "OPEN"
+}

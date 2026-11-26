@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCWWN5HYDRMY994ERVW1",
+  "name": "Masfa Tex",
+  "coordinates": {
+    "latitude": 7.6830169999999995,
+    "longitude": 81.7272912
+  },
+  "categories": [
+    "Clothing store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kattankudy",
+  "business_status": "OPEN"
+}

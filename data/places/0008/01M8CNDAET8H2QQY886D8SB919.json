@@ -1,0 +1,20 @@
+{
+  "id": "01M8CNDAET8H2QQY886D8SB919",
+  "name": "Anchorage Villa",
+  "coordinates": {
+    "latitude": 5.9786301,
+    "longitude": 80.4163284
+  },
+  "categories": [
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

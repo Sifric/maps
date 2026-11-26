@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDE7BRKTXM298ADFNM84",
+  "name": "Salon Lavish Looks",
+  "coordinates": {
+    "latitude": 6.9848894999999995,
+    "longitude": 81.06162259999999
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "2/1, 67B, Ward 9 Passara road, Badulla",
+  "business_status": "OPEN"
+}

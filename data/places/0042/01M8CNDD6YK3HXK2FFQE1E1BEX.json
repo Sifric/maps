@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD6YK3HXK2FFQE1E1BEX",
+  "name": "BM மரக்கறிகடை",
+  "coordinates": {
+    "latitude": 7.472334099999999,
+    "longitude": 81.807839
+  },
+  "categories": [
+    "Vegetable wholesale market"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "FRC5+W6X, Pillaiyar kovil road, Periyakallar 1",
+  "business_status": "OPEN"
+}

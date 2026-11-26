@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDD5S61TMKZNEBGD7BZ7C",
+  "name": "Aathy Shakthy Tyre Shop",
+  "coordinates": {
+    "latitude": 7.9240461,
+    "longitude": 81.53606889999999
+  },
+  "categories": [
+    "Auto repair shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

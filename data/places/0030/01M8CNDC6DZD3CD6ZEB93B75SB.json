@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6DZD3CD6ZEB93B75SB",
+  "name": "ROYAL FRESH CHICKEN",
+  "coordinates": {
+    "latitude": 7.910893799999999,
+    "longitude": 81.5251976
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG6G+934, MPCS Rd, Oddamavadi",
+  "business_status": "OPEN"
+}

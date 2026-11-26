@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCQQ3HRMPZWJDKYP81XM",
+  "name": "NLDB pulyara dewalaya",
+  "coordinates": {
+    "latitude": 7.999765399999999,
+    "longitude": 81.2280931
+  },
+  "categories": [
+    "Museum"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Sinhapura",
+  "business_status": "OPEN"
+}

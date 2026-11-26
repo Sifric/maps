@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBD6DXVRGHNC396VSA4V",
+  "name": "Halpe EV charging station",
+  "coordinates": {
+    "latitude": 6.8877622999999994,
+    "longitude": 81.0427306
+  },
+  "categories": [
+    "Electric vehicle charging station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Udara, Badulla Rd, Helahalpe 70144",
+  "business_status": "OPEN"
+}

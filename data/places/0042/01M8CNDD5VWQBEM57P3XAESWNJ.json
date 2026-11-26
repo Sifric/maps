@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD5VWQBEM57P3XAESWNJ",
+  "name": "Passikudah taxi ck tour",
+  "coordinates": {
+    "latitude": 7.9191227,
+    "longitude": 81.5616062
+  },
+  "categories": [
+    "Taxi service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kalkudah",
+  "business_status": "OPEN"
+}

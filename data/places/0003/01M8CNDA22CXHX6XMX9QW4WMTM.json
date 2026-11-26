@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA22CXHX6XMX9QW4WMTM",
+  "name": "New Lanka Bakery",
+  "coordinates": {
+    "latitude": 7.3924689,
+    "longitude": 81.83856949999999
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "9RRQ+XCP, Kalyana Rd, Sainthamaruthu 32300",
+  "business_status": "OPEN"
+}

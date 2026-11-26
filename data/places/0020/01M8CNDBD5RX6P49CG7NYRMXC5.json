@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBD5RX6P49CG7NYRMXC5",
+  "name": "Electric Vehicle Charging Station - GF (30KW)",
+  "coordinates": {
+    "latitude": 7.324723,
+    "longitude": 80.661856
+  },
+  "categories": [
+    "Electric vehicle charging station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "8MF6+VPQ",
+  "business_status": "OPEN"
+}

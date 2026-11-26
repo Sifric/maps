@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDE309QBYQG3TFC8P3TZV",
+  "name": "Kithsara Cake Shop",
+  "coordinates": {
+    "latitude": 6.130729,
+    "longitude": 80.2605279
+  },
+  "categories": [
+    "Cake shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Kottwa, road, Wanduramba 80100",
+  "business_status": "OPEN"
+}

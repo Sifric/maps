@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDC1RB7ZWQJRYSS6VMVZH",
+  "name": "Bizra medical",
+  "coordinates": {
+    "latitude": 7.4329320999999995,
+    "longitude": 81.8140499
+  },
+  "categories": [
+    "Pharmacy"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "CRM7+5JR, Main street, Maruthamunai",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4:33 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4:33 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4:33 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4:33 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4:33 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4:33 AM–11 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

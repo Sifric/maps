@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCC8780X120X2QD58RMP",
+  "name": "Nilo's Guest House Batticalo",
+  "coordinates": {
+    "latitude": 7.7131862,
+    "longitude": 81.6960177
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Saint Michael's Street, 1st Floor, Batticaloa 30000",
+  "business_status": "OPEN"
+}

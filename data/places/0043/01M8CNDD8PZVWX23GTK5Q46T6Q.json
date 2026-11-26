@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD8PZVWX23GTK5Q46T6Q",
+  "name": "RSG home",
+  "coordinates": {
+    "latitude": 7.7094759999999996,
+    "longitude": 81.6956355
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "124-2 Central Road, Batticaloa",
+  "business_status": "OPEN"
+}

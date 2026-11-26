@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDCTQ6ZM4JX6CRK1H9P0",
+  "name": "Farjis and amal's residents",
+  "coordinates": {
+    "latitude": 7.9206692,
+    "longitude": 81.52789779999999
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kolikkadai Rd",
+  "business_status": "OPEN"
+}

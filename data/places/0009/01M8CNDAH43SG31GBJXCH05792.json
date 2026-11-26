@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAH43SG31GBJXCH05792",
+  "name": "Haritha Villas + Spa",
+  "coordinates": {
+    "latitude": 6.1287208,
+    "longitude": 80.1210588
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Thiranagama, 79, 28 Pinkanda Rd, Hikkaduwa 80244",
+  "business_status": "OPEN"
+}

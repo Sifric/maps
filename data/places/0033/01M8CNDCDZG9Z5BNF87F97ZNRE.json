@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCDZG9Z5BNF87F97ZNRE",
+  "name": "MOH Office - Eravur | சுகாதார வைத்திய அதிகாரி அலுவலகம்",
+  "coordinates": {
+    "latitude": 7.7836639,
+    "longitude": 81.6056262
+  },
+  "categories": [
+    "Public medical center"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJM4+F76, Eravur",
+  "business_status": "OPEN"
+}

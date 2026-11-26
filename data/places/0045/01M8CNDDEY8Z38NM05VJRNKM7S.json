@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDDEY8Z38NM05VJRNKM7S",
+  "name": "Venom salon",
+  "coordinates": {
+    "latitude": 6.8064391,
+    "longitude": 80.9545689
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\nRX43+JVX, Haputalegama Rd, Diyatalawa",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "Open 24 hours"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

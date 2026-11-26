@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDG48M7ETDTEADR4XKS6",
+  "name": "Cikan shop",
+  "coordinates": {
+    "latitude": 7.732983699999999,
+    "longitude": 81.6914958
+  },
+  "categories": [
+    "Bar tabac"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "85 Kumara Kovil Veethy, Batticaloa",
+  "business_status": "CLOSED"
+}

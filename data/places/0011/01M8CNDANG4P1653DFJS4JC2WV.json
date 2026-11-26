@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDANG4P1653DFJS4JC2WV",
+  "name": "Supiri Bus Booking",
+  "coordinates": {
+    "latitude": 7.3944301999999995,
+    "longitude": 81.83440829999999
+  },
+  "categories": [
+    "Bus ticket agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "No.18, First Floor, Market Complex Main Street, Sainthamaruthu 07 Sainthamaruthu 07, 32280",
+  "business_status": "OPEN"
+}

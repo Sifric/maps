@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCQD8R2TKCYYW8HSJ622",
+  "name": "Tourist Attraction View Point of Eravur",
+  "coordinates": {
+    "latitude": 7.7658233999999995,
+    "longitude": 81.6167229
+  },
+  "categories": [
+    "Tourist attraction"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJ88+8MH, Arumugasthan Public Library, Eravur",
+  "business_status": "OPEN"
+}

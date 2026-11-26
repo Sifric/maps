@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAFHW8XFJPGJ3S1BR2X7",
+  "name": "House for rent",
+  "coordinates": {
+    "latitude": 7.292564,
+    "longitude": 81.859121
+  },
+  "categories": [
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "7VR5+QH5, Oluvil",
+  "business_status": "OPEN"
+}

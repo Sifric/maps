@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAGAJV0KYMYB0FA9NAKZ",
+  "name": "Mahaweli Campsite",
+  "coordinates": {
+    "latitude": 7.6602524999999995,
+    "longitude": 80.99604409999999
+  },
+  "categories": [
+    "Campground"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MX6W+4C3, Kumbukoya",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDAAGDKMZDFWZ7D7KP8AE",
+  "name": "Mubarak Hotel",
+  "coordinates": {
+    "latitude": 7.416543,
+    "longitude": 81.8101351
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Kalmunai",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD1ZFM3PYP32FT243NJ8",
+  "name": "National Water Supply And Drainage Bord",
+  "coordinates": {
+    "latitude": 7.913449099999999,
+    "longitude": 81.5243855
+  },
+  "categories": [
+    "Drinking water supplier"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG7F+9QC, Main St, Oddamavadi",
+  "business_status": "OPEN"
+}

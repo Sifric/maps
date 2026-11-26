@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC8Q0WJ67WF93YPXX73B",
+  "name": "NUGA STORES",
+  "coordinates": {
+    "latitude": 7.916400299999999,
+    "longitude": 81.5211994
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG8C+HF8, Post Office Rd, Oddamavadi",
+  "business_status": "OPEN"
+}

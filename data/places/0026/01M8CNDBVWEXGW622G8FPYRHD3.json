@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBVWEXGW622G8FPYRHD3",
+  "name": "Renuka Hardware",
+  "coordinates": {
+    "latitude": 7.3828774,
+    "longitude": 81.21895889999999
+  },
+  "categories": [
+    "Hardware store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Welikumbura",
+  "business_status": "OPEN"
+}

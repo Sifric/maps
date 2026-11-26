@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEMH244SGP7JFMBEZ5T7",
+  "name": "Restaurant and cool bar",
+  "coordinates": {
+    "latitude": 9.7834703,
+    "longitude": 80.032371
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Q2MJ+CW, Tellippalai",
+  "business_status": "OPEN"
+}

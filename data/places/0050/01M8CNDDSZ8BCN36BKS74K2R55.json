@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDSZ8BCN36BKS74K2R55",
+  "name": "chai hub",
+  "coordinates": {
+    "latitude": 6.0335072,
+    "longitude": 80.2372166
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "26MP+CV4, Matara Rd, Galle",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4:30 PM–2 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4:30 PM–2 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4:30 PM–2 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4:30 PM–2 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4:30 PM–2 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4:30 PM–2 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4:30 PM–2 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

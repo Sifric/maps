@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDENZKYZNHZX006ANPTPJ",
+  "name": "Fruit shop",
+  "coordinates": {
+    "latitude": 9.8165855,
+    "longitude": 80.1348738
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "R48P+F67, Valvettithurai",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAM2ARQFSZ3J5ESNQ5HS",
+  "name": "Sulthan family",
+  "coordinates": {
+    "latitude": 7.3674021,
+    "longitude": 81.8104843
+  },
+  "categories": [
+    "Home builder"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "180 Hospital Rd, Sammanthurai",
+  "business_status": "OPEN"
+}

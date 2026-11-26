@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9RC39DN3SRAHM63ZAT",
+  "name": "Sanjeevi Hotel",
+  "coordinates": {
+    "latitude": 7.8088153,
+    "longitude": 81.5662098
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Mawadiwembu Hospital",
+  "business_status": "OPEN"
+}

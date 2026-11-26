@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD3VHRPKGY2QM3046M3B",
+  "name": "Christain Cemetery",
+  "coordinates": {
+    "latitude": 7.6932252,
+    "longitude": 81.72118019999999
+  },
+  "categories": [
+    "Cemetery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPVC+7FV, Kallady",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCW9SWEWY99DDTQ05TD7",
+  "name": "Book shop",
+  "coordinates": {
+    "latitude": 7.685326399999999,
+    "longitude": 81.7259349
+  },
+  "categories": [
+    "Book store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPPG+49M, Barakaath book shop, Lane, Kattankudy 30100",
+  "business_status": "OPEN"
+}

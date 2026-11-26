@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCDH6KG9YXSVNQW91PZT",
+  "name": "Medical clinic PHM Thikkodai",
+  "coordinates": {
+    "latitude": 7.534792299999999,
+    "longitude": 81.67850589999999
+  },
+  "categories": [
+    "Health consultant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GMMH+WC6, Thikkodai",
+  "business_status": "OPEN"
+}

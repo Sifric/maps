@@ -1,0 +1,27 @@
+{
+  "id": "01M8CNDEZF1KDDKBZ4HH3XT65F",
+  "name": "ReeCha",
+  "coordinates": {
+    "latitude": 9.5721741,
+    "longitude": 80.4156556
+  },
+  "categories": [
+    "Theme park",
+    "Amusement park",
+    "Organic farm",
+    "Resort hotel",
+    "Restaurant",
+    "Supermarket",
+    "Tourist attraction"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Kottandarkulam, 42556",
+  "business_status": "OPEN"
+}

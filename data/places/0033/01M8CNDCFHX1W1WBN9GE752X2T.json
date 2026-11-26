@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCFHX1W1WBN9GE752X2T",
+  "name": "Santa Maria de Montserrat",
+  "coordinates": {
+    "latitude": 7.7235065999999994,
+    "longitude": 81.6660613
+  },
+  "categories": [
+    "Church"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMF8+CC3, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA4Y3Z37B1M1XPJZ4SAG",
+  "name": "SUNDAZE",
+  "coordinates": {
+    "latitude": 6.8402062,
+    "longitude": 81.83347739999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Main Street, Arugam Bay",
+  "business_status": "CLOSED_TEMPORARILY"
+}

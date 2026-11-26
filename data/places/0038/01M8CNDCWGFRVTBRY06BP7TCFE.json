@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCWGFRVTBRY06BP7TCFE",
+  "name": "Sitril Tea",
+  "coordinates": {
+    "latitude": 7.6734214,
+    "longitude": 81.73683969999999
+  },
+  "categories": [
+    "Tea store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPFP+9RG, Theruneertukeany Rd",
+  "business_status": "OPEN"
+}

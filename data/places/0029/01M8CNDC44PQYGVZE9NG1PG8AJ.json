@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDC44PQYGVZE9NG1PG8AJ",
+  "name": "Wajira driving school-Kandy",
+  "coordinates": {
+    "latitude": 7.2153171,
+    "longitude": 80.5980762
+  },
+  "categories": [
+    "Drivers license training school"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Gelioya",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7:30 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7:30 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7:30 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7:30 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7:30 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7:30 AM–1 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7:30 AM–1 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

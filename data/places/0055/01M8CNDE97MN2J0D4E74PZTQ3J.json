@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE97MN2J0D4E74PZTQ3J",
+  "name": "STD suppermarket",
+  "coordinates": {
+    "latitude": 6.2121571,
+    "longitude": 80.1078424
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "6465+V48, බොරලුවතොට",
+  "business_status": "OPEN"
+}

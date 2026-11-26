@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6BZ38H3NYCDVAS59J0",
+  "name": "Mana Hotel",
+  "coordinates": {
+    "latitude": 7.9438451,
+    "longitude": 81.5071595
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WGV4+8XR, Trincomalee-Batticaloa Rd, Thirukkondaiadimadu",
+  "business_status": "OPEN"
+}

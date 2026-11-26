@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCB7H54ZK09DB7Y1CQKQ",
+  "name": "Take It Easy",
+  "coordinates": {
+    "latitude": 7.7162606,
+    "longitude": 81.7123678
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "30 Saravana Rd, Kallady",
+  "business_status": "OPEN"
+}

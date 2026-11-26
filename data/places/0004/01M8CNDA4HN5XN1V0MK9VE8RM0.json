@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA4HN5XN1V0MK9VE8RM0",
+  "name": "DINE OUT",
+  "coordinates": {
+    "latitude": 7.2263462999999994,
+    "longitude": 81.8502542
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "237 Colombo - Batticaloa Hwy, Akkaraipattu",
+  "business_status": "CLOSED_TEMPORARILY"
+}

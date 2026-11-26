@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCC3W3DEA97NB20C4B8S",
+  "name": "Hotel Beachway",
+  "coordinates": {
+    "latitude": 7.6816952999999994,
+    "longitude": 81.7317667
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPJJ+MM6, 127, Beach Road, Hizbullah Stadium Rd, Kattankudy",
+  "business_status": "OPEN"
+}

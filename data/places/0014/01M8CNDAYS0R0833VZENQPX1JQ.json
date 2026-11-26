@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAYS0R0833VZENQPX1JQ",
+  "name": "Happy home",
+  "coordinates": {
+    "latitude": 7.3472861,
+    "longitude": 81.85126149999999
+  },
+  "categories": [
+    "Housing society"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "17b 2nd Cross St, Nintavur",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDD520DJSE4FCKD4PR5GC",
+  "name": "Ganesha Jewellery",
+  "coordinates": {
+    "latitude": 7.863653599999999,
+    "longitude": 81.5386468
+  },
+  "categories": [
+    "Jewelry store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

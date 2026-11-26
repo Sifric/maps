@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA4YVE9RFFP0EB0TCH7X",
+  "name": "New kochi hotel",
+  "coordinates": {
+    "latitude": 6.8687556999999995,
+    "longitude": 81.83190739999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Mine street, Panama Rd, Pottuvil 32500",
+  "business_status": "OPEN"
+}

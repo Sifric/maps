@@ -1,0 +1,62 @@
+{
+  "id": "01M8CNDFZFQH8A88JCPWREW4M0",
+  "name": "Medical Centre Neluwa",
+  "coordinates": {
+    "latitude": 6.911554499999999,
+    "longitude": 81.0099056
+  },
+  "categories": [
+    "Family practice physician"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4:30–7:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4:30–7:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4:30–7:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4:30–7:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4:30–7:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4:30–7:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4:30–7:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDCCEWXVCFYZG10ZH6AP5",
+  "name": "Katugaha Homestay",
+  "coordinates": {
+    "latitude": 6.8945355,
+    "longitude": 80.9930115
+  },
+  "categories": [
+    "Lodging",
+    "Vacation rental",
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "49, Weu-wella Katugaha Maliththa, Bandarawela 90100",
+  "business_status": "OPEN"
+}

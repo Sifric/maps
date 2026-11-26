@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEPX6X3GC2ABJHY5DVVE",
+  "name": "SiMa Hotel",
+  "coordinates": {
+    "latitude": 9.6578863,
+    "longitude": 80.0221306
+  },
+  "categories": [
+    "Bed & breakfast"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "127 St.Patrick Rd, Jaffna 40000",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDG839ZQS13WN5AJNSRR",
+  "name": "Flower Champ",
+  "coordinates": {
+    "latitude": 7.7252269,
+    "longitude": 81.69322919999999
+  },
+  "categories": [
+    "Florist"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "68 Barathi Ln, Batticaloa 30000",
+  "business_status": "OPEN"
+}

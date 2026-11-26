@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE3Z24Z9KWA2GAMV2TCS",
+  "name": "The Lion Restaurant",
+  "coordinates": {
+    "latitude": 6.4234086,
+    "longitude": 79.9983106
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "CXFX+987, Galle Rd, Bentota 80500",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "10:30 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "10:30 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "10:30 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "10:30 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "10:30 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "10:30 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "10:30 AM–10 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

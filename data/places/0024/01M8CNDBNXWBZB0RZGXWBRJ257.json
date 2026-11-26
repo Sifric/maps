@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDBNXWBZB0RZGXWBRJ257",
+  "name": "Sugees Wedding Cars Hire/ Taxi Batticaloa",
+  "coordinates": {
+    "latitude": 7.7177175,
+    "longitude": 81.711715
+  },
+  "categories": [
+    "Van rental agency",
+    "Bus tour agency",
+    "Taxi service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "24, 11B New Dutch Bar Road, Kallady 30000",
+  "business_status": "OPEN"
+}

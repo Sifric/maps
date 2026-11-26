@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC689JS26789YVS2R0FY",
+  "name": "Mr.chef hotel & restorend",
+  "coordinates": {
+    "latitude": 7.921375599999999,
+    "longitude": 81.5303608
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WGCJ+H4, Oddamavadi",
+  "business_status": "OPEN"
+}

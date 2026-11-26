@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDENHT4ETY4E39AJXQ02Q",
+  "name": "Jaffna Food Corner",
+  "coordinates": {
+    "latitude": 9.662727,
+    "longitude": 80.02959369999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "33 Kachcheri Nallur Rd, Jaffna",
+  "business_status": "OPEN"
+}

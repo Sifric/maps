@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDC9PRAKQYGC18P9016AE",
+  "name": "AMMA HOTEL",
+  "coordinates": {
+    "latitude": 7.7690151,
+    "longitude": 81.6139273
+  },
+  "categories": [
+    "Family restaurant",
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ],
+    "names": [
+      "Amma hotel"
+    ]
+  },
+  "address": "QJ97+JGG, Trincomalee-Batticaloa Rd, Eravur",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "QJ97+JH3, Main St, Eravur"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCQS32MQN3EDJEP19CEM",
+  "name": "Thanthai Selvar Park",
+  "coordinates": {
+    "latitude": 7.7145226,
+    "longitude": 81.6936643
+  },
+  "categories": [
+    "Park"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM7V+RF3, Bus Station, Munai St, Batticaloa",
+  "business_status": "OPEN"
+}

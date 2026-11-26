@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDA7FNWMMCMA1GKH0B4GY",
+  "name": "Chai Shack by The Tasty Food",
+  "coordinates": {
+    "latitude": 6.0365028999999994,
+    "longitude": 80.24651109999999
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "26PW+JJ2, Nugaduwa",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "3 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "3 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "3 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "3 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "3 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "3 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "3 PM–1 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

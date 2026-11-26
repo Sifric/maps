@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDDKANAFD5BGMD5EKT6J",
+  "name": "Lanka Filling Station - Pudumandapaththady",
+  "coordinates": {
+    "latitude": 7.661880399999999,
+    "longitude": 81.6626704
+  },
+  "categories": [
+    "Gas station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MM67+Q33, Mandapathadi, Batticaloa",
+  "business_status": "OPEN"
+}

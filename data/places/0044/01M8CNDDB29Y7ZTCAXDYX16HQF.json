@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDB29Y7ZTCAXDYX16HQF",
+  "name": "Mathan Salon",
+  "coordinates": {
+    "latitude": 7.7322277999999995,
+    "longitude": 81.6931943
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Batticaloa",
+  "business_status": "OPEN"
+}

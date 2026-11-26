@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD56E10SPV4P0V1TTTY0",
+  "name": "Gallella Clinic",
+  "coordinates": {
+    "latitude": 7.905962199999999,
+    "longitude": 81.0647826
+  },
+  "categories": [
+    "Medical clinic"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "W348+937, Maradankadawala-Habarana-Thirukkondaiadimadu Hwy, Gallella",
+  "business_status": "OPEN"
+}

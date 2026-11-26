@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDA1SMTRSZPGCKWNZ9M70",
+  "name": "Midigama Fruit Farm",
+  "coordinates": {
+    "latitude": 5.9850625,
+    "longitude": 80.3923125
+  },
+  "categories": [
+    "Organic farm",
+    "Farmstay",
+    "Hostel",
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "X9PR+2WH, Ahangama",
+  "business_status": "OPEN"
+}

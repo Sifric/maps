@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCMTJKTETHPMYN1H7TTM",
+  "name": "Kattankudy",
+  "coordinates": {
+    "latitude": 7.6856276999999995,
+    "longitude": 81.7277385
+  },
+  "categories": [
+    "Park"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPPH+432, Telecom Rd, Kattankudy",
+  "business_status": "OPEN"
+}

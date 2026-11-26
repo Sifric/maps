@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC774HQ0C7V8MPR2Z46C",
+  "name": "Masmiya Hotel& BAKERY",
+  "coordinates": {
+    "latitude": 7.9117668,
+    "longitude": 81.5253049
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG6G+P43, MPCS Rd, Oddamavadi",
+  "business_status": "OPEN"
+}

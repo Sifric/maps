@@ -1,0 +1,71 @@
+{
+  "id": "01M8CNDEZJXECMQS6NF6BN5ET4",
+  "name": "Power Gym",
+  "coordinates": {
+    "latitude": 9.6703627,
+    "longitude": 80.0282757
+  },
+  "categories": [
+    "Gym"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "218 Temple Rd, Jaffna",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5–10 AM",
+        "3:30–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5–10 AM",
+        "3:30–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5–10 AM",
+        "3:30–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5–10 AM",
+        "3:30–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5–10 AM",
+        "3:30–9 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5–10 AM",
+        "3:30–9 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

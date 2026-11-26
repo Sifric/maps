@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDAGJJ3BYRJDRVXJDA5V1",
+  "name": "Villa in Sri Lanka",
+  "coordinates": {
+    "latitude": 6.5228091,
+    "longitude": 80.39375629999999
+  },
+  "categories": [
+    "Vacation home rental agency",
+    "Service establishment",
+    "Short term apartment rental agency",
+    "Tour operator",
+    "Villa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

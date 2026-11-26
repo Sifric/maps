@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDC3VV4HZ33BWECNW2QQ",
+  "name": "Sri Residence",
+  "coordinates": {
+    "latitude": 7.7274926,
+    "longitude": 81.7023584
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "35, 50 Sinna Uppodai Rd, Batticaloa",
+  "business_status": "OPEN"
+}

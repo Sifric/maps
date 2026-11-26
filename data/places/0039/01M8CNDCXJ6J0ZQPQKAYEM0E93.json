@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCXJ6J0ZQPQKAYEM0E93",
+  "name": "Faiz Timber Shop",
+  "coordinates": {
+    "latitude": 7.6742523,
+    "longitude": 81.7324477
+  },
+  "categories": [
+    "Lumber store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPFJ+PX4, Colombo - Ratnapura - Wellawaya - Batticaloa Rd, Kattankudy",
+  "business_status": "OPEN"
+}

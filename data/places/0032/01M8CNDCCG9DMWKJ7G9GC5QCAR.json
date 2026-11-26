@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCCG9DMWKJ7G9GC5QCAR",
+  "name": "Siam View Hostel",
+  "coordinates": {
+    "latitude": 7.713161599999999,
+    "longitude": 81.6983608
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM7X+789, Main Street, Batticaloa 32500",
+  "business_status": "OPEN"
+}

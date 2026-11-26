@@ -1,0 +1,77 @@
+{
+  "id": "01M8CNDAM8KXGJ0PRKDFKBAC1V",
+  "name": "Medical Centre Damana",
+  "coordinates": {
+    "latitude": 7.2049733,
+    "longitude": 81.6521724
+  },
+  "categories": [
+    "Medical Center",
+    "Child health care center",
+    "Diabetes center",
+    "Health counselor",
+    "Infectious disease physician",
+    "Medical group",
+    "Public medical center"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "junction, Damana 32014",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7–8 AM",
+        "4:30–8:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7–8 AM",
+        "4:30–8:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7–8 AM",
+        "4:30–8 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7–8 AM",
+        "4:30–8:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7–8 AM",
+        "4:30–8:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7–8 AM",
+        "12:30–4:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7–8 AM",
+        "4:30–8:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

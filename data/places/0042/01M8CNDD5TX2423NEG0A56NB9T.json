@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD5TX2423NEG0A56NB9T",
+  "name": "Asmi home",
+  "coordinates": {
+    "latitude": 7.9852256,
+    "longitude": 81.46989239999999
+  },
+  "categories": [
+    "Car wash"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Punanai East, Kayankerni",
+  "business_status": "OPEN"
+}

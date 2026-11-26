@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCAMYA5A9B91QJRBAB8N",
+  "name": "Hamdas Rooms & Family Restaurant",
+  "coordinates": {
+    "latitude": 7.9449136,
+    "longitude": 81.49328539999999
+  },
+  "categories": [
+    "Family restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Next to Rahmath Nagar Masjid, Colombo Road, Oddamavadi 30420",
+  "business_status": "OPEN"
+}

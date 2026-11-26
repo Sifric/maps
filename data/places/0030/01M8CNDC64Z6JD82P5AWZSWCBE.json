@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDC64Z6JD82P5AWZSWCBE",
+  "name": "Aafif's Royal Dine",
+  "coordinates": {
+    "latitude": 7.911017299999999,
+    "longitude": 81.5261309
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPCS Rd, Oddamavadi",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–1 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–1 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–1 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–1 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7 AM–1 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–1 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7 AM–1 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

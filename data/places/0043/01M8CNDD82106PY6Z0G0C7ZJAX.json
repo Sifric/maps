@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD82106PY6Z0G0C7ZJAX",
+  "name": "Arasaditivu Bus Stant",
+  "coordinates": {
+    "latitude": 7.5955802,
+    "longitude": 81.7255897
+  },
+  "categories": [
+    "Bus charter"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "HPWG+66P, Batticaloa",
+  "business_status": "OPEN"
+}

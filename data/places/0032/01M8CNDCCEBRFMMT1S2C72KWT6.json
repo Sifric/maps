@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCCEBRFMMT1S2C72KWT6",
+  "name": "NASFAR Home",
+  "coordinates": {
+    "latitude": 8.0462492,
+    "longitude": 81.1849289
+  },
+  "categories": [
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "25WM+FX, Kattuwanvila",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBD3BDZQYXSM9GMRF74B",
+  "name": "Electric Vehicle Charging Station",
+  "coordinates": {
+    "latitude": 7.9660858999999995,
+    "longitude": 81.369531
+  },
+  "categories": [
+    "Electric vehicle charging station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "X989+FR, Kayankerni",
+  "business_status": "OPEN"
+}

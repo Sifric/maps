@@ -1,0 +1,23 @@
+{
+  "id": "01M8CND9ZGEMZETWVWJTGCKKWR",
+  "name": "ATI BATTICALOA",
+  "coordinates": {
+    "latitude": 7.657631299999999,
+    "longitude": 81.7408969
+  },
+  "categories": [
+    "University"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MP5R+392, Main Street, 30000",
+  "business_status": "OPEN"
+}

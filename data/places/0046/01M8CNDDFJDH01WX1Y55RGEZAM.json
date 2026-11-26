@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDFJDH01WX1Y55RGEZAM",
+  "name": "VKP Shop",
+  "coordinates": {
+    "latitude": 7.6381163,
+    "longitude": 81.75758189999999
+  },
+  "categories": [
+    "Dress store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Nagandarpody road Puthukkudiyiruppu-04, 30158",
+  "business_status": "OPEN"
+}

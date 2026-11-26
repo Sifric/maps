@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAFG41HV49270HR4DHXH",
+  "name": "Worker's Room",
+  "coordinates": {
+    "latitude": 7.5702104,
+    "longitude": 81.7352631
+  },
+  "categories": [
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Katchenai Rd, Kokkaddisolai",
+  "business_status": "OPEN"
+}

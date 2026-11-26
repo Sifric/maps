@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA14SYDD46AGV0XXT95G",
+  "name": "Beach Coffee Shop (தேனீர் கடை)",
+  "coordinates": {
+    "latitude": 7.3895269,
+    "longitude": 81.8454234
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9RQW+Q49, Karaitivu 32300",
+  "business_status": "OPEN"
+}

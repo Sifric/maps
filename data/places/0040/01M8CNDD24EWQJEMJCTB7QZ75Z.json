@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD24EWQJEMJCTB7QZ75Z",
+  "name": "Sarjoon (CA)",
+  "coordinates": {
+    "latitude": 7.9214008,
+    "longitude": 81.52543639999999
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No 544/A,Mahmood alim road, 5, Batticaloa",
+  "business_status": "OPEN"
+}

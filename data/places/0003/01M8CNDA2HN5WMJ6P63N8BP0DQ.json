@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA2HN5WMJ6P63N8BP0DQ",
+  "name": "Lithu mass",
+  "coordinates": {
+    "latitude": 7.4246183,
+    "longitude": 81.8151383
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CRF8+R3R, A4, Pandiruppu 32300",
+  "business_status": "OPEN"
+}

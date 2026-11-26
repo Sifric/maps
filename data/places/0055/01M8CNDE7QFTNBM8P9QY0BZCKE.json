@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDE7QFTNBM8P9QY0BZCKE",
+  "name": "Lanka Sathosa",
+  "coordinates": {
+    "latitude": 6.1720673999999995,
+    "longitude": 80.1789036
+  },
+  "categories": [
+    "Supermarket"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "55CH+RHC, B128, Baddegama",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12–7 AM",
+        "9:30 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9:30 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9:30 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9:30 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9:30 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9:30 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12–7 AM",
+        "9:30 AM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCC0AJMV3BN87K6RZD3P",
+  "name": "Aqua Marine Beach Hotel",
+  "coordinates": {
+    "latitude": 7.9177329,
+    "longitude": 81.5677793
+  },
+  "categories": [
+    "Extended stay hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kuburumoolai Road, Kalkudah 30410",
+  "business_status": "OPEN"
+}

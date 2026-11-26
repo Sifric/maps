@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDETQS1SG1RWTNEHV4Z2S",
+  "name": "Jaffna Bus Stand",
+  "coordinates": {
+    "latitude": 9.6668331,
+    "longitude": 80.0119686
+  },
+  "categories": [
+    "Bus stop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Hospital Rd, Jaffna",
+  "business_status": "OPEN"
+}

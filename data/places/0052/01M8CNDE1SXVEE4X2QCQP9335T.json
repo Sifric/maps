@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE1SXVEE4X2QCQP9335T",
+  "name": "Galle Market",
+  "coordinates": {
+    "latitude": 6.0359114,
+    "longitude": 80.219549
+  },
+  "categories": [
+    "Bus stop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Galle 80000",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA8ACA79WPG30W78RG89",
+  "name": "MittyShima Farm",
+  "coordinates": {
+    "latitude": 8.1045768,
+    "longitude": 81.4535752
+  },
+  "categories": [
+    "Farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "4F33+RC, Arukarkudah",
+  "business_status": "OPEN"
+}

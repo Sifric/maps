@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD0JZJRK0D206ARZWBTN",
+  "name": "Smart Fashion",
+  "coordinates": {
+    "latitude": 7.922256399999999,
+    "longitude": 81.53077189999999
+  },
+  "categories": [
+    "Clothing store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WGCJ+W82, Oddamavadi",
+  "business_status": "OPEN"
+}

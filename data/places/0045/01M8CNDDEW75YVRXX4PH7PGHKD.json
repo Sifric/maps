@@ -1,0 +1,31 @@
+{
+  "id": "01M8CNDDEW75YVRXX4PH7PGHKD",
+  "name": "PL AMAZING LIFE",
+  "coordinates": {
+    "latitude": 7.5551219,
+    "longitude": 81.6861871
+  },
+  "categories": [
+    "Import export company",
+    "Chicken shop",
+    "Cotton supplier",
+    "Dress store",
+    "Gas station",
+    "Head start center",
+    "Hotel",
+    "Media company",
+    "Record store",
+    "Shoe factory"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Panichiyady Munmary, Kokkadisholai 30160",
+  "business_status": "OPEN"
+}

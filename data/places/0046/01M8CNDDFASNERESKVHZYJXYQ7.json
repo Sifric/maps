@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDFASNERESKVHZYJXYQ7",
+  "name": "IMASHA BOOK SHOP",
+  "coordinates": {
+    "latitude": 7.7886956,
+    "longitude": 81.0032057
+  },
+  "categories": [
+    "Book store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Nuwaragala",
+  "business_status": "OPEN"
+}

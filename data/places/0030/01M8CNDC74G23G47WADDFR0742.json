@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC74G23G47WADDFR0742",
+  "name": "Raajan Farm",
+  "coordinates": {
+    "latitude": 7.540113,
+    "longitude": 81.7211423
+  },
+  "categories": [
+    "Agricultural production"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GPRC+2FR, Kanthipuram",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA2GQ20BMNF7G2R9VY96",
+  "name": "New Hani Bakery",
+  "coordinates": {
+    "latitude": 7.2228774,
+    "longitude": 81.8502128
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "6VF2+534, Union Road Bus Stop, Akkaraipattu - Kalmunai Main Rd, Akkaraipattu",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCV88WF4MPK8TVRFQJRP",
+  "name": "Derick_Edan",
+  "coordinates": {
+    "latitude": 7.728268699999999,
+    "longitude": 81.6915121
+  },
+  "categories": [
+    "Transportation service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Batticaloa",
+  "business_status": "OPEN"
+}

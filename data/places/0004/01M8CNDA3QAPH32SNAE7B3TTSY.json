@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA3QAPH32SNAE7B3TTSY",
+  "name": "Shanvi Bake House",
+  "coordinates": {
+    "latitude": 7.1019393,
+    "longitude": 81.84276059999999
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Thirukkovil",
+  "business_status": "OPEN"
+}

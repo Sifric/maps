@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCVGS4DWEP3DDR49JM7N",
+  "name": "Meera Jumma Masjid",
+  "coordinates": {
+    "latitude": 7.6849305999999995,
+    "longitude": 81.7243173
+  },
+  "categories": [
+    "Mosque"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPMF+XPG, Kattankudy",
+  "business_status": "OPEN"
+}

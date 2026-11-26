@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD0FF8ETBPYSJRN995N2",
+  "name": "சீமா வெஜிடபில்ஸ் புரூட் சென்டர்",
+  "coordinates": {
+    "latitude": 7.930520199999999,
+    "longitude": 81.51205279999999
+  },
+  "categories": [
+    "Fruit and vegetable store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Trincomalee-Batticaloa Rd",
+  "business_status": "OPEN"
+}

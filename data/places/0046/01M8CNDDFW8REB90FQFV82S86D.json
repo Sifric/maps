@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDFW8REB90FQFV82S86D",
+  "name": "Varonikka city market & store",
+  "coordinates": {
+    "latitude": 7.755524299999999,
+    "longitude": 81.6542973
+  },
+  "categories": [
+    "Home goods store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QM43+9W, Batticaloa",
+  "business_status": "OPEN"
+}

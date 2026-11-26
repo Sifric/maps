@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAGP5E93N7TEWDEDW4VH",
+  "name": "JJ's Villa",
+  "coordinates": {
+    "latitude": 7.391146699999999,
+    "longitude": 81.83679479999999
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "406A, 1 Al Hilal Rd, Sainthamaruthu 32280",
+  "business_status": "OPEN"
+}

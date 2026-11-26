@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEKC5PXD89VYRWWFRWRS",
+  "name": "Lucky Sweets & Bakery",
+  "coordinates": {
+    "latitude": 6.0536889,
+    "longitude": 80.2184245
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Galle 80000",
+  "business_status": "OPEN"
+}

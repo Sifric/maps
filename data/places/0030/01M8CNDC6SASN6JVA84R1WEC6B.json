@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6SASN6JVA84R1WEC6B",
+  "name": "Fahim",
+  "coordinates": {
+    "latitude": 7.6849538,
+    "longitude": 81.7295195
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPMH+XRJ, Kattankudy",
+  "business_status": "OPEN"
+}

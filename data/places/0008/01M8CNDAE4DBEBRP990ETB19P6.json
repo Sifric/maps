@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAE4DBEBRP990ETB19P6",
+  "name": "Catray Inn",
+  "coordinates": {
+    "latitude": 7.4130464,
+    "longitude": 81.8347355
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Udayar Road, Kalmunai 32300",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC76WNJVJXENNTW9N0MC",
+  "name": "Lank Bakery",
+  "coordinates": {
+    "latitude": 7.647218,
+    "longitude": 81.7475224
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Thalankuda Junction, A4 Colombo-Ratnapura-Wellawaya-Batticaloa, Highway, Thalankudah",
+  "business_status": "OPEN"
+}

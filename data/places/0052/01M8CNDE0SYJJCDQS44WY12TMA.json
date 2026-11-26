@@ -1,0 +1,71 @@
+{
+  "id": "01M8CNDE0SYJJCDQS44WY12TMA",
+  "name": "SEAGULL MART CHOCOLATE SHOP",
+  "coordinates": {
+    "latitude": 6.0370705,
+    "longitude": 80.20769709999999
+  },
+  "categories": [
+    "Ice cream shop",
+    "Confectionery store",
+    "Cosmetics store",
+    "Grocery delivery service",
+    "Chocolate shop",
+    "Nut store",
+    "Perfume store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "233 Colombo Main Rd, Galle 80000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "10 AM–10:45 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "10 AM–10:45 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "10 AM–10:45 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "10 AM–10:45 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "2–10:45 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "10 AM–10:45 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "10 AM–10:45 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

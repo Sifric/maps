@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDW9PJZDGR6DCBB1X6AS",
+  "name": "HONEST BURGER",
+  "coordinates": {
+    "latitude": 6.270703,
+    "longitude": 80.09116569999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Karandeniya",
+  "business_status": "OPEN"
+}

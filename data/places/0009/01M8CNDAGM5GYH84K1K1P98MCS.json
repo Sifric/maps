@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAGM5GYH84K1K1P98MCS",
+  "name": "Innaya's Villa",
+  "coordinates": {
+    "latitude": 7.4005106,
+    "longitude": 81.833152
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CR2M+672, Kalmunai 32300",
+  "business_status": "OPEN"
+}

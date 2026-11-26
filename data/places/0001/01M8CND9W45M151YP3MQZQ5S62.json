@@ -1,0 +1,23 @@
+{
+  "id": "01M8CND9W45M151YP3MQZQ5S62",
+  "name": "Modern pre school",
+  "coordinates": {
+    "latitude": 7.4114328,
+    "longitude": 81.8389952
+  },
+  "categories": [
+    "Kindergarten"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kalmunai Beach Masjid Park, 6a/1 Beach Rd, Kalmunai 32300",
+  "business_status": "OPEN"
+}

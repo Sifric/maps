@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDACEYJY2Y523R4A3GV54",
+  "name": "CAKE \"N\" BAKE",
+  "coordinates": {
+    "latitude": 7.7707105,
+    "longitude": 81.61119219999999
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Mobitel network tower, Telekom Rd, Eravur",
+  "business_status": "OPEN"
+}

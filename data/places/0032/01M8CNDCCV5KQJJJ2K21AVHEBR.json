@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCCV5KQJJJ2K21AVHEBR",
+  "name": "Nasmar villa",
+  "coordinates": {
+    "latitude": 7.8039779,
+    "longitude": 81.6010222
+  },
+  "categories": [
+    "House sitter"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "RJ32+HCR",
+  "business_status": "OPEN"
+}

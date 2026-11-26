@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCQY55VSJWM9B215A2TS",
+  "name": "PCA Cinemax car park",
+  "coordinates": {
+    "latitude": 7.6546449,
+    "longitude": 81.7418959
+  },
+  "categories": [
+    "Parking lot"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MP3R+VQ2, Batticaloa",
+  "business_status": "OPEN"
+}

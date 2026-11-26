@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDD6R1AB9N8XYVJZ9WTQF",
+  "name": "Bismillah Chicken Shop",
+  "coordinates": {
+    "latitude": 7.939703799999999,
+    "longitude": 81.5082291
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA2EP5NW98DPD71YMRYJ",
+  "name": "Sip & Go",
+  "coordinates": {
+    "latitude": 6.8456136999999995,
+    "longitude": 81.8307585
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Sea Rock Rd, Arugam Bay",
+  "business_status": "CLOSED_TEMPORARILY"
+}

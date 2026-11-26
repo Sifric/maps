@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDFF3M5RHS93ZRM72598",
+  "name": "a to z event shop",
+  "coordinates": {
+    "latitude": 7.8815529,
+    "longitude": 81.5253675
+  },
+  "categories": [
+    "Event planner"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "VGJG+J4, Oddamavadi",
+  "business_status": "OPEN"
+}

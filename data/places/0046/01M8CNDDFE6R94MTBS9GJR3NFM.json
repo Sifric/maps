@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDFE6R94MTBS9GJR3NFM",
+  "name": "Kky Phone Shop",
+  "coordinates": {
+    "latitude": 7.6862372,
+    "longitude": 81.7255821
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kattankudy",
+  "business_status": "OPEN"
+}

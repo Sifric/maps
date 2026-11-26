@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCQ1FVAH5JWFYEC42EKH",
+  "name": "Aimara Garden - ஐமரா கார்டன்",
+  "coordinates": {
+    "latitude": 7.7975224999999995,
+    "longitude": 81.6014081
+  },
+  "categories": [
+    "Auction house"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Maniyapuram Rd",
+  "business_status": "OPEN"
+}

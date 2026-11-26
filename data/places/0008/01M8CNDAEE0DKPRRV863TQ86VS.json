@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAEE0DKPRRV863TQ86VS",
+  "name": "TTT Villa",
+  "coordinates": {
+    "latitude": 7.3520192,
+    "longitude": 81.8489931
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9R2X+R79, Nintavur",
+  "business_status": "OPEN"
+}

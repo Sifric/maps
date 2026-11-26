@@ -1,0 +1,63 @@
+{
+  "id": "01M8CNDG6YS1A4D346VFCQC9R1",
+  "name": "JEEVA BOOK SHOP & MOBILE SHOP",
+  "coordinates": {
+    "latitude": 9.3104369,
+    "longitude": 80.1759426
+  },
+  "categories": [
+    "Book store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "115 main street, jeyapuram",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12–8 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

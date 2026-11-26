@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBHFHEMMRV72GXTAY69T",
+  "name": "car Repairing Garage",
+  "coordinates": {
+    "latitude": 7.706079099999999,
+    "longitude": 81.712064
+  },
+  "categories": [
+    "Car repair and maintenance service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PP46+CRP, Kallady",
+  "business_status": "OPEN"
+}

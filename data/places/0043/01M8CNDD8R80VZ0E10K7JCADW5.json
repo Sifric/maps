@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD8R80VZ0E10K7JCADW5",
+  "name": "Crunsai Residence 2",
+  "coordinates": {
+    "latitude": 7.710002899999999,
+    "longitude": 81.6940882
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM6V+2J4, Sivaganesar road, 2nd Cross St, Batticaloa",
+  "business_status": "OPEN"
+}

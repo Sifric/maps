@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCPMM56W98FDBW1JWXJV",
+  "name": "Inaayas Wholesale & Retail",
+  "coordinates": {
+    "latitude": 7.6767558,
+    "longitude": 81.7309251
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kattankudy",
+  "business_status": "OPEN"
+}

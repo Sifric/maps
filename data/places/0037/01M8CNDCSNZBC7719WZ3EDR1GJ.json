@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCSNZBC7719WZ3EDR1GJ",
+  "name": "Shakir Shoe Palace",
+  "coordinates": {
+    "latitude": 7.713431699999999,
+    "longitude": 81.6983321
+  },
+  "categories": [
+    "Shoe store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM7X+98G, Batticaloa",
+  "business_status": "OPEN"
+}

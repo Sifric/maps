@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBTZP4FW2MRQSBWBN6CY",
+  "name": "Maruthi hardware",
+  "coordinates": {
+    "latitude": 7.1892309999999995,
+    "longitude": 81.84513
+  },
+  "categories": [
+    "Hardware store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Old Post Office Rd",
+  "business_status": "OPEN"
+}

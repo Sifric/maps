@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCB49NPZX0ANJ5DCXBYB",
+  "name": "Haq chicken shop",
+  "coordinates": {
+    "latitude": 7.7783438,
+    "longitude": 81.6025725
+  },
+  "categories": [
+    "Chicken shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "719/1 New Market Rd, Eravur",
+  "business_status": "OPEN"
+}

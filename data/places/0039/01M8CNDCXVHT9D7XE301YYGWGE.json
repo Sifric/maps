@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCXVHT9D7XE301YYGWGE",
+  "name": "Sujikaran",
+  "coordinates": {
+    "latitude": 7.7021969,
+    "longitude": 81.7157888
+  },
+  "categories": [
+    "Transportation service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PP28+V8F, batticaloa",
+  "business_status": "OPEN"
+}

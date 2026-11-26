@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDANE6C33XWG2V1P37CR",
+  "name": "Assembly Hall",
+  "coordinates": {
+    "latitude": 7.5472318,
+    "longitude": 81.7894065
+  },
+  "categories": [
+    "Banquet hall"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQWQ+WH2, Kaluthavalai",
+  "business_status": "OPEN"
+}

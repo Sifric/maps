@@ -1,0 +1,74 @@
+{
+  "id": "01M8CNDE393GCNFGNJH1S3ND98",
+  "name": "Capybara Restaurant",
+  "coordinates": {
+    "latitude": 5.9457888,
+    "longitude": 80.45721859999999
+  },
+  "categories": [
+    "Coffee shop",
+    "Bar",
+    "Cafe",
+    "Restaurant",
+    "Coworking space",
+    "Delivery service",
+    "Fish restaurant",
+    "Ice cream shop",
+    "Internet cafe",
+    "Takeout restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "large parking lot, WFW4+9W9 Beachside road /Near the Paradise Beach Club Hotel, Mirissa 81740",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8:30 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8:30 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8:30 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8:30 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8:30 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8:30 AM–11 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8:30 AM–11 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

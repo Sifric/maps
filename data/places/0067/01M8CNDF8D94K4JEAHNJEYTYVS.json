@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDF8D94K4JEAHNJEYTYVS",
+  "name": "Harshanah fashion",
+  "coordinates": {
+    "latitude": 9.6595593,
+    "longitude": 80.1612962
+  },
+  "categories": [
+    "Cosmetics store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "M556+RGF, Chavakachcheri",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12–6 AM",
+        "8–9 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8–9 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8–9 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8–9 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8–9 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8–9 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "9 AM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

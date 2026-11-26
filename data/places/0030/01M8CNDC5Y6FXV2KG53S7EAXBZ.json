@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC5Y6FXV2KG53S7EAXBZ",
+  "name": "Mr.Nasi",
+  "coordinates": {
+    "latitude": 7.6895931,
+    "longitude": 81.7318572
+  },
+  "categories": [
+    "Barbecue restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPQJ+QP2, Telecom Rd, Kattankudy",
+  "business_status": "OPEN"
+}

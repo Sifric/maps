@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDACRQ8VRHZJ0FA7YMY1B",
+  "name": "Sathath Bakery",
+  "coordinates": {
+    "latitude": 7.682564299999999,
+    "longitude": 81.73806499999999
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPMQ+26G, Hostel Rd, Kattankudy",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:24 AM–11:50 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:24 AM–11:50 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:24 AM–11:50 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:24 AM–11:50 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:24 AM–11:50 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:24 AM–11:50 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6:24 AM–11:50 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

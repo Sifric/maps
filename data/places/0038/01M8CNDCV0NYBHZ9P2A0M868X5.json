@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCV0NYBHZ9P2A0M868X5",
+  "name": "AK Multi Services",
+  "coordinates": {
+    "latitude": 7.7212792,
+    "longitude": 81.7035595
+  },
+  "categories": [
+    "Auto repair shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "603 New Kalmunai Rd, Batticaloa",
+  "business_status": "OPEN"
+}

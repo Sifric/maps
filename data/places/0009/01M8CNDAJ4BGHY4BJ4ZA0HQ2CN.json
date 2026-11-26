@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDAJ4BGHY4BJ4ZA0HQ2CN",
+  "name": "Jameel Vegetable Shop",
+  "coordinates": {
+    "latitude": 7.3560253,
+    "longitude": 81.84567609999999
+  },
+  "categories": [
+    "Vegetable wholesaler"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "44/1 Main Street, Nintavur 32340",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5 AM–12:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5 AM–10:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

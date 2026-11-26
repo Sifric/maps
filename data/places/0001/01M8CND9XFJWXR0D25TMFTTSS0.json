@@ -1,0 +1,23 @@
+{
+  "id": "01M8CND9XFJWXR0D25TMFTTSS0",
+  "name": "SEUSL beach",
+  "coordinates": {
+    "latitude": 7.2976678999999995,
+    "longitude": 81.8650807
+  },
+  "categories": [
+    "University"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "South Eastern University of Sri Lanka, Oluvil",
+  "business_status": "OPEN"
+}

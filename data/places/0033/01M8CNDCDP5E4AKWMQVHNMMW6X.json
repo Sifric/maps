@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCDP5E4AKWMQVHNMMW6X",
+  "name": "e dent, Dental Clinic",
+  "coordinates": {
+    "latitude": 7.9204243,
+    "longitude": 81.5309979
+  },
+  "categories": [
+    "Hospital"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Valaichchenai, Nasuvantivu-Navaladi, Road",
+  "business_status": "OPEN"
+}

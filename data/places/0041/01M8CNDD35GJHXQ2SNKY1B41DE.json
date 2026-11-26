@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD35GJHXQ2SNKY1B41DE",
+  "name": "Sweet Choice",
+  "coordinates": {
+    "latitude": 7.5212794,
+    "longitude": 81.7879469
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kaluwanchikudy",
+  "business_status": "OPEN"
+}

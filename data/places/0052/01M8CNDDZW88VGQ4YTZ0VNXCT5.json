@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDDZW88VGQ4YTZ0VNXCT5",
+  "name": "Hotel Royal Rose & Restaurant",
+  "coordinates": {
+    "latitude": 6.2840228,
+    "longitude": 80.15533409999999
+  },
+  "categories": [
+    "Restaurant",
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Elpitiya",
+  "business_status": "OPEN"
+}

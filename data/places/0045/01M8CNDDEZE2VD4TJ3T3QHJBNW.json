@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDDEZE2VD4TJ3T3QHJBNW",
+  "name": "Salon Queens",
+  "coordinates": {
+    "latitude": 6.9399169,
+    "longitude": 80.7442989
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\nWPQV+XP7, Nanuoya",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "9 AM–5 PM"
+      ]
+    }
+  ],
+  "business_status": "CLOSED"
+}

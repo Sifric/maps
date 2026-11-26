@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCWRF7GVXG2GEZ8FYN1Y",
+  "name": "NIFA Fashion",
+  "coordinates": {
+    "latitude": 7.6813348999999995,
+    "longitude": 81.7314695
+  },
+  "categories": [
+    "Clothing store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPJJ+GHQ, Dr Badhiudeen Mahmood Mawatha, Kattankudy",
+  "business_status": "OPEN"
+}

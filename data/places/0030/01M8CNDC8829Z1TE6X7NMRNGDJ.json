@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC8829Z1TE6X7NMRNGDJ",
+  "name": "Kaluwanchikudi",
+  "coordinates": {
+    "latitude": 7.7245418,
+    "longitude": 81.6881315
+  },
+  "categories": [
+    "Butcher shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "569 Kannaki Amman 12th Cross St, Batticaloa",
+  "business_status": "OPEN"
+}

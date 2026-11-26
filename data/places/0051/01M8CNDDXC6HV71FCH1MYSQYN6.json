@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDDXC6HV71FCH1MYSQYN6",
+  "name": "Ansika Bakery",
+  "coordinates": {
+    "latitude": 9.7634954,
+    "longitude": 80.0370095
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Q27P+9RR, Alaveddy Road, Earlalai",
+  "business_status": "OPEN"
+}

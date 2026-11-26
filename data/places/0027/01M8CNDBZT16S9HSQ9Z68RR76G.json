@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDBZT16S9HSQ9Z68RR76G",
+  "name": "Sun rise show room",
+  "coordinates": {
+    "latitude": 7.1102783,
+    "longitude": 81.8478035
+  },
+  "categories": [
+    "Shopping mall"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "4R6X+34F, 03, Thirukkovil",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–10:12 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7:12 AM–10:12 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7:12 AM–10:12 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7:12 AM–10:13 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7:13 AM–10:13 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

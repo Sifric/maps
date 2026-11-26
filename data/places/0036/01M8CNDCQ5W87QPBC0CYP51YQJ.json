@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCQ5W87QPBC0CYP51YQJ",
+  "name": "மட்டுநகர் ஒருங்கிணைந்த பண்ணை",
+  "coordinates": {
+    "latitude": 7.8748125,
+    "longitude": 81.5265625
+  },
+  "categories": [
+    "Garden"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "VGFG+WJ, Oddamavadi",
+  "business_status": "OPEN"
+}

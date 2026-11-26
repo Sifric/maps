@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDB5BN9E4VW0JRAN28JQA",
+  "name": "Mosque",
+  "coordinates": {
+    "latitude": 7.4163378,
+    "longitude": 81.7692675
+  },
+  "categories": [
+    "Mosque"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "B77",
+  "business_status": "OPEN"
+}

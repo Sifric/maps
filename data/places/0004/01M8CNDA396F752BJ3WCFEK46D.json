@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDA396F752BJ3WCFEK46D",
+  "name": "NILA Cafe",
+  "coordinates": {
+    "latitude": 7.376752,
+    "longitude": 81.8390117
+  },
+  "categories": [
+    "Southern restaurant (US)"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Main road karithivu 7, 32250, Kalmunai 32250",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5 AM–1 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5 AM–1 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5 AM–1 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5 AM–1 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Open 24 hours"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Open 24 hours"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

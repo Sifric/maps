@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCGNT1JH5JJKKTAVS5YZ",
+  "name": "Cooperative",
+  "coordinates": {
+    "latitude": 7.9213276,
+    "longitude": 81.5246705
+  },
+  "categories": [
+    "Cooperative bank"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WGCF+GVM, Main Road, 30400",
+  "business_status": "OPEN"
+}

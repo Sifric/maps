@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDC033AJSW069TRNZHFWV",
+  "name": "Home Gallery",
+  "coordinates": {
+    "latitude": 7.2392926,
+    "longitude": 81.85327699999999
+  },
+  "categories": [
+    "Electronics store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "426 & 427 Main St, Akkaraipattu 32400",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8–9 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8–9 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

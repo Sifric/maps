@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDAD53F30XA8N6YQ2MPJQ",
+  "name": "Sea Breeze Hotel & Reastaurant",
+  "coordinates": {
+    "latitude": 7.3952354,
+    "longitude": 81.8434825
+  },
+  "categories": [
+    "Building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Sainthamaruthu 32300",
+  "business_status": "OPEN"
+}

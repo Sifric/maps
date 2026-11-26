@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD5669CQ3VDZQ2T29JM2",
+  "name": "New Pioneer Hospital",
+  "coordinates": {
+    "latitude": 7.4161291,
+    "longitude": 81.8254682
+  },
+  "categories": [
+    "Hospital"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "202A Main St, Kalmunai 32300",
+  "business_status": "OPEN"
+}

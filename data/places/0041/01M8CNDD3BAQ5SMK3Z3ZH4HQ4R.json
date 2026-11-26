@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD3BAQ5SMK3Z3ZH4HQ4R",
+  "name": "Colombo Cab Service",
+  "coordinates": {
+    "latitude": 6.9015394,
+    "longitude": 79.85722179999999
+  },
+  "categories": [
+    "Taxi service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "32/A Bagatalle Rd, Colombo 00300",
+  "business_status": "OPEN"
+}

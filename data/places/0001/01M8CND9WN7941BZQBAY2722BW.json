@@ -1,0 +1,23 @@
+{
+  "id": "01M8CND9WN7941BZQBAY2722BW",
+  "name": "Kalmunai Car hire",
+  "coordinates": {
+    "latitude": 7.4219105,
+    "longitude": 81.82705729999999
+  },
+  "categories": [
+    "Car rental agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "143 Carmel Fatima College Rd, Kalmunai 32300",
+  "business_status": "OPEN"
+}

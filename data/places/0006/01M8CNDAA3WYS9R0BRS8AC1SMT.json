@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAA3WYS9R0BRS8AC1SMT",
+  "name": "SP Faram",
+  "coordinates": {
+    "latitude": 7.6863722999999995,
+    "longitude": 81.4642691
+  },
+  "categories": [
+    "Farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MFP7+GP, Rukamputur",
+  "business_status": "OPEN"
+}

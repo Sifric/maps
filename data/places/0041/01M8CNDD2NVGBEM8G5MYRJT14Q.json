@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD2NVGBEM8G5MYRJT14Q",
+  "name": "Ankathan Agro Center",
+  "coordinates": {
+    "latitude": 7.6172349,
+    "longitude": 81.717643
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Mahiladithivu South",
+  "business_status": "OPEN"
+}

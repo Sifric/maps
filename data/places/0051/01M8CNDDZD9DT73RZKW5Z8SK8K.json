@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDZD9DT73RZKW5Z8SK8K",
+  "name": "Palm Beach Guesthouse",
+  "coordinates": {
+    "latitude": 6.1220611,
+    "longitude": 80.1125033
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "44C7+R2C, Hikkaduwa",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–3 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–3 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–3 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–3 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–3 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–3 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8 AM–3 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

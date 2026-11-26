@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDABDYG6AA9J1ZXY48P6V",
+  "name": "KOVI MULTI STORES",
+  "coordinates": {
+    "latitude": 7.442979299999999,
+    "longitude": 81.7777047
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "68 Kali Kovil Rd, 1",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7:15 AM–9:15 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7:15 AM–9:15 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7:15 AM–9:15 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7:15 AM–9:15 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7:15 AM–9:15 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7:15 AM–9:15 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7:15 AM–9:15 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

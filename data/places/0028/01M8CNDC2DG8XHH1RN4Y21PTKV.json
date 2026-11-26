@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDC2DG8XHH1RN4Y21PTKV",
+  "name": "Ladies Market Complex - Eravur",
+  "coordinates": {
+    "latitude": 7.7733476999999995,
+    "longitude": 81.6113568
+  },
+  "categories": [
+    "Market"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJF6+8GQ, Town,, Eravur 30300",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6 AM–2 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6 AM–2 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6 AM–2 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6 AM–2 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6 AM–2 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6 AM–2 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6 AM–2 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

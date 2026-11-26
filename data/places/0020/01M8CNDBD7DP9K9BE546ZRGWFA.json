@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBD7DP9K9BE546ZRGWFA",
+  "name": "Riviera Resort - Chargenet",
+  "coordinates": {
+    "latitude": 7.7201195,
+    "longitude": 81.7097868
+  },
+  "categories": [
+    "Electric vehicle charging station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PPC5+2WV, New Dutch Bar Road, Kallady",
+  "business_status": "OPEN"
+}

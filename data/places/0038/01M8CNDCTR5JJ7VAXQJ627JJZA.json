@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCTR5JJ7VAXQJ627JJZA",
+  "name": "Color Mart",
+  "coordinates": {
+    "latitude": 7.713425699999999,
+    "longitude": 81.6987485
+  },
+  "categories": [
+    "Paint store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM7X+9F9, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCV4B2D012A8T1ASAJMP",
+  "name": "VR SERVICE STATION VR",
+  "coordinates": {
+    "latitude": 7.7449932,
+    "longitude": 81.6830797
+  },
+  "categories": [
+    "Car wash"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMVM+X6W, New Boundary Rd, Batticaloa",
+  "business_status": "CLOSED"
+}

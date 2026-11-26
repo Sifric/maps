@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDDB0M3GCK4K7NF2R3PW",
+  "name": "Samurdhi Bank Society",
+  "coordinates": {
+    "latitude": 7.5086973,
+    "longitude": 81.7315687
+  },
+  "categories": [
+    "Bank"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GP5J+FJG, Mandur",
+  "business_status": "OPEN"
+}

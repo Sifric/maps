@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEF26NATV2YF3ZRG019M",
+  "name": "Weera’s Place",
+  "coordinates": {
+    "latitude": 5.9778182,
+    "longitude": 80.4228845
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Gonnagahawatha Rd, Weligama 81700",
+  "business_status": "OPEN"
+}

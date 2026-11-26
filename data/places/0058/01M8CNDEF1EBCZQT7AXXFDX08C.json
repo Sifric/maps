@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEF1EBCZQT7AXXFDX08C",
+  "name": "Wave Nest Hotel",
+  "coordinates": {
+    "latitude": 5.9716612,
+    "longitude": 80.42428319999999
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "no 133 main street, Weligama 81000",
+  "business_status": "OPEN"
+}

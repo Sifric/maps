@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDDEZZBF77N1RGFBKFJAP",
+  "name": "Excellent Saloon With Lahiru",
+  "coordinates": {
+    "latitude": 7.8823775,
+    "longitude": 80.8479092
+  },
+  "categories": [
+    "Hair salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\nVRJX+X53, Unnamed Road, Diyabeduma",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–9 PM"
+      ]
+    }
+  ],
+  "business_status": "CLOSED"
+}

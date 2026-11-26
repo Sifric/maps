@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDC6SAE9S0MZBGNRH44G",
+  "name": "New Wing Boys Hostal",
+  "coordinates": {
+    "latitude": 7.7980738999999994,
+    "longitude": 81.585577
+  },
+  "categories": [
+    "Apartment complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Vantharumoolai East",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDECRSE7YQMQK5NGXSJ33",
+  "name": "Gin River Resort",
+  "coordinates": {
+    "latitude": 6.1331519,
+    "longitude": 80.1811728
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Baddegama Road, Dodangoda, Baddegama 80200",
+  "business_status": "OPEN"
+}

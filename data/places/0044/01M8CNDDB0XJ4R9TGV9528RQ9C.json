@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDB0XJ4R9TGV9528RQ9C",
+  "name": "Raju soup Restaurant",
+  "coordinates": {
+    "latitude": 7.7214648,
+    "longitude": 81.71401089999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PPC7+HJJ, 4th Cross Rd, Kallady",
+  "business_status": "OPEN"
+}

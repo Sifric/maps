@@ -1,0 +1,72 @@
+{
+  "id": "01M8CNDEJE48ZYV2A6JE40KEGZ",
+  "name": "Nelli Bites",
+  "coordinates": {
+    "latitude": 9.8003705,
+    "longitude": 80.2009956
+  },
+  "categories": [
+    "Coffee shop",
+    "Cafe",
+    "Ice cream shop",
+    "Dessert shop",
+    "Juice shop",
+    "Restaurant",
+    "Snack bar",
+    "Tea house"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "N M M V road Nelliady, Karaveddi",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "10:30 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "10:30 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "10:30 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "10:30 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "10:30 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "10:30 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "10:30 AM–9 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

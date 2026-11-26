@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC5W12CXDQSCAP9TV672",
+  "name": "Buhary Hotel",
+  "coordinates": {
+    "latitude": 7.686742799999999,
+    "longitude": 81.72501969999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPPG+M2R, Kattankudy Welcome Board, Kattankudy",
+  "business_status": "OPEN"
+}

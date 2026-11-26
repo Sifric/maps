@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDT039Z6A5DM1QMRCSN0",
+  "name": "Beligaha chai",
+  "coordinates": {
+    "latitude": 6.057658,
+    "longitude": 80.2173588
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Beligaha junction chai shop, Galle 80000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6 PM–12:30 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6 PM–1 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6 PM–1 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

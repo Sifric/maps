@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCQTBND2E08XNEVFY4F2",
+  "name": "Chair Park",
+  "coordinates": {
+    "latitude": 7.7342151999999995,
+    "longitude": 81.7013154
+  },
+  "categories": [
+    "Park"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "47 Seelamuanai 1st Cross Rd, Batticaloa",
+  "business_status": "OPEN"
+}

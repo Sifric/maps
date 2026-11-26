@@ -1,0 +1,23 @@
+{
+  "id": "01M8CND9VZ4RBMKCRZ7QCPC1V0",
+  "name": "Methodist Pre School",
+  "coordinates": {
+    "latitude": 7.6625182999999994,
+    "longitude": 81.7401294
+  },
+  "categories": [
+    "Preschool"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MP7R+232, Colombo - Batticaloa Hwy, Kattankudy",
+  "business_status": "OPEN"
+}

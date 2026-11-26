@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCQCTXYNGZDHMS7JVBF7",
+  "name": "Kokagala",
+  "coordinates": {
+    "latitude": 7.4163814,
+    "longitude": 81.21026289999999
+  },
+  "categories": [
+    "Hiking area"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Mendawaththa Road",
+  "business_status": "OPEN"
+}

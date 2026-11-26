@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9K7Q5FB91RE4KKV223",
+  "name": "White house",
+  "coordinates": {
+    "latitude": 7.7212682,
+    "longitude": 81.6885588
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMCQ+PC5, Kannaki Amman 8th Cross St, Batticaloa",
+  "business_status": "OPEN"
+}

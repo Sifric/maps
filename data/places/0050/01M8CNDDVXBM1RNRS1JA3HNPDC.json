@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDVXBM1RNRS1JA3HNPDC",
+  "name": "Yummy bakery",
+  "coordinates": {
+    "latitude": 6.1470867,
+    "longitude": 80.10503709999999
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "44W4+R2M, Madabokka Rd, Hikkaduwa",
+  "business_status": "OPEN"
+}

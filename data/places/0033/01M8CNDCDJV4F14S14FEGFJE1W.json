@@ -1,0 +1,71 @@
+{
+  "id": "01M8CNDCDJV4F14S14FEGFJE1W",
+  "name": "K. N. K. Hospital",
+  "coordinates": {
+    "latitude": 7.5176171,
+    "longitude": 81.7858557
+  },
+  "categories": [
+    "Doctor"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQ9P+28X, Kaluwanchikudi - Vellaveli Rd, Kaluwanchikudy",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:30–7:30 AM",
+        "4:30–7 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:30–7:30 AM",
+        "4:30–7 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:30–7:30 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:30–7:30 AM",
+        "4:30–7 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:30–7:30 AM",
+        "4:30–7 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4:30–7 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

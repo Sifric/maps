@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCNSK2MSH8V79SH37NHG",
+  "name": "APN Marketing",
+  "coordinates": {
+    "latitude": 7.7377616,
+    "longitude": 81.67599919999999
+  },
+  "categories": [
+    "Wholesaler"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "43A Sarvodaya Road, Batticaloa",
+  "business_status": "OPEN"
+}

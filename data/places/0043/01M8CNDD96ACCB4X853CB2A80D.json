@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD96ACCB4X853CB2A80D",
+  "name": "R.S Water Service",
+  "coordinates": {
+    "latitude": 7.721658499999999,
+    "longitude": 81.6941702
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Batticaloa",
+  "business_status": "OPEN"
+}

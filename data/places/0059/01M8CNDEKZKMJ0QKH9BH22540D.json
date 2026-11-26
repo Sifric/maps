@@ -1,0 +1,72 @@
+{
+  "id": "01M8CNDEKZKMJ0QKH9BH22540D",
+  "name": "Manjal Restaurant -Jaffna",
+  "coordinates": {
+    "latitude": 9.6636568,
+    "longitude": 80.0303283
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "No.85, 87 Rakka Rd, Jaffna 40000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "11:30 AM–3 PM",
+        "6:30–11 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "11:30 AM–3 PM",
+        "6:30–11 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "11:30 AM–3 PM",
+        "6:30–11 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "11:30 AM–3 PM",
+        "6:30–11 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "11:30 AM–3 PM",
+        "6:30–11 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "11:30 AM–3 PM",
+        "6:30–11 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "11:30 AM–3 PM",
+        "6:30–11 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

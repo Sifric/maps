@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDCP1DK9CHZ1DP5B4Z0MG",
+  "name": "Kabeer Store",
+  "coordinates": {
+    "latitude": 7.7875527,
+    "longitude": 81.6092774
+  },
+  "categories": [
+    "Sand & gravel supplier"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Mihraj Rd, Eravur",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5 AM–5 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

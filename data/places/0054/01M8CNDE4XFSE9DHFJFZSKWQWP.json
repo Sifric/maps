@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDE4XFSE9DHFJFZSKWQWP",
+  "name": "Cake express",
+  "coordinates": {
+    "latitude": 9.7998054,
+    "longitude": 80.1981528
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "20 AB20, Valvettithurai",
+  "business_status": "OPEN"
+}

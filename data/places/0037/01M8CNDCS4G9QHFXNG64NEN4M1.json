@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCS4G9QHFXNG64NEN4M1",
+  "name": "Saruwath Shop",
+  "coordinates": {
+    "latitude": 7.707698799999999,
+    "longitude": 81.6864895
+  },
+  "categories": [
+    "Soft drinks shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "225 Air force Road, Batticaloa 30000",
+  "business_status": "OPEN"
+}

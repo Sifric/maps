@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDAAHPAR0ATRMWGQ7R8VJ",
+  "name": "Dream cafe",
+  "coordinates": {
+    "latitude": 6.8633652,
+    "longitude": 81.8373232
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "VR7P+4PF, Pottuvil",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5:30–11:55 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5:30–11:55 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5:30–11:55 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5:30–11:55 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5:30–11:55 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5:30–11:55 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5:30–11:55 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

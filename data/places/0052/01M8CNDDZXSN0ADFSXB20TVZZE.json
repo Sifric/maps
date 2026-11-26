@@ -1,0 +1,68 @@
+{
+  "id": "01M8CNDDZXSN0ADFSXB20TVZZE",
+  "name": "Marine Spice",
+  "coordinates": {
+    "latitude": 6.8859711,
+    "longitude": 79.8550355
+  },
+  "categories": [
+    "Halal restaurant",
+    "Family restaurant",
+    "Fusion restaurant",
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "36 Milagiriya Avenue Corner, Marine Drive, 00400",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "11:30 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "11:30 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "11:30 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "11:30 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "1 AM–12:30 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "11:30 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "11:30 AM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDCQ9252Y71M9SFFPB2M5",
+  "name": "Thevi - Double Room with Garden View",
+  "coordinates": {
+    "latitude": 7.7108001999999995,
+    "longitude": 81.6956482
+  },
+  "categories": [
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Batticaloa",
+  "business_status": "OPEN"
+}

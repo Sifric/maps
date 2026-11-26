@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDQ9X176Y2DSSJMPAC6J",
+  "name": "Peacock Beach Restaurant",
+  "coordinates": {
+    "latitude": 6.2405262,
+    "longitude": 80.0486462
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "12 Beach Rd, Ambalangoda",
+  "business_status": "OPEN"
+}

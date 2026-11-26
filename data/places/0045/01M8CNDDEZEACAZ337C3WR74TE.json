@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDDEZEACAZ337C3WR74TE",
+  "name": "SHAN SALON",
+  "coordinates": {
+    "latitude": 6.7671173,
+    "longitude": 80.3711883
+  },
+  "categories": [
+    "Hairdresser"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\nJunction, Kuruwita 70500",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "8:33 AM–11 PM"
+      ]
+    }
+  ],
+  "business_status": "CLOSED"
+}

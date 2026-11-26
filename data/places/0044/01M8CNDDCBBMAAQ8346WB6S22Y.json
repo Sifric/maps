@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDCBBMAAQ8346WB6S22Y",
+  "name": "Rifnas",
+  "coordinates": {
+    "latitude": 7.7825288,
+    "longitude": 81.6065024
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "14 Hospital Rd, Eravur",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCZFEWV96JRRCF2XCG3G",
+  "name": "CITY CABS & TOURS (PVT) LTD CHENKALADY",
+  "coordinates": {
+    "latitude": 7.7808831,
+    "longitude": 81.5963719
+  },
+  "categories": [
+    "Taxi service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QHJW+9G5, Main St, Chenkaladi",
+  "business_status": "OPEN"
+}

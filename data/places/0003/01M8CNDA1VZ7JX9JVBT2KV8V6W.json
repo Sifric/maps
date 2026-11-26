@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA1VZ7JX9JVBT2KV8V6W",
+  "name": "Sarbutheen Beef Shop",
+  "coordinates": {
+    "latitude": 7.4167055,
+    "longitude": 81.8094335
+  },
+  "categories": [
+    "Butcher shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CR85+MQM, Kalmunai-Chavalakadai Rd, Kalmunai",
+  "business_status": "OPEN"
+}

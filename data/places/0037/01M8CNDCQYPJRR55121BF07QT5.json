@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDCQYPJRR55121BF07QT5",
+  "name": "Pickup point",
+  "coordinates": {
+    "latitude": 7.6798022999999995,
+    "longitude": 81.72658899999999
+  },
+  "categories": [
+    "Parking lot",
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPHG+WJG, Methai Palli Ln, Kattankudy",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDBYG1Y1WC2SV5M2JBTZF",
+  "name": "Vidusara Communication",
+  "coordinates": {
+    "latitude": 7.3107818,
+    "longitude": 81.6741394
+  },
+  "categories": [
+    "Stationery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "G. N. S, 75 Opposite Bandaranayake Ave, Ampara 32000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:50 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:50 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:30 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:30 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:30 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8 AM–3 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

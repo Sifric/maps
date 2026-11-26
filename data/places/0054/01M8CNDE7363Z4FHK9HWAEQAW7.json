@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE7363Z4FHK9HWAEQAW7",
+  "name": "H.A. Supermart",
+  "coordinates": {
+    "latitude": 6.2767221,
+    "longitude": 80.0394326
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Balapitiya",
+  "business_status": "OPEN"
+}

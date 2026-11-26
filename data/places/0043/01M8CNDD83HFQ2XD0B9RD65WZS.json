@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD83HFQ2XD0B9RD65WZS",
+  "name": "Sivananda Vidyalaya",
+  "coordinates": {
+    "latitude": 7.7057835,
+    "longitude": 81.7140069
+  },
+  "categories": [
+    "Bus stop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kallady",
+  "business_status": "OPEN"
+}

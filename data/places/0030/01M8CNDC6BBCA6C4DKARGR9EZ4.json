@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6BBCA6C4DKARGR9EZ4",
+  "name": "COLOMBO Bun Corner",
+  "coordinates": {
+    "latitude": 7.9335194,
+    "longitude": 81.51079469999999
+  },
+  "categories": [
+    "Fast food restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WGM6+C8, Kayankerni",
+  "business_status": "OPEN"
+}

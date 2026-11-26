@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD4D4SVRD4H1NZQCPSQB",
+  "name": "Steve Communications - Batticaloa",
+  "coordinates": {
+    "latitude": 7.7490535,
+    "longitude": 81.6638215
+  },
+  "categories": [
+    "Telephone exchange"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "281 Sarvodaya Road, Batticaloa 30000",
+  "business_status": "CLOSED_TEMPORARILY"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDGMVN1VA8024SMY6484",
+  "name": "Ideal Phone Shop",
+  "coordinates": {
+    "latitude": 7.543081699999999,
+    "longitude": 81.7879167
+  },
+  "categories": [
+    "Cell phone store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "main st,kaluthavalai centre kaluthavalai, 30197",
+  "business_status": "CLOSED"
+}

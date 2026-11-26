@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE1W4PAX4PC7WNS3ZS3J",
+  "name": "Tea shop",
+  "coordinates": {
+    "latitude": 6.429729,
+    "longitude": 80.5016397
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Kalawana-Depedene-Rakwana Rd",
+  "business_status": "OPEN"
+}

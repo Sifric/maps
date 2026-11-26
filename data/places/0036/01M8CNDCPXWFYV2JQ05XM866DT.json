@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCPXWFYV2JQ05XM866DT",
+  "name": "Fareez Garden",
+  "coordinates": {
+    "latitude": 7.791647599999999,
+    "longitude": 81.62392229999999
+  },
+  "categories": [
+    "Garden"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJRF+MH3, Unnamed Road, Eravur",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCA3WP5A0R9KKC67JRA6",
+  "name": "Nallanathan Grocery store",
+  "coordinates": {
+    "latitude": 7.734087,
+    "longitude": 81.6985302
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "450 Bar Rd - Batticaloa, Batticaloa",
+  "business_status": "OPEN"
+}

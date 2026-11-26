@@ -1,0 +1,72 @@
+{
+  "id": "01M8CNDE9AY9YHFDJNMT4BFNEG",
+  "name": "Lunuganga Chillout Bistro",
+  "coordinates": {
+    "latitude": 6.4092009999999995,
+    "longitude": 80.0223529
+  },
+  "categories": [
+    "Restaurant",
+    "Bistro",
+    "Sri Lankan restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Dedduwa, Bentota 80500",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8–10 AM",
+        "3–6 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8–10 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "3–6 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8–10 AM",
+        "3–6 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8–10 AM",
+        "3–6 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8–10 AM",
+        "3–6 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8–10 AM",
+        "3–6 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

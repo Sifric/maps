@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDEN3PF5TH118AC8ZBP1N",
+  "name": "Paradise Restaurant - Jaffna",
+  "coordinates": {
+    "latitude": 9.6666928,
+    "longitude": 80.0094285
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "120 Jaffna-Kankesanturai Rd, Jaffna",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:30 AM–1 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:30 AM–1 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:30 AM–1 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:30 AM–1 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:30 AM–1 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:30 AM–1 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6:30 AM–1 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

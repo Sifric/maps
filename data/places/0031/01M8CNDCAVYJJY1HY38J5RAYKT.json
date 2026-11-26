@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCAVYJJY1HY38J5RAYKT",
+  "name": "MIM Distributors",
+  "coordinates": {
+    "latitude": 7.673848199999999,
+    "longitude": 81.74520059999999
+  },
+  "categories": [
+    "Wholesaler"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kattankudy",
+  "business_status": "OPEN"
+}

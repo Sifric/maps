@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCXSF94A82QJJF48G7N0",
+  "name": "Tourism Taxi.. Mr Uwais",
+  "coordinates": {
+    "latitude": 7.6803317,
+    "longitude": 81.7289785
+  },
+  "categories": [
+    "Transportation service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "NO 111/19 ABDUL KADER ADVACTE MW, 03, Kattankudy 30100",
+  "business_status": "OPEN"
+}

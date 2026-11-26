@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9WS2XFNAC87G4512Y5",
+  "name": "Dasun Farm",
+  "coordinates": {
+    "latitude": 7.4032523999999995,
+    "longitude": 80.6272204
+  },
+  "categories": [
+    "Farm",
+    "Service establishment"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

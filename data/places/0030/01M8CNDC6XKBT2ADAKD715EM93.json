@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDC6XKBT2ADAKD715EM93",
+  "name": "KATTANKUDY",
+  "coordinates": {
+    "latitude": 7.6823672,
+    "longitude": 81.7336966
+  },
+  "categories": [
+    "Coffee shop",
+    "Mosque"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ],
+    "names": [
+      "Kattankudy"
+    ]
+  },
+  "address": "MPMM+5JC, Grand Jummah Mosque Rd, Kattankudy",
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "MPJM+WFW, Dr Badhiudeen Mahmood Mawatha, Kattankudy"
+  ]
+}

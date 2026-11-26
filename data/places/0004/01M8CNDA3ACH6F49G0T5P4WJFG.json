@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA3ACH6F49G0T5P4WJFG",
+  "name": "Abusali hotel",
+  "coordinates": {
+    "latitude": 7.3592243999999996,
+    "longitude": 81.79519839999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "2 Al Arsath Rd, Sammanthurai",
+  "business_status": "OPEN"
+}

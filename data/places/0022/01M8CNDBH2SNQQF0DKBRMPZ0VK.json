@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBH2SNQQF0DKBRMPZ0VK",
+  "name": "Mansoor Tailor Shop",
+  "coordinates": {
+    "latitude": 7.3929266,
+    "longitude": 81.8350486
+  },
+  "categories": [
+    "Tailor"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "09 main street, Sainthamaruthu 32280",
+  "business_status": "OPEN"
+}

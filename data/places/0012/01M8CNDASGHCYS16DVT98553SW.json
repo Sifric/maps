@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDASGHCYS16DVT98553SW",
+  "name": "LANKA FILLING STATION VARIPATHANCHENAI",
+  "coordinates": {
+    "latitude": 7.2517789,
+    "longitude": 81.7080275
+  },
+  "categories": [
+    "Gas station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Rd,Varipathanchenai 01, Irakkamam,, Colombo",
+  "business_status": "OPEN"
+}

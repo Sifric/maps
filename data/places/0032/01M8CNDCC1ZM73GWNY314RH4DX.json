@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCC1ZM73GWNY314RH4DX",
+  "name": "batti lagoon hotel",
+  "coordinates": {
+    "latitude": 7.7159695,
+    "longitude": 81.7000757
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "53 new road, Batticaloa",
+  "business_status": "CLOSED"
+}

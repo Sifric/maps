@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDCNEKMZS4WJ99GH9AHE",
+  "name": "KUMAR house",
+  "coordinates": {
+    "latitude": 7.503181799999999,
+    "longitude": 81.7310467
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GP3J+7CF, Mandur",
+  "business_status": "OPEN"
+}

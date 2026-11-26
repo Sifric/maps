@@ -1,0 +1,74 @@
+{
+  "id": "01M8CNDADDSS02HM2W3ZE8YSVB",
+  "name": "PLAN B Weligama",
+  "coordinates": {
+    "latitude": 5.9721959,
+    "longitude": 80.4286979
+  },
+  "categories": [
+    "Coffee shop",
+    "Asian fusion restaurant",
+    "Cafe",
+    "Restaurant",
+    "Coworking space",
+    "Gluten-free restaurant",
+    "Hamburger restaurant",
+    "Vegan restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "223/1 Weligama By Pass Rd, Weligama 81700",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8 AM–9 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

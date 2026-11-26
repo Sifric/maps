@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEPQ0BBBCBY948Z14Q5N",
+  "name": "Suisse Luxury Residency",
+  "coordinates": {
+    "latitude": 9.6729401,
+    "longitude": 80.0286661
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Temple Rd, Jaffna 40000",
+  "business_status": "OPEN"
+}

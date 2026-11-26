@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCW97K1PJW9YS3E0RYQS",
+  "name": "The pet world",
+  "coordinates": {
+    "latitude": 7.6897872,
+    "longitude": 81.7214441
+  },
+  "categories": [
+    "Pet store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Manchanthoduwai, Batticaloa",
+  "business_status": "OPEN"
+}

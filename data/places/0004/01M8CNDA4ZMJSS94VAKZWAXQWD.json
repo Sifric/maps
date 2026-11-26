@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDA4ZMJSS94VAKZWAXQWD",
+  "name": "New Rilwan Hotel",
+  "coordinates": {
+    "latitude": 6.8712104,
+    "longitude": 81.83023539999999
+  },
+  "categories": [
+    "Fast food restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "VRCJ+F3Q, Main Street, Pottuvil",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–10:01 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–10:01 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–10:01 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–10:01 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–10:01 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7 AM–10:01 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

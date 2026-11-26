@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDZH94KXNPPSZEQ6VG04",
+  "name": "Trio restaurant",
+  "coordinates": {
+    "latitude": 6.1406211,
+    "longitude": 80.1011256
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "34 Baddegama Rd, Hikkaduwa 80240",
+  "business_status": "CLOSED_TEMPORARILY"
+}

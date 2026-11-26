@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDC5KFBCWYMA2B8XNSF2",
+  "name": "Vithu's Home",
+  "coordinates": {
+    "latitude": 7.7237075,
+    "longitude": 81.691206
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMFR+FFP, Nadarajah Ln, Batticaloa",
+  "business_status": "OPEN"
+}

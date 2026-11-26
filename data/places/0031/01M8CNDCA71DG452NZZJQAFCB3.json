@@ -1,0 +1,74 @@
+{
+  "id": "01M8CNDCA71DG452NZZJQAFCB3",
+  "name": "LUQMAN RETAIL STORE",
+  "coordinates": {
+    "latitude": 7.778391699999999,
+    "longitude": 81.6046278
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJH3+9V2, Punnakuda Rd, Eravur",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7–11:55 AM",
+        "4–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7–11:55 AM",
+        "4–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7–11:55 AM",
+        "4–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7–11:55 AM",
+        "4–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7–11:55 AM",
+        "4–9 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7–11:55 AM",
+        "4–9 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7–11:55 AM",
+        "4–9 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

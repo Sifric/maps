@@ -1,0 +1,70 @@
+{
+  "id": "01M8CNDBF7ZDYJM5RDFW4YJAAW",
+  "name": "Phone technique",
+  "coordinates": {
+    "latitude": 7.4366734,
+    "longitude": 81.8134141
+  },
+  "categories": [
+    "Mobile phone repair shop",
+    "Electronics engineer",
+    "Electronics repair shop",
+    "Telephone answering service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Al-Manar Rd, Maruthamunai",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "9:30 AM–8 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

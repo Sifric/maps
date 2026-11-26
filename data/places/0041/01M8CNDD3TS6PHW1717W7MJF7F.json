@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD3TS6PHW1717W7MJF7F",
+  "name": "Kalkuda Police Station",
+  "coordinates": {
+    "latitude": 7.920377299999999,
+    "longitude": 81.5530888
+  },
+  "categories": [
+    "Police department"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WHC3+564, Kalkudah",
+  "business_status": "OPEN"
+}

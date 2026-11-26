@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD39X1VHVSHS698K4KD5",
+  "name": "MoneyGram",
+  "coordinates": {
+    "latitude": 7.5169469,
+    "longitude": 81.7861739
+  },
+  "categories": [
+    "Money transfer service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "HOSPITAL ROAD, Kaluwanchikudy 30200",
+  "business_status": "CLOSED"
+}

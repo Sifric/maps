@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDDTZ0WM6XH4G2C90Z6DW",
+  "name": "Cake La Delizia",
+  "coordinates": {
+    "latitude": 6.0854135,
+    "longitude": 80.19064399999999
+  },
+  "categories": [
+    "Cake shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "No 228, Hapugala",
+  "business_status": "CLOSED_TEMPORARILY"
+}

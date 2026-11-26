@@ -1,0 +1,22 @@
+{
+  "id": "01M8CND9ZAZ0ZGT5XNFMGKWADR",
+  "name": "FIA Auditorium",
+  "coordinates": {
+    "latitude": 7.2985365,
+    "longitude": 81.85942659999999
+  },
+  "categories": [
+    "Auditorium"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Eastern University, South, Oluvil",
+  "business_status": "OPEN"
+}

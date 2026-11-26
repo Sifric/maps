@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDABK7D944KXK9E9QKA5K",
+  "name": "J. T Farm Chicken Shop",
+  "coordinates": {
+    "latitude": 7.442999899999999,
+    "longitude": 81.7981619
+  },
+  "categories": [
+    "Farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CQVX+57V, Theerthakeni Veethi, Thuraineelavanai",
+  "business_status": "OPEN"
+}

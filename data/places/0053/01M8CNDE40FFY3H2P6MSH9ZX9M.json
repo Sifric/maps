@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDE40FFY3H2P6MSH9ZX9M",
+  "name": "Frangipani Restaurant",
+  "coordinates": {
+    "latitude": 6.422298199999999,
+    "longitude": 79.9963594
+  },
+  "categories": [
+    "Fusion restaurant",
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "No 20, Hotel Road, Bentota 70504",
+  "business_status": "CLOSED_TEMPORARILY"
+}

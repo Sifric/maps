@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD9NZN00AM92P252JVS1",
+  "name": "Tharma House",
+  "coordinates": {
+    "latitude": 7.7134513,
+    "longitude": 81.6382332
+  },
+  "categories": [
+    "House sitter"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PJ7Q+Q3W, Batticaloa",
+  "business_status": "OPEN"
+}

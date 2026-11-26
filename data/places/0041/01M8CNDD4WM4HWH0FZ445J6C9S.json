@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD4WM4HWH0FZ445J6C9S",
+  "name": "Halish Vegetable Shop",
+  "coordinates": {
+    "latitude": 7.407558799999999,
+    "longitude": 81.8402498
+  },
+  "categories": [
+    "Fruit and vegetable store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kalmunai 32300",
+  "business_status": "OPEN"
+}

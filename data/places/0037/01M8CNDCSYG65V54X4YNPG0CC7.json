@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCSYG65V54X4YNPG0CC7",
+  "name": "Batti style saloon",
+  "coordinates": {
+    "latitude": 7.7249573,
+    "longitude": 81.69096979999999
+  },
+  "categories": [
+    "Barber shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "487 Trincomalee-Batticaloa Rd, Batticaloa",
+  "business_status": "OPEN"
+}

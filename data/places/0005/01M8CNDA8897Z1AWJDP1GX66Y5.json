@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA8897Z1AWJDP1GX66Y5",
+  "name": "Sathyam Farm",
+  "coordinates": {
+    "latitude": 7.756046899999999,
+    "longitude": 81.6588074
+  },
+  "categories": [
+    "Farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QM45+CG7, Batticaloa",
+  "business_status": "OPEN"
+}

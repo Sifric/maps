@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCYAXH0EXSEK12F3KQTF",
+  "name": "MR. Amar Palace",
+  "coordinates": {
+    "latitude": 7.775142799999999,
+    "longitude": 81.6077636
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "286/1, Vithanaiyar Road, Eravur 02, Eravur 30300",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDECHWBKD9EEY34NBMH30",
+  "name": "Saman Beach Guest House",
+  "coordinates": {
+    "latitude": 6.0657903,
+    "longitude": 80.1708465
+  },
+  "categories": [
+    "Guest house",
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "No:87 Galle Rd, Boossa 80270",
+  "business_status": "OPEN"
+}

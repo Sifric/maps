@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBKSPM2KP8SDEW0VDK5",
+  "name": "Vijaya Cinema",
+  "coordinates": {
+    "latitude": 7.7179794,
+    "longitude": 81.6967902
+  },
+  "categories": [
+    "Movie theater"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "20 Lloyd's Ave, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCQWF3ZT9YMWFR8MVFCA",
+  "name": "M R REST PLACE",
+  "coordinates": {
+    "latitude": 7.6980192,
+    "longitude": 81.7287846
+  },
+  "categories": [
+    "Park"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Darussalam groud, road, Kattankudy 30100",
+  "business_status": "OPEN"
+}

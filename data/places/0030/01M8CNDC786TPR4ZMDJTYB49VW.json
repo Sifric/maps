@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC786TPR4ZMDJTYB49VW",
+  "name": "Sweet Berry Cake Centre",
+  "coordinates": {
+    "latitude": 7.9095561,
+    "longitude": 81.5251011
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPCS Rd, Oddamavadi",
+  "business_status": "OPEN"
+}

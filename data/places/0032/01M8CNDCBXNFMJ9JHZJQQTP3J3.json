@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBXNFMJ9JHZJQQTP3J3",
+  "name": "The Newland Hotel",
+  "coordinates": {
+    "latitude": 7.9202639999999995,
+    "longitude": 81.5567386
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WHC4+4M5, Kalkudah",
+  "business_status": "OPEN"
+}

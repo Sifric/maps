@@ -1,0 +1,29 @@
+{
+  "id": "01M8CNDD68DYHQQ0QW6T4CT4MZ",
+  "name": "The Barnhouse - Sri Lanka",
+  "coordinates": {
+    "latitude": 6.7300084,
+    "longitude": 79.941921
+  },
+  "categories": [
+    "Event venue",
+    "Banquet hall",
+    "Conference center",
+    "Resort hotel",
+    "Hotel",
+    "Restaurant",
+    "Wedding venue"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No 155/9, 2nd Lane, Galpoththa Rd, Panadura 12500",
+  "business_status": "OPEN"
+}

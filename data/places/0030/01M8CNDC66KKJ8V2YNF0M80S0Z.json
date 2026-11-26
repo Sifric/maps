@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDC66KKJ8V2YNF0M80S0Z",
+  "name": "Aathavan House",
+  "coordinates": {
+    "latitude": 7.9253921,
+    "longitude": 81.538584
+  },
+  "categories": [
+    "Restaurant",
+    "Guest house"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Bus Station, Kalkudah-Valaichchenai Rd, Kalkudah",
+  "business_status": "OPEN"
+}

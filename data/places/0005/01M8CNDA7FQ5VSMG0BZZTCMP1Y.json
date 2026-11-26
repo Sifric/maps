@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDA7FQ5VSMG0BZZTCMP1Y",
+  "name": "Anwar Potato Shop",
+  "coordinates": {
+    "latitude": 7.3396348,
+    "longitude": 81.851995
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "8VQ2+VQ5, 2nd Cross St, Nintavur",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4 AM–4 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4 AM–4 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

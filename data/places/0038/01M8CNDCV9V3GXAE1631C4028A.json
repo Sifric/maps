@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCV9V3GXAE1631C4028A",
+  "name": "Koombiyo Delivery",
+  "coordinates": {
+    "latitude": 7.7170331,
+    "longitude": 81.7005767
+  },
+  "categories": [
+    "Shipping service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "18 Collette's Ln, Batticaloa",
+  "business_status": "OPEN"
+}

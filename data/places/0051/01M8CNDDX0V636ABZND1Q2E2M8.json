@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDX0V636ABZND1Q2E2M8",
+  "name": "Sisara Restaurant",
+  "coordinates": {
+    "latitude": 6.0348367,
+    "longitude": 80.2158552
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "10 Sri Dewamiththa Mawatha, Galle 80000",
+  "business_status": "OPEN"
+}

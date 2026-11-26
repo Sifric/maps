@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCY6TX526KW92W39ASSQ",
+  "name": "Rifky Travels and Tours (Pvt) Ltd",
+  "coordinates": {
+    "latitude": 7.662483,
+    "longitude": 81.74765239999999
+  },
+  "categories": [
+    "Travel agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Palamunai Rd, Kattankudy",
+  "business_status": "OPEN"
+}

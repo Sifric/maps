@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA50AKF1Q9P0EY2BHJ0T",
+  "name": "Blue Ocean Restaurant",
+  "coordinates": {
+    "latitude": 6.8432365,
+    "longitude": 81.83202709999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Arugam Bay",
+  "business_status": "CLOSED_TEMPORARILY"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDC4WW5PBP4RH442XS3W3",
+  "name": "KIDS MODERN CAMPUS",
+  "coordinates": {
+    "latitude": 7.9085196,
+    "longitude": 81.5198741
+  },
+  "categories": [
+    "Education center"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Main Street, Oddamavadi 30420",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "1–7 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "1–7 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "1–7 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8:30 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8:30 AM–7 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

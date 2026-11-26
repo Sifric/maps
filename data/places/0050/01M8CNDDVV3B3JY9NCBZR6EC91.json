@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDDVV3B3JY9NCBZR6EC91",
+  "name": "New Lasen Bakers",
+  "coordinates": {
+    "latitude": 6.3404403,
+    "longitude": 80.3361015
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Thawalama",
+  "business_status": "OPEN"
+}

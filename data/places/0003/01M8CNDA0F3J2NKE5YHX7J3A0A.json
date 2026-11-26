@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA0F3J2NKE5YHX7J3A0A",
+  "name": "Hafsa Taste",
+  "coordinates": {
+    "latitude": 7.4412555,
+    "longitude": 81.81235679999999
+  },
+  "categories": [
+    "Soup kitchen"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CRR6+GW5, Main Street, Periyaneelavanai",
+  "business_status": "OPEN"
+}

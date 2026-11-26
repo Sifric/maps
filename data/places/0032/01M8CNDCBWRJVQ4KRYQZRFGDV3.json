@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBWRJVQ4KRYQZRFGDV3",
+  "name": "Giant Grass Guest House (3G)",
+  "coordinates": {
+    "latitude": 7.708174499999999,
+    "longitude": 81.71220079999999
+  },
+  "categories": [
+    "Guest house"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PP56+7V8, Kallady",
+  "business_status": "OPEN"
+}

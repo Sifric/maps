@@ -1,0 +1,68 @@
+{
+  "id": "01M8CNDCXW8CF760M686VEXN09",
+  "name": "Atheef Garments",
+  "coordinates": {
+    "latitude": 7.6812594,
+    "longitude": 81.73627259999999
+  },
+  "categories": [
+    "Manufacturer"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPJP+GG2, Kattankudy",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–2 PM",
+        "4–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4 AM–10 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

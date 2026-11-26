@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD34Y27XENVR3Y7YQY47",
+  "name": "Kalavanchikudi",
+  "coordinates": {
+    "latitude": 7.517777799999999,
+    "longitude": 81.7871737
+  },
+  "categories": [
+    "Bus stop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kaluwanchikudy",
+  "business_status": "OPEN"
+}

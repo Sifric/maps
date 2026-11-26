@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC44CPPGH76R2CQNTYK7",
+  "name": "Learning Driver Test (trial) Centre",
+  "coordinates": {
+    "latitude": 7.7329139,
+    "longitude": 81.6683339
+  },
+  "categories": [
+    "Driving test center"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMM9+588, Batticaloa",
+  "business_status": "OPEN"
+}

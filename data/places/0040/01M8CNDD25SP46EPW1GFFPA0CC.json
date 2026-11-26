@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD25SP46EPW1GFFPA0CC",
+  "name": "Kovi Home",
+  "coordinates": {
+    "latitude": 7.9213276,
+    "longitude": 81.5246705
+  },
+  "categories": [
+    "Housing development"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WGCF+GVM, Agriculture road, Kondayankeny",
+  "business_status": "OPEN"
+}

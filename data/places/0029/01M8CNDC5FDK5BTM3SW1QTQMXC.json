@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC5FDK5BTM3SW1QTQMXC",
+  "name": "River Park - ரிவர் பார்க்",
+  "coordinates": {
+    "latitude": 7.9230032999999995,
+    "longitude": 81.5172983
+  },
+  "categories": [
+    "Park"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WGF8+6W, Oddamavadi",
+  "business_status": "OPEN"
+}

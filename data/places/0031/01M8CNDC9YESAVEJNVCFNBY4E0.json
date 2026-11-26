@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9YESAVEJNVCFNBY4E0",
+  "name": "Summig full",
+  "coordinates": {
+    "latitude": 7.5293725,
+    "longitude": 81.7946092
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQHV+PRX, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

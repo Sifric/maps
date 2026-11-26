@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCC5J05SFFW2S9S3VKPJ",
+  "name": "Narangala Retreat Cabin",
+  "coordinates": {
+    "latitude": 7.0079433,
+    "longitude": 81.03065149999999
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "225M+F33, Badulla",
+  "business_status": "OPEN"
+}

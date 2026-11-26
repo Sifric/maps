@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBCWHD68RQ9C13QBZEDG",
+  "name": "N.S.R RENT A CAR",
+  "coordinates": {
+    "latitude": 7.4248503999999995,
+    "longitude": 81.8209892
+  },
+  "categories": [
+    "Car rental agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Main Street pandirppu, Kalmunai 32300",
+  "business_status": "CLOSED_TEMPORARILY"
+}

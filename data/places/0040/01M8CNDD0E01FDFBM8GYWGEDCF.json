@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD0E01FDFBM8GYWGEDCF",
+  "name": "AN DRY FISH SHOP",
+  "coordinates": {
+    "latitude": 7.9179528999999995,
+    "longitude": 81.5184986
+  },
+  "categories": [
+    "Prawn fishing"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG99+59Q, Main St, Oddamavadi 30420",
+  "business_status": "OPEN"
+}

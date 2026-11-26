@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCCJ115P7B14GT7BDVYB",
+  "name": "Saravanaa villa",
+  "coordinates": {
+    "latitude": 7.7233851,
+    "longitude": 81.6991595
+  },
+  "categories": [
+    "Holiday apartment"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "45 Station Cross Rd, Batticaloa 30000",
+  "business_status": "OPEN"
+}

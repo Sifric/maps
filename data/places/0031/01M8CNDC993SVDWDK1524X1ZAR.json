@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC993SVDWDK1524X1ZAR",
+  "name": "C&S Cake Creation",
+  "coordinates": {
+    "latitude": 7.769349399999999,
+    "longitude": 81.1747498
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No 61 track5, Aralaganwila",
+  "business_status": "OPEN"
+}

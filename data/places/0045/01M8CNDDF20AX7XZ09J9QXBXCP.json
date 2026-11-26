@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDDF20AX7XZ09J9QXBXCP",
+  "name": "SALON OOM & Dj Oom",
+  "coordinates": {
+    "latitude": 6.9396972,
+    "longitude": 81.035867
+  },
+  "categories": [
+    "Barber shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\nFive Pillars Junction, Hali-ela",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "9 AM–8 PM"
+      ]
+    }
+  ],
+  "business_status": "CLOSED"
+}

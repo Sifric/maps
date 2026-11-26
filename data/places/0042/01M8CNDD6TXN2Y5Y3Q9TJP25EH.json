@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD6TXN2Y5Y3Q9TJP25EH",
+  "name": "One only Forest Resort in Batticaloa",
+  "coordinates": {
+    "latitude": 7.595660199999999,
+    "longitude": 81.4584122
+  },
+  "categories": [
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

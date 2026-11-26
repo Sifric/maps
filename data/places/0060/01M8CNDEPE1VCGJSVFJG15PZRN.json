@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEPE1VCGJSVFJG15PZRN",
+  "name": "Apartment for Day Rent",
+  "coordinates": {
+    "latitude": 6.8698758,
+    "longitude": 79.8634309
+  },
+  "categories": [
+    "Holiday apartment rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "37th Ln, Colombo",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE3HYXFW1C6GSJ75B9TE",
+  "name": "Hopper Shop",
+  "coordinates": {
+    "latitude": 6.1393056999999995,
+    "longitude": 80.1097506
+  },
+  "categories": [
+    "Fast food restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "190 Baddegama Rd, Hikkaduwa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC96YG0MYY79CMG01421",
+  "name": "இலைக்கஞ்சி shop",
+  "coordinates": {
+    "latitude": 7.7572709,
+    "longitude": 81.6302783
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJ4J+W42, Trincomalee-Batticaloa Rd, Mylambaveli",
+  "business_status": "OPEN"
+}

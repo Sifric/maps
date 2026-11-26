@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEBTK2C6MV0G1XZ3N3SP",
+  "name": "Boutique 87",
+  "coordinates": {
+    "latitude": 6.4136371,
+    "longitude": 80.0010825
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "87 Galle Rd, Bentota",
+  "business_status": "OPEN"
+}

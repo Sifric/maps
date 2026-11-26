@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCR20RGXDFDM9Z8M70D5",
+  "name": "Sando Playground",
+  "coordinates": {
+    "latitude": 7.670441299999999,
+    "longitude": 81.734087
+  },
+  "categories": [
+    "Playground"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPCM+5JG, Colombo - Batticaloa Hwy, Kattankudy",
+  "business_status": "OPEN"
+}

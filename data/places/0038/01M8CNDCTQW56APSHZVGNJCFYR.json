@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCTQW56APSHZVGNJCFYR",
+  "name": "Proposed building site",
+  "coordinates": {
+    "latitude": 7.7582040999999995,
+    "longitude": 81.6784146
+  },
+  "categories": [
+    "Hardware store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Bar Rd, Batticaloa 30000",
+  "business_status": "OPEN"
+}

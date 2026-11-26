@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDEE60H25FQKHJ5DG7NQF",
+  "name": "Nippon Villa Beach Resort",
+  "coordinates": {
+    "latitude": 6.1289491,
+    "longitude": 80.1034956
+  },
+  "categories": [
+    "Resort hotel",
+    "Group accommodation",
+    "Holiday apartment rental",
+    "Hotel",
+    "Lodging"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "No 412D, Galle Road, Wewala, Hikkaduwa 80240",
+  "business_status": "OPEN"
+}

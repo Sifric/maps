@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD1PDZWYS92RV09RWS2H",
+  "name": "Fahim Home",
+  "coordinates": {
+    "latitude": 7.9141634,
+    "longitude": 81.528514
+  },
+  "categories": [
+    "Apartment complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG7H+MC, Oddamavadi",
+  "business_status": "OPEN"
+}

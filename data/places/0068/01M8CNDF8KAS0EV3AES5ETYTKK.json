@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDF8KAS0EV3AES5ETYTKK",
+  "name": "Auto Clean Park",
+  "coordinates": {
+    "latitude": 6.6417974,
+    "longitude": 80.503732
+  },
+  "categories": [
+    "Car wash"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Bogoda aramba Pelmadulla, 70070",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7 AM–5 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

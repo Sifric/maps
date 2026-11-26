@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCB48C5BGV01A7M3BC4C",
+  "name": "Yammi cake shop",
+  "coordinates": {
+    "latitude": 7.4350226,
+    "longitude": 81.6284771
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "G 17/1, Gonagolla",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCG4RS4ATMG2307N5WB0",
+  "name": "Abrar Masjid",
+  "coordinates": {
+    "latitude": 7.7830346,
+    "longitude": 81.6180327
+  },
+  "categories": [
+    "Mosque"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJM9+667, Eravur",
+  "business_status": "OPEN"
+}

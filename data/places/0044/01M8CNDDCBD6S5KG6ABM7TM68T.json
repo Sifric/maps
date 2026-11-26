@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDCBD6S5KG6ABM7TM68T",
+  "name": "FEROS",
+  "coordinates": {
+    "latitude": 7.787029899999999,
+    "longitude": 81.6102858
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Iyankerny Muslim, Eravur",
+  "business_status": "OPEN"
+}

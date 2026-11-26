@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCS81V9RM6R5HHKVG673",
+  "name": "PS Rest House & Restaurant",
+  "coordinates": {
+    "latitude": 7.7150912,
+    "longitude": 81.7105766
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "113, 115 New Kalmunai Rd, Kallady",
+  "business_status": "OPEN"
+}

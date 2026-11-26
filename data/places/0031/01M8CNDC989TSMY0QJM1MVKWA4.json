@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC989TSMY0QJM1MVKWA4",
+  "name": "மருதம் ஒருங்கிணைந்த பண்ணை",
+  "coordinates": {
+    "latitude": 7.8313592,
+    "longitude": 81.5207179
+  },
+  "categories": [
+    "Farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "RGJC+G7, Perillaveli",
+  "business_status": "OPEN"
+}

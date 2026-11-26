@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD4643HQDDZ41491GMZK",
+  "name": "Muwangala Central Dispensary",
+  "coordinates": {
+    "latitude": 7.247818,
+    "longitude": 81.6678518
+  },
+  "categories": [
+    "Medical clinic"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Galmadu-Muwangala-Hingurana Rd",
+  "business_status": "OPEN"
+}

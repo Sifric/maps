@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD6WWDF2N9XT0PG2TW0Z",
+  "name": "Sigiri Pabasara Homestay",
+  "coordinates": {
+    "latitude": 7.9448703,
+    "longitude": 80.7507293
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "65 C Kayanwala, Sigiriya",
+  "business_status": "OPEN"
+}

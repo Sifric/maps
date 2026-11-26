@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCAVRHECPX3ANB03GQS8",
+  "name": "VASUHI RESTARUANT",
+  "coordinates": {
+    "latitude": 7.6563319,
+    "longitude": 81.6611128
+  },
+  "categories": [
+    "Family restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MM46+GC, Batticaloa",
+  "business_status": "OPEN"
+}

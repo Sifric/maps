@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9K6CVBFE79DHTP1Y40",
+  "name": "Machans Soup Hut",
+  "coordinates": {
+    "latitude": 7.722369199999999,
+    "longitude": 81.7014344
+  },
+  "categories": [
+    "Soup shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PPC2+VJP, Batticaloa",
+  "business_status": "OPEN"
+}

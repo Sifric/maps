@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC52ZHRFPMYVW8CEANPB",
+  "name": "Vocational Training centre",
+  "coordinates": {
+    "latitude": 7.8560083999999994,
+    "longitude": 81.54348069999999
+  },
+  "categories": [
+    "Education center"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "VG4V+C95, Thavapuram",
+  "business_status": "OPEN"
+}

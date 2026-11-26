@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEC9Z6YAREJGW3YTE3ZZ",
+  "name": "Serenity Inn bentota",
+  "coordinates": {
+    "latitude": 6.4238124999999995,
+    "longitude": 80.0023125
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Bentota",
+  "business_status": "OPEN"
+}

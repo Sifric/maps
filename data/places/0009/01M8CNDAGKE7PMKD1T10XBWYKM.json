@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAGKE7PMKD1T10XBWYKM",
+  "name": "STAR VILLA",
+  "coordinates": {
+    "latitude": 7.3746282999999995,
+    "longitude": 81.8499349
+  },
+  "categories": [
+    "Villa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9RFX+VX3, Karaitivu 32250",
+  "business_status": "OPEN"
+}

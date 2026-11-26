@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDED0V10GACC0JA03GSEQ",
+  "name": "Rasanka's Inn",
+  "coordinates": {
+    "latitude": 6.0481164,
+    "longitude": 80.2148101
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Elliot Road, 93, Galle 80000",
+  "business_status": "OPEN"
+}

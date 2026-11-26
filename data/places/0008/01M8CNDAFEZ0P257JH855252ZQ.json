@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAFEZ0P257JH855252ZQ",
+  "name": "Rest House",
+  "coordinates": {
+    "latitude": 7.3284911,
+    "longitude": 81.8612452
+  },
+  "categories": [
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "8VH6+9M, Nintavur",
+  "business_status": "OPEN"
+}

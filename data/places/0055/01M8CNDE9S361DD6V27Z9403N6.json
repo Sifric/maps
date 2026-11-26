@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE9S361DD6V27Z9403N6",
+  "name": "Padma Food Mart",
+  "coordinates": {
+    "latitude": 6.002581999999999,
+    "longitude": 80.2620386
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Thalpe, north road, Galle 80600",
+  "business_status": "OPEN"
+}

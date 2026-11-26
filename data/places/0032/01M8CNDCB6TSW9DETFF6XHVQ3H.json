@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCB6TSW9DETFF6XHVQ3H",
+  "name": "Kala thevi store",
+  "coordinates": {
+    "latitude": 7.489927499999999,
+    "longitude": 81.7985307
+  },
+  "categories": [
+    "Supermarket"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "FQQX+XCC, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

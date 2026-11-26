@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD63H19WN4RQSKTSH7XB",
+  "name": "Paruththichenai Cemetery",
+  "coordinates": {
+    "latitude": 7.6720605,
+    "longitude": 81.6598913
+  },
+  "categories": [
+    "Cemetery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kayanmadu Road",
+  "business_status": "OPEN"
+}

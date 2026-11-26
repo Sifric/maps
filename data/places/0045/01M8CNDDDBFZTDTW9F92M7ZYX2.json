@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDDBFZTDTW9F92M7ZYX2",
+  "name": "Auto repair shop",
+  "coordinates": {
+    "latitude": 8.4050925,
+    "longitude": 81.31708359999999
+  },
+  "categories": [
+    "Repair service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "C848+2RP, Thoppur",
+  "business_status": "OPEN"
+}

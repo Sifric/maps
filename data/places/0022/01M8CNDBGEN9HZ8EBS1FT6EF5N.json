@@ -1,0 +1,20 @@
+{
+  "id": "01M8CNDBGEN9HZ8EBS1FT6EF5N",
+  "name": "Pothuvil Bus Stand",
+  "coordinates": {
+    "latitude": 6.8752705999999995,
+    "longitude": 81.8306334
+  },
+  "categories": [
+    "Bus stop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "Pottuvil",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCB68MFMSG7DMCTFDT9P",
+  "name": "PS SUPER MARKET",
+  "coordinates": {
+    "latitude": 7.5492683,
+    "longitude": 81.78755679999999
+  },
+  "categories": [
+    "Market"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQXP+MWR, Colombo - Batticaloa Hwy, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

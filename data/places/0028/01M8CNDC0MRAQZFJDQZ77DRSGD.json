@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC0MRAQZFJDQZ77DRSGD",
+  "name": "Automoli Hybrid Parts",
+  "coordinates": {
+    "latitude": 6.7059774,
+    "longitude": 79.9599733
+  },
+  "categories": [
+    "Auto parts market"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Panadura 12524",
+  "business_status": "OPEN"
+}

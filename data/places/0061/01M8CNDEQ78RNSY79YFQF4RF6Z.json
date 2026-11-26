@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDEQ78RNSY79YFQF4RF6Z",
+  "name": "Dream Home",
+  "coordinates": {
+    "latitude": 9.6631672,
+    "longitude": 80.0266116
+  },
+  "categories": [
+    "Villa",
+    "Holiday home",
+    "Guest house"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "24 Temple Rd Ln, Jaffna 40000",
+  "business_status": "OPEN"
+}

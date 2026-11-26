@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDBGDT8KN5DWMCEPA7GAV",
+  "name": "Arugam Bay Taxi",
+  "coordinates": {
+    "latitude": 6.847299899999999,
+    "longitude": 81.8315885
+  },
+  "categories": [
+    "Taxi service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Water Music Road, Arugam Bay, Pottuvil, Arugam Bay 32500",
+  "business_status": "OPEN"
+}

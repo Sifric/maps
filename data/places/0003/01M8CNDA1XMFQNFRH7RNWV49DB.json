@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA1XMFQNFRH7RNWV49DB",
+  "name": "Kavi Freez",
+  "coordinates": {
+    "latitude": 7.3982902,
+    "longitude": 81.622542
+  },
+  "categories": [
+    "Ice cream shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Weranketagoda 32062",
+  "business_status": "OPEN"
+}

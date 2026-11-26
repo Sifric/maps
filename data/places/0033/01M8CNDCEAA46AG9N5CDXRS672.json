@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCEAA46AG9N5CDXRS672",
+  "name": "Family Pharmacy",
+  "coordinates": {
+    "latitude": 7.68002,
+    "longitude": 81.72924619999999
+  },
+  "categories": [
+    "Pharmacy"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPJH+2M5, French Ave, Kattankudy",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDCF3MBVSGP5R6D7CP922",
+  "name": "Medical Centre",
+  "coordinates": {
+    "latitude": 6.9852098,
+    "longitude": 81.0691531
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Badulla",
+  "business_status": "OPEN"
+}

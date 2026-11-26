@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE9Q6SHMDTT3AQ1JZEBS",
+  "name": "Mom's food mart",
+  "coordinates": {
+    "latitude": 6.0454229,
+    "longitude": 80.2110324
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "100 A viscom road, Galle 80000",
+  "business_status": "OPEN"
+}

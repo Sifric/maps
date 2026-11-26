@@ -1,0 +1,20 @@
+{
+  "id": "01M8CNDBMS4XBVYPN1GZZDPJ8X",
+  "name": "Bus Stop",
+  "coordinates": {
+    "latitude": 7.4040668,
+    "longitude": 81.2434245
+  },
+  "categories": [
+    "Bus stop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "Padiyatalawa",
+  "business_status": "OPEN"
+}

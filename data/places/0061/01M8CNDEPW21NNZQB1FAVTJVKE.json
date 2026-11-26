@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDEPW21NNZQB1FAVTJVKE",
+  "name": "Sarras Guest House",
+  "coordinates": {
+    "latitude": 9.6618677,
+    "longitude": 80.0274821
+  },
+  "categories": [
+    "Hotel",
+    "Lodging"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "20 Somasundaram Ave, Jaffna",
+  "business_status": "OPEN"
+}

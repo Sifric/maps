@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDDYXY9JPPXFQXM0H91JF",
+  "name": "Hotel Wunderbar",
+  "coordinates": {
+    "latitude": 6.411594,
+    "longitude": 80.0002638
+  },
+  "categories": [
+    "Hotel",
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "204 A2, Bentota 80500",
+  "business_status": "OPEN"
+}

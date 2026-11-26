@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDA9KQZ17Z0N4QTHK2B3",
+  "name": "Akram house",
+  "coordinates": {
+    "latitude": 7.6501502,
+    "longitude": 81.7363099
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "peace village, No.45",
+  "business_status": "OPEN"
+}

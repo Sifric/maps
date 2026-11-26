@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC69Q03BFB2KDF0B8JDG",
+  "name": "Traveler's Cafe",
+  "coordinates": {
+    "latitude": 7.950580899999999,
+    "longitude": 81.45955479999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "road, 123 Km post, Batticaloa",
+  "business_status": "OPEN"
+}

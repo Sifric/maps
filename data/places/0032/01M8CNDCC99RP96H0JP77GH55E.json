@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCC99RP96H0JP77GH55E",
+  "name": "Sweet Mary's Garden",
+  "coordinates": {
+    "latitude": 7.721392,
+    "longitude": 81.71236979999999
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PPC6+HW5, Babysingam Sathiriyar Rd, Kallady",
+  "business_status": "OPEN"
+}

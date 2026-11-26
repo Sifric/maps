@@ -1,0 +1,74 @@
+{
+  "id": "01M8CNDA5MAG8VX71K36MK8T4F",
+  "name": "Indradipa Bar",
+  "coordinates": {
+    "latitude": 7.1459044,
+    "longitude": 81.2284741
+  },
+  "categories": [
+    "Bar"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "46WH+999",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "11 AM–2 PM",
+        "5–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "11 AM–2 PM",
+        "5–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "11 AM–2 PM",
+        "5–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "11 AM–2 PM",
+        "5–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "11 AM–2 PM",
+        "5–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "11 AM–2 PM",
+        "5–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "11 AM–2 PM",
+        "5–10 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

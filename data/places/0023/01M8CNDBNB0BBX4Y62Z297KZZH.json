@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDBNB0BBX4Y62Z297KZZH",
+  "name": "Real Estate Sri Lanka",
+  "coordinates": {
+    "latitude": 6.9052188999999995,
+    "longitude": 79.8519209
+  },
+  "categories": [
+    "Real estate agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "345/8 Galle Rd, Colombo 00300",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9 AM–5 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "10 AM–1 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

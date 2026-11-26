@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCTFAYX8X8MAXP78HSCX",
+  "name": "K1tec mobile shop",
+  "coordinates": {
+    "latitude": 7.7326483999999995,
+    "longitude": 81.6926178
+  },
+  "categories": [
+    "Mobile phone repair shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kulavady, Batticaloa 30000",
+  "business_status": "OPEN"
+}

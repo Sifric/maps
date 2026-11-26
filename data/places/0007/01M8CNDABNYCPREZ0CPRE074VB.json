@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDABNYCPREZ0CPRE074VB",
+  "name": "Octopussy Colombo",
+  "coordinates": {
+    "latitude": 6.918130799999999,
+    "longitude": 79.8583256
+  },
+  "categories": [
+    "Cocktail bar",
+    "Tapas bar"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "WV95+592, 33 Park St, Colombo 00200",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 PM–3 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 PM–3 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7 PM–4 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 PM–4 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

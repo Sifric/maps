@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCV87QXCCJQ6J6P7CWF0",
+  "name": "Boat Service",
+  "coordinates": {
+    "latitude": 7.7135941,
+    "longitude": 81.69978449999999
+  },
+  "categories": [
+    "Ferry service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "134 Bazaar St, Batticaloa",
+  "business_status": "OPEN"
+}

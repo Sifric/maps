@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDEK04DSE4QR3BH9WGPE2",
+  "name": "NJN Chicken Shop",
+  "coordinates": {
+    "latitude": 9.8128625,
+    "longitude": 80.2023906
+  },
+  "categories": [
+    "Chicken shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "R672+4XR, Point Pedro",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6 AM–2 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6 AM–2 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6 AM–2 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6 AM–2 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6 AM–2 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6 AM–2 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

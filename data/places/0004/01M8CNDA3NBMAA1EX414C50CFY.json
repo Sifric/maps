@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDA3NBMAA1EX414C50CFY",
+  "name": "New Lakshan Bakery",
+  "coordinates": {
+    "latitude": 7.100591499999999,
+    "longitude": 81.8404965
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "13 Road Thirukkovil - 04, Thirukkovil 32420",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6 AM–5:30 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6 AM–5:30 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6 AM–5:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

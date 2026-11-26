@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDEQ8N8DHKBRGC9YX83PY",
+  "name": "Villa with private pool",
+  "coordinates": {
+    "latitude": 9.7049398,
+    "longitude": 80.02797699999999
+  },
+  "categories": [
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Kondavil",
+  "business_status": "OPEN"
+}

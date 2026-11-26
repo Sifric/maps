@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCP1RG801THBHC0FPV19",
+  "name": "Arul Vegetable Shop",
+  "coordinates": {
+    "latitude": 7.804009499999999,
+    "longitude": 81.5710837
+  },
+  "categories": [
+    "Vegetable wholesale market"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "RH3C+JC4, Trincomalee-Batticaloa Rd, vantharumoolai",
+  "business_status": "OPEN"
+}

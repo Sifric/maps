@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD6R6AY3EG3TYFDB54E5",
+  "name": "Hafiz Jalaldeen Stores",
+  "coordinates": {
+    "latitude": 7.9449536,
+    "longitude": 81.5029788
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Maradankadawala-Habarana-Thirukkondaiadimadu Hwy",
+  "business_status": "OPEN"
+}

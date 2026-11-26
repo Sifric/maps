@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDD8FT5M3RARPT529HF5",
+  "name": "Shan yathu House",
+  "coordinates": {
+    "latitude": 7.5174332999999995,
+    "longitude": 81.7884484
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "210A Maariyamman Kovil Rd, Thuraineelavanai 7",
+  "business_status": "OPEN"
+}

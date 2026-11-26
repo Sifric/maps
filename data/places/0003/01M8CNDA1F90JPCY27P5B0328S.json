@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA1F90JPCY27P5B0328S",
+  "name": "Dreamy desserts",
+  "coordinates": {
+    "latitude": 7.409329,
+    "longitude": 81.83990899999999
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CR5Q+PXM, Beach Rd, Maruthamunai 32300",
+  "business_status": "OPEN"
+}

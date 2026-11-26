@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE767830VXMEQAEQ6RVR",
+  "name": "Daddy's Chai",
+  "coordinates": {
+    "latitude": 5.9809703,
+    "longitude": 80.4320139
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "278 New St, Weligama 81700",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4:30 PM–12:59 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4:30 PM–12:59 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4:30 PM–12:59 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4:30 PM–12:59 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "2:30 PM–12:59 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4:30 PM–12:59 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

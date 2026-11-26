@@ -1,0 +1,20 @@
+{
+  "id": "01M8CNDE8V9VA431EFNMZEJTN9",
+  "name": "Buddhika Stores",
+  "coordinates": {
+    "latitude": 6.3171729999999995,
+    "longitude": 80.21369
+  },
+  "categories": [
+    "Asian grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

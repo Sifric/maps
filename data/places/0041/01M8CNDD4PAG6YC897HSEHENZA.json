@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD4PAG6YC897HSEHENZA",
+  "name": "NS RESTAURANTS",
+  "coordinates": {
+    "latitude": 7.9216897,
+    "longitude": 81.5686525
+  },
+  "categories": [
+    "Fast food restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WHC9+MFC, Pasikuda Road, Kalkudah",
+  "business_status": "OPEN"
+}

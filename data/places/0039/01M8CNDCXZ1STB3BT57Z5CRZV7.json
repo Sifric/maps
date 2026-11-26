@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCXZ1STB3BT57Z5CRZV7",
+  "name": "Public Toilet",
+  "coordinates": {
+    "latitude": 7.714701499999999,
+    "longitude": 81.69634959999999
+  },
+  "categories": [
+    "Public bathroom"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "23 Munai St, StBatticaloa",
+  "business_status": "OPEN"
+}

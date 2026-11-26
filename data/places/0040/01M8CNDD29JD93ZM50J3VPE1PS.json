@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD29JD93ZM50J3VPE1PS",
+  "name": "Home Sweet Home",
+  "coordinates": {
+    "latitude": 7.9213276,
+    "longitude": 81.5246705
+  },
+  "categories": [
+    "House sitter"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "peoples bank, No:27 road",
+  "business_status": "OPEN"
+}

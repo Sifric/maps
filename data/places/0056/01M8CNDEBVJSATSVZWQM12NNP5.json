@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEBVJSATSVZWQM12NNP5",
+  "name": "Arena Hotel",
+  "coordinates": {
+    "latitude": 6.4433073,
+    "longitude": 79.9919474
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Galle Rd, Aluthgama",
+  "business_status": "OPEN"
+}

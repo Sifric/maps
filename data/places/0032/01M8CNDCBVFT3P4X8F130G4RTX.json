@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDCBVFT3P4X8F130G4RTX",
+  "name": "Sky View Guest House",
+  "coordinates": {
+    "latitude": 7.7319474999999995,
+    "longitude": 81.6902721
+  },
+  "categories": [
+    "Hotel",
+    "Guest house"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No 88/4/1, Kumarathan Kovil Road, 30000",
+  "business_status": "OPEN"
+}

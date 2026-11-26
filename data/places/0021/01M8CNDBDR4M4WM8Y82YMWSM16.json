@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDBDR4M4WM8Y82YMWSM16",
+  "name": "Kasim Tyre Work",
+  "coordinates": {
+    "latitude": 7.4167827,
+    "longitude": 81.8089347
+  },
+  "categories": [
+    "Auto repair shop",
+    "Tire shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CR85+PH7, Kalmunai-Chavalakadai Rd, Kalmunai",
+  "business_status": "OPEN"
+}

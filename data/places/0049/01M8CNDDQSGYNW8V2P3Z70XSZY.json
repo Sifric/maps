@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDQSGYNW8V2P3Z70XSZY",
+  "name": "Food Hub",
+  "coordinates": {
+    "latitude": 6.1076463,
+    "longitude": 80.341141
+  },
+  "categories": [
+    "Sri Lankan restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Kerangahawila, Yakkalamulla",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6 AM–4:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6 AM–4:45 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6 AM–4:45 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6 AM–4:45 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6 AM–4:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6 AM–4:45 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6 AM–4:45 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

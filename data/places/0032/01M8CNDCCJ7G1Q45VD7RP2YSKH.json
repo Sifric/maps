@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCCJ7G1Q45VD7RP2YSKH",
+  "name": "Vibra hostel",
+  "coordinates": {
+    "latitude": 7.9241512,
+    "longitude": 80.7076526
+  },
+  "categories": [
+    "Hostel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Galakotuwa, Sigiriya 21120",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC6AG72CVRYM0QQA1WWH",
+  "name": "Blessing tasty food",
+  "coordinates": {
+    "latitude": 7.9246384,
+    "longitude": 81.5453647
+  },
+  "categories": [
+    "Indian restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WGFV+VXG, Kalkudah",
+  "business_status": "OPEN"
+}

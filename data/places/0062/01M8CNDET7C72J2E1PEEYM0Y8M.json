@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDET7C72J2E1PEEYM0Y8M",
+  "name": "Courts Complex",
+  "coordinates": {
+    "latitude": 9.6601839,
+    "longitude": 80.0130142
+  },
+  "categories": [
+    "Courthouse"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "M267+36C, A9, Jaffna",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9 AM–4:45 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9 AM–4:45 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9 AM–4:45 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9 AM–4:45 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9 AM–4:45 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

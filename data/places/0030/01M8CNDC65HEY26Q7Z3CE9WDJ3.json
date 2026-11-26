@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC65HEY26Q7Z3CE9WDJ3",
+  "name": "N.H.H Restaurant",
+  "coordinates": {
+    "latitude": 7.9144139,
+    "longitude": 81.52071579999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG7C+Q78, Jumma Masjid Road, Oddamavadi",
+  "business_status": "OPEN"
+}

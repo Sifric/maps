@@ -1,0 +1,74 @@
+{
+  "id": "01M8CNDD88XAHK0NKGRNRXK4YX",
+  "name": "Sarasi Agro Center",
+  "coordinates": {
+    "latitude": 7.0344739999999994,
+    "longitude": 80.10348499999999
+  },
+  "categories": [
+    "Agricultural organization",
+    "Agrochemicals supplier",
+    "Farm equipment supplier",
+    "Fertilizer supplier",
+    "Irrigation equipment supplier",
+    "Pest control service",
+    "Plant nursery",
+    "Seed supplier"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "333 Hanwella - Kirindiwela - Urapola Rd, Radawana 11725",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8 AM–5 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "01M8CNDEBR7XH5WK65XWW1A7AF",
+  "name": "Villa Acadia",
+  "coordinates": {
+    "latitude": 6.4448335,
+    "longitude": 80.0204225
+  },
+  "categories": [
+    "Villa",
+    "Bed & breakfast",
+    "Extended stay hotel",
+    "Hotel",
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "C2VC+W5, Addarawatta, Nakandalagoda, Dharga Town",
+  "business_status": "OPEN"
+}

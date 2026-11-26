@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAWFR61G3GGX2ZTP7R88",
+  "name": "Salam Jumma Mosque",
+  "coordinates": {
+    "latitude": 7.355841,
+    "longitude": 81.8084222
+  },
+  "categories": [
+    "Mosque"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9R45+89M, Sammanthurai",
+  "business_status": "OPEN"
+}

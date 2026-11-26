@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAHFQ8F0VA667MZPWM1N",
+  "name": "Rest Place ( Wishrama Shalawa )",
+  "coordinates": {
+    "latitude": 7.2932526,
+    "longitude": 81.67836129999999
+  },
+  "categories": [
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "L/165, L/165 Kachcheri Rd, Ampara",
+  "business_status": "OPEN"
+}

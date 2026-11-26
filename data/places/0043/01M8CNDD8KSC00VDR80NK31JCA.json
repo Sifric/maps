@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD8KSC00VDR80NK31JCA",
+  "name": "Ragu",
+  "coordinates": {
+    "latitude": 8.3004114,
+    "longitude": 81.3866812
+  },
+  "categories": [
+    "Home builder"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "892P+5M7",
+  "business_status": "OPEN"
+}

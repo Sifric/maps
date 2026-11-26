@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAGQZ7T2HHHWMVK4YMX0",
+  "name": "Farook Villa",
+  "coordinates": {
+    "latitude": 7.3872677,
+    "longitude": 81.8392353
+  },
+  "categories": [
+    "Building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Karaitivu 32250",
+  "business_status": "OPEN"
+}

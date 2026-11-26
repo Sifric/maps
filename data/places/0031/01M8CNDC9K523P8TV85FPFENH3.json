@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9K523P8TV85FPFENH3",
+  "name": "falefel abou maurice",
+  "coordinates": {
+    "latitude": 7.7203463999999995,
+    "longitude": 81.7037716
+  },
+  "categories": [
+    "Sandwich shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "St Sebastian St, Batticaloa",
+  "business_status": "OPEN"
+}

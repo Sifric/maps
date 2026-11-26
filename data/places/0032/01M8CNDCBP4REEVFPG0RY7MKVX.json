@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBP4REEVFPG0RY7MKVX",
+  "name": "Sitheeq Taste shop",
+  "coordinates": {
+    "latitude": 7.7882012,
+    "longitude": 81.6068524
+  },
+  "categories": [
+    "Soup kitchen"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJQ4+8P4, Punnakuda Rd, Eravur",
+  "business_status": "OPEN"
+}

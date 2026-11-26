@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEC47WA6SAWY1W9R6487",
+  "name": "Hotel Orchid",
+  "coordinates": {
+    "latitude": 6.440765,
+    "longitude": 79.9922802
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "22, 10 Kaluwamodara, Aluthgama 12500",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDG36XB4E4VYWSYBPVV4",
+  "name": "Tire shop.",
+  "coordinates": {
+    "latitude": 7.1212596999999995,
+    "longitude": 81.0843057
+  },
+  "categories": [
+    "Auto repair shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "43CM+GP, Wewathenna",
+  "business_status": "OPEN"
+}

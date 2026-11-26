@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDEQ9HC9BK5PV6YZ0DBVG",
+  "name": "A&T villa",
+  "coordinates": {
+    "latitude": 9.6567211,
+    "longitude": 80.0332566
+  },
+  "categories": [
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Jaffna",
+  "business_status": "OPEN"
+}

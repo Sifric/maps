@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD77DSV36W0T5QBCAQX3",
+  "name": "Public Library",
+  "coordinates": {
+    "latitude": 8.1341883,
+    "longitude": 81.4360768
+  },
+  "categories": [
+    "Library"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "4CMP+MCG, Trincomalee-Batticaloa Rd, Vakarai",
+  "business_status": "OPEN"
+}

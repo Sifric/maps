@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA51EY3PXE00TDKWY38K",
+  "name": "Paddyway Resort",
+  "coordinates": {
+    "latitude": 6.8458114,
+    "longitude": 81.8284882
+  },
+  "categories": [
+    "Resort hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Al Aksha School Rd, Arugam Bay 32500",
+  "business_status": "OPEN"
+}

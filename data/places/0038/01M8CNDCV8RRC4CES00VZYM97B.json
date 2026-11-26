@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCV8RRC4CES00VZYM97B",
+  "name": "Co-op Inn three wheeler parking",
+  "coordinates": {
+    "latitude": 7.7253889,
+    "longitude": 81.6906912
+  },
+  "categories": [
+    "Transportation service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMGR+686, Trincomalee-Batticaloa Rd, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD826MQBS17MQSJQZQZC",
+  "name": "Urani Junction",
+  "coordinates": {
+    "latitude": 7.7296659,
+    "longitude": 81.67721689999999
+  },
+  "categories": [
+    "Bus stop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Batticaloa",
+  "business_status": "OPEN"
+}

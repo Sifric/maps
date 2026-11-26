@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDG858GQMCSV712HR8P66",
+  "name": "Weligama Shoe Centre",
+  "coordinates": {
+    "latitude": 6.1009381,
+    "longitude": 80.4770856
+  },
+  "categories": [
+    "Shoe store",
+    "Bag shop",
+    "Watch store",
+    "Wholesale market"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/northern-province-collector"
+    ]
+  },
+  "address": "No:41 Main Street, Akuressa 81400",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8:30 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8:30 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8:30 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8:30 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8:30 AM–12:15 PM",
+        "1:30–7:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8:30 AM–7:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8:30 AM–7:45 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

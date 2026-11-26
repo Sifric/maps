@@ -1,0 +1,22 @@
+{
+  "id": "01M8CND9ZA43NJ5KVXHEDY5TY6",
+  "name": "University South Eastern",
+  "coordinates": {
+    "latitude": 7.2958691,
+    "longitude": 81.8484825
+  },
+  "categories": [
+    "Bus stop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Oluvil",
+  "business_status": "OPEN"
+}

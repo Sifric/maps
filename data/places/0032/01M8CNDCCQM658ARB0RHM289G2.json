@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDCCQM658ARB0RHM289G2",
+  "name": "Navai Guest House - Two-Bedroom Villa",
+  "coordinates": {
+    "latitude": 7.6938800999999994,
+    "longitude": 81.7166214
+  },
+  "categories": [
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kallady",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDCA2J4QE365EC5X43NYC",
+  "name": "Social Market",
+  "coordinates": {
+    "latitude": 7.9229671999999995,
+    "longitude": 81.5304669
+  },
+  "categories": [
+    "Auto parts store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Main Street, 04, 30400",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "10 AM–5:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "10 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "10 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "10 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "10 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "10 AM–5:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

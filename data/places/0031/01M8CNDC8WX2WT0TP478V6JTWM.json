@@ -1,0 +1,73 @@
+{
+  "id": "01M8CNDC8WX2WT0TP478V6JTWM",
+  "name": "ZS Trading",
+  "coordinates": {
+    "latitude": 7.6770160999999995,
+    "longitude": 81.7360018
+  },
+  "categories": [
+    "Supermarket"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Deen Rd, Kattankudy 30100",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6 AM–1:30 PM",
+        "4–10:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6 AM–1:30 PM",
+        "4–10:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6 AM–1:30 PM",
+        "4–10:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6 AM–1:30 PM",
+        "4–10:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6–11 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6 AM–1:30 PM",
+        "4–10:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6 AM–1:30 PM",
+        "4–10:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

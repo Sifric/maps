@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD6Q2C3AV871W5B2D549",
+  "name": "Fresh Milk & Tea - එලකිරි සහ තේ",
+  "coordinates": {
+    "latitude": 7.081507599999999,
+    "longitude": 81.5543075
+  },
+  "categories": [
+    "Farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No.99B Road, Siyambalanduwa",
+  "business_status": "OPEN"
+}

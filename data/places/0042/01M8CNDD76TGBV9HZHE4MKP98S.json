@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD76TGBV9HZHE4MKP98S",
+  "name": "Pet Doctor Animal Clinic",
+  "coordinates": {
+    "latitude": 6.978955699999999,
+    "longitude": 81.3732651
+  },
+  "categories": [
+    "Veterinarian"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "X9HF+H8J, Infront of bus stand, Dambagalla",
+  "business_status": "OPEN"
+}

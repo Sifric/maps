@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEDTXPHGX895B4YHQD3Q",
+  "name": "Weleges Place",
+  "coordinates": {
+    "latitude": 6.136476,
+    "longitude": 80.100859
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Sarath Goonawardana Mawatha, Hikkaduwa",
+  "business_status": "OPEN"
+}

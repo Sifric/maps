@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCVMRJ10NC9TY5A2BSRE",
+  "name": "Lake",
+  "coordinates": {
+    "latitude": 7.7113779,
+    "longitude": 81.7014634
+  },
+  "categories": [
+    "Lake"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Batticaloa",
+  "business_status": "OPEN"
+}

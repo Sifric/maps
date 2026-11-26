@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC7GH2S90MZJ5C1JXHPN",
+  "name": "My home",
+  "coordinates": {
+    "latitude": 7.967037899999999,
+    "longitude": 81.34511549999999
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "X88W+Q8, Kayankerni",
+  "business_status": "OPEN"
+}

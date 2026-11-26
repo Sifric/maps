@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD7J576AWGFWX3792NT3",
+  "name": "Goya Hardware",
+  "coordinates": {
+    "latitude": 7.9646726999999995,
+    "longitude": 81.33934459999999
+  },
+  "categories": [
+    "Hardware store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Rideethanna Main Rd",
+  "business_status": "OPEN"
+}

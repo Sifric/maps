@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBTVGE7QGGV7GKNH6C6",
+  "name": "Pooja Lake Queen Inn",
+  "coordinates": {
+    "latitude": 7.728719099999999,
+    "longitude": 81.68273649999999
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "574, Trinco Road , Urani, Batticaloa 30100",
+  "business_status": "OPEN"
+}

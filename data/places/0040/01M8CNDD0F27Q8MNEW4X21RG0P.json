@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD0F27Q8MNEW4X21RG0P",
+  "name": "AL IMAN HOTEL & BAKE HOUSE",
+  "coordinates": {
+    "latitude": 7.900181399999999,
+    "longitude": 81.5232221
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG2F+37H, Youth Club Rd, Oddamavadi",
+  "business_status": "OPEN"
+}

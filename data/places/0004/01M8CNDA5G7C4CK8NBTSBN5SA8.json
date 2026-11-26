@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDA5G7C4CK8NBTSBN5SA8",
+  "name": "Chai Station - Dewata",
+  "coordinates": {
+    "latitude": 6.0321191,
+    "longitude": 80.2403333
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "16/E Akuressa road, Galle",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4 PM–2 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4 PM–2 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4 PM–2 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4 PM–2 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4 PM–2 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4 PM–2 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

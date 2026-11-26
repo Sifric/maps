@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC72RWXGX0EYW757CG9X",
+  "name": "YLM Hotel And Bake House",
+  "coordinates": {
+    "latitude": 7.688206,
+    "longitude": 81.7298857
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "71 Telecom Rd, Kattankudy",
+  "business_status": "OPEN"
+}

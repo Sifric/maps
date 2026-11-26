@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCAZ714KDR2DD2TKHREG",
+  "name": "வேலன் மல்டி மார்ட்",
+  "coordinates": {
+    "latitude": 7.7806652,
+    "longitude": 81.5982123
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QHJX+778, Ellainagar, Selvitheatre Road, Eravur",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE1QJ0PPJ4C35WXENF52",
+  "name": "Galle Party Corner",
+  "coordinates": {
+    "latitude": 6.0362031,
+    "longitude": 80.219788
+  },
+  "categories": [
+    "Convenience store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Shop no 45, market cross road, Main Street, Galle",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9:30 AM–6:36 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9:30 AM–6:36 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9:30 AM–6:36 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9:30 AM–6:36 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9:30 AM–6:36 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9:30 AM–6:36 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "9:30 AM–12 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

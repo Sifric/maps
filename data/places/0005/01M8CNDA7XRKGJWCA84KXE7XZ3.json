@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA7XRKGJWCA84KXE7XZ3",
+  "name": "Village Burgers",
+  "coordinates": {
+    "latitude": 7.16608,
+    "longitude": 81.86030699999999
+  },
+  "categories": [
+    "Fast food restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "5V85+9P3, Colombo - Batticaloa Hwy, Sinnamuhattuvaram",
+  "business_status": "OPEN"
+}

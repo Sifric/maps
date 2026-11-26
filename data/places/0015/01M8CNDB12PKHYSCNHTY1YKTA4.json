@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDB12PKHYSCNHTY1YKTA4",
+  "name": "Karaitivu park",
+  "coordinates": {
+    "latitude": 7.383167599999999,
+    "longitude": 81.8475145
+  },
+  "categories": [
+    "Garden"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9RMW+2W6, Karaitivu 32250",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD5S22Q0NMWH4M0H5A89",
+  "name": "Hazeem Tyre Work Shop",
+  "coordinates": {
+    "latitude": 7.9098232,
+    "longitude": 81.5306669
+  },
+  "categories": [
+    "Auto repair shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Oddamavadi",
+  "business_status": "OPEN"
+}

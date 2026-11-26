@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDAF64NB11CWDB25FQDC3",
+  "name": "Homestay 24",
+  "coordinates": {
+    "latitude": 6.0502601,
+    "longitude": 80.1895294
+  },
+  "categories": [
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Galle",
+  "business_status": "OPEN"
+}

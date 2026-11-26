@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDC9H10B5S1SFN9WKHXQ3",
+  "name": "Hennayake Stores and Bake House",
+  "coordinates": {
+    "latitude": 8.056107899999999,
+    "longitude": 81.2433499
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "364V+C8, Kattuwanvila",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6–7 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6–7 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6–7 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6–7 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6–7 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6–7 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6–7 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

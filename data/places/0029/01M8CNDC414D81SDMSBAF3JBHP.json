@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDC414D81SDMSBAF3JBHP",
+  "name": "Golden College, Kommathurai",
+  "coordinates": {
+    "latitude": 7.7925308,
+    "longitude": 81.5871166
+  },
+  "categories": [
+    "Education center"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Sudar oli, road, Chenkaladi",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "1:30–8 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "1:30–8 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "1:30–8 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "1:30–8 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "1:30–8 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 AM–5 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

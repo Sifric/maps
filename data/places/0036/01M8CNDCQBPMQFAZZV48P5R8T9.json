@@ -1,0 +1,73 @@
+{
+  "id": "01M8CNDCQBPMQFAZZV48P5R8T9",
+  "name": "Energy Fitness Center",
+  "coordinates": {
+    "latitude": 6.5174303,
+    "longitude": 80.231661
+  },
+  "categories": [
+    "Gym"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "G68J+XMF, Baduraliya",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6–10:30 AM",
+        "3:30–8:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6–10:30 AM",
+        "3:30–8:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6–10:30 AM",
+        "3:30–8:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6–10:30 AM",
+        "3:30–8:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6–10:30 AM",
+        "3:30–8:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6–10:30 AM",
+        "3:30–8:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

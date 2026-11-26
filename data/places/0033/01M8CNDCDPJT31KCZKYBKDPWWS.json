@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDCDPJT31KCZKYBKDPWWS",
+  "name": "Dr Hafeel Dental Care",
+  "coordinates": {
+    "latitude": 7.432578899999999,
+    "longitude": 81.8137065
+  },
+  "categories": [
+    "Hospital"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "150 Main street, Maruthamunai 32314",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "2–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "2–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "2–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "2–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "2–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "12:30–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "9 AM–8 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

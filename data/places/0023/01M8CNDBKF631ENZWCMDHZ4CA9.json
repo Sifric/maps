@@ -1,0 +1,71 @@
+{
+  "id": "01M8CNDBKF631ENZWCMDHZ4CA9",
+  "name": "SS.Studio",
+  "coordinates": {
+    "latitude": 7.2254781999999995,
+    "longitude": 81.8502304
+  },
+  "categories": [
+    "Photographer"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Akkaraipattu 15",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8:45 AM–1:45 PM",
+        "3:45–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8:45 AM–1:45 PM",
+        "3:45–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8:45 AM–1:45 PM",
+        "3:45–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8:45 AM–1:45 PM",
+        "3:45–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9–11:10 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8:45 AM–1 PM",
+        "3:45–9 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8:45 AM–1 PM",
+        "4–9 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

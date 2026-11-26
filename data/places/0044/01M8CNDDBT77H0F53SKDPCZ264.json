@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDBT77H0F53SKDPCZ264",
+  "name": "SaSa House",
+  "coordinates": {
+    "latitude": 7.76901,
+    "longitude": 81.618973
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJ99+MHG, Eravur",
+  "business_status": "OPEN"
+}

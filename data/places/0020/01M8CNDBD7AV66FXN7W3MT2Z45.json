@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBD7AV66FXN7W3MT2Z45",
+  "name": "Electric Vehicle Charging Station",
+  "coordinates": {
+    "latitude": 7.5027593999999995,
+    "longitude": 80.6260521
+  },
+  "categories": [
+    "Electric vehicle charging station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "4th Lane, 118/4/C Samandawa Rd, Matale 21000",
+  "business_status": "OPEN"
+}

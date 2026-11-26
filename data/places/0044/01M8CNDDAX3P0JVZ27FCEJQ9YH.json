@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDAX3P0JVZ27FCEJQ9YH",
+  "name": "Parota Shop",
+  "coordinates": {
+    "latitude": 7.7021358,
+    "longitude": 81.7157962
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PP28+V83, Kallady",
+  "business_status": "OPEN"
+}

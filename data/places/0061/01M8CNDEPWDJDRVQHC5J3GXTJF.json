@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEPWDJDRVQHC5J3GXTJF",
+  "name": "US Hotel",
+  "coordinates": {
+    "latitude": 9.6612676,
+    "longitude": 80.0253506
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "No. 855 Hospital St, Jaffna",
+  "business_status": "OPEN"
+}

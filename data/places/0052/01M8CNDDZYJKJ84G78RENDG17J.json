@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDZYJKJ84G78RENDG17J",
+  "name": "Simple cafe & restaurant elpitiya",
+  "coordinates": {
+    "latitude": 6.2924048,
+    "longitude": 80.1631682
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "New road, Elpitiya 80400",
+  "business_status": "OPEN"
+}

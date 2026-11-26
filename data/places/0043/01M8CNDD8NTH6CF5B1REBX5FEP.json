@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD8NTH6CF5B1REBX5FEP",
+  "name": "Kugan’s House",
+  "coordinates": {
+    "latitude": 7.721478899999999,
+    "longitude": 81.7023761
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "20 Baily Rd, Batticaloa",
+  "business_status": "OPEN"
+}

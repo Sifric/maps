@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCCH9ES2XGEK67XAM81W",
+  "name": "Hotel",
+  "coordinates": {
+    "latitude": 7.7397491,
+    "longitude": 81.70582329999999
+  },
+  "categories": [
+    "Hostel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "59 School Rd, Batticaloa",
+  "business_status": "OPEN"
+}

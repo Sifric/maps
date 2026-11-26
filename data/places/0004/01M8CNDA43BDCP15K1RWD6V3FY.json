@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA43BDCP15K1RWD6V3FY",
+  "name": "Janeewa Beauty Parlour And Cakes",
+  "coordinates": {
+    "latitude": 7.4087572999999995,
+    "longitude": 81.8370894
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "190 Sailan Rd, Kalmunai 32300",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBXJ2WZP9X8DZER9R42",
+  "name": "Passi Villas",
+  "coordinates": {
+    "latitude": 7.9258409,
+    "longitude": 81.5705004
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kalkudah",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDAJ9JGAVYYKEWQM8QNH7",
+  "name": "T.L Abdul Salam & Sons",
+  "coordinates": {
+    "latitude": 7.9222703999999995,
+    "longitude": 81.5305679
+  },
+  "categories": [
+    "Supermarket"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "AB38",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7:45 AM–7:24 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7:45 AM–7:24 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7:45 AM–7:24 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7:45 AM–7:24 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7:45–11:45 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7:45 AM–7:24 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7:45 AM–7:24 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

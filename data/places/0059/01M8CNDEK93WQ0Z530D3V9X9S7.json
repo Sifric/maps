@@ -1,0 +1,73 @@
+{
+  "id": "01M8CNDEK93WQ0Z530D3V9X9S7",
+  "name": "HenHouse",
+  "coordinates": {
+    "latitude": 9.7422,
+    "longitude": 79.8882072
+  },
+  "categories": [
+    "Farm shop",
+    "Chicken shop",
+    "Farm",
+    "Animal feed store",
+    "Meat processor",
+    "Meat wholesaler",
+    "Pet store",
+    "Pig farm",
+    "Veterinary pharmacy"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Sayambu Rd, Karainagar 40250",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6 AM–10 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

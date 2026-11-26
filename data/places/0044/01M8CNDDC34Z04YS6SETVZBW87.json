@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDC34Z04YS6SETVZBW87",
+  "name": "Logan",
+  "coordinates": {
+    "latitude": 7.7303861,
+    "longitude": 81.6883089
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "24, 7th Lane, East, Batticaloa",
+  "business_status": "OPEN"
+}

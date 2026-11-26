@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD2S8YH6WNFJR0B6E7PV",
+  "name": "Saras Cheddipalayam Batticaloa",
+  "coordinates": {
+    "latitude": 7.5293725,
+    "longitude": 81.7946092
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQHV+PRX, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

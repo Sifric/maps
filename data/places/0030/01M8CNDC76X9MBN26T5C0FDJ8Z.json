@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC76X9MBN26T5C0FDJ8Z",
+  "name": "Cargills Food City Express - Arayampathy",
+  "coordinates": {
+    "latitude": 7.6739754,
+    "longitude": 81.73287859999999
+  },
+  "categories": [
+    "Supermarket"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "71A Main St, East 30100",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDC70TMZ488C093WSF5J0",
+  "name": "விநாயகர் வெதுப்பகம்",
+  "coordinates": {
+    "latitude": 7.7418163,
+    "longitude": 81.66863479999999
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMR9+W4J, Batticaloa",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6–10 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6–10 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6–10 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6–10 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6–10 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

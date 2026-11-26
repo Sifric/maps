@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE7NT57942A5YG95E2PW",
+  "name": "Rupasinghe Hotel",
+  "coordinates": {
+    "latitude": 6.0705956,
+    "longitude": 80.2336868
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "126 Labuduwa Rd, Galle 80000",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD5WW3XXM8TQ5X4HN18D",
+  "name": "Thighilivetti ferry",
+  "coordinates": {
+    "latitude": 7.8551258,
+    "longitude": 81.5356601
+  },
+  "categories": [
+    "Transportation service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "VG4P+373",
+  "business_status": "OPEN"
+}

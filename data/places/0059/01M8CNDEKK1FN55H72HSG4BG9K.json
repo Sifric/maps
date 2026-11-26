@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEKK1FN55H72HSG4BG9K",
+  "name": "Chill Resturant",
+  "coordinates": {
+    "latitude": 6.2747747,
+    "longitude": 81.2825842
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "77FM+W24, Rohanapura",
+  "business_status": "OPEN"
+}

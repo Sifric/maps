@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA3Z1XMBGEV186YRZ28A",
+  "name": "Hospital Kitchen",
+  "coordinates": {
+    "latitude": 7.4041763,
+    "longitude": 81.8306095
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Kalmunai Kudy Kalmunai, 32300",
+  "business_status": "OPEN"
+}

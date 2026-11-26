@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC1TWF9VAKN0TT6S78NJ",
+  "name": "Sureka Tyre Shop",
+  "coordinates": {
+    "latitude": 7.514695199999999,
+    "longitude": 81.78819179999999
+  },
+  "categories": [
+    "Auto repair shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kaluwanchikudy",
+  "business_status": "OPEN"
+}

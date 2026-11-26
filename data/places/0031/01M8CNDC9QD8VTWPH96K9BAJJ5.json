@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9QD8VTWPH96K9BAJJ5",
+  "name": "Zam Zam Restaurant",
+  "coordinates": {
+    "latitude": 7.779608799999999,
+    "longitude": 81.6154595
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJH8+R5W, Batticaloa",
+  "business_status": "OPEN"
+}

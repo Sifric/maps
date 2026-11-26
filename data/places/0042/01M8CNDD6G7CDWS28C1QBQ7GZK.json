@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD6G7CDWS28C1QBQ7GZK",
+  "name": "Vegetable Collection Centre",
+  "coordinates": {
+    "latitude": 8.1369099,
+    "longitude": 81.434079
+  },
+  "categories": [
+    "Collectibles store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "4CPM+QJ8, Nagpuram, Palchenai, Vakarai 30000",
+  "business_status": "OPEN"
+}

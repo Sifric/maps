@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD4GCXH5NG3BP2AE51ZW",
+  "name": "Shalini multy shop",
+  "coordinates": {
+    "latitude": 7.610398,
+    "longitude": 81.76861099999999
+  },
+  "categories": [
+    "Shopping mall"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "JQ69+49, Kirankulam",
+  "business_status": "OPEN"
+}

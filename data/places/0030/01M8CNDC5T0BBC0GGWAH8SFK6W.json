@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDC5T0BBC0GGWAH8SFK6W",
+  "name": "Crispy Hut",
+  "coordinates": {
+    "latitude": 7.690270099999999,
+    "longitude": 81.7330473
+  },
+  "categories": [
+    "Fast food restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "176 Telecom Rd, Kattankudy",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5:30 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5:30 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5:30 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5 PM–12:30 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6 PM–12:30 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5:30 PM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

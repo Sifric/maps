@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCAR7C0HBE5H32D7Z85S",
+  "name": "Yogeetha house",
+  "coordinates": {
+    "latitude": 7.7118901,
+    "longitude": 81.6920098
+  },
+  "categories": [
+    "Korean grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM6R+QR2, Upstairs Road Navarkuda, Batticaloa",
+  "business_status": "OPEN"
+}

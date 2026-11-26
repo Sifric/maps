@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEPSSS79A06Y3R5QHR48",
+  "name": "Green Luck Inn",
+  "coordinates": {
+    "latitude": 9.6715804,
+    "longitude": 80.0459821
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "314 Chemmani Rd, Jaffna",
+  "business_status": "OPEN"
+}

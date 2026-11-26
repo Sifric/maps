@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDBVN7B7JK3APCC03AC30",
+  "name": "V4U Online Store",
+  "coordinates": {
+    "latitude": 7.394385799999999,
+    "longitude": 81.8392399
+  },
+  "categories": [
+    "E-commerce service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "495/B Hospital Rd, Kalmunai 32280",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9:30–11:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9:30–11:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9:30–11:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9:30–11:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

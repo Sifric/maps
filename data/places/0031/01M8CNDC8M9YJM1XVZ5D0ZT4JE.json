@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC8M9YJM1XVZ5D0ZT4JE",
+  "name": "Kalkudah Leaf",
+  "coordinates": {
+    "latitude": 7.9214272999999995,
+    "longitude": 81.5517507
+  },
+  "categories": [
+    "Farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kalkudah-Valaichchenai Rd, Kalkudah",
+  "business_status": "OPEN"
+}

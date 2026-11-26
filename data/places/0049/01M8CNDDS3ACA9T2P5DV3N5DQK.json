@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDDS3ACA9T2P5DV3N5DQK",
+  "name": "Vindana Bakery",
+  "coordinates": {
+    "latitude": 6.2268609999999995,
+    "longitude": 80.2346151
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "66GM+PRX",
+  "business_status": "OPEN"
+}

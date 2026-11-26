@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDC9DM2HRA5FA26X6C830",
+  "name": "GOOD FRIENDS HOTEL (PVT) LTD.",
+  "coordinates": {
+    "latitude": 7.7246033999999995,
+    "longitude": 81.68691539999999
+  },
+  "categories": [
+    "Restaurant",
+    "Conference center",
+    "Event venue",
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "132 Kannaki Amman Kovil Rd, Batticaloa 30000",
+  "business_status": "OPEN"
+}

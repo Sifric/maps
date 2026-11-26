@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDH19F9WNHDR26169ZGP",
+  "name": "Collection 1st",
+  "coordinates": {
+    "latitude": 7.6810103,
+    "longitude": 81.7310421
+  },
+  "categories": [
+    "Shopping mall"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPJJ+CC3, Dr Badhiudeen Mahmood Mawatha, Kattankudy 30100",
+  "business_status": "OPEN"
+}

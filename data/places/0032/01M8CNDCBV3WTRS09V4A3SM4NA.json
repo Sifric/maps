@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBV3WTRS09V4A3SM4NA",
+  "name": "York Inn",
+  "coordinates": {
+    "latitude": 7.7209796,
+    "longitude": 81.71216539999999
+  },
+  "categories": [
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "no 70 New Dutch Bar Road, Kallady 30000",
+  "business_status": "OPEN"
+}

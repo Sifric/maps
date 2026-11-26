@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBP7QZZRGX804CRF6M0",
+  "name": "Kingsley Chiken shop",
+  "coordinates": {
+    "latitude": 7.7382580999999995,
+    "longitude": 81.6723229
+  },
+  "categories": [
+    "Soup kitchen"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMQF+24X, Palugamam, Main Rd, Batticaloa",
+  "business_status": "OPEN"
+}

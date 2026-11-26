@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA0FTE998YVMY9NAK0XC",
+  "name": "Soup, Manioc Fry, Babath Shop",
+  "coordinates": {
+    "latitude": 7.441358699999999,
+    "longitude": 81.8126135
+  },
+  "categories": [
+    "Soup kitchen"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CRR7+G2W, Periyaneelavanai",
+  "business_status": "OPEN"
+}

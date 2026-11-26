@@ -1,0 +1,68 @@
+{
+  "id": "01M8CNDCZ19PHKGQBN5S3MS7YE",
+  "name": "University of Moratuwa",
+  "coordinates": {
+    "latitude": 6.7951276,
+    "longitude": 79.90086699999999
+  },
+  "categories": [
+    "University",
+    "Public university"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Bandaranayake Mawatha, Moratuwa 10400",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5 AM–12 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5 AM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

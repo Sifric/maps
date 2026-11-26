@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC5218KS6A9098SB45PC",
+  "name": "Sahastra Multy Shop",
+  "coordinates": {
+    "latitude": 7.9227523,
+    "longitude": 81.54392039999999
+  },
+  "categories": [
+    "Stationery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Pethalai, 4th Cross, Valaichenai 30400",
+  "business_status": "OPEN"
+}

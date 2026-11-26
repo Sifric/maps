@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD1ARRN1Y3SQEQXBK1ME",
+  "name": "Carpentry Work Shop",
+  "coordinates": {
+    "latitude": 7.9100209999999995,
+    "longitude": 81.5306805
+  },
+  "categories": [
+    "Carpenter"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Oddamavadi",
+  "business_status": "OPEN"
+}

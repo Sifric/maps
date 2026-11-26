@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCCNXK5Y9T004B94BC1X",
+  "name": "Hiri hari villa",
+  "coordinates": {
+    "latitude": 7.7023608999999995,
+    "longitude": 81.7190455
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PP29+WJV, Vipulanantha Rd 4th Cross, Kallady",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCMMG2VJVVB1231Z039C",
+  "name": "Adsaya Material Supplier",
+  "coordinates": {
+    "latitude": 7.6637482,
+    "longitude": 81.7370052
+  },
+  "categories": [
+    "Hardware store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MP7P+FRR, Kattankudy",
+  "business_status": "OPEN"
+}

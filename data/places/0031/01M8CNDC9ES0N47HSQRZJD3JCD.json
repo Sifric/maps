@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9ES0N47HSQRZJD3JCD",
+  "name": "Kilangu Seeval Shop",
+  "coordinates": {
+    "latitude": 7.7229749,
+    "longitude": 81.7006016
+  },
+  "categories": [
+    "Snack bar"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PPF2+55G, Station Cross Rd, Batticaloa",
+  "business_status": "OPEN"
+}

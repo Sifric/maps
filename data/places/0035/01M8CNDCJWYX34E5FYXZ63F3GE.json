@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCJWYX34E5FYXZ63F3GE",
+  "name": "Regional Meteorological Office, Batticaloa",
+  "coordinates": {
+    "latitude": 7.7122568,
+    "longitude": 81.701476
+  },
+  "categories": [
+    "Government office"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PP62+WH5, Fort Rd, Batticaloa",
+  "business_status": "OPEN"
+}

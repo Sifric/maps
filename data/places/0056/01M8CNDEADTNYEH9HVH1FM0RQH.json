@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEADTNYEH9HVH1FM0RQH",
+  "name": "Khalid's Guest House",
+  "coordinates": {
+    "latitude": 6.025958,
+    "longitude": 80.215966
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Pedlar St, Galle 80000",
+  "business_status": "OPEN"
+}

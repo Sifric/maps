@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDEFF0PG91FJP6JMW8XZQ",
+  "name": "Lotus Surf House",
+  "coordinates": {
+    "latitude": 5.9652192,
+    "longitude": 80.3922802
+  },
+  "categories": [
+    "Guest house",
+    "Surf school",
+    "Surf shop",
+    "Yoga instructor"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "5.965106, 80.392243, Indhana Rd, Midigama 80650",
+  "business_status": "OPEN"
+}

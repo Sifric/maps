@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCC6ZV87B616C5M4WCRS",
+  "name": "Citylagoon family apartment",
+  "coordinates": {
+    "latitude": 7.7230915,
+    "longitude": 81.6881994
+  },
+  "categories": [
+    "Holiday apartment rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "60/56,9th Cross, Kannaki Amman Kovil Rd, Batticaloa",
+  "business_status": "OPEN"
+}

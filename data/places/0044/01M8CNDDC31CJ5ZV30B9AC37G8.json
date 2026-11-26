@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDC31CJ5ZV30B9AC37G8",
+  "name": "Kathambam Commercial Complex",
+  "coordinates": {
+    "latitude": 7.714223,
+    "longitude": 81.6936431
+  },
+  "categories": [
+    "Shopping mall"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PM7V+MC9, 4 Covington's Rd, Batticaloa 30000",
+  "business_status": "OPEN"
+}

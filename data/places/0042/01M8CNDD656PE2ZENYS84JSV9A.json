@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD656PE2ZENYS84JSV9A",
+  "name": "Public Cemetery 2",
+  "coordinates": {
+    "latitude": 7.3091743,
+    "longitude": 81.6872207
+  },
+  "categories": [
+    "Cemetery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Ruhunugama",
+  "business_status": "OPEN"
+}

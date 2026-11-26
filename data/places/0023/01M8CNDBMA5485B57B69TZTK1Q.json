@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDBMA5485B57B69TZTK1Q",
+  "name": "Alicoo Travels",
+  "coordinates": {
+    "latitude": 7.4177684,
+    "longitude": 81.82360539999999
+  },
+  "categories": [
+    "Travel agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Kalmunai 32300",
+  "business_status": "OPEN"
+}

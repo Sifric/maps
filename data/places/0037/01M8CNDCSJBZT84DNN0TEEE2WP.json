@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCSJBZT84DNN0TEEE2WP",
+  "name": "French Limit",
+  "coordinates": {
+    "latitude": 7.730395,
+    "longitude": 81.68668939999999
+  },
+  "categories": [
+    "Clothing store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "18 Kumara Kovil Veethy, Batticaloa",
+  "business_status": "CLOSED_TEMPORARILY"
+}

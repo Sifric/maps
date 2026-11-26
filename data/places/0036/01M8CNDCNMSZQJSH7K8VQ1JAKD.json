@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCNMSZQJSH7K8VQ1JAKD",
+  "name": "Ulavan store",
+  "coordinates": {
+    "latitude": 7.6502421,
+    "longitude": 81.74529369999999
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MP2W+34G, Colombo - Ratnapura - Wellawaya - Batticaloa Rd, Kattankudy",
+  "business_status": "OPEN"
+}

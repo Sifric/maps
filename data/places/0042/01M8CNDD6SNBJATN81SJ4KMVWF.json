@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD6SNBJATN81SJ4KMVWF",
+  "name": "Abeysuriya Hotel and Catering",
+  "coordinates": {
+    "latitude": 7.9479371,
+    "longitude": 81.2474383
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "W6XW+5XG, Welikanda Bus Stand, Welikanda 51070",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDBF1KH683ZCGX2TR5K0M",
+  "name": "Kingston Travels",
+  "coordinates": {
+    "latitude": 7.3878808,
+    "longitude": 81.83910709999999
+  },
+  "categories": [
+    "Travel agency"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "9RQQ+5J5, Ahamed Rd, Sainthamaruthu 32300",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7–11 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7–11 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7–11 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7–11 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7–11 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7–11 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7 AM–11 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

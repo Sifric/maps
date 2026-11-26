@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCM78Q89TJ6QE2TRAMMK",
+  "name": "Dahiwal",
+  "coordinates": {
+    "latitude": 7.7760425,
+    "longitude": 81.6040038
+  },
+  "categories": [
+    "Apartment building"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "11 Kathiyar Rd, Eravur 30300",
+  "business_status": "OPEN"
+}

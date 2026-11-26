@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDEAD1VV3B89GA083GRDC",
+  "name": "Owl and the Pussycat Hotel & Restaurant",
+  "coordinates": {
+    "latitude": 5.9985458,
+    "longitude": 80.2716487
+  },
+  "categories": [
+    "Hotel",
+    "Restaurant",
+    "Spa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "N.788, 788 Matara Rd, Talpe",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDND1386WCNGFWZ9FAD0",
+  "name": "Vlc",
+  "coordinates": {
+    "latitude": 6.2943644,
+    "longitude": 80.1655789
+  },
+  "categories": [
+    "Language school"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "25/4 Ambalangoda - Elpitiya - Pitigala Rd, Elpitiya",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "1–5:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "1–5:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7:30 AM–7 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "Closed"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

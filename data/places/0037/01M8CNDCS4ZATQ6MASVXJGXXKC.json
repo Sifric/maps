@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCS4ZATQ6MASVXJGXXKC",
+  "name": "Central Tea Room",
+  "coordinates": {
+    "latitude": 7.7252959,
+    "longitude": 81.6905077
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Batticaloa",
+  "business_status": "OPEN"
+}

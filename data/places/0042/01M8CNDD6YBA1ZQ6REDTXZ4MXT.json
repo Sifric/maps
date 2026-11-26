@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD6YBA1ZQ6REDTXZ4MXT",
+  "name": "Fresh Fish Market",
+  "coordinates": {
+    "latitude": 7.6266697,
+    "longitude": 81.75932829999999
+  },
+  "categories": [
+    "Fish store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "7.6269286820668185, 81.75904102987214 Puthukkudiyiruppu",
+  "business_status": "OPEN"
+}

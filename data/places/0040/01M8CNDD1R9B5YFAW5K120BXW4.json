@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD1R9B5YFAW5K120BXW4",
+  "name": "District Courts",
+  "coordinates": {
+    "latitude": 7.8834665,
+    "longitude": 81.5389881
+  },
+  "categories": [
+    "Legal services"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "VGMQ+9H, Oddamavadi",
+  "business_status": "OPEN"
+}

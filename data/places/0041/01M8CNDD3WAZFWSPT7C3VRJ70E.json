@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD3WAZFWSPT7C3VRJ70E",
+  "name": "Praneeth home",
+  "coordinates": {
+    "latitude": 7.717581,
+    "longitude": 81.6991737
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "446 Trinco Rd, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCNR1YMWD22CWPC3FAKR",
+  "name": "Js stall",
+  "coordinates": {
+    "latitude": 7.4656417,
+    "longitude": 81.7385039
+  },
+  "categories": [
+    "Warehouse"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "FP8Q+7C, Mandur",
+  "business_status": "OPEN"
+}

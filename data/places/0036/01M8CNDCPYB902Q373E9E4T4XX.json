@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCPYB902Q373E9E4T4XX",
+  "name": "Beel Garden",
+  "coordinates": {
+    "latitude": 7.7971905999999995,
+    "longitude": 81.6262601
+  },
+  "categories": [
+    "Garden"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJWG+VG, Eravur",
+  "business_status": "OPEN"
+}

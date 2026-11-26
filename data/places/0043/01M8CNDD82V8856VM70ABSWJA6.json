@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD82V8856VM70ABSWJA6",
+  "name": "Bus Stop Paruththichenai",
+  "coordinates": {
+    "latitude": 7.663059,
+    "longitude": 81.6618074
+  },
+  "categories": [
+    "Bus charter"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MM76+HH, Batticaloa",
+  "business_status": "OPEN"
+}

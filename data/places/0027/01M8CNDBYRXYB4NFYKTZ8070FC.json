@@ -1,0 +1,72 @@
+{
+  "id": "01M8CNDBYRXYB4NFYKTZ8070FC",
+  "name": "Trade hub",
+  "coordinates": {
+    "latitude": 6.0783818,
+    "longitude": 80.2525435
+  },
+  "categories": [
+    "Tire shop",
+    "Battery store",
+    "Battery wholesaler",
+    "Car battery store",
+    "Oil change service",
+    "Tire repair shop",
+    "Tire service",
+    "Used tire shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Yakkalamulla Road, Ihalagoda",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "9 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "9 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "9 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "9 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "9 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "9 AM–8:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

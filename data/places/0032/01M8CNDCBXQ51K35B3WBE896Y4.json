@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBXQ51K35B3WBE896Y4",
+  "name": "Baden Beach Hotel",
+  "coordinates": {
+    "latitude": 7.918036099999999,
+    "longitude": 81.5678306
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WH99+648, Kalkudah",
+  "business_status": "OPEN"
+}

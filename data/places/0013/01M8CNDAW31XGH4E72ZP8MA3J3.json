@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAW31XGH4E72ZP8MA3J3",
+  "name": "Ken Collection",
+  "coordinates": {
+    "latitude": 7.3428916,
+    "longitude": 81.8474962
+  },
+  "categories": [
+    "Clothing store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "NO: 11/01, KEN COLLECTION THEATER ROAD, NINTAVUR-21, Nintavur 32340",
+  "business_status": "OPEN"
+}

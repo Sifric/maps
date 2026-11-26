@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDE4CKQ21MSJA6K06DVKX",
+  "name": "Nadee Indian Restaurant",
+  "coordinates": {
+    "latitude": 6.5733739,
+    "longitude": 79.9645891
+  },
+  "categories": [
+    "Indian restaurant",
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "355/1/A Galle Rd, Kalutara 12000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "11 AM–10:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "11 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "11 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "11 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "11 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "11 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "11 AM–9 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

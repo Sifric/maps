@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCDRSFZRQ9GDXE97194Z",
+  "name": "Ultra hospital",
+  "coordinates": {
+    "latitude": 7.688142999999999,
+    "longitude": 81.725365
+  },
+  "categories": [
+    "Hospital"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "12 Elders Home Rd, Kattankudy 30100",
+  "business_status": "OPEN"
+}

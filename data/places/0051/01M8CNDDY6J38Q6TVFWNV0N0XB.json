@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDY6J38Q6TVFWNV0N0XB",
+  "name": "Gurusingha Hotel",
+  "coordinates": {
+    "latitude": 6.2920625999999995,
+    "longitude": 80.1632589
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "75R7+R8C, Galle - Elpitiya Rd, Elpitiya",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5 AM–8 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5 AM–8 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

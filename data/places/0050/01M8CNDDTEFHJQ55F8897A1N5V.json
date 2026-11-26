@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDTEFHJQ55F8897A1N5V",
+  "name": "Gamage Food Corner",
+  "coordinates": {
+    "latitude": 6.0532181,
+    "longitude": 80.20799679999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Galle 80000",
+  "business_status": "OPEN"
+}

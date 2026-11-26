@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD189GTW4ACS33ZF0D2K",
+  "name": "Arhab Hardware",
+  "coordinates": {
+    "latitude": 7.902514699999999,
+    "longitude": 81.51922139999999
+  },
+  "categories": [
+    "Hardware store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Oddamavadi",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "01M8CNDA5585DXT0MASS96RWZF",
+  "name": "Gypcey Lounge",
+  "coordinates": {
+    "latitude": 6.8453241,
+    "longitude": 81.8304416
+  },
+  "categories": [
+    "Cafe",
+    "Brunch restaurant",
+    "Coworking space",
+    "Takeout restaurant",
+    "Restaurant",
+    "Seafood restaurant",
+    "Vegetarian restaurant",
+    "Western restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Manal Rd, Arugam Bay 32500",
+  "business_status": "CLOSED_TEMPORARILY"
+}

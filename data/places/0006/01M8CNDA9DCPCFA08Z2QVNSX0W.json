@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA9DCPCFA08Z2QVNSX0W",
+  "name": "My Hotel",
+  "coordinates": {
+    "latitude": 7.3443027999999995,
+    "longitude": 81.84768749999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "8RVX+P3G, Theatre Rd, Nintavur 20",
+  "business_status": "OPEN"
+}

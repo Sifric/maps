@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCFFGJMJVHN0BWA6JPJ1",
+  "name": "St. Andrew's Church batticaloa",
+  "coordinates": {
+    "latitude": 7.7120386,
+    "longitude": 81.7009188
+  },
+  "categories": [
+    "Anglican church"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PP62+R97, Batticaloa",
+  "business_status": "OPEN"
+}

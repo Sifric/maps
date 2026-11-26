@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC81C1DJE0R2NN4XDA5P",
+  "name": "Daily Fresh Gaya Farm House",
+  "coordinates": {
+    "latitude": 7.7261877,
+    "longitude": 81.70004019999999
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Batticaloa",
+  "business_status": "OPEN"
+}

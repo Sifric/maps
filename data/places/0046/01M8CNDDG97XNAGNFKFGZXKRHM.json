@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDG97XNAGNFKFGZXKRHM",
+  "name": "WICKRAMA FLOWERS",
+  "coordinates": {
+    "latitude": 6.8301506,
+    "longitude": 80.9924604
+  },
+  "categories": [
+    "Florist"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Bandarawela",
+  "business_status": "OPEN"
+}

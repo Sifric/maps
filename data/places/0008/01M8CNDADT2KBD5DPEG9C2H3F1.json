@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDADT2KBD5DPEG9C2H3F1",
+  "name": "Abeshekara Stors",
+  "coordinates": {
+    "latitude": 7.3844068,
+    "longitude": 81.5978244
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "27/43, Walagampura Road",
+  "business_status": "OPEN"
+}

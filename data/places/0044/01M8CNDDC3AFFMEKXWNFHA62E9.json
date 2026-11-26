@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDC3AFFMEKXWNFHA62E9",
+  "name": "Boarding place",
+  "coordinates": {
+    "latitude": 7.7254114,
+    "longitude": 81.69420079999999
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMGV+5M8, Barathi Lane 6th Cross St, Batticaloa",
+  "business_status": "OPEN"
+}

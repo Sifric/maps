@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA49EVZCM2MWJ10DEN0Z",
+  "name": "Akkaraipattu Street Food",
+  "coordinates": {
+    "latitude": 7.233356799999999,
+    "longitude": 81.8517248
+  },
+  "categories": [
+    "Fast food restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "6VM2+8M9, Ashraff Rd, Akkaraipattu",
+  "business_status": "OPEN"
+}

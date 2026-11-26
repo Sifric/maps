@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDEFC76SZGYPTC0Z2JCDY",
+  "name": "Mister Mango",
+  "coordinates": {
+    "latitude": 5.9737792,
+    "longitude": 80.4338408
+  },
+  "categories": [
+    "Hotel",
+    "Bar",
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "n°15/1 1st cross road, Weligama 81700",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA1XYM16523TDQ3RJPP7",
+  "name": "New Babujees",
+  "coordinates": {
+    "latitude": 7.4332556,
+    "longitude": 81.81215
+  },
+  "categories": [
+    "Ice cream shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "428 Nooraniya Rd, Maruthamunai 3",
+  "business_status": "OPEN"
+}

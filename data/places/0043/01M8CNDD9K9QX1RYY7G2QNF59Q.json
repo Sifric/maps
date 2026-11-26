@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDD9K9QX1RYY7G2QNF59Q",
+  "name": "Al - Halal Chicken",
+  "coordinates": {
+    "latitude": 7.6624023999999995,
+    "longitude": 81.74052209999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "business_status": "OPEN"
+}

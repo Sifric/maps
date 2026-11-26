@@ -1,0 +1,72 @@
+{
+  "id": "01M8CNDEJTKBDG5ZSVR1J77P8S",
+  "name": "Peninsula",
+  "coordinates": {
+    "latitude": 9.6648886,
+    "longitude": 80.0136718
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Cargills Square, 420 Hospital Rd, Jaffna 40000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7–10 AM",
+        "12 PM–3 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7–10 AM",
+        "12 PM–3 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7–10 AM",
+        "12 PM–3 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7–10 AM",
+        "12 PM–3 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7–10 AM",
+        "12 PM–3 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7–10 AM",
+        "12 PM–3 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7–10 AM",
+        "12 PM–3 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

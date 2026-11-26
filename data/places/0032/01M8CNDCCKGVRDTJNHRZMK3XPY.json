@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCCKGVRDTJNHRZMK3XPY",
+  "name": "Greens Villa",
+  "coordinates": {
+    "latitude": 7.6942417999999995,
+    "longitude": 81.73443019999999
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "242 Elders Home road Kattankudy 06, Kattankudy 30100",
+  "business_status": "OPEN"
+}

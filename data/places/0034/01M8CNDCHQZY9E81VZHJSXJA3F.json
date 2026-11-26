@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCHQZY9E81VZHJSXJA3F",
+  "name": "Mayer Hall",
+  "coordinates": {
+    "latitude": 7.720293799999999,
+    "longitude": 81.70467119999999
+  },
+  "categories": [
+    "Catholic church"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "St Sebastian Church, B542, Batticaloa",
+  "business_status": "OPEN"
+}

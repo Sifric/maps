@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDGD87XY46FP3AFYGWC1",
+  "name": "Zaima stores",
+  "coordinates": {
+    "latitude": 7.774718099999999,
+    "longitude": 81.6152201
+  },
+  "categories": [
+    "Shopping mall"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJF8+V3Q, Kalaimahal Rd, Eravur",
+  "business_status": "OPEN"
+}

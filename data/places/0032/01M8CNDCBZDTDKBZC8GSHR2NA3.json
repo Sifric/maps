@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBZDTDKBZC8GSHR2NA3",
+  "name": "CocoVille",
+  "coordinates": {
+    "latitude": 7.910316,
+    "longitude": 81.56512699999999
+  },
+  "categories": [
+    "Resort hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kalkudah Rd, Kalkudah",
+  "business_status": "OPEN"
+}

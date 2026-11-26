@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCYB9SWC2M6EDT38ZCWD",
+  "name": "Dress Shop Eravur",
+  "coordinates": {
+    "latitude": 7.7682717,
+    "longitude": 81.6150818
+  },
+  "categories": [
+    "Shopping mall"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJ98+824, Eravur",
+  "business_status": "OPEN"
+}

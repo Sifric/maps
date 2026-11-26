@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9HHBVYFPK612CKY0GF",
+  "name": "HMD Bakers",
+  "coordinates": {
+    "latitude": 7.921726,
+    "longitude": 81.18288
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "W5CM+Q48, Sewanapitiya",
+  "business_status": "OPEN"
+}

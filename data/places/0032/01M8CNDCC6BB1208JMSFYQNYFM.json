@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCC6BB1208JMSFYQNYFM",
+  "name": "Raihana Palace & Rooms",
+  "coordinates": {
+    "latitude": 7.692865899999999,
+    "longitude": 81.7360655
+  },
+  "categories": [
+    "Holiday apartment rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "102 - marine drive- kattankudy 01, Kattankudy 30100",
+  "business_status": "OPEN"
+}

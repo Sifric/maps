@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCRQFX3ZB3WEK7FVHVF4",
+  "name": "Karanhouse",
+  "coordinates": {
+    "latitude": 7.7249146,
+    "longitude": 81.6966911
+  },
+  "categories": [
+    "Housing complex"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "371/8,3rd cross Navtkudha, east, Batticaloa",
+  "business_status": "OPEN"
+}

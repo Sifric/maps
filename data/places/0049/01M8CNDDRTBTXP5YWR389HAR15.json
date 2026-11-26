@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDDRTBTXP5YWR389HAR15",
+  "name": "Long Beach Japanese Restaurant",
+  "coordinates": {
+    "latitude": 6.1243723999999995,
+    "longitude": 80.1097095
+  },
+  "categories": [
+    "Cafe",
+    "Bar",
+    "Restaurant",
+    "Guest house",
+    "Surf school",
+    "Sushi restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "〒80240 Hikkaduwa, Galle Rd, Narigama",
+  "business_status": "OPEN"
+}

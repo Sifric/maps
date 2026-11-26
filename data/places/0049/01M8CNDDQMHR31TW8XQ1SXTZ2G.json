@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDQMHR31TW8XQ1SXTZ2G",
+  "name": "The Capital Restaurant",
+  "coordinates": {
+    "latitude": 6.2363417,
+    "longitude": 80.0535218
+  },
+  "categories": [
+    "Chinese restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "286/2 Main St, Ambalangoda",
+  "business_status": "OPEN"
+}

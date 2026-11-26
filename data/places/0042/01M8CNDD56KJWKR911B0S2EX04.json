@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD56KJWKR911B0S2EX04",
+  "name": "Asiri Laboratory Collecting Centre",
+  "coordinates": {
+    "latitude": 7.6852434999999995,
+    "longitude": 81.7261875
+  },
+  "categories": [
+    "Laboratory"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kattankudy",
+  "business_status": "OPEN"
+}

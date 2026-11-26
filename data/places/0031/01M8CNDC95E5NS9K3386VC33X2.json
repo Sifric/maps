@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC95E5NS9K3386VC33X2",
+  "name": "Sujan hotel",
+  "coordinates": {
+    "latitude": 7.620626799999999,
+    "longitude": 81.6881054
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "JMCQ+765, Unnamed Road, Thalankudah",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "01M8CNDC8CA5GMA059RM2GT7TE",
+  "name": "MRM Chicken Farm",
+  "coordinates": {
+    "latitude": 7.924953299999999,
+    "longitude": 81.495778
+  },
+  "categories": [
+    "Farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Paper Town",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12 AM–5 PM",
+        "8 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8 PM–12 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8 PM–12 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

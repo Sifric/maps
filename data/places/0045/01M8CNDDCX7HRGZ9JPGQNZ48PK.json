@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDCX7HRGZ9JPGQNZ48PK",
+  "name": "Yathu's house",
+  "coordinates": {
+    "latitude": 7.7345717,
+    "longitude": 81.6833339
+  },
+  "categories": [
+    "Housing society"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "59/18 A 9th cross, Batticaloa",
+  "business_status": "OPEN"
+}

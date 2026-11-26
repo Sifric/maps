@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC44WMSWP1HQ3B8VVATT",
+  "name": "Lakshan driving school",
+  "coordinates": {
+    "latitude": 6.7361111,
+    "longitude": 81.1680556
+  },
+  "categories": [
+    "Driving school"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "P5P9+C6V, Anapallama Pahekanuwa, Pelwatta",
+  "business_status": "OPEN"
+}

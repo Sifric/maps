@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC9447AH04DZWCDGHJ34",
+  "name": "Hotel Shalom",
+  "coordinates": {
+    "latitude": 7.853648499999999,
+    "longitude": 81.5430496
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "VG3V+F63",
+  "business_status": "OPEN"
+}

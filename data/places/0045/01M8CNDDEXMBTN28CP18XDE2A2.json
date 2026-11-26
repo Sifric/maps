@@ -1,0 +1,33 @@
+{
+  "id": "01M8CNDDEXMBTN28CP18XDE2A2",
+  "name": "Lice Removal Salon (Salon Geetha)",
+  "coordinates": {
+    "latitude": 6.0835343,
+    "longitude": 80.246776
+  },
+  "categories": [
+    "Beauty salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Ganeegoda, Akmeemana 80090",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "Open 24 hours"
+      ]
+    }
+  ],
+  "business_status": "OPEN",
+  "alternate_addresses": [
+    "\nGaneegoda, Akmeemana 80090"
+  ]
+}

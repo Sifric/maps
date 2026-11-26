@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCVAC1J9R4FAKSVTY2R5",
+  "name": "Thusi Land",
+  "coordinates": {
+    "latitude": 7.746381899999999,
+    "longitude": 81.6835124
+  },
+  "categories": [
+    "Agricultural service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "47 New Boundary Rd, Batticaloa 30000",
+  "business_status": "OPEN"
+}

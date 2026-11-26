@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD4N89MDCFMM5DR6Y73P",
+  "name": "பால் சேகரிப்பு நிலையம் மண்டூர்",
+  "coordinates": {
+    "latitude": 7.4806447,
+    "longitude": 81.75638409999999
+  },
+  "categories": [
+    "Milk delivery service"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "FQJ4+FJQ, Ampilanturai-Veeramunai Rd, Mandur",
+  "business_status": "OPEN"
+}

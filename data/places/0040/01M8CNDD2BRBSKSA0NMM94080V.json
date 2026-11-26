@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD2BRBSKSA0NMM94080V",
+  "name": "Burger Hut",
+  "coordinates": {
+    "latitude": 7.154279,
+    "longitude": 80.5717118
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "5H3C+PM8, Aregoda",
+  "business_status": "OPEN"
+}

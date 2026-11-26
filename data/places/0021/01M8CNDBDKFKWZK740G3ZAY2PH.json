@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBDKFKWZK740G3ZAY2PH",
+  "name": "MRI Saloon",
+  "coordinates": {
+    "latitude": 7.2904561999999995,
+    "longitude": 81.8622456
+  },
+  "categories": [
+    "Barber shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "4 Oluvil Rd, Oluvil",
+  "business_status": "OPEN"
+}

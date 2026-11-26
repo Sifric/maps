@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCDTTCZNTBADQ1ZARNSK",
+  "name": "Primary Medical Care Unit Kankeyanodai",
+  "coordinates": {
+    "latitude": 7.6659359,
+    "longitude": 81.7279715
+  },
+  "categories": [
+    "Hospital"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MP8H+95H",
+  "business_status": "OPEN"
+}

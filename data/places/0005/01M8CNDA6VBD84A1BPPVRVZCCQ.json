@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDA6VBD84A1BPPVRVZCCQ",
+  "name": "Grocery store",
+  "coordinates": {
+    "latitude": 5.9935469,
+    "longitude": 80.3071212
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "X8V4+CR9, AH 43, Habaraduwa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA1MG2SJD9FWZNPBNN5D",
+  "name": "Suja farm",
+  "coordinates": {
+    "latitude": 7.3885160999999995,
+    "longitude": 81.7927507
+  },
+  "categories": [
+    "Poultry farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No, 162,B, Annaipuram Sorrikkalmunai 01, 32300",
+  "business_status": "OPEN"
+}

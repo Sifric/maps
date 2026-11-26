@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBH3VGVDB5Y2HT3DMV9",
+  "name": "Oh my Kulfi",
+  "coordinates": {
+    "latitude": 7.922726699999999,
+    "longitude": 81.53033479999999
+  },
+  "categories": [
+    "Ice cream shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "people's bank, Main St, Near",
+  "business_status": "OPEN"
+}

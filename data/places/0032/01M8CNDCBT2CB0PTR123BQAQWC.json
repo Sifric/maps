@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBT2CB0PTR123BQAQWC",
+  "name": "Dutch beach rest inn",
+  "coordinates": {
+    "latitude": 7.7260563,
+    "longitude": 81.71194059999999
+  },
+  "categories": [
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PPG6+CQG, Dutch Bar",
+  "business_status": "OPEN"
+}

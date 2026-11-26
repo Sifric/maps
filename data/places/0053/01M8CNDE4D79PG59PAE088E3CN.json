@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDE4D79PG59PAE088E3CN",
+  "name": "Tea March Restaurant",
+  "coordinates": {
+    "latitude": 7.0167746,
+    "longitude": 81.0072321
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "2284+PW, Narangala",
+  "business_status": "OPEN"
+}

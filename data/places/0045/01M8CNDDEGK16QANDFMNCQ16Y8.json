@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDEGK16QANDFMNCQ16Y8",
+  "name": "Thanus Saloon",
+  "coordinates": {
+    "latitude": 7.713325299999999,
+    "longitude": 81.6430367
+  },
+  "categories": [
+    "Barber shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PJ7V+86M, Navatkadu Road, Batticaloa",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDA8RME625RQXEQQ6B7T0",
+  "name": "Apple grocers",
+  "coordinates": {
+    "latitude": 6.863260599999999,
+    "longitude": 81.8329629
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "VR7M+75P, Pottuvil",
+  "business_status": "OPEN"
+}

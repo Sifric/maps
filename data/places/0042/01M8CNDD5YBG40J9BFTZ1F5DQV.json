@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD5YBG40J9BFTZ1F5DQV",
+  "name": "Kirupamalar Rice Mill",
+  "coordinates": {
+    "latitude": 7.5801031,
+    "longitude": 81.74955969999999
+  },
+  "categories": [
+    "Rice mill"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Main Street Ampilanthurai-West",
+  "business_status": "OPEN"
+}

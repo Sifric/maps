@@ -1,0 +1,30 @@
+{
+  "id": "01M8CNDDF2A0CTPBQ5Q47TP3X6",
+  "name": "Indika Saloon",
+  "coordinates": {
+    "latitude": 7.4242639,
+    "longitude": 81.0236712
+  },
+  "categories": [
+    "Hair salon"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "\nGalporuyaya Rd, Mahiyanaganaya 90200",
+  "hours": [
+    {
+      "day": "Friday",
+      "times": [
+        "8 AM–9 PM"
+      ]
+    }
+  ],
+  "business_status": "CLOSED"
+}

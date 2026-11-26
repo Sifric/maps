@@ -1,0 +1,26 @@
+{
+  "id": "01M8CNDC97S9KVQ5TGX814HE40",
+  "name": "V.Mohamed JP Hajiyar Building",
+  "coordinates": {
+    "latitude": 7.766938199999999,
+    "longitude": 81.6168951
+  },
+  "categories": [
+    "Coffee shop",
+    "Copy shop",
+    "Fitness center",
+    "Guest house"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kali kovil Road, Arumugathan kudiyiruppu-02, Thannamunai, Eravur 30300",
+  "business_status": "OPEN"
+}

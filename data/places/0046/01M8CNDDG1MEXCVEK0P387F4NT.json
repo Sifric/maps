@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDG1MEXCVEK0P387F4NT",
+  "name": "Lakshmi jewellery",
+  "coordinates": {
+    "latitude": 7.885770699999999,
+    "longitude": 81.5231282
+  },
+  "categories": [
+    "Store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "VGPF+872, Main Street",
+  "business_status": "OPEN"
+}

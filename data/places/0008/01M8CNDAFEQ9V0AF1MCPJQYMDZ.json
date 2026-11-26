@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDAFEQ9V0AF1MCPJQYMDZ",
+  "name": "Dinojh Home",
+  "coordinates": {
+    "latitude": 7.3355919,
+    "longitude": 81.74311639999999
+  },
+  "categories": [
+    "Homestay"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "23d New Town, Dehiattakandiya",
+  "business_status": "OPEN"
+}

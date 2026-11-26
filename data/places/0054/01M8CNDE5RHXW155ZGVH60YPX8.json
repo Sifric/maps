@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDE5RHXW155ZGVH60YPX8",
+  "name": "UJS Multitraders",
+  "coordinates": {
+    "latitude": 6.113757,
+    "longitude": 80.216073
+  },
+  "categories": [
+    "Grocery store",
+    "Wholesale grocer"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "GAlle-Baddegama Road,Poddala, Galle 80170",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "10:30 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "10:30 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "10:30 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "10:30 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "10:30 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "10:30 AM–8:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "10 AM–8:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

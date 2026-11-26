@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCK0AZKE4KH6P4KPKF4Y",
+  "name": "SLTB Bus Depot - Batticaloa",
+  "coordinates": {
+    "latitude": 7.7234669,
+    "longitude": 81.69210129999999
+  },
+  "categories": [
+    "Bus depot"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PMFR+9RQ, Trinco Rd, Batticaloa",
+  "business_status": "OPEN"
+}

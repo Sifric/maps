@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDE8V6PJ5MT3C4T8V142S",
+  "name": "Hes STORES*",
+  "coordinates": {
+    "latitude": 6.2912552999999996,
+    "longitude": 80.2641325
+  },
+  "categories": [
+    "Supermarket"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "129 olagoda poddiwala, Maththaka",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "8–10 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "8–10 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "8–10 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "8–10 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "8–10 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "8–10 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "8–10 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA2W4RSN7EDNGDC3MA0Z",
+  "name": "Uthuma Lebbe Grocery Store",
+  "coordinates": {
+    "latitude": 7.3906985999999995,
+    "longitude": 81.839593
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "327 Kalyana Rd, Sainthamaruthu 32300",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD33R8Y7FA5HBCGFTB0D",
+  "name": "Police officer",
+  "coordinates": {
+    "latitude": 7.517478,
+    "longitude": 81.78713359999999
+  },
+  "categories": [
+    "Police academy"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kaluwanchikudy",
+  "business_status": "OPEN"
+}

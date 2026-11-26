@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD04T1DDBHQQ78PFKVFV",
+  "name": "Fahath Stores",
+  "coordinates": {
+    "latitude": 7.9082772,
+    "longitude": 81.5212775
+  },
+  "categories": [
+    "Shopping mall"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG5C+7HH, Oddamavadi",
+  "business_status": "OPEN"
+}

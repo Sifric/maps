@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDA326EWJT0M9QVS71DED",
+  "name": "தனார்த்தன் உணவகம்(வீட்டுக்கு மேலே கடை)",
+  "coordinates": {
+    "latitude": 7.636151,
+    "longitude": 81.7598738
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Sri Lanka,Batticaloa,Puthukkudiyiruppu, 05 punnaiyadi road, Aryampathi",
+  "business_status": "CLOSED_TEMPORARILY"
+}

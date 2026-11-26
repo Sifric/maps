@@ -1,0 +1,64 @@
+{
+  "id": "01M8CNDA60DZW8333AQ6ZBQH6A",
+  "name": "Niyas Multi Center",
+  "coordinates": {
+    "latitude": 7.2268818999999995,
+    "longitude": 81.8456552
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "224 B Jinnah Rd, Akkaraipattu 5",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "6:45 AM–9:45 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "6:45 AM–9:45 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "6:45 AM–9:45 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "6:45 AM–9:45 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "6:45 AM–9:45 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "6:45 AM–9:45 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "6:45 AM–9:45 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

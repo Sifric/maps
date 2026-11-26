@@ -1,0 +1,27 @@
+{
+  "id": "01M8CNDE42EPY2J5XMWDE8CN73",
+  "name": "Namo Villa",
+  "coordinates": {
+    "latitude": 6.4157772,
+    "longitude": 80.01375399999999
+  },
+  "categories": [
+    "Restaurant",
+    "Group accommodation",
+    "Holiday home",
+    "Hotel",
+    "Lodging",
+    "Guest house",
+    "Villa"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "C287+8G6, Gomate Rd, Bentota 80500",
+  "business_status": "OPEN"
+}

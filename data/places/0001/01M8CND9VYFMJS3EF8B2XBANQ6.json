@@ -1,0 +1,23 @@
+{
+  "id": "01M8CND9VYFMJS3EF8B2XBANQ6",
+  "name": "Child first",
+  "coordinates": {
+    "latitude": 7.435020499999999,
+    "longitude": 81.8143487
+  },
+  "categories": [
+    "Kindergarten"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "CRP7+2P5, Maruthamunai 03",
+  "business_status": "OPEN"
+}

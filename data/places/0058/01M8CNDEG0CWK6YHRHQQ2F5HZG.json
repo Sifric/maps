@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDEG0CWK6YHRHQQ2F5HZG",
+  "name": "Nadeek Guest House",
+  "coordinates": {
+    "latitude": 6.078537,
+    "longitude": 80.15165999999999
+  },
+  "categories": [
+    "Guest house"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Rillamba, Galle 80000",
+  "business_status": "OPEN"
+}

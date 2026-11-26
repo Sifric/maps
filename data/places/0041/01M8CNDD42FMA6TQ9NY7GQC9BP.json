@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD42FMA6TQ9NY7GQC9BP",
+  "name": "Vj Catering Batticaloa",
+  "coordinates": {
+    "latitude": 7.740087,
+    "longitude": 81.69126229999999
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "23/19, Batticaloa",
+  "business_status": "CLOSED"
+}

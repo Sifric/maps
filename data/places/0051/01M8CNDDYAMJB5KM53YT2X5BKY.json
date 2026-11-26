@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDYAMJB5KM53YT2X5BKY",
+  "name": "Café Laguna",
+  "coordinates": {
+    "latitude": 5.9667698,
+    "longitude": 80.3812025
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Galketiya Rd, Ahangama",
+  "business_status": "CLOSED_TEMPORARILY"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CND9XHWWR98YDW4RMG48ZQ",
+  "name": "University gym",
+  "coordinates": {
+    "latitude": 7.2975974,
+    "longitude": 81.86190529999999
+  },
+  "categories": [
+    "Gym"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "7VX6+2PQOluvil",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCB607ZXHHD7M6W8K2G0",
+  "name": "KAJAMUGAN STORES",
+  "coordinates": {
+    "latitude": 7.517478,
+    "longitude": 81.78713359999999
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "GQ8P+XVR, Main Roal, Kaluwanchikudy",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD6WSBD4BF44MZWMFP0A",
+  "name": "Ranathunga supermarket",
+  "coordinates": {
+    "latitude": 7.9662652,
+    "longitude": 81.31383579999999
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "X887+GG4, Unnamed Road, Magul Pokuna",
+  "business_status": "OPEN"
+}

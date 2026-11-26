@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA2EKSYF577P5V2WNTS6",
+  "name": "Banana Surf Cafe",
+  "coordinates": {
+    "latitude": 6.847441099999999,
+    "longitude": 81.83036609999999
+  },
+  "categories": [
+    "Cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Main street, Arugam Bay 32500",
+  "business_status": "CLOSED_TEMPORARILY"
+}

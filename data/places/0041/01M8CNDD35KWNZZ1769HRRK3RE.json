@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDD35KWNZZ1769HRRK3RE",
+  "name": "Street Spicy Hut",
+  "coordinates": {
+    "latitude": 7.435576299999999,
+    "longitude": 81.81352629999999
+  },
+  "categories": [
+    "Food court"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "238A/1,PUBLIC LIBRARY ROAD MARUTHAMUNAI-03, KALMUNAI 32314",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "5–10:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5–10:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5–10:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5–10:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "Closed"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5–10:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5–10:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

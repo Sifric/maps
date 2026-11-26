@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBR8ARV6PMHVHRC76M4F",
+  "name": "TOKYO AUTO PARTS",
+  "coordinates": {
+    "latitude": 7.3701764999999995,
+    "longitude": 81.81298029999999
+  },
+  "categories": [
+    "Auto parts store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Sammanthurai",
+  "business_status": "OPEN"
+}

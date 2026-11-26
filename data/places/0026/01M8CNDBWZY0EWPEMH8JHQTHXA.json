@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBWZY0EWPEMH8JHQTHXA",
+  "name": "Aslam Hardware",
+  "coordinates": {
+    "latitude": 7.3661901,
+    "longitude": 81.8048075
+  },
+  "categories": [
+    "Hardware store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Sammanthurai",
+  "business_status": "OPEN"
+}

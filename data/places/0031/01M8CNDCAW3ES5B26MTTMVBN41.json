@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCAW3ES5B26MTTMVBN41",
+  "name": "Irsath Stores",
+  "coordinates": {
+    "latitude": 7.683168599999999,
+    "longitude": 81.73959049999999
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPMQ+7R8, Anver Masjith St, Kattankudy",
+  "business_status": "OPEN"
+}

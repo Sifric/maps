@@ -1,0 +1,69 @@
+{
+  "id": "01M8CNDDRVR2CVESN8X4N1DH62",
+  "name": "Thusis",
+  "coordinates": {
+    "latitude": 6.1163905,
+    "longitude": 80.1192932
+  },
+  "categories": [
+    "Cafe",
+    "Breakfast restaurant",
+    "Brunch restaurant",
+    "Restaurant",
+    "Diner"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "841 Galle Rd, Dodanduwa 80250",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12–9:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12–9:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12–9:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12–9:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12–9:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "12–9:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12–9:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

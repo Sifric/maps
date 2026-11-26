@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCTPXA2DVBNEWYE2X9Z2",
+  "name": "New Batti Express",
+  "coordinates": {
+    "latitude": 7.713071299999999,
+    "longitude": 81.7129458
+  },
+  "categories": [
+    "Internet cafe"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PP66+W5X, Pillaiyar Kovil Rd, Kallady",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCNV8QRFC1ERXSTV68DS",
+  "name": "Earn Ceylon",
+  "coordinates": {
+    "latitude": 7.715508499999999,
+    "longitude": 81.69821069999999
+  },
+  "categories": [
+    "Wholesaler"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "No 6 Trinco Rd, Batticaloa",
+  "business_status": "OPEN"
+}

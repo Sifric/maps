@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEM9DT5PZM64ZK8XPEHP",
+  "name": "Brighten Restaurant",
+  "coordinates": {
+    "latitude": 9.6834667,
+    "longitude": 80.0219372
+  },
+  "categories": [
+    "Restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "M2MC+9QM, Jaffna",
+  "business_status": "OPEN"
+}

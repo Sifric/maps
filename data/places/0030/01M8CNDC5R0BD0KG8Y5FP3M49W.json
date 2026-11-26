@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC5R0BD0KG8Y5FP3M49W",
+  "name": "Treatoo Lake Resort Restaurant",
+  "coordinates": {
+    "latitude": 7.7000813,
+    "longitude": 81.7116006
+  },
+  "categories": [
+    "Sri Lankan restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPX6+MJ8, Alma Rd, Kallady",
+  "business_status": "OPEN"
+}

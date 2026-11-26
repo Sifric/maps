@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC68A89GEQ9DYTYVPC4V",
+  "name": "Hotel Lanka",
+  "coordinates": {
+    "latitude": 7.9239526,
+    "longitude": 81.5302315
+  },
+  "categories": [
+    "Sri Lankan restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "AB38",
+  "business_status": "OPEN"
+}

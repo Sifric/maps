@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDA0BAFA6W8TT4XK9DZ5Z",
+  "name": "Choice cafe",
+  "coordinates": {
+    "latitude": 6.0361939,
+    "longitude": 80.3877584
+  },
+  "categories": [
+    "Ice cream shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "29PQ+F3H, Imaduwa",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7 AM–9 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7–9 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7–9 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

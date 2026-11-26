@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCKJJVSE7CXS9KXDRT8Y",
+  "name": "ND Batticaloa",
+  "coordinates": {
+    "latitude": 7.7113511,
+    "longitude": 81.72215179999999
+  },
+  "categories": [
+    "Government office"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "PP6C+GVR, Navy Camp, Gayathri Amman Kovil Rd, Kallady",
+  "business_status": "OPEN"
+}

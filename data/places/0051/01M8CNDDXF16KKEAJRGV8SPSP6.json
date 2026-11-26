@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDXF16KKEAJRGV8SPSP6",
+  "name": "Meat Shop",
+  "coordinates": {
+    "latitude": 6.3322462999999996,
+    "longitude": 80.0317839
+  },
+  "categories": [
+    "Other"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Kosgoda",
+  "business_status": "OPEN"
+}

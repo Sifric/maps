@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCBSWB80MARJVNP22JRN",
+  "name": "Hotel Neithal Batticaloa",
+  "coordinates": {
+    "latitude": 7.7455832,
+    "longitude": 81.700426
+  },
+  "categories": [
+    "Hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "74/4 Mugathuwaram Road, Batticaloa 30000",
+  "business_status": "OPEN"
+}

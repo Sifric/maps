@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD75AYYYDPV4N71YHTCW",
+  "name": "AK PHARMACY",
+  "coordinates": {
+    "latitude": 8.3608963,
+    "longitude": 81.2838956
+  },
+  "categories": [
+    "Pharmacy"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "976M+9H2, barathipuram, Trincomalee-Batticaloa Rd, Kiliveddi",
+  "business_status": "OPEN"
+}

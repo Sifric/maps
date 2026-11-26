@@ -1,0 +1,67 @@
+{
+  "id": "01M8CNDC7HCCP4GWKRNZNQ6B3B",
+  "name": "NEW TEA TIME CAFETERIA",
+  "coordinates": {
+    "latitude": 7.7756023,
+    "longitude": 81.6054925
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "QJG4+66J, Main St, Eravur",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "4:30 PM–12:30 AM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "4:30 PM–12:30 AM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "4:30 PM–12:30 AM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "4:30 PM–12:30 AM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "4:30 PM–12:30 AM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "4:30 PM–12:30 AM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "4:30 PM–12:30 AM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDA7HJB167BR3TDQKMT6H",
+  "name": "Tea Point Cafe and Restaurant",
+  "coordinates": {
+    "latitude": 6.2402581,
+    "longitude": 80.7347844
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "B629",
+  "business_status": "OPEN"
+}

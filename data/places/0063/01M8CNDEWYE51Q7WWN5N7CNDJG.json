@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDEWYE51Q7WWN5N7CNDJG",
+  "name": "Venkadeswara(வெங்கடேஸ்வரா)",
+  "coordinates": {
+    "latitude": 9.7168239,
+    "longitude": 80.06207069999999
+  },
+  "categories": [
+    "Vegetable wholesaler"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Rajaveethi",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "9 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "5 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "5 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "5 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "5 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "5 AM–6 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "5 AM–6 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

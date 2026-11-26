@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDEMMK327MHDTZW353BF1",
+  "name": "Marry cafe",
+  "coordinates": {
+    "latitude": 9.687831,
+    "longitude": 80.02019899999999
+  },
+  "categories": [
+    "Coffee shop"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "630 Brown Road, Jaffna",
+  "business_status": "OPEN"
+}

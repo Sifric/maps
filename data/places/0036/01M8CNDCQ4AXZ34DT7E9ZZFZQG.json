@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDCQ4AXZ34DT7E9ZZFZQG",
+  "name": "FmS Garden",
+  "coordinates": {
+    "latitude": 7.9450233,
+    "longitude": 81.48519
+  },
+  "categories": [
+    "Garden"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WFWP+23, Kayankerni",
+  "business_status": "OPEN"
+}

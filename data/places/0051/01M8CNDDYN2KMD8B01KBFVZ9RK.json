@@ -1,0 +1,65 @@
+{
+  "id": "01M8CNDDYN2KMD8B01KBFVZ9RK",
+  "name": "Bhagi's Burger",
+  "coordinates": {
+    "latitude": 6.0412642,
+    "longitude": 80.21507419999999
+  },
+  "categories": [
+    "Bakery"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "166 Wakwella Rd, Galle 80000",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "12–8:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "12–8:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "12–8:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "12–8:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "12–8:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "12–8:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "12–8:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

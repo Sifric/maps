@@ -1,0 +1,22 @@
+{
+  "id": "01M8CNDACHZXQ9PTYXMFRW3J60",
+  "name": "Nadeeka stores",
+  "coordinates": {
+    "latitude": 7.6228703,
+    "longitude": 81.0487689
+  },
+  "categories": [
+    "Grocery store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "216/2 Lathpandura, Sandunpura",
+  "business_status": "OPEN"
+}

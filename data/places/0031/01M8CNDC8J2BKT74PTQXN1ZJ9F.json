@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDC8J2BKT74PTQXN1ZJ9F",
+  "name": "Fish tank",
+  "coordinates": {
+    "latitude": 8.360477399999999,
+    "longitude": 81.268945
+  },
+  "categories": [
+    "Fish farm"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "9769+5H, Linkaporam",
+  "business_status": "OPEN"
+}

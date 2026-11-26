@@ -1,0 +1,66 @@
+{
+  "id": "01M8CNDEYR3VASBNH965TNX7Y8",
+  "name": "Airu Gaming Station",
+  "coordinates": {
+    "latitude": 9.7420248,
+    "longitude": 79.9851546
+  },
+  "categories": [
+    "Video arcade",
+    "Video game store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "main"
+    ]
+  },
+  "address": "Serrani Junction, Sandilipay",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "1–9 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "1–9 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "1–9 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "1–9 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "10:30 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "10 AM–10 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "10 AM–9 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

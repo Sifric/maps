@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD0ZMF9MY0EPJFTARM32",
+  "name": "Bank of Ceylon Oddamavadi Branch",
+  "coordinates": {
+    "latitude": 7.911792299999999,
+    "longitude": 81.5274408
+  },
+  "categories": [
+    "Public sector bank"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "WG6G+PX8, Trincomalee-Batticaloa Rd, Oddamavadi",
+  "business_status": "OPEN"
+}

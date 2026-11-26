@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDH3RVHTC01PW7RAN7E2",
+  "name": "KBC",
+  "coordinates": {
+    "latitude": 7.684784499999999,
+    "longitude": 81.7373872
+  },
+  "categories": [
+    "Grill store"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "MPMP+WX6, new, Dr Badhiudeen Mahmood Mawatha, Kattankudy",
+  "business_status": "OPEN"
+}

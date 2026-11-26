@@ -1,0 +1,24 @@
+{
+  "id": "01M8CNDCCQNW26ESC2YR71BY5N",
+  "name": "Yoyo holidays Villa - Deluxe Double Room with Shower",
+  "coordinates": {
+    "latitude": 7.7178898,
+    "longitude": 81.7166977
+  },
+  "categories": [
+    "Lodging",
+    "Vacation rental"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Kallady",
+  "business_status": "OPEN"
+}

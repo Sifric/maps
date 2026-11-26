@@ -1,0 +1,72 @@
+{
+  "id": "01M8CNDB161MVQW6AY51EEN502",
+  "name": "Viroosh Sports Complex",
+  "coordinates": {
+    "latitude": 6.8519562999999994,
+    "longitude": 80.040796
+  },
+  "categories": [
+    "Sports complex",
+    "Archery range",
+    "Badminton court",
+    "Indoor playground",
+    "Karate school",
+    "Rock climbing gym",
+    "Samba school",
+    "Shooting event area",
+    "Taekwondo school"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "main"
+    ]
+  },
+  "address": "V22R+G5, Godagama",
+  "hours": [
+    {
+      "day": "Monday",
+      "times": [
+        "7 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "times": [
+        "7 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "times": [
+        "7 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "times": [
+        "7 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Friday",
+      "times": [
+        "7 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "times": [
+        "7 AM–11:30 PM"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "times": [
+        "7 AM–11:30 PM"
+      ]
+    }
+  ],
+  "business_status": "OPEN"
+}

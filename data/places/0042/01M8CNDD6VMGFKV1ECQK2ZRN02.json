@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDD6VMGFKV1ECQK2ZRN02",
+  "name": "Adaar Kuchchaveli - Trincomalee | Sri Lanka",
+  "coordinates": {
+    "latitude": 8.7517348,
+    "longitude": 81.1537378
+  },
+  "categories": [
+    "Resort hotel"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "Ward 5 Beach Road, Kumpurupiddi 31012",
+  "business_status": "OPEN"
+}

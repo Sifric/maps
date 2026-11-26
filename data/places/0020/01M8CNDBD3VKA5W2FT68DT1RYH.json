@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDBD3VKA5W2FT68DT1RYH",
+  "name": "Electric Vehicle Charging Station",
+  "coordinates": {
+    "latitude": 7.403315399999999,
+    "longitude": 81.2418008
+  },
+  "categories": [
+    "Electric vehicle charging station"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "C63R+8PF, Main Street, Padiyatalawa 32100",
+  "business_status": "OPEN"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "01M8CNDDW4FGSXK5GXFNYCW4DX",
+  "name": "Restaurant",
+  "coordinates": {
+    "latitude": 6.1746199,
+    "longitude": 80.1917129
+  },
+  "categories": [
+    "Family restaurant"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/southern-province-collector",
+      "main"
+    ]
+  },
+  "address": "92/A dore waththa nayapamula, Baddegama",
+  "business_status": "OPEN"
+}

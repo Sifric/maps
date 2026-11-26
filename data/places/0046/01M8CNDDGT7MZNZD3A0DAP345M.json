@@ -1,0 +1,23 @@
+{
+  "id": "01M8CNDDGT7MZNZD3A0DAP345M",
+  "name": "Central Market",
+  "coordinates": {
+    "latitude": 6.9700058,
+    "longitude": 80.7672995
+  },
+  "categories": [
+    "Market"
+  ],
+  "source": {
+    "provider": "Sifric/places",
+    "branches": [
+      "feature/batticaloa-deduplication",
+      "feature/northern-province-collector",
+      "feature/southern-province-collector",
+      "feature/local-selenium-collector",
+      "main"
+    ]
+  },
+  "address": "XQC8+3WC, A5, Nuwara Eliya 22200",
+  "business_status": "OPEN"
+}
