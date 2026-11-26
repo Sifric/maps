@@ -1,3 +1,4 @@
+// Keep the module response compatible with strict browser JavaScript MIME checks.
 import { darkMapStyle } from "./map-options.js";
 import { registerPlaceImages, stylePlaces } from "./place-markers.js";
 
