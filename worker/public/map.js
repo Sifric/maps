@@ -478,8 +478,9 @@ function select(p, fly = true) {
   window.collapseSearch?.(false);
   ctl?.abort(); clearTimeout(timer);
   cur = p; clearFound(); pinMk && pinMk.remove(); clearRoute(); fromPt = map.getCenter().toArray();
-  const el = selectedPlaceElement();
-  pinMk = new maplibregl.Marker({ element: el, anchor: 'bottom' }).setLngLat([+p.lon, +p.lat]).addTo(map);
+  const dropped = p.type === 'location' || p._t === 'Dropped pin';
+  const el = selectedPlaceElement(p.category || p.type, dropped);
+  pinMk = new maplibregl.Marker({ element: el, anchor: dropped ? 'bottom' : 'center' }).setLngLat([+p.lon, +p.lat]).addTo(map);
   if (fly) {
     const bb = p.boundingbox;
     bb && +bb[1] - +bb[0] > .002 ? map.fitBounds([[+bb[2], +bb[0]], [+bb[3], +bb[1]]], { padding: pad(), maxZoom: 17, duration: 1200 })

@@ -213,8 +213,8 @@ function roadShieldImage() {
 function directionArrowImage() {
   const canvas = document.createElement("canvas"); canvas.width = 64; canvas.height = 64;
   const c = canvas.getContext("2d"); c.scale(2, 2);
-  c.translate(16, 16); c.fillStyle = "#e7f2ff"; c.strokeStyle = "rgba(20,38,55,.88)"; c.lineWidth = 1.4;
-  c.lineJoin = "round"; c.beginPath(); c.moveTo(0, -8); c.lineTo(6.2, 5.5); c.lineTo(0, 2.3); c.lineTo(-6.2, 5.5); c.closePath(); c.fill(); c.stroke();
+  c.translate(16, 16); c.fillStyle = "#f7fbff"; c.strokeStyle = "#314a64"; c.lineWidth = 1.7;
+  c.lineJoin = "round"; c.beginPath(); c.moveTo(0, -10); c.lineTo(7, 0); c.lineTo(2.5, -1); c.lineTo(2.5, 8); c.lineTo(-2.5, 8); c.lineTo(-2.5, -1); c.lineTo(-7, 0); c.closePath(); c.fill(); c.stroke();
   return { width: 64, height: 64, data: c.getImageData(0, 0, 64, 64).data };
 }
 export function registerPlaceImages(map) {
@@ -227,9 +227,17 @@ export function registerPlaceImages(map) {
   });
 }
 
-export function selectedPlaceElement() {
+export function selectedPlaceElement(kind = "", dropped = false) {
   const marker = document.createElement("div");
-  marker.className = "selected-marker";
-  marker.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 36" width="24" height="36" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12c0 9 12 24 12 24s12-15 12-24c0-6.627-5.373-12-12-12z" fill="#EA4335"/><circle cx="12" cy="12" r="4.5" fill="#FFFFFF"/></svg>';
+  marker.className = dropped ? "selected-marker" : "selected-marker selected-marker--place";
+  if (dropped || !kind || kind === "location") {
+    marker.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 36" width="24" height="36" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12c0 9 12 24 12 24s12-15 12-24c0-6.627-5.373-12-12-12z" fill="#EA4335"/><circle cx="12" cy="12" r="4.5" fill="#FFFFFF"/></svg>';
+    return marker;
+  }
+  const image = markerImage(kind), canvas = document.createElement("canvas");
+  canvas.width = image.width; canvas.height = image.height;
+  canvas.getContext("2d").putImageData(new ImageData(image.data, image.width, image.height), 0, 0);
+  const img = document.createElement("img"); img.alt = ""; img.src = canvas.toDataURL("image/png");
+  marker.append(img);
   return marker;
 }
