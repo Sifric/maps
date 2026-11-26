@@ -14,6 +14,7 @@ const colours = {
   landmark: "#b44df0",
   other: "#82969d",
 };
+const aliases = { restaurant: "food", fast_food: "food", food_court: "food", hospital: "health", pharmacy: "health", hotel: "hotel", lodging: "hotel", park: "leisure", shop: "shopping" };
 export const placeIcons = {
   food: "restaurant",
   shopping: "shop",
@@ -42,7 +43,6 @@ function markerImage(kind) {
   const canvas = document.createElement("canvas");
   canvas.width = 112; canvas.height = 112;
   const c = canvas.getContext("2d"); c.scale(4, 4);
-  const aliases = { restaurant: "food", fast_food: "food", food_court: "food", hospital: "health", pharmacy: "health", hotel: "hotel", lodging: "hotel", park: "leisure", shop: "shopping" };
   const category = aliases[kind] || kind;
   const colour = colours[category] || colours[kind] || colours.other;
   const cx = 14, cy = 14, radius = 11.5;
@@ -242,6 +242,8 @@ export function selectedPlaceElement(kind = "", dropped = false) {
     marker.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 36" width="24" height="36" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12c0 9 12 24 12 24s12-15 12-24c0-6.627-5.373-12-12-12z" fill="#EA4335"/><circle cx="12" cy="12" r="4.5" fill="#FFFFFF"/></svg>';
     return marker;
   }
+  const category = aliases[kind] || kind;
+  marker.style.setProperty("--marker-color", colours[category] || colours.other);
   const image = markerImage(kind), canvas = document.createElement("canvas");
   canvas.width = image.width; canvas.height = image.height;
   canvas.getContext("2d").putImageData(new ImageData(image.data, image.width, image.height), 0, 0);
@@ -250,5 +252,8 @@ export function selectedPlaceElement(kind = "", dropped = false) {
   const img = document.createElement("img"); img.alt = ""; img.src = canvas.toDataURL("image/png");
   visual.append(img);
   marker.append(visual);
+  const stem = document.createElement("span"); stem.className = "selected-marker__stem";
+  const dot = document.createElement("span"); dot.className = "selected-marker__anchor-dot";
+  marker.append(stem, dot);
   return marker;
 }

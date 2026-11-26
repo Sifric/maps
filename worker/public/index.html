@@ -464,10 +464,13 @@ body.picking #panel,body.picking #ctrl,body.picking #tilt,body.picking #psheet,b
 .gs-lm{top:19px;right:calc(var(--w) - var(--m) + 6px)}
 .selected-marker{position:relative;display:block;width:24px;height:36px;cursor:pointer}
 .selected-marker svg{display:block;width:24px;height:36px}
-.selected-marker--place{width:48px;height:48px}
-.selected-marker__visual{display:block;width:48px;height:48px;transform:translateY(-7px);transform-origin:center center;animation:selected-pop .38s cubic-bezier(.18,.82,.24,1.18) both}
+.selected-marker--place{width:48px;height:80px}
+.selected-marker__visual{position:absolute;left:0;top:-24px;display:block;width:48px;height:48px;transform-origin:center center;animation:selected-pop .38s cubic-bezier(.18,.82,.24,1.18) both;filter:drop-shadow(0 5px 9px rgba(0,0,0,.34))}
 .selected-marker__visual img{display:block;width:48px;height:48px}
-@keyframes selected-pop{0%{opacity:0;transform:translateY(-7px) scale(.52)}65%{opacity:1;transform:translateY(-7px) scale(1.08)}100%{opacity:1;transform:translateY(-7px) scale(1)}}
+.selected-marker__visual::after{content:"";position:absolute;inset:4px 5px 23px;border:1px solid rgba(255,255,255,.34);border-radius:50%;background:linear-gradient(155deg,rgba(255,255,255,.5),rgba(255,255,255,.13) 58%,transparent 100%);pointer-events:none}
+.selected-marker__stem{position:absolute;left:23px;top:24px;width:2px;height:12px;border-radius:2px;background:linear-gradient(180deg,rgba(255,255,255,.75),var(--marker-color));box-shadow:0 1px 4px rgba(0,0,0,.28)}
+.selected-marker__anchor-dot{position:absolute;left:19px;top:36px;width:10px;height:10px;box-sizing:border-box;border:2px solid rgba(255,255,255,.98);border-radius:50%;background:var(--marker-color);box-shadow:0 1px 5px rgba(0,0,0,.42)}
+@keyframes selected-pop{0%{opacity:0;transform:translateY(8px) scale(.52)}65%{opacity:1;transform:translateY(-2px) scale(1.08)}100%{opacity:1;transform:translateY(0) scale(1)}}
 @media(prefers-reduced-motion:reduce){.selected-marker__visual{animation:none}}
 #ctrl>.stack:has(#zin){display:none!important}
 /* ---- Layers sheet on phones: compact (peek), medium (half), expanded (full) ---- */
