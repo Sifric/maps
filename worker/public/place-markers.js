@@ -179,6 +179,12 @@ export function stylePlaces(style) {
       ([key]) => key.startsWith("text-") || key === "symbol-sort-key",
     ),
   );
+  selectedLabel.layout["text-anchor"] = "top";
+  selectedLabel.layout["text-offset"] = [0, 1.9];
+  selectedLabel.layout["text-justify"] = "center";
+  selectedLabel.layout["text-max-width"] = 16;
+  selectedLabel.layout["text-size"] = ["interpolate", ["linear"], ["zoom"], 12, 11, 16, 12];
+  selectedLabel.layout["text-optional"] = false;
   selectedLabel.layout["text-allow-overlap"] = true;
   selectedLabel.layout["text-ignore-placement"] = true;
   selectedLabel.filter = ["==", ["id"], "__no_selected_place__"];

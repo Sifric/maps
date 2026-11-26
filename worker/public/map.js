@@ -224,7 +224,7 @@ geo.on('geolocate', e => userPos = [e.coords.longitude, e.coords.latitude]);
 if (!hasHash) map.once('load', () => matchMedia('(prefers-reduced-motion: reduce)').matches ? map.jumpTo({ zoom: 15.2, pitch: 50, bearing: -18 }) : map.flyTo({ zoom: 15.2, pitch: 50, bearing: -18, duration: 1400, essential: true }));
 map.on('moveend', () => { const c = map.getCenter(); try { history.replaceState(null, '', `#${map.getZoom().toFixed(1)}/${c.lat.toFixed(5)}/${c.lng.toFixed(5)}`); } catch (e) {} });
 
-let routeRequest, routeOrigin, avoid = '', routes = null, ri = 0, tm = 'car', cur, pinMk, found = [], fromPt, userPos = null, timer, ctl, si = -1, anim = 0;
+let routeRequest, routeOrigin, avoid = '', routes = null, ri = 0, tm = 'car', cur, pinMk, found = [], fromPt, userPos = null, timer, ctl, si = -1, anim = 0, selectedFeatureId = null;
 function restorePlaces(key, legacyKey) {
   try {
     if (localStorage.getItem('maps.' + key) !== null) return store.get(key);
@@ -248,6 +248,15 @@ function syncRoute() {
 }
 const clearRoute = () => { routeRequest?.abort(); stopAnim(); routes = null; setRouting(false); ['route', 'route-c', 'route-alt'].forEach(i => map.getLayer(i) && map.removeLayer(i)); map.getSource('route') && map.removeSource('route'); };
 map.on('style.load', syncRoute);
+function syncSelectedPlaceLabel() {
+  if (!map.getStyle()) return;
+  const hasSelectedFeature = selectedFeatureId !== null && selectedFeatureId !== undefined;
+  if (map.getLayer('mazo-places-icon'))
+    map.setFilter('mazo-places-icon', hasSelectedFeature ? ['!=', ['id'], selectedFeatureId] : null);
+  if (map.getLayer('mazo-places-selected-label'))
+    map.setFilter('mazo-places-selected-label', hasSelectedFeature ? ['==', ['id'], selectedFeatureId] : ['==', ['id'], '__no_selected_place__']);
+}
+map.on('style.load', syncSelectedPlaceLabel);
 const pickRoute = i => { stopAnim(); ri = i; syncRoute(); dirCard(); };
 map.on('click', 'route-alt', e => pickRoute(e.features[0].properties.i));
 function applyStyle() {
@@ -258,7 +267,7 @@ function applyStyle() {
   map.setStyle(build(), { diff: true });
   // A diff update drops layers that aren't in build() (the route layers), so re-add them.
   // style.load still covers the full-reload fallback.
-  map.once('styledata', () => { if (map.isStyleLoaded()) syncRoute(); });
+  map.once('styledata', () => { if (map.isStyleLoaded()) { syncRoute(); syncSelectedPlaceLabel(); } });
 }
 
 /* ---------- Controls ---------- */
@@ -479,6 +488,8 @@ function select(p, fly = true) {
   ctl?.abort(); clearTimeout(timer);
   cur = p; clearFound(); pinMk && pinMk.remove(); clearRoute(); fromPt = map.getCenter().toArray();
   const dropped = p.type === 'location' || p._t === 'Dropped pin';
+  selectedFeatureId = dropped ? null : p.id ?? null;
+  syncSelectedPlaceLabel();
   const el = selectedPlaceElement(p.category || p.type, dropped);
   pinMk = new maplibregl.Marker({ element: el, anchor: dropped ? 'bottom' : 'center' }).setLngLat([+p.lon, +p.lat]).addTo(map);
   if (fly) {
@@ -537,7 +548,7 @@ body.onclick = e => {
   else if (k === 'overview') routeOverview(); else if (k === 'alt') pickRoute(+a.dataset.i);
 };
 pbody.onclick = body.onclick;
-function closeAll() { clearFound(); pinMk && pinMk.remove(); cur = null; clearRoute(); body.innerHTML = ''; showSheet(false); }
+function closeAll() { clearFound(); pinMk && pinMk.remove(); cur = null; selectedFeatureId = null; syncSelectedPlaceLabel(); clearRoute(); body.innerHTML = ''; showSheet(false); }
 
 /* ---------- Directions ---------- */
 let tabs = () => `<div class="modes">${[['car', 'Drive'], ['foot', 'Walk'], ['bike', 'Cycle']].map(([k, t]) => `<button data-a="${k}" class="${k === tm ? 'on' : ''}">${t}</button>`).join('')}</div>`;
