@@ -213,6 +213,9 @@ kbd{font:600 11px Geist,Inter;color:var(--sub);border:1px solid var(--line);bord
 .maplibregl-ctrl-attrib{display:none!important}
 body.attribution-open .maplibregl-ctrl-attrib{display:block!important}
 body.attribution-open .maplibregl-ctrl-attrib-button{display:none!important}
+#sifric-brand{position:absolute;z-index:5;left:16px;bottom:calc(70px + env(safe-area-inset-bottom));width:56px;margin:0;padding:0;border:0;background:none;display:block;line-height:0;pointer-events:none}
+#sifric-brand img{display:block;width:100%;height:auto;opacity:1}
+body.search-open #sifric-brand{display:none}
 .maplibregl-ctrl-scale{border-color:var(--sub)!important;border-radius:0 6px 0 0}
 .pin{position:relative;width:36px;height:48px;cursor:pointer;animation:drop .5s cubic-bezier(.3,1.35,.5,1)}
 .pin svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible;color:var(--c)}
@@ -616,6 +619,7 @@ body.routing #map .maplibregl-ctrl-bottom-right{bottom:env(safe-area-inset-botto
 </head>
 <body>
 <main id="map" aria-label="Map of Sri Lanka"></main>
+<div id="sifric-brand"><img src="/assets/sifric-wordmark.png" alt="Sifric"></div>
 <aside id="panel" class="glass">
   <button class="sgrab" type="button" aria-label="Close search sheet"><i></i></button>
   <div class="srow"><div class="bar">
