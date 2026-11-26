@@ -94,7 +94,6 @@ export function stylePlaces(style) {
   // Fallback dots share the pin collision footprint, so they yield to named
   // pins and to each other instead of drawing an unrestricted cloud of points.
   dot.type = "symbol";
-  delete dot.maxzoom;
   dot.layout = {
     "icon-image": ["concat", "lk-dot-", ["get", "kind"]],
     "icon-size": [
@@ -114,7 +113,6 @@ export function stylePlaces(style) {
     "icon-padding": 8,
   };
   dot.paint = {};
-  pin.minzoom = 7;
   delete pin.filter;
   pin.layout = {
     "icon-image": ["concat", "lk-pin-", ["get", "kind"]],
