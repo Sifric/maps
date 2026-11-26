@@ -15,6 +15,7 @@ const colours = {
   other: "#82969d",
 };
 const aliases = { restaurant: "food", fast_food: "food", food_court: "food", hospital: "health", pharmacy: "health", hotel: "hotel", lodging: "hotel", park: "leisure", shop: "shopping" };
+const selectedColours = { shopping: "#edbd52", health: "#e95f75" };
 export const placeIcons = {
   food: "restaurant",
   shopping: "shop",
@@ -39,19 +40,32 @@ function dotImage(kind) {
   c.fill();
   return { width: 128, height: 144, data: c.getImageData(0, 0, 128, 144).data };
 }
-function markerImage(kind) {
+function markerImage(kind, selected = false) {
   const canvas = document.createElement("canvas");
   canvas.width = 112; canvas.height = 112;
   const c = canvas.getContext("2d"); c.scale(4, 4);
   const category = aliases[kind] || kind;
-  const colour = colours[category] || colours[kind] || colours.other;
+  const colour = (selected && selectedColours[category]) || colours[category] || colours[kind] || colours.other;
   const cx = 14, cy = 14, radius = 11.5;
-  c.save(); c.shadowColor = "rgba(0,0,0,.30)"; c.shadowBlur = 3; c.shadowOffsetY = 1.25;
-  const body = c.createRadialGradient(cx - 4, cy - 6, 1, cx, cy, radius + 1);
-  body.addColorStop(0, "rgba(255,255,255,.48)"); body.addColorStop(.3, colour); body.addColorStop(1, colour);
+  c.save(); c.shadowColor = selected ? "rgba(0,0,0,.44)" : "rgba(0,0,0,.30)"; c.shadowBlur = selected ? 4 : 3; c.shadowOffsetY = 1.25;
+  const body = selected ? c.createLinearGradient(0, 2, 0, 27) : c.createRadialGradient(cx - 4, cy - 6, 1, cx, cy, radius + 1);
+  if (selected) {
+    body.addColorStop(0, colour); body.addColorStop(1, colour);
+  } else {
+    body.addColorStop(0, "rgba(255,255,255,.48)"); body.addColorStop(.3, colour); body.addColorStop(1, colour);
+  }
   c.fillStyle = body; c.beginPath(); c.arc(cx, cy, radius, 0, Math.PI * 2); c.fill(); c.restore();
-  c.strokeStyle = "rgba(255,255,255,.96)"; c.lineWidth = 1.4; c.beginPath(); c.arc(cx, cy, radius - .1, 0, Math.PI * 2); c.stroke();
-  c.strokeStyle = "rgba(255,255,255,.42)"; c.lineWidth = .75; c.beginPath(); c.arc(cx, cy, radius - 2, Math.PI * 1.12, Math.PI * 1.88); c.stroke();
+  if (selected) {
+    c.save(); c.beginPath(); c.arc(cx, cy, radius, 0, Math.PI * 2); c.clip();
+    const glaze = c.createLinearGradient(0, 2, 0, 26);
+    glaze.addColorStop(0, "rgba(255,255,255,.52)"); glaze.addColorStop(.42, "rgba(255,255,255,.11)"); glaze.addColorStop(1, "rgba(0,0,0,.27)");
+    c.fillStyle = glaze; c.fillRect(1, 1, 26, 26); c.restore();
+    c.strokeStyle = "rgba(10,20,32,.85)"; c.lineWidth = .85; c.beginPath(); c.arc(cx, cy, radius - .1, 0, Math.PI * 2); c.stroke();
+    c.strokeStyle = "rgba(255,255,255,.45)"; c.lineWidth = .5; c.beginPath(); c.arc(cx, cy, radius - 1.2, Math.PI * 1.04, Math.PI * 1.94); c.stroke();
+  } else {
+    c.strokeStyle = "rgba(255,255,255,.96)"; c.lineWidth = 1.4; c.beginPath(); c.arc(cx, cy, radius - .1, 0, Math.PI * 2); c.stroke();
+    c.strokeStyle = "rgba(255,255,255,.42)"; c.lineWidth = .75; c.beginPath(); c.arc(cx, cy, radius - 2, Math.PI * 1.12, Math.PI * 1.88); c.stroke();
+  }
   const filledIcons = {
     food: 'M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z',
     health: 'M19 3H5c-1.1 0-1.99.9-1.99 2L3 19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z',
@@ -59,9 +73,11 @@ function markerImage(kind) {
     leisure: 'M17 12h2L12 2 5.05 12H7l-3.9 6h6.92v4h3.96v-4H21z',
     shopping: 'M18 6h-2c0-2.21-1.79-4-4-4S8 3.79 8 6H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6-2c1.1 0 2 .9 2 2h-4c0-1.1.9-2 2-2z',
   };
-  c.fillStyle = "#fff";
-  if (filledIcons[category]) { c.save(); c.translate(6, 6); c.scale(.67, .67); c.fill(new Path2D(filledIcons[category])); c.restore(); }
-  else drawIcon(c, placeIcons[kind] || "place", 6.5, 6.5, 15, "#fff");
+  const iconColour = selected ? "#18212b" : "#fff";
+  c.fillStyle = iconColour;
+  if (selected && category === "health") { c.beginPath(); c.roundRect(12.2, 8.5, 3.6, 11, .3); c.roundRect(8.5, 12.2, 11, 3.6, .3); c.fill(); }
+  else if (filledIcons[category]) { c.save(); c.translate(selected ? 7.2 : 6, selected ? 7.2 : 6); c.scale(selected ? .57 : .67, selected ? .57 : .67); c.fill(new Path2D(filledIcons[category])); c.restore(); }
+  else drawIcon(c, placeIcons[kind] || "place", selected ? 8 : 6.5, selected ? 8 : 6.5, selected ? 12 : 15, iconColour);
   return { width: 112, height: 112, data: c.getImageData(0, 0, 112, 112).data };
 }
 export function stylePlaces(style) {
@@ -188,17 +204,17 @@ export function stylePlaces(style) {
     ),
   );
   selectedLabel.layout["text-anchor"] = "top";
-  selectedLabel.layout["text-offset"] = [0, 1.9];
+  selectedLabel.layout["text-offset"] = [0, 1.15];
   selectedLabel.layout["text-justify"] = "center";
   selectedLabel.layout["text-max-width"] = 16;
-  selectedLabel.layout["text-size"] = ["interpolate", ["linear"], ["zoom"], 12, 11, 16, 12];
+  selectedLabel.layout["text-size"] = ["interpolate", ["linear"], ["zoom"], 12, 11.5, 16, 12.5];
   selectedLabel.layout["text-optional"] = false;
   // Keep the selected name visible when space permits, while preserving
   // nearby road/place labels instead of painting over them.
   selectedLabel.layout["text-allow-overlap"] = false;
   selectedLabel.layout["text-ignore-placement"] = false;
   selectedLabel.filter = ["==", ["id"], "__no_selected_place__"];
-  selectedLabel.paint = { ...pin.paint };
+  selectedLabel.paint = { ...pin.paint, "text-color": "#ffffff", "text-halo-color": "rgba(0,0,0,.92)", "text-halo-width": 2.3, "text-halo-blur": .35 };
   dot.layout["symbol-sort-key"] = pin.layout["symbol-sort-key"];
   // Geographic names keep placement priority over businesses at overview zooms.
   const base = style.layers.filter((layer) => layer !== dot && layer !== pin);
@@ -243,8 +259,8 @@ export function selectedPlaceElement(kind = "", dropped = false) {
     return marker;
   }
   const category = aliases[kind] || kind;
-  marker.style.setProperty("--marker-color", colours[category] || colours.other);
-  const image = markerImage(kind), canvas = document.createElement("canvas");
+  marker.style.setProperty("--marker-color", selectedColours[category] || colours[category] || colours.other);
+  const image = markerImage(kind, true), canvas = document.createElement("canvas");
   canvas.width = image.width; canvas.height = image.height;
   canvas.getContext("2d").putImageData(new ImageData(image.data, image.width, image.height), 0, 0);
   const visual = document.createElement("span");
