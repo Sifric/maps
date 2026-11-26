@@ -19,12 +19,15 @@
             : "light";
       } catch {}
     </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link
       rel="stylesheet"
       href="/vendor/maplibre-gl.css"
     />
-    <link rel="stylesheet" href="/map.css?v=map-home-1" />
+    <link rel="stylesheet" href="/map.css?v=map-home-2" />
     <link rel="stylesheet" href="/place-markers.css" />
     <link rel="stylesheet" href="/contribution-sheet.css?v=20" />
     <script src="/vendor/maplibre-gl.js"></script>
@@ -70,6 +73,7 @@
   <body>
     <div id="map-error-toast" role="alert" aria-live="assertive" hidden><strong>Sifric Maps error</strong><span data-error-detail></span><button type="button" aria-label="Dismiss error">×</button></div>
     <main id="map" aria-label="Map of Sri Lanka"></main>
+    <a id="weather" href="https://open-meteo.com/" target="_blank" rel="noopener" hidden></a>
     <section class="search-shell" aria-label="Place search">
       <button id="search-grab" class="sheet-grab" type="button" aria-label="Collapse search"><span></span></button>
       <div class="search-header">
@@ -95,27 +99,14 @@
         <button id="close-search" type="button" aria-label="Close search" aria-controls="suggestions"><span data-icon="close"></span></button>
       </div>
       <nav id="categories" aria-label="Place categories">
-        <button data-kind="food">
-          <span data-icon="restaurant"></span> Restaurants
-        </button>
-        <button data-kind="shopping">
-          <span data-icon="shop"></span> Shopping
-        </button>
-        <button data-kind="leisure">
-          <span data-icon="playground"></span> Things to do
-        </button>
-        <button data-kind="culture">
-          <span data-icon="museum"></span> Museums
-        </button>
-        <button data-kind="transport">
-          <span data-icon="bus"></span> Transit
-        </button>
-        <button data-kind="health">
-          <span data-icon="hospital"></span> Health
-        </button>
-        <button id="reset-category" aria-label="Clear category filter" hidden>
-          <span data-icon="close"></span>
-        </button>
+        <button type="button" data-kind="food"><span data-icon="restaurant" aria-hidden="true"></span>Food</button>
+        <button type="button" data-kind="coffee"><span data-icon="coffee" aria-hidden="true"></span>Coffee</button>
+        <button type="button" data-kind="hotel"><span data-icon="bed" aria-hidden="true"></span>Hotels</button>
+        <button type="button" data-kind="fuel"><span data-icon="fuel" aria-hidden="true"></span>Fuel</button>
+        <button type="button" data-kind="pharmacy"><span data-icon="hospital" aria-hidden="true"></span>Pharmacy</button>
+        <button type="button" data-kind="atm"><span data-icon="bank" aria-hidden="true"></span>ATMs</button>
+        <button type="button" data-kind="park"><span data-icon="playground" aria-hidden="true"></span>Parks</button>
+        <button id="reset-category" type="button" aria-label="Clear category filter" hidden><span data-icon="close"></span></button>
       </nav>
       <div id="suggestions" aria-label="Search results" hidden></div>
     </section>
@@ -133,12 +124,21 @@
       aria-label="Map appearance and layers"
       hidden
     >
+      <button id="layers-grab" class="sheet-grab" type="button" aria-label="Expand layers"><span></span></button>
       <header class="options-header">
         <h2>Layers</h2>
         <button id="close-layers" aria-label="Close layers">
           <span data-icon="close"></span>
         </button>
       </header>
+      <div class="layer-presets" aria-label="Quick views">
+        <button type="button" data-preset="explore"><span data-icon="compass"></span>Explore</button>
+        <button type="button" data-preset="transit"><span data-icon="bus"></span>Transit</button>
+        <button type="button" data-preset="cycling"><span data-icon="bicycle"></span>Cycling</button>
+        <button type="button" data-preset="hiking"><span data-icon="terrain"></span>Hiking</button>
+        <button type="button" data-preset="night"><span data-icon="moon"></span>Night</button>
+        <button id="reset-layers" type="button">Reset</button>
+      </div>
       <h3>Appearance</h3>
       <div class="theme-options" role="radiogroup" aria-label="Colour theme">
         <button data-theme-choice="light" role="radio" aria-checked="false">
@@ -211,7 +211,17 @@
       </div>
       <p id="map-provider-note" class="option-note"></p>
     </section>
-    <div class="map-controls">
+    <div id="measure-bar" class="measure-bar" hidden>
+      <output id="measure-output" aria-live="polite">Tap the map to start</output>
+      <button id="measure-undo" type="button" disabled>Undo</button>
+      <button id="measure-done" type="button">Done</button>
+    </div>
+    <div class="map-controls" aria-label="Map controls">
+      <div class="map-tools">
+        <button id="measure" type="button" aria-label="Measure distance" aria-pressed="false" title="Measure distance (M)"><span data-icon="ruler"></span></button>
+        <button id="share-view" type="button" aria-label="Share this map" title="Share this map"><span data-icon="share_view"></span></button>
+        <button id="fullscreen" type="button" aria-label="Full screen" aria-pressed="false" title="Full screen (F)"><span data-icon="fullscreen"></span></button>
+      </div>
       <button
         id="locate"
         aria-label="Show your location"
@@ -235,12 +245,12 @@
 <button type="button" data-picker-type="satellite" role="radio" aria-checked="false"><span class="type-preview type-satellite"><span data-icon="satellite"></span></span><span>Satellite</span></button>
 <button type="button" data-picker-type="terrain" role="radio" aria-checked="false"><span class="type-preview type-terrain"><span data-icon="terrain"></span></span><span>Terrain</span></button>
 </div></div>
-  <button type="button" id="picker-live-location" class="picker-live-location" aria-label="Go to my current location" title="My location"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></button><div class="picker-bottom"><output id="picker-coordinates">Move the map to select a location</output><button type="button" id="picker-confirm">Use this location</button></div>
+  <button type="button" id="picker-live-location" class="picker-live-location" aria-label="Go to my current location" title="My location"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></button><div class="picker-bottom"><output id="picker-coordinates">Move the map to select a location</output><div id="picker-road-tools" hidden><button type="button" id="picker-road-undo">Undo</button><button type="button" id="picker-road-point">Add point</button></div><button type="button" id="picker-confirm">Use this location</button></div>
 </section>
 <div id="contribution-backdrop" class="contribution-backdrop" hidden></div>
 <section id="contribution-sheet" class="contribution-sheet" role="dialog" aria-modal="true" aria-labelledby="contribution-title" hidden>
-  <div class="contribution-handle" aria-hidden="true"></div>
-  <header class="contribution-header"><div><span class="contribution-kicker">SIFRIC MAPS · COMMUNITY</span><h2 id="contribution-title">Contribute to Maps</h2></div><button type="button" id="contribution-close" class="contribution-close" aria-label="Close contribution sheet"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button></header>
+  <button id="contribution-grab" class="sheet-grab" type="button" aria-label="Expand contribution sheet" aria-expanded="false"><span></span></button>
+  <header class="contribution-header"><div><h2 id="contribution-title">Contribute</h2></div><button type="button" id="contribution-close" class="contribution-close" aria-label="Close contribution sheet"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button></header>
   <div class="contribution-scroll">
     <div id="contribution-landing" class="contribution-landing"><p class="contribution-landing-intro">Help improve Sifric Maps. Choose what you would like to contribute.</p><div class="contribution-landing-options"><button type="button" class="contribution-landing-option" data-contribution-mode="add"><span class="contribution-option-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span><span class="contribution-option-copy"><strong>Add place</strong><small>Add a missing business, landmark or public place</small></span><svg class="contribution-option-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></button><button type="button" class="contribution-landing-option" data-contribution-mode="edit"><span class="contribution-option-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m16 5 3 3M4 20l4.5-1 11-11a2 2 0 0 0-3-3l-11 11L4 20Z"/></svg></span><span class="contribution-option-copy"><strong>Update place</strong><small>Correct the details of an existing place</small></span><svg class="contribution-option-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></button><button type="button" class="contribution-landing-option" data-contribution-mode="road"><span class="contribution-option-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3 5 21M15 3l4 18M12 6v3m0 6v3"/></svg></span><span class="contribution-option-copy"><strong>Update road</strong><small>Report a missing road or incorrect road details</small></span><svg class="contribution-option-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></button><button type="button" class="contribution-landing-option" data-contribution-mode="address"><span class="contribution-option-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></span><span class="contribution-option-copy"><strong>Update address</strong><small>Correct an address or its map position</small></span><svg class="contribution-option-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></button><button type="button" class="contribution-landing-option" data-contribution-mode="report"><span class="contribution-option-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22V4m0 1c4-3 8 3 12 0v12c-4 3-8-3-12 0"/></svg></span><span class="contribution-option-copy"><strong>Report issue</strong><small>Flag inaccurate, duplicate or missing map information</small></span><svg class="contribution-option-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></button></div><p class="contribution-landing-note">Contributions are drafts for now. Nothing is published automatically.</p></div>
     <div id="contribution-editor" class="contribution-editor" hidden>
@@ -251,7 +261,7 @@
        <label for="contribution-special-kind" id="contribution-special-kind-label">What needs updating?</label><select id="contribution-special-kind"><option value="missing">Missing road</option><option value="name">Incorrect name</option><option value="route">Incorrect route or connection</option><option value="access">Access or road status</option></select>
        <label for="contribution-special-location" id="contribution-special-location-label">Location or nearby landmark</label><input id="contribution-special-location" maxlength="300" placeholder="Describe where the road is">
        <label for="contribution-special-description">Describe the change <span>*</span></label><textarea id="contribution-special-description" rows="4" maxlength="1000" placeholder="Explain what needs to change"></textarea>
-       <p class="contribution-notice">For roads, describe the affected route or junctions. Map geometry editing is not enabled yet.</p>
+       <button id="contribution-draw-road" type="button" hidden><span data-icon="ruler"></span> Draw missing road</button><output id="contribution-road-count"></output>
        <div class="contribution-actions"><button type="button" id="contribution-special-cancel">Back</button><button type="button" id="contribution-special-preview">Preview draft</button></div>
       </div>
     <form id="contribution-form-sheet">
@@ -278,7 +288,7 @@
     </div>
   </div>
 </section>
-<script defer src="/contribution-sheet.js?v=18"></script>
+<script defer src="/contribution-sheet.js?v=21"></script>
     <div
       id="map-status"
       class="map-status"
@@ -287,7 +297,7 @@
     ></div>
     <div id="error" role="alert" hidden></div>
     <script type="module" src="/icons.js"></script>
-    <script type="module" src="/map.js?v=map-home-1"></script>
+    <script type="module" src="/map.js?v=map-home-2"></script>
   <div id="hours-dialog-backdrop" class="hours-dialog-backdrop" hidden>
  <section class="hours-dialog" role="dialog" aria-modal="true" aria-labelledby="hours-dialog-title">
  <h3 id="hours-dialog-title">Select days &amp; time</h3><div id="hours-day-buttons" class="hours-day-buttons"></div>

@@ -2,7 +2,7 @@
 const $=id=>document.getElementById(id);
 const fab=$("contribute-fab"),sheet=$("contribution-sheet"),backdrop=$("contribution-backdrop"),form=$("contribution-form-sheet"),preview=$("contribution-preview");
 if(!fab||!sheet||!form)return;
-let previousFocus=null,mode="add";
+let previousFocus=null,mode="add",roadDraft=[],roadPoints=[],drawingRoad=false;
 const categorySelect=$("contribution-category"),categoryButton=$("contribution-category-button"),categoryList=$("contribution-category-list"),categoryLabel=$("contribution-category-label");
 function closeCategory(){categoryList.hidden=true;categoryButton.setAttribute("aria-expanded","false");}
 function syncCategory(){const option=categorySelect.selectedOptions[0];categoryLabel.textContent=categorySelect.value?option.textContent:"Choose a category";categoryButton.classList.toggle("has-value",!!categorySelect.value);categoryList.querySelectorAll("[data-value]").forEach(item=>item.setAttribute("aria-selected",String(item.dataset.value===categorySelect.value)));}
@@ -30,13 +30,14 @@ advancedToggle.addEventListener("click",()=>{const expanded=advancedToggle.getAt
 const config={add:["Add a place","Add a missing place to help keep the map useful and accurate.","Place name"],edit:["Update a place","Describe the information that should be corrected.","Existing place name"],road:["Update road","Describe the road and the correction needed.","Road name"],address:["Update address","Correct an address or map position.","Address"],report:["Report an issue","Flag a closed, duplicated, or incorrectly mapped place.","Place or issue"]};
 const landing=$("contribution-landing"),editor=$("contribution-editor"),special=$("contribution-special-fields");
 const specialName=$("contribution-special-name"),specialKind=$("contribution-special-kind"),specialLocation=$("contribution-special-location"),specialDescription=$("contribution-special-description");
-function showLanding(){closeCategory();preview.hidden=true;form.hidden=false;special.hidden=true;editor.hidden=true;landing.hidden=false;$("contribution-title").textContent="Contribute to Maps";sheet.querySelector(".contribution-scroll").scrollTop=0;}
+function showLanding(){closeCategory();preview.hidden=true;form.hidden=false;special.hidden=true;editor.hidden=true;landing.hidden=false;$("contribution-title").textContent="Contribute";sheet.querySelector(".contribution-scroll").scrollTop=0;}
 function showEditor(next){
  mode=next;landing.hidden=true;editor.hidden=false;preview.hidden=true;form.hidden=next==="road"||next==="address";special.hidden=!form.hidden;
  $("contribution-title").textContent=config[mode][0];$("contribution-explainer").textContent=config[mode][1];
  if(!form.hidden){$("contribution-name-label").firstChild.textContent=config[mode][2]+" ";advancedToggle.hidden=mode!=="add";advanced.hidden=mode!=="add"||advancedToggle.getAttribute("aria-expanded")!=="true";if(mode==="add")requestAnimationFrame(()=>void ensurePreviewMap());}
- if(mode==="road"){ $("contribution-special-name-label").textContent="Road name (optional)";specialName.placeholder="Road or street name";$("contribution-special-kind-label").textContent="What needs updating?";specialKind.replaceChildren(...[["missing","Missing road"],["name","Incorrect road name"],["route","Incorrect route or connection"],["access","Access or road status"]].map(([value,label])=>new Option(label,value)));$("contribution-special-location-label").textContent="Location or nearby landmark";specialLocation.placeholder="Describe where the road is";specialDescription.placeholder="Describe the road correction, affected section or junctions";}
+ if(mode==="road"){ $("contribution-special-name-label").textContent="Road name (optional)";specialName.placeholder="Road or street name";$("contribution-special-kind-label").textContent="What needs updating?";specialKind.replaceChildren(...[["missing","Missing road"],["name","Road name"],["direction","One-way or two-way"],["route","Drawn incorrectly"],["private","Private road"],["closed","Road closed"],["absent","Road does not exist"],["other","Other"]].map(([value,label])=>new Option(label,value)));$("contribution-special-location-label").textContent="Location or nearby landmark";specialLocation.placeholder="Describe where the road is";specialDescription.placeholder="Describe the road correction, affected section or junctions";}
  if(mode==="address"){ $("contribution-special-name-label").textContent="Current address (optional)";specialName.placeholder="Existing address, if known";$("contribution-special-kind-label").textContent="What needs updating?";specialKind.replaceChildren(...[["incorrect","Incorrect address"],["missing","Missing address"],["position","Incorrect map position"],["number","Street or building number"]].map(([value,label])=>new Option(label,value)));$("contribution-special-location-label").textContent="Correct address or locality";specialLocation.placeholder="Street, building number and locality";specialDescription.placeholder="Describe the correction and how to locate the address";}
+ syncRoadDraft();
  sheet.querySelector(".contribution-scroll").scrollTop=0;
 }
 function open(){previousFocus=document.activeElement;sheet.hidden=false;backdrop.hidden=false;fab.setAttribute("aria-expanded","true");document.body.classList.add("contribution-open");showLanding();$("contribution-close").focus();}
@@ -45,8 +46,9 @@ fab.addEventListener("click",open);$("contribution-close").addEventListener("cli
 document.addEventListener("keydown",e=>{if(sheet.hidden||!hoursBackdrop.hidden)return;if(e.key==="Escape"){e.preventDefault();if(!editor.hidden)showLanding();else close();}});
 document.querySelectorAll("[data-contribution-mode]").forEach(b=>b.addEventListener("click",()=>showEditor(b.dataset.contributionMode)));
 $("contribution-special-preview").addEventListener("click",()=>{
- if(!specialDescription.value.trim()){specialDescription.focus();specialDescription.setCustomValidity("Describe the requested change.");specialDescription.reportValidity();specialDescription.setCustomValidity("");return;}
+ if(!specialDescription.value.trim() && !(mode==="road"&&specialKind.value==="missing"&&roadDraft.length>=2)){specialDescription.focus();specialDescription.setCustomValidity("Describe the requested change.");specialDescription.reportValidity();specialDescription.setCustomValidity("");return;}
  const fields=[["Type",config[mode][0]],[mode==="road"?"Road name":"Current address",specialName.value],["Change type",specialKind.selectedOptions[0]?.textContent],["Location",specialLocation.value],["Requested change",specialDescription.value]];
+ if(mode==="road"&&specialKind.value==="missing"&&roadDraft.length)fields.push(["Road geometry",roadDraft.map(([lng,lat])=>lat.toFixed(6)+", "+lng.toFixed(6)).join("\n")]);
  const dl=$("contribution-preview-details");dl.replaceChildren();for(const [name,value] of fields){if(!value)continue;const dt=document.createElement("dt"),dd=document.createElement("dd");dt.textContent=name;dd.textContent=value;dl.append(dt,dd);}
  special.hidden=true;preview.hidden=false;sheet.querySelector(".contribution-scroll").scrollTop=0;
 });
@@ -151,9 +153,64 @@ function updatePreviewLocation(){
  previewMap.jumpTo({center:previewCenter(),zoom:PREVIEW_ZOOM});
  requestAnimationFrame(()=>previewMap?.resize());
 }
-function updateCoordinates(){const map=mapInstance();if(!map?.getCenter)return;const c=map.getCenter();$("picker-coordinates").textContent=c.lat.toFixed(6)+", "+c.lng.toFixed(6);}
-function startPicking(){const map=mapInstance();if(!map?.getCenter){$("contribution-address").focus();return;}picking=true;void ensurePreviewMap();syncTypes();closeTypes();sheet.hidden=true;backdrop.hidden=true;picker.hidden=false;document.body.classList.add("contribution-picking");map.on("move",updateCoordinates);requestAnimationFrame(()=>{map.resize();updateCoordinates();});$("picker-confirm").focus();}
-function stopPicking(confirm){if(!picking)return;closeTypes();const map=mapInstance();if(confirm&&map?.getCenter){const c=map.getCenter();$("contribution-coordinates").value=c.lat.toFixed(6)+", "+c.lng.toFixed(6);$("contribution-coordinates").dispatchEvent(new Event("input",{bubbles:true}));}map?.off("move",updateCoordinates);picking=false;picker.hidden=true;sheet.hidden=false;backdrop.hidden=false;document.body.classList.remove("contribution-picking");if(map?.resize)requestAnimationFrame(()=>map.resize());if(confirm)updatePreviewLocation();requestAnimationFrame(()=>{previewMap?.resize();});$("contribution-use-center").focus();}
+const roadTools=$("picker-road-tools"), drawRoadButton=$("contribution-draw-road"), roadCount=$("contribution-road-count");
+const roadSource="contribution-road-draft";
+function syncRoadDraft(){
+ const visible=mode==="road"&&specialKind.value==="missing";
+ drawRoadButton.hidden=!visible;
+ roadCount.textContent=visible&&roadDraft.length ? roadDraft.length+" points in draft" : "";
+ drawRoadButton.lastChild.textContent=roadDraft.length ? " Edit missing road" : " Draw missing road";
+}
+function renderRoad(){
+ const map=mapInstance();
+ if(!map)return;
+ const data={type:"FeatureCollection",features:roadPoints.length<2?[]:[{
+  type:"Feature",properties:{},geometry:{type:"LineString",coordinates:roadPoints}
+ }]};
+ if(map.getSource(roadSource))map.getSource(roadSource).setData(data);
+ else if(map.isStyleLoaded()){
+  map.addSource(roadSource,{type:"geojson",data});
+  map.addLayer({id:roadSource,type:"line",source:roadSource,layout:{"line-cap":"round","line-join":"round"},paint:{"line-color":"#0879ed","line-width":5}});
+ }
+}
+function updateRoadControls(){
+ $("picker-confirm").disabled=roadPoints.length<2;
+ $("picker-road-undo").disabled=!roadPoints.length;
+ $("picker-road-point").textContent=roadPoints.length?"Add point":"Start drawing";
+ updateCoordinates();renderRoad();
+}
+specialKind.addEventListener("change",syncRoadDraft);
+drawRoadButton.onclick=()=>{
+ if(!mapInstance())return;
+ roadPoints=roadDraft.slice();
+ startPicking(true);
+};
+$("picker-road-point").onclick=()=>{
+ const center=mapInstance().getCenter();
+ const previous=roadPoints.at(-1);
+ if(previous && center.distanceTo(window.maplibregl.LngLat.convert(previous))<2)return;
+ roadPoints.push([center.lng,center.lat]);
+ updateRoadControls();
+};
+$("picker-road-undo").onclick=()=>{roadPoints.pop();updateRoadControls();};
+function updateCoordinates(){const map=mapInstance();if(!map?.getCenter)return;const c=map.getCenter();$("picker-coordinates").textContent=drawingRoad
+ ? roadPoints.length ? roadPoints.length+" points · move the map to continue" : "Move the target to the start of the road"
+ : c.lat.toFixed(6)+", "+c.lng.toFixed(6);}
+function startPicking(road=false){const map=mapInstance();if(!map?.getCenter){$("contribution-address").focus();return;}picking=true;drawingRoad=road===true;
+ roadTools.hidden=!drawingRoad;
+ $("picker-confirm").textContent=drawingRoad?"Use this road":"Use this location";
+ if(drawingRoad){map.on("style.load",renderRoad);updateRoadControls();}
+ else{ $("picker-confirm").disabled=false;void ensurePreviewMap();}
+ syncTypes();closeTypes();sheet.hidden=true;backdrop.hidden=true;picker.hidden=false;document.body.classList.add("contribution-picking");map.on("move",updateCoordinates);requestAnimationFrame(()=>{map.resize();updateCoordinates();});$("picker-confirm").focus();}
+function stopPicking(confirm){if(!picking)return;closeTypes();const map=mapInstance();const wasDrawing=drawingRoad;
+ if(wasDrawing){
+  if(confirm)roadDraft=roadPoints.slice();
+  map.off("style.load",renderRoad);
+  if(map.getLayer(roadSource))map.removeLayer(roadSource);
+  if(map.getSource(roadSource))map.removeSource(roadSource);
+  drawingRoad=false;roadTools.hidden=true;syncRoadDraft();
+ }
+ if(confirm&&!wasDrawing&&map?.getCenter){const c=map.getCenter();$("contribution-coordinates").value=c.lat.toFixed(6)+", "+c.lng.toFixed(6);$("contribution-coordinates").dispatchEvent(new Event("input",{bubbles:true}));}map?.off("move",updateCoordinates);picking=false;picker.hidden=true;sheet.hidden=false;backdrop.hidden=false;document.body.classList.remove("contribution-picking");if(map?.resize)requestAnimationFrame(()=>map.resize());if(confirm&&!wasDrawing)updatePreviewLocation();requestAnimationFrame(()=>{previewMap?.resize();});(wasDrawing?drawRoadButton:$("contribution-use-center")).focus();}
 $("contribution-use-center").addEventListener("click",startPicking);
 $("picker-cancel").addEventListener("click",()=>stopPicking(false));
 $("picker-confirm").addEventListener("click",()=>stopPicking(true));

@@ -2,7 +2,8 @@ import basemapStyle from "./style.json";
 import { nativeStyle } from "./native-style.mjs";
 
 
-import { createPlatformApi } from "./platform-api.mjs";
+import { createPlatformApi, dispatchRouting } from "./platform-api.mjs";
+import { RoutingError } from "./routing.mjs";
 import { renderStaticMap } from "./static-map.mjs";
 import { createPrivateGateway } from "./private-gateway.mjs";
 import portal from "./private/portal.html.txt";
@@ -172,10 +173,36 @@ async function routeRequest(request, env) {
     Array.isArray(point) && point.length === 2 &&
     point.every((value) => typeof value === "number" && Number.isFinite(value)) &&
     point[0] >= 78 && point[0] <= 82.5 && point[1] >= 5 && point[1] <= 10.5;
-  if (!profile)
+  if (!profile && !(body.alternatives === true && body.mode === "cycle"))
     return jsonResponse({ error: "Choose Drive, Two-wheeler, or Walk." }, 400, routeCors);
   if (!validPoint(body.origin) || !validPoint(body.destination))
     return jsonResponse({ error: "Origin and destination must be coordinates in Sri Lanka." }, 400, routeCors);
+
+  if (body.alternatives === true) {
+    if (body.avoidTolls && body.avoidHighways)
+      return jsonResponse({ error: "Choose one driving avoidance option." }, 400, routeCors);
+    try {
+      const response = await dispatchRouting(env, "routes", {
+        coordinates: [body.origin, body.destination],
+        mode: body.mode === "twoWheeler" ? "motorcycle" : body.mode,
+        alternatives: true,
+        avoidTolls: body.avoidTolls,
+        avoidHighways: body.avoidHighways,
+      });
+      const data = await response.json();
+      if (!response.ok) return jsonResponse(data, response.status, routeCors);
+      const routes = data.routes.map((route) => ({
+        geometry: route.geometry,
+        distance: route.distance,
+        duration: route.duration,
+        steps: (route.legs || []).flatMap((leg) => leg.steps || []).map(osrmStep),
+      }));
+      return jsonResponse({ ...routes[0], routes }, 200, routeCors);
+    } catch (error) {
+      if (error instanceof RoutingError) return jsonResponse({ error: error.message }, error.status, routeCors);
+      return jsonResponse({ error: "The Sifric routing graph is unavailable." }, 502, routeCors);
+    }
+  }
 
   let endpoint;
   try {
@@ -290,6 +317,7 @@ function osrmStep(step) {
   return {
     text: step.name ? `${action} onto ${step.name}` : action,
     distance: step.distance || 0,
+    maneuver: { type: maneuver.type, modifier: maneuver.modifier },
   };
 }
 

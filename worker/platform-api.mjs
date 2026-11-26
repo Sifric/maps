@@ -61,7 +61,7 @@ async function routePayload(request) {
   }
 }
 
-async function dispatchRouting(env, operation, body) {
+export async function dispatchRouting(env, operation, body) {
   const mode = body.mode ?? 'drive';
   const profile = routingProfile(body);
   const binding = env[routingBindings.get(profile)];

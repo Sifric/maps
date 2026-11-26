@@ -1,5 +1,18 @@
 // Original 24px SVG icons. Shared by interface controls and canvas map markers.
 export const iconPaths = {
+  turn_left: ["M12 20V13a3 3 0 0 0-3-3H4M8 6l-4 4 4 4"],
+  turn_right: ["M12 20V13a3 3 0 0 1 3-3h5M16 6l4 4-4 4"],
+  straight: ["M12 20V4M6.5 9.5 12 4l5.5 5.5"],
+  cloud: ["M7 18h10a4 4 0 0 0 0-8 6 6 0 0 0-11.5 1.5A3.2 3.2 0 0 0 7 18Z"],
+  rain: ["M7 14h10a4 4 0 0 0 0-8 6 6 0 0 0-11.5 1.5A3.2 3.2 0 0 0 7 14ZM8 18l-1 3M13 18l-1 3M18 18l-1 3"],
+  ruler: ["M3 17 17 3l4 4L7 21Z", "m7 13 2 2M10 10l2 2M13 7l2 2"],
+  share_view: ["M12 15V3M8 7l4-4 4 4M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"],
+  fullscreen: ["M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"],
+  coffee: ["M4 9h12v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5zM16 11h1.5a2.5 2.5 0 0 1 0 5H16M8 3v2M12 3v2"],
+  bed: ["M3 18V6M3 14h18v4M21 14v-3a3 3 0 0 0-3-3h-7v6", "M8.5 10.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"],
+  fuel: ["M4 21V5a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v16M3 21h13M15 9h1.5a2 2 0 0 1 2 2v6a1.5 1.5 0 0 0 3 0V8l-2-2M7 8h5"],
+  drive: ["M5 17v-6l2-5h10l2 5v6M3 17h18M7.5 14h.01M16.5 14h.01"],
+  walk: ["M13 3a1.7 1.7 0 1 0 0 3.4A1.7 1.7 0 0 0 13 3Z", "m9 21 2-6-2-3 3-3 3 2 2 3M11 15l3 2v4"],
   mic: ["M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z", "M5 10v2a7 7 0 0 0 14 0v-2", "M12 19v3M8 22h8"],
   selected_place: [
     "M12 2a8 8 0 0 0-8 8c0 5.7 8 13 8 13s8-7.3 8-13a8 8 0 0 0-8-8Z",
