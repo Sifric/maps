@@ -73,7 +73,7 @@ function markerImage(kind, selected = false) {
     leisure: 'M17 12h2L12 2 5.05 12H7l-3.9 6h6.92v4h3.96v-4H21z',
     shopping: 'M18 6h-2c0-2.21-1.79-4-4-4S8 3.79 8 6H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6-2c1.1 0 2 .9 2 2h-4c0-1.1.9-2 2-2z',
   };
-  const iconColour = selected ? "#18212b" : "#fff";
+  const iconColour = selected ? (category === "health" ? "#371b20" : category === "shopping" ? "#29231b" : "#18212b") : "#fff";
   c.fillStyle = iconColour;
   if (selected && category === "health") { c.beginPath(); c.roundRect(12.2, 8.5, 3.6, 11, .3); c.roundRect(8.5, 12.2, 11, 3.6, .3); c.fill(); }
   else if (filledIcons[category]) { c.save(); c.translate(selected ? 7.2 : 6, selected ? 7.2 : 6); c.scale(selected ? .57 : .67, selected ? .57 : .67); c.fill(new Path2D(filledIcons[category])); c.restore(); }
@@ -204,7 +204,7 @@ export function stylePlaces(style) {
     ),
   );
   selectedLabel.layout["text-anchor"] = "top";
-  selectedLabel.layout["text-offset"] = [0, 1.15];
+  selectedLabel.layout["text-offset"] = [0, .8];
   selectedLabel.layout["text-justify"] = "center";
   selectedLabel.layout["text-max-width"] = 16;
   selectedLabel.layout["text-size"] = ["interpolate", ["linear"], ["zoom"], 12, 11.5, 16, 12.5];
@@ -268,8 +268,7 @@ export function selectedPlaceElement(kind = "", dropped = false) {
   const img = document.createElement("img"); img.alt = ""; img.src = canvas.toDataURL("image/png");
   visual.append(img);
   marker.append(visual);
-  const stem = document.createElement("span"); stem.className = "selected-marker__stem";
   const dot = document.createElement("span"); dot.className = "selected-marker__anchor-dot";
-  marker.append(stem, dot);
+  marker.append(dot);
   return marker;
 }

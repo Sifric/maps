@@ -467,8 +467,7 @@ body.picking #panel,body.picking #ctrl,body.picking #tilt,body.picking #psheet,b
 .selected-marker--place{width:64px;height:80px}
 .selected-marker__visual{position:absolute;left:0;top:-35px;display:block;width:64px;height:64px;transform-origin:center center;animation:selected-pop .38s cubic-bezier(.18,.82,.24,1.18) both;filter:drop-shadow(0 4px 7px rgba(0,0,0,.4))}
 .selected-marker__visual img{display:block;width:64px;height:64px}
-.selected-marker__stem{position:absolute;left:31px;top:23px;width:2px;height:13px;border-radius:2px;background:rgba(15,24,38,.75)}
-.selected-marker__anchor-dot{position:absolute;left:28px;top:36px;width:8px;height:8px;box-sizing:border-box;border:1px solid rgba(11,22,34,.85);border-radius:50%;background:var(--marker-color);box-shadow:0 0 0 1px rgba(255,255,255,.26),0 1px 4px rgba(0,0,0,.45)}
+.selected-marker__anchor-dot{position:absolute;left:27px;top:35px;width:10px;height:10px;box-sizing:border-box;border:2.5px solid #263041;border-radius:50%;background:var(--marker-color);box-shadow:0 2px 5px rgba(0,0,0,.45)}
 @keyframes selected-pop{0%{opacity:0;transform:translateY(8px) scale(.52)}65%{opacity:1;transform:translateY(-2px) scale(1.08)}100%{opacity:1;transform:translateY(0) scale(1)}}
 @media(prefers-reduced-motion:reduce){.selected-marker__visual{animation:none}}
 #ctrl>.stack:has(#zin){display:none!important}
