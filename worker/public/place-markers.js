@@ -40,31 +40,18 @@ function dotImage(kind) {
 }
 function markerImage(kind) {
   const canvas = document.createElement("canvas");
-  // Four physical pixels per CSS pixel keeps small map pins crisp.
-  canvas.width = 144;
-  canvas.height = 192;
-  const c = canvas.getContext("2d");
-  c.scale(4, 4);
+  canvas.width = 112; canvas.height = 112;
+  const c = canvas.getContext("2d"); c.scale(4, 4);
   const aliases = { restaurant: "food", fast_food: "food", food_court: "food", hospital: "health", pharmacy: "health", hotel: "hotel", lodging: "hotel", park: "leisure", shop: "shopping" };
   const category = aliases[kind] || kind;
   const colour = colours[category] || colours[kind] || colours.other;
-  c.fillStyle = "rgba(0,0,0,.25)";
-  c.beginPath();
-  c.ellipse(18, 45, 6, 2, 0, 0, Math.PI * 2);
-  c.fill();
-  c.fillStyle = colour;
-  c.strokeStyle = "#fff";
-  c.lineWidth = 2;
-  c.lineJoin = "round";
-  c.beginPath();
-  c.moveTo(18, 1);
-  c.bezierCurveTo(8.611, 1, 1, 8.611, 1, 18);
-  c.bezierCurveTo(1, 30.75, 18, 45, 18, 45);
-  c.bezierCurveTo(18, 45, 35, 30.75, 35, 18);
-  c.bezierCurveTo(35, 8.611, 27.389, 1, 18, 1);
-  c.closePath();
-  c.fill();
-  c.stroke();
+  const cx = 14, cy = 14, radius = 11.5;
+  c.save(); c.shadowColor = "rgba(0,0,0,.30)"; c.shadowBlur = 3; c.shadowOffsetY = 1.25;
+  const body = c.createRadialGradient(cx - 4, cy - 6, 1, cx, cy, radius + 1);
+  body.addColorStop(0, "rgba(255,255,255,.48)"); body.addColorStop(.3, colour); body.addColorStop(1, colour);
+  c.fillStyle = body; c.beginPath(); c.arc(cx, cy, radius, 0, Math.PI * 2); c.fill(); c.restore();
+  c.strokeStyle = "rgba(255,255,255,.96)"; c.lineWidth = 1.4; c.beginPath(); c.arc(cx, cy, radius - .1, 0, Math.PI * 2); c.stroke();
+  c.strokeStyle = "rgba(255,255,255,.42)"; c.lineWidth = .75; c.beginPath(); c.arc(cx, cy, radius - 2, Math.PI * 1.12, Math.PI * 1.88); c.stroke();
   const filledIcons = {
     food: 'M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z',
     health: 'M19 3H5c-1.1 0-1.99.9-1.99 2L3 19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z',
@@ -73,11 +60,9 @@ function markerImage(kind) {
     shopping: 'M18 6h-2c0-2.21-1.79-4-4-4S8 3.79 8 6H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6-2c1.1 0 2 .9 2 2h-4c0-1.1.9-2 2-2z',
   };
   c.fillStyle = "#fff";
-  if (filledIcons[category]) {
-    const path = new Path2D(filledIcons[category]);
-    c.save(); c.translate(9, 9); c.scale(.75, .75); c.fill(path); c.restore();
-  } else drawIcon(c, placeIcons[kind] || "place", 9, 9, 18, "#fff");
-  return { width: 144, height: 192, data: c.getImageData(0, 0, 144, 192).data };
+  if (filledIcons[category]) { c.save(); c.translate(6, 6); c.scale(.67, .67); c.fill(new Path2D(filledIcons[category])); c.restore(); }
+  else drawIcon(c, placeIcons[kind] || "place", 6.5, 6.5, 15, "#fff");
+  return { width: 112, height: 112, data: c.getImageData(0, 0, 112, 112).data };
 }
 export function stylePlaces(style) {
   const layers = Object.fromEntries(style.layers.map((l) => [l.id, l]));
@@ -108,10 +93,10 @@ export function stylePlaces(style) {
       16,
       0.9,
     ],
-    "icon-anchor": "bottom",
+    "icon-anchor": "center",
     "icon-allow-overlap": false,
     "icon-ignore-placement": false,
-    "icon-padding": 8,
+    "icon-padding": 4,
   };
   dot.paint = {};
   delete pin.filter;
@@ -122,41 +107,41 @@ export function stylePlaces(style) {
       ["linear"],
       ["zoom"],
       7,
-      0.60,
+      0.65,
       10,
-      0.66,
+      0.70,
       12,
-      0.72,
+      0.76,
       14,
-      0.80,
+      0.82,
       16,
-      0.88,
+      0.87,
       18,
       0.92,
     ],
-    "icon-anchor": "bottom",
+    "icon-anchor": "center",
     "icon-allow-overlap": false,
-    "icon-padding": 8,
+    "icon-padding": 4,
     "icon-optional": false,
     "text-field": /^en(?:-|$)/i.test(navigator.language)
       ? ["coalesce", ["get", "label"], ["get", "name"]]
       : ["get", "name"],
     "text-font": ["Mazo Maps Sans Regular"],
-    "text-size": ["interpolate", ["linear"], ["zoom"], 12, 12, 16, 13],
+    "text-size": ["interpolate", ["linear"], ["zoom"], 12, 10, 16, 11],
     "text-variable-anchor-offset": [
       "left",
-      [1.1, -1.35],
+      [0.8, -0.15],
       "right",
-      [-1.1, -1.35],
+      [-0.8, -0.15],
       "bottom",
-      [0, -2.3],
+      [0, -0.8],
       "top",
-      [0, 0.3],
+      [0, 0.8],
     ],
     "text-justify": "auto",
     "text-optional": false,
     "text-allow-overlap": false,
-    "text-padding": 6,
+    "text-padding": 4,
     "text-max-width": 10,
     "symbol-sort-key": [
       "match",
@@ -217,11 +202,28 @@ export function stylePlaces(style) {
   style.layers = base;
   return style;
 }
+function roadShieldImage() {
+  const canvas = document.createElement("canvas"); canvas.width = 88; canvas.height = 56;
+  const c = canvas.getContext("2d"); c.scale(2, 2);
+  const g = c.createLinearGradient(0, 0, 0, 28); g.addColorStop(0, "#39995d"); g.addColorStop(1, "#197341");
+  c.fillStyle = g; c.strokeStyle = "rgba(255,255,255,.94)"; c.lineWidth = 1.4;
+  c.beginPath(); c.roundRect(1, 1, 42, 26, 4); c.fill(); c.stroke();
+  return { width: 88, height: 56, data: c.getImageData(0, 0, 88, 56).data };
+}
+function directionArrowImage() {
+  const canvas = document.createElement("canvas"); canvas.width = 64; canvas.height = 64;
+  const c = canvas.getContext("2d"); c.scale(2, 2);
+  c.translate(16, 16); c.fillStyle = "#e7f2ff"; c.strokeStyle = "rgba(20,38,55,.88)"; c.lineWidth = 1.4;
+  c.lineJoin = "round"; c.beginPath(); c.moveTo(0, -8); c.lineTo(6.2, 5.5); c.lineTo(0, 2.3); c.lineTo(-6.2, 5.5); c.closePath(); c.fill(); c.stroke();
+  return { width: 64, height: 64, data: c.getImageData(0, 0, 64, 64).data };
+}
 export function registerPlaceImages(map) {
   map.on("styleimagemissing", ({ id }) => {
     if (map.hasImage(id)) return;
     if (id.startsWith("lk-pin-")) map.addImage(id, markerImage(id.slice(7)), { pixelRatio: 4 });
     if (id.startsWith("lk-dot-")) map.addImage(id, dotImage(id.slice(7)), { pixelRatio: 4 });
+    if (id === "lk-road-shield") map.addImage(id, roadShieldImage(), { pixelRatio: 2 });
+    if (id === "lk-direction-arrow") map.addImage(id, directionArrowImage(), { pixelRatio: 2 });
   });
 }
 

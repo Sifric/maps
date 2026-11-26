@@ -3415,7 +3415,7 @@
         1
       ],
       "layout": {
-        "icon-image": "arrow",
+        "icon-image": "lk-direction-arrow",
         "symbol-placement": "line",
         "symbol-spacing": [
           "interpolate",
@@ -3426,15 +3426,15 @@
             "zoom"
           ],
           14,
-          320,
+          280,
           16,
-          240,
+          210,
           18,
-          155,
+          150,
           20,
-          100,
+          110,
           22,
-          75
+          80
         ],
         "icon-size": [
           "interpolate",
@@ -3445,21 +3445,23 @@
             "zoom"
           ],
           14,
-          0.45,
+          0.55,
           16,
-          0.65,
+          0.72,
           18,
-          0.85,
+          0.88,
           20,
-          1.1,
+          1.0,
           22,
-          1.4
+          1.1
         ],
         "icon-allow-overlap": true,
         "icon-ignore-placement": true,
         "symbol-z-order": "source"
       },
-      "paint": {}
+      "paint": {
+        "icon-opacity": 0.9
+      }
     },
     {
       "id": "road_one_way_arrow_opposite",
@@ -3476,7 +3478,7 @@
         -1
       ],
       "layout": {
-        "icon-image": "arrow",
+        "icon-image": "lk-direction-arrow",
         "icon-rotate": 180,
         "symbol-placement": "line",
         "symbol-spacing": [
@@ -3488,15 +3490,15 @@
             "zoom"
           ],
           14,
-          320,
+          280,
           16,
-          240,
+          210,
           18,
-          155,
+          150,
           20,
-          100,
+          110,
           22,
-          75
+          80
         ],
         "icon-size": [
           "interpolate",
@@ -3507,21 +3509,23 @@
             "zoom"
           ],
           14,
-          0.45,
+          0.55,
           16,
-          0.65,
+          0.72,
           18,
-          0.85,
+          0.88,
           20,
-          1.1,
+          1.0,
           22,
-          1.4
+          1.1
         ],
         "icon-allow-overlap": true,
         "icon-ignore-placement": true,
         "symbol-z-order": "source"
       },
-      "paint": {}
+      "paint": {
+        "icon-opacity": 0.9
+      }
     },
     {
       "id": "bridge_motorway_link_casing",
@@ -5918,16 +5922,9 @@
         ]
       ],
       "layout": {
-        "icon-image": [
-          "concat",
-          "road_",
-          [
-            "get",
-            "ref_length"
-          ]
-        ],
+        "icon-image": "lk-road-shield",
         "icon-rotation-alignment": "viewport",
-        "icon-size": 1,
+        "icon-size": 0.56,
         "symbol-placement": [
           "step",
           [
@@ -5937,7 +5934,7 @@
           11,
           "line"
         ],
-        "symbol-spacing": 200,
+        "symbol-spacing": 360,
         "text-field": [
           "to-string",
           [
@@ -5949,9 +5946,20 @@
           "Mazo Maps Sans Regular"
         ],
         "text-rotation-alignment": "viewport",
-        "text-size": 10
+        "text-size": 10,
+        "icon-text-fit": "both",
+        "icon-text-fit-padding": [
+          2,
+          5,
+          2,
+          5
+        ]
       },
-      "paint": {}
+      "paint": {
+        "text-color": "#ffffff",
+        "text-halo-color": "#23864b",
+        "text-halo-width": 0.35
+      }
     },
     {
       "id": "highway-shield-us-interstate",

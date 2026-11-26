@@ -235,7 +235,7 @@ function restorePlaces(key, legacyKey) {
 let favs = restorePlaces('fav', 'lk-saved'), recent = restorePlaces('rec', 'lk-recents');
 
 /* ---------- Route layers ---------- */
-const RL = [['route-alt', { 'line-color': '#8aa0c8', 'line-width': 6, 'line-opacity': .85 }, 0], ['route-c', { 'line-color': '#ffffff', 'line-width': 10 }, 1], ['route', { 'line-color': '#0a7cff', 'line-width': 6 }, 1]];
+const RL = [['route-alt', { 'line-color': '#8aa0c8', 'line-width': ['interpolate', ['linear'], ['zoom'], 10, 4, 16, 6], 'line-opacity': .92 }, 0], ['route-c', { 'line-color': '#ffffff', 'line-width': ['interpolate', ['linear'], ['zoom'], 10, 9, 16, 14], 'line-opacity': .98 }, 1], ['route', { 'line-color': '#0a7cff', 'line-width': ['interpolate', ['linear'], ['zoom'], 10, 5, 16, 8], 'line-opacity': 1 }, 1]];
 const L = { 'line-cap': 'round', 'line-join': 'round' };
 function syncRoute() {
   if (!routes || !map.getStyle()) return;
