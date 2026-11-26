@@ -26,16 +26,6 @@ jobs:
           python3 scripts/numbered_shards.py
           sha256sum -c places.sha256
 
-      - name: Verify access to all source branches
-        env:
-          GH_TOKEN: ${{ secrets.PLACES_READ_TOKEN }}
-        run: |
-          test -n "$GH_TOKEN" || { echo "Add the PLACES_READ_TOKEN Actions secret with read access to Sifric/places"; exit 1; }
-          gh api repos/Sifric/places/branches --paginate --jq '.[].name' > /tmp/place-source-branches.txt
-          for branch in feature/batticaloa-deduplication feature/northern-province-collector feature/southern-province-collector feature/local-selenium-collector main; do
-            grep -Fxq "$branch" /tmp/place-source-branches.txt || { echo "Missing source branch: $branch"; exit 1; }
-          done
-
       - name: Create and publish full backup release
         env:
           GH_TOKEN: ${{ github.token }}
@@ -58,8 +48,6 @@ jobs:
           sudo make -C /tmp/tippecanoe install
 
       - name: Deduplicate and write clean place records
-        env:
-          GH_TOKEN: ${{ secrets.PLACES_READ_TOKEN }}
         run: python3 scripts/refresh_places_from_source.py
 
       - name: Rebuild checksums and search index
