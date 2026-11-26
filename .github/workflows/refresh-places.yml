@@ -1,0 +1,84 @@
+name: Refresh places from Sifric source
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: refresh-sifric-places
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Verify current records before backup
+        run: |
+          python3 scripts/numbered_shards.py
+          sha256sum -c places.sha256
+
+      - name: Create and publish full backup release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="places-backup-$(date -u +%Y-%m-%d)-${GITHUB_SHA::8}"
+          mkdir -p build/places-backup
+          tar -czf build/places-backup/places-data.tar.gz data/places places.sha256
+          sha256sum build/places-backup/places-data.tar.gz > build/places-backup/SHA256SUMS
+          printf 'Full backup of data/places and places.sha256 before the Sifric/places refresh.\n\nSource commit: %s\n' "$GITHUB_SHA" > build/places-backup/NOTES.txt
+          gh release create "$tag" --repo "$GITHUB_REPOSITORY" --title "Places backup $tag" --notes-file build/places-backup/NOTES.txt build/places-backup/places-data.tar.gz build/places-backup/SHA256SUMS
+          echo "BACKUP_TAG=$tag" >> "$GITHUB_ENV"
+
+      - name: Install Python dependency
+        run: |
+          python3 -m pip install --user 'pmtiles==3.8.1'
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq build-essential libsqlite3-dev zlib1g-dev
+          git clone --depth 1 https://github.com/felt/tippecanoe.git /tmp/tippecanoe
+          make -C /tmp/tippecanoe -j"$(nproc)"
+          sudo make -C /tmp/tippecanoe install
+
+      - name: Deduplicate and write clean place records
+        run: python3 scripts/refresh_places_from_source.py
+
+      - name: Rebuild checksums and search index
+        run: |
+          find data/places -type f -print0 | sort -z | xargs -0 sha256sum > places.sha256
+          python3 scripts/numbered_shards.py
+          sha256sum -c places.sha256
+          python3 scripts/build_places_tiles.py
+          python3 scripts/build_search_index.py build/places.geojson worker/public/assets/places-search.json.gz
+
+      - name: Commit refreshed data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/places places.sha256 worker/public/assets/places-search.json.gz scripts/refresh_places_from_source.py .github/workflows/refresh-places.yml
+          git commit -m "Refresh places from deduplicated Sifric source"
+          git push origin HEAD:main
+
+      - name: Rebuild and publish map tiles
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh workflow run build-tiles.yml --repo "$GITHUB_REPOSITORY" --ref main
+          for attempt in $(seq 1 180); do
+            run_json=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow build-tiles.yml --branch main --limit 10 --json databaseId,headSha,status,conclusion)
+            run_id=$(printf '%s' "$run_json" | jq -r --arg sha "$(git rev-parse HEAD)" '[.[] | select(.headSha == $sha)][0].databaseId // empty')
+            if [ -n "$run_id" ]; then
+              state=$(gh run view "$run_id" --repo "$GITHUB_REPOSITORY" --json status,conclusion --jq '[.status,.conclusion] | @tsv')
+              if [ "$state" = $'completed\tsuccess' ]; then echo "Tile build completed: $run_id"; exit 0; fi
+              if [[ "$state" == completed* ]]; then echo "Tile build failed: $run_id ($state)"; gh run view "$run_id" --repo "$GITHUB_REPOSITORY" --log-failed; exit 1; fi
+            fi
+            sleep 20
+          done
+          echo "Timed out waiting for the tiles workflow"; exit 1
