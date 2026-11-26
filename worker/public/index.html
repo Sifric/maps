@@ -621,6 +621,19 @@ body.routing #pbody{overflow:auto!important;max-height:calc(46vh - 14px)}
 #map .maplibregl-ctrl-bottom-right{bottom:calc(51px + max(14px,env(safe-area-inset-bottom)))}
 body.routing #map .maplibregl-ctrl-bottom-right{bottom:env(safe-area-inset-bottom)}
 #load-error button{border:0;background:var(--hover);padding:5px 11px;border-radius:10px;margin-left:8px}
+/* Keep the idle mobile map dock on screen; selected-place cards replace it. */
+@media(max-width:640px){
+  body:not(.search-open):not(.routing):not(.picking):not(.contribution-picking):not(:has(#psheet:not([hidden]))) #panel:not([hidden]){
+    position:fixed!important;display:block!important;visibility:visible!important;opacity:1!important;
+    top:auto!important;left:50%!important;right:auto!important;bottom:calc(14px + env(safe-area-inset-bottom))!important;
+    width:min(392px,calc(100vw - 28px))!important;max-width:calc(100vw - 28px)!important;height:auto!important;
+    transform:translateX(-50%)!important;z-index:12!important
+  }
+  body:has(#psheet:not([hidden])) #panel{display:none!important}
+  body:not(.search-open):not(.routing):not(.picking):not(.contribution-picking) #ctrl{visibility:visible!important;opacity:1!important}
+  body:not(.search-open):not(.routing):not(.picking):not(.contribution-picking) #scaleBox{visibility:visible!important;opacity:1!important}
+  body:not(.search-open):not(.routing):not(.picking):not(.contribution-picking) #sifric-brand{display:block!important;visibility:visible!important;opacity:1!important;bottom:calc(68px + env(safe-area-inset-bottom))!important}
+}
 </style>
 </head>
 <body>
