@@ -491,10 +491,7 @@ function select(p, fly = true) {
   ctl?.abort(); clearTimeout(timer);
   cur = p; clearFound(); pinMk && pinMk.remove(); clearRoute(); fromPt = map.getCenter().toArray();
   const dropped = p.type === 'location' || p._t === 'Dropped pin';
-  selectedFeatureId = dropped ? null : (
-    p._sourceLayer === 'places' || (!p._sourceLayer && typeof p.id === 'string' && /^[0-9A-HJKMNP-TV-Z]{26}$/.test(p.id))
-      ? p.id ?? null : null
-  );
+  selectedFeatureId = dropped || (p._sourceLayer && p._sourceLayer !== 'places') ? null : p.id ?? null;
   syncSelectedPlaceLabel();
   const el = selectedPlaceElement(p.category || p.type, dropped);
   pinMk = new maplibregl.Marker({ element: el, anchor: dropped ? 'bottom' : 'center' }).setLngLat([+p.lon, +p.lat]).addTo(map);
