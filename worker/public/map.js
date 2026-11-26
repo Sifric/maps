@@ -221,7 +221,8 @@ map.addControl(new maplibregl.AttributionControl({ compact: true, customAttribut
 $('sifric-brand').addEventListener('click', () => {
   document.body.classList.add('attribution-open');
   $('sifric-brand').setAttribute('aria-label', 'Map attribution shown');
-  map.getContainer().querySelector('.maplibregl-ctrl-attrib-button')?.click();
+  const attribution = map.getContainer().querySelector('.maplibregl-ctrl-attrib');
+  if (attribution) attribution.open = true;
 });
 const geo = new maplibregl.GeolocateControl({ positionOptions: { enableHighAccuracy: true }, trackUserLocation: true, showAccuracyCircle: true, fitBoundsOptions: { maxZoom: 16.5 } });
 map.addControl(geo, 'bottom-right');
