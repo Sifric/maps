@@ -1432,13 +1432,10 @@ class GoogleScaleControl {
     this._el.className = "gscale";
     this._el.setAttribute("role", "img");
     this._el.setAttribute("aria-label", "Map distance scale");
-    this._el.innerHTML = `<div class="gscale-row gscale-top"><span class="gscale-label"></span><div class="gscale-bar"></div></div><div class="gscale-line"></div><div class="gscale-row gscale-bottom"><span class="gscale-label"></span><div class="gscale-bar"></div></div>`;
+    this._el.innerHTML = `<i class="gs-line"></i><i class="gs-ti"></i><i class="gs-mi"></i><span class="gs-lbl gs-li"></span><span class="gs-lbl gs-lm"></span>`;
     const q = s => this._el.querySelector(s);
-    this._line = q(".gscale-line");
-    this._barTop = q(".gscale-top .gscale-bar");
-    this._lblTop = q(".gscale-top .gscale-label");
-    this._barBot = q(".gscale-bottom .gscale-bar");
-    this._lblBot = q(".gscale-bottom .gscale-label");
+    this._lblTop = q(".gs-li");
+    this._lblBot = q(".gs-lm");
     map.on("move", this._update);
     map.on("resize", this._update);
     map.on("load", this._update);
@@ -1476,9 +1473,11 @@ class GoogleScaleControl {
     } else {
       iVal = this._nice(maxFeet); iUnit = "ft"; iPx = iVal / maxFeet * this.maxWidth;
     }
-    this._barTop.style.width = `${iPx}px`;
-    this._barBot.style.width = `${mPx}px`;
-    this._line.style.width = `${Math.max(iPx, mPx)}px`;
+    const w = Math.max(iPx, mPx), s = this._el.style;
+    s.setProperty("--i", `${iPx}px`);
+    s.setProperty("--m", `${mPx}px`);
+    s.setProperty("--w", `${w}px`);
+    s.width = `${w}px`;
     this._lblTop.textContent = `${this._fmt(iVal)} ${iUnit}`;
     this._lblBot.textContent = `${this._fmt(mVal)} ${mUnit}`;
     this._el.setAttribute("aria-label", `${this._lblTop.textContent}, ${this._lblBot.textContent}`);
