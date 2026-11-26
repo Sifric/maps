@@ -1,6 +1,6 @@
 // Keep the module response compatible with strict browser JavaScript MIME checks.
 import { darkMapStyle } from "./map-options.js";
-import { registerPlaceImages, stylePlaces } from "./place-markers.js";
+import { registerPlaceImages, selectedPlaceElement, stylePlaces } from "./place-markers.js";
 
 const { maplibregl, pmtiles } = window;
 maplibregl.addProtocol("pmtiles", new pmtiles.Protocol().tile);
@@ -478,9 +478,8 @@ function select(p, fly = true) {
   window.collapseSearch?.(false);
   ctl?.abort(); clearTimeout(timer);
   cur = p; clearFound(); pinMk && pinMk.remove(); clearRoute(); fromPt = map.getCenter().toArray();
-  const [ic, c] = cat(p), el = document.createElement('div');
-  el.innerHTML = `<div class="pin" style="--c:${c}"><svg viewBox="0 0 38 50" aria-hidden="true"><path d="M19 49C19 49 2.5 30.5 2.5 18.5a16.5 16.5 0 0 1 33 0C35.5 30.5 19 49 19 49z" fill="currentColor" stroke="#fff" stroke-width="2.5" stroke-linejoin="round"/><path d="M19 3.5a15 15 0 0 0-15 15c0 2.5.8 5 2 7 2.6-3.5 7.8-5.5 13-5.5s10.4 2 13 5.5c1.2-2 2-4.5 2-7a15 15 0 0 0-15-15z" fill="#fff" opacity=".22"/></svg><span>${ic}</span></div>`;
-  pinMk = new maplibregl.Marker({ element: el, anchor: 'bottom', offset: [0, 8] }).setLngLat([+p.lon, +p.lat]).addTo(map);
+  const el = selectedPlaceElement();
+  pinMk = new maplibregl.Marker({ element: el, anchor: 'bottom' }).setLngLat([+p.lon, +p.lat]).addTo(map);
   if (fly) {
     const bb = p.boundingbox;
     bb && +bb[1] - +bb[0] > .002 ? map.fitBounds([[+bb[2], +bb[0]], [+bb[3], +bb[1]]], { padding: pad(), maxZoom: 17, duration: 1200 })
@@ -1433,7 +1432,7 @@ class GoogleScaleControl {
     this._el.className = "gscale";
     this._el.setAttribute("role", "img");
     this._el.setAttribute("aria-label", "Map distance scale");
-    this._el.innerHTML = `<div class="gscale-row gscale-top"><div class="gscale-bar"></div><span class="gscale-label"></span></div><div class="gscale-line"></div><div class="gscale-row gscale-bottom"><div class="gscale-bar"></div><span class="gscale-label"></span></div>`;
+    this._el.innerHTML = `<div class="gscale-row gscale-top"><span class="gscale-label"></span><div class="gscale-bar"></div></div><div class="gscale-line"></div><div class="gscale-row gscale-bottom"><span class="gscale-label"></span><div class="gscale-bar"></div></div>`;
     const q = s => this._el.querySelector(s);
     this._line = q(".gscale-line");
     this._barTop = q(".gscale-top .gscale-bar");

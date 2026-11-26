@@ -1,12 +1,13 @@
-import { icon, drawIcon } from "./icons.js";
+import { drawIcon } from "./icons.js";
 
 const colours = {
-  food: "#ff8126",
-  shopping: "#0095f6",
-  health: "#ef5261",
+  food: "#FF9800",
+  shopping: "#1E88E5",
+  health: "#E53935",
+  hotel: "#8E24AA",
   finance: "#547bc4",
-  leisure: "#18a879",
-  culture: "#b44df0",
+  leisure: "#43A047",
+  culture: "#8E24AA",
   worship: "#7b969f",
   transport: "#567a9a",
   government: "#78909c",
@@ -39,35 +40,44 @@ function dotImage(kind) {
 }
 function markerImage(kind) {
   const canvas = document.createElement("canvas");
-  // 4× bitmap density keeps the circular outline smooth on high-DPI screens.
-  canvas.width = 128;
-  canvas.height = 144;
+  // Four physical pixels per CSS pixel keeps small map pins crisp.
+  canvas.width = 144;
+  canvas.height = 192;
   const c = canvas.getContext("2d");
-  c.scale(2, 2);
-  const colour = colours[kind] || colours.other;
-  c.shadowColor = "#0003";
-  c.shadowBlur = 8;
-  c.shadowOffsetY = 2;
+  c.scale(4, 4);
+  const aliases = { restaurant: "food", fast_food: "food", food_court: "food", hospital: "health", pharmacy: "health", hotel: "hotel", lodging: "hotel", park: "leisure", shop: "shopping" };
+  const category = aliases[kind] || kind;
+  const colour = colours[category] || colours[kind] || colours.other;
+  c.fillStyle = "rgba(0,0,0,.25)";
+  c.beginPath();
+  c.ellipse(18, 45, 6, 2, 0, 0, Math.PI * 2);
+  c.fill();
   c.fillStyle = colour;
   c.strokeStyle = "#fff";
-  c.lineWidth = 2.8;
+  c.lineWidth = 2;
   c.lineJoin = "round";
-  c.lineCap = "round";
   c.beginPath();
-  c.moveTo(32, 7);
-  c.bezierCurveTo(44.7, 7, 55, 17.3, 55, 30);
-  c.bezierCurveTo(55, 41, 47.8, 50, 38, 52.4);
-  c.bezierCurveTo(36, 52.8, 34.8, 57, 33, 58);
-  c.quadraticCurveTo(32, 59, 31, 58);
-  c.bezierCurveTo(29.2, 57, 28, 52.8, 26, 52.4);
-  c.bezierCurveTo(16.2, 50, 9, 41, 9, 30);
-  c.bezierCurveTo(9, 17.3, 19.3, 7, 32, 7);
+  c.moveTo(18, 1);
+  c.bezierCurveTo(8.611, 1, 1, 8.611, 1, 18);
+  c.bezierCurveTo(1, 30.75, 18, 45, 18, 45);
+  c.bezierCurveTo(18, 45, 35, 30.75, 35, 18);
+  c.bezierCurveTo(35, 8.611, 27.389, 1, 18, 1);
   c.closePath();
   c.fill();
   c.stroke();
-  c.shadowColor = "transparent";
-  drawIcon(c, placeIcons[kind] || "place", 18, 15, 28, "#fff");
-  return { width: 128, height: 144, data: c.getImageData(0, 0, 128, 144).data };
+  const filledIcons = {
+    food: '<path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"/>',
+    health: '<path d="M19 3H5c-1.1 0-1.99.9-1.99 2L3 19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z"/>',
+    hotel: '<path d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z"/>',
+    leisure: '<path d="M17 12h2L12 2 5.05 12H7l-3.9 6h6.92v4h3.96v-4H21z"/>',
+    shopping: '<path d="M18 6h-2c0-2.21-1.79-4-4-4S8 3.79 8 6H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6-2c1.1 0 2 .9 2 2h-4c0-1.1.9-2 2-2z"/>',
+  };
+  c.fillStyle = "#fff";
+  if (filledIcons[category]) {
+    const path = new Path2D(filledIcons[category]);
+    c.save(); c.translate(9, 9); c.scale(.75, .75); c.fill(path); c.restore();
+  } else drawIcon(c, placeIcons[kind] || "place", 9, 9, 18, "#fff");
+  return { width: 144, height: 192, data: c.getImageData(0, 0, 144, 192).data };
 }
 export function stylePlaces(style) {
   const layers = Object.fromEntries(style.layers.map((l) => [l.id, l]));
@@ -113,13 +123,13 @@ export function stylePlaces(style) {
       ["linear"],
       ["zoom"],
       7,
-      0.65,
+      0.48,
       12,
-      0.8,
+      0.38,
       14,
-      0.85,
+      0.31,
       16,
-      0.9,
+      0.25,
     ],
     "icon-anchor": "bottom",
     "icon-allow-overlap": false,
@@ -215,6 +225,6 @@ export function registerPlaceImages(map) {
 export function selectedPlaceElement() {
   const marker = document.createElement("div");
   marker.className = "selected-marker";
-  marker.append(icon("selected_place"));
+  marker.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 36" width="24" height="36" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12c0 9 12 24 12 24s12-15 12-24c0-6.627-5.373-12-12-12z" fill="#EA4335"/><circle cx="12" cy="12" r="4.5" fill="#FFFFFF"/></svg>';
   return marker;
 }

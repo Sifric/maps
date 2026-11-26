@@ -214,7 +214,7 @@ kbd{font:600 11px Geist,Inter;color:var(--sub);border:1px solid var(--line);bord
 body.attribution-open .maplibregl-ctrl-attrib{display:block!important}
 body.attribution-open .maplibregl-ctrl-attrib-button{display:none!important}
 .maplibregl-ctrl-scale{border-color:var(--sub)!important;border-radius:0 6px 0 0}
-.pin{position:relative;width:38px;height:50px;cursor:pointer;filter:drop-shadow(0 8px 10px rgba(0,0,0,.38));animation:drop .5s cubic-bezier(.3,1.35,.5,1)}
+.pin{position:relative;width:36px;height:48px;cursor:pointer;animation:drop .5s cubic-bezier(.3,1.35,.5,1)}
 .pin svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible;color:var(--c)}
 .pin span{position:absolute;left:0;right:0;top:5px;height:28px;display:grid;place-items:center;font-size:16px;line-height:1}
 @keyframes drop{from{transform:translateY(-22px);opacity:0}}
@@ -448,14 +448,16 @@ body.picking #panel,body.picking #ctrl,body.picking #tilt,body.picking #psheet,b
 
 /* ---- Google Maps style dual imperial + metric scale ---- */
 #scaleBox{position:absolute;z-index:5;left:auto;right:18px;bottom:calc(210px + env(safe-area-inset-bottom));pointer-events:none}
-@media(max-width:640px){#scaleBox{right:clamp(90px,24vw,140px);bottom:calc(126px + env(safe-area-inset-bottom))}}
-.gscale{pointer-events:none;margin:0!important;font:500 10px/1 Roboto,"Helvetica Neue",Arial,sans-serif;color:#222;filter:drop-shadow(0 0 1px #fff) drop-shadow(0 0 1px #fff) drop-shadow(0 0 1px #fff)}
+@media(max-width:640px){#scaleBox{right:clamp(62px,11.2vw,68px);bottom:calc(120px + env(safe-area-inset-bottom))}}
+.gscale{pointer-events:none;margin:0!important;font:500 10px/1 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink)}
 .gscale-row{display:flex;height:14px}
-.gscale-bar{box-sizing:border-box;height:100%;flex:none;border:0 solid #222;border-width:0 2px}
-.gscale-line{height:2px;background:#222}
-.gscale-label{margin-left:4px;white-space:nowrap}
+.gscale-bar{box-sizing:border-box;height:100%;flex:none;border:0 solid var(--ink);border-width:0 2px 0 0}
+.gscale-line{height:2px;background:var(--ink)}
+.gscale-label{margin-right:4px;white-space:nowrap;text-align:right}
 .gscale-top .gscale-label{align-self:flex-end;margin-bottom:2px}
 .gscale-bottom .gscale-label{align-self:flex-start;margin-top:2px}
+.selected-marker{position:relative;display:block;width:24px;height:36px;cursor:pointer}
+.selected-marker svg{display:block;width:24px;height:36px}
 #ctrl>.stack:has(#zin){display:none!important}
 /* ---- Layers sheet on phones: compact (peek), medium (half), expanded (full) ---- */
 @media(max-width:640px){
