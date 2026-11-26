@@ -69,6 +69,14 @@ export function stylePlaces(style) {
   const dot = layers["mazo-places-dot"];
   const pin = layers["mazo-places-icon"];
   if (!dot || !pin) return style;
+  // Use the same bold face for named places at every rendered zoom level.
+  for (const layer of style.layers) {
+    if (layer["source-layer"] === "place" || layer["source-layer"] === "poi") {
+      if (layer.layout?.["text-field"]) {
+        layer.layout["text-font"] = ["Geist Bold"];
+      }
+    }
+  }
   for (const id of [
     "label_other",
     "mazo-places-pin",
@@ -126,7 +134,7 @@ export function stylePlaces(style) {
     "text-field": /^en(?:-|$)/i.test(navigator.language)
       ? ["coalesce", ["get", "label"], ["get", "name"]]
       : ["get", "name"],
-    "text-font": ["Geist Regular"],
+    "text-font": ["Geist Bold"],
     "text-size": ["interpolate", ["linear"], ["zoom"], 12, 9, 16, 10, 18, 10.5],
     "text-anchor": "left",
     "text-offset": [1.35, 0],
@@ -185,8 +193,10 @@ export function stylePlaces(style) {
   selectedLabel.layout["text-max-width"] = 16;
   selectedLabel.layout["text-size"] = ["interpolate", ["linear"], ["zoom"], 12, 11, 16, 12];
   selectedLabel.layout["text-optional"] = false;
-  selectedLabel.layout["text-allow-overlap"] = true;
-  selectedLabel.layout["text-ignore-placement"] = true;
+  // Keep the selected name visible when space permits, while preserving
+  // nearby road/place labels instead of painting over them.
+  selectedLabel.layout["text-allow-overlap"] = false;
+  selectedLabel.layout["text-ignore-placement"] = false;
   selectedLabel.filter = ["==", ["id"], "__no_selected_place__"];
   selectedLabel.paint = { ...pin.paint };
   dot.layout["symbol-sort-key"] = pin.layout["symbol-sort-key"];
