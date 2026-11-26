@@ -48,6 +48,8 @@ jobs:
           sudo make -C /tmp/tippecanoe install
 
       - name: Deduplicate and write clean place records
+        env:
+          GH_TOKEN: ${{ secrets.PLACES_READ_TOKEN }}
         run: python3 scripts/refresh_places_from_source.py
 
       - name: Rebuild checksums and search index

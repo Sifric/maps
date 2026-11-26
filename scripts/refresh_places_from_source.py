@@ -14,10 +14,10 @@ from pathlib import Path
 import re
 import shutil
 import sqlite3
+import subprocess
 import tarfile
 import time
 import unicodedata
-from urllib.request import urlopen
 
 from import_places_archive import new_ulid
 from numbered_shards import ShardAllocator
@@ -168,10 +168,13 @@ def ingest(db, item, branch):
 
 def iter_results(branch):
     import urllib.parse
-    url = "https://codeload.github.com/Sifric/places/tar.gz/refs/heads/" + urllib.parse.quote(branch, safe="/")
+    if not os.environ.get("GH_TOKEN"):
+        raise RuntimeError("Set the PLACES_READ_TOKEN Actions secret with read access to Sifric/places")
+    endpoint = "repos/Sifric/places/tarball/" + urllib.parse.quote(branch, safe="")
     print(f"Reading source branch: {branch}", flush=True)
-    with urlopen(url, timeout=120) as response:
-        with tarfile.open(fileobj=response, mode="r|gz") as archive:
+    proc = subprocess.Popen(["gh", "api", endpoint], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    try:
+        with tarfile.open(fileobj=proc.stdout, mode="r|gz") as archive:
             for member in archive:
                 if not member.isfile() or not member.name.lower().endswith(".json"):
                     continue
@@ -182,6 +185,14 @@ def iter_results(branch):
                 rows=payload.get("results") if isinstance(payload,dict) else None
                 if isinstance(rows,list):
                     for row in rows: yield row
+        err = proc.stderr.read().decode("utf-8", "replace")
+        code = proc.wait()
+        if code:
+            raise RuntimeError(f"Could not read Sifric/places branch {branch}: {err.strip()}")
+    except Exception:
+        proc.kill()
+        proc.wait()
+        raise
 
 
 def main():
