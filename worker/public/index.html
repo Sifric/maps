@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <meta name="description" content="Explore Sri Lanka, search for places and get directions with Sifric Maps." />
     <meta name="theme-color" content="#ffffff" />
     <title>Sifric Maps · Sri Lanka</title>
     <script>
@@ -23,10 +24,11 @@
       rel="stylesheet"
       href="/vendor/maplibre-gl.css"
     />
-    <link rel="stylesheet" href="/map.css?v=contribution-sheet-14" />
+    <link rel="stylesheet" href="/map.css?v=map-home-1" />
     <link rel="stylesheet" href="/place-markers.css" />
     <link rel="stylesheet" href="/contribution-sheet.css?v=20" />
-    <script src="/vendor/maplibre-gl.js"></script>\n    <script src="/vendor/pmtiles.js"></script>
+    <script src="/vendor/maplibre-gl.js"></script>
+    <script src="/vendor/pmtiles.js"></script>
     <style>
       #map-error-toast { position:fixed; z-index:2147483647; left:16px; right:16px; bottom:calc(24px + env(safe-area-inset-bottom, 0px)); max-width:520px; margin:auto; padding:14px 44px 14px 16px; background:#24272d; color:#fff; border:1px solid #f29a9a; border-radius:14px; box-shadow:0 6px 28px #0005; font:14px/1.45 system-ui,sans-serif; overflow-wrap:anywhere; }
       #map-error-toast[hidden] { display:none !important; }
@@ -65,72 +67,66 @@
       })();
     </script>
   </head>
-  <body>\n    <div id="map-error-toast" role="alert" aria-live="assertive" hidden><strong>Sifric Maps error</strong><span data-error-detail></span><button type="button" aria-label="Dismiss error">×</button></div>
-    <nav class="rail" aria-label="Navigation">
-      <button id="menu" aria-label="Open menu">
-        <span data-icon="menu"></span>
-      </button>
-      <button id="saved" aria-label="Saved places">
-        <span data-icon="bookmark"></span><small>Saved</small>
-      </button>
-      <button id="recent" aria-label="Recent searches">
-        <span data-icon="history"></span><small>Recents</small>
-      </button>
-      <a class="brand" href="/" aria-label="Sifric Maps home"
-        >Sifric<small>Maps</small></a
-      >
-    </nav>
+  <body>
+    <div id="map-error-toast" role="alert" aria-live="assertive" hidden><strong>Sifric Maps error</strong><span data-error-detail></span><button type="button" aria-label="Dismiss error">×</button></div>
     <main id="map" aria-label="Map of Sri Lanka"></main>
     <section class="search-shell" aria-label="Place search">
-      <form id="search-form" autocomplete="off">
-        <input
-          id="search"
-          type="search"
-          aria-label="Search Sri Lanka"
-          placeholder="Search Sifric Maps"
-        />
-        <button id="search-action" type="submit" aria-label="Search">
-          <span data-icon="search"></span>
+      <button id="search-grab" class="sheet-grab" type="button" aria-label="Collapse search"><span></span></button>
+      <div class="search-header">
+        <form id="search-form" autocomplete="off">
+          <span class="search-glyph" data-icon="search" aria-hidden="true"></span>
+          <input
+            id="search"
+            type="search"
+            aria-label="Search Sri Lanka"
+            placeholder="Search places in Sri Lanka"
+            enterkeyhint="search"
+          />
+          <button id="search-action" type="submit" aria-label="Search">
+            <span data-icon="search"></span>
+          </button>
+          <button id="directions" type="button" aria-label="Open directions">
+            <span data-icon="directions"></span>
+          </button>
+          <button id="menu" type="button" aria-label="Sifric Maps menu" aria-controls="panel">
+            <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="3.4"/><path d="M5 20a7 7 0 0 1 14 0"/></svg>
+          </button>
+        </form>
+        <button id="close-search" type="button" aria-label="Close search" aria-controls="suggestions"><span data-icon="close"></span></button>
+      </div>
+      <nav id="categories" aria-label="Place categories">
+        <button data-kind="food">
+          <span data-icon="restaurant"></span> Restaurants
         </button>
-        <span class="divider"></span>
-        <button id="directions" type="button" aria-label="Open directions">
-          <span data-icon="directions"></span>
+        <button data-kind="shopping">
+          <span data-icon="shop"></span> Shopping
         </button>
-      </form>
-      <div id="suggestions" role="listbox" hidden></div>
+        <button data-kind="leisure">
+          <span data-icon="playground"></span> Things to do
+        </button>
+        <button data-kind="culture">
+          <span data-icon="museum"></span> Museums
+        </button>
+        <button data-kind="transport">
+          <span data-icon="bus"></span> Transit
+        </button>
+        <button data-kind="health">
+          <span data-icon="hospital"></span> Health
+        </button>
+        <button id="reset-category" aria-label="Clear category filter" hidden>
+          <span data-icon="close"></span>
+        </button>
+      </nav>
+      <div id="suggestions" aria-label="Search results" hidden></div>
     </section>
-    <nav id="categories" aria-label="Place categories">
-      <button data-kind="food">
-        <span data-icon="restaurant"></span> Restaurants
-      </button>
-      <button data-kind="shopping">
-        <span data-icon="shop"></span> Shopping
-      </button>
-      <button data-kind="leisure">
-        <span data-icon="playground"></span> Things to do
-      </button>
-      <button data-kind="culture">
-        <span data-icon="museum"></span> Museums
-      </button>
-      <button data-kind="transport">
-        <span data-icon="bus"></span> Transit
-      </button>
-      <button data-kind="health">
-        <span data-icon="hospital"></span> Health
-      </button>
-      <button id="reset-category" aria-label="Clear category filter" hidden>
-        <span data-icon="close"></span>
-      </button>
-    </nav>
     <aside id="panel" aria-label="Place information" hidden>
+      <button id="place-grab" class="sheet-grab" type="button" aria-label="Expand place details" aria-expanded="false" aria-controls="panel-content" hidden><span></span></button>
       <button id="close-panel" class="close" aria-label="Close panel">
         <span data-icon="close"></span>
       </button>
       <div id="panel-content"></div>
     </aside>
-    <button id="layers" class="layers-fab" aria-label="Map layers and appearance" title="Map layers and appearance" aria-controls="layer-panel" aria-expanded="false">
-      <span class="layers-icon-pair"><svg class="layers-icon layers-icon-light" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true" focusable="false"><g stroke="#1F2937" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M32 8 56 21 32 34 8 21z"/><path d="M8 31 32 44 56 31"/><path d="M8 41 32 54 56 41"/></g></svg><svg class="layers-icon layers-icon-dark" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true" focusable="false"><g stroke="#F3F4F6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M32 8 56 21 32 34 8 21z"/><path d="M8 31 32 44 56 31"/><path d="M8 41 32 54 56 41"/></g></svg></span>
-    </button>
+    <button id="layer-scrim" type="button" tabindex="-1" aria-label="Close layers" hidden></button>
     <section
       id="layer-panel"
       class="layer-panel"
@@ -138,7 +134,7 @@
       hidden
     >
       <header class="options-header">
-        <h2>Layers &amp; appearance</h2>
+        <h2>Layers</h2>
         <button id="close-layers" aria-label="Close layers">
           <span data-icon="close"></span>
         </button>
@@ -152,7 +148,7 @@
           <span data-icon="moon"></span>Dark
         </button>
         <button data-theme-choice="system" role="radio" aria-checked="true">
-          <span data-icon="monitor"></span>System
+          <span data-icon="monitor"></span>Auto
         </button>
       </div>
       <h3>Map type</h3>
@@ -223,7 +219,10 @@
       >
         <span id="location-icon" class="location-icon-pair" aria-hidden="true"></span>
       </button>
-      <button id="contribute-fab" type="button" aria-controls="contribution-sheet" aria-expanded="false" aria-label="Contribute to Sifric Maps" title="Contribute to Sifric Maps">
+      <button id="layers" class="layers-fab" aria-label="Map layers and appearance" title="Map layers and appearance" aria-controls="layer-panel" aria-expanded="false">
+        <span class="layers-icon-pair"><svg class="layers-icon layers-icon-light" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true" focusable="false"><g stroke="#1F2937" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M32 8 56 21 32 34 8 21z"/><path d="M8 31 32 44 56 31"/><path d="M8 41 32 54 56 41"/></g></svg><svg class="layers-icon layers-icon-dark" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true" focusable="false"><g stroke="#F3F4F6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M32 8 56 21 32 34 8 21z"/><path d="M8 31 32 44 56 31"/><path d="M8 41 32 54 56 41"/></g></svg></span>
+      </button>
+      <button hidden id="contribute-fab" type="button" aria-controls="contribution-sheet" aria-expanded="false" aria-label="Contribute to Sifric Maps" title="Contribute to Sifric Maps">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
       </button>
     </div>
@@ -288,7 +287,7 @@
     ></div>
     <div id="error" role="alert" hidden></div>
     <script type="module" src="/icons.js"></script>
-    <script type="module" src="/map.js"></script>
+    <script type="module" src="/map.js?v=map-home-1"></script>
   <div id="hours-dialog-backdrop" class="hours-dialog-backdrop" hidden>
  <section class="hours-dialog" role="dialog" aria-modal="true" aria-labelledby="hours-dialog-title">
  <h3 id="hours-dialog-title">Select days &amp; time</h3><div id="hours-day-buttons" class="hours-day-buttons"></div>

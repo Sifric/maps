@@ -105,17 +105,80 @@ function stopRouteSession() {
   if (map.getSource("lk-route")) map.removeSource("lk-route");
   applyPlaceFilters();
 }
+const searchShell = document.querySelector(".search-shell");
+const searchInput = $("search");
+const suggestions = $("suggestions");
+let searchVersion = 0;
+
+function dismissSearch(restoreFocus = false) {
+  clearTimeout(searchTimer);
+  searchVersion++;
+  document.body.classList.remove("search-open");
+  suggestions.hidden = true;
+  searchInput.blur();
+  if (restoreFocus) $("menu").focus({ preventScroll: true });
+}
+
+function setPlaceExpanded(expanded) {
+  $("panel").classList.toggle("place-expanded", expanded);
+  const grab = $("place-grab");
+  grab.setAttribute("aria-expanded", String(expanded));
+  grab.setAttribute("aria-label", expanded ? "Collapse place details" : "Expand place details");
+}
+
+function bindSheetHandle(handle, sheet, onRelease, onActivate) {
+  let start, swiped = false;
+  handle.addEventListener("pointerdown", (event) => {
+    if (!event.isPrimary || event.button !== 0) return;
+    start = event.clientY;
+    swiped = false;
+  });
+  handle.addEventListener("pointermove", (event) => {
+    if (start === undefined) return;
+    if (Math.abs(event.clientY - start) < 8 && !swiped) return;
+    swiped = true;
+    if (!handle.hasPointerCapture(event.pointerId)) handle.setPointerCapture(event.pointerId);
+    sheet.style.translate = `0 ${Math.max(0, event.clientY - start)}px`;
+  });
+  handle.addEventListener("pointerup", (event) => {
+    if (start === undefined) return;
+    const distance = event.clientY - start;
+    start = undefined;
+    sheet.style.translate = "";
+    if (swiped) onRelease(distance);
+  });
+  handle.addEventListener("lostpointercapture", () => {
+    start = undefined;
+    sheet.style.translate = "";
+  });
+  handle.addEventListener("click", (event) => {
+    if (!swiped || event.detail === 0) onActivate();
+    swiped = false;
+  });
+}
+
+function bottomPanelPadding() {
+  const panelHeight = $("panel").getBoundingClientRect().height;
+  const cardHeight = routeCard?.getBoundingClientRect().height || 0;
+  return {
+    top: Math.min(innerHeight * .35, cardHeight + 32),
+    bottom: Math.min(innerHeight * .44, panelHeight + 26),
+    left: 32,
+    right: 32,
+  };
+}
+
 function panel(title) {
-  if (
-    document.body.classList.contains("routing-open") &&
-    !["Drive", "Two-wheeler", "Walk"].includes(title)
-  ) {
+  if (document.body.classList.contains("routing-open")) {
     stopRouteSession();
     routeCard?.remove();
     routeCard = null;
     document.body.classList.remove("routing-open");
   }
-  $("suggestions").hidden = true;
+  dismissSearch();
+  $("panel").classList.remove("place-card", "route-panel");
+  $("place-grab").hidden = true;
+  setPlaceExpanded(false);
   $("panel").hidden = false;
   const content = $("panel-content");
   content.replaceChildren(element("h1", title));
@@ -143,6 +206,8 @@ function showPlace(row, fly = true) {
   $("search").value = row[1];
   syncSearchAction();
   const c = panel(row[1]);
+  $("panel").classList.add("place-card");
+  $("place-grab").hidden = false;
   c.append(
     element("p", row[5] || categoryNames[row[4]] || "Place", "detail-kind"),
   );
@@ -174,7 +239,10 @@ function showPlace(row, fly = true) {
     status(found ? "Removed from saved places" : "Place saved");
   };
   const share = element("button", "Share");
-  actionLabel(share, "Share", "share");
+  share.className = "place-share";
+  share.setAttribute("aria-label", "Share place");
+  share.title = "Share place";
+  share.replaceChildren(icon("share"));
   share.onclick = async () => {
     const u = new URL(location.href);
     u.searchParams.set("place", row[0]);
@@ -186,10 +254,10 @@ function showPlace(row, fly = true) {
       status(u.href);
     }
   };
-  actions.append(route, save, share);
+  actions.append(route, save);
   c.append(
+    share,
     actions,
-    element("p", "Sri Lanka"),
     element(
       "p",
       `${Number(row[3]).toFixed(6)}, ${Number(row[2]).toFixed(6)}`,
@@ -210,10 +278,8 @@ function showPlace(row, fly = true) {
     map.flyTo({
       center: [row[2], row[3]],
       zoom: Math.max(15, map.getZoom()),
-      padding:
-        innerWidth > 900
-          ? { left: 400, right: 30, top: 70, bottom: 50 }
-          : { left: 0, right: 0, top: 100, bottom: 300 },
+      padding: bottomPanelPadding(),
+      retainPadding: false,
       duration: 1000,
     });
 }
@@ -246,19 +312,27 @@ function resultRow(row) {
   return b;
 }
 async function searchPlaces() {
-  const q = $("search").value.trim().toLocaleLowerCase();
+  const version = ++searchVersion;
+  const q = searchInput.value.trim().toLocaleLowerCase();
   syncSearchAction();
   const box = $("suggestions");
   box.replaceChildren();
   if (q.length < 2) {
-    box.hidden = true;
+    const recent = q ? [] : readStored("lk-recents");
+    box.hidden = false;
+    box.append(element("div", recent.length ? "Recent searches" : q ? "Enter at least two characters" : "Search for a place or explore a category", "empty"));
+    for (const row of recent.slice(0, 5)) {
+      const option = resultRow(row);
+      option.onclick = () => showPlace(row);
+      box.append(option);
+    }
     return;
   }
   box.hidden = false;
   box.append(element("div", "Searching Sri Lanka…", "empty"));
   try {
     const rows = await searchIndex();
-    if ($("search").value.trim().toLocaleLowerCase() !== q) return;
+    if (version !== searchVersion || searchInput.value.trim().toLocaleLowerCase() !== q) return;
     const words = q.split(/\s+/);
     const found = rows
       .filter((r) => {
@@ -278,12 +352,12 @@ async function searchPlaces() {
       );
     for (const row of found) {
       const b = resultRow(row);
-      b.setAttribute("role", "option");
       b.onclick = () => showPlace(row);
       box.append(b);
     }
   } catch (e) {
-    box.replaceChildren(element("div", e.message, "empty"));
+    if (version === searchVersion)
+      box.replaceChildren(element("div", e.message, "empty"));
   }
 }
 function applyPlaceFilters() {
@@ -312,8 +386,11 @@ function applyPlaceFilters() {
 }
 function filterCategory(kind) {
   category = category === kind ? null : kind;
-  for (const b of $("categories").querySelectorAll("[data-kind]"))
-    b.classList.toggle("active", b.dataset.kind === category);
+  for (const button of $("categories").querySelectorAll("[data-kind]")) {
+    const active = button.dataset.kind === category;
+    button.classList.toggle("active", active);
+    button.setAttribute("aria-pressed", String(active));
+  }
   $("reset-category").hidden = !category;
   applyPlaceFilters();
   status(
@@ -324,7 +401,7 @@ function filterCategory(kind) {
 }
 function showDirections(row) {
   const c = panel("Drive");
-  c.classList.add("route-panel");
+  $("panel").classList.add("route-panel");
   document.body.classList.add("routing-open");
   applyPlaceFilters();
   routeCard?.remove();
@@ -623,7 +700,8 @@ async function findRoute(originText, destinationText, destinationRow, mode, butt
     const bounds = new maplibregl.LngLatBounds();
     for (const point of result.geometry.coordinates) bounds.extend(point);
     map.fitBounds(bounds, {
-      padding: { top: 110, bottom: innerWidth < 600 ? 300 : 60, left: innerWidth > 900 ? 430 : 40, right: 40 },
+      padding: bottomPanelPadding(),
+      retainPadding: false,
       maxZoom: 15,
       duration: 700,
     });
@@ -745,9 +823,25 @@ $("search").addEventListener("input", () => {
   clearTimeout(searchTimer);
   searchTimer = setTimeout(searchPlaces, 150);
 });
-$("search").addEventListener("focus", () => {
-  if ($("search").value.length > 1) searchPlaces();
+searchInput.addEventListener("focus", () => {
+  if (document.body.classList.contains("search-open")) return;
+  document.body.classList.add("search-open");
+  $("categories").scrollLeft = 0;
+  if (!$("layer-panel").hidden) $("close-layers").click();
+  void searchPlaces();
 });
+const closeSearch = () => dismissSearch(true);
+$("close-search").onclick = closeSearch;
+bindSheetHandle($("search-grab"), searchShell, (distance) => {
+  if (distance > 55) closeSearch();
+}, closeSearch);
+const placeSheet = $("panel");
+const togglePlace = () => setPlaceExpanded(!placeSheet.classList.contains("place-expanded"));
+bindSheetHandle($("place-grab"), placeSheet, (distance) => {
+  if (distance < -45) setPlaceExpanded(true);
+  else if (distance > 45 && placeSheet.classList.contains("place-expanded")) setPlaceExpanded(false);
+  else if (distance > 80) closePanel();
+}, togglePlace);
 $("search").addEventListener("keydown", (e) => {
   if (e.key === "ArrowDown") {
     const first = $("suggestions").querySelector("button");
@@ -789,14 +883,42 @@ $("search-action").onclick = (event) => {
   $("search").focus();
 };
 $("close-panel").onclick = closePanel;
-$("saved").onclick = () => showList("Saved places", readStored("lk-saved"));
-$("recent").onclick = () =>
-  showList("Recent searches", readStored("lk-recents"));
 $("directions").onclick = () => showDirections(selected);
 $("categories")
   .querySelectorAll("[data-kind]")
-  .forEach((b) => (b.onclick = () => filterCategory(b.dataset.kind)));
-$("reset-category").onclick = () => filterCategory(category);
+  .forEach((button) => {
+    button.setAttribute("aria-pressed", "false");
+    button.onclick = async () => {
+      filterCategory(button.dataset.kind);
+      if (!category) return searchPlaces();
+      const kind = category;
+      const version = ++searchVersion;
+      const center = map?.getCenter() || { lng: 80.7, lat: 7.9 };
+      const nearer = (row) => ((row[2] - center.lng) * Math.cos(center.lat * Math.PI / 180)) ** 2 + (row[3] - center.lat) ** 2;
+      suggestions.hidden = false;
+      suggestions.replaceChildren(element("div", "Finding nearby places…", "empty"));
+      try {
+        const rows = await searchIndex();
+        if (version !== searchVersion) return;
+        const nearby = rows.filter((row) => row[4] === kind)
+          .map((row) => ({ row, distance: nearer(row) }))
+          .sort((a, b) => a.distance - b.distance).slice(0, 12);
+        suggestions.replaceChildren();
+        if (!nearby.length) suggestions.append(element("div", "No places in this category", "empty"));
+        for (const { row } of nearby) {
+          const option = resultRow(row);
+          option.onclick = () => showPlace(row);
+          suggestions.append(option);
+        }
+      } catch (error) {
+        if (version === searchVersion) suggestions.replaceChildren(element("div", error.message, "empty"));
+      }
+    };
+  });
+$("reset-category").onclick = () => {
+  filterCategory(category);
+  void searchPlaces();
+};
 const locationSvgShapes = {
   on: `<g stroke="STROKE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="32" r="16"/><line x1="32" y1="6" x2="32" y2="12"/><line x1="32" y1="52" x2="32" y2="58"/><line x1="6" y1="32" x2="12" y2="32"/><line x1="52" y1="32" x2="58" y2="32"/></g><circle fill="STROKE" cx="32" cy="32" r="7"/>`,
   off: `<defs><mask id="off-gap-THEME" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><rect width="64" height="64" fill="#fff"/><line x1="10" y1="10" x2="54" y2="54" stroke="#000" stroke-width="12" stroke-linecap="round"/></mask></defs><g stroke="STROKE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><g mask="url(#off-gap-THEME)"><circle cx="32" cy="32" r="16"/><line x1="32" y1="6" x2="32" y2="12"/><line x1="32" y1="52" x2="32" y2="58"/><line x1="6" y1="32" x2="12" y2="32"/><line x1="52" y1="32" x2="58" y2="32"/></g><line x1="10" y1="10" x2="54" y2="54"/></g>`,
@@ -1205,6 +1327,14 @@ $("locate").onclick = () => {
 
 $("menu").onclick = () => {
   const c = panel("Sifric Maps");
+  const contribute = element("button", undefined, "menu-option");
+  actionLabel(contribute, "Contribute", "place");
+  contribute.onclick = () => {
+    closePanel();
+    $("menu").focus({ preventScroll: true });
+    $("contribute-fab").click();
+  };
+  c.append(contribute);
   const items = [
     [
       "Explore Sri Lanka",
@@ -1213,6 +1343,22 @@ $("menu").onclick = () => {
         map.flyTo({ center: [80.7, 7.9], zoom: 7 });
       },
     ],
+    ["Share this map", async () => {
+      if (!map) return;
+      const url = new URL(location.href);
+      const center = map.getCenter();
+      url.searchParams.delete("place");
+      url.hash = `${map.getZoom().toFixed(2)}/${center.lat.toFixed(5)}/${center.lng.toFixed(5)}`;
+      try {
+        if (navigator.share) await navigator.share({ title: "Sifric Maps", url: url.href });
+        else {
+          await navigator.clipboard.writeText(url.href);
+          status("Link copied");
+        }
+      } catch (error) {
+        if (error.name !== "AbortError") status(url.href);
+      }
+    }],
     ["Saved places", () => showList("Saved places", readStored("lk-saved"))],
     [
       "Recent searches",
@@ -1227,7 +1373,7 @@ $("menu").onclick = () => {
           ? "home"
           : name === "Saved places"
             ? "bookmark"
-            : "history",
+            : name === "Share this map" ? "share" : "history",
       ),
     );
     b.onclick = fn;
@@ -1243,9 +1389,18 @@ $("menu").onclick = () => {
   );
 };
 document.addEventListener("keydown", (e) => {
+  if (document.body.classList.contains("contribution-picking") ||
+      !$("contribution-sheet").hidden) return;
   if (e.key === "Escape") {
-    $("suggestions").hidden = true;
+    if (!$("layer-panel").hidden) return $("close-layers").click();
+    if (document.body.classList.contains("search-open")) return closeSearch();
     closePanel();
+  }
+  if (e.key === "/" && !e.ctrlKey && !e.metaKey && !e.altKey &&
+      !e.target.closest("input, textarea, select, [contenteditable]") &&
+      !document.body.classList.contains("routing-open")) {
+    e.preventDefault();
+    searchInput.focus();
   }
 });
 (async () => {
@@ -1402,10 +1557,23 @@ document.addEventListener("keydown", (e) => {
         layers: ["mazo-places-icon", "mazo-places-dot"],
       }).length
     )
-      $("suggestions").hidden = true;
+      dismissSearch();
   });
   map.once("load", async () => {
     mapOptions = createMapOptions(map, { baseStyle: style, status });
+    const layerPanel = $("layer-panel");
+    const scrim = $("layer-scrim");
+    new MutationObserver(() => {
+      scrim.hidden = layerPanel.hidden;
+    }).observe(layerPanel, { attributes: true, attributeFilter: ["hidden"] });
+    scrim.onclick = () => $("close-layers").click();
+    $("layers").addEventListener("click", () => {
+      if (!layerPanel.hidden) {
+        dismissSearch();
+        $("close-layers").focus({ preventScroll: true });
+      }
+    });
+
     const id = new URL(location.href).searchParams.get("place");
     if (id) {
       const row = (await searchIndex()).find((r) => String(r[0]) === id);
