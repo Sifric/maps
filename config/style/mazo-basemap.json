@@ -5603,23 +5603,38 @@
             "concat",
             [
               "get",
-              "name:latin"
-            ],
-            " ",
-            [
-              "get",
               "name:nonlatin"
+            ],
+            "\n",
+            [
+              "coalesce",
+              [
+                "get",
+                "name:latin"
+              ],
+              [
+                "get",
+                "name_en"
+              ],
+              [
+                "get",
+                "name"
+              ]
             ]
           ],
           [
             "coalesce",
             [
               "get",
-              "name_en"
+              "name"
             ],
             [
               "get",
-              "name"
+              "name:latin"
+            ],
+            [
+              "get",
+              "name_en"
             ]
           ]
         ],
@@ -5698,23 +5713,38 @@
             "concat",
             [
               "get",
-              "name:latin"
-            ],
-            " ",
-            [
-              "get",
               "name:nonlatin"
+            ],
+            "\n",
+            [
+              "coalesce",
+              [
+                "get",
+                "name:latin"
+              ],
+              [
+                "get",
+                "name_en"
+              ],
+              [
+                "get",
+                "name"
+              ]
             ]
           ],
           [
             "coalesce",
             [
               "get",
-              "name_en"
+              "name"
             ],
             [
               "get",
-              "name"
+              "name:latin"
+            ],
+            [
+              "get",
+              "name_en"
             ]
           ]
         ],
@@ -5780,23 +5810,38 @@
             "concat",
             [
               "get",
-              "name:latin"
-            ],
-            " ",
-            [
-              "get",
               "name:nonlatin"
+            ],
+            "\n",
+            [
+              "coalesce",
+              [
+                "get",
+                "name:latin"
+              ],
+              [
+                "get",
+                "name_en"
+              ],
+              [
+                "get",
+                "name"
+              ]
             ]
           ],
           [
             "coalesce",
             [
               "get",
-              "name_en"
+              "name"
             ],
             [
               "get",
-              "name"
+              "name:latin"
+            ],
+            [
+              "get",
+              "name_en"
             ]
           ]
         ],
