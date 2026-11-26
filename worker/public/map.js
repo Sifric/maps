@@ -215,7 +215,7 @@ let toastT; const toast = t => { const e = $('toast'); e.textContent = t; e.clas
 const hv = location.hash.slice(1).split('/').map(Number);
 const hasHash = hv.length === 3 && hv.every(Number.isFinite)
   && hv[0] >= 0 && hv[0] <= 22 && Math.abs(hv[1]) <= 85 && Math.abs(hv[2]) <= 180;
-const map = createMap({ container: 'map', center: hasHash ? [hv[2], hv[1]] : [80.5353, 5.9496], zoom: hasHash ? hv[0] : 3.5, attributionControl: false, maxPitch: 75, fadeDuration: 200 });
+const map = createMap({ container: 'map', center: hasHash ? [hv[2], hv[1]] : [80.5353, 5.9496], zoom: hasHash ? hv[0] : 14.2, attributionControl: false, maxPitch: 75, fadeDuration: 200 });
 window.map = map;
 map.addControl(new maplibregl.AttributionControl({ compact: true, customAttribution: 'Sifric Maps' }));
 $('sifric-brand').addEventListener('click', () => {
@@ -227,7 +227,7 @@ $('sifric-brand').addEventListener('click', () => {
 const geo = new maplibregl.GeolocateControl({ positionOptions: { enableHighAccuracy: true }, trackUserLocation: true, showAccuracyCircle: true, fitBoundsOptions: { maxZoom: 16.5 } });
 map.addControl(geo, 'bottom-right');
 geo.on('geolocate', e => userPos = [e.coords.longitude, e.coords.latitude]);
-if (!hasHash) map.once('load', () => matchMedia('(prefers-reduced-motion: reduce)').matches ? map.jumpTo({ zoom: 15.2, pitch: 50, bearing: -18 }) : map.flyTo({ zoom: 15.2, pitch: 50, bearing: -18, duration: 4200, essential: true }));
+if (!hasHash) map.once('load', () => matchMedia('(prefers-reduced-motion: reduce)').matches ? map.jumpTo({ zoom: 15.2, pitch: 50, bearing: -18 }) : map.flyTo({ zoom: 15.2, pitch: 50, bearing: -18, duration: 1400, essential: true }));
 map.on('moveend', () => { const c = map.getCenter(); try { history.replaceState(null, '', `#${map.getZoom().toFixed(1)}/${c.lat.toFixed(5)}/${c.lng.toFixed(5)}`); } catch (e) {} });
 
 let routeRequest, routeOrigin, avoid = '', routes = null, ri = 0, tm = 'car', cur, pinMk, found = [], fromPt, userPos = null, timer, ctl, si = -1, anim = 0;
