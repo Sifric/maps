@@ -217,11 +217,16 @@ function roadShieldImage() {
   return { width: 88, height: 56, data: c.getImageData(0, 0, 88, 56).data };
 }
 function directionArrowImage() {
-  const canvas = document.createElement("canvas"); canvas.width = 64; canvas.height = 64;
+  const canvas = document.createElement("canvas"); canvas.width = 40; canvas.height = 40;
   const c = canvas.getContext("2d"); c.scale(2, 2);
-  c.translate(16, 16); c.fillStyle = "#f7fbff"; c.strokeStyle = "#314a64"; c.lineWidth = 1.7;
-  c.lineJoin = "round"; c.beginPath(); c.moveTo(0, -10); c.lineTo(7, 0); c.lineTo(2.5, -1); c.lineTo(2.5, 8); c.lineTo(-2.5, 8); c.lineTo(-2.5, -1); c.lineTo(-7, 0); c.closePath(); c.fill(); c.stroke();
-  return { width: 64, height: 64, data: c.getImageData(0, 0, 64, 64).data };
+  // A slim forward chevron reads cleanly at street scale and remains legible
+  // on both light and dark roads without a bulky, pin-like arrow silhouette.
+  c.lineCap = "round"; c.lineJoin = "round";
+  c.strokeStyle = "rgba(14,22,32,.84)"; c.lineWidth = 4.5;
+  c.beginPath(); c.moveTo(4.5, 8.5); c.lineTo(10, 3); c.lineTo(15.5, 8.5); c.stroke();
+  c.strokeStyle = "#f8fbff"; c.lineWidth = 2.2;
+  c.beginPath(); c.moveTo(4.5, 8.5); c.lineTo(10, 3); c.lineTo(15.5, 8.5); c.stroke();
+  return { width: 40, height: 40, data: c.getImageData(0, 0, 40, 40).data };
 }
 export function registerPlaceImages(map) {
   map.on("styleimagemissing", ({ id }) => {

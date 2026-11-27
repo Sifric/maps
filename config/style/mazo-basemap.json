@@ -3406,17 +3406,12 @@
       "source": "openmaptiles",
       "source-layer": "transportation",
       "minzoom": 14,
-      "filter": [
-        "==",
-        [
-          "get",
-          "oneway"
-        ],
-        1
-      ],
+      "filter": ["all", ["in", ["get", "class"], ["literal", ["motorway", "trunk", "primary", "secondary", "tertiary", "minor", "service"]]], ["!", ["in", ["get", "brunnel"], ["literal", ["bridge", "tunnel"]]]], ["==", ["to-string", ["get", "oneway"]], "1"]],
       "layout": {
         "icon-image": "lk-direction-arrow",
         "symbol-placement": "line",
+        "icon-rotation-alignment": "map",
+        "icon-keep-upright": false,
         "symbol-spacing": [
           "interpolate",
           [
@@ -3426,15 +3421,15 @@
             "zoom"
           ],
           14,
-          230,
-          16,
           190,
+          16,
+          230,
           18,
-          145,
+          275,
           20,
-          110,
+          320,
           22,
-          85
+          360
         ],
         "icon-size": [
           "interpolate",
@@ -3445,15 +3440,15 @@
             "zoom"
           ],
           14,
-          0.75,
+          0.65,
           16,
-          0.9,
+          0.75,
           18,
-          1.05,
+          0.85,
           20,
-          1.2,
+          0.95,
           22,
-          1.35
+          1.05
         ],
         "icon-allow-overlap": true,
         "icon-ignore-placement": true,
@@ -3469,18 +3464,13 @@
       "source": "openmaptiles",
       "source-layer": "transportation",
       "minzoom": 14,
-      "filter": [
-        "==",
-        [
-          "get",
-          "oneway"
-        ],
-        -1
-      ],
+      "filter": ["all", ["in", ["get", "class"], ["literal", ["motorway", "trunk", "primary", "secondary", "tertiary", "minor", "service"]]], ["!", ["in", ["get", "brunnel"], ["literal", ["bridge", "tunnel"]]]], ["in", ["to-string", ["get", "oneway"]], ["literal", ["-1", "reverse"]]]],
       "layout": {
         "icon-image": "lk-direction-arrow",
         "icon-rotate": 180,
         "symbol-placement": "line",
+        "icon-rotation-alignment": "map",
+        "icon-keep-upright": false,
         "symbol-spacing": [
           "interpolate",
           [
@@ -3490,15 +3480,15 @@
             "zoom"
           ],
           14,
-          230,
-          16,
           190,
+          16,
+          230,
           18,
-          145,
+          275,
           20,
-          110,
+          320,
           22,
-          85
+          360
         ],
         "icon-size": [
           "interpolate",
@@ -3509,15 +3499,15 @@
             "zoom"
           ],
           14,
-          0.75,
+          0.65,
           16,
-          0.9,
+          0.75,
           18,
-          1.05,
+          0.85,
           20,
-          1.2,
+          0.95,
           22,
-          1.35
+          1.05
         ],
         "icon-allow-overlap": true,
         "icon-ignore-placement": true,

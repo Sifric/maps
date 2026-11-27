@@ -292,8 +292,8 @@ export function createMapOptions(map, { baseStyle, status, embed }) {
     // The arrows must only appear when the existing tiles encode one-way
     // direction. Never infer a one-way road from its geometry alone.
     for (const [id, direction, rotation] of [
-      ["sifric-oneway-forward", 1, 90],
-      ["sifric-oneway-reverse", -1, 270],
+      ["sifric-oneway-forward", 1, 0],
+      ["sifric-oneway-reverse", -1, 180],
     ]) {
       if (map.getLayer(id)) continue;
       const oneWay = direction === 1
@@ -308,9 +308,9 @@ export function createMapOptions(map, { baseStyle, status, embed }) {
         filter: ["all", ["in", ["get", "class"], ["literal", [...roadClasses, "service"]]], oneWay],
         layout: {
           "symbol-placement": "line",
-          "symbol-spacing": ["interpolate", ["linear"], ["zoom"], 14, 100, 17, 130, 20, 170],
-          "icon-image": "sifric-oneway-arrow",
-          "icon-size": ["interpolate", ["linear"], ["zoom"], 14, 0.6, 17, 0.8, 20, 1],
+          "symbol-spacing": ["interpolate", ["linear"], ["zoom"], 14, 190, 17, 240, 20, 300],
+          "icon-image": "lk-direction-arrow",
+          "icon-size": ["interpolate", ["linear"], ["zoom"], 14, 0.8, 17, 1, 20, 1.15],
           "icon-rotation-alignment": "map",
           "icon-rotate": rotation,
           "icon-keep-upright": false,
