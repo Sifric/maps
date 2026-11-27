@@ -362,8 +362,13 @@ function setState(st) {
   sheetState = st; sheet.dataset.state = st;
   if (phone()) {
     scrim.hidden = sheet.hidden || st !== 'full';
-    document.documentElement.style.setProperty('--layers-height', `${Math.round(HEIGHTS[st]())}px`);
+    syncLayersDock();
   }
+}
+function syncLayersDock() {
+  if (!phone() || sheet.hidden) return;
+  const top = sheet.getBoundingClientRect().top;
+  document.documentElement.style.setProperty('--layers-height', `${Math.max(0, Math.round(innerHeight - top))}px`);
 }
 function openSheet(on) {
   if (on === !sheet.hidden) return syncSheet();
@@ -372,6 +377,11 @@ function openSheet(on) {
   if (on) { if (phone()) setState(sheetState === 'full' ? 'full' : 'half'); else sheet.dataset.state = ''; }
   else document.documentElement.style.removeProperty('--layers-height');
   syncSheet();
+  if (on && phone()) {
+    requestAnimationFrame(syncLayersDock);
+    setTimeout(syncLayersDock, 80);
+    setTimeout(syncLayersDock, 240);
+  }
   if (on) (sheet.querySelector('.tile.on') || $('sheetClose')).focus({ preventScroll: true });
   else if (inside) $('layers').focus({ preventScroll: true });
 }
@@ -434,7 +444,8 @@ sysDark.addEventListener('change', () => { if (mode.themePref === 'auto') { mode
     const best = Object.keys(HEIGHTS).reduce((p, k) => Math.abs(HEIGHTS[k]() - h) < Math.abs(HEIGHTS[p]() - h) ? k : p, 'half');
     setState(best);
   };
-  addEventListener('resize', () => { if (!sheet.hidden && phone()) setState(sheetState); });
+  addEventListener('resize', () => { if (!sheet.hidden && phone()) { setState(sheetState); syncLayersDock(); } });
+  sheet.addEventListener('transitionend', syncLayersDock);
 })();
 syncSheet();
 $('loc').onclick = () => geo.trigger();
