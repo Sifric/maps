@@ -360,13 +360,17 @@ const HEIGHTS = { peek: () => 214, half: () => innerHeight * 0.5, full: () => in
 let sheetState = 'half';
 function setState(st) {
   sheetState = st; sheet.dataset.state = st;
-  if (phone()) scrim.hidden = sheet.hidden || st !== 'full';
+  if (phone()) {
+    scrim.hidden = sheet.hidden || st !== 'full';
+    document.documentElement.style.setProperty('--layers-height', `${Math.round(HEIGHTS[st]())}px`);
+  }
 }
 function openSheet(on) {
   if (on === !sheet.hidden) return syncSheet();
   const inside = sheet.contains(document.activeElement);
   sheet.hidden = !on; scrim.hidden = !on;
   if (on) { if (phone()) setState(sheetState === 'full' ? 'full' : 'half'); else sheet.dataset.state = ''; }
+  else document.documentElement.style.removeProperty('--layers-height');
   syncSheet();
   if (on) (sheet.querySelector('.tile.on') || $('sheetClose')).focus({ preventScroll: true });
   else if (inside) $('layers').focus({ preventScroll: true });
@@ -430,6 +434,7 @@ sysDark.addEventListener('change', () => { if (mode.themePref === 'auto') { mode
     const best = Object.keys(HEIGHTS).reduce((p, k) => Math.abs(HEIGHTS[k]() - h) < Math.abs(HEIGHTS[p]() - h) ? k : p, 'half');
     setState(best);
   };
+  addEventListener('resize', () => { if (!sheet.hidden && phone()) setState(sheetState); });
 })();
 syncSheet();
 $('loc').onclick = () => geo.trigger();

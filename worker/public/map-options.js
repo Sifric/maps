@@ -393,6 +393,7 @@ export function createMapOptions(map, { baseStyle, status, embed }) {
         settings.type === "satellite" &&
         layer.type === "line" &&
         (layer["source-layer"] !== "transportation" ||
+          layer.metadata?.["sifric:divider"] ||
           layer.id.includes("casing"))
       )
         show = false;
@@ -403,14 +404,15 @@ export function createMapOptions(map, { baseStyle, status, embed }) {
           layer.id,
           "line-width",
           width === undefined ? width :
-            settings.type === "satellite" ? scaleWidth(width, 0.45) :
+            settings.type === "satellite" && !layer.metadata?.["sifric:divider"] ? scaleWidth(width, 0.45) :
             layer["source-layer"] === "transportation" && /^road_/.test(layer.id)
               ? streetLevelRoadWidth(width) : width,
         );
         map.setPaintProperty(
           layer.id,
           "line-opacity",
-          settings.type === "satellite" ? 0.55 : layer.paint?.["line-opacity"],
+          settings.type === "satellite" && !layer.metadata?.["sifric:divider"]
+            ? 0.55 : layer.paint?.["line-opacity"],
         );
       }
       visibility(layer.id, show);
@@ -424,7 +426,7 @@ export function createMapOptions(map, { baseStyle, status, embed }) {
           else colour = value;
         } else if (settings.type === "satellite" && layer.type === "symbol")
           colour = key.includes("halo") ? "#202124" : "#ffffff";
-        else if (settings.type === "satellite" && layer.type === "line")
+        else if (settings.type === "satellite" && layer.type === "line" && !layer.metadata?.["sifric:divider"])
           colour = key.includes("color") ? "#e7edf2" : colour;
         map.setPaintProperty(layer.id, key, colour);
       }
