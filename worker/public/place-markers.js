@@ -219,16 +219,22 @@ function roadShieldImage() {
   return { width: 80, height: 48, data: c.getImageData(0, 0, 80, 48).data };
 }
 function directionArrowImage() {
+  // MapLibre aligns a line placed icon's upward axis with the road tangent.
+  // Keep the SVG arrow pointing up so its point follows the OSM way direction.
+  const outline = new Path2D("M12 2.5 21 13h-6v8.5H9V13H3z");
+  const inset = new Path2D("M12 5.2 18 12h-4.8v7.2h-2.4V12H6z");
   const canvas = document.createElement("canvas"); canvas.width = 48; canvas.height = 48;
-  const c = canvas.getContext("2d"); c.scale(2, 2);
-  // MapLibre aligns the icon's local +X axis with a forward line segment.
-  // Draw a filled right-pointing arrow so its head follows road geometry.
-  c.fillStyle = "rgba(14,22,32,.86)"; c.strokeStyle = "rgba(14,22,32,.86)";
-  c.lineJoin = "round"; c.lineCap = "round"; c.lineWidth = 4.5;
-  c.beginPath(); c.moveTo(3.5, 9); c.lineTo(10, 9); c.lineTo(10, 5.5); c.lineTo(16.5, 12); c.lineTo(10, 18.5); c.lineTo(10, 15); c.lineTo(3.5, 15); c.closePath(); c.fill();
-  c.fillStyle = "#f8fbff";
-  c.beginPath(); c.moveTo(4, 10); c.lineTo(11.1, 10); c.lineTo(11.1, 7.2); c.lineTo(15, 12); c.lineTo(11.1, 16.8); c.lineTo(11.1, 14); c.lineTo(4, 14); c.closePath(); c.fill();
-  return { width: 48, height: 48, data: c.getImageData(0, 0, 48, 48).data };
+  const context = canvas.getContext("2d");
+  context.scale(2, 2);
+  context.fillStyle = "#101820";
+  context.strokeStyle = "#101820";
+  context.lineWidth = 1.5;
+  context.lineJoin = "round";
+  context.fill(outline);
+  context.stroke(outline);
+  context.fillStyle = "#f8fbff";
+  context.fill(inset);
+  return { width: 48, height: 48, data: context.getImageData(0, 0, 48, 48).data };
 }
 export function registerPlaceImages(map) {
   map.on("styleimagemissing", ({ id }) => {

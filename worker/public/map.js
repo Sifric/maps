@@ -1,6 +1,6 @@
 // Keep the module response compatible with strict browser JavaScript MIME checks.
 import { darkMapStyle } from "./map-options.js";
-import { registerPlaceImages, selectedPlaceElement, stylePlaces } from "./place-markers.js?v=reference-35";
+import { registerPlaceImages, selectedPlaceElement, stylePlaces } from "./place-markers.js?v=reference-36";
 
 const { maplibregl, pmtiles } = window;
 maplibregl.addProtocol("pmtiles", new pmtiles.Protocol().tile);
@@ -59,7 +59,9 @@ function build() {
   };
   for (const layer of st.layers) {
     const terrainOnly = layer.type === 'fill-extrusion' && !(mode.bld && mode.type === 'default');
-    if (hidden.has(layer.id) || terrainOnly || (sat && ['background', 'fill', 'fill-extrusion'].includes(layer.type)))
+    const satelliteRoadGeometry = sat && layer['source-layer'] === 'transportation' &&
+      (layer.type === 'line' || (layer.type === 'symbol' && layer.id.includes('one_way_arrow')));
+    if (hidden.has(layer.id) || terrainOnly || satelliteRoadGeometry || (sat && ['background', 'fill', 'fill-extrusion'].includes(layer.type)))
       layer.layout = { ...layer.layout, visibility: 'none' };
   }
   if (sat) st.layers.unshift({ id: 'sat', type: 'raster', source: 'satellite' });

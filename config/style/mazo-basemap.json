@@ -3007,7 +3007,7 @@
       "type": "line",
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 12,
+      "minzoom": 8,
       "filter": [
         "all",
         [
@@ -3051,31 +3051,11 @@
         ]
       ],
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": {
-          "base": 1,
-          "stops": [
-            [
-              0,
-              "rgba(40,48,60,0.55)"
-            ],
-            [
-              14,
-              "rgba(33,43,55,0.72)"
-            ],
-            [
-              18,
-              "rgba(22,29,40,0.82)"
-            ],
-            [
-              20,
-              "rgba(16,23,34,0.88)"
-            ]
-          ]
-        },
+        "line-color": "#252e38",
         "line-opacity": [
           "interpolate",
           [
@@ -3084,12 +3064,14 @@
           [
             "zoom"
           ],
-          11.5,
-          0.42,
-          12,
-          0.66,
-          12.75,
-          0.82
+          8,
+          0.78,
+          11,
+          0.84,
+          14,
+          0.9,
+          18,
+          0.94
         ],
         "line-width": [
           "interpolate",
@@ -3099,16 +3081,16 @@
           [
             "zoom"
           ],
-          11.5,
-          0.55,
-          13,
-          0.85,
-          15,
-          1.15,
+          8,
+          1.35,
+          11,
+          1.35,
+          14,
+          1.7,
           18,
-          2.2,
+          2.4,
           20,
-          3
+          3.2
         ]
       }
     },
@@ -3216,7 +3198,7 @@
       "type": "line",
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 12,
+      "minzoom": 8,
       "filter": [
         "all",
         [
@@ -3260,31 +3242,11 @@
         ]
       ],
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": {
-          "base": 1,
-          "stops": [
-            [
-              0,
-              "rgba(40,48,60,0.55)"
-            ],
-            [
-              14,
-              "rgba(33,43,55,0.72)"
-            ],
-            [
-              18,
-              "rgba(22,29,40,0.82)"
-            ],
-            [
-              20,
-              "rgba(16,23,34,0.88)"
-            ]
-          ]
-        },
+        "line-color": "#303946",
         "line-opacity": [
           "interpolate",
           [
@@ -3293,12 +3255,14 @@
           [
             "zoom"
           ],
-          11.5,
-          0.38,
-          12,
-          0.6,
-          12.75,
-          0.75
+          8,
+          0.78,
+          11,
+          0.84,
+          14,
+          0.9,
+          18,
+          0.94
         ],
         "line-width": [
           "interpolate",
@@ -3308,16 +3272,16 @@
           [
             "zoom"
           ],
-          11.5,
-          0.45,
-          13,
-          0.65,
-          15,
-          0.85,
+          8,
+          1.35,
+          11,
+          1.35,
+          14,
+          1.7,
           18,
-          1.8,
+          2.4,
           20,
-          2.4
+          3.2
         ]
       }
     },
@@ -3697,15 +3661,13 @@
             "zoom"
           ],
           14,
-          190,
-          16,
-          230,
-          18,
-          275,
+          250,
+          17,
+          330,
           20,
-          320,
+          420,
           22,
-          360
+          480
         ],
         "icon-size": [
           "interpolate",
@@ -3716,15 +3678,13 @@
             "zoom"
           ],
           14,
-          0.65,
-          16,
-          0.75,
-          18,
-          0.85,
+          0.72,
+          17,
+          0.86,
           20,
-          0.95,
+          1,
           22,
-          1.05
+          1.1
         ],
         "icon-allow-overlap": true,
         "icon-ignore-placement": true,
@@ -3811,15 +3771,13 @@
             "zoom"
           ],
           14,
-          190,
-          16,
-          230,
-          18,
-          275,
+          250,
+          17,
+          330,
           20,
-          320,
+          420,
           22,
-          360
+          480
         ],
         "icon-size": [
           "interpolate",
@@ -3830,15 +3788,13 @@
             "zoom"
           ],
           14,
-          0.65,
-          16,
-          0.75,
-          18,
-          0.85,
+          0.72,
+          17,
+          0.86,
           20,
-          0.95,
+          1,
           22,
-          1.05
+          1.1
         ],
         "icon-allow-overlap": true,
         "icon-ignore-placement": true,
@@ -5717,7 +5673,7 @@
       "type": "circle",
       "source": "openmaptiles",
       "source-layer": "poi",
-      "minzoom": 15,
+      "minzoom": 13,
       "filter": [
         "all",
         [
@@ -5753,8 +5709,10 @@
           [
             "zoom"
           ],
+          13,
+          2.5,
           15,
-          3,
+          3.5,
           20,
           6
         ],
@@ -5768,7 +5726,7 @@
       "type": "symbol",
       "source": "openmaptiles",
       "source-layer": "poi",
-      "minzoom": 16,
+      "minzoom": 15,
       "filter": [
         "all",
         [
@@ -6248,7 +6206,7 @@
       "layout": {
         "icon-image": "lk-road-shield",
         "icon-rotation-alignment": "viewport",
-        "icon-size": 0.68,
+        "icon-size": 0.82,
         "symbol-placement": [
           "step",
           [
@@ -6258,7 +6216,7 @@
           13,
           "line"
         ],
-        "symbol-spacing": 420,
+        "symbol-spacing": 500,
         "text-field": [
           "to-string",
           [
@@ -6279,11 +6237,11 @@
             "zoom"
           ],
           8,
-          9,
-          13,
           10,
+          13,
+          11,
           18,
-          11
+          12
         ],
         "icon-text-fit": "both",
         "icon-text-fit-padding": [
