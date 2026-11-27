@@ -11,7 +11,13 @@ public enum SifricMap {
     public static func appearance(_ type: MapType, theme: Theme = .system,
                                   traits: UITraitCollection = .current) -> URL {
         let dark = theme == .dark || (theme == .system && traits.userInterfaceStyle == .dark)
-        return URL(string: "https://maps.sifric.workers.dev/api/v1/native-style.json?type=\(type.rawValue)&theme=\(dark ? "dark" : "light")")!
+        var components = URLComponents(string: "https://maps.sifric.workers.dev/api/v1/native-style.json")!
+        components.queryItems = [
+            URLQueryItem(name: "type", value: type.rawValue),
+            URLQueryItem(name: "theme", value: dark ? "dark" : "light"),
+            URLQueryItem(name: "language", value: Locale.current.identifier)
+        ]
+        return components.url!
     }
 
     /// Applies a newly fetched hosted appearance to an existing MapLibre view.

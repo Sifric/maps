@@ -1,4 +1,4 @@
-import { registerPlaceImages, stylePlaces } from "/place-markers.js?v=road-arrows-3";
+import { registerPlaceImages, stylePlaces } from "/place-markers.js?v=place-pins-1";
 
 const libraryLoads = new Map();
 
@@ -19,7 +19,7 @@ function loadScript(url) {
 const registered = new WeakSet();
 
 export async function createSifricMap(container, options = {}) {
-  const { baseUrl, mapType = "default", theme = "system", ...mapOptions } = options;
+  const { baseUrl, mapType = "default", theme = "system", language = globalThis.navigator?.language || "en", ...mapOptions } = options;
   const base = new URL(baseUrl ?? import.meta.url);
   const resolvedTheme = theme === "system"
     ? (globalThis.matchMedia?.("(prefers-color-scheme: dark)").matches ? "dark" : "light")
@@ -27,6 +27,7 @@ export async function createSifricMap(container, options = {}) {
   const styleUrl = new URL("/api/v1/native-style.json", base);
   styleUrl.searchParams.set("type", mapType);
   styleUrl.searchParams.set("theme", resolvedTheme);
+  styleUrl.searchParams.set("language", language);
   const css = new URL("/vendor/maplibre-gl.css", base).href;
   if (![...document.querySelectorAll('link[rel="stylesheet"]')].some(link => link.href === css)) {
     const link = document.createElement("link");

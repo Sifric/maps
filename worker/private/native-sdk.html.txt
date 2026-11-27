@@ -43,6 +43,7 @@ SifricMapView(
 )</code></pre>
   <h2>Map appearance and sharing</h2>
   <p>Choose Default, Satellite, or Terrain and a light, dark, or device theme. Pitch the map at street zoom to see mapped 3D building heights in Default or Terrain. The native map objects expose camera updates, gestures, overlays, and callbacks.</p>
+  <p>The hosted map style and sprite use the same category-coloured place pins and overview dots as the website. Load the Sifric place layers from the hosted style for matching icons in Android and iOS. App-owned annotations added with <code>addPin</code> remain separate and use the style chosen by your app.</p>
   <p>Use <code>SifricMapsUrls</code> (Android) or <code>SifricMapsURLs</code> (iOS) for search, pinned locations and directions. An installed app can handle these URLs after its App Links or Universal Links association is registered.</p>
   <h2 id="navigation">Voice and background guidance</h2>
   <p>On Android, enable voice with <code>enableVoice</code> or subclass <code>SifricNavigationService</code>, provide a foreground notification, and declare a location foreground service. Start it while the app is visible after granting precise location.</p>

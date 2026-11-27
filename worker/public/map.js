@@ -1,6 +1,6 @@
 // Keep the module response compatible with strict browser JavaScript MIME checks.
 import { darkMapStyle } from "./map-options.js";
-import { registerPlaceImages, selectedPlaceElement, stylePlaces } from "./place-markers.js?v=reference-38";
+import { registerPlaceImages, selectedPlaceElement, stylePlaces } from "./place-markers.js?v=reference-39";
 
 const { maplibregl, pmtiles } = window;
 maplibregl.addProtocol("pmtiles", new pmtiles.Protocol().tile);

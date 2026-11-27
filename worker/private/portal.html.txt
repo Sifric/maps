@@ -39,7 +39,7 @@
       <dt><strong>Android or iOS map</strong></dt>
       <dd>Render the basemap and move markers on the device. Use your own authenticated backend for private search, routes, and estimates. The map renderer can load the hosted style without a developer token. <a href="/developer/native-sdk/">Set up a native map</a>.</dd>
       <dt><strong>Web map or preview</strong></dt>
-      <dd>The <a href="/developer/sifric-maps.js">Web SDK module</a> and <a href="/developer/sifric-places.js">place search component</a> are available for developer pages on this origin. The <a href="#examples">Embed preview</a> can open as an authenticated link or be framed by a page on the Sifric origin. Private developer resources use same-origin browser access.</dd>
+      <dd>The <a href="/developer/sifric-maps.js">Web SDK module</a> and <a href="/developer/sifric-places.js">place search component</a> use the shared hosted place-pin style, matching Android and iOS. The <a href="#examples">Embed preview</a> can open as an authenticated link or be framed by a page on the Sifric origin. Private developer resources use same-origin browser access.</dd>
       <dt><strong>Server-to-server integration</strong></dt>
       <dd>Use the private API to look up places, calculate GeoJSON routes, and batch distance and ETA requests. Your application owns session authentication, live location updates, pricing, and other business rules. <a href="/developer/api-reference/">Review endpoints and payloads</a>.</dd>
     </dl>

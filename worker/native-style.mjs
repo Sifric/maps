@@ -1,10 +1,12 @@
 import { darkMapStyle } from './public/map-options.js';
+import { stylePlaces } from './public/place-markers.js';
 
 export function nativeStyle(base, parameters) {
   const type = parameters.get('type') ?? 'default';
   const theme = parameters.get('theme') ?? 'light';
   if (!['default', 'satellite', 'terrain'].includes(type) || !['light', 'dark'].includes(theme)) return null;
-  const style = theme === 'dark' ? darkMapStyle(base) : base;
+  const sharedPlacesStyle = stylePlaces(base, parameters.get('language') ?? 'en');
+  const style = theme === 'dark' ? darkMapStyle(sharedPlacesStyle) : sharedPlacesStyle;
   if (type === 'satellite') {
     style.sources.imagery = {
       type: 'raster', tileSize: 256, maxzoom: 19,

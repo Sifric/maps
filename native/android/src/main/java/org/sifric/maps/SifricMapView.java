@@ -70,7 +70,9 @@ public final class SifricMapView extends FrameLayout {
             (context.getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK) == Configuration.UI_MODE_NIGHT_YES);
         return Uri.parse("https://maps.sifric.workers.dev/api/v1/native-style.json").buildUpon()
             .appendQueryParameter("type", type.name().toLowerCase(java.util.Locale.ROOT))
-            .appendQueryParameter("theme", dark ? "dark" : "light").build().toString();
+            .appendQueryParameter("theme", dark ? "dark" : "light")
+            .appendQueryParameter("language", java.util.Locale.getDefault().toLanguageTag())
+            .build().toString();
     }
 
     public static void fitBounds(MapLibreMap map, LatLngBounds bounds, int paddingPixels, boolean animated) {

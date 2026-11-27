@@ -80,7 +80,7 @@ function markerImage(kind, selected = false) {
   else drawIcon(c, placeIcons[kind] || "place", selected ? 8 : 6.5, selected ? 8 : 6.5, selected ? 12 : 15, iconColour);
   return { width: 112, height: 112, data: c.getImageData(0, 0, 112, 112).data };
 }
-export function stylePlaces(style) {
+export function stylePlaces(style, language = globalThis.navigator?.language || "en") {
   const layers = Object.fromEntries(style.layers.map((l) => [l.id, l]));
   const dot = layers["mazo-places-dot"];
   const pin = layers["mazo-places-icon"];
@@ -147,7 +147,7 @@ export function stylePlaces(style) {
     "icon-allow-overlap": false,
     "icon-padding": 14,
     "icon-optional": false,
-    "text-field": /^en(?:-|$)/i.test(navigator.language)
+    "text-field": /^en(?:-|$)/i.test(language)
       ? ["coalesce", ["get", "label"], ["get", "name"]]
       : ["get", "name"],
     "text-font": ["Geist Bold"],

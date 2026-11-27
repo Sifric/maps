@@ -4,6 +4,12 @@ Download the SDK packages through the authenticated Sifric developer portal.
 Both SDKs use the native MapLibre renderer and the Sifric Maps endpoints in
 `https://maps.sifric.workers.dev`.
 
+The hosted map style and sprite provide the same category-coloured place pins
+and small overview dots as the website. Android and iOS load these assets from
+the hosted style automatically; Web SDK maps use the same shared marker style.
+Use the SDK's place selection/search flow to display Sifric place pins. Host
+annotations added with `addPin` are app-owned markers and keep their own design.
+
 ## Android
 
 Download the AAR from `/developer/api/v1/sdk/android/sifric-maps.aar`. Add the AAR
