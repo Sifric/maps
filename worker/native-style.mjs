@@ -1,5 +1,5 @@
 import { darkMapStyle } from './public/map-options.js';
-import { stylePlaces } from './public/place-markers.js';
+import { stylePlaces } from './public/place-style.js';
 
 export function nativeStyle(base, parameters) {
   const type = parameters.get('type') ?? 'default';
