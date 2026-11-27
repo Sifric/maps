@@ -14,6 +14,13 @@ public enum SifricMap {
         return URL(string: "https://maps.sifric.workers.dev/api/v1/native-style.json?type=\(type.rawValue)&theme=\(dark ? "dark" : "light")")!
     }
 
+    /// Applies a newly fetched hosted appearance to an existing MapLibre view.
+    public static func applyAppearance(_ type: MapType, to map: MLNMapView,
+                                       theme: Theme = .system,
+                                       traits: UITraitCollection = .current) {
+        map.styleURL = appearance(type, theme: theme, traits: traits)
+    }
+
     public static func makeView(center: CLLocationCoordinate2D = .init(latitude: 7.9, longitude: 80.7),
                                 zoom: Double = 7, style: URL? = nil) -> MLNMapView {
         let map = MLNMapView(frame: .zero, styleURL: style ?? appearance(.default))

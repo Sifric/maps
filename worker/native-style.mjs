@@ -11,7 +11,8 @@ export function nativeStyle(base, parameters) {
       tiles: ['https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'],
       attribution: 'Imagery © Esri and its contributors',
     };
-    style.layers = style.layers.filter(layer => ['background', 'symbol'].includes(layer.type));
+    style.layers = style.layers.filter(layer =>
+      ['background', 'symbol'].includes(layer.type) && !layer.id.includes('one_way_arrow'));
     const index = style.layers.findIndex(layer => layer.type !== 'background');
     style.layers.splice(index < 0 ? style.layers.length : index, 0, {
       id: 'sifric-imagery', type: 'raster', source: 'imagery',

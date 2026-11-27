@@ -219,10 +219,10 @@ function roadShieldImage() {
   return { width: 80, height: 48, data: c.getImageData(0, 0, 80, 48).data };
 }
 function directionArrowImage() {
-  // MapLibre aligns a line placed icon's upward axis with the road tangent.
-  // Keep the SVG arrow pointing up so its point follows the OSM way direction.
-  const outline = new Path2D("M12 2.5 21 13h-6v8.5H9V13H3z");
-  const inset = new Path2D("M12 5.2 18 12h-4.8v7.2h-2.4V12H6z");
+  // A line-placed icon's horizontal axis follows the OSM way direction.
+  // This is the same east-pointing SVG path included in the shared sprite.
+  const outline = new Path2D("M3 8h9V4l9 8-9 8v-4H3z");
+  const inset = new Path2D("M4.5 9.5h8.1V7.4l6.2 4.6-6.2 4.6v-2.1H4.5z");
   const canvas = document.createElement("canvas"); canvas.width = 48; canvas.height = 48;
   const context = canvas.getContext("2d");
   context.scale(2, 2);

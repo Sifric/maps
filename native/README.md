@@ -70,6 +70,16 @@ and polygons have convenience methods. The MapLibre native objects also
 expose gestures, projection, map and annotation callbacks, custom overlays,
 GeoJSON sources, and data-driven style layers.
 
+Map styles are fetched from the hosted Sifric style endpoint, so published road
+divider, route-arrow, and label refinements reach SDK maps without embedding a
+separate copy of the basemap. Android can get a refreshable URL from
+`SifricMapView.appearanceStyleUrl(context, type, theme)`; iOS can switch an
+existing view with `SifricMap.applyAppearance(_:to:theme:traits:)`.
+
+The Web SDK accepts `mapType: "default" | "satellite" | "terrain"` and
+`theme: "light" | "dark" | "system"` in `createSifricMap` options. It uses the
+same hosted appearance styles as the native SDKs.
+
 ## Voice guidance and screen lock
 
 Android hosts can enable voice prompts on a `SifricNavigation` instance with

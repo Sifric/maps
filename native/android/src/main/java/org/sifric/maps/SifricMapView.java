@@ -55,17 +55,22 @@ public final class SifricMapView extends FrameLayout {
     }
 
     public void load(MapType type, Theme theme, OnMapReadyCallback callback) {
-        boolean dark = theme == Theme.DARK || (theme == Theme.SYSTEM &&
-            (getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK) == Configuration.UI_MODE_NIGHT_YES);
-        String url = Uri.parse("https://maps.sifric.workers.dev/api/v1/native-style.json").buildUpon()
-            .appendQueryParameter("type", type.name().toLowerCase(java.util.Locale.ROOT))
-            .appendQueryParameter("theme", dark ? "dark" : "light").build().toString();
+        String url = appearanceStyleUrl(getContext(), type, theme);
         mapView.getMapAsync(map -> map.setStyle(new Style.Builder().fromUri(url), style -> {
             if (map.getCameraPosition().zoom < 1) {
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(7.9, 80.7), 7));
             }
             callback.onMapReady(map);
         }));
+    }
+
+    /** Returns the live hosted style URL so a host can switch appearance after map creation. */
+    public static String appearanceStyleUrl(Context context, MapType type, Theme theme) {
+        boolean dark = theme == Theme.DARK || (theme == Theme.SYSTEM &&
+            (context.getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK) == Configuration.UI_MODE_NIGHT_YES);
+        return Uri.parse("https://maps.sifric.workers.dev/api/v1/native-style.json").buildUpon()
+            .appendQueryParameter("type", type.name().toLowerCase(java.util.Locale.ROOT))
+            .appendQueryParameter("theme", dark ? "dark" : "light").build().toString();
     }
 
     public static void fitBounds(MapLibreMap map, LatLngBounds bounds, int paddingPixels, boolean animated) {

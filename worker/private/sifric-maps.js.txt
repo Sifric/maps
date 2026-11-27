@@ -1,4 +1,4 @@
-import { registerPlaceImages, stylePlaces } from "/place-markers.js";
+import { registerPlaceImages, stylePlaces } from "/place-markers.js?v=road-arrows-2";
 
 const libraryLoads = new Map();
 
@@ -19,7 +19,14 @@ function loadScript(url) {
 const registered = new WeakSet();
 
 export async function createSifricMap(container, options = {}) {
-  const base = new URL(options.baseUrl ?? import.meta.url);
+  const { baseUrl, mapType = "default", theme = "system", ...mapOptions } = options;
+  const base = new URL(baseUrl ?? import.meta.url);
+  const resolvedTheme = theme === "system"
+    ? (globalThis.matchMedia?.("(prefers-color-scheme: dark)").matches ? "dark" : "light")
+    : theme;
+  const styleUrl = new URL("/api/v1/native-style.json", base);
+  styleUrl.searchParams.set("type", mapType);
+  styleUrl.searchParams.set("theme", resolvedTheme);
   const css = new URL("/vendor/maplibre-gl.css", base).href;
   if (![...document.querySelectorAll('link[rel="stylesheet"]')].some(link => link.href === css)) {
     const link = document.createElement("link");
@@ -30,14 +37,13 @@ export async function createSifricMap(container, options = {}) {
   const [, , styleResponse] = await Promise.all([
     globalThis.maplibregl ? undefined : loadScript(new URL("/vendor/maplibre-gl.js", base).href),
     globalThis.pmtiles ? undefined : loadScript(new URL("/vendor/pmtiles.js", base).href),
-    fetch(new URL("/style.json", base)),
+    fetch(styleUrl),
   ]);
   const library = globalThis.maplibregl;
   if (!registered.has(library)) {
     library.addProtocol("pmtiles", new globalThis.pmtiles.Protocol().tile);
     registered.add(library);
   }
-  const { baseUrl, ...mapOptions } = options;
   if (!styleResponse.ok) throw new Error("Could not load the Sifric map style.");
   const style = stylePlaces(await styleResponse.json());
   const map = new library.Map({
