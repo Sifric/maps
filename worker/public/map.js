@@ -391,6 +391,8 @@ function openSheet(on) {
     requestAnimationFrame(syncLayersDock);
     setTimeout(syncLayersDock, 80);
     setTimeout(syncLayersDock, 240);
+    setTimeout(syncLayersDock, 420);
+    setTimeout(syncLayersDock, 560);
   }
   if (on) (sheet.querySelector('.tile.on') || $('sheetClose')).focus({ preventScroll: true });
   else if (inside) $('layers').focus({ preventScroll: true });
