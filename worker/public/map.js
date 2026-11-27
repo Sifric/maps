@@ -368,14 +368,23 @@ function setState(st) {
 function syncLayersDock() {
   if (!phone() || sheet.hidden) return;
   const top = sheet.getBoundingClientRect().top;
-  document.documentElement.style.setProperty('--layers-height', `${Math.max(0, Math.round(innerHeight - top))}px`);
+  const panel = $('panel');
+  const bottom = Math.max(12, innerHeight - top + 18);
+  document.documentElement.style.setProperty('--layers-height', `${Math.round(innerHeight - top)}px`);
+  panel.style.setProperty('position', 'fixed', 'important');
+  panel.style.setProperty('top', 'auto', 'important');
+  panel.style.setProperty('bottom', `${Math.round(bottom)}px`, 'important');
+  panel.style.setProperty('z-index', '12', 'important');
 }
 function openSheet(on) {
   if (on === !sheet.hidden) return syncSheet();
   const inside = sheet.contains(document.activeElement);
   sheet.hidden = !on; scrim.hidden = !on;
   if (on) { if (phone()) setState(sheetState === 'full' ? 'full' : 'half'); else sheet.dataset.state = ''; }
-  else document.documentElement.style.removeProperty('--layers-height');
+  else {
+    document.documentElement.style.removeProperty('--layers-height');
+    ['position', 'top', 'bottom', 'z-index'].forEach(key => $('panel').style.removeProperty(key));
+  }
   syncSheet();
   if (on && phone()) {
     requestAnimationFrame(syncLayersDock);
