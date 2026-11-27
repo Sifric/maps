@@ -369,8 +369,9 @@ function syncLayersDock() {
   if (!phone() || sheet.hidden) return;
   const top = sheet.getBoundingClientRect().top;
   const panel = $('panel');
-  const bottom = Math.max(12, innerHeight - top + 18);
-  document.documentElement.style.setProperty('--layers-height', `${Math.round(innerHeight - top)}px`);
+  const viewportHeight = document.documentElement.clientHeight;
+  const bottom = Math.max(12, viewportHeight - top + 18);
+  document.documentElement.style.setProperty('--layers-height', `${Math.round(viewportHeight - top)}px`);
   panel.style.setProperty('position', 'fixed', 'important');
   panel.style.setProperty('top', 'auto', 'important');
   panel.style.setProperty('bottom', `${Math.round(bottom)}px`, 'important');
