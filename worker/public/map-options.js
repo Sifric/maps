@@ -74,9 +74,10 @@ function darkColour(layer, property) {
   if (source === "building")
     return property.includes("outline") ? "#56616e" : "#3e4855";
   if (source === "transportation") {
+    if (layer.metadata?.["sifric:divider"]) return "#526070";
     if (layer.type === "line")
       return id.includes("casing")
-        ? "#1a2029"
+        ? "#303a47"
         : /motorway|primary|trunk|secondary|tertiary/.test(id)
           ? "#626f81"
           : "#424d5b";

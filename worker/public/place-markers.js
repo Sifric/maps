@@ -226,13 +226,13 @@ function directionArrowImage() {
   const canvas = document.createElement("canvas"); canvas.width = 48; canvas.height = 48;
   const context = canvas.getContext("2d");
   context.scale(2, 2);
-  context.fillStyle = "#101820";
-  context.strokeStyle = "#101820";
+  context.fillStyle = "#526070";
+  context.strokeStyle = "#526070";
   context.lineWidth = 1.5;
   context.lineJoin = "round";
   context.fill(outline);
   context.stroke(outline);
-  context.fillStyle = "#f8fbff";
+  context.fillStyle = "#ffffff";
   context.fill(inset);
   return { width: 48, height: 48, data: context.getImageData(0, 0, 48, 48).data };
 }
