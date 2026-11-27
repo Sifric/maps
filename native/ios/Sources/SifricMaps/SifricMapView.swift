@@ -31,6 +31,19 @@ public enum SifricMap {
                                 zoom: Double = 7, style: URL? = nil) -> MLNMapView {
         let map = MLNMapView(frame: .zero, styleURL: style ?? appearance(.default))
         map.setCenter(center, zoomLevel: zoom, animated: false)
+        let wordmark = UIImageView(image: UIImage(named: "sifric-wordmark", in: .module, compatibleWith: nil))
+        wordmark.translatesAutoresizingMaskIntoConstraints = false
+        wordmark.contentMode = .scaleAspectFit
+        wordmark.isAccessibilityElement = true
+        wordmark.accessibilityLabel = "Sifric Maps"
+        wordmark.isUserInteractionEnabled = false
+        map.addSubview(wordmark)
+        NSLayoutConstraint.activate([
+            wordmark.leadingAnchor.constraint(equalTo: map.leadingAnchor, constant: 16),
+            wordmark.bottomAnchor.constraint(equalTo: map.bottomAnchor, constant: -64),
+            wordmark.widthAnchor.constraint(equalToConstant: 56),
+            wordmark.heightAnchor.constraint(equalToConstant: 17)
+        ])
         return map
     }
 

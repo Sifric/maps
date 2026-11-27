@@ -2,7 +2,11 @@
 
 Download the SDK packages through the authenticated Sifric developer portal.
 Both SDKs use the native MapLibre renderer and the Sifric Maps endpoints in
-`https://maps.sifric.workers.dev`.
+`https://maps.sifric.workers.dev`. The SDK map views include the Sifric wordmark
+at the bottom-left, matching the website map branding.
+
+Map data credits remain available through MapLibre's attribution control. The
+wordmark does not replace the required OpenStreetMap data attribution.
 
 The hosted map style and sprite provide the same category-coloured place pins
 and small overview dots as the website. Android and iOS load these assets from

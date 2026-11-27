@@ -6,6 +6,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.AttributeSet;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
+import android.view.Gravity;
 
 import org.maplibre.android.MapLibre;
 import org.maplibre.android.annotations.Marker;
@@ -39,6 +41,21 @@ public final class SifricMapView extends FrameLayout {
         MapLibre.getInstance(context);
         mapView = new MapView(context);
         addView(mapView, new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
+        ImageView wordmark = new ImageView(context);
+        wordmark.setImageResource(R.drawable.sifric_wordmark);
+        wordmark.setContentDescription("Sifric Maps");
+        wordmark.setScaleType(ImageView.ScaleType.FIT_CENTER);
+        wordmark.setImportantForAccessibility(IMPORTANT_FOR_ACCESSIBILITY_YES);
+        wordmark.setClickable(false);
+        wordmark.setFocusable(false);
+        LayoutParams brandLayout = new LayoutParams(dp(context, 56), dp(context, 17), Gravity.START | Gravity.BOTTOM);
+        brandLayout.leftMargin = dp(context, 16);
+        brandLayout.bottomMargin = dp(context, 64);
+        addView(wordmark, brandLayout);
+    }
+
+    private static int dp(Context context, int value) {
+        return Math.round(value * context.getResources().getDisplayMetrics().density);
     }
 
     public void onCreate(Bundle state) { mapView.onCreate(state); }
