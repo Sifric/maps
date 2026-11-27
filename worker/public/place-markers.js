@@ -80,21 +80,12 @@ function roadShieldImage() {
   return { width: 80, height: 48, data: c.getImageData(0, 0, 80, 48).data };
 }
 function directionArrowImage() {
-  // A line-placed icon's horizontal axis follows the OSM way direction.
-  // This is the same east-pointing SVG path included in the shared sprite.
-  const outline = new Path2D("M3 8h9V4l9 8-9 8v-4H3z");
-  const inset = new Path2D("M4.5 9.5h8.1V7.4l6.2 4.6-6.2 4.6v-2.1H4.5z");
+  const arrow = new Path2D("M2.5 10.5h12.5v-4L22 12l-7 5.5v-4H2.5z");
   const canvas = document.createElement("canvas"); canvas.width = 48; canvas.height = 48;
   const context = canvas.getContext("2d");
   context.scale(2, 2);
-  context.fillStyle = "#526070";
-  context.strokeStyle = "#526070";
-  context.lineWidth = 1.5;
-  context.lineJoin = "round";
-  context.fill(outline);
-  context.stroke(outline);
-  context.fillStyle = "#ffffff";
-  context.fill(inset);
+  context.fillStyle = "#5b6a77";
+  context.fill(arrow);
   return { width: 48, height: 48, data: context.getImageData(0, 0, 48, 48).data };
 }
 export function registerPlaceImages(map) {

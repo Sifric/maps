@@ -110,7 +110,7 @@ export default {
       const style = structuredClone(basemapStyle);
       delete style.sources.openmaptiles.tiles;
       style.sources.openmaptiles.url = `pmtiles://${url.origin}/tiles/sri-lanka.pmtiles`;
-      style.sprite = `${url.origin}/api/v1/basemap/sprite`;
+      style.sprite = `${url.origin}/api/v1/basemap/sprite-v2`;
       style.glyphs = `${url.origin}/api/v1/fonts/{fontstack}/{range}.pbf`;
       const output = url.pathname === "/style.json" ? style : nativeStyle(style, url.searchParams);
       if (!output) return new Response("Invalid native map appearance.", { status: 400, headers: cors });
@@ -121,7 +121,7 @@ export default {
     if (url.pathname === "/tiles/sri-lanka.pmtiles") {
       return serveTile(request, env);
     }
-    const sprite = url.pathname.match(/^\/api\/v1\/basemap\/sprite(@2x)?\.(json|png)$/);
+    const sprite = url.pathname.match(/^\/api\/v1\/basemap\/sprite(?:-v2)?(@2x)?\.(json|png)$/);
     if (sprite) {
       return serveAsset(request, env, `/assets/sprites/basemap${sprite[1] || ""}.${sprite[2]}`);
     }
