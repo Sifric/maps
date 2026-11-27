@@ -308,9 +308,9 @@ export function createMapOptions(map, { baseStyle, status, embed }) {
         filter: ["all", ["in", ["get", "class"], ["literal", [...roadClasses, "service"]]], oneWay],
         layout: {
           "symbol-placement": "line",
-          "symbol-spacing": ["interpolate", ["linear"], ["zoom"], 14, 190, 17, 240, 20, 300],
+          "symbol-spacing": ["interpolate", ["linear"], ["zoom"], 14, 220, 17, 280, 20, 350],
           "icon-image": "lk-direction-arrow",
-          "icon-size": ["interpolate", ["linear"], ["zoom"], 14, 0.8, 17, 1, 20, 1.15],
+          "icon-size": ["interpolate", ["linear"], ["zoom"], 14, 0.72, 17, 0.88, 20, 1],
           "icon-rotation-alignment": "map",
           "icon-rotate": rotation,
           "icon-keep-upright": false,

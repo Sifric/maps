@@ -209,24 +209,26 @@ export function stylePlaces(style) {
   return style;
 }
 function roadShieldImage() {
-  const canvas = document.createElement("canvas"); canvas.width = 88; canvas.height = 56;
+  const canvas = document.createElement("canvas"); canvas.width = 80; canvas.height = 48;
   const c = canvas.getContext("2d"); c.scale(2, 2);
-  const g = c.createLinearGradient(0, 0, 0, 28); g.addColorStop(0, "#39995d"); g.addColorStop(1, "#197341");
-  c.fillStyle = g; c.strokeStyle = "rgba(255,255,255,.94)"; c.lineWidth = 1.4;
-  c.beginPath(); c.roundRect(1, 1, 42, 26, 4); c.fill(); c.stroke();
-  return { width: 88, height: 56, data: c.getImageData(0, 0, 88, 56).data };
+  const g = c.createLinearGradient(0, 0, 0, 24); g.addColorStop(0, "#278957"); g.addColorStop(1, "#17653d");
+  c.fillStyle = g; c.strokeStyle = "rgba(255,255,255,.98)"; c.lineWidth = 1.4;
+  c.beginPath(); c.roundRect(1, 1, 38, 22, 4); c.fill(); c.stroke();
+  c.strokeStyle = "rgba(8,48,29,.8)"; c.lineWidth = .65;
+  c.beginPath(); c.roundRect(2.3, 2.3, 35.4, 19.4, 3); c.stroke();
+  return { width: 80, height: 48, data: c.getImageData(0, 0, 80, 48).data };
 }
 function directionArrowImage() {
-  const canvas = document.createElement("canvas"); canvas.width = 40; canvas.height = 40;
+  const canvas = document.createElement("canvas"); canvas.width = 48; canvas.height = 48;
   const c = canvas.getContext("2d"); c.scale(2, 2);
-  // A slim forward chevron reads cleanly at street scale and remains legible
-  // on both light and dark roads without a bulky, pin-like arrow silhouette.
-  c.lineCap = "round"; c.lineJoin = "round";
-  c.strokeStyle = "rgba(14,22,32,.84)"; c.lineWidth = 4.5;
-  c.beginPath(); c.moveTo(4.5, 8.5); c.lineTo(10, 3); c.lineTo(15.5, 8.5); c.stroke();
-  c.strokeStyle = "#f8fbff"; c.lineWidth = 2.2;
-  c.beginPath(); c.moveTo(4.5, 8.5); c.lineTo(10, 3); c.lineTo(15.5, 8.5); c.stroke();
-  return { width: 40, height: 40, data: c.getImageData(0, 0, 40, 40).data };
+  // MapLibre aligns the icon's local +X axis with a forward line segment.
+  // Draw a filled right-pointing arrow so its head follows road geometry.
+  c.fillStyle = "rgba(14,22,32,.86)"; c.strokeStyle = "rgba(14,22,32,.86)";
+  c.lineJoin = "round"; c.lineCap = "round"; c.lineWidth = 4.5;
+  c.beginPath(); c.moveTo(3.5, 9); c.lineTo(10, 9); c.lineTo(10, 5.5); c.lineTo(16.5, 12); c.lineTo(10, 18.5); c.lineTo(10, 15); c.lineTo(3.5, 15); c.closePath(); c.fill();
+  c.fillStyle = "#f8fbff";
+  c.beginPath(); c.moveTo(4, 10); c.lineTo(11.1, 10); c.lineTo(11.1, 7.2); c.lineTo(15, 12); c.lineTo(11.1, 16.8); c.lineTo(11.1, 14); c.lineTo(4, 14); c.closePath(); c.fill();
+  return { width: 48, height: 48, data: c.getImageData(0, 0, 48, 48).data };
 }
 export function registerPlaceImages(map) {
   map.on("styleimagemissing", ({ id }) => {

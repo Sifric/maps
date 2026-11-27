@@ -3406,10 +3406,60 @@
       "source": "openmaptiles",
       "source-layer": "transportation",
       "minzoom": 14,
-      "filter": ["all", ["in", ["get", "class"], ["literal", ["motorway", "trunk", "primary", "secondary", "tertiary", "minor", "service"]]], ["!", ["in", ["get", "brunnel"], ["literal", ["bridge", "tunnel"]]]], ["==", ["to-string", ["get", "oneway"]], "1"]],
+      "filter": [
+        "all",
+        [
+          "in",
+          [
+            "get",
+            "class"
+          ],
+          [
+            "literal",
+            [
+              "motorway",
+              "trunk",
+              "primary",
+              "secondary",
+              "tertiary",
+              "minor",
+              "service"
+            ]
+          ]
+        ],
+        [
+          "!",
+          [
+            "in",
+            [
+              "get",
+              "brunnel"
+            ],
+            [
+              "literal",
+              [
+                "bridge",
+                "tunnel"
+              ]
+            ]
+          ]
+        ],
+        [
+          "==",
+          [
+            "to-string",
+            [
+              "get",
+              "oneway"
+            ]
+          ],
+          "1"
+        ]
+      ],
       "layout": {
         "icon-image": "lk-direction-arrow",
         "symbol-placement": "line",
+        "icon-rotate": 0,
         "icon-rotation-alignment": "map",
         "icon-keep-upright": false,
         "symbol-spacing": [
@@ -3464,7 +3514,62 @@
       "source": "openmaptiles",
       "source-layer": "transportation",
       "minzoom": 14,
-      "filter": ["all", ["in", ["get", "class"], ["literal", ["motorway", "trunk", "primary", "secondary", "tertiary", "minor", "service"]]], ["!", ["in", ["get", "brunnel"], ["literal", ["bridge", "tunnel"]]]], ["in", ["to-string", ["get", "oneway"]], ["literal", ["-1", "reverse"]]]],
+      "filter": [
+        "all",
+        [
+          "in",
+          [
+            "get",
+            "class"
+          ],
+          [
+            "literal",
+            [
+              "motorway",
+              "trunk",
+              "primary",
+              "secondary",
+              "tertiary",
+              "minor",
+              "service"
+            ]
+          ]
+        ],
+        [
+          "!",
+          [
+            "in",
+            [
+              "get",
+              "brunnel"
+            ],
+            [
+              "literal",
+              [
+                "bridge",
+                "tunnel"
+              ]
+            ]
+          ]
+        ],
+        [
+          "in",
+          [
+            "to-string",
+            [
+              "get",
+              "oneway"
+            ]
+          ],
+          [
+            "literal",
+            [
+              "-1",
+              "reverse"
+            ]
+          ]
+        ]
+      ],
       "layout": {
         "icon-image": "lk-direction-arrow",
         "icon-rotate": 180,
@@ -5917,17 +6022,17 @@
       "layout": {
         "icon-image": "lk-road-shield",
         "icon-rotation-alignment": "viewport",
-        "icon-size": 0.56,
+        "icon-size": 0.68,
         "symbol-placement": [
           "step",
           [
             "zoom"
           ],
           "point",
-          11,
+          13,
           "line"
         ],
-        "symbol-spacing": 480,
+        "symbol-spacing": 420,
         "text-field": [
           "to-string",
           [
@@ -5936,10 +6041,24 @@
           ]
         ],
         "text-font": [
-          "Geist Regular"
+          "Geist Bold"
         ],
         "text-rotation-alignment": "viewport",
-        "text-size": 10,
+        "text-size": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          8,
+          9,
+          13,
+          10,
+          18,
+          11
+        ],
         "icon-text-fit": "both",
         "icon-text-fit-padding": [
           2,
@@ -5950,8 +6069,9 @@
       },
       "paint": {
         "text-color": "#ffffff",
-        "text-halo-color": "#23864b",
-        "text-halo-width": 0.35
+        "text-halo-color": "#17653d",
+        "text-halo-width": 0.8,
+        "text-halo-blur": 0
       }
     },
     {
